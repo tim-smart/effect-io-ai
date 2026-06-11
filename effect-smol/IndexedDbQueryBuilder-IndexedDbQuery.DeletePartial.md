@@ -47,6 +47,6 @@ export interface DeletePartial<
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L400)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L384)
 
 Since v4.0.0

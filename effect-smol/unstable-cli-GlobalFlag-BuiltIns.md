@@ -34,6 +34,6 @@ exits, so this array controls built-in action precedence.
 declare const BuiltIns: ReadonlyArray<GlobalFlag<any>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/GlobalFlag.ts#L294)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/GlobalFlag.ts#L282)
 
 Since v4.0.0

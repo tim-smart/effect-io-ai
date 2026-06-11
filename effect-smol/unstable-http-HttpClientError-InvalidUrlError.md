@@ -11,6 +11,6 @@ Error describing failures while constructing a URL from an HTTP client request.
 declare class InvalidUrlError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClientError.ts#L171)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClientError.ts#L151)
 
 Since v4.0.0

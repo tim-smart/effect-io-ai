@@ -44,6 +44,6 @@ console.log(Array.from(Iterable.take(batchSums, 3))) // [55, 155, 255]
 declare const chunksOf: { (n: number): <A>(self: Iterable<A>) => Iterable<Array<A>>; <A>(self: Iterable<A>, n: number): Iterable<Array<A>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L1199)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L1154)
 
 Since v2.0.0

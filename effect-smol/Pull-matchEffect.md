@@ -29,6 +29,6 @@ const result = Pull.matchEffect(pull, {
 declare const matchEffect: { <A, E, L, AS, ES, RS, AF, EF, RF, AH, EH, RH>(options: { readonly onSuccess: (value: A) => Effect<AS, ES, RS>; readonly onFailure: (failure: Cause.Cause<E>) => Effect<AF, EF, RF>; readonly onDone: (leftover: L) => Effect<AH, EH, RH>; }): <R>(self: Pull<A, E, L, R>) => Effect<AS | AF | AH, ES | EF | EH, R | RS | RF | RH>; <A, E, L, R, AS, ES, RS, AF, EF, RF, AH, EH, RH>(self: Pull<A, E, L, R>, options: { readonly onSuccess: (value: A) => Effect<AS, ES, RS>; readonly onFailure: (failure: Cause.Cause<E>) => Effect<AF, EF, RF>; readonly onDone: (leftover: L) => Effect<AH, EH, RH>; }): Effect<AS | AF | AH, ES | EF | EH, R | RS | RF | RH>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pull.ts#L371)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pull.ts#L354)
 
 Since v4.0.0

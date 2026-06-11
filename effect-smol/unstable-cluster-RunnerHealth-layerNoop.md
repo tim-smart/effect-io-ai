@@ -16,6 +16,6 @@ active health checks are unnecessary.
 declare const layerNoop: Layer.Layer<RunnerHealth, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RunnerHealth.ts#L80)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RunnerHealth.ts#L51)
 
 Since v4.0.0

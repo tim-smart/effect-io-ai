@@ -11,6 +11,6 @@ Error reason for an `InvalidStateError` raised by the browser Permissions API.
 declare class PermissionsInvalidStateError
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Permissions.ts#L73)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Permissions.ts#L49)
 
 Since v4.0.0

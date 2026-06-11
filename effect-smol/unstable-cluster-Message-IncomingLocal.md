@@ -15,6 +15,6 @@ It is either a request with a decoded payload or an incoming control envelope.
 type IncomingLocal<R> = IncomingRequestLocal<R> | IncomingEnvelope
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Message.ts#L65)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Message.ts#L49)
 
 Since v4.0.0

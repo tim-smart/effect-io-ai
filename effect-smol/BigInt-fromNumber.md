@@ -37,6 +37,6 @@ BigInt.fromNumber(Number.MIN_SAFE_INTEGER - 1) // Option.none()
 declare const fromNumber: (n: number) => Option.Option<bigint>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L971)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L912)
 
 Since v2.4.12

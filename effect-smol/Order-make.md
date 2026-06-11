@@ -43,6 +43,6 @@ console.log(byAge({ name: "Alice", age: 25 }, { name: "Bob", age: 30 })) // -1
 declare const make: <A>(compare: (self: A, that: A) => -1 | 0 | 1) => Order<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L179)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L111)
 
 Since v2.0.0

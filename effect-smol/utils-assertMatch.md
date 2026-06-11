@@ -11,6 +11,6 @@ Asserts that `actual` matches `regExp`.
 declare const assertMatch: (actual: string, regExp: RegExp, ..._: Array<never>) => void
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L168)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L147)
 
 Since v4.0.0

@@ -33,6 +33,6 @@ numbers.
 declare const getOrdinal: (self: LogLevel) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LogLevel.ts#L223)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LogLevel.ts#L192)
 
 Since v4.0.0

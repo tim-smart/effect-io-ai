@@ -38,6 +38,6 @@ const provider = ConfigProvider.make((_path) =>
 declare class SourceError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L268)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L199)
 
 Since v4.0.0

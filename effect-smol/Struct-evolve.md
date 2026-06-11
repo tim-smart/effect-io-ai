@@ -42,6 +42,6 @@ console.log(result) // { name: "ALICE", age: 31, active: true }
 declare const evolve: { <S extends object, E extends Evolver<S>>(e: E): (self: S) => Evolved<S, E>; <S extends object, E extends Evolver<S>>(self: S, e: E): Evolved<S, E>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Struct.ts#L387)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Struct.ts#L324)
 
 Since v2.0.0

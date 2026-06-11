@@ -17,6 +17,6 @@ challenges.
 declare const SessionAuthChallengeTimeToLiveMillis: 30000
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogSessionAuth.ts#L114)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogSessionAuth.ts#L85)
 
 Since v4.0.0

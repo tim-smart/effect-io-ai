@@ -11,6 +11,6 @@ Creates a `WorkerRunnerPlatform` service that runs worker handlers over a `Messa
 declare const make: (self: MessagePort | Window) => WorkerRunner.WorkerRunnerPlatform["Service"]
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserWorkerRunner.ts#L60)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserWorkerRunner.ts#L38)
 
 Since v4.0.0

@@ -18,6 +18,6 @@ represented by promises that resolve when the atom leaves the initial state.
 declare const dehydrate: (registry: AtomRegistry.AtomRegistry, options?: { readonly encodeInitialAs?: "ignore" | "promise" | "value-only" | undefined; }) => Array<DehydratedAtom>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Hydration.ts#L82)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Hydration.ts#L59)
 
 Since v4.0.0

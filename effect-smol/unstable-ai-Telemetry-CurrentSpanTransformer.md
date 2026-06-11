@@ -21,6 +21,6 @@ language model span annotation.
 declare class CurrentSpanTransformer
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Telemetry.ts#L537)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Telemetry.ts#L513)
 
 Since v4.0.0

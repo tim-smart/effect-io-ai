@@ -36,6 +36,6 @@ const program = Clock.clockWith((clock) =>
 declare const clockWith: <A, E, R>(f: (clock: Clock) => Effect<A, E, R>) => Effect<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Clock.ts#L193)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Clock.ts#L141)
 
 Since v2.0.0

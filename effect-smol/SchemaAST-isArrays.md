@@ -20,6 +20,6 @@ mutability metadata.
 declare const isArrays: (ast: AST) => ast is Arrays
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L419)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L357)
 
 Since v4.0.0

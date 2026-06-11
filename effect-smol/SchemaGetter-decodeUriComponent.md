@@ -28,6 +28,6 @@ const decode = SchemaGetter.decodeUriComponent<string>()
 declare const decodeUriComponent: <E extends string>() => Getter<string, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1552)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1478)
 
 Since v4.0.0

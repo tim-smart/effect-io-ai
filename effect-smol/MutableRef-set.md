@@ -49,6 +49,6 @@ MutableRef.set(state, "success")
 declare const set: { <T>(value: T): (self: MutableRef<T>) => MutableRef<T>; <T>(self: MutableRef<T>, value: T): MutableRef<T>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableRef.ts#L620)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableRef.ts#L597)
 
 Since v2.0.0

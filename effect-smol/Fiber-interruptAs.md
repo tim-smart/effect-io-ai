@@ -46,6 +46,6 @@ const program = Effect.gen(function*() {
 declare const interruptAs: { (fiberId: number | undefined, annotations?: Context.Context<never> | undefined): <A, E>(self: Fiber<A, E>) => Effect<void>; <A, E>(self: Fiber<A, E>, fiberId: number | undefined, annotations?: Context.Context<never> | undefined): Effect<void>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Fiber.ts#L434)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Fiber.ts#L387)
 
 Since v2.0.0

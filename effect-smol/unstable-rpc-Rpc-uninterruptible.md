@@ -11,6 +11,6 @@ Wraps a response Effect or Stream so the RPC server runs it in an uninterruptibl
 declare const uninterruptible: <A extends object>(value: A) => Wrapper<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L1287)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L1255)
 
 Since v4.0.0

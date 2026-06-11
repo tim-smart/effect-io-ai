@@ -37,6 +37,6 @@ const node = ConfigProvider.makeRecord(new Set(["host", "port"]))
 declare const makeRecord: (keys: ReadonlySet<string>, value?: string) => Node
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L200)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L131)
 
 Since v4.0.0

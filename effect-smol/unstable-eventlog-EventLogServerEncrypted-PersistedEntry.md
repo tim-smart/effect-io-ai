@@ -11,6 +11,6 @@ Schema for encrypted entries persisted by the encrypted event-log server.
 declare class PersistedEntry
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogServerEncrypted.ts#L133)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogServerEncrypted.ts#L122)
 
 Since v4.0.0

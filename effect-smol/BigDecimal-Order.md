@@ -30,6 +30,6 @@ console.log(BigDecimal.Order(a, c)) // 0 (a === c)
 declare const Order: order.Order<BigDecimal>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L733)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L683)
 
 Since v2.0.0

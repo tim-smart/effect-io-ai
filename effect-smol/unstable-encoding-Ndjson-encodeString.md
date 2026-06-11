@@ -16,6 +16,6 @@ output chunk ends with a trailing newline.
 declare const encodeString: <IE = never, Done = unknown>() => Channel.Channel<Arr.NonEmptyReadonlyArray<string>, IE | NdjsonError, Done, Arr.NonEmptyReadonlyArray<unknown>, IE, Done>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ndjson.ts#L89)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ndjson.ts#L65)
 
 Since v4.0.0

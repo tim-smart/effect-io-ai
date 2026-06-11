@@ -31,6 +31,6 @@ console.log(Cause.isDieReason(cause.reasons[0])) // true
 declare const die: (defect: unknown) => Cause<never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L582)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L516)
 
 Since v2.0.0

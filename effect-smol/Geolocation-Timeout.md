@@ -11,6 +11,6 @@ Error reason for the browser geolocation `TIMEOUT` failure.
 declare class Timeout
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Geolocation.ts#L161)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Geolocation.ts#L138)
 
 Since v4.0.0

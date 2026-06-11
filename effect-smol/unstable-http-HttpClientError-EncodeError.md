@@ -11,6 +11,6 @@ Error describing failures while encoding an HTTP request body.
 declare class EncodeError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClientError.ts#L141)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClientError.ts#L121)
 
 Since v4.0.0

@@ -55,10 +55,11 @@ declare class Arrays { constructor(
     annotations?: Schema.Annotations.Annotations,
     checks?: Checks,
     encoding?: Encoding,
-    context?: Context
+    context?: Context,
+    encodingChecks?: Checks
   ) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L1616)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L1564)
 
 Since v4.0.0

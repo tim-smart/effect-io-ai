@@ -46,6 +46,6 @@ export interface Declaration<T, TypeParameters extends ReadonlyArray<Top> = read
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L13659)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L13800)
 
 Since v4.0.0

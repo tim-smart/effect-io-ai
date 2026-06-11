@@ -37,6 +37,6 @@ console.log(fromZero) // false
 declare const Boolean: BooleanConstructor
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Boolean.ts#L97)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Boolean.ts#L50)
 
 Since v4.0.0

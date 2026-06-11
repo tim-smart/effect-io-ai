@@ -13,6 +13,6 @@ type Brands<B> = Types.UnionToIntersection<
   >
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Brand.ts#L227)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Brand.ts#L183)
 
 Since v2.0.0

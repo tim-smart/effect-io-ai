@@ -20,6 +20,6 @@ console.log(String.pascalToSnake("FooBarBaz")) // "foo_bar_baz"
 declare const pascalToSnake: (self: string) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L1204)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L1146)
 
 Since v2.0.0

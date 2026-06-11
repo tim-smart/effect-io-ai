@@ -11,6 +11,6 @@ Service for constructing named `PersistedQueue` instances from schemas.
 declare class PersistedQueueFactory
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PersistedQueue.ts#L120)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PersistedQueue.ts#L104)
 
 Since v4.0.0

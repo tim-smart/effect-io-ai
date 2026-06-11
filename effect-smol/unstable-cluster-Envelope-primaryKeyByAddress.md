@@ -12,6 +12,6 @@ payload primary-key ID.
 declare const primaryKeyByAddress: (options: { readonly address: EntityAddress; readonly tag: string; readonly id: string; }) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Envelope.ts#L442)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Envelope.ts#L427)
 
 Since v4.0.0

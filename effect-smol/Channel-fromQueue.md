@@ -44,6 +44,6 @@ const slidingProgram = Effect.gen(function*() {
 declare const fromQueue: <A, E>(queue: Queue.Dequeue<A, E>) => Channel<A, Exclude<E, Cause.Done>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L1271)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L1210)
 
 Since v2.0.0

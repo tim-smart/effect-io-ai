@@ -11,6 +11,6 @@ SQL error reason for invalid SQL syntax; not marked retryable.
 declare class SqlSyntaxError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SqlError.ts#L137)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SqlError.ts#L112)
 
 Since v4.0.0

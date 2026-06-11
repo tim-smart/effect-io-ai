@@ -11,6 +11,6 @@ Computer-use action payload for performing a right click, optionally at a specif
 type ComputerUseRightClickAction = typeof ComputerUseRightClickAction.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1120)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1071)
 
 Since v4.0.0

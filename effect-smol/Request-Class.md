@@ -31,6 +31,6 @@ console.log(getUserRequest.id) // 123
 declare const Class: new <A extends Record<string, any>, Success, Error = never, Context = never>(args: Types.Equals<Omit<A, keyof Request<unknown, unknown>>, {}> extends true ? void : { readonly [P in keyof A as P extends keyof Request<any, any, any> ? never : P]: A[P]; }) => Request<Success, Error, Context> & Readonly<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Request.ts#L398)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Request.ts#L363)
 
 Since v2.0.0

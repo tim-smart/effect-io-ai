@@ -16,6 +16,6 @@ Schema for `MultiDocument` values encoded as JSON.
 declare const MultiDocumentFromJson: Schema.Codec<MultiDocument, Schema.Json, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L1768)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L1694)
 
 Since v4.0.0

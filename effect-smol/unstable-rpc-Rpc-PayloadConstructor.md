@@ -20,6 +20,6 @@ type PayloadConstructor<R> = R extends Rpc<
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L453)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L421)
 
 Since v4.0.0

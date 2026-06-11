@@ -11,6 +11,6 @@ Returns `true` when a method can carry a request body and narrows it to `HttpMet
 declare const hasBody: (method: HttpMethod) => method is HttpMethod.WithBody
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpMethod.ts#L81)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpMethod.ts#L57)
 
 Since v4.0.0

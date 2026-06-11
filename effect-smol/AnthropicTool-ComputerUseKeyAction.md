@@ -27,6 +27,6 @@ provider-specific key names or key combinations.
 type ComputerUseKeyAction = typeof ComputerUseKeyAction.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L689)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L640)
 
 Since v4.0.0

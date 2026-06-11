@@ -39,6 +39,6 @@ const program = Effect.gen(function*() {
 declare const PiB: (n: number) => Size
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L681)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L638)
 
 Since v4.0.0

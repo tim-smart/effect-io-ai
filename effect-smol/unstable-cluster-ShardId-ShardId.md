@@ -16,6 +16,6 @@ export interface ShardId extends Equal.Equal, Hash.Hash, PrimaryKey.PrimaryKey {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ShardId.ts#L43)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ShardId.ts#L26)
 
 Since v4.0.0

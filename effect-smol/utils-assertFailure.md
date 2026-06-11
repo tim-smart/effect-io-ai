@@ -11,6 +11,6 @@ Asserts that `result` is `Failure` and contains an error equal to `expected`.
 declare const assertFailure: <A, E>(result: Result.Result<A, E>, expected: E, ..._: Array<never>) => asserts result is Result.Failure<never, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L304)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L283)
 
 Since v4.0.0

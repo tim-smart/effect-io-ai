@@ -38,6 +38,6 @@ type Equals<X, Y> = (<T>() => T extends X ? 1 : 2) extends <
   : false
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L324)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L282)
 
 Since v2.0.0

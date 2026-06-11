@@ -15,6 +15,6 @@ Defaults to `globalThis.fetch`.
 declare const Fetch: Context.Reference<{ (input: RequestInfo | URL, init?: globalThis.RequestInit): Promise<Response>; (input: string | URL | Request, init?: globalThis.RequestInit): Promise<Response>; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FetchHttpClient.ts#L53)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FetchHttpClient.ts#L30)
 
 Since v4.0.0

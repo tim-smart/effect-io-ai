@@ -21,6 +21,6 @@ export interface NeedsApprovalContext {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L169)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L124)
 
 Since v4.0.0

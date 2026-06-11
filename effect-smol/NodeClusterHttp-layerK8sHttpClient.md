@@ -11,6 +11,6 @@ Provides the Kubernetes HTTP client layer used by Kubernetes runner health check
 declare const layerK8sHttpClient: Layer.Layer<K8sHttpClient, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeClusterHttp.ts#L70)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeClusterHttp.ts#L46)
 
 Since v4.0.0

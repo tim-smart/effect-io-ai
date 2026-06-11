@@ -36,6 +36,6 @@ console.log(Array.from(fromString)) // ["h", "e", "l", "o"]
 declare const fromIterable: <K = never>(keys: Iterable<K>) => MutableHashSet<K>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashSet.ts#L247)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashSet.ts#L189)
 
 Since v2.0.0

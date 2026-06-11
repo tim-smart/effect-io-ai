@@ -36,6 +36,6 @@ console.log(config) // { theme: "dark", lang: "en", fontSize: 14 }
 declare const assign: { <O extends object>(that: O): <S extends object>(self: S) => Assign<S, O>; <O extends object, S extends object>(self: S, that: O): Assign<S, O>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Struct.ts#L337)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Struct.ts#L274)
 
 Since v4.0.0

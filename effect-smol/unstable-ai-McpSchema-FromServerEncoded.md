@@ -12,6 +12,6 @@ responses and server notifications.
 type FromServerEncoded = ServerResultEncoded | ServerNotificationEncoded
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L2471)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L2452)
 
 Since v4.0.0

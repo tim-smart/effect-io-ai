@@ -64,6 +64,6 @@ const program = Effect.gen(function*() {
 export interface Gauge<in Input extends number | bigint> extends Metric<Input, GaugeState<Input>> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L557)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L484)
 
 Since v2.0.0

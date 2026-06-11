@@ -70,6 +70,6 @@ type Unify<A> = Values<
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Unify.ts#L228)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Unify.ts#L207)
 
 Since v2.0.0

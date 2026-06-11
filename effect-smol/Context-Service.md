@@ -36,6 +36,6 @@ export interface Service<in out Identifier, in out Shape> extends Key<Identifier
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L138)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L99)
 
 Since v4.0.0

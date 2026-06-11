@@ -15,6 +15,6 @@ Schema encoding failures are converted to `MalformedMessage`.
 declare const serializeEnvelope: <Rpc extends Rpc.Any>(message: Outgoing<Rpc>) => Effect.Effect<Envelope.Encoded, MalformedMessage, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Message.ts#L251)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Message.ts#L235)
 
 Since v4.0.0

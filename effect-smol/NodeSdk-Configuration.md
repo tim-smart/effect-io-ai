@@ -25,6 +25,6 @@ export interface Configuration {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/NodeSdk.ts#L48)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/NodeSdk.ts#L35)
 
 Since v4.0.0

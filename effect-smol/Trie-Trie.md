@@ -51,6 +51,6 @@ export interface Trie<in out Value> extends Iterable<[string, Value]>, Equal, Pi
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L107)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L64)
 
 Since v2.0.0

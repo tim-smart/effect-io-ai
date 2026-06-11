@@ -31,6 +31,6 @@ console.log(Cause.isFailReason(cause.reasons[0])) // true
 declare const fail: <E>(error: E) => Cause<E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L556)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L490)
 
 Since v2.0.0

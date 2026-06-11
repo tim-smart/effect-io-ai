@@ -37,6 +37,6 @@ console.log(Hash.isHash("string")) // false
 declare const isHash: (u: unknown) => u is Hash
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Hash.ts#L346)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Hash.ts#L304)
 
 Since v2.0.0

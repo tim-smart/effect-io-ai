@@ -19,6 +19,6 @@ const count = Argument.integer("count")
 declare const integer: (name: string) => Argument<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L90)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L76)
 
 Since v4.0.0

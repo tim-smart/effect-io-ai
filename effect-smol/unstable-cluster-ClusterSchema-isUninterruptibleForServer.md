@@ -21,6 +21,6 @@ Returns `true` only when `Uninterruptible` is `true` or `"server"`.
 declare const isUninterruptibleForServer: (context: Context.Context<never>) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ClusterSchema.ts#L127)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ClusterSchema.ts#L89)
 
 Since v4.0.0

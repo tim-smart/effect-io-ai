@@ -11,6 +11,6 @@ Error raised while loading, validating, locking, or running SQL migrations.
 declare class MigrationError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Migrator.ts#L114)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Migrator.ts#L79)
 
 Since v4.0.0

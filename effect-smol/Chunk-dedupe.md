@@ -32,6 +32,6 @@ console.log(Chunk.toArray(uniqueDeduped)) // [1, 2, 3]
 declare const dedupe: <A>(self: Chunk<A>) => Chunk<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L2322)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L2261)
 
 Since v2.0.0

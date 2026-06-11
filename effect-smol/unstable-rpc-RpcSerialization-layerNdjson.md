@@ -19,6 +19,6 @@ Use when you have a transport protocol that does not provide message framing.
 declare const layerNdjson: Layer.Layer<RpcSerialization, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcSerialization.ts#L538)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcSerialization.ts#L512)
 
 Since v4.0.0

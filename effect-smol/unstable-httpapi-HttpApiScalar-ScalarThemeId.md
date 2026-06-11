@@ -22,6 +22,6 @@ type ScalarThemeId = | "alternate"
   | "none"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiScalar.ts#L51)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiScalar.ts#L27)
 
 Since v4.0.0

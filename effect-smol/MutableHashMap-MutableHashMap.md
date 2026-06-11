@@ -59,6 +59,6 @@ export interface MutableHashMap<out K, out V> extends Iterable<[K, V]>, Pipeable
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashMap.ts#L102)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashMap.ts#L73)
 
 Since v2.0.0

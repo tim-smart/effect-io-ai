@@ -13,8 +13,8 @@ This check corresponds to the `exclusiveMaximum` constraint in JSON Schema.
 
 Arbitrary:
 
-When generating test data with fast-check, this applies a `max` constraint
-with `maxExcluded: true` to ensure generated numbers are less than the
+When generating test data with fast-check, this applies an
+`exclusiveMaximum` constraint to ensure generated numbers are less than the
 specified value.
 
 **Signature**
@@ -23,6 +23,6 @@ specified value.
 declare const isLessThan: (exclusiveMaximum: number, annotations?: Annotations.Filter) => SchemaAST.Filter<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6968)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6943)
 
 Since v4.0.0

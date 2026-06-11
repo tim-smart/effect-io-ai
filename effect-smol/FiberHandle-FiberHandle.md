@@ -38,6 +38,6 @@ export interface FiberHandle<out A = unknown, out E = unknown> extends Pipeable,
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberHandle.ts#L85)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberHandle.ts#L55)
 
 Since v2.0.0

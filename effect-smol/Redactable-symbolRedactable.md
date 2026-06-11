@@ -42,6 +42,6 @@ class ApiKey {
 declare const symbolRedactable: unique symbol
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Redactable.ts#L107)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Redactable.ts#L49)
 
 Since v3.10.0

@@ -22,6 +22,6 @@ This marker is part of the runtime representation of file handles. Prefer
 declare const FileTypeId: "~effect/platform/FileSystem/File"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L1088)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L1045)
 
 Since v4.0.0

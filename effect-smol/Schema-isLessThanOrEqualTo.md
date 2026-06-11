@@ -14,7 +14,7 @@ This check corresponds to the `maximum` constraint in JSON Schema.
 
 Arbitrary:
 
-When generating test data with fast-check, this applies a `max` constraint
+When generating test data with fast-check, this applies a `maximum` constraint
 to ensure generated numbers are less than or equal to the specified value.
 
 **Signature**
@@ -23,6 +23,6 @@ to ensure generated numbers are less than or equal to the specified value.
 declare const isLessThanOrEqualTo: (maximum: number, annotations?: Annotations.Filter) => SchemaAST.Filter<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7002)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6971)
 
 Since v4.0.0

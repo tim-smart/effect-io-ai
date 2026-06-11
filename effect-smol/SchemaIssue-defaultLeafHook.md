@@ -41,6 +41,6 @@ const formatter = SchemaIssue.makeFormatterStandardSchemaV1({
 declare const defaultLeafHook: LeafHook
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L966)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaIssue.ts#L898)
 
 Since v4.0.0

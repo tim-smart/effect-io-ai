@@ -12,6 +12,6 @@ empty Effect context.
 declare const toReadableNever: <E>(stream: Stream.Stream<string | Uint8Array, E, never>) => Readable
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeStream.ts#L220)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeStream.ts#L203)
 
 Since v4.0.0

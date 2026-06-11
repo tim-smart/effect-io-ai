@@ -34,6 +34,6 @@ console.log(encodedAst._tag) // "String"
 declare const toEncoded: (ast: AST) => AST
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L3327)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L3351)
 
 Since v4.0.0

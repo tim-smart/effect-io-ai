@@ -11,6 +11,6 @@ Returns `true` when a value is a `Cookies` collection.
 declare const isCookies: (u: unknown) => u is Cookies
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cookies.ts#L85)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cookies.ts#L33)
 
 Since v4.0.0

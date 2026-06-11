@@ -20,6 +20,6 @@ options do not provide `level`.
 declare const CurrentTraceLevel: Context.Reference<LogLevel>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/References.ts#L86)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/References.ts#L37)
 
 Since v4.0.0

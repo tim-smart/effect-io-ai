@@ -28,6 +28,6 @@ the shape of the plan steps.
 declare const isExecutionPlan: (u: unknown) => u is ExecutionPlan<any>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ExecutionPlan.ts#L135)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ExecutionPlan.ts#L62)
 
 Since v3.16.0

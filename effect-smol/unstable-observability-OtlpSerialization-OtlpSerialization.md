@@ -12,6 +12,6 @@ bodies.
 declare class OtlpSerialization
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OtlpSerialization.ts#L47)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OtlpSerialization.ts#L25)
 
 Since v4.0.0

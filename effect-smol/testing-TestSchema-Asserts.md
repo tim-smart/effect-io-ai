@@ -36,6 +36,6 @@ await asserts.encoding().succeed({ name: "Alice" })
 declare class Asserts<S> { constructor(schema: S) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TestSchema.ts#L108)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TestSchema.ts#L51)
 
 Since v4.0.0

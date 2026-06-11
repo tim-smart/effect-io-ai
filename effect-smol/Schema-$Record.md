@@ -25,6 +25,6 @@ export interface $Record<Key extends Record.Key, Value extends Top> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3449)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3390)
 
 Since v4.0.0

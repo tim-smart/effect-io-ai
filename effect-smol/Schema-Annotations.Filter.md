@@ -35,8 +35,17 @@ export interface Filter extends Augment {
      * Optional metadata used to identify or extend the filter with custom data.
      */
     readonly meta?: Meta | undefined
-    readonly toArbitraryConstraint?:
-      | ToArbitrary.Constraint
+    /**
+     * Optional hints used by arbitrary derivation for this filter.
+     *
+     * **Details**
+     *
+     * The same annotation can be attached to a single filter or a
+     * `FilterGroup`. Group hints apply to the same schema node while child
+     * filters are still collected and checked normally.
+     */
+    readonly arbitrary?:
+      | ToArbitrary.Filter
       | undefined
     /**
      * Marks the filter as *structural*, meaning it applies to the shape or
@@ -51,6 +60,6 @@ export interface Filter extends Augment {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L13700)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L13841)
 
-Since v3.10.0
+Since v4.0.0

@@ -24,6 +24,6 @@ underscore-separated identifiers.
 declare const constantCase: (self: string) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L1424)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L1366)
 
 Since v4.0.0

@@ -12,6 +12,6 @@ batch of success values together with the reply id and sequence number.
 declare class Chunk<R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Reply.ts#L185)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Reply.ts#L173)
 
 Since v4.0.0

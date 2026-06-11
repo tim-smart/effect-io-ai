@@ -32,6 +32,6 @@ const program = Effect.gen(function*() {
 declare const clear: <A, E>(self: FiberSet<A, E>) => Effect.Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberSet.ts#L444)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberSet.ts#L414)
 
 Since v2.0.0

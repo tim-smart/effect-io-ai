@@ -11,6 +11,6 @@ Unique brand for `Reason` values, used for runtime type checks via `isReason`.
 declare const ReasonTypeId: "~effect/Cause/Reason"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L105)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L39)
 
 Since v4.0.0

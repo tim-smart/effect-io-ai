@@ -11,6 +11,6 @@ OpenAPI annotation for setting generated summary text.
 declare class Summary
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OpenApi.ts#L138)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OpenApi.ts#L104)
 
 Since v4.0.0

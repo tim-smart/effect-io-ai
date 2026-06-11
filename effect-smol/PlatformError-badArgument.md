@@ -16,6 +16,6 @@ underlying operation.
 declare const badArgument: (options: { readonly module: string; readonly method: string; readonly description?: string | undefined; readonly cause?: unknown; }) => PlatformError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PlatformError.ts#L238)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PlatformError.ts#L216)
 
 Since v4.0.0

@@ -29,6 +29,6 @@ properties compatible with the provided encoding schema.
 declare const getNativeClassSchema: <C extends new (...args: any) => any, S extends Schema.Struct<Schema.Struct.Fields>>(constructor: C, options: { readonly encoding: S; readonly annotations?: Schema.Annotations.Declaration<InstanceType<C>>; }) => Schema.decodeTo<Schema.instanceOf<InstanceType<C>, S["Iso"]>, S>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaUtils.ts#L64)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaUtils.ts#L36)
 
 Since v4.0.0

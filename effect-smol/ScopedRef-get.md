@@ -20,6 +20,6 @@ workflow.
 declare const get: <A>(self: ScopedRef<A>) => Effect.Effect<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ScopedRef.ts#L130)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ScopedRef.ts#L118)
 
 Since v2.0.0

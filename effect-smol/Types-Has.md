@@ -32,6 +32,6 @@ type Has<A, Key> = (Key extends infer K ? K extends keyof A ? true : never : nev
   : true
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L381)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L339)
 
 Since v2.0.0

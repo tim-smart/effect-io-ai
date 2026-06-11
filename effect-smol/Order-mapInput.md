@@ -40,6 +40,6 @@ console.log(byLength("aa", "bb")) // 0
 declare const mapInput: { <B, A>(f: (b: B) => A): (self: Order<A>) => Order<B>; <A, B>(self: Order<A>, f: (b: B) => A): Order<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L512)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L444)
 
 Since v2.0.0

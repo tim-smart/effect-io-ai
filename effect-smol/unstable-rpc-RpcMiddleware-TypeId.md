@@ -11,6 +11,6 @@ The literal type id used to identify RPC middleware service classes.
 type TypeId = "~effect/rpc/RpcMiddleware"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcMiddleware.ts#L56)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcMiddleware.ts#L28)
 
 Since v4.0.0

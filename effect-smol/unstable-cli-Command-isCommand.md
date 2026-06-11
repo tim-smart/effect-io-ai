@@ -16,6 +16,6 @@ command shape.
 declare const isCommand: (u: unknown) => u is Command.Any
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L464)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L445)
 
 Since v4.0.0

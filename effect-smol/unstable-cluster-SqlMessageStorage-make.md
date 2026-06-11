@@ -32,6 +32,6 @@ tables, including the migration history table.
 declare const make: (options?: { readonly prefix?: string | undefined; }) => Effect.Effect<MessageStorage.MessageStorage["Service"], never, SqlClient.SqlClient | Snowflake.Generator>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SqlMessageStorage.ts#L88)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SqlMessageStorage.ts#L59)
 
 Since v4.0.0

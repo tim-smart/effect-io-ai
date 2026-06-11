@@ -17,6 +17,6 @@ export interface WithExitEncoded<A = unknown, E = unknown> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Reply.ts#L154)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Reply.ts#L142)
 
 Since v4.0.0

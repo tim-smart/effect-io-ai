@@ -26,6 +26,6 @@ state, and returns the current `ref.value`.
 declare const useAtomRef: <A>(ref: AtomRef.ReadonlyRef<A>) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/Hooks.ts#L439)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/Hooks.ts#L426)
 
 Since v4.0.0

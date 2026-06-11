@@ -38,6 +38,6 @@ assert.equal(clamp(6), 5)
 declare const clamp: { (options: { minimum: number; maximum: number; }): (self: number) => number; (self: number, options: { minimum: number; maximum: number; }): number; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L524)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L473)
 
 Since v2.0.0

@@ -22,6 +22,6 @@ domain-specific debugging data.
 type attributes = "~effect/ErrorReporter/attributes"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ErrorReporter.ts#L512)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ErrorReporter.ts#L473)
 
 Since v4.0.0

@@ -25,6 +25,6 @@ This refinement is backed by `Predicate.isUndefined`, which checks
 declare const undefined: Predicate.Refinement<unknown, undefined>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1521)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1487)
 
 Since v4.0.0

@@ -15,6 +15,6 @@ export interface Parameter {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Statement.ts#L226)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Statement.ts#L198)
 
 Since v4.0.0

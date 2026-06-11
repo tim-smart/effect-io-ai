@@ -16,6 +16,6 @@ size, and MIME types that should be parsed as fields.
 declare const limitsServices: (options: { readonly maxParts?: number | undefined; readonly maxFieldSize?: FileSystem.SizeInput | undefined; readonly maxFileSize?: FileSystem.SizeInput | undefined; readonly maxTotalSize?: FileSystem.SizeInput | undefined; readonly fieldMimeTypes?: ReadonlyArray<string> | undefined; }) => Context.Context<never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Multipart.ts#L751)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Multipart.ts#L722)
 
 Since v4.0.0

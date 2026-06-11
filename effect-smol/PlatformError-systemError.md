@@ -16,6 +16,6 @@ platform error model.
 declare const systemError: (options: { readonly _tag: SystemErrorTag; readonly module: string; readonly method: string; readonly description?: string | undefined; readonly syscall?: string | undefined; readonly pathOrDescriptor?: string | number | undefined; readonly cause?: unknown; }) => PlatformError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PlatformError.ts#L217)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PlatformError.ts#L195)
 
 Since v4.0.0

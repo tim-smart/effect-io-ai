@@ -17,6 +17,6 @@ target.
 declare const toJsonSchemaDocument: (schema: Top, options?: ToJsonSchemaOptions) => JsonSchema.Document<"draft-2020-12">
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L12717)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L12856)
 
 Since v4.0.0

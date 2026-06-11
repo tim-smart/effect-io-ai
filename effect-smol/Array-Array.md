@@ -25,6 +25,6 @@ console.log(arr) // [undefined, undefined, undefined]
 declare const Array: ArrayConstructor
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L124)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L49)
 
 Since v4.0.0

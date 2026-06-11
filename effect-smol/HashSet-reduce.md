@@ -26,6 +26,6 @@ console.log(concatenated) // Order may vary: "abc", "bac", etc.
 declare const reduce: { <V, U>(zero: U, f: (accumulator: U, value: V) => U): (self: HashSet<V>) => U; <V, U>(self: HashSet<V>, zero: U, f: (accumulator: U, value: V) => U): U; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashSet.ts#L628)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashSet.ts#L599)
 
 Since v2.0.0

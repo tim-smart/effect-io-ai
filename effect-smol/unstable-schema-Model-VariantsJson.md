@@ -11,6 +11,6 @@ JSON API-facing variant names generated for model schemas.
 type VariantsJson = "json" | "jsonCreate" | "jsonUpdate"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Model.ts#L77)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Model.ts#L69)
 
 Since v4.0.0

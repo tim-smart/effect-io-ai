@@ -36,6 +36,6 @@ type SystemErrorTag = | "AlreadyExists"
   | "WriteZero"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PlatformError.ts#L97)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PlatformError.ts#L75)
 
 Since v4.0.0

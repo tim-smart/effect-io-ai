@@ -20,6 +20,6 @@ export interface EntityResource<out A, out E = never> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EntityResource.ts#L65)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EntityResource.ts#L51)
 
 Since v4.0.0

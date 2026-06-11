@@ -30,6 +30,6 @@ export interface Closeable extends Scope {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Scope.ts#L110)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Scope.ts#L75)
 
 Since v2.0.0

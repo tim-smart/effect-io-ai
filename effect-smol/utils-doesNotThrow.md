@@ -11,6 +11,6 @@ Asserts that `thunk` does not throw an error.
 declare const doesNotThrow: (thunk: () => void, message?: string, ..._: Array<never>) => void
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L105)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L84)
 
 Since v4.0.0

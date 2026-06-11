@@ -26,6 +26,6 @@ first and the key second, matching `Map.prototype.forEach`.
 declare const forEach: { <K, V>(f: (value: V, key: K) => void): (self: MutableHashMap<K, V>) => void; <K, V>(self: MutableHashMap<K, V>, f: (value: V, key: K) => void): void; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashMap.ts#L869)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashMap.ts#L840)
 
 Since v2.0.0

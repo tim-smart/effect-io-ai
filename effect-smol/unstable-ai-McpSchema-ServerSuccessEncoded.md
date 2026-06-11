@@ -11,6 +11,6 @@ Encoded success response sent by the server for a client-initiated request.
 type ServerSuccessEncoded = SuccessEncoded<typeof ClientRequestRpcs>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L2437)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L2418)
 
 Since v4.0.0

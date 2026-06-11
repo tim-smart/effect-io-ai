@@ -35,6 +35,6 @@ const useIdGenerator = Effect.gen(function*() {
 declare class IdGenerator
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/IdGenerator.ts#L87)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/IdGenerator.ts#L49)
 
 Since v4.0.0

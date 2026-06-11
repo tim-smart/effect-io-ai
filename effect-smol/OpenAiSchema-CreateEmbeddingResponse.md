@@ -20,6 +20,6 @@ token usage counts.
 type CreateEmbeddingResponse = typeof CreateEmbeddingResponse.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L1316)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L1286)
 
 Since v4.0.0

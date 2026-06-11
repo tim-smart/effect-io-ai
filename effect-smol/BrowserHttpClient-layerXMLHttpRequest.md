@@ -11,6 +11,6 @@ Layer that provides an `HttpClient` implementation backed by the browser `XMLHtt
 declare const layerXMLHttpRequest: Layer.Layer<HttpClient.HttpClient, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserHttpClient.ts#L448)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserHttpClient.ts#L428)
 
 Since v4.0.0

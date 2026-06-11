@@ -23,6 +23,6 @@ console.log(Array.length([1, 2, 3])) // 3
 declare const length: <A>(self: ReadonlyArray<A>) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L988)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L913)
 
 Since v2.0.0

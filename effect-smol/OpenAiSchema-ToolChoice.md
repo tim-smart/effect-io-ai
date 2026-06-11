@@ -16,6 +16,6 @@ a named function or custom tool, or a provider-defined tool choice.
 type ToolChoice = typeof ToolChoice.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L616)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L586)
 
 Since v4.0.0

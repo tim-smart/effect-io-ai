@@ -22,6 +22,6 @@ handling both the defined and undefined branches in one expression.
 declare const match: { <B, A, C = B>(options: { readonly onUndefined: LazyArg<B>; readonly onDefined: (a: A) => C; }): (self: A | undefined) => B | C; <A, B, C = B>(self: A | undefined, options: { readonly onUndefined: LazyArg<B>; readonly onDefined: (a: A) => C; }): B | C; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/UndefinedOr.ts#L98)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/UndefinedOr.ts#L51)
 
 Since v4.0.0

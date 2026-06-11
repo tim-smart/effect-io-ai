@@ -39,6 +39,6 @@ export interface Param<Name extends string, S extends Schema.Top> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L2497)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L2478)
 
 Since v4.0.0

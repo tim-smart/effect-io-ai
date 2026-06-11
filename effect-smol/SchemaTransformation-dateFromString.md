@@ -37,6 +37,6 @@ const schema = Schema.String.pipe(
 declare const dateFromString: Transformation<Date, string, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L953)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L880)
 
 Since v4.0.0

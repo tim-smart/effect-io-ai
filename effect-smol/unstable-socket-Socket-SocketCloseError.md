@@ -12,6 +12,6 @@ close reason.
 declare class SocketCloseError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Socket.ts#L299)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Socket.ts#L284)
 
 Since v4.0.0

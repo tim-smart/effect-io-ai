@@ -30,6 +30,6 @@ assert.deepStrictEqual(
 declare const match: { <A, B = A>(options: { readonly onFalse: LazyArg<A>; readonly onTrue: LazyArg<B>; }): (value: boolean) => A | B; <A, B>(value: boolean, options: { readonly onFalse: LazyArg<A>; readonly onTrue: LazyArg<B>; }): A | B; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Boolean.ts#L146)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Boolean.ts#L99)
 
 Since v2.0.0

@@ -39,6 +39,6 @@ const parseIfPresent = SchemaGetter.onSome<number, string>(
 declare const onSome: <T, E, R = never>(f: (e: E, options: SchemaAST.ParseOptions) => Effect.Effect<Option.Option<T>, SchemaIssue.Issue, R>) => Getter<T, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L478)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L404)
 
 Since v4.0.0

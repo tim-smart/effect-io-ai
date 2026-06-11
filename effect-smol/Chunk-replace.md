@@ -30,6 +30,6 @@ console.log(negative) // Option.none()
 declare const replace: { <B>(i: number, b: B): <A>(self: Chunk<A>) => O.Option<Chunk<B | A>>; <A, B>(self: Chunk<A>, i: number, b: B): O.Option<Chunk<B | A>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L2537)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L2476)
 
 Since v2.0.0

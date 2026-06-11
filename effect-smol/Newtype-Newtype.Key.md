@@ -15,6 +15,6 @@ Use to inspect or constrain a newtype's key in generic code.
 type Key<N> = N extends Newtype<infer Key, unknown> ? Key : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Newtype.ts#L152)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Newtype.ts#L99)
 
 Since v4.0.0

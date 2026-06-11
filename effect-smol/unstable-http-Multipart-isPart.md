@@ -11,6 +11,6 @@ Returns `true` when a value is a multipart `Part`.
 declare const isPart: (u: unknown) => u is Part
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Multipart.ts#L132)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Multipart.ts#L103)
 
 Since v4.0.0

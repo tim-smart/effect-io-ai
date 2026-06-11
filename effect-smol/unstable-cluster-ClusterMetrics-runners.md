@@ -23,6 +23,6 @@ The value can lag briefly during membership changes or failure detection.
 declare const runners: Metric.Gauge<bigint>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ClusterMetrics.ts#L80)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ClusterMetrics.ts#L66)
 
 Since v4.0.0

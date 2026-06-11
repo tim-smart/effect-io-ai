@@ -16,6 +16,6 @@ handlers and keep-alive logic.
 declare class CurrentAddress
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Entity.ts#L493)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Entity.ts#L470)
 
 Since v4.0.0

@@ -20,6 +20,6 @@ Uses the standard JSON-RPC invalid params code `-32602`.
 declare class InvalidParams
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L621)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L602)
 
 Since v4.0.0

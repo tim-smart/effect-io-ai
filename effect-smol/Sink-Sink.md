@@ -41,6 +41,6 @@ export interface Sink<out A, in In = unknown, out L = never, out E = never, out 
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L89)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L66)
 
 Since v2.0.0

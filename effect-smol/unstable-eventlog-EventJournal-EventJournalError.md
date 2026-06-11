@@ -15,6 +15,6 @@ The error records the journal method that failed and the underlying cause.
 declare class EventJournalError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventJournal.ts#L144)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventJournal.ts#L121)
 
 Since v4.0.0

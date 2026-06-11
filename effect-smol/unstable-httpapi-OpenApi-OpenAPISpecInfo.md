@@ -17,6 +17,6 @@ export interface OpenAPISpecInfo {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OpenApi.ts#L780)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OpenApi.ts#L746)
 
 Since v4.0.0

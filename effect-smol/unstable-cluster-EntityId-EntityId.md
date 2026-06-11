@@ -11,6 +11,6 @@ Branded string type representing the ID of an entity instance.
 type EntityId = typeof EntityId.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EntityId.ts#L49)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EntityId.ts#L25)
 
 Since v4.0.0

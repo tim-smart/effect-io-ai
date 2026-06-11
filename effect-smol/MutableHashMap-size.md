@@ -38,6 +38,6 @@ console.log(MutableHashMap.size(map)) // 0
 declare const size: <K, V>(self: MutableHashMap<K, V>) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashMap.ts#L834)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashMap.ts#L805)
 
 Since v2.0.0

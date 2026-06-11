@@ -11,8 +11,9 @@ JSON Schema:
 This check corresponds to the `uniqueItems: true` constraint in JSON Schema.
 
 Arbitrary:
-When generating test data with fast-check, this applies a comparator based on
-Effect equality to ensure generated arrays contain only unique items.
+When generating test data with fast-check, this applies a node-local
+`unique: true` constraint. Array generators translate it to `fast-check`
+`uniqueArray` using Effect equality.
 
 **Signature**
 
@@ -20,6 +21,6 @@ Effect equality to ensure generated arrays contain only unique items.
 declare const isUnique: <T>(annotations?: Annotations.Filter) => SchemaAST.Filter<ReadonlyArray<T>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8095)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7981)
 
 Since v4.0.0

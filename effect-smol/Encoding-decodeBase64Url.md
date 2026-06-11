@@ -34,6 +34,6 @@ if (Result.isSuccess(result)) {
 declare const decodeBase64Url: (str: string) => Result.Result<Uint8Array, EncodingError>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Encoding.ts#L369)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Encoding.ts#L328)
 
 Since v2.0.0

@@ -11,6 +11,6 @@ Returns `true` when a value is a `UrlParams` instance.
 declare const isUrlParams: (u: unknown) => u is UrlParams
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/UrlParams.ts#L82)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/UrlParams.ts#L54)
 
 Since v4.0.0

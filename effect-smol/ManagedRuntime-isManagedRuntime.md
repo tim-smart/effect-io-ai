@@ -29,6 +29,6 @@ runtime is still usable.
 declare const isManagedRuntime: (input: unknown) => input is ManagedRuntime<unknown, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ManagedRuntime.ts#L75)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ManagedRuntime.ts#L45)
 
 Since v3.9.0

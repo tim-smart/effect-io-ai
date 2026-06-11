@@ -17,6 +17,6 @@ execution plan.
 declare const CurrentMetadata: Context.Reference<Metadata>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ExecutionPlan.ts#L484)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ExecutionPlan.ts#L411)
 
 Since v4.0.0

@@ -15,6 +15,6 @@ Accepted block variants are `input_text`, `input_image`, and `input_file`.
 type InputContent = typeof InputContent.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L154)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L124)
 
 Since v4.0.0

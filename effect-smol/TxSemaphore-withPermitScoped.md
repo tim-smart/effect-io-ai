@@ -54,6 +54,6 @@ const program = Effect.gen(function*() {
 declare const withPermitScoped: (self: TxSemaphore) => Effect.Effect<void, never, Scope.Scope>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L697)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L669)
 
 Since v2.0.0

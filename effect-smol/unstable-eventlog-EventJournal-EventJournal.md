@@ -16,6 +16,6 @@ a stream of local changes, and provides per-store locking.
 declare class EventJournal
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventJournal.ts#L63)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventJournal.ts#L40)
 
 Since v4.0.0

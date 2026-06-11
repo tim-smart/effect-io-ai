@@ -29,6 +29,6 @@ console.log(Array.getSomes([Option.some(1), Option.none(), Option.some(2)])) // 
 declare const getSomes: <T extends Iterable<Option.Option<X>>, X = any>(self: T) => Array<Option.Option.Value<ReadonlyArray.Infer<T>>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L3672)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L3597)
 
 Since v2.0.0

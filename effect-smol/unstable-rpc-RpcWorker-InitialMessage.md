@@ -12,6 +12,6 @@ paired with any transferables that should be posted with it.
 declare class InitialMessage
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcWorker.ts#L51)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcWorker.ts#L27)
 
 Since v4.0.0

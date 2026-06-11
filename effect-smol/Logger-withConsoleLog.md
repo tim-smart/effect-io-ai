@@ -35,6 +35,6 @@ const program = Effect.log("Hello World").pipe(
 declare const withConsoleLog: <Message, Output>(self: Logger<Message, Output>) => Logger<Message, void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L343)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L269)
 
 Since v2.0.0

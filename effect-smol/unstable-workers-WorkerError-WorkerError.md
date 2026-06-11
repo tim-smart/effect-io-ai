@@ -14,6 +14,6 @@ declare class WorkerError { constructor(props: {
   }) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/WorkerError.ts#L154)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/WorkerError.ts#L125)
 
 Since v4.0.0

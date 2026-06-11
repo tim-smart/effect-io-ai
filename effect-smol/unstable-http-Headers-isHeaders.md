@@ -11,6 +11,6 @@ Returns `true` if the provided value is a `Headers` value.
 declare const isHeaders: (u: unknown) => u is Headers
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Headers.ts#L94)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Headers.ts#L48)
 
 Since v4.0.0

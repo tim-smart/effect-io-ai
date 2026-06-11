@@ -40,6 +40,6 @@ const schema = Schema.NullOr(Schema.String).pipe(
 declare const optionFromNullOr: <T>() => Transformation<Option.Option<T>, T | null>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1192)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1119)
 
 Since v4.0.0

@@ -11,6 +11,6 @@ Pattern matches a result, handling successes and initials directly while splitti
 declare const matchWithError: { <A, E, W, X, Y, Z>(options: { readonly onInitial: (_: Initial<A, E>) => W; readonly onError: (error: E, _: Failure<A, E>) => X; readonly onDefect: (defect: unknown, _: Failure<A, E>) => Y; readonly onSuccess: (_: Success<A, E>) => Z; }): (self: AsyncResult<A, E>) => W | X | Y | Z; <A, E, W, X, Y, Z>(self: AsyncResult<A, E>, options: { readonly onInitial: (_: Initial<A, E>) => W; readonly onError: (error: E, _: Failure<A, E>) => X; readonly onDefect: (defect: unknown, _: Failure<A, E>) => Y; readonly onSuccess: (_: Success<A, E>) => Z; }): W | X | Y | Z; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AsyncResult.ts#L621)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AsyncResult.ts#L589)
 
 Since v4.0.0

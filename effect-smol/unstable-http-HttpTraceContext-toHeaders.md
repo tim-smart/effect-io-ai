@@ -16,6 +16,6 @@ formats.
 declare const toHeaders: (span: Tracer.Span) => Headers.Headers
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpTraceContext.ts#L65)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpTraceContext.ts#L41)
 
 Since v4.0.0

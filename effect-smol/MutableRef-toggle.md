@@ -52,6 +52,6 @@ console.log(result === flag) // true
 declare const toggle: (self: MutableRef<boolean>) => MutableRef<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableRef.ts#L845)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableRef.ts#L822)
 
 Since v2.0.0

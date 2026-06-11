@@ -15,6 +15,6 @@ The check is based on the internal entity type identifier.
 declare const isEntity: (u: unknown) => u is Any
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Entity.ts#L261)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Entity.ts#L238)
 
 Since v4.0.0

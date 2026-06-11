@@ -22,6 +22,6 @@ to exclude specific types from the unification process.
 type ignoreSymbol = typeof ignoreSymbol
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Unify.ts#L153)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Unify.ts#L132)
 
 Since v2.0.0

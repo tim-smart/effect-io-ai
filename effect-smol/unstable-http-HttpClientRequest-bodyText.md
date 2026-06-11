@@ -11,6 +11,6 @@ Sets a text request body with an optional content type.
 declare const bodyText: { (body: string, contentType?: string): (self: HttpClientRequest) => HttpClientRequest; (self: HttpClientRequest, body: string, contentType?: string): HttpClientRequest; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClientRequest.ts#L691)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClientRequest.ts#L660)
 
 Since v4.0.0

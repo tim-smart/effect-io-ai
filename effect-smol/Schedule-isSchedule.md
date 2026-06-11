@@ -25,6 +25,6 @@ console.log(Schedule.isSchedule(undefined)) // false
 declare const isSchedule: (u: unknown) => u is Schedule<unknown, never, unknown, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L357)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L301)
 
 Since v2.0.0

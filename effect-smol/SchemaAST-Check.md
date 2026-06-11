@@ -21,6 +21,6 @@ Stored in the `Checks` array on `Base.checks`.
 type Check<T> = Filter<T> | FilterGroup<T>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L2891)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L2906)
 
 Since v4.0.0

@@ -11,6 +11,6 @@ Creates a scoped Web OpenTelemetry tracer provider from one or more span process
 declare const layerTracerProvider: (processor: SpanProcessor | NonEmptyReadonlyArray<SpanProcessor>, config?: Omit<TracerConfig, "resource">) => Layer.Layer<Tracer.OtelTracerProvider, never, Resource.Resource>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/WebSdk.ts#L72)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/WebSdk.ts#L54)
 
 Since v4.0.0

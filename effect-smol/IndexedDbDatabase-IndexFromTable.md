@@ -14,6 +14,6 @@ type IndexFromTable<Table> = IsStringLiteral<
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbDatabase.ts#L256)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbDatabase.ts#L240)
 
 Since v4.0.0

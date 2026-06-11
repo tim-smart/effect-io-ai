@@ -11,6 +11,6 @@ Layer that provides the in-memory `RunnerStorage` implementation.
 declare const layerMemory: Layer.Layer<RunnerStorage, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RunnerStorage.ts#L252)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RunnerStorage.ts#L237)
 
 Since v4.0.0

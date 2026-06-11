@@ -11,6 +11,6 @@ Worker error reason for an unclassified worker failure.
 declare class WorkerUnknownError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/WorkerError.ts#L109)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/WorkerError.ts#L80)
 
 Since v4.0.0

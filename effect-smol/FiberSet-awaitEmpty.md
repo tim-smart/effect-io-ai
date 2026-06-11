@@ -30,6 +30,6 @@ const program = Effect.gen(function*() {
 declare const awaitEmpty: <A, E>(self: FiberSet<A, E>) => Effect.Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberSet.ts#L738)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberSet.ts#L708)
 
 Since v3.13.0

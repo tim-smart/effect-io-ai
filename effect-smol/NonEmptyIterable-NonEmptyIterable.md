@@ -68,6 +68,6 @@ export interface NonEmptyIterable<out A> extends Iterable<A> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/NonEmptyIterable.ts#L227)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/NonEmptyIterable.ts#L92)
 
 Since v2.0.0

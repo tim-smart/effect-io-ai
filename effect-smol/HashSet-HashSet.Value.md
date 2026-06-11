@@ -28,6 +28,6 @@ const processNumber = (n: NumberType) => n * 2
 type Value<T> = T extends HashSet<infer V> ? V : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashSet.ts#L131)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashSet.ts#L102)
 
 Since v4.0.0

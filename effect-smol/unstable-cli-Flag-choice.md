@@ -25,6 +25,6 @@ An empty choices array compiles, but no input value can parse successfully.
 declare const choice: <const Choices extends ReadonlyArray<string>>(name: string, choices: Choices) => Flag<Choices[number]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L181)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L171)
 
 Since v4.0.0

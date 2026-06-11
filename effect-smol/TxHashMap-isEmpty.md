@@ -34,6 +34,6 @@ const program = Effect.gen(function*() {
 declare const isEmpty: <K, V>(self: TxHashMap<K, V>) => Effect.Effect<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L660)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L643)
 
 Since v2.0.0

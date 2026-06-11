@@ -24,6 +24,6 @@ assert.deepStrictEqual(Array.from(Iterable.fromRecord(x)), [["a", 1], ["b", 2], 
 declare const fromRecord: <K extends string, A>(self: Readonly<Record<K, A>>) => Iterable<[K, A]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L235)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Iterable.ts#L190)
 
 Since v2.0.0

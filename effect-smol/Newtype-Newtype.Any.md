@@ -20,6 +20,6 @@ Use as a generic constraint when a type parameter can be any `Newtype`.
 type Any = Newtype<any, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Newtype.ts#L140)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Newtype.ts#L87)
 
 Since v4.0.0

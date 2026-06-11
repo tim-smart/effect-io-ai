@@ -15,6 +15,6 @@ Use when you need to refer to the wrapped type in generic utilities.
 type Carrier<N> = N extends Newtype<infer _Key, infer Carrier> ? Carrier : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Newtype.ts#L164)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Newtype.ts#L111)
 
 Since v4.0.0

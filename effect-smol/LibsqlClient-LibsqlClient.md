@@ -14,6 +14,6 @@ export interface LibsqlClient extends Client.SqlClient {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/libsql/src/LibsqlClient.ts#L81)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/libsql/src/LibsqlClient.ts#L55)
 
 Since v4.0.0

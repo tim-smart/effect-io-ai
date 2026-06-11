@@ -24,6 +24,6 @@ The reducer starts from `0`, so `combineAll([])` returns `0`.
 declare const ReducerSum: Reducer.Reducer<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L833)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L782)
 
 Since v4.0.0

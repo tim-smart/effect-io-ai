@@ -67,6 +67,6 @@ export interface Reducer<A> extends Combiner.Combiner<A> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Reducer.ts#L114)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Reducer.ts#L55)
 
 Since v4.0.0

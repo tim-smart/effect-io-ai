@@ -27,6 +27,6 @@ const fileArg = Param.string(Param.argumentKind, "file")
 declare const string: <const Kind extends ParamKind>(kind: Kind, name: string) => Param<Kind, string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L411)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L394)
 
 Since v4.0.0

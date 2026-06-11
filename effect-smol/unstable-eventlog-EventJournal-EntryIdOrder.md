@@ -11,6 +11,6 @@ Provides an Ordering instance for entry identifiers based on their raw UUID byte
 declare const EntryIdOrder: Order.Order<EntryId>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventJournal.ts#L246)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventJournal.ts#L223)
 
 Since v4.0.0

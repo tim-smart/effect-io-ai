@@ -19,6 +19,6 @@ dependency on previous measurements.
 type TemporalityPreference = "cumulative" | "delta"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Metrics.ts#L60)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Metrics.ts#L36)
 
 Since v4.0.0

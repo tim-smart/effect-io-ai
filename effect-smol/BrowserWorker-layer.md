@@ -30,6 +30,6 @@ workers created by `spawn` are not terminated by this layer.
 declare const layer: (spawn: (id: number) => Worker | SharedWorker | MessagePort) => Layer.Layer<Worker.WorkerPlatform | Worker.Spawner>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserWorker.ts#L69)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserWorker.ts#L41)
 
 Since v4.0.0

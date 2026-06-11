@@ -13,6 +13,6 @@ export interface Live extends Base {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/libsql/src/LibsqlClient.ts#L192)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/libsql/src/LibsqlClient.ts#L166)
 
 Since v4.0.0

@@ -27,6 +27,6 @@ optional description and cause. It is usually wrapped in `PlatformError`.
 declare class BadArgument
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PlatformError.ts#L58)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PlatformError.ts#L36)
 
 Since v4.0.0

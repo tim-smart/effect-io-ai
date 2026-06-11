@@ -44,6 +44,6 @@ type MermaidDirection = | "TB" // Top to Bottom (default)
   | "LR"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L2128)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L2085)
 
 Since v3.18.0

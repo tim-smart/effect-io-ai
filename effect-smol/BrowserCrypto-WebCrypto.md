@@ -16,6 +16,6 @@ layer.
 declare const WebCrypto: Context.Reference<Crypto>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserCrypto.ts#L65)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserCrypto.ts#L28)
 
 Since v1.0.0

@@ -22,6 +22,6 @@ console.log(HashMap.get(map, "a")) // Option.some(1)
 declare const fromIterable: <K, V>(entries: Iterable<readonly [K, V]>) => HashMap<K, V>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L351)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L288)
 
 Since v2.0.0

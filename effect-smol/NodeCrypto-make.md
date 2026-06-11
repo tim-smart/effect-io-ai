@@ -11,6 +11,6 @@ The default Node.js Crypto service implementation.
 declare const make: EffectCrypto.Crypto
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeCrypto.ts#L64)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeCrypto.ts#L49)
 
 Since v1.0.0

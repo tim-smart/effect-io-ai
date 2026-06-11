@@ -16,6 +16,6 @@ export interface ConfigBase extends Base {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/sql/pglite/src/PgliteClient.ts#L163)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/sql/pglite/src/PgliteClient.ts#L140)
 
 Since v4.0.0

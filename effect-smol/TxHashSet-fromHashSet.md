@@ -30,6 +30,6 @@ const program = Effect.gen(function*() {
 declare const fromHashSet: <V>(hashSet: HashSet.HashSet<V>) => Effect.Effect<TxHashSet<V>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashSet.ts#L279)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashSet.ts#L270)
 
 Since v4.0.0

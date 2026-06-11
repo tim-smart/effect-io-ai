@@ -16,6 +16,6 @@ is decoded with the target RPC payload schema.
 declare class PartialRequest
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Envelope.ts#L116)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Envelope.ts#L101)
 
 Since v4.0.0

@@ -12,6 +12,6 @@ Provides `OtlpSerialization` using protobuf-encoded OTLP bodies with the
 declare const layerProtobuf: Layer.Layer<OtlpSerialization, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OtlpSerialization.ts#L72)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OtlpSerialization.ts#L50)
 
 Since v4.0.0

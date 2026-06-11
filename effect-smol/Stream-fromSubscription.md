@@ -38,6 +38,6 @@ Effect.runPromise(program)
 declare const fromSubscription: <A>(pubsub: PubSub.Subscription<A>) => Stream<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1600)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L1529)
 
 Since v4.0.0

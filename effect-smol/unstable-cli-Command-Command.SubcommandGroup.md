@@ -14,6 +14,6 @@ export interface SubcommandGroup<Commands extends ReadonlyArray<Any> = ReadonlyA
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L348)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L329)
 
 Since v4.0.0

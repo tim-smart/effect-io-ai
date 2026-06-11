@@ -173,7 +173,7 @@
     "since": "4.0.0",
     "category": "services",
     "signature": "declare class OpenAiClient",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L135"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L109"
   },
   {
     "_tag": "Class",
@@ -189,7 +189,7 @@
     "since": "4.0.0",
     "category": "Websocket mode",
     "signature": "declare class OpenAiSocket",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L483"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L457"
   },
   {
     "_tag": "Constant",
@@ -205,7 +205,7 @@
     "since": "4.0.0",
     "category": "constructors",
     "signature": "declare const make: (options: Options) => Effect.Effect<Service, never, HttpClient.HttpClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L212"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L186"
   },
   {
     "_tag": "Constant",
@@ -221,7 +221,7 @@
     "since": "4.0.0",
     "category": "Websocket mode",
     "signature": "declare const layerWebSocketMode: Layer.Layer<OpenAiSocket | ResponseIdTracker.ResponseIdTracker, never, OpenAiClient | Socket.WebSocketConstructor>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L752"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L726"
   },
   {
     "_tag": "Function",
@@ -237,7 +237,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layer: (options: Options) => Layer.Layer<OpenAiClient, never, HttpClient.HttpClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L372"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L346"
   },
   {
     "_tag": "Function",
@@ -253,7 +253,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layerConfig: (options?: { readonly apiKey?: Config.Config<Redacted.Redacted<string> | undefined> | undefined; readonly apiUrl?: Config.Config<string> | undefined; readonly organizationId?: Config.Config<Redacted.Redacted<string> | undefined> | undefined; readonly projectId?: Config.Config<Redacted.Redacted<string> | undefined> | undefined; readonly transformClient?: ((client: HttpClient.HttpClient) => HttpClient.HttpClient) | undefined; }) => Layer.Layer<OpenAiClient, Config.ConfigError, HttpClient.HttpClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L395"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L369"
   },
   {
     "_tag": "Function",
@@ -269,7 +269,7 @@
     "since": "4.0.0",
     "category": "Websocket mode",
     "signature": "declare const withWebSocketMode: <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, Exclude<R, OpenAiSocket | ResponseIdTracker.ResponseIdTracker> | OpenAiClient | Socket.WebSocketConstructor>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L715"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L689"
   },
   {
     "_tag": "Interface",
@@ -285,7 +285,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "export interface Service {\n  /**\n   * The transformed HTTP client used by this service.\n   */\n  readonly client: HttpClient.HttpClient\n\n  /**\n   * Create a response using the OpenAI responses endpoint.\n   */\n  readonly createResponse: (\n    options: typeof OpenAiSchema.CreateResponse.Encoded\n  ) => Effect.Effect<\n    readonly [body: typeof OpenAiSchema.Response.Type, response: HttpClientResponse.HttpClientResponse],\n    AiError.AiError\n  >\n\n  /**\n   * Create a streaming response using the OpenAI responses endpoint.\n   */\n  readonly createResponseStream: (\n    options: Omit<typeof OpenAiSchema.CreateResponse.Encoded, \"stream\">\n  ) => Effect.Effect<\n    readonly [\n      response: HttpClientResponse.HttpClientResponse,\n      stream: Stream.Stream<typeof OpenAiSchema.ResponseStreamEvent.Type, AiError.AiError>\n    ],\n    AiError.AiError\n  >\n\n  /**\n   * Create embeddings using the OpenAI embeddings endpoint.\n   */\n  readonly createEmbedding: (\n    options: typeof OpenAiSchema.CreateEmbeddingRequest.Encoded\n  ) => Effect.Effect<typeof OpenAiSchema.CreateEmbeddingResponse.Type, AiError.AiError>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L79"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L53"
   },
   {
     "_tag": "TypeAlias",
@@ -301,7 +301,7 @@
     "since": "4.0.0",
     "category": "options",
     "signature": "type Options = {\n  /**\n   * The OpenAI API key.\n   */\n  readonly apiKey?: Redacted.Redacted<string> | undefined\n\n  /**\n   * The base URL for the OpenAI API.\n   *\n   * @default \"https://api.openai.com/v1\"\n   */\n  readonly apiUrl?: string | undefined\n\n  /**\n   * Optional organization ID for multi-org accounts.\n   */\n  readonly organizationId?: Redacted.Redacted<string> | undefined\n\n  /**\n   * Optional project ID for project-scoped requests.\n   */\n  readonly projectId?: Redacted.Redacted<string> | undefined\n\n  /**\n   * Optional transformer for the HTTP client.\n   */\n  readonly transformClient?: ((client: HttpClient.HttpClient) => HttpClient.HttpClient) | undefined\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L149"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L123"
   },
   {
     "_tag": "TypeAlias",
@@ -317,7 +317,7 @@
     "since": "4.0.0",
     "category": "Events",
     "signature": "type ResponseStreamEvent = typeof OpenAiSchema.ResponseStreamEvent.Type",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L456"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L430"
   },
   {
     "_tag": "Class",
@@ -413,7 +413,7 @@
     "since": "4.0.0",
     "category": "services",
     "signature": "declare class OpenAiConfig",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiConfig.ts#L52"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiConfig.ts#L27"
   },
   {
     "_tag": "Constant",
@@ -429,7 +429,7 @@
     "since": "4.0.0",
     "category": "configuration",
     "signature": "declare const withClientTransform: { (transform: (client: HttpClient) => HttpClient): <A, E, R>(self: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>; <A, E, R>(self: Effect.Effect<A, E, R>, transform: (client: HttpClient) => HttpClient): Effect.Effect<A, E, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiConfig.ts#L108"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiConfig.ts#L83"
   },
   {
     "_tag": "Interface",
@@ -445,7 +445,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "export interface Service {\n    readonly transformClient?: ((client: HttpClient) => HttpClient) | undefined\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiConfig.ts#L80"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiConfig.ts#L55"
   },
   {
     "_tag": "Class",
@@ -461,7 +461,7 @@
     "since": "4.0.0",
     "category": "services",
     "signature": "declare class Config",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiEmbeddingModel.ts#L72"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiEmbeddingModel.ts#L48"
   },
   {
     "_tag": "Constant",
@@ -477,7 +477,7 @@
     "since": "4.0.0",
     "category": "constructors",
     "signature": "declare const make: (args_0: { readonly model: (string & {}) | Model; readonly config?: Omit<typeof Config.Service, \"model\"> | undefined; }) => Effect.Effect<EmbeddingModel.Service, never, OpenAiClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiEmbeddingModel.ts#L151"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiEmbeddingModel.ts#L127"
   },
   {
     "_tag": "Constant",
@@ -493,7 +493,7 @@
     "since": "4.0.0",
     "category": "configuration",
     "signature": "declare const withConfigOverride: { (overrides: typeof Config.Service): <A, E, R>(self: Effect.Effect<A, E, R>) => Effect.Effect<A, E, Exclude<R, Config>>; <A, E, R>(self: Effect.Effect<A, E, R>, overrides: typeof Config.Service): Effect.Effect<A, E, Exclude<R, Config>>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiEmbeddingModel.ts#L217"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiEmbeddingModel.ts#L193"
   },
   {
     "_tag": "Function",
@@ -509,7 +509,7 @@
     "since": "4.0.0",
     "category": "constructors",
     "signature": "declare const model: (model: (string & {}) | Model, options: { readonly dimensions: number; readonly config?: Omit<typeof Config.Service, \"model\" | \"dimensions\">; }) => AiModel.Model<\"openai\", EmbeddingModel.EmbeddingModel | EmbeddingModel.Dimensions, OpenAiClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiEmbeddingModel.ts#L101"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiEmbeddingModel.ts#L77"
   },
   {
     "_tag": "Function",
@@ -525,7 +525,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layer: (options: { readonly model: (string & {}) | Model; readonly config?: Omit<typeof Config.Service, \"model\"> | undefined; }) => Layer.Layer<EmbeddingModel.EmbeddingModel, never, OpenAiClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiEmbeddingModel.ts#L192"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiEmbeddingModel.ts#L168"
   },
   {
     "_tag": "TypeAlias",
@@ -541,7 +541,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "type Model = \"text-embedding-ada-002\" | \"text-embedding-3-small\" | \"text-embedding-3-large\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiEmbeddingModel.ts#L51"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiEmbeddingModel.ts#L27"
   },
   {
     "_tag": "TypeAlias",
@@ -589,7 +589,7 @@
     "since": "4.0.0",
     "category": "services",
     "signature": "declare class Config",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiLanguageModel.ts#L108"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiLanguageModel.ts#L80"
   },
   {
     "_tag": "Constant",
@@ -605,7 +605,7 @@
     "since": "4.0.0",
     "category": "constructors",
     "signature": "declare const make: (args_0: { readonly model: (string & {}) | Model; readonly config?: Omit<typeof Config.Service, \"model\"> | undefined; }) => Effect.Effect<LanguageModel.Service, never, OpenAiClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiLanguageModel.ts#L610"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiLanguageModel.ts#L582"
   },
   {
     "_tag": "Constant",
@@ -621,7 +621,7 @@
     "since": "4.0.0",
     "category": "configuration",
     "signature": "declare const withConfigOverride: { (overrides: typeof Config.Service): <A, E, R>(self: Effect.Effect<A, E, R>) => Effect.Effect<A, E, Exclude<R, Config>>; <A, E, R>(self: Effect.Effect<A, E, R>, overrides: typeof Config.Service): Effect.Effect<A, E, Exclude<R, Config>>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiLanguageModel.ts#L757"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiLanguageModel.ts#L729"
   },
   {
     "_tag": "Function",
@@ -637,7 +637,7 @@
     "since": "4.0.0",
     "category": "constructors",
     "signature": "declare const model: (model: (string & {}) | Model, config?: Omit<typeof Config.Service, \"model\">) => AiModel.Model<\"openai\", LanguageModel.LanguageModel, OpenAiClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiLanguageModel.ts#L571"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiLanguageModel.ts#L543"
   },
   {
     "_tag": "Function",
@@ -653,7 +653,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layer: (options: { readonly model: (string & {}) | Model; readonly config?: Omit<typeof Config.Service, \"model\"> | undefined; }) => Layer.Layer<LanguageModel.LanguageModel, never, OpenAiClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiLanguageModel.ts#L730"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiLanguageModel.ts#L702"
   },
   {
     "_tag": "TypeAlias",
@@ -669,7 +669,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "type Model = typeof ResponseModelIds.Encoded | typeof SharedModelIds.Encoded",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiLanguageModel.ts#L79"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiLanguageModel.ts#L51"
   },
   {
     "_tag": "Constant",
@@ -685,7 +685,7 @@
     "since": "4.0.0",
     "category": "schemas",
     "signature": "declare const IncludeEnum: Schema.Literals<readonly [\"message.input_image.image_url\", \"reasoning.encrypted_content\", \"message.output_text.logprobs\", \"code_interpreter_call.outputs\", \"web_search_call.action.sources\"]>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L65"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L35"
   },
   {
     "_tag": "Constant",
@@ -701,7 +701,7 @@
     "since": "4.0.0",
     "category": "schemas",
     "signature": "declare const MessageStatus: Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L92"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L62"
   },
   {
     "_tag": "Constant",
@@ -717,7 +717,7 @@
     "since": "4.0.0",
     "category": "schemas",
     "signature": "declare const InputContent: Schema.Union<readonly [Schema.Struct<{ readonly type: Schema.Literal<\"input_text\">; readonly text: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"input_image\">; readonly image_url: Schema.optionalKey<Schema.NullOr<Schema.String>>; readonly file_id: Schema.optionalKey<Schema.NullOr<Schema.String>>; readonly detail: Schema.optionalKey<Schema.NullOr<Schema.Literals<readonly [\"low\", \"high\", \"auto\"]>>>; }>, Schema.Struct<{ readonly type: Schema.Literal<\"input_file\">; readonly file_id: Schema.optionalKey<Schema.NullOr<Schema.String>>; readonly filename: Schema.optionalKey<Schema.String>; readonly file_url: Schema.optionalKey<Schema.String>; readonly file_data: Schema.optionalKey<Schema.String>; }>]>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L138"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L108"
   },
   {
     "_tag": "Constant",
@@ -733,7 +733,7 @@
     "since": "4.0.0",
     "category": "schemas",
     "signature": "declare const SummaryTextContent: Schema.Struct<{ readonly type: Schema.Literal<\"summary_text\">; readonly text: Schema.String; }>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L169"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L139"
   },
   {
     "_tag": "Constant",
@@ -749,7 +749,7 @@
     "since": "4.0.0",
     "category": "schemas",
     "signature": "declare const Annotation: Schema.Union<readonly [Schema.Struct<{ readonly type: Schema.Literal<\"file_citation\">; readonly file_id: Schema.String; readonly index: Schema.Number; readonly filename: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"url_citation\">; readonly url: Schema.String; readonly start_index: Schema.Number; readonly end_index: Schema.Number; readonly title: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"container_file_citation\">; readonly container_id: Schema.String; readonly file_id: Schema.String; readonly start_index: Schema.Number; readonly end_index: Schema.Number; readonly filename: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"file_path\">; readonly file_id: Schema.String; readonly index: Schema.Number; }>]>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L244"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L214"
   },
   {
     "_tag": "Constant",
@@ -765,7 +765,7 @@
     "since": "4.0.0",
     "category": "schemas",
     "signature": "declare const ReasoningItem: Schema.Struct<{ readonly type: Schema.Literal<\"reasoning\">; readonly id: Schema.String; readonly encrypted_content: Schema.optionalKey<Schema.NullOr<Schema.String>>; readonly summary: Schema.$Array<Schema.Struct<{ readonly type: Schema.Literal<\"summary_text\">; readonly text: Schema.String; }>>; readonly content: Schema.optionalKey<Schema.$Array<Schema.Struct<{ readonly type: Schema.Literal<\"reasoning_text\">; readonly text: Schema.String; }>>>; readonly status: Schema.optionalKey<Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>>; }>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L315"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L285"
   },
   {
     "_tag": "Constant",
@@ -781,7 +781,7 @@
     "since": "4.0.0",
     "category": "schemas",
     "signature": "declare const InputItem: Schema.Union<readonly [Schema.Struct<{ readonly type: Schema.optionalKey<Schema.Literal<\"message\">>; readonly role: Schema.Literals<readonly [\"system\", \"developer\", \"user\", \"assistant\"]>; readonly status: Schema.optionalKey<Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>>; readonly content: Schema.Union<readonly [Schema.String, Schema.$Array<Schema.Union<readonly [Schema.Struct<{ readonly type: Schema.Literal<\"input_text\">; readonly text: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"input_image\">; readonly image_url: Schema.optionalKey<Schema.NullOr<Schema.String>>; readonly file_id: Schema.optionalKey<Schema.NullOr<Schema.String>>; readonly detail: Schema.optionalKey<Schema.NullOr<Schema.Literals<readonly [\"low\", \"high\", \"auto\"]>>>; }>, Schema.Struct<{ readonly type: Schema.Literal<\"input_file\">; readonly file_id: Schema.optionalKey<Schema.NullOr<Schema.String>>; readonly filename: Schema.optionalKey<Schema.String>; readonly file_url: Schema.optionalKey<Schema.String>; readonly file_data: Schema.optionalKey<Schema.String>; }>]>>]>; }>, Schema.Struct<{ readonly id: Schema.String; readonly type: Schema.Literal<\"message\">; readonly role: Schema.Literal<\"assistant\">; readonly content: Schema.$Array<Schema.Union<readonly [Schema.Struct<{ readonly type: Schema.Literal<\"input_text\">; readonly text: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"output_text\">; readonly text: Schema.String; readonly annotations: Schema.$Array<Schema.Union<readonly [Schema.Struct<{ readonly type: Schema.Literal<\"file_citation\">; readonly file_id: Schema.String; readonly index: Schema.Number; readonly filename: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"url_citation\">; readonly url: Schema.String; readonly start_index: Schema.Number; readonly end_index: Schema.Number; readonly title: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"container_file_citation\">; readonly container_id: Schema.String; readonly file_id: Schema.String; readonly start_index: Schema.Number; readonly end_index: Schema.Number; readonly filename: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"file_path\">; readonly file_id: Schema.String; readonly index: Schema.Number; }>]>>; readonly logprobs: Schema.optionalKey<Schema.$Array<Schema.Unknown>>; }>, Schema.Struct<{ readonly type: Schema.Literal<\"text\">; readonly text: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"summary_text\">; readonly text: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"reasoning_text\">; readonly text: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"refusal\">; readonly refusal: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"input_image\">; readonly image_url: Schema.optionalKey<Schema.NullOr<Schema.String>>; readonly file_id: Schema.optionalKey<Schema.NullOr<Schema.String>>; readonly detail: Schema.optionalKey<Schema.NullOr<Schema.Literals<readonly [\"low\", \"high\", \"auto\"]>>>; }>, Schema.Struct<{ readonly type: Schema.Literal<\"computer_screenshot\">; readonly image_url: Schema.NullOr<Schema.String>; readonly file_id: Schema.NullOr<Schema.String>; }>, Schema.Struct<{ readonly type: Schema.Literal<\"input_file\">; readonly file_id: Schema.optionalKey<Schema.NullOr<Schema.String>>; readonly filename: Schema.optionalKey<Schema.String>; readonly file_url: Schema.optionalKey<Schema.String>; readonly file_data: Schema.optionalKey<Schema.String>; }>]>>; readonly status: Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>; }>, Schema.Struct<{ readonly id: Schema.optionalKey<Schema.String>; readonly type: Schema.Literal<\"function_call\">; readonly call_id: Schema.String; readonly name: Schema.String; readonly arguments: Schema.String; readonly status: Schema.optionalKey<Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>>; }>, Schema.Struct<{ readonly id: Schema.optionalKey<Schema.NullOr<Schema.String>>; readonly type: Schema.Literal<\"function_call_output\">; readonly call_id: Schema.String; readonly output: Schema.Union<readonly [Schema.String, Schema.$Array<Schema.Union<readonly [Schema.Struct<{ readonly type: Schema.Literal<\"input_text\">; readonly text: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"input_image\">; readonly image_url: Schema.optionalKey<Schema.NullOr<Schema.String>>; readonly file_id: Schema.optionalKey<Schema.NullOr<Schema.String>>; readonly detail: Schema.optionalKey<Schema.NullOr<Schema.Literals<readonly [\"low\", \"high\", \"auto\"]>>>; }>, Schema.Struct<{ readonly type: Schema.Literal<\"input_file\">; readonly file_id: Schema.optionalKey<Schema.NullOr<Schema.String>>; readonly filename: Schema.optionalKey<Schema.String>; readonly file_url: Schema.optionalKey<Schema.String>; readonly file_data: Schema.optionalKey<Schema.String>; }>]>>]>; readonly status: Schema.optionalKey<Schema.NullOr<Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>>>; }>, Schema.Struct<{ readonly type: Schema.Literal<\"reasoning\">; readonly id: Schema.String; readonly encrypted_content: Schema.optionalKey<Schema.NullOr<Schema.String>>; readonly summary: Schema.$Array<Schema.Struct<{ readonly type: Schema.Literal<\"summary_text\">; readonly text: Schema.String; }>>; readonly content: Schema.optionalKey<Schema.$Array<Schema.Struct<{ readonly type: Schema.Literal<\"reasoning_text\">; readonly text: Schema.String; }>>>; readonly status: Schema.optionalKey<Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>>; }>, Schema.Struct<{ readonly type: Schema.Literal<\"item_reference\">; readonly id: Schema.String; }>, Schema.Struct<{ readonly id: Schema.optionalKey<Schema.String>; readonly type: Schema.Literal<\"local_shell_call\">; readonly call_id: Schema.String; readonly action: Schema.Unknown; readonly status: Schema.optionalKey<Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>>; }>, Schema.Struct<{ readonly id: Schema.optionalKey<Schema.String>; readonly type: Schema.Literal<\"local_shell_call_output\">; readonly call_id: Schema.String; readonly output: Schema.Unknown; readonly status: Schema.optionalKey<Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>>; }>, Schema.Struct<{ readonly id: Schema.optionalKey<Schema.String>; readonly type: Schema.Literal<\"shell_call\">; readonly call_id: Schema.String; readonly action: Schema.Unknown; readonly status: Schema.optionalKey<Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>>; }>, Schema.Struct<{ readonly id: Schema.optionalKey<Schema.String>; readonly type: Schema.Literal<\"shell_call_output\">; readonly call_id: Schema.String; readonly output: Schema.Unknown; readonly status: Schema.optionalKey<Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>>; }>, Schema.Struct<{ readonly id: Schema.optionalKey<Schema.String>; readonly type: Schema.Literal<\"apply_patch_call_output\">; readonly call_id: Schema.String; readonly status: Schema.optionalKey<Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>>; readonly output: Schema.optionalKey<Schema.Unknown>; }>, Schema.Struct<{ readonly type: Schema.Literal<\"mcp_approval_response\">; readonly approval_request_id: Schema.String; readonly approve: Schema.Boolean; }>]>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L447"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L417"
   },
   {
     "_tag": "Constant",
@@ -797,7 +797,7 @@
     "since": "4.0.0",
     "category": "schemas",
     "signature": "declare const Tool: Schema.Union<readonly [Schema.Struct<{ readonly type: Schema.Literal<\"function\">; readonly name: Schema.String; readonly description: Schema.optionalKey<Schema.NullOr<Schema.String>>; readonly parameters: Schema.optionalKey<Schema.NullOr<Schema.$Record<Schema.String, Schema.Unknown>>>; readonly strict: Schema.optionalKey<Schema.NullOr<Schema.Boolean>>; }>, Schema.Struct<{ readonly type: Schema.Literal<\"custom\">; readonly name: Schema.String; readonly description: Schema.optionalKey<Schema.String>; readonly format: Schema.optionalKey<Schema.Unknown>; }>, Schema.StructWithRest<Schema.Struct<{ readonly type: Schema.Literals<readonly [\"apply_patch\", \"code_interpreter\", \"file_search\", \"image_generation\", \"local_shell\", \"mcp\", \"shell\", \"web_search\", \"web_search_preview\"]>; }>, readonly [Schema.$Record<Schema.String, Schema.Unknown>]>]>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L539"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L509"
   },
   {
     "_tag": "Constant",
@@ -813,7 +813,7 @@
     "since": "4.0.0",
     "category": "schemas",
     "signature": "declare const ToolChoice: Schema.Union<readonly [Schema.Literals<readonly [\"none\", \"auto\", \"required\"]>, Schema.Struct<{ readonly type: Schema.Literal<\"allowed_tools\">; readonly mode: Schema.Literals<readonly [\"auto\", \"required\"]>; readonly tools: Schema.$Array<Schema.$Record<Schema.String, Schema.Unknown>>; }>, Schema.Struct<{ readonly type: Schema.Literal<\"function\">; readonly name: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"custom\">; readonly name: Schema.String; }>, Schema.StructWithRest<Schema.Struct<{ readonly type: Schema.Literals<readonly [\"apply_patch\", \"code_interpreter\", \"file_search\", \"image_generation\", \"local_shell\", \"mcp\", \"shell\", \"web_search\", \"web_search_preview\"]>; }>, readonly [Schema.$Record<Schema.String, Schema.Unknown>]>]>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L572"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L542"
   },
   {
     "_tag": "Constant",
@@ -829,7 +829,7 @@
     "since": "4.0.0",
     "category": "schemas",
     "signature": "declare const TextResponseFormatConfiguration: Schema.Union<readonly [Schema.Struct<{ readonly type: Schema.Literal<\"text\">; }>, Schema.Struct<{ readonly type: Schema.Literal<\"json_schema\">; readonly description: Schema.optionalKey<Schema.String>; readonly name: Schema.String; readonly schema: Schema.$Record<Schema.String, Schema.Unknown>; readonly strict: Schema.optionalKey<Schema.NullOr<Schema.Boolean>>; }>, Schema.Struct<{ readonly type: Schema.Literal<\"json_object\">; }>]>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L640"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L610"
   },
   {
     "_tag": "Constant",
@@ -845,7 +845,7 @@
     "since": "4.0.0",
     "category": "schemas",
     "signature": "declare const CreateResponse: Schema.Struct<{ readonly metadata: Schema.optional<Schema.$Record<Schema.String, Schema.String>>; readonly top_logprobs: Schema.optional<Schema.Number>; readonly temperature: Schema.optional<Schema.Number>; readonly top_p: Schema.optional<Schema.Number>; readonly user: Schema.optional<Schema.String>; readonly service_tier: Schema.optional<Schema.String>; readonly previous_response_id: Schema.optional<Schema.String>; readonly model: Schema.optional<Schema.String>; readonly reasoning: Schema.optional<Schema.Struct<{ readonly effort: Schema.optional<Schema.Literals<readonly [\"none\", \"minimal\", \"low\", \"medium\", \"high\", \"xhigh\"]>>; readonly summary: Schema.optional<Schema.Literals<readonly [\"auto\", \"concise\", \"detailed\"]>>; readonly generate_summary: Schema.optional<Schema.Literals<readonly [\"auto\", \"concise\", \"detailed\"]>>; }>>; readonly background: Schema.optional<Schema.Boolean>; readonly max_output_tokens: Schema.optional<Schema.Number>; readonly max_tool_calls: Schema.optional<Schema.Number>; readonly text: Schema.optional<Schema.Struct<{ readonly format: Schema.optional<Schema.Union<readonly [Schema.Struct<{ readonly type: Schema.Literal<\"text\">; }>, Schema.Struct<{ readonly type: Schema.Literal<\"json_schema\">; readonly description: Schema.optionalKey<Schema.String>; readonly name: Schema.String; readonly schema: Schema.$Record<Schema.String, Schema.Unknown>; readonly strict: Schema.optionalKey<Schema.NullOr<Schema.Boolean>>; }>, Schema.Struct<{ readonly type: Schema.Literal<\"json_object\">; }>]>>; readonly verbosity: Schema.optional<Schema.Literals<readonly [\"low\", \"medium\", \"high\"]>>; }>>; readonly tools: Schema.optional<Schema.$Array<Schema.Union<readonly [Schema.Struct<{ readonly type: Schema.Literal<\"function\">; readonly name: Schema.String; readonly description: Schema.optionalKey<Schema.NullOr<Schema.String>>; readonly parameters: Schema.optionalKey<Schema.NullOr<Schema.$Record<Schema.String, Schema.Unknown>>>; readonly strict: Schema.optionalKey<Schema.NullOr<Schema.Boolean>>; }>, Schema.Struct<{ readonly type: Schema.Literal<\"custom\">; readonly name: Schema.String; readonly description: Schema.optionalKey<Schema.String>; readonly format: Schema.optionalKey<Schema.Unknown>; }>, Schema.StructWithRest<Schema.Struct<{ readonly type: Schema.Literals<readonly [\"apply_patch\", \"code_interpreter\", \"file_search\", \"image_generation\", \"local_shell\", \"mcp\", \"shell\", \"web_search\", \"web_search_preview\"]>; }>, readonly [Schema.$Record<Schema.String, Schema.Unknown>]>]>>>; readonly tool_choice: Schema.optional<Schema.Union<readonly [Schema.Literals<readonly [\"none\", \"auto\", \"required\"]>, Schema.Struct<{ readonly type: Schema.Literal<\"allowed_tools\">; readonly mode: Schema.Literals<readonly [\"auto\", \"required\"]>; readonly tools: Schema.$Array<Schema.$Record<Schema.String, Schema.Unknown>>; }>, Schema.Struct<{ readonly type: Schema.Literal<\"function\">; readonly name: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"custom\">; readonly name: Schema.String; }>, Schema.StructWithRest<Schema.Struct<{ readonly type: Schema.Literals<readonly [\"apply_patch\", \"code_interpreter\", \"file_search\", \"image_generation\", \"local_shell\", \"mcp\", \"shell\", \"web_search\", \"web_search_preview\"]>; }>, readonly [Schema.$Record<Schema.String, Schema.Unknown>]>]>>; readonly truncation: Schema.optional<Schema.Literals<readonly [\"auto\", \"disabled\"]>>; readonly input: Schema.optional<Schema.Union<readonly [Schema.String, Schema.$Array<Schema.Union<readonly [Schema.Struct<{ readonly type: Schema.optionalKey<Schema.Literal<\"message\">>; readonly role: Schema.Literals<readonly [\"system\", \"developer\", \"user\", \"assistant\"]>; readonly status: Schema.optionalKey<Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>>; readonly content: Schema.Union<readonly [Schema.String, Schema.$Array<Schema.Union<readonly [Schema.Struct<{ readonly type: Schema.Literal<\"input_text\">; readonly text: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"input_image\">; readonly image_url: Schema.optionalKey<Schema.NullOr<Schema.String>>; readonly file_id: Schema.optionalKey<Schema.NullOr<Schema.String>>; readonly detail: Schema.optionalKey<Schema.NullOr<Schema.Literals<readonly [\"low\", \"high\", \"auto\"]>>>; }>, Schema.Struct<{ readonly type: Schema.Literal<\"input_file\">; readonly file_id: Schema.optionalKey<Schema.NullOr<Schema.String>>; readonly filename: Schema.optionalKey<Schema.String>; readonly file_url: Schema.optionalKey<Schema.String>; readonly file_data: Schema.optionalKey<Schema.String>; }>]>>]>; }>, Schema.Struct<{ readonly id: Schema.String; readonly type: Schema.Literal<\"message\">; readonly role: Schema.Literal<\"assistant\">; readonly content: Schema.$Array<Schema.Union<readonly [Schema.Struct<{ readonly type: Schema.Literal<\"input_text\">; readonly text: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"output_text\">; readonly text: Schema.String; readonly annotations: Schema.$Array<Schema.Union<readonly [Schema.Struct<{ readonly type: Schema.Literal<\"file_citation\">; readonly file_id: Schema.String; readonly index: Schema.Number; readonly filename: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"url_citation\">; readonly url: Schema.String; readonly start_index: Schema.Number; readonly end_index: Schema.Number; readonly title: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"container_file_citation\">; readonly container_id: Schema.String; readonly file_id: Schema.String; readonly start_index: Schema.Number; readonly end_index: Schema.Number; readonly filename: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"file_path\">; readonly file_id: Schema.String; readonly index: Schema.Number; }>]>>; readonly logprobs: Schema.optionalKey<Schema.$Array<Schema.Unknown>>; }>, Schema.Struct<{ readonly type: Schema.Literal<\"text\">; readonly text: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"summary_text\">; readonly text: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"reasoning_text\">; readonly text: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"refusal\">; readonly refusal: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"input_image\">; readonly image_url: Schema.optionalKey<Schema.NullOr<Schema.String>>; readonly file_id: Schema.optionalKey<Schema.NullOr<Schema.String>>; readonly detail: Schema.optionalKey<Schema.NullOr<Schema.Literals<readonly [\"low\", \"high\", \"auto\"]>>>; }>, Schema.Struct<{ readonly type: Schema.Literal<\"computer_screenshot\">; readonly image_url: Schema.NullOr<Schema.String>; readonly file_id: Schema.NullOr<Schema.String>; }>, Schema.Struct<{ readonly type: Schema.Literal<\"input_file\">; readonly file_id: Schema.optionalKey<Schema.NullOr<Schema.String>>; readonly filename: Schema.optionalKey<Schema.String>; readonly file_url: Schema.optionalKey<Schema.String>; readonly file_data: Schema.optionalKey<Schema.String>; }>]>>; readonly status: Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>; }>, Schema.Struct<{ readonly id: Schema.optionalKey<Schema.String>; readonly type: Schema.Literal<\"function_call\">; readonly call_id: Schema.String; readonly name: Schema.String; readonly arguments: Schema.String; readonly status: Schema.optionalKey<Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>>; }>, Schema.Struct<{ readonly id: Schema.optionalKey<Schema.NullOr<Schema.String>>; readonly type: Schema.Literal<\"function_call_output\">; readonly call_id: Schema.String; readonly output: Schema.Union<readonly [Schema.String, Schema.$Array<Schema.Union<readonly [Schema.Struct<{ readonly type: Schema.Literal<\"input_text\">; readonly text: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"input_image\">; readonly image_url: Schema.optionalKey<Schema.NullOr<Schema.String>>; readonly file_id: Schema.optionalKey<Schema.NullOr<Schema.String>>; readonly detail: Schema.optionalKey<Schema.NullOr<Schema.Literals<readonly [\"low\", \"high\", \"auto\"]>>>; }>, Schema.Struct<{ readonly type: Schema.Literal<\"input_file\">; readonly file_id: Schema.optionalKey<Schema.NullOr<Schema.String>>; readonly filename: Schema.optionalKey<Schema.String>; readonly file_url: Schema.optionalKey<Schema.String>; readonly file_data: Schema.optionalKey<Schema.String>; }>]>>]>; readonly status: Schema.optionalKey<Schema.NullOr<Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>>>; }>, Schema.Struct<{ readonly type: Schema.Literal<\"reasoning\">; readonly id: Schema.String; readonly encrypted_content: Schema.optionalKey<Schema.NullOr<Schema.String>>; readonly summary: Schema.$Array<Schema.Struct<{ readonly type: Schema.Literal<\"summary_text\">; readonly text: Schema.String; }>>; readonly content: Schema.optionalKey<Schema.$Array<Schema.Struct<{ readonly type: Schema.Literal<\"reasoning_text\">; readonly text: Schema.String; }>>>; readonly status: Schema.optionalKey<Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>>; }>, Schema.Struct<{ readonly type: Schema.Literal<\"item_reference\">; readonly id: Schema.String; }>, Schema.Struct<{ readonly id: Schema.optionalKey<Schema.String>; readonly type: Schema.Literal<\"local_shell_call\">; readonly call_id: Schema.String; readonly action: Schema.Unknown; readonly status: Schema.optionalKey<Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>>; }>, Schema.Struct<{ readonly id: Schema.optionalKey<Schema.String>; readonly type: Schema.Literal<\"local_shell_call_output\">; readonly call_id: Schema.String; readonly output: Schema.Unknown; readonly status: Schema.optionalKey<Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>>; }>, Schema.Struct<{ readonly id: Schema.optionalKey<Schema.String>; readonly type: Schema.Literal<\"shell_call\">; readonly call_id: Schema.String; readonly action: Schema.Unknown; readonly status: Schema.optionalKey<Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>>; }>, Schema.Struct<{ readonly id: Schema.optionalKey<Schema.String>; readonly type: Schema.Literal<\"shell_call_output\">; readonly call_id: Schema.String; readonly output: Schema.Unknown; readonly status: Schema.optionalKey<Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>>; }>, Schema.Struct<{ readonly id: Schema.optionalKey<Schema.String>; readonly type: Schema.Literal<\"apply_patch_call_output\">; readonly call_id: Schema.String; readonly status: Schema.optionalKey<Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>>; readonly output: Schema.optionalKey<Schema.Unknown>; }>, Schema.Struct<{ readonly type: Schema.Literal<\"mcp_approval_response\">; readonly approval_request_id: Schema.String; readonly approve: Schema.Boolean; }>]>>]>>; readonly include: Schema.optional<Schema.$Array<Schema.Literals<readonly [\"message.input_image.image_url\", \"reasoning.encrypted_content\", \"message.output_text.logprobs\", \"code_interpreter_call.outputs\", \"web_search_call.action.sources\"]>>>; readonly store: Schema.optional<Schema.Boolean>; readonly instructions: Schema.optional<Schema.String>; readonly stream: Schema.optional<Schema.Boolean>; readonly conversation: Schema.optional<Schema.String>; readonly modalities: Schema.optional<Schema.$Array<Schema.Literals<readonly [\"text\", \"audio\"]>>>; readonly seed: Schema.optional<Schema.Number>; }>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L685"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L655"
   },
   {
     "_tag": "Constant",
@@ -861,7 +861,7 @@
     "since": "4.0.0",
     "category": "schemas",
     "signature": "declare const ResponseUsage: Schema.StructWithRest<Schema.Struct<{ readonly input_tokens: Schema.Number; readonly output_tokens: Schema.Number; readonly total_tokens: Schema.Number; readonly input_tokens_details: Schema.optionalKey<Schema.Unknown>; readonly output_tokens_details: Schema.optionalKey<Schema.Unknown>; }>, readonly [Schema.$Record<Schema.String, Schema.Unknown>]>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L747"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L717"
   },
   {
     "_tag": "Constant",
@@ -877,7 +877,7 @@
     "since": "4.0.0",
     "category": "schemas",
     "signature": "declare const Response: Schema.Struct<{ readonly id: Schema.String; readonly object: Schema.optionalKey<Schema.Literal<\"response\">>; readonly model: Schema.String; readonly created_at: Schema.Number; readonly output: Schema.withDecodingDefault<Schema.$Array<Schema.Union<readonly [Schema.Struct<{ readonly id: Schema.String; readonly type: Schema.Literal<\"apply_patch_call\">; readonly call_id: Schema.String; readonly operation: Schema.Struct<{ readonly type: Schema.String; readonly path: Schema.String; readonly diff: Schema.optionalKey<Schema.String>; }>; readonly status: Schema.optionalKey<Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>>; }>, Schema.Struct<{ readonly id: Schema.String; readonly type: Schema.Literal<\"code_interpreter_call\">; readonly code: Schema.optionalKey<Schema.String>; readonly container_id: Schema.String; readonly outputs: Schema.optionalKey<Schema.$Array<Schema.Unknown>>; readonly status: Schema.optionalKey<Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>>; }>, Schema.Struct<{ readonly id: Schema.String; readonly type: Schema.Literal<\"computer_call\">; readonly status: Schema.optionalKey<Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>>; }>, Schema.Struct<{ readonly id: Schema.String; readonly type: Schema.Literal<\"file_search_call\">; readonly status: Schema.optionalKey<Schema.String>; readonly queries: Schema.optionalKey<Schema.$Array<Schema.String>>; readonly results: Schema.optionalKey<Schema.NullOr<Schema.Unknown>>; }>, Schema.Struct<{ readonly id: Schema.optionalKey<Schema.String>; readonly type: Schema.Literal<\"function_call\">; readonly call_id: Schema.String; readonly name: Schema.String; readonly arguments: Schema.String; readonly status: Schema.optionalKey<Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>>; }>, Schema.Struct<{ readonly id: Schema.String; readonly type: Schema.Literal<\"image_generation_call\">; readonly result: Schema.optionalKey<Schema.String>; readonly status: Schema.optionalKey<Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>>; }>, Schema.Struct<{ readonly id: Schema.optionalKey<Schema.String>; readonly type: Schema.Literal<\"local_shell_call\">; readonly call_id: Schema.String; readonly action: Schema.Unknown; readonly status: Schema.optionalKey<Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>>; }>, Schema.Struct<{ readonly id: Schema.String; readonly type: Schema.Literal<\"mcp_call\">; readonly approval_request_id: Schema.optionalKey<Schema.NullOr<Schema.String>>; readonly name: Schema.String; readonly arguments: Schema.Unknown; readonly output: Schema.optionalKey<Schema.Unknown>; readonly error: Schema.optionalKey<Schema.Unknown>; readonly server_label: Schema.optionalKey<Schema.NullOr<Schema.String>>; }>, Schema.Struct<{ readonly id: Schema.String; readonly type: Schema.Literal<\"mcp_list_tools\">; }>, Schema.Struct<{ readonly id: Schema.String; readonly type: Schema.Literal<\"mcp_approval_request\">; readonly approval_request_id: Schema.optionalKey<Schema.String>; readonly name: Schema.String; readonly arguments: Schema.Unknown; }>, Schema.Struct<{ readonly id: Schema.String; readonly type: Schema.Literal<\"message\">; readonly role: Schema.Literal<\"assistant\">; readonly content: Schema.$Array<Schema.Union<readonly [Schema.Struct<{ readonly type: Schema.Literal<\"input_text\">; readonly text: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"output_text\">; readonly text: Schema.String; readonly annotations: Schema.$Array<Schema.Union<readonly [Schema.Struct<{ readonly type: Schema.Literal<\"file_citation\">; readonly file_id: Schema.String; readonly index: Schema.Number; readonly filename: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"url_citation\">; readonly url: Schema.String; readonly start_index: Schema.Number; readonly end_index: Schema.Number; readonly title: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"container_file_citation\">; readonly container_id: Schema.String; readonly file_id: Schema.String; readonly start_index: Schema.Number; readonly end_index: Schema.Number; readonly filename: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"file_path\">; readonly file_id: Schema.String; readonly index: Schema.Number; }>]>>; readonly logprobs: Schema.optionalKey<Schema.$Array<Schema.Unknown>>; }>, Schema.Struct<{ readonly type: Schema.Literal<\"text\">; readonly text: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"summary_text\">; readonly text: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"reasoning_text\">; readonly text: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"refusal\">; readonly refusal: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"input_image\">; readonly image_url: Schema.optionalKey<Schema.NullOr<Schema.String>>; readonly file_id: Schema.optionalKey<Schema.NullOr<Schema.String>>; readonly detail: Schema.optionalKey<Schema.NullOr<Schema.Literals<readonly [\"low\", \"high\", \"auto\"]>>>; }>, Schema.Struct<{ readonly type: Schema.Literal<\"computer_screenshot\">; readonly image_url: Schema.NullOr<Schema.String>; readonly file_id: Schema.NullOr<Schema.String>; }>, Schema.Struct<{ readonly type: Schema.Literal<\"input_file\">; readonly file_id: Schema.optionalKey<Schema.NullOr<Schema.String>>; readonly filename: Schema.optionalKey<Schema.String>; readonly file_url: Schema.optionalKey<Schema.String>; readonly file_data: Schema.optionalKey<Schema.String>; }>]>>; readonly status: Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>; }>, Schema.Struct<{ readonly type: Schema.Literal<\"reasoning\">; readonly id: Schema.String; readonly encrypted_content: Schema.optionalKey<Schema.NullOr<Schema.String>>; readonly summary: Schema.$Array<Schema.Struct<{ readonly type: Schema.Literal<\"summary_text\">; readonly text: Schema.String; }>>; readonly content: Schema.optionalKey<Schema.$Array<Schema.Struct<{ readonly type: Schema.Literal<\"reasoning_text\">; readonly text: Schema.String; }>>>; readonly status: Schema.optionalKey<Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>>; }>, Schema.Struct<{ readonly id: Schema.optionalKey<Schema.String>; readonly type: Schema.Literal<\"shell_call\">; readonly call_id: Schema.String; readonly action: Schema.Unknown; readonly status: Schema.optionalKey<Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>>; }>, Schema.Struct<{ readonly id: Schema.String; readonly type: Schema.Literal<\"web_search_call\">; readonly action: Schema.optionalKey<Schema.Unknown>; readonly status: Schema.optionalKey<Schema.String>; }>]>>, never>; readonly usage: Schema.optionalKey<Schema.NullOr<Schema.StructWithRest<Schema.Struct<{ readonly input_tokens: Schema.Number; readonly output_tokens: Schema.Number; readonly total_tokens: Schema.Number; readonly input_tokens_details: Schema.optionalKey<Schema.Unknown>; readonly output_tokens_details: Schema.optionalKey<Schema.Unknown>; }>, readonly [Schema.$Record<Schema.String, Schema.Unknown>]>>>; readonly incomplete_details: Schema.optionalKey<Schema.NullOr<Schema.Struct<{ readonly reason: Schema.optionalKey<Schema.Literals<readonly [\"max_output_tokens\", \"content_filter\"]>>; }>>>; readonly service_tier: Schema.optionalKey<Schema.String>; }>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L882"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L852"
   },
   {
     "_tag": "Constant",
@@ -893,7 +893,7 @@
     "since": "4.0.0",
     "category": "schemas",
     "signature": "declare const ResponseStreamEvent: Schema.Union<readonly [Schema.Struct<{ readonly type: Schema.Literal<\"response.created\">; readonly response: Schema.Struct<{ readonly id: Schema.String; readonly object: Schema.optionalKey<Schema.Literal<\"response\">>; readonly model: Schema.String; readonly created_at: Schema.Number; readonly output: Schema.withDecodingDefault<Schema.$Array<Schema.Union<readonly [Schema.Struct<{ readonly id: Schema.String; readonly type: Schema.Literal<\"apply_patch_call\">; readonly call_id: Schema.String; readonly operation: Schema.Struct<{ readonly type: Schema.String; readonly path: Schema.String; readonly diff: Schema.optionalKey<Schema.String>; }>; readonly status: Schema.optionalKey<Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>>; }>, Schema.Struct<{ readonly id: Schema.String; readonly type: Schema.Literal<\"code_interpreter_call\">; readonly code: Schema.optionalKey<Schema.String>; readonly container_id: Schema.String; readonly outputs: Schema.optionalKey<Schema.$Array<Schema.Unknown>>; readonly status: Schema.optionalKey<Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>>; }>, Schema.Struct<{ readonly id: Schema.String; readonly type: Schema.Literal<\"computer_call\">; readonly status: Schema.optionalKey<Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>>; }>, Schema.Struct<{ readonly id: Schema.String; readonly type: Schema.Literal<\"file_search_call\">; readonly status: Schema.optionalKey<Schema.String>; readonly queries: Schema.optionalKey<Schema.$Array<Schema.String>>; readonly results: Schema.optionalKey<Schema.NullOr<Schema.Unknown>>; }>, Schema.Struct<{ readonly id: Schema.optionalKey<Schema.String>; readonly type: Schema.Literal<\"function_call\">; readonly call_id: Schema.String; readonly name: Schema.String; readonly arguments: Schema.String; readonly status: Schema.optionalKey<Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>>; }>, Schema.Struct<{ readonly id: Schema.String; readonly type: Schema.Literal<\"image_generation_call\">; readonly result: Schema.optionalKey<Schema.String>; readonly status: Schema.optionalKey<Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>>; }>, Schema.Struct<{ readonly id: Schema.optionalKey<Schema.String>; readonly type: Schema.Literal<\"local_shell_call\">; readonly call_id: Schema.String; readonly action: Schema.Unknown; readonly status: Schema.optionalKey<Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>>; }>, Schema.Struct<{ readonly id: Schema.String; readonly type: Schema.Literal<\"mcp_call\">; readonly approval_request_id: Schema.optionalKey<Schema.NullOr<Schema.String>>; readonly name: Schema.String; readonly arguments: Schema.Unknown; readonly output: Schema.optionalKey<Schema.Unknown>; readonly error: Schema.optionalKey<Schema.Unknown>; readonly server_label: Schema.optionalKey<Schema.NullOr<Schema.String>>; }>, Schema.Struct<{ readonly id: Schema.String; readonly type: Schema.Literal<\"mcp_list_tools\">; }>, Schema.Struct<{ readonly id: Schema.String; readonly type: Schema.Literal<\"mcp_approval_request\">; readonly approval_request_id: Schema.optionalKey<Schema.String>; readonly name: Schema.String; readonly arguments: Schema.Unknown; }>, Schema.Struct<{ readonly id: Schema.String; readonly type: Schema.Literal<\"message\">; readonly role: Schema.Literal<\"assistant\">; readonly content: Schema.$Array<Schema.Union<readonly [Schema.Struct<{ readonly type: Schema.Literal<\"input_text\">; readonly text: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"output_text\">; readonly text: Schema.String; readonly annotations: Schema.$Array<Schema.Union<readonly [Schema.Struct<{ readonly type: Schema.Literal<\"file_citation\">; readonly file_id: Schema.String; readonly index: Schema.Number; readonly filename: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"url_citation\">; readonly url: Schema.String; readonly start_index: Schema.Number; readonly end_index: Schema.Number; readonly title: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"container_file_citation\">; readonly container_id: Schema.String; readonly file_id: Schema.String; readonly start_index: Schema.Number; readonly end_index: Schema.Number; readonly filename: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"file_path\">; readonly file_id: Schema.String; readonly index: Schema.Number; }>]>>; readonly logprobs: Schema.optionalKey<Schema.$Array<Schema.Unknown>>; }>, Schema.Struct<{ readonly type: Schema.Literal<\"text\">; readonly text: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"summary_text\">; readonly text: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"reasoning_text\">; readonly text: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"refusal\">; readonly refusal: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"input_image\">; readonly image_url: Schema.optionalKey<Schema.NullOr<Schema.String>>; readonly file_id: Schema.optionalKey<Schema.NullOr<Schema.String>>; readonly detail: Schema.optionalKey<Schema.NullOr<Schema.Literals<readonly [\"low\", \"high\", \"auto\"]>>>; }>, Schema.Struct<{ readonly type: Schema.Literal<\"computer_screenshot\">; readonly image_url: Schema.NullOr<Schema.String>; readonly file_id: Schema.NullOr<Schema.String>; }>, Schema.Struct<{ readonly type: Schema.Literal<\"input_file\">; readonly file_id: Schema.optionalKey<Schema.NullOr<Schema.String>>; readonly filename: Schema.optionalKey<Schema.String>; readonly file_url: Schema.optionalKey<Schema.String>; readonly file_data: Schema.optionalKey<Schema.String>; }>]>>; readonly status: Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>; }>, Schema.Struct<{ readonly type: Schema.Literal<\"reasoning\">; readonly id: Schema.String; readonly encrypted_content: Schema.optionalKey<Schema.NullOr<Schema.String>>; readonly summary: Schema.$Array<Schema.Struct<{ readonly type: Schema.Literal<\"summary_text\">; readonly text: Schema.String; }>>; readonly content: Schema.optionalKey<Schema.$Array<Schema.Struct<{ readonly type: Schema.Literal<\"reasoning_text\">; readonly text: Schema.String; }>>>; readonly status: Schema.optionalKey<Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>>; }>, Schema.Struct<{ readonly id: Schema.optionalKey<Schema.String>; readonly type: Schema.Literal<\"shell_call\">; readonly call_id: Schema.String; readonly action: Schema.Unknown; readonly status: Schema.optionalKey<Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>>; }>, Schema.Struct<{ readonly id: Schema.String; readonly type: Schema.Literal<\"web_search_call\">; readonly action: Schema.optionalKey<Schema.Unknown>; readonly status: Schema.optionalKey<Schema.String>; }>]>>, never>; readonly usage: Schema.optionalKey<Schema.NullOr<Schema.StructWithRest<Schema.Struct<{ readonly input_tokens: Schema.Number; readonly output_tokens: Schema.Number; readonly total_tokens: Schema.Number; readonly input_tokens_details: Schema.optionalKey<Schema.Unknown>; readonly output_tokens_details: Schema.optionalKey<Schema.Unknown>; }>, readonly [Schema.$Record<Schema.String, Schema.Unknown>]>>>; readonly incomplete_details: Schema.optionalKey<Schema.NullOr<Schema.Struct<{ readonly reason: Schema.optionalKey<Schema.Literals<readonly [\"max_output_tokens\", \"content_filter\"]>>; }>>>; readonly service_tier: Schema.optionalKey<Schema.String>; }>; readonly sequence_number: Schema.Number; }>, Schema.Struct<{ readonly type: Schema.Literal<\"response.completed\">; readonly response: Schema.Struct<{ readonly id: Schema.String; readonly object: Schema.optionalKey<Schema.Literal<\"response\">>; readonly model: Schema.String; readonly created_at: Schema.Number; readonly output: Schema.withDecodingDefault<Schema.$Array<Schema.Union<readonly [Schema.Struct<{ readonly id: Schema.String; readonly type: Schema.Literal<\"apply_patch_call\">; readonly call_id: Schema.String; readonly operation: Schema.Struct<{ readonly type: Schema.String; readonly path: Schema.String; readonly diff: Schema.optionalKey<Schema.String>; }>; readonly status: Schema.optionalKey<Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>>; }>, Schema.Struct<{ readonly id: Schema.String; readonly type: Schema.Literal<\"code_interpreter_call\">; readonly code: Schema.optionalKey<Schema.String>; readonly container_id: Schema.String; readonly outputs: Schema.optionalKey<Schema.$Array<Schema.Unknown>>; readonly status: Schema.optionalKey<Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>>; }>, Schema.Struct<{ readonly id: Schema.String; readonly type: Schema.Literal<\"computer_call\">; readonly status: Schema.optionalKey<Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>>; }>, Schema.Struct<{ readonly id: Schema.String; readonly type: Schema.Literal<\"file_search_call\">; readonly status: Schema.optionalKey<Schema.String>; readonly queries: Schema.optionalKey<Schema.$Array<Schema.String>>; readonly results: Schema.optionalKey<Schema.NullOr<Schema.Unknown>>; }>, Schema.Struct<{ readonly id: Schema.optionalKey<Schema.String>; readonly type: Schema.Literal<\"function_call\">; readonly call_id: Schema.String; readonly name: Schema.String; readonly arguments: Schema.String; readonly status: Schema.optionalKey<Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>>; }>, Schema.Struct<{ readonly id: Schema.String; readonly type: Schema.Literal<\"image_generation_call\">; readonly result: Schema.optionalKey<Schema.String>; readonly status: Schema.optionalKey<Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>>; }>, Schema.Struct<{ readonly id: Schema.optionalKey<Schema.String>; readonly type: Schema.Literal<\"local_shell_call\">; readonly call_id: Schema.String; readonly action: Schema.Unknown; readonly status: Schema.optionalKey<Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>>; }>, Schema.Struct<{ readonly id: Schema.String; readonly type: Schema.Literal<\"mcp_call\">; readonly approval_request_id: Schema.optionalKey<Schema.NullOr<Schema.String>>; readonly name: Schema.String; readonly arguments: Schema.Unknown; readonly output: Schema.optionalKey<Schema.Unknown>; readonly error: Schema.optionalKey<Schema.Unknown>; readonly server_label: Schema.optionalKey<Schema.NullOr<Schema.String>>; }>, Schema.Struct<{ readonly id: Schema.String; readonly type: Schema.Literal<\"mcp_list_tools\">; }>, Schema.Struct<{ readonly id: Schema.String; readonly type: Schema.Literal<\"mcp_approval_request\">; readonly approval_request_id: Schema.optionalKey<Schema.String>; readonly name: Schema.String; readonly arguments: Schema.Unknown; }>, Schema.Struct<{ readonly id: Schema.String; readonly type: Schema.Literal<\"message\">; readonly role: Schema.Literal<\"assistant\">; readonly content: Schema.$Array<Schema.Union<readonly [Schema.Struct<{ readonly type: Schema.Literal<\"input_text\">; readonly text: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"output_text\">; readonly text: Schema.String; readonly annotations: Schema.$Array<Schema.Union<readonly [Schema.Struct<{ readonly type: Schema.Literal<\"file_citation\">; readonly file_id: Schema.String; readonly index: Schema.Number; readonly filename: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"url_citation\">; readonly url: Schema.String; readonly start_index: Schema.Number; readonly end_index: Schema.Number; readonly title: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"container_file_citation\">; readonly container_id: Schema.String; readonly file_id: Schema.String; readonly start_index: Schema.Number; readonly end_index: Schema.Number; readonly filename: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"file_path\">; readonly file_id: Schema.String; readonly index: Schema.Number; }>]>>; readonly logprobs: Schema.optionalKey<Schema.$Array<Schema.Unknown>>; }>, Schema.Struct<{ readonly type: Schema.Literal<\"text\">; readonly text: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"summary_text\">; readonly text: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"reasoning_text\">; readonly text: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"refusal\">; readonly refusal: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"input_image\">; readonly image_url: Schema.optionalKey<Schema.NullOr<Schema.String>>; readonly file_id: Schema.optionalKey<Schema.NullOr<Schema.String>>; readonly detail: Schema.optionalKey<Schema.NullOr<Schema.Literals<readonly [\"low\", \"high\", \"auto\"]>>>; }>, Schema.Struct<{ readonly type: Schema.Literal<\"computer_screenshot\">; readonly image_url: Schema.NullOr<Schema.String>; readonly file_id: Schema.NullOr<Schema.String>; }>, Schema.Struct<{ readonly type: Schema.Literal<\"input_file\">; readonly file_id: Schema.optionalKey<Schema.NullOr<Schema.String>>; readonly filename: Schema.optionalKey<Schema.String>; readonly file_url: Schema.optionalKey<Schema.String>; readonly file_data: Schema.optionalKey<Schema.String>; }>]>>; readonly status: Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>; }>, Schema.Struct<{ readonly type: Schema.Literal<\"reasoning\">; readonly id: Schema.String; readonly encrypted_content: Schema.optionalKey<Schema.NullOr<Schema.String>>; readonly summary: Schema.$Array<Schema.Struct<{ readonly type: Schema.Literal<\"summary_text\">; readonly text: Schema.String; }>>; readonly content: Schema.optionalKey<Schema.$Array<Schema.Struct<{ readonly type: Schema.Literal<\"reasoning_text\">; readonly text: Schema.String; }>>>; readonly status: Schema.optionalKey<Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>>; }>, Schema.Struct<{ readonly id: Schema.optionalKey<Schema.String>; readonly type: Schema.Literal<\"shell_call\">; readonly call_id: Schema.String; readonly action: Schema.Unknown; readonly status: Schema.optionalKey<Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>>; }>, Schema.Struct<{ readonly id: Schema.String; readonly type: Schema.Literal<\"web_search_call\">; readonly action: Schema.optionalKey<Schema.Unknown>; readonly status: Schema.optionalKey<Schema.String>; }>]>>, never>; readonly usage: Schema.optionalKey<Schema.NullOr<Schema.StructWithRest<Schema.Struct<{ readonly input_tokens: Schema.Number; readonly output_tokens: Schema.Number; readonly total_tokens: Schema.Number; readonly input_tokens_details: Schema.optionalKey<Schema.Unknown>; readonly output_tokens_details: Schema.optionalKey<Schema.Unknown>; }>, readonly [Schema.$Record<Schema.String, Schema.Unknown>]>>>; readonly incomplete_details: Schema.optionalKey<Schema.NullOr<Schema.Struct<{ readonly reason: Schema.optionalKey<Schema.Literals<readonly [\"max_output_tokens\", \"content_filter\"]>>; }>>>; readonly service_tier: Schema.optionalKey<Schema.String>; }>; readonly sequence_number: Schema.Number; }>, Schema.Struct<{ readonly type: Schema.Literal<\"response.incomplete\">; readonly response: Schema.Struct<{ readonly id: Schema.String; readonly object: Schema.optionalKey<Schema.Literal<\"response\">>; readonly model: Schema.String; readonly created_at: Schema.Number; readonly output: Schema.withDecodingDefault<Schema.$Array<Schema.Union<readonly [Schema.Struct<{ readonly id: Schema.String; readonly type: Schema.Literal<\"apply_patch_call\">; readonly call_id: Schema.String; readonly operation: Schema.Struct<{ readonly type: Schema.String; readonly path: Schema.String; readonly diff: Schema.optionalKey<Schema.String>; }>; readonly status: Schema.optionalKey<Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>>; }>, Schema.Struct<{ readonly id: Schema.String; readonly type: Schema.Literal<\"code_interpreter_call\">; readonly code: Schema.optionalKey<Schema.String>; readonly container_id: Schema.String; readonly outputs: Schema.optionalKey<Schema.$Array<Schema.Unknown>>; readonly status: Schema.optionalKey<Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>>; }>, Schema.Struct<{ readonly id: Schema.String; readonly type: Schema.Literal<\"computer_call\">; readonly status: Schema.optionalKey<Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>>; }>, Schema.Struct<{ readonly id: Schema.String; readonly type: Schema.Literal<\"file_search_call\">; readonly status: Schema.optionalKey<Schema.String>; readonly queries: Schema.optionalKey<Schema.$Array<Schema.String>>; readonly results: Schema.optionalKey<Schema.NullOr<Schema.Unknown>>; }>, Schema.Struct<{ readonly id: Schema.optionalKey<Schema.String>; readonly type: Schema.Literal<\"function_call\">; readonly call_id: Schema.String; readonly name: Schema.String; readonly arguments: Schema.String; readonly status: Schema.optionalKey<Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>>; }>, Schema.Struct<{ readonly id: Schema.String; readonly type: Schema.Literal<\"image_generation_call\">; readonly result: Schema.optionalKey<Schema.String>; readonly status: Schema.optionalKey<Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>>; }>, Schema.Struct<{ readonly id: Schema.optionalKey<Schema.String>; readonly type: Schema.Literal<\"local_shell_call\">; readonly call_id: Schema.String; readonly action: Schema.Unknown; readonly status: Schema.optionalKey<Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>>; }>, Schema.Struct<{ readonly id: Schema.String; readonly type: Schema.Literal<\"mcp_call\">; readonly approval_request_id: Schema.optionalKey<Schema.NullOr<Schema.String>>; readonly name: Schema.String; readonly arguments: Schema.Unknown; readonly output: Schema.optionalKey<Schema.Unknown>; readonly error: Schema.optionalKey<Schema.Unknown>; readonly server_label: Schema.optionalKey<Schema.NullOr<Schema.String>>; }>, Schema.Struct<{ readonly id: Schema.String; readonly type: Schema.Literal<\"mcp_list_tools\">; }>, Schema.Struct<{ readonly id: Schema.String; readonly type: Schema.Literal<\"mcp_approval_request\">; readonly approval_request_id: Schema.optionalKey<Schema.String>; readonly name: Schema.String; readonly arguments: Schema.Unknown; }>, Schema.Struct<{ readonly id: Schema.String; readonly type: Schema.Literal<\"message\">; readonly role: Schema.Literal<\"assistant\">; readonly content: Schema.$Array<Schema.Union<readonly [Schema.Struct<{ readonly type: Schema.Literal<\"input_text\">; readonly text: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"output_text\">; readonly text: Schema.String; readonly annotations: Schema.$Array<Schema.Union<readonly [Schema.Struct<{ readonly type: Schema.Literal<\"file_citation\">; readonly file_id: Schema.String; readonly index: Schema.Number; readonly filename: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"url_citation\">; readonly url: Schema.String; readonly start_index: Schema.Number; readonly end_index: Schema.Number; readonly title: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"container_file_citation\">; readonly container_id: Schema.String; readonly file_id: Schema.String; readonly start_index: Schema.Number; readonly end_index: Schema.Number; readonly filename: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"file_path\">; readonly file_id: Schema.String; readonly index: Schema.Number; }>]>>; readonly logprobs: Schema.optionalKey<Schema.$Array<Schema.Unknown>>; }>, Schema.Struct<{ readonly type: Schema.Literal<\"text\">; readonly text: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"summary_text\">; readonly text: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"reasoning_text\">; readonly text: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"refusal\">; readonly refusal: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"input_image\">; readonly image_url: Schema.optionalKey<Schema.NullOr<Schema.String>>; readonly file_id: Schema.optionalKey<Schema.NullOr<Schema.String>>; readonly detail: Schema.optionalKey<Schema.NullOr<Schema.Literals<readonly [\"low\", \"high\", \"auto\"]>>>; }>, Schema.Struct<{ readonly type: Schema.Literal<\"computer_screenshot\">; readonly image_url: Schema.NullOr<Schema.String>; readonly file_id: Schema.NullOr<Schema.String>; }>, Schema.Struct<{ readonly type: Schema.Literal<\"input_file\">; readonly file_id: Schema.optionalKey<Schema.NullOr<Schema.String>>; readonly filename: Schema.optionalKey<Schema.String>; readonly file_url: Schema.optionalKey<Schema.String>; readonly file_data: Schema.optionalKey<Schema.String>; }>]>>; readonly status: Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>; }>, Schema.Struct<{ readonly type: Schema.Literal<\"reasoning\">; readonly id: Schema.String; readonly encrypted_content: Schema.optionalKey<Schema.NullOr<Schema.String>>; readonly summary: Schema.$Array<Schema.Struct<{ readonly type: Schema.Literal<\"summary_text\">; readonly text: Schema.String; }>>; readonly content: Schema.optionalKey<Schema.$Array<Schema.Struct<{ readonly type: Schema.Literal<\"reasoning_text\">; readonly text: Schema.String; }>>>; readonly status: Schema.optionalKey<Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>>; }>, Schema.Struct<{ readonly id: Schema.optionalKey<Schema.String>; readonly type: Schema.Literal<\"shell_call\">; readonly call_id: Schema.String; readonly action: Schema.Unknown; readonly status: Schema.optionalKey<Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>>; }>, Schema.Struct<{ readonly id: Schema.String; readonly type: Schema.Literal<\"web_search_call\">; readonly action: Schema.optionalKey<Schema.Unknown>; readonly status: Schema.optionalKey<Schema.String>; }>]>>, never>; readonly usage: Schema.optionalKey<Schema.NullOr<Schema.StructWithRest<Schema.Struct<{ readonly input_tokens: Schema.Number; readonly output_tokens: Schema.Number; readonly total_tokens: Schema.Number; readonly input_tokens_details: Schema.optionalKey<Schema.Unknown>; readonly output_tokens_details: Schema.optionalKey<Schema.Unknown>; }>, readonly [Schema.$Record<Schema.String, Schema.Unknown>]>>>; readonly incomplete_details: Schema.optionalKey<Schema.NullOr<Schema.Struct<{ readonly reason: Schema.optionalKey<Schema.Literals<readonly [\"max_output_tokens\", \"content_filter\"]>>; }>>>; readonly service_tier: Schema.optionalKey<Schema.String>; }>; readonly sequence_number: Schema.Number; }>, Schema.Struct<{ readonly type: Schema.Literal<\"response.failed\">; readonly response: Schema.Struct<{ readonly id: Schema.String; readonly object: Schema.optionalKey<Schema.Literal<\"response\">>; readonly model: Schema.String; readonly created_at: Schema.Number; readonly output: Schema.withDecodingDefault<Schema.$Array<Schema.Union<readonly [Schema.Struct<{ readonly id: Schema.String; readonly type: Schema.Literal<\"apply_patch_call\">; readonly call_id: Schema.String; readonly operation: Schema.Struct<{ readonly type: Schema.String; readonly path: Schema.String; readonly diff: Schema.optionalKey<Schema.String>; }>; readonly status: Schema.optionalKey<Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>>; }>, Schema.Struct<{ readonly id: Schema.String; readonly type: Schema.Literal<\"code_interpreter_call\">; readonly code: Schema.optionalKey<Schema.String>; readonly container_id: Schema.String; readonly outputs: Schema.optionalKey<Schema.$Array<Schema.Unknown>>; readonly status: Schema.optionalKey<Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>>; }>, Schema.Struct<{ readonly id: Schema.String; readonly type: Schema.Literal<\"computer_call\">; readonly status: Schema.optionalKey<Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>>; }>, Schema.Struct<{ readonly id: Schema.String; readonly type: Schema.Literal<\"file_search_call\">; readonly status: Schema.optionalKey<Schema.String>; readonly queries: Schema.optionalKey<Schema.$Array<Schema.String>>; readonly results: Schema.optionalKey<Schema.NullOr<Schema.Unknown>>; }>, Schema.Struct<{ readonly id: Schema.optionalKey<Schema.String>; readonly type: Schema.Literal<\"function_call\">; readonly call_id: Schema.String; readonly name: Schema.String; readonly arguments: Schema.String; readonly status: Schema.optionalKey<Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>>; }>, Schema.Struct<{ readonly id: Schema.String; readonly type: Schema.Literal<\"image_generation_call\">; readonly result: Schema.optionalKey<Schema.String>; readonly status: Schema.optionalKey<Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>>; }>, Schema.Struct<{ readonly id: Schema.optionalKey<Schema.String>; readonly type: Schema.Literal<\"local_shell_call\">; readonly call_id: Schema.String; readonly action: Schema.Unknown; readonly status: Schema.optionalKey<Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>>; }>, Schema.Struct<{ readonly id: Schema.String; readonly type: Schema.Literal<\"mcp_call\">; readonly approval_request_id: Schema.optionalKey<Schema.NullOr<Schema.String>>; readonly name: Schema.String; readonly arguments: Schema.Unknown; readonly output: Schema.optionalKey<Schema.Unknown>; readonly error: Schema.optionalKey<Schema.Unknown>; readonly server_label: Schema.optionalKey<Schema.NullOr<Schema.String>>; }>, Schema.Struct<{ readonly id: Schema.String; readonly type: Schema.Literal<\"mcp_list_tools\">; }>, Schema.Struct<{ readonly id: Schema.String; readonly type: Schema.Literal<\"mcp_approval_request\">; readonly approval_request_id: Schema.optionalKey<Schema.String>; readonly name: Schema.String; readonly arguments: Schema.Unknown; }>, Schema.Struct<{ readonly id: Schema.String; readonly type: Schema.Literal<\"message\">; readonly role: Schema.Literal<\"assistant\">; readonly content: Schema.$Array<Schema.Union<readonly [Schema.Struct<{ readonly type: Schema.Literal<\"input_text\">; readonly text: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"output_text\">; readonly text: Schema.String; readonly annotations: Schema.$Array<Schema.Union<readonly [Schema.Struct<{ readonly type: Schema.Literal<\"file_citation\">; readonly file_id: Schema.String; readonly index: Schema.Number; readonly filename: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"url_citation\">; readonly url: Schema.String; readonly start_index: Schema.Number; readonly end_index: Schema.Number; readonly title: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"container_file_citation\">; readonly container_id: Schema.String; readonly file_id: Schema.String; readonly start_index: Schema.Number; readonly end_index: Schema.Number; readonly filename: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"file_path\">; readonly file_id: Schema.String; readonly index: Schema.Number; }>]>>; readonly logprobs: Schema.optionalKey<Schema.$Array<Schema.Unknown>>; }>, Schema.Struct<{ readonly type: Schema.Literal<\"text\">; readonly text: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"summary_text\">; readonly text: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"reasoning_text\">; readonly text: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"refusal\">; readonly refusal: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"input_image\">; readonly image_url: Schema.optionalKey<Schema.NullOr<Schema.String>>; readonly file_id: Schema.optionalKey<Schema.NullOr<Schema.String>>; readonly detail: Schema.optionalKey<Schema.NullOr<Schema.Literals<readonly [\"low\", \"high\", \"auto\"]>>>; }>, Schema.Struct<{ readonly type: Schema.Literal<\"computer_screenshot\">; readonly image_url: Schema.NullOr<Schema.String>; readonly file_id: Schema.NullOr<Schema.String>; }>, Schema.Struct<{ readonly type: Schema.Literal<\"input_file\">; readonly file_id: Schema.optionalKey<Schema.NullOr<Schema.String>>; readonly filename: Schema.optionalKey<Schema.String>; readonly file_url: Schema.optionalKey<Schema.String>; readonly file_data: Schema.optionalKey<Schema.String>; }>]>>; readonly status: Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>; }>, Schema.Struct<{ readonly type: Schema.Literal<\"reasoning\">; readonly id: Schema.String; readonly encrypted_content: Schema.optionalKey<Schema.NullOr<Schema.String>>; readonly summary: Schema.$Array<Schema.Struct<{ readonly type: Schema.Literal<\"summary_text\">; readonly text: Schema.String; }>>; readonly content: Schema.optionalKey<Schema.$Array<Schema.Struct<{ readonly type: Schema.Literal<\"reasoning_text\">; readonly text: Schema.String; }>>>; readonly status: Schema.optionalKey<Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>>; }>, Schema.Struct<{ readonly id: Schema.optionalKey<Schema.String>; readonly type: Schema.Literal<\"shell_call\">; readonly call_id: Schema.String; readonly action: Schema.Unknown; readonly status: Schema.optionalKey<Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>>; }>, Schema.Struct<{ readonly id: Schema.String; readonly type: Schema.Literal<\"web_search_call\">; readonly action: Schema.optionalKey<Schema.Unknown>; readonly status: Schema.optionalKey<Schema.String>; }>]>>, never>; readonly usage: Schema.optionalKey<Schema.NullOr<Schema.StructWithRest<Schema.Struct<{ readonly input_tokens: Schema.Number; readonly output_tokens: Schema.Number; readonly total_tokens: Schema.Number; readonly input_tokens_details: Schema.optionalKey<Schema.Unknown>; readonly output_tokens_details: Schema.optionalKey<Schema.Unknown>; }>, readonly [Schema.$Record<Schema.String, Schema.Unknown>]>>>; readonly incomplete_details: Schema.optionalKey<Schema.NullOr<Schema.Struct<{ readonly reason: Schema.optionalKey<Schema.Literals<readonly [\"max_output_tokens\", \"content_filter\"]>>; }>>>; readonly service_tier: Schema.optionalKey<Schema.String>; }>; readonly sequence_number: Schema.Number; }>, Schema.Struct<{ readonly type: Schema.Literal<\"response.output_item.added\">; readonly output_index: Schema.Number; readonly sequence_number: Schema.Number; readonly item: Schema.Union<readonly [Schema.Struct<{ readonly id: Schema.String; readonly type: Schema.Literal<\"apply_patch_call\">; readonly call_id: Schema.String; readonly operation: Schema.Struct<{ readonly type: Schema.String; readonly path: Schema.String; readonly diff: Schema.optionalKey<Schema.String>; }>; readonly status: Schema.optionalKey<Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>>; }>, Schema.Struct<{ readonly id: Schema.String; readonly type: Schema.Literal<\"code_interpreter_call\">; readonly code: Schema.optionalKey<Schema.String>; readonly container_id: Schema.String; readonly outputs: Schema.optionalKey<Schema.$Array<Schema.Unknown>>; readonly status: Schema.optionalKey<Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>>; }>, Schema.Struct<{ readonly id: Schema.String; readonly type: Schema.Literal<\"computer_call\">; readonly status: Schema.optionalKey<Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>>; }>, Schema.Struct<{ readonly id: Schema.String; readonly type: Schema.Literal<\"file_search_call\">; readonly status: Schema.optionalKey<Schema.String>; readonly queries: Schema.optionalKey<Schema.$Array<Schema.String>>; readonly results: Schema.optionalKey<Schema.NullOr<Schema.Unknown>>; }>, Schema.Struct<{ readonly id: Schema.optionalKey<Schema.String>; readonly type: Schema.Literal<\"function_call\">; readonly call_id: Schema.String; readonly name: Schema.String; readonly arguments: Schema.String; readonly status: Schema.optionalKey<Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>>; }>, Schema.Struct<{ readonly id: Schema.String; readonly type: Schema.Literal<\"image_generation_call\">; readonly result: Schema.optionalKey<Schema.String>; readonly status: Schema.optionalKey<Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>>; }>, Schema.Struct<{ readonly id: Schema.optionalKey<Schema.String>; readonly type: Schema.Literal<\"local_shell_call\">; readonly call_id: Schema.String; readonly action: Schema.Unknown; readonly status: Schema.optionalKey<Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>>; }>, Schema.Struct<{ readonly id: Schema.String; readonly type: Schema.Literal<\"mcp_call\">; readonly approval_request_id: Schema.optionalKey<Schema.NullOr<Schema.String>>; readonly name: Schema.String; readonly arguments: Schema.Unknown; readonly output: Schema.optionalKey<Schema.Unknown>; readonly error: Schema.optionalKey<Schema.Unknown>; readonly server_label: Schema.optionalKey<Schema.NullOr<Schema.String>>; }>, Schema.Struct<{ readonly id: Schema.String; readonly type: Schema.Literal<\"mcp_list_tools\">; }>, Schema.Struct<{ readonly id: Schema.String; readonly type: Schema.Literal<\"mcp_approval_request\">; readonly approval_request_id: Schema.optionalKey<Schema.String>; readonly name: Schema.String; readonly arguments: Schema.Unknown; }>, Schema.Struct<{ readonly id: Schema.String; readonly type: Schema.Literal<\"message\">; readonly role: Schema.Literal<\"assistant\">; readonly content: Schema.$Array<Schema.Union<readonly [Schema.Struct<{ readonly type: Schema.Literal<\"input_text\">; readonly text: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"output_text\">; readonly text: Schema.String; readonly annotations: Schema.$Array<Schema.Union<readonly [Schema.Struct<{ readonly type: Schema.Literal<\"file_citation\">; readonly file_id: Schema.String; readonly index: Schema.Number; readonly filename: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"url_citation\">; readonly url: Schema.String; readonly start_index: Schema.Number; readonly end_index: Schema.Number; readonly title: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"container_file_citation\">; readonly container_id: Schema.String; readonly file_id: Schema.String; readonly start_index: Schema.Number; readonly end_index: Schema.Number; readonly filename: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"file_path\">; readonly file_id: Schema.String; readonly index: Schema.Number; }>]>>; readonly logprobs: Schema.optionalKey<Schema.$Array<Schema.Unknown>>; }>, Schema.Struct<{ readonly type: Schema.Literal<\"text\">; readonly text: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"summary_text\">; readonly text: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"reasoning_text\">; readonly text: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"refusal\">; readonly refusal: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"input_image\">; readonly image_url: Schema.optionalKey<Schema.NullOr<Schema.String>>; readonly file_id: Schema.optionalKey<Schema.NullOr<Schema.String>>; readonly detail: Schema.optionalKey<Schema.NullOr<Schema.Literals<readonly [\"low\", \"high\", \"auto\"]>>>; }>, Schema.Struct<{ readonly type: Schema.Literal<\"computer_screenshot\">; readonly image_url: Schema.NullOr<Schema.String>; readonly file_id: Schema.NullOr<Schema.String>; }>, Schema.Struct<{ readonly type: Schema.Literal<\"input_file\">; readonly file_id: Schema.optionalKey<Schema.NullOr<Schema.String>>; readonly filename: Schema.optionalKey<Schema.String>; readonly file_url: Schema.optionalKey<Schema.String>; readonly file_data: Schema.optionalKey<Schema.String>; }>]>>; readonly status: Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>; }>, Schema.Struct<{ readonly type: Schema.Literal<\"reasoning\">; readonly id: Schema.String; readonly encrypted_content: Schema.optionalKey<Schema.NullOr<Schema.String>>; readonly summary: Schema.$Array<Schema.Struct<{ readonly type: Schema.Literal<\"summary_text\">; readonly text: Schema.String; }>>; readonly content: Schema.optionalKey<Schema.$Array<Schema.Struct<{ readonly type: Schema.Literal<\"reasoning_text\">; readonly text: Schema.String; }>>>; readonly status: Schema.optionalKey<Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>>; }>, Schema.Struct<{ readonly id: Schema.optionalKey<Schema.String>; readonly type: Schema.Literal<\"shell_call\">; readonly call_id: Schema.String; readonly action: Schema.Unknown; readonly status: Schema.optionalKey<Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>>; }>, Schema.Struct<{ readonly id: Schema.String; readonly type: Schema.Literal<\"web_search_call\">; readonly action: Schema.optionalKey<Schema.Unknown>; readonly status: Schema.optionalKey<Schema.String>; }>]>; }>, Schema.Struct<{ readonly type: Schema.Literal<\"response.output_item.done\">; readonly output_index: Schema.Number; readonly sequence_number: Schema.Number; readonly item: Schema.Union<readonly [Schema.Struct<{ readonly id: Schema.String; readonly type: Schema.Literal<\"apply_patch_call\">; readonly call_id: Schema.String; readonly operation: Schema.Struct<{ readonly type: Schema.String; readonly path: Schema.String; readonly diff: Schema.optionalKey<Schema.String>; }>; readonly status: Schema.optionalKey<Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>>; }>, Schema.Struct<{ readonly id: Schema.String; readonly type: Schema.Literal<\"code_interpreter_call\">; readonly code: Schema.optionalKey<Schema.String>; readonly container_id: Schema.String; readonly outputs: Schema.optionalKey<Schema.$Array<Schema.Unknown>>; readonly status: Schema.optionalKey<Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>>; }>, Schema.Struct<{ readonly id: Schema.String; readonly type: Schema.Literal<\"computer_call\">; readonly status: Schema.optionalKey<Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>>; }>, Schema.Struct<{ readonly id: Schema.String; readonly type: Schema.Literal<\"file_search_call\">; readonly status: Schema.optionalKey<Schema.String>; readonly queries: Schema.optionalKey<Schema.$Array<Schema.String>>; readonly results: Schema.optionalKey<Schema.NullOr<Schema.Unknown>>; }>, Schema.Struct<{ readonly id: Schema.optionalKey<Schema.String>; readonly type: Schema.Literal<\"function_call\">; readonly call_id: Schema.String; readonly name: Schema.String; readonly arguments: Schema.String; readonly status: Schema.optionalKey<Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>>; }>, Schema.Struct<{ readonly id: Schema.String; readonly type: Schema.Literal<\"image_generation_call\">; readonly result: Schema.optionalKey<Schema.String>; readonly status: Schema.optionalKey<Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>>; }>, Schema.Struct<{ readonly id: Schema.optionalKey<Schema.String>; readonly type: Schema.Literal<\"local_shell_call\">; readonly call_id: Schema.String; readonly action: Schema.Unknown; readonly status: Schema.optionalKey<Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>>; }>, Schema.Struct<{ readonly id: Schema.String; readonly type: Schema.Literal<\"mcp_call\">; readonly approval_request_id: Schema.optionalKey<Schema.NullOr<Schema.String>>; readonly name: Schema.String; readonly arguments: Schema.Unknown; readonly output: Schema.optionalKey<Schema.Unknown>; readonly error: Schema.optionalKey<Schema.Unknown>; readonly server_label: Schema.optionalKey<Schema.NullOr<Schema.String>>; }>, Schema.Struct<{ readonly id: Schema.String; readonly type: Schema.Literal<\"mcp_list_tools\">; }>, Schema.Struct<{ readonly id: Schema.String; readonly type: Schema.Literal<\"mcp_approval_request\">; readonly approval_request_id: Schema.optionalKey<Schema.String>; readonly name: Schema.String; readonly arguments: Schema.Unknown; }>, Schema.Struct<{ readonly id: Schema.String; readonly type: Schema.Literal<\"message\">; readonly role: Schema.Literal<\"assistant\">; readonly content: Schema.$Array<Schema.Union<readonly [Schema.Struct<{ readonly type: Schema.Literal<\"input_text\">; readonly text: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"output_text\">; readonly text: Schema.String; readonly annotations: Schema.$Array<Schema.Union<readonly [Schema.Struct<{ readonly type: Schema.Literal<\"file_citation\">; readonly file_id: Schema.String; readonly index: Schema.Number; readonly filename: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"url_citation\">; readonly url: Schema.String; readonly start_index: Schema.Number; readonly end_index: Schema.Number; readonly title: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"container_file_citation\">; readonly container_id: Schema.String; readonly file_id: Schema.String; readonly start_index: Schema.Number; readonly end_index: Schema.Number; readonly filename: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"file_path\">; readonly file_id: Schema.String; readonly index: Schema.Number; }>]>>; readonly logprobs: Schema.optionalKey<Schema.$Array<Schema.Unknown>>; }>, Schema.Struct<{ readonly type: Schema.Literal<\"text\">; readonly text: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"summary_text\">; readonly text: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"reasoning_text\">; readonly text: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"refusal\">; readonly refusal: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"input_image\">; readonly image_url: Schema.optionalKey<Schema.NullOr<Schema.String>>; readonly file_id: Schema.optionalKey<Schema.NullOr<Schema.String>>; readonly detail: Schema.optionalKey<Schema.NullOr<Schema.Literals<readonly [\"low\", \"high\", \"auto\"]>>>; }>, Schema.Struct<{ readonly type: Schema.Literal<\"computer_screenshot\">; readonly image_url: Schema.NullOr<Schema.String>; readonly file_id: Schema.NullOr<Schema.String>; }>, Schema.Struct<{ readonly type: Schema.Literal<\"input_file\">; readonly file_id: Schema.optionalKey<Schema.NullOr<Schema.String>>; readonly filename: Schema.optionalKey<Schema.String>; readonly file_url: Schema.optionalKey<Schema.String>; readonly file_data: Schema.optionalKey<Schema.String>; }>]>>; readonly status: Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>; }>, Schema.Struct<{ readonly type: Schema.Literal<\"reasoning\">; readonly id: Schema.String; readonly encrypted_content: Schema.optionalKey<Schema.NullOr<Schema.String>>; readonly summary: Schema.$Array<Schema.Struct<{ readonly type: Schema.Literal<\"summary_text\">; readonly text: Schema.String; }>>; readonly content: Schema.optionalKey<Schema.$Array<Schema.Struct<{ readonly type: Schema.Literal<\"reasoning_text\">; readonly text: Schema.String; }>>>; readonly status: Schema.optionalKey<Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>>; }>, Schema.Struct<{ readonly id: Schema.optionalKey<Schema.String>; readonly type: Schema.Literal<\"shell_call\">; readonly call_id: Schema.String; readonly action: Schema.Unknown; readonly status: Schema.optionalKey<Schema.Literals<readonly [\"in_progress\", \"completed\", \"incomplete\"]>>; }>, Schema.Struct<{ readonly id: Schema.String; readonly type: Schema.Literal<\"web_search_call\">; readonly action: Schema.optionalKey<Schema.Unknown>; readonly status: Schema.optionalKey<Schema.String>; }>]>; }>, Schema.Struct<{ readonly type: Schema.Literal<\"response.output_text.delta\">; readonly item_id: Schema.String; readonly output_index: Schema.Number; readonly content_index: Schema.Number; readonly delta: Schema.String; readonly sequence_number: Schema.Number; readonly logprobs: Schema.optionalKey<Schema.$Array<Schema.Unknown>>; }>, Schema.Struct<{ readonly type: Schema.Literal<\"response.output_text.annotation.added\">; readonly item_id: Schema.String; readonly output_index: Schema.Number; readonly content_index: Schema.Number; readonly annotation_index: Schema.Number; readonly sequence_number: Schema.Number; readonly annotation: Schema.Union<readonly [Schema.Struct<{ readonly type: Schema.Literal<\"file_citation\">; readonly file_id: Schema.String; readonly index: Schema.Number; readonly filename: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"url_citation\">; readonly url: Schema.String; readonly start_index: Schema.Number; readonly end_index: Schema.Number; readonly title: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"container_file_citation\">; readonly container_id: Schema.String; readonly file_id: Schema.String; readonly start_index: Schema.Number; readonly end_index: Schema.Number; readonly filename: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"file_path\">; readonly file_id: Schema.String; readonly index: Schema.Number; }>]>; }>, Schema.Struct<{ readonly type: Schema.Literal<\"response.reasoning_summary_part.added\">; readonly item_id: Schema.String; readonly output_index: Schema.Number; readonly summary_index: Schema.Number; readonly sequence_number: Schema.Number; readonly part: Schema.Struct<{ readonly type: Schema.Literal<\"summary_text\">; readonly text: Schema.String; }>; }>, Schema.Struct<{ readonly type: Schema.Literal<\"response.reasoning_summary_part.done\">; readonly item_id: Schema.String; readonly output_index: Schema.Number; readonly summary_index: Schema.Number; readonly sequence_number: Schema.Number; readonly part: Schema.Struct<{ readonly type: Schema.Literal<\"summary_text\">; readonly text: Schema.String; }>; }>, Schema.Struct<{ readonly type: Schema.Literal<\"response.reasoning_summary_text.delta\">; readonly item_id: Schema.String; readonly output_index: Schema.Number; readonly summary_index: Schema.Number; readonly delta: Schema.String; readonly sequence_number: Schema.Number; }>, Schema.Struct<{ readonly type: Schema.Literal<\"response.function_call_arguments.delta\">; readonly item_id: Schema.String; readonly output_index: Schema.Number; readonly sequence_number: Schema.Number; readonly delta: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"response.function_call_arguments.done\">; readonly item_id: Schema.String; readonly output_index: Schema.Number; readonly sequence_number: Schema.Number; readonly arguments: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"response.code_interpreter_call_code.delta\">; readonly item_id: Schema.String; readonly output_index: Schema.Number; readonly sequence_number: Schema.Number; readonly delta: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"response.code_interpreter_call_code.done\">; readonly item_id: Schema.String; readonly output_index: Schema.Number; readonly sequence_number: Schema.Number; readonly code: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"response.apply_patch_call_operation_diff.delta\">; readonly item_id: Schema.String; readonly output_index: Schema.Number; readonly sequence_number: Schema.Number; readonly delta: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"response.apply_patch_call_operation_diff.done\">; readonly item_id: Schema.String; readonly output_index: Schema.Number; readonly sequence_number: Schema.Number; readonly delta: Schema.optionalKey<Schema.String>; }>, Schema.Struct<{ readonly type: Schema.Literal<\"response.image_generation_call.partial_image\">; readonly item_id: Schema.String; readonly output_index: Schema.Number; readonly sequence_number: Schema.Number; readonly partial_image_b64: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"error\">; readonly code: Schema.NullOr<Schema.String>; readonly message: Schema.String; readonly param: Schema.NullOr<Schema.String>; readonly sequence_number: Schema.Number; readonly status: Schema.optionalKey<Schema.Number>; }>, Schema.declare<UnknownResponseStreamEvent, UnknownResponseStreamEvent>]>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L1136"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L1106"
   },
   {
     "_tag": "Constant",
@@ -909,7 +909,7 @@
     "since": "4.0.0",
     "category": "schemas",
     "signature": "declare const Embedding: Schema.Struct<{ readonly embedding: Schema.Union<readonly [Schema.$Array<Schema.Number>, Schema.String]>; readonly index: Schema.Number; readonly object: Schema.optionalKey<Schema.String>; }>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L1197"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L1167"
   },
   {
     "_tag": "Constant",
@@ -925,7 +925,7 @@
     "since": "4.0.0",
     "category": "schemas",
     "signature": "declare const CreateEmbeddingRequest: Schema.Struct<{ readonly input: Schema.Union<readonly [Schema.String, Schema.$Array<Schema.String>, Schema.$Array<Schema.Number>, Schema.$Array<Schema.$Array<Schema.Number>>]>; readonly model: Schema.String; readonly encoding_format: Schema.optionalKey<Schema.Literals<readonly [\"float\", \"base64\"]>>; readonly dimensions: Schema.optionalKey<Schema.Number>; readonly user: Schema.optionalKey<Schema.String>; }>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L1242"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L1212"
   },
   {
     "_tag": "Constant",
@@ -941,7 +941,7 @@
     "since": "4.0.0",
     "category": "schemas",
     "signature": "declare const CreateEmbeddingResponse: Schema.Struct<{ readonly data: Schema.$Array<Schema.Struct<{ readonly embedding: Schema.Union<readonly [Schema.$Array<Schema.Number>, Schema.String]>; readonly index: Schema.Number; readonly object: Schema.optionalKey<Schema.String>; }>>; readonly model: Schema.String; readonly object: Schema.optionalKey<Schema.Literal<\"list\">>; readonly usage: Schema.optionalKey<Schema.Struct<{ readonly prompt_tokens: Schema.Number; readonly total_tokens: Schema.Number; }>>; }>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L1289"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L1259"
   },
   {
     "_tag": "TypeAlias",
@@ -957,7 +957,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "type IncludeEnum = typeof IncludeEnum.Type",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L79"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L49"
   },
   {
     "_tag": "TypeAlias",
@@ -973,7 +973,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "type MessageStatus = typeof MessageStatus.Type",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L104"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L74"
   },
   {
     "_tag": "TypeAlias",
@@ -989,7 +989,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "type InputContent = typeof InputContent.Type",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L154"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L124"
   },
   {
     "_tag": "TypeAlias",
@@ -1005,7 +1005,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "type SummaryTextContent = typeof SummaryTextContent.Type",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L180"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L150"
   },
   {
     "_tag": "TypeAlias",
@@ -1021,7 +1021,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "type Annotation = typeof Annotation.Type",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L262"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L232"
   },
   {
     "_tag": "TypeAlias",
@@ -1037,7 +1037,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "type ReasoningItem = typeof ReasoningItem.Type",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L345"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L315"
   },
   {
     "_tag": "TypeAlias",
@@ -1053,7 +1053,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "type InputItem = typeof InputItem.Type",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L478"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L448"
   },
   {
     "_tag": "TypeAlias",
@@ -1069,7 +1069,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "type Tool = typeof Tool.Type",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L551"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L521"
   },
   {
     "_tag": "TypeAlias",
@@ -1085,7 +1085,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "type ToolChoice = typeof ToolChoice.Type",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L616"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L586"
   },
   {
     "_tag": "TypeAlias",
@@ -1101,7 +1101,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "type TextResponseFormatConfiguration = typeof TextResponseFormatConfiguration.Type",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L658"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L628"
   },
   {
     "_tag": "TypeAlias",
@@ -1117,7 +1117,7 @@
     "since": "4.0.0",
     "category": "options",
     "signature": "type CreateResponse = typeof CreateResponse.Type",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L733"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L703"
   },
   {
     "_tag": "TypeAlias",
@@ -1133,7 +1133,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "type ResponseUsage = typeof ResponseUsage.Type",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L769"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L739"
   },
   {
     "_tag": "TypeAlias",
@@ -1149,7 +1149,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "type Response = typeof Response.Type",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L916"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L886"
   },
   {
     "_tag": "TypeAlias",
@@ -1165,7 +1165,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "type UnknownResponseStreamEvent = {\n  readonly type: string\n  readonly [key: string]: unknown\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L1096"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L1066"
   },
   {
     "_tag": "TypeAlias",
@@ -1181,7 +1181,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "type ResponseStreamEvent = typeof ResponseStreamEvent.Type",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L1174"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L1144"
   },
   {
     "_tag": "TypeAlias",
@@ -1197,7 +1197,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "type Embedding = typeof Embedding.Type",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L1217"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L1187"
   },
   {
     "_tag": "TypeAlias",
@@ -1213,7 +1213,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "type CreateEmbeddingRequest = typeof CreateEmbeddingRequest.Type",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L1261"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L1231"
   },
   {
     "_tag": "TypeAlias",
@@ -1229,7 +1229,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "type CreateEmbeddingResponse = typeof CreateEmbeddingResponse.Type",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L1316"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L1286"
   },
   {
     "_tag": "Constant",
@@ -1245,7 +1245,7 @@
     "since": "4.0.0",
     "category": "tracing",
     "signature": "declare const addGenAIAnnotations: { (options: OpenAiTelemetryAttributeOptions): (span: Span) => void; (span: Span, options: OpenAiTelemetryAttributeOptions): void; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiTelemetry.ts#L166"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiTelemetry.ts#L149"
   },
   {
     "_tag": "Interface",
@@ -1261,7 +1261,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "export interface RequestAttributes {\n  /**\n   * The response format that is requested.\n   */\n  readonly responseFormat?: (string & {}) | WellKnownResponseFormat | null | undefined\n  /**\n   * The service tier requested. May be a specific tier, `default`, or `auto`.\n   */\n  readonly serviceTier?: (string & {}) | WellKnownServiceTier | null | undefined\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiTelemetry.ts#L68"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiTelemetry.ts#L51"
   },
   {
     "_tag": "Interface",
@@ -1277,7 +1277,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "export interface ResponseAttributes {\n  /**\n   * The service tier used for the response.\n   */\n  readonly serviceTier?: string | null | undefined\n  /**\n   * A fingerprint to track any eventual change in the Generative AI\n   * environment.\n   */\n  readonly systemFingerprint?: string | null | undefined\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiTelemetry.ts#L86"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiTelemetry.ts#L69"
   },
   {
     "_tag": "TypeAlias",
@@ -1293,7 +1293,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "type OpenAiTelemetryAttributes = Simplify<\n  & Telemetry.GenAITelemetryAttributes\n  & Telemetry.AttributesWithPrefix<RequestAttributes, \"gen_ai.openai.request\">\n  & Telemetry.AttributesWithPrefix<ResponseAttributes, \"gen_ai.openai.request\">\n>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiTelemetry.ts#L46"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiTelemetry.ts#L29"
   },
   {
     "_tag": "TypeAlias",
@@ -1309,7 +1309,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "type AllAttributes = Telemetry.AllAttributes & RequestAttributes & ResponseAttributes",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiTelemetry.ts#L59"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiTelemetry.ts#L42"
   },
   {
     "_tag": "TypeAlias",
@@ -1325,7 +1325,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "type WellKnownResponseFormat = \"json_object\" | \"json_schema\" | \"text\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiTelemetry.ts#L110"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiTelemetry.ts#L93"
   },
   {
     "_tag": "TypeAlias",
@@ -1341,7 +1341,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "type WellKnownServiceTier = \"auto\" | \"default\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiTelemetry.ts#L124"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiTelemetry.ts#L107"
   },
   {
     "_tag": "TypeAlias",
@@ -1357,7 +1357,7 @@
     "since": "4.0.0",
     "category": "options",
     "signature": "type OpenAiTelemetryAttributeOptions = Telemetry.GenAITelemetryAttributeOptions & {\n  openai?: {\n    request?: RequestAttributes | undefined\n    response?: ResponseAttributes | undefined\n  } | undefined\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiTelemetry.ts#L133"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiTelemetry.ts#L116"
   },
   {
     "_tag": "Constant",
@@ -1373,7 +1373,7 @@
     "since": "4.0.0",
     "category": "tools",
     "signature": "declare const ApplyPatch: <Mode extends Tool.FailureMode | undefined = undefined>(args: { readonly failureMode?: Mode | undefined; }) => Tool.ProviderDefined<\"openai.apply_patch\", \"OpenAiApplyPatch\", { readonly args: Schema.Void; readonly parameters: Schema.Struct<{ readonly call_id: Schema.String; readonly operation: Schema.Union<readonly [Schema.Struct<{ readonly type: Schema.Literal<\"create_file\">; readonly path: Schema.String; readonly diff: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"delete_file\">; readonly path: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"update_file\">; readonly path: Schema.String; readonly diff: Schema.String; }>]>; }>; readonly success: Schema.Struct<{ readonly status: Schema.Literals<readonly [\"completed\", \"failed\"]>; readonly output: Schema.optionalKey<Schema.Union<readonly [Schema.String, Schema.Null]>>; }>; readonly failure: Schema.Never; readonly failureMode: Mode extends undefined ? \"error\" : Mode; }, true>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiTool.ts#L63"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiTool.ts#L45"
   },
   {
     "_tag": "Constant",
@@ -1389,7 +1389,7 @@
     "since": "4.0.0",
     "category": "tools",
     "signature": "declare const CodeInterpreter: <Mode extends Tool.FailureMode | undefined = undefined>(args: { readonly container: string | { readonly type: \"auto\"; readonly file_ids?: ReadonlyArray<string> | undefined; readonly memory_limit?: \"1g\" | \"4g\" | \"16g\" | \"64g\" | null | undefined; readonly network_policy?: { readonly type: \"disabled\"; } | { readonly type: \"allowlist\"; readonly allowed_domains: ReadonlyArray<string>; readonly domain_secrets?: ReadonlyArray<{ readonly domain: string; readonly name: string; readonly value: string; }> | undefined; } | undefined; }; }) => Tool.ProviderDefined<\"openai.code_interpreter\", \"OpenAiCodeInterpreter\", { readonly args: Schema.Struct<{ readonly container: Schema.Union<readonly [Schema.String, Schema.Struct<{ readonly type: Schema.Literal<\"auto\">; readonly file_ids: Schema.optionalKey<Schema.$Array<Schema.String>>; readonly memory_limit: Schema.optionalKey<Schema.Union<readonly [Schema.Literals<readonly [\"1g\", \"4g\", \"16g\", \"64g\"]>, Schema.Null]>>; readonly network_policy: Schema.optionalKey<Schema.Union<readonly [Schema.Struct<{ readonly type: Schema.Literal<\"disabled\">; }>, Schema.Struct<{ readonly type: Schema.Literal<\"allowlist\">; readonly allowed_domains: Schema.$Array<Schema.String>; readonly domain_secrets: Schema.optionalKey<Schema.$Array<Schema.Struct<{ readonly domain: Schema.String; readonly name: Schema.String; readonly value: Schema.String; }>>>; }>]>>; }>]>; }>; readonly parameters: Schema.Struct<{ readonly code: Schema.Union<readonly [Schema.String, Schema.Null]>; readonly container_id: Schema.String; }>; readonly success: Schema.Struct<{ readonly outputs: Schema.Union<readonly [Schema.$Array<Schema.Union<readonly [Schema.Struct<{ readonly type: Schema.Literal<\"logs\">; readonly logs: Schema.String; }>, Schema.Struct<{ readonly type: Schema.Literal<\"image\">; readonly url: Schema.String; }>]>>, Schema.Null]>; }>; readonly failure: Schema.Never; readonly failureMode: Mode extends undefined ? \"error\" : Mode; }, false>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiTool.ts#L95"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiTool.ts#L77"
   },
   {
     "_tag": "Constant",
@@ -1405,7 +1405,7 @@
     "since": "4.0.0",
     "category": "tools",
     "signature": "declare const FileSearch: <Mode extends Tool.FailureMode | undefined = undefined>(args: { readonly vector_store_ids: ReadonlyArray<string>; readonly filters?: { readonly type: \"eq\" | \"ne\" | \"gt\" | \"gte\" | \"lt\" | \"lte\" | \"in\" | \"nin\"; readonly key: string; readonly value: string | number | boolean | ReadonlyArray<string | number>; } | { readonly type: \"and\" | \"or\"; readonly filters: ReadonlyArray<unknown>; } | null | undefined; readonly max_num_results?: number | undefined; readonly ranking_options?: { readonly ranker?: \"auto\" | \"default-2024-11-15\" | undefined; readonly score_threshold?: number | undefined; readonly hybrid_search?: { readonly embedding_weight: number; readonly text_weight: number; } | undefined; } | undefined; }) => Tool.ProviderDefined<\"openai.file_search\", \"OpenAiFileSearch\", { readonly args: Schema.Struct<{ readonly filters: Schema.optionalKey<Schema.Union<readonly [Schema.Union<readonly [Schema.Struct<{ readonly type: Schema.Literals<readonly [\"eq\", \"ne\", \"gt\", \"gte\", \"lt\", \"lte\", \"in\", \"nin\"]>; readonly key: Schema.String; readonly value: Schema.Union<readonly [Schema.String, Schema.Number, Schema.Boolean, Schema.$Array<Schema.Union<readonly [Schema.String, Schema.Number]>>]>; }>, Schema.Struct<{ readonly type: Schema.Literals<readonly [\"and\", \"or\"]>; readonly filters: Schema.$Array<Schema.Union<readonly [Schema.Struct<{ readonly type: Schema.Literals<readonly [\"eq\", \"ne\", \"gt\", \"gte\", \"lt\", \"lte\", \"in\", \"nin\"]>; readonly key: Schema.String; readonly value: Schema.Union<readonly [Schema.String, Schema.Number, Schema.Boolean, Schema.$Array<Schema.Union<readonly [Schema.String, Schema.Number]>>]>; }>, Schema.Unknown]>>; }>]>, Schema.Null]>>; readonly max_num_results: Schema.optionalKey<Schema.Number>; readonly ranking_options: Schema.optionalKey<Schema.Struct<{ readonly ranker: Schema.optionalKey<Schema.Literals<readonly [\"auto\", \"default-2024-11-15\"]>>; readonly score_threshold: Schema.optionalKey<Schema.Number>; readonly hybrid_search: Schema.optionalKey<Schema.Struct<{ readonly embedding_weight: Schema.Number; readonly text_weight: Schema.Number; }>>; }>>; readonly vector_store_ids: Schema.$Array<Schema.String>; }>; readonly parameters: Schema.Void; readonly success: Schema.Struct<{ readonly status: Schema.Literals<readonly [\"in_progress\", \"searching\", \"completed\", \"incomplete\", \"failed\"]>; readonly queries: Schema.$Array<Schema.String>; readonly results: Schema.optionalKey<Schema.Union<readonly [Schema.$Array<Schema.Struct<{ readonly file_id: Schema.optionalKey<Schema.String>; readonly text: Schema.optionalKey<Schema.String>; readonly filename: Schema.optionalKey<Schema.String>; readonly attributes: Schema.optionalKey<Schema.Union<readonly [Schema.Struct<{}>, Schema.Null]>>; readonly score: Schema.optionalKey<Schema.Number>; }>>, Schema.Null]>>; }>; readonly failure: Schema.Never; readonly failureMode: Mode extends undefined ? \"error\" : Mode; }, false>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiTool.ts#L129"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiTool.ts#L111"
   },
   {
     "_tag": "Constant",
@@ -1421,7 +1421,7 @@
     "since": "4.0.0",
     "category": "tools",
     "signature": "declare const ImageGeneration: <Mode extends Tool.FailureMode | undefined = undefined>(args: { readonly background?: \"auto\" | \"transparent\" | \"opaque\" | undefined; readonly input_fidelity?: \"low\" | \"high\" | null | undefined; readonly input_image_mask?: { readonly image_url?: string | undefined; readonly file_id?: string | undefined; } | undefined; readonly model?: string | undefined; readonly moderation?: \"auto\" | \"low\" | undefined; readonly output_compression?: number | undefined; readonly output_format?: \"png\" | \"webp\" | \"jpeg\" | undefined; readonly partial_images?: number | undefined; readonly quality?: \"auto\" | \"low\" | \"medium\" | \"high\" | undefined; readonly size?: string | undefined; }) => Tool.ProviderDefined<\"openai.image_generation\", \"OpenAiImageGeneration\", { readonly args: Schema.Struct<{ readonly background: Schema.optionalKey<Schema.Literals<readonly [\"transparent\", \"opaque\", \"auto\"]>>; readonly input_fidelity: Schema.optionalKey<Schema.Union<readonly [Schema.Literals<readonly [\"high\", \"low\"]>, Schema.Null]>>; readonly input_image_mask: Schema.optionalKey<Schema.Struct<{ readonly image_url: Schema.optionalKey<Schema.String>; readonly file_id: Schema.optionalKey<Schema.String>; }>>; readonly model: Schema.optionalKey<Schema.Union<readonly [Schema.String, Schema.Literals<readonly [\"gpt-image-1\", \"gpt-image-1-mini\", \"gpt-image-1.5\"]>]>>; readonly moderation: Schema.optionalKey<Schema.Literals<readonly [\"auto\", \"low\"]>>; readonly output_compression: Schema.optionalKey<Schema.Number>; readonly output_format: Schema.optionalKey<Schema.Literals<readonly [\"png\", \"webp\", \"jpeg\"]>>; readonly partial_images: Schema.optionalKey<Schema.Number>; readonly quality: Schema.optionalKey<Schema.Literals<readonly [\"low\", \"medium\", \"high\", \"auto\"]>>; readonly size: Schema.optionalKey<Schema.Union<readonly [Schema.String, Schema.Literals<readonly [\"1024x1024\", \"1024x1536\", \"1536x1024\", \"auto\"]>]>>; }>; readonly parameters: Schema.Void; readonly success: Schema.Struct<{ readonly result: Schema.Union<readonly [Schema.String, Schema.Null]>; }>; readonly failure: Schema.Never; readonly failureMode: Mode extends undefined ? \"error\" : Mode; }, false>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiTool.ts#L165"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiTool.ts#L147"
   },
   {
     "_tag": "Constant",
@@ -1437,7 +1437,7 @@
     "since": "4.0.0",
     "category": "tools",
     "signature": "declare const LocalShell: <Mode extends Tool.FailureMode | undefined = undefined>(args: { readonly failureMode?: Mode | undefined; }) => Tool.ProviderDefined<\"openai.local_shell\", \"OpenAiLocalShell\", { readonly args: Schema.Void; readonly parameters: Schema.Struct<{ readonly action: Schema.Struct<{ readonly type: Schema.Literal<\"exec\">; readonly command: Schema.$Array<Schema.String>; readonly timeout_ms: Schema.optionalKey<Schema.Union<readonly [Schema.Number, Schema.Null]>>; readonly working_directory: Schema.optionalKey<Schema.Union<readonly [Schema.String, Schema.Null]>>; readonly env: Schema.Struct<{}>; readonly user: Schema.optionalKey<Schema.Union<readonly [Schema.String, Schema.Null]>>; }>; }>; readonly success: Schema.Struct<{ readonly output: Schema.String; }>; readonly failure: Schema.Never; readonly failureMode: Mode extends undefined ? \"error\" : Mode; }, true>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiTool.ts#L205"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiTool.ts#L187"
   },
   {
     "_tag": "Constant",
@@ -1453,7 +1453,7 @@
     "since": "4.0.0",
     "category": "tools",
     "signature": "declare const Mcp: <Mode extends Tool.FailureMode | undefined = undefined>(args: { readonly server_label: string; readonly allowed_tools?: ReadonlyArray<string> | { readonly tool_names?: ReadonlyArray<string> | undefined; readonly read_only?: boolean | undefined; } | null | undefined; readonly authorization?: string | undefined; readonly connector_id?: \"connector_dropbox\" | \"connector_gmail\" | \"connector_googlecalendar\" | \"connector_googledrive\" | \"connector_microsoftteams\" | \"connector_outlookcalendar\" | \"connector_outlookemail\" | \"connector_sharepoint\" | undefined; readonly require_approval?: \"always\" | \"never\" | { readonly always?: { readonly tool_names?: ReadonlyArray<string> | undefined; readonly read_only?: boolean | undefined; } | undefined; readonly never?: { readonly tool_names?: ReadonlyArray<string> | undefined; readonly read_only?: boolean | undefined; } | undefined; } | null | undefined; readonly server_description?: string | undefined; readonly server_url?: string | undefined; }) => Tool.ProviderDefined<\"openai.mcp\", \"OpenAiMcp\", { readonly args: Schema.Struct<{ readonly allowed_tools: Schema.optionalKey<Schema.Union<readonly [Schema.Union<readonly [Schema.$Array<Schema.String>, Schema.Struct<{ readonly tool_names: Schema.optionalKey<Schema.$Array<Schema.String>>; readonly read_only: Schema.optionalKey<Schema.Boolean>; }>]>, Schema.Null]>>; readonly authorization: Schema.optionalKey<Schema.String>; readonly connector_id: Schema.optionalKey<Schema.Literals<readonly [\"connector_dropbox\", \"connector_gmail\", \"connector_googlecalendar\", \"connector_googledrive\", \"connector_microsoftteams\", \"connector_outlookcalendar\", \"connector_outlookemail\", \"connector_sharepoint\"]>>; readonly require_approval: Schema.optionalKey<Schema.Union<readonly [Schema.Union<readonly [Schema.Struct<{ readonly always: Schema.optionalKey<Schema.Struct<{ readonly tool_names: Schema.optionalKey<Schema.$Array<Schema.String>>; readonly read_only: Schema.optionalKey<Schema.Boolean>; }>>; readonly never: Schema.optionalKey<Schema.Struct<{ readonly tool_names: Schema.optionalKey<Schema.$Array<Schema.String>>; readonly read_only: Schema.optionalKey<Schema.Boolean>; }>>; }>, Schema.Literals<readonly [\"always\", \"never\"]>]>, Schema.Null]>>; readonly server_description: Schema.optionalKey<Schema.String>; readonly server_label: Schema.String; readonly server_url: Schema.optionalKey<Schema.String>; }>; readonly parameters: Schema.Unknown; readonly success: Schema.Struct<{ readonly type: Schema.Literal<\"mcp_call\">; readonly name: Schema.String; readonly arguments: Schema.String; readonly output: Schema.optionalKey<Schema.Union<readonly [Schema.String, Schema.Null]>>; readonly error: Schema.optionalKey<Schema.Union<readonly [Schema.String, Schema.Null]>>; readonly server_label: Schema.String; }>; readonly failure: Schema.Never; readonly failureMode: Mode extends undefined ? \"error\" : Mode; }, false>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiTool.ts#L241"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiTool.ts#L223"
   },
   {
     "_tag": "Constant",
@@ -1469,7 +1469,7 @@
     "since": "4.0.0",
     "category": "tools",
     "signature": "declare const Shell: <Mode extends Tool.FailureMode | undefined = undefined>(args: { readonly failureMode?: Mode | undefined; }) => Tool.ProviderDefined<\"openai.shell\", \"OpenAiShell\", { readonly args: Schema.Void; readonly parameters: Schema.Struct<{ readonly action: Schema.Struct<{ readonly commands: Schema.$Array<Schema.String>; readonly timeout_ms: Schema.Union<readonly [Schema.Number, Schema.Null]>; readonly max_output_length: Schema.Union<readonly [Schema.Number, Schema.Null]>; }>; }>; readonly success: Schema.Struct<{ readonly output: Schema.$Array<Schema.Struct<{ readonly stdout: Schema.String; readonly stderr: Schema.String; readonly outcome: Schema.Union<readonly [Schema.Struct<{ readonly type: Schema.Literal<\"timeout\">; }>, Schema.Struct<{ readonly type: Schema.Literal<\"exit\">; readonly exit_code: Schema.Number; }>]>; readonly created_by: Schema.optionalKey<Schema.String>; }>>; }>; readonly failure: Schema.Never; readonly failureMode: Mode extends undefined ? \"error\" : Mode; }, true>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiTool.ts#L282"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiTool.ts#L264"
   },
   {
     "_tag": "Constant",
@@ -1485,7 +1485,7 @@
     "since": "4.0.0",
     "category": "tools",
     "signature": "declare const WebSearch: <Mode extends Tool.FailureMode | undefined = undefined>(args: { readonly filters?: { readonly allowed_domains?: ReadonlyArray<string> | null | undefined; } | null | undefined; readonly user_location?: { readonly type?: \"approximate\" | undefined; readonly country?: string | null | undefined; readonly region?: string | null | undefined; readonly city?: string | null | undefined; readonly timezone?: string | null | undefined; } | null | undefined; readonly search_context_size?: \"low\" | \"medium\" | \"high\" | undefined; }) => Tool.ProviderDefined<\"openai.web_search\", \"OpenAiWebSearch\", { readonly args: Schema.Struct<{ readonly filters: Schema.optionalKey<Schema.Union<readonly [Schema.Struct<{ readonly allowed_domains: Schema.optionalKey<Schema.Union<readonly [Schema.$Array<Schema.String>, Schema.Null]>>; }>, Schema.Null]>>; readonly user_location: Schema.optionalKey<Schema.Union<readonly [Schema.Struct<{ readonly type: Schema.optionalKey<Schema.Literal<\"approximate\">>; readonly country: Schema.optionalKey<Schema.Union<readonly [Schema.String, Schema.Null]>>; readonly region: Schema.optionalKey<Schema.Union<readonly [Schema.String, Schema.Null]>>; readonly city: Schema.optionalKey<Schema.Union<readonly [Schema.String, Schema.Null]>>; readonly timezone: Schema.optionalKey<Schema.Union<readonly [Schema.String, Schema.Null]>>; }>, Schema.Null]>>; readonly search_context_size: Schema.optionalKey<Schema.Literals<readonly [\"low\", \"medium\", \"high\"]>>; }>; readonly parameters: Schema.Struct<{ readonly action: Schema.Union<readonly [Schema.Struct<{ readonly type: Schema.Literal<\"search\">; readonly query: Schema.optionalKey<Schema.String>; readonly queries: Schema.optionalKey<Schema.$Array<Schema.String>>; readonly sources: Schema.optionalKey<Schema.$Array<Schema.Struct<{ readonly type: Schema.Literal<\"url\">; readonly url: Schema.String; }>>>; }>, Schema.Struct<{ readonly type: Schema.Literal<\"open_page\">; readonly url: Schema.optionalKey<Schema.Union<readonly [Schema.String, Schema.Null]>>; }>, Schema.Struct<{ readonly type: Schema.Literal<\"find_in_page\">; readonly url: Schema.String; readonly pattern: Schema.String; }>]>; }>; readonly success: Schema.Struct<{ readonly action: Schema.Union<readonly [Schema.Struct<{ readonly type: Schema.Literal<\"search\">; readonly query: Schema.optionalKey<Schema.String>; readonly queries: Schema.optionalKey<Schema.$Array<Schema.String>>; readonly sources: Schema.optionalKey<Schema.$Array<Schema.Struct<{ readonly type: Schema.Literal<\"url\">; readonly url: Schema.String; }>>>; }>, Schema.Struct<{ readonly type: Schema.Literal<\"open_page\">; readonly url: Schema.optionalKey<Schema.Union<readonly [Schema.String, Schema.Null]>>; }>, Schema.Struct<{ readonly type: Schema.Literal<\"find_in_page\">; readonly url: Schema.String; readonly pattern: Schema.String; }>]>; readonly status: Schema.Literals<readonly [\"in_progress\", \"searching\", \"completed\", \"failed\"]>; }>; readonly failure: Schema.Never; readonly failureMode: Mode extends undefined ? \"error\" : Mode; }, false>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiTool.ts#L313"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiTool.ts#L295"
   },
   {
     "_tag": "Constant",
@@ -1501,7 +1501,7 @@
     "since": "4.0.0",
     "category": "tools",
     "signature": "declare const WebSearchPreview: <Mode extends Tool.FailureMode | undefined = undefined>(args: { readonly user_location?: { readonly type: \"approximate\"; readonly country?: string | null | undefined; readonly region?: string | null | undefined; readonly city?: string | null | undefined; readonly timezone?: string | null | undefined; } | null | undefined; readonly search_context_size?: \"low\" | \"medium\" | \"high\" | undefined; }) => Tool.ProviderDefined<\"openai.web_search_preview\", \"OpenAiWebSearchPreview\", { readonly args: Schema.Struct<{ readonly user_location: Schema.optionalKey<Schema.Union<readonly [Schema.Struct<{ readonly type: Schema.Literal<\"approximate\">; readonly country: Schema.optionalKey<Schema.Union<readonly [Schema.String, Schema.Null]>>; readonly region: Schema.optionalKey<Schema.Union<readonly [Schema.String, Schema.Null]>>; readonly city: Schema.optionalKey<Schema.Union<readonly [Schema.String, Schema.Null]>>; readonly timezone: Schema.optionalKey<Schema.Union<readonly [Schema.String, Schema.Null]>>; }>, Schema.Null]>>; readonly search_context_size: Schema.optionalKey<Schema.Literals<readonly [\"low\", \"medium\", \"high\"]>>; }>; readonly parameters: Schema.Void; readonly success: Schema.Struct<{ readonly action: Schema.Union<readonly [Schema.Struct<{ readonly type: Schema.Literal<\"search\">; readonly query: Schema.optionalKey<Schema.String>; readonly queries: Schema.optionalKey<Schema.$Array<Schema.String>>; readonly sources: Schema.optionalKey<Schema.$Array<Schema.Struct<{ readonly type: Schema.Literal<\"url\">; readonly url: Schema.String; }>>>; }>, Schema.Struct<{ readonly type: Schema.Literal<\"open_page\">; readonly url: Schema.optionalKey<Schema.Union<readonly [Schema.String, Schema.Null]>>; }>, Schema.Struct<{ readonly type: Schema.Literal<\"find_in_page\">; readonly url: Schema.String; readonly pattern: Schema.String; }>]>; readonly status: Schema.Literals<readonly [\"in_progress\", \"searching\", \"completed\", \"failed\"]>; }>; readonly failure: Schema.Never; readonly failureMode: Mode extends undefined ? \"error\" : Mode; }, false>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiTool.ts#L348"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiTool.ts#L330"
   },
   {
     "_tag": "TypeAlias",
@@ -1517,6 +1517,6 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "type OpenAiTool = | ReturnType<typeof ApplyPatch>\n  | ReturnType<typeof CodeInterpreter>\n  | ReturnType<typeof FileSearch>\n  | ReturnType<typeof Shell>\n  | ReturnType<typeof ImageGeneration>\n  | ReturnType<typeof LocalShell>\n  | ReturnType<typeof Mcp>\n  | ReturnType<typeof WebSearch>\n  | ReturnType<typeof WebSearchPreview>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiTool.ts#L38"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiTool.ts#L20"
   }
 ]

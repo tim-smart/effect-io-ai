@@ -11,6 +11,6 @@ Input payload for creating a file through the text editor code execution tool, o
 type CodeExecutionTextEditorCreate = typeof CodeExecutionTextEditorCreate.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L341)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L292)
 
 Since v4.0.0

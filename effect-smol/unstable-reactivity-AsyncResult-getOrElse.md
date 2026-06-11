@@ -11,6 +11,6 @@ Returns the available value from `value`, or evaluates the fallback when no curr
 declare const getOrElse: { <B>(orElse: LazyArg<B>): <A, E>(self: AsyncResult<A, E>) => A | B; <A, E, B>(self: AsyncResult<A, E>, orElse: LazyArg<B>): A | B; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AsyncResult.ts#L462)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AsyncResult.ts#L430)
 
 Since v4.0.0

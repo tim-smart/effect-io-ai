@@ -26,6 +26,6 @@ export interface Pull<out A, out E = never, out Done = void, out R = never>
 {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pull.ts#L57)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pull.ts#L40)
 
 Since v4.0.0

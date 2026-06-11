@@ -15,6 +15,6 @@ export interface ArrayHelper {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Statement.ts#L249)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Statement.ts#L221)
 
 Since v4.0.0

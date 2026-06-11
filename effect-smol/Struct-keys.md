@@ -36,6 +36,6 @@ console.log(k) // ["name", "age"]
 declare const keys: <S extends object>(self: S) => Array<(keyof S) & string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Struct.ts#L231)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Struct.ts#L168)
 
 Since v3.6.0

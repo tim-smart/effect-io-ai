@@ -42,6 +42,6 @@ export interface Metadata<Output = unknown, Input = unknown> extends InputMetada
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L206)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L150)
 
 Since v4.0.0

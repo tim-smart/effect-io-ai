@@ -11,6 +11,6 @@ Layer that provides `Geolocation` using `navigator.geolocation`, with watched po
 declare const layer: Layer.Layer<Geolocation, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Geolocation.ts#L222)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Geolocation.ts#L199)
 
 Since v4.0.0

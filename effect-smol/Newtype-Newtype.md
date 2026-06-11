@@ -45,6 +45,6 @@ export interface Newtype<in out Key extends string, out Carrier> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Newtype.ts#L108)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Newtype.ts#L55)
 
 Since v4.0.0

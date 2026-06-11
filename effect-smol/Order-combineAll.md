@@ -48,6 +48,6 @@ console.log(combinedOrder(person1, person2)) // -1 (Same age, Alice < Bob)
 declare const combineAll: <A>(collection: Iterable<Order<A>>) => Order<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L467)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L399)
 
 Since v2.0.0

@@ -23,6 +23,6 @@ between open and closed lifecycle states.
 type State<K, A, E> = State.Open<K, A, E> | State.Closed
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RcMap.ts#L107)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RcMap.ts#L99)
 
 Since v4.0.0

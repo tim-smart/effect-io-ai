@@ -24,6 +24,6 @@ console.log(Symbol.isSymbol("a")) // false
 declare const isSymbol: (u: unknown) => u is symbol
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Symbol.ts#L48)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Symbol.ts#L31)
 
 Since v2.0.0

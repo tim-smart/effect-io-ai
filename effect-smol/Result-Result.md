@@ -46,6 +46,6 @@ console.log(message)
 type Result<A, E> = Success<A, E> | Failure<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L128)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L70)
 
 Since v4.0.0

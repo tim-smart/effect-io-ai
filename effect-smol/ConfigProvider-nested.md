@@ -45,6 +45,6 @@ const scoped = ConfigProvider.nested(provider, "APP")
 declare const nested: { (prefix: string | Path): (self: ConfigProvider) => ConfigProvider; (self: ConfigProvider, prefix: string | Path): ConfigProvider; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L631)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L562)
 
 Since v2.0.0

@@ -14,7 +14,7 @@ This check corresponds to the `type: "integer"` constraint in JSON Schema.
 
 Arbitrary:
 
-When generating test data with fast-check, this applies an `isInteger: true`
+When generating test data with fast-check, this applies an `integer: true`
 constraint to ensure generated numbers are integers.
 
 **Signature**
@@ -23,6 +23,6 @@ constraint to ensure generated numbers are integers.
 declare const isInt: (annotations?: Annotations.Filter) => SchemaAST.Filter<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7104)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7061)
 
 Since v4.0.0

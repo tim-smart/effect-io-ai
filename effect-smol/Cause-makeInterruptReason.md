@@ -32,6 +32,6 @@ console.log(reason.fiberId) // 42
 declare const makeInterruptReason: (fiberId?: number | undefined) => Interrupt
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L683)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L617)
 
 Since v4.0.0

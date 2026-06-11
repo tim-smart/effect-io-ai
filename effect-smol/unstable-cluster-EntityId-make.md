@@ -30,6 +30,6 @@ value.
 declare const make: (id: string) => EntityId
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EntityId.ts#L74)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EntityId.ts#L50)
 
 Since v4.0.0

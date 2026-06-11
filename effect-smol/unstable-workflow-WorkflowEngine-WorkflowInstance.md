@@ -23,6 +23,6 @@ coordination state for a single workflow run.
 declare class WorkflowInstance
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/WorkflowEngine.ts#L240)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/WorkflowEngine.ts#L228)
 
 Since v4.0.0

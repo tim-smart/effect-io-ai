@@ -22,6 +22,6 @@ export interface Serializable<S extends Schema.Top> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L2440)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L2412)
 
 Since v4.0.0

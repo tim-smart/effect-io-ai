@@ -22,6 +22,6 @@ classes or object literals that expose a stable string identifier.
 declare const symbol: "~effect/interfaces/PrimaryKey"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PrimaryKey.ts#L67)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PrimaryKey.ts#L27)
 
 Since v2.0.0

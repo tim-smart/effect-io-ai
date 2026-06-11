@@ -30,6 +30,6 @@ const program = Effect.gen(function*() {
 declare const size: <A>(self: TxChunk<A>) => Effect.Effect<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxChunk.ts#L501)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxChunk.ts#L469)
 
 Since v4.0.0

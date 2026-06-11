@@ -17,6 +17,6 @@ through the `Client` passed to the handler.
 declare const run: <_, E, R>(handle: (client: Client) => Effect.Effect<_, E, R>) => Effect.Effect<never, SocketServer.SocketServerError, R | SocketServer.SocketServer>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DevToolsServer.ts#L65)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DevToolsServer.ts#L52)
 
 Since v4.0.0

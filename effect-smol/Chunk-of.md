@@ -20,6 +20,6 @@ console.log(Chunk.toArray(chunk)) // ["hello"]
 declare const of: <A>(a: A) => NonEmptyChunk<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L397)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L336)
 
 Since v2.0.0

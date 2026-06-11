@@ -103,6 +103,6 @@ const program = Effect.gen(function*() {
 export interface Summary<Input> extends Metric<Input, SummaryState> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L910)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L837)
 
 Since v2.0.0

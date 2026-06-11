@@ -36,6 +36,6 @@ console.log(Exit.isSuccess(doubled) && doubled.value) // 42
 declare const map: { <A, B>(f: (a: A) => B): <E>(self: Exit<A, E>) => Exit<B, E>; <A, E, B>(self: Exit<A, E>, f: (a: A) => B): Exit<B, E>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L877)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L830)
 
 Since v2.0.0

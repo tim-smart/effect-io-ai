@@ -13,6 +13,6 @@ integration.
 declare const make: (options: SqlClient.MakeOptions) => Effect.Effect<SqlClient, never, Reactivity>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SqlClient.ts#L153)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SqlClient.ts#L139)
 
 Since v4.0.0

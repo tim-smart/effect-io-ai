@@ -30,6 +30,6 @@ const API_KEY = Redacted.make("1234567890")
 declare const make: <T>(value: T, options?: { readonly label?: string | undefined; }) => Redacted<T>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Redacted.ts#L218)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Redacted.ts#L185)
 
 Since v3.3.0

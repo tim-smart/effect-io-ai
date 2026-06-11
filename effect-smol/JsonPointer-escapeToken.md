@@ -40,6 +40,6 @@ JsonPointer.escapeToken("path/to~key") // "path~1to~0key"
 declare const escapeToken: (token: string) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonPointer.ts#L87)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonPointer.ts#L42)
 
 Since v4.0.0

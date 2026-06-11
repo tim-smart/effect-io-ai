@@ -15,6 +15,6 @@ Supported variants include empty bodies, raw bodies, byte arrays, `FormData`, an
 type HttpBody = Empty | Raw | Uint8Array | FormData | Stream
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpBody.ts#L92)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpBody.ts#L48)
 
 Since v4.0.0

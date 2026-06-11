@@ -26,6 +26,6 @@ security scheme.
 declare const http: (options: { readonly scheme: string; }) => Http
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSecurity.ts#L155)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSecurity.ts#L126)
 
 Since v4.0.0

@@ -11,6 +11,6 @@ Response error for operations that expected a response body but received an empt
 declare class EmptyBodyError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClientError.ts#L265)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClientError.ts#L245)
 
 Since v4.0.0

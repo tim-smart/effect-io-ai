@@ -11,6 +11,6 @@ Schema for the `Suspend` representation node.
 declare const $Suspend: Schema.Struct<{ readonly _tag: Schema.tag<"Suspend">; readonly annotations: Schema.optional<Schema.decodeTo<Schema.$Record<Schema.String, Schema.Unknown>, Schema.$Record<Schema.String, Schema.Codec<PrimitiveTree, PrimitiveTree, never, never>>, never, never>>; readonly checks: Schema.Tuple<readonly []>; readonly thunk: Schema.suspend<$Representation>; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L1591)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L1517)
 
 Since v4.0.0

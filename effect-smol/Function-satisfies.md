@@ -36,6 +36,6 @@ assert.deepStrictEqual(Function.satisfies<number>()(5), 5)
 declare const satisfies: <A>() => <B extends A>(b: B) => B
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L317)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L279)
 
 Since v2.0.0

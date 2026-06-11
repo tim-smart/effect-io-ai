@@ -29,6 +29,6 @@ console.log(pattern.test("goodbye")) // false
 declare const RegExp: RegExpConstructor
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RegExp.ts#L65)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RegExp.ts#L39)
 
 Since v4.0.0

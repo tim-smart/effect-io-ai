@@ -29,6 +29,6 @@ const program = Effect.gen(function*() {
 declare const poll: <A, E>(self: TxDequeue<A, E>) => Effect.Effect<Option.Option<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L760)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L720)
 
 Since v2.0.0

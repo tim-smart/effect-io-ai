@@ -39,6 +39,6 @@ const schema = Schema.String.pipe(
 declare const durationFromString: Transformation<Duration.Duration, string, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L990)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L917)
 
 Since v4.0.0

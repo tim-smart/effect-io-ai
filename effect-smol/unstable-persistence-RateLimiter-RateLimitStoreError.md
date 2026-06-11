@@ -11,6 +11,6 @@ Error reason for failures in the backing `RateLimiterStore`.
 declare class RateLimitStoreError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RateLimiter.ts#L394)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RateLimiter.ts#L378)
 
 Since v4.0.0

@@ -31,6 +31,6 @@ console.log(Array.isReadonlyArrayNonEmpty([1, 2, 3])) // true
 declare const isReadonlyArrayNonEmpty: <A>(self: ReadonlyArray<A>) => self is NonEmptyReadonlyArray<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L967)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L892)
 
 Since v4.0.0

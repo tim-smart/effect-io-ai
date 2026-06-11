@@ -31,6 +31,6 @@ console.log(Array.getSuccesses([Result.succeed(1), Result.fail("err"), Result.su
 declare const getSuccesses: <T extends Iterable<Result.Result<any, any>>>(self: T) => Array<Result.Result.Success<ReadonlyArray.Infer<T>>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L3745)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L3670)
 
 Since v4.0.0

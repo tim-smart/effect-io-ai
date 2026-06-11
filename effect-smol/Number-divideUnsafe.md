@@ -34,6 +34,6 @@ console.log(Number.divideUnsafe(6, 3)) // 2
 declare const divideUnsafe: { (that: number): (self: number) => number; (self: number, that: number): number; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L256)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L205)
 
 Since v4.0.0

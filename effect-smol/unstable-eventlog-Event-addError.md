@@ -16,6 +16,6 @@ while replacing the error schema with a union of the existing and new errors.
 declare const addError: <A extends Any, Error2 extends Schema.Top>(event: A, error: Error2) => AddError<A, Error2>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Event.ts#L461)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Event.ts#L439)
 
 Since v4.0.0

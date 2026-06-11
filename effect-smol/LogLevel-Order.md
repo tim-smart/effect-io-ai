@@ -31,6 +31,6 @@ console.log(LogLevel.Order("Info", "Info")) // 0 (Info == Info)
 declare const Order: Ord.Order<LogLevel>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LogLevel.ts#L166)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LogLevel.ts#L135)
 
 Since v2.0.0

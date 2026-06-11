@@ -17,6 +17,6 @@ export interface PgClient extends Client.SqlClient {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/pg/src/PgClient.ts#L104)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/pg/src/PgClient.ts#L79)
 
 Since v4.0.0

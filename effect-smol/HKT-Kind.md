@@ -74,6 +74,6 @@ type Kind<F, In, Out2, Out1, Target> = F extends {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HKT.ts#L241)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HKT.ts#L199)
 
 Since v2.0.0

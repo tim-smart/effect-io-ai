@@ -32,6 +32,6 @@ payload.
 type CodeExecutionTextEditorView = typeof CodeExecutionTextEditorView.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L300)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L251)
 
 Since v4.0.0

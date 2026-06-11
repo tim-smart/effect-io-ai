@@ -11,6 +11,6 @@ Schema interface for `Headers` values encoded as records of string header values
 export interface HeadersSchema extends Schema.declare<Headers, { readonly [x: string]: string }> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Headers.ts#L163)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Headers.ts#L118)
 
 Since v4.0.0

@@ -27,6 +27,6 @@ component reads the selected value from the current `RegistryContext`.
 declare const useAtomValue: { <A>(atom: Atom.Atom<A>): A; <A, B>(atom: Atom.Atom<A>, f: (_: A) => B): B; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/Hooks.ts#L126)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/Hooks.ts#L113)
 
 Since v4.0.0

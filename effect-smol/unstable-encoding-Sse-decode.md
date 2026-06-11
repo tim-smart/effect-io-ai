@@ -16,6 +16,6 @@ reconnect with the requested delay.
 declare const decode: <IE, Done>() => Channel.Channel<NonEmptyReadonlyArray<Event>, IE | Retry, Done, NonEmptyReadonlyArray<string>, IE, Done>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sse.ts#L67)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sse.ts#L36)
 
 Since v4.0.0

@@ -41,6 +41,6 @@ console.log(doc.definitions) // { PositiveInt: { type: "integer", minimum: 1 } }
 declare const fromSchemaDraft2020_12: (js: JsonSchema) => Document<"draft-2020-12">
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonSchema.ts#L467)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonSchema.ts#L391)
 
 Since v4.0.0

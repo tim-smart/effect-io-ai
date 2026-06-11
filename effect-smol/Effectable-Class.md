@@ -20,6 +20,6 @@ as `Effect` values.
 declare class Class<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effectable.ts#L96)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effectable.ts#L66)
 
 Since v2.0.0

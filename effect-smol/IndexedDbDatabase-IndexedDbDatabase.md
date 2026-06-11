@@ -32,6 +32,6 @@ migrations. Records not recreated by migrations are removed.
 declare class IndexedDbDatabase
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbDatabase.ts#L148)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbDatabase.ts#L132)
 
 Since v4.0.0

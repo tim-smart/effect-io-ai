@@ -11,6 +11,6 @@ An empty `Headers` collection.
 declare const empty: Headers
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Headers.ts#L220)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Headers.ts#L175)
 
 Since v4.0.0

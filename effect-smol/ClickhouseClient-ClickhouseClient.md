@@ -36,6 +36,6 @@ export interface ClickhouseClient extends Client.SqlClient {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/clickhouse/src/ClickhouseClient.ts#L136)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/clickhouse/src/ClickhouseClient.ts#L110)
 
 Since v4.0.0

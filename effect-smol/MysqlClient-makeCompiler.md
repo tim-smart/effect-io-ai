@@ -11,6 +11,6 @@ Creates the MySQL statement compiler, using `?` placeholders and backtick-escape
 declare const makeCompiler: (transform?: (_: string) => string) => Statement.Compiler
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/mysql2/src/MysqlClient.ts#L473)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/mysql2/src/MysqlClient.ts#L451)
 
 Since v4.0.0

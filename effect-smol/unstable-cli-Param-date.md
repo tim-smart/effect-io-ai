@@ -28,6 +28,6 @@ const dueDateArg = Param.date(Param.argumentKind, "due-date")
 declare const date: <const Kind extends ParamKind>(kind: Kind, name: string) => Param<Kind, Date>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L541)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L524)
 
 Since v4.0.0

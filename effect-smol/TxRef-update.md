@@ -32,6 +32,6 @@ const program = Effect.gen(function*() {
 declare const update: { <A>(f: (current: NoInfer<A>) => A): (self: TxRef<A>) => Effect.Effect<void>; <A>(self: TxRef<A>, f: (current: A) => A): Effect.Effect<void>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxRef.ts#L262)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxRef.ts#L212)
 
 Since v2.0.0

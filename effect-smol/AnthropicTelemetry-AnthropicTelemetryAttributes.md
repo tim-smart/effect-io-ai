@@ -22,6 +22,6 @@ type AnthropicTelemetryAttributes = Simplify<
 >
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTelemetry.ts#L58)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTelemetry.ts#L28)
 
 Since v4.0.0

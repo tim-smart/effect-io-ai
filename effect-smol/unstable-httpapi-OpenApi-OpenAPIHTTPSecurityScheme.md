@@ -17,6 +17,6 @@ export interface OpenAPIHTTPSecurityScheme {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OpenApi.ts#L962)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OpenApi.ts#L928)
 
 Since v4.0.0

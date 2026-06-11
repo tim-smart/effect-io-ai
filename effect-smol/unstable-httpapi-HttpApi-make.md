@@ -17,6 +17,6 @@ and register the API with `HttpApiBuilder.layer`.
 declare const make: <const Id extends string>(identifier: Id) => HttpApi<Id, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApi.ts#L246)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApi.ts#L206)
 
 Since v4.0.0

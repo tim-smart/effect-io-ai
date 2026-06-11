@@ -21,6 +21,6 @@ const name = Flag.string("name").pipe(
 declare const withFallbackPrompt: { <B>(prompt: Param.FallbackPrompt<B>): <A>(self: Flag<A>) => Flag<A | B>; <A, B>(self: Flag<A>, prompt: Param.FallbackPrompt<B>): Flag<A | B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L634)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L624)
 
 Since v4.0.0

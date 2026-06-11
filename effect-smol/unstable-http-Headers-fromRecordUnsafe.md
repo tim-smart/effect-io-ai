@@ -15,6 +15,6 @@ This mutates the record's prototype and does not normalize header names; callers
 declare const fromRecordUnsafe: (input: Record.ReadonlyRecord<string, string>) => Headers
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Headers.ts#L263)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Headers.ts#L218)
 
 Since v4.0.0

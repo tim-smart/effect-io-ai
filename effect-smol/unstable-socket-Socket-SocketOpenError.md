@@ -12,6 +12,6 @@ unknown open failures and open timeouts.
 declare class SocketOpenError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Socket.ts#L275)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Socket.ts#L260)
 
 Since v4.0.0

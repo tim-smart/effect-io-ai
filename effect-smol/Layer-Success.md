@@ -21,6 +21,6 @@ restating its `ROut` type parameter.
 type Success<T> = T extends Layer<infer _ROut, infer _E, infer _RIn> ? _ROut : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L212)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L180)
 
 Since v2.0.0

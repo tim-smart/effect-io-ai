@@ -38,6 +38,6 @@ console.log(Option.zipRight(Option.none(), Option.some("hello")))
 declare const zipRight: { <B>(that: Option<B>): <_>(self: Option<_>) => Option<B>; <X, B>(self: Option<X>, that: Option<B>): Option<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1537)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1476)
 
 Since v2.0.0

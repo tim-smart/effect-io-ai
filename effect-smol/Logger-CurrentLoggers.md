@@ -38,6 +38,6 @@ const program = Effect.gen(function*() {
 declare const CurrentLoggers: Context.Reference<ReadonlySet<Logger<unknown, any>>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L240)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L166)
 
 Since v4.0.0

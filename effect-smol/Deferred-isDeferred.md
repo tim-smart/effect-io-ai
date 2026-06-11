@@ -16,6 +16,6 @@ Use to validate unknown values at runtime boundaries before treating them as
 declare const isDeferred: <A, E>(u: unknown) => u is Deferred<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L140)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L87)
 
 Since v4.0.0

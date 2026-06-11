@@ -16,6 +16,6 @@ objects.
 type TypeId = "~@effect/atom-react/ScopedAtom"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/ScopedAtom.ts#L37)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/ScopedAtom.ts#L25)
 
 Since v4.0.0

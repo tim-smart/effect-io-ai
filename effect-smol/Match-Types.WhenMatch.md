@@ -46,6 +46,6 @@ type WhenMatch<R, P> = [0] extends [1 & R] ? ResolvePred<P> :
       : ExtractMatch<R, P>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L2125)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L2091)
 
 Since v4.0.0

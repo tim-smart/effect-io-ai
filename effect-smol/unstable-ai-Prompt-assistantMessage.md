@@ -19,6 +19,6 @@ This is the role-specific wrapper around `makeMessage("assistant", params)`.
 declare const assistantMessage: (params: MessageConstructorParams<AssistantMessage>) => AssistantMessage
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1570)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1526)
 
 Since v4.0.0

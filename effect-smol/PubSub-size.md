@@ -44,6 +44,6 @@ const program = Effect.gen(function*() {
 declare const size: <A>(self: PubSub<A>) => Effect.Effect<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L661)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L613)
 
 Since v2.0.0

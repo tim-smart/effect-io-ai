@@ -13,6 +13,6 @@ transport and decode failures to `HttpClientError`.
 declare const makeUndici: Effect.Effect<Client.HttpClient, never, Dispatcher>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L169)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L142)
 
 Since v4.0.0

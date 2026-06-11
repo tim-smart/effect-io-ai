@@ -20,6 +20,6 @@ Use to keep the largest `bigint` when an API consumes a `Combiner`.
 declare const CombinerMax: Combiner.Combiner<bigint>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L1073)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L1014)
 
 Since v4.0.0

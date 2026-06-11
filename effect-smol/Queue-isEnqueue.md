@@ -27,6 +27,6 @@ enqueue side.
 declare const isEnqueue: <A = unknown, E = unknown>(u: unknown) => u is Enqueue<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L126)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L69)
 
 Since v2.0.0

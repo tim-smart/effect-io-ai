@@ -11,6 +11,6 @@ Error raised by unencrypted server storage and store mapping operations.
 declare class EventLogServerStoreError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogServerUnencrypted.ts#L263)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogServerUnencrypted.ts#L235)
 
 Since v4.0.0

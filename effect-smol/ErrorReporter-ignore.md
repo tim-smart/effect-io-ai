@@ -23,6 +23,6 @@ as HTTP 404 responses.
 type ignore = "~effect/ErrorReporter/ignore"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ErrorReporter.ts#L370)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ErrorReporter.ts#L331)
 
 Since v4.0.0

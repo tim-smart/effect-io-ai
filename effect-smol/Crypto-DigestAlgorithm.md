@@ -24,6 +24,6 @@ const algorithm: Crypto.DigestAlgorithm = "SHA-256"
 type DigestAlgorithm = "SHA-1" | "SHA-256" | "SHA-384" | "SHA-512"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Crypto.ts#L81)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Crypto.ts#L37)
 
 Since v4.0.0

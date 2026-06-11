@@ -21,6 +21,6 @@ of narrowing that eliminates all options.
 declare class Never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L909)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L857)
 
 Since v4.0.0

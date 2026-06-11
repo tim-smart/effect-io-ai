@@ -45,6 +45,6 @@ const provider = ConfigProvider.fromDotEnvContents(contents)
 declare const fromDotEnvContents: (lines: string, options?: { readonly expandVariables?: boolean | undefined; }) => ConfigProvider
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L977)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L908)
 
 Since v4.0.0

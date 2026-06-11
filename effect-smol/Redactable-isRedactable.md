@@ -21,6 +21,6 @@ Use to narrow an unknown value before calling redaction-specific helpers.
 declare const isRedactable: (u: unknown) => u is Redactable
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Redactable.ts#L159)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Redactable.ts#L101)
 
 Since v3.10.0

@@ -36,6 +36,6 @@ numeric id produced by the routing or storage layer.
 declare const make: (group: string, id: number) => ShardId
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ShardId.ts#L107)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ShardId.ts#L90)
 
 Since v4.0.0

@@ -12,6 +12,6 @@ Returns the underlying Node `IncomingMessage` for a platform Node
 declare const toIncomingMessage: (self: HttpServerRequest) => Http.IncomingMessage
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpServerRequest.ts#L33)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpServerRequest.ts#L20)
 
 Since v4.0.0

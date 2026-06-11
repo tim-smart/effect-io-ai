@@ -30,6 +30,6 @@ export interface Filter<in Input, out Pass = Input, out Fail = Input> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Filter.ts#L69)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Filter.ts#L44)
 
 Since v4.0.0

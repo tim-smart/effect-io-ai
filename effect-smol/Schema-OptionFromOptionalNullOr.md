@@ -13,6 +13,6 @@ export interface OptionFromOptionalNullOr<S extends Top> extends decodeTo<Option
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8425)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8312)
 
 Since v4.0.0

@@ -38,6 +38,6 @@ const hasRequiredKeys = allKeys.includes("apple") && allKeys.includes("banana")
 declare const keys: <K, V>(self: MutableHashMap<K, V>) => Iterable<K>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashMap.ts#L358)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashMap.ts#L329)
 
 Since v3.8.0

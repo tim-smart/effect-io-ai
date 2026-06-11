@@ -21,6 +21,6 @@ OpenRouter provider configuration in an Effect context.
 declare class OpenRouterConfig
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterConfig.ts#L54)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterConfig.ts#L28)
 
 Since v4.0.0

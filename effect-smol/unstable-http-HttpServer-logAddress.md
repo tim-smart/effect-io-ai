@@ -11,6 +11,6 @@ Logs the formatted address of the current HTTP server.
 declare const logAddress: Effect.Effect<void, never, HttpServer>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServer.ts#L269)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServer.ts#L246)
 
 Since v4.0.0

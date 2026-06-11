@@ -18,6 +18,6 @@ mutation helpers.
 declare const Service: <Self>() => <const Id extends string, ApiId extends string, Groups extends HttpApiGroup.Any>(id: Id, options: { readonly api: HttpApi.HttpApi<ApiId, Groups>; readonly httpClient: Layer.Layer<HttpApiGroup.ClientServices<Groups> | HttpClient.HttpClient> | ((get: Atom.AtomContext) => Layer.Layer<HttpApiGroup.ClientServices<Groups> | HttpClient.HttpClient>); readonly transformClient?: ((client: HttpClient.HttpClient) => HttpClient.HttpClient) | undefined; readonly transformResponse?: ((effect: Effect.Effect<unknown, unknown, unknown>) => Effect.Effect<unknown, unknown, unknown>) | undefined; readonly baseUrl?: URL | string | undefined; readonly runtime?: Atom.RuntimeFactory | undefined; }) => AtomHttpApiClient<Self, Id, Groups>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AtomHttpApi.ts#L188)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AtomHttpApi.ts#L169)
 
 Since v4.0.0

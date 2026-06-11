@@ -19,6 +19,6 @@ const optionalVersion = Argument.string("version").pipe(Argument.optional)
 declare const optional: <A>(arg: Argument<A>) => Argument<Option.Option<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L317)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L303)
 
 Since v4.0.0

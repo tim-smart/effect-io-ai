@@ -33,6 +33,6 @@ console.log(Chunk.join(single, ", ")) // "hello"
 declare const join: { (sep: string): (self: Chunk<string>) => string; (self: Chunk<string>, sep: string): string; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L2891)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L2830)
 
 Since v2.0.0

@@ -27,6 +27,6 @@ const program = Effect.gen(function*() {
 declare const isPast: (self: DateTime) => Effect.Effect<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1537)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L1497)
 
 Since v3.6.0

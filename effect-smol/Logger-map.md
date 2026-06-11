@@ -41,6 +41,6 @@ const uppercaseLogger = Logger.map(
 declare const map: (<Output, Output2>(f: (output: Output) => Output2) => <Message>(self: Logger<Message, Output>) => Logger<Message, Output2>) & (<Message, Output, Output2>(self: Logger<Message, Output>, f: (output: Output) => Output2) => Logger<Message, Output2>)
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L301)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L227)
 
 Since v2.0.0

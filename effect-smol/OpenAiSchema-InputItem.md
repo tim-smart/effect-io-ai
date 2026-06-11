@@ -21,6 +21,6 @@ calls and outputs, apply-patch output, and MCP approval responses.
 type InputItem = typeof InputItem.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L478)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L448)
 
 Since v4.0.0

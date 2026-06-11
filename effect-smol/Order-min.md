@@ -38,6 +38,6 @@ console.log(minNumber(1, 1)) // 1
 declare const min: <A>(O: Order<A>) => { (that: A): (self: A) => A; (self: A, that: A): A; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L868)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L800)
 
 Since v2.0.0

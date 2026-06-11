@@ -24,6 +24,6 @@ The initial value is `1n`, so `combineAll([])` returns `1n`.
 declare const ReducerMultiply: Reducer.Reducer<bigint>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L1051)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L992)
 
 Since v4.0.0

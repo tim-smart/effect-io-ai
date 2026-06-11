@@ -12,6 +12,6 @@ reason.
 declare class CloseEvent { constructor(code = 1000, reason?: string) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Socket.ts#L175)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Socket.ts#L160)
 
 Since v4.0.0

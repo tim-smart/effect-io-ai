@@ -11,6 +11,6 @@ String literal type used as the unique brand for `Channel` values.
 type TypeId = "~effect/Channel"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L115)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L54)
 
 Since v4.0.0

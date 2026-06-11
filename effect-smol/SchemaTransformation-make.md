@@ -39,6 +39,6 @@ const t = SchemaTransformation.make({
 declare const make: <T, E, RD = never, RE = never>(options: { readonly decode: SchemaGetter.Getter<T, E, RD>; readonly encode: SchemaGetter.Getter<E, T, RE>; }) => Transformation<T, E, RD, RE>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L306)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L233)
 
 Since v3.10.0

@@ -17,6 +17,6 @@ associated shards can and will be re-assigned to a different Runner.
 declare class RunnerHealth
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RunnerHealth.ts#L62)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RunnerHealth.ts#L33)
 
 Since v4.0.0

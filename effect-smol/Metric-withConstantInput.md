@@ -41,6 +41,6 @@ const program = Effect.gen(function*() {
 declare const withConstantInput: { <Input>(input: Input): <State>(self: Metric<Input, State>) => Metric<unknown, State>; <Input, State>(self: Metric<Input, State>, input: Input): Metric<unknown, State>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L2979)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L2906)
 
 Since v2.0.0

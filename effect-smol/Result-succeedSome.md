@@ -30,6 +30,6 @@ console.log(result)
 declare const succeedSome: <A, E = never>(a: A) => Result<Option<A>, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1954)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1896)
 
 Since v4.0.0

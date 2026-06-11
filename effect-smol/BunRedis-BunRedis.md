@@ -11,6 +11,6 @@ Service tag for Bun Redis integration, exposing the raw `RedisClient` and a `use
 declare class BunRedis
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunRedis.ts#L52)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunRedis.ts#L27)
 
 Since v4.0.0

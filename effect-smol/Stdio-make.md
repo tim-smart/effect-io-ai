@@ -26,6 +26,6 @@ The returned service reuses the supplied fields unchanged and only adds the
 declare const make: (options: Omit<Stdio, TypeId>) => Stdio
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stdio.ts#L128)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stdio.ts#L109)
 
 Since v4.0.0

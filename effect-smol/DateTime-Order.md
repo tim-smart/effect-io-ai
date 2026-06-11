@@ -31,6 +31,6 @@ const sorted = Array.sort(dates, DateTime.Order)
 declare const Order: order.Order<DateTime>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L595)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L555)
 
 Since v3.6.0

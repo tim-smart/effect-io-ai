@@ -11,6 +11,6 @@ Represents the reusable `Pong` message value.
 declare const constPong: Pong
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcMessage.ts#L428)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcMessage.ts#L402)
 
 Since v4.0.0

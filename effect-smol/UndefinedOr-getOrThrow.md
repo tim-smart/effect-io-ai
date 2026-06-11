@@ -27,6 +27,6 @@ Defined inputs are returned unchanged. `undefined` throws
 declare const getOrThrow: <A>(self: A | undefined) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/UndefinedOr.ts#L165)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/UndefinedOr.ts#L118)
 
 Since v4.0.0

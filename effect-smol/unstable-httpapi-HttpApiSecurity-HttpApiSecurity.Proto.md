@@ -16,6 +16,6 @@ export interface Proto<out A> extends Pipeable {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSecurity.ts#L68)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSecurity.ts#L39)
 
 Since v4.0.0

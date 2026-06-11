@@ -31,6 +31,6 @@ console.log(Array.isArrayNonEmpty([1, 2, 3])) // true
 declare const isArrayNonEmpty: <A>(self: Array<A>) => self is NonEmptyArray<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L941)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L866)
 
 Since v4.0.0

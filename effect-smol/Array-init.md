@@ -34,6 +34,6 @@ console.log(Array.init([])) // Option.none()
 declare const init: <A>(self: Iterable<A>) => Option.Option<Array<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1317)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1242)
 
 Since v2.0.0

@@ -38,6 +38,6 @@ const warnOnly = program.pipe(
 declare const isEnabled: (self: LogLevel) => Effect.Effect<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LogLevel.ts#L442)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LogLevel.ts#L411)
 
 Since v4.0.0

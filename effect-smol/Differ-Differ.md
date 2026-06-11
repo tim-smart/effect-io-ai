@@ -27,6 +27,6 @@ export interface Differ<in out T, in out Patch> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Differ.ts#L58)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Differ.ts#L27)
 
 Since v2.0.0

@@ -38,6 +38,6 @@ type Result = Types.Tags<MyError>
 type Tags<E> = E extends { readonly _tag: string } ? E["_tag"] : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L162)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L120)
 
 Since v2.0.0

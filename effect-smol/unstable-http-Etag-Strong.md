@@ -18,6 +18,6 @@ export interface Strong {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Etag.ts#L73)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Etag.ts#L51)
 
 Since v4.0.0

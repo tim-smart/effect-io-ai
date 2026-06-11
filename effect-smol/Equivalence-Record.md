@@ -57,6 +57,6 @@ console.log(numberRecordEq(scores1, scores3)) // false
 declare const Record: <A>(value: Equivalence<A>) => Equivalence<Record<PropertyKey, A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L799)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L757)
 
 Since v4.0.0

@@ -18,6 +18,6 @@ type NeedsApproval<Params> = | boolean
   | NeedsApprovalFunction<Params>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L203)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L158)
 
 Since v4.0.0

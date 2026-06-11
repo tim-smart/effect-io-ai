@@ -11,6 +11,6 @@ Service for platform-specific HTTP response helpers, including file-backed serve
 declare class HttpPlatform
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpPlatform.ts#L44)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpPlatform.ts#L31)
 
 Since v4.0.0

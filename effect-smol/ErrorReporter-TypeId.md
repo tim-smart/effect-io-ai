@@ -16,6 +16,6 @@ Use to refer to the runtime type identifier type in low-level integrations.
 type TypeId = "~effect/ErrorReporter"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ErrorReporter.ts#L75)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ErrorReporter.ts#L36)
 
 Since v4.0.0

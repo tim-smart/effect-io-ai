@@ -21,6 +21,6 @@ name and asks the server to execute it with argument values.
 declare class CallTool
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1569)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1550)
 
 Since v4.0.0

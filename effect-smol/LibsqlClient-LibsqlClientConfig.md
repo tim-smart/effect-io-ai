@@ -11,6 +11,6 @@ Configuration for a libSQL client, either by supplying connection options or an 
 type LibsqlClientConfig = LibsqlClientConfig.Full | LibsqlClientConfig.Live
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/libsql/src/LibsqlClient.ts#L108)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/libsql/src/LibsqlClient.ts#L82)
 
 Since v4.0.0

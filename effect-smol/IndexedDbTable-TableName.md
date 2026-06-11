@@ -11,6 +11,6 @@ Extracts the table name type from an `IndexedDbTable`.
 type TableName<Table> = Table["tableName"]
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbTable.ts#L125)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbTable.ts#L100)
 
 Since v4.0.0

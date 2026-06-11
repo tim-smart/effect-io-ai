@@ -15,6 +15,6 @@ export interface IndexedDb {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDb.ts#L39)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDb.ts#L25)
 
 Since v4.0.0

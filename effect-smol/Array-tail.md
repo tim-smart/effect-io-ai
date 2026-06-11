@@ -33,6 +33,6 @@ console.log(Array.tail([])) // Option.none()
 declare const tail: <A>(self: Iterable<A>) => Option.Option<Array<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1262)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1187)
 
 Since v2.0.0

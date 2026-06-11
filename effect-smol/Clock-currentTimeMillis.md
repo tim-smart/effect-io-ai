@@ -33,6 +33,6 @@ const program = Effect.gen(function*() {
 declare const currentTimeMillis: Effect<number, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Clock.ts#L221)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Clock.ts#L169)
 
 Since v2.0.0

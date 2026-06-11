@@ -20,6 +20,6 @@ enum-specific handling.
 declare const isEnum: (ast: AST) => ast is Enum
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L396)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L334)
 
 Since v4.0.0

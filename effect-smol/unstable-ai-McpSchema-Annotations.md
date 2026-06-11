@@ -16,6 +16,6 @@ processed by a client.
 declare class Annotations
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L304)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L285)
 
 Since v4.0.0

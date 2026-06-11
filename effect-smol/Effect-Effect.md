@@ -35,6 +35,6 @@ export interface Effect<out A, out E = never, out R = never> extends Pipeable, I
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L183)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L116)
 
 Since v2.0.0

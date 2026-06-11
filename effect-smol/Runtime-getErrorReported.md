@@ -30,6 +30,6 @@ Non-object values, missing markers, and non-boolean marker values all return
 declare const getErrorReported: (u: unknown) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Runtime.ts#L472)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Runtime.ts#L424)
 
 Since v4.0.0

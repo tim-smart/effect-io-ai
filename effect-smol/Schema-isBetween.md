@@ -15,9 +15,10 @@ constraints in JSON Schema, depending on the options provided.
 
 Arbitrary:
 
-When generating test data with fast-check, this applies `min` and `max`
-constraints with optional `minExcluded` and `maxExcluded` flags to ensure
-generated numbers fall within the specified range.
+When generating test data with fast-check, this applies `minimum` and
+`maximum` constraints with optional `exclusiveMinimum` and
+`exclusiveMaximum` flags to ensure generated numbers fall within the
+specified range.
 
 **Signature**
 
@@ -25,6 +26,6 @@ generated numbers fall within the specified range.
 declare const isBetween: (options: { readonly minimum: number; readonly maximum: number; readonly exclusiveMinimum?: boolean | undefined; readonly exclusiveMaximum?: boolean | undefined; }, annotations?: Annotations.Filter) => SchemaAST.Filter<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7037)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7002)
 
 Since v4.0.0

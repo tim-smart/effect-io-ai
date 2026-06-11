@@ -12,6 +12,6 @@ encode successes and failures for durable execution.
 declare const make: <R, Success extends Schema.Top = Schema.Void, Error extends Schema.Top = Schema.Never>(options: { readonly name: string; readonly success?: Success | undefined; readonly error?: Error | undefined; readonly execute: Effect.Effect<Success["Type"], Error["Type"], R>; readonly interruptRetryPolicy?: Schedule.Schedule<any, Cause.Cause<unknown>> | undefined; readonly annotations?: Context.Context<never> | undefined; }) => Activity<Success, Error, Exclude<R, WorkflowInstance | WorkflowEngine | Scope>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Activity.ts#L135)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Activity.ts#L122)
 
 Since v4.0.0

@@ -11,6 +11,6 @@ Type-level identifier used to brand event-log store ids.
 type StoreIdTypeId = "effect/eventlog/EventLog/StoreId"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogMessage.ts#L45)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogMessage.ts#L29)
 
 Since v4.0.0

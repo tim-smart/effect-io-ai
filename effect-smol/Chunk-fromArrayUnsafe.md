@@ -34,6 +34,6 @@ console.log(Chunk.toArray(chunk)) // [999, 2, 3, 4, 5]
 declare const fromArrayUnsafe: <A>(self: ReadonlyArray<A>) => Chunk<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L632)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L571)
 
 Since v4.0.0

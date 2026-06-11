@@ -52,6 +52,6 @@ console.log(pointEq({ x: 1, y: 2 }, { x: 1, y: 2 })) // true
 type Equivalence<A> = (self: A, that: A) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L102)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L60)
 
 Since v2.0.0

@@ -54,6 +54,6 @@ export interface WithGenerics<Count extends number> {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Data.ts#L291)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Data.ts#L224)
 
 Since v2.0.0

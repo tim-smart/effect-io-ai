@@ -33,6 +33,6 @@ assert.deepStrictEqual(Array.from(trie4), [["call", 0], ["me", 1], ["mid", 3], [
 declare const insert: { <V>(key: string, value: V): (self: Trie<V>) => Trie<V>; <V>(self: Trie<V>, key: string, value: V): Trie<V>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L220)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L177)
 
 Since v2.0.0

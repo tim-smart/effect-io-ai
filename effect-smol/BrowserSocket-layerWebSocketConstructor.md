@@ -11,6 +11,6 @@ Layer that provides a `WebSocketConstructor` service backed by `globalThis.WebSo
 declare const layerWebSocketConstructor: Layer.Layer<Socket.WebSocketConstructor, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserSocket.ts#L82)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserSocket.ts#L51)
 
 Since v4.0.0

@@ -13,6 +13,6 @@ stream of `Multipart.Part` values, converting parser failures to
 declare const stream: (source: Readable, headers: IncomingHttpHeaders) => Stream.Stream<Multipart.Part, Multipart.MultipartError>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeMultipart.ts#L58)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeMultipart.ts#L35)
 
 Since v4.0.0

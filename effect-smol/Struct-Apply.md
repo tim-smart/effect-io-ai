@@ -39,6 +39,6 @@ type Result = Struct.Apply<ToString, number>
 type Apply<L, V> = (L & { readonly "~lambda.in": V })["~lambda.out"]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Struct.ts#L682)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Struct.ts#L619)
 
 Since v4.0.0

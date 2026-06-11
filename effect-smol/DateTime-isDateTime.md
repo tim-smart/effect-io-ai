@@ -20,6 +20,6 @@ Use to narrow an unknown value before treating it as a `DateTime`.
 declare const isDateTime: (u: unknown) => u is DateTime
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L457)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L417)
 
 Since v3.6.0

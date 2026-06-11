@@ -29,6 +29,6 @@ export interface Event<
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Event.ts#L75)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Event.ts#L53)
 
 Since v4.0.0

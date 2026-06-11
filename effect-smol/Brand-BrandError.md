@@ -21,6 +21,6 @@ The error wraps a `SchemaIssue.Issue`, exposes `message` through
 declare class BrandError { constructor(issue: SchemaIssue.Issue) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Brand.ts#L150)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Brand.ts#L106)
 
 Since v4.0.0

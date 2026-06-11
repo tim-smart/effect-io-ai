@@ -14,6 +14,6 @@ export interface OpfsWorkerConfig {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/do/src/OpfsWorker.ts#L61)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/do/src/OpfsWorker.ts#L31)
 
 Since v4.0.0

@@ -34,6 +34,6 @@ console.log(MutableRef.get(status)) // "running"
 declare const make: <T>(value: T) => MutableRef<T>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableRef.ts#L136)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableRef.ts#L113)
 
 Since v2.0.0

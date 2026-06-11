@@ -35,6 +35,6 @@ console.log(Hash.number(100) === Hash.number(100)) // true
 declare const number: (n: number) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Hash.ts#L378)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Hash.ts#L336)
 
 Since v2.0.0

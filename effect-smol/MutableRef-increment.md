@@ -43,6 +43,6 @@ console.log(result === counter) // true
 declare const increment: (self: MutableRef<number>) => MutableRef<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableRef.ts#L533)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableRef.ts#L510)
 
 Since v2.0.0

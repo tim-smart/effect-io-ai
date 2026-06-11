@@ -11,6 +11,6 @@ Combines two Cookies objects, removing duplicates from the first
 declare const merge: { (that: Cookies): (self: Cookies) => Cookies; (self: Cookies, that: Cookies): Cookies; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cookies.ts#L592)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cookies.ts#L540)
 
 Since v4.0.0

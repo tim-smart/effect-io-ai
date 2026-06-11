@@ -27,6 +27,6 @@ type Prefixed<Rpcs, Prefix> = Rpcs extends Rpc<
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L795)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L763)
 
 Since v4.0.0

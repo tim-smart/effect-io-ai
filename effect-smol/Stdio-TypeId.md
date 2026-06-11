@@ -15,6 +15,6 @@ Use to type the runtime identifier stored on `Stdio` service implementations.
 type TypeId = "~effect/Stdio"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stdio.ts#L50)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stdio.ts#L31)
 
 Since v4.0.0

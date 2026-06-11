@@ -21,6 +21,6 @@ export interface Prompt<Output> extends Effect.Effect<Output, Terminal.QuitError
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L61)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L46)
 
 Since v4.0.0

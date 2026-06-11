@@ -20,6 +20,6 @@ value and can guarantee that reading outside the `Effect` API is safe.
 declare const getUnsafe: <A>(self: ScopedRef<A>) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ScopedRef.ts#L115)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ScopedRef.ts#L103)
 
 Since v4.0.0

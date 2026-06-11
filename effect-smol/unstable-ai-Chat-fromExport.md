@@ -53,6 +53,6 @@ const restoreChat = Effect.gen(function*() {
 declare const fromExport: (data: unknown) => Effect.Effect<Service, Schema.SchemaError>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chat.ts#L648)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chat.ts#L602)
 
 Since v4.0.0

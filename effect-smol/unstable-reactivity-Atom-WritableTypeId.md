@@ -11,6 +11,6 @@ Type-level identifier used to recognize writable atoms.
 type WritableTypeId = "~effect/reactivity/Atom/Writable"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L168)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L140)
 
 Since v4.0.0

@@ -17,6 +17,6 @@ failures.
 type NonShowHelpErrors = typeof NonShowHelpErrors.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/CliError.ts#L537)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/CliError.ts#L522)
 
 Since v4.0.0

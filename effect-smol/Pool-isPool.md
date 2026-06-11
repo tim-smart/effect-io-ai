@@ -20,6 +20,6 @@ This predicate narrows the input to `Pool<unknown, unknown>`.
 declare const isPool: (u: unknown) => u is Pool<unknown, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pool.ts#L226)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pool.ts#L190)
 
 Since v2.0.0

@@ -11,6 +11,6 @@ Shell type used to generate completion scripts.
 type Shell = "bash" | "zsh" | "fish"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Completions.ts#L43)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Completions.ts#L19)
 
 Since v4.0.0

@@ -19,6 +19,6 @@ console.log(Channel.DefaultChunkSize) // 4096
 declare const DefaultChunkSize: number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L506)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L445)
 
 Since v4.0.0

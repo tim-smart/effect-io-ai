@@ -44,6 +44,6 @@ const result = Exit.match(success, {
 type Exit<A, E> = Success<A, E> | Failure<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L106)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L59)
 
 Since v2.0.0

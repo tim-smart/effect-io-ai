@@ -11,6 +11,6 @@ Creates a request constructor for the specified HTTP method.
 declare const make: <M extends HttpMethod>(method: M) => (url: string | URL, options?: Options.NoUrl | undefined) => HttpClientRequest
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClientRequest.ts#L186)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClientRequest.ts#L155)
 
 Since v4.0.0

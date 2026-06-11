@@ -36,6 +36,6 @@ transport. The surrounding layer graph must provide `RpcServer.Protocol`.
 declare const layer: (options: { readonly name: string; readonly version: string; readonly extensions?: Record<`${string}/${string}`, unknown> | undefined; }) => Layer.Layer<McpServer | McpServerClient, never, RpcServer.Protocol>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpServer.ts#L574)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpServer.ts#L560)
 
 Since v4.0.0

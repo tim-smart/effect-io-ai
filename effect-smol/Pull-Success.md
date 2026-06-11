@@ -22,6 +22,6 @@ reusable type aliases, low-level stream helpers, or function signatures.
 type Success<P> = P extends Effect<infer _A, infer _E, infer _R> ? _A : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pull.ts#L76)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pull.ts#L59)
 
 Since v4.0.0

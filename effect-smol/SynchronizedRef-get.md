@@ -20,6 +20,6 @@ program without changing it.
 declare const get: <A>(self: SynchronizedRef<A>) => Effect.Effect<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SynchronizedRef.ts#L135)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SynchronizedRef.ts#L122)
 
 Since v2.0.0

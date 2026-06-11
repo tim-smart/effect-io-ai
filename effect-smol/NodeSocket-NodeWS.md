@@ -11,6 +11,6 @@ Re-exports all named exports from the "ws" module as `NodeWS`.
 export * as NodeWS from "ws"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeSocket.ts#L48)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeSocket.ts#L31)
 
 Since v4.0.0

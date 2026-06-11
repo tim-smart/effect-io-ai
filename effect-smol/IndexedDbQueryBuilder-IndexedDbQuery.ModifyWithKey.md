@@ -11,6 +11,6 @@ Mutation input type for insert and upsert operations, including any required key
 type ModifyWithKey<Table> = ModifyType<Table>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L270)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L254)
 
 Since v4.0.0

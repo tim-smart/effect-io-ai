@@ -21,6 +21,6 @@ console.log(HashMap.get(map, "b")) // Option.some(2)
 declare const make: <Entries extends ReadonlyArray<readonly [any, any]>>(...entries: Entries) => HashMap<Entries[number] extends readonly [infer K, any] ? K : never, Entries[number] extends readonly [any, infer V] ? V : never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L327)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L264)
 
 Since v2.0.0

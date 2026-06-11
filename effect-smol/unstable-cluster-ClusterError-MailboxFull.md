@@ -20,6 +20,6 @@ or resumed from storage when the mailbox is full.
 declare class MailboxFull
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ClusterError.ts#L219)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ClusterError.ts#L184)
 
 Since v4.0.0

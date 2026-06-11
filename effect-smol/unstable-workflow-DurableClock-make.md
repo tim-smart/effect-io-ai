@@ -12,6 +12,6 @@ signal.
 declare const make: (options: { readonly name: string; readonly duration: Duration.Input; }) => DurableClock
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DurableClock.ts#L61)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DurableClock.ts#L42)
 
 Since v4.0.0

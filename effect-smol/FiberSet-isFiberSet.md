@@ -24,6 +24,6 @@ Effect.gen(function*() {
 declare const isFiberSet: (u: unknown) => u is FiberSet<unknown, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberSet.ts#L114)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberSet.ts#L84)
 
 Since v2.0.0

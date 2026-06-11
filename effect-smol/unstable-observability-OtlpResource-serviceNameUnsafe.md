@@ -20,6 +20,6 @@ Throws if the resource does not contain a string `service.name` attribute.
 declare const serviceNameUnsafe: (resource: Resource) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OtlpResource.ts#L169)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OtlpResource.ts#L139)
 
 Since v4.0.0

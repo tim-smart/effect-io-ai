@@ -35,6 +35,6 @@ const program = Effect.gen(function*() {
 declare const redacted: (name: string) => Flag<Redacted.Redacted<string>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L297)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L287)
 
 Since v4.0.0

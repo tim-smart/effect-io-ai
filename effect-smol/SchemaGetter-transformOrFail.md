@@ -42,6 +42,6 @@ const safeParseInt = SchemaGetter.transformOrFail<number, string>(
 declare const transformOrFail: <T, E, R = never>(f: (e: E, options: SchemaAST.ParseOptions) => Effect.Effect<T, SchemaIssue.Issue, R>) => Getter<T, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L612)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L538)
 
 Since v4.0.0

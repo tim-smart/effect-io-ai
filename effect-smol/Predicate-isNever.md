@@ -27,6 +27,6 @@ console.log(Predicate.isNever("anything"))
 declare const isNever: (_: unknown) => _ is never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1004)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L949)
 
 Since v2.0.0

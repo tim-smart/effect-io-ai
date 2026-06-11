@@ -29,6 +29,6 @@ export interface UrlSourcePart extends BasePart<"source", UrlSourcePartMetadata>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L2063)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L2022)
 
 Since v4.0.0

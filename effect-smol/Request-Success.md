@@ -26,6 +26,6 @@ type Success<T> = [T] extends [Request<infer _A, infer _E, infer _R>] ? _A
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Request.ts#L197)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Request.ts#L162)
 
 Since v2.0.0

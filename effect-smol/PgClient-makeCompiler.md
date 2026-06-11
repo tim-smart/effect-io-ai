@@ -11,6 +11,6 @@ Creates the PostgreSQL statement compiler, using `$1` placeholders, double-quote
 declare const makeCompiler: (transform?: (_: string) => string, transformJson?: boolean) => Statement.Compiler
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/pg/src/PgClient.ts#L843)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/pg/src/PgClient.ts#L818)
 
 Since v4.0.0

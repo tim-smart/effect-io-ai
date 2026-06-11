@@ -39,6 +39,6 @@ const program = Effect.gen(function*() {
 declare const isTxSemaphore: (u: unknown) => u is TxSemaphore
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L735)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSemaphore.ts#L707)
 
 Since v4.0.0

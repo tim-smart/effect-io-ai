@@ -16,6 +16,6 @@ span identifiers.
 declare const b3: FromHeaders
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpTraceContext.ts#L110)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpTraceContext.ts#L86)
 
 Since v4.0.0

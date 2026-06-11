@@ -25,6 +25,6 @@ the next plan, and so on.
 declare const merge: <const Plans extends NonEmptyReadonlyArray<ExecutionPlan<any>>>(...plans: Plans) => ExecutionPlan<{ provides: make.PlanProvides<Plans>; input: make.PlanInput<Plans>; error: Plans[number] extends ExecutionPlan<infer T> ? T["error"] : never; requirements: Plans[number] extends ExecutionPlan<infer T> ? T["requirements"] : never; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ExecutionPlan.ts#L447)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ExecutionPlan.ts#L374)
 
 Since v3.16.0

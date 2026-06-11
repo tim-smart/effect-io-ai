@@ -21,6 +21,6 @@ const mapper: PrometheusMetrics.MetricNameMapper = (name) =>
 type MetricNameMapper = (name: string) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PrometheusMetrics.ts#L70)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PrometheusMetrics.ts#L33)
 
 Since v4.0.0

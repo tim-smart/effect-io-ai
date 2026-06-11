@@ -11,6 +11,6 @@ Type identifier for `HttpIncomingMessage` values.
 declare const TypeId: "~effect/http/HttpIncomingMessage"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpIncomingMessage.ts#L47)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpIncomingMessage.ts#L31)
 
 Since v4.0.0

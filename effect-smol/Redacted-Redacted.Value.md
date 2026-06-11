@@ -30,6 +30,6 @@ console.log(rotate({ token: "secret" })) // { token: "secret:rotated" }
 type Value<T> = [T] extends [Redacted<infer _A>] ? _A : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Redacted.ts#L161)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Redacted.ts#L128)
 
 Since v3.3.0

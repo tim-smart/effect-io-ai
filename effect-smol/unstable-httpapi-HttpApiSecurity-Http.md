@@ -16,6 +16,6 @@ export interface Http extends HttpApiSecurity.Proto<Redacted> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSecurity.ts#L90)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSecurity.ts#L61)
 
 Since v4.0.0

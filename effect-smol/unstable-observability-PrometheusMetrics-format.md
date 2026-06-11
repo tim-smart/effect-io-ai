@@ -36,6 +36,6 @@ const program = Effect.gen(function*() {
 declare const format: (options?: FormatOptions | undefined) => Effect.Effect<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PrometheusMetrics.ts#L134)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PrometheusMetrics.ts#L97)
 
 Since v4.0.0

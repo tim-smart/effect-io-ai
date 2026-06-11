@@ -38,6 +38,6 @@ console.log(Order.Date(date1, date1)) // 0
 declare const Date: Order<Date>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L550)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L482)
 
 Since v2.0.0

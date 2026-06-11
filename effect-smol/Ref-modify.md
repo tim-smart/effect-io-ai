@@ -60,6 +60,6 @@ const program2 = Effect.gen(function*() {
 declare const modify: (<A, B>(f: (a: A) => readonly [B, A]) => (self: Ref<A>) => Effect.Effect<B>) & (<A, B>(self: Ref<A>, f: (a: A) => readonly [B, A]) => Effect.Effect<B>)
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ref.ts#L531)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ref.ts#L490)
 
 Since v2.0.0

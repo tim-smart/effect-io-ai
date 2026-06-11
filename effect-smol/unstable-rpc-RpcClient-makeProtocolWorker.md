@@ -12,6 +12,6 @@ to workers and supporting transferable values when the platform does.
 declare const makeProtocolWorker: (options: { readonly size: number; readonly concurrency?: number | undefined; readonly targetUtilization?: number | undefined; } | { readonly minSize: number; readonly maxSize: number; readonly concurrency?: number | undefined; readonly targetUtilization?: number | undefined; readonly timeToLive: Duration.Input; }) => Effect.Effect<Protocol["Service"], WorkerError, Scope.Scope | Worker.WorkerPlatform | Worker.Spawner>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcClient.ts#L1193)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcClient.ts#L1167)
 
 Since v4.0.0

@@ -49,6 +49,6 @@ console.log(obj1 === Equal.byReferenceUnsafe(obj1)) // true (same object)
 declare const byReferenceUnsafe: <T extends object>(obj: T) => T
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equal.ts#L607)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equal.ts#L547)
 
 Since v4.0.0

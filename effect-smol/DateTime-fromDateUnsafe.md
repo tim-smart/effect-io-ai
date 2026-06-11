@@ -26,6 +26,6 @@ console.log(DateTime.formatIso(dateTime)) // "2024-01-01T12:00:00.000Z"
 declare const fromDateUnsafe: (date: Date) => Utc
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L657)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L617)
 
 Since v4.0.0

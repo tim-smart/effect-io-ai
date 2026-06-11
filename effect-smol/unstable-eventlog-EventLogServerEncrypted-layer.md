@@ -30,6 +30,6 @@ authentication bindings, remote ids, and change streams are delegated to
 declare const layer: Layer.Layer<never, never, RpcServer.Protocol | Storage>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogServerEncrypted.ts#L123)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogServerEncrypted.ts#L112)
 
 Since v4.0.0

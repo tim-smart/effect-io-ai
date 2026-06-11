@@ -30,6 +30,6 @@ assert.deepStrictEqual(Boolean.some([false, false, false]), false)
 declare const some: (collection: Iterable<boolean>) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Boolean.ts#L476)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Boolean.ts#L429)
 
 Since v2.0.0

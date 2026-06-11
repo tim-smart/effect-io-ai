@@ -35,6 +35,6 @@ supported JSON Schema subset, the original codec is returned unchanged.
 declare const toCodecOpenAI: <T, E, RD, RE>(schema: Schema.Codec<T, E, RD, RE>) => { codec: Schema.Codec<T, unknown, RD, RE>; jsonSchema: JsonSchema.JsonSchema; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OpenAiStructuredOutput.ts#L93)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OpenAiStructuredOutput.ts#L53)
 
 Since v4.0.0

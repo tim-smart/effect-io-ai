@@ -43,6 +43,6 @@ const Config = Schema.String.pipe(
 declare const splitKeyValue: (options?: { readonly separator?: string | undefined; readonly keyValueSeparator?: string | undefined; }) => Transformation<Record<string, string>, string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L730)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L657)
 
 Since v4.0.0

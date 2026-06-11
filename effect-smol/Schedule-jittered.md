@@ -24,6 +24,6 @@ Each recurrence delay is scaled by a random factor between `0.8` and `1.2`.
 declare const jittered: <Output, Input, Error, Env>(self: Schedule<Output, Input, Error, Env>) => Schedule<Output, Input, Error, Env>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L2430)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L2374)
 
 Since v2.0.0

@@ -12,6 +12,6 @@ handling; defaults to `false`.
 declare const SafeIntegers: Context.Reference<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SqlClient.ts#L354)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SqlClient.ts#L340)
 
 Since v4.0.0

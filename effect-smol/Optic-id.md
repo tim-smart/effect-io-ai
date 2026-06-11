@@ -38,6 +38,6 @@ console.log(_x.get({ x: 42 }))
 declare const id: <S>() => Iso<S, S>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Optic.ts#L1552)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Optic.ts#L1470)
 
 Since v4.0.0

@@ -11,6 +11,6 @@ Returns the original field definitions stored on a variant schema struct.
 declare const fields: <A extends Struct<any>>(self: A) => A[typeof TypeId]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/VariantSchema.ts#L261)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/VariantSchema.ts#L249)
 
 Since v4.0.0

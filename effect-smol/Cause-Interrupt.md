@@ -30,6 +30,6 @@ export interface Interrupt extends Cause.ReasonProto<"Interrupt"> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L456)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L390)
 
 Since v2.0.0

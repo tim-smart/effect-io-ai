@@ -35,6 +35,6 @@ your SQL schema needs more than the built-in tables.
 declare const layer: (options?: { readonly entryTable?: string; readonly remotesTable?: string; }) => Layer.Layer<EventJournal.EventJournal, SqlError.SqlError, SqlClient.SqlClient>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SqlEventJournal.ts#L337)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SqlEventJournal.ts#L311)
 
 Since v4.0.0

@@ -16,6 +16,6 @@ to the request scope can leak.
 declare const scopeDisableClose: (scope: Scope.Scope) => void
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpEffect.ts#L157)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpEffect.ts#L129)
 
 Since v4.0.0

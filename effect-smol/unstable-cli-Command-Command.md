@@ -108,6 +108,6 @@ export interface Command<in out Name extends string, in Input, out ContextInput 
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L111)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L92)
 
 Since v4.0.0

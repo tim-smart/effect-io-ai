@@ -16,6 +16,6 @@ that require a subscription reference.
 declare const isSubscriptionRef: (u: unknown) => u is SubscriptionRef<unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SubscriptionRef.ts#L101)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SubscriptionRef.ts#L54)
 
 Since v4.0.0

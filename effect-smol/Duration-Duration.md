@@ -27,6 +27,6 @@ export interface Duration extends Equal.Equal, Pipeable, Inspectable.Inspectable
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L92)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L52)
 
 Since v2.0.0

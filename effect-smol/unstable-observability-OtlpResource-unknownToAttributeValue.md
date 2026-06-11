@@ -16,6 +16,6 @@ fields, and unsupported values are formatted as strings.
 declare const unknownToAttributeValue: (value: unknown) => AnyValue
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OtlpResource.ts#L207)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OtlpResource.ts#L177)
 
 Since v4.0.0

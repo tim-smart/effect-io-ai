@@ -32,6 +32,6 @@ A slow subscriber can slow down publishers and other subscribers.
 declare class BackPressureStrategy<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L2421)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L2373)
 
 Since v4.0.0

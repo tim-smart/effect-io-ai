@@ -24,6 +24,6 @@ type TextResponseFormatConfiguration = | {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L638)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L621)
 
 Since v4.0.0

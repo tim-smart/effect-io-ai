@@ -27,6 +27,6 @@ capacity limit until those subscribers take them or unsubscribe.
 declare const makeAtomicUnbounded: <A>(options?: { readonly replay?: number | undefined; }) => PubSub.Atomic<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L594)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L546)
 
 Since v4.0.0

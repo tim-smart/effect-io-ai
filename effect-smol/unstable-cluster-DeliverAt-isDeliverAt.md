@@ -12,6 +12,6 @@ protocol.
 declare const isDeliverAt: (self: unknown) => self is DeliverAt
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DeliverAt.ts#L61)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DeliverAt.ts#L44)
 
 Since v4.0.0

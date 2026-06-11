@@ -11,6 +11,6 @@ Error reason for uncategorized socket server failures.
 declare class SocketServerUnknownError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SocketServer.ts#L81)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SocketServer.ts#L67)
 
 Since v4.0.0

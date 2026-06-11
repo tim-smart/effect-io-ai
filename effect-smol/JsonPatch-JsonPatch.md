@@ -43,6 +43,6 @@ const result = JsonPatch.apply(patch, { count: 3, oldField: "value" })
 type JsonPatch = ReadonlyArray<JsonPatchOperation>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonPatch.ts#L190)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonPatch.ts#L137)
 
 Since v4.0.0

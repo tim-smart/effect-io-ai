@@ -22,6 +22,6 @@ program that embeds text into vectors.
 declare class EmbeddingModel
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EmbeddingModel.ts#L73)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EmbeddingModel.ts#L36)
 
 Since v4.0.0

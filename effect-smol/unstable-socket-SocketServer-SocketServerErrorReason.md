@@ -11,6 +11,6 @@ Union of socket server error reasons.
 type SocketServerErrorReason = SocketServerOpenError | SocketServerUnknownError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SocketServer.ts#L95)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SocketServer.ts#L81)
 
 Since v4.0.0

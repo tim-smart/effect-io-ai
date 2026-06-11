@@ -27,6 +27,6 @@ console.log(values) // ["A", "B"]
 declare const values: <T, N>(walker: Walker<T, N>) => Iterable<N>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L4027)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L4041)
 
 Since v3.18.0

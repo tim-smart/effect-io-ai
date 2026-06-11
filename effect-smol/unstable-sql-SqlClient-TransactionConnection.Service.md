@@ -12,6 +12,6 @@ connection and nested transaction depth.
 type Service = readonly [conn: Connection.Connection, depth: number]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SqlClient.ts#L332)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SqlClient.ts#L318)
 
 Since v4.0.0

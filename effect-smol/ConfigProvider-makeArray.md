@@ -36,6 +36,6 @@ const node = ConfigProvider.makeArray(3)
 declare const makeArray: (length: number, value?: string) => Node
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L233)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L164)
 
 Since v4.0.0

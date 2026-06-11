@@ -21,6 +21,6 @@ workflows that require durability.
 declare const layerMemory: Layer.Layer<WorkflowEngine, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/WorkflowEngine.ts#L587)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/WorkflowEngine.ts#L575)
 
 Since v4.0.0

@@ -11,6 +11,6 @@ Removes event definitions with the specified tag from an event union.
 type ExcludeTag<Events, Tag> = Exclude<Events, { readonly tag: Tag }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Event.ts#L360)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Event.ts#L338)
 
 Since v4.0.0

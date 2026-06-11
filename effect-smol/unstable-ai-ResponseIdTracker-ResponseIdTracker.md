@@ -18,6 +18,6 @@ prior response ID.
 declare class ResponseIdTracker
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ResponseIdTracker.ts#L93)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ResponseIdTracker.ts#L67)
 
 Since v4.0.0

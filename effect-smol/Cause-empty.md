@@ -36,6 +36,6 @@ console.log(Cause.hasFails(cause)) // true
 declare const empty: Cause<never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L530)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L464)
 
 Since v2.0.0

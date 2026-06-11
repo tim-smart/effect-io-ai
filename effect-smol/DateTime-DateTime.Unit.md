@@ -17,6 +17,6 @@ Includes both singular units, such as `"day"`, and plural units, such as
 type Unit = UnitSingular | UnitPlural
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L164)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L124)
 
 Since v3.6.0

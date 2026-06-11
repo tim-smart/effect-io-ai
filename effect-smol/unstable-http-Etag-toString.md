@@ -11,6 +11,6 @@ Formats an `Etag` as an HTTP header value, including quotes and the `W/` prefix 
 declare const toString: (self: Etag) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Etag.ts#L84)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Etag.ts#L62)
 
 Since v4.0.0

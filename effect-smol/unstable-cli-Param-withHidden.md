@@ -29,6 +29,6 @@ const experimental = Param.boolean(Param.flagKind, "experimental-foo").pipe(
 declare const withHidden: <Kind extends ParamKind, A>(self: Param<Kind, A>) => Param<Kind, A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L1075)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L1058)
 
 Since v4.0.0

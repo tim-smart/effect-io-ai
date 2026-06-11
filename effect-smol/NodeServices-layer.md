@@ -12,6 +12,6 @@ filesystem, path, stdio, and terminal services.
 declare const layer: Layer.Layer<NodeServices, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeServices.ts#L66)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeServices.ts#L41)
 
 Since v4.0.0

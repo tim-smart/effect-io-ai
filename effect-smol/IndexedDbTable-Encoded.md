@@ -11,6 +11,6 @@ Extracts the encoded row type from an `IndexedDbTable` schema.
 type Encoded<Table> = Table["tableSchema"]["Encoded"]
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbTable.ts#L165)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbTable.ts#L140)
 
 Since v4.0.0

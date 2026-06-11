@@ -23,6 +23,6 @@ in the current context.
 declare const CurrentLoggers: Context.Reference<ReadonlySet<Logger<unknown, any>>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/References.ts#L776)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/References.ts#L727)
 
 Since v4.0.0

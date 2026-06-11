@@ -35,6 +35,6 @@ const program = Effect.logError("Database connection failed").pipe(
 declare const withConsoleError: <Message, Output>(self: Logger<Message, Output>) => Logger<Message, void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L380)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L306)
 
 Since v2.0.0

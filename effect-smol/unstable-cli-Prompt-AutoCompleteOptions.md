@@ -25,6 +25,6 @@ export interface AutoCompleteOptions<A> extends SelectOptions<A> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L411)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L396)
 
 Since v4.0.0

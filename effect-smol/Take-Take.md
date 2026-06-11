@@ -21,6 +21,6 @@ emitted values, failures, and normal completion.
 type Take<A, E, Done> = NonEmptyReadonlyArray<A> | Exit.Exit<Done, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Take.ts#L53)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Take.ts#L29)
 
 Since v2.0.0

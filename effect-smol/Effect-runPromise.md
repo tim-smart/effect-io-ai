@@ -44,6 +44,6 @@ Effect.runPromise(Effect.fail("my error")).catch(console.error)
 declare const runPromise: <A, E>(effect: Effect<A, E>, options?: RunOptions | undefined) => Promise<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8990)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L8923)
 
 Since v2.0.0

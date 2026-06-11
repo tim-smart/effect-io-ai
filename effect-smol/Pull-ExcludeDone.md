@@ -21,6 +21,6 @@ completion signals have been handled or filtered out of an error union.
 type ExcludeDone<E> = Exclude<E, Cause.Done<any>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pull.ts#L147)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pull.ts#L130)
 
 Since v4.0.0

@@ -12,6 +12,6 @@ server response, it renders as an empty response with status 404.
 declare class NotFound
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiError.ts#L163)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiError.ts#L132)
 
 Since v4.0.0

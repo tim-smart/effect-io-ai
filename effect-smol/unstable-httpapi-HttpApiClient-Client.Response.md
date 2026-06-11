@@ -15,6 +15,6 @@ type Response<Success, Mode> = [Mode] extends ["decoded-and-response"]
     : Success
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiClient.ts#L118)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiClient.ts#L94)
 
 Since v4.0.0

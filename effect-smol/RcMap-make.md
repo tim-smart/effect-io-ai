@@ -53,6 +53,6 @@ Effect.gen(function*() {
 declare const make: { <K, A, E, R>(options: { readonly lookup: (key: K) => Effect.Effect<A, E, R>; readonly idleTimeToLive?: Duration.Input | ((key: K) => Duration.Input) | undefined; readonly capacity?: undefined; }): Effect.Effect<RcMap<K, A, E>, never, Scope.Scope | R>; <K, A, E, R>(options: { readonly lookup: (key: K) => Effect.Effect<A, E, R>; readonly idleTimeToLive?: Duration.Input | ((key: K) => Duration.Input) | undefined; readonly capacity: number; }): Effect.Effect<RcMap<K, A, E | Cause.ExceededCapacityError>, never, Scope.Scope | R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RcMap.ts#L243)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RcMap.ts#L235)
 
 Since v3.5.0

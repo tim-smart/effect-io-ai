@@ -17,6 +17,6 @@ registration, and health checks.
 declare class RunnerAddress
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RunnerAddress.ts#L57)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RunnerAddress.ts#L29)
 
 Since v4.0.0

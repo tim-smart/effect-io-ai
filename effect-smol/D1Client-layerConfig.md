@@ -11,6 +11,6 @@ Creates a layer from a `Config`-wrapped D1 client configuration, providing both 
 declare const layerConfig: (config: Config.Wrap<D1ClientConfig>) => Layer.Layer<D1Client | Client.SqlClient, Config.ConfigError>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/D1Client.ts#L233)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/D1Client.ts#L221)
 
 Since v4.0.0

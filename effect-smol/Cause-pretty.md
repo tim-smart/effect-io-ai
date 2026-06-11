@@ -51,6 +51,6 @@ console.log(rendered.includes("something went wrong")) // true
 declare const pretty: <E>(cause: Cause<E>) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1223)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1157)
 
 Since v2.0.0

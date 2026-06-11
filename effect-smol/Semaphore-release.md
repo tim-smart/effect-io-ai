@@ -35,6 +35,6 @@ effect.
 declare const release: { (permits: number): (self: Semaphore) => Effect.Effect<number>; (self: Semaphore, permits: number): Effect.Effect<number>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Semaphore.ts#L519)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Semaphore.ts#L497)
 
 Since v4.0.0

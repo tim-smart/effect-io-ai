@@ -20,6 +20,6 @@ const channel = Channel.fromArray([1, 2, 3, 4, 5])
 declare const fromArray: <A>(array: ReadonlyArray<A>) => Channel<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L726)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L665)
 
 Since v4.0.0

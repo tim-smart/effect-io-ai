@@ -50,6 +50,6 @@ console.log(byAgeAndName(person1, person3)) // 1 (Alice (30) > Charlie (25))
 declare const combine: { <A>(that: Order<A>): (self: Order<A>) => Order<A>; <A>(self: Order<A>, that: Order<A>): Order<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L383)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L315)
 
 Since v2.0.0

@@ -22,6 +22,6 @@ edge data together.
 declare class Edge<E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L132)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L89)
 
 Since v3.18.0

@@ -28,6 +28,6 @@ assert.deepStrictEqual(constNull(), null)
 declare const constant: <A>(value: A) => LazyArg<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L362)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L324)
 
 Since v2.0.0

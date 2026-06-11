@@ -18,6 +18,6 @@ type HttpMethod = | "GET"
   | "TRACE"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpMethod.ts#L42)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpMethod.ts#L18)
 
 Since v4.0.0

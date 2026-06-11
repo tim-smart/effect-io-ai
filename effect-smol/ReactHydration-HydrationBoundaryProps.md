@@ -15,6 +15,6 @@ export interface HydrationBoundaryProps {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/ReactHydration.ts#L37)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/ReactHydration.ts#L22)
 
 Since v4.0.0

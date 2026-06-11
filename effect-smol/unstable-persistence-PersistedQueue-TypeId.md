@@ -11,6 +11,6 @@ Type-level identifier used to brand `PersistedQueue` values.
 type TypeId = "~effect/persistence/PersistedQueue"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PersistedQueue.ts#L64)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PersistedQueue.ts#L48)
 
 Since v4.0.0

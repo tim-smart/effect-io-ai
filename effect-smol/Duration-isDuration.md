@@ -20,6 +20,6 @@ console.log(Duration.isDuration(1000)) // false
 declare const isDuration: (u: unknown) => u is Duration
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L434)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L394)
 
 Since v2.0.0

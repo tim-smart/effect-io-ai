@@ -13,6 +13,6 @@ runners unavailable.
 declare class Runners
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Runners.ts#L68)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Runners.ts#L47)
 
 Since v4.0.0

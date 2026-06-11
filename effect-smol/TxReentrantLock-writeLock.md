@@ -30,6 +30,6 @@ const program = Effect.gen(function*() {
 declare const writeLock: (self: TxReentrantLock) => Effect.Effect<number, never, Scope.Scope>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxReentrantLock.ts#L412)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxReentrantLock.ts#L380)
 
 Since v2.0.0

@@ -27,6 +27,6 @@ assert.deepStrictEqual(Boolean.nor(false, false), true)
 declare const nor: { (that: boolean): (self: boolean) => boolean; (self: boolean, that: boolean): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Boolean.ts#L335)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Boolean.ts#L288)
 
 Since v2.0.0

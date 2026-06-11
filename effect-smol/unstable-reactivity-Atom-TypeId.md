@@ -11,6 +11,6 @@ Type-level identifier used to recognize `Atom` values.
 type TypeId = "~effect/reactivity/Atom"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L78)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L50)
 
 Since v4.0.0

@@ -28,6 +28,6 @@ traversal or neighbor queries should follow source-to-target edges.
 type DirectedGraph<N, E> = Graph<N, E, "directed">
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L238)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L195)
 
 Since v3.18.0

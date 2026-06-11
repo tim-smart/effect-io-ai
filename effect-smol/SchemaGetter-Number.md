@@ -34,6 +34,6 @@ const toNumber = SchemaGetter.Number<string>()
 declare const Number: <E>() => Getter<number, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L777)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L703)
 
 Since v4.0.0

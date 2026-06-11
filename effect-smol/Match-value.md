@@ -51,6 +51,6 @@ console.log(result)
 declare const value: <const I>(i: I) => Matcher<I, Types.Without<never>, I, never, I>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L361)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L327)
 
 Since v4.0.0

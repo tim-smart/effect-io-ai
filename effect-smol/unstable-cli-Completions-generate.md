@@ -26,6 +26,6 @@ script string for `executableName`.
 declare const generate: (executableName: string, shell: Shell, descriptor: CommandDescriptor) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Completions.ts#L134)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Completions.ts#L110)
 
 Since v4.0.0

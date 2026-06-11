@@ -15,6 +15,6 @@ Atoms have this behavior by default, so use this to undo `keepAlive` on a copied
 declare const autoDispose: <A extends Atom<any>>(self: A) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L1510)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L1482)
 
 Since v4.0.0

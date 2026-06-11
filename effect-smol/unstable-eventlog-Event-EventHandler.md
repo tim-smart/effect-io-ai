@@ -19,6 +19,6 @@ export interface EventHandler<in out Tag extends string> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Event.ts#L101)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Event.ts#L79)
 
 Since v4.0.0

@@ -51,6 +51,6 @@ export interface Ref<in out A> extends Ref.Variance<A>, Pipeable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ref.ts#L106)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ref.ts#L65)
 
 Since v2.0.0

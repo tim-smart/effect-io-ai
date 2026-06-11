@@ -32,6 +32,6 @@ type AnyRefinement = Predicate.Refinement.Any
 type Any = Refinement<any, any>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L362)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L307)
 
 Since v3.6.0

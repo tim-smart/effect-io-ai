@@ -46,6 +46,6 @@ export interface Variance<in out F extends TypeLambda, in R, out O, out E> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Utils.ts#L178)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Utils.ts#L131)
 
 Since v2.0.0

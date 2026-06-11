@@ -42,6 +42,6 @@ const result = pipe(hash1, Hash.combine(hash2))
 declare const combine: { (b: number): (self: number) => number; (self: number, b: number): number; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Hash.ts#L279)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Hash.ts#L237)
 
 Since v2.0.0

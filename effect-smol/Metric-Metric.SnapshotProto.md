@@ -76,6 +76,6 @@ export interface SnapshotProto<T extends Type, State> {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L1574)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L1501)
 
 Since v4.0.0

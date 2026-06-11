@@ -13,6 +13,6 @@ parsing files named `<id>_<name>.js`, `<id>_<name>.ts`,
 declare const fromGlob: (migrations: Record<string, () => Promise<any>>) => Loader
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Migrator.ts#L371)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Migrator.ts#L336)
 
 Since v4.0.0

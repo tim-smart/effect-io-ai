@@ -27,6 +27,6 @@ for `"server"` or the default `false`.
 declare const isUninterruptibleForClient: (context: Context.Context<never>) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ClusterSchema.ts#L152)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ClusterSchema.ts#L114)
 
 Since v4.0.0

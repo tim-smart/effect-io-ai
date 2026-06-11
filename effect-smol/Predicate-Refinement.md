@@ -43,6 +43,6 @@ export interface Refinement<in A, out B extends A> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L168)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L113)
 
 Since v2.0.0

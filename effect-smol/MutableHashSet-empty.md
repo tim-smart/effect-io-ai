@@ -41,6 +41,6 @@ console.log(Array.from(set)) // ["apple", "banana"]
 declare const empty: <K = never>() => MutableHashSet<K>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashSet.ts#L214)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashSet.ts#L156)
 
 Since v2.0.0

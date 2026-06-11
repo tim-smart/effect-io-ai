@@ -18,6 +18,6 @@ process alive.
 type Reref = Effect.Effect<void, PlatformError.PlatformError>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ChildProcessSpawner.ts#L77)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ChildProcessSpawner.ts#L69)
 
 Since v4.0.0

@@ -13,6 +13,6 @@ and sending responses back through the parent channel.
 declare const layer: Layer.Layer<WorkerRunner.WorkerRunnerPlatform, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeWorkerRunner.ts#L60)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeWorkerRunner.ts#L31)
 
 Since v4.0.0

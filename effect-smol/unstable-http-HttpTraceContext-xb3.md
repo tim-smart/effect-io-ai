@@ -16,6 +16,6 @@ headers.
 declare const xb3: FromHeaders
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpTraceContext.ts#L136)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpTraceContext.ts#L112)
 
 Since v4.0.0

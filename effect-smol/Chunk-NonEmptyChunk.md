@@ -21,6 +21,6 @@ console.log(Chunk.lastNonEmpty(nonEmptyChunk)) // 3
 export interface NonEmptyChunk<out A> extends Chunk<A>, NonEmptyIterable<A> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L139)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L78)
 
 Since v2.0.0

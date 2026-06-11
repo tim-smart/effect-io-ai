@@ -36,6 +36,6 @@ console.log(MutableList.takeAll(newList)) // ["h", "e", "l", "l", "o"]
 declare const prependAll: <A>(self: MutableList<A>, messages: Iterable<A>) => void
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L423)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L383)
 
 Since v4.0.0

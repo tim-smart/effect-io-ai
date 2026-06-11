@@ -11,6 +11,6 @@ Returns `true` when the supplied value implements the `Respondable` protocol.
 declare const isRespondable: (u: unknown) => u is Respondable
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerRespondable.ts#L72)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerRespondable.ts#L48)
 
 Since v4.0.0

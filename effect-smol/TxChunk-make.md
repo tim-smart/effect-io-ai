@@ -32,6 +32,6 @@ const program = Effect.gen(function*() {
 declare const make: <A>(initial: Chunk.Chunk<A>) => Effect.Effect<TxChunk<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxChunk.ts#L152)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxChunk.ts#L120)
 
 Since v4.0.0

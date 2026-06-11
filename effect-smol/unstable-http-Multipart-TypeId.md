@@ -11,6 +11,6 @@ Type identifier used to brand multipart part values.
 declare const TypeId: "~effect/http/Multipart"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Multipart.ts#L71)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Multipart.ts#L42)
 
 Since v4.0.0

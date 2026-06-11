@@ -28,6 +28,6 @@ const program = Effect.gen(function*() {
 declare const reduce: { <V, U>(zero: U, f: (accumulator: U, value: V) => U): (self: TxHashSet<V>) => Effect.Effect<U>; <V, U>(self: TxHashSet<V>, zero: U, f: (accumulator: U, value: V) => U): Effect.Effect<U>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashSet.ts#L866)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashSet.ts#L857)
 
 Since v2.0.0

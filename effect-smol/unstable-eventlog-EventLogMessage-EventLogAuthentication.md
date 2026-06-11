@@ -12,6 +12,6 @@ RPC middleware that authenticates event-log requests and provides the client
 declare class EventLogAuthentication
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogMessage.ts#L99)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogMessage.ts#L83)
 
 Since v4.0.0

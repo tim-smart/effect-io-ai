@@ -11,6 +11,6 @@ Error raised by persisted queue store operations.
 declare class PersistedQueueError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PersistedQueue.ts#L242)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PersistedQueue.ts#L226)
 
 Since v4.0.0

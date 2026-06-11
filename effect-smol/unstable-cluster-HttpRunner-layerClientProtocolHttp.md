@@ -17,6 +17,6 @@ the generated URL from `http` to `https`.
 declare const layerClientProtocolHttp: (options: { readonly path: string; readonly https?: boolean | undefined; }) => Layer.Layer<RpcClientProtocol, never, RpcSerialization.RpcSerialization | HttpClient.HttpClient>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpRunner.ts#L73)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpRunner.ts#L46)
 
 Since v4.0.0

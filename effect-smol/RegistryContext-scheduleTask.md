@@ -12,6 +12,6 @@ returns a cancellation function for the scheduled task.
 declare const scheduleTask: (f: () => void) => () => void
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/RegistryContext.ts#L40)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/RegistryContext.ts#L23)
 
 Since v4.0.0

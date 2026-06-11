@@ -25,6 +25,6 @@ export interface Proto<out N, out E> extends Iterable<readonly [NodeIndex, N]>, 
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L165)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L122)
 
 Since v3.18.0

@@ -21,6 +21,6 @@ and TTY pretty console logger call `console.error` instead of `console.log`.
 declare const LogToStderr: Context.Reference<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/References.ts#L794)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/References.ts#L745)
 
 Since v4.0.0

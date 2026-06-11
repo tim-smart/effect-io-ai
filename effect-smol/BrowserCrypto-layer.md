@@ -27,6 +27,6 @@ browser rejects the digest request.
 declare const layer: Layer.Layer<EffectCrypto.Crypto, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserCrypto.ts#L91)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserCrypto.ts#L54)
 
 Since v1.0.0

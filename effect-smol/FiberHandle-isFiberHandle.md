@@ -25,6 +25,6 @@ Effect.gen(function*() {
 declare const isFiberHandle: (u: unknown) => u is FiberHandle
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberHandle.ts#L116)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberHandle.ts#L86)
 
 Since v2.0.0

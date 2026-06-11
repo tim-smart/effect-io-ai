@@ -13,6 +13,6 @@ type Layers<Options> = Options extends { readonly lookup: (key: infer _K) => inf
     : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LayerMap.ts#L464)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LayerMap.ts#L439)
 
 Since v3.14.0

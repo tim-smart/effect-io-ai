@@ -16,6 +16,6 @@ expiration timestamps.
 declare const layerBackingSqlMultiTable: Layer.Layer<BackingPersistence, never, SqlClient.SqlClient>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Persistence.ts#L312)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Persistence.ts#L296)
 
 Since v4.0.0

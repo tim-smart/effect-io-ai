@@ -14,8 +14,8 @@ number is valid and finite.
 
 Arbitrary:
 
-When generating test data with fast-check, this applies `noDefaultInfinity`
-and `noNaN` constraints to ensure generated numbers are finite.
+When generating test data with fast-check, this applies `noNaN: true` and
+`noInfinity: true` constraints to ensure generated numbers are finite.
 
 **Signature**
 
@@ -23,6 +23,6 @@ and `noNaN` constraints to ensure generated numbers are finite.
 declare const isFinite: (annotations?: Annotations.Filter) => SchemaAST.Filter<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6689)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6630)
 
 Since v4.0.0

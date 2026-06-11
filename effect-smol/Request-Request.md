@@ -29,6 +29,6 @@ interface GetAllUsers extends Request.Request<ReadonlyArray<string>, Error> {
 export interface Request<out A, out E = never, out R = never> extends Variance<A, E, R> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Request.ts#L84)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Request.ts#L49)
 
 Since v2.0.0

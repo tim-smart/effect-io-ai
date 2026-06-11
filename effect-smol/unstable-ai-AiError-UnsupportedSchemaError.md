@@ -31,6 +31,6 @@ console.log(error.message)
 declare class UnsupportedSchemaError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L929)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L860)
 
 Since v4.0.0

@@ -11,6 +11,6 @@ Text editor command payload for inserting text after a specific line number in a
 type TextEditorInsertCommand = typeof TextEditorInsertCommand.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1862)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1813)
 
 Since v4.0.0

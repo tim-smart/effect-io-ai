@@ -17,6 +17,6 @@ directly.
 declare const CurrentErrorReporters: Context.Reference<ReadonlySet<ErrorReporter>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ErrorReporter.ts#L208)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ErrorReporter.ts#L169)
 
 Since v4.0.0

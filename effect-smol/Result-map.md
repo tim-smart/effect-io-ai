@@ -41,6 +41,6 @@ console.log(result)
 declare const map: { <A, A2>(f: (ok: A) => A2): <E>(self: Result<A, E>) => Result<A2, E>; <A, E, A2>(self: Result<A, E>, f: (ok: A) => A2): Result<A2, E>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L917)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L859)
 
 Since v2.0.0

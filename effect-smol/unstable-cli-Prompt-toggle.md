@@ -12,6 +12,6 @@ states and returns the selected boolean value.
 declare const toggle: (options: ToggleOptions) => Prompt<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1234)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1219)
 
 Since v4.0.0

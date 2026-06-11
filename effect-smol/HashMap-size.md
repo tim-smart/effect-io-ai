@@ -23,6 +23,6 @@ console.log(HashMap.size(map)) // 3
 declare const size: <K, V>(self: HashMap<K, V>) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L744)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L681)
 
 Since v2.0.0

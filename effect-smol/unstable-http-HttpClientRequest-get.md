@@ -11,6 +11,6 @@ Creates a `GET` request for the specified URL.
 declare const get: (url: string | URL, options?: Options.NoUrl) => HttpClientRequest
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClientRequest.ts#L205)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClientRequest.ts#L174)
 
 Since v4.0.0

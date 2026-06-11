@@ -25,6 +25,6 @@ range used for generated IndexedDB auto-increment keys.
 declare const AutoIncrement: Schema.Int
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDb.ts#L91)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDb.ts#L77)
 
 Since v4.0.0

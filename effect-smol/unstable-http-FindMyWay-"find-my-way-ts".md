@@ -11,6 +11,6 @@ Re-exports all named exports from the "find-my-way-ts" module.
 export * from "find-my-way-ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FindMyWay.ts#L9)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FindMyWay.ts#L15)
 
 Since v4.0.0

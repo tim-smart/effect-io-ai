@@ -16,6 +16,6 @@ multi-header B3 (`x-b3-*`).
 declare const fromHeaders: (headers: Headers.Headers) => Option.Option<Tracer.ExternalSpan>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpTraceContext.ts#L87)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpTraceContext.ts#L63)
 
 Since v4.0.0

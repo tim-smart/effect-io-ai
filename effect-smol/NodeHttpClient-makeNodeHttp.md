@@ -13,6 +13,6 @@ as `HttpClientResponse` values.
 declare const makeNodeHttp: Effect.Effect<Client.HttpClient, never, HttpAgent>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L465)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L438)
 
 Since v4.0.0

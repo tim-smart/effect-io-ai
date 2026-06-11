@@ -26,6 +26,6 @@ values carefully.
 declare const shards: Metric.Gauge<bigint>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ClusterMetrics.ts#L126)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ClusterMetrics.ts#L112)
 
 Since v4.0.0

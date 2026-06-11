@@ -15,6 +15,6 @@ The provided header name is normalized to lowercase before removal.
 declare const remove: { (key: string): (self: Headers) => Headers; (self: Headers, key: string): Headers; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Headers.ts#L378)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Headers.ts#L333)
 
 Since v4.0.0

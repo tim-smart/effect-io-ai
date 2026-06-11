@@ -31,6 +31,6 @@ type ValidateReturn<A> = A extends (
     `Must return the implemented handlers`
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLog.ts#L369)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLog.ts#L347)
 
 Since v4.0.0

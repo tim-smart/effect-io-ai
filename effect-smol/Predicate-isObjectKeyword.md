@@ -34,6 +34,6 @@ console.log(Predicate.isObjectKeyword(null))
 declare const isObjectKeyword: (input: unknown) => input is object
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1151)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1096)
 
 Since v4.0.0

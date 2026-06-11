@@ -33,6 +33,6 @@ if (isDown) {
 declare const isShutdownUnsafe: <A>(self: PubSub<A>) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L872)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L824)
 
 Since v4.0.0

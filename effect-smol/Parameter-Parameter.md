@@ -17,6 +17,6 @@ export interface Parameter<out A> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/Parameter.ts#L65)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/Parameter.ts#L40)
 
 Since v4.0.0

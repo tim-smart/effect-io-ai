@@ -38,6 +38,6 @@ SchemaTransformation.isTransformation({ decode: null, encode: null })
 declare const isTransformation: (u: unknown) => u is Transformation<any, any, unknown, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L270)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L197)
 
 Since v4.0.0

@@ -33,6 +33,6 @@ type InputItem = | {
   | ItemReference
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L568)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L551)
 
 Since v4.0.0

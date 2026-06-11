@@ -125,6 +125,6 @@ export interface Cron extends Pipeable, Equal.Equal, Inspectable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cron.ts#L139)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cron.ts#L103)
 
 Since v2.0.0

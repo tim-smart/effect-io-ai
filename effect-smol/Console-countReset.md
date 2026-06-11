@@ -24,6 +24,6 @@ const program = Effect.gen(function*() {
 declare const countReset: (label?: string) => Effect.Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Console.ts#L266)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Console.ts#L202)
 
 Since v2.0.0

@@ -36,6 +36,6 @@ const program = Effect.gen(function*() {
 declare const bounded: <A = never, E = never>(capacity: number) => Effect.Effect<TxQueue<A, E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L409)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L369)
 
 Since v2.0.0

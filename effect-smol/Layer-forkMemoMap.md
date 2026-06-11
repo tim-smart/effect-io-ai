@@ -24,6 +24,6 @@ existing `MemoMap` while keeping newly memoized layers out of the parent map.
 declare const forkMemoMap: (parent: MemoMap) => Effect<MemoMap>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L579)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L547)
 
 Since v4.0.0

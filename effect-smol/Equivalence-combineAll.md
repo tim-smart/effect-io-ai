@@ -72,6 +72,6 @@ console.log(alwaysEq("anything", "else")) // true
 declare const combineAll: <A>(collection: Iterable<Equivalence<A>>) => Equivalence<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L448)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Equivalence.ts#L406)
 
 Since v2.0.0

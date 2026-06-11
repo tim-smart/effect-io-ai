@@ -21,6 +21,6 @@ number, and run effects only after the supplied identity has authenticated.
 declare class EventLogRemote
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogRemote.ts#L69)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogRemote.ts#L59)
 
 Since v4.0.0

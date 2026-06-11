@@ -30,6 +30,6 @@ export interface Overrideable<S extends Schema.Top & Schema.WithoutConstructorDe
 {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/VariantSchema.ts#L542)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/VariantSchema.ts#L530)
 
 Since v4.0.0

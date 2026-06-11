@@ -20,6 +20,6 @@ type Error<A> = A extends Effect.Effect<
     never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiBuilder.ts#L342)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiBuilder.ts#L308)
 
 Since v4.0.0

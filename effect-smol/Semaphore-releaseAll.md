@@ -22,6 +22,6 @@ during cleanup of manual `take` / `release` protocols.
 declare const releaseAll: (self: Semaphore) => Effect.Effect<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Semaphore.ts#L539)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Semaphore.ts#L517)
 
 Since v4.0.0

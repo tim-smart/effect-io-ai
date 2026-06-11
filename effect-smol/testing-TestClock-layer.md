@@ -31,6 +31,6 @@ const program = Effect.gen(function*() {
 declare const layer: (options?: TestClock.Options) => Layer.Layer<TestClock>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TestClock.ts#L394)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TestClock.ts#L379)
 
 Since v4.0.0

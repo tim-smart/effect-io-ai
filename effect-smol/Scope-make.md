@@ -30,6 +30,6 @@ const program = Effect.gen(function*() {
 declare const make: (finalizerStrategy?: "sequential" | "parallel") => Effect<Closeable>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Scope.ts#L286)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Scope.ts#L251)
 
 Since v2.0.0

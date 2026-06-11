@@ -21,6 +21,6 @@ input does not satisfy the schema.
 declare const asserts: <S extends Schema.Top, I>(schema: S, input: I) => asserts input is I & S["Type"]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L219)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L185)
 
 Since v4.0.0

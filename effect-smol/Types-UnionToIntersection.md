@@ -38,6 +38,6 @@ type UnionToIntersection<T> = (T extends any ? (x: T) => any : never) extends (x
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L261)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L219)
 
 Since v2.0.0

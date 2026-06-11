@@ -18,6 +18,6 @@ returned. Otherwise, the schema is converted with
 declare const getJsonSchemaFromSchema: <S extends Schema.Top>(schema: S, options?: { readonly transformer?: CodecTransformer; }) => JsonSchema.JsonSchema
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L1711)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L1666)
 
 Since v4.0.0

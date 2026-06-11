@@ -26,6 +26,6 @@ without a source-to-target direction.
 type UndirectedGraph<N, E> = Graph<N, E, "undirected">
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L259)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L216)
 
 Since v3.18.0

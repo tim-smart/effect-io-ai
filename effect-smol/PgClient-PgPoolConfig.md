@@ -17,6 +17,6 @@ export interface PgPoolConfig extends PgClientConfig {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/pg/src/PgClient.ts#L160)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/pg/src/PgClient.ts#L135)
 
 Since v4.0.0

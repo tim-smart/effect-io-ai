@@ -16,6 +16,6 @@ type Loader<R> = Effect.Effect<
 >
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Migrator.ts#L76)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Migrator.ts#L41)
 
 Since v4.0.0

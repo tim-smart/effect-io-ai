@@ -17,6 +17,6 @@ schemas at this property key.
 declare const symbol: "~effect/persistence/Persistable"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Persistable.ts#L45)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Persistable.ts#L31)
 
 Since v4.0.0

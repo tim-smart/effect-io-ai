@@ -25,6 +25,6 @@ narrows it to `QuitError`.
 declare const isQuitError: (u: unknown) => u is QuitError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Terminal.ts#L174)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Terminal.ts#L153)
 
 Since v4.0.0

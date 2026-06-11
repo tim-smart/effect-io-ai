@@ -30,6 +30,6 @@ short-circuit on `false`.
 declare const ReducerAnd: Reducer.Reducer<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Boolean.ts#L508)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Boolean.ts#L461)
 
 Since v4.0.0

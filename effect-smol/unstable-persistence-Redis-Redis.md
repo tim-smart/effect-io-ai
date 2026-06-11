@@ -11,6 +11,6 @@ Service for sending Redis commands and evaluating cached Lua scripts.
 declare class Redis
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Redis.ts#L52)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Redis.ts#L26)
 
 Since v4.0.0

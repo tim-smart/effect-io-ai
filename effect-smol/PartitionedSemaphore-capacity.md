@@ -24,6 +24,6 @@ permits are acquired or released.
 declare const capacity: <K>(self: PartitionedSemaphore<K>) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PartitionedSemaphore.ts#L400)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PartitionedSemaphore.ts#L372)
 
 Since v4.0.0

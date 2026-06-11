@@ -29,6 +29,6 @@ console.log(DateTime.Equivalence(utc, zoned)) // true
 declare const Equivalence: Equ.Equivalence<DateTime>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L567)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L527)
 
 Since v3.6.0

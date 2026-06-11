@@ -40,6 +40,6 @@ type MermaidDiagramType = | "flowchart" // For directed graphs
   | "graph"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L2169)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L2126)
 
 Since v3.18.0

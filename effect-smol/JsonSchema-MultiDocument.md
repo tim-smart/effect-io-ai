@@ -30,6 +30,6 @@ export interface MultiDocument<D extends Dialect> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonSchema.ts#L231)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonSchema.ts#L155)
 
 Since v4.0.0

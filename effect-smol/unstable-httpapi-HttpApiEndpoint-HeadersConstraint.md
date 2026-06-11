@@ -13,6 +13,6 @@ type HeadersConstraint = | Record<string, Schema.Encoder<string | undefined, unk
   | Schema.Encoder<Record<string, string | undefined>, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L1039)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L997)
 
 Since v4.0.0

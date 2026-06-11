@@ -16,6 +16,6 @@ in-flight request.
 declare class OutgoingEnvelope
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Message.ts#L190)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Message.ts#L174)
 
 Since v4.0.0

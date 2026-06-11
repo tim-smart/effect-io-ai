@@ -37,6 +37,6 @@ console.log(flip(1, 1)) // 0
 declare const flip: <A>(O: Order<A>) => Order<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L337)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L269)
 
 Since v4.0.0

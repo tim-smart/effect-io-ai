@@ -26,6 +26,6 @@ subscribers with that value before future updates.
 declare const make: <A>(value: A) => Effect.Effect<SubscriptionRef<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SubscriptionRef.ts#L158)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SubscriptionRef.ts#L111)
 
 Since v2.0.0

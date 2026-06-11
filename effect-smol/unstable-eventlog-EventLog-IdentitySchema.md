@@ -12,6 +12,6 @@ base64-encoded private key bytes.
 declare const IdentitySchema: Schema.Struct<{ readonly publicKey: Schema.String; readonly privateKey: Schema.decodeTo<Schema.Redacted<Schema.Uint8Array>, Schema.Uint8ArrayFromBase64, never, never>; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLog.ts#L453)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLog.ts#L431)
 
 Since v4.0.0

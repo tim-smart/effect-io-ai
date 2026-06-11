@@ -44,6 +44,6 @@ console.log(gen.next(42))
 declare class SingleShotGen<T, A> { constructor(self: T) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Utils.ts#L99)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Utils.ts#L52)
 
 Since v2.0.0

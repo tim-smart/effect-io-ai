@@ -36,6 +36,6 @@ const program = Effect.gen(function*() {
 declare const elapsed: Schedule<Duration.Duration, unknown, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L2018)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L1962)
 
 Since v2.0.0

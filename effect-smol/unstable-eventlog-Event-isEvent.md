@@ -11,6 +11,6 @@ Returns `true` when a value is an event log event definition.
 declare const isEvent: (u: unknown) => u is Event<any, any, any, any>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Event.ts#L62)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Event.ts#L40)
 
 Since v4.0.0

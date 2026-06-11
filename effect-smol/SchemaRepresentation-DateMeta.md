@@ -23,6 +23,6 @@ type DateMeta = Schema.Annotations.BuiltInMetaDefinitions[
 ]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L710)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L636)
 
 Since v4.0.0

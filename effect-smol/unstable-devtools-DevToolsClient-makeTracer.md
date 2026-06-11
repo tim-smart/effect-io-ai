@@ -12,6 +12,6 @@ starts, span events, and span ends to `DevToolsClient`.
 declare const makeTracer: Effect.Effect<Tracer.Tracer, never, DevToolsClient>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DevToolsClient.ts#L244)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DevToolsClient.ts#L220)
 
 Since v4.0.0

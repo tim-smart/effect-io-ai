@@ -32,6 +32,6 @@ if (Result.isSuccess(result)) {
 declare const decodeHex: (str: string) => Result.Result<Uint8Array, EncodingError>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Encoding.ts#L488)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Encoding.ts#L447)
 
 Since v2.0.0

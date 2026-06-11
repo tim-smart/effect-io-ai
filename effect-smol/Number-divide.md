@@ -29,6 +29,6 @@ Number.divide(6, 0) // Option.none()
 declare const divide: { (that: number): (self: number) => Option.Option<number>; (self: number, that: number): Option.Option<number>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L221)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L170)
 
 Since v2.0.0

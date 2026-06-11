@@ -16,6 +16,6 @@ the reply callback, dynamic annotations, and an optional encoded request cache.
 declare class OutgoingRequest<R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Message.ts#L163)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Message.ts#L147)
 
 Since v4.0.0

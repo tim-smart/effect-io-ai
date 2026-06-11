@@ -24,6 +24,6 @@ export interface Zoned extends DateTime.Proto {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L108)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L68)
 
 Since v3.6.0

@@ -12,6 +12,6 @@ available and falling back to the `ws` package otherwise.
 declare const layerWebSocketConstructor: Layer.Layer<Socket.WebSocketConstructor, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeSocket.ts#L55)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeSocket.ts#L31)
 
 Since v4.0.0

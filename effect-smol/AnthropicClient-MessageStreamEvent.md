@@ -28,6 +28,6 @@ type MessageStreamEvent = | typeof Generated.BetaMessageStartEvent.Type
   | typeof Generated.BetaErrorResponse.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L137)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L111)
 
 Since v4.0.0

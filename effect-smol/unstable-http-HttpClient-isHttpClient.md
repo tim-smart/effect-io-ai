@@ -11,6 +11,6 @@ Returns `true` if the provided value is an `HttpClient`.
 declare const isHttpClient: (u: unknown) => u is HttpClient
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClient.ts#L78)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClient.ts#L53)
 
 Since v4.0.0

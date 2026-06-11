@@ -20,6 +20,6 @@ pipe("abc", String.codePointAt(10)) // Option.none()
 declare const codePointAt: { (index: number): (self: string) => Option.Option<number>; (self: string, index: number): Option.Option<number>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L679)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L621)
 
 Since v2.0.0

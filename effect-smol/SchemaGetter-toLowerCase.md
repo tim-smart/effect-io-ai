@@ -27,6 +27,6 @@ const lower = SchemaGetter.toLowerCase<string>()
 declare const toLowerCase: <E extends string>() => Getter<string, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1003)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L929)
 
 Since v4.0.0

@@ -47,6 +47,6 @@ console.log(isString(1))
 declare const toRefinement: <A, B extends A>(f: (a: A) => Option<B>) => (a: A) => a is B
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L541)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L480)
 
 Since v2.0.0

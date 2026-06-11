@@ -24,6 +24,6 @@ The initial value is `0n`, so `combineAll([])` returns `0n`.
 declare const ReducerSum: Reducer.Reducer<bigint>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L1032)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigInt.ts#L973)
 
 Since v4.0.0

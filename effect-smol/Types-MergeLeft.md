@@ -37,6 +37,6 @@ type Result = Types.MergeLeft<
 type MergeLeft<Source, Target> = MergeRight<Target, Source>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L415)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L373)
 
 Since v2.0.0

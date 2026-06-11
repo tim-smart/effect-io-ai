@@ -11,6 +11,6 @@ Error reason for failures that occur while opening a socket server.
 declare class SocketServerOpenError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SocketServer.ts#L67)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SocketServer.ts#L53)
 
 Since v4.0.0

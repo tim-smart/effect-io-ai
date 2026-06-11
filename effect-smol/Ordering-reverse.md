@@ -45,6 +45,6 @@ const createSorter = (ascending: boolean) => (a: number, b: number) => {
 declare const reverse: (o: Ordering) => Ordering
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ordering.ts#L121)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ordering.ts#L95)
 
 Since v2.0.0

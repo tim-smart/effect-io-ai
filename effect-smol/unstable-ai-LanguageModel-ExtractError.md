@@ -26,6 +26,6 @@ type ExtractError<Options> = Options extends {
   : AiError.AiError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LanguageModel.ts#L644)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LanguageModel.ts#L605)
 
 Since v4.0.0

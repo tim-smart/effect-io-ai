@@ -32,10 +32,11 @@ declare class Declaration { constructor(
     annotations?: Schema.Annotations.Annotations,
     checks?: Checks,
     encoding?: Encoding,
-    context?: Context
+    context?: Context,
+    encodingChecks?: Checks
   ) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L711)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L649)
 
 Since v3.10.0

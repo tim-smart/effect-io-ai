@@ -16,6 +16,6 @@ type ReturnIterable<T> = [T] extends [Iterable<Prompt<infer A>>] ? Prompt<Array<
     : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L602)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L587)
 
 Since v4.0.0

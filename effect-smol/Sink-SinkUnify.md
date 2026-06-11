@@ -29,6 +29,6 @@ export interface SinkUnify<A extends { [Unify.typeSymbol]?: any }> extends Effec
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L129)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L106)
 
 Since v2.0.0

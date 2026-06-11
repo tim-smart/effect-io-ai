@@ -16,6 +16,6 @@ numeric vector or a string.
 type Embedding = typeof Embedding.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L1217)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L1187)
 
 Since v4.0.0

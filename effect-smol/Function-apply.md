@@ -33,6 +33,6 @@ assert.deepStrictEqual(pipe(String.length, Function.apply("hello")), 5)
 declare const apply: <A>(a: A) => <B>(self: (a: A) => B) => B
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L222)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L184)
 
 Since v2.0.0

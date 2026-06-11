@@ -20,6 +20,6 @@ console.log(Chunk.last(Chunk.make(1, 2, 3))) // { _tag: "Some", value: 3 }
 declare const last: <A>(self: Chunk<A>) => Option<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1539)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1478)
 
 Since v2.0.0

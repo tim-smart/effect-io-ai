@@ -42,6 +42,6 @@ type MergeRight<Target, Source> = Simplify<
 >
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L447)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L405)
 
 Since v2.0.0

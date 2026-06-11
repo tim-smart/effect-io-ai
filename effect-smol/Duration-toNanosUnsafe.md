@@ -33,6 +33,6 @@ console.log(nanos) // 2000000000n
 declare const toNanosUnsafe: (input: Input) => bigint
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L944)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L904)
 
 Since v4.0.0

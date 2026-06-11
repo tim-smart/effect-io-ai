@@ -22,6 +22,6 @@ whose edges connect both endpoints without direction.
 type MutableUndirectedGraph<N, E> = MutableGraph<N, E, "undirected">
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L293)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L250)
 
 Since v3.18.0

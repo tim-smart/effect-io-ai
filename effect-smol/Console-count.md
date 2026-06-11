@@ -23,6 +23,6 @@ const program = Effect.gen(function*() {
 declare const count: (label?: string) => Effect.Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Console.ts#L240)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Console.ts#L176)
 
 Since v2.0.0

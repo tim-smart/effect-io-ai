@@ -19,6 +19,6 @@ type PrimitiveKind = | "string"
   | "Uint8Array"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Statement.ts#L424)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Statement.ts#L396)
 
 Since v4.0.0

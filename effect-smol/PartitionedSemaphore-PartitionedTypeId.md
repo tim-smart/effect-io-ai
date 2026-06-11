@@ -20,6 +20,6 @@ Use this type when declaring fields that must contain the exact
 type PartitionedTypeId = "~effect/PartitionedSemaphore"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PartitionedSemaphore.ts#L72)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PartitionedSemaphore.ts#L44)
 
 Since v4.0.0

@@ -68,6 +68,6 @@ export interface TestConsole extends Console.Console {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TestConsole.ts#L86)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TestConsole.ts#L57)
 
 Since v4.0.0

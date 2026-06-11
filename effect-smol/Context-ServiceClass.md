@@ -30,6 +30,6 @@ export interface ServiceClass<in out Self, in out Identifier extends string, in 
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L163)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L124)
 
 Since v4.0.0

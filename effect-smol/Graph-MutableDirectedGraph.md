@@ -22,6 +22,6 @@ whose edges have source-to-target direction.
 type MutableDirectedGraph<N, E> = MutableGraph<N, E, "directed">
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L276)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L233)
 
 Since v3.18.0

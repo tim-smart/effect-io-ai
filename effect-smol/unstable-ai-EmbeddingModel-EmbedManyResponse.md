@@ -22,6 +22,6 @@ the operation.
 declare class EmbedManyResponse
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EmbeddingModel.ts#L139)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EmbeddingModel.ts#L102)
 
 Since v4.0.0

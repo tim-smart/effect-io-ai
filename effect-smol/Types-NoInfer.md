@@ -32,6 +32,6 @@ const result = withDefault<"a" | "b">("a", "b")
 type NoInfer<A> = [A][A extends any ? 0 : never]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L586)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L544)
 
 Since v2.0.0

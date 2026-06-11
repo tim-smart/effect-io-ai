@@ -31,6 +31,6 @@ Explicit `options.sampled` bypasses threshold computation.
 declare const MinimumTraceLevel: Context.Reference<LogLevel>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tracer.ts#L573)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tracer.ts#L543)
 
 Since v4.0.0

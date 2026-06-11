@@ -21,6 +21,6 @@ formatted are converted with `String`.
 declare const toStringUnknown: (u: unknown, whitespace?: number | string | undefined) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Inspectable.ts#L239)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Inspectable.ts#L185)
 
 Since v2.0.0

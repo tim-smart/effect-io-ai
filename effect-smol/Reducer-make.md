@@ -53,6 +53,6 @@ console.log(Product.combineAll([2, 0, 4]))
 declare const make: <A>(combine: (self: A, that: A) => A, initialValue: A, combineAll?: (collection: Iterable<A>) => A) => Reducer<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Reducer.ts#L180)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Reducer.ts#L121)
 
 Since v4.0.0

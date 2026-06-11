@@ -30,6 +30,6 @@ When that reason has a cause, the cause is preserved on the wrapper.
 declare class PlatformError { constructor(reason: BadArgument | SystemError) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PlatformError.ts#L179)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PlatformError.ts#L157)
 
 Since v4.0.0

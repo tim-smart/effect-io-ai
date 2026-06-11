@@ -17,6 +17,6 @@ encryption service to derive signing and encryption keys.
 declare class Identity
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLog.ts#L203)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLog.ts#L181)
 
 Since v4.0.0

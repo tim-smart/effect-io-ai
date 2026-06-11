@@ -26,6 +26,6 @@ Effect.gen(function*() {
 declare const join: <A, E>(self: FiberSet<A, E>) => Effect.Effect<void, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberSet.ts#L710)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberSet.ts#L680)
 
 Since v2.0.0

@@ -23,6 +23,6 @@ type ToolkitInput<Tools, E, R> = | ToolkitOption<Tools, E, R>
   >
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LanguageModel.ts#L563)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LanguageModel.ts#L524)
 
 Since v4.0.0

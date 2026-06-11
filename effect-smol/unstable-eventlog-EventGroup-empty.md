@@ -16,6 +16,6 @@ definitions with `.add(...)`.
 declare const empty: EventGroup<never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventGroup.ts#L208)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventGroup.ts#L193)
 
 Since v4.0.0

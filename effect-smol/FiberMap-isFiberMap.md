@@ -29,6 +29,6 @@ const program = Effect.gen(function*() {
 declare const isFiberMap: (u: unknown) => u is FiberMap<unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberMap.ts#L122)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberMap.ts#L95)
 
 Since v2.0.0

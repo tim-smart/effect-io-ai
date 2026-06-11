@@ -29,6 +29,6 @@ export interface Layer<in ROut, out E = never, out RIn = never> extends Variance
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L86)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L54)
 
 Since v2.0.0

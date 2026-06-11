@@ -15,6 +15,6 @@ Use to provide default fetch request options for Node HTTP requests.
 declare const RequestInit: typeof RequestInit
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L102)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L75)
 
 Since v4.0.0

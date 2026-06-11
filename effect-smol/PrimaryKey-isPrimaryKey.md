@@ -28,6 +28,6 @@ This guard does not call the method or verify that it returns a string.
 declare const isPrimaryKey: (u: unknown) => u is PrimaryKey
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PrimaryKey.ts#L127)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PrimaryKey.ts#L87)
 
 Since v4.0.0

@@ -46,6 +46,6 @@ console.log(Hash.array(arr1) === Hash.array(arr3)) // true
 declare const array: <A>(arr: Iterable<A>) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Hash.ts#L561)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Hash.ts#L519)
 
 Since v2.0.0

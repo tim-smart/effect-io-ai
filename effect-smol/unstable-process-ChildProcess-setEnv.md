@@ -26,6 +26,6 @@ const cmd = ChildProcess.make`node script.js`.pipe(
 declare const setEnv: { (env: Record<string, string>): (self: Command) => Command; (self: Command, env: Record<string, string>): Command; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ChildProcess.ts#L836)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ChildProcess.ts#L804)
 
 Since v4.0.0

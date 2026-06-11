@@ -26,6 +26,6 @@ const program = Effect.gen(function*() {
 declare const filter: { <V, U extends V>(refinement: Refinement<NoInfer<V>, U>): (self: TxHashSet<V>) => Effect.Effect<TxHashSet<U>>; <V>(predicate: Predicate<NoInfer<V>>): (self: TxHashSet<V>) => Effect.Effect<TxHashSet<V>>; <V, U extends V>(self: TxHashSet<V>, refinement: Refinement<V, U>): Effect.Effect<TxHashSet<U>>; <V>(self: TxHashSet<V>, predicate: Predicate<V>): Effect.Effect<TxHashSet<V>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashSet.ts#L808)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashSet.ts#L799)
 
 Since v4.0.0

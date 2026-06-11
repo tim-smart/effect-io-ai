@@ -39,6 +39,6 @@ const program = Effect.gen(function*() {
 declare const make: Effect.Effect<TestConsole, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TestConsole.ts#L207)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TestConsole.ts#L178)
 
 Since v4.0.0

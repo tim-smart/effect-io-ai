@@ -50,6 +50,6 @@ console.log(Cron.Equivalence(cron1, cron2)) // true
 declare const Equivalence: Equ.Equivalence<Cron>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cron.ts#L1038)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cron.ts#L1002)
 
 Since v2.0.0

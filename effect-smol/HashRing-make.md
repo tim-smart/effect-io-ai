@@ -26,6 +26,6 @@ weight `1`; it defaults to `128` and is clamped to at least `1`.
 declare const make: <A extends PrimaryKey.PrimaryKey>(options?: { readonly baseWeight?: number | undefined; }) => HashRing<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashRing.ts#L142)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashRing.ts#L92)
 
 Since v3.19.0

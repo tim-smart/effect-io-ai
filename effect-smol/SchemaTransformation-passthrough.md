@@ -40,6 +40,6 @@ const schema = Schema.Trim.pipe(
 declare const passthrough: { <T, E>(options: { readonly strict: false; }): Transformation<T, E>; <T>(): Transformation<T, T>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L780)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L707)
 
 Since v4.0.0

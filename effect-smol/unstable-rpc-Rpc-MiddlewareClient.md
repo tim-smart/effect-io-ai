@@ -21,6 +21,6 @@ type MiddlewareClient<R> = R extends Rpc<
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L577)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L545)
 
 Since v4.0.0

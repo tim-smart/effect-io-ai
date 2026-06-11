@@ -30,6 +30,6 @@ const head: number = nonEmpty[0] // guaranteed to exist
 type readonly [A, ...A[]] = readonly [A, ...Array<A>]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L159)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L84)
 
 Since v2.0.0

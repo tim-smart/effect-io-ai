@@ -11,6 +11,6 @@ Allowed response body modes for the browser XHR HTTP client.
 type XHRResponseType = "arraybuffer" | "text"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserHttpClient.ts#L97)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserHttpClient.ts#L77)
 
 Since v4.0.0

@@ -11,6 +11,6 @@ Branded integer type representing a cluster machine ID.
 type MachineId = typeof MachineId.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MachineId.ts#L50)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MachineId.ts#L30)
 
 Since v4.0.0

@@ -40,6 +40,6 @@ export interface ToolApprovalRequestPart extends BasePart<"tool-approval-request
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L920)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L876)
 
 Since v4.0.0

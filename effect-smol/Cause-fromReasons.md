@@ -44,6 +44,6 @@ console.log(cause.reasons.length) // 2
 declare const fromReasons: <E>(reasons: ReadonlyArray<Reason<E>>) => Cause<E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L497)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L431)
 
 Since v4.0.0

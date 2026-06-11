@@ -12,6 +12,6 @@ construction and provides no services.
 declare const layer: <R>(options: Migrator.MigratorOptions<R>) => Layer.Layer<never, Migrator.MigrationError | SqlError, Client.SqlClient | R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/clickhouse/src/ClickhouseMigrator.ts#L66)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/clickhouse/src/ClickhouseMigrator.ts#L45)
 
 Since v4.0.0

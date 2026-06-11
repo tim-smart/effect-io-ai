@@ -40,6 +40,6 @@ JsonPointer.unescapeToken("path~1to~0key") // "path/to~key"
 declare const unescapeToken: (token: string) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonPointer.ts#L123)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonPointer.ts#L78)
 
 Since v4.0.0

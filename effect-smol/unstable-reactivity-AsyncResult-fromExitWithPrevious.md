@@ -11,6 +11,6 @@ Converts an `Exit` to a result, preserving the latest previous success when the 
 declare const fromExitWithPrevious: <A, E>(exit: Exit.Exit<A, E>, previous: Option.Option<AsyncResult<A, E>>) => Success<A, E> | Failure<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AsyncResult.ts#L206)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AsyncResult.ts#L174)
 
 Since v4.0.0

@@ -17,6 +17,6 @@ scope closes.
 declare const makeCreatePod: Effect.Effect<(spec: v1.Pod) => Effect.Effect<PodStatus, never, Scope>, never, K8sHttpClient>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/K8sHttpClient.ts#L161)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/K8sHttpClient.ts#L129)
 
 Since v4.0.0

@@ -16,6 +16,6 @@ type Input = | Record.ReadonlyRecord<string, string | ReadonlyArray<string> | un
   | Iterable<readonly [string, string]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Headers.ts#L210)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Headers.ts#L165)
 
 Since v4.0.0

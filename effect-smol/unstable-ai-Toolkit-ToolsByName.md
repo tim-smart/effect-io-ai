@@ -15,6 +15,6 @@ type ToolsByName<Tools> = Tools extends Record<string, Tool.Any> ?
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Toolkit.ts#L215)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Toolkit.ts#L146)
 
 Since v4.0.0

@@ -42,6 +42,6 @@ console.log(Option.fromUndefinedOr(42))
 declare const fromUndefinedOr: <A>(a: A) => Option<Exclude<A, undefined>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L921)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L860)
 
 Since v4.0.0

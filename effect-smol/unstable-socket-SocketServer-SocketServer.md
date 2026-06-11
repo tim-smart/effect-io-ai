@@ -12,6 +12,6 @@ loop that handles each accepted `Socket`.
 declare class SocketServer
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SocketServer.ts#L38)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SocketServer.ts#L24)
 
 Since v4.0.0

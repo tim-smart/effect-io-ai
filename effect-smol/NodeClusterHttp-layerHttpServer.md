@@ -12,6 +12,6 @@ listening on `ShardingConfig.runnerListenAddress` or `runnerAddress`.
 declare const layerHttpServer: Layer.Layer<NodeServices | HttpServer | HttpPlatform | Etag.Generator, ServeError, ShardingConfig.ShardingConfig>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeClusterHttp.ts#L165)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeClusterHttp.ts#L141)
 
 Since v4.0.0

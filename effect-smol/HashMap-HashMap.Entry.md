@@ -35,6 +35,6 @@ console.log(descriptions) // ["book: $29 (education)", "laptop: $999 (electronic
 type Entry<T> = [Key<T>, Value<T>]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L266)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L203)
 
 Since v3.9.0

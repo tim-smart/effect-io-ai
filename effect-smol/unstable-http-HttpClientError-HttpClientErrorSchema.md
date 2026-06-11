@@ -12,6 +12,6 @@ and cause.
 declare class HttpClientErrorSchema
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClientError.ts#L322)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClientError.ts#L302)
 
 Since v4.0.0

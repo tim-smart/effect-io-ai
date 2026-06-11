@@ -17,6 +17,6 @@ export interface D1Client extends Client.SqlClient {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/D1Client.ts#L68)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/D1Client.ts#L56)
 
 Since v4.0.0

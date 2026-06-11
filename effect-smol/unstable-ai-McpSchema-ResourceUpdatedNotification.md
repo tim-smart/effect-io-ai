@@ -16,6 +16,6 @@ originally subscribed to.
 declare class ResourceUpdatedNotification
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1130)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1111)
 
 Since v4.0.0

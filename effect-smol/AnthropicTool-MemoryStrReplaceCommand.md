@@ -11,6 +11,6 @@ Memory tool command payload for replacing text in a file.
 type MemoryStrReplaceCommand = typeof MemoryStrReplaceCommand.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1608)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1559)
 
 Since v4.0.0

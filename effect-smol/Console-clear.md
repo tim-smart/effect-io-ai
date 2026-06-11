@@ -33,6 +33,6 @@ const program = Effect.gen(function*() {
 declare const clear: Effect.Effect<void, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Console.ts#L216)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Console.ts#L152)
 
 Since v2.0.0

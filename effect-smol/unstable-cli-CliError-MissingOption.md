@@ -35,6 +35,6 @@ const validateRequiredOptions = (options: Record<string, string | undefined>) =>
 declare class MissingOption
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/CliError.ts#L250)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/CliError.ts#L235)
 
 Since v4.0.0

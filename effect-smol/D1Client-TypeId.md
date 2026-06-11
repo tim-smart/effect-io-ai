@@ -11,6 +11,6 @@ Type-level literal for the `D1Client` runtime identifier.
 type TypeId = "~@effect/sql-d1/D1Client"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/D1Client.ts#L60)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/D1Client.ts#L48)
 
 Since v4.0.0

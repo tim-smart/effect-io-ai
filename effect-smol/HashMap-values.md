@@ -21,6 +21,6 @@ console.log(values.sort()) // [1, 2, 3]
 declare const values: <K, V>(self: HashMap<K, V>) => IterableIterator<V>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L625)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L562)
 
 Since v2.0.0

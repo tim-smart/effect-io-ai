@@ -41,6 +41,6 @@ console.log(result) // { amountCents: 10000, label: "TOTAL" }
 declare const evolveEntries: { <S extends object, E extends EntryEvolver<S>>(e: E): (self: S) => EntryEvolved<S, E>; <S extends object, E extends EntryEvolver<S>>(self: S, e: E): EntryEvolved<S, E>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Struct.ts#L491)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Struct.ts#L428)
 
 Since v4.0.0

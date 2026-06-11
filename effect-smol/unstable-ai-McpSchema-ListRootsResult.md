@@ -15,6 +15,6 @@ Use to return the directories or files that an MCP server may operate on.
 declare class ListRootsResult
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L2016)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1997)
 
 Since v4.0.0

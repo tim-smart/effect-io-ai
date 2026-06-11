@@ -36,6 +36,6 @@ console.log(Chunk.toArray(Chunk.intersection(chunk3, chunk4))) // []
 declare const intersection: { <A>(that: Chunk<A>): <B>(self: Chunk<B>) => Chunk<A & B>; <A, B>(self: Chunk<A>, that: Chunk<B>): Chunk<A & B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1409)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L1348)
 
 Since v2.0.0

@@ -47,6 +47,6 @@ while (queue.length > 0) {
 declare const takeN: <A>(self: MutableList<A>, n: number) => Array<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L659)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L619)
 
 Since v4.0.0

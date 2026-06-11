@@ -32,6 +32,6 @@ const program = Effect.gen(function*() {
 declare const get: <A>(self: TxSubscriptionRef<A>) => Effect.Effect<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSubscriptionRef.ts#L186)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSubscriptionRef.ts#L158)
 
 Since v3.10.0

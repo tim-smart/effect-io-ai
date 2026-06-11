@@ -21,6 +21,6 @@ user-requested cancellation through the typed error channel.
 declare class QuitError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Terminal.ts#L145)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Terminal.ts#L124)
 
 Since v4.0.0

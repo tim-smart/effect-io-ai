@@ -28,6 +28,6 @@ through `ref.subscribe`.
 declare const useAtomRefPropValue: <A, K extends keyof A>(ref: AtomRef.AtomRef<A>, prop: K) => A[K]
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/Hooks.ts#L488)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/Hooks.ts#L475)
 
 Since v4.0.0

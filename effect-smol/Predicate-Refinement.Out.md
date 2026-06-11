@@ -33,6 +33,6 @@ type Output = Predicate.Refinement.Out<R>
 type Out<T> = [T] extends [Refinement<infer _, infer _B>] ? _B : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L336)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L281)
 
 Since v3.6.0

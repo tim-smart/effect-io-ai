@@ -22,6 +22,6 @@ API expects a `MultiDocument`.
 declare const toMultiDocument: (document: Document) => MultiDocument
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L1785)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L1711)
 
 Since v4.0.0

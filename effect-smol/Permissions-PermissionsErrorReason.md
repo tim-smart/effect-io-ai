@@ -11,6 +11,6 @@ Union of browser Permissions API error reasons represented by the service.
 type PermissionsErrorReason = PermissionsInvalidStateError | PermissionsTypeError
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Permissions.ts#L101)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Permissions.ts#L77)
 
 Since v4.0.0

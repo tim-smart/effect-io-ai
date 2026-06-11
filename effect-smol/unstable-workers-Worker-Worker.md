@@ -26,6 +26,6 @@ export interface Worker<O = unknown, I = unknown> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Worker.ts#L71)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Worker.ts#L43)
 
 Since v4.0.0

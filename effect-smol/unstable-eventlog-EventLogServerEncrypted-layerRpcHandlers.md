@@ -17,6 +17,6 @@ remote protocol.
 declare const layerRpcHandlers: Layer.Layer<EventLogAuthentication | Handler<"EventLog.Hello"> | Handler<"EventLog.Authenticate"> | Handler<"EventLog.WriteChunked"> | Handler<"EventLog.WriteSingle"> | Handler<"EventLog.Changes">, never, Storage>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogServerEncrypted.ts#L53)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogServerEncrypted.ts#L42)
 
 Since v4.0.0

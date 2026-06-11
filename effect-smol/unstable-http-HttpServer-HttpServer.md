@@ -16,6 +16,6 @@ server is listening.
 declare class HttpServer
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServer.ts#L61)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServer.ts#L38)
 
 Since v4.0.0

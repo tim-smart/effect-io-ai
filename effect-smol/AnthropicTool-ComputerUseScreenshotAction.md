@@ -11,6 +11,6 @@ Computer-use action payload for capturing the current display.
 type ComputerUseScreenshotAction = typeof ComputerUseScreenshotAction.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L798)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L749)
 
 Since v4.0.0

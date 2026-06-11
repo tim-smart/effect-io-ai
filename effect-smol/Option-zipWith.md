@@ -42,6 +42,6 @@ console.log(person)
 declare const zipWith: { <B, A, C>(that: Option<B>, f: (a: A, b: B) => C): (self: Option<A>) => Option<C>; <A, B, C>(self: Option<A>, that: Option<B>, f: (a: A, b: B) => C): Option<C>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1862)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1801)
 
 Since v2.0.0

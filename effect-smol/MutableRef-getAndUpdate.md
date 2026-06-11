@@ -52,6 +52,6 @@ console.log(MutableRef.get(list)) // [1, 2, 3, 4]
 declare const getAndUpdate: { <T>(f: (value: T) => T): (self: MutableRef<T>) => T; <T>(self: MutableRef<T>, f: (value: T) => T): T; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableRef.ts#L487)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableRef.ts#L464)
 
 Since v2.0.0

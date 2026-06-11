@@ -22,6 +22,6 @@ Use to adapt a `Filter` to APIs that expect a plain function returning
 declare const toResult: <A, Pass, Fail>(self: Filter<A, Pass, Fail>) => (input: A) => Result.Result<Pass, Fail>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Filter.ts#L846)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Filter.ts#L821)
 
 Since v4.0.0

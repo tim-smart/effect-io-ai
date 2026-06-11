@@ -29,6 +29,6 @@ range. Snowflake ids encode the machine component modulo 1024.
 declare const make: (id: number) => MachineId
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MachineId.ts#L74)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MachineId.ts#L54)
 
 Since v4.0.0

@@ -28,6 +28,6 @@ const program = Effect.gen(function*() {
 declare const nextInt: Effect.Effect<number, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Random.ts#L162)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Random.ts#L128)
 
 Since v2.0.0

@@ -35,6 +35,6 @@ const DatabaseLive = Layer.succeed(Database, {
 declare const succeed: { <I, S>(service: Context.Key<I, S>): (resource: S) => Layer<I>; <I, S>(service: Context.Key<I, S>, resource: Types.NoInfer<S>): Layer<I>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L807)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L775)
 
 Since v2.0.0

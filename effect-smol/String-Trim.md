@@ -19,6 +19,6 @@ type Result = String.Trim<"  hello  "> // "hello"
 type Trim<A> = TrimEnd<TrimStart<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L338)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L280)
 
 Since v2.0.0

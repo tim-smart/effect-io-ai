@@ -92,6 +92,6 @@ const program = Effect.gen(function*() {
 export interface Histogram<Input> extends Metric<Input, HistogramState> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L717)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L644)
 
 Since v2.0.0

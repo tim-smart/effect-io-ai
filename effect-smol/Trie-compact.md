@@ -31,6 +31,6 @@ assert.equal(Equal.equals(Trie.compact(trie), trieMapV), true)
 declare const compact: <A>(self: Trie<Option<A>>) => Trie<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L866)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L823)
 
 Since v2.0.0

@@ -31,6 +31,6 @@ Reading availability does not reserve permits.
 declare const available: <K>(self: PartitionedSemaphore<K>) => Effect.Effect<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PartitionedSemaphore.ts#L381)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PartitionedSemaphore.ts#L353)
 
 Since v4.0.0

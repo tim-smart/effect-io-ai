@@ -17,6 +17,6 @@ type MessageConstructorParams<M> = Omit<M, typeof MessageTypeId | "role" | "opti
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1093)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1049)
 
 Since v4.0.0

@@ -46,6 +46,6 @@ const program = Effect.gen(function*() {
 declare const completeWith: { <A, E>(effect: Effect<A, E>): (self: Deferred<A, E>) => Effect<boolean>; <A, E>(self: Deferred<A, E>, effect: Effect<A, E>): Effect<boolean>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L368)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L315)
 
 Since v2.0.0

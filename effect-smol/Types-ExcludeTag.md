@@ -39,6 +39,6 @@ type WithoutTimeout = Types.ExcludeTag<MyError, "Timeout">
 type ExcludeTag<E, K> = Exclude<E, { readonly _tag: K }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L196)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L154)
 
 Since v2.0.0

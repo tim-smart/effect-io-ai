@@ -11,6 +11,6 @@ Computer-use action payload for pressing and holding the left mouse button, opti
 type ComputerUseLeftMouseDownAction = typeof ComputerUseLeftMouseDownAction.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1015)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L966)
 
 Since v4.0.0

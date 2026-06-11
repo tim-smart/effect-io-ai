@@ -35,6 +35,6 @@ console.log(Exit.hasDies(Exit.succeed(42)))            // false
 declare const hasDies: <A, E>(self: Exit<A, E>) => self is Failure<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L538)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L491)
 
 Since v4.0.0

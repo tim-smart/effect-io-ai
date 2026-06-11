@@ -11,6 +11,6 @@ Sent from the client to the server after initialization has finished.
 declare class InitializedNotification
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L757)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L738)
 
 Since v4.0.0

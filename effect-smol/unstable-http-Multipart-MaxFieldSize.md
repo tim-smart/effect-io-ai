@@ -15,6 +15,6 @@ The default limit is 10 MiB.
 declare const MaxFieldSize: Context.Reference<FileSystem.SizeInput>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Multipart.ts#L827)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Multipart.ts#L798)
 
 Since v4.0.0

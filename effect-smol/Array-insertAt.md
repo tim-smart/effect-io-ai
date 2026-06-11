@@ -33,6 +33,6 @@ console.log(Array.insertAt(["a", "b", "c", "e"], 3, "d")) // Option.some(["a", "
 declare const insertAt: { <B>(i: number, b: B): <A>(self: Iterable<A>) => Option.Option<NonEmptyArray<A | B>>; <A, B>(self: Iterable<A>, i: number, b: B): Option.Option<NonEmptyArray<A | B>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1955)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L1880)
 
 Since v2.0.0

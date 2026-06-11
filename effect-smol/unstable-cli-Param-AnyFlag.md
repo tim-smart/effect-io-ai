@@ -11,6 +11,6 @@ Represents any flag parameter.
 type AnyFlag = Param<typeof flagKind, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L138)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L121)
 
 Since v4.0.0

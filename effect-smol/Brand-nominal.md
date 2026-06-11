@@ -22,6 +22,6 @@ of the same type but with different meanings.
 declare const nominal: <A extends Brand<any>>() => Constructor<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Brand.ts#L272)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Brand.ts#L228)
 
 Since v2.0.0

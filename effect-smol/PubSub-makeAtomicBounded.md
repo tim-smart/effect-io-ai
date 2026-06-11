@@ -35,6 +35,6 @@ synchronously before an atomic implementation is created.
 declare const makeAtomicBounded: <A>(capacity: number | { readonly capacity: number; readonly replay?: number | undefined; }) => PubSub.Atomic<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L556)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PubSub.ts#L508)
 
 Since v4.0.0

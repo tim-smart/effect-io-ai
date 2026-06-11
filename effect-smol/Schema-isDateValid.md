@@ -15,7 +15,7 @@ validates date strings, not Date objects.
 
 Arbitrary:
 
-When generating test data with fast-check, this applies a `noInvalidDate`
+When generating test data with fast-check, this applies a `valid: true`
 constraint to ensure generated Date objects are valid.
 
 **Signature**
@@ -24,6 +24,6 @@ constraint to ensure generated Date objects are valid.
 declare const isDateValid: (annotations?: Annotations.Filter) => SchemaAST.Filter<globalThis.Date>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7205)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7162)
 
 Since v4.0.0

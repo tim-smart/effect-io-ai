@@ -35,6 +35,6 @@ type No = Types.IsUnion<string> // false
 type IsUnion<T> = [T] extends [UnionToIntersection<T>] ? false : true
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L930)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L888)
 
 Since v4.0.0

@@ -14,6 +14,6 @@ type PlanProvides<Plans, Out> = Plans extends
     Out
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ExecutionPlan.ts#L363)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ExecutionPlan.ts#L290)
 
 Since v3.16.1

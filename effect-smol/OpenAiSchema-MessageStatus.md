@@ -15,6 +15,6 @@ Accepted values are `"in_progress"`, `"completed"`, and `"incomplete"`.
 type MessageStatus = typeof MessageStatus.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L104)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L74)
 
 Since v4.0.0

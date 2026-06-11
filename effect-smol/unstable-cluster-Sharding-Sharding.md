@@ -18,6 +18,6 @@ registration, singleton registration, and persisted-work polling.
 declare class Sharding
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sharding.ts#L118)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sharding.ts#L86)
 
 Since v4.0.0

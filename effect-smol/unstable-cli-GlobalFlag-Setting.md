@@ -15,6 +15,6 @@ export interface Setting<Id extends string, A> extends Context.Service<Setting.I
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/GlobalFlag.ts#L77)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/GlobalFlag.ts#L63)
 
 Since v4.0.0

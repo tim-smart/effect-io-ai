@@ -32,6 +32,6 @@ filter does not validate the timestamp.
 declare const date: Filter<unknown, Date, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Filter.ts#L470)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Filter.ts#L445)
 
 Since v4.0.0

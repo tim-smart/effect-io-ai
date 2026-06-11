@@ -12,6 +12,6 @@ name, execution ID, and deferred name.
 declare class TokenParsed
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DurableDeferred.ts#L344)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DurableDeferred.ts#L332)
 
 Since v4.0.0

@@ -40,6 +40,6 @@ const withoutPort = withPort.pipe(
 declare const addOrOmit: { <I, S>(key: Key<I, S>, service: Option.Option<Types.NoInfer<S>>): <Services>(self: Context<Services>) => Context<Services | I>; <Services, I, S>(self: Context<Services>, key: Key<I, S>, service: Option.Option<Types.NoInfer<S>>): Context<Services | I>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L777)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L738)
 
 Since v4.0.0

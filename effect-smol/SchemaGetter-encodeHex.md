@@ -28,6 +28,6 @@ const encode = SchemaGetter.encodeHex<Uint8Array>()
 declare const encodeHex: <E extends Uint8Array | string>() => Getter<string, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1315)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1241)
 
 Since v4.0.0

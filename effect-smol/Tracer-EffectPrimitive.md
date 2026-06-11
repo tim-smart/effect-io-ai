@@ -14,6 +14,6 @@ export interface EffectPrimitive<X> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tracer.ts#L83)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tracer.ts#L53)
 
 Since v4.0.0

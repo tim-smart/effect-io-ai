@@ -32,6 +32,6 @@ console.log(BigDecimal.truncate(BigDecimal.fromStringUnsafe("-14.5"))) // BigDec
 declare const truncate: { (scale: number): (self: BigDecimal) => BigDecimal; (self: BigDecimal, scale?: number): BigDecimal; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1875)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1825)
 
 Since v3.16.0

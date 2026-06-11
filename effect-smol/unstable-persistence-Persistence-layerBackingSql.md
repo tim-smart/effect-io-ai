@@ -16,6 +16,6 @@ optional expiration timestamps.
 declare const layerBackingSql: Layer.Layer<BackingPersistence, never, SqlClient.SqlClient>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Persistence.ts#L527)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Persistence.ts#L511)
 
 Since v4.0.0

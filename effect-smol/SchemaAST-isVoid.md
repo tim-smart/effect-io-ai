@@ -20,6 +20,6 @@ handling `Void`-specific schema behavior.
 declare const isVoid: (ast: AST) => ast is Void
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L219)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L157)
 
 Since v4.0.0

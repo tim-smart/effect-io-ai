@@ -17,6 +17,6 @@ and endpoints from generated OpenAPI output.
 declare const Exclude: Context.Reference<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OpenApi.ts#L168)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OpenApi.ts#L134)
 
 Since v4.0.0

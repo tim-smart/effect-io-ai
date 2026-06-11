@@ -19,6 +19,6 @@ const configPath = Argument.path("config")
 declare const path: (name: string, options?: { pathType?: "file" | "directory" | "either"; mustExist?: boolean; }) => Argument<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L194)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L180)
 
 Since v4.0.0

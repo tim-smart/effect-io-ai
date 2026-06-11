@@ -14,6 +14,6 @@ export interface Encoder {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sse.ts#L439)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sse.ts#L408)
 
 Since v4.0.0

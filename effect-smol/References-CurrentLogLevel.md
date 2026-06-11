@@ -56,6 +56,6 @@ const dynamicLogging = Effect.gen(function*() {
 declare const CurrentLogLevel: Context.Reference<Severity>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/References.ts#L336)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/References.ts#L287)
 
 Since v4.0.0

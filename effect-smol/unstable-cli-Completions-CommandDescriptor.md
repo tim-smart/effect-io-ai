@@ -17,6 +17,6 @@ export interface CommandDescriptor {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Completions.ts#L51)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Completions.ts#L27)
 
 Since v4.0.0

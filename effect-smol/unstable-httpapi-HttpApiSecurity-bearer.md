@@ -26,6 +26,6 @@ security scheme.
 declare const bearer: Http
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSecurity.ts#L183)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSecurity.ts#L154)
 
 Since v4.0.0

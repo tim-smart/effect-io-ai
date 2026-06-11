@@ -11,6 +11,6 @@ Layer that provides in-memory message storage and its backing `MemoryDriver`.
 declare const layerMemory: Layer.Layer<MessageStorage | MemoryDriver, never, ShardingConfig>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MessageStorage.ts#L1081)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MessageStorage.ts#L1052)
 
 Since v4.0.0

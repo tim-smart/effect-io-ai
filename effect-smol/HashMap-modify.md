@@ -23,6 +23,6 @@ console.log(HashMap.get(map2, "b")) // Option.some(2)
 declare const modify: { <K, V>(key: K, f: (v: V) => V): (self: HashMap<K, V>) => HashMap<K, V>; <K, V>(self: HashMap<K, V>, key: K, f: (v: V) => V): HashMap<K, V>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L946)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L883)
 
 Since v2.0.0

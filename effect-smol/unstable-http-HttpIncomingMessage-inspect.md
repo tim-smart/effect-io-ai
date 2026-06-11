@@ -11,6 +11,6 @@ Builds an inspectable object for an incoming message, redacting headers and incl
 declare const inspect: <E>(self: HttpIncomingMessage<E>, that: object) => object
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpIncomingMessage.ts#L142)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpIncomingMessage.ts#L126)
 
 Since v4.0.0

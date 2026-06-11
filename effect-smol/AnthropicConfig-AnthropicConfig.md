@@ -20,6 +20,6 @@ Effect's context from a layer or integration.
 declare class AnthropicConfig
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicConfig.ts#L40)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicConfig.ts#L27)
 
 Since v4.0.0

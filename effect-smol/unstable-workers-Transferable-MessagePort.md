@@ -11,6 +11,6 @@ Schema for transferring `MessagePort` values as transferable objects.
 declare const MessagePort: Transferable<Schema.declare<MessagePort, MessagePort>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Transferable.ts#L198)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Transferable.ts#L177)
 
 Since v4.0.0

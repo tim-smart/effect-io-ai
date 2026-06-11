@@ -33,6 +33,6 @@ with a fresh `Map` when isolation matters.
 declare const MetricRegistry: Context.Reference<Map<string, Metric.Metadata<any, any>>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L1789)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L1716)
 
 Since v4.0.0

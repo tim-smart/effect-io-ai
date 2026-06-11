@@ -22,6 +22,6 @@ to access and manipulate type information.
 type typeSymbol = typeof typeSymbol
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Unify.ts#L114)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Unify.ts#L93)
 
 Since v2.0.0

@@ -16,6 +16,6 @@ toolkit value that can be extended with `merge`.
 declare const empty: Toolkit<{}>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Toolkit.ts#L506)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Toolkit.ts#L437)
 
 Since v4.0.0

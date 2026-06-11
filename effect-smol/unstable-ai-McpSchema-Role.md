@@ -15,6 +15,6 @@ Valid roles are `"user"` and `"assistant"`.
 type Role = typeof Role.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L291)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L272)
 
 Since v4.0.0

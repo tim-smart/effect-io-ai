@@ -27,6 +27,6 @@ non-throwing validation.
 declare const check: <A extends Brand<any>>(checks_0: SchemaAST.Check<Brand.Unbranded<A>>, ...checks: Array<SchemaAST.Check<Brand.Unbranded<A>>>) => Constructor<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Brand.ts#L318)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Brand.ts#L274)
 
 Since v4.0.0

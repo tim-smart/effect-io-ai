@@ -15,6 +15,6 @@ export interface RpcServer<A extends Rpc.Any> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcServer.ts#L102)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcServer.ts#L69)
 
 Since v4.0.0

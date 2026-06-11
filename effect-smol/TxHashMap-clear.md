@@ -44,6 +44,6 @@ const program = Effect.gen(function*() {
 declare const clear: <K, V>(self: TxHashMap<K, V>) => Effect.Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L590)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L573)
 
 Since v4.0.0

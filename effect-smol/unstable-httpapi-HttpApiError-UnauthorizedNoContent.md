@@ -12,6 +12,6 @@ into an `Unauthorized` error value.
 declare const UnauthorizedNoContent: HttpApiSchema.asNoContent<typeof Unauthorized>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiError.ts#L122)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiError.ts#L91)
 
 Since v4.0.0

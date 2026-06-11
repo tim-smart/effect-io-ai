@@ -11,6 +11,6 @@ Schema type for persisted multipart files.
 export interface PersistedFileSchema extends Schema.declare<PersistedFile> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Multipart.ts#L276)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Multipart.ts#L247)
 
 Since v4.0.0

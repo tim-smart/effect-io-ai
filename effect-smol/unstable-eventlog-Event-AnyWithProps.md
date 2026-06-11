@@ -12,6 +12,6 @@ structurally.
 export interface AnyWithProps extends Any {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Event.ts#L134)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Event.ts#L112)
 
 Since v4.0.0

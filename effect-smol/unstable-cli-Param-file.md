@@ -32,6 +32,6 @@ const inputFile = Param.file(Param.flagKind, "input", { mustExist: true })
 declare const file: <Kind extends ParamKind>(kind: Kind, name: string, options?: { readonly mustExist?: boolean | undefined; }) => Param<Kind, string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L731)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L714)
 
 Since v4.0.0

@@ -26,6 +26,6 @@ const idempotentTool = Tool.make("get_current_time")
 declare const Idempotent: Context.Reference<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L1831)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L1786)
 
 Since v4.0.0

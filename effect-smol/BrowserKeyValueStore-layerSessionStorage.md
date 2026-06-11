@@ -11,6 +11,6 @@ Creates a `KeyValueStore` layer that uses the browser's `sessionStorage` API and
 declare const layerSessionStorage: Layer.Layer<KeyValueStore.KeyValueStore, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserKeyValueStore.ts#L76)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserKeyValueStore.ts#L35)
 
 Since v4.0.0

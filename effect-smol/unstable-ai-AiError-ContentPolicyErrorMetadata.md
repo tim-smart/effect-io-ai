@@ -11,6 +11,6 @@ Provider-specific metadata attached to `ContentPolicyError`.
 export interface ContentPolicyErrorMetadata extends ProviderMetadata {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L316)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L247)
 
 Since v4.0.0

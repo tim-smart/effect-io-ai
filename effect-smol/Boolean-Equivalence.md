@@ -25,6 +25,6 @@ console.log(Boolean.Equivalence(true, false)) // false
 declare const Equivalence: Equ.Equivalence<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Boolean.ts#L204)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Boolean.ts#L157)
 
 Since v2.0.0

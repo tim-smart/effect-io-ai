@@ -20,6 +20,6 @@ export interface Utc extends DateTime.Proto {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L90)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L50)
 
 Since v3.6.0

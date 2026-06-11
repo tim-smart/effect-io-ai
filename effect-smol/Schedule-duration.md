@@ -35,6 +35,6 @@ const program = Effect.repeat(
 declare const duration: (durationInput: Duration.Input) => Schedule<Duration.Duration>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L1582)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L1526)
 
 Since v2.0.0

@@ -17,6 +17,6 @@ Use when building an MCP/JSON-RPC error response for a request whose
 declare const METHOD_NOT_FOUND_ERROR_CODE: -32601
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L506)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L487)
 
 Since v4.0.0

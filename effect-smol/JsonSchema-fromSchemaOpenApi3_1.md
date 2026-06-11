@@ -43,6 +43,6 @@ console.log(doc.schema.properties) // { user: { $ref: "#/$defs/User" } }
 declare const fromSchemaOpenApi3_1: (js: JsonSchema) => Document<"draft-2020-12">
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonSchema.ts#L511)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonSchema.ts#L435)
 
 Since v4.0.0

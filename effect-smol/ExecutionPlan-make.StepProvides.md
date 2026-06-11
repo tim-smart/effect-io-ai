@@ -21,6 +21,6 @@ type StepProvides<Steps, Out> = Steps extends
     Out
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ExecutionPlan.ts#L346)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ExecutionPlan.ts#L273)
 
 Since v3.16.1

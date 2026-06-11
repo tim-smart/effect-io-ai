@@ -17,6 +17,6 @@ export interface Any {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Activity.ts#L106)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Activity.ts#L93)
 
 Since v4.0.0

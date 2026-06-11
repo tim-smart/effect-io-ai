@@ -49,6 +49,6 @@ const limitConcurrency = Effect.gen(function*() {
 declare const CurrentConcurrency: Context.Reference<number | "unbounded">
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/References.ts#L220)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/References.ts#L171)
 
 Since v4.0.0

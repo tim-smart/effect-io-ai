@@ -23,6 +23,6 @@ console.log(HashMap.isEmpty(nonEmptyMap)) // false
 declare const isEmpty: <K, V>(self: HashMap<K, V>) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L371)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L308)
 
 Since v2.0.0

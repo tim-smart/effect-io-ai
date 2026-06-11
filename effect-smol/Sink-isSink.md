@@ -23,6 +23,6 @@ console.log(Sink.isSink(notStream)) // false
 declare const isSink: (u: unknown) => u is Sink<unknown, never, unknown, unknown, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L233)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L210)
 
 Since v4.0.0

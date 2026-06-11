@@ -26,6 +26,6 @@ otherwise returns a failed `Result` with the original cause.
 declare const filterNoDone: <E>(input: Cause.Cause<E>) => Result.Result<Cause.Cause<ExcludeDone<E>>, Cause.Cause<E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pull.ts#L294)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pull.ts#L277)
 
 Since v4.0.0

@@ -11,6 +11,6 @@ Registers an additional pre-response handler for the current HTTP server request
 declare const appendPreResponseHandler: (handler: PreResponseHandler) => Effect.Effect<void, never, HttpServerRequest>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpEffect.ts#L217)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpEffect.ts#L189)
 
 Since v4.0.0

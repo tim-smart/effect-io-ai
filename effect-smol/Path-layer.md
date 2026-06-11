@@ -25,6 +25,6 @@ operations use POSIX path semantics.
 declare const layer: Layer.Layer<Path, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Path.ts#L892)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Path.ts#L870)
 
 Since v4.0.0

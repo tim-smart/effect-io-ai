@@ -15,6 +15,6 @@ Use when you need an HTTP body value that represents no body content.
 declare const empty: Empty
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpBody.ts#L210)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpBody.ts#L166)
 
 Since v4.0.0

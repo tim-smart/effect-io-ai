@@ -12,6 +12,6 @@ process spawning, filesystem, path, stdio, and terminal services.
 type BunServices = ChildProcessSpawner | Crypto | FileSystem | Path | Terminal | Stdio
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunServices.ts#L45)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunServices.ts#L32)
 
 Since v4.0.0

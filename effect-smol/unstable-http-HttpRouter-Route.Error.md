@@ -11,6 +11,6 @@ Extracts the error type produced by a `Route` handler.
 type Error<R> = R extends Route<infer E, infer _R> ? E : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpRouter.ts#L650)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpRouter.ts#L618)
 
 Since v4.0.0

@@ -30,6 +30,6 @@ assert.deepStrictEqual(Boolean.every([true, false, true]), false)
 declare const every: (collection: Iterable<boolean>) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Boolean.ts#L444)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Boolean.ts#L397)
 
 Since v2.0.0

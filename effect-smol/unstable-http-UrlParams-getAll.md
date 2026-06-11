@@ -15,6 +15,6 @@ Returns an empty array when the key is absent.
 declare const getAll: { (key: string): (self: UrlParams) => ReadonlyArray<string>; (self: UrlParams, key: string): ReadonlyArray<string>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/UrlParams.ts#L305)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/UrlParams.ts#L277)
 
 Since v4.0.0

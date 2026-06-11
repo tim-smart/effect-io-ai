@@ -12,6 +12,6 @@ implementation plus file URL conversion helpers.
 declare const layer: Layer.Layer<Path, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodePath.ts#L91)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodePath.ts#L75)
 
 Since v4.0.0

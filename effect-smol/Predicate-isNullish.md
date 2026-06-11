@@ -36,6 +36,6 @@ console.log(nullish)
 declare const isNullish: <A>(input: A) => input is A & (null | undefined)
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L948)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L893)
 
 Since v4.0.0

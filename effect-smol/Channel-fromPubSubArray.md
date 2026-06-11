@@ -126,6 +126,6 @@ const logAggregator = Effect.gen(function*() {
 declare const fromPubSubArray: <A>(pubsub: PubSub.PubSub<A>) => Channel<Arr.NonEmptyReadonlyArray<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L1705)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L1644)
 
 Since v4.0.0

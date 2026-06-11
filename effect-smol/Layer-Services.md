@@ -23,6 +23,6 @@ type Services<T> = T extends infer L
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L180)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L148)
 
 Since v4.0.0

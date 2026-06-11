@@ -26,6 +26,6 @@ const anyPath = Primitive.path("either", false)
 type PathType = "file" | "directory" | "either"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Primitive.ts#L384)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Primitive.ts#L334)
 
 Since v4.0.0

@@ -64,6 +64,6 @@ export interface SchemaStore<S extends Schema.Top> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/KeyValueStore.ts#L696)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/KeyValueStore.ts#L684)
 
 Since v4.0.0

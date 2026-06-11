@@ -30,6 +30,6 @@ const flexibleTool = Tool.make("search")
 declare const Strict: Context.Reference<boolean | undefined>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L1885)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L1840)
 
 Since v4.0.0

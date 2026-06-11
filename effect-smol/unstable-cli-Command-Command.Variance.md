@@ -20,6 +20,6 @@ export interface Variance<in Input, out E, out R> {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L185)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L166)
 
 Since v4.0.0

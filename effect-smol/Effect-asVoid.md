@@ -22,6 +22,6 @@ Effect.runPromise(program).then(console.log)
 declare const asVoid: <A, E, R>(self: Effect<A, E, R>) => Effect<void, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L2450)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L2383)
 
 Since v2.0.0

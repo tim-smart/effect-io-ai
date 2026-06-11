@@ -16,6 +16,6 @@ type ReturnIterable<T, Discard, Mode> = [T] extends [Iterable<Effect<infer A, in
     : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L342)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L275)
 
 Since v2.0.0

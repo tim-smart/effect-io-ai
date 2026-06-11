@@ -21,6 +21,6 @@ reading named-zone fields such as `id`.
 declare const isTimeZoneNamed: (u: unknown) => u is TimeZone.Named
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L505)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L465)
 
 Since v3.6.0

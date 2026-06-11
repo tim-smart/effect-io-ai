@@ -58,6 +58,6 @@ const remoteBatchLogger = Logger.batched(Logger.formatStructured, {
 declare const batched: (<Output>(options: { readonly window: Duration.Input; readonly flush: (messages: Array<NoInfer<Output>>) => Effect.Effect<void>; }) => <Message>(self: Logger<Message, Output>) => Effect.Effect<Logger<Message, void>, never, Scope.Scope>) & (<Message, Output>(self: Logger<Message, Output>, options: { readonly window: Duration.Input; readonly flush: (messages: Array<NoInfer<Output>>) => Effect.Effect<void>; }) => Effect.Effect<Logger<Message, void>, never, Scope.Scope>)
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L838)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L764)
 
 Since v2.0.0

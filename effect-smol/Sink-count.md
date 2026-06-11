@@ -15,6 +15,6 @@ Use to consume input and return only the number of elements received.
 declare const count: Sink<number, unknown, never, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L1548)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L1525)
 
 Since v2.0.0

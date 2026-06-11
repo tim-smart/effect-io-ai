@@ -34,6 +34,6 @@ console.log(Exit.getCause(Exit.succeed(42))) // { _tag: "None" }
 declare const getCause: <A, E>(self: Exit<A, E>) => Option<Cause.Cause<E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L1096)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L1049)
 
 Since v4.0.0

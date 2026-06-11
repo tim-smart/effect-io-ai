@@ -44,6 +44,6 @@ assert.deepStrictEqual(BigDecimal.fromNumber(Infinity), Option.none())
 declare const fromNumber: (n: number) => Option.Option<BigDecimal>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1381)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/BigDecimal.ts#L1331)
 
 Since v2.0.0

@@ -11,6 +11,6 @@ Transport-encoded messages that can be sent from an RPC client to a server.
 type FromClientEncoded = RequestEncoded | AckEncoded | InterruptEncoded | Ping | Eof
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcMessage.ts#L60)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcMessage.ts#L34)
 
 Since v4.0.0

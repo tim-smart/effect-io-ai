@@ -19,6 +19,6 @@ export interface Client {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DevToolsServer.ts#L48)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DevToolsServer.ts#L35)
 
 Since v4.0.0

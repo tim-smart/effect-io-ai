@@ -41,6 +41,6 @@ const program2 = Effect.gen(function*() {
 declare const set: (<A>(value: A) => (self: Ref<A>) => Effect.Effect<void>) & (<A>(self: Ref<A>, value: A) => Effect.Effect<void>)
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ref.ts#L289)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ref.ts#L248)
 
 Since v2.0.0

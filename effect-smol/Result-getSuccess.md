@@ -38,6 +38,6 @@ console.log(Result.getSuccess(Result.fail("err")))
 declare const getSuccess: <A, E>(self: Result<A, E>) => Option<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L716)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L658)
 
 Since v4.0.0

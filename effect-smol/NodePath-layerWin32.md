@@ -12,6 +12,6 @@ file URL conversion helpers.
 declare const layerWin32: Layer.Layer<Path, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodePath.ts#L77)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodePath.ts#L61)
 
 Since v4.0.0

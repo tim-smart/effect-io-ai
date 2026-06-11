@@ -28,6 +28,6 @@ const program = Effect.gen(function*() {
 declare const isTxHashSet: (u: unknown) => u is TxHashSet<unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashSet.ts#L308)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashSet.ts#L299)
 
 Since v4.0.0

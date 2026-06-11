@@ -21,6 +21,6 @@ console.log(keys.sort()) // ["a", "b", "c"]
 declare const keys: <K, V>(self: HashMap<K, V>) => IterableIterator<K>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L607)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L544)
 
 Since v2.0.0

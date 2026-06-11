@@ -34,6 +34,6 @@ relies on `globalThis.WebSocket` being available in the runtime.
 declare const layer: (url?: string) => Layer.Layer<never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DevTools.ts#L82)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DevTools.ts#L65)
 
 Since v4.0.0

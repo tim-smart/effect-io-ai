@@ -12,6 +12,6 @@ Type of a span parent, represented either by a devtools `Span` payload or an
 type ParentSpan = Span | ExternalSpan
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DevToolsSchema.ts#L197)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DevToolsSchema.ts#L180)
 
 Since v4.0.0

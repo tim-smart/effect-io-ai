@@ -36,6 +36,6 @@ console.log(HashMap.size(result)) // 2
 declare const beginMutation: <K, V>(self: HashMap<K, V>) => HashMap<K, V>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L777)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L714)
 
 Since v2.0.0

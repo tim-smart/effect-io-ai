@@ -20,6 +20,6 @@ Use to narrow unknown values before passing them to APIs that require a
 declare const isRequestResolver: (u: unknown) => u is RequestResolver<any>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RequestResolver.ts#L186)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RequestResolver.ts#L151)
 
 Since v2.0.0

@@ -38,6 +38,6 @@ export interface Redacted<out A = string> extends Redacted.Variance<A>, Equal.Eq
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Redacted.ts#L88)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Redacted.ts#L55)
 
 Since v3.3.0

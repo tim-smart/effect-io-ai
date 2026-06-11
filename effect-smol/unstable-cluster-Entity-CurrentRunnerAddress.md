@@ -16,6 +16,6 @@ registration.
 declare class CurrentRunnerAddress
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Entity.ts#L509)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Entity.ts#L486)
 
 Since v4.0.0

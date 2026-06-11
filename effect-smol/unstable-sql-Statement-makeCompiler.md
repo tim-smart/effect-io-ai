@@ -11,6 +11,6 @@ Creates a dialect-specific SQL `Compiler` from rendering callbacks.
 declare const makeCompiler: <C extends Custom<any, any, any, any> = any>(options: CompilerOptions<C>) => Compiler
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Statement.ts#L821)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Statement.ts#L793)
 
 Since v4.0.0

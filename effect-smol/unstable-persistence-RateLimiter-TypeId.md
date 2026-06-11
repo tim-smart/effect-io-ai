@@ -11,6 +11,6 @@ Type-level identifier used to brand `RateLimiter` values.
 type TypeId = "~effect/persistence/RateLimiter"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RateLimiter.ts#L52)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RateLimiter.ts#L36)
 
 Since v4.0.0

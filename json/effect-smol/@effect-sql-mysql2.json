@@ -45,7 +45,7 @@
     "since": "4.0.0",
     "category": "type IDs",
     "signature": "declare const TypeId: \"~@effect/sql-mysql2/MysqlClient\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/mysql2/src/MysqlClient.ts#L165"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/mysql2/src/MysqlClient.ts#L143"
   },
   {
     "_tag": "Constant",
@@ -61,7 +61,7 @@
     "since": "4.0.0",
     "category": "services",
     "signature": "declare const MysqlClient: Context.Service<MysqlClient, MysqlClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/mysql2/src/MysqlClient.ts#L196"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/mysql2/src/MysqlClient.ts#L174"
   },
   {
     "_tag": "Function",
@@ -77,7 +77,7 @@
     "since": "4.0.0",
     "category": "constructors",
     "signature": "declare const make: (options: MysqlClientConfig) => Effect.Effect<MysqlClient, SqlError, Scope | Reactivity.Reactivity>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/mysql2/src/MysqlClient.ts#L233"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/mysql2/src/MysqlClient.ts#L211"
   },
   {
     "_tag": "Function",
@@ -93,7 +93,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layerConfig: (config: Config.Wrap<MysqlClientConfig>) => Layer.Layer<MysqlClient | Client.SqlClient, Config.ConfigError | SqlError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/mysql2/src/MysqlClient.ts#L437"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/mysql2/src/MysqlClient.ts#L415"
   },
   {
     "_tag": "Function",
@@ -109,7 +109,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layer: (config: MysqlClientConfig) => Layer.Layer<MysqlClient | Client.SqlClient, Config.ConfigError | SqlError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/mysql2/src/MysqlClient.ts#L457"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/mysql2/src/MysqlClient.ts#L435"
   },
   {
     "_tag": "Function",
@@ -125,7 +125,7 @@
     "since": "4.0.0",
     "category": "compiler",
     "signature": "declare const makeCompiler: (transform?: (_: string) => string) => Statement.Compiler",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/mysql2/src/MysqlClient.ts#L473"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/mysql2/src/MysqlClient.ts#L451"
   },
   {
     "_tag": "Interface",
@@ -141,7 +141,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "export interface MysqlClient extends Client.SqlClient {\n  readonly [TypeId]: TypeId\n  readonly config: MysqlClientConfig\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/mysql2/src/MysqlClient.ts#L181"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/mysql2/src/MysqlClient.ts#L159"
   },
   {
     "_tag": "Interface",
@@ -157,7 +157,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "export interface MysqlClientConfig {\n  /**\n   * Connection URI. Setting this will override the other connection options\n   */\n  readonly url?: Redacted.Redacted | undefined\n\n  readonly host?: string | undefined\n  readonly port?: number | undefined\n  readonly database?: string | undefined\n  readonly username?: string | undefined\n  readonly password?: Redacted.Redacted | undefined\n\n  readonly maxConnections?: number | undefined\n  readonly connectionTTL?: Duration.Input | undefined\n\n  readonly poolConfig?: Mysql.PoolOptions | undefined\n\n  readonly spanAttributes?: Record<string, unknown> | undefined\n\n  readonly transformResultNames?: ((str: string) => string) | undefined\n  readonly transformQueryNames?: ((str: string) => string) | undefined\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/mysql2/src/MysqlClient.ts#L204"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/mysql2/src/MysqlClient.ts#L182"
   },
   {
     "_tag": "TypeAlias",
@@ -173,7 +173,7 @@
     "since": "4.0.0",
     "category": "type IDs",
     "signature": "type TypeId = \"~@effect/sql-mysql2/MysqlClient\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/mysql2/src/MysqlClient.ts#L173"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/mysql2/src/MysqlClient.ts#L151"
   },
   {
     "_tag": "Constant",
@@ -189,7 +189,7 @@
     "since": "4.0.0",
     "category": "constructors",
     "signature": "declare const run: <R2 = never>({ loader, schemaDirectory, table }: Migrator.MigratorOptions<R2>) => Effect.Effect<ReadonlyArray<readonly [id: number, name: string]>, Migrator.MigrationError | SqlError, Client.SqlClient | R2>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/mysql2/src/MysqlMigrator.ts#L51"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/mysql2/src/MysqlMigrator.ts#L29"
   },
   {
     "_tag": "Function",
@@ -205,7 +205,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layer: <R>(options: Migrator.MigratorOptions<R>) => Layer.Layer<never, Migrator.MigrationError | SqlError, Client.SqlClient | R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/mysql2/src/MysqlMigrator.ts#L118"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/mysql2/src/MysqlMigrator.ts#L96"
   },
   {
     "_tag": "Export",
@@ -221,6 +221,6 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * from \"effect/unstable/sql/Migrator\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/mysql2/src/MysqlMigrator.ts#L43"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/mysql2/src/MysqlMigrator.ts#L21"
   }
 ]

@@ -12,6 +12,6 @@ given address.
 declare class RpcClientProtocol
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Runners.ts#L708)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Runners.ts#L687)
 
 Since v4.0.0

@@ -11,6 +11,6 @@ Layer that provides the `FileSystem` service for Bun using the shared Node file-
 declare const layer: Layer.Layer<FileSystem, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunFileSystem.ts#L36)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunFileSystem.ts#L20)
 
 Since v4.0.0

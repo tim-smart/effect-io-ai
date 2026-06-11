@@ -3,8 +3,18 @@ Module: `Model`<br />
 
 ## Model.GeneratedByDb
 
-Variant field type for a database-generated column that is present in select,
-update, and read JSON variants but omitted from insert variants.
+Variant field type for a database-generated column that is present in read
+variants only.
+
+**Details**
+
+The field is included in `select` and `json`, and omitted from `insert`,
+`update`, `jsonCreate`, and `jsonUpdate`.
+
+**See**
+
+- `Field` for generated columns that need a custom variant set, such
+as primary keys used in update payloads.
 
 **Signature**
 

@@ -39,6 +39,6 @@ if (Predicate.isPropertyKey(key) && key in obj) {
 declare const isPropertyKey: (u: unknown) => u is PropertyKey
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L759)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L704)
 
 Since v4.0.0

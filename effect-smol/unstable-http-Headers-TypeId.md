@@ -11,6 +11,6 @@ Type of the unique symbol used to brand `Headers` values.
 type TypeId = typeof TypeId
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Headers.ts#L86)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Headers.ts#L40)
 
 Since v4.0.0

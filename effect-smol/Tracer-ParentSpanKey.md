@@ -25,6 +25,6 @@ console.log(Tracer.ParentSpanKey) // "effect/Tracer/ParentSpan"
 declare const ParentSpanKey: "effect/Tracer/ParentSpan"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tracer.ts#L177)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tracer.ts#L147)
 
 Since v4.0.0

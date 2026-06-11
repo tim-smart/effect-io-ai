@@ -12,6 +12,6 @@ provider-specific names with JSON or `null` values.
 type ProviderMetadata = typeof ProviderMetadata.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L485)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L444)
 
 Since v4.0.0

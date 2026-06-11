@@ -28,6 +28,6 @@ time, those tags can stop representing byte-for-byte identity.
 declare const layer: Layer.Layer<Generator, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Etag.ts#L137)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Etag.ts#L115)
 
 Since v4.0.0

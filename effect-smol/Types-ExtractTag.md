@@ -38,6 +38,6 @@ type TimeoutError = Types.ExtractTag<MyError, "Timeout">
 type ExtractTag<E, K> = E extends { readonly _tag: infer T } ? K extends T ? E : never : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L229)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L187)
 
 Since v2.0.0

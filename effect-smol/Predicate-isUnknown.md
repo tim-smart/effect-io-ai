@@ -27,6 +27,6 @@ console.log(Predicate.isUnknown(123))
 declare const isUnknown: (_: unknown) => _ is unknown
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L1027)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L972)
 
 Since v2.0.0

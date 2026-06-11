@@ -31,6 +31,6 @@ This filter does not coerce numbers or strings; `1n` passes while `1` fails.
 declare const bigint: Filter<unknown, bigint, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Filter.ts#L435)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Filter.ts#L410)
 
 Since v4.0.0

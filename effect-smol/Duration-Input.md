@@ -37,6 +37,6 @@ type Input = | Duration
   | DurationObject
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L178)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L138)
 
 Since v4.0.0

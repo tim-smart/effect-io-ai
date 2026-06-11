@@ -20,6 +20,6 @@ export interface GeneratedByApp<S extends Schema.Top> extends
 {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Model.ts#L231)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Model.ts#L240)
 
 Since v4.0.0

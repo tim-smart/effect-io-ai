@@ -53,6 +53,6 @@ console.log(doc.schema.properties) // { tags: { type: "array", items: { type: "s
 declare const fromSchemaDraft07: (js: JsonSchema) => Document<"draft-2020-12">
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonSchema.ts#L326)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonSchema.ts#L250)
 
 Since v4.0.0

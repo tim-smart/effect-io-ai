@@ -11,6 +11,6 @@ Error reason for a `TypeError` raised by the browser Permissions API.
 declare class PermissionsTypeError
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Permissions.ts#L87)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Permissions.ts#L63)
 
 Since v4.0.0

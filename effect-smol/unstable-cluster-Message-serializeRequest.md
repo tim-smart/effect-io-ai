@@ -16,6 +16,6 @@ The result is a `PartialRequest` suitable for storage or transport.
 declare const serializeRequest: <Rpc extends Rpc.Any>(self: OutgoingRequest<Rpc>) => Effect.Effect<Envelope.PartialRequest, MalformedMessage>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Message.ts#L270)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Message.ts#L254)
 
 Since v4.0.0

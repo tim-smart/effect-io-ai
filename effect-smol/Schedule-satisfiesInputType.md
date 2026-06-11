@@ -37,6 +37,6 @@ const validSchedule = satisfiesStringInput(StringInputSchedule)
 declare const satisfiesInputType: <T>() => <Input extends T, Output = never, Error = never, Env = never>(self: Schedule<Output, Input, Error, Env>) => Schedule<Output, Input, Error, Env>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L3479)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L3423)
 
 Since v4.0.0

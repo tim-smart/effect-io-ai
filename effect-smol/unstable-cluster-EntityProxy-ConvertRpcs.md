@@ -55,6 +55,6 @@ type ConvertRpcs<Rpcs, Prefix> = Rpcs extends Rpc.Rpc<
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EntityProxy.ts#L115)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EntityProxy.ts#L101)
 
 Since v4.0.0

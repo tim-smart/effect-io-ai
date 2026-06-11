@@ -21,6 +21,6 @@ schema, IndexedDB request, transaction, or user callback failure, and
 declare class IndexedDbQueryError
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L98)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbQueryBuilder.ts#L82)
 
 Since v4.0.0

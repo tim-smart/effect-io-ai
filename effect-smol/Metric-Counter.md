@@ -71,6 +71,6 @@ const program = Effect.gen(function*() {
 export interface Counter<in Input extends number | bigint> extends Metric<Input, CounterState<Input>> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L259)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L186)
 
 Since v2.0.0

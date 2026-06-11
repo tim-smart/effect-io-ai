@@ -35,6 +35,6 @@ const program = Effect.gen(function*() {
 declare const isTxHashMap: <K, V>(value: unknown) => value is TxHashMap<K, V>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L1227)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L1210)
 
 Since v4.0.0

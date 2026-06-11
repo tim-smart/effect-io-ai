@@ -12,6 +12,6 @@ No-content schema variant for `NotFound`, decoding an empty 404 response into a
 declare const NotFoundNoContent: HttpApiSchema.asNoContent<typeof NotFound>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiError.ts#L182)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiError.ts#L151)
 
 Since v4.0.0

@@ -37,6 +37,6 @@ console.log(Result.isFailure(result))
 declare const failVoid: Result<never, void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L438)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L380)
 
 Since v4.0.0

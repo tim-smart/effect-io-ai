@@ -21,6 +21,6 @@ that need both offering and taking capabilities.
 declare const isQueue: <A = unknown, E = unknown>(u: unknown) => u is Queue<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L102)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L45)
 
 Since v2.0.0

@@ -16,6 +16,6 @@ interpolations are evaluated and rendered before the final string is produced.
 declare const make: <A extends ReadonlyArray<Interpolated>>(strings: TemplateStringsArray, ...args: A) => Effect.Effect<string, Interpolated.Error<A[number]>, Interpolated.Context<A[number]>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Template.ts#L137)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Template.ts#L116)
 
 Since v4.0.0

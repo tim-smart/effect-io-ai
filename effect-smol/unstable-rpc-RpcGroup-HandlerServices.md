@@ -33,6 +33,6 @@ type HandlerServices<Rpcs, K, Handler> = true extends
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcGroup.ts#L244)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcGroup.ts#L219)
 
 Since v4.0.0

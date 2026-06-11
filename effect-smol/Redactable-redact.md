@@ -32,6 +32,6 @@ object are not automatically redacted.
 declare const redact: (u: unknown) => unknown
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Redactable.ts#L185)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Redactable.ts#L127)
 
 Since v3.10.0

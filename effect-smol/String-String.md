@@ -25,6 +25,6 @@ Calling `String(value)` returns a primitive string. Calling
 declare const String: StringConstructor
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L100)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L42)
 
 Since v4.0.0

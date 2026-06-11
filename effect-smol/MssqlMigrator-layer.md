@@ -11,6 +11,6 @@ Creates a layer that runs the configured SQL migrations during layer constructio
 declare const layer: <R>(options: Migrator.MigratorOptions<R>) => Layer.Layer<never, SqlError | Migrator.MigrationError, Client.SqlClient | R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/MssqlMigrator.ts#L56)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/MssqlMigrator.ts#L43)
 
 Since v4.0.0

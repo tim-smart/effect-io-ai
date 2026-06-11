@@ -12,6 +12,6 @@ a server response, it renders as an empty response with status 401.
 declare class Unauthorized
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiError.ts#L103)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiError.ts#L72)
 
 Since v4.0.0

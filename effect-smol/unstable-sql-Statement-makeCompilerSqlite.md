@@ -12,6 +12,6 @@ optionally transforming identifier names before escaping.
 declare const makeCompilerSqlite: (transform?: ((_: string) => string) | undefined) => Compiler
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Statement.ts#L1081)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Statement.ts#L1053)
 
 Since v4.0.0

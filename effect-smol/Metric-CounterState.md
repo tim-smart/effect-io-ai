@@ -68,6 +68,6 @@ export interface CounterState<in Input extends number | bigint> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L321)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L248)
 
 Since v4.0.0

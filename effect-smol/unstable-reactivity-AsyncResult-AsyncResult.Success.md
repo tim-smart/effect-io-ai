@@ -11,6 +11,6 @@ Extracts the success value type from an `AsyncResult`.
 type Success<R> = R extends AsyncResult<infer A, infer _> ? A : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AsyncResult.ts#L121)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AsyncResult.ts#L89)
 
 Since v4.0.0

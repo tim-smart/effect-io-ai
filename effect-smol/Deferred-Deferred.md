@@ -55,6 +55,6 @@ export interface Deferred<in out A, in out E = never> extends Deferred.Variance<
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L124)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L71)
 
 Since v2.0.0

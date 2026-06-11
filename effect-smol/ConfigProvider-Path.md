@@ -26,6 +26,6 @@ const path: ConfigProvider.Path = ["database", "replicas", 0, "host"]
 type Path = ReadonlyArray<string | number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L294)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L225)
 
 Since v4.0.0

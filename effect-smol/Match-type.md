@@ -51,6 +51,6 @@ console.log(match("hello"))
 declare const type: <I>() => Matcher<I, Types.Without<never>, I, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L315)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L281)
 
 Since v4.0.0

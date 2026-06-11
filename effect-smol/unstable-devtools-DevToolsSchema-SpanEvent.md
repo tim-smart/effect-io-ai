@@ -11,6 +11,6 @@ Type of a named event emitted by a span and sent to devtools.
 type SpanEvent = Schema.Schema.Type<typeof SpanEvent>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DevToolsSchema.ts#L188)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DevToolsSchema.ts#L171)
 
 Since v4.0.0

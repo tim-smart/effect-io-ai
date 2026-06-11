@@ -13,6 +13,6 @@ type AnySchemaStruct = Schema.Top & {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbTable.ts#L83)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbTable.ts#L58)
 
 Since v4.0.0

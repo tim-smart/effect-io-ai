@@ -19,6 +19,6 @@ Use when you need a sink result containing all upstream input elements.
 declare const collect: <In>() => Sink<Array<In>, In>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L1562)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L1539)
 
 Since v4.0.0

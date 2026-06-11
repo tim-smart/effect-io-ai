@@ -25,6 +25,6 @@ const config = Argument.fileParse("config", { format: "json" })
 declare const fileParse: (name: string, options?: Primitive.FileParseOptions | undefined) => Argument<unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L251)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L237)
 
 Since v4.0.0

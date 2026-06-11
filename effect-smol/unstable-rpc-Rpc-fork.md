@@ -12,6 +12,6 @@ regardless of the server concurrency setting.
 declare const fork: <A extends object>(value: A) => Wrapper<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L1279)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L1247)
 
 Since v4.0.0

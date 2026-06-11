@@ -26,6 +26,6 @@ export interface SynchronizedRef<in out A> extends Ref.Ref<A> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SynchronizedRef.ts#L50)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SynchronizedRef.ts#L37)
 
 Since v2.0.0

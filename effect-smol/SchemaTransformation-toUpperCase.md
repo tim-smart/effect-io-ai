@@ -37,6 +37,6 @@ const Uppered = Schema.String.pipe(
 declare const toUpperCase: () => Transformation<string, string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L613)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L540)
 
 Since v4.0.0

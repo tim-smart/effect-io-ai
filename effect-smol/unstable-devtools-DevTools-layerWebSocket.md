@@ -12,6 +12,6 @@ specified URL, defaulting to `ws://localhost:34437`.
 declare const layerWebSocket: (url?: string) => Layer.Layer<never, never, Socket.WebSocketConstructor>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DevTools.ts#L48)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DevTools.ts#L31)
 
 Since v4.0.0

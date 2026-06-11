@@ -38,6 +38,6 @@ const program = Effect.gen(function*() {
 declare const Random: Context.Reference<{ nextIntUnsafe(): number; nextDoubleUnsafe(): number; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Random.ts#L84)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Random.ts#L50)
 
 Since v2.0.0

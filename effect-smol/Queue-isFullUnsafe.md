@@ -33,6 +33,6 @@ const program = Effect.gen(function*() {
 declare const isFullUnsafe: <A, E>(self: Dequeue<A, E>) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L1790)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L1733)
 
 Since v4.0.0

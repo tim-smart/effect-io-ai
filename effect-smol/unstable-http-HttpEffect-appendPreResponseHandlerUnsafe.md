@@ -11,6 +11,6 @@ Registers a pre-response handler for the supplied HTTP server request.
 declare const appendPreResponseHandlerUnsafe: (request: HttpServerRequest, handler: PreResponseHandler) => void
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpEffect.ts#L230)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpEffect.ts#L202)
 
 Since v4.0.0

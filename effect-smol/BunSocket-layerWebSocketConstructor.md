@@ -12,6 +12,6 @@ Provides a `Socket.WebSocketConstructor` backed by Bun's global
 declare const layerWebSocketConstructor: Layer.Layer<Socket.WebSocketConstructor, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunSocket.ts#L41)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunSocket.ts#L29)
 
 Since v4.0.0

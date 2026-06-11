@@ -22,6 +22,6 @@ value on a `Hash` implementor.
 declare const symbol: "~effect/interfaces/Hash"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Hash.ts#L73)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Hash.ts#L31)
 
 Since v2.0.0

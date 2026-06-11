@@ -17,6 +17,6 @@ find stored history.
 declare class ChatNotFoundError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chat.ts#L713)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chat.ts#L667)
 
 Since v4.0.0

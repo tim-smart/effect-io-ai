@@ -42,6 +42,6 @@ const expensiveError = Channel.failSync(() => {
 declare const failSync: <E>(evaluate: LazyArg<E>) => Channel<never, E, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L1049)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L988)
 
 Since v2.0.0

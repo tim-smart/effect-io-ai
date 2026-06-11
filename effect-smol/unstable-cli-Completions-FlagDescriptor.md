@@ -16,6 +16,6 @@ export interface FlagDescriptor {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Completions.ts#L65)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Completions.ts#L41)
 
 Since v4.0.0

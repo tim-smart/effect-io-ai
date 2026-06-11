@@ -12,6 +12,6 @@ parsed value associated with a setting id.
 type `effect/unstable/cli/GlobalFlag/${Id}` = `effect/unstable/cli/GlobalFlag/${Id}`
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/GlobalFlag.ts#L96)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/GlobalFlag.ts#L82)
 
 Since v4.0.0

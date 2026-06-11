@@ -40,6 +40,6 @@ console.log(Encoding.encodeBase64Url(bytes)) // "SGVsbG8_"
 declare const encodeBase64Url: (input: Uint8Array | string) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Encoding.ts#L337)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Encoding.ts#L296)
 
 Since v2.0.0

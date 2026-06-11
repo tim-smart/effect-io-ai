@@ -16,6 +16,6 @@ standard pipe implementation backed by `pipeArguments`.
 declare const Prototype: Pipeable
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pipeable.ts#L617)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pipeable.ts#L606)
 
 Since v3.15.0

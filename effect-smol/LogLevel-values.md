@@ -32,6 +32,6 @@ severities.
 declare const values: ReadonlyArray<LogLevel>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LogLevel.ts#L138)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LogLevel.ts#L107)
 
 Since v4.0.0

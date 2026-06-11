@@ -20,6 +20,6 @@ console.log(Chunk.toArray(chunk)) // [1, 2, 3]
 declare const fromIterable: <A>(self: Iterable<A>) => Chunk<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L414)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Chunk.ts#L353)
 
 Since v2.0.0

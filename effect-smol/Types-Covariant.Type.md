@@ -28,6 +28,6 @@ type Inner = Types.Covariant.Type<Types.Covariant<string>>
 type Type<A> = A extends Covariant<infer U> ? U : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L721)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L679)
 
 Since v3.9.0

@@ -15,9 +15,9 @@ values with a `size` property rather than standard JSON Schema types.
 
 Arbitrary:
 
-When generating test data with fast-check, this applies `minLength` and
-`maxLength` constraints to ensure generated values have a size within the
-specified range.
+When generating test data with fast-check, this applies node-local
+`minLength` and `maxLength` constraints. Generators for values with a final
+`.size`, such as sets and maps, interpret them as final cardinality.
 
 **Signature**
 
@@ -25,6 +25,6 @@ specified range.
 declare const isSizeBetween: (minimum: number, maximum: number, annotations?: Annotations.Filter) => SchemaAST.Filter<{ readonly size: number; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7878)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7765)
 
 Since v4.0.0

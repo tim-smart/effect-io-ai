@@ -20,6 +20,6 @@ export interface ChannelUnifyIgnore {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L243)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L182)
 
 Since v2.0.0

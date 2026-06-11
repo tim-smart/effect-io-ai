@@ -24,6 +24,6 @@ calling an input's `has` method
 declare const has: <K>(key: K) => <Input extends { readonly has: (key: K) => boolean; }>(input: Input) => Result.Result<Input, Input>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Filter.ts#L341)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Filter.ts#L316)
 
 Since v4.0.0

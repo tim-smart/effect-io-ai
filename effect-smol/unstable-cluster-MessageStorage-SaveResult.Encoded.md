@@ -16,6 +16,6 @@ reply.
 type Encoded = SaveResult.Success | SaveResult.DuplicateEncoded
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MessageStorage.ts#L251)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MessageStorage.ts#L222)
 
 Since v4.0.0

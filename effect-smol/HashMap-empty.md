@@ -21,6 +21,6 @@ console.log(HashMap.size(map)) // 0
 declare const empty: <K = never, V = never>() => HashMap<K, V>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L309)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L246)
 
 Since v2.0.0

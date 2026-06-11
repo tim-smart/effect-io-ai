@@ -32,6 +32,6 @@ cluster routing and storage layers should identify it.
 declare const make: (host: string, port: number) => RunnerAddress
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RunnerAddress.ts#L139)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RunnerAddress.ts#L111)
 
 Since v4.0.0

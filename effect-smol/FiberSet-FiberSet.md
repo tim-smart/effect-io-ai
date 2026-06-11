@@ -40,6 +40,6 @@ export interface FiberSet<out A = unknown, out E = unknown>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberSet.ts#L82)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberSet.ts#L52)
 
 Since v2.0.0

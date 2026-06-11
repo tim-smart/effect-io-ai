@@ -39,6 +39,6 @@ error.
 declare const make: (options: Omit<Runners["Service"], "sendLocal" | "notifyLocal">) => Effect.Effect<Runners["Service"], never, MessageStorage.MessageStorage | Snowflake.Generator | ShardingConfig | Scope>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Runners.ts#L180)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Runners.ts#L159)
 
 Since v4.0.0

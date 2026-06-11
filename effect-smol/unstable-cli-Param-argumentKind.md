@@ -21,6 +21,6 @@ argument parameters.
 declare const argumentKind: "argument"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L99)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L82)
 
 Since v4.0.0

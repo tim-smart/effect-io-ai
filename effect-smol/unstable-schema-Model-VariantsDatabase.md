@@ -11,6 +11,6 @@ Database-facing variant names generated for model schemas.
 type VariantsDatabase = "select" | "insert" | "update"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Model.ts#L69)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Model.ts#L61)
 
 Since v4.0.0

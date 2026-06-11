@@ -11,6 +11,6 @@ Builds a PostgreSQL client from a scoped `pg` client acquisition effect, seriali
 declare const fromClient: (options: { readonly acquire: Effect.Effect<Pg.Client, SqlError, Scope.Scope>; readonly acquireForStream: boolean; readonly applicationName?: string | undefined; readonly spanAttributes?: Record<string, unknown> | undefined; readonly transformResultNames?: ((str: string) => string) | undefined; readonly transformQueryNames?: ((str: string) => string) | undefined; readonly transformJson?: boolean | undefined; readonly types?: Pg.CustomTypesConfig | undefined; }) => Effect.Effect<PgClient, SqlError, Scope.Scope | Reactivity.Reactivity>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/pg/src/PgClient.ts#L504)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/pg/src/PgClient.ts#L479)
 
 Since v4.0.0

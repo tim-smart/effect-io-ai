@@ -70,6 +70,6 @@ export interface RequestResolver<in A extends Request.Any> extends RequestResolv
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RequestResolver.ts#L112)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RequestResolver.ts#L77)
 
 Since v2.0.0

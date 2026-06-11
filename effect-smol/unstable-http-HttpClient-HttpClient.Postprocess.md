@@ -13,6 +13,6 @@ type Postprocess<E, R> = (
   ) => Effect.Effect<HttpClientResponse.HttpClientResponse, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClient.ts#L158)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClient.ts#L133)
 
 Since v4.0.0

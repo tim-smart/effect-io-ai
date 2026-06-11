@@ -12,6 +12,6 @@ the current `Collector` while passing the value through unchanged.
 declare const getterAddAll: <A>(f: (_: A) => Iterable<globalThis.Transferable>) => SchemaGetter.Getter<A, A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Transferable.ts#L119)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Transferable.ts#L98)
 
 Since v4.0.0

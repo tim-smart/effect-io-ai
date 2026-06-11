@@ -11,6 +11,6 @@ Type-level literal for the `ClickhouseClient` runtime identifier.
 type TypeId = "~@effect/sql-clickhouse/ClickhouseClient"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/clickhouse/src/ClickhouseClient.ts#L126)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/clickhouse/src/ClickhouseClient.ts#L100)
 
 Since v4.0.0

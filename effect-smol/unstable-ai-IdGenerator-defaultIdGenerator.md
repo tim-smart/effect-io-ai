@@ -38,6 +38,6 @@ const withDefault = program.pipe(
 declare const defaultIdGenerator: Service
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/IdGenerator.ts#L225)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/IdGenerator.ts#L187)
 
 Since v4.0.0

@@ -12,6 +12,6 @@ reply type identifier.
 declare const isReply: (u: unknown) => u is Reply<Rpc.Any>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Reply.ts#L52)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Reply.ts#L40)
 
 Since v4.0.0

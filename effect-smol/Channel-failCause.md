@@ -34,6 +34,6 @@ const simpleFail = Channel.failCause(failCause)
 declare const failCause: <E>(cause: Cause.Cause<E>) => Channel<never, E, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L1080)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L1019)
 
 Since v2.0.0

@@ -13,9 +13,9 @@ This check corresponds to the `exclusiveMinimum` constraint in JSON Schema.
 
 Arbitrary:
 
-When generating test data with fast-check, this applies a `min` constraint
-with `minExcluded: true` to ensure generated numbers are greater than the
-specified value.
+When generating test data with fast-check, this applies an
+`exclusiveMinimum` constraint to ensure generated numbers are greater than
+the specified value.
 
 **Signature**
 
@@ -23,6 +23,6 @@ specified value.
 declare const isGreaterThan: (exclusiveMinimum: number, annotations?: Annotations.Filter) => SchemaAST.Filter<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6901)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6887)
 
 Since v4.0.0

@@ -35,6 +35,6 @@ export interface ScopedCache<in out Key, in out A, in out E = never, out R = nev
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ScopedCache.ts#L69)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ScopedCache.ts#L54)
 
 Since v2.0.0

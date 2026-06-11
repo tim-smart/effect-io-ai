@@ -23,6 +23,6 @@ the result can be provided through the `Terminal` context service.
 declare const make: (impl: Omit<Terminal, typeof TypeId>) => Terminal
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Terminal.ts#L207)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Terminal.ts#L186)
 
 Since v4.0.0

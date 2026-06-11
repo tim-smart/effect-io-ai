@@ -42,6 +42,6 @@ const program = Effect.gen(function*() {
 declare const fromIterable: <A>(iterable: Iterable<A>) => Effect.Effect<TxChunk<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxChunk.ts#L227)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxChunk.ts#L195)
 
 Since v4.0.0

@@ -17,6 +17,6 @@ Accepted values are `bash`, `zsh`, `fish`, and `sh`; `sh` is normalized to
 declare const Completions: Action<Option.Option<"bash" | "zsh" | "fish">>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/GlobalFlag.ts#L215)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/GlobalFlag.ts#L201)
 
 Since v4.0.0

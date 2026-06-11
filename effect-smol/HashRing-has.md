@@ -27,6 +27,6 @@ matching is by primary key, not object identity or weight.
 declare const has: { <A extends PrimaryKey.PrimaryKey>(node: A): (self: HashRing<A>) => boolean; <A extends PrimaryKey.PrimaryKey>(self: HashRing<A>, node: A): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashRing.ts#L324)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashRing.ts#L274)
 
 Since v3.19.0

@@ -26,6 +26,6 @@ type IntersectKeys<K1, K2> = [string] extends [K1 | K2] ?
     : K1 & K2
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L179)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L114)
 
 Since v2.0.0

@@ -44,6 +44,6 @@ type Args<A, K, E> = {
     : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Data.ts#L379)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Data.ts#L312)
 
 Since v2.0.0

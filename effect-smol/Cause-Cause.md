@@ -44,6 +44,6 @@ export interface Cause<out E> extends Pipeable, Inspectable, Equal {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L143)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L77)
 
 Since v2.0.0

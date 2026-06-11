@@ -20,6 +20,6 @@ satisfies a pure predicate.
 declare const every: <In>(predicate: Predicate<In>) => Sink<boolean, In, In>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L847)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L824)
 
 Since v2.0.0

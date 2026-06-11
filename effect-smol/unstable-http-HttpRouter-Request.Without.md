@@ -12,6 +12,6 @@ or error types.
 type Without<A> = A extends Request<infer _Kind, infer _> ? never : A
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpRouter.ts#L812)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpRouter.ts#L780)
 
 Since v4.0.0

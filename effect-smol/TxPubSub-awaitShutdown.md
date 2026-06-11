@@ -25,6 +25,6 @@ const program = Effect.gen(function*() {
 declare const awaitShutdown: <A>(self: TxPubSub<A>) => Effect.Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPubSub.ts#L693)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxPubSub.ts#L655)
 
 Since v2.0.0

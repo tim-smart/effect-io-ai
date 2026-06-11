@@ -11,6 +11,6 @@ Tagged error for IndexedDB database operations, carrying a database error reason
 declare class IndexedDbDatabaseError
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbDatabase.ts#L108)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDbDatabase.ts#L92)
 
 Since v4.0.0

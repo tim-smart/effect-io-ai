@@ -15,9 +15,9 @@ constraints in JSON Schema.
 
 Arbitrary:
 
-When generating test data with fast-check, this applies `minLength` and
-`maxLength` constraints to the array of entries that is generated before
-being converted to an object.
+When generating test data with fast-check, this applies node-local
+`minLength` and `maxLength` constraints. Object generators interpret them as
+the final number of own properties.
 
 **Signature**
 
@@ -25,6 +25,6 @@ being converted to an object.
 declare const isPropertiesLengthBetween: (minimum: number, maximum: number, annotations?: Annotations.Filter) => SchemaAST.Filter<object>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8007)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7892)
 
 Since v4.0.0

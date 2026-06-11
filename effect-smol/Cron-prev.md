@@ -29,6 +29,6 @@ the result is the earlier occurrence.
 declare const prev: (cron: Cron, now?: DateTime.DateTime.Input) => Date
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cron.ts#L798)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cron.ts#L762)
 
 Since v3.20.0

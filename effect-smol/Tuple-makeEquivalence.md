@@ -39,6 +39,6 @@ console.log(eq(["Alice", 30], ["Bob", 30]))   // false
 declare const makeEquivalence: <const Elements extends ReadonlyArray<Equivalence.Equivalence<any>>>(elements: Elements) => Equivalence.Equivalence<{ readonly [I in keyof Elements]: [Elements[I]] extends [Equivalence.Equivalence<infer A>] ? A : never; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tuple.ts#L607)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tuple.ts#L549)
 
 Since v4.0.0

@@ -11,6 +11,6 @@ Type-level identifier used to mark `PgliteClient` values.
 type TypeId = "~@effect/sql-pglite/PgliteClient"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/sql/pglite/src/PgliteClient.ts#L81)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/sql/pglite/src/PgliteClient.ts#L58)
 
 Since v4.0.0

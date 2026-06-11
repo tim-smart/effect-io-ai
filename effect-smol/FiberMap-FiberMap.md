@@ -43,6 +43,6 @@ export interface FiberMap<in out K, out A = unknown, out E = unknown>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberMap.ts#L85)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberMap.ts#L58)
 
 Since v2.0.0

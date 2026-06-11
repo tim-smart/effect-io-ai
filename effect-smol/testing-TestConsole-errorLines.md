@@ -42,6 +42,6 @@ const program = Effect.gen(function*() {
 declare const errorLines: Effect.Effect<ReadonlyArray<unknown>, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TestConsole.ts#L396)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TestConsole.ts#L367)
 
 Since v4.0.0

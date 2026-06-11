@@ -21,6 +21,6 @@ value as `severity`. Missing or invalid values fall back to `"Info"`.
 type severity = "~effect/ErrorReporter/severity"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ErrorReporter.ts#L439)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ErrorReporter.ts#L400)
 
 Since v4.0.0

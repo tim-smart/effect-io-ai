@@ -22,6 +22,6 @@ without restating its `R` type parameter.
 type Services<P> = P extends Effect<infer _A, infer _E, infer _R> ? _R : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pull.ts#L131)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pull.ts#L114)
 
 Since v4.0.0

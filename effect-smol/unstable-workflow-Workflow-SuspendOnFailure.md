@@ -15,6 +15,6 @@ The suspended execution can later be resumed with the workflow's `resume` method
 declare const SuspendOnFailure: Context.Reference<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Workflow.ts#L905)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Workflow.ts#L893)
 
 Since v4.0.0

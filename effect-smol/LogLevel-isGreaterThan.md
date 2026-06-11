@@ -42,6 +42,6 @@ console.log(isMoreSevereThanInfo("Debug")) // false
 declare const isGreaterThan: { (that: LogLevel): (self: LogLevel) => boolean; (self: LogLevel, that: LogLevel): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LogLevel.ts#L262)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LogLevel.ts#L231)
 
 Since v4.0.0

@@ -21,6 +21,6 @@ later calls for the same atom in that registry are ignored.
 declare const useAtomInitialValues: (initialValues: Iterable<readonly [Atom.Atom<any>, any]>) => void
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/Hooks.ts#L91)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/Hooks.ts#L78)
 
 Since v4.0.0

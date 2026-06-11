@@ -65,6 +65,6 @@ const program = Effect.gen(function*() {
 declare const setMany: { <K1 extends K, K, V1 extends V, V>(entries: Iterable<readonly [K1, V1]>): (self: TxHashMap<K, V>) => Effect.Effect<void>; <K1 extends K, K, V1 extends V, V>(self: TxHashMap<K, V>, entries: Iterable<readonly [K1, V1]>): Effect.Effect<void>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L1181)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L1164)
 
 Since v4.0.0

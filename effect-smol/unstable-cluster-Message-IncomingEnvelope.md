@@ -11,6 +11,6 @@ Represents an incoming control envelope carrying an `AckChunk` or `Interrupt`.
 declare class IncomingEnvelope
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Message.ts#L135)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Message.ts#L119)
 
 Since v4.0.0

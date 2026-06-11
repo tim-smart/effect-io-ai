@@ -12,6 +12,6 @@ WebSocket-backed socket run is handling events.
 declare class WebSocket
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Socket.ts#L562)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Socket.ts#L547)
 
 Since v4.0.0

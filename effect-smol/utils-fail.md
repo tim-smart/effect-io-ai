@@ -11,6 +11,6 @@ Fails the current test with the provided error message.
 declare const fail: (message: string) => void
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L52)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L31)
 
 Since v4.0.0

@@ -16,6 +16,6 @@ Use to register or update several nodes in a `HashRing` at the same weight.
 declare const addMany: { <A extends PrimaryKey.PrimaryKey>(nodes: Iterable<A>, options?: { readonly weight?: number | undefined; }): (self: HashRing<A>) => HashRing<A>; <A extends PrimaryKey.PrimaryKey>(self: HashRing<A>, nodes: Iterable<A>, options?: { readonly weight?: number | undefined; }): HashRing<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashRing.ts#L179)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashRing.ts#L129)
 
 Since v3.19.0

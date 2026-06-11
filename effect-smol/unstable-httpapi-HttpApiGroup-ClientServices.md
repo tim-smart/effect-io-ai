@@ -13,6 +13,6 @@ type ClientServices<Group> = Group extends HttpApiGroup<infer _Name, infer _Endp
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiGroup.ts#L278)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiGroup.ts#L252)
 
 Since v4.0.0

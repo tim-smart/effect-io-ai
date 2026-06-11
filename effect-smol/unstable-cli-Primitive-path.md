@@ -35,6 +35,6 @@ const program = Effect.gen(function*() {
 declare const path: (pathType: PathType, mustExist?: boolean) => Primitive<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Primitive.ts#L416)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Primitive.ts#L366)
 
 Since v4.0.0

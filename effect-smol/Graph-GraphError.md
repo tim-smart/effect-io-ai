@@ -18,6 +18,6 @@ graph structure or unsupported algorithm inputs.
 declare class GraphError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L389)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L346)
 
 Since v3.18.0

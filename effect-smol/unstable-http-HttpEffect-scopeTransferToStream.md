@@ -11,6 +11,6 @@ Returns a streaming server response that closes the request scope when the body 
 declare const scopeTransferToStream: (response: HttpServerResponse) => HttpServerResponse
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpEffect.ts#L167)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpEffect.ts#L139)
 
 Since v4.0.0

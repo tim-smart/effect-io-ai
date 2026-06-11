@@ -47,6 +47,6 @@ type Signal = | "SIGABRT"
   | "SIGINFO"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ChildProcess.ts#L208)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ChildProcess.ts#L176)
 
 Since v4.0.0

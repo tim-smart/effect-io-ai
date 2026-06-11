@@ -31,6 +31,6 @@ console.log(reason.defect) // "bug"
 declare const makeDieReason: (defect: unknown) => Die
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L656)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L590)
 
 Since v4.0.0

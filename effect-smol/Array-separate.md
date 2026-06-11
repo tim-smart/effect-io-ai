@@ -38,6 +38,6 @@ console.log(successes) // [1, 2]
 declare const separate: <T extends Iterable<Result.Result<any, any>>>(self: T) => [failures: Array<Result.Result.Failure<ReadonlyArray.Infer<T>>>, successes: Array<Result.Result.Success<ReadonlyArray.Infer<T>>>]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L3936)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L3861)
 
 Since v2.0.0

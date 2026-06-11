@@ -32,6 +32,6 @@ shared socket service.
 declare class OpenAiSocket
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L483)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L457)
 
 Since v4.0.0

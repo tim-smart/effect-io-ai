@@ -48,6 +48,6 @@ while (MutableRef.get(iterations) < 5) {
 declare const getAndIncrement: (self: MutableRef<number>) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableRef.ts#L386)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableRef.ts#L363)
 
 Since v2.0.0

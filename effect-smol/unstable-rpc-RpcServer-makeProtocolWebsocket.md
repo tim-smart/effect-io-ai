@@ -12,6 +12,6 @@ GET route on the current `HttpRouter`.
 declare const makeProtocolWebsocket: (options: { readonly path: HttpRouter.PathInput; }) => Effect.Effect<Protocol["Service"], never, RpcSerialization.RpcSerialization | HttpRouter.HttpRouter>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcServer.ts#L961)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcServer.ts#L928)
 
 Since v4.0.0

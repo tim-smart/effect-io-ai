@@ -37,6 +37,6 @@ export interface ScopedAtom<A extends Atom.Atom<any>, Input = never> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/ScopedAtom.ts#L78)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/ScopedAtom.ts#L66)
 
 Since v4.0.0

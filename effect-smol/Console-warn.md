@@ -25,6 +25,6 @@ const program = Effect.gen(function*() {
 declare const warn: (...args: ReadonlyArray<any>) => Effect.Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Console.ts#L618)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Console.ts#L554)
 
 Since v2.0.0

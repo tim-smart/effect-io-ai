@@ -27,6 +27,6 @@ Native `Set` values do not satisfy this check.
 declare const isMutableHashSet: <V>(value: unknown) => value is MutableHashSet<V>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashSet.ts#L150)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashSet.ts#L92)
 
 Since v4.0.0

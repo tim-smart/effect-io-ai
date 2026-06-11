@@ -34,6 +34,6 @@ type RequestRaw<Endpoint> = Endpoint extends HttpApiEndpoint<
   : {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L548)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L506)
 
 Since v4.0.0

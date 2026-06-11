@@ -23,6 +23,6 @@ the string is not a valid `BigDecimal` representation. Encoding returns
 declare const bigDecimalFromString: Transformation<BigDecimal.BigDecimal, string, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1434)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1361)
 
 Since v4.0.0

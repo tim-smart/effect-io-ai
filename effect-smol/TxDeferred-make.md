@@ -27,6 +27,6 @@ const program = Effect.gen(function*() {
 declare const make: <A, E = never>() => Effect.Effect<TxDeferred<A, E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxDeferred.ts#L129)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxDeferred.ts#L111)
 
 Since v2.0.0

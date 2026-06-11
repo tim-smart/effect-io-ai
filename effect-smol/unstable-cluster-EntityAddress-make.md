@@ -32,6 +32,6 @@ address even when the entity type and entity id match.
 declare const make: (options: { readonly shardId: ShardId; readonly entityType: EntityType; readonly entityId: EntityId; }) => EntityAddress
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EntityAddress.ts#L102)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EntityAddress.ts#L89)
 
 Since v4.0.0

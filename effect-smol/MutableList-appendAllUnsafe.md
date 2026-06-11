@@ -49,6 +49,6 @@ MutableList.appendAllUnsafe(list, bigArray, true) // Very efficient
 declare const appendAllUnsafe: <A>(self: MutableList<A>, messages: ReadonlyArray<A>, mutable?: boolean) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L559)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableList.ts#L519)
 
 Since v4.0.0

@@ -45,6 +45,6 @@ const result = Graph.mutate(Graph.directed<string, number>(), (mutable) => {
 declare const addNode: <N, E, T extends Kind = "directed">(mutable: MutableGraph<N, E, T>, data: N) => NodeIndex
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L666)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L623)
 
 Since v3.18.0

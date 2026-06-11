@@ -27,6 +27,6 @@ returns a failed `Result` with the non-done cause.
 declare const filterDoneVoid: <E extends Cause.Done>(input: Cause.Cause<E>) => Result.Result<Cause.Done, Cause.Cause<Exclude<E, Cause.Done>>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pull.ts#L268)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pull.ts#L251)
 
 Since v4.0.0

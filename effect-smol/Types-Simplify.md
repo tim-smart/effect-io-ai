@@ -37,6 +37,6 @@ type Simplify<A> = {
 } extends infer B ? B : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L292)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L250)
 
 Since v2.0.0

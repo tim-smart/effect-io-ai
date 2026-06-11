@@ -21,6 +21,6 @@ APIs that require `DateTime.Zoned`.
 declare const isZoned: (self: DateTime) => self is Zoned
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L537)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L497)
 
 Since v3.6.0

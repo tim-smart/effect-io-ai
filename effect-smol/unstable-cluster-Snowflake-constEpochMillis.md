@@ -11,6 +11,6 @@ Defines the custom snowflake epoch in Unix milliseconds.
 declare const constEpochMillis: number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Snowflake.ts#L141)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Snowflake.ts#L132)
 
 Since v4.0.0

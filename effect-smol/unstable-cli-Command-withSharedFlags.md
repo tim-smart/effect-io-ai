@@ -17,6 +17,6 @@ and after a selected subcommand name (npm-style).
 declare const withSharedFlags: { <const SharedFlags extends Command.FlagConfig>(sharedFlags: SharedFlags): <Name extends string, Input, E, R, ContextInput>(self: Command<Name, Input, ContextInput, E, R>) => Command<Name, Simplify<Input & Command.Config.Infer<SharedFlags>>, Simplify<ContextInput & Command.Config.Infer<SharedFlags>>, E, R>; <Name extends string, Input, E, R, ContextInput, const SharedFlags extends Command.FlagConfig>(self: Command<Name, Input, ContextInput, E, R>, sharedFlags: SharedFlags): Command<Name, Simplify<Input & Command.Config.Infer<SharedFlags>>, Simplify<ContextInput & Command.Config.Infer<SharedFlags>>, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L808)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Command.ts#L789)
 
 Since v4.0.0

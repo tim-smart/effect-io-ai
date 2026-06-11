@@ -17,6 +17,6 @@ to encode it for storage or transport.
 declare class ReplyWithContext<R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Reply.ts#L95)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Reply.ts#L83)
 
 Since v4.0.0

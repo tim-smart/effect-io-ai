@@ -16,6 +16,6 @@ parameters that fail method-specific validation.
 declare const INVALID_PARAMS_ERROR_CODE: -32602
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L518)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L499)
 
 Since v4.0.0

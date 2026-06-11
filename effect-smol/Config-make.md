@@ -42,6 +42,6 @@ const provider = ConfigProvider.fromUnknown({ host: "localhost", port: 3000 })
 declare const make: <T>(parse: (provider: ConfigProvider.ConfigProvider) => Effect.Effect<T, ConfigError>) => Config<T>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L227)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L163)
 
 Since v4.0.0

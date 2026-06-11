@@ -16,6 +16,6 @@ Accepted annotation variants are `file_citation`, `url_citation`,
 type Annotation = typeof Annotation.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L262)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L232)
 
 Since v4.0.0

@@ -8,7 +8,10 @@ repeated calls with the same schema are cheap.
 
 **Details**
 
-Prefer `toArbitrary` when you just need the arbitrary directly.
+Prefer `toArbitrary` when you need the arbitrary directly, or when you
+want derivation diagnostics via `{ report: true }`. Unsupported schema
+nodes, impossible constraints, invalid candidates, and recursive schemas
+without a finite terminal path fail immediately.
 
 **Signature**
 
@@ -16,6 +19,6 @@ Prefer `toArbitrary` when you just need the arbitrary directly.
 declare const toArbitraryLazy: <S extends Top>(schema: S) => LazyArbitrary<S["Type"]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L12366)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L12481)
 
 Since v4.0.0

@@ -65,6 +65,6 @@ const program = Effect.gen(function*() {
 declare const filterMap: { <V, K, A, X>(f: (input: V, key: K) => Result<A, X>): (self: TxHashMap<K, V>) => Effect.Effect<TxHashMap<K, A>>; <K, V, A, X>(self: TxHashMap<K, V>, f: (input: V, key: K) => Result<A, X>): Effect.Effect<TxHashMap<K, A>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L1640)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L1623)
 
 Since v4.0.0

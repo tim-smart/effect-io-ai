@@ -19,6 +19,6 @@ console.log(Duration.toMillis(Duration.negativeInfinity)) // -Infinity
 declare const negativeInfinity: Duration
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L640)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L600)
 
 Since v4.0.0

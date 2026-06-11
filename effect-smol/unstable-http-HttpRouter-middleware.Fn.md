@@ -14,6 +14,6 @@ type Fn = (
   ) => Effect.Effect<HttpServerResponse.HttpServerResponse>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpRouter.ts#L1176)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpRouter.ts#L1144)
 
 Since v4.0.0

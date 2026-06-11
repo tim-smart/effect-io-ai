@@ -25,6 +25,6 @@ const channel = Channel.sync(() => {
 declare const sync: <A>(evaluate: LazyArg<A>) => Channel<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L926)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L865)
 
 Since v2.0.0

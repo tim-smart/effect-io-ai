@@ -21,6 +21,6 @@ matcher.
 declare class RouteContext
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpRouter.ts#L308)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpRouter.ts#L276)
 
 Since v4.0.0

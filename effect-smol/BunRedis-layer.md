@@ -11,6 +11,6 @@ Creates scoped Bun Redis layers for `Redis.Redis` and `BunRedis`, closing the un
 declare const layer: (options?: ({ readonly url?: string; } & RedisOptions) | undefined) => Layer.Layer<Redis.Redis | BunRedis>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunRedis.ts#L96)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunRedis.ts#L71)
 
 Since v4.0.0

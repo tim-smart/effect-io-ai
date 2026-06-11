@@ -12,6 +12,6 @@ request envelopes back to their raw representation.
 declare const RequestTransform: SchemaTransformation.Transformation<Request.Any, any, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Envelope.ts#L409)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Envelope.ts#L394)
 
 Since v4.0.0

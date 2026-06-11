@@ -28,6 +28,6 @@ identifiers are not reused.
 type EdgeIndex = number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L115)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L72)
 
 Since v3.18.0

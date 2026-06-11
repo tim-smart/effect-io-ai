@@ -22,6 +22,6 @@ queues or streams that rerun when keys are invalidated.
 declare class Reactivity
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Reactivity.ts#L72)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Reactivity.ts#L41)
 
 Since v4.0.0

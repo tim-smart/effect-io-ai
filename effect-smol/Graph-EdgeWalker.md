@@ -24,6 +24,6 @@ full `Edge`.
 type EdgeWalker<E> = Walker<EdgeIndex, Edge<E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L3979)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L3993)
 
 Since v3.18.0

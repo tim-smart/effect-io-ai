@@ -46,6 +46,6 @@ Effect.runSync(Effect.exit(program))
 declare const Error: new <A extends Record<string, any> = {}>(args: Types.VoidIfEmpty<{ readonly [P in keyof A]: A[P]; }>) => Cause.YieldableError & Readonly<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Data.ts#L790)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Data.ts#L723)
 
 Since v2.0.0

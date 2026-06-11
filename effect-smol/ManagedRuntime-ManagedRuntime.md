@@ -139,6 +139,6 @@ export interface ManagedRuntime<in R, out ER> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ManagedRuntime.ts#L142)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ManagedRuntime.ts#L112)
 
 Since v2.0.0

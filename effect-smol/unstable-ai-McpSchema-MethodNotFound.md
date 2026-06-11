@@ -19,6 +19,6 @@ Uses the standard JSON-RPC method-not-found code `-32601`.
 declare class MethodNotFound
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L600)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L581)
 
 Since v4.0.0

@@ -12,6 +12,6 @@ values.
 type TypeId = "~effect/ExecutionPlan"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ExecutionPlan.ts#L103)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ExecutionPlan.ts#L30)
 
 Since v3.16.0

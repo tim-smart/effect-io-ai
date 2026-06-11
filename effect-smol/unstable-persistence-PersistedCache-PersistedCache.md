@@ -25,6 +25,6 @@ export interface PersistedCache<K extends Persistable.Any, out R = never> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PersistedCache.ts#L52)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PersistedCache.ts#L29)
 
 Since v4.0.0

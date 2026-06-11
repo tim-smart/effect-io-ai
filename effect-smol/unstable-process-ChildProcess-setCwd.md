@@ -25,6 +25,6 @@ const cmd = ChildProcess.make`ls -la`.pipe(
 declare const setCwd: { (cwd: string): (self: Command) => Command; (self: Command, cwd: string): Command; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ChildProcess.ts#L798)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ChildProcess.ts#L766)
 
 Since v4.0.0

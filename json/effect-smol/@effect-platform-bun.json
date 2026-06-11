@@ -29,7 +29,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layerHttpServer: Layer.Layer<BunServices | HttpServer | HttpPlatform | Etag.Generator, ServeError, ShardingConfig.ShardingConfig>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunClusterHttp.ts#L79"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunClusterHttp.ts#L53"
   },
   {
     "_tag": "Function",
@@ -45,7 +45,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layer: <const ClientOnly extends boolean = false, const Storage extends \"local\" | \"sql\" | \"byo\" = never>(options: { readonly transport: \"http\" | \"websocket\"; readonly serialization?: \"msgpack\" | \"ndjson\" | undefined; readonly clientOnly?: ClientOnly | undefined; readonly storage?: Storage | undefined; readonly runnerHealth?: \"ping\" | \"k8s\" | undefined; readonly runnerHealthK8s?: { readonly namespace?: string | undefined; readonly labelSelector?: string | undefined; } | undefined; readonly shardingConfig?: Partial<ShardingConfig.ShardingConfig[\"Service\"]> | undefined; }) => ClientOnly extends true ? Layer.Layer<Sharding | Runners.Runners | (\"byo\" extends Storage ? never : MessageStorage.MessageStorage), Config.ConfigError, \"local\" extends Storage ? never : \"byo\" extends Storage ? (MessageStorage.MessageStorage | RunnerStorage.RunnerStorage) : SqlClient> : Layer.Layer<Sharding | Runners.Runners | MessageStorage.MessageStorage, ServeError | Config.ConfigError, \"local\" extends Storage ? never : \"byo\" extends Storage ? (MessageStorage.MessageStorage | RunnerStorage.RunnerStorage) : SqlClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunClusterHttp.ts#L125"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunClusterHttp.ts#L99"
   },
   {
     "_tag": "Export",
@@ -61,7 +61,7 @@
     "since": "4.0.0",
     "category": "re-exports",
     "signature": "declare const layerK8sHttpClient: Layer.Layer<K8sHttpClient, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunClusterHttp.ts#L70"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunClusterHttp.ts#L44"
   },
   {
     "_tag": "Constant",
@@ -77,7 +77,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layerK8sHttpClient: Layer.Layer<K8sHttpClient.K8sHttpClient, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunClusterSocket.ts#L161"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunClusterSocket.ts#L134"
   },
   {
     "_tag": "Function",
@@ -93,7 +93,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layer: <const ClientOnly extends boolean = false, const Storage extends \"local\" | \"sql\" | \"byo\" = never>(options?: { readonly serialization?: \"msgpack\" | \"ndjson\" | undefined; readonly clientOnly?: ClientOnly | undefined; readonly storage?: Storage | undefined; readonly runnerHealth?: \"ping\" | \"k8s\" | undefined; readonly runnerHealthK8s?: { readonly namespace?: string | undefined; readonly labelSelector?: string | undefined; } | undefined; readonly shardingConfig?: Partial<ShardingConfig.ShardingConfig[\"Service\"]> | undefined; }) => ClientOnly extends true ? Layer.Layer<Sharding | Runners.Runners | (\"byo\" extends Storage ? never : MessageStorage.MessageStorage), Config.ConfigError, \"local\" extends Storage ? never : \"byo\" extends Storage ? (MessageStorage.MessageStorage | RunnerStorage.RunnerStorage) : SqlClient> : Layer.Layer<Sharding | Runners.Runners | (\"byo\" extends Storage ? never : MessageStorage.MessageStorage), SocketServer.SocketServerError | Config.ConfigError, \"local\" extends Storage ? never : \"byo\" extends Storage ? (MessageStorage.MessageStorage | RunnerStorage.RunnerStorage) : SqlClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunClusterSocket.ts#L85"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunClusterSocket.ts#L58"
   },
   {
     "_tag": "Export",
@@ -109,7 +109,7 @@
     "since": "4.0.0",
     "category": "re-exports",
     "signature": "declare const layerClientProtocol: Layer.Layer<Runners.RpcClientProtocol, never, RpcSerialization.RpcSerialization>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunClusterSocket.ts#L68"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunClusterSocket.ts#L41"
   },
   {
     "_tag": "Export",
@@ -125,7 +125,7 @@
     "since": "4.0.0",
     "category": "re-exports",
     "signature": "declare const layerSocketServer: Layer.Layer<SocketServer.SocketServer, SocketServer.SocketServerError, ShardingConfig.ShardingConfig>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunClusterSocket.ts#L76"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunClusterSocket.ts#L49"
   },
   {
     "_tag": "Constant",
@@ -157,7 +157,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layer: Layer.Layer<FileSystem, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunFileSystem.ts#L36"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunFileSystem.ts#L20"
   },
   {
     "_tag": "Export",
@@ -189,7 +189,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layer: Layer.Layer<Platform.HttpPlatform, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpPlatform.ts#L61"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpPlatform.ts#L47"
   },
   {
     "_tag": "Constant",
@@ -205,7 +205,7 @@
     "since": "4.0.0",
     "category": "constructors",
     "signature": "declare const make: <R extends string>(options: ServeOptions<R> & { readonly disablePreemptiveShutdown?: boolean | undefined; readonly gracefulShutdownTimeout?: Duration.Input | undefined; }) => Effect.Effect<{ readonly serve: { <E, R>(effect: Effect.Effect<ServerResponse.HttpServerResponse, E, R>): Effect.Effect<void, never, Exclude<R, ServerRequest.HttpServerRequest> | Scope.Scope>; <E, R, App extends Effect.Effect<ServerResponse.HttpServerResponse, any, any>>(effect: Effect.Effect<ServerResponse.HttpServerResponse, E, R>, middleware: HttpMiddleware.Applied<App, E, R>): Effect.Effect<void, never, Exclude<R, ServerRequest.HttpServerRequest> | Scope.Scope>; }; readonly address: Server.Address; }, never, Scope.Scope>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L96"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L75"
   },
   {
     "_tag": "Constant",
@@ -221,7 +221,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layerServer: <R extends string>(options: ServeOptions<R> & { readonly disablePreemptiveShutdown?: boolean | undefined; readonly gracefulShutdownTimeout?: Duration.Input | undefined; }) => Layer.Layer<Server.HttpServer>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L253"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L232"
   },
   {
     "_tag": "Constant",
@@ -237,7 +237,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layerHttpServices: Layer.Layer<BunServices.BunServices | HttpPlatform | Etag.Generator, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L266"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L245"
   },
   {
     "_tag": "Constant",
@@ -253,7 +253,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layerTest: Layer.Layer<FileSystem.FileSystem | Path.Path | Server.HttpServer | HttpPlatform | Etag.Generator | HttpClient, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L300"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L279"
   },
   {
     "_tag": "Function",
@@ -269,7 +269,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layer: <R extends string>(options: ServeOptions<R> & { readonly disablePreemptiveShutdown?: boolean | undefined; readonly gracefulShutdownTimeout?: Duration.Input | undefined; }) => Layer.Layer<Server.HttpServer | HttpPlatform | Etag.Generator | BunServices.BunServices>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L282"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L261"
   },
   {
     "_tag": "Function",
@@ -285,7 +285,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layerConfig: <R extends string>(options: Config.Wrap<ServeOptions<R> & { readonly disablePreemptiveShutdown?: boolean | undefined; readonly gracefulShutdownTimeout?: Duration.Input | undefined; }>) => Layer.Layer<Server.HttpServer | HttpPlatform | FileSystem.FileSystem | Etag.Generator | Path.Path, ConfigError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L315"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L294"
   },
   {
     "_tag": "TypeAlias",
@@ -301,7 +301,7 @@
     "since": "4.0.0",
     "category": "options",
     "signature": "type ServeOptions<R> = & (\n    | Bun.Serve.UnixServeOptions<WebSocketContext>\n    | Bun.Serve.HostnamePortServeOptions<WebSocketContext>\n  )\n  & { readonly routes?: Bun.Serve.Routes<WebSocketContext, R> }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L83"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L62"
   },
   {
     "_tag": "Function",
@@ -317,7 +317,7 @@
     "since": "4.0.0",
     "category": "accessors",
     "signature": "declare const toBunServerRequest: <T extends string = string>(self: HttpServerRequest) => Bun.BunRequest<T>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServerRequest.ts#L34"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServerRequest.ts#L18"
   },
   {
     "_tag": "Function",
@@ -333,7 +333,7 @@
     "since": "4.0.0",
     "category": "constructors",
     "signature": "declare const stream: (source: Request) => Stream.Stream<Multipart.Part, Multipart.MultipartError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunMultipart.ts#L37"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunMultipart.ts#L25"
   },
   {
     "_tag": "Function",
@@ -349,7 +349,7 @@
     "since": "4.0.0",
     "category": "constructors",
     "signature": "declare const persisted: (source: Request) => Effect.Effect<Multipart.Persisted, Multipart.MultipartError, FileSystem | Path | Scope.Scope>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunMultipart.ts#L58"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunMultipart.ts#L46"
   },
   {
     "_tag": "Constant",
@@ -365,7 +365,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layer: Layer.Layer<Path, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunPath.ts#L43"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunPath.ts#L21"
   },
   {
     "_tag": "Constant",
@@ -381,7 +381,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layerPosix: Layer.Layer<Path, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunPath.ts#L51"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunPath.ts#L29"
   },
   {
     "_tag": "Constant",
@@ -397,7 +397,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layerWin32: Layer.Layer<Path, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunPath.ts#L59"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunPath.ts#L37"
   },
   {
     "_tag": "Class",
@@ -413,7 +413,7 @@
     "since": "4.0.0",
     "category": "services",
     "signature": "declare class BunRedis",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunRedis.ts#L52"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunRedis.ts#L27"
   },
   {
     "_tag": "Function",
@@ -429,7 +429,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layer: (options?: ({ readonly url?: string; } & RedisOptions) | undefined) => Layer.Layer<Redis.Redis | BunRedis>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunRedis.ts#L96"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunRedis.ts#L71"
   },
   {
     "_tag": "Function",
@@ -445,7 +445,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layerConfig: (options: Config.Wrap<{ readonly url?: string; } & RedisOptions>) => Layer.Layer<Redis.Redis | BunRedis, Config.ConfigError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunRedis.ts#L106"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunRedis.ts#L81"
   },
   {
     "_tag": "Constant",
@@ -461,7 +461,7 @@
     "since": "4.0.0",
     "category": "running",
     "signature": "declare const runMain: { (options?: { readonly disableErrorReporting?: boolean | undefined; readonly teardown?: Teardown | undefined; }): <E, A>(effect: Effect<A, E>) => void; <E, A>(effect: Effect<A, E>, options?: { readonly disableErrorReporting?: boolean | undefined; readonly teardown?: Teardown | undefined; }): void; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunRuntime.ts#L61"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunRuntime.ts#L38"
   },
   {
     "_tag": "Constant",
@@ -477,7 +477,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layer: Layer.Layer<BunServices, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunServices.ts#L54"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunServices.ts#L41"
   },
   {
     "_tag": "TypeAlias",
@@ -493,7 +493,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "type BunServices = ChildProcessSpawner | Crypto | FileSystem | Path | Terminal | Stdio",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunServices.ts#L45"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunServices.ts#L32"
   },
   {
     "_tag": "Export",
@@ -525,7 +525,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layerWebSocketConstructor: Layer.Layer<Socket.WebSocketConstructor, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunSocket.ts#L41"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunSocket.ts#L29"
   },
   {
     "_tag": "Constant",
@@ -541,7 +541,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layerWebSocket: (url: string | Effect<string>, options?: { readonly closeCodeIsError?: ((code: number) => boolean) | undefined; readonly openTimeout?: Duration.Input | undefined; readonly protocols?: string | Array<string> | undefined; } | undefined) => Layer.Layer<Socket.Socket, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunSocket.ts#L55"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunSocket.ts#L43"
   },
   {
     "_tag": "Export",
@@ -557,7 +557,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * from \"@effect/platform-node-shared/NodeSocket\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunSocket.ts#L32"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunSocket.ts#L20"
   },
   {
     "_tag": "Export",
@@ -589,7 +589,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layer: Layer.Layer<Stdio, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunStdio.ts#L45"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunStdio.ts#L22"
   },
   {
     "_tag": "Function",
@@ -605,7 +605,7 @@
     "since": "4.0.0",
     "category": "constructors",
     "signature": "declare const fromReadableStream: <A, E>(options: { readonly evaluate: LazyArg<ReadableStream<A>>; readonly onError: (error: unknown) => E; readonly releaseLockOnEnd?: boolean | undefined; }) => Stream.Stream<A, E>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunStream.ts#L55"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunStream.ts#L33"
   },
   {
     "_tag": "Export",
@@ -621,7 +621,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * from \"@effect/platform-node-shared/NodeStream\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunStream.ts#L46"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunStream.ts#L24"
   },
   {
     "_tag": "Constant",
@@ -637,7 +637,7 @@
     "since": "4.0.0",
     "category": "constructors",
     "signature": "declare const make: (shouldQuit?: (input: UserInput) => boolean) => Effect<Terminal, never, Scope>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunTerminal.ts#L49"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunTerminal.ts#L23"
   },
   {
     "_tag": "Constant",
@@ -653,7 +653,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layer: Layer<Terminal, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunTerminal.ts#L58"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunTerminal.ts#L32"
   },
   {
     "_tag": "Constant",
@@ -669,7 +669,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layerPlatform: Layer.Layer<Worker.WorkerPlatform, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunWorker.ts#L70"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunWorker.ts#L44"
   },
   {
     "_tag": "Function",
@@ -685,7 +685,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layer: (spawn: (id: number) => globalThis.Worker) => Layer.Layer<Worker.WorkerPlatform | Worker.Spawner>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunWorker.ts#L54"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunWorker.ts#L28"
   },
   {
     "_tag": "Constant",
@@ -701,7 +701,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layer: Layer.Layer<WorkerRunner.WorkerRunnerPlatform, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunWorkerRunner.ts#L57"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunWorkerRunner.ts#L33"
   },
   {
     "_tag": "Export",

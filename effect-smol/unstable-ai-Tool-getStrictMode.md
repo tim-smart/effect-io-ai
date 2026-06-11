@@ -25,6 +25,6 @@ provider or global configuration determines the final behavior.
 declare const getStrictMode: <T extends Any>(tool: T) => boolean | undefined
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L1907)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L1862)
 
 Since v4.0.0

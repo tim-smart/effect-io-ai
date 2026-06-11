@@ -32,6 +32,6 @@ across runners and expect up to roughly one polling interval of lag.
 declare const entities: Metric.Gauge<bigint>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ClusterMetrics.ts#L53)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ClusterMetrics.ts#L39)
 
 Since v4.0.0

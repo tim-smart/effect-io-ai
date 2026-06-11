@@ -39,6 +39,6 @@ console.log(Order.Number(NaN, 1)) // -1
 declare const Number: Order<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L245)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L177)
 
 Since v4.0.0

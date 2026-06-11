@@ -11,6 +11,6 @@ JSON-serializable form of a cluster reply.
 type Encoded = WithExitEncoded | ChunkEncoded
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Reply.ts#L69)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Reply.ts#L57)
 
 Since v4.0.0

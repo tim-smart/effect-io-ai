@@ -22,6 +22,6 @@ to enable automatic type unification.
 type unifySymbol = typeof unifySymbol
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Unify.ts#L75)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Unify.ts#L54)
 
 Since v2.0.0

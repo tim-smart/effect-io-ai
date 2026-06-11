@@ -31,6 +31,6 @@ The fallback stream is not timed after the switch.
 declare const timeoutOrElse: { <B, E2, R2>(options: { readonly duration: Duration.Input; readonly orElse: () => Stream<B, E2, R2>; }): <A, E, R>(self: Stream<A, E, R>) => Stream<A | B, E | E2, R | R2>; <A, E, R, B, E2, R2>(self: Stream<A, E, R>, options: { readonly duration: Duration.Input; readonly orElse: () => Stream<B, E2, R2>; }): Stream<A | B, E | E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L2886)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L2815)
 
 Since v4.0.0

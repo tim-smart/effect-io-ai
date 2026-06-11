@@ -26,6 +26,6 @@ component lifetime, and returns a callback that calls `registry.refresh`.
 declare const useAtomRefresh: <A>(atom: Atom.Atom<A>) => () => void
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/Hooks.ts#L263)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/Hooks.ts#L250)
 
 Since v4.0.0

@@ -48,6 +48,6 @@ const program = Effect.log("Hello World").pipe(
 declare const make: <Message, Output>(log: (options: Options<Message>) => Output) => Logger<Message, Output>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L550)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Logger.ts#L476)
 
 Since v2.0.0

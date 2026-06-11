@@ -21,6 +21,6 @@ accept either fixed-offset or named time zones.
 declare const isTimeZone: (u: unknown) => u is TimeZone
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L473)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L433)
 
 Since v3.6.0

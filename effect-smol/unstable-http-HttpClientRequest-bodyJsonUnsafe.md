@@ -20,6 +20,6 @@ JSON encoding may throw instead of failing in the Effect error channel.
 declare const bodyJsonUnsafe: { (body: unknown): (self: HttpClientRequest) => HttpClientRequest; (self: HttpClientRequest, body: unknown): HttpClientRequest; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClientRequest.ts#L730)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClientRequest.ts#L699)
 
 Since v4.0.0

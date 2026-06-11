@@ -28,6 +28,6 @@ membership changes or failure detection.
 declare const runnersHealthy: Metric.Gauge<bigint>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ClusterMetrics.ts#L103)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ClusterMetrics.ts#L89)
 
 Since v4.0.0

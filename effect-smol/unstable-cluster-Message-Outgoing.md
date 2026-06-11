@@ -15,6 +15,6 @@ An outgoing message is either an entity request or a control envelope.
 type Outgoing<R> = OutgoingRequest<R> | OutgoingEnvelope
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Message.ts#L150)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Message.ts#L134)
 
 Since v4.0.0

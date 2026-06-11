@@ -14,6 +14,6 @@ type With<R, A, E> = R extends Initial<infer _A, infer _E> ? Initial<A, E>
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AsyncResult.ts#L138)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AsyncResult.ts#L106)
 
 Since v4.0.0

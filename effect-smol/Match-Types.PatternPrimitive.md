@@ -17,6 +17,6 @@ can be composed into more complex matching logic.
 type PatternPrimitive<A> = PredicateA<A> | A | SafeRefinement<any>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L2319)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L2285)
 
 Since v4.0.0

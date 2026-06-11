@@ -40,6 +40,6 @@ type Matcher<Input, Filters, RemainingApplied, Result, Provided, Return> = | Typ
   | ValueMatcher<Input, Filters, RemainingApplied, Result, Provided, Return>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L91)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L57)
 
 Since v4.0.0

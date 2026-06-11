@@ -16,6 +16,6 @@ available because the JSON payload could not be parsed.
 declare const PARSE_ERROR_CODE: -32700
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L542)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L523)
 
 Since v4.0.0

@@ -42,6 +42,6 @@ const program = Effect.gen(function*() {
 declare const set: { <K, V>(key: K, value: V): (self: TxHashMap<K, V>) => Effect.Effect<void>; <K, V>(self: TxHashMap<K, V>, key: K, value: V): Effect.Effect<void>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L443)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashMap.ts#L426)
 
 Since v2.0.0

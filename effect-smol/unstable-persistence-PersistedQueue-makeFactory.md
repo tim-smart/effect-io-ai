@@ -17,6 +17,6 @@ assigned an id when needed, and acknowledged or retried according to the
 declare const makeFactory: Effect.Effect<{ readonly make: <S extends Schema.Top>(options: { readonly name: string; readonly schema: S; }) => Effect.Effect<PersistedQueue<S["Type"], S["EncodingServices"] | S["DecodingServices"]>>; }, never, PersistedQueueStore>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PersistedQueue.ts#L158)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PersistedQueue.ts#L142)
 
 Since v4.0.0

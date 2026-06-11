@@ -46,6 +46,6 @@ console.log(categorizeNumber("hello")) // "Not a number type"
 declare const number: Predicate.Refinement<unknown, number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1356)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L1322)
 
 Since v4.0.0

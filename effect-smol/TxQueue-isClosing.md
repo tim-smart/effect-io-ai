@@ -29,6 +29,6 @@ const program = Effect.gen(function*() {
 declare const isClosing: (self: TxQueueState) => Effect.Effect<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L1441)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L1401)
 
 Since v4.0.0

@@ -13,6 +13,6 @@ declare class GeolocationError { constructor(props: {
   }) }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Geolocation.ts#L108)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Geolocation.ts#L85)
 
 Since v4.0.0

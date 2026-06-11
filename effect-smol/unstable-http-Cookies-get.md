@@ -11,6 +11,6 @@ Gets a cookie from a Cookies object safely.
 declare const get: { (name: string): (self: Cookies) => Option.Option<Cookie>; (self: Cookies, name: string): Option.Option<Cookie>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cookies.ts#L618)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cookies.ts#L566)
 
 Since v4.0.0

@@ -35,6 +35,6 @@ export interface HashSet<out Value> extends Iterable<Value>, Equal, Pipeable, In
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashSet.ts#L80)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashSet.ts#L51)
 
 Since v2.0.0

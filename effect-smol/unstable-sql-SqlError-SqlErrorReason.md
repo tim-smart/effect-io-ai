@@ -22,6 +22,6 @@ type SqlErrorReason = | ConnectionError
   | UnknownError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SqlError.ts#L360)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SqlError.ts#L335)
 
 Since v4.0.0

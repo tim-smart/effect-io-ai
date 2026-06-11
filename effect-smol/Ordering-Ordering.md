@@ -44,6 +44,6 @@ const compareStrings = (a: string, b: string): Ordering.Ordering => {
 type Ordering = -1 | 0 | 1
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ordering.ts#L79)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ordering.ts#L53)
 
 Since v2.0.0

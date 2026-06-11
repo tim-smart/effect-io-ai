@@ -27,6 +27,6 @@ type OfferEntry<A> = | {
     }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L424)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L367)
 
 Since v4.0.0

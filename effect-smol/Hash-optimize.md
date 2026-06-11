@@ -33,6 +33,6 @@ const stringHash = Hash.optimize(Hash.string("hello"))
 declare const optimize: (n: number) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Hash.ts#L312)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Hash.ts#L270)
 
 Since v2.0.0

@@ -37,6 +37,6 @@ type AddError<Endpoint, E> = Endpoint extends HttpApiEndpoint<
   never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L889)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L847)
 
 Since v4.0.0

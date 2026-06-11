@@ -11,6 +11,6 @@ Sent from the client to request a list of tools the server has.
 declare class ListTools
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1522)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1503)
 
 Since v4.0.0

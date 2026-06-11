@@ -32,6 +32,6 @@ This layer depends on the browser worker global `self`. Use
 declare const layer: Layer.Layer<WorkerRunner.WorkerRunnerPlatform, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserWorkerRunner.ts#L210)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserWorkerRunner.ts#L188)
 
 Since v4.0.0

@@ -13,6 +13,6 @@ was created lazily.
 declare const toServerResponse: (self: HttpServerRequest) => Http.ServerResponse
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpServerRequest.ts#L43)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpServerRequest.ts#L30)
 
 Since v4.0.0

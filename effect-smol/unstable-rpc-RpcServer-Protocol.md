@@ -18,6 +18,6 @@ workers, sockets, or custom protocols.
 declare class Protocol
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcServer.ts#L863)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcServer.ts#L830)
 
 Since v4.0.0

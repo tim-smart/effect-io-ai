@@ -32,6 +32,6 @@ const program = Effect.gen(function*() {
 declare const optional: <A>(param: Flag<A>) => Flag<Option.Option<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L567)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L557)
 
 Since v4.0.0

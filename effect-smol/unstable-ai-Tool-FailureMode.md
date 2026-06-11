@@ -20,6 +20,6 @@ will be captured and returned as part of the tool call result.
 type FailureMode = "error" | "return"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L160)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L115)
 
 Since v4.0.0

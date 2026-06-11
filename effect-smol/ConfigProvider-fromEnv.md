@@ -55,6 +55,6 @@ const host = Config.string("HOST").parse(
 declare const fromEnv: (options?: { readonly env?: Record<string, string> | undefined; }) => ConfigProvider
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L867)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L798)
 
 Since v2.0.0

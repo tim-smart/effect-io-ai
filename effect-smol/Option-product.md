@@ -39,6 +39,6 @@ console.log(Option.product(Option.none(), Option.some(42)))
 declare const product: <A, B>(self: Option<A>, that: Option<B>) => Option<[A, B]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1695)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Option.ts#L1634)
 
 Since v2.0.0

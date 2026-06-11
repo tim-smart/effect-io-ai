@@ -26,6 +26,6 @@ const program = Effect.gen(function*() {
 declare const nextBetween: (min: number, max: number) => Effect.Effect<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Random.ts#L185)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Random.ts#L151)
 
 Since v4.0.0

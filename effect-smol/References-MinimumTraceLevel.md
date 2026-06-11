@@ -20,6 +20,6 @@ spans are sampled and exported.
 declare const MinimumTraceLevel: Context.Reference<LogLevel>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/References.ts#L137)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/References.ts#L88)
 
 Since v4.0.0

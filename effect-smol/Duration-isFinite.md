@@ -20,6 +20,6 @@ console.log(Duration.isFinite(Duration.infinity)) // false
 declare const isFinite: (self: Duration) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L451)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L411)
 
 Since v2.0.0

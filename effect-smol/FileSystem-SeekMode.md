@@ -26,6 +26,6 @@ current cursor.
 type SeekMode = "start" | "current"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L1318)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L1275)
 
 Since v4.0.0

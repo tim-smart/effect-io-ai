@@ -27,6 +27,6 @@ permits are released.
 declare const resize: { (permits: number): (self: Semaphore) => Effect.Effect<void>; (self: Semaphore, permits: number): Effect.Effect<void>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Semaphore.ts#L373)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Semaphore.ts#L351)
 
 Since v4.0.0

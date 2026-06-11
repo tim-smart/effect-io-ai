@@ -21,6 +21,6 @@ value directly.
 declare const TypeId: "~effect/platform/Path"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Path.ts#L54)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Path.ts#L32)
 
 Since v4.0.0

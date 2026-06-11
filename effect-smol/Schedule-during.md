@@ -98,6 +98,6 @@ const retryProgram = Effect.gen(function*() {
 declare const during: (duration: Duration.Input) => Schedule<Duration.Duration>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L1682)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L1626)
 
 Since v4.0.0

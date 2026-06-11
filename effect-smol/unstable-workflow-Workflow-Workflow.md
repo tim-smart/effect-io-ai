@@ -60,7 +60,7 @@ export interface Workflow<
   >
 
   /**
-   * Execute the workflow with the given payload.
+   * Poll the current status of a workflow execution.
    */
   readonly poll: (
     executionId: string
@@ -155,6 +155,6 @@ export interface Workflow<
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Workflow.ts#L57)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Workflow.ts#L45)
 
 Since v4.0.0

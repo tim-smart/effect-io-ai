@@ -33,6 +33,6 @@ console.log(Order.Boolean(true, true)) // 0
 declare const Boolean: Order<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L277)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Order.ts#L209)
 
 Since v4.0.0

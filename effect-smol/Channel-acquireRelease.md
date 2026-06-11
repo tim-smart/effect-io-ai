@@ -29,6 +29,6 @@ const channel = Channel.acquireRelease(
 declare const acquireRelease: { <Z>(release: (z: Z, e: Exit.Exit<unknown, unknown>) => Effect.Effect<unknown>): <E, R>(self: Effect.Effect<Z, E, R>) => Channel<Z, E, void, unknown, unknown, unknown, R>; <Z, E, R>(self: Effect.Effect<Z, E, R>, release: (z: Z, e: Exit.Exit<unknown, unknown>) => Effect.Effect<unknown>): Channel<Z, E, void, unknown, unknown, unknown, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L667)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L606)
 
 Since v4.0.0

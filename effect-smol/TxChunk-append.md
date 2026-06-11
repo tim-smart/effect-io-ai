@@ -32,6 +32,6 @@ const program = Effect.gen(function*() {
 declare const append: { <A>(element: A): (self: TxChunk<A>) => Effect.Effect<void>; <A>(self: TxChunk<A>, element: A): Effect.Effect<void>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxChunk.ts#L433)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxChunk.ts#L401)
 
 Since v4.0.0

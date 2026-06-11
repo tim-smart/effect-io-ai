@@ -23,6 +23,6 @@ hydration helpers need to share registry state that is managed outside
 declare const RegistryContext: React.Context<AtomRegistry.AtomRegistry>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/RegistryContext.ts#L61)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/RegistryContext.ts#L44)
 
 Since v4.0.0

@@ -11,6 +11,6 @@ Returns `true` when the value carries the `ShardId` runtime marker.
 declare const isShardId: (u: unknown) => u is ShardId
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ShardId.ts#L55)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ShardId.ts#L38)
 
 Since v4.0.0

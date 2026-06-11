@@ -12,6 +12,6 @@ passes with `value`, and `None` fails with the original input.
 declare const fromPredicateOption: <A, B>(predicate: (a: A) => Option.Option<B>) => Filter<A, B>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Filter.ts#L258)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Filter.ts#L233)
 
 Since v4.0.0

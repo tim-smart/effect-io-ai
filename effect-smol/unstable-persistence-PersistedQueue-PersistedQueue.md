@@ -51,6 +51,6 @@ export interface PersistedQueue<in out A, out R = never> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PersistedQueue.ts#L78)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PersistedQueue.ts#L62)
 
 Since v4.0.0

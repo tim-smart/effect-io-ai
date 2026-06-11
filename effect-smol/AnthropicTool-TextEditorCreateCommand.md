@@ -20,6 +20,6 @@ The command fails if the file already exists or if parent directories are missin
 type TextEditorCreateCommand = typeof TextEditorCreateCommand.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1771)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1722)
 
 Since v4.0.0

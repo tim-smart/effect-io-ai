@@ -21,6 +21,6 @@ assert.deepStrictEqual(pipe(str, String.toLocaleLowerCase("tr")), "i")
 declare const toLocaleLowerCase: (locale?: string | Array<string>) => (self: string) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L929)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L871)
 
 Since v2.0.0

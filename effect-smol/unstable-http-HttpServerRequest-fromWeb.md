@@ -16,6 +16,6 @@ original Web URL remains available as `originalUrl`.
 declare const fromWeb: (request: globalThis.Request) => HttpServerRequest
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerRequest.ts#L435)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerRequest.ts#L410)
 
 Since v4.0.0

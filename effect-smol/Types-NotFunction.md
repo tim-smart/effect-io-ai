@@ -28,6 +28,6 @@ type Result = Types.NotFunction<string | (() => void) | number>
 type NotFunction<T> = T extends Function ? never : T
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L828)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L786)
 
 Since v2.0.0

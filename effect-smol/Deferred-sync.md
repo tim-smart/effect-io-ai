@@ -37,6 +37,6 @@ const program = Effect.gen(function*() {
 declare const sync: { <A>(evaluate: LazyArg<A>): <E>(self: Deferred<A, E>) => Effect<boolean>; <A, E>(self: Deferred<A, E>, evaluate: LazyArg<A>): Effect<boolean>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L862)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L809)
 
 Since v2.0.0

@@ -17,6 +17,6 @@ export interface ClickhouseClientConfig extends Clickhouse.ClickHouseClientConfi
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/clickhouse/src/ClickhouseClient.ts#L181)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/clickhouse/src/ClickhouseClient.ts#L155)
 
 Since v4.0.0

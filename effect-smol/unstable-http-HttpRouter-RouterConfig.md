@@ -16,6 +16,6 @@ defaults to an empty configuration.
 declare const RouterConfig: Context.Reference<Partial<FindMyWay.RouterConfig>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpRouter.ts#L287)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpRouter.ts#L255)
 
 Since v4.0.0

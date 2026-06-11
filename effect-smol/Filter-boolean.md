@@ -26,6 +26,6 @@ succeed and non-booleans fail with the original input.
 declare const boolean: Filter<unknown, boolean, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Filter.ts#L409)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Filter.ts#L384)
 
 Since v4.0.0

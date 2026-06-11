@@ -12,6 +12,6 @@ and content length.
 export interface WithContent extends Omit<Options, "contentType" | "contentLength"> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerResponse.ts#L124)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerResponse.ts#L91)
 
 Since v4.0.0

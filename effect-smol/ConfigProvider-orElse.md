@@ -43,6 +43,6 @@ const combined = ConfigProvider.orElse(envProvider, defaults)
 declare const orElse: { (that: ConfigProvider): (self: ConfigProvider) => ConfigProvider; (self: ConfigProvider, that: ConfigProvider): ConfigProvider; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L503)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L434)
 
 Since v2.0.0

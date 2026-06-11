@@ -25,6 +25,6 @@ The `initialValue` is `false`.
 declare const ReducerOr: Reducer.Reducer<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Boolean.ts#L528)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Boolean.ts#L481)
 
 Since v4.0.0

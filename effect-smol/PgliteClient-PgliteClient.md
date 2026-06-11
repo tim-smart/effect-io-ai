@@ -20,6 +20,6 @@ export interface PgliteClient extends Client.SqlClient {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/sql/pglite/src/PgliteClient.ts#L89)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/sql/pglite/src/PgliteClient.ts#L66)
 
 Since v4.0.0

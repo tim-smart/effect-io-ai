@@ -16,6 +16,6 @@ When the upstream stream ends, the sink ends the queue and completes with
 declare const fromQueue: <A>(queue: Queue.Queue<A, Cause.Done>) => Sink<void, A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L487)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sink.ts#L464)
 
 Since v2.0.0

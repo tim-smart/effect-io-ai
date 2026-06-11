@@ -12,6 +12,6 @@ optional protocols.
 declare class WebSocketConstructor
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Socket.ts#L573)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Socket.ts#L558)
 
 Since v4.0.0

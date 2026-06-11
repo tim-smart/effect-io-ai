@@ -28,6 +28,6 @@ and original cause. It is usually wrapped in `PlatformError`.
 declare class SystemError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PlatformError.ts#L131)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PlatformError.ts#L109)
 
 Since v4.0.0

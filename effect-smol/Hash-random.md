@@ -36,6 +36,6 @@ console.log(Hash.random(obj1) === Hash.random(obj2)) // false
 declare const random: <A extends object>(self: A) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Hash.ts#L237)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Hash.ts#L195)
 
 Since v2.0.0

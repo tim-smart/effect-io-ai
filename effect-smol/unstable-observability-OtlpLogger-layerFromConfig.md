@@ -11,6 +11,6 @@ Creates an OTLP logs layer from OpenTelemetry configuration.
 declare const layerFromConfig: (options?: { readonly resource?: { readonly serviceName?: string | undefined; readonly serviceVersion?: string | undefined; readonly attributes?: Record<string, unknown>; } | undefined; readonly headers?: Headers.Input | undefined; readonly excludeLogSpans?: boolean | undefined; readonly mergeWithExisting?: boolean | undefined; }) => Layer.Layer<never, never, HttpClient.HttpClient | OtlpSerialization>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OtlpLogger.ts#L156)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OtlpLogger.ts#L130)
 
 Since v4.0.0

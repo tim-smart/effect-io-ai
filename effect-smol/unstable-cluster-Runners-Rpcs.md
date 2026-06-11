@@ -12,6 +12,6 @@ effect, stream, and envelope messages.
 declare class Rpcs
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Runners.ts#L493)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Runners.ts#L472)
 
 Since v4.0.0

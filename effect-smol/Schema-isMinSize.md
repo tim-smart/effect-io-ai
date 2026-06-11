@@ -15,9 +15,9 @@ values with a `size` property rather than standard JSON Schema types.
 
 Arbitrary:
 
-When generating test data with fast-check, this applies a `minLength`
-constraint to the array representation to ensure generated values have at
-least the required size.
+When generating test data with fast-check, this applies a node-local
+`minLength` constraint. Generators for values with a final `.size`, such as
+sets and maps, interpret it as final cardinality.
 
 **Signature**
 
@@ -25,6 +25,6 @@ least the required size.
 declare const isMinSize: (minSize: number, annotations?: Annotations.Filter) => SchemaAST.Filter<{ readonly size: number; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7796)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7683)
 
 Since v4.0.0

@@ -11,6 +11,6 @@ Encoded union of all server-to-client MCP notification messages.
 type ServerNotificationEncoded = NotificationEncoded<typeof ServerNotificationRpcs>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L2429)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L2410)
 
 Since v4.0.0

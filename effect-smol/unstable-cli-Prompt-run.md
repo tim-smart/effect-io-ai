@@ -17,6 +17,6 @@ or the prompt is quit.
 declare const run: <Output>(self: Prompt<Output>) => Effect.Effect<Output, Terminal.QuitError, Environment>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1057)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1042)
 
 Since v4.0.0

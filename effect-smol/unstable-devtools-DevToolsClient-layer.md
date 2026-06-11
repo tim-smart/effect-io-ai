@@ -33,6 +33,6 @@ by itself.
 declare const layer: Layer.Layer<DevToolsClient, never, Socket.Socket>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DevToolsClient.ts#L202)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DevToolsClient.ts#L178)
 
 Since v4.0.0

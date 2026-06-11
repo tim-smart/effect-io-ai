@@ -16,6 +16,6 @@ optional or with a constructor default may be omitted.
 type { [K in keyof MakeIn_<F, TypeOptionalKeys<F> | TypeConstructorDefaultedKeys<F>>]: MakeIn_<F, TypeOptionalKeys<F> | TypeConstructorDefaultedKeys<F>>[K]; } = Simplify<MakeIn_<F>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3018)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2946)
 
 Since v4.0.0

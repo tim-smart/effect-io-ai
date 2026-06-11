@@ -11,6 +11,6 @@ Returns `true` when a value is a `Socket`.
 declare const isSocket: (u: unknown) => u is Socket
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Socket.ts#L59)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Socket.ts#L44)
 
 Since v4.0.0

@@ -28,6 +28,6 @@ so transition data does not update the current UI before React accepts it.
 declare const HydrationBoundary: React.FC<HydrationBoundaryProps>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/ReactHydration.ts#L63)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/ReactHydration.ts#L48)
 
 Since v4.0.0

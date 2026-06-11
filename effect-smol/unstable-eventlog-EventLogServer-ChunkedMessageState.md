@@ -17,6 +17,6 @@ writes.
 declare class ChunkedMessageState
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogServer.ts#L243)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogServer.ts#L220)
 
 Since v4.0.0

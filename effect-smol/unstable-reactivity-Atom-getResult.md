@@ -17,6 +17,6 @@ failures fail with the result cause.
 declare const getResult: <A, E>(self: Atom<AsyncResult.AsyncResult<A, E>>, options?: { readonly suspendOnWaiting?: boolean | undefined; }) => Effect.Effect<A, E, AtomRegistry>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L2376)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L2348)
 
 Since v4.0.0

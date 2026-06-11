@@ -23,6 +23,6 @@ const program = Effect.gen(function*() {
 declare const make: () => Effect.Effect<TxReentrantLock>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxReentrantLock.ts#L139)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxReentrantLock.ts#L107)
 
 Since v2.0.0

@@ -62,6 +62,6 @@ const program = Effect.scoped(
 declare const makeWithTTL: <A, E, R>(options: { readonly acquire: Effect.Effect<A, E, R>; readonly min: number; readonly max: number; readonly concurrency?: number | undefined; readonly targetUtilization?: number | undefined; readonly timeToLive: Duration.Input; readonly timeToLiveStrategy?: "creation" | "usage" | undefined; }) => Effect.Effect<Pool<A, E>, never, R | Scope.Scope>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pool.ts#L321)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pool.ts#L285)
 
 Since v2.0.0

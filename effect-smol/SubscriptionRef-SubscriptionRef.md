@@ -21,6 +21,6 @@ export interface SubscriptionRef<in out A> extends SubscriptionRef.Variance<A>, 
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SubscriptionRef.ts#L84)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SubscriptionRef.ts#L37)
 
 Since v2.0.0

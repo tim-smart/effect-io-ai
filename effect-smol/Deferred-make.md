@@ -28,6 +28,6 @@ const program = Effect.gen(function*() {
 declare const make: <A, E = never>() => Effect<Deferred<A, E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L236)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Deferred.ts#L183)
 
 Since v2.0.0

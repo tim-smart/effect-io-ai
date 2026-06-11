@@ -12,6 +12,6 @@ the client.
 declare class ListResourceTemplatesResult
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1013)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L994)
 
 Since v4.0.0

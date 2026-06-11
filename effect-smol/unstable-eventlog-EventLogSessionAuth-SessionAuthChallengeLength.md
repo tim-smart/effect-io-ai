@@ -16,6 +16,6 @@ Use when you need the challenge size for event-log session authentication.
 declare const SessionAuthChallengeLength: 32
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogSessionAuth.ts#L100)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogSessionAuth.ts#L71)
 
 Since v4.0.0

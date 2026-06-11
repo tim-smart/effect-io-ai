@@ -22,6 +22,6 @@ completion and only need a boolean result.
 declare const isDoneCause: <E>(cause: Cause.Cause<E>) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pull.ts#L203)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pull.ts#L186)
 
 Since v4.0.0

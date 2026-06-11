@@ -11,6 +11,6 @@ Creates scoped Bun Redis layers from configurable Redis options, closing the und
 declare const layerConfig: (options: Config.Wrap<{ readonly url?: string; } & RedisOptions>) => Layer.Layer<Redis.Redis | BunRedis, Config.ConfigError>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunRedis.ts#L106)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunRedis.ts#L81)
 
 Since v4.0.0

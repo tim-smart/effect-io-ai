@@ -37,6 +37,6 @@ const pipeline3 = ChildProcess.make`my-program`.pipe(
 declare const pipeTo: { (that: Command, options?: PipeOptions): (self: Command) => PipedCommand; (self: Command, that: Command, options?: PipeOptions): PipedCommand; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ChildProcess.ts#L702)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ChildProcess.ts#L670)
 
 Since v4.0.0

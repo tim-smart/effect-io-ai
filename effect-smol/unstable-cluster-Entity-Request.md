@@ -16,6 +16,6 @@ that was sent, allowing handlers to resume chunk sequencing after a restart.
 declare class Request<Rpc>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Entity.ts#L580)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Entity.ts#L557)
 
 Since v4.0.0

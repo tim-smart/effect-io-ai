@@ -17,6 +17,6 @@ export interface WithoutConstructorDefault {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5251)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5192)
 
 Since v4.0.0

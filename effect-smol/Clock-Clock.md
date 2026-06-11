@@ -74,6 +74,6 @@ export interface Clock {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Clock.ts#L92)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Clock.ts#L40)
 
 Since v2.0.0

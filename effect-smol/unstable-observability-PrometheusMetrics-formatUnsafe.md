@@ -20,6 +20,6 @@ synchronous formatting.
 declare const formatUnsafe: (context: Context.Context<never>, options?: FormatOptions | undefined) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PrometheusMetrics.ts#L154)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PrometheusMetrics.ts#L117)
 
 Since v4.0.0

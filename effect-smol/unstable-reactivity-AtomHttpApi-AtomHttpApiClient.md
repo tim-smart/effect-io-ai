@@ -121,6 +121,6 @@ export interface AtomHttpApiClient<Self, Id extends string, Groups extends HttpA
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AtomHttpApi.ts#L62)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AtomHttpApi.ts#L43)
 
 Since v4.0.0

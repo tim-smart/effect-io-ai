@@ -12,6 +12,6 @@ server response, it renders as an empty response with status 403.
 declare class Forbidden
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiError.ts#L133)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiError.ts#L102)
 
 Since v4.0.0

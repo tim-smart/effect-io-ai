@@ -29,6 +29,6 @@ An optional object that can include:
 declare const runMain: { (options?: { readonly disableErrorReporting?: boolean | undefined; readonly teardown?: Teardown | undefined; }): <E, A>(effect: Effect<A, E>) => void; <E, A>(effect: Effect<A, E>, options?: { readonly disableErrorReporting?: boolean | undefined; readonly teardown?: Teardown | undefined; }): void; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunRuntime.ts#L61)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunRuntime.ts#L38)
 
 Since v4.0.0

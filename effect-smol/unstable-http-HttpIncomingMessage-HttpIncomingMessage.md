@@ -20,6 +20,6 @@ export interface HttpIncomingMessage<E = unknown> extends Inspectable.Inspectabl
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpIncomingMessage.ts#L63)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpIncomingMessage.ts#L47)
 
 Since v4.0.0

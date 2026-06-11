@@ -33,6 +33,6 @@ if (Exit.isFailure(exit)) {
 declare const isFailure: <A, E>(self: Exit<A, E>) => self is Failure<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L478)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Exit.ts#L431)
 
 Since v2.0.0

@@ -11,6 +11,6 @@ Type identifier used to mark runtime cluster envelope values.
 declare const TypeId: "~effect/cluster/Envelope"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Envelope.ts#L43)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Envelope.ts#L28)
 
 Since v4.0.0

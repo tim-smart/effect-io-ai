@@ -21,6 +21,6 @@ and HTTP client transforms.
 declare class OpenAiConfig
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiConfig.ts#L43)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiConfig.ts#L28)
 
 Since v4.0.0

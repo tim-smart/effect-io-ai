@@ -47,6 +47,6 @@ export interface FiberRuntimeMetricsService {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L3632)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L3559)
 
 Since v4.0.0

@@ -11,6 +11,6 @@ Re-exports all named exports from the "fast-check" module.
 export * from "fast-check"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FastCheck.ts#L90)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FastCheck.ts#L89)
 
 Since v3.10.0

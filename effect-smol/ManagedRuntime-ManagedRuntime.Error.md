@@ -16,6 +16,6 @@ Use to derive the layer construction error type from an existing
 type Error<T> = [T] extends [ManagedRuntime<infer _R, infer E>] ? E : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ManagedRuntime.ts#L113)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ManagedRuntime.ts#L83)
 
 Since v3.4.0

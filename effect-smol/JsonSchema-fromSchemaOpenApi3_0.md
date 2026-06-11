@@ -43,6 +43,6 @@ console.log(doc.schema.type) // ["string", "null"]
 declare const fromSchemaOpenApi3_0: (schema: JsonSchema) => Document<"draft-2020-12">
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonSchema.ts#L551)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonSchema.ts#L475)
 
 Since v4.0.0

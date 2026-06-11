@@ -92,7 +92,7 @@
     "since": "4.0.0",
     "category": "type IDs",
     "signature": "declare const TypeId: unique symbol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/MssqlClient.ts#L173"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/MssqlClient.ts#L149"
   },
   {
     "_tag": "Constant",
@@ -108,7 +108,7 @@
     "since": "4.0.0",
     "category": "services",
     "signature": "declare const MssqlClient: Context.Service<MssqlClient, MssqlClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/MssqlClient.ts#L220"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/MssqlClient.ts#L196"
   },
   {
     "_tag": "Constant",
@@ -124,7 +124,7 @@
     "since": "4.0.0",
     "category": "configuration",
     "signature": "declare const defaultParameterTypes: Record<Statement.PrimitiveKind, DataType>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/MssqlClient.ts#L715"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/MssqlClient.ts#L691"
   },
   {
     "_tag": "Function",
@@ -140,7 +140,7 @@
     "since": "4.0.0",
     "category": "constructors",
     "signature": "declare const make: (options: MssqlClientConfig) => Effect.Effect<MssqlClient, SqlError, Scope.Scope | Reactivity.Reactivity>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/MssqlClient.ts#L278"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/MssqlClient.ts#L254"
   },
   {
     "_tag": "Function",
@@ -156,7 +156,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layerConfig: (config: Config.Wrap<MssqlClientConfig>) => Layer.Layer<Client.SqlClient | MssqlClient, Config.ConfigError | SqlError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/MssqlClient.ts#L625"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/MssqlClient.ts#L601"
   },
   {
     "_tag": "Function",
@@ -172,7 +172,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layer: (config: MssqlClientConfig) => Layer.Layer<Client.SqlClient | MssqlClient, never | SqlError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/MssqlClient.ts#L647"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/MssqlClient.ts#L623"
   },
   {
     "_tag": "Function",
@@ -188,7 +188,7 @@
     "since": "4.0.0",
     "category": "compiler",
     "signature": "declare const makeCompiler: (transform?: (_: string) => string) => Statement.Compiler",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/MssqlClient.ts#L663"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/MssqlClient.ts#L639"
   },
   {
     "_tag": "Interface",
@@ -204,7 +204,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "export interface MssqlClient extends Client.SqlClient {\n  readonly [TypeId]: TypeId\n\n  readonly config: MssqlClientConfig\n\n  readonly param: (\n    type: DataType,\n    value: unknown,\n    options?: ParameterOptions\n  ) => Statement.Fragment\n\n  readonly call: <\n    I extends Record<string, Parameter<any>>,\n    O extends Record<string, Parameter<any>>,\n    A extends object\n  >(\n    procedure: Procedure.ProcedureWithValues<I, O, A>\n  ) => Effect.Effect<Procedure.Procedure.Result<O, A>, SqlError>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/MssqlClient.ts#L189"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/MssqlClient.ts#L165"
   },
   {
     "_tag": "Interface",
@@ -220,7 +220,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "export interface MssqlClientConfig {\n  readonly domain?: string | undefined\n  readonly server: string\n  readonly instanceName?: string | undefined\n  readonly encrypt?: boolean | undefined\n  readonly trustServer?: boolean | undefined\n  readonly port?: number | undefined\n  readonly authType?: string | undefined\n  readonly database?: string | undefined\n  readonly username?: string | undefined\n  readonly password?: Redacted.Redacted | undefined\n  readonly connectTimeout?: Duration.Input | undefined\n\n  readonly minConnections?: number | undefined\n  readonly maxConnections?: number | undefined\n  readonly connectionTTL?: Duration.Input | undefined\n\n  readonly parameterTypes?: Record<Statement.PrimitiveKind, DataType> | undefined\n\n  readonly spanAttributes?: Record<string, unknown> | undefined\n\n  readonly transformResultNames?: ((str: string) => string) | undefined\n  readonly transformQueryNames?: ((str: string) => string) | undefined\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/MssqlClient.ts#L228"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/MssqlClient.ts#L204"
   },
   {
     "_tag": "TypeAlias",
@@ -236,7 +236,7 @@
     "since": "4.0.0",
     "category": "type IDs",
     "signature": "type TypeId = typeof TypeId",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/MssqlClient.ts#L181"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/MssqlClient.ts#L157"
   },
   {
     "_tag": "Constant",
@@ -252,7 +252,7 @@
     "since": "4.0.0",
     "category": "constructors",
     "signature": "declare const run: <R>(options: Migrator.MigratorOptions<R>) => Effect.Effect<ReadonlyArray<readonly [id: number, name: string]>, SqlError | Migrator.MigrationError, Client.SqlClient | R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/MssqlMigrator.ts#L42"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/MssqlMigrator.ts#L29"
   },
   {
     "_tag": "Function",
@@ -268,7 +268,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layer: <R>(options: Migrator.MigratorOptions<R>) => Layer.Layer<never, SqlError | Migrator.MigrationError, Client.SqlClient | R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/MssqlMigrator.ts#L56"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/MssqlMigrator.ts#L43"
   },
   {
     "_tag": "Export",
@@ -284,7 +284,7 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * from \"effect/unstable/sql/Migrator\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/MssqlMigrator.ts#L34"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/MssqlMigrator.ts#L21"
   },
   {
     "_tag": "Constant",
@@ -300,7 +300,7 @@
     "since": "4.0.0",
     "category": "type IDs",
     "signature": "declare const TypeId: \"~@effect/sql-mssql/Parameter\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/Parameter.ts#L49"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/Parameter.ts#L24"
   },
   {
     "_tag": "Function",
@@ -316,7 +316,7 @@
     "since": "4.0.0",
     "category": "constructors",
     "signature": "declare const make: <A>(name: string, type: DataType, options?: ParameterOptions) => Parameter<A>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/Parameter.ts#L79"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/Parameter.ts#L54"
   },
   {
     "_tag": "Interface",
@@ -332,7 +332,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "export interface Parameter<out A> {\n  readonly [TypeId]: (_: never) => A\n  readonly _tag: \"Parameter\"\n  readonly name: string\n  readonly type: DataType\n  readonly options: ParameterOptions\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/Parameter.ts#L65"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/Parameter.ts#L40"
   },
   {
     "_tag": "TypeAlias",
@@ -348,7 +348,7 @@
     "since": "4.0.0",
     "category": "type IDs",
     "signature": "type TypeId = \"~@effect/sql-mssql/Parameter\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/Parameter.ts#L57"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/Parameter.ts#L32"
   },
   {
     "_tag": "Constant",
@@ -364,7 +364,7 @@
     "since": "4.0.0",
     "category": "type IDs",
     "signature": "declare const TypeId: \"~@effect/sql-mssql/Procedure\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/Procedure.ts#L50"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/Procedure.ts#L27"
   },
   {
     "_tag": "Function",
@@ -380,7 +380,7 @@
     "since": "4.0.0",
     "category": "constructors",
     "signature": "declare const make: (name: string) => Procedure<{}, {}>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/Procedure.ts#L148"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/Procedure.ts#L125"
   },
   {
     "_tag": "Function",
@@ -396,7 +396,7 @@
     "since": "4.0.0",
     "category": "combinators",
     "signature": "declare const param: <A>() => <N extends string, T extends DataType>(name: N, type: T, options?: ParameterOptions) => <I extends Record<string, Parameter.Parameter<any>>, O extends Record<string, Parameter.Parameter<any>>>(self: Procedure<I, O>) => Procedure<Simplify<I & { [K in N]: Parameter.Parameter<A>; }>, O>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/Procedure.ts#L162"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/Procedure.ts#L139"
   },
   {
     "_tag": "Function",
@@ -412,7 +412,7 @@
     "since": "4.0.0",
     "category": "combinators",
     "signature": "declare const outputParam: <A>() => <N extends string, T extends DataType>(name: N, type: T, options?: ParameterOptions) => <I extends Record<string, Parameter.Parameter<any>>, O extends Record<string, Parameter.Parameter<any>>>(self: Procedure<I, O>) => Procedure<I, Simplify<O & { [K in N]: Parameter.Parameter<A>; }>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/Procedure.ts#L187"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/Procedure.ts#L164"
   },
   {
     "_tag": "Function",
@@ -428,7 +428,7 @@
     "since": "4.0.0",
     "category": "combinators",
     "signature": "declare const withRows: <A extends object = Row>() => <I extends Record<string, Parameter.Parameter<any>>, O extends Record<string, Parameter.Parameter<any>>>(self: Procedure<I, O>) => Procedure<I, O, A>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/Procedure.ts#L212"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/Procedure.ts#L189"
   },
   {
     "_tag": "Function",
@@ -444,7 +444,7 @@
     "since": "4.0.0",
     "category": "combinators",
     "signature": "declare const compile: <I extends Record<string, Parameter.Parameter<any>>, O extends Record<string, Parameter.Parameter<any>>, A>(self: Procedure<I, O, A>) => (input: Procedure.ParametersRecord<I>) => ProcedureWithValues<I, O, A>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/Procedure.ts#L226"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/Procedure.ts#L203"
   },
   {
     "_tag": "Interface",
@@ -460,7 +460,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "export interface Procedure<\n  I extends Record<string, Parameter.Parameter<any>>,\n  O extends Record<string, Parameter.Parameter<any>>,\n  A = never\n> extends Pipeable {\n  readonly [TypeId]: {\n    readonly _A: Covariant<A>\n  }\n  readonly _tag: \"Procedure\"\n  readonly name: string\n  readonly params: I\n  readonly outputParams: O\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/Procedure.ts#L66"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/Procedure.ts#L43"
   },
   {
     "_tag": "Interface",
@@ -476,7 +476,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "export interface ProcedureWithValues<\n  I extends Record<string, Parameter.Parameter<any>>,\n  O extends Record<string, Parameter.Parameter<any>>,\n  A\n> extends Procedure<I, O, A> {\n  readonly values: Procedure.ParametersRecord<I>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/Procedure.ts#L86"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/Procedure.ts#L63"
   },
   {
     "_tag": "TypeAlias",
@@ -492,7 +492,7 @@
     "since": "4.0.0",
     "category": "type IDs",
     "signature": "type TypeId = \"~@effect/sql-mssql/Procedure\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/Procedure.ts#L58"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/Procedure.ts#L35"
   },
   {
     "_tag": "Interface",
@@ -508,7 +508,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "export interface Result<\n    O extends Record<string, Parameter.Parameter<any>>,\n    A\n  > {\n    readonly output: ParametersRecord<O>\n    readonly rows: ReadonlyArray<A>\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/Procedure.ts#L121"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/Procedure.ts#L98"
   },
   {
     "_tag": "TypeAlias",
@@ -524,6 +524,6 @@
     "since": "4.0.0",
     "category": "utility types",
     "signature": "type { readonly [K in keyof A]: A[K] extends Parameter.Parameter<infer T> ? T : never; } = & {\n      readonly [K in keyof A]: A[K] extends Parameter.Parameter<infer T> ? T\n        : never\n    }\n    & {}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/Procedure.ts#L106"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/Procedure.ts#L83"
   }
 ]

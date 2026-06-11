@@ -21,6 +21,6 @@ custom API URL, and want to provide `AnthropicClient` as a `Layer`.
 declare const layer: (options: Options) => Layer.Layer<AnthropicClient, never, HttpClient.HttpClient>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L406)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L380)
 
 Since v4.0.0

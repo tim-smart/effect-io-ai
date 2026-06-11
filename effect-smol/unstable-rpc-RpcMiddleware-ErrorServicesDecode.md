@@ -11,6 +11,6 @@ Extracts the decoding services required by a middleware's error schema.
 type ErrorServicesDecode<A> = ErrorSchema<A>["DecodingServices"]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcMiddleware.ts#L248)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcMiddleware.ts#L220)
 
 Since v4.0.0

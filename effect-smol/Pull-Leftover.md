@@ -24,6 +24,6 @@ type Leftover<P> = P extends Effect<infer _A, infer _E, infer _R> ? _E extends C
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pull.ts#L113)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pull.ts#L96)
 
 Since v4.0.0

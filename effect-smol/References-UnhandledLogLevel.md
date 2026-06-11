@@ -31,6 +31,6 @@ Providing `undefined` suppresses this report; it does not fall back to
 declare const UnhandledLogLevel: Context.Reference<Severity | undefined>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/References.ts#L732)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/References.ts#L683)
 
 Since v4.0.0

@@ -12,6 +12,6 @@ key.
 declare const prefix: { (prefix: string): (self: KeyValueStore) => KeyValueStore; (self: KeyValueStore, prefix: string): KeyValueStore; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/KeyValueStore.ts#L309)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/KeyValueStore.ts#L297)
 
 Since v4.0.0

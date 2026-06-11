@@ -15,6 +15,6 @@ Each field may be a single coercible value or an array of coercible values.
 type FormDataInput = Record<string, FormDataCoercible | ReadonlyArray<FormDataCoercible>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpBody.ts#L434)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpBody.ts#L390)
 
 Since v4.0.0

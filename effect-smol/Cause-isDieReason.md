@@ -31,6 +31,6 @@ console.log(dies[0].defect) // "defect"
 declare const isDieReason: <E>(self: Reason<E>) => self is Die
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L264)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L198)
 
 Since v4.0.0

@@ -12,6 +12,6 @@ the devtools tracer.
 declare const layerTracer: Layer.Layer<never, never, Socket.Socket>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DevToolsClient.ts#L258)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DevToolsClient.ts#L234)
 
 Since v4.0.0

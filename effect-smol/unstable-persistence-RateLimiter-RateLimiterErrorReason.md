@@ -11,6 +11,6 @@ Union of reasons carried by `RateLimiterError`.
 type RateLimiterErrorReason = RateLimitExceeded | RateLimitStoreError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RateLimiter.ts#L408)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RateLimiter.ts#L392)
 
 Since v4.0.0

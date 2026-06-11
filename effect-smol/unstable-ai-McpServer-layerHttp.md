@@ -26,6 +26,6 @@ and `RpcSerialization.layerJsonRpc()`.
 declare const layerHttp: (options: { readonly name: string; readonly version: string; readonly path: HttpRouter.PathInput; readonly extensions?: Record<`${string}/${string}`, unknown> | undefined; }) => Layer.Layer<McpServer | McpServerClient, never, HttpRouter.HttpRouter>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpServer.ts#L670)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpServer.ts#L656)
 
 Since v4.0.0

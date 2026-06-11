@@ -48,6 +48,6 @@ console.log(codeDoc.codes[0].runtime)
 declare const toCodeDocument: (multiDocument: MultiDocument, options?: { readonly reviver?: Reviver<Code> | undefined; }) => CodeDocument
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L2428)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L2354)
 
 Since v4.0.0

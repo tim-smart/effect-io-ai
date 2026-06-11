@@ -12,6 +12,6 @@ and `MessageStorage`.
 declare const layerHandlers: Layer.Layer<Handler<"Ping"> | Handler<"Notify"> | Handler<"Effect"> | Handler<"Stream"> | Handler<"Envelope">, never, Sharding.Sharding | MessageStorage.MessageStorage>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RunnerServer.ts#L55)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RunnerServer.ts#L40)
 
 Since v4.0.0

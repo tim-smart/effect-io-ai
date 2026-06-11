@@ -39,6 +39,6 @@ const program = Effect.gen(function*() {
 declare const dropping: <A, E = never>(capacity: number) => Effect<Queue<A, E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L619)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L562)
 
 Since v2.0.0

@@ -36,6 +36,6 @@ console.log(Product.combine(3, 5))
 declare const make: <A>(combine: (self: A, that: A) => A) => Combiner<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Combiner.ts#L132)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Combiner.ts#L81)
 
 Since v4.0.0

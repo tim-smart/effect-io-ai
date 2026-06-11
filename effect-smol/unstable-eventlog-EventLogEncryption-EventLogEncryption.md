@@ -17,6 +17,6 @@ replication.
 declare class EventLogEncryption
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogEncryption.ts#L88)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogEncryption.ts#L75)
 
 Since v4.0.0

@@ -22,6 +22,6 @@ export interface SpanOptionsNoTrace {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tracer.ts#L271)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tracer.ts#L241)
 
 Since v4.0.0

@@ -56,6 +56,6 @@ logExitCode(Exit.interrupt(123))
 declare const defaultTeardown: Teardown
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Runtime.ts#L165)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Runtime.ts#L117)
 
 Since v4.0.0

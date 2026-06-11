@@ -26,6 +26,6 @@ export interface Literals<L extends ReadonlyArray<SchemaAST.LiteralValue>>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4433)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4374)
 
 Since v4.0.0

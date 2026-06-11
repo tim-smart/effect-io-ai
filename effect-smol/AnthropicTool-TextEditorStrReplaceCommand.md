@@ -21,6 +21,6 @@ must be unique in the file.
 type TextEditorStrReplaceCommand = typeof TextEditorStrReplaceCommand.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1828)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1779)
 
 Since v4.0.0

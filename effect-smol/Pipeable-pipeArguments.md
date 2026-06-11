@@ -43,6 +43,6 @@ console.log(result) // 21
 declare const pipeArguments: <A>(self: A, args: IArguments) => unknown
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pipeable.ts#L574)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pipeable.ts#L563)
 
 Since v2.0.0

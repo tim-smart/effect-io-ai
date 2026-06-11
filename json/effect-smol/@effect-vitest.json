@@ -270,7 +270,7 @@
     "since": "4.0.0",
     "category": "testing",
     "signature": "declare const fail: (message: string) => void",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L52"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L31"
   },
   {
     "_tag": "Function",
@@ -286,7 +286,7 @@
     "since": "4.0.0",
     "category": "testing",
     "signature": "declare const deepStrictEqual: <A>(actual: A, expected: A, message?: string, ..._: Array<never>) => void",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L62"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L41"
   },
   {
     "_tag": "Function",
@@ -302,7 +302,7 @@
     "since": "4.0.0",
     "category": "testing",
     "signature": "declare const notDeepStrictEqual: <A>(actual: A, expected: A, message?: string, ..._: Array<never>) => void",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L72"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L51"
   },
   {
     "_tag": "Function",
@@ -318,7 +318,7 @@
     "since": "4.0.0",
     "category": "testing",
     "signature": "declare const strictEqual: <A>(actual: A, expected: A, message?: string, ..._: Array<never>) => void",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L82"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L61"
   },
   {
     "_tag": "Function",
@@ -334,7 +334,7 @@
     "since": "4.0.0",
     "category": "testing",
     "signature": "declare const assertEquals: <A>(actual: A, expected: A, message?: string, ..._: Array<never>) => void",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L92"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L71"
   },
   {
     "_tag": "Function",
@@ -350,7 +350,7 @@
     "since": "4.0.0",
     "category": "testing",
     "signature": "declare const doesNotThrow: (thunk: () => void, message?: string, ..._: Array<never>) => void",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L105"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L84"
   },
   {
     "_tag": "Function",
@@ -366,7 +366,7 @@
     "since": "4.0.0",
     "category": "testing",
     "signature": "declare const assertInstanceOf: <C extends abstract new (...args: any) => any>(value: unknown, constructor: C, message?: string, ..._: Array<never>) => asserts value is InstanceType<C>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L119"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L98"
   },
   {
     "_tag": "Function",
@@ -382,7 +382,7 @@
     "since": "4.0.0",
     "category": "testing",
     "signature": "declare const assertTrue: (self: unknown, message?: string, ..._: Array<never>) => asserts self",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L134"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L113"
   },
   {
     "_tag": "Function",
@@ -398,7 +398,7 @@
     "since": "4.0.0",
     "category": "testing",
     "signature": "declare const assertFalse: (self: boolean, message?: string, ..._: Array<never>) => void",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L144"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L123"
   },
   {
     "_tag": "Function",
@@ -414,7 +414,7 @@
     "since": "4.0.0",
     "category": "testing",
     "signature": "declare const assertInclude: (actual: string | undefined, expected: string, ..._: Array<never>) => void",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L154"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L133"
   },
   {
     "_tag": "Function",
@@ -430,7 +430,7 @@
     "since": "4.0.0",
     "category": "testing",
     "signature": "declare const assertMatch: (actual: string, regExp: RegExp, ..._: Array<never>) => void",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L168"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L147"
   },
   {
     "_tag": "Function",
@@ -446,7 +446,7 @@
     "since": "4.0.0",
     "category": "testing",
     "signature": "declare const throws: (thunk: () => void, error?: Error | ((u: unknown) => undefined), ..._: Array<never>) => void",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L180"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L159"
   },
   {
     "_tag": "Function",
@@ -462,7 +462,7 @@
     "since": "4.0.0",
     "category": "testing",
     "signature": "declare const throwsAsync: (thunk: () => Promise<void>, error?: Error | ((u: unknown) => undefined), ..._: Array<never>) => Promise<void>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L203"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L182"
   },
   {
     "_tag": "Function",
@@ -478,7 +478,7 @@
     "since": "4.0.0",
     "category": "testing",
     "signature": "declare const assertNone: <A>(option: Option.Option<A>, ..._: Array<never>) => asserts option is Option.None<never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L232"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L211"
   },
   {
     "_tag": "Function",
@@ -494,7 +494,7 @@
     "since": "4.0.0",
     "category": "testing",
     "signature": "declare const assertDefined: <A>(a: A | undefined, ..._: Array<never>) => asserts a is Exclude<A, undefined>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L242"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L221"
   },
   {
     "_tag": "Function",
@@ -510,7 +510,7 @@
     "since": "4.0.0",
     "category": "testing",
     "signature": "declare const assertUndefined: <A>(a: A | undefined, ..._: Array<never>) => asserts a is undefined",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L257"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L236"
   },
   {
     "_tag": "Function",
@@ -526,7 +526,7 @@
     "since": "4.0.0",
     "category": "testing",
     "signature": "declare const assertSome: <A>(option: Option.Option<A>, expected: A, ..._: Array<never>) => asserts option is Option.Some<A>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L272"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L251"
   },
   {
     "_tag": "Function",
@@ -542,7 +542,7 @@
     "since": "4.0.0",
     "category": "testing",
     "signature": "declare const assertSuccess: <A, E>(result: Result.Result<A, E>, expected: A, ..._: Array<never>) => asserts result is Result.Success<A, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L290"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L269"
   },
   {
     "_tag": "Function",
@@ -558,7 +558,7 @@
     "since": "4.0.0",
     "category": "testing",
     "signature": "declare const assertFailure: <A, E>(result: Result.Result<A, E>, expected: E, ..._: Array<never>) => asserts result is Result.Failure<never, E>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L304"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L283"
   },
   {
     "_tag": "Function",
@@ -574,7 +574,7 @@
     "since": "4.0.0",
     "category": "testing",
     "signature": "declare const assertExitFailure: <A, E>(exit: Exit.Exit<A, E>, expected: Cause.Cause<E>, ..._: Array<never>) => asserts exit is Exit.Failure<never, E>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L322"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L301"
   },
   {
     "_tag": "Function",
@@ -590,6 +590,6 @@
     "since": "4.0.0",
     "category": "testing",
     "signature": "declare const assertExitSuccess: <A, E>(exit: Exit.Exit<A, E>, expected: A, ..._: Array<never>) => asserts exit is Exit.Success<A, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L336"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L315"
   }
 ]

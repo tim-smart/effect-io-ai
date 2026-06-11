@@ -11,6 +11,6 @@ Error reason for the browser geolocation `PERMISSION_DENIED` failure.
 declare class PermissionDenied
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Geolocation.ts#L147)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Geolocation.ts#L124)
 
 Since v4.0.0

@@ -17,6 +17,6 @@ replies.
 declare class IncomingRequest<R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Message.ts#L105)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Message.ts#L89)
 
 Since v4.0.0

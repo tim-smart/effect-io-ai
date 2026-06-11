@@ -36,6 +36,6 @@ export interface SpanOptions extends Tracer.SpanOptions {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L2479)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L2447)
 
 Since v4.0.0

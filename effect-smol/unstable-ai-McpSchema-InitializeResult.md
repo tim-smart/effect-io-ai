@@ -11,6 +11,6 @@ Schema for the server's response to an initialize request from the client.
 declare class InitializeResult
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L701)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L682)
 
 Since v4.0.0

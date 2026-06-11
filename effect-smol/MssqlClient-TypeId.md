@@ -11,6 +11,6 @@ Type-level identifier used to mark `MssqlClient` values.
 type TypeId = typeof TypeId
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/MssqlClient.ts#L181)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/MssqlClient.ts#L157)
 
 Since v4.0.0

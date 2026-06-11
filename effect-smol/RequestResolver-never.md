@@ -25,6 +25,6 @@ unless the fiber is interrupted.
 declare const never: RequestResolver<never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RequestResolver.ts#L740)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RequestResolver.ts#L705)
 
 Since v2.0.0

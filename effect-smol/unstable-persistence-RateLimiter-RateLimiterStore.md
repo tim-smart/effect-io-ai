@@ -16,6 +16,6 @@ checks.
 declare class RateLimiterStore
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RateLimiter.ts#L499)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RateLimiter.ts#L483)
 
 Since v4.0.0

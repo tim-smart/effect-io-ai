@@ -15,6 +15,6 @@ type Return<Arg> = [Arg] extends [ReadonlyArray<Any>] ? ReturnTuple<Arg>
     : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L638)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L623)
 
 Since v4.0.0

@@ -11,6 +11,6 @@ Service for creating raw backing stores for persistence store ids.
 declare class BackingPersistence
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Persistence.ts#L119)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Persistence.ts#L103)
 
 Since v4.0.0

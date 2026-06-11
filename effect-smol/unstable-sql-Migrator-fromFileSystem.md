@@ -13,6 +13,6 @@ files named `<id>_<name>.js`, `<id>_<name>.ts`,
 declare const fromFileSystem: (directory: string) => Loader<FileSystem>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Migrator.ts#L441)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Migrator.ts#L406)
 
 Since v4.0.0

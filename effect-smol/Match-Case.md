@@ -27,6 +27,6 @@ how values are tested and transformed.
 type Case = When | Not
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L201)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L167)
 
 Since v4.0.0

@@ -16,6 +16,6 @@ by defining a method at this property key.
 declare const symbol: "~effect/cluster/DeliverAt"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DeliverAt.ts#L40)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DeliverAt.ts#L23)
 
 Since v4.0.0

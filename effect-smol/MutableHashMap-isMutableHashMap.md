@@ -27,6 +27,6 @@ The check does not validate the key or value types carried by the map.
 declare const isMutableHashMap: <K, V>(value: unknown) => value is MutableHashMap<K, V>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashMap.ts#L128)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableHashMap.ts#L99)
 
 Since v4.0.0

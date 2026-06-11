@@ -29,6 +29,6 @@ const program = Effect.gen(function*() {
 declare const timeLog: (label?: string, ...args: ReadonlyArray<any>) => Effect.Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Console.ts#L566)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Console.ts#L502)
 
 Since v2.0.0

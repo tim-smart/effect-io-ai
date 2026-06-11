@@ -31,6 +31,6 @@ type PForExclude<P> = [SafeRefinementR<ToSafeRefinement<P>>] extends [infer X] ?
     : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L2225)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Match.ts#L2191)
 
 Since v4.0.0

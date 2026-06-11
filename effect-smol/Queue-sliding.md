@@ -38,6 +38,6 @@ const program = Effect.gen(function*() {
 declare const sliding: <A, E = never>(capacity: number) => Effect<Queue<A, E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L583)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L526)
 
 Since v2.0.0

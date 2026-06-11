@@ -24,6 +24,6 @@ back to the parent.
 declare const forkMemoMapUnsafe: (parent: MemoMap) => MemoMap
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L529)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L497)
 
 Since v4.0.0

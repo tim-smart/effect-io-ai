@@ -20,6 +20,6 @@ export interface Duplicate<R extends Rpc.Any> {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MessageStorage.ts#L274)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MessageStorage.ts#L245)
 
 Since v4.0.0

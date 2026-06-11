@@ -39,6 +39,6 @@ const layer = Layer.sync(Database, () => ({
 declare const sync: { <I, S>(service: Context.Key<I, S>): (evaluate: LazyArg<S>) => Layer<I>; <I, S>(service: Context.Key<I, S>, evaluate: LazyArg<Types.NoInfer<S>>): Layer<I>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L922)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Layer.ts#L890)
 
 Since v2.0.0

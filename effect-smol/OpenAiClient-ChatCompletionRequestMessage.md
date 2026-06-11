@@ -20,6 +20,6 @@ type ChatCompletionRequestMessage = | {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L966)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L949)
 
 Since v4.0.0

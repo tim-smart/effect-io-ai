@@ -35,6 +35,6 @@ console.log(point) // [10, 20, "red"]
 declare const make: <Elements extends ReadonlyArray<unknown>>(...elements: Elements) => Elements
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tuple.ts#L105)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tuple.ts#L47)
 
 Since v2.0.0

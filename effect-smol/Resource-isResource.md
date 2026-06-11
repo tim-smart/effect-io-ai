@@ -20,6 +20,6 @@ This predicate narrows the input to `Resource<unknown, unknown>`.
 declare const isResource: (u: unknown) => u is Resource<unknown, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Resource.ts#L87)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Resource.ts#L62)
 
 Since v4.0.0

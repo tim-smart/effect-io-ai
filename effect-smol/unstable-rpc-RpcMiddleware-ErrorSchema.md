@@ -13,6 +13,6 @@ type ErrorSchema<A> = A extends { readonly [TypeId]: { readonly error: infer E }
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcMiddleware.ts#L222)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcMiddleware.ts#L194)
 
 Since v4.0.0

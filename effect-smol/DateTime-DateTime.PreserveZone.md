@@ -16,6 +16,6 @@ When the input type is `DateTime.Zoned`, the result type is
 type PreserveZone<A> = A extends Zoned ? Zoned : Utc
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L150)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L110)
 
 Since v3.6.0

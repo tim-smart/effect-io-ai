@@ -27,6 +27,6 @@ assert.deepStrictEqual(Boolean.or(false, false), false)
 declare const or: { (that: boolean): (self: boolean) => boolean; (self: boolean, that: boolean): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Boolean.ts#L308)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Boolean.ts#L261)
 
 Since v2.0.0

@@ -27,6 +27,6 @@ handler's services are added to the schema's decoding services.
 declare const catchDecodingWithContext: <S extends Top, R = never>(f: (issue: SchemaIssue.Issue) => Effect.Effect<Option_.Option<S["Type"]>, SchemaIssue.Issue, R>) => (self: S) => middlewareDecoding<S, S["DecodingServices"] | R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4935)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4876)
 
 Since v4.0.0

@@ -11,6 +11,6 @@ Creates a parameter for a resource URI template.
 declare const param: <const Name extends string, S extends Schema.Top>(name: Name, schema: S) => Param<Name, S>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L2528)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L2509)
 
 Since v4.0.0

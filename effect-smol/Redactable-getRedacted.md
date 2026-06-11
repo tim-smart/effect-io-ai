@@ -31,6 +31,6 @@ If no fiber is active, an empty `Context` is passed to the redaction method.
 declare const getRedacted: (redactable: Redactable) => unknown
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Redactable.ts#L213)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Redactable.ts#L155)
 
 Since v4.0.0

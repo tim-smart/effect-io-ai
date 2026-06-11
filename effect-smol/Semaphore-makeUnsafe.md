@@ -43,6 +43,6 @@ const program = Effect.all([
 declare const makeUnsafe: (permits: number) => Semaphore
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Semaphore.ts#L212)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Semaphore.ts#L190)
 
 Since v4.0.0

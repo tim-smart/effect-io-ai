@@ -32,6 +32,6 @@ string participates in routing identity.
 declare const make: (value: string) => EntityType
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EntityType.ts#L65)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EntityType.ts#L52)
 
 Since v4.0.0

@@ -26,6 +26,6 @@ Effect.runPromise(program)
 declare const make: <const As extends ReadonlyArray<any>>(...values: As) => Stream<As[number]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L921)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Stream.ts#L850)
 
 Since v2.0.0

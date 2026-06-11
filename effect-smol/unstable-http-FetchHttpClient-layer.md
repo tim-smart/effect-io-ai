@@ -36,6 +36,6 @@ request bodies are sent as Web streams with `duplex: "half"`, and any
 declare const layer: Layer.Layer<HttpClient.HttpClient, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FetchHttpClient.ts#L146)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FetchHttpClient.ts#L123)
 
 Since v4.0.0

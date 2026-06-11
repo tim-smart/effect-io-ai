@@ -18,6 +18,6 @@ strings.
 type Input = DateTime | Partial<Parts> | Instant | InstantWithZone | Date | number | string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L137)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L97)
 
 Since v3.6.0

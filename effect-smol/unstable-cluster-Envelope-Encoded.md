@@ -11,6 +11,6 @@ JSON-serializable form of a cluster envelope.
 type Encoded = PartialRequestEncoded | AckChunkEncoded | InterruptEncoded
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Envelope.ts#L64)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Envelope.ts#L49)
 
 Since v4.0.0

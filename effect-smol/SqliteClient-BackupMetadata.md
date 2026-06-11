@@ -14,6 +14,6 @@ export interface BackupMetadata {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-node/src/SqliteClient.ts#L107)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-node/src/SqliteClient.ts#L74)
 
 Since v4.0.0

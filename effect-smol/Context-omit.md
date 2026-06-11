@@ -42,6 +42,6 @@ assert.deepStrictEqual(Context.getOption(context, Timeout), Option.none())
 declare const omit: <S extends ReadonlyArray<Key<any, any>>>(...keys: S) => <Services>(self: Context<Services>) => Context<Exclude<Services, Service.Identifier<S[number]>>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L1279)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L1240)
 
 Since v2.0.0

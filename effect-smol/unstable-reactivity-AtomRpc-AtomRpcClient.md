@@ -85,6 +85,6 @@ export interface AtomRpcClient<Self, Id extends string, Rpcs extends Rpc.Any> ex
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AtomRpc.ts#L57)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AtomRpc.ts#L43)
 
 Since v4.0.0

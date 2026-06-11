@@ -11,6 +11,6 @@ Branded string type representing an entity type name.
 type EntityType = typeof EntityType.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EntityType.ts#L38)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EntityType.ts#L25)
 
 Since v4.0.0

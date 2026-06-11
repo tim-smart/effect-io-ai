@@ -11,6 +11,6 @@ Schema for the server's response to a completion/complete request.
 declare class CompleteResult
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1905)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1886)
 
 Since v4.0.0

@@ -22,6 +22,6 @@ output value by assigning that value to a field name.
 declare const bindTo: { <N extends string>(name: N): <OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>(self: Channel<OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>) => Channel<{ [K in N]: OutElem; }, OutErr, OutDone, InElem, InErr, InDone, Env>; <OutElem, OutErr, OutDone, InElem, InErr, InDone, Env, N extends string>(self: Channel<OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>, name: N): Channel<{ [K in N]: OutElem; }, OutErr, OutDone, InElem, InErr, InDone, Env>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L7692)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L7631)
 
 Since v4.0.0

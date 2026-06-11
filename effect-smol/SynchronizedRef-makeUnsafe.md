@@ -16,6 +16,6 @@ Effect workflow.
 declare const makeUnsafe: <A>(value: A) => SynchronizedRef<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SynchronizedRef.ts#L78)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SynchronizedRef.ts#L65)
 
 Since v4.0.0

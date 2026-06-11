@@ -17,6 +17,6 @@ type ErrorExitSchema<R> = SuccessSchema<R> extends RpcSchema.Stream<infer _A, in
   : ErrorSchema<R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L422)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L390)
 
 Since v4.0.0

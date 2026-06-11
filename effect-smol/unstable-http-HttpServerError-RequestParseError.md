@@ -15,6 +15,6 @@ When converted to a response it produces an empty `400` response.
 declare class RequestParseError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerError.ts#L115)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerError.ts#L91)
 
 Since v4.0.0

@@ -26,6 +26,6 @@ requested through `include`.
 type ReasoningItem = typeof ReasoningItem.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L345)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiSchema.ts#L315)
 
 Since v4.0.0

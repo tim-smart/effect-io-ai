@@ -44,6 +44,6 @@ assert.deepStrictEqual(Context.get(context, Timeout), { TIMEOUT: 5000 })
 declare const add: { <I, S>(key: Key<I, S>, service: Types.NoInfer<S>): <Services>(self: Context<Services>) => Context<Services | I>; <Services, I, S>(self: Context<Services>, key: Key<I, S>, service: Types.NoInfer<S>): Context<Services | I>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L725)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L686)
 
 Since v2.0.0

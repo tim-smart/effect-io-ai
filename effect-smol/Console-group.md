@@ -28,6 +28,6 @@ const program = Effect.gen(function*() {
 declare const group: (options?: { label?: string | undefined; collapsed?: boolean | undefined; } | undefined) => Effect.Effect<void, never, Scope>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Console.ts#L405)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Console.ts#L341)
 
 Since v2.0.0

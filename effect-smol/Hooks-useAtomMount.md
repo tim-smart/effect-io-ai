@@ -28,6 +28,6 @@ dependency changes.
 declare const useAtomMount: <A>(atom: Atom.Atom<A>) => void
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/Hooks.ts#L198)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/atom/react/src/Hooks.ts#L185)
 
 Since v4.0.0

@@ -6,6 +6,13 @@ Module: `Schema`<br />
 Derives a `fast-check` `Arbitrary` from a schema for property-based
 testing. The derived arbitrary generates values that satisfy the schema.
 
+**Details**
+
+Constraints refine base generators; candidates add weighted sources while
+filters still validate every value. `{ report: true }` returns warnings such
+as `OpaqueFilter`, while derivation errors remain fail-fast. Recursive
+schemas use terminal branches and fail when no finite terminal path exists.
+
 **Example** (Generating arbitrary values)
 
 ```ts
@@ -24,9 +31,9 @@ console.log(typeof sample.name) // "string"
 **Signature**
 
 ```ts
-declare const toArbitrary: <S extends Top>(schema: S) => FastCheck.Arbitrary<S["Type"]>
+declare const toArbitrary: { <S extends Top>(schema: S): FastCheck.Arbitrary<S["Type"]>; <S extends Top>(schema: S, options: { readonly report: true; }): Annotations.ToArbitrary.WithReport<FastCheck.Arbitrary<S["Type"]>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L12393)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L12520)
 
 Since v4.0.0

@@ -17,6 +17,6 @@ bypasses the provider.
 declare class EmbeddingUsage
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EmbeddingModel.ts#L106)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EmbeddingModel.ts#L69)
 
 Since v4.0.0

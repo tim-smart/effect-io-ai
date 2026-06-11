@@ -15,6 +15,6 @@ The check is based on the envelope type identifier.
 declare const isEnvelope: (u: unknown) => u is Envelope<any>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Envelope.ts#L341)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Envelope.ts#L326)
 
 Since v4.0.0

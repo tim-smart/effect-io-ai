@@ -22,6 +22,6 @@ Invalid JSON throws through `JSON.parse`. Parsed objects containing an own
 declare const unsafeSecureJsonParse: (text: string) => unknown
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L2002)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L1957)
 
 Since v4.0.0

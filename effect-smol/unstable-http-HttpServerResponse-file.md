@@ -16,6 +16,6 @@ options for status, headers, offset, and byte range.
 declare const file: (path: string, options?: (Options & { readonly bytesToRead?: FileSystem.SizeInput | undefined; readonly chunkSize?: FileSystem.SizeInput | undefined; readonly offset?: FileSystem.SizeInput | undefined; }) | undefined) => Effect.Effect<HttpServerResponse, PlatformError, HttpPlatform>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerResponse.ts#L516)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerResponse.ts#L483)
 
 Since v4.0.0

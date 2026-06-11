@@ -47,6 +47,6 @@ console.log(casUpdate(ref)) // true
 declare const compareAndSet: { <T>(oldValue: T, newValue: T): (self: MutableRef<T>) => boolean; <T>(self: MutableRef<T>, oldValue: T, newValue: T): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableRef.ts#L184)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/MutableRef.ts#L161)
 
 Since v2.0.0

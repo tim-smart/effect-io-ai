@@ -33,6 +33,6 @@ console.log(name) // "Alice"
 declare const get: { <S extends object, const K extends keyof S>(key: K): (self: S) => S[K]; <S extends object, const K extends keyof S>(self: S, key: K): S[K]; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Struct.ts#L198)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Struct.ts#L135)
 
 Since v2.0.0

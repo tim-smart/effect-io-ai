@@ -30,6 +30,6 @@ bash command to run.
 type CodeExecutionBashCommand = typeof CodeExecutionBashCommand.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L246)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L197)
 
 Since v4.0.0

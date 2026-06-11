@@ -39,6 +39,6 @@ console.log(invalidArgError.message)
 declare class InvalidValue
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/CliError.ts#L355)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/CliError.ts#L340)
 
 Since v4.0.0

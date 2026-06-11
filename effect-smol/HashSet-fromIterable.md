@@ -26,6 +26,6 @@ console.log(Array.from(fromString)) // ["h", "e", "l", "o"]
 declare const fromIterable: <V>(values: Iterable<V>) => HashSet<V>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashSet.ts#L203)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashSet.ts#L174)
 
 Since v2.0.0

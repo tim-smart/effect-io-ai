@@ -21,6 +21,6 @@ forwarding it to error reporting code.
 declare const isIgnored: (u: unknown) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ErrorReporter.ts#L420)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ErrorReporter.ts#L381)
 
 Since v4.0.0

@@ -27,6 +27,6 @@ export interface SchedulerDispatcher {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Scheduler.ts#L68)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Scheduler.ts#L57)
 
 Since v4.0.0

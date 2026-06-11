@@ -12,6 +12,6 @@ services it needs for file responses.
 declare const layer: Layer.Layer<Platform.HttpPlatform, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpPlatform.ts#L80)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpPlatform.ts#L66)
 
 Since v4.0.0

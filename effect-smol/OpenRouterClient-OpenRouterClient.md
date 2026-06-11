@@ -22,6 +22,6 @@ Effect's context.
 declare class OpenRouterClient
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterClient.ts#L113)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterClient.ts#L96)
 
 Since v4.0.0

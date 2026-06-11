@@ -21,6 +21,6 @@ const transform = Channel.toTransform(channel)
 declare const toTransform: <OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>(channel: Channel<OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>) => (upstream: Pull.Pull<InElem, InErr, InDone>, scope: Scope.Scope) => Effect.Effect<Pull.Pull<OutElem, OutErr, OutDone>, never, Env>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L485)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L424)
 
 Since v4.0.0

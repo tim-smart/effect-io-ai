@@ -30,6 +30,6 @@ const uppercaseFilter = Filter.make((s: string) =>
 declare const make: <Input, Pass, Fail>(f: (input: Input) => Result.Result<Pass, Fail>) => Filter<Input, Pass, Fail>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Filter.ts#L146)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Filter.ts#L121)
 
 Since v4.0.0

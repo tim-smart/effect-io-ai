@@ -13,6 +13,6 @@ export interface AssistantMessageEncoded extends BaseMessageEncoded<"assistant",
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1456)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1412)
 
 Since v4.0.0

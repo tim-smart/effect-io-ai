@@ -34,6 +34,6 @@ console.log(typeof buildUser) // "function"
 declare const hole: <T>() => T
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L1394)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Function.ts#L1356)
 
 Since v2.0.0

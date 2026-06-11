@@ -28,6 +28,6 @@ export interface HashRing<A extends PrimaryKey.PrimaryKey> extends Pipeable, Ite
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashRing.ts#L89)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashRing.ts#L39)
 
 Since v3.19.0

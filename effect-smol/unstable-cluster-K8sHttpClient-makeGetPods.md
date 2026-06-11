@@ -16,6 +16,6 @@ map keyed by pod IP address.
 declare const makeGetPods: (options?: { readonly namespace?: string | undefined; readonly labelSelector?: string | undefined; } | undefined) => Effect.Effect<Effect.Effect<Map<string, Pod>, HttpClientError.HttpClientError | Schema.SchemaError, never>, never, K8sHttpClient>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/K8sHttpClient.ts#L112)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/K8sHttpClient.ts#L80)
 
 Since v4.0.0

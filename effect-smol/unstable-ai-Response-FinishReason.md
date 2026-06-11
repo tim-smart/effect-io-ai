@@ -17,6 +17,6 @@ reasons.
 type FinishReason = typeof FinishReason.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L2386)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Response.ts#L2345)
 
 Since v4.0.0

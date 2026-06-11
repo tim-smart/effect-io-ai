@@ -16,6 +16,6 @@ configured maximum attempts is reached.
 declare const layerStoreMemory: Layer.Layer<PersistedQueueStore, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PersistedQueue.ts#L311)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/PersistedQueue.ts#L295)
 
 Since v4.0.0

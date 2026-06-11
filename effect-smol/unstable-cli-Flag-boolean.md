@@ -20,6 +20,6 @@ const verboseFlag = Flag.boolean("verbose")
 declare const boolean: (name: string) => Flag<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L82)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L72)
 
 Since v4.0.0

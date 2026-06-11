@@ -12,6 +12,6 @@ Undici `Agent` dispatcher.
 declare const layerUndici: Layer.Layer<Client.HttpClient, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L399)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L372)
 
 Since v4.0.0

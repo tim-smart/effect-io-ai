@@ -16,6 +16,6 @@ replying with decoded replies.
 declare class IncomingRequestLocal<R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Message.ts#L122)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Message.ts#L106)
 
 Since v4.0.0

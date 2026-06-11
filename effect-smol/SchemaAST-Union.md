@@ -42,10 +42,11 @@ declare class Union<A> { constructor(
     annotations?: Schema.Annotations.Annotations,
     checks?: Checks,
     encoding?: Encoding,
-    context?: Context
+    context?: Context,
+    encodingChecks?: Checks
   ) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L2553)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L2536)
 
 Since v3.10.0

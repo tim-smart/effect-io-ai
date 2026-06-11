@@ -36,6 +36,6 @@ const withZero = SchemaGetter.withDefault(Effect.succeed(0))
 declare const withDefault: <T, R = never>(defaultValue: Effect.Effect<T, SchemaIssue.Issue, R>) => Getter<T, T | undefined, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L711)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L637)
 
 Since v4.0.0

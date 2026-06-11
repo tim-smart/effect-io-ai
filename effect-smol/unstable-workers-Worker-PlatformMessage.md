@@ -12,6 +12,6 @@ Internal worker platform protocol message: `[0]` signals readiness and
 type PlatformMessage = readonly [ready: 0] | readonly [data: 1, unknown]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Worker.ts#L120)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Worker.ts#L92)
 
 Since v4.0.0

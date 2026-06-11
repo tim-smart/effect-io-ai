@@ -25,6 +25,6 @@ assert.deepStrictEqual(Boolean.isBoolean("true"), false)
 declare const isBoolean: (input: unknown) => input is boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Boolean.ts#L119)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Boolean.ts#L72)
 
 Since v2.0.0

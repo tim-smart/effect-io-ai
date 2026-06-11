@@ -33,6 +33,6 @@ stream and heartbeat.
 declare const make: Effect.Effect<{ readonly sendUnsafe: (_: DevToolsSchema.Span | DevToolsSchema.SpanEvent) => void; }, never, Scope.Scope | Socket.Socket>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DevToolsClient.ts#L165)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DevToolsClient.ts#L141)
 
 Since v4.0.0

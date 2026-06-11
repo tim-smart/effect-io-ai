@@ -15,10 +15,9 @@ This check corresponds to the `minProperties` constraint in JSON Schema.
 
 Arbitrary:
 
-When generating test data with fast-check, this applies a `minLength`
-constraint to the array of entries that is generated before being converted
-to an object, ensuring the resulting object has at least the required number
-of properties.
+When generating test data with fast-check, this applies a node-local
+`minLength` constraint. Object generators interpret it as the final number
+of own properties.
 
 **Signature**
 
@@ -26,6 +25,6 @@ of properties.
 declare const isMinProperties: (minProperties: number, annotations?: Annotations.Filter) => SchemaAST.Filter<object>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7925)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7811)
 
 Since v4.0.0

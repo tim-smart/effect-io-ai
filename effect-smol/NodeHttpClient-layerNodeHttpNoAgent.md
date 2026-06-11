@@ -12,6 +12,6 @@ service.
 declare const layerNodeHttpNoAgent: Layer.Layer<Client.HttpClient, never, HttpAgent>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L678)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L651)
 
 Since v4.0.0

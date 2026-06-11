@@ -22,6 +22,6 @@ exposing issue details.
 declare const is: <T>(schema: Schema.Schema<T>) => <I>(input: I) => input is I & T
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L180)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L146)
 
 Since v3.10.0

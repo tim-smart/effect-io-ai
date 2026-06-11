@@ -44,6 +44,6 @@ console.log(result)
 declare const bind: { <N extends string, A extends object, B, L2>(name: Exclude<N, keyof A>, f: (a: NoInfer<A>) => Result<B, L2>): <L1>(self: Result<A, L1>) => Result<{ [K in N | keyof A]: K extends keyof A ? A[K] : B; }, L1 | L2>; <A extends object, L1, N extends string, B, L2>(self: Result<A, L1>, name: Exclude<N, keyof A>, f: (a: NoInfer<A>) => Result<B, L2>): Result<{ [K in N | keyof A]: K extends keyof A ? A[K] : B; }, L1 | L2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1713)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1655)
 
 Since v2.0.0

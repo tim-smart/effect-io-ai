@@ -14,6 +14,6 @@ type { [K in keyof MergeRecords<Tools<Toolkits[number]>>]: MergeRecords<Tools<To
 >
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Toolkit.ts#L575)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Toolkit.ts#L506)
 
 Since v4.0.0

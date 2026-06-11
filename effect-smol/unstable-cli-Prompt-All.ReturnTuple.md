@@ -15,6 +15,6 @@ type Prompt<T[number] extends never ? [] : { -readonly [K in keyof T]: [T[K]] ex
   > extends infer X ? X : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L612)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L597)
 
 Since v4.0.0

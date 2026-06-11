@@ -11,6 +11,6 @@ Represents an entire encoded event-log payload in one transport frame.
 declare class SingleMessage
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogMessage.ts#L163)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogMessage.ts#L147)
 
 Since v4.0.0

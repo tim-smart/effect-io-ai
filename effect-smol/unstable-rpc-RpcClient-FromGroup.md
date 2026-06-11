@@ -12,6 +12,6 @@ Derives the object-shaped RPC client type for all RPCs contained in an
 type { [K in keyof RpcClient.From<RpcGroup.Rpcs<Group>, E>]: RpcClient.From<RpcGroup.Rpcs<Group>, E>[K]; } = RpcClient<RpcGroup.Rpcs<Group>, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcClient.ts#L231)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcClient.ts#L205)
 
 Since v4.0.0

@@ -30,6 +30,6 @@ console.log(getUserById("alice")) // Option.some({ name: "Alice", age: 30 })
 type Key<T> = [T] extends [HashMap<infer _K, infer _V>] ? _K : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L203)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L140)
 
 Since v2.0.0

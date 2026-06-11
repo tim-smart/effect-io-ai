@@ -11,6 +11,6 @@ Creates a waiting result from an optional previous result, using `Initial(true)`
 declare const waitingFrom: <A, E>(previous: Option.Option<AsyncResult<A, E>>) => AsyncResult<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AsyncResult.ts#L218)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AsyncResult.ts#L186)
 
 Since v4.0.0

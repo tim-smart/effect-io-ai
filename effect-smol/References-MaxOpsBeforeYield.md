@@ -24,6 +24,6 @@ The default value is `2048` operations.
 declare const MaxOpsBeforeYield: Context.Reference<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/References.ts#L123)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/References.ts#L74)
 
 Since v4.0.0

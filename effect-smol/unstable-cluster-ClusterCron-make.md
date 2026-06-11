@@ -17,6 +17,6 @@ and skipping stale scheduled runs.
 declare const make: <E, R>(options: { readonly name: string; readonly cron: Cron.Cron; readonly execute: Effect.Effect<void, E, R>; readonly shardGroup?: string | undefined; readonly calculateNextRunFromPrevious?: boolean | undefined; readonly skipIfOlderThan?: Duration.Input | undefined; }) => Layer.Layer<never, never, Sharding | Exclude<R, Scope>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ClusterCron.ts#L63)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ClusterCron.ts#L43)
 
 Since v4.0.0

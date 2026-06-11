@@ -16,6 +16,6 @@ API for a scoped effect.
 declare const AsyncQuery: Context.Reference<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-react-native/src/SqliteClient.ts#L123)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-react-native/src/SqliteClient.ts#L99)
 
 Since v4.0.0

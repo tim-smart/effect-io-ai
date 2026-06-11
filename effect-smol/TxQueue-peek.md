@@ -44,6 +44,6 @@ const errorExample = Effect.gen(function*() {
 declare const peek: <A, E>(self: TxDequeue<A, E>) => Effect.Effect<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L1059)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxQueue.ts#L1019)
 
 Since v2.0.0

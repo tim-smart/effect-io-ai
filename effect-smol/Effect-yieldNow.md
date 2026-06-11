@@ -25,6 +25,6 @@ Effect.runPromise(program)
 declare const yieldNow: Effect<void, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1767)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1700)
 
 Since v2.0.0

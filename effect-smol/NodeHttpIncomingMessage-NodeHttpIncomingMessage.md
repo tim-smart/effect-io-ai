@@ -25,6 +25,6 @@ declare class NodeHttpIncomingMessage<E> { constructor(
   ) }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpIncomingMessage.ts#L56)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpIncomingMessage.ts#L41)
 
 Since v4.0.0

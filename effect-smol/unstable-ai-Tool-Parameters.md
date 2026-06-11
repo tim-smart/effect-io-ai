@@ -16,6 +16,6 @@ type Parameters<T> = T extends Tool<
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L754)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L709)
 
 Since v4.0.0

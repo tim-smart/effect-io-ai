@@ -65,6 +65,6 @@ type Flat<Rpcs, E> = <
     never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcClient.ts#L168)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcClient.ts#L142)
 
 Since v4.0.0

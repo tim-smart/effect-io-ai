@@ -20,6 +20,6 @@ pipe("abc", String.charAt(4)) // Option.none()
 declare const charAt: { (index: number): (self: string) => Option.Option<string>; (self: string, index: number): Option.Option<string>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L656)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L598)
 
 Since v2.0.0

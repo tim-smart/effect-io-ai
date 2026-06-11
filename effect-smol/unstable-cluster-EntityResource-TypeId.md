@@ -11,6 +11,6 @@ Literal type of the `EntityResource` type identifier.
 type TypeId = "~effect/cluster/EntityResource"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EntityResource.ts#L52)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EntityResource.ts#L38)
 
 Since v4.0.0

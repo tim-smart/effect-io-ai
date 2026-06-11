@@ -21,6 +21,6 @@ building or comparing `SchemaAST` values directly.
 declare const objectKeyword: ObjectKeyword
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L1049)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L997)
 
 Since v3.10.0

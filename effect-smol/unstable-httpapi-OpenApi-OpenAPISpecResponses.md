@@ -11,6 +11,6 @@ Generated OpenAPI responses object, keyed by HTTP status code.
 type OpenAPISpecResponses = Record<number, OpenApiSpecResponse>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OpenApi.ts#L901)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OpenApi.ts#L867)
 
 Since v4.0.0

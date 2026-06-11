@@ -16,6 +16,6 @@ The result type defaults to `void` and can be refined with
 declare const script: <Params extends ReadonlyArray<any>>(f: (...params: Params) => ReadonlyArray<unknown>, options: { readonly lua: string; readonly numberOfKeys: number | ((...params: Params) => number); }) => Script<{ params: Params; result: void; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Redis.ts#L200)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Redis.ts#L174)
 
 Since v4.0.0

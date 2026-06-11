@@ -11,6 +11,6 @@ Creates a `Persistence` layer backed by IndexedDB, optionally using the provided
 declare const layerIndexedDb: (options?: { readonly database?: string | undefined; }) => Layer.Layer<Persistence.Persistence>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserPersistence.ts#L121)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserPersistence.ts#L79)
 
 Since v4.0.0

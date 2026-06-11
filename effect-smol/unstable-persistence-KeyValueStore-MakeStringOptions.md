@@ -37,6 +37,6 @@ type MakeStringOptions = Partial<Omit<KeyValueStore, "set">> & {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/KeyValueStore.ts#L159)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/KeyValueStore.ts#L147)
 
 Since v4.0.0

@@ -13,6 +13,6 @@ finalization before terminating on timeout.
 declare const layerPlatform: Layer.Layer<Worker.WorkerPlatform, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunWorker.ts#L70)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunWorker.ts#L44)
 
 Since v4.0.0

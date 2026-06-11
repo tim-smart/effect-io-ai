@@ -38,6 +38,6 @@ const str: string = labelIso.get(label) // "world"
 declare const makeIso: <N extends Newtype.Any>() => Optic.Iso<N, Newtype.Carrier<N>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Newtype.ts#L230)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Newtype.ts#L177)
 
 Since v4.0.0

@@ -84,6 +84,6 @@ const program = Effect.gen(function*() {
 type Type = "Counter" | "Frequency" | "Gauge" | "Histogram" | "Summary"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L1125)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L1052)
 
 Since v4.0.0

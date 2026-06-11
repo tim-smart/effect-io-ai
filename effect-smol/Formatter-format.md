@@ -78,6 +78,6 @@ console.log(Formatter.format(obj))
 declare const format: (input: unknown, options?: { readonly space?: number | string | undefined; readonly ignoreToString?: boolean | undefined; }) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Formatter.ts#L159)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Formatter.ts#L116)
 
 Since v2.0.0

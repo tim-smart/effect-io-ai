@@ -28,6 +28,6 @@ console.log(HashMap.get(updated, "a")) // Option.some(2)
 type UpdateFn<V> = (option: Option<V>) => Option<V>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L176)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L113)
 
 Since v2.0.0

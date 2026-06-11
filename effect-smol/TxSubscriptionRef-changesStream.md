@@ -37,6 +37,6 @@ const program = Effect.gen(function*() {
 declare const changesStream: <A>(self: TxSubscriptionRef<A>) => Stream.Stream<A, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSubscriptionRef.ts#L510)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxSubscriptionRef.ts#L482)
 
 Since v3.10.0

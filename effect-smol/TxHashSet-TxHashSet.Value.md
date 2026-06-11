@@ -28,6 +28,6 @@ console.log(processFruit("apple")) // Processing apple
 type Value<T> = T extends TxHashSet<infer V> ? V : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashSet.ts#L152)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TxHashSet.ts#L143)
 
 Since v4.0.0

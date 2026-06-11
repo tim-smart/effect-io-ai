@@ -11,6 +11,6 @@ SQL error reason for a non-unique constraint violation; not marked retryable.
 declare class ConstraintError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SqlError.ts#L197)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SqlError.ts#L172)
 
 Since v4.0.0

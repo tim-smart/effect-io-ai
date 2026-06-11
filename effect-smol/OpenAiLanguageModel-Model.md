@@ -11,6 +11,6 @@ OpenAI model identifiers supported by the Responses API language model.
 type Model = typeof ResponseModelIds.Encoded | typeof SharedModelIds.Encoded
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiLanguageModel.ts#L79)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiLanguageModel.ts#L51)
 
 Since v4.0.0

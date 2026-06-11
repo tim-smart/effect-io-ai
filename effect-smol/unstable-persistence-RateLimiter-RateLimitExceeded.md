@@ -15,6 +15,6 @@ Includes the affected key, limit, remaining token count, and retry delay.
 declare class RateLimitExceeded
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RateLimiter.ts#L369)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RateLimiter.ts#L353)
 
 Since v4.0.0

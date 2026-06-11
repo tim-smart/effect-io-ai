@@ -37,6 +37,6 @@ type AnthropicTool = | ReturnType<typeof Bash_20241022>
   | ReturnType<typeof WebSearch_20250305>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L80)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L31)
 
 Since v4.0.0

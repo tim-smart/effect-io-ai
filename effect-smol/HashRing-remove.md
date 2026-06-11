@@ -30,6 +30,6 @@ This mutates and returns the same ring instance.
 declare const remove: { <A extends PrimaryKey.PrimaryKey>(node: A): (self: HashRing<A>) => HashRing<A>; <A extends PrimaryKey.PrimaryKey>(self: HashRing<A>, node: A): HashRing<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashRing.ts#L290)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashRing.ts#L240)
 
 Since v3.19.0

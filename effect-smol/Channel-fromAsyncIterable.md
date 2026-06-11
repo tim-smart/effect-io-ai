@@ -18,6 +18,6 @@ iterator has a `return` method, that method is called.
 declare const fromAsyncIterable: <A, D, E>(iterable: AsyncIterable<A, D>, onError: (error: unknown) => E) => Channel<A, E, D>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L1748)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Channel.ts#L1687)
 
 Since v4.0.0

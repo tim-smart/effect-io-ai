@@ -28,6 +28,6 @@ const program = Effect.gen(function*() {
 declare const currentTimeNanos: Effect<bigint, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Clock.ts#L246)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Clock.ts#L194)
 
 Since v2.0.0

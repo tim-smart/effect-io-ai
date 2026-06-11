@@ -17,6 +17,6 @@ preserving emitted batches, ordinary failures, and completion values.
 declare const toPull: <A, E, Done>(take: Take<A, E, Done>) => Pull.Pull<NonEmptyReadonlyArray<A>, E, Done>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Take.ts#L67)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Take.ts#L43)
 
 Since v4.0.0

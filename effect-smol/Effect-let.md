@@ -29,6 +29,6 @@ the record, the computed value replaces it in the returned type.
 declare const let: { <N extends string, A extends Record<string, any>, B>(name: N, f: (a: NoInfer<A>) => B): <E, R>(self: Effect<A, E, R>) => Effect<Simplify<Omit<A, N> & Record<N, B>>, E, R>; <A extends Record<string, any>, E, R, B, N extends string>(self: Effect<A, E, R>, name: N, f: (a: NoInfer<A>) => B): Effect<Simplify<Omit<A, N> & Record<N, B>>, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1373)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1306)
 
 Since v2.0.0

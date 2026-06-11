@@ -12,6 +12,6 @@ cluster.
 declare class RunnerStorage
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RunnerStorage.ts#L45)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RunnerStorage.ts#L30)
 
 Since v4.0.0

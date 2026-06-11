@@ -49,6 +49,6 @@ const program = Effect.gen(function*() {
 declare const value: <Input, State>(self: Metric<Input, State>) => Effect<State>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L2752)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Metric.ts#L2679)
 
 Since v2.0.0

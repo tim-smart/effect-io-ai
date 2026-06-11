@@ -20,6 +20,6 @@ console.log(String.Equivalence("hello", "world")) // false
 declare const Equivalence: Equ.Equivalence<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L154)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L96)
 
 Since v2.0.0

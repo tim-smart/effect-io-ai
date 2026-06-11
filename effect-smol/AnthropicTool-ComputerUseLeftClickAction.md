@@ -11,6 +11,6 @@ Computer-use action payload for performing a left click, optionally at a specifi
 type ComputerUseLeftClickAction = typeof ComputerUseLeftClickAction.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L731)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L682)
 
 Since v4.0.0

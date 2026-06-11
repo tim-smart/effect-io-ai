@@ -40,6 +40,6 @@ export interface Context<in Services> extends Equal.Equal, Pipeable, Inspectable
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L496)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L457)
 
 Since v2.0.0

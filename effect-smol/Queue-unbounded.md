@@ -39,6 +39,6 @@ const program = Effect.gen(function*() {
 declare const unbounded: <A, E = never>() => Effect<Queue<A, E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L656)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Queue.ts#L599)
 
 Since v2.0.0

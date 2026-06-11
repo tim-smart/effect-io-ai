@@ -27,6 +27,6 @@ const toCamel = SchemaGetter.snakeToCamel<string>()
 declare const snakeToCamel: <E extends string>() => Getter<string, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L955)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L881)
 
 Since v4.0.0

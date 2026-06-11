@@ -31,6 +31,6 @@ type AnyPredicate = Predicate.Predicate.Any
 type Any = Predicate<any>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L251)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Predicate.ts#L196)
 
 Since v3.6.0

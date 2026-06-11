@@ -11,6 +11,6 @@ Extracts the success value type from a persistable request.
 type Success<A> = A["~effect/persistence/Persistable"]["success"]["Type"]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Persistable.ts#L83)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Persistable.ts#L69)
 
 Since v4.0.0

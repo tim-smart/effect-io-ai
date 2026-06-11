@@ -87,6 +87,6 @@ export interface TestClock extends Clock.Clock {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TestClock.ts#L105)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TestClock.ts#L90)
 
 Since v2.0.0

@@ -16,6 +16,6 @@ The `replyId` identifies the chunk reply that has been received.
 declare class AckChunk
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Envelope.ts#L169)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Envelope.ts#L154)
 
 Since v4.0.0

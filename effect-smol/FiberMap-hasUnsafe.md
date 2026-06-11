@@ -28,6 +28,6 @@ const program = Effect.gen(function*() {
 declare const hasUnsafe: { <K>(key: K): <A, E>(self: FiberMap<K, A, E>) => boolean; <K, A, E>(self: FiberMap<K, A, E>, key: K): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberMap.ts#L593)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FiberMap.ts#L566)
 
 Since v4.0.0

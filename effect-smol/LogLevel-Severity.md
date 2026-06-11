@@ -25,6 +25,6 @@ including sentinels
 type Severity = "Fatal" | "Error" | "Warn" | "Info" | "Debug" | "Trace"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LogLevel.ts#L111)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LogLevel.ts#L80)
 
 Since v4.0.0

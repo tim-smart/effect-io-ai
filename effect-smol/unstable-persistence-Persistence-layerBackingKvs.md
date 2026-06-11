@@ -16,6 +16,6 @@ optional expiration timestamps.
 declare const layerBackingKvs: Layer.Layer<BackingPersistence, never, KeyValueStore.KeyValueStore>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Persistence.ts#L933)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Persistence.ts#L917)
 
 Since v4.0.0

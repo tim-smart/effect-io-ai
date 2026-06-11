@@ -40,6 +40,6 @@ const stringify = SchemaGetter.stringifyJson()
 declare const stringifyJson: (options?: StringifyJsonOptions) => Getter<string, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1113)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1039)
 
 Since v4.0.0

@@ -34,6 +34,6 @@ console.log(First.combine(1, 2))
 declare const first: <A>() => Combiner<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Combiner.ts#L266)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Combiner.ts#L215)
 
 Since v4.0.0

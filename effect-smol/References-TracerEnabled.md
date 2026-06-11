@@ -54,6 +54,6 @@ const tracingControl = Effect.gen(function*() {
 declare const TracerEnabled: Context.Reference<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/References.ts#L533)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/References.ts#L484)
 
 Since v4.0.0

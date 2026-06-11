@@ -47,6 +47,6 @@ console.log(missing) // undefined
 declare const resolve$ref: ($ref: string, definitions: Definitions) => JsonSchema | undefined
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonSchema.ts#L970)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonSchema.ts#L894)
 
 Since v4.0.0

@@ -45,6 +45,6 @@ export interface Connection {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SqlConnection.ts#L38)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SqlConnection.ts#L26)
 
 Since v4.0.0

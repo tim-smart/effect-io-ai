@@ -28,6 +28,6 @@ therefore produces `{}` for ordinary non-empty inputs.
 declare const makeReducerIntersection: <K extends string, A>(combiner: Combiner.Combiner<A>) => Reducer.Reducer<Record<K, A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L1569)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Record.ts#L1504)
 
 Since v4.0.0

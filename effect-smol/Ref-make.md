@@ -31,6 +31,6 @@ const program = Effect.gen(function*() {
 declare const make: <A>(value: A) => Effect.Effect<Ref<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ref.ts#L227)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Ref.ts#L186)
 
 Since v2.0.0

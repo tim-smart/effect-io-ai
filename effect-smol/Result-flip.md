@@ -39,6 +39,6 @@ console.log(Result.flip(Result.fail("error")))
 declare const flip: <A, E>(self: Result<A, E>) => Result<E, A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1579)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Result.ts#L1521)
 
 Since v2.0.0

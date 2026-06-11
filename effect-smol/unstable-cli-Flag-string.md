@@ -20,6 +20,6 @@ const nameFlag = Flag.string("name")
 declare const string: (name: string) => Flag<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L65)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L55)
 
 Since v4.0.0

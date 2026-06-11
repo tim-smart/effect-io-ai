@@ -45,6 +45,6 @@ export interface TypeClass<F extends TypeLambda> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HKT.ts#L136)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HKT.ts#L94)
 
 Since v2.0.0

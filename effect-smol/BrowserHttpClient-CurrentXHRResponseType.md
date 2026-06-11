@@ -21,6 +21,6 @@ or raw `ArrayBuffer` values.
 declare const CurrentXHRResponseType: Context.Reference<XHRResponseType>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserHttpClient.ts#L113)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserHttpClient.ts#L93)
 
 Since v4.0.0

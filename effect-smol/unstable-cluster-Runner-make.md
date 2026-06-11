@@ -33,6 +33,6 @@ pass trusted `RunnerAddress`, `groups`, and `weight` values.
 declare const make: (props: { readonly address: RunnerAddress; readonly groups: ReadonlyArray<string>; readonly weight: number; }) => Runner
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Runner.ts#L157)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Runner.ts#L125)
 
 Since v4.0.0

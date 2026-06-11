@@ -12,6 +12,6 @@ that is not assigned to the receiving runner.
 declare class EntityNotAssignedToRunner
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ClusterError.ts#L63)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ClusterError.ts#L28)
 
 Since v4.0.0

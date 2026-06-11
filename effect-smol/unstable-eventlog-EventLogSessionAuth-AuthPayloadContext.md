@@ -17,6 +17,6 @@ event-log session authentication payloads.
 declare const AuthPayloadContext: "eventlog-auth-v1"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogSessionAuth.ts#L60)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogSessionAuth.ts#L31)
 
 Since v4.0.0

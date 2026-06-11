@@ -12,6 +12,6 @@ child process spawning, filesystem, path, stdio, and terminal services.
 type NodeServices = ChildProcessSpawner | Crypto | FileSystem | Path | Stdio | Terminal
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeServices.ts#L57)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeServices.ts#L32)
 
 Since v4.0.0

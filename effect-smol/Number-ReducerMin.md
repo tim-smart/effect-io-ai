@@ -29,6 +29,6 @@ The reducer starts from `Infinity`, so reducing an empty collection returns
 declare const ReducerMin: Reducer.Reducer<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L911)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Number.ts#L860)
 
 Since v4.0.0

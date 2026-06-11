@@ -63,6 +63,6 @@ console.log(Formatter.formatJson({ name: "Alice", age: 30 }, { space: 2 }))
 declare const formatJson: (input: unknown, options?: { readonly space?: number | string | undefined; }) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Formatter.ts#L340)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Formatter.ts#L297)
 
 Since v4.0.0

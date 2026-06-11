@@ -13,6 +13,6 @@ error options.
 declare const layerWebSocket: (url: string | Effect<string>, options?: { readonly closeCodeIsError?: ((code: number) => boolean) | undefined; readonly openTimeout?: Duration.Input | undefined; readonly protocols?: string | Array<string> | undefined; } | undefined) => Layer.Layer<Socket.Socket, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunSocket.ts#L55)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunSocket.ts#L43)
 
 Since v4.0.0

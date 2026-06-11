@@ -16,6 +16,6 @@ completion tokens, and total tokens.
 declare const UsageInfo: Schema.Struct<{ readonly promptTokens: Schema.optional<Schema.Number>; readonly completionTokens: Schema.optional<Schema.Number>; readonly totalTokens: Schema.optional<Schema.Number>; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L377)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AiError.ts#L308)
 
 Since v4.0.0

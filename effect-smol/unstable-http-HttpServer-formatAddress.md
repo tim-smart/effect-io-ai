@@ -16,6 +16,6 @@ formatted as `unix://path`.
 declare const formatAddress: (address: Address) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServer.ts#L239)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServer.ts#L216)
 
 Since v4.0.0

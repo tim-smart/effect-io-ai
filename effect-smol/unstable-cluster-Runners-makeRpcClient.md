@@ -12,6 +12,6 @@ Builds a runner RPC client from the current `RpcClient.Protocol`, using the
 declare const makeRpcClient: Effect.Effect<RpcClient, never, Scope | RpcClient_.Protocol>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Runners.ts#L543)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Runners.ts#L522)
 
 Since v4.0.0

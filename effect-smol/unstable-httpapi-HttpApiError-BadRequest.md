@@ -12,6 +12,6 @@ a server response, it renders as an empty response with status 400.
 declare class BadRequest
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiError.ts#L72)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiError.ts#L41)
 
 Since v4.0.0

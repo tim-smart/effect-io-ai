@@ -17,6 +17,6 @@ type ResultDecodingServices<T> = T extends Tool<
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L964)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L919)
 
 Since v4.0.0

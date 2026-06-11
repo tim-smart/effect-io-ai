@@ -12,6 +12,6 @@ of result rows than requests.
 declare class ResultLengthMismatch
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SqlError.ts#L601)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SqlError.ts#L576)
 
 Since v4.0.0

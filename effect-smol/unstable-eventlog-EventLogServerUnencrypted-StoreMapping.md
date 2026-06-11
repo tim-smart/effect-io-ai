@@ -17,6 +17,6 @@ before authorizing or serving unencrypted event-log requests.
 declare class StoreMapping
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogServerUnencrypted.ts#L323)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogServerUnencrypted.ts#L295)
 
 Since v4.0.0

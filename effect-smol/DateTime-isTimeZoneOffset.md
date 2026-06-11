@@ -21,6 +21,6 @@ fixed-offset variant before reading its offset in milliseconds.
 declare const isTimeZoneOffset: (u: unknown) => u is TimeZone.Offset
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L489)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DateTime.ts#L449)
 
 Since v3.6.0

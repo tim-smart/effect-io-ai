@@ -11,6 +11,6 @@ Error raised by persistence and backing-store operations.
 declare class PersistenceError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Persistence.ts#L52)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Persistence.ts#L36)
 
 Since v4.0.0

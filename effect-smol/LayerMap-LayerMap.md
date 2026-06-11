@@ -70,6 +70,6 @@ export interface LayerMap<in out K, in out I, in out E = never> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LayerMap.ts#L93)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LayerMap.ts#L68)
 
 Since v3.14.0

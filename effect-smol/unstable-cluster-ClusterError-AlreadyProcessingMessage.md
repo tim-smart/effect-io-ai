@@ -16,6 +16,6 @@ Carries the `address` and `envelopeId` for the affected request envelope.
 declare class AlreadyProcessingMessage
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ClusterError.ts#L251)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ClusterError.ts#L216)
 
 Since v4.0.0

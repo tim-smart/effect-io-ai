@@ -39,6 +39,6 @@ when `runnerStorage` is set to `"memory"`.
 declare const layer: (options?: { readonly shardingConfig?: Partial<ShardingConfig.ShardingConfig["Service"]> | undefined; readonly runnerStorage?: "memory" | "sql" | undefined; }) => Layer.Layer<Sharding.Sharding | Runners.Runners | MessageStorage.MessageStorage, ConfigError, SqlClient.SqlClient>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SingleRunner.ts#L70)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SingleRunner.ts#L57)
 
 Since v4.0.0

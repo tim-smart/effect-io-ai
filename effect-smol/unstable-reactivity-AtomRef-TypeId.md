@@ -11,6 +11,6 @@ The literal type used to identify `AtomRef` values.
 type TypeId = "~effect/reactivity/AtomRef"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AtomRef.ts#L46)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/AtomRef.ts#L21)
 
 Since v4.0.0

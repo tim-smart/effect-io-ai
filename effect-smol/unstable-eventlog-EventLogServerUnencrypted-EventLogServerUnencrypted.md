@@ -17,6 +17,6 @@ event-log writes.
 declare class EventLogServerUnencrypted
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogServerUnencrypted.ts#L85)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLogServerUnencrypted.ts#L57)
 
 Since v4.0.0

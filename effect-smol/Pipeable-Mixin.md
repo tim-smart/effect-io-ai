@@ -27,6 +27,6 @@ method delegates to `pipeArguments`.
 declare const Mixin: <TBase extends new (...args: ReadonlyArray<any>) => any>(klass: TBase) => TBase & PipeableConstructor
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pipeable.ts#L679)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Pipeable.ts#L668)
 
 Since v4.0.0

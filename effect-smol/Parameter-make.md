@@ -11,6 +11,6 @@ Creates typed metadata for a SQL Server stored procedure parameter.
 declare const make: <A>(name: string, type: DataType, options?: ParameterOptions) => Parameter<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/Parameter.ts#L79)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/Parameter.ts#L54)
 
 Since v4.0.0

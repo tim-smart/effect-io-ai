@@ -30,6 +30,6 @@ can be written back to the store. Creating the persisted resolver requires
 declare const persisted: { <A extends Request.Request<any, Persistence.PersistenceError | Schema.SchemaError, any> & Persistable.Any>(options: { readonly storeId: string; readonly timeToLive?: ((exit: Request.Result<A>, request: A) => Duration.Input) | undefined; readonly staleWhileRevalidate?: ((exit: Request.Result<A>, request: A) => boolean) | undefined; }): (self: RequestResolver<A>) => Effect.Effect<RequestResolver<A>, never, Persistence.Persistence | Scope>; <A extends Request.Request<any, Persistence.PersistenceError | Schema.SchemaError, any> & Persistable.Any>(self: RequestResolver<A>, options: { readonly storeId: string; readonly timeToLive?: ((exit: Request.Result<A>, request: A) => Duration.Input) | undefined; readonly staleWhileRevalidate?: ((exit: Request.Result<A>, request: A) => boolean) | undefined; }): Effect.Effect<RequestResolver<A>, never, Persistence.Persistence | Scope>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RequestResolver.ts#L1200)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RequestResolver.ts#L1165)
 
 Since v4.0.0

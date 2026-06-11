@@ -36,6 +36,6 @@ console.log(allEntries.length) // 3
 declare const entries: <K, V>(self: HashMap<K, V>) => IterableIterator<[K, V]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L690)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HashMap.ts#L627)
 
 Since v2.0.0

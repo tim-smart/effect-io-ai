@@ -27,6 +27,6 @@ console.log(Boolean.Order(true, true)) // 0 (true === true)
 declare const Order: order.Order<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Boolean.ts#L182)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Boolean.ts#L135)
 
 Since v2.0.0

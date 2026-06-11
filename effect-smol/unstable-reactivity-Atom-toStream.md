@@ -16,6 +16,6 @@ changes until the stream scope is closed.
 declare const toStream: <A>(self: Atom<A>) => Stream.Stream<A, never, AtomRegistry>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L2289)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L2261)
 
 Since v4.0.0

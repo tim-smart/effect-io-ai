@@ -30,6 +30,6 @@ type FormatAttributeName<T> = T extends string ?
   never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Telemetry.ts#L302)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Telemetry.ts#L278)
 
 Since v4.0.0

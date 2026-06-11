@@ -16,6 +16,6 @@ Use to erase an empty object type from an API result or parameter position.
 type VoidIfEmpty<S> = keyof S extends never ? void : S
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L803)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Types.ts#L761)
 
 Since v3.19.20

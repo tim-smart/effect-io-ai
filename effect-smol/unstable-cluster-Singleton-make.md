@@ -37,6 +37,6 @@ is running.
 declare const make: <E, R>(name: string, run: Effect.Effect<void, E, R>, options?: { readonly shardGroup?: string | undefined; }) => Layer.Layer<never, never, Sharding | Exclude<R, Scope>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Singleton.ts#L69)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Singleton.ts#L46)
 
 Since v4.0.0

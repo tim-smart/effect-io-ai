@@ -11,6 +11,6 @@ Decoded payload value type for an event definition.
 type Payload<A> = Schema.Schema.Type<PayloadSchema<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Event.ts#L235)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Event.ts#L213)
 
 Since v4.0.0

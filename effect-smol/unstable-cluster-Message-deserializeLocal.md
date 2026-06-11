@@ -17,6 +17,6 @@ context.
 declare const deserializeLocal: <Rpc extends Rpc.Any>(self: Outgoing<Rpc>, encoded: Envelope.Partial) => Effect.Effect<IncomingLocal<Rpc>, MalformedMessage>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Message.ts#L296)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Message.ts#L280)
 
 Since v4.0.0

@@ -16,6 +16,6 @@ module when working directly with Effect runtime references.
 declare const Tracer: Context.Reference<Tracer>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/References.ts#L173)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/References.ts#L124)
 
 Since v4.0.0

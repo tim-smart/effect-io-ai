@@ -31,6 +31,6 @@ assert.equal(Equal.equals(trie.pipe(Trie.modify("me", (v) => v)), trie), true)
 declare const modify: { <V>(key: string, f: (v: V) => V): (self: Trie<V>) => Trie<V>; <V>(self: Trie<V>, key: string, f: (v: V) => V): Trie<V>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L925)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Trie.ts#L882)
 
 Since v2.0.0

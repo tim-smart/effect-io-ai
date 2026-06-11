@@ -49,6 +49,6 @@ console.log(draft07.schema.additionalItems) // { type: "boolean" }
 declare const toDocumentDraft07: (document: Document<"draft-2020-12">) => Document<"draft-07">
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonSchema.ts#L597)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/JsonSchema.ts#L521)
 
 Since v4.0.0

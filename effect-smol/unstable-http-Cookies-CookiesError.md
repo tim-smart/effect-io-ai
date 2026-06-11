@@ -15,6 +15,6 @@ Inspect `reason` to determine the specific validation failure.
 declare class CookiesError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cookies.ts#L242)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cookies.ts#L190)
 
 Since v4.0.0

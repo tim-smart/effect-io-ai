@@ -17,6 +17,6 @@ headers such as `etag` and `last-modified`.
 declare const layer: Layer.Layer<HttpPlatform, never, FileSystem.FileSystem>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpPlatform.ts#L156)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpPlatform.ts#L143)
 
 Since v4.0.0

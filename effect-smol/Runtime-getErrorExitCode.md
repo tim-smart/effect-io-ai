@@ -31,6 +31,6 @@ Non-object values, missing markers, and non-number marker values all return
 declare const getErrorExitCode: (u: unknown) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Runtime.ts#L381)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Runtime.ts#L333)
 
 Since v4.0.0

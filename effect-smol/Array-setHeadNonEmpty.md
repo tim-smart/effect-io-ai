@@ -29,6 +29,6 @@ console.log(Array.setHeadNonEmpty([1, 2, 3], 10)) // [10, 2, 3]
 declare const setHeadNonEmpty: { <B>(b: B): <A>(self: NonEmptyReadonlyArray<A>) => NonEmptyArray<A | B>; <A, B>(self: NonEmptyReadonlyArray<A>, b: B): NonEmptyArray<A | B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L2470)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Array.ts#L2395)
 
 Since v4.0.0

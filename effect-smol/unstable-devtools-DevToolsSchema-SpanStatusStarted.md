@@ -11,6 +11,6 @@ Type of a span status representing a span that has started but not yet ended.
 type SpanStatusStarted = Schema.Schema.Type<typeof SpanStatusStarted>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DevToolsSchema.ts#L53)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DevToolsSchema.ts#L36)
 
 Since v4.0.0

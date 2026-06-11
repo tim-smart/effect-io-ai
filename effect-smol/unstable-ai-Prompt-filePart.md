@@ -20,6 +20,6 @@ parameters.
 declare const filePart: (params: PartConstructorParams<FilePart>) => FilePart
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L537)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L493)
 
 Since v4.0.0
