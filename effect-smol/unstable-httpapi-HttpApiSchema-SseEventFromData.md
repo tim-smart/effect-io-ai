@@ -26,6 +26,6 @@ export interface SseEventFromData<Data extends Schema.Top> extends
 {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSchema.ts#L317)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSchema.ts#L324)
 
 Since v4.0.0
