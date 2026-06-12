@@ -20,6 +20,6 @@ console.log(Duration.toHours(Duration.days(1))) // 24
 declare const toHours: (self: Input) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L822)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L841)
 
 Since v3.8.0

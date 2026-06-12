@@ -16,6 +16,6 @@ type.
 declare const file: (options?: FileOptions) => Prompt<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L829)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L863)
 
 Since v4.0.0

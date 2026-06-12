@@ -11,6 +11,6 @@ Decoded tool-call object from a chat completion response or streaming chunk.
 type ChatCompletionToolCall = typeof ChatCompletionToolCall.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L1152)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L1156)
 
 Since v4.0.0

@@ -1,9 +1,18 @@
 Package: `effect`<br />
 Module: `Graph`<br />
 
-## Graph.neighborsDirected
+## ~~Graph.neighborsDirected~~
 
-Gets neighbors of a node in a specific direction for bidirectional traversal.
+Gets directed neighbors of a node in a specific direction.
+
+**When to use**
+
+Use when maintaining existing code that already passes an explicit traversal
+direction. New code should prefer `successors` or `predecessors`.
+
+**Gotchas**
+
+Throws a `GraphError` when used with an undirected graph.
 
 **Example** (Traversing directed neighbors)
 
@@ -26,12 +35,17 @@ const outgoing = Graph.neighborsDirected(graph, nodeA, "outgoing")
 const incoming = Graph.neighborsDirected(graph, nodeB, "incoming")
 ```
 
+**See**
+
+- `successors` for outgoing neighbors in a directed graph
+- `predecessors` for incoming neighbors in a directed graph
+
 **Signature**
 
 ```ts
-declare const neighborsDirected: { (nodeIndex: NodeIndex, direction: Direction): <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>) => Array<NodeIndex>; <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>, nodeIndex: NodeIndex, direction: Direction): Array<NodeIndex>; }
+declare const neighborsDirected: { (nodeIndex: NodeIndex, direction: Direction): <N, E>(graph: Graph<N, E, "directed"> | MutableGraph<N, E, "directed">) => Array<NodeIndex>; <N, E>(graph: Graph<N, E, "directed"> | MutableGraph<N, E, "directed">, nodeIndex: NodeIndex, direction: Direction): Array<NodeIndex>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L1833)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L1946)
 
 Since v3.18.0

@@ -11,6 +11,6 @@ Type alias for any `Prompt`, regardless of its output type.
 type Any = Prompt<unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L569)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L581)
 
 Since v4.0.0

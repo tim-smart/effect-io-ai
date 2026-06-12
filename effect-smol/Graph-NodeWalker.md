@@ -22,6 +22,6 @@ listing APIs.
 type NodeWalker<N> = Walker<NodeIndex, N>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L3974)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L4091)
 
 Since v3.18.0

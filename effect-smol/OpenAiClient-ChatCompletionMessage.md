@@ -11,6 +11,6 @@ Decoded message object from a non-streaming chat completion choice.
 type ChatCompletionMessage = typeof ChatCompletionMessage.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L1159)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L1163)
 
 Since v4.0.0

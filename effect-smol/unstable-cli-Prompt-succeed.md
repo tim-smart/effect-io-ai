@@ -16,6 +16,6 @@ screen.
 declare const succeed: <A>(value: A) => Prompt<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1194)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L1228)
 
 Since v4.0.0

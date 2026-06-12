@@ -10,6 +10,13 @@ Converts a `Document` to a Draft 2020-12 JSON Schema document.
 Use when you need to produce a standard JSON Schema document from a schema
 representation `Document`.
 
+**Gotchas**
+
+JSON Schema generation is best-effort. Some Effect schema representation
+semantics cannot be represented exactly in JSON Schema, and importing an
+emitted JSON Schema may produce an equivalent approximation rather than the
+original representation shape.
+
 **Example** (Generating JSON Schema)
 
 ```ts
@@ -33,6 +40,6 @@ console.log(jsonSchema.schema.type)
 declare const toJsonSchemaDocument: (document: Document, options?: Schema.ToJsonSchemaOptions) => JsonSchema.Document<"draft-2020-12">
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L2200)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L2207)
 
 Since v4.0.0

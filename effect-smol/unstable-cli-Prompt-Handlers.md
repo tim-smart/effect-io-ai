@@ -13,7 +13,7 @@ The handlers render the current frame, process user input into the next
 **Signature**
 
 ```ts
-export interface Handlers<State, Output> {
+export interface Handlers<State, Output, Input = Terminal.UserInput> {
   /**
    * A function that is called to render the current frame of the `Prompt`.
    */
@@ -26,7 +26,7 @@ export interface Handlers<State, Output> {
    * `Prompt.Action` that should be taken.
    */
   readonly process: (
-    input: Terminal.UserInput,
+    input: Input,
     state: State
   ) => Effect.Effect<Action<State, Output>, never, Environment>
   /**
@@ -40,6 +40,6 @@ export interface Handlers<State, Output> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L107)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L119)
 
 Since v4.0.0

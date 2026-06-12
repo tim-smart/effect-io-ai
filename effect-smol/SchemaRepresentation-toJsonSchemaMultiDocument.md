@@ -11,6 +11,13 @@ multi-document.
 Use when you need to export related schema representation documents together
 so shared definitions stay in multi-document JSON Schema form.
 
+**Gotchas**
+
+JSON Schema generation is best-effort. Some Effect schema representation
+semantics cannot be represented exactly in JSON Schema, and importing an
+emitted JSON Schema may produce equivalent approximations rather than the
+original representation shapes.
+
 **See**
 
 - `MultiDocument`
@@ -23,6 +30,6 @@ so shared definitions stay in multi-document JSON Schema form.
 declare const toJsonSchemaMultiDocument: (document: MultiDocument, options?: Schema.ToJsonSchemaOptions) => JsonSchema.MultiDocument<"draft-2020-12">
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L2221)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L2235)
 
 Since v4.0.0

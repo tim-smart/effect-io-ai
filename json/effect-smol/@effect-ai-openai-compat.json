@@ -653,7 +653,7 @@
     "since": "4.0.0",
     "category": "response",
     "signature": "type ChatCompletionToolCall = typeof ChatCompletionToolCall.Type",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L1152"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L1156"
   },
   {
     "_tag": "TypeAlias",
@@ -669,7 +669,7 @@
     "since": "4.0.0",
     "category": "response",
     "signature": "type ChatCompletionMessage = typeof ChatCompletionMessage.Type",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L1159"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L1163"
   },
   {
     "_tag": "TypeAlias",
@@ -685,7 +685,7 @@
     "since": "4.0.0",
     "category": "response",
     "signature": "type ChatCompletionChoice = typeof ChatCompletionChoice.Type",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L1166"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L1170"
   },
   {
     "_tag": "TypeAlias",
@@ -701,7 +701,7 @@
     "since": "4.0.0",
     "category": "response",
     "signature": "type ChatCompletionUsage = typeof ChatCompletionUsage.Type",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L1173"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L1177"
   },
   {
     "_tag": "TypeAlias",
@@ -717,7 +717,7 @@
     "since": "4.0.0",
     "category": "response",
     "signature": "type ChatCompletionResponse = typeof ChatCompletionResponse.Type",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L1180"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L1184"
   },
   {
     "_tag": "TypeAlias",
@@ -733,7 +733,7 @@
     "since": "4.0.0",
     "category": "streaming",
     "signature": "type ChatCompletionChunk = typeof ChatCompletionChunk.Type",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L1187"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L1191"
   },
   {
     "_tag": "TypeAlias",
@@ -749,7 +749,7 @@
     "since": "4.0.0",
     "category": "streaming",
     "signature": "type ChatCompletionStreamEvent = ChatCompletionChunk | \"[DONE]\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L1195"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L1199"
   },
   {
     "_tag": "Class",

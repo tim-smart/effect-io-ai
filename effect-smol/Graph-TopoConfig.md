@@ -7,14 +7,17 @@ Configuration for the topological sort iterator.
 
 **When to use**
 
-Use to seed a topological sort with specific initial node indices instead of
-starting from every zero in-degree node.
+Use to prioritize specific zero in-degree nodes in a topological sort.
 
 **Details**
 
-`initials` optionally supplies the node indices used as initial queue
-entries. When omitted, topological sorting starts from all nodes with zero
-in-degree.
+`initials` optionally supplies zero in-degree node indices used as
+prioritized initial queue entries. Topological sorting still includes the
+other zero in-degree nodes and produces a complete topological order.
+
+**Gotchas**
+
+Throws a `GraphError` when any initial node has incoming edges.
 
 **See**
 
@@ -28,6 +31,6 @@ export interface TopoConfig {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L4310)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L4430)
 
 Since v3.18.0

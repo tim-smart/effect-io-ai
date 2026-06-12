@@ -20,6 +20,6 @@ Use to keep the longest `Duration` when an API consumes a `Combiner`.
 declare const CombinerMax: Combiner.Combiner<Duration>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L1802)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L1812)
 
 Since v4.0.0

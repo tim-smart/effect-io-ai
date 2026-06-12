@@ -3,8 +3,8 @@ Module: `Prompt`<br />
 
 ## Prompt.Action
 
-Represents the action that should be taken by a `Prompt` based upon the
-user input received during the current frame.
+Represents the action that should be taken by a `Prompt` based upon user
+input or an external event received during the current frame.
 
 **Signature**
 

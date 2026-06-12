@@ -29,6 +29,6 @@ console.log(sorted.map(Duration.toSeconds)) // [1, 2, 3]
 declare const Order: order.Order<Duration>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L1131)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L1141)
 
 Since v2.0.0

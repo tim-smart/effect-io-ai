@@ -12,6 +12,6 @@ sentinel.
 type ChatCompletionStreamEvent = ChatCompletionChunk | "[DONE]"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L1195)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiClient.ts#L1199)
 
 Since v4.0.0

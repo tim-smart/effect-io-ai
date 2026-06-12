@@ -33,6 +33,6 @@ const incomingNodes = Array.from(
 type Direction = "outgoing" | "incoming"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L2520)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L2615)
 
 Since v3.18.0

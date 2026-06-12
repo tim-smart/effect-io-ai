@@ -9,7 +9,7 @@ using the A* pathfinding algorithm.
 **Details**
 
 The edge-cost function must return non-negative weights, and the heuristic
-should be admissible to preserve shortest-path guarantees. Returns
+should be consistent to preserve shortest-path guarantees. Returns
 `Option.none()` when the target is not reachable, and throws a `GraphError`
 when either endpoint is missing or a negative edge cost is encountered.
 
@@ -51,6 +51,6 @@ if (result._tag === "Some") {
 declare const astar: { <E, N>(config: AstarConfig<E, N>): <T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>) => Option.Option<PathResult<E>>; <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>, config: AstarConfig<E, N>): Option.Option<PathResult<E>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L3477)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L3597)
 
 Since v3.18.0

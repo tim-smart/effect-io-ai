@@ -15,7 +15,9 @@ duration objects.
 **Details**
 
 String inputs accept values like `"10 seconds"`, `"500 millis"`,
-`"Infinity"`, and `"-Infinity"`.
+`"Infinity"`, and `"-Infinity"`. Finite fractional values that are
+normalized to nanoseconds are rounded to the nearest nanosecond, with ties
+away from zero.
 
 **See**
 
@@ -37,6 +39,6 @@ type Input = | Duration
   | DurationObject
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L138)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L158)
 
 Since v4.0.0

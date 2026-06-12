@@ -17,6 +17,11 @@ processing, allowing pre-transformation.
 
 **Gotchas**
 
+JSON Schema import is best-effort. Some JSON Schema constructs do not map
+exactly to Effect schema representations, and importing a schema previously
+emitted by `toJsonSchemaDocument` may produce an equivalent approximation
+rather than the original representation shape.
+
 This throws if a `$ref` cannot be resolved within the document's definitions.
 Circular `$ref`s are detected and cause an error.
 
@@ -32,6 +37,6 @@ Circular `$ref`s are detected and cause an error.
 declare const fromJsonSchemaDocument: (document: JsonSchema.Document<"draft-2020-12">, options?: { readonly onEnter?: ((js: JsonSchema.JsonSchema) => JsonSchema.JsonSchema) | undefined; }) => Document
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L2975)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L2994)
 
 Since v4.0.0

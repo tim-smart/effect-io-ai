@@ -26,6 +26,6 @@ normalize before validation. If the prompt is meant to be editable,
 declare const date: (options: DateOptions) => Prompt<Date>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L791)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Prompt.ts#L825)
 
 Since v4.0.0

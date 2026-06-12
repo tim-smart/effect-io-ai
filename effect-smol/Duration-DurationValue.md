@@ -31,6 +31,6 @@ type DurationValue = | { _tag: "Millis"; millis: number }
   | { _tag: "NegativeInfinity" }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L78)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L96)
 
 Since v2.0.0

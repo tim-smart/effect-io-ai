@@ -35,6 +35,6 @@ type Unit = | "nano"
   | "weeks"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L97)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Duration.ts#L115)
 
 Since v2.0.0

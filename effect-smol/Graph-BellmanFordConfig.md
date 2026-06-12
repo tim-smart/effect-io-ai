@@ -31,6 +31,6 @@ export interface BellmanFordConfig<E> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L3655)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Graph.ts#L3772)
 
 Since v3.18.0
