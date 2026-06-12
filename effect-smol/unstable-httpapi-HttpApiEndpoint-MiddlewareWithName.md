@@ -12,6 +12,6 @@ an endpoint union.
 type MiddlewareWithName<Endpoints, Name> = Middleware<WithName<Endpoints, Name>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L768)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L811)
 
 Since v4.0.0

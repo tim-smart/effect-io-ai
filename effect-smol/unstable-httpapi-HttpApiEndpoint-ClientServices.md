@@ -26,11 +26,11 @@ type ClientServices<Endpoint> = Endpoint extends HttpApiEndpoint<
     | _Query["EncodingServices"]
     | _Payload["EncodingServices"]
     | _Headers["EncodingServices"]
-    | _Success["DecodingServices"]
+    | SuccessDecodingServices<_Success>
     | _Error["DecodingServices"]
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L602)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L645)
 
 Since v4.0.0

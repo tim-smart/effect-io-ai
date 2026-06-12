@@ -10,11 +10,11 @@ Untagged Server-Sent Events payload shape containing the event name, optional ev
 ```ts
 export interface EventEncoded {
   readonly event: string
-  readonly id: string | undefined
+  readonly id?: string | undefined
   readonly data: string
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sse.ts#L491)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sse.ts#L505)
 
 Since v4.0.0

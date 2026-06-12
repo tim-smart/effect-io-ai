@@ -27,7 +27,7 @@ type Method<Endpoint, E, R> = [Endpoint] extends [
   ] ? <Mode extends ResponseMode = ResponseMode>(
       request: Simplify<HttpApiEndpoint.ClientRequest<_Params, _Query, _Payload, _Headers, Mode>>
     ) => Effect.Effect<
-      Response<_Success["Type"], Mode>,
+      Response<SuccessType<_Success>, Mode>,
       | HttpApiMiddleware.Error<_Middleware>
       | HttpApiMiddleware.ClientError<_Middleware>
       | E
@@ -38,11 +38,14 @@ type Method<Endpoint, E, R> = [Endpoint] extends [
       | _Query["EncodingServices"]
       | _Payload["EncodingServices"]
       | _Headers["EncodingServices"]
-      | ([Mode] extends ["response-only"] ? never : _Success["DecodingServices"] | _Error["DecodingServices"])
+      | ([Mode] extends ["response-only"] ? never
+        :
+          | SuccessDecodingServices<_Success>
+          | _Error["DecodingServices"])
     > :
     never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiClient.ts#L121)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiClient.ts#L147)
 
 Since v4.0.0

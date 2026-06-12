@@ -13,6 +13,6 @@ type ParamsConstraint = | Record<string, Schema.Encoder<string | undefined, unkn
   | Schema.Encoder<Record<string, string | undefined>, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L986)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L1029)
 
 Since v4.0.0

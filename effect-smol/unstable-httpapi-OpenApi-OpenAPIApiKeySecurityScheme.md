@@ -16,6 +16,6 @@ export interface OpenAPIApiKeySecurityScheme {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OpenApi.ts#L942)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OpenApi.ts#L1055)
 
 Since v4.0.0

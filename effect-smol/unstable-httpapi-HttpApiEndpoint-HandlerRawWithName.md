@@ -16,6 +16,6 @@ type HandlerRawWithName<Endpoints, Name, E, R> = HandlerRaw<
 >
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L724)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L767)
 
 Since v4.0.0

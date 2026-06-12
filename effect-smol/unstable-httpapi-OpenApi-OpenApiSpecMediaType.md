@@ -10,9 +10,10 @@ Generated OpenAPI media type object containing the JSON Schema for a request or 
 ```ts
 export interface OpenApiSpecMediaType {
   schema: JsonSchema.JsonSchema
+  "x-effect-stream"?: OpenApiSpecEffectStream
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OpenApi.ts#L896)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OpenApi.ts#L991)
 
 Since v4.0.0

@@ -13,7 +13,7 @@
     "since": "4.0.0",
     "category": "services",
     "signature": "declare class AnthropicClient",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L139"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L132"
   },
   {
     "_tag": "Constant",
@@ -29,7 +29,7 @@
     "since": "4.0.0",
     "category": "constructors",
     "signature": "declare const make: (options: Options) => Effect.Effect<Service, never, HttpClient.HttpClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L224"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L217"
   },
   {
     "_tag": "Function",
@@ -45,7 +45,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layer: (options: Options) => Layer.Layer<AnthropicClient, never, HttpClient.HttpClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L380"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L367"
   },
   {
     "_tag": "Function",
@@ -61,7 +61,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layerConfig: (options?: { readonly apiKey?: Config.Config<Redacted.Redacted<string> | undefined> | undefined; readonly apiUrl?: Config.Config<string> | undefined; readonly apiVersion?: Config.Config<string> | undefined; readonly transformClient?: ((client: HttpClient.HttpClient) => HttpClient.HttpClient) | undefined; }) => Layer.Layer<AnthropicClient, Config.ConfigError, HttpClient.HttpClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L399"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L386"
   },
   {
     "_tag": "Interface",
@@ -76,7 +76,7 @@
     "examples": [],
     "since": "4.0.0",
     "category": "models",
-    "signature": "export interface Service {\n  /**\n   * The underlying generated Anthropic client that exposes all API endpoints.\n   */\n  readonly client: Generated.AnthropicClient\n\n  /**\n   * Executes a low-level streaming HTTP request and decodes the Server-Sent Events response using the provided schema.\n   */\n  readonly streamRequest: <\n    Type extends {\n      readonly id?: string | undefined\n      readonly event: string\n      readonly data: string\n    },\n    DecodingServices\n  >(\n    schema: Schema.Decoder<Type, DecodingServices>\n  ) => (request: HttpClientRequest.HttpClientRequest) => Stream.Stream<\n    Type,\n    HttpClientError.HttpClientError | Schema.SchemaError | Sse.Retry,\n    DecodingServices\n  >\n\n  /**\n   * Creates a message using the Anthropic Messages API and maps all errors to the unified `AiError` type.\n   */\n  readonly createMessage: (options: {\n    readonly payload: typeof Generated.BetaCreateMessageParams.Encoded\n    readonly params?: typeof Generated.BetaMessagesPostParams.Encoded | undefined\n  }) => Effect.Effect<\n    [body: typeof Generated.BetaMessage.Type, response: HttpClientResponse.HttpClientResponse],\n    AiError.AiError\n  >\n\n  /**\n   * Creates a streaming message using the Anthropic Messages API and maps all errors to the unified `AiError` type.\n   *\n   * **Details**\n   *\n   * The returned Effect yields the HTTP response and a stream of events as the model generates its response. The stream\n   * automatically terminates when a `message_stop` event is received.\n   */\n  readonly createMessageStream: (options: {\n    readonly payload: Omit<typeof Generated.BetaCreateMessageParams.Encoded, \"stream\">\n    readonly params?: typeof Generated.BetaMessagesPostParams.Encoded | undefined\n  }) => Effect.Effect<\n    [response: HttpClientResponse.HttpClientResponse, stream: Stream.Stream<MessageStreamEvent, AiError.AiError>],\n    AiError.AiError\n  >\n}",
+    "signature": "export interface Service {\n  /**\n   * The underlying generated Anthropic client that exposes all API endpoints.\n   */\n  readonly client: Generated.AnthropicClient\n\n  /**\n   * Executes a low-level streaming HTTP request and decodes the Server-Sent Events response using the provided schema.\n   */\n  readonly streamRequest: <S extends Sse.EventCodec>(\n    schema: S\n  ) => (request: HttpClientRequest.HttpClientRequest) => Stream.Stream<\n    S[\"Type\"],\n    HttpClientError.HttpClientError | Schema.SchemaError | Sse.Retry,\n    S[\"DecodingServices\"]\n  >\n\n  /**\n   * Creates a message using the Anthropic Messages API and maps all errors to the unified `AiError` type.\n   */\n  readonly createMessage: (options: {\n    readonly payload: typeof Generated.BetaCreateMessageParams.Encoded\n    readonly params?: typeof Generated.BetaMessagesPostParams.Encoded | undefined\n  }) => Effect.Effect<\n    [body: typeof Generated.BetaMessage.Type, response: HttpClientResponse.HttpClientResponse],\n    AiError.AiError\n  >\n\n  /**\n   * Creates a streaming message using the Anthropic Messages API and maps all errors to the unified `AiError` type.\n   *\n   * **Details**\n   *\n   * The returned Effect yields the HTTP response and a stream of events as the model generates its response. The stream\n   * automatically terminates when a `message_stop` event is received.\n   */\n  readonly createMessageStream: (options: {\n    readonly payload: Omit<typeof Generated.BetaCreateMessageParams.Encoded, \"stream\">\n    readonly params?: typeof Generated.BetaMessagesPostParams.Encoded | undefined\n  }) => Effect.Effect<\n    [response: HttpClientResponse.HttpClientResponse, stream: Stream.Stream<MessageStreamEvent, AiError.AiError>],\n    AiError.AiError\n  >\n}",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L42"
   },
   {
@@ -93,7 +93,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "type MessageStreamEvent = | typeof Generated.BetaMessageStartEvent.Type\n  | typeof Generated.BetaMessageDeltaEvent.Type\n  | typeof Generated.BetaMessageStopEvent.Type\n  | typeof Generated.BetaContentBlockStartEvent.Type\n  | typeof Generated.BetaContentBlockDeltaEvent.Type\n  | typeof Generated.BetaContentBlockStopEvent.Type\n  | typeof Generated.BetaErrorResponse.Type",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L111"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L104"
   },
   {
     "_tag": "TypeAlias",
@@ -109,7 +109,7 @@
     "since": "4.0.0",
     "category": "options",
     "signature": "type Options = {\n  /**\n   * The Anthropic API key for authentication. Requests are made without authentication when this is omitted, which is\n   * useful for proxied setups or testing.\n   */\n  readonly apiKey?: Redacted.Redacted<string> | undefined\n\n  /**\n   * The base URL for the Anthropic API. Override this to use a proxy or a different API-compatible endpoint.\n   *\n   * @default \"https://api.anthropic.com\"\n   */\n  readonly apiUrl?: string | undefined\n\n  /**\n   * The Anthropic API version header value. This controls which version of the API to use.\n   *\n   * @default \"2023-06-01\"\n   */\n  readonly apiVersion?: string | undefined\n\n  /**\n   * Optional transformer for the underlying HTTP client, such as middleware, logging, or custom request/response\n   * handling.\n   */\n  readonly transformClient?: ((client: HttpClient.HttpClient) => HttpClient.HttpClient) | undefined\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L168"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L161"
   },
   {
     "_tag": "Class",

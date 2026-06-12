@@ -12,6 +12,6 @@ the decoded value paired with the raw response, or only the raw response.
 type ClientResponseMode = "decoded-only" | "decoded-and-response" | "response-only"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L564)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L607)
 
 Since v4.0.0

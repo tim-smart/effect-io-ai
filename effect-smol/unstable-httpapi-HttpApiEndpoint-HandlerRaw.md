@@ -11,9 +11,9 @@ decoded payload so the handler can read the raw `HttpServerRequest` directly.
 ```ts
 type HandlerRaw<Endpoint, E, R> = (
   request: Types.Simplify<RequestRaw<Endpoint>>
-) => Effect<Endpoint["~Success"]["Type"] | HttpServerResponse, Endpoint["~Error"]["Type"] | E, R>
+) => Effect<SuccessType<Endpoint["~Success"]> | HttpServerResponse, Endpoint["~Error"]["Type"] | E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L684)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L727)
 
 Since v4.0.0

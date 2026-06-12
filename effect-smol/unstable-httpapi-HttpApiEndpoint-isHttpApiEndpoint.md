@@ -12,6 +12,6 @@ endpoint interface.
 declare const isHttpApiEndpoint: (u: unknown) => u is HttpApiEndpoint<any, any, any>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L42)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L43)
 
 Since v4.0.0

@@ -12,6 +12,6 @@ readonly array of schemas.
 type SuccessConstraint = Schema.Top | ReadonlyArray<Schema.Top>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L1048)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L1091)
 
 Since v4.0.0

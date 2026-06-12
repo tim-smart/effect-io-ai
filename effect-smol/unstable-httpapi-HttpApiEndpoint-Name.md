@@ -24,6 +24,6 @@ type Name<Endpoint> = Endpoint extends HttpApiEndpoint<
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L232)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L275)
 
 Since v4.0.0

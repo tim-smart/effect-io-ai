@@ -16,6 +16,6 @@ type TopLevelMethods<Groups, E, R> = Extract<Groups, { readonly topLevel: true }
       never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiClient.ts#L160)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiClient.ts#L189)
 
 Since v4.0.0

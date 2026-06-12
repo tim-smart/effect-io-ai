@@ -13,9 +13,9 @@ string `data`.
 **Signature**
 
 ```ts
-declare const decodeSchema: <Type extends { readonly id?: string | undefined; readonly event: string; readonly data: string; }, DecodingServices, IE, Done>(schema: Schema.Decoder<Type, DecodingServices>) => Channel.Channel<NonEmptyReadonlyArray<Type>, IE | Retry | Schema.SchemaError, Done, NonEmptyReadonlyArray<string>, IE, Done, DecodingServices>
+declare const decodeSchema: <S extends EventCodec, IE, Done>(schema: S) => Channel.Channel<NonEmptyReadonlyArray<S["Type"]>, IE | Retry | Schema.SchemaError, Done, NonEmptyReadonlyArray<string>, IE, Done, S["DecodingServices"]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sse.ts#L87)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Sse.ts#L106)
 
 Since v4.0.0

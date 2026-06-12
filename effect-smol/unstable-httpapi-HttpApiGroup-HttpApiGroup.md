@@ -29,7 +29,7 @@ export interface HttpApiGroup<
   /**
    * Add an `HttpApiEndpoint` to an `HttpApiGroup`.
    */
-  add<A extends NonEmptyReadonlyArray<HttpApiEndpoint.Any>>(
+  add<const A extends NonEmptyReadonlyArray<HttpApiEndpoint.Any>>(
     ...endpoints: A
   ): HttpApiGroup<Id, Endpoints | A[number], TopLevel>
 

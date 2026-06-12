@@ -21,6 +21,6 @@ Accepts either a JSON-like array from the provider or a flat string like
 declare const Array: <V extends Schema.Top>(value: V, options?: { readonly separator?: string | undefined; }) => Schema.Union<readonly [Schema.compose<Schema.$Array<V>, Schema.decodeTo<Schema.$Array<Schema.String>, Schema.String, never, never>>, Schema.$Array<V>]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L855)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L858)
 
 Since v4.0.0

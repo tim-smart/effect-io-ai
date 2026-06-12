@@ -14,6 +14,6 @@ export interface OpenAPISpecExternalDocs {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OpenApi.ts#L772)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OpenApi.ts#L867)
 
 Since v4.0.0

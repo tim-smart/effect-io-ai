@@ -18,19 +18,12 @@ export interface Service {
   /**
    * Executes a low-level streaming HTTP request and decodes the Server-Sent Events response using the provided schema.
    */
-  readonly streamRequest: <
-    Type extends {
-      readonly id?: string | undefined
-      readonly event: string
-      readonly data: string
-    },
-    DecodingServices
-  >(
-    schema: Schema.Decoder<Type, DecodingServices>
+  readonly streamRequest: <S extends Sse.EventCodec>(
+    schema: S
   ) => (request: HttpClientRequest.HttpClientRequest) => Stream.Stream<
-    Type,
+    S["Type"],
     HttpClientError.HttpClientError | Schema.SchemaError | Sse.Retry,
-    DecodingServices
+    S["DecodingServices"]
   >
 
   /**
