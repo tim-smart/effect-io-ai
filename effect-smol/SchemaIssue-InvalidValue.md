@@ -19,7 +19,7 @@ Use when you need to detect constraint violations from `Schema.filter`,
 - The default formatter renders this as `"Invalid data <actual>"` unless a
   custom `message` annotation is provided.
 
-**Example** (Custom filter returning InvalidValue)
+**Example** (Returning InvalidValue from a custom filter)
 
 ```ts
 import { Option, SchemaIssue } from "effect"

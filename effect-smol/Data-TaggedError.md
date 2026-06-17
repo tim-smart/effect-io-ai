@@ -16,7 +16,7 @@ enabling `Effect.catchTag` and `Effect.catchTags` for tag-based recovery.
 The `_tag` is excluded from the constructor argument. Yielding an instance
 inside `Effect.gen` fails the effect with this error.
 
-**Example** (Tag-based error recovery)
+**Example** (Recovering by tag)
 
 ```ts
 import { Data, Effect } from "effect"

@@ -21,7 +21,7 @@ Use when the focus is conditional — reading can fail (wrong variant, failed
 - Composing two Prisms produces a Prism; composing a Prism with a
   `Lens` produces an `Optional`.
 
-**Example** (narrowing a tagged union)
+**Example** (Narrowing a tagged union)
 
 ```ts
 import { Optic, Result } from "effect"

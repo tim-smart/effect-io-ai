@@ -13,7 +13,7 @@ Use when you need a `Predicate` guard for errors caught from unknown sources.
 
 Uses `instanceof Error`.
 
-**Example** (Guard error)
+**Example** (Guarding errors)
 
 ```ts
 import { Predicate } from "effect"

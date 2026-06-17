@@ -13,7 +13,7 @@ Use when you need a `Predicate` guard for nullish values.
 
 Uses `input === null || input === undefined`.
 
-**Example** (Guard nullish)
+**Example** (Guarding nullish values)
 
 ```ts
 import { Predicate } from "effect"

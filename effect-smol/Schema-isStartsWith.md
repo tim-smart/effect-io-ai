@@ -18,6 +18,6 @@ patterns may not be equivalent to the runtime `startsWith` check.
 declare const isStartsWith: (startsWith: string, annotations?: Annotations.Filter) => SchemaAST.Filter<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6391)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6574)
 
 Since v4.0.0

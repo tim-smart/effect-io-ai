@@ -17,7 +17,7 @@ value is present.
 - When input is `Some(e)`, calls `f(e, options)` to produce the result.
 - `f` may return `None` to omit the value, or fail with an `Issue`.
 
-**Example** (Transform only present values)
+**Example** (Transforming only present values)
 
 ```ts
 import { Effect, Option, SchemaGetter } from "effect"

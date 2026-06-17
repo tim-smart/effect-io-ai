@@ -17,7 +17,7 @@ round-trip JSON through a URL.
 Decoding calls `decodeURIComponent` and fails if the input contains malformed
 percent-encoding sequences. Encoding calls `encodeURIComponent`.
 
-**Example** (URI component schema)
+**Example** (Defining a URI component schema)
 
 ```ts
 import { Schema, SchemaTransformation } from "effect"

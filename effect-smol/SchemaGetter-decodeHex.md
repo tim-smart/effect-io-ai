@@ -9,7 +9,7 @@ Decodes a hexadecimal string to a `Uint8Array`.
 
 - Fails with `SchemaIssue.InvalidValue` if the input is not valid hex.
 
-**Example** (Decode hex to bytes)
+**Example** (Decoding hex to bytes)
 
 ```ts
 import { SchemaGetter } from "effect"

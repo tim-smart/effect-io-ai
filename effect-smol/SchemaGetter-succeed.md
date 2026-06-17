@@ -15,7 +15,7 @@ value.
 The getter is pure and always returns `Option.some(t)` regardless of whether
 the input is `Some` or `None`.
 
-**Example** (Constant getter)
+**Example** (Returning a constant getter)
 
 ```ts
 import { SchemaGetter } from "effect"

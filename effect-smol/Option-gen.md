@@ -17,7 +17,7 @@ should short-circuit on `None`.
 - The return value is wrapped in `Some`
 - No `Effect` runtime is needed
 
-**Example** (Generator syntax)
+**Example** (Sequencing Option computations with generator syntax)
 
 ```ts
 import { Option } from "effect"

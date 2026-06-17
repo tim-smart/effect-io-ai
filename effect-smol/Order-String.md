@@ -14,7 +14,7 @@ Use when you need lexicographic string ordering.
 Uses lexicographic dictionary ordering. The empty string is less than any
 non-empty string, and comparisons are case-sensitive.
 
-**Example** (String Ordering)
+**Example** (Ordering strings)
 
 ```ts
 import { Order } from "effect"

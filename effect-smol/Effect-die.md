@@ -19,7 +19,7 @@ does not handle the error and instead terminates the fiber.
 The error channel of the resulting effect is of type `never`, indicating that
 it cannot recover from this failure.
 
-**Example** (Failing when division by zero)
+**Example** (Failing on division by zero)
 
 ```ts
 import { Effect } from "effect"
@@ -45,6 +45,6 @@ Effect.runPromise(program).catch(console.error)
 declare const die: (defect: unknown) => Effect<never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1607)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1612)
 
 Since v2.0.0

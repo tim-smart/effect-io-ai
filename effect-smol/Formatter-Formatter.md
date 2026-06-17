@@ -13,7 +13,7 @@ Use when you want to type a formatting or rendering function generically, or whe
 
 This is a pure callable type and carries no runtime implementation. It is contravariant in `Value` and covariant in `Format`.
 
-**Example** (Define a custom formatter)
+**Example** (Defining a custom formatter)
 
 ```ts
 import type { Formatter } from "effect"

@@ -11,7 +11,7 @@ non-undefined results.
 Use when you need to map and filter in one step, where the mapper can return
 `null` or `undefined` to skip elements.
 
-**Example** (FlatMapping with nullable)
+**Example** (Flat mapping with nullable values)
 
 ```ts
 import { Array } from "effect"

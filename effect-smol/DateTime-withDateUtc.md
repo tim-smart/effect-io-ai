@@ -11,7 +11,7 @@ instant and returns the function's result.
 This ignores any associated time zone. Use `DateTime.withDate` when the
 callback should receive the time-zone-adjusted wall-clock date.
 
-**Example** (Using UTC Dates)
+**Example** (Applying UTC Dates)
 
 ```ts
 import { DateTime } from "effect"

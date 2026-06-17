@@ -17,7 +17,7 @@ This approach is particularly useful when handling optional values or when an
 unmatched case should be explicitly handled rather than returning a default
 value or throwing an error.
 
-**Example** (Extracting a User Role with `Match.result`)
+**Example** (Extracting a user role with `Match.result`)
 
 ```ts
 import { Match } from "effect"

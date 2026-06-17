@@ -10,7 +10,7 @@ Reads the annotations from a single `Reason` as a `Context`.
 Use when you need tracing metadata (e.g. `StackTrace`) from
 a specific reason rather than the whole cause.
 
-**Example** (reading reason annotations)
+**Example** (Reading reason annotations)
 
 ```ts
 import { Cause, Context } from "effect"

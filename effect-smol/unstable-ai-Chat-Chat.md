@@ -16,7 +16,7 @@ This tag provides access to chat functionality throughout your application,
 enabling persistent conversational AI interactions with full context
 management.
 
-**Example** (Using the Chat service)
+**Example** (Accessing the Chat service)
 
 ```ts
 import { Effect } from "effect"

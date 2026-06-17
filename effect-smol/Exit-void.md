@@ -14,7 +14,7 @@ Use when you need a shared successful `Exit` with no meaningful value.
 Equivalent to `Exit.succeed(undefined)` but shared as a single instance,
 avoiding allocation for a common case.
 
-**Example** (Using the void Exit)
+**Example** (Referencing the void Exit)
 
 ```ts
 import { Exit } from "effect"

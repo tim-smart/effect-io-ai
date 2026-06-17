@@ -15,7 +15,7 @@ hexadecimal strings.
 Decoding parses the hex string into a UTF-8 string. Encoding writes the
 string as a hex string.
 
-**Example** (String from Hex)
+**Example** (Converting hex to a string)
 
 ```ts
 import { Schema, SchemaTransformation } from "effect"

@@ -18,8 +18,9 @@ success or `Result.fail` with a `SchemaIssue.Issue` on decoding failure.
 
 **Gotchas**
 
-This synchronous adapter returns `Result.fail` for schema issues, but async
-decoding or other non-schema failures can still throw.
+This synchronous adapter returns `Result.fail` for causes made entirely of
+schema issues, but causes that contain defects, interruptions, or other
+non-schema reasons throw instead.
 
 **See**
 
@@ -32,6 +33,6 @@ decoding or other non-schema failures can still throw.
 declare const decodeResult: <S extends Schema.Decoder<unknown>>(schema: S, options?: SchemaAST.ParseOptions) => (input: S["Encoded"], options?: SchemaAST.ParseOptions) => Result.Result<S["Type"], SchemaIssue.Issue>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L446)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L505)
 
 Since v4.0.0

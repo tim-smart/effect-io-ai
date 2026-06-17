@@ -14,7 +14,7 @@ string.
 
 Uses `typeof input === "string"`.
 
-**Example** (Guard string)
+**Example** (Guarding strings)
 
 ```ts
 import { Predicate } from "effect"

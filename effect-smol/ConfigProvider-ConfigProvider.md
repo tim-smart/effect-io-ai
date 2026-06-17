@@ -12,13 +12,10 @@ custom provider via `make`.
 
 **Details**
 
-`load(path)` resolves `mapInput` and `prefix` transformations, then
-delegates to `get`. This is what the `Config` module calls. `get(path)` is
-raw access to the underlying store without path transformations.
-`mapInput` and `prefix` are optional path transformations set by
-`mapInput` and `nested`. All methods return
-`Effect<Node | undefined, SourceError>`: `undefined` means "not found" and
-`SourceError` means the source itself failed.
+`load(path)` is the semantic lookup operation used by the `Config` module.
+It applies provider transformations and composition before consulting the
+underlying source. `undefined` means "not found" and `SourceError` means the
+source itself failed.
 
 **See**
 
@@ -40,36 +37,11 @@ export interface ConfigProvider extends Pipeable {
    */
   readonly load: (path: Path) => Effect.Effect<Node | undefined, SourceError>
 
-  /**
-   * Raw access to the underlying source.
-   *
-   * **When to use**
-   *
-   * Use to read from the backing source without applying this provider's path
-   * transformations.
-   */
-  readonly get: (path: Path) => Effect.Effect<Node | undefined, SourceError>
-
-  /**
-   * Function to map the input path.
-   *
-   * **When to use**
-   *
-   * Use to store the path transformation applied before raw provider lookup.
-   */
-  readonly mapInput: ((path: Path) => Path) | undefined
-
-  /**
-   * Prefix to add to the input path.
-   *
-   * **When to use**
-   *
-   * Use to store the path prefix applied before raw provider lookup.
-   */
-  readonly prefix: Path | undefined
+  /** @internal */
+  readonly state: ProviderState
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L251)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L248)
 
 Since v2.0.0

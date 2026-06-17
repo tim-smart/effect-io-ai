@@ -5,7 +5,7 @@ Module: `Duration`<br />
 
 A Duration representing infinite time.
 
-**Example** (Using infinite duration)
+**Example** (Referencing infinite duration)
 
 ```ts
 import { Duration } from "effect"

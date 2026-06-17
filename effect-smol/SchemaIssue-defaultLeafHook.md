@@ -20,7 +20,7 @@ Use as the default leaf renderer when customizing only the `CheckHook`.
   - `Forbidden` → `"Forbidden operation"`
   - `OneOf` → `"Expected exactly one member to match the input <actual>"`
 
-**Example** (Using defaultLeafHook with Standard Schema formatter)
+**Example** (Formatting Standard Schema issues with defaultLeafHook)
 
 ```ts
 import { SchemaIssue } from "effect"

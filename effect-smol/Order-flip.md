@@ -15,7 +15,7 @@ Returns a new order that swaps the arguments before comparison. If the
 original order returns `-1`, the flipped order returns `1`, and vice versa.
 Equal comparisons remain `0`.
 
-**Example** (Reversing Order)
+**Example** (Reversing an Order)
 
 ```ts
 import { Order } from "effect"

@@ -16,7 +16,7 @@ First applies the first order. If the result is non-zero, that result is
 returned; otherwise, the second order is applied. The result is the first
 non-zero comparison result, or `0` if both orders return `0`.
 
-**Example** (Combining Orders)
+**Example** (Combining two Orders)
 
 ```ts
 import { Order } from "effect"

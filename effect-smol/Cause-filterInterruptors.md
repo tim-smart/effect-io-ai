@@ -18,7 +18,7 @@ Interrupt reasons without a `fiberId` still count as interrupts, so the
 function succeeds with an empty `Set` when every interrupt reason has an
 undefined fiber ID.
 
-**Example** (extracting interruptors with Result)
+**Example** (Extracting interruptors with Result)
 
 ```ts
 import { Cause, Result } from "effect"

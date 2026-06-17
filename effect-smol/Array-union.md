@@ -6,7 +6,7 @@ Module: `Array`<br />
 Computes the union of two arrays, removing duplicates using
 `Equal.equivalence()`.
 
-**Example** (Array union)
+**Example** (Computing array unions)
 
 ```ts
 import { Array } from "effect"

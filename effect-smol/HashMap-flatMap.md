@@ -9,7 +9,7 @@ Maps each entry to a `HashMap` and flattens the results.
 
 The hash and equality behavior of both maps have to be the same.
 
-**Example** (FlatMapping values)
+**Example** (Flat mapping values)
 
 ```ts
 import { HashMap } from "effect"

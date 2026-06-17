@@ -15,7 +15,7 @@ This helper follows the Effect convention that discriminated unions use
 `"_tag"` as their discriminator field. Use `discriminator` for a
 different discriminator field.
 
-**Example** (Matching a Discriminated Union by Tag)
+**Example** (Matching a discriminated union by tag)
 
 ```ts
 import { Match } from "effect"

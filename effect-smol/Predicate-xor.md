@@ -13,7 +13,7 @@ Use when you want to combine two `Predicate`s with exclusive-or semantics.
 
 Returns `true` when results differ.
 
-**Example** (Exclusive or)
+**Example** (Checking exclusive-or conditions)
 
 ```ts
 import { Predicate } from "effect"

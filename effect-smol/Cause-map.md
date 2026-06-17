@@ -18,7 +18,7 @@ If at least one `Fail` reason exists, this returns a new `Cause`
 containing the mapped failures. If the cause has no `Fail` reasons, the
 original cause is returned unchanged.
 
-**Example** (mapping errors to uppercase)
+**Example** (Mapping errors to uppercase)
 
 ```ts
 import { Cause } from "effect"

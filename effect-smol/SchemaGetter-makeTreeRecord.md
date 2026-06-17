@@ -25,7 +25,7 @@ entries into structured objects.
   - `""` → real empty key
 - Duplicate keys for the same path are merged into arrays.
 
-**Example** (Build tree from bracket paths)
+**Example** (Building a tree from bracket paths)
 
 ```ts
 import { SchemaGetter } from "effect"

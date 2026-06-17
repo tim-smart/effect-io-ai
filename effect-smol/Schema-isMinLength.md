@@ -19,7 +19,7 @@ When generating test data with fast-check, this applies a `minLength`
 constraint to ensure generated strings or arrays have at least the required
 length.
 
-**Example** (Minimum length check)
+**Example** (Checking minimum length)
 
 ```ts
 import { Schema } from "effect"
@@ -34,6 +34,6 @@ const NonEmptyArraySchema = Schema.Array(Schema.Number).check(Schema.isMinLength
 declare const isMinLength: (minLength: number, annotations?: Annotations.Filter) => SchemaAST.Filter<{ readonly length: number; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7532)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7715)
 
 Since v4.0.0

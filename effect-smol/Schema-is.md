@@ -9,10 +9,16 @@ schema.
 **Details**
 
 This function returns a predicate that performs a type-safe check, narrowing
-the type of the input value if the check passes. It's particularly useful for
-runtime type validation and TypeScript type narrowing.
+the type of the input value if the check passes. The predicate returns `false`
+for schema mismatches.
 
-**Example** (Basic Type Guard)
+**Gotchas**
+
+Only causes made entirely of schema issues are converted to `false`. Causes
+that contain defects, interruptions, or other non-schema reasons throw
+instead.
+
+**Example** (Defining a basic type guard)
 
 ```ts
 import { Schema } from "effect"
@@ -36,6 +42,6 @@ if (isString(value)) {
 declare const is: <T>(schema: Schema<T>) => <I>(input: I) => input is I & T
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1117)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1131)
 
 Since v3.10.0

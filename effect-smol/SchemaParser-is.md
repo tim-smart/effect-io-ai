@@ -13,8 +13,14 @@ exposing issue details.
 
 **Details**
 
-The guard returns `true` on successful validation and `false` on failure, without
-exposing issue details.
+The guard returns `true` on successful validation and `false` when validation
+fails only with schema issues, without exposing issue details.
+
+**Gotchas**
+
+Only causes made entirely of schema issues are converted to `false`. Causes
+that contain defects, interruptions, or asynchronous work at this synchronous
+boundary throw an `Error` whose cause is the underlying `Cause`.
 
 **Signature**
 
@@ -22,6 +28,6 @@ exposing issue details.
 declare const is: <T>(schema: Schema.Schema<T>) => <I>(input: I) => input is I & T
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L146)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L173)
 
 Since v3.10.0

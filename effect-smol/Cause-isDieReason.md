@@ -10,7 +10,7 @@ Narrows a `Reason` to `Die`.
 Use as a predicate for `Array.filter` to pick out `Die` (defect) reasons when
 iterating over `cause.reasons`.
 
-**Example** (filtering die reasons)
+**Example** (Filtering die reasons)
 
 ```ts
 import { Cause } from "effect"

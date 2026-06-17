@@ -15,7 +15,7 @@ Use when you need a fully mutable version of a deeply readonly type.
 Recursion stops at primitives (`string`, `number`, `boolean`, `bigint`,
 `symbol`) and functions.
 
-**Example** (Deep mutable conversion)
+**Example** (Converting deeply to mutable types)
 
 ```ts
 import type { Types } from "effect"

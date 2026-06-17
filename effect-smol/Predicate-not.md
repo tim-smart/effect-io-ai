@@ -13,7 +13,7 @@ Use when you want the inverse of an existing predicate.
 
 Returns a new predicate that flips the boolean result.
 
-**Example** (Negate)
+**Example** (Negating a predicate)
 
 ```ts
 import { Predicate } from "effect"

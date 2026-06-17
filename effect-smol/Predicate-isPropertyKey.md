@@ -14,7 +14,7 @@ indexing.
 
 Uses `isString`, `isNumber`, and `isSymbol`.
 
-**Example** (Guard property key)
+**Example** (Guarding property keys)
 
 ```ts
 import { Predicate } from "effect"

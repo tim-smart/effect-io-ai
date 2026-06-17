@@ -5,7 +5,7 @@ Module: `Channel`<br />
 
 Represents a `Channel` that never completes.
 
-**Example** (Using non-terminating channels)
+**Example** (Creating non-terminating channels)
 
 ```ts
 import { Channel } from "effect"

@@ -16,7 +16,7 @@ operations. Operations are applied sequentially from first to last, and later
 operations observe the document state produced by earlier operations. An empty
 array represents a no-op patch and returns the original document.
 
-**Example** (Multi-operation patch)
+**Example** (Defining a multi-operation patch)
 
 ```ts
 import { JsonPatch } from "effect"

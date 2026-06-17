@@ -14,7 +14,7 @@ bigint.
 
 Uses `typeof input === "bigint"`.
 
-**Example** (Guard bigint)
+**Example** (Guarding bigints)
 
 ```ts
 import { Predicate } from "effect"

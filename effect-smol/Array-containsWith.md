@@ -10,7 +10,7 @@ Returns a membership-test function using a custom equivalence.
 Use when checking membership with caller-provided equality instead of
 `Equal.equivalence()`.
 
-**Example** (Custom equality check)
+**Example** (Checking with custom equality)
 
 ```ts
 import { Array, pipe } from "effect"

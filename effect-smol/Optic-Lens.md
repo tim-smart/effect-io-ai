@@ -18,7 +18,7 @@ the updated whole, unlike `Iso`.
 - Composing a Lens with a `Prism` or `Optional` produces an
   `Optional`.
 
-**Example** (focusing on a struct field)
+**Example** (Focusing on a struct field)
 
 ```ts
 import { Optic } from "effect"

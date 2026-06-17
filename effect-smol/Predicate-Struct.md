@@ -15,7 +15,7 @@ predicates into an object predicate.
 Returns a refinement if any field predicate is a refinement. Only the
 specified keys are checked, and extra keys are ignored.
 
-**Example** (Struct predicate)
+**Example** (Checking structs)
 
 ```ts
 import { Predicate } from "effect"

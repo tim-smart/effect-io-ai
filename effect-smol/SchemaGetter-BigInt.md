@@ -15,7 +15,7 @@ boolean value to `bigint`.
 - Delegates to `globalThis.BigInt`.
 - Throws at runtime if the input cannot be converted (e.g. non-numeric string).
 
-**Example** (Coerce to bigint)
+**Example** (Coercing to a bigint)
 
 ```ts
 import { SchemaGetter } from "effect"

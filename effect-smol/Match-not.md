@@ -15,7 +15,7 @@ pattern does not.
 Any excluded value bypasses the provided function and continues matching
 through later cases.
 
-**Example** (Ignoring a Specific Value)
+**Example** (Ignoring a specific value)
 
 ```ts
 import { Match } from "effect"

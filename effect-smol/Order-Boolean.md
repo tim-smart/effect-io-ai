@@ -13,7 +13,7 @@ Use when you need boolean ordering where `false` comes before `true`.
 
 `false` is less than `true`, and equal values return `0`.
 
-**Example** (Boolean Ordering)
+**Example** (Ordering booleans)
 
 ```ts
 import { Order } from "effect"

@@ -10,7 +10,7 @@ Checks whether an Exit is a Success.
 Use as a type guard to narrow `Exit<A, E>` to `Success<A, E>` and access the
 `value` property.
 
-**Example** (Narrowing to Success)
+**Example** (Narrowing to success)
 
 ```ts
 import { Exit } from "effect"

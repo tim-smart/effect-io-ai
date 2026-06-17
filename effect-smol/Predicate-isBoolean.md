@@ -14,7 +14,7 @@ boolean.
 
 Uses `typeof input === "boolean"`.
 
-**Example** (Guard boolean)
+**Example** (Guarding booleans)
 
 ```ts
 import { Predicate } from "effect"

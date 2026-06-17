@@ -9,7 +9,7 @@ Converts a `camelCase` string to `snake_case`.
 
 - Pure, delegates to `String.camelToSnake`.
 
-**Example** (Camel to snake)
+**Example** (Converting camel case to snake case)
 
 ```ts
 import { SchemaGetter } from "effect"

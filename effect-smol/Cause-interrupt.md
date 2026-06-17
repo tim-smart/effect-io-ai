@@ -6,7 +6,7 @@ Module: `Cause`<br />
 Creates a `Cause` containing a single `Interrupt` reason,
 optionally carrying the interrupting fiber's ID.
 
-**Example** (creating an interrupt cause)
+**Example** (Creating an interrupt cause)
 
 ```ts
 import { Cause } from "effect"

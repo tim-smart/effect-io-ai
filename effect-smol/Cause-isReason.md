@@ -5,7 +5,7 @@ Module: `Cause`<br />
 
 Checks whether an arbitrary value is a `Reason` (`Fail`, `Die`, or `Interrupt`).
 
-**Example** (runtime type check)
+**Example** (Checking the runtime type)
 
 ```ts
 import { Cause } from "effect"

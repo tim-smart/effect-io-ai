@@ -14,7 +14,7 @@ Use when you need a boolean greater-than predicate using an `Order`.
 Returns `true` if the order returns `1`, meaning the first value is greater
 than the second. Equal or lesser values return `false`.
 
-**Example** (Greater Than)
+**Example** (Checking greater-than comparisons)
 
 ```ts
 import { Order } from "effect"

@@ -26,7 +26,7 @@ decide what to throw.
 This function is lossy. Use `prettyErrors` or iterate `cause.reasons`
 when you need all failures.
 
-**Example** (squashing a cause)
+**Example** (Squashing a cause)
 
 ```ts
 import { Cause } from "effect"

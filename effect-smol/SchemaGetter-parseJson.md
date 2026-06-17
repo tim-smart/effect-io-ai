@@ -17,7 +17,7 @@ during decoding.
 - With `reviver`: returns `unknown` (reviver may produce arbitrary values).
 - On parse failure, fails with `SchemaIssue.InvalidValue` containing the error message.
 
-**Example** (Parse JSON)
+**Example** (Parsing JSON)
 
 ```ts
 import { SchemaGetter } from "effect"

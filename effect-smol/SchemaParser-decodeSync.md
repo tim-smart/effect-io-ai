@@ -16,6 +16,12 @@ decoding failure should throw an `Error` whose cause is `SchemaIssue.Issue`.
 The returned function returns the decoded `Type` on success and throws an
 `Error` with the `SchemaIssue.Issue` in its `cause` on decoding failure.
 
+**Gotchas**
+
+Causes that contain defects, interruptions, or asynchronous work at this
+synchronous boundary throw an `Error` whose cause is the underlying `Cause`,
+instead of being converted to a schema validation error.
+
 **See**
 
 - `decodeUnknownSync` for untrusted or dynamically typed input
@@ -28,6 +34,6 @@ The returned function returns the decoded `Type` on success and throws an
 declare const decodeSync: <S extends Schema.Decoder<unknown>>(schema: S, options?: SchemaAST.ParseOptions) => (input: S["Encoded"], options?: SchemaAST.ParseOptions) => S["Type"]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L500)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L571)
 
 Since v3.10.0

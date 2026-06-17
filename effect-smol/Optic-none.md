@@ -15,7 +15,7 @@ Use when you want to match or construct `None` values within an optic chain.
 - `getResult` fails when the option is `Some`.
 - `set(undefined)` produces `Option.none()`.
 
-**Example** (matching None)
+**Example** (Matching None)
 
 ```ts
 import { Optic, Option, Result } from "effect"

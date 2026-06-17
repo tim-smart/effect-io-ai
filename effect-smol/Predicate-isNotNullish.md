@@ -14,7 +14,7 @@ but keeps other falsy ones.
 
 Uses `input != null`.
 
-**Example** (Filter non-nullish)
+**Example** (Filtering non-nullish values)
 
 ```ts
 import { Predicate } from "effect"

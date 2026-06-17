@@ -15,7 +15,7 @@ defining generic utilities over predicates.
 This is type-only and creates no runtime value. It resolves to `never` if
 the type does not match `Predicate`.
 
-**Example** (Infer input)
+**Example** (Inferring the input type)
 
 ```ts
 import { Predicate } from "effect"

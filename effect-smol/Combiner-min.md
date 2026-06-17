@@ -16,7 +16,7 @@ build a `Reducer` that tracks the running minimum.
 The combiner compares values using the given `Order`. When values are equal,
 it returns `that` (the second argument).
 
-**Example** (minimum of two numbers)
+**Example** (Selecting the minimum of two numbers)
 
 ```ts
 import { Combiner, Number } from "effect"

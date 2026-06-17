@@ -20,7 +20,7 @@ mutating the original value.
 - Each call creates a **new** proxy, so `byReference(x) !== byReference(x)`.
 - Does **not** mutate the original object (unlike `byReferenceUnsafe`).
 
-**Example** (Opting Out of Structural Equality)
+**Example** (Opting out of structural equality)
 
 ```ts
 import { Equal } from "effect"

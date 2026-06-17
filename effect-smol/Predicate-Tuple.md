@@ -15,7 +15,7 @@ element predicates into a tuple predicate.
 Returns a refinement if any element predicate is a refinement. Evaluation
 stops at the first failing element.
 
-**Example** (Tuple predicate)
+**Example** (Checking tuples)
 
 ```ts
 import { Predicate } from "effect"

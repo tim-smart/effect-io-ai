@@ -10,7 +10,7 @@ Creates a standalone `Die` reason (not wrapped in a `Cause`).
 Use when constructing a standalone defect reason for `fromReasons` or
 direct comparison.
 
-**Example** (creating a Die reason)
+**Example** (Creating a Die reason)
 
 ```ts
 import { Cause } from "effect"

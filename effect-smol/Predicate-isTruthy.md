@@ -15,7 +15,7 @@ out falsy values like `0`, `""`, and `false`.
 This uses `!!input` and treats `0`, `""`, `false`, `null`, and `undefined`
 as false.
 
-**Example** (Filter truthy)
+**Example** (Filtering truthy values)
 
 ```ts
 import { Predicate } from "effect"

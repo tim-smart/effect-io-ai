@@ -23,6 +23,6 @@ type Encoded<E, Rest> = Rest extends
     E
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3949)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4132)
 
 Since v3.10.0

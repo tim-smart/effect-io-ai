@@ -14,7 +14,7 @@ Use when you need every `[a, b]` pair from two arrays as tuples.
 Produces every `[a, b]` combination of an element from `self` with an element
 from `that`, so the result length is `self.length * that.length`.
 
-**Example** (All pairs of two arrays)
+**Example** (Generating all pairs from two arrays)
 
 ```ts
 import { Array } from "effect"

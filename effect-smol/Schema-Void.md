@@ -11,6 +11,6 @@ Type-level representation of `Void`.
 export interface Void extends Bottom<void, void, never, never, SchemaAST.Void, Void> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2731)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2914)
 
 Since v3.10.0

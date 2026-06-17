@@ -20,7 +20,7 @@ It's important to note that effects are immutable, meaning that the original
 effect is not modified. Instead, a new effect is returned with the updated
 value.
 
-**Example** (Syntax)
+**Example** (Choosing map syntax variants)
 
 ```ts
 import { Effect, pipe } from "effect"
@@ -63,6 +63,6 @@ Effect.runPromise(finalAmount).then(console.log)
 declare const map: { <A, B>(f: (a: A) => B): <E, R>(self: Effect<A, E, R>) => Effect<B, E, R>; <A, E, R, B>(self: Effect<A, E, R>, f: (a: A) => B): Effect<B, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L2306)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L2350)
 
 Since v2.0.0

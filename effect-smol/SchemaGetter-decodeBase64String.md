@@ -9,7 +9,7 @@ Decodes a Base64 string to a UTF-8 `string`.
 
 - Fails with `SchemaIssue.InvalidValue` if the input is not valid Base64.
 
-**Example** (Decode Base64 to string)
+**Example** (Decoding Base64 to string)
 
 ```ts
 import { SchemaGetter } from "effect"

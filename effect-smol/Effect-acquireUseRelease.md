@@ -28,7 +28,7 @@ fail, even if the `use` `Effect` value succeeds. If this fail-fast behavior
 is not desired, errors produced by the `release` `Effect` value can be caught
 and ignored.
 
-**Example** (Using a resource with cleanup)
+**Example** (Acquiring resources with cleanup)
 
 ```ts
 import { Console, Effect, Exit } from "effect"
@@ -84,6 +84,6 @@ Effect.runPromise(program)
 declare const acquireUseRelease: <Resource, E, R, A, E2, R2, E3, R3>(acquire: Effect<Resource, E, R>, use: (a: Resource) => Effect<A, E2, R2>, release: (a: Resource, exit: Exit.Exit<A, E2>) => Effect<void, E3, R3>) => Effect<A, E | E2 | E3, R | R2 | R3>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L6580)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L6624)
 
 Since v2.0.0

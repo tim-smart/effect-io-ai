@@ -13,7 +13,7 @@ Use when you need a `Predicate` runtime guard for `Set` values.
 
 Uses `instanceof Set`.
 
-**Example** (Guard a Set)
+**Example** (Guarding a Set)
 
 ```ts
 import { Predicate } from "effect"

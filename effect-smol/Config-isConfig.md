@@ -10,7 +10,7 @@ Returns `true` if `u` is a `Config` instance.
 Use when you need to distinguish a `Config` from an unknown value before
 calling `.parse` or `unwrap`.
 
-**Example** (Type guard)
+**Example** (Checking Config values)
 
 ```ts
 import { Config } from "effect"

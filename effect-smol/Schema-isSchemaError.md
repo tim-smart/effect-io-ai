@@ -5,7 +5,7 @@ Module: `Schema`<br />
 
 Returns `true` if `u` is a `SchemaError`.
 
-**Example** (Type guard in a catch block)
+**Example** (Narrowing Schema errors in a catch block)
 
 ```ts
 import { Schema } from "effect"
@@ -25,6 +25,6 @@ try {
 declare const isSchemaError: (u: unknown) => u is SchemaError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L909)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L917)
 
 Since v4.0.0

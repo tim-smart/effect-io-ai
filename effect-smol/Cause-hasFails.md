@@ -10,7 +10,7 @@ Returns `true` if the cause contains at least one `Fail` reason.
 Use to check whether a cause includes typed failures before extracting,
 mapping, or rendering them.
 
-**Example** (checking for typed errors)
+**Example** (Checking for typed errors)
 
 ```ts
 import { Cause } from "effect"

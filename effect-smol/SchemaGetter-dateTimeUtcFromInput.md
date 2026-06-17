@@ -19,7 +19,7 @@ to a `DateTime.Utc`.
 - Fails with `SchemaIssue.InvalidValue` if the input cannot be parsed as a valid
   `DateTime`.
 
-**Example** (Parse DateTime)
+**Example** (Parsing DateTime)
 
 ```ts
 import { SchemaGetter } from "effect"

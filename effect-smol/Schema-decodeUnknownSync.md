@@ -4,7 +4,7 @@ Module: `Schema`<br />
 ## Schema.decodeUnknownSync
 
 Decodes an `unknown` input against a schema synchronously, returning the
-decoded value or throwing a `SchemaError`.
+decoded value or throwing a `SchemaError` for schema mismatches.
 
 **When to use**
 
@@ -14,10 +14,15 @@ schema mismatches to throw `SchemaError`.
 **Details**
 
 For input already typed as the schema's `Encoded` type use `decodeSync`.
-Only service-free schemas can be decoded synchronously. For non-throwing
-alternatives see `decodeUnknownOption`, `decodeUnknownExit`, or
-`decodeUnknownEffect`. Options may be provided either when creating the
-decoder or when applying it; application options override creation options.
+Only service-free schemas can be decoded synchronously. For alternatives that
+do not throw on schema mismatches, see `decodeUnknownOption`,
+`decodeUnknownExit`, or `decodeUnknownEffect`. Options may be provided either
+when creating the decoder or when applying it; application options override
+creation options.
+
+**Gotchas**
+
+Non-schema failures may throw a runtime failure instead of `SchemaError`.
 
 **Example** (Decoding with a transformation schema)
 
@@ -46,6 +51,6 @@ Schema.decodeUnknownSync(NumberFromString)("not a number")
 declare const decodeUnknownSync: <S extends Decoder<unknown>>(schema: S, options?: SchemaAST.ParseOptions) => (input: unknown, options?: SchemaAST.ParseOptions) => S["Type"]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1473)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1589)
 
 Since v4.0.0

@@ -17,7 +17,7 @@ Decoding maps `null` to `Option.none()` and non-null values to
 `Option.some(value)`. Encoding maps `Option.none()` to `null` and
 `Option.some(value)` to `value`. The transformation is pure and synchronous.
 
-**Example** (Option from nullable)
+**Example** (Converting nullable values to an Option)
 
 ```ts
 import { Schema, SchemaTransformation } from "effect"

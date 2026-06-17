@@ -20,6 +20,6 @@ variant specifically.
 declare const isAny: (ast: AST) => ast is Any
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L203)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L204)
 
 Since v4.0.0

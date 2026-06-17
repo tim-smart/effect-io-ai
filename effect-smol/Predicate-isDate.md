@@ -13,7 +13,7 @@ Use when you need a `Predicate` runtime guard for dates.
 
 Uses `instanceof Date`.
 
-**Example** (Guard Date)
+**Example** (Guarding Date values)
 
 ```ts
 import { Predicate } from "effect"

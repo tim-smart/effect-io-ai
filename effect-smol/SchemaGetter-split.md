@@ -15,7 +15,7 @@ containing a delimited list, such as CSV values.
 The getter is pure and never fails. It splits by `separator` (default `,`).
 An empty string produces an empty array, not `[""]`.
 
-**Example** (Split comma-separated string)
+**Example** (Splitting a comma-separated string)
 
 ```ts
 import { SchemaGetter } from "effect"

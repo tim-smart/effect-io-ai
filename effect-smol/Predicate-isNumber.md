@@ -14,7 +14,7 @@ number.
 
 Uses `typeof input === "number"` and does not exclude `NaN` or `Infinity`.
 
-**Example** (Guard number)
+**Example** (Guarding numbers)
 
 ```ts
 import { Predicate } from "effect"

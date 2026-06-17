@@ -18,7 +18,7 @@ returns `true` only if all elements are equivalent according to their
 respective equivalences, and it also satisfies reflexive, symmetric, and
 transitive properties.
 
-**Example** (Homogeneous tuple equivalence)
+**Example** (Comparing homogeneous tuples)
 
 ```ts
 import { Equivalence } from "effect"
@@ -37,7 +37,7 @@ console.log(stringTupleEq(tuple1, tuple2)) // true
 console.log(stringTupleEq(tuple1, tuple3)) // false (different third element)
 ```
 
-**Example** (Tuple with custom equivalences)
+**Example** (Comparing tuples with custom equivalences)
 
 ```ts
 import { Equivalence } from "effect"

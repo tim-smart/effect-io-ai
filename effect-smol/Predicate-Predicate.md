@@ -16,7 +16,7 @@ and iterables.
 A predicate returns `true` or `false` and never throws by itself. It does not
 narrow types unless you use `Refinement`.
 
-**Example** (Define a predicate)
+**Example** (Defining a predicate)
 
 ```ts
 import { Predicate } from "effect"

@@ -17,7 +17,7 @@ Decoding always succeeds and creates a `Duration` from nanoseconds. Encoding
 fails with `InvalidValue` if the `Duration` cannot be represented as a
 `bigint`, such as `Duration.infinity`.
 
-**Example** (Duration from nanoseconds)
+**Example** (Converting nanoseconds to a Duration)
 
 ```ts
 import { Schema, SchemaTransformation } from "effect"

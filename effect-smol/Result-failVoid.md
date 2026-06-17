@@ -16,7 +16,7 @@ This is equivalent to `Result.fail(undefined)` with type
 `Result<never, void>`, but reuses a shared `Failure` wrapper instead of
 allocating one each time.
 
-**Example** (Using a failure without a payload)
+**Example** (Failing without a payload)
 
 ```ts
 import { Result } from "effect"

@@ -10,7 +10,7 @@ initiated the interruption.
 
 Use `isInterruptReason` to narrow a `Reason` to this type.
 
-**Example** (accessing the fiber ID)
+**Example** (Accessing the fiber ID)
 
 ```ts
 import { Cause } from "effect"

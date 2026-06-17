@@ -14,7 +14,7 @@ symbol.
 
 Uses `typeof input === "symbol"`.
 
-**Example** (Guard symbol)
+**Example** (Guarding symbols)
 
 ```ts
 import { Predicate } from "effect"

@@ -16,7 +16,7 @@ ones.
 This is data-last only and returns a function. The return type preserves
 `NonEmptyArray`.
 
-**Example** (Multi-key sorting)
+**Example** (Sorting by multiple keys)
 
 ```ts
 import { Array, Order, pipe } from "effect"

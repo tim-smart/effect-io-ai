@@ -13,7 +13,7 @@ All built-in error classes in this module (`NoSuchElementError`,
 `TimeoutError`, `IllegalArgumentError`, `ExceededCapacityError`,
 `AsyncFiberError`, and `UnknownError`) implement this interface.
 
-**Example** (yielding an error in Effect.gen)
+**Example** (Yielding an error in Effect.gen)
 
 ```ts
 import { Cause, Effect } from "effect"

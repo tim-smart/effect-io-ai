@@ -25,7 +25,7 @@ narrow each entry with `isFailReason`, `isDieReason`, or
 `Cause` implements `Equal` — two causes with the same reasons (by value)
 compare as equal.
 
-**Example** (creating and inspecting a cause)
+**Example** (Creating and inspecting a cause)
 
 ```ts
 import { Cause } from "effect"

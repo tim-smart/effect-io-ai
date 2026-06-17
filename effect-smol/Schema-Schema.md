@@ -15,7 +15,7 @@ This is a structural interface — concrete schema values are produced by the
 constructors in this module (e.g. `Struct`, `String`, `Number`).
 When you also need the encoded type or service requirements, use `Codec`.
 
-**Example** (Function that accepts any schema decoding to `string`)
+**Example** (Accepting any schema decoding to `string`)
 
 ```ts
 import { Schema } from "effect"
@@ -40,6 +40,6 @@ export interface Schema<out T> extends Top {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L642)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L650)
 
 Since v3.10.0

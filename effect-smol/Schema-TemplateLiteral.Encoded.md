@@ -13,6 +13,6 @@ type Encoded<Parts> = Parts extends readonly [...infer Init, infer Last] ? Appen
     : ``
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2361)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2544)
 
 Since v3.10.0

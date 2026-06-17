@@ -14,7 +14,7 @@ Use when you need a schema getter that passes values through without
 
 - Same singleton as `passthrough` — no allocation, optimized in composition.
 
-**Example** (Subtype passthrough)
+**Example** (Passing through subtypes)
 
 ```ts
 import { SchemaGetter } from "effect"

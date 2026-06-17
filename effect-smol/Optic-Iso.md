@@ -18,7 +18,7 @@ Use when you have a pair of functions that convert back and forth without losing
 - `get(set(a)) === a` and `set(get(s))` equals `s` (round-trip laws).
 - Extends both `Lens` and `Prism`.
 
-**Example** (Celsius ↔ Fahrenheit)
+**Example** (Converting between Celsius and Fahrenheit)
 
 ```ts
 import { Optic } from "effect"

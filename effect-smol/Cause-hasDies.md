@@ -10,7 +10,7 @@ Returns `true` if the cause contains at least one `Die` reason.
 Use to check whether a cause includes defects before extracting or rendering
 them.
 
-**Example** (checking for defects)
+**Example** (Checking for defects)
 
 ```ts
 import { Cause } from "effect"

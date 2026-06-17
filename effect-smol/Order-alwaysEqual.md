@@ -14,7 +14,7 @@ Use when you need an order that treats all values as equal.
 Always returns `0` regardless of input values, making it useful as a neutral
 element in order composition.
 
-**Example** (Always Equal Order)
+**Example** (Ordering with an always-equal Order)
 
 ```ts
 import { Order } from "effect"

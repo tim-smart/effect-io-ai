@@ -18,7 +18,7 @@ repeated combination.
 `combiner.combine(self, combiner.combine(middle, that))`. This function is
 curried: first provide the separator, then the base combiner.
 
-**Example** (joining strings with a separator)
+**Example** (Joining strings with a separator)
 
 ```ts
 import { Combiner, String } from "effect"

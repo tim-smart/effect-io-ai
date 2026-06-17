@@ -15,7 +15,7 @@ Use when you need tie-breaking across a variable number of orders.
 Applies orders in iteration order and short-circuits on the first non-zero
 result. It returns `0` only if all orders return `0`.
 
-**Example** (Combining Multiple Orders)
+**Example** (Combining multiple Orders)
 
 ```ts
 import { Order } from "effect"

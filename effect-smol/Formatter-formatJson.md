@@ -20,7 +20,7 @@ before serialization. Values not supported by JSON, such as `BigInt`,
 `Symbol`, `undefined`, and functions, follow standard `JSON.stringify`
 behavior. The `space` parameter controls indentation and defaults to `0`.
 
-**Example** (Compact JSON)
+**Example** (Formatting compact JSON)
 
 ```ts
 import { Formatter } from "effect"
@@ -29,7 +29,7 @@ console.log(Formatter.formatJson({ name: "Alice", age: 30 }))
 // {"name":"Alice","age":30}
 ```
 
-**Example** (Circular reference handling)
+**Example** (Handling circular references)
 
 ```ts
 import { Formatter } from "effect"

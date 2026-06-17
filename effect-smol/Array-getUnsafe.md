@@ -15,7 +15,7 @@ be a programming error.
 Throws an `Error` with the message `"Index out of bounds: <i>"`. Prefer
 `get` for safe access.
 
-**Example** (Unsafe index access)
+**Example** (Accessing indexes unsafely)
 
 ```ts
 import { Array } from "effect"

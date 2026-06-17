@@ -11,7 +11,7 @@ Encodes a present string using `encodeURIComponent`.
 - May throw a `URIError` for malformed surrogate pairs; this exception is not
   converted into an `Issue`.
 
-**Example** (Encode a URI component)
+**Example** (Encoding a URI component)
 
 ```ts
 import { SchemaGetter } from "effect"

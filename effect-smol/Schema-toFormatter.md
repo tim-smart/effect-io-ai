@@ -18,6 +18,6 @@ the default formatting logic runs.
 declare const toFormatter: <T>(schema: Schema<T>, options?: { readonly onBefore?: ((ast: SchemaAST.AST, recur: (ast: SchemaAST.AST) => Formatter<any>) => Formatter<any> | undefined) | undefined; }) => Formatter<T>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L12571)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L12754)
 
 Since v4.0.0

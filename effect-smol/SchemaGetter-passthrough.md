@@ -17,7 +17,7 @@ encode or decode, to pass values through unchanged.
 - The default overload requires `T === E`. Pass `{ strict: false }` to opt
   out of the type constraint.
 
-**Example** (Identity transformation)
+**Example** (Passing through identity transformations)
 
 ```ts
 import { Schema, SchemaGetter } from "effect"

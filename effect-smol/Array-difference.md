@@ -11,7 +11,7 @@ Computes elements in the first array that are not in the second, using
 Use when you need to keep values from the first array that are absent from
 the second and the default `Equal.equivalence()` comparison is appropriate.
 
-**Example** (Array difference)
+**Example** (Computing array differences)
 
 ```ts
 import { Array } from "effect"

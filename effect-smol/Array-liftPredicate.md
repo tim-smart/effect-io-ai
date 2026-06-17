@@ -6,7 +6,7 @@ Module: `Array`<br />
 Lifts a predicate into an array: returns `[value]` if the predicate holds,
 `[]` otherwise.
 
-**Example** (Conditional wrapping)
+**Example** (Wrapping values conditionally)
 
 ```ts
 import { Array } from "effect"

@@ -18,7 +18,7 @@ Decoding accepts any string that `Duration.fromInput` can parse, including
 producing strings such as `"2000 millis"` or `"10 nanos"` that round-trip
 through the parser.
 
-**Example** (Duration from string)
+**Example** (Converting a string to a Duration)
 
 ```ts
 import { Schema, SchemaTransformation } from "effect"

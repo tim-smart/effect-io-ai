@@ -10,7 +10,7 @@ given defect.
 
 Use to construct a cause from an untyped defect or unexpected thrown value.
 
-**Example** (creating a die cause)
+**Example** (Creating a die cause)
 
 ```ts
 import { Cause } from "effect"

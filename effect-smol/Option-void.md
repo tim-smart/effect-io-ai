@@ -9,7 +9,7 @@ Provides a pre-built `Some(undefined)` constant.
 
 Use to return a "success with no meaningful value" from an `Option`-returning function
 
-**Example** (Using Option.void)
+**Example** (Referencing Option.void)
 
 ```ts
 import { Option } from "effect"

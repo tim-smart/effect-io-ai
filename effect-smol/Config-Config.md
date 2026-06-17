@@ -13,8 +13,9 @@ yielded inside `Effect.gen`.
 **Details**
 
 Key members:
-- `parse(provider)` – runs the config against a specific provider,
-  returning `Effect<T, ConfigError>`.
+- `parse(provider, pathPrefix?)` – runs the config against a specific provider.
+  The optional path prefix is the logical scope accumulated from outer
+  `Config.nested` calls.
 - Yieldable – can be yielded inside `Effect.gen`, which automatically
   resolves the current `ConfigProvider` from the context.
 - Pipeable – supports `.pipe(Config.map(...))` etc.
@@ -22,14 +23,16 @@ Key members:
 **See**
 
 - `schema` – the main way to create a Config
-- `make` – low-level constructor
 
 **Signature**
 
 ```ts
 export interface Config<out T> extends Effect.Effect<T, ConfigError> {
   readonly [TypeId]: typeof TypeId
-  readonly parse: (provider: ConfigProvider.ConfigProvider) => Effect.Effect<T, ConfigError>
+  readonly parse: (
+    provider: ConfigProvider.ConfigProvider,
+    pathPrefix?: Path
+  ) => Effect.Effect<T, ConfigError>
 }
 ```
 

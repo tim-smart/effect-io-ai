@@ -11,7 +11,7 @@ duplicates.
 Use when you need the union of two arrays but duplicate detection must use a
 custom equivalence instead of the default `Equal.equivalence()`.
 
-**Example** (Union with custom equality)
+**Example** (Computing unions with custom equality)
 
 ```ts
 import { Array } from "effect"

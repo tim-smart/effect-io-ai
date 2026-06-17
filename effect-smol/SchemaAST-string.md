@@ -20,6 +20,6 @@ Use as the shared `SchemaAST` node for unconstrained JavaScript strings.
 declare const string: String
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L1310)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L1311)
 
 Since v4.0.0

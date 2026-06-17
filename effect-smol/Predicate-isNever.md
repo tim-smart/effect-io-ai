@@ -9,7 +9,7 @@ Type guard that always returns `false`.
 
 Use when you need a `Predicate` that never accepts, e.g. in default branches.
 
-**Example** (Never matches)
+**Example** (Matching no values)
 
 ```ts
 import { Predicate } from "effect"

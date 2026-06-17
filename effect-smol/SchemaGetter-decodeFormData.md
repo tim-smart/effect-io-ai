@@ -16,7 +16,7 @@ The getter is pure and never fails. It interprets bracket-path keys such as
 `user[name]` and `items[0]` to build nested objects or arrays, and each leaf
 value is a `string` or `Blob`.
 
-**Example** (Decode FormData)
+**Example** (Decoding FormData)
 
 ```ts
 import { SchemaGetter } from "effect"

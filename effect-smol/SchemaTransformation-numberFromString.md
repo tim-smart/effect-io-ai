@@ -18,7 +18,7 @@ the number to a string like `String(n)`. This does not validate that the
 result is finite; combine with `Schema.Finite` or `Schema.Int` for stricter
 checks.
 
-**Example** (Number from string)
+**Example** (Converting a string to a number)
 
 ```ts
 import { Schema, SchemaTransformation } from "effect"

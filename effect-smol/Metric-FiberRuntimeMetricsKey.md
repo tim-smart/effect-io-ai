@@ -5,7 +5,7 @@ Module: `Metric`<br />
 
 Service key for the fiber runtime metrics service.
 
-**Example** (Using the fiber runtime metrics key)
+**Example** (Accessing the fiber runtime metrics key)
 
 ```ts
 import { Data, Effect, Layer, Metric } from "effect"

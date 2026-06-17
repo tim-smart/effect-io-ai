@@ -10,7 +10,7 @@ Transforms elements using a function that may return null or undefined, filterin
 Use when working with APIs or functions that return nullable values,
 providing a clean way to filter out null or undefined while transforming.
 
-**Example** (FlatMapping nullable results)
+**Example** (Flat mapping nullable results)
 
 ```ts
 import { Iterable } from "effect"

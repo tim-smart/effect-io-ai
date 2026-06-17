@@ -19,7 +19,7 @@ waiting for capacity.
 
 Subscribers may miss messages published while they are subscribed.
 
-**Example** (Using a dropping strategy)
+**Example** (Applying a dropping strategy)
 
 ```ts
 import { Effect, PubSub } from "effect"

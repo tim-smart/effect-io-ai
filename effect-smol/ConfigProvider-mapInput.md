@@ -12,10 +12,11 @@ segments before lookup.
 
 **Details**
 
-The function `f` receives the full path and must return a new path. If the
-provider already has a `mapInput`, the functions compose: the existing
-mapping runs first, then `f`. Supports both data-last and data-first calling
-conventions.
+The function `f` receives the whole path produced by earlier provider
+transformations and must return a new path. Lookup path transformations
+compose in application order: the existing transformation runs first, then
+`f` runs. For providers composed with `orElse`, the transformation is
+applied to each operand.
 
 **Example** (Uppercasing path segments)
 
@@ -44,6 +45,6 @@ const upper = ConfigProvider.mapInput(provider, (path) =>
 declare const mapInput: { (f: (path: Path) => Path): (self: ConfigProvider) => ConfigProvider; (self: ConfigProvider, f: (path: Path) => Path): ConfigProvider; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L480)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L488)
 
 Since v4.0.0

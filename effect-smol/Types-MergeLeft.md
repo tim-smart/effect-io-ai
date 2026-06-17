@@ -14,7 +14,7 @@ Use when you want left-biased merging where the first argument wins.
 
 Implemented as `MergeRight<Target, Source>`.
 
-**Example** (Left-biased merge)
+**Example** (Merging with left bias)
 
 ```ts
 import type { Types } from "effect"

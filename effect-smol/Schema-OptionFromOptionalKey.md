@@ -13,6 +13,6 @@ export interface OptionFromOptionalKey<S extends Top> extends decodeTo<Option<to
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8254)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8437)
 
 Since v4.0.0

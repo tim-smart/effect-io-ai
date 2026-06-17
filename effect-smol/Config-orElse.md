@@ -16,8 +16,6 @@ Unlike `withDefault`, this catches **all** `ConfigError`s (not just
 missing data). The fallback function receives the error and returns a new
 `Config`.
 
-Supports both data-last and data-first calling conventions.
-
 **Example** (Falling back to a literal)
 
 ```ts
@@ -38,6 +36,6 @@ const hostConfig = Config.string("HOST").pipe(
 declare const orElse: { <A2>(that: (error: ConfigError) => Config<A2>): <A>(self: Config<A>) => Config<A2 | A>; <A, A2>(self: Config<A>, that: (error: ConfigError) => Config<A2>): Config<A | A2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L273)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L231)
 
 Since v2.0.0

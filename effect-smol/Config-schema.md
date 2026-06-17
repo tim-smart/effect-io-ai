@@ -11,8 +11,10 @@ Use when you need to read structured or schema-validated configuration.
 
 **Details**
 
-The optional `path` sets the root path segment(s) for the config lookup.
-Pass a single string for a flat key or an array for nested paths.
+The optional `path` sets the local path segment(s) for the config lookup.
+It is appended to the logical path prefix accumulated from outer
+`nested` calls. Pass a single string for a flat key or an array for
+nested paths.
 
 Convenience constructors such as `string`, `number`, and `boolean` delegate
 to this API.
@@ -52,6 +54,6 @@ const provider = ConfigProvider.fromUnknown({
 declare const schema: <T, E>(codec: Schema.Codec<T, E>, path?: string | ConfigProvider.Path) => Config<T>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L672)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L633)
 
 Since v4.0.0

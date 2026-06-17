@@ -15,7 +15,7 @@ elements before the last plus the last element.
 
 `onNonEmpty` receives `(init, last)` where `init` is everything but the last element.
 
-**Example** (Init and last destructuring)
+**Example** (Destructuring init and last)
 
 ```ts
 import { Array } from "effect"

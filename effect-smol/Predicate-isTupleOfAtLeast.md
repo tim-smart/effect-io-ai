@@ -15,7 +15,7 @@ narrows `ReadonlyArray<T>` to `TupleOfAtLeast<N, T>`.
 This only checks length, not element types, and returns a refinement on the
 array type.
 
-**Example** (Minimum length)
+**Example** (Checking minimum length)
 
 ```ts
 import { Predicate } from "effect"

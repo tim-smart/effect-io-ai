@@ -24,7 +24,7 @@ Returns an object with:
   on the tag being globally unique and the value being produced by your
   constructors. For untrusted input, validate with the `Schema` module first.
 
-**Example** (Basic usage)
+**Example** (Creating and matching tagged enum values)
 
 ```ts
 import { Data } from "effect"
@@ -49,7 +49,7 @@ const msg = $match(err, {
 console.log(msg) // "/missing not found"
 ```
 
-**Example** (Generic tagged enum)
+**Example** (Defining a generic tagged enum)
 
 ```ts
 import { Data } from "effect"

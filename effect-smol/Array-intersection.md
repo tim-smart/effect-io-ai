@@ -11,7 +11,7 @@ determined by the first array.
 Use when Effect equality is the right membership test and you want to keep
 values present in both inputs while preserving the first input's order.
 
-**Example** (Array intersection)
+**Example** (Computing array intersections)
 
 ```ts
 import { Array } from "effect"

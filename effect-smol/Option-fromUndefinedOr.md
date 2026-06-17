@@ -16,7 +16,7 @@ as a meaningful value.
 - `undefined` → `None`
 - Any other value (including `null`) → `Some`
 
-**Example** (From possibly-undefined values)
+**Example** (Converting possibly undefined values to an Option)
 
 ```ts
 import { Option } from "effect"

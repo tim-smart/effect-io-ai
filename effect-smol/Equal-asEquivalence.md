@@ -16,7 +16,7 @@ Use when you want to pass `Equal.equals` to APIs that require an
   `equals`.
 - Pure; allocates a thin wrapper on each call.
 
-**Example** (Deduplicating with Equal Semantics)
+**Example** (Deduplicating with Equal semantics)
 
 ```ts
 import { Array, Equal } from "effect"

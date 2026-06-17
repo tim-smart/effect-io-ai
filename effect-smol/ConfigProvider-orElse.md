@@ -13,7 +13,9 @@ or provide partial overrides on top of a base config.
 
 **Details**
 
-Supports both data-last and data-first calling conventions.
+Each provider keeps its own path transformations. If the combined provider
+is later transformed with `mapInput` or `nested`, the
+transformation is applied to both sides.
 
 **Gotchas**
 
@@ -43,6 +45,6 @@ const combined = ConfigProvider.orElse(envProvider, defaults)
 declare const orElse: { (that: ConfigProvider): (self: ConfigProvider) => ConfigProvider; (self: ConfigProvider, that: ConfigProvider): ConfigProvider; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L434)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L442)
 
 Since v2.0.0

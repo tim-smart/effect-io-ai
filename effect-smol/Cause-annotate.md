@@ -19,7 +19,7 @@ The runtime uses this to attach stack traces and spans.
 - By default, existing keys are preserved. Pass `{ overwrite: true }` to
   replace them.
 
-**Example** (annotating a cause)
+**Example** (Annotating a cause)
 
 ```ts
 import { Cause, Context } from "effect"

@@ -16,7 +16,7 @@ Use to merge independent causes into one structured failure value.
 - If the result is structurally equal to `self`, `self` is returned
   (referential shortcut).
 
-**Example** (combining two causes)
+**Example** (Combining two causes)
 
 ```ts
 import { Cause } from "effect"

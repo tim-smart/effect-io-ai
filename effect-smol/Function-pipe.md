@@ -21,7 +21,7 @@ result to the next function in order. The final function result is returned.
 Each function passed after the initial value must accept a single argument,
 because `pipe` calls each step with only the previous result.
 
-**Example** (Using pipeline syntax)
+**Example** (Piping values through functions)
 
 In this example, `1` is passed to the first function, and each result becomes
 the input for the next function.

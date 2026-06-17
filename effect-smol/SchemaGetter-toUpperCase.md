@@ -9,7 +9,7 @@ Converts a string to uppercase.
 
 - Pure, delegates to `String.toUpperCase`.
 
-**Example** (To uppercase)
+**Example** (Converting to uppercase)
 
 ```ts
 import { SchemaGetter } from "effect"

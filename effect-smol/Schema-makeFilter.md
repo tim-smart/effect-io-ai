@@ -16,7 +16,7 @@ the default formatter, failures use `message` first, `expected` second, and
 When `abort` is `true`, parsing stops after this filter fails instead of
 collecting later check failures.
 
-**Example** (Failure at a nested path)
+**Example** (Reporting failure at a nested path)
 
 ```ts
 import { Schema } from "effect"
@@ -63,6 +63,6 @@ console.log(String(Schema.decodeUnknownExit(schema)({ a: 1, b: 0, c: 0 })))
 declare const makeFilter: <T>(filter: (input: T, ast: SchemaAST.AST, options: SchemaAST.ParseOptions) => FilterOutput, annotations?: Annotations.Filter | undefined, abort?: boolean) => SchemaAST.Filter<T>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5994)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6177)
 
 Since v4.0.0

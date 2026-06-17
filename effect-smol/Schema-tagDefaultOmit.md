@@ -15,7 +15,7 @@ values with a `_tag` for tagged union matching.
 The tag is filled during decoding and construction, like `tag`, but is
 omitted when encoding.
 
-**Example** (Tag omitted during encoding)
+**Example** (Omitting tags during encoding)
 
 ```ts
 import { Schema } from "effect"
@@ -40,6 +40,6 @@ const encoded = Schema.encodeUnknownSync(A)({ _tag: "A", value: 1 })
 declare const tagDefaultOmit: <Tag extends SchemaAST.LiteralValue>(literal: Tag) => withDecodingDefaultKey<tag<Tag>, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5558)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5741)
 
 Since v4.0.0

@@ -15,7 +15,7 @@ results in one pass.
 The function receives `(element, index)`. This returns `NonEmptyArray` when
 both the input and mapped arrays are non-empty.
 
-**Example** (FlatMapping an array)
+**Example** (Flat mapping an array)
 
 ```ts
 import { Array } from "effect"

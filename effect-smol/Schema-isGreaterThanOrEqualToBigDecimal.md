@@ -12,6 +12,6 @@ Validates that a BigDecimal is greater than or equal to the specified value
 declare const isGreaterThanOrEqualToBigDecimal: (minimum: BigDecimal_.BigDecimal, annotations?: Annotations.Filter) => SchemaAST.Filter<BigDecimal_.BigDecimal>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7459)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7642)
 
 Since v4.0.0

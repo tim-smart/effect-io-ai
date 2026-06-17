@@ -11,7 +11,7 @@ custom equivalence.
 Use when you need to keep only values from the first array and equality must
 be defined by a custom comparator, such as matching objects by id.
 
-**Example** (Difference with custom equality)
+**Example** (Computing differences with custom equality)
 
 ```ts
 import { Array } from "effect"

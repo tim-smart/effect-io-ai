@@ -32,6 +32,6 @@ export interface mutable<S extends Top & { readonly "ast": SchemaAST.Arrays }> e
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4221)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4404)
 
 Since v3.10.0

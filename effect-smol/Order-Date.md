@@ -15,7 +15,7 @@ Compares dates by their underlying timestamp in milliseconds since the epoch.
 Earlier dates are less than later dates. Invalid dates are compared through
 their `getTime()` result.
 
-**Example** (Date Ordering)
+**Example** (Ordering Dates)
 
 ```ts
 import { Order } from "effect"

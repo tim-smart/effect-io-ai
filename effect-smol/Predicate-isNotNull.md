@@ -14,7 +14,7 @@ preserving other falsy values.
 
 Returns a refinement that excludes `null`.
 
-**Example** (Filter null)
+**Example** (Filtering null values)
 
 ```ts
 import { Predicate } from "effect"

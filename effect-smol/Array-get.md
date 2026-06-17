@@ -15,7 +15,7 @@ out-of-bounds index as `Option.none`.
 
 The index is floored to an integer. This never throws.
 
-**Example** (Safe index access)
+**Example** (Accessing indexes safely)
 
 ```ts
 import { Array } from "effect"

@@ -15,7 +15,7 @@ parameters for URLs.
 The getter is pure and never fails. It flattens nested objects or arrays into
 bracket-path keys. Non-object inputs produce an empty `URLSearchParams`.
 
-**Example** (Encode to URLSearchParams)
+**Example** (Encoding to URLSearchParams)
 
 ```ts
 import { SchemaGetter } from "effect"

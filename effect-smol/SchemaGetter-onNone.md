@@ -17,7 +17,7 @@ missing struct keys.
 - When input is `Some`, passes it through unchanged.
 - `f` receives the parse options and may return `None` to keep the value absent.
 
-**Example** (Default timestamp for missing field)
+**Example** (Providing a default timestamp for a missing field)
 
 ```ts
 import { Effect, Option, SchemaGetter } from "effect"

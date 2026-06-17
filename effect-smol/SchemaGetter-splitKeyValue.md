@@ -16,7 +16,7 @@ The getter is pure and never fails. It splits the string by `separator`
 (default `,`) and then each pair by `keyValueSeparator` (default `=`). Pairs
 missing a key or value are silently skipped.
 
-**Example** (Parse key-value string)
+**Example** (Parsing a key-value string)
 
 ```ts
 import { SchemaGetter } from "effect"

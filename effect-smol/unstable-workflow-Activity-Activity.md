@@ -26,6 +26,7 @@ export interface Activity<
   readonly successSchema: Success
   readonly errorSchema: Error
   readonly exitSchema: Schema.Exit<Success, Error, Schema.Defect>
+  readonly exitSchemaPartial: Schema.Exit<Success, Error, Schema.Unknown>
   readonly annotations: Context.Context<never>
   annotate<I, S>(
     key: Context.Key<I, S>,

@@ -15,7 +15,7 @@ Use when an optional success should be absent, such as the `None` branch of
 This is equivalent to `Result.succeed(Option.none())`, but reuses a shared
 `Success` wrapper instead of allocating one each time.
 
-**Example** (Using succeedNone)
+**Example** (Succeeding with None)
 
 ```ts
 import { Result } from "effect"

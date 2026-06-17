@@ -12,7 +12,7 @@ The callback receives the time-zone-adjusted wall-clock date for
 `DateTime.Zoned` values. Use `DateTime.withDateUtc` when the callback should
 receive the UTC instant.
 
-**Example** (Using time zone adjusted Dates)
+**Example** (Applying time zone adjusted Dates)
 
 ```ts
 import { DateTime } from "effect"

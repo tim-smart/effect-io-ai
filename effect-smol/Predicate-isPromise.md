@@ -13,7 +13,7 @@ Use when you need a `Predicate` guard for promise instances across realms.
 
 Performs a structural check for `then` and `catch` functions.
 
-**Example** (Guard promise)
+**Example** (Guarding promises)
 
 ```ts
 import { Predicate } from "effect"

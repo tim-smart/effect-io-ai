@@ -15,6 +15,6 @@ export interface RedactedFromValue<S extends Top>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8585)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8768)
 
 Since v4.0.0

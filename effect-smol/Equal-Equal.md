@@ -25,7 +25,7 @@ collections such as `HashMap` and `HashSet`.
 - `equals` delegates to this method when both operands implement it.
   If only one operand implements `Equal`, they are considered unequal.
 
-**Example** (Coordinate with Value Equality)
+**Example** (Comparing coordinates by value)
 
 ```ts
 import { Equal, Hash } from "effect"

@@ -10,10 +10,6 @@ Transforms the parsed value of a config with a pure function.
 Use when you need to transform a parsed config value with a function that
 cannot fail.
 
-**Details**
-
-Supports both data-last and data-first calling conventions.
-
 **Example** (Uppercasing a string config)
 
 ```ts
@@ -37,6 +33,6 @@ const provider = ConfigProvider.fromUnknown({ name: "alice" })
 declare const map: { <A, B>(f: (a: A) => B): (self: Config<A>) => Config<B>; <A, B>(self: Config<A>, f: (a: A) => B): Config<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L201)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L165)
 
 Since v2.0.0

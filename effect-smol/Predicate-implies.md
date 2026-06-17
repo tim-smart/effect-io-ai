@@ -15,7 +15,7 @@ where one rule only applies when a precondition holds.
 Models constraints like "if A then B" and returns `true` when the antecedent
 is `false`.
 
-**Example** (Implication)
+**Example** (Checking implication)
 
 ```ts
 import { Predicate } from "effect"

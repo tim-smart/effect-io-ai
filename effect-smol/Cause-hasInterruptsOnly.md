@@ -10,7 +10,7 @@ there is at least one reason).
 
 Use when you need to detect failures caused only by interruption.
 
-**Example** (checking interrupt-only causes)
+**Example** (Checking interrupt-only causes)
 
 ```ts
 import { Cause } from "effect"

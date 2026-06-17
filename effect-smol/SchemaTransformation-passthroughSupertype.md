@@ -16,7 +16,7 @@ narrower than the encoded side.
 Both decode and encode are no-ops and return a shared singleton
 transformation.
 
-**Example** (Supertype passthrough)
+**Example** (Passing through supertypes)
 
 ```ts
 import { SchemaTransformation } from "effect"

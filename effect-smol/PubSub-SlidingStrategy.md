@@ -19,7 +19,7 @@ New messages are accepted by evicting older messages from the bounded
 Slow subscribers may miss older messages that are evicted before they are
 consumed.
 
-**Example** (Using a sliding strategy)
+**Example** (Applying a sliding strategy)
 
 ```ts
 import { Effect, PubSub } from "effect"

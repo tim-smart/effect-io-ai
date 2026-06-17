@@ -19,7 +19,7 @@ to `Option.some(value)`. Encoding maps `Option.none()` to `null` or
 `undefined` according to `options.onNoneEncoding`, and maps
 `Option.some(value)` to `value`. The transformation is pure and synchronous.
 
-**Example** (Option from nullish, encoding None as null)
+**Example** (Converting nullish values to an Option and encoding None as null)
 
 ```ts
 import { Schema, SchemaTransformation } from "effect"

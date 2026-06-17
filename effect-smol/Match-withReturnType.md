@@ -14,7 +14,7 @@ matching condition produces a value of the expected type.
 **Important:** This function must be the first step in the matcher pipeline.
 If used later, TypeScript will not enforce type consistency correctly.
 
-**Example** (Validating Return Type Consistency)
+**Example** (Validating return type consistency)
 
 ```ts
 import { Match } from "effect"

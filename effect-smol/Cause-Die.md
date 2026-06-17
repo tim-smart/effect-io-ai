@@ -16,7 +16,7 @@ The `defect` property is `unknown` because defects are not part of the
 typed error channel. Use `isDieReason` to narrow a `Reason`
 to this type.
 
-**Example** (accessing the defect)
+**Example** (Accessing the defect)
 
 ```ts
 import { Cause } from "effect"

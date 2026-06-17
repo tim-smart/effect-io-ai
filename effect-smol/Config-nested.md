@@ -35,7 +35,7 @@ const provider = ConfigProvider.fromUnknown({
 // { host: "localhost", port: 5432 }
 ```
 
-**Example** (Env vars with nested prefix)
+**Example** (Reading env vars with a nested prefix)
 
 ```ts
 import { Config, ConfigProvider, Effect } from "effect"
@@ -59,6 +59,6 @@ const provider = ConfigProvider.fromEnv({
 declare const nested: { (name: string): <A>(self: Config<A>) => Config<A>; <A>(self: Config<A>, name: string): Config<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L1448)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L1409)
 
 Since v2.0.0

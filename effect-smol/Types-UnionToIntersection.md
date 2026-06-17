@@ -17,7 +17,7 @@ union variants.
 - If the union members are incompatible (e.g. `string | number`), the
   result is `never`.
 
-**Example** (Union to intersection)
+**Example** (Converting a union to an intersection)
 
 ```ts
 import type { Types } from "effect"

@@ -31,6 +31,6 @@ export interface withConstructorDefault<S extends Top & WithoutConstructorDefaul
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5202)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5385)
 
 Since v3.10.0

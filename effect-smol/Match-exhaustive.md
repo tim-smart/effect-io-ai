@@ -15,7 +15,7 @@ matcher is turned into a function.
 If any case is still unmatched, the matcher does not type-check as
 exhaustive.
 
-**Example** (Ensuring All Cases Are Covered)
+**Example** (Ensuring all cases are covered)
 
 ```ts
 import { Match } from "effect"

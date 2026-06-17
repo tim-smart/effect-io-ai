@@ -17,7 +17,7 @@ Decoding coerces the string to a bigint like `BigInt(s)`. Encoding coerces
 the bigint to a string like `String(n)`. Decoding fails if the string is not
 a valid bigint representation.
 
-**Example** (BigInt from string)
+**Example** (Converting a string to a BigInt)
 
 ```ts
 import { Schema, SchemaTransformation } from "effect"

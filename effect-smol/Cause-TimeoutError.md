@@ -10,7 +10,7 @@ An error indicating that an operation exceeded its time limit.
 Produced by `Effect.timeout` and related APIs. Implements
 `YieldableError`.
 
-**Example** (creating and checking)
+**Example** (Creating and checking a TimeoutError)
 
 ```ts
 import { Cause } from "effect"

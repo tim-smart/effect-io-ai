@@ -10,7 +10,7 @@ given typed error.
 
 Use to construct a cause from an expected typed error.
 
-**Example** (creating a fail cause)
+**Example** (Creating a fail cause)
 
 ```ts
 import { Cause } from "effect"

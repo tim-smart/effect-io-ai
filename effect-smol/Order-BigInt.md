@@ -14,7 +14,7 @@ Use when you need numeric ordering for `bigint` values.
 Uses standard numeric comparison for bigint values and handles arbitrarily
 large integers.
 
-**Example** (BigInt Ordering)
+**Example** (Ordering BigInts)
 
 ```ts
 import { Order } from "effect"

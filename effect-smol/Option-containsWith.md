@@ -16,7 +16,7 @@ custom equality check.
 - `Some` where `isEquivalent(value, a)` is `true` → `true`
 - `Some` where not equivalent, or `None` → `false`
 
-**Example** (Custom equivalence check)
+**Example** (Checking with custom equivalence)
 
 ```ts
 import { Equivalence, Option } from "effect"

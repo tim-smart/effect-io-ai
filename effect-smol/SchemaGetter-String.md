@@ -14,7 +14,7 @@ string with `String()`.
 
 The getter is pure, never fails, and delegates to `globalThis.String`.
 
-**Example** (Coerce to string)
+**Example** (Coercing to a string)
 
 ```ts
 import { SchemaGetter } from "effect"

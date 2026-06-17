@@ -9,7 +9,7 @@ Decodes a hexadecimal string to a UTF-8 `string`.
 
 - Fails with `SchemaIssue.InvalidValue` if the input is not valid hex.
 
-**Example** (Decode hex to string)
+**Example** (Decoding hex to string)
 
 ```ts
 import { SchemaGetter } from "effect"

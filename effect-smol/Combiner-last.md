@@ -13,7 +13,7 @@ Use when you want "last write wins" semantics while merging values.
 
 `combine(self, that)` returns `that` and ignores `self`.
 
-**Example** (keeping the last value)
+**Example** (Keeping the last value)
 
 ```ts
 import { Combiner } from "effect"

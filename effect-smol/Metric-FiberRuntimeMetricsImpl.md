@@ -5,7 +5,7 @@ Module: `Metric`<br />
 
 Default implementation of the fiber runtime metrics service.
 
-**Example** (Using the default fiber metrics implementation)
+**Example** (Accessing the default fiber metrics implementation)
 
 ```ts
 import { Data, Effect, Layer, Metric } from "effect"

@@ -18,7 +18,7 @@ between types.
 - Skips `None` inputs — only called when a value is present.
 - Never fails.
 
-**Example** (String to number transformation pair)
+**Example** (Transforming strings to numbers)
 
 ```ts
 import { Schema, SchemaGetter } from "effect"

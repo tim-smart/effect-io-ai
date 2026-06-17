@@ -15,7 +15,7 @@ satisfy at least one condition, including refinements that narrow to a union.
 Evaluation short-circuits on the first `true`. For refinements, the output
 type is a union.
 
-**Example** (Either condition)
+**Example** (Checking either condition)
 
 ```ts
 import { Predicate } from "effect"

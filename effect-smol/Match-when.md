@@ -17,7 +17,7 @@ Supports both direct value comparisons and predicate functions. If the
 pattern matches, the associated function is executed and the matched input is
 removed from the remaining cases tracked by the matcher.
 
-**Example** (Matching with Values and Predicates)
+**Example** (Matching with values and predicates)
 
 ```ts
 import { Match } from "effect"

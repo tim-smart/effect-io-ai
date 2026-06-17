@@ -15,7 +15,7 @@ Use when you need to handle a config key that may or may not be present.
 Like `withDefault`, only missing-data errors produce `None`.
 Validation errors still propagate.
 
-**Example** (Optional config)
+**Example** (Reading optional config)
 
 ```ts
 import { Config, ConfigProvider, Effect } from "effect"
@@ -36,6 +36,6 @@ const provider = ConfigProvider.fromUnknown({})
 declare const option: <A>(self: Config<A>) => Config<Option.Option<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L442)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L401)
 
 Since v2.0.0

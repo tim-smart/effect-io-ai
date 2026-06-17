@@ -11,7 +11,7 @@ optionally carrying the interrupting fiber's ID.
 Use when constructing a standalone interrupt reason for `fromReasons`
 or direct comparison.
 
-**Example** (creating an Interrupt reason)
+**Example** (Creating an Interrupt reason)
 
 ```ts
 import { Cause } from "effect"

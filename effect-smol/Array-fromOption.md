@@ -9,7 +9,7 @@ Converts an `Option` to an array: `Some(a)` becomes `[a]`, `None` becomes `[]`.
 
 Use to convert a single `Option` into an array for downstream array operations.
 
-**Example** (Option to array)
+**Example** (Converting an Option to an array)
 
 ```ts
 import { Array, Option } from "effect"

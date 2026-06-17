@@ -21,7 +21,7 @@ JSON text during encoding.
   functions, symbols, or a replacer that removes the root value, that
   `undefined` result is returned rather than converted into an `Issue`.
 
-**Example** (Stringify JSON)
+**Example** (Stringifying JSON)
 
 ```ts
 import { SchemaGetter } from "effect"

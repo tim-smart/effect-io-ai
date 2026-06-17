@@ -16,7 +16,7 @@ covariant nor contravariant.
 A value of type `Invariant<A>` cannot be assigned to `Invariant<B>` unless
 `A` and `B` are the same type.
 
-**Example** (Invariant phantom type)
+**Example** (Defining an invariant phantom type)
 
 ```ts
 import type { Types } from "effect"

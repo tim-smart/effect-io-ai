@@ -13,7 +13,7 @@ unreachable or produced an I/O error while reading configuration data.
 **Gotchas**
 
 Do not use `SourceError` for "key not found". That case is represented by
-returning `undefined` from `load` or `get`.
+returning `undefined` from `load`.
 
 **Example** (Failing with a SourceError)
 
@@ -29,8 +29,8 @@ const provider = ConfigProvider.make((_path) =>
 
 **See**
 
-- `ConfigProvider` – the interface whose `load`/`get` may fail
-  with this error
+- `ConfigProvider` – the interface whose `load` may fail with this
+  error
 
 **Signature**
 

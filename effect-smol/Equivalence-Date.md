@@ -32,7 +32,7 @@ console.log(Equivalence.Date(invalidDate1, invalidDate2)) // true
 console.log(Equivalence.Date(invalidDate1, d1)) // false
 ```
 
-**Example** (Reference vs value equality)
+**Example** (Comparing reference and value equality)
 
 ```ts
 import { Equivalence } from "effect"

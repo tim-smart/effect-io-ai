@@ -9,7 +9,7 @@ Uncapitalizes the first character of a string.
 
 - Pure, delegates to `String.uncapitalize`.
 
-**Example** (Uncapitalize string)
+**Example** (Uncapitalizing a string)
 
 ```ts
 import { SchemaGetter } from "effect"

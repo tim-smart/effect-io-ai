@@ -16,7 +16,7 @@ the values are equal according to this ordering, and `1` when the first value
 is greater than the second. It must satisfy total ordering laws: totality,
 antisymmetry, and transitivity.
 
-**Example** (Custom Order)
+**Example** (Defining a custom Order)
 
 ```ts
 import { Order } from "effect"

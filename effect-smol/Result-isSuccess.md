@@ -14,7 +14,7 @@ Use to narrow a known `Result` to the `Success` variant.
 - Acts as a TypeScript type guard, narrowing to `Success<A, E>`
 - After narrowing, you can access `.success` to read the value
 
-**Example** (Narrowing to Success)
+**Example** (Narrowing to success)
 
 ```ts
 import { Result } from "effect"

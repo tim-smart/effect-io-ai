@@ -7,7 +7,7 @@ Derives an `Equivalence` from a schema. Two values are considered equal when
 every field (and nested field) compares equal according to the schema
 structure.
 
-**Example** (Struct equivalence)
+**Example** (Comparing structs)
 
 ```ts
 import { Schema } from "effect"
@@ -24,6 +24,6 @@ console.log(eq({ id: 1, name: "Alice" }, { id: 2, name: "Alice" })) // false
 declare const toEquivalence: <T>(schema: Schema<T>) => Equivalence.Equivalence<T>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L12746)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L12929)
 
 Since v4.0.0

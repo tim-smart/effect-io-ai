@@ -29,7 +29,7 @@ returned whose `cause` lists the interrupting fiber IDs.
 
 An empty cause returns an empty array.
 
-**Example** (converting a cause to errors)
+**Example** (Converting a cause to errors)
 
 ```ts
 import { Cause } from "effect"

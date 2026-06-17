@@ -14,7 +14,7 @@ Use as a type annotation when you accept or return an equivalence function.
 - Returns `boolean`: `true` if values are equivalent, `false` otherwise
 - Must satisfy reflexive, symmetric, and transitive properties
 
-**Example** (Simple number equivalence)
+**Example** (Defining simple number equivalence)
 
 ```ts
 import type { Equivalence } from "effect"
@@ -25,7 +25,7 @@ console.log(numberEq(1, 1)) // true
 console.log(numberEq(1, 2)) // false
 ```
 
-**Example** (Custom object equivalence)
+**Example** (Defining custom object equivalence)
 
 ```ts
 import type { Equivalence } from "effect"

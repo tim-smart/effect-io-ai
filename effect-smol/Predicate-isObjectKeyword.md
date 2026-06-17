@@ -14,7 +14,7 @@ well as objects.
 
 Returns `true` for arrays and functions, and `false` for `null`.
 
-**Example** (Object keyword)
+**Example** (Checking object keywords)
 
 ```ts
 import { Predicate } from "effect"

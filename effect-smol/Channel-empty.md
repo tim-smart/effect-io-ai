@@ -5,7 +5,7 @@ Module: `Channel`<br />
 
 Represents a `Channel` that emits no elements.
 
-**Example** (Using empty channels)
+**Example** (Creating empty channels)
 
 ```ts
 import { Channel } from "effect"

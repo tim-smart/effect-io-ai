@@ -15,7 +15,7 @@ Use when you have an `Option<A>` and want to read/update the inner value only
 - `getResult` fails with an error message when the option is `None`.
 - `set(a)` wraps `a` in `Option.some(a)`.
 
-**Example** (accessing Some value)
+**Example** (Accessing Some value)
 
 ```ts
 import { Optic, Option, Result } from "effect"

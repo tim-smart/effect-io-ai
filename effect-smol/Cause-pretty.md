@@ -32,7 +32,7 @@ Span annotations are appended to the relevant stack frames when available.
 Rendering an empty cause produces an empty string because there are no
 errors to render.
 
-**Example** (rendering a cause)
+**Example** (Rendering a cause)
 
 ```ts
 import { Cause } from "effect"

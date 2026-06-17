@@ -15,7 +15,7 @@ reverse a non-commutative combiner such as string concatenation.
 Returns a new `Combiner` where `combine(self, that)` calls the original
 combiner as `combine(that, self)`.
 
-**Example** (reversing string concatenation)
+**Example** (Reversing string concatenation)
 
 ```ts
 import { Combiner, String } from "effect"

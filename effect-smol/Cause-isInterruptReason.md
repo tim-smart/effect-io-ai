@@ -10,7 +10,7 @@ Narrows a `Reason` to `Interrupt`.
 Use as a predicate for `Array.filter` to pick out `Interrupt` reasons when
 iterating over `cause.reasons`.
 
-**Example** (filtering interrupt reasons)
+**Example** (Filtering interrupt reasons)
 
 ```ts
 import { Cause } from "effect"

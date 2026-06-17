@@ -15,7 +15,7 @@ minimum arity.
 
 Produces a tuple with `N` fixed positions followed by `...Array<T>`.
 
-**Example** (Minimum-length tuple)
+**Example** (Checking minimum-length tuples)
 
 ```ts
 import type { Types } from "effect"

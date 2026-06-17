@@ -51,7 +51,7 @@ console.log(point3DEq(point1, point2)) // true
 console.log(point3DEq(point1, point3)) // false (different z)
 ```
 
-**Example** (Empty collection edge case)
+**Example** (Handling empty collections)
 
 ```ts
 import { Equivalence } from "effect"

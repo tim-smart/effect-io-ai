@@ -11,7 +11,7 @@ do notation chains.
 Use when you need to start an `Option` do notation pipeline before adding
 bindings.
 
-**Example** (Do notation pipeline)
+**Example** (Building Option pipelines with do notation)
 
 ```ts
 import { Option, pipe } from "effect"

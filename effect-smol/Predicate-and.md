@@ -16,7 +16,7 @@ intersection.
 Evaluation short-circuits on the first `false`. For refinements, the output
 type is an intersection.
 
-**Example** (Both conditions)
+**Example** (Checking both conditions)
 
 ```ts
 import { Predicate } from "effect"

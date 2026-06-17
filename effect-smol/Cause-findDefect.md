@@ -12,7 +12,7 @@ failure value is the original cause.
 Use when you need the first defect value from a `Cause` as a `Result`,
 without the full `Die` reason.
 
-**Example** (extracting the first defect)
+**Example** (Extracting the first defect)
 
 ```ts
 import { Cause, Result } from "effect"

@@ -5,7 +5,7 @@ Module: `Cause`<br />
 
 Checks whether an arbitrary value is an `AsyncFiberError`.
 
-**Example** (runtime type check)
+**Example** (Checking the runtime type)
 
 ```ts
 import { Cause } from "effect"

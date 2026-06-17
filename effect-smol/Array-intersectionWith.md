@@ -11,7 +11,7 @@ determined by the first array.
 Use when you need to keep only values present in both arrays and equality
 must be defined by a custom comparator, such as matching objects by id.
 
-**Example** (Intersection with custom equality)
+**Example** (Computing intersections with custom equality)
 
 ```ts
 import { Array } from "effect"

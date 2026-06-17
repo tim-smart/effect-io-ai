@@ -14,7 +14,7 @@ rather than to the field's value type. They can carry a
 as well as standard documentation fields such as `title`, `description`,
 and `examples`.
 
-**Example** (Custom missing-key message for a required field)
+**Example** (Customizing the missing-key message for a required field)
 
 ```ts
 import { Schema } from "effect"
@@ -35,6 +35,6 @@ const schema = Schema.Struct({
 declare const annotateKey: <S extends Top>(annotations: Annotations.Key<S["Type"]>) => (self: S) => S["Rebuild"]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L543)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L551)
 
 Since v4.0.0

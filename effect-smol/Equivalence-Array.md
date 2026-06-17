@@ -17,7 +17,7 @@ Use when you need to compare arrays with one equivalence for every element.
 - Empty arrays are considered equivalent
 - The result is also an equivalence that satisfies reflexive, symmetric, and transitive properties
 
-**Example** (Number array equivalence)
+**Example** (Comparing number arrays)
 
 ```ts
 import { Equivalence } from "effect"

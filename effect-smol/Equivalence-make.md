@@ -34,7 +34,7 @@ const str = "test"
 console.log(caseInsensitive(str, str)) // true (fast path)
 ```
 
-**Example** (Numeric tolerance equivalence)
+**Example** (Comparing numbers with tolerance)
 
 ```ts
 import { Equivalence } from "effect"

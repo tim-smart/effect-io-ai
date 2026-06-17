@@ -20,6 +20,6 @@ that accept any JavaScript symbol value.
 declare const isSymbol: (ast: AST) => ast is Symbol
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L279)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L280)
 
 Since v4.0.0

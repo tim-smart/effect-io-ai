@@ -19,7 +19,7 @@ syntax, and the empty string `""` refers to the root document. Operations are
 discriminated by the `op` field, and the optional `description` field can be
 used for documentation.
 
-**Example** (All operation types)
+**Example** (Defining all operation types)
 
 ```ts
 import { JsonPatch } from "effect"

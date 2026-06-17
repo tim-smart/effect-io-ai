@@ -21,7 +21,7 @@ into a `Cause`.
 The `reasons` array is stored as provided. Treat the array as immutable
 after passing it to this function.
 
-**Example** (building a cause from reasons)
+**Example** (Building a cause from reasons)
 
 ```ts
 import { Cause } from "effect"

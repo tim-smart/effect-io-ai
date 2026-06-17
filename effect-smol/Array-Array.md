@@ -10,7 +10,7 @@ Exposes the global array constructor.
 Use to access native JavaScript array constructor methods such as `isArray`
 or `from` from the Effect module namespace.
 
-**Example** (Using the Array constructor)
+**Example** (Accessing the Array constructor)
 
 ```ts
 import { Array } from "effect"

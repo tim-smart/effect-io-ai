@@ -15,7 +15,7 @@ Use when you can always extract `A` from `S` and produce a new `S` by
 - `replace(a, s)` should return a structurally new `S` with `a` in place
   of the old focus.
 
-**Example** (lens into the first element of a pair)
+**Example** (Focusing on the first element of a pair)
 
 ```ts
 import { Optic } from "effect"

@@ -15,7 +15,7 @@ The getter is pure and never fails. It receives the full `Option<E>` and
 must return `Option<T>`, so it can turn a present value into absent or an
 absent value into present.
 
-**Example** (Filter out empty strings)
+**Example** (Filtering out empty strings)
 
 ```ts
 import { Option, SchemaGetter } from "effect"

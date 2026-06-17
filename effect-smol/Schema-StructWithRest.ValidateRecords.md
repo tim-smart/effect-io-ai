@@ -23,6 +23,6 @@ type ValidateRecords<S, Records> = [
     }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3573)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3756)
 
 Since v4.0.0

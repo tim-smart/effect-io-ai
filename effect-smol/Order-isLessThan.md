@@ -14,7 +14,7 @@ Use when you need a boolean less-than predicate using an `Order`.
 Returns `true` if the order returns `-1`, meaning the first value is less
 than the second. Equal or greater values return `false`.
 
-**Example** (Less Than)
+**Example** (Checking less-than comparisons)
 
 ```ts
 import { Order } from "effect"

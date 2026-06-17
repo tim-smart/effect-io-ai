@@ -19,7 +19,7 @@ property value.
 - Empty objects are considered equivalent
 - The result is also an equivalence that satisfies reflexive, symmetric, and transitive properties
 
-**Example** (Record with string values)
+**Example** (Defining records with string values)
 
 ```ts
 import { Equivalence } from "effect"
@@ -36,7 +36,7 @@ console.log(stringRecordEq(record1, record3)) // false
 console.log(stringRecordEq(record1, record4)) // false (different keys)
 ```
 
-**Example** (Record with number values)
+**Example** (Defining records with number values)
 
 ```ts
 import { Equivalence } from "effect"

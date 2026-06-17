@@ -21,7 +21,7 @@ Prefer APIs that return `Option` or a typed failure when absence is an
 expected case. This error is mainly for APIs that intentionally turn absence
 into a thrown value or failed effect.
 
-**Example** (creating and checking)
+**Example** (Creating and checking a NoSuchElementError)
 
 ```ts
 import { Cause } from "effect"

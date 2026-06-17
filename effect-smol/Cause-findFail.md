@@ -13,7 +13,7 @@ contains no typed error reasons.
 Use when you need the full `Fail` reason from a `Cause`, including
 annotations.
 
-**Example** (extracting the first Fail reason)
+**Example** (Extracting the first Fail reason)
 
 ```ts
 import { Cause, Result } from "effect"

@@ -15,7 +15,7 @@ without carrying meaningful data.
 This is equivalent to `Result.succeed(undefined)`, but reuses a shared
 `Success` wrapper instead of allocating one each time.
 
-**Example** (Using void result)
+**Example** (Referencing void results)
 
 ```ts
 import { Result } from "effect"

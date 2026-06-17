@@ -9,7 +9,7 @@ Encodes a `Uint8Array` or string to a hexadecimal string.
 
 The getter is pure and never fails.
 
-**Example** (Encode to hex)
+**Example** (Encoding to hex)
 
 ```ts
 import { SchemaGetter } from "effect"

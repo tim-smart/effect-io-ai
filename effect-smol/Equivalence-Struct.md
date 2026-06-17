@@ -18,7 +18,7 @@ properties are ignored. String and symbol keys are supported via
 are equivalent according to their equivalences, and it also satisfies
 reflexive, symmetric, and transitive properties.
 
-**Example** (Struct with different equivalences per field)
+**Example** (Comparing structs with different equivalences per field)
 
 ```ts
 import { Equivalence } from "effect"
@@ -48,7 +48,7 @@ console.log(personEq(person1, person2)) // true (case-insensitive match)
 console.log(personEq(person1, person3)) // false (different age)
 ```
 
-**Example** (Partial equivalence for specific fields)
+**Example** (Comparing specific fields)
 
 ```ts
 import { Equivalence } from "effect"

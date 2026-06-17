@@ -13,6 +13,6 @@ export interface declare<T, Iso = T> extends declareConstructor<T, T, readonly [
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L347)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L355)
 
 Since v3.13.3

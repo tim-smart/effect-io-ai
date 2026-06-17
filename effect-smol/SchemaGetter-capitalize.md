@@ -9,7 +9,7 @@ Capitalizes the first character of a string.
 
 - Pure, delegates to `String.capitalize`.
 
-**Example** (Capitalize string)
+**Example** (Capitalizing a string)
 
 ```ts
 import { SchemaGetter } from "effect"

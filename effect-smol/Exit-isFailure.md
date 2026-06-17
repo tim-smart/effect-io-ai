@@ -10,7 +10,7 @@ Checks whether an Exit is a Failure.
 Use as a type guard to narrow `Exit<A, E>` to `Failure<A, E>` and access the
 `cause` property.
 
-**Example** (Narrowing to Failure)
+**Example** (Narrowing to failure)
 
 ```ts
 import { Exit } from "effect"

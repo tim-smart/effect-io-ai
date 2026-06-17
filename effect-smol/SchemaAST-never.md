@@ -21,6 +21,6 @@ comparing, or returning ASTs.
 declare const never: Never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L883)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L884)
 
 Since v4.0.0

@@ -15,7 +15,7 @@ Compares tuples element-by-element using the corresponding order and stops at
 the first non-zero comparison result. Tuples must have the same length as the
 order collection, and the result is `0` only if all elements are equal.
 
-**Example** (Tuple Ordering)
+**Example** (Ordering tuples)
 
 ```ts
 import { Order } from "effect"

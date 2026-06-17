@@ -21,7 +21,7 @@ is the base type extended by `Iso`, `Lens`, `Prism`, and
 - `modify(f)` returns the original `s` on failure (never throws).
 - All operations are pure; inputs are never mutated.
 
-**Example** (record key that may be absent)
+**Example** (Focusing on an optional record key)
 
 ```ts
 import { Optic, Result } from "effect"
@@ -71,7 +71,7 @@ export interface Optional<in out S, in out A> {
    * Composes this optic with another. The result type is the weakest of
    * the two: Iso + Iso = Iso, Lens + Prism = Optional, etc.
    *
-   * **Example** (composing a lens with a prism)
+   * **Example** (Composing a lens with a prism)
    *
    * ```ts
    * import { Optic, Option } from "effect"
@@ -93,7 +93,7 @@ export interface Optional<in out S, in out A> {
    * Returns a function `(s: S) => S` that applies `f` to the focused value.
    * If the optic cannot focus, the original `s` is returned unchanged.
    *
-   * **Example** (incrementing a nested field)
+   * **Example** (Incrementing a nested field)
    *
    * ```ts
    * import { Optic } from "effect"
@@ -117,7 +117,7 @@ export interface Optional<in out S, in out A> {
    * - On an {@link Optional}, returns an Optional.
    * - Does **not** work on union types (compile error).
    *
-   * **Example** (drilling into nested structs)
+   * **Example** (Drilling into nested structs)
    *
    * ```ts
    * import { Optic } from "effect"
@@ -149,7 +149,7 @@ export interface Optional<in out S, in out A> {
    * - The focus type becomes `A[Key] | undefined`.
    * - Does **not** work on union types (compile error).
    *
-   * **Example** (deleting an optional key)
+   * **Example** (Deleting an optional key)
    *
    * ```ts
    * import { Optic } from "effect"
@@ -184,7 +184,7 @@ export interface Optional<in out S, in out A> {
    * - On a {@link Prism}, returns a Prism.
    * - On an {@link Optional}, returns an Optional.
    *
-   * **Example** (only focus positive numbers)
+   * **Example** (Focusing only on positive numbers)
    *
    * ```ts
    * import { Optic, Result, Schema } from "effect"
@@ -215,7 +215,7 @@ export interface Optional<in out S, in out A> {
    * - On an {@link Optional}, returns an Optional.
    * - Pass optional `annotations` to customize the error message.
    *
-   * **Example** (narrowing a union)
+   * **Example** (Narrowing a union)
    *
    * ```ts
    * import { Optic, Result } from "effect"
@@ -255,7 +255,7 @@ export interface Optional<in out S, in out A> {
    * - On an {@link Optional}, returns an Optional.
    * - Shorthand for `.refine(s => s._tag === tag)`.
    *
-   * **Example** (focusing a tagged variant)
+   * **Example** (Focusing a tagged variant)
    *
    * ```ts
    * import { Optic, Result } from "effect"
@@ -296,7 +296,7 @@ export interface Optional<in out S, in out A> {
    * - Always returns an {@link Optional}.
    * - Does **not** work on union types (compile error).
    *
-   * **Example** (safe record access)
+   * **Example** (Accessing records safely)
    *
    * ```ts
    * import { Optic, Result } from "effect"
@@ -328,7 +328,7 @@ export interface Optional<in out S, in out A> {
    * - On an {@link Optional}, returns an Optional.
    * - Does **not** work on union types (compile error).
    *
-   * **Example** (picking keys)
+   * **Example** (Picking keys)
    *
    * ```ts
    * import { Optic } from "effect"
@@ -363,7 +363,7 @@ export interface Optional<in out S, in out A> {
    * - On an {@link Optional}, returns an Optional.
    * - Does **not** work on union types (compile error).
    *
-   * **Example** (omitting keys)
+   * **Example** (Omitting keys)
    *
    * ```ts
    * import { Optic } from "effect"
@@ -395,7 +395,7 @@ export interface Optional<in out S, in out A> {
    * Filters out `undefined` from the focus, producing a {@link Prism}.
    * `getResult` fails when the focus is `undefined`.
    *
-   * **Example** (filtering undefined)
+   * **Example** (Filtering undefined values)
    *
    * ```ts
    * import { Optic, Result } from "effect"
@@ -429,7 +429,7 @@ export interface Optional<in out S, in out A> {
    *   `getResult` and writes them back in order. Fails with a
    *   length-mismatch error if counts differ.
    *
-   * **Example** (incrementing liked posts)
+   * **Example** (Incrementing liked posts)
    *
    * ```ts
    * import { Optic, Schema } from "effect"
@@ -468,7 +468,7 @@ export interface Optional<in out S, in out A> {
    * Unlike `.modify()`, which operates on the whole array, `modifyAll`
    * maps `f` over each individual element.
    *
-   * **Example** (doubling all focused values)
+   * **Example** (Doubling all focused values)
    *
    * ```ts
    * import { Optic, Schema } from "effect"

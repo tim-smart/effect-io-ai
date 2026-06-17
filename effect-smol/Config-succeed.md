@@ -11,7 +11,7 @@ provider entirely.
 Use when you need a hardcoded config value, such as inside `orElse` or
 tests.
 
-**Example** (Constant fallback)
+**Example** (Returning a constant fallback)
 
 ```ts
 import { Config } from "effect"
@@ -27,6 +27,6 @@ const host = Config.string("HOST").pipe(
 declare const succeed: <T>(value: T) => Config<T>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L902)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L863)
 
 Since v2.0.0

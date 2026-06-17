@@ -15,7 +15,7 @@ number with `Number()`.
 The getter is pure, never fails, and delegates to `globalThis.Number`. It may
 produce `NaN` for non-numeric inputs.
 
-**Example** (Coerce to number)
+**Example** (Coercing to a number)
 
 ```ts
 import { SchemaGetter } from "effect"

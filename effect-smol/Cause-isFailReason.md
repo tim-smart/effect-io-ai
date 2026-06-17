@@ -10,7 +10,7 @@ Narrows a `Reason` to `Fail`.
 Use as a predicate for `Array.filter` to pick out typed `Fail` reasons when
 iterating over `cause.reasons`.
 
-**Example** (filtering fail reasons)
+**Example** (Filtering fail reasons)
 
 ```ts
 import { Cause } from "effect"

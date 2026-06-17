@@ -15,7 +15,7 @@ Use when you need a boolean greater-than-or-equal predicate using an
 Returns `true` if the order returns `1` or `0`, and returns `false` only if
 the order returns `-1`.
 
-**Example** (Greater Than Or Equal)
+**Example** (Checking greater-than-or-equal comparisons)
 
 ```ts
 import { Order } from "effect"

@@ -10,7 +10,7 @@ Creates an Effect that fails with a `Done` error. Shorthand for
 
 Use when you model stream or queue completion through the error channel.
 
-**Example** (failing with Done)
+**Example** (Failing with Done)
 
 ```ts
 import { Cause, Effect } from "effect"

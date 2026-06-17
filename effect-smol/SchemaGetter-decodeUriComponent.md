@@ -9,7 +9,7 @@ Decodes a URI component encoded string using `decodeURIComponent`.
 
 - Fails with `SchemaIssue.InvalidValue` if the input contains malformed percent-encoding sequences.
 
-**Example** (Decode a URI component)
+**Example** (Decoding a URI component)
 
 ```ts
 import { SchemaGetter } from "effect"

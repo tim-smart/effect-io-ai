@@ -25,7 +25,7 @@ utilized before creating more items.
 from item creation, while `"usage"` measures from pool usage. The default is
 `"usage"`.
 
-**Example** (Create a connection pool)
+**Example** (Creating a connection pool)
 
 ```ts
 import { Duration, Effect, Pool } from "effect"

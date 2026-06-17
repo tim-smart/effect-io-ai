@@ -13,7 +13,7 @@ Use when you want to check equivalence of two `Predicate`s.
 
 Returns `true` when both results are equal.
 
-**Example** (Equivalence)
+**Example** (Defining equivalence)
 
 ```ts
 import { Predicate } from "effect"

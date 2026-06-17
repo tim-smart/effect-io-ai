@@ -16,7 +16,7 @@ reject updates on write.
 - `set` should return `Result.fail(message)` when the update cannot be
   applied.
 
-**Example** (safe record key access)
+**Example** (Accessing record keys safely)
 
 ```ts
 import { Optic, Result } from "effect"

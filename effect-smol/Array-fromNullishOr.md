@@ -10,7 +10,7 @@ anything else becomes `[value]`.
 
 Use to treat a nullable single value as zero or one array element.
 
-**Example** (Nullable to array)
+**Example** (Converting nullable values to an array)
 
 ```ts
 import { Array } from "effect"

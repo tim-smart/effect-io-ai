@@ -15,7 +15,7 @@ exists on an object type.
 Returns `true` if at least one key from `Key` exists in `A`, `false`
 otherwise.
 
-**Example** (Key presence check)
+**Example** (Checking key presence)
 
 ```ts
 import type { Types } from "effect"

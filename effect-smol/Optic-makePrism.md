@@ -14,7 +14,7 @@ Use when reading can fail (the part may not exist in `S`), but building `S`
 
 - `getResult` should return `Result.fail(message)` on mismatch.
 
-**Example** (parsing a string to a number)
+**Example** (Parsing a string to a number)
 
 ```ts
 import { Optic, Result } from "effect"

@@ -15,7 +15,7 @@ when a generic API requires a combiner but the result is predetermined.
 
 `combine(self, that)` returns the constant `a` and ignores both arguments.
 
-**Example** (always returning zero)
+**Example** (Always returning zero)
 
 ```ts
 import { Combiner } from "effect"

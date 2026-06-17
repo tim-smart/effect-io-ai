@@ -14,7 +14,7 @@ while preserving other falsy values.
 
 Returns a refinement that excludes `undefined`.
 
-**Example** (Filter undefined)
+**Example** (Filtering undefined values)
 
 ```ts
 import { Predicate } from "effect"

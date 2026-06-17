@@ -13,6 +13,6 @@ export interface DurationFromNanos extends decodeTo<Duration, BigInt> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10211)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10394)
 
 Since v3.10.0

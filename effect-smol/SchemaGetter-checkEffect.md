@@ -22,7 +22,7 @@ constraint or call an external service).
     message string or a full `SchemaIssue.Issue`).
 - Does not transform the value — input and output types are the same.
 
-**Example** (Effectful validation)
+**Example** (Validating effectfully)
 
 ```ts
 import { Effect, SchemaGetter } from "effect"

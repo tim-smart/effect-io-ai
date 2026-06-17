@@ -14,7 +14,7 @@ boolean with `Boolean()`.
 
 The getter is pure, never fails, and delegates to `globalThis.Boolean`.
 
-**Example** (Coerce to boolean)
+**Example** (Coercing to a boolean)
 
 ```ts
 import { SchemaGetter } from "effect"

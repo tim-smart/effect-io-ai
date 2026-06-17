@@ -15,12 +15,18 @@ should throw an `Error` whose cause is `SchemaIssue.Issue`.
 The returned function constructs a value from constructor input and throws an
 `Error` with the `SchemaIssue.Issue` in its `cause` when construction fails.
 
+**Gotchas**
+
+Causes that contain defects, interruptions, or asynchronous work at this
+synchronous boundary throw an `Error` whose cause is the underlying `Cause`,
+instead of being converted to a schema validation error.
+
 **Signature**
 
 ```ts
 declare const make: <S extends Schema.Top>(schema: S) => (input: S["~type.make.in"], options?: Schema.MakeOptions) => S["Type"]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L117)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L135)
 
 Since v4.0.0

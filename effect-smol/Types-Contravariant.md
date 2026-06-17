@@ -16,7 +16,7 @@ position.
 `Contravariant<A>` is assignable to `Contravariant<B>` when `B extends A`,
 following the supertype direction.
 
-**Example** (Contravariant phantom type)
+**Example** (Defining a contravariant phantom type)
 
 ```ts
 import type { Types } from "effect"

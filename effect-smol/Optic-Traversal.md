@@ -19,7 +19,7 @@ Use when you want to read/update multiple elements at once (e.g. all items in
 - Use `.modifyAll(f)` to map a function over every focused element.
 - Use `getAll` to extract all focused elements as a plain array.
 
-**Example** (traversing array elements with a filter)
+**Example** (Traversing array elements with a filter)
 
 ```ts
 import { Optic, Schema } from "effect"

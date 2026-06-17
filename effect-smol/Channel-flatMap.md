@@ -13,7 +13,7 @@ used only for child-channel completion. By default child channels are run
 sequentially. Use `options.concurrency` and `options.bufferSize` to run child
 channels concurrently.
 
-**Example** (FlatMapping channel output)
+**Example** (Flat mapping channel output)
 
 ```ts
 import { Channel, Data } from "effect"

@@ -14,7 +14,7 @@ Use to narrow a known `Result` to the `Failure` variant.
 - Acts as a TypeScript type guard, narrowing to `Failure<A, E>`
 - After narrowing, you can access `.failure` to read the error value
 
-**Example** (Narrowing to Failure)
+**Example** (Narrowing to failure)
 
 ```ts
 import { Result } from "effect"

@@ -17,7 +17,7 @@ Use when you want to traverse or manipulate record entries as an array (e.g.
 - `set` uses `Object.fromEntries`.
 - Round-trip is lossless for `Record<string, A>`.
 
-**Example** (traversing record values)
+**Example** (Traversing record values)
 
 ```ts
 import { Optic, Schema } from "effect"

@@ -16,7 +16,7 @@ Base64 strings (e.g. file uploads, API payloads).
 Decoding parses the Base64 string into bytes. Encoding writes the byte array
 as a Base64 string.
 
-**Example** (Uint8Array from Base64)
+**Example** (Converting Base64 to a Uint8Array)
 
 ```ts
 import { Schema, SchemaTransformation } from "effect"

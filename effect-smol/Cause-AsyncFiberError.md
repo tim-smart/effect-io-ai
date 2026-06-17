@@ -15,7 +15,7 @@ that cannot complete synchronously.
 The `fiber` property stores the fiber that could not be synchronously
 resolved. This error implements `YieldableError`.
 
-**Example** (accessing the fiber)
+**Example** (Accessing the fiber)
 
 ```ts
 import { Cause } from "effect"

@@ -14,7 +14,7 @@ Use when you model tagged unions with a `_tag` field and want a quick
 
 Uses `hasProperty` and strict equality on `_tag`.
 
-**Example** (Guard tagged)
+**Example** (Guarding tagged values)
 
 ```ts
 import { Predicate } from "effect"

@@ -17,7 +17,7 @@ Pass either the arity of the uncurried function or a predicate that decides
 whether the current call is data-first. Arity is the common case. Use a
 predicate when optional arguments make arity ambiguous.
 
-**Example** (Using arity to determine data-first or data-last style)
+**Example** (Selecting data-first or data-last style by arity)
 
 ```ts
 import { Function, pipe } from "effect"
@@ -31,7 +31,7 @@ console.log(sum(2, 3)) // 5
 console.log(pipe(2, sum(3))) // 5
 ```
 
-**Example** (Using call signatures to define the overloads)
+**Example** (Defining overloads with call signatures)
 
 ```ts
 import { Function, pipe } from "effect"
@@ -45,7 +45,7 @@ console.log(sum(2, 3)) // 5
 console.log(pipe(2, sum(3))) // 5
 ```
 
-**Example** (Using a predicate to determine data-first or data-last style)
+**Example** (Selecting data-first or data-last style with a predicate)
 
 ```ts
 import { Function, pipe } from "effect"

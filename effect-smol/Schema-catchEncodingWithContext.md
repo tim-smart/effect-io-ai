@@ -27,6 +27,6 @@ The handler's services are added to the schema's encoding services.
 declare const catchEncodingWithContext: <S extends Top, R = never>(f: (issue: SchemaIssue.Issue) => Effect.Effect<Option_.Option<S["Encoded"]>, SchemaIssue.Issue, R>) => (self: S) => middlewareEncoding<S, S["EncodingServices"] | R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4921)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5104)
 
 Since v4.0.0

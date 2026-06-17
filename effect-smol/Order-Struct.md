@@ -15,7 +15,7 @@ Compares structs field-by-field in the key order of the fields object and
 stops at the first non-zero comparison result. Field order matters: earlier
 fields take precedence. The result is `0` only if all fields are equal.
 
-**Example** (Struct Ordering)
+**Example** (Ordering structs)
 
 ```ts
 import { Order } from "effect"

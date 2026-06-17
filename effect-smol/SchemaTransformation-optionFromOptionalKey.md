@@ -18,7 +18,7 @@ Decoding maps an absent key (`None`) to `Some(None)` and a present key
 the key, and maps `Some(Some(v))` to `Some(v)`. This uses
 `transformOptional` under the hood.
 
-**Example** (Optional key to Option)
+**Example** (Converting an optional key to an Option)
 
 ```ts
 import { Schema, SchemaTransformation } from "effect"

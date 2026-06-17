@@ -5,7 +5,7 @@ Module: `Cause`<br />
 
 Returns `true` if the cause contains at least one `Interrupt` reason.
 
-**Example** (checking for interruptions)
+**Example** (Checking for interruptions)
 
 ```ts
 import { Cause } from "effect"

@@ -15,7 +15,7 @@ boundary while all other values, including falsy ones, remain present.
 - `null` or `undefined` → `None`
 - Any other value → `Some` (typed as `NonNullable<A>`)
 
-**Example** (From nullable values)
+**Example** (Converting nullable values to an Option)
 
 ```ts
 import { Option } from "effect"

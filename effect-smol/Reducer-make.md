@@ -17,7 +17,7 @@ Use when you have a custom reducing operation not covered by a pre-built reducer
   `initialValue` is used.
 - If `combineAll` is provided, it completely replaces the default fold.
 
-**Example** (Multiplication with short-circuit)
+**Example** (Multiplying with short-circuit)
 
 ```ts
 import { Reducer } from "effect"

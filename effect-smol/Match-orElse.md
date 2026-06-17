@@ -16,7 +16,7 @@ no defined patterns match. It acts as a default case, similar to the
 `default` clause in a `switch` statement or the final `else` in an `if-else`
 chain.
 
-**Example** (Providing a Default Value When No Patterns Match)
+**Example** (Providing a default value when no patterns match)
 
 ```ts
 import { Match } from "effect"

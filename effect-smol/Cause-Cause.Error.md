@@ -5,7 +5,7 @@ Module: `Cause`<br />
 
 Extracts the error type `E` from a `Cause<E>`.
 
-**Example** (extracting the error type)
+**Example** (Extracting the error type)
 
 ```ts
 import type { Cause } from "effect"

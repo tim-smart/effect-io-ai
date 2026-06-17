@@ -4,7 +4,7 @@ Module: `Schema`<br />
 ## Schema.encodeUnknownSync
 
 Encodes an `unknown` input against a schema synchronously, throwing a
-`SchemaError` on failure.
+`SchemaError` for schema mismatches.
 
 **When to use**
 
@@ -13,11 +13,15 @@ want schema mismatches to throw `SchemaError`.
 
 **Details**
 
-For non-throwing alternatives see `encodeUnknownOption`,
-`encodeUnknownExit`, or `encodeUnknownEffect`. For values
-already typed as the schema's `Type` use `encodeSync`.
-Options may be provided either when creating the encoder or when applying it;
-application options override creation options.
+For alternatives that do not throw on schema mismatches, see
+`encodeUnknownOption`, `encodeUnknownExit`, or
+`encodeUnknownEffect`. For values already typed as the schema's `Type`
+use `encodeSync`. Options may be provided either when creating the
+encoder or when applying it; application options override creation options.
+
+**Gotchas**
+
+Non-schema failures may throw a runtime failure instead of `SchemaError`.
 
 **See**
 
@@ -29,6 +33,6 @@ application options override creation options.
 declare const encodeUnknownSync: <S extends Encoder<unknown>>(schema: S, options?: SchemaAST.ParseOptions) => (input: unknown, options?: SchemaAST.ParseOptions) => S["Encoded"]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1812)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1991)
 
 Since v4.0.0

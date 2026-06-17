@@ -16,7 +16,7 @@ Use when you need the focused values as a simple `Array<A>` for further
 - Returns an empty array when the traversal cannot focus.
 - Always returns a fresh array (safe to mutate).
 
-**Example** (collecting positive numbers)
+**Example** (Collecting positive numbers)
 
 ```ts
 import { Optic, Schema } from "effect"

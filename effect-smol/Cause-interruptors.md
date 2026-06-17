@@ -12,7 +12,7 @@ ignored. Returns an empty set when the cause has no interrupting fiber IDs.
 Use when you need interrupting fiber IDs as a set, with absence represented
 as an empty set.
 
-**Example** (collecting interruptors)
+**Example** (Collecting interruptors)
 
 ```ts
 import { Cause } from "effect"

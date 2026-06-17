@@ -13,7 +13,7 @@ it contains no typed error reasons.
 Use when you need the first typed error value from a `Cause` as a `Result`
 that preserves the original cause when no match is found.
 
-**Example** (extracting the first error value)
+**Example** (Extracting the first error value)
 
 ```ts
 import { Cause, Result } from "effect"

@@ -9,7 +9,7 @@ Converts a string to lowercase.
 
 - Pure, delegates to `String.toLowerCase`.
 
-**Example** (To lowercase)
+**Example** (Converting to lowercase)
 
 ```ts
 import { SchemaGetter } from "effect"

@@ -17,7 +17,7 @@ absence as a successful `None`.
 - `Some(a)` where `f(a)` is `Success(b)` becomes `Success(Some(b))`
 - `Some(a)` where `f(a)` is `Failure(e)` becomes `Failure(e)`
 
-**Example** (Map and transpose in one step)
+**Example** (Mapping and transposing in one step)
 
 ```ts
 import { Option, Result } from "effect"

@@ -22,7 +22,7 @@ effect structures.
 Since effects are immutable, `flatMap` always returns a new effect instead of
 changing the original one.
 
-**Example** (Syntax)
+**Example** (Choosing flatMap syntax variants)
 
 ```ts
 import { Effect, pipe } from "effect"
@@ -74,6 +74,6 @@ Effect.runPromise(finalAmount).then(console.log)
 declare const flatMap: { <A, B, E1, R1>(f: (a: A) => Effect<B, E1, R1>): <E, R>(self: Effect<A, E, R>) => Effect<B, E1 | E, R1 | R>; <A, E, R, B, E1, R1>(self: Effect<A, E, R>, f: (a: A) => Effect<B, E1, R1>): Effect<B, E | E1, R | R1>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1908)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1952)
 
 Since v2.0.0

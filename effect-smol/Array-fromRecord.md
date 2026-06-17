@@ -15,7 +15,7 @@ transformation.
 Key order follows `Object.entries` semantics. Empty records produce an empty
 array.
 
-**Example** (Record to entries)
+**Example** (Converting a record to entries)
 
 ```ts
 import { Array } from "effect"

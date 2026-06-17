@@ -16,7 +16,7 @@ values. Each `bind` produces the cartesian product of all bound variables,
 like nested loops. Use `filter` and `map` in the pipeline to add conditions
 and transformations.
 
-**Example** (Array comprehension with do notation)
+**Example** (Building array comprehensions with do notation)
 
 ```ts
 import { Array, pipe } from "effect"

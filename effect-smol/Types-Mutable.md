@@ -14,7 +14,7 @@ Use when you need a mutable version of a readonly type.
 
 Only affects the top level; nested properties remain readonly.
 
-**Example** (Shallow mutable conversion)
+**Example** (Converting shallowly to mutable types)
 
 ```ts
 import type { Types } from "effect"

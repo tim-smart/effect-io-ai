@@ -26,6 +26,6 @@ When serialized to a string-based codec, symbols are converted via
 declare class Symbol
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L1440)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L1441)
 
 Since v4.0.0

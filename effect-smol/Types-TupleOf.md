@@ -16,7 +16,7 @@ writing `[T, T, T, ...]` for longer tuples.
 - If `N` is the general `number` type (non-literal), degrades to `Array<T>`.
 - Negative numbers produce `never`.
 
-**Example** (Fixed-length tuple)
+**Example** (Checking fixed-length tuples)
 
 ```ts
 import type { Types } from "effect"

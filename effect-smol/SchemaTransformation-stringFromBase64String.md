@@ -16,7 +16,7 @@ strings.
 Decoding parses the Base64 string into a UTF-8 string. Encoding writes the
 string as a Base64 string.
 
-**Example** (String from Base64)
+**Example** (Converting Base64 to a string)
 
 ```ts
 import { Schema, SchemaTransformation } from "effect"

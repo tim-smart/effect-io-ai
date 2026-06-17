@@ -15,7 +15,7 @@ Use when you need a `Predicate` guard for exact tuple length that narrows
 This only checks length, not element types, and returns a refinement on the
 array type.
 
-**Example** (Exact length)
+**Example** (Checking exact length)
 
 ```ts
 import { Predicate } from "effect"

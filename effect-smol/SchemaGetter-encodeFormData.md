@@ -16,7 +16,7 @@ The getter is pure and never fails. It flattens nested objects or arrays into
 bracket-path keys such as `user[name]` and `items[0]`. Non-object inputs
 produce an empty `FormData`.
 
-**Example** (Encode to FormData)
+**Example** (Encoding to FormData)
 
 ```ts
 import { SchemaGetter } from "effect"

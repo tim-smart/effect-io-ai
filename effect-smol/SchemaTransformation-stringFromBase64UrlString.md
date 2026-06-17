@@ -15,7 +15,7 @@ URL-safe strings.
 Decoding parses the Base64 URL string into a UTF-8 string. Encoding writes
 the string as a Base64 URL string.
 
-**Example** (String from Base64Url)
+**Example** (Converting Base64Url to a string)
 
 ```ts
 import { Schema, SchemaTransformation } from "effect"

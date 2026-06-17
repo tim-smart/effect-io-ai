@@ -14,7 +14,7 @@ Use when you have a dynamic list of predicates to apply.
 Evaluation short-circuits on the first `false`. The collection is iterated
 each time the predicate is called.
 
-**Example** (All checks)
+**Example** (Checking all predicates)
 
 ```ts
 import { Predicate } from "effect"

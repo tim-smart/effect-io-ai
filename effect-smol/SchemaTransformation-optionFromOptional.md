@@ -18,7 +18,7 @@ value to `Some(Some(v))`. Encoding maps `Some(None)` to `None` to omit the
 value, and maps `Some(Some(v))` to `Some(v)`. This uses
 `transformOptional` under the hood and filters out `undefined` on decode.
 
-**Example** (Optional value to Option)
+**Example** (Converting an optional value to an Option)
 
 ```ts
 import { Schema, SchemaTransformation } from "effect"

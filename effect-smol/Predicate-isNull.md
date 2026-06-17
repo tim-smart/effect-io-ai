@@ -13,7 +13,7 @@ Use when you need a `Predicate` guard for nullable values.
 
 Uses `input === null`.
 
-**Example** (Guard null)
+**Example** (Guarding null values)
 
 ```ts
 import { Predicate } from "effect"

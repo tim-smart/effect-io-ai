@@ -16,7 +16,7 @@ input and report a missing key error when it is absent.
 - When input is `Some`, passes it through unchanged.
 - Optional `annotations` customize the error message for the missing key.
 
-**Example** (Required struct field)
+**Example** (Defining a required struct field)
 
 ```ts
 import { SchemaGetter } from "effect"

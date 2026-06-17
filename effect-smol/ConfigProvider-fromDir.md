@@ -15,8 +15,9 @@ Kubernetes ConfigMap or Secret volume mounts.
 
 Resolution tries a regular file first and returns a `Value` node with
 trimmed file contents. If the file read fails, it tries a directory and
-returns a `Record` node with immediate child names as keys. If both fail, it
-returns `SourceError`.
+returns a `Record` node with immediate child names as keys. If both fail with
+`NotFound`, it returns `undefined`. Other platform failures return
+`SourceError`.
 
 Requires `Path` and `FileSystem` in the Effect context. Defaults to root
 path `/`; override with `{ rootPath: "/etc/config" }`.
@@ -45,6 +46,6 @@ const program = Effect.gen(function*() {
 declare const fromDir: (options?: { readonly rootPath?: string | undefined; }) => Effect.Effect<ConfigProvider, never, Path_.Path | FileSystem.FileSystem>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L1092)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L1115)
 
 Since v4.0.0

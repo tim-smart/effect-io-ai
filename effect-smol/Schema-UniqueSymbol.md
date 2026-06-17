@@ -13,6 +13,6 @@ export interface UniqueSymbol<sym extends symbol>
 {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2764)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2947)
 
 Since v4.0.0

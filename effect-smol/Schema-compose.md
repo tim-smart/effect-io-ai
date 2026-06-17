@@ -11,6 +11,6 @@ Type-level representation returned by `decodeTo` without a custom transformation
 export interface compose<To extends Top, From extends Top> extends decodeTo<To, From> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4963)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5146)
 
 Since v3.10.0

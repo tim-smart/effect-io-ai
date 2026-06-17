@@ -17,7 +17,7 @@ Readonly-ness is a TypeScript type-level view; it is not observable at
 runtime. This delegates to `isObject`, so class instances and built-in object
 instances are accepted.
 
-**Example** (Readonly object)
+**Example** (Checking readonly objects)
 
 ```ts
 import { Predicate } from "effect"

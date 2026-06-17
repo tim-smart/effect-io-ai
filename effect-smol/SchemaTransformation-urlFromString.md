@@ -16,7 +16,7 @@ input or API responses.
 Decoding calls `new URL(s)` and fails with `InvalidValue` if the string is
 not a valid URL. Encoding returns `url.href`.
 
-**Example** (URL from string)
+**Example** (Converting a string to a URL)
 
 ```ts
 import { Schema, SchemaTransformation } from "effect"

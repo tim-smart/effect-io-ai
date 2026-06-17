@@ -15,7 +15,7 @@ Use when you need numeric ordering for numbers.
 each other, and any `NaN` is considered less than any non-`NaN` number. All
 other values use standard numeric comparison.
 
-**Example** (Number Ordering)
+**Example** (Ordering numbers)
 
 ```ts
 import { Order } from "effect"

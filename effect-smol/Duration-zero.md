@@ -5,7 +5,7 @@ Module: `Duration`<br />
 
 A Duration representing zero time.
 
-**Example** (Using the zero duration)
+**Example** (Referencing the zero duration)
 
 ```ts
 import { Duration } from "effect"

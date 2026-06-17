@@ -15,7 +15,7 @@ Extend this interface and set `taggedEnum` to your union type, using
 `this["A"]`, `this["B"]`, etc. as placeholders for the generics. The
 `Count` parameter declares how many generics are used (up to 4).
 
-**Example** (Generic tagged enum)
+**Example** (Defining a generic tagged enum)
 
 ```ts
 import { Data } from "effect"

@@ -16,7 +16,7 @@ Use to type options that control how many effects may run at the same time.
 - `"unbounded"` — run all effects concurrently with no limit.
 - `"inherit"` — inherit the concurrency from the surrounding context.
 
-**Example** (Concurrency values)
+**Example** (Setting concurrency values)
 
 ```ts
 import type { Types } from "effect"

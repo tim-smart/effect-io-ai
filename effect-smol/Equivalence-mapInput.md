@@ -18,7 +18,7 @@ Use when you need an equivalence for one type by comparing a derived value.
 - Useful for comparing by one property or normalizing values before
   comparison, such as case-insensitive strings
 
-**Example** (Equivalence based on object property)
+**Example** (Deriving equivalence from an object property)
 
 ```ts
 import { Equivalence } from "effect"

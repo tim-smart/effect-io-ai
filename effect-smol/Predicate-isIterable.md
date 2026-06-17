@@ -13,7 +13,7 @@ Use when you need a `Predicate` guard before iterating an unknown value.
 
 Accepts strings as iterable and uses `hasProperty` for `Symbol.iterator`.
 
-**Example** (Guard iterable)
+**Example** (Guarding iterables)
 
 ```ts
 import { Predicate } from "effect"

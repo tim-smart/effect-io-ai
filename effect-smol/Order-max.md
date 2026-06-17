@@ -15,7 +15,7 @@ Use when you need to select the larger of two values according to an
 Returns the value that compares as greater than or equal to the other value.
 If values are equal, the first argument is returned.
 
-**Example** (Maximum Value)
+**Example** (Selecting the maximum value)
 
 ```ts
 import { Order } from "effect"

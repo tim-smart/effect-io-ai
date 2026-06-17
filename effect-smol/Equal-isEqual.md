@@ -17,7 +17,7 @@ from plain values before calling `[Equal.symbol]` directly.
   `symbol`.
 - Acts as a TypeScript type guard, narrowing the input to `Equal`.
 
-**Example** (Type Guard)
+**Example** (Checking Equal values)
 
 ```ts
 import { Equal, Hash } from "effect"

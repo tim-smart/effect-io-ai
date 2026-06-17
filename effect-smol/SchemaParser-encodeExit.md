@@ -16,6 +16,12 @@ an `Exit` whose failure contains `SchemaIssue.Issue`.
 The returned function produces `Exit.Success` with the schema's `Encoded` value
 or `Exit.Failure` with a `SchemaIssue.Issue`.
 
+**Gotchas**
+
+Because this adapter runs synchronously, async encoding work can produce an
+`Exit.Failure` with a defect cause. When the cause contains both schema
+issues and non-schema reasons, all reasons remain in the returned `Cause`.
+
 **See**
 
 - `encodeUnknownExit` for unknown input with the same `Exit` result shape
@@ -27,6 +33,6 @@ or `Exit.Failure` with a `SchemaIssue.Issue`.
 declare const encodeExit: <S extends Schema.Encoder<unknown>>(schema: S, options?: SchemaAST.ParseOptions) => (input: S["Type"], options?: SchemaAST.ParseOptions) => Exit.Exit<S["Encoded"], SchemaIssue.Issue>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L667)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L758)
 
 Since v4.0.0

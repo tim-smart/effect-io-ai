@@ -15,7 +15,7 @@ values with a simple structural object check.
 Uses the `in` operator and `isObjectKeyword`. This does not check property
 value types.
 
-**Example** (Guard property)
+**Example** (Guarding object properties)
 
 ```ts
 import { Predicate } from "effect"

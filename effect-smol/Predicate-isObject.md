@@ -16,7 +16,7 @@ This is a structural runtime check using `typeof input === "object"`, so it
 also accepts object instances such as `Date`, `Map`, class instances, and
 typed arrays. It excludes `null` and arrays.
 
-**Example** (Guard object)
+**Example** (Guarding objects)
 
 ```ts
 import { Predicate } from "effect"

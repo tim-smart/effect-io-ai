@@ -9,7 +9,7 @@ Type guard that always returns `true`.
 
 Use when you need a `Predicate` that always accepts, e.g. as a placeholder.
 
-**Example** (Always matches)
+**Example** (Matching every value)
 
 ```ts
 import { Predicate } from "effect"

@@ -14,7 +14,7 @@ but not `null`.
 
 Uses `typeof input === "object" && input !== null` and includes arrays.
 
-**Example** (Object or array)
+**Example** (Checking objects or arrays)
 
 ```ts
 import { Predicate } from "effect"

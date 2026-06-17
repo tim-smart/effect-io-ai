@@ -17,7 +17,7 @@ Use when you want to narrow `T` to the subset that passes certain validation
   any check fails.
 - `set` is identity — the value passes through unchanged.
 
-**Example** (positive integer prism)
+**Example** (Creating a positive integer prism)
 
 ```ts
 import { Optic, Result, Schema } from "effect"

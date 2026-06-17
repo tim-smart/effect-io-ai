@@ -5,7 +5,7 @@ Module: `Metric`<br />
 
 Service key for the current metric attributes context.
 
-**Example** (Using the current attributes key)
+**Example** (Accessing the current metric attributes key)
 
 ```ts
 import { Data, Effect, Metric } from "effect"

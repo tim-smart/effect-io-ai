@@ -14,7 +14,7 @@ the equality method.
 
 This is a pure constant with no allocation or side effects.
 
-**Example** (Implementing Equal on a Class)
+**Example** (Implementing Equal on a class)
 
 ```ts
 import { Equal, Hash } from "effect"

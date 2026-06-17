@@ -16,7 +16,7 @@ checking `unknown` values.
 A refinement returns a type predicate (`a is B`). Use it with `if` or
 `filter` to narrow types.
 
-**Example** (Narrow unknown)
+**Example** (Narrowing unknown values)
 
 ```ts
 import { Predicate } from "effect"

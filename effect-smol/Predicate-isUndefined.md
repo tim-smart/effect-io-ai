@@ -14,7 +14,7 @@ Use when you need a `Predicate` guard for values that are exactly
 
 Uses `input === undefined`.
 
-**Example** (Guard undefined)
+**Example** (Guarding undefined values)
 
 ```ts
 import { Predicate } from "effect"

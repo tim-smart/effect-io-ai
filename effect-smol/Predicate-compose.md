@@ -15,7 +15,7 @@ when chaining refinements for progressive narrowing.
 For refinements, the output type is narrowed by both checks. Evaluation
 short-circuits on the first `false`.
 
-**Example** (Compose refinements)
+**Example** (Composing refinements)
 
 ```ts
 import { Predicate } from "effect"

@@ -15,7 +15,7 @@ cumulative aggregations from each position.
 
 For index `i`, the function receives `self.slice(i)`.
 
-**Example** (Suffix lengths)
+**Example** (Computing suffix lengths)
 
 ```ts
 import { Array } from "effect"

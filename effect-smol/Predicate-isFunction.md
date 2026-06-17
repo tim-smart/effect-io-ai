@@ -14,7 +14,7 @@ callable function.
 
 Uses `typeof input === "function"`.
 
-**Example** (Guard function)
+**Example** (Guarding functions)
 
 ```ts
 import { Predicate } from "effect"

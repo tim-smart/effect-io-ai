@@ -15,7 +15,7 @@ typed error channel.
 The `error` property carries the typed value `E`. Use `isFailReason`
 to narrow a `Reason` to this type.
 
-**Example** (accessing the error)
+**Example** (Accessing the error)
 
 ```ts
 import { Cause } from "effect"

@@ -14,7 +14,7 @@ callable `then` method.
 
 Performs a structural check for a callable `then`.
 
-**Example** (Guard promise-like)
+**Example** (Guarding promise-like values)
 
 ```ts
 import { Predicate } from "effect"

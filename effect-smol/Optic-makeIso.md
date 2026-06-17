@@ -14,7 +14,7 @@ between `S` and `A`.
 
 The returned optic can be composed with any other optic.
 
-**Example** (wrapping/unwrapping a branded type)
+**Example** (Wrapping and unwrapping a branded type)
 
 ```ts
 import { Optic } from "effect"

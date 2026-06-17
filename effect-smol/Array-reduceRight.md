@@ -13,7 +13,7 @@ Use when you need to fold values from right to left.
 
 The function receives `(accumulator, element, index)`.
 
-**Example** (Right-to-left fold)
+**Example** (Folding from right to left)
 
 ```ts
 import { Array } from "effect"

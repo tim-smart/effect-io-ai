@@ -9,7 +9,7 @@ Provides the empty string `""`.
 
 Use when you need the canonical empty string value from the `String` module.
 
-**Example** (Using the empty string)
+**Example** (Referencing the empty string)
 
 ```ts
 import { String } from "effect"

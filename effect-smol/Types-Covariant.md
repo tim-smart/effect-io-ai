@@ -16,7 +16,7 @@ position.
 `Covariant<A>` is assignable to `Covariant<B>` when `A extends B`, following
 the subtype direction.
 
-**Example** (Covariant phantom type)
+**Example** (Defining a covariant phantom type)
 
 ```ts
 import type { Types } from "effect"

@@ -17,7 +17,7 @@ Decoding maps `undefined` to `Option.none()` and non-undefined values to
 `Option.some(value)`. Encoding maps `Option.none()` to `undefined` and
 `Option.some(value)` to `value`. The transformation is pure and synchronous.
 
-**Example** (Option from undefined-or)
+**Example** (Converting undefined-or values to an Option)
 
 ```ts
 import { Schema, SchemaTransformation } from "effect"

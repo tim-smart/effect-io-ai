@@ -15,7 +15,7 @@ value is needed.
 The output length is `input.length + 1` because it ends with the initial
 value. The result is always a `NonEmptyArray`.
 
-**Example** (Reverse running totals)
+**Example** (Scanning running totals in reverse)
 
 ```ts
 import { Array } from "effect"

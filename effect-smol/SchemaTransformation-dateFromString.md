@@ -16,7 +16,7 @@ Decoding creates a `Date` from the string like `new Date(s)`. Encoding
 converts the `Date` to an ISO string like `date.toISOString()`, returning
 `"Invalid Date"` for invalid dates.
 
-**Example** (Date from string)
+**Example** (Converting a string to a Date)
 
 ```ts
 import { Schema, SchemaTransformation } from "effect"

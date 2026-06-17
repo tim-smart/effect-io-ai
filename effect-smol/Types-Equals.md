@@ -15,7 +15,7 @@ Use to assert type equality in conditional types or type-level tests.
   distinguishing between `any`, `unknown`, `never`, and other types.
 - Resolves to `true` if `X` and `Y` are identical, `false` otherwise.
 
-**Example** (Type equality check)
+**Example** (Checking type equality)
 
 ```ts
 import type { Types } from "effect"

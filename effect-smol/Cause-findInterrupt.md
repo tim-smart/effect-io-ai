@@ -12,7 +12,7 @@ reason, the failure value is the original cause.
 Use when you need the first `Interrupt` reason from a `Cause`, including the
 fiber ID and annotations.
 
-**Example** (extracting the first interrupt)
+**Example** (Extracting the first interrupt)
 
 ```ts
 import { Cause, Result } from "effect"

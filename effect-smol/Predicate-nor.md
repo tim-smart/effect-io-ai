@@ -13,7 +13,7 @@ Use when you want to combine two `Predicate`s with logical NOR semantics.
 
 Returns the negation of `or`.
 
-**Example** (NOR)
+**Example** (Checking NOR conditions)
 
 ```ts
 import { Predicate } from "effect"

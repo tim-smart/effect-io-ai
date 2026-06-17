@@ -12,7 +12,7 @@ input order. When `concurrency` is greater than `1` or `"unbounded"`,
 multiple inner streams may run at the same time and their outputs are merged
 as they arrive.
 
-**Example** (FlatMapping stream values)
+**Example** (Flat mapping stream values)
 
 ```ts
 import { Console, Effect, Stream } from "effect"

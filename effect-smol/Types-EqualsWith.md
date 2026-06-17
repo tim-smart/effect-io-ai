@@ -13,7 +13,7 @@ Use when you need a type-level if/else based on type equality.
 
 Returns `Y` when `A` and `B` are equal, `N` otherwise.
 
-**Example** (Conditional type based on equality)
+**Example** (Choosing a conditional type based on equality)
 
 ```ts
 import type { Types } from "effect"

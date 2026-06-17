@@ -20,7 +20,7 @@ The second argument can be:
 
 If `self` is a `Failure`, the second argument is never evaluated.
 
-**Example** (Using andThen with different argument types)
+**Example** (Chaining Result values with different argument types)
 
 ```ts
 import { pipe, Result } from "effect"

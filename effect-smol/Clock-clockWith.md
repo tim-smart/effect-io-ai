@@ -10,7 +10,7 @@ Accesses the current Clock service and uses it to run the provided function.
 Use when you need the full Clock service interface to perform multiple time
 operations or call unsafe variants within a single effect.
 
-**Example** (Using the current Clock service)
+**Example** (Accessing the current Clock service)
 
 ```ts
 import { Clock, Effect } from "effect"

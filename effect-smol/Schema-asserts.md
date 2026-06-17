@@ -3,7 +3,7 @@ Module: `Schema`<br />
 
 ## Schema.asserts
 
-Creates an assertion function that throws an error if the input doesn't match
+Creates an assertion function that throws an error if the input does not match
 the schema.
 
 **When to use**
@@ -13,10 +13,16 @@ TypeScript assertion signature.
 
 **Details**
 
-The input is narrowed if the assertion succeeds. If validation fails, the
-assertion throws.
+The input is narrowed if the assertion succeeds. If schema validation fails,
+the assertion throws an `Error` whose cause is `SchemaIssue.Issue`.
 
-**Example** (Basic Usage)
+**Gotchas**
+
+Causes that contain defects, interruptions, or other non-schema reasons throw
+with the underlying `Cause` attached instead of being converted to schema
+validation errors.
+
+**Example** (Asserting and narrowing an input)
 
 ```ts
 import { Schema } from "effect"
@@ -42,6 +48,6 @@ try {
 declare const asserts: <S extends Top, I>(schema: S, input: I) => asserts input is I & S["Type"]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1156)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1176)
 
 Since v4.0.0

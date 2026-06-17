@@ -15,7 +15,7 @@ Use when you have a `Result<A, E>` and want to read/update `A` only when it
 - `getResult` fails when the result is a `Failure`.
 - `set(a)` produces `Result.succeed(a)`.
 
-**Example** (accessing success)
+**Example** (Accessing success)
 
 ```ts
 import { Optic, Result } from "effect"

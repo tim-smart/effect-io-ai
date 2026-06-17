@@ -15,7 +15,7 @@ because capacity has been exhausted.
 
 Implements `YieldableError`.
 
-**Example** (creating and checking)
+**Example** (Creating and checking an ExceededCapacityError)
 
 ```ts
 import { Cause } from "effect"

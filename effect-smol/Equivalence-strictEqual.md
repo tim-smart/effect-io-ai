@@ -20,7 +20,7 @@ equivalent. Use this as a building block for more complex equivalences via
 
 `NaN !== NaN`, so `NaN` values are never considered equivalent.
 
-**Example** (Primitive types)
+**Example** (Comparing primitive types)
 
 ```ts
 import { Equivalence } from "effect"
@@ -32,7 +32,7 @@ console.log(strictEq(1, 2)) // false
 console.log(strictEq(NaN, NaN)) // false (NaN !== NaN)
 ```
 
-**Example** (Reference equality for objects)
+**Example** (Comparing objects by reference)
 
 ```ts
 import { Equivalence } from "effect"

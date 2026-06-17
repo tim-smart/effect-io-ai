@@ -9,7 +9,7 @@ Strips whitespace from both ends of a string.
 
 - Pure, delegates to `String.trim`.
 
-**Example** (Trim whitespace)
+**Example** (Trimming whitespace)
 
 ```ts
 import { SchemaGetter } from "effect"

@@ -17,7 +17,7 @@ failure.
 - The error types are merged into a union (`E | E2`)
 - This is the monadic `bind` / `>>=` for `Result`
 
-**Example** (Sequential validation)
+**Example** (Validating sequentially)
 
 ```ts
 import { pipe, Result } from "effect"

@@ -15,7 +15,7 @@ encoding.
 - Always returns `Option.None` regardless of input.
 - Never fails.
 
-**Example** (Omit a field during encoding)
+**Example** (Omitting a field during encoding)
 
 ```ts
 import { SchemaGetter } from "effect"

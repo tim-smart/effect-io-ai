@@ -37,6 +37,6 @@ const provider = ConfigProvider.fromEnv({
 declare const constantCase: (self: ConfigProvider) => ConfigProvider
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L520)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L534)
 
 Since v2.0.0

@@ -17,7 +17,7 @@ or `isInterruptReason`.
 Every reason carries an `annotations` map and an `annotate` method for
 attaching tracing metadata.
 
-**Example** (narrowing a reason)
+**Example** (Narrowing a reason)
 
 ```ts
 import { Cause } from "effect"

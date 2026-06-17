@@ -9,7 +9,7 @@ Decodes a URL-safe Base64 string to a UTF-8 `string`.
 
 - Fails with `SchemaIssue.InvalidValue` if the input is not valid Base64Url.
 
-**Example** (Decode Base64Url to string)
+**Example** (Decoding Base64Url to string)
 
 ```ts
 import { SchemaGetter } from "effect"

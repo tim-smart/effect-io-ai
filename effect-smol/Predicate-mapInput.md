@@ -15,7 +15,7 @@ each `B` to an `A`, such as checking lengths or projections.
 Returns a new predicate that applies `f` before `self`. There is no
 additional short-circuiting beyond what `self` does.
 
-**Example** (Check string length)
+**Example** (Checking string length)
 
 ```ts
 import { Predicate } from "effect"

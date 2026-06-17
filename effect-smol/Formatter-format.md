@@ -32,7 +32,7 @@ logging, or error messages.
   `"\t"`). Defaults to `0` (compact).
 - `ignoreToString` — skip calling `toString()`. Defaults to `false`.
 
-**Example** (Compact output)
+**Example** (Formatting compact output)
 
 ```ts
 import { Formatter } from "effect"
@@ -56,7 +56,7 @@ console.log(Formatter.format({ a: 1, b: [2, 3] }, { space: 2 }))
 // }
 ```
 
-**Example** (Circular reference handling)
+**Example** (Handling circular references)
 
 ```ts
 import { Formatter } from "effect"

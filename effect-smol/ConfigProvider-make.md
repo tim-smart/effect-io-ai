@@ -16,11 +16,7 @@ The `get` callback receives a `Path` and must return
 `Effect<Node | undefined, SourceError>`. Return `undefined` when the path
 does not exist; fail with `SourceError` only for actual I/O errors.
 
-The optional `mapInput` and `prefix` parameters are wired into the
-resulting `load` method so that combinators like `mapInput` and
-`nested` can compose without wrapping `get`.
-
-**Example** (A simple in-memory provider)
+**Example** (Creating a simple in-memory provider)
 
 ```ts
 import { ConfigProvider, Effect } from "effect"
@@ -47,9 +43,9 @@ const provider = ConfigProvider.make((path) => {
 **Signature**
 
 ```ts
-declare const make: (get: (path: Path) => Effect.Effect<Node | undefined, SourceError>, mapInput?: (path: Path) => Path, prefix?: Path) => ConfigProvider
+declare const make: (get: (path: Path) => Effect.Effect<Node | undefined, SourceError>) => ConfigProvider
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L381)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L400)
 
 Since v2.0.0

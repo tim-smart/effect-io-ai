@@ -16,7 +16,7 @@ intervals, or other duration values stored as millisecond counts.
 Decode creates a duration from the number, and encode returns the duration
 length in milliseconds.
 
-**Example** (Duration from milliseconds)
+**Example** (Converting milliseconds to a Duration)
 
 ```ts
 import { Schema, SchemaTransformation } from "effect"

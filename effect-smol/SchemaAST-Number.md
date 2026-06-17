@@ -27,6 +27,6 @@ skipped since non-finite values cannot occur.
 declare class Number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L1331)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L1332)
 
 Since v4.0.0

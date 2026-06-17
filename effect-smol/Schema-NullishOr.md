@@ -13,6 +13,6 @@ export interface NullishOr<S extends Top> extends Union<readonly [S, Null, Undef
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4481)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4664)
 
 Since v3.10.0

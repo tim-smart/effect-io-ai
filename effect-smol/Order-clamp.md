@@ -17,7 +17,7 @@ Values below the range return minimum, and values above the range return
 maximum. The minimum must be less than or equal to the maximum according to
 the order.
 
-**Example** (Clamping Values)
+**Example** (Clamping values)
 
 ```ts
 import { Order } from "effect"

@@ -9,11 +9,6 @@ Provides a fallback value when the config fails due to missing data.
 
 Use when you need to make a config key optional with a sensible default.
 
-**Details**
-
-The default is lazily evaluated. Supports both data-last and data-first
-calling conventions.
-
 **Gotchas**
 
 Only applies when the error is a `SchemaError` caused exclusively by
@@ -42,6 +37,6 @@ const provider = ConfigProvider.fromUnknown({})
 declare const withDefault: { <const A2>(defaultValue: A2): <A>(self: Config<A>) => Config<A2 | A>; <A, const A2>(self: Config<A>, defaultValue: A2): Config<A | A2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L398)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L357)
 
 Since v2.0.0

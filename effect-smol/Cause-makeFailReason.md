@@ -10,7 +10,7 @@ Creates a standalone `Fail` reason (not wrapped in a `Cause`).
 Use when constructing a standalone typed failure reason for
 `fromReasons` or direct comparison.
 
-**Example** (creating a Fail reason)
+**Example** (Creating a Fail reason)
 
 ```ts
 import { Cause } from "effect"

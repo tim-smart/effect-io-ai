@@ -43,6 +43,6 @@ const DefaultsLayer = ConfigProvider.layerAdd(defaults)
 declare const layerAdd: <E = never, R = never>(self: ConfigProvider | Effect.Effect<ConfigProvider, E, R>, options?: { readonly asPrimary?: boolean | undefined; } | undefined) => Layer.Layer<never, E, Exclude<R, Scope>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L649)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L671)
 
 Since v4.0.0

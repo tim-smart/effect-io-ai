@@ -17,7 +17,7 @@ will arrive. It is distinct from an error or interruption; it represents
 successful completion. The optional `value` field can carry a final
 leftover payload.
 
-**Example** (signaling queue completion)
+**Example** (Signaling queue completion)
 
 ```ts
 import { Cause, Effect, Queue } from "effect"

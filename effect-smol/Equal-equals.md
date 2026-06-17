@@ -32,7 +32,7 @@ predicate.
   mutated after their first comparison.**
 - Map and Set comparisons are O(n²) in size.
 
-**Example** (Comparing Values)
+**Example** (Comparing values)
 
 ```ts
 import { Equal } from "effect"

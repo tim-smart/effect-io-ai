@@ -9,7 +9,7 @@ Extracts the full variant type (including `_tag`) for a specific tag.
 
 Use to select one full tagged-union variant by its `_tag` value.
 
-**Example** (extracting a variant type)
+**Example** (Extracting a variant type)
 
 ```ts
 import type { Data } from "effect"

@@ -15,7 +15,7 @@ Use when you need a schema getter that unconditionally rejects input.
 - Always fails with the `Issue` returned by `f`.
 - The failure function receives the original `Option<E>` input for error context.
 
-**Example** (Always-failing getter)
+**Example** (Defining an always-failing getter)
 
 ```ts
 import { Option, SchemaGetter, SchemaIssue } from "effect"

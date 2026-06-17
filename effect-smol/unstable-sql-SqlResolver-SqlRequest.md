@@ -14,6 +14,6 @@ export interface SqlRequest<In, A, E, R> extends Request.Request<A, E | Schema.S
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SqlResolver.ts#L34)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SqlResolver.ts#L35)
 
 Since v4.0.0

@@ -16,7 +16,7 @@ build a `Reducer` that tracks the running maximum.
 The combiner compares values using the given `Order`. When values are equal,
 it returns `that` (the second argument).
 
-**Example** (maximum of two numbers)
+**Example** (Selecting the maximum of two numbers)
 
 ```ts
 import { Combiner, Number } from "effect"

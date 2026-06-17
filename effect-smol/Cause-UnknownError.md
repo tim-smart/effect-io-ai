@@ -11,7 +11,7 @@ Used when a thrown or rejected value is not represented by a more specific
 typed error. The original value is stored in the `cause` property inherited
 from `Error`. Implements `YieldableError`.
 
-**Example** (creating and checking)
+**Example** (Creating and checking an UnknownError)
 
 ```ts
 import { Cause } from "effect"

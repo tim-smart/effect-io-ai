@@ -15,7 +15,7 @@ first element plus the remaining elements.
 
 `onNonEmpty` receives `(head, tail)` where `tail` is the rest of the array.
 
-**Example** (Head and tail destructuring)
+**Example** (Destructuring head and tail)
 
 ```ts
 import { Array } from "effect"

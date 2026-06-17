@@ -14,7 +14,7 @@ decoded/output type is narrower than the encoded/input type.
 
 - Same singleton as `passthrough` — no allocation, optimized in composition.
 
-**Example** (Supertype passthrough)
+**Example** (Passing through supertypes)
 
 ```ts
 import { SchemaGetter } from "effect"

@@ -16,7 +16,7 @@ The getter is pure and never fails. It joins entries with `separator`
 (default `,`) and joins each key and value with `keyValueSeparator` (default
 `=`).
 
-**Example** (Join key-value record)
+**Example** (Joining key-value records)
 
 ```ts
 import { SchemaGetter } from "effect"

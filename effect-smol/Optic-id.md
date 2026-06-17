@@ -15,7 +15,7 @@ Use when you need to start an optic chain with a focus on the whole value.
 - `set(a)` returns `a`.
 - Singleton — every call returns the same instance.
 
-**Example** (starting an optic chain)
+**Example** (Starting an optic chain)
 
 ```ts
 import { Optic } from "effect"

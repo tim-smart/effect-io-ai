@@ -15,7 +15,7 @@ existing date object into a new date object.
 - Delegates to `new globalThis.Date(input)`.
 - Does not validate the result — may produce an invalid Date.
 
-**Example** (Coerce to Date)
+**Example** (Coercing to a Date)
 
 ```ts
 import { SchemaGetter } from "effect"

@@ -11,7 +11,7 @@ Returns the first typed error value `E` from a cause wrapped in
 Use when you need the first typed error value from a `Cause` as an `Option`,
 discarding the original cause.
 
-**Example** (extracting an error as Option)
+**Example** (Extracting an error as Option)
 
 ```ts
 import { Cause, Option } from "effect"

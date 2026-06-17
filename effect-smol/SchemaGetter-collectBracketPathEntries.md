@@ -22,7 +22,7 @@ key-value entries.
   (e.g. `tags=a&tags=b`). Otherwise uses indexed bracket paths (e.g. `items[0]`, `items[1]`).
 - Non-leaf values that aren't objects or arrays are silently skipped.
 
-**Example** (Flatten object to bracket paths)
+**Example** (Flattening an object to bracket paths)
 
 ```ts
 import { Predicate, SchemaGetter } from "effect"

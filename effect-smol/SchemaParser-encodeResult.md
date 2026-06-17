@@ -17,6 +17,12 @@ The returned function produces `Result.succeed` with the schema's `Encoded`
 value on success or `Result.fail` with a `SchemaIssue.Issue` on encoding
 failure.
 
+**Gotchas**
+
+This synchronous adapter returns `Result.fail` for causes made entirely of
+schema issues, but causes that contain defects, interruptions, or other
+non-schema reasons throw instead.
+
 **See**
 
 - `encodeUnknownResult` for the same `Result` shape when the input is not already typed
@@ -27,6 +33,6 @@ failure.
 declare const encodeResult: <S extends Schema.Encoder<unknown>>(schema: S, options?: SchemaAST.ParseOptions) => (input: S["Type"], options?: SchemaAST.ParseOptions) => Result.Result<S["Encoded"], SchemaIssue.Issue>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L736)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L839)
 
 Since v4.0.0

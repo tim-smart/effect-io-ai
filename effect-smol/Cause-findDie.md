@@ -12,7 +12,7 @@ failure value is the original cause.
 Use when you need the full `Die` reason from a `Cause`, including
 annotations.
 
-**Example** (extracting the first Die reason)
+**Example** (Extracting the first Die reason)
 
 ```ts
 import { Cause, Result } from "effect"

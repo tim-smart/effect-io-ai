@@ -14,7 +14,7 @@ Use to read diagnostic metadata merged from the whole cause.
 When multiple reasons contain the same annotation key, the value from the
 later reason wins.
 
-**Example** (reading merged annotations)
+**Example** (Reading merged annotations)
 
 ```ts
 import { Cause, Context } from "effect"

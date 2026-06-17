@@ -14,7 +14,7 @@ Use when you want to infer the input type from a refinement type.
 This is type-only and creates no runtime value. It resolves to `never` if
 the type does not match `Refinement`.
 
-**Example** (Infer input)
+**Example** (Inferring the input type)
 
 ```ts
 import { Predicate } from "effect"

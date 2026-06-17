@@ -15,7 +15,7 @@ Use to set the config source for an entire application or test suite.
 Accepts either a plain `ConfigProvider` or an `Effect` that produces one.
 When given an Effect, it is evaluated once when the layer is built.
 
-**Example** (Using a JSON object as the config source)
+**Example** (Reading config from a JSON object)
 
 ```ts
 import { Config, ConfigProvider, Effect, Layer } from "effect"
@@ -42,6 +42,6 @@ const program = Effect.gen(function*() {
 declare const layer: <E = never, R = never>(self: ConfigProvider | Effect.Effect<ConfigProvider, E, R>) => Layer.Layer<never, E, Exclude<R, Scope>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L608)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L630)
 
 Since v4.0.0

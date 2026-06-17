@@ -16,7 +16,7 @@ specific than its decoded side.
 - Both decode and encode are no-ops (same as `passthrough`).
 - Returns a shared singleton instance.
 
-**Example** (Subtype passthrough)
+**Example** (Passing through subtypes)
 
 ```ts
 import { SchemaTransformation } from "effect"

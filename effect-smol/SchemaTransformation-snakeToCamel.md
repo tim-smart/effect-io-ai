@@ -17,7 +17,7 @@ Decoding converts values such as `"my_field_name"` to `"myFieldName"`.
 Encoding converts values such as `"myFieldName"` back to `"my_field_name"`.
 The transformation is round-trippable for standard snake_case and camelCase.
 
-**Example** (Snake to camel conversion)
+**Example** (Converting snake case to camel case)
 
 ```ts
 import { Schema, SchemaTransformation } from "effect"

@@ -13,7 +13,7 @@ Use when you need a `Predicate` runtime guard for `Map` values.
 
 Uses `instanceof Map`.
 
-**Example** (Guard a Map)
+**Example** (Guarding a Map)
 
 ```ts
 import { Predicate } from "effect"

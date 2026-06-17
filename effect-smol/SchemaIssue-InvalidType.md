@@ -18,7 +18,7 @@ or `null` where an object was expected.
   `Option.none()` when no value was provided.
 - The default formatter renders this as `"Expected <type>, got <actual>"`.
 
-**Example** (Formatted output)
+**Example** (Formatting output)
 
 ```ts
 import { Schema } from "effect"

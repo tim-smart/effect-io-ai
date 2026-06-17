@@ -15,7 +15,7 @@ causes.
 Represents the absence of failure. Combining any cause with `empty` via
 `combine` returns the original cause unchanged.
 
-**Example** (combining with the empty cause)
+**Example** (Combining with the empty cause)
 
 ```ts
 import { Cause } from "effect"

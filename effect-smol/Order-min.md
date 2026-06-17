@@ -15,7 +15,7 @@ Use when you need to select the smaller of two values according to an
 Returns the value that compares as less than or equal to the other value. If
 values are equal, the first argument is returned.
 
-**Example** (Minimum Value)
+**Example** (Selecting the minimum value)
 
 ```ts
 import { Order } from "effect"

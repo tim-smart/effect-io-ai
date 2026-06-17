@@ -14,7 +14,7 @@ discarding failures.
 
 The filter receives `(element, index)`. Failures are discarded.
 
-**Example** (Filter and transform)
+**Example** (Filtering and transforming)
 
 ```ts
 import { Array, Result } from "effect"

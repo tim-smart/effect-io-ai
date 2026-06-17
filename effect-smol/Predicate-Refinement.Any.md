@@ -13,7 +13,7 @@ Use when you need a constraint for "any refinement" in generic code.
 
 This is type-only and creates no runtime value.
 
-**Example** (Generic constraint)
+**Example** (Using generic constraints)
 
 ```ts
 import { Predicate } from "effect"

@@ -35,6 +35,6 @@ const validEffect = satisfiesError(Effect.fail(new ValidationError()))
 declare const satisfiesErrorType: <E>() => <A, E2 extends E, R>(effect: Effect<A, E2, R>) => Effect<A, E2, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L15076)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L15120)
 
 Since v4.0.0

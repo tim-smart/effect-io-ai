@@ -16,7 +16,7 @@ Use when you want to treat only `null` as absent while preserving
 - `null` → `None`
 - Any other value (including `undefined`) → `Some`
 
-**Example** (From possibly-null values)
+**Example** (Converting possibly null values to an Option)
 
 ```ts
 import { Option } from "effect"

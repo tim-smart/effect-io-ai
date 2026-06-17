@@ -95,6 +95,6 @@ const program = f("hello")
 declare const fnUntraced: fn.Untraced
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L13466)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L13510)
 
 Since v3.12.0

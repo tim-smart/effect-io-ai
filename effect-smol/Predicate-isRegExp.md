@@ -13,7 +13,7 @@ Use when you need a `Predicate` runtime guard for regular expressions.
 
 Uses `instanceof RegExp`.
 
-**Example** (Guard RegExp)
+**Example** (Guarding RegExp values)
 
 ```ts
 import { Predicate } from "effect"

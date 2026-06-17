@@ -20,7 +20,7 @@ This is useful in cases where a missing match is expected and should be
 handled explicitly rather than throwing an error or returning a default
 value.
 
-**Example** (Extracting a User Role with `Match.option`)
+**Example** (Extracting a user role with `Match.option`)
 
 ```ts
 import { Match } from "effect"

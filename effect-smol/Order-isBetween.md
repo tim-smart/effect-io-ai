@@ -17,7 +17,7 @@ Returns `true` when the value is greater than or equal to minimum and less
 than or equal to maximum. Values outside the range return `false`. Both
 bounds are inclusive.
 
-**Example** (Checking Range)
+**Example** (Checking ranges)
 
 ```ts
 import { Order } from "effect"

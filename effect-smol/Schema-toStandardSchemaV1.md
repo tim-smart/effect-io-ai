@@ -68,6 +68,6 @@ console.log(invalidResult) // { issues: [{ path: ["name"], message: "..." }, { p
 declare const toStandardSchemaV1: <S extends Decoder<unknown>>(self: S, options?: { readonly leafHook?: SchemaIssue.LeafHook | undefined; readonly checkHook?: SchemaIssue.CheckHook | undefined; readonly parseOptions?: SchemaAST.ParseOptions | undefined; }) => StandardSchemaV1<S["Encoded"], S["Type"]> & S
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L982)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L990)
 
 Since v4.0.0

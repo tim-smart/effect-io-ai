@@ -82,6 +82,8 @@ export interface Bottom<
    *
    * Throws an `Error` with the schema issue in its `cause` when validation
    * fails.
+   * Causes that contain defects, interruptions, or other non-schema reasons
+   * throw with the underlying `Cause` attached instead.
    *
    * @see {@link Bottom.makeOption} — construct synchronously and discard validation details
    * @see {@link Bottom.makeEffect} — construct through `Effect` when validation failure should stay in the error channel
@@ -100,6 +102,12 @@ export interface Bottom<
    *
    * Applies constructor defaults and type-side validation according to
    * `MakeOptions`.
+   *
+   * **Gotchas**
+   *
+   * Only causes made entirely of schema issues are converted to `None`. Causes
+   * that contain defects, interruptions, or other non-schema reasons throw
+   * instead.
    *
    * @see {@link Bottom.make} — construct synchronously when validation failure should throw
    * @see {@link Bottom.makeEffect} — construct through `Effect` when validation details should stay in the error channel

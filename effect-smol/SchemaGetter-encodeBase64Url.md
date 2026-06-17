@@ -9,7 +9,7 @@ Encodes a `Uint8Array` or string to a URL-safe Base64 string.
 
 The getter is pure and never fails.
 
-**Example** (Encode to Base64Url)
+**Example** (Encoding to Base64Url)
 
 ```ts
 import { SchemaGetter } from "effect"

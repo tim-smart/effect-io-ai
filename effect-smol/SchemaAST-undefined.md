@@ -16,6 +16,6 @@ inspecting or constructing schema ASTs.
 declare const undefined: Undefined
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L792)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L793)
 
 Since v4.0.0

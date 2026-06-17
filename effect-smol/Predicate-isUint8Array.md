@@ -13,7 +13,7 @@ Use when you need a `Predicate` runtime guard for binary data.
 
 Uses `instanceof Uint8Array`.
 
-**Example** (Guard Uint8Array)
+**Example** (Guarding Uint8Array values)
 
 ```ts
 import { Predicate } from "effect"

@@ -10,7 +10,7 @@ its contract (e.g. negative where positive was expected).
 
 Implements `YieldableError`.
 
-**Example** (creating and checking)
+**Example** (Creating and checking an IllegalArgumentError)
 
 ```ts
 import { Cause } from "effect"

@@ -46,6 +46,6 @@ type AST = | Declaration
   | Suspend
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L54)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L55)
 
 Since v3.10.0

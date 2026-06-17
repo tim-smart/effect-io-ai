@@ -22,6 +22,6 @@ inspecting, traversing, or transforming schema ASTs.
 declare const isNull: (ast: AST) => ast is Null
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L127)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L128)
 
 Since v4.0.0

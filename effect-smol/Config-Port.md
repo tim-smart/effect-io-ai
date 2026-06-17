@@ -20,6 +20,6 @@ custom paths.
 declare const Port: Schema.Int
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L739)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L700)
 
 Since v4.0.0

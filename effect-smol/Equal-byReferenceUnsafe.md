@@ -23,7 +23,7 @@ permanently marking the original object for reference-only equality.
 
 The marking is irreversible for the lifetime of the object.
 
-**Example** (Marking an Object for Reference Equality)
+**Example** (Marking an object for reference equality)
 
 ```ts
 import { Equal } from "effect"

@@ -15,7 +15,7 @@ merge, pass a reusable combining strategy to library functions like
 `Struct.makeCombiner` or `Option.makeCombinerFailFast`, or define the
 combining step for a `Reducer`.
 
-**Example** (number addition combiner)
+**Example** (Combining numbers with addition)
 
 ```ts
 import { Combiner } from "effect"

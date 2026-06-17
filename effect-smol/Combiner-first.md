@@ -13,7 +13,7 @@ Use when you want "first write wins" semantics while merging values.
 
 `combine(self, that)` returns `self` and ignores `that`.
 
-**Example** (keeping the first value)
+**Example** (Keeping the first value)
 
 ```ts
 import { Combiner } from "effect"

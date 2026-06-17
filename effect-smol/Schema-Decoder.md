@@ -11,7 +11,7 @@ Use `Decoder<T, RD>` to accept "any schema that can decode to `T`" without
 constraining or depending on the encoded representation (`Encoded` is
 `unknown`) or encoding services.
 
-**Example** (Function that only needs to decode)
+**Example** (Accepting schemas that only need to decode)
 
 ```ts
 import { Schema } from "effect"
@@ -30,6 +30,6 @@ export interface Decoder<out T, out RD = never> extends Codec<T, unknown, RD, un
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L794)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L802)
 
 Since v4.0.0

@@ -13,7 +13,7 @@ Use when you want to combine two `Predicate`s with logical NAND semantics.
 
 Returns the negation of `and`.
 
-**Example** (NAND)
+**Example** (Checking NAND conditions)
 
 ```ts
 import { Predicate } from "effect"

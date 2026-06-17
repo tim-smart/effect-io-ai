@@ -16,7 +16,7 @@ be `undefined` in the encoded input.
 - If the input is `Some(value)` where value is not `undefined`, passes it through.
 - `defaultValue` is an `Effect` that will be executed each time a default is needed.
 
-**Example** (Default value for optional field)
+**Example** (Providing a default value for an optional field)
 
 ```ts
 import { Effect, SchemaGetter } from "effect"

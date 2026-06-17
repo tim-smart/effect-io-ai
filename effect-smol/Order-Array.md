@@ -16,7 +16,7 @@ first non-zero comparison result. If all elements are equal, shorter arrays
 are less than longer arrays. The result is `0` only if arrays have the same
 length and all elements are equal.
 
-**Example** (Array Element Ordering)
+**Example** (Ordering array elements)
 
 ```ts
 import { Order } from "effect"

@@ -11,7 +11,7 @@ Wraps a thunk (`() => AST`) that is memoized on first call. Use this to
 define recursive or mutually recursive schemas without infinite loops at
 construction time.
 
-**Example** (Recursive schema AST)
+**Example** (Defining recursive schema ASTs)
 
 ```ts
 import { Schema, SchemaAST } from "effect"
@@ -45,6 +45,6 @@ declare class Suspend { constructor(
   ) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L2748)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L2757)
 
 Since v3.10.0

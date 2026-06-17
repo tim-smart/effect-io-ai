@@ -15,7 +15,7 @@ the built-in constructors (`min`, `max`, `first`, `last`, `constant`).
 The returned combiner's `combine` method delegates to the provided function.
 Any purity, associativity, or mutation behavior comes from that function.
 
-**Example** (multiplying numbers)
+**Example** (Multiplying numbers)
 
 ```ts
 import { Combiner } from "effect"

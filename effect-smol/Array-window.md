@@ -14,7 +14,7 @@ Use to process sequences with a moving window, such as for computing running ave
 Returns an empty array if `n <= 0` or the array has fewer than `n` elements.
 Each window is a tuple of exactly `n` elements.
 
-**Example** (Sliding windows)
+**Example** (Creating sliding windows)
 
 ```ts
 import { Array } from "effect"
