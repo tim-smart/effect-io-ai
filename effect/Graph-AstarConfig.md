@@ -16,6 +16,6 @@ export interface AstarConfig<E, N> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L2286)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L2332)
 
 Since v3.18.0

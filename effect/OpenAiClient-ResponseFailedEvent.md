@@ -11,6 +11,6 @@ An event that is emitted when a response fails.
 declare class ResponseFailedEvent
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L387)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L395)
 
 Since v1.0.0

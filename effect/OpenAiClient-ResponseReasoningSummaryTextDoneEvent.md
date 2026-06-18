@@ -11,6 +11,6 @@ Emitted when a reasoning summary text is completed.
 declare class ResponseReasoningSummaryTextDoneEvent
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1116)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClient.ts#L1124)
 
 Since v1.0.0

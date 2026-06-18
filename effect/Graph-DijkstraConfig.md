@@ -15,6 +15,6 @@ export interface DijkstraConfig<E> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L2274)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L2320)
 
 Since v3.18.0
