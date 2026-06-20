@@ -25,6 +25,6 @@ the underlying service map only once.
 declare const mutate: { <Services, B>(f: (context: Context<Services>) => Context<B>): <Services>(self: Context<Services>) => Context<B>; <Services, B>(self: Context<Services>, f: (context: Context<Services>) => Context<B>): Context<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L1268)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L1267)
 
 Since v4.0.0

@@ -47,6 +47,6 @@ console.log(Tool.isProviderDefined(ProviderDefinedTool)) // true
 declare const isProviderDefined: (u: unknown) => u is ProviderDefined<`${string}.${string}`, string, any>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L601)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L602)
 
 Since v4.0.0

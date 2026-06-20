@@ -21,6 +21,6 @@ constructing schema ASTs directly.
 declare const boolean: Boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L1421)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L1444)
 
 Since v4.0.0

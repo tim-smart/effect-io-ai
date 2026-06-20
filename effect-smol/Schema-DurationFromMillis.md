@@ -13,6 +13,6 @@ export interface DurationFromMillis extends decodeTo<Duration, Number> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10427)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10445)
 
 Since v3.10.0

@@ -20,6 +20,6 @@ Use to recognize exact string, number, boolean, or bigint literal AST nodes.
 declare const isLiteral: (ast: AST) => ast is Literal
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L295)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L294)
 
 Since v3.10.0

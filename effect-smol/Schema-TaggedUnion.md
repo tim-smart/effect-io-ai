@@ -36,6 +36,6 @@ export interface TaggedUnion<Cases extends Record<string, Top>> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5935)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5953)
 
 Since v4.0.0

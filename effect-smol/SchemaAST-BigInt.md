@@ -21,6 +21,6 @@ their decimal string representation.
 declare class BigInt
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L1490)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L1517)
 
 Since v4.0.0

@@ -12,6 +12,6 @@ schema's `Iso` type with the `Iso` types of all rest record schemas.
 type Iso<S, Records> = Intersect<S, Records, "Iso">
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3683)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3701)
 
 Since v4.0.0

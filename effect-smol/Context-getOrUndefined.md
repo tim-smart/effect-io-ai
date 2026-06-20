@@ -26,6 +26,6 @@ This is a raw lookup and does not resolve default values for
 declare const getOrUndefined: { <S, I>(key: Key<I, S>): <Services>(self: Context<Services>) => S | undefined; <Services, S, I>(self: Context<Services>, key: Key<I, S>): S | undefined; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L839)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L838)
 
 Since v4.0.0

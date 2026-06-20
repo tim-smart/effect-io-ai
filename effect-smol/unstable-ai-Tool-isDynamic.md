@@ -30,6 +30,6 @@ console.log(Tool.isDynamic(UserDefinedTool)) // false
 declare const isDynamic: (u: unknown) => u is Dynamic<string, any>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L630)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L631)
 
 Since v4.0.0

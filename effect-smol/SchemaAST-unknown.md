@@ -20,6 +20,6 @@ every value while keeping parsed values opaque.
 declare const unknown: Unknown
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L960)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L959)
 
 Since v4.0.0

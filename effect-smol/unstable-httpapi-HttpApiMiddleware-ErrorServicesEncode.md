@@ -11,6 +11,6 @@ Extracts the schema services required to encode errors declared by a middleware 
 type ErrorServicesEncode<A> = ErrorSchema<A>["EncodingServices"]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiMiddleware.ts#L250)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiMiddleware.ts#L251)
 
 Since v4.0.0

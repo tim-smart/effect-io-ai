@@ -12,6 +12,6 @@ decoding produces the schema's `Type`.
 declare const toCodecJson: <T, E, RD, RE>(schema: Codec<T, E, RD, RE>) => Codec<T, Json, RD, RE>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L13067)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L13120)
 
 Since v4.0.0

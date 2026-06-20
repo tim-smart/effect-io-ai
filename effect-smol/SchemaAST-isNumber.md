@@ -16,6 +16,6 @@ schema ASTs.
 declare const isNumber: (ast: AST) => ast is Number
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L234)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L233)
 
 Since v4.0.0

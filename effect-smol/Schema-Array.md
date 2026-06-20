@@ -23,6 +23,6 @@ console.log(result)
 declare const Array: ArrayLambda
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4276)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4294)
 
 Since v4.0.0

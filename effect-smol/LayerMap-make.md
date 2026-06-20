@@ -47,6 +47,6 @@ const program = Effect.gen(function*() {
 declare const make: <K, L extends Layer.Layer<any, any, any>, PreloadKeys extends Iterable<K> | undefined = undefined>(lookup: (key: K) => L, options?: { readonly idleTimeToLive?: IdleTimeToLiveInput<K> | undefined; readonly preloadKeys?: PreloadKeys; } | undefined) => Effect.Effect<LayerMap<K, Layer.Success<L>, Layer.Error<L>>, PreloadKeys extends undefined ? never : Layer.Error<L>, Scope.Scope | Layer.Services<L>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LayerMap.ts#L134)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/LayerMap.ts#L135)
 
 Since v3.14.0

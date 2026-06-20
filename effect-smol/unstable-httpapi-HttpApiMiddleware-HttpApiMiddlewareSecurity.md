@@ -29,6 +29,6 @@ type HttpApiMiddlewareSecurity<Security, Provides, E, Requires> = {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiMiddleware.ts#L82)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiMiddleware.ts#L83)
 
 Since v4.0.0

@@ -11,6 +11,6 @@ Extracts the services required by an RPC middleware.
 type Requires<A> = A extends { readonly [TypeId]: { readonly requires: infer R } } ? R : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcMiddleware.ts#L177)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcMiddleware.ts#L178)
 
 Since v4.0.0

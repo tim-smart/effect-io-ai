@@ -12,6 +12,6 @@ type ErrorSchema<A> = A extends { readonly [TypeId]: { readonly error: infer E }
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiMiddleware.ts#L206)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiMiddleware.ts#L207)
 
 Since v4.0.0

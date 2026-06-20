@@ -11,6 +11,6 @@ Narrows an `AST` to `Suspend`.
 declare const isSuspend: (ast: AST) => ast is Suspend
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L382)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L381)
 
 Since v3.10.0

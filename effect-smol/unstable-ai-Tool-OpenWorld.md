@@ -26,6 +26,6 @@ const restrictedTool = Tool.make("internal_operation")
 declare const OpenWorld: Context.Reference<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L1811)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L1812)
 
 Since v4.0.0

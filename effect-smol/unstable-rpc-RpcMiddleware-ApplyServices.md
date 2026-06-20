@@ -12,6 +12,6 @@ removing services the middleware provides and adding services it requires.
 type ApplyServices<A, R> = Exclude<R, Provides<A>> | Requires<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcMiddleware.ts#L186)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcMiddleware.ts#L187)
 
 Since v4.0.0

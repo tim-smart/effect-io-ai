@@ -21,6 +21,6 @@ or transforming schemas at the AST level.
 declare const bigInt: BigInt
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L1520)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L1553)
 
 Since v4.0.0

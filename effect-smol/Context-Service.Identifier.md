@@ -26,6 +26,6 @@ type DatabaseId = Context.Service.Identifier<typeof Database>
 type Identifier<T> = T extends Key<infer I, infer _S> ? I : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L423)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Context.ts#L422)
 
 Since v2.0.0

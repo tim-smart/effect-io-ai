@@ -33,6 +33,6 @@ const GetCurrentTime = Tool.make("GetCurrentTime", {
 declare const make: <const Name extends string, Parameters extends Schema.Top = EmptyParams, Success extends Schema.Top = Schema.Void, Failure extends Schema.Top = Schema.Never, Mode extends FailureMode | undefined = undefined, Dependencies extends Array<Context.Key<any, any> | Context.Key<never, any>> = []>(name: Name, options?: { readonly description?: string | undefined; readonly parameters?: Parameters | undefined; readonly success?: Success | undefined; readonly failure?: Failure | undefined; readonly failureMode?: Mode; readonly dependencies?: Dependencies | undefined; readonly needsApproval?: NeedsApproval<Parameters> | undefined; }) => Tool<Name, { readonly parameters: Parameters; readonly success: Success; readonly failure: Failure; readonly failureMode: Mode extends undefined ? "error" : Mode; }, Context.Service.Identifier<Dependencies[number]>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L1194)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L1195)
 
 Since v4.0.0

@@ -12,6 +12,6 @@ Schema for property keys accepted by Effect schemas: finite `number`,
 declare const PropertyKey: Union<readonly [Finite, Symbol, String]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L11463)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L11481)
 
 Since v4.0.0

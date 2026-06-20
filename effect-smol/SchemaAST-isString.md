@@ -22,6 +22,6 @@ or transforming a Schema AST.
 declare const isString: (ast: AST) => ast is String
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L221)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L220)
 
 Since v4.0.0

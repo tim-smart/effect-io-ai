@@ -13,6 +13,6 @@ export interface OptionFromNullishOr<S extends Top> extends decodeTo<Option<toTy
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8402)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8420)
 
 Since v3.10.0

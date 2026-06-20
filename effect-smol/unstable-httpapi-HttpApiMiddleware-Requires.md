@@ -11,6 +11,6 @@ Extracts the services required to run a middleware implementation.
 type Requires<A> = A extends { readonly [TypeId]: { readonly requires: infer R } } ? R : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiMiddleware.ts#L190)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiMiddleware.ts#L191)
 
 Since v4.0.0

@@ -19,6 +19,6 @@ export interface Key extends Codec<PropertyKey, PropertyKey, unknown, unknown> {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3467)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3474)
 
 Since v4.0.0

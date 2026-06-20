@@ -11,6 +11,6 @@ Type-level representation of `Null`.
 export interface Null extends Bottom<null, null, never, never, SchemaAST.Null, Null> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2778)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2785)
 
 Since v3.10.0

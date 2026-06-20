@@ -20,6 +20,6 @@ value.
 declare const isUndefined: (ast: AST) => ast is Undefined
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L143)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L142)
 
 Since v4.0.0

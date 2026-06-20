@@ -57,18 +57,51 @@ export interface Class<Self, S extends Top & { readonly fields: Struct.Fields },
     } | undefined
   ): Struct<Simplify<Readonly<To>>>
 
+  /**
+   * Returns a function that creates a schema-backed subclass with this class's
+   * fields plus additional fields.
+   *
+   * **When to use**
+   *
+   * Use when you need a subclass whose constructor validates both inherited
+   * fields and newly added fields.
+   *
+   * **Details**
+   *
+   * The returned function accepts either a field map or a `Struct`. When you
+   * pass a `Struct`, checks attached to that extension schema are preserved and
+   * combined with checks from the base class schema.
+   *
+   * **Gotchas**
+   *
+   * Checks from a `Struct` argument are evaluated against the full subclass
+   * value after inherited and extension fields are merged. Object-wide checks
+   * such as `isMaxProperties` count inherited fields too.
+   */
   extend<Extended = never, Static = {}, Brand = {}>(
     identifier: string
-  ): <NewFields extends Struct.Fields>(
-    fields: NewFields,
-    annotations?: Annotations.Declaration<Extended, readonly [Struct<Simplify<Assign<S["fields"], NewFields>>>]>
-  ) => [Extended] extends [never] ? MissingSelfGeneric<"Base.extend"> : InheritStaticMembers<
-    Class<Extended, Struct<Simplify<Assign<S["fields"], NewFields>>>, Self & Brand>,
-    Static
-  >
+  ): {
+    <NewFields extends Struct.Fields>(
+      fields: NewFields,
+      annotations?: Annotations.Declaration<Extended, readonly [Struct<Simplify<Assign<S["fields"], NewFields>>>]>
+    ): [Extended] extends [never] ? MissingSelfGeneric<"Base.extend"> : InheritStaticMembers<
+      Class<Extended, Struct<Simplify<Assign<S["fields"], NewFields>>>, Self & Brand>,
+      Static
+    >
+    <Extension extends Struct<Struct.Fields>>(
+      schema: Extension,
+      annotations?: Annotations.Declaration<
+        Extended,
+        readonly [Struct<Simplify<Assign<S["fields"], Extension["fields"]>>>]
+      >
+    ): [Extended] extends [never] ? MissingSelfGeneric<"Base.extend"> : InheritStaticMembers<
+      Class<Extended, Struct<Simplify<Assign<S["fields"], Extension["fields"]>>>, Self & Brand>,
+      Static
+    >
+  }
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L12148)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L12166)
 
 Since v3.10.0

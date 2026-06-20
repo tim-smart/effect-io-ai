@@ -13,6 +13,6 @@ export interface DurationFromString extends decodeTo<Duration, String> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10365)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10383)
 
 Since v4.0.0

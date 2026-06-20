@@ -8,8 +8,7 @@ AST node representing a TypeScript template literal type
 
 **Details**
 
-`parts` is an array of AST nodes; each part contributes to the
-template literal pattern. A regex is derived from the parts to validate
+`parts` is an array of AST nodes; each part contributes to matching
 strings at runtime.
 
 **See**
@@ -28,6 +27,6 @@ declare class TemplateLiteral { constructor(
   ) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L1093)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L1092)
 
 Since v3.10.0
