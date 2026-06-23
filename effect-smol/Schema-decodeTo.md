@@ -8,18 +8,11 @@ Type-level representation returned by `decodeTo`.
 **Signature**
 
 ```ts
-export interface decodeTo<To extends Top, From extends Top, RD = never, RE = never> extends
-  Bottom<
-    To["Type"],
-    From["Encoded"],
-    To["DecodingServices"] | From["DecodingServices"] | RD,
-    To["EncodingServices"] | From["EncodingServices"] | RE,
+export interface decodeTo<To extends Constraint, From extends Constraint, RD = never, RE = never> extends
+  BottomLazy<
     To["ast"],
     decodeTo<To, From, RD, RE>,
-    To["~type.make.in"],
-    To["Iso"],
     To["~type.parameters"],
-    To["~type.make"],
     To["~type.mutability"],
     To["~type.optionality"],
     To["~type.constructor.default"],
@@ -27,11 +20,18 @@ export interface decodeTo<To extends Top, From extends Top, RD = never, RE = nev
     From["~encoded.optionality"]
   >
 {
+  readonly "Type": To["Type"]
+  readonly "Encoded": From["Encoded"]
+  readonly "DecodingServices": To["DecodingServices"] | From["DecodingServices"] | RD
+  readonly "EncodingServices": To["EncodingServices"] | From["EncodingServices"] | RE
+  readonly "~type.make.in": To["~type.make.in"]
+  readonly "~type.make": To["~type.make"]
+  readonly "Iso": To["Iso"]
   readonly from: From
   readonly to: To
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5135)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5308)
 
 Since v4.0.0

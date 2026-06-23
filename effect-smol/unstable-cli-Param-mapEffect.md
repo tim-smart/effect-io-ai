@@ -11,8 +11,6 @@ Transforms the parsed value of an option using an effectful mapping function.
 import { Effect } from "effect"
 import { CliError, Param } from "effect/unstable/cli"
 
-// @internal - this module is not exported publicly
-
 const validatedEmail = Param.string(Param.flagKind, "email").pipe(
   Param.mapEffect((email) =>
     email.includes("@")
@@ -35,6 +33,6 @@ const validatedEmail = Param.string(Param.flagKind, "email").pipe(
 declare const mapEffect: { <A, B>(f: (a: A) => Effect.Effect<B, CliError.CliError, Environment>): <Kind extends ParamKind>(self: Param<Kind, A>) => Param<Kind, B>; <Kind extends ParamKind, A, B>(self: Param<Kind, A>, f: (a: A) => Effect.Effect<B, CliError.CliError, Environment>): Param<Kind, B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L1143)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L1085)
 
 Since v4.0.0

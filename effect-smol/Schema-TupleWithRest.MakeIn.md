@@ -15,7 +15,7 @@ of any additional rest schemas become required trailing tuple elements.
 
 ```ts
 type MakeIn<M, Rest> = Rest extends
-    readonly [infer Head extends Top, ...infer Tail extends ReadonlyArray<Top>] ? readonly [
+    readonly [infer Head extends Constraint, ...infer Tail extends ReadonlyArray<Constraint>] ? readonly [
       ...M,
       ...Array<Head["~type.make"]>,
       ...{ readonly [K in keyof Tail]: Tail[K]["~type.make"] }
@@ -23,6 +23,6 @@ type MakeIn<M, Rest> = Rest extends
     M
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4170)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4338)
 
 Since v4.0.0

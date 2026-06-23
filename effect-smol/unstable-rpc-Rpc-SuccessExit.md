@@ -17,6 +17,6 @@ type SuccessExit<R> = Success<R> extends infer T ? T extends Stream<infer _A, in
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L341)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L340)
 
 Since v4.0.0

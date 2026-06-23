@@ -9,7 +9,7 @@ Extracts the error schema associated with an RPC middleware.
 
 ```ts
 type ErrorSchema<A> = A extends { readonly [TypeId]: { readonly error: infer E } }
-  ? E extends Schema.Top ? E : never
+  ? E extends Schema.Constraint ? E : never
   : never
 ```
 

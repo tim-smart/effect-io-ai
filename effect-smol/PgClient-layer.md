@@ -11,6 +11,6 @@ Creates a layer from a concrete PostgreSQL pool configuration, providing both `P
 declare const layer: (config: PgPoolConfig) => Layer.Layer<PgClient | Client.SqlClient, SqlError>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/pg/src/PgClient.ts#L808)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/pg/src/PgClient.ts#L811)
 
 Since v4.0.0

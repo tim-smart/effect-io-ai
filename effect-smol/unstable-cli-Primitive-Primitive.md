@@ -33,10 +33,10 @@ const parseDate = Effect.gen(function*() {
 ```ts
 export interface Primitive<out A> extends Primitive.Variance<A> {
   readonly _tag: string
-  readonly parse: (value: string) => Effect.Effect<A, string, FileSystem.FileSystem | Path.Path>
+  readonly parse: (value: string) => Effect.Effect<A, string, Environment>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Primitive.ts#L59)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Primitive.ts#L60)
 
 Since v4.0.0

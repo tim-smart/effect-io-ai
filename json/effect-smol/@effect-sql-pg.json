@@ -157,7 +157,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layerFrom: <E, R>(acquire: Effect.Effect<PgClient, E, R>) => Layer.Layer<PgClient | Client.SqlClient, E, Exclude<R, Scope.Scope | Reactivity.Reactivity>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/pg/src/PgClient.ts#L776"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/pg/src/PgClient.ts#L779"
   },
   {
     "_tag": "Function",
@@ -173,7 +173,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layerConfig: (config: Config.Wrap<PgPoolConfig>) => Layer.Layer<PgClient | Client.SqlClient, Config.ConfigError | SqlError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/pg/src/PgClient.ts#L792"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/pg/src/PgClient.ts#L795"
   },
   {
     "_tag": "Function",
@@ -189,7 +189,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layer: (config: PgPoolConfig) => Layer.Layer<PgClient | Client.SqlClient, SqlError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/pg/src/PgClient.ts#L808"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/pg/src/PgClient.ts#L811"
   },
   {
     "_tag": "Function",
@@ -205,7 +205,7 @@
     "since": "4.0.0",
     "category": "constructors",
     "signature": "declare const makeCompiler: (transform?: (_: string) => string, transformJson?: boolean) => Statement.Compiler",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/pg/src/PgClient.ts#L818"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/pg/src/PgClient.ts#L821"
   },
   {
     "_tag": "Interface",
@@ -285,7 +285,7 @@
     "since": "4.0.0",
     "category": "custom types",
     "signature": "type PgCustom = PgJson",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/pg/src/PgClient.ts#L869"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/pg/src/PgClient.ts#L872"
   },
   {
     "_tag": "Constant",

@@ -8,7 +8,7 @@ Type-level representation returned by `Option`.
 **Signature**
 
 ```ts
-export interface Option<A extends Top> extends
+export interface Option<A extends Constraint> extends
   declareConstructor<
     Option_.Option<A["Type"]>,
     Option_.Option<A["Encoded"]>,
@@ -21,6 +21,6 @@ export interface Option<A extends Top> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8261)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8438)
 
 Since v3.10.0

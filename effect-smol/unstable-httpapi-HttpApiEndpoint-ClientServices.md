@@ -31,6 +31,6 @@ type ClientServices<Endpoint> = Endpoint extends HttpApiEndpoint<
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L645)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L655)
 
 Since v4.0.0

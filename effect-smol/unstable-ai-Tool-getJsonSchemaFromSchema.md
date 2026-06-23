@@ -15,9 +15,9 @@ returned. Otherwise, the schema is converted with
 **Signature**
 
 ```ts
-declare const getJsonSchemaFromSchema: <S extends Schema.Top>(schema: S, options?: { readonly transformer?: CodecTransformer; }) => JsonSchema.JsonSchema
+declare const getJsonSchemaFromSchema: <S extends Schema.Constraint>(schema: S, options?: { readonly transformer?: CodecTransformer; }) => JsonSchema.JsonSchema
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L1667)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L1669)
 
 Since v4.0.0

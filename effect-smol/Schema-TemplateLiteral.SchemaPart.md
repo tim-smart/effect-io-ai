@@ -13,11 +13,11 @@ be converted into a template literal string segment.
 **Signature**
 
 ```ts
-export interface SchemaPart extends Top {
+export interface SchemaPart extends Constraint {
     readonly Encoded: string | number | bigint
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2501)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2629)
 
 Since v4.0.0

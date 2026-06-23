@@ -27,9 +27,9 @@ const schema = Schema.Number.pipe(
 **Signature**
 
 ```ts
-declare const catchDecoding: <S extends Top>(f: (issue: SchemaIssue.Issue) => Effect.Effect<Option_.Option<S["Type"]>, SchemaIssue.Issue>) => (self: S) => S["Rebuild"]
+declare const catchDecoding: <S extends Constraint>(f: (issue: SchemaIssue.Issue) => Effect.Effect<Option_.Option<S["Type"]>, SchemaIssue.Issue>) => (self: S) => middlewareDecoding<S, S["DecodingServices"]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5051)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5224)
 
 Since v4.0.0

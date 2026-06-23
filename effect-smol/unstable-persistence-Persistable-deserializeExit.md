@@ -9,7 +9,7 @@ success and error schemas.
 **Signature**
 
 ```ts
-declare const deserializeExit: <A extends Schema.Top, E extends Schema.Top>(self: Persistable<A, E>, encoded: unknown) => Effect.Effect<Exit.Exit<A["Type"], E["Type"]>, Schema.SchemaError, A["DecodingServices"] | E["DecodingServices"]>
+declare const deserializeExit: <A extends Schema.Constraint, E extends Schema.Constraint>(self: Persistable<A, E>, encoded: unknown) => Effect.Effect<Exit.Exit<A["Type"], E["Type"]>, Schema.SchemaError, A["DecodingServices"] | E["DecodingServices"]>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Persistable.ts#L242)

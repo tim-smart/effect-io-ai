@@ -31,9 +31,9 @@ console.log(typeof sample.name) // "string"
 **Signature**
 
 ```ts
-declare const toArbitrary: { <S extends Top>(schema: S): FastCheck.Arbitrary<S["Type"]>; <S extends Top>(schema: S, options: { readonly report: true; }): Annotations.ToArbitrary.WithReport<FastCheck.Arbitrary<S["Type"]>>; }
+declare const toArbitrary: { <S extends Constraint>(schema: S): FastCheck.Arbitrary<S["Type"]>; <S extends Constraint>(schema: S, options: { readonly report: true; }): Annotations.ToArbitrary.WithReport<FastCheck.Arbitrary<S["Type"]>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L12756)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L12946)
 
 Since v4.0.0

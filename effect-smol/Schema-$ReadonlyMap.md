@@ -8,7 +8,7 @@ Type-level representation returned by `ReadonlyMap`.
 **Signature**
 
 ```ts
-export interface $ReadonlyMap<Key extends Top, Value extends Top> extends
+export interface $ReadonlyMap<Key extends Constraint, Value extends Constraint> extends
   declareConstructor<
     globalThis.ReadonlyMap<Key["Type"], Value["Type"]>,
     globalThis.ReadonlyMap<Key["Encoded"], Value["Encoded"]>,
@@ -22,6 +22,6 @@ export interface $ReadonlyMap<Key extends Top, Value extends Top> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9442)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9627)
 
 Since v4.0.0

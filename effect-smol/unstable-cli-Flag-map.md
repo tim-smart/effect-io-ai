@@ -27,6 +27,6 @@ const urlFlag = Flag.integer("port").pipe(
 declare const map: { <A, B>(f: (a: A) => B): (self: Flag<A>) => Flag<B>; <A, B>(self: Flag<A>, f: (a: A) => B): Flag<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L651)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L652)
 
 Since v4.0.0

@@ -9,7 +9,7 @@ Type-level representation returned by `encodeKeys`.
 
 ```ts
 export interface encodeKeys<
-  S extends Top & { readonly fields: Struct.Fields },
+  S extends Constraint & { readonly fields: Struct.Fields },
   M extends { readonly [K in keyof S["fields"]]?: PropertyKey }
 > extends
   decodeTo<
@@ -25,6 +25,6 @@ export interface encodeKeys<
 {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3302)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3432)
 
 Since v4.0.0

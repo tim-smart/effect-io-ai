@@ -10,8 +10,6 @@ Type guard to check if a value is a Param.
 ```ts
 import { Param } from "effect/unstable/cli"
 
-// @internal - this module is not exported publicly
-
 const maybeParam = Param.string(Param.flagKind, "name")
 
 if (Param.isParam(maybeParam)) {
@@ -25,6 +23,6 @@ if (Param.isParam(maybeParam)) {
 declare const isParam: (u: unknown) => u is Param<any, ParamKind>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L302)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L288)
 
 Since v4.0.0

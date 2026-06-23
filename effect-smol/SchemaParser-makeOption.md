@@ -20,7 +20,7 @@ synchronous boundary throw an `Error` whose cause is the underlying `Cause`.
 **Signature**
 
 ```ts
-declare const makeOption: <S extends Schema.Top>(schema: S) => (input: S["~type.make.in"], options?: Schema.MakeOptions) => Option.Option<S["Type"]>
+declare const makeOption: <S extends Schema.Constraint>(schema: S) => (input: S["~type.make.in"], options?: Schema.MakeOptions) => Option.Option<S["Type"]>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L101)

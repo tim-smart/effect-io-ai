@@ -10,8 +10,6 @@ Creates a parameter that reads and validates file content using a schema.
 ```ts
 import { Schema } from "effect"
 import { Param } from "effect/unstable/cli"
-// @internal - this module is not exported publicly
-
 // Parse JSON config file
 const configSchema = Schema.Struct({
   port: Schema.Number,
@@ -33,9 +31,9 @@ const yamlConfig = Param.fileSchema(Param.flagKind, "config", configSchema, {
 **Signature**
 
 ```ts
-declare const fileSchema: <Kind extends ParamKind, A>(kind: Kind, name: string, schema: Schema.Decoder<A>, options?: Primitive.FileSchemaOptions | undefined) => Param<Kind, A>
+declare const fileSchema: <Kind extends ParamKind, A>(kind: Kind, name: string, schema: Schema.ConstraintDecoder<A, Environment>, options?: Primitive.FileSchemaOptions | undefined) => Param<Kind, A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L859)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L815)
 
 Since v4.0.0

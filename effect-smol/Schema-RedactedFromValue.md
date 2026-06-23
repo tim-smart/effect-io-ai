@@ -8,13 +8,13 @@ Type-level representation returned by `RedactedFromValue`.
 **Signature**
 
 ```ts
-export interface RedactedFromValue<S extends Top>
+export interface RedactedFromValue<S extends Constraint>
   extends decodeTo<Redacted<toType<S>>, middlewareDecoding<S, S["DecodingServices"]>>
 {
   readonly "Rebuild": RedactedFromValue<S>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8786)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8966)
 
 Since v4.0.0

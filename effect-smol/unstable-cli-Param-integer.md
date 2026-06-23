@@ -10,8 +10,6 @@ Creates an integer parameter.
 ```ts
 import { Param } from "effect/unstable/cli"
 
-// @internal - this module is not exported publicly
-
 // Create an integer flag
 const portFlag = Param.integer(Param.flagKind, "port")
 
@@ -27,6 +25,6 @@ const countArg = Param.integer(Param.argumentKind, "count")
 declare const integer: <const Kind extends ParamKind>(kind: Kind, name: string) => Param<Kind, number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L459)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L437)
 
 Since v4.0.0

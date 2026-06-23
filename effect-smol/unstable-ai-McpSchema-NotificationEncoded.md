@@ -26,6 +26,6 @@ type NotificationEncoded<Group> = RpcGroup.Rpcs<
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L2220)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L2222)
 
 Since v4.0.0

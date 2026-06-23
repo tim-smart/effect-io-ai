@@ -9,7 +9,7 @@ error schemas.
 **Signature**
 
 ```ts
-declare const exitSchema: <A extends Schema.Top, E extends Schema.Top>(self: Persistable<A, E>) => Schema.Exit<A, E, Schema.Defect>
+declare const exitSchema: <A extends Schema.Constraint, E extends Schema.Constraint>(self: Persistable<A, E>) => Schema.Exit<A, E, Schema.Defect>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Persistable.ts#L208)

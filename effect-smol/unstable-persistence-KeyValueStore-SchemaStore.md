@@ -8,7 +8,7 @@ Schema-aware view of a `KeyValueStore` that stores values as encoded JSON.
 **Signature**
 
 ```ts
-export interface SchemaStore<S extends Schema.Top> {
+export interface SchemaStore<S extends Schema.Constraint> {
   readonly [SchemaStoreTypeId]: typeof SchemaStoreTypeId
   /**
    * Returns the value of the specified key if it exists.

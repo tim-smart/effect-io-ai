@@ -12,6 +12,6 @@ inserts; a random UUID is generated when no query ID is set.
 declare const QueryId: Context.Reference<string | undefined>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/clickhouse/src/ClickhouseClient.ts#L416)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/clickhouse/src/ClickhouseClient.ts#L419)
 
 Since v4.0.0

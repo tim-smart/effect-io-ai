@@ -20,6 +20,6 @@ Uses the standard JSON-RPC parse error code `-32700`.
 declare class ParseError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L540)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L542)
 
 Since v4.0.0

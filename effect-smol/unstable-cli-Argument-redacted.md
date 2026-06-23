@@ -19,6 +19,6 @@ const secret = Argument.redacted("secret")
 declare const redacted: (name: string) => Argument<Redacted.Redacted<string>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L199)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L200)
 
 Since v4.0.0

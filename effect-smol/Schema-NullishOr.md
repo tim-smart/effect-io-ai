@@ -8,11 +8,11 @@ Type-level representation returned by `NullishOr`.
 **Signature**
 
 ```ts
-export interface NullishOr<S extends Top> extends Union<readonly [S, Null, Undefined]> {
+export interface NullishOr<S extends Constraint> extends Union<readonly [S, Null, Undefined]> {
   readonly "Rebuild": NullishOr<S>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4682)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4854)
 
 Since v3.10.0

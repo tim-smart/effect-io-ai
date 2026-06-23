@@ -11,6 +11,6 @@ Type-level representation of `String`.
 export interface String extends Bottom<string, string, never, never, SchemaAST.String, String> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2819)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2952)
 
 Since v4.0.0

@@ -11,7 +11,7 @@ interfaces build on top of this.
 **Signature**
 
 ```ts
-export interface Bottom<T, TypeParameters extends ReadonlyArray<Top>> extends Documentation<T> {
+export interface Bottom<T, TypeParameters extends ReadonlyArray<Constraint>> extends Documentation<T> {
     /**
      * Complete message to use when this schema node reports an issue.
      *
@@ -58,6 +58,6 @@ export interface Bottom<T, TypeParameters extends ReadonlyArray<Top>> extends Do
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L13959)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L14234)
 
 Since v4.0.0

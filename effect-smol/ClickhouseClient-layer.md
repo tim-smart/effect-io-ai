@@ -12,6 +12,6 @@ ClickHouse client configuration.
 declare const layer: (config: ClickhouseClientConfig) => Layer.Layer<ClickhouseClient | Client.SqlClient, Config.ConfigError | SqlError>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/clickhouse/src/ClickhouseClient.ts#L464)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/clickhouse/src/ClickhouseClient.ts#L467)
 
 Since v4.0.0

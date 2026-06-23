@@ -9,9 +9,9 @@ a resource URI template parameter name.
 **Signature**
 
 ```ts
-declare const isParam: (schema: Schema.Top) => schema is Param<string, Schema.Top>
+declare const isParam: (schema: Schema.Constraint) => schema is Param<string, Schema.Top>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L2463)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L2465)
 
 Since v4.0.0

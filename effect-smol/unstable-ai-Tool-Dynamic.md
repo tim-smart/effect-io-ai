@@ -47,9 +47,9 @@ const McpTool = Tool.dynamic("McpTool", {
 export interface Dynamic<
   out Name extends string,
   out Config extends {
-    readonly parameters: Schema.Top | JsonSchema.JsonSchema
-    readonly success: Schema.Top
-    readonly failure: Schema.Top
+    readonly parameters: Schema.Constraint | JsonSchema.JsonSchema
+    readonly success: Schema.Constraint
+    readonly failure: Schema.Constraint
     readonly failureMode: FailureMode
   },
   out Requirements = never
@@ -57,7 +57,7 @@ export interface Dynamic<
   Tool<
     Name,
     {
-      readonly parameters: Config["parameters"] extends Schema.Top ? Config["parameters"] : typeof Schema.Unknown
+      readonly parameters: Config["parameters"] extends Schema.Constraint ? Config["parameters"] : typeof Schema.Unknown
       readonly success: Config["success"]
       readonly failure: Config["failure"]
       readonly failureMode: Config["failureMode"]
@@ -71,7 +71,7 @@ export interface Dynamic<
    * The raw JSON Schema for parameters. Present when `parameters` was provided
    * as a JSON Schema, `undefined` when an Effect Schema was used.
    */
-  readonly jsonSchema: Config["parameters"] extends Schema.Top ? undefined : JsonSchema.JsonSchema
+  readonly jsonSchema: Config["parameters"] extends Schema.Constraint ? undefined : JsonSchema.JsonSchema
 }
 ```
 

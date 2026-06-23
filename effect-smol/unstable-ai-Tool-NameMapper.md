@@ -19,6 +19,6 @@ naming conflicts (i.e. `"web_search"`) to instead use custom names (i.e.
 declare class NameMapper<Tools> { constructor(tools: Tools) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L1516)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L1518)
 
 Since v4.0.0

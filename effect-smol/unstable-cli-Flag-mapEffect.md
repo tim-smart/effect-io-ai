@@ -24,9 +24,9 @@ const fileSizeFlag = Flag.file("input").pipe(
 **Signature**
 
 ```ts
-declare const mapEffect: { <A, B>(f: (a: A) => Effect.Effect<B, CliError.CliError, Param.Environment>): (self: Flag<A>) => Flag<B>; <A, B>(self: Flag<A>, f: (a: A) => Effect.Effect<B, CliError.CliError, Param.Environment>): Flag<B>; }
+declare const mapEffect: { <A, B>(f: (a: A) => Effect.Effect<B, CliError.CliError, Environment>): (self: Flag<A>) => Flag<B>; <A, B>(self: Flag<A>, f: (a: A) => Effect.Effect<B, CliError.CliError, Environment>): Flag<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L678)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L679)
 
 Since v4.0.0

@@ -14,8 +14,8 @@ widest possible schema type and therefore gives you the least static information
 In user code prefer the narrower interfaces:
 - `Schema``<T>` — when you only care about the decoded type
 - `Codec``<T, E, RD, RE>` — when you need the encoded type and service requirements
-- `Decoder``<T, RD>` — for decode-only APIs
-- `Encoder``<E, RE>` — for encode-only APIs
+- `ConstraintDecoder``<T, RD>` — for decode-only APIs
+- `ConstraintEncoder``<E, RE>` — for encode-only APIs
 
 **Signature**
 
@@ -41,6 +41,6 @@ export interface Top extends
 {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L575)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L623)
 
 Since v4.0.0

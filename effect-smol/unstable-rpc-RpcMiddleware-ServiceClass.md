@@ -13,7 +13,7 @@ export interface ServiceClass<
   Self,
   Name extends string,
   Provides,
-  E extends Schema.Top,
+  E extends Schema.Constraint,
   ClientError,
   Requires,
   RequiredForClient extends boolean

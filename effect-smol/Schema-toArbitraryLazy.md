@@ -16,9 +16,9 @@ without a finite terminal path fail immediately.
 **Signature**
 
 ```ts
-declare const toArbitraryLazy: <S extends Top>(schema: S) => LazyArbitrary<S["Type"]>
+declare const toArbitraryLazy: <S extends Constraint>(schema: S) => LazyArbitrary<S["Type"]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L12717)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L12907)
 
 Since v4.0.0

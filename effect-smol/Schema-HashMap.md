@@ -8,7 +8,7 @@ Type-level representation returned by `HashMap`.
 **Signature**
 
 ```ts
-export interface HashMap<Key extends Top, Value extends Top> extends
+export interface HashMap<Key extends Constraint, Value extends Constraint> extends
   declareConstructor<
     HashMap_.HashMap<Key["Type"], Value["Type"]>,
     HashMap_.HashMap<Key["Encoded"], Value["Encoded"]>,
@@ -22,6 +22,6 @@ export interface HashMap<Key extends Top, Value extends Top> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9622)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9812)
 
 Since v3.10.0

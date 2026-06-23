@@ -14,8 +14,8 @@ satisfy those constraints while preserving the decoded type.
 **Signature**
 
 ```ts
-type CodecTransformer = <T, E, RD, RE>(schema: Schema.Codec<T, E, RD, RE>) => {
-  readonly codec: Schema.Codec<T, unknown, RD, RE>
+type CodecTransformer = <T, E, RD, RE>(schema: Schema.ConstraintCodec<T, E, RD, RE>) => {
+  readonly codec: Schema.ConstraintCodec<T, unknown, RD, RE>
   readonly jsonSchema: JsonSchema.JsonSchema
 }
 ```

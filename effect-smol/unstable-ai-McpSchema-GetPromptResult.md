@@ -11,6 +11,6 @@ Represents the server response to a prompts/get request from the client.
 declare class GetPromptResult
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1334)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1336)
 
 Since v4.0.0

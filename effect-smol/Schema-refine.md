@@ -8,18 +8,11 @@ Type-level representation returned by `refine`.
 **Signature**
 
 ```ts
-export interface refine<T extends S["Type"], S extends Top> extends
-  Bottom<
-    T,
-    S["Encoded"],
-    S["DecodingServices"],
-    S["EncodingServices"],
+export interface refine<T extends S["Type"], S extends Constraint> extends
+  BottomLazy<
     S["ast"],
     refine<T, S>,
-    S["~type.make.in"],
-    T,
     S["~type.parameters"],
-    T,
     S["~type.mutability"],
     S["~type.optionality"],
     S["~type.constructor.default"],
@@ -27,10 +20,17 @@ export interface refine<T extends S["Type"], S extends Top> extends
     S["~encoded.optionality"]
   >
 {
+  readonly "Type": T
+  readonly "Encoded": S["Encoded"]
+  readonly "DecodingServices": S["DecodingServices"]
+  readonly "EncodingServices": S["EncodingServices"]
+  readonly "~type.make.in": S["~type.make.in"]
+  readonly "~type.make": T
+  readonly "Iso": T
   readonly schema: S
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4782)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4955)
 
 Since v3.10.0

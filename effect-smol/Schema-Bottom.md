@@ -4,21 +4,13 @@ Module: `Schema`<br />
 ## Schema.Bottom
 
 The fully-parameterized base interface for all schemas. Exposes all 14 type
-parameters controlling type inference, mutability, optionality, services,
-and transformation behavior.
+parameters controlling type inference, mutability, optionality, services, and
+transformation behavior.
 
 **When to use**
 
-Use when you are writing advanced generic schema utilities or performing schema
-  introspection.
-- In user code, prefer `Schema`, `Codec`, `Decoder`, or
-  `Encoder` instead.
-
-**See**
-
-- `Top` — the existential "any schema" type (erased type params)
-- `Schema` — tracks only the decoded Type
-- `Codec` — tracks Type + Encoded
+Use when you are writing advanced generic schema utilities or performing
+  schema introspection.
 
 **Signature**
 
@@ -32,7 +24,7 @@ export interface Bottom<
   out Rebuild extends Top,
   out TypeMakeIn = T,
   out Iso = T,
-  in out TypeParameters extends ReadonlyArray<Top> = readonly [],
+  in out TypeParameters extends ReadonlyArray<Constraint> = readonly [],
   out TypeMake = TypeMakeIn,
   out TypeMutability extends Mutability = "readonly",
   out TypeOptionality extends Optionality = "required",
@@ -129,6 +121,6 @@ export interface Bottom<
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L146)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L140)
 
 Since v4.0.0

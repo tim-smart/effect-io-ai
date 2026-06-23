@@ -21,6 +21,6 @@ request before it begins.
 declare class CreateMessage
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1812)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1814)
 
 Since v4.0.0

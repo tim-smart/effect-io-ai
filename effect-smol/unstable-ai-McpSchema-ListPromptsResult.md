@@ -11,6 +11,6 @@ Represents the server response to a prompts/list request from the client.
 declare class ListPromptsResult
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1308)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1310)
 
 Since v4.0.0

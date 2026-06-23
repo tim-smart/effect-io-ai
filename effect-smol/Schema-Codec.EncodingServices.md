@@ -18,9 +18,9 @@ type RE = Schema.Codec.EncodingServices<typeof schema>
 **Signature**
 
 ```ts
-type EncodingServices<S> = S extends Top ? S["EncodingServices"] : never
+type EncodingServices<S> = S extends { readonly "EncodingServices": infer R } ? R : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L711)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L882)
 
 Since v4.0.0

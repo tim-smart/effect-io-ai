@@ -25,7 +25,7 @@ instead of being converted to a schema validation error.
 **Signature**
 
 ```ts
-declare const asserts: <S extends Schema.Top, I>(schema: S, input: I) => asserts input is I & S["Type"]
+declare const asserts: <S extends Schema.Constraint, I>(schema: S, input: I) => asserts input is I & S["Type"]
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L225)

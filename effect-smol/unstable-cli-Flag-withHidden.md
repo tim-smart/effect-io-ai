@@ -29,6 +29,6 @@ const experimental = Flag.boolean("experimental-foo").pipe(
 declare const withHidden: <A>(self: Flag<A>) => Flag<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L528)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L529)
 
 Since v4.0.0

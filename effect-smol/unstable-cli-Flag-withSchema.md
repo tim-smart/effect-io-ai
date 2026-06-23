@@ -39,9 +39,9 @@ const configFlag = Flag.string("config").pipe(
 **Signature**
 
 ```ts
-declare const withSchema: { <A, B>(schema: Schema.Codec<B, A>): (self: Flag<A>) => Flag<B>; <A, B>(self: Flag<A>, schema: Schema.Codec<B, A>): Flag<B>; }
+declare const withSchema: { <A, B>(schema: Schema.Codec<B, A, Environment, Environment>): (self: Flag<A>) => Flag<B>; <A, B>(self: Flag<A>, schema: Schema.Codec<B, A, Environment, Environment>): Flag<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L983)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L984)
 
 Since v4.0.0

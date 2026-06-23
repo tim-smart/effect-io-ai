@@ -15,8 +15,6 @@ This is a convenience function that creates a path parameter with a
 ```ts
 import { Param } from "effect/unstable/cli"
 
-// @internal - this module is not exported publicly
-
 // Basic file parameter
 const outputFile = Param.file(Param.flagKind, "output")
 
@@ -32,6 +30,6 @@ const inputFile = Param.file(Param.flagKind, "input", { mustExist: true })
 declare const file: <Kind extends ParamKind>(kind: Kind, name: string, options?: { readonly mustExist?: boolean | undefined; }) => Param<Kind, string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L714)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L678)
 
 Since v4.0.0

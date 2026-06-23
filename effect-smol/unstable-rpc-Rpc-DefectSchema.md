@@ -14,7 +14,6 @@ Defect schemas decode and encode without services and can be constructed from
 
 ```ts
 export interface DefectSchema extends Schema.Top {
-  readonly Type: unknown
   make(input: null, options?: Schema.MakeOptions): unknown
   make(input: undefined, options?: Schema.MakeOptions): unknown
   make(input: {}, options?: Schema.MakeOptions): unknown

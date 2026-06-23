@@ -3,28 +3,33 @@ Module: `Schema`<br />
 
 ## Schema.toCodecStringTree
 
-Converts a schema to the StringTree canonical codec, where every leaf value
-becomes a string while preserving the original structure.
-
-**Details**
-
-Declarations are converted to `undefined` (unless they have a
-`toCodecJson` or `toCodec` annotation).
-
-Options:
-
-- `keepDeclarations`: if `true`, it **does not** convert declarations to
-  `undefined` but instead keeps them as they are (unless they have a
-  `toCodecJson` or `toCodec` annotation).
-
-   Defaults to `false`.
+Type-level representation returned by `toCodecStringTree`.
 
 **Signature**
 
 ```ts
-declare const toCodecStringTree: { <T, E, RD, RE>(schema: Codec<T, E, RD, RE>): Codec<T, StringTree, RD, RE>; <T, E, RD, RE>(schema: Codec<T, E, RD, RE>, options: { readonly keepDeclarations: true; }): Codec<T, unknown, RD, RE>; }
+export interface toCodecStringTree<S extends Constraint> extends
+  BottomLazy<
+    S["ast"],
+    toCodecStringTree<S>,
+    ReadonlyArray<Constraint>,
+    S["~type.mutability"],
+    S["~type.optionality"],
+    S["~type.constructor.default"],
+    S["~encoded.mutability"],
+    S["~encoded.optionality"]
+  >
+{
+  readonly "Type": S["Type"]
+  readonly "Encoded": StringTree
+  readonly "DecodingServices": S["DecodingServices"]
+  readonly "EncodingServices": S["EncodingServices"]
+  readonly "~type.make.in": S["~type.make.in"]
+  readonly "~type.make": S["~type.make"]
+  readonly "Iso": S["Iso"]
+}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L13254)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L13455)
 
 Since v4.0.0

@@ -14,6 +14,6 @@ type MiddlewareServicesWithName<Endpoints, Name> = MiddlewareServices<
 >
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L820)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L830)
 
 Since v4.0.0

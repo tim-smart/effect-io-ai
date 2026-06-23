@@ -9,11 +9,11 @@ transport values.
 **Signature**
 
 ```ts
-export interface Json<S extends Schema.Top>
+export interface Json<S extends Schema.Constraint>
   extends Schema.Codec<S["Type"], Schema.Json, S["DecodingServices"], S["EncodingServices"]>
 {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L1248)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L1258)
 
 Since v4.0.0

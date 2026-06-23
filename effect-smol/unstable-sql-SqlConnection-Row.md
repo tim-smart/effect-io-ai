@@ -11,6 +11,6 @@ Generic SQL row shape mapping column names to unknown values.
 type Row = { readonly [column: string]: unknown }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SqlConnection.ts#L83)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SqlConnection.ts#L88)
 
 Since v4.0.0

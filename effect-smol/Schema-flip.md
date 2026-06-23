@@ -9,17 +9,10 @@ Type-level representation returned by `flip`.
 
 ```ts
 export interface flip<S extends Top> extends
-  Bottom<
-    S["Encoded"],
-    S["Type"],
-    S["EncodingServices"],
-    S["DecodingServices"],
+  BottomLazy<
     SchemaAST.AST,
     flip<S>,
-    S["Encoded"],
-    S["Encoded"],
-    ReadonlyArray<Top>,
-    S["Encoded"],
+    ReadonlyArray<Constraint>,
     S["~encoded.mutability"],
     S["~encoded.optionality"],
     ConstructorDefault,
@@ -27,11 +20,18 @@ export interface flip<S extends Top> extends
     S["~type.optionality"]
   >
 {
+  readonly "Type": S["Encoded"]
+  readonly "Encoded": S["Type"]
+  readonly "DecodingServices": S["EncodingServices"]
+  readonly "EncodingServices": S["DecodingServices"]
+  readonly "~type.make.in": S["Encoded"]
+  readonly "~type.make": S["Encoded"]
+  readonly "Iso": S["Encoded"]
   readonly [FlipTypeId]: typeof FlipTypeId
   readonly schema: S
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2381)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2509)
 
 Since v4.0.0

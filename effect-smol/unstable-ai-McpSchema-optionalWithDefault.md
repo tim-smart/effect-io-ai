@@ -13,7 +13,7 @@ field is absent during decoding or construction.
 **Signature**
 
 ```ts
-export interface optionalWithDefault<S extends Schema.Top & Schema.WithoutConstructorDefault>
+export interface optionalWithDefault<S extends Schema.Constraint & Schema.WithoutConstructorDefault>
   extends Schema.withConstructorDefault<Schema.decodeTo<Schema.toType<Schema.optionalKey<S>>, Schema.optionalKey<S>>>
 {}
 ```

@@ -9,7 +9,7 @@ portion of a `TupleWithRest` schema.
 **Signature**
 
 ```ts
-type TupleType = Top & {
+type TupleType = Constraint & {
     readonly Type: ReadonlyArray<unknown>
     readonly Encoded: ReadonlyArray<unknown>
     readonly ast: SchemaAST.Arrays
@@ -18,6 +18,6 @@ type TupleType = Top & {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4077)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4245)
 
 Since v3.10.0

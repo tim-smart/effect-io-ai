@@ -18,9 +18,9 @@ type Enc = Schema.Codec.Encoded<typeof schema>
 **Signature**
 
 ```ts
-type Encoded<S> = S extends Top ? S["Encoded"] : never
+type Encoded<S> = S extends { readonly "Encoded": infer E } ? E : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L677)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L846)
 
 Since v3.10.0

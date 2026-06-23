@@ -8,7 +8,7 @@ Type-level representation returned by `declareConstructor`.
 **Signature**
 
 ```ts
-export interface declareConstructor<T, E, TypeParameters extends ReadonlyArray<Top>, Iso = T> extends
+export interface declareConstructor<T, E, TypeParameters extends ReadonlyArray<Constraint>, Iso = T> extends
   Bottom<
     T,
     E,
@@ -23,6 +23,6 @@ export interface declareConstructor<T, E, TypeParameters extends ReadonlyArray<T
 {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L257)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L305)
 
 Since v4.0.0

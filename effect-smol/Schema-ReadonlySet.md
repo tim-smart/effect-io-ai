@@ -8,9 +8,9 @@ Schema for readonly sets whose values conform to the provided element schema.
 **Signature**
 
 ```ts
-declare const ReadonlySet: <Value extends Top>(value: Value) => $ReadonlySet<Value>
+declare const ReadonlySet: <Value extends Constraint>(value: Value) => $ReadonlySet<Value>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9739)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9931)
 
 Since v3.10.0

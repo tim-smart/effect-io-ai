@@ -16,6 +16,6 @@ server-side failure.
 declare const INTERNAL_ERROR_CODE: -32603
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L511)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L513)
 
 Since v4.0.0

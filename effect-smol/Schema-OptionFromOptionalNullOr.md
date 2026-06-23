@@ -8,11 +8,13 @@ Type-level representation returned by `OptionFromOptionalNullOr`.
 **Signature**
 
 ```ts
-export interface OptionFromOptionalNullOr<S extends Top> extends decodeTo<Option<toType<S>>, optional<NullOr<S>>> {
+export interface OptionFromOptionalNullOr<S extends Constraint>
+  extends decodeTo<Option<toType<S>>, optional<NullOr<S>>>
+{
   readonly "Rebuild": OptionFromOptionalNullOr<S>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8513)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8690)
 
 Since v4.0.0

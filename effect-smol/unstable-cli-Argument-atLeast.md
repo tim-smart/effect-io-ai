@@ -19,6 +19,6 @@ const files = Argument.string("files").pipe(Argument.atLeast(1))
 declare const atLeast: { <A>(min: number): (self: Argument<A>) => Argument<ReadonlyArray<A>>; <A>(self: Argument<A>, min: number): Argument<ReadonlyArray<A>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L531)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L532)
 
 Since v4.0.0

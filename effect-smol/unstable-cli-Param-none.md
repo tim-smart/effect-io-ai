@@ -15,8 +15,6 @@ construction or internal combinators.
 ```ts
 import { Param } from "effect/unstable/cli"
 
-// @internal - this module is not exported publicly
-
 const disabledDebugParam = Param.none(Param.flagKind)
 
 const makeDebugParam = (enableDebug: boolean) =>
@@ -32,6 +30,6 @@ console.log(makeDebugParam(false) === disabledDebugParam) // true
 declare const none: <Kind extends ParamKind>(kind: Kind) => Param<Kind, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L944)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L896)
 
 Since v4.0.0

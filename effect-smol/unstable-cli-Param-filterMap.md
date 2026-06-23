@@ -16,8 +16,6 @@ combinator.
 ```ts
 import { Option } from "effect"
 import { Param } from "effect/unstable/cli"
-// @internal - this module is not exported publicly
-
 const positiveInt = Param.integer(Param.flagKind, "count").pipe(
   Param.filterMap(
     (n) => n > 0 ? Option.some(n) : Option.none(),
@@ -32,6 +30,6 @@ const positiveInt = Param.integer(Param.flagKind, "count").pipe(
 declare const filterMap: { <A, B>(filter: (a: A) => Option.Option<B>, onNone: (a: A) => string): <Kind extends ParamKind>(self: Param<Kind, A>) => Param<Kind, B>; <Kind extends ParamKind, A, B>(self: Param<Kind, A>, filter: (a: A) => Option.Option<B>, onNone: (a: A) => string): Param<Kind, B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L1668)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L1596)
 
 Since v4.0.0

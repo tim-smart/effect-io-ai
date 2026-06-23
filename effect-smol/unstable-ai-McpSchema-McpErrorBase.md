@@ -16,6 +16,6 @@ sender-defined `data`.
 declare class McpErrorBase
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L444)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L446)
 
 Since v4.0.0

@@ -10,9 +10,9 @@ annotations are those attached via `annotateKey` and live on the AST's
 **Signature**
 
 ```ts
-declare const resolveAnnotationsKey: <S extends Top>(schema: S) => Annotations.Key<S["Type"]> | undefined
+declare const resolveAnnotationsKey: <S extends Constraint>(schema: S) => Annotations.Key<S["Type"]> | undefined
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L13830)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L14105)
 
 Since v4.0.0

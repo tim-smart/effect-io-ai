@@ -9,9 +9,9 @@ schema details from leaking in error messages.
 **Signature**
 
 ```ts
-declare const redact: <S extends Top>(schema: S) => middlewareDecoding<S, S["DecodingServices"]>
+declare const redact: <S extends Constraint>(schema: S) => middlewareDecoding<S, S["DecodingServices"]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8799)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8979)
 
 Since v4.0.0

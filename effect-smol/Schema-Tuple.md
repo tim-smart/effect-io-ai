@@ -9,17 +9,18 @@ Type-level representation returned by `Tuple`.
 
 ```ts
 export interface Tuple<Elements extends Tuple.Elements> extends
-  Bottom<
-    Tuple.Type<Elements>,
-    Tuple.Encoded<Elements>,
-    Tuple.DecodingServices<Elements>,
-    Tuple.EncodingServices<Elements>,
+  BottomLazy<
     SchemaAST.Arrays,
-    Tuple<Elements>,
-    Tuple.MakeIn<Elements>,
-    Tuple.Iso<Elements>
+    Tuple<Elements>
   >
 {
+  readonly "Type": Tuple.Type<Elements>
+  readonly "Encoded": Tuple.Encoded<Elements>
+  readonly "DecodingServices": Tuple.DecodingServices<Elements>
+  readonly "EncodingServices": Tuple.EncodingServices<Elements>
+  readonly "~type.make.in": Tuple.MakeIn<Elements>
+  readonly "~type.make": Tuple.MakeIn<Elements>
+  readonly "Iso": Tuple.Iso<Elements>
   readonly elements: Elements
   /**
    * Returns a new tuple with the elements modified by the provided function.
@@ -46,6 +47,6 @@ export interface Tuple<Elements extends Tuple.Elements> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3982)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4149)
 
 Since v3.10.0

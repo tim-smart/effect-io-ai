@@ -8,23 +8,24 @@ Type-level representation returned by `Record`.
 **Signature**
 
 ```ts
-export interface $Record<Key extends Record.Key, Value extends Top> extends
-  Bottom<
-    Record.Type<Key, Value>,
-    Record.Encoded<Key, Value>,
-    Record.DecodingServices<Key, Value>,
-    Record.EncodingServices<Key, Value>,
+export interface $Record<Key extends Record.Key, Value extends Constraint> extends
+  BottomLazy<
     SchemaAST.Objects,
-    $Record<Key, Value>,
-    Simplify<Record.MakeIn<Key, Value>>,
-    Record.Iso<Key, Value>
+    $Record<Key, Value>
   >
 {
+  readonly "Type": Record.Type<Key, Value>
+  readonly "Encoded": Record.Encoded<Key, Value>
+  readonly "DecodingServices": Record.DecodingServices<Key, Value>
+  readonly "EncodingServices": Record.EncodingServices<Key, Value>
+  readonly "~type.make.in": Simplify<Record.MakeIn<Key, Value>>
+  readonly "~type.make": Simplify<Record.MakeIn<Key, Value>>
+  readonly "Iso": Record.Iso<Key, Value>
   readonly key: Key
   readonly value: Value
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3580)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3710)
 
 Since v4.0.0

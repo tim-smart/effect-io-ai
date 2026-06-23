@@ -15,7 +15,7 @@ requests.
 **Signature**
 
 ```ts
-declare const ordered: <Req extends Schema.Top, Res extends Schema.Top, _, E, R>(options: { readonly Request: Req; readonly Result: Res; readonly execute: (requests: Arr.NonEmptyArray<Req["Encoded"]>) => Effect.Effect<ReadonlyArray<_>, E, R>; }) => RequestResolver.RequestResolver<SqlRequest<Req["Type"], Res["Type"], E | ResultLengthMismatch, Req["EncodingServices"] | Res["DecodingServices"] | R>>
+declare const ordered: <Req extends Schema.Constraint, Res extends Schema.Constraint, _, E, R>(options: { readonly Request: Req; readonly Result: Res; readonly execute: (requests: Arr.NonEmptyArray<Req["Encoded"]>) => Effect.Effect<ReadonlyArray<_>, E, R>; }) => RequestResolver.RequestResolver<SqlRequest<Req["Type"], Res["Type"], E | ResultLengthMismatch, Req["EncodingServices"] | Res["DecodingServices"] | R>>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SqlResolver.ts#L101)

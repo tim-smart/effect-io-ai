@@ -9,19 +9,22 @@ Type-level representation returned by `TemplateLiteralParser`.
 
 ```ts
 export interface TemplateLiteralParser<Parts extends TemplateLiteral.Parts> extends
-  Bottom<
-    TemplateLiteralParser.Type<Parts>,
-    TemplateLiteral.Encoded<Parts>,
-    never,
-    never,
+  BottomLazy<
     SchemaAST.Arrays,
     TemplateLiteralParser<Parts>
   >
 {
+  readonly "Type": TemplateLiteralParser.Type<Parts>
+  readonly "Encoded": TemplateLiteral.Encoded<Parts>
+  readonly "DecodingServices": never
+  readonly "EncodingServices": never
+  readonly "~type.make.in": TemplateLiteralParser.Type<Parts>
+  readonly "~type.make": TemplateLiteralParser.Type<Parts>
+  readonly "Iso": TemplateLiteralParser.Type<Parts>
   readonly parts: Parts
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2635)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2765)
 
 Since v3.10.0

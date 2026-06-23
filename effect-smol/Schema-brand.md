@@ -8,18 +8,11 @@ Type-level representation returned by `brand`.
 **Signature**
 
 ```ts
-export interface brand<S extends Top, B> extends
-  Bottom<
-    S["Type"] & DistributeBrands<B>,
-    S["Encoded"],
-    S["DecodingServices"],
-    S["EncodingServices"],
+export interface brand<S extends Constraint, B> extends
+  BottomLazy<
     S["ast"],
     brand<S, B>,
-    S["~type.make.in"],
-    S["Type"] & DistributeBrands<B>,
     S["~type.parameters"],
-    S["Type"] & DistributeBrands<B>,
     S["~type.mutability"],
     S["~type.optionality"],
     S["~type.constructor.default"],
@@ -27,11 +20,18 @@ export interface brand<S extends Top, B> extends
     S["~encoded.optionality"]
   >
 {
+  readonly "Type": S["Type"] & DistributeBrands<B>
+  readonly "Encoded": S["Encoded"]
+  readonly "DecodingServices": S["DecodingServices"]
+  readonly "EncodingServices": S["EncodingServices"]
+  readonly "~type.make.in": S["~type.make.in"]
+  readonly "~type.make": S["Type"] & DistributeBrands<B>
+  readonly "Iso": S["Type"] & DistributeBrands<B>
   readonly schema: S
   readonly identifier: string
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4835)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5008)
 
 Since v3.10.0

@@ -15,7 +15,7 @@ additional rest schemas become required trailing tuple elements.
 
 ```ts
 type Encoded<E, Rest> = Rest extends
-    readonly [infer Head extends Top, ...infer Tail extends ReadonlyArray<Top>] ? readonly [
+    readonly [infer Head extends Constraint, ...infer Tail extends ReadonlyArray<Constraint>] ? readonly [
       ...E,
       ...Array<Head["Encoded"]>,
       ...{ readonly [K in keyof Tail]: Tail[K]["Encoded"] }
@@ -23,6 +23,6 @@ type Encoded<E, Rest> = Rest extends
     E
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4150)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4318)
 
 Since v3.10.0

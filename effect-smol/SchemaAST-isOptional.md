@@ -21,6 +21,6 @@ Checks `ast.context?.isOptional`. Defaults to `false` when no
 declare const isOptional: (ast: AST) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L3347)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L3344)
 
 Since v4.0.0

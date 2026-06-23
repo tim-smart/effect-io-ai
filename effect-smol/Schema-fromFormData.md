@@ -8,11 +8,11 @@ Type-level representation returned by `fromFormData`.
 **Signature**
 
 ```ts
-export interface fromFormData<S extends Top> extends decodeTo<S, FormData> {
+export interface fromFormData<S extends Constraint> extends decodeTo<S, FormData> {
   readonly "Rebuild": fromFormData<S>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10922)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L11114)
 
 Since v4.0.0

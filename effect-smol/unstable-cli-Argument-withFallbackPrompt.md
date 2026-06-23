@@ -21,6 +21,6 @@ const filename = Argument.string("filename").pipe(
 declare const withFallbackPrompt: { <B>(prompt: Param.FallbackPrompt<B>): <A>(self: Argument<A>) => Argument<A | B>; <A, B>(self: Argument<A>, prompt: Param.FallbackPrompt<B>): Argument<A | B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L388)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L389)
 
 Since v4.0.0

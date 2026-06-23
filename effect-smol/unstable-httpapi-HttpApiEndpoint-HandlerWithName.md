@@ -16,6 +16,6 @@ type HandlerWithName<Endpoints, Name, E, R> = Handler<
 >
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L754)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L764)
 
 Since v4.0.0

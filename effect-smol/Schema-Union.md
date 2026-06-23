@@ -8,18 +8,19 @@ Type-level representation returned by `Union`.
 **Signature**
 
 ```ts
-export interface Union<Members extends ReadonlyArray<Top>> extends
-  Bottom<
-    { [K in keyof Members]: Members[K]["Type"] }[number],
-    { [K in keyof Members]: Members[K]["Encoded"] }[number],
-    { [K in keyof Members]: Members[K]["DecodingServices"] }[number],
-    { [K in keyof Members]: Members[K]["EncodingServices"] }[number],
+export interface Union<Members extends ReadonlyArray<Constraint>> extends
+  BottomLazy<
     SchemaAST.Union<{ [K in keyof Members]: Members[K]["ast"] }[number]>,
-    Union<Members>,
-    { [K in keyof Members]: Members[K]["~type.make"] }[number],
-    { [K in keyof Members]: Members[K]["Iso"] }[number]
+    Union<Members>
   >
 {
+  readonly "Type": { [K in keyof Members]: Members[K]["Type"] }[number]
+  readonly "Encoded": { [K in keyof Members]: Members[K]["Encoded"] }[number]
+  readonly "DecodingServices": { [K in keyof Members]: Members[K]["DecodingServices"] }[number]
+  readonly "EncodingServices": { [K in keyof Members]: Members[K]["EncodingServices"] }[number]
+  readonly "~type.make.in": { [K in keyof Members]: Members[K]["~type.make"] }[number]
+  readonly "~type.make": { [K in keyof Members]: Members[K]["~type.make"] }[number]
+  readonly "Iso": { [K in keyof Members]: Members[K]["Iso"] }[number]
   readonly members: Members
   /**
    * Returns a new union with the members modified by the provided function.
@@ -37,7 +38,7 @@ export interface Union<Members extends ReadonlyArray<Top>> extends
    *   use this option if you have verified that your refinements remain correct
    *   after the transformation.
    */
-  mapMembers<To extends ReadonlyArray<Top>>(
+  mapMembers<To extends ReadonlyArray<Constraint>>(
     f: (members: Members) => To,
     options?: {
       readonly unsafePreserveChecks?: boolean | undefined
@@ -46,6 +47,6 @@ export interface Union<Members extends ReadonlyArray<Top>> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4479)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4650)
 
 Since v3.10.0

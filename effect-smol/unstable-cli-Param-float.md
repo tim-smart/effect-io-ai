@@ -10,8 +10,6 @@ Creates a floating-point number parameter.
 ```ts
 import { Param } from "effect/unstable/cli"
 
-// @internal - this module is not exported publicly
-
 // Create a float flag
 const rateFlag = Param.float(Param.flagKind, "rate")
 
@@ -27,6 +25,6 @@ const thresholdArg = Param.float(Param.argumentKind, "threshold")
 declare const float: <const Kind extends ParamKind>(kind: Kind, name: string) => Param<Kind, number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L491)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L467)
 
 Since v4.0.0

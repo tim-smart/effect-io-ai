@@ -29,6 +29,6 @@ const parseKeyValue = Effect.gen(function*() {
 declare const keyValuePair: Primitive<Record<string, string>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Primitive.ts#L657)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Primitive.ts#L656)
 
 Since v4.0.0

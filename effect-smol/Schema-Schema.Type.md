@@ -18,9 +18,9 @@ type Person = Schema.Schema.Type<typeof Person>
 **Signature**
 
 ```ts
-type Type<S> = S extends Top ? S["Type"] : never
+type Type<S> = S extends { readonly "Type": infer T } ? T : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L617)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L786)
 
 Since v3.10.0

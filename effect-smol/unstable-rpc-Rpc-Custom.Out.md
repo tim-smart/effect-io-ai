@@ -9,8 +9,8 @@ The transformed schemas produced by a custom RPC constructor.
 
 ```ts
 export interface Out<
-    Success extends Schema.Top,
-    Error extends Schema.Top
+    Success extends Schema.Constraint,
+    Error extends Schema.Constraint
   > {
     readonly success: Success
     readonly error: Error
@@ -18,6 +18,6 @@ export interface Out<
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L1073)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L1072)
 
 Since v4.0.0

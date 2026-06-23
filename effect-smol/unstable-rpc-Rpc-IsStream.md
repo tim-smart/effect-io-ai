@@ -20,6 +20,6 @@ type IsStream<R, Tag> = R extends Rpc<
   never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L648)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L647)
 
 Since v4.0.0

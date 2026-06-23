@@ -10,8 +10,6 @@ Creates a date parameter that parses ISO date strings.
 ```ts
 import { Param } from "effect/unstable/cli"
 
-// @internal - this module is not exported publicly
-
 // Create a date flag
 const startFlag = Param.date(Param.flagKind, "start-date")
 
@@ -28,6 +26,6 @@ const dueDateArg = Param.date(Param.argumentKind, "due-date")
 declare const date: <const Kind extends ParamKind>(kind: Kind, name: string) => Param<Kind, Date>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L524)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L498)
 
 Since v4.0.0

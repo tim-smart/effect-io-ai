@@ -11,6 +11,6 @@ Schema for a known resource that the server is capable of reading.
 declare class Resource
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L820)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L822)
 
 Since v4.0.0

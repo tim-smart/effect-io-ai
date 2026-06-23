@@ -8,9 +8,9 @@ Returns an identity `Iso` over the schema's source (`Type`) side.
 **Signature**
 
 ```ts
-declare const toIsoSource: <S extends Top>(_: S) => Optic_.Iso<S["Type"], S["Type"]>
+declare const toIsoSource: <S extends Constraint>(_: S) => Optic_.Iso<S["Type"], S["Type"]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L13567)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L13842)
 
 Since v4.0.0

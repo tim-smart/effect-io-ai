@@ -15,6 +15,6 @@ type Kind<Def, Success, Error> = (Def & {
   })["out"]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L1098)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L1097)
 
 Since v4.0.0

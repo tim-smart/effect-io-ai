@@ -20,6 +20,6 @@ const config = Flag.fileText("config-file")
 declare const fileText: (name: string) => Flag<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L304)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L305)
 
 Since v4.0.0

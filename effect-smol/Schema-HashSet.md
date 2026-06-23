@@ -8,7 +8,7 @@ Type-level representation returned by `HashSet`.
 **Signature**
 
 ```ts
-export interface HashSet<Value extends Top> extends
+export interface HashSet<Value extends Constraint> extends
   declareConstructor<
     HashSet_.HashSet<Value["Type"]>,
     HashSet_.HashSet<Value["Encoded"]>,
@@ -21,6 +21,6 @@ export interface HashSet<Value extends Top> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9801)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9993)
 
 Since v3.10.0

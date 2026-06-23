@@ -18,9 +18,9 @@ in JSON Schema.
 **Signature**
 
 ```ts
-declare const isPropertyNames: (keySchema: Top, annotations?: Annotations.Filter) => SchemaAST.Filter<object>
+declare const isPropertyNames: (keySchema: Constraint, annotations?: Annotations.Filter) => SchemaAST.Filter<object>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8135)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8312)
 
 Since v4.0.0

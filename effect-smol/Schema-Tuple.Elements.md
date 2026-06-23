@@ -9,9 +9,9 @@ fixed-length `Tuple` schema.
 **Signature**
 
 ```ts
-type Elements = ReadonlyArray<Top>
+type Elements = ReadonlyArray<Constraint>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3865)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4032)
 
 Since v3.10.0

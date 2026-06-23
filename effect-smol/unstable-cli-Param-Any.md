@@ -11,6 +11,6 @@ Represents any parameter.
 type Any = Param<ParamKind, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L105)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L93)
 
 Since v4.0.0

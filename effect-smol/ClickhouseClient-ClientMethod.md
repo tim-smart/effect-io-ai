@@ -12,6 +12,6 @@ or command execution for statements; defaults to `query`.
 declare const ClientMethod: Context.Reference<"query" | "command" | "insert">
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/clickhouse/src/ClickhouseClient.ts#L402)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/clickhouse/src/ClickhouseClient.ts#L405)
 
 Since v4.0.0

@@ -9,7 +9,7 @@ null and whose decoded value is an `Option`.
 **Signature**
 
 ```ts
-export interface optionalOption<S extends Schema.Top>
+export interface optionalOption<S extends Schema.Constraint>
   extends Schema.decodeTo<Schema.Option<Schema.toType<S>>, Schema.optionalKey<Schema.NullOr<S>>>
 {}
 ```

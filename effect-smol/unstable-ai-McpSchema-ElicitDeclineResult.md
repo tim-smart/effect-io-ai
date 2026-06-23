@@ -11,6 +11,6 @@ Schema for a declined or canceled client response to an elicitation request.
 declare class ElicitDeclineResult
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L2076)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L2078)
 
 Since v4.0.0

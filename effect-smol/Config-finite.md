@@ -24,6 +24,6 @@ Shortcut for `Config.schema(Schema.Finite, name)`.
 declare const finite: (name?: string) => Config<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L959)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L966)
 
 Since v4.0.0

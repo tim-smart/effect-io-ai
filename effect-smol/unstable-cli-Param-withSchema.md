@@ -10,8 +10,6 @@ Validates parsed values against a Schema, providing detailed error messages.
 ```ts
 import { Schema } from "effect"
 import { Param } from "effect/unstable/cli"
-// @internal - this module is not exported publicly
-
 const isEmail = Schema.isPattern(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)
 
 const Email = Schema.String.pipe(
@@ -26,9 +24,9 @@ const email = Param.string(Param.flagKind, "email").pipe(
 **Signature**
 
 ```ts
-declare const withSchema: { <A, B>(schema: Schema.Codec<B, A>): <Kind extends ParamKind>(self: Param<Kind, A>) => Param<Kind, B>; <Kind extends ParamKind, A, B>(self: Param<Kind, A>, schema: Schema.Codec<B, A>): Param<Kind, B>; }
+declare const withSchema: { <A, B>(schema: Schema.Codec<B, A, Environment, Environment>): <Kind extends ParamKind>(self: Param<Kind, A>) => Param<Kind, B>; <Kind extends ParamKind, A, B>(self: Param<Kind, A>, schema: Schema.Codec<B, A, Environment, Environment>): Param<Kind, B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L1801)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L1723)
 
 Since v4.0.0

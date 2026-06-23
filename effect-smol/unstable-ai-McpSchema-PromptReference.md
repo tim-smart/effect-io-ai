@@ -11,6 +11,6 @@ Schema for a prompt reference used in autocomplete requests.
 declare class PromptReference
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1871)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L1873)
 
 Since v4.0.0

@@ -10,9 +10,9 @@ functions to produce JSON Schema output.
 **Signature**
 
 ```ts
-declare const toRepresentation: (schema: Top) => SchemaRepresentation.Document
+declare const toRepresentation: (schema: Constraint) => SchemaRepresentation.Document
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L12998)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L13188)
 
 Since v4.0.0

@@ -8,9 +8,9 @@ Type-level representation returned by `decodeTo` without a custom transformation
 **Signature**
 
 ```ts
-export interface compose<To extends Top, From extends Top> extends decodeTo<To, From> {}
+export interface compose<To extends Constraint, From extends Constraint> extends decodeTo<To, From> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5164)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5337)
 
 Since v3.10.0

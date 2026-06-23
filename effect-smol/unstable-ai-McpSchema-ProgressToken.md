@@ -11,6 +11,6 @@ Type represented by the MCP progress token schema.
 type ProgressToken = typeof ProgressToken.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L130)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L132)
 
 Since v4.0.0

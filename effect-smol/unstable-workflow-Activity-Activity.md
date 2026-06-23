@@ -11,8 +11,8 @@ engine.
 
 ```ts
 export interface Activity<
-  Success extends Schema.Top = Schema.Void,
-  Error extends Schema.Top = Schema.Never,
+  Success extends Schema.Constraint = Schema.Void,
+  Error extends Schema.Constraint = Schema.Never,
   R = never
 > extends
   Effect.Effect<

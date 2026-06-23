@@ -12,6 +12,6 @@ Custom SQL fragment type used for ClickHouse typed parameters created by
 type ClickhouseCustom = ClickhouseParam
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/clickhouse/src/ClickhouseClient.ts#L537)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/clickhouse/src/ClickhouseClient.ts#L540)
 
 Since v4.0.0

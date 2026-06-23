@@ -15,6 +15,6 @@ A cursor is an opaque string token used to continue paginated requests.
 type Cursor = typeof Cursor.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L212)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L214)
 
 Since v4.0.0

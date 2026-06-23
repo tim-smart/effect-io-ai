@@ -43,10 +43,10 @@ export interface ProviderDefined<
   out Identifier extends `${string}.${string}`,
   out Name extends string,
   out Config extends {
-    readonly args: Schema.Top
-    readonly parameters: Schema.Top
-    readonly success: Schema.Top
-    readonly failure: Schema.Top
+    readonly args: Schema.Constraint
+    readonly parameters: Schema.Constraint
+    readonly success: Schema.Constraint
+    readonly failure: Schema.Constraint
     readonly failureMode: FailureMode
   },
   out RequiresHandler extends boolean = false

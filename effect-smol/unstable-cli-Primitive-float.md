@@ -29,6 +29,6 @@ const parseFloat = Effect.gen(function*() {
 declare const float: Primitive<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Primitive.ts#L180)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Primitive.ts#L179)
 
 Since v4.0.0

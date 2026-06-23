@@ -27,9 +27,9 @@ const files = Argument.string("files").pipe(
 **Signature**
 
 ```ts
-declare const mapEffect: { <A, B>(f: (a: A) => Effect.Effect<B, CliError.CliError, Param.Environment>): (self: Argument<A>) => Argument<B>; <A, B>(self: Argument<A>, f: (a: A) => Effect.Effect<B, CliError.CliError, Param.Environment>): Argument<B>; }
+declare const mapEffect: { <A, B>(f: (a: A) => Effect.Effect<B, CliError.CliError, Environment>): (self: Argument<A>) => Argument<B>; <A, B>(self: Argument<A>, f: (a: A) => Effect.Effect<B, CliError.CliError, Environment>): Argument<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L472)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L473)
 
 Since v4.0.0

@@ -36,6 +36,6 @@ declare class Encoding<S> { constructor(schema: S, options?: {
   }) }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TestSchema.ts#L456)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/TestSchema.ts#L457)
 
 Since v4.0.0

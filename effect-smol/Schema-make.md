@@ -19,9 +19,9 @@ schema.
 **Signature**
 
 ```ts
-declare const make: <S extends Top>(ast: S["ast"], options?: object) => S
+declare const make: <S extends Constraint>(ast: S["ast"], options?: object) => S
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2044)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2170)
 
 Since v3.10.0

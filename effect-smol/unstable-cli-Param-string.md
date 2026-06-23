@@ -10,8 +10,6 @@ Creates a string parameter.
 ```ts
 import { Param } from "effect/unstable/cli"
 
-// @internal - this module is not exported publicly
-
 // Create a string flag
 const nameFlag = Param.string(Param.flagKind, "name")
 
@@ -27,6 +25,6 @@ const fileArg = Param.string(Param.argumentKind, "file")
 declare const string: <const Kind extends ParamKind>(kind: Kind, name: string) => Param<Kind, string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L394)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L376)
 
 Since v4.0.0

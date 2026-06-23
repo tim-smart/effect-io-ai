@@ -17,6 +17,6 @@ type Transformer = (
 ) => Effect.Effect<Statement<unknown>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Statement.ts#L89)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Statement.ts#L90)
 
 Since v4.0.0

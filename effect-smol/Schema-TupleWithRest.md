@@ -12,22 +12,23 @@ export interface TupleWithRest<
   S extends TupleWithRest.TupleType,
   Rest extends TupleWithRest.Rest
 > extends
-  Bottom<
-    TupleWithRest.Type<S["Type"], Rest>,
-    TupleWithRest.Encoded<S["Encoded"], Rest>,
-    S["DecodingServices"] | Rest[number]["DecodingServices"],
-    S["EncodingServices"] | Rest[number]["EncodingServices"],
+  BottomLazy<
     SchemaAST.Arrays,
-    TupleWithRest<S, Rest>,
-    TupleWithRest.MakeIn<S["~type.make"], Rest>,
-    TupleWithRest.Iso<S["Iso"], Rest>
+    TupleWithRest<S, Rest>
   >
 {
+  readonly "Type": TupleWithRest.Type<S["Type"], Rest>
+  readonly "Encoded": TupleWithRest.Encoded<S["Encoded"], Rest>
+  readonly "DecodingServices": S["DecodingServices"] | Rest[number]["DecodingServices"]
+  readonly "EncodingServices": S["EncodingServices"] | Rest[number]["EncodingServices"]
+  readonly "~type.make.in": TupleWithRest.MakeIn<S["~type.make"], Rest>
+  readonly "~type.make": TupleWithRest.MakeIn<S["~type.make"], Rest>
+  readonly "Iso": TupleWithRest.Iso<S["Iso"], Rest>
   readonly schema: S
   readonly rest: Rest
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4185)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4353)
 
 Since v4.0.0

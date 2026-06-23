@@ -25,6 +25,6 @@ const safeTool = Tool.make("search_database")
 declare const Destructive: Context.Reference<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L1762)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L1764)
 
 Since v4.0.0

@@ -10,8 +10,6 @@ Creates a path parameter that accepts file or directory paths.
 ```ts
 import { Param } from "effect/unstable/cli"
 
-// @internal - this module is not exported publicly
-
 // Basic path parameter
 const outputPath = Param.path(Param.flagKind, "output")
 
@@ -32,6 +30,6 @@ const configFile = Param.path(Param.flagKind, "config", {
 declare const path: <Kind extends ParamKind>(kind: Kind, name: string, options?: { readonly pathType?: Primitive.PathType | undefined; readonly mustExist?: boolean | undefined; readonly typeName?: string | undefined; }) => Param<Kind, string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L631)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L599)
 
 Since v4.0.0

@@ -24,6 +24,6 @@ type Query<Endpoint> = Endpoint extends HttpApiEndpoint<
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L359)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L369)
 
 Since v4.0.0

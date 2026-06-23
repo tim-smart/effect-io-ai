@@ -15,11 +15,11 @@ Payload schema depends on the HTTP method:
 ```ts
 type PayloadConstraint<Method> = Method extends HttpMethod.NoBody ? Record<
     string,
-    Schema.Encoder<string | ReadonlyArray<string> | undefined, unknown>
+    Schema.Codec<unknown, string | ReadonlyArray<string> | undefined, unknown, unknown>
   > :
   Schema.Top | ReadonlyArray<Schema.Top>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L1066)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L1076)
 
 Since v4.0.0

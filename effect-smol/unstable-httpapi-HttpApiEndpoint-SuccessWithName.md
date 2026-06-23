@@ -14,6 +14,6 @@ type SuccessWithName<Endpoints, Name> = Success<
 > extends infer S ? SuccessType<S> : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L780)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L790)
 
 Since v4.0.0

@@ -8,11 +8,11 @@ Type-level representation returned by `fromURLSearchParams`.
 **Signature**
 
 ```ts
-export interface fromURLSearchParams<S extends Top> extends decodeTo<S, URLSearchParams> {
+export interface fromURLSearchParams<S extends Constraint> extends decodeTo<S, URLSearchParams> {
   readonly "Rebuild": fromURLSearchParams<S>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L11063)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L11252)
 
 Since v4.0.0

@@ -9,9 +9,9 @@ for a `StructWithRest` schema.
 **Signature**
 
 ```ts
-type Records = ReadonlyArray<$Record<Record.Key, Top>>
+type Records = ReadonlyArray<$Record<Record.Key, Constraint>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3671)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3802)
 
 Since v3.10.0

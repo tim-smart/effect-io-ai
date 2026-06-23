@@ -8,7 +8,7 @@ Type-level representation returned by `Redacted`.
 **Signature**
 
 ```ts
-export interface Redacted<S extends Top> extends
+export interface Redacted<S extends Constraint> extends
   declareConstructor<
     Redacted_.Redacted<S["Type"]>,
     Redacted_.Redacted<S["Encoded"]>,
@@ -20,6 +20,6 @@ export interface Redacted<S extends Top> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8675)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8854)
 
 Since v3.10.0

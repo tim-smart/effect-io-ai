@@ -11,8 +11,6 @@ inputs. The input will be mapped to it's associated value during parsing.
 ```ts
 import { Param } from "effect/unstable/cli"
 
-// @internal - this module is not exported publicly
-
 type Animal = Dog | Cat
 
 interface Dog {
@@ -35,6 +33,6 @@ const animal = Param.choiceWithValue(Param.flagKind, "animal", [
 declare const choiceWithValue: <const Kind extends ParamKind, const Choices extends ReadonlyArray<readonly [string, any]>>(kind: Kind, name: string, choices: Choices) => Param<Kind, Choices[number][1]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L564)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L536)
 
 Since v4.0.0

@@ -11,6 +11,6 @@ Represents any positional argument parameter.
 type AnyArgument = Param<typeof argumentKind, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L113)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L101)
 
 Since v4.0.0

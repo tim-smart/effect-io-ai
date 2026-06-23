@@ -10,8 +10,6 @@ Creates a parameter that reads and returns file content as a string.
 ```ts
 import { Param } from "effect/unstable/cli"
 
-// @internal - this module is not exported publicly
-
 // Read a config file as string
 const configContent = Param.fileText(Param.flagKind, "config")
 
@@ -27,6 +25,6 @@ const templateContent = Param.fileText(Param.argumentKind, "template")
 declare const fileText: <Kind extends ParamKind>(kind: Kind, name: string) => Param<Kind, string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L782)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L742)
 
 Since v4.0.0

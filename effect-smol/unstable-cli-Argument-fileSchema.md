@@ -22,9 +22,9 @@ const config = Argument.fileSchema("config", ConfigSchema)
 **Signature**
 
 ```ts
-declare const fileSchema: <A>(name: string, schema: Schema.Decoder<A>, options?: Primitive.FileSchemaOptions | undefined) => Argument<A>
+declare const fileSchema: <A>(name: string, schema: Schema.ConstraintDecoder<A, Environment>, options?: Primitive.FileSchemaOptions | undefined) => Argument<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L262)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L263)
 
 Since v4.0.0

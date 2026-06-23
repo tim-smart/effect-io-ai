@@ -15,7 +15,7 @@ as fixed tuple positions.
 
 ```ts
 type Type<T, Rest> = Rest extends
-    readonly [infer Head extends Top, ...infer Tail extends ReadonlyArray<Top>] ? Readonly<[
+    readonly [infer Head extends Constraint, ...infer Tail extends ReadonlyArray<Constraint>] ? Readonly<[
       ...T,
       ...Array<Head["Type"]>,
       ...{ readonly [K in keyof Tail]: Tail[K]["Type"] }
@@ -23,6 +23,6 @@ type Type<T, Rest> = Rest extends
     T
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4110)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4278)
 
 Since v3.10.0

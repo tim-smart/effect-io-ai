@@ -11,9 +11,9 @@ the base schema instance.
 **Signature**
 
 ```ts
-declare const resolveAnnotations: <S extends Top>(schema: S) => Annotations.Bottom<S["Type"], S["~type.parameters"]> | undefined
+declare const resolveAnnotations: <S extends Constraint>(schema: S) => Annotations.Bottom<S["Type"], S["~type.parameters"]> | undefined
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L13816)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L14091)
 
 Since v4.0.0

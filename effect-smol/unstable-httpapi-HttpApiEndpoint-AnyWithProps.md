@@ -9,8 +9,18 @@ method, path, schemas, annotations, and middleware sets.
 **Signature**
 
 ```ts
-export interface AnyWithProps
-  extends HttpApiEndpoint<string, HttpMethod, string, Schema.Top, Schema.Top, Schema.Top, Schema.Top, any, any>
+export interface AnyWithProps extends
+  HttpApiEndpoint<
+    string,
+    HttpMethod,
+    string,
+    Schema.Top,
+    Schema.Top,
+    Schema.Top,
+    Schema.Top,
+    any,
+    any
+  >
 {}
 ```
 

@@ -14,6 +14,6 @@ readonly record of `string → Json`. For the corresponding schema, see the
 type Json = null | number | boolean | string | JsonArray | JsonObject
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L13723)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L13998)
 
 Since v4.0.0

@@ -12,7 +12,7 @@ provided for the custom type.
 **Signature**
 
 ```ts
-export interface Declaration<T, TypeParameters extends ReadonlyArray<Top> = readonly []>
+export interface Declaration<T, TypeParameters extends ReadonlyArray<Constraint> = readonly []>
     extends Bottom<T, TypeParameters>
   {
     readonly toCodec?:
@@ -46,6 +46,6 @@ export interface Declaration<T, TypeParameters extends ReadonlyArray<Top> = read
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L14043)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L14318)
 
 Since v4.0.0

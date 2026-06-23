@@ -13,7 +13,7 @@ functions convert between the atom value and the schema encoded value.
 **Signature**
 
 ```ts
-export interface Serializable<S extends Schema.Top> {
+export interface Serializable<S extends Schema.Constraint> {
   readonly [SerializableTypeId]: {
     readonly key: string
     readonly encode: (value: S["Type"]) => S["Encoded"]

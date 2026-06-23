@@ -14,7 +14,7 @@ with `ElicitationDeclined`, and canceled requests interrupt the effect.
 **Signature**
 
 ```ts
-declare const elicit: <S extends Schema.Encoder<Record<string, unknown>, unknown>>(options: { readonly message: string; readonly schema: S; }) => Effect.Effect<S["Type"], ElicitationDeclined, McpServerClient | S["DecodingServices"]>
+declare const elicit: <S extends Schema.ConstraintEncoder<Record<string, unknown>, unknown>>(options: { readonly message: string; readonly schema: S; }) => Effect.Effect<S["Type"], ElicitationDeclined, McpServerClient | S["DecodingServices"]>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpServer.ts#L1183)

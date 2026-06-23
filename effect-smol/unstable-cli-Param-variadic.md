@@ -16,8 +16,6 @@ parameter can be specified any number of times, from 0 to infinity.
 ```ts
 import { Param } from "effect/unstable/cli"
 
-// @internal - this module is not exported publicly
-
 // Basic variadic parameter (0 to infinity)
 const tags = Param.variadic(Param.string(Param.flagKind, "tag"))
 
@@ -40,6 +38,6 @@ const limited = Param.variadic(Param.string(Param.flagKind, "item"), {
 declare const variadic: <Kind extends ParamKind, A>(self: Param<Kind, A>, options?: VariadicParamOptions | undefined) => Param<Kind, ReadonlyArray<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L1494)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L1430)
 
 Since v4.0.0

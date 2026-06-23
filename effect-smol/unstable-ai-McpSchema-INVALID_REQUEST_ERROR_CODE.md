@@ -16,6 +16,6 @@ request object that fails request-shape validation.
 declare const INVALID_REQUEST_ERROR_CODE: -32600
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L474)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L476)
 
 Since v4.0.0

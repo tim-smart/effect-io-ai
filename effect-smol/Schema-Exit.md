@@ -8,7 +8,7 @@ Type-level representation returned by `Exit`.
 **Signature**
 
 ```ts
-export interface Exit<A extends Top, E extends Top, D extends Top> extends
+export interface Exit<A extends Constraint, E extends Constraint, D extends Constraint> extends
   declareConstructor<
     Exit_.Exit<A["Type"], E["Type"]>,
     Exit_.Exit<A["Encoded"], E["Encoded"]>,
@@ -23,6 +23,6 @@ export interface Exit<A extends Top, E extends Top, D extends Top> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9290)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9471)
 
 Since v3.10.0

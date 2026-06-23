@@ -12,6 +12,6 @@ bound parameters for untrusted values.
 declare const literal: (value: string, params?: ReadonlyArray<unknown> | undefined) => Literal
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Statement.ts#L162)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Statement.ts#L163)
 
 Since v4.0.0

@@ -20,6 +20,6 @@ This also unwraps the `UndefinedOr` member added by `optional`.
 declare const required: requiredLambda
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2228)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2354)
 
 Since v3.10.0

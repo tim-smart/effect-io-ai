@@ -9,7 +9,7 @@ A schema codec that decodes and encodes the schema's value type through
 **Signature**
 
 ```ts
-export interface StringTree<S extends Schema.Top> extends
+export interface StringTree<S extends Schema.Constraint> extends
   Schema.Codec<
     S["Type"],
     Schema.StringTree,
@@ -19,6 +19,6 @@ export interface StringTree<S extends Schema.Top> extends
 {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L1259)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L1269)
 
 Since v4.0.0

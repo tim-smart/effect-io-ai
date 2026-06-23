@@ -8,7 +8,7 @@ Type-level representation returned by `Result`.
 **Signature**
 
 ```ts
-export interface Result<A extends Top, E extends Top> extends
+export interface Result<A extends Constraint, E extends Constraint> extends
   declareConstructor<
     Result_.Result<A["Type"], E["Type"]>,
     Result_.Result<A["Encoded"], E["Encoded"]>,
@@ -22,6 +22,6 @@ export interface Result<A extends Top, E extends Top> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8558)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8737)
 
 Since v4.0.0

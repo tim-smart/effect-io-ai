@@ -8,11 +8,11 @@ Type-level representation returned by `optional`.
 **Signature**
 
 ```ts
-export interface optional<S extends Top> extends optionalKey<UndefinedOr<S>> {
+export interface optional<S extends Constraint> extends optionalKey<UndefinedOr<S>> {
   readonly "Rebuild": optional<S>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2167)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2293)
 
 Since v3.10.0

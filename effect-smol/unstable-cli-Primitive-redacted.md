@@ -29,6 +29,6 @@ const parseRedacted = Effect.gen(function*() {
 declare const redacted: Primitive<Redacted.Redacted<string>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Primitive.ts#L433)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Primitive.ts#L432)
 
 Since v4.0.0

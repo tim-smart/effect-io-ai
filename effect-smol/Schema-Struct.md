@@ -8,18 +8,14 @@ Type-level representation returned by `Struct`.
 **Signature**
 
 ```ts
-export interface Struct<Fields extends Struct.Fields> extends
-  Bottom<
-    Struct.Type<Fields>,
-    Struct.Encoded<Fields>,
-    Struct.DecodingServices<Fields>,
-    Struct.EncodingServices<Fields>,
-    SchemaAST.Objects,
-    Struct<Fields>,
-    Struct.MakeIn<Fields>,
-    Struct.Iso<Fields>
-  >
-{
+export interface Struct<Fields extends Struct.Fields> extends BottomLazy<SchemaAST.Objects, Struct<Fields>> {
+  readonly "Type": Struct.Type<Fields>
+  readonly "Encoded": Struct.Encoded<Fields>
+  readonly "DecodingServices": Struct.DecodingServices<Fields>
+  readonly "EncodingServices": Struct.EncodingServices<Fields>
+  readonly "~type.make.in": Struct.MakeIn<Fields>
+  readonly "~type.make": Struct.MakeIn<Fields>
+  readonly "Iso": Struct.Iso<Fields>
   /**
    * The field definitions of this struct. Spread them into a new struct to
    * reuse fields across schemas.
@@ -67,6 +63,6 @@ export interface Struct<Fields extends Struct.Fields> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3145)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3279)
 
 Since v3.10.0

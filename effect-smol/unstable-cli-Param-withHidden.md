@@ -16,8 +16,6 @@ not advertised.
 ```ts
 import { Param } from "effect/unstable/cli"
 
-// @internal - this module is not exported publicly
-
 const experimental = Param.boolean(Param.flagKind, "experimental-foo").pipe(
   Param.withHidden
 )
@@ -29,6 +27,6 @@ const experimental = Param.boolean(Param.flagKind, "experimental-foo").pipe(
 declare const withHidden: <Kind extends ParamKind, A>(self: Param<Kind, A>) => Param<Kind, A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L1058)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L1004)
 
 Since v4.0.0

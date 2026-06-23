@@ -10,8 +10,6 @@ Creates a boolean parameter.
 ```ts
 import { Param } from "effect/unstable/cli"
 
-// @internal - this module is not exported publicly
-
 // Create a boolean flag
 const verboseFlag = Param.boolean(Param.flagKind, "verbose")
 
@@ -28,6 +26,6 @@ const enableArg = Param.boolean(Param.argumentKind, "enable")
 declare const boolean: <const Kind extends ParamKind>(kind: Kind, name: string) => Param<Kind, boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L427)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L407)
 
 Since v4.0.0

@@ -9,9 +9,9 @@ schemas.
 **Signature**
 
 ```ts
-declare const ReadonlyMap: <Key extends Top, Value extends Top>(key: Key, value: Value) => $ReadonlyMap<Key, Value>
+declare const ReadonlyMap: <Key extends Constraint, Value extends Constraint>(key: Key, value: Value) => $ReadonlyMap<Key, Value>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9561)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9748)
 
 Since v3.10.0

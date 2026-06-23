@@ -9,7 +9,7 @@ failing if no initial message is available or decoding fails.
 **Signature**
 
 ```ts
-declare const initialMessage: <S extends Schema.Top>(schema: S) => Effect.Effect<S["Type"], NoSuchElementError | Schema.SchemaError, Protocol | S["DecodingServices"]>
+declare const initialMessage: <S extends Schema.Constraint>(schema: S) => Effect.Effect<S["Type"], NoSuchElementError | Schema.SchemaError, Protocol | S["DecodingServices"]>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcWorker.ts#L111)

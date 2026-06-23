@@ -8,7 +8,7 @@ Type-level representation returned by `Cause`.
 **Signature**
 
 ```ts
-export interface Cause<E extends Top, D extends Top> extends
+export interface Cause<E extends Constraint, D extends Constraint> extends
   declareConstructor<
     Cause_.Cause<E["Type"]>,
     Cause_.Cause<E["Encoded"]>,
@@ -22,6 +22,6 @@ export interface Cause<E extends Top, D extends Top> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9013)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9194)
 
 Since v3.10.0

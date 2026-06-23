@@ -24,6 +24,6 @@ console.log(makeValueFlag(false) === Flag.none) // true
 declare const none: Flag<never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L408)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Flag.ts#L409)
 
 Since v4.0.0

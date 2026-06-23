@@ -25,6 +25,6 @@ export interface Single<Kind extends ParamKind, out A> extends Param<Kind, A> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L204)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L192)
 
 Since v4.0.0

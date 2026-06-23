@@ -11,6 +11,6 @@ Type represented by the JSON-RPC request identifier schema.
 type RequestId = typeof RequestId.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L110)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/McpSchema.ts#L112)
 
 Since v4.0.0

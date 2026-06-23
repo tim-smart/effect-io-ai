@@ -29,6 +29,6 @@ const program = Effect.gen(function*() {
 declare const none: Primitive<never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Primitive.ts#L700)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Primitive.ts#L699)
 
 Since v4.0.0

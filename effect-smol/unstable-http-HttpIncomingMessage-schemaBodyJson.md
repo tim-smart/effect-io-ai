@@ -8,7 +8,7 @@ Creates a decoder that reads an incoming message's JSON body and decodes it with
 **Signature**
 
 ```ts
-declare const schemaBodyJson: <S extends Schema.Top>(schema: S, options?: ParseOptions | undefined) => <E>(self: HttpIncomingMessage<E>) => Effect.Effect<S["Type"], E | Schema.SchemaError, S["DecodingServices"]>
+declare const schemaBodyJson: <S extends Schema.Constraint>(schema: S, options?: ParseOptions | undefined) => <E>(self: HttpIncomingMessage<E>) => Effect.Effect<S["Type"], E | Schema.SchemaError, S["DecodingServices"]>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpIncomingMessage.ts#L64)

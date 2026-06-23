@@ -15,8 +15,6 @@ extension of the file passed on the command-line if no `format` is specified.
 ```ts
 import { Param } from "effect/unstable/cli"
 
-// @internal - this module is not exported publicly
-
 // Will use the extension of the file passed on the command line to determine
 // the parser to use
 const config = Param.fileParse(Param.flagKind, "config")
@@ -33,6 +31,6 @@ const jsonConfig = Param.fileParse(Param.flagKind, "json-config", {
 declare const fileParse: <Kind extends ParamKind>(kind: Kind, name: string, options?: Primitive.FileParseOptions | undefined) => Param<Kind, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L817)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L775)
 
 Since v4.0.0

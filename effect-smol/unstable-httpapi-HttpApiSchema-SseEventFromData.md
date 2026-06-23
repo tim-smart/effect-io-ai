@@ -8,7 +8,7 @@ Event schema produced when `StreamSse` is constructed from a JSON data schema.
 **Signature**
 
 ```ts
-export interface SseEventFromData<Data extends Schema.Top> extends
+export interface SseEventFromData<Data extends Schema.Constraint> extends
   Schema.Codec<
     {
       readonly id: string | undefined
@@ -26,6 +26,6 @@ export interface SseEventFromData<Data extends Schema.Top> extends
 {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSchema.ts#L324)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSchema.ts#L327)
 
 Since v4.0.0

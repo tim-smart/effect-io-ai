@@ -12,7 +12,7 @@ Schema encoding issues and JSON serialization failures are returned as `HttpBody
 **Signature**
 
 ```ts
-declare const jsonSchema: <S extends Schema.Top>(schema: S, options?: ParseOptions | undefined) => (body: S["Type"], contentType?: string) => Effect.Effect<Uint8Array, HttpBodyError, S["EncodingServices"]>
+declare const jsonSchema: <S extends Schema.Constraint>(schema: S, options?: ParseOptions | undefined) => (body: S["Type"], contentType?: string) => Effect.Effect<Uint8Array, HttpBodyError, S["EncodingServices"]>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpBody.ts#L320)

@@ -45,9 +45,9 @@ const result = Schema.decodeUnknownSync(Trimmed)("  hello  ")
 **Signature**
 
 ```ts
-declare const decode: <S extends Top, RD = never, RE = never>(transformation: { readonly decode: SchemaGetter.Getter<S["Type"], S["Type"], RD>; readonly encode: SchemaGetter.Getter<S["Type"], S["Type"], RE>; }) => (self: S) => decodeTo<toType<S>, S, RD, RE>
+declare const decode: <S extends Constraint, RD = never, RE = never>(transformation: { readonly decode: SchemaGetter.Getter<S["Type"], S["Type"], RD>; readonly encode: SchemaGetter.Getter<S["Type"], S["Type"], RE>; }) => (self: S) => decodeTo<toType<S>, S, RD, RE>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5287)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5460)
 
 Since v3.10.0

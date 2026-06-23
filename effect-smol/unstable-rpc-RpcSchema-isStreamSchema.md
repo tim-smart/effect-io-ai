@@ -9,7 +9,7 @@ Returns `true` when a schema is an RPC stream schema created by
 **Signature**
 
 ```ts
-declare const isStreamSchema: (schema: Schema.Top) => schema is Stream<Schema.Top, Schema.Top>
+declare const isStreamSchema: (schema: Schema.Constraint) => schema is Stream<Schema.Top, Schema.Top>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcSchema.ts#L29)

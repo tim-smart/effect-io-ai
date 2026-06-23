@@ -10,8 +10,8 @@ success and error schemas.
 
 ```ts
 export interface CompleteSchema<
-  Success extends Schema.Top,
-  Error extends Schema.Top
+  Success extends Schema.Constraint,
+  Error extends Schema.Constraint
 > extends
   Schema.declareConstructor<
     Complete<Success["Type"], Error["Type"]>,

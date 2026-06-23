@@ -13,6 +13,6 @@ export interface Applied<A extends Effect.Effect<HttpServerResponse, any, any>, 
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpMiddleware.ts#L55)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpMiddleware.ts#L56)
 
 Since v4.0.0

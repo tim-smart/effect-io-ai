@@ -15,9 +15,9 @@ the default formatting logic runs.
 **Signature**
 
 ```ts
-declare const toFormatter: <T>(schema: Schema<T>, options?: { readonly onBefore?: ((ast: SchemaAST.AST, recur: (ast: SchemaAST.AST) => Formatter<any>) => Formatter<any> | undefined) | undefined; }) => Formatter<T>
+declare const toFormatter: <S extends Constraint>(schema: S, options?: { readonly onBefore?: ((ast: SchemaAST.AST, recur: (ast: SchemaAST.AST) => Formatter<any>) => Formatter<any> | undefined) | undefined; }) => Formatter<S["Type"]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L12807)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L12997)
 
 Since v4.0.0

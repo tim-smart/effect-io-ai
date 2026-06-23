@@ -13,6 +13,6 @@ Serializes an outgoing request's last received reply when one exists, returning
 declare const serializeLastReceived: <R extends Rpc.Any>(self: OutgoingRequest<R>) => Effect.Effect<Option.Option<Encoded>, MalformedMessage>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Reply.ts#L442)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Reply.ts#L446)
 
 Since v4.0.0

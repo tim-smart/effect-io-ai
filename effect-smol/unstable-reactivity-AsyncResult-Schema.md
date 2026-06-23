@@ -9,8 +9,8 @@ Schema interface for `AsyncResult` values, retaining the schemas used for succes
 
 ```ts
 export interface Schema<
-  Success extends Schema_.Top,
-  Error extends Schema_.Top
+  Success extends Schema_.Constraint,
+  Error extends Schema_.Constraint
 > extends
   Schema_.declareConstructor<
     AsyncResult<Success["Type"], Error["Type"]>,

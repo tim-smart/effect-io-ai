@@ -8,13 +8,13 @@ Type-level representation returned by `withDecodingDefaultTypeKey`.
 **Signature**
 
 ```ts
-export interface withDecodingDefaultTypeKey<S extends Top, R = never>
+export interface withDecodingDefaultTypeKey<S extends Constraint, R = never>
   extends decodeTo<withDecodingDefaultKey<toType<S>, R>, optionalKey<S>>
 {
   readonly "Rebuild": withDecodingDefaultTypeKey<S, R>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5540)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5715)
 
 Since v4.0.0

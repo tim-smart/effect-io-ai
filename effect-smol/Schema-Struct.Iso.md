@@ -14,9 +14,9 @@ modifiers used by `Struct.Type`.
 **Signature**
 
 ```ts
-type { [K in keyof Iso_<F, TypeOptionalKeys<F>, TypeMutableKeys<F>>]: Iso_<F, TypeOptionalKeys<F>, TypeMutableKeys<F>>[K]; } = Simplify<Iso_<F>>
+type Iso<F> = View<F, "Iso">
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3059)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3213)
 
 Since v4.0.0

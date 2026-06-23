@@ -10,8 +10,8 @@ engine and encoded with success and error schemas.
 
 ```ts
 export interface DurableDeferred<
-  Success extends Schema.Top,
-  Error extends Schema.Top = Schema.Never
+  Success extends Schema.Constraint,
+  Error extends Schema.Constraint = Schema.Never
 > {
   readonly [TypeId]: typeof TypeId
   readonly name: string

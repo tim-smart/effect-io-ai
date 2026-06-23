@@ -12,6 +12,6 @@ errors.
 type Error<R> = Schema.Schema.Type<ErrorSchema<R>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L377)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Rpc.ts#L376)
 
 Since v4.0.0

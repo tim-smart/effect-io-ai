@@ -37,6 +37,11 @@ export interface Connection {
     params: ReadonlyArray<unknown>
   ) => Effect<ReadonlyArray<ReadonlyArray<unknown>>, SqlError>
 
+  readonly executeValuesUnprepared: (
+    sql: string,
+    params: ReadonlyArray<unknown>
+  ) => Effect<ReadonlyArray<ReadonlyArray<unknown>>, SqlError>
+
   readonly executeUnprepared: (
     sql: string,
     params: ReadonlyArray<unknown>,

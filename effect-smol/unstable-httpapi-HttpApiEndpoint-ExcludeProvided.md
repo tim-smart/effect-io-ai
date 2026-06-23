@@ -16,6 +16,6 @@ type ExcludeProvided<Endpoint, R> = Exclude<
 >
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L843)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L853)
 
 Since v4.0.0

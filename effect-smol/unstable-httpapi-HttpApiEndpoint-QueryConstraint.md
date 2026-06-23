@@ -9,10 +9,10 @@ strings, or `undefined`, or the schema must encode to a record of those values.
 **Signature**
 
 ```ts
-type QueryConstraint = | Record<string, Schema.Encoder<string | ReadonlyArray<string> | undefined, unknown>>
-  | Schema.Encoder<Record<string, string | ReadonlyArray<string> | undefined>, unknown>
+type QueryConstraint = | Record<string, Schema.Codec<unknown, string | ReadonlyArray<string> | undefined, unknown, unknown>>
+  | Schema.Codec<unknown, string | ReadonlyArray<string> | undefined, unknown, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L1051)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L1061)
 
 Since v4.0.0

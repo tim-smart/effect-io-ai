@@ -15,8 +15,6 @@ This is a convenience function that creates a path parameter with the
 ```ts
 import { Param } from "effect/unstable/cli"
 
-// @internal - this module is not exported publicly
-
 // Basic directory parameter
 const outputDir = Param.directory(Param.flagKind, "output-dir")
 
@@ -32,6 +30,6 @@ const sourceDir = Param.directory(Param.flagKind, "source", { mustExist: true })
 declare const directory: <Kind extends ParamKind>(kind: Kind, name: string, options?: { readonly mustExist?: boolean | undefined; }) => Param<Kind, string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L674)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L640)
 
 Since v4.0.0

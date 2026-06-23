@@ -16,7 +16,7 @@ export interface Literals<L extends ReadonlyArray<SchemaAST.LiteralValue>>
   /**
    * Map over the members of the union.
    */
-  mapMembers<To extends ReadonlyArray<Top>>(f: (members: this["members"]) => To): Union<Simplify<Readonly<To>>>
+  mapMembers<To extends ReadonlyArray<Constraint>>(f: (members: this["members"]) => To): Union<Simplify<Readonly<To>>>
 
   pick<const L2 extends ReadonlyArray<L[number]>>(literals: L2): Literals<L2>
 
@@ -26,6 +26,6 @@ export interface Literals<L extends ReadonlyArray<SchemaAST.LiteralValue>>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4575)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4747)
 
 Since v4.0.0

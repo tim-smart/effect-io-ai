@@ -38,6 +38,6 @@ type Request<Endpoint> = Endpoint extends HttpApiEndpoint<
   : {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L514)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L524)
 
 Since v4.0.0

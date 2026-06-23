@@ -9,7 +9,7 @@ serialized for persistence.
 **Signature**
 
 ```ts
-export interface Persistable<A extends Schema.Top, E extends Schema.Top> extends PrimaryKey.PrimaryKey {
+export interface Persistable<A extends Schema.Constraint, E extends Schema.Constraint> extends PrimaryKey.PrimaryKey {
   readonly [symbol]: {
     readonly success: A
     readonly error: E

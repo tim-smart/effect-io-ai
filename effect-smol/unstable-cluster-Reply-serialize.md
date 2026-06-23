@@ -13,6 +13,6 @@ reply's RPC schema and context and refailing encoding errors as
 declare const serialize: <R extends Rpc.Any>(self: ReplyWithContext<R>) => Effect.Effect<Encoded, MalformedMessage>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Reply.ts#L422)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Reply.ts#L426)
 
 Since v4.0.0

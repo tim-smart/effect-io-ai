@@ -24,6 +24,6 @@ constraint to ensure generated Date objects are valid.
 declare const isDateValid: (annotations?: Annotations.Filter) => SchemaAST.Filter<globalThis.Date>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7363)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7540)
 
 Since v4.0.0

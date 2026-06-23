@@ -9,7 +9,7 @@ and deferred name.
 **Signature**
 
 ```ts
-declare const tokenFromExecutionId: { (options: { readonly workflow: Workflow.Any; readonly executionId: string; }): <Success extends Schema.Top, Error extends Schema.Top>(self: DurableDeferred<Success, Error>) => Token; <Success extends Schema.Top, Error extends Schema.Top>(self: DurableDeferred<Success, Error>, options: { readonly workflow: Workflow.Any; readonly executionId: string; }): Token; }
+declare const tokenFromExecutionId: { (options: { readonly workflow: Workflow.Any; readonly executionId: string; }): <Success extends Schema.Constraint, Error extends Schema.Constraint>(self: DurableDeferred<Success, Error>) => Token; <Success extends Schema.Constraint, Error extends Schema.Constraint>(self: DurableDeferred<Success, Error>, options: { readonly workflow: Workflow.Any; readonly executionId: string; }): Token; }
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/DurableDeferred.ts#L425)

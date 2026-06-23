@@ -25,6 +25,6 @@ const readOnlyTool = Tool.make("get_user_info")
 declare const Readonly: Context.Reference<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L1738)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Tool.ts#L1740)
 
 Since v4.0.0

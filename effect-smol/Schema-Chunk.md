@@ -8,7 +8,7 @@ Type-level representation returned by `Chunk`.
 **Signature**
 
 ```ts
-export interface Chunk<Value extends Top> extends
+export interface Chunk<Value extends Constraint> extends
   declareConstructor<
     Chunk_.Chunk<Value["Type"]>,
     Chunk_.Chunk<Value["Encoded"]>,
@@ -21,6 +21,6 @@ export interface Chunk<Value extends Top> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9890)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10082)
 
 Since v3.10.0
