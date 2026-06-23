@@ -11,6 +11,6 @@ Type-level representation of `Undefined`.
 export interface Undefined extends Bottom<undefined, undefined, never, never, SchemaAST.Undefined, Undefined> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2935)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2937)
 
 Since v3.10.0

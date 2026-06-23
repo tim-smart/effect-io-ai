@@ -30,6 +30,6 @@ export interface suspend<S extends Constraint> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4877)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4879)
 
 Since v3.10.0

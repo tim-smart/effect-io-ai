@@ -23,6 +23,6 @@ type Type<T, Rest> = Rest extends
     T
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4278)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4280)
 
 Since v3.10.0

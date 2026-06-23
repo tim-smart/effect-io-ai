@@ -19,6 +19,6 @@ without a finite terminal path fail immediately.
 declare const toArbitraryLazy: <S extends Constraint>(schema: S) => LazyArbitrary<S["Type"]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L12907)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L12909)
 
 Since v4.0.0

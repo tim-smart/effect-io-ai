@@ -13,6 +13,6 @@ export interface BigDecimalFromString extends decodeTo<BigDecimal, String> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10814)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10816)
 
 Since v4.0.0

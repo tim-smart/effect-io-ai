@@ -27,6 +27,7 @@ export interface toType<S extends Constraint> extends
   readonly "~type.make.in": S["~type.make.in"]
   readonly "~type.make": S["~type.make"]
   readonly "Iso": S["Iso"]
+  readonly schema: S
 }
 ```
 

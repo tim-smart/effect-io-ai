@@ -32,6 +32,6 @@ export interface brand<S extends Constraint, B> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5008)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5010)
 
 Since v3.10.0

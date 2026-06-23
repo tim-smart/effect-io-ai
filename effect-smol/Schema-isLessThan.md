@@ -23,6 +23,6 @@ specified value.
 declare const isLessThan: (exclusiveMaximum: number, annotations?: Annotations.Filter) => SchemaAST.Filter<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7321)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7323)
 
 Since v4.0.0

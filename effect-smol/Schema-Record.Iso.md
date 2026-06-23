@@ -17,6 +17,6 @@ type Iso<Key, Value> = Value extends
     : { readonly [P in Key["Iso"]]: Value["Iso"] }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3636)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3638)
 
 Since v4.0.0

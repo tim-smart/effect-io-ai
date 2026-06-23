@@ -12,6 +12,6 @@ for a `StructWithRest` schema.
 type Records = ReadonlyArray<$Record<Record.Key, Constraint>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3802)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3804)
 
 Since v3.10.0

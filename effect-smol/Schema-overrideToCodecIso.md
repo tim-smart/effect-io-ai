@@ -31,6 +31,6 @@ export interface overrideToCodecIso<S extends Constraint, Iso> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L13862)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L13866)
 
 Since v4.0.0

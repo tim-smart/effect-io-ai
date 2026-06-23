@@ -27,9 +27,10 @@ export interface toEncoded<S extends Constraint> extends
   readonly "~type.make.in": S["Encoded"]
   readonly "~type.make": S["Encoded"]
   readonly "Iso": S["Encoded"]
+  readonly schema: S
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2466)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2467)
 
 Since v4.0.0

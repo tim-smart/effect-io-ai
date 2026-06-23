@@ -11,6 +11,6 @@ Type-level representation of `Any`.
 export interface Any extends Bottom<any, any, never, never, SchemaAST.Any, Any> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2879)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2881)
 
 Since v3.10.0

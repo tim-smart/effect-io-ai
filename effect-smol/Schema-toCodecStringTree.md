@@ -27,9 +27,10 @@ export interface toCodecStringTree<S extends Constraint> extends
   readonly "~type.make.in": S["~type.make.in"]
   readonly "~type.make": S["~type.make"]
   readonly "Iso": S["Iso"]
+  readonly schema: S
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L13455)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L13458)
 
 Since v4.0.0

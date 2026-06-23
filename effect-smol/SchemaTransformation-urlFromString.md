@@ -13,8 +13,8 @@ input or API responses.
 
 **Details**
 
-Decoding calls `new URL(s)` and fails with `InvalidValue` if the string is
-not a valid URL. Encoding returns `url.href`.
+Decoding checks `URL.canParse(s)` and fails with `InvalidValue` if the string
+is not a valid URL. Encoding returns `url.href`.
 
 **Example** (Converting a string to a URL)
 

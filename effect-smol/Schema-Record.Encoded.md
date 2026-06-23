@@ -22,6 +22,6 @@ type Encoded<Key, Value> = Value extends
     : { readonly [P in Key["Encoded"]]: Value["Encoded"] }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3655)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3657)
 
 Since v3.10.0

@@ -12,6 +12,6 @@ schema's encoded type with the encoded types of all rest record schemas.
 type Encoded<S, Records> = Intersect<S, Records, "Encoded">
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3841)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3843)
 
 Since v3.10.0
