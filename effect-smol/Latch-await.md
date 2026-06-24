@@ -32,6 +32,6 @@ waiters may still suspend.
 declare const await: (self: Latch) => Effect.Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Latch.ts#L293)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Latch.ts#L302)
 
 Since v4.0.0

@@ -20,6 +20,10 @@ export interface RateLimiter {
     readonly key: string
     readonly tokens?: number | undefined
   }) => Effect.Effect<ConsumeResult, RateLimiterError>
+
+  readonly adaptiveConsume: (options: AdaptiveConsumeOptions) => Effect.Effect<AdaptiveConsumeResult, RateLimiterError>
+
+  readonly adaptiveFeedback: (options: AdaptiveFeedbackOptions) => Effect.Effect<void, RateLimiterError>
 }
 ```
 

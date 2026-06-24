@@ -29,6 +29,6 @@ fibers
 declare const closeUnsafe: (self: Latch) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Latch.ts#L339)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Latch.ts#L348)
 
 Since v4.0.0

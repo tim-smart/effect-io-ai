@@ -12,6 +12,6 @@ options.
 declare const layerStoreRedisConfig: (options: Config.Wrap<{ readonly prefix?: string | undefined; }>) => Layer.Layer<RateLimiterStore, Config.ConfigError, Redis.Redis>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RateLimiter.ts#L742)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RateLimiter.ts#L1336)
 
 Since v4.0.0

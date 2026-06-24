@@ -107,6 +107,15 @@ export interface Latch {
    * Use to gate an effect behind the latch signal.
    */
   whenOpen<A, E, R>(self: Effect.Effect<A, E, R>): Effect.Effect<A, E, R>
+
+  /**
+   * Checks whether the latch is currently open or closed.
+   *
+   * **When to use**
+   *
+   * Use to check the state of the latch without suspending or changing its state.
+   */
+  isOpen(this: Latch): boolean
 }
 ```
 

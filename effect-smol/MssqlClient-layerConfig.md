@@ -11,6 +11,6 @@ Creates a layer from a `Config`-wrapped SQL Server client configuration, providi
 declare const layerConfig: (config: Config.Wrap<MssqlClientConfig>) => Layer.Layer<Client.SqlClient | MssqlClient, Config.ConfigError | SqlError>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/MssqlClient.ts#L604)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/MssqlClient.ts#L616)
 
 Since v4.0.0

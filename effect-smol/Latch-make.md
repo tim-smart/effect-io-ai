@@ -47,6 +47,6 @@ const program = Effect.gen(function*() {
 declare const make: (open?: boolean | undefined) => Effect.Effect<Latch>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Latch.ts#L199)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Latch.ts#L208)
 
 Since v4.0.0

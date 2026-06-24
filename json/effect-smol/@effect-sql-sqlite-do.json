@@ -45,7 +45,7 @@
     "since": "4.0.0",
     "category": "type IDs",
     "signature": "declare const TypeId: \"~@effect/sql-sqlite-do/SqliteClient\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/do/src/SqliteClient.ts#L39"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/do/src/SqliteClient.ts#L51"
   },
   {
     "_tag": "Constant",
@@ -61,7 +61,7 @@
     "since": "4.0.0",
     "category": "services",
     "signature": "declare const SqliteClient: Context.Service<SqliteClient, SqliteClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/do/src/SqliteClient.ts#L74"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/do/src/SqliteClient.ts#L86"
   },
   {
     "_tag": "Function",
@@ -71,13 +71,13 @@
     },
     "project": "@effect/sql-sqlite-do",
     "name": "make",
-    "description": "Creates a scoped Cloudflare Durable Object SQLite client around `SqlStorage`, serializing access and converting returned `ArrayBuffer` values to `Uint8Array`.",
+    "description": "Creates a scoped Cloudflare Durable Object SQLite client around Durable Object SQLite storage, serializing access and converting returned `ArrayBuffer` values to `Uint8Array`.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
     "category": "constructors",
     "signature": "declare const make: (options: SqliteClientConfig) => Effect.Effect<SqliteClient, never, Scope.Scope | Reactivity.Reactivity>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/do/src/SqliteClient.ts#L96"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/do/src/SqliteClient.ts#L176"
   },
   {
     "_tag": "Function",
@@ -93,7 +93,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layerConfig: (config: Config.Wrap<SqliteClientConfig>) => Layer.Layer<SqliteClient | Client.SqlClient, Config.ConfigError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/do/src/SqliteClient.ts#L224"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/do/src/SqliteClient.ts#L313"
   },
   {
     "_tag": "Function",
@@ -109,7 +109,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layer: (config: SqliteClientConfig) => Layer.Layer<SqliteClient | Client.SqlClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/do/src/SqliteClient.ts#L244"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/do/src/SqliteClient.ts#L333"
   },
   {
     "_tag": "Interface",
@@ -125,7 +125,7 @@
     "since": "4.0.0",
     "category": "models",
     "signature": "export interface SqliteClient extends Client.SqlClient {\n  readonly [TypeId]: TypeId\n  readonly config: SqliteClientConfig\n\n  /** Not supported in sqlite */\n  readonly updateValues: never\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/do/src/SqliteClient.ts#L55"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/do/src/SqliteClient.ts#L67"
   },
   {
     "_tag": "Interface",
@@ -135,13 +135,13 @@
     },
     "project": "@effect/sql-sqlite-do",
     "name": "SqliteClientConfig",
-    "description": "Configuration for a Cloudflare Durable Object SQLite client, including the `SqlStorage` handle, span attributes, and query/result name transforms.",
+    "description": "Configuration for a Cloudflare Durable Object SQLite client, including either a `SqlStorage` handle or the full `DurableObjectStorage` for transaction support, span attributes, and query/result name transforms.",
     "deprecated": false,
     "examples": [],
     "since": "4.0.0",
     "category": "models",
-    "signature": "export interface SqliteClientConfig {\n  readonly db: SqlStorage\n  readonly spanAttributes?: Record<string, unknown> | undefined\n\n  readonly transformResultNames?: ((str: string) => string) | undefined\n  readonly transformQueryNames?: ((str: string) => string) | undefined\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/do/src/SqliteClient.ts#L82"
+    "signature": "export interface SqliteClientConfig {\n  readonly db?: SqlStorage | undefined\n  readonly storage?: DurableObjectStorage | undefined\n  readonly spanAttributes?: Record<string, unknown> | undefined\n\n  readonly transformResultNames?: ((str: string) => string) | undefined\n  readonly transformQueryNames?: ((str: string) => string) | undefined\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/do/src/SqliteClient.ts#L98"
   },
   {
     "_tag": "TypeAlias",
@@ -157,7 +157,7 @@
     "since": "4.0.0",
     "category": "type IDs",
     "signature": "type TypeId = \"~@effect/sql-sqlite-do/SqliteClient\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/do/src/SqliteClient.ts#L47"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/do/src/SqliteClient.ts#L59"
   },
   {
     "_tag": "Constant",
@@ -173,7 +173,7 @@
     "since": "4.0.0",
     "category": "constructors",
     "signature": "declare const run: <R2 = never>({ loader, schemaDirectory, table }: Migrator.MigratorOptions<R2>) => Effect.Effect<ReadonlyArray<readonly [id: number, name: string]>, Migrator.MigrationError | SqlError, Client.SqlClient | R2>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/do/src/SqliteMigrator.ts#L29"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/do/src/SqliteMigrator.ts#L44"
   },
   {
     "_tag": "Function",
@@ -189,7 +189,7 @@
     "since": "4.0.0",
     "category": "constructors",
     "signature": "declare const layer: <R>(options: Migrator.MigratorOptions<R>) => Layer.Layer<never, Migrator.MigrationError | SqlError, Client.SqlClient | R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/do/src/SqliteMigrator.ts#L43"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/do/src/SqliteMigrator.ts#L58"
   },
   {
     "_tag": "Export",
@@ -205,6 +205,6 @@
     "since": "4.0.0",
     "category": null,
     "signature": "export * from \"effect/unstable/sql/Migrator\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/do/src/SqliteMigrator.ts#L21"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/do/src/SqliteMigrator.ts#L36"
   }
 ]

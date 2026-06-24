@@ -43,6 +43,10 @@ export interface Options {
      * Disable automatic limits updates from response headers.
      */
     readonly disableResponseInspection?: boolean | undefined
+    /**
+     * Disable adaptive learning from `Retry-After` responses.
+     */
+    readonly disableAdaptiveLearning?: boolean | undefined
   }
 ```
 

@@ -20,6 +20,10 @@ export interface MssqlClientConfig {
   readonly username?: string | undefined
   readonly password?: Redacted.Redacted | undefined
   readonly connectTimeout?: Duration.Input | undefined
+  readonly cancelTimeout?: Duration.Input | undefined
+  readonly connectionRetryInterval?: Duration.Input | undefined
+  readonly multiSubnetFailover?: boolean | undefined
+  readonly maxRetriesOnTransientErrors?: number | undefined
 
   readonly minConnections?: number | undefined
   readonly maxConnections?: number | undefined

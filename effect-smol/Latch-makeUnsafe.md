@@ -46,6 +46,6 @@ const program = Effect.all([waiter, opener])
 declare const makeUnsafe: (open?: boolean | undefined) => Latch
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Latch.ts#L157)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Latch.ts#L166)
 
 Since v4.0.0
