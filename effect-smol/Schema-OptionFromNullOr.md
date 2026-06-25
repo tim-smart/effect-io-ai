@@ -13,6 +13,6 @@ export interface OptionFromNullOr<S extends Constraint> extends decodeTo<Option<
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8542)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8555)
 
 Since v3.10.0

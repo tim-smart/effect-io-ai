@@ -48,6 +48,6 @@ const program = f("hello")
 type Return<A, E, R> = Generator<Effect<any, E, R>, A, any>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L9386)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L9392)
 
 Since v3.19.0

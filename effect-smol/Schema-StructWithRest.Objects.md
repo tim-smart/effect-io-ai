@@ -12,6 +12,6 @@ Constraint for object-like schemas that can be used as the fixed portion of a
 type Objects = Constraint & { readonly ast: SchemaAST.Objects }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3795)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3808)
 
 Since v4.0.0

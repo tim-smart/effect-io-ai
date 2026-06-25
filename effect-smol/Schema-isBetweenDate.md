@@ -25,6 +25,6 @@ shifting exclusive bounds by one millisecond.
 declare const isBetweenDate: (options: { readonly minimum: globalThis.Date; readonly maximum: globalThis.Date; readonly exclusiveMinimum?: boolean | undefined; readonly exclusiveMaximum?: boolean | undefined; }, annotations?: Annotations.Filter) => SchemaAST.Filter<globalThis.Date>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7688)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7701)
 
 Since v4.0.0

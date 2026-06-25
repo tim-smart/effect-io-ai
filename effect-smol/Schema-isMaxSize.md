@@ -25,6 +25,6 @@ sets and maps, interpret it as final cardinality.
 declare const isMaxSize: (maxSize: number, annotations?: Annotations.Filter) => SchemaAST.Filter<{ readonly size: number; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8104)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8117)
 
 Since v4.0.0

@@ -20,6 +20,6 @@ intentionally want parsing to accept every input value.
 declare const any: Any
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L919)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L931)
 
 Since v4.0.0

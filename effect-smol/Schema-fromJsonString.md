@@ -13,6 +13,6 @@ export interface fromJsonString<S extends Constraint> extends decodeTo<S, String
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10894)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10907)
 
 Since v4.0.0

@@ -13,6 +13,6 @@ export interface ArrayEnsure<S extends Constraint> extends decodeTo<$Array<toTyp
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4524)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4537)
 
 Since v3.10.0

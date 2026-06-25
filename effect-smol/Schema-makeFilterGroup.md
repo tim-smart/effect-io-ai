@@ -12,6 +12,6 @@ optional shared annotations to the group as a whole.
 declare const makeFilterGroup: <T>(checks: readonly [SchemaAST.Check<T>, ...Array<SchemaAST.Check<T>>], annotations?: Annotations.Filter | undefined) => SchemaAST.FilterGroup<T>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6439)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6452)
 
 Since v4.0.0

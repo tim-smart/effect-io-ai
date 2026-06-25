@@ -22,6 +22,6 @@ optics or codecs that expose a cause as its ordered array of encoded reasons.
 type CauseIso<E, D> = ReadonlyArray<CauseReasonIso<E, D>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9224)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9237)
 
 Since v4.0.0

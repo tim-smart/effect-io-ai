@@ -37,6 +37,6 @@ Effect.runPromise(program).then(console.log)
 declare const transposeOption: <A = never, E = never, R = never>(self: Option<Effect<A, E, R>>) => Effect<Option<A>, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1851)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Effect.ts#L1857)
 
 Since v3.13.0

@@ -23,6 +23,6 @@ constraint to ensure generated numbers are integers.
 declare const isInt: (annotations?: Annotations.Filter) => SchemaAST.Filter<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7441)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7454)
 
 Since v4.0.0

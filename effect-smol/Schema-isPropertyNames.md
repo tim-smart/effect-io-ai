@@ -21,6 +21,6 @@ in JSON Schema.
 declare const isPropertyNames: (keySchema: Constraint, annotations?: Annotations.Filter) => SchemaAST.Filter<object>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8314)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8327)
 
 Since v4.0.0
