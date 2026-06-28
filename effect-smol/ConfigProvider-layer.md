@@ -42,6 +42,6 @@ const program = Effect.gen(function*() {
 declare const layer: <E = never, R = never>(self: ConfigProvider | Effect.Effect<ConfigProvider, E, R>) => Layer.Layer<never, E, Exclude<R, Scope>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L630)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L631)
 
 Since v4.0.0

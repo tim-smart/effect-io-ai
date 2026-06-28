@@ -16,6 +16,7 @@ underscore-separated identifiers.
 - `kebabCase` for lowercase hyphen-separated output
 - `camelCase` for lower-initial camelCase output
 - `pascalCase` for upper-initial PascalCase output
+- `configCase` for configuration key casing that preserves numeric word groups
 - `noCase` for configurable delimiters and part transforms
 
 **Signature**
@@ -24,6 +25,6 @@ underscore-separated identifiers.
 declare const constantCase: (self: string) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L1366)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L1379)
 
 Since v4.0.0

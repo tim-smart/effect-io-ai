@@ -22,6 +22,6 @@ joined with underscores.
 declare const snakeCase: (self: string) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L1407)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L1441)
 
 Since v4.0.0

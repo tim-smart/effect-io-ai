@@ -50,6 +50,6 @@ const host = Config.string("host").parse(
 declare const fromUnknown: (root: unknown) => ConfigProvider
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L728)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L729)
 
 Since v4.0.0

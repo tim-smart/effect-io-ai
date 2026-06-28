@@ -24,6 +24,6 @@ hyphen-separated text.
 declare const kebabCase: (self: string) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L1388)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/String.ts#L1422)
 
 Since v4.0.0

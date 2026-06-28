@@ -12,8 +12,9 @@ environment variables.
 
 **Details**
 
-Numeric segments are left unchanged. This is a specialization of
-`mapInput`.
+Numeric segments are left unchanged. String segments use `String.configCase`
+so numeric word groups such as `v2` are preserved for environment variable
+names. This is a specialization of `mapInput`.
 
 **Example** (Resolving camelCase keys to env vars)
 
@@ -37,6 +38,6 @@ const provider = ConfigProvider.fromEnv({
 declare const constantCase: (self: ConfigProvider) => ConfigProvider
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L534)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L535)
 
 Since v2.0.0
