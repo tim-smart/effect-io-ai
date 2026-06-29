@@ -24,6 +24,6 @@ schema methods such as `annotate`, `check`, `rebuild`, `make`, or
 export interface ConstraintEncoder<out E, out RE = never> extends ConstraintCodec<unknown, E, unknown, RE> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L745)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L751)
 
 Since v4.0.0

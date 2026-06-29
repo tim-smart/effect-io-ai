@@ -28,6 +28,6 @@ export interface ConstraintCodec<out T, out E = T, out RD = never, out RE = neve
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L702)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L708)
 
 Since v4.0.0

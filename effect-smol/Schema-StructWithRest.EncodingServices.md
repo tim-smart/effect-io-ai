@@ -16,6 +16,6 @@ type EncodingServices<S, Records> = Services<
   >
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3896)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3902)
 
 Since v4.0.0

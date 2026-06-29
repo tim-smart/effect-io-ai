@@ -15,6 +15,6 @@ export interface RedactedFromValue<S extends Constraint>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8981)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8987)
 
 Since v4.0.0

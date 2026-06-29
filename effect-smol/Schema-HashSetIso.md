@@ -12,6 +12,6 @@ using the element schema's `Iso` type.
 type HashSetIso<Value> = ReadonlyArray<Value["Iso"]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10027)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10033)
 
 Since v4.0.0

@@ -30,6 +30,6 @@ export interface toCodecArrayFromSingle<S extends Constraint> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L13515)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L13526)
 
 Since v4.0.0

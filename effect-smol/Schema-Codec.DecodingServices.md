@@ -21,6 +21,6 @@ type RD = Schema.Codec.DecodingServices<typeof schema>
 type DecodingServices<S> = S extends { readonly "DecodingServices": infer R } ? R : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L864)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L870)
 
 Since v4.0.0

@@ -16,6 +16,6 @@ export interface Literal<L extends SchemaAST.LiteralValue>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2576)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2582)
 
 Since v3.10.0

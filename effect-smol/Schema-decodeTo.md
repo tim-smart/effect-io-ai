@@ -32,6 +32,6 @@ export interface decodeTo<To extends Constraint, From extends Constraint, RD = n
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5323)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5329)
 
 Since v4.0.0

@@ -13,6 +13,6 @@ type EncodingServices<Key, Value> = | Key["EncodingServices"]
     | Value["EncodingServices"]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3695)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3701)
 
 Since v4.0.0

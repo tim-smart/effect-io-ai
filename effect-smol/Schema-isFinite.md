@@ -23,6 +23,6 @@ When generating test data with fast-check, this applies `noNaN: true` and
 declare const isFinite: (annotations?: Annotations.Filter) => SchemaAST.Filter<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7023)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7029)
 
 Since v4.0.0

@@ -13,6 +13,6 @@ export interface Duration extends declare<Duration_.Duration> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10498)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10504)
 
 Since v3.10.0

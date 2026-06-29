@@ -13,6 +13,6 @@ record schemas.
 type MakeIn<S, Records> = Intersect<S, Records, "~type.make">
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3866)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3872)
 
 Since v4.0.0

@@ -22,6 +22,6 @@ schema.
 declare const make: <S extends Constraint>(ast: S["ast"], options?: object) => S
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2170)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2176)
 
 Since v3.10.0

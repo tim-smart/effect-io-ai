@@ -27,6 +27,12 @@ export interface MakeOptions {
    * Whether to disable validation for the schema.
    */
   readonly disableChecks?: boolean | undefined
+
+  /** @internal */
+  readonly "~payload"?: {
+    readonly token: unknown
+    readonly value: unknown
+  }
 }
 ```
 
