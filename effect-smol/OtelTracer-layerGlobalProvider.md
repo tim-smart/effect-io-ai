@@ -1,7 +1,7 @@
 Package: `@effect/opentelemetry`<br />
-Module: `Tracer`<br />
+Module: `OtelTracer`<br />
 
-## Tracer.layerGlobalProvider
+## OtelTracer.layerGlobalProvider
 
 Layer that provides the current global OpenTelemetry tracer provider.
 
@@ -11,6 +11,6 @@ Layer that provides the current global OpenTelemetry tracer provider.
 declare const layerGlobalProvider: Layer.Layer<OtelTracerProvider, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Tracer.ts#L171)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/OtelTracer.ts#L171)
 
 Since v4.0.0

@@ -11,6 +11,6 @@ Converts a Web `Request` into an `HttpClientRequest`, preserving method, URL, he
 declare const fromWeb: (request: globalThis.Request) => HttpClientRequest
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClientRequest.ts#L869)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClientRequest.ts#L870)
 
 Since v4.0.0

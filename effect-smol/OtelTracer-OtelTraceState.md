@@ -1,7 +1,7 @@
 Package: `@effect/opentelemetry`<br />
-Module: `Tracer`<br />
+Module: `OtelTracer`<br />
 
-## Tracer.OtelTraceState
+## OtelTracer.OtelTraceState
 
 Context service containing OpenTelemetry trace state used when constructing external span contexts.
 
@@ -11,6 +11,6 @@ Context service containing OpenTelemetry trace state used when constructing exte
 declare class OtelTraceState
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Tracer.ts#L79)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/OtelTracer.ts#L79)
 
 Since v4.0.0

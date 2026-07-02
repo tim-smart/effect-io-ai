@@ -38,6 +38,6 @@ export interface AsyncFiberError extends YieldableError {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1679)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1681)
 
 Since v4.0.0

@@ -19,6 +19,6 @@ export interface HttpClientRequest extends Inspectable.Inspectable, Pipeable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClientRequest.ts#L49)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClientRequest.ts#L50)
 
 Since v4.0.0

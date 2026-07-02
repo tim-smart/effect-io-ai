@@ -31,9 +31,9 @@ console.log(updatedUrl.toString())
 **Signature**
 
 ```ts
-declare const setUrlParams: { (urlParams: UrlParams.UrlParams): (url: URL) => URL; (url: URL, urlParams: UrlParams.UrlParams): URL; }
+declare const setUrlParams: { (urlParams: UrlParams.Input): (url: URL) => URL; (url: URL, urlParams: UrlParams.Input): URL; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Url.ts#L261)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Url.ts#L316)
 
 Since v4.0.0

@@ -13,11 +13,12 @@ a native `URLSearchParams` value.
 **Signature**
 
 ```ts
-type Input = | CoercibleRecordInput
+type Input = | UrlParams
+  | CoercibleRecordInput
   | Iterable<readonly [string, Coercible]>
   | URLSearchParams
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/UrlParams.ts#L67)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/UrlParams.ts#L65)
 
 Since v4.0.0

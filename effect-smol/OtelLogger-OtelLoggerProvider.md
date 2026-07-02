@@ -1,7 +1,7 @@
 Package: `@effect/opentelemetry`<br />
-Module: `Logger`<br />
+Module: `OtelLogger`<br />
 
-## Logger.OtelLoggerProvider
+## OtelLogger.OtelLoggerProvider
 
 Context service containing the OpenTelemetry `LoggerProvider` used to emit Effect log records.
 
@@ -11,6 +11,6 @@ Context service containing the OpenTelemetry `LoggerProvider` used to emit Effec
 declare class OtelLoggerProvider
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Logger.ts#L35)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/OtelLogger.ts#L35)
 
 Since v4.0.0

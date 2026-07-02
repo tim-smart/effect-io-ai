@@ -11,6 +11,6 @@ Sets the request URL. When given a `URL`, its search parameters and hash are ext
 declare const setUrl: { (url: string | URL): (self: HttpClientRequest) => HttpClientRequest; (self: HttpClientRequest, url: string | URL): HttpClientRequest; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClientRequest.ts#L395)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClientRequest.ts#L396)
 
 Since v4.0.0

@@ -1,21 +1,21 @@
 Package: `@effect/opentelemetry`<br />
-Module: `Metrics`<br />
+Module: `OtelMetrics`<br />
 
-## Metrics.layer
+## OtelMetrics.layer
 
 Creates a Layer that registers a metric producer with metric readers.
 
 **Example** (Creating a metrics layer with temporality)
 
 ```ts
-import { Metrics } from "@effect/opentelemetry"
+import { OtelMetrics } from "@effect/opentelemetry"
 import { PeriodicExportingMetricReader } from "@opentelemetry/sdk-metrics"
 import { OTLPMetricExporter } from "@opentelemetry/exporter-metrics-otlp-http"
 
 const metricExporter = new OTLPMetricExporter({ url: "<your-otel-url>" })
 
 // Use delta temporality for backends like Datadog or Dynatrace
-const metricsLayer = Metrics.layer(
+const metricsLayer = OtelMetrics.layer(
   () => new PeriodicExportingMetricReader({
     exporter: metricExporter,
     exportIntervalMillis: 10000
@@ -24,7 +24,7 @@ const metricsLayer = Metrics.layer(
 )
 
 // Use cumulative temporality for backends like Prometheus (default)
-const cumulativeLayer = Metrics.layer(
+const cumulativeLayer = OtelMetrics.layer(
   () => new PeriodicExportingMetricReader({ exporter: metricExporter }),
   { temporality: "cumulative" }
 )
@@ -36,6 +36,6 @@ const cumulativeLayer = Metrics.layer(
 declare const layer: (evaluate: LazyArg<MetricReader | Arr.NonEmptyReadonlyArray<MetricReader>>, options?: { readonly shutdownTimeout?: Duration.Input | undefined; readonly temporality?: TemporalityPreference | undefined; }) => Layer.Layer<never, never, Resource>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Metrics.ts#L128)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/OtelMetrics.ts#L128)
 
 Since v4.0.0

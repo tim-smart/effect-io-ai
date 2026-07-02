@@ -1,7 +1,7 @@
 Package: `@effect/opentelemetry`<br />
-Module: `Metrics`<br />
+Module: `OtelMetrics`<br />
 
-## Metrics.TemporalityPreference
+## OtelMetrics.TemporalityPreference
 
 Determines how metric values relate to the time interval over which they
 are aggregated.
@@ -19,6 +19,6 @@ dependency on previous measurements.
 type TemporalityPreference = "cumulative" | "delta"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Metrics.ts#L36)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/OtelMetrics.ts#L36)
 
 Since v4.0.0

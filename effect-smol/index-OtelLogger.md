@@ -1,14 +1,14 @@
 Package: `@effect/opentelemetry`<br />
 Module: `index`<br />
 
-## index.Metrics
+## index.OtelLogger
 
-Re-exports all named exports from the "./Metrics.ts" module as `Metrics`.
+Re-exports all named exports from the "./OtelLogger.ts" module as `OtelLogger`.
 
 **Signature**
 
 ```ts
-export * as Metrics from "./Metrics.ts"
+export * as OtelLogger from "./OtelLogger.ts"
 ```
 
 [Source](https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/index.ts#L15)

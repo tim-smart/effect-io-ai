@@ -47,7 +47,7 @@ console.log(errors[0].message) // "boom"
 **Signature**
 
 ```ts
-declare const prettyErrors: <E>(self: Cause<E>) => Array<Error>
+declare const prettyErrors: <E>(self: Cause<E>, options?: { readonly includeCauseInStack?: boolean | undefined; }) => Array<Error>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1111)

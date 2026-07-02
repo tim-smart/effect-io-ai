@@ -11,6 +11,6 @@ Applies request options to an `HttpClientRequest`, returning a new request.
 declare const modify: { (options: Options): (self: HttpClientRequest) => HttpClientRequest; (self: HttpClientRequest, options: Options): HttpClientRequest; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClientRequest.ts#L242)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClientRequest.ts#L243)
 
 Since v4.0.0

@@ -1,7 +1,7 @@
 Package: `@effect/opentelemetry`<br />
-Module: `Tracer`<br />
+Module: `OtelTracer`<br />
 
-## Tracer.currentOtelSpan
+## OtelTracer.currentOtelSpan
 
 Gets the current OpenTelemetry span.
 
@@ -18,6 +18,6 @@ conforms to the OpenTelemetry `Span` interface.
 declare const currentOtelSpan: Effect.Effect<Otel.Span, Cause.NoSuchElementError, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Tracer.ts#L261)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/OtelTracer.ts#L261)
 
 Since v4.0.0

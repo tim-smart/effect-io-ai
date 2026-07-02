@@ -16,6 +16,6 @@ unmentioned existing parameters are preserved.
 declare const setAll: { (input: Input): (self: UrlParams) => UrlParams; (self: UrlParams, input: Input): UrlParams; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/UrlParams.ts#L391)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/UrlParams.ts#L393)
 
 Since v4.0.0

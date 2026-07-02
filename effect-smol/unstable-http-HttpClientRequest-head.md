@@ -11,6 +11,6 @@ Creates a `HEAD` request for the specified URL.
 declare const head: (url: string | URL, options?: Options.NoUrl) => HttpClientRequest
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClientRequest.ts#L218)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClientRequest.ts#L219)
 
 Since v4.0.0

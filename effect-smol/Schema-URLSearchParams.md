@@ -13,6 +13,6 @@ export interface URLSearchParams extends instanceOf<globalThis.URLSearchParams> 
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L11234)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L11237)
 
 Since v4.0.0

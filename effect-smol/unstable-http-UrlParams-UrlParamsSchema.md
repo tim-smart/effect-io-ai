@@ -11,6 +11,6 @@ Schema type for `UrlParams`.
 export interface UrlParamsSchema extends Schema.declare<UrlParams, ReadonlyArray<readonly [string, string]>> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/UrlParams.ts#L222)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/UrlParams.ts#L224)
 
 Since v4.0.0

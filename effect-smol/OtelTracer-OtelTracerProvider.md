@@ -1,7 +1,7 @@
 Package: `@effect/opentelemetry`<br />
-Module: `Tracer`<br />
+Module: `OtelTracer`<br />
 
-## Tracer.OtelTracerProvider
+## OtelTracer.OtelTracerProvider
 
 Context service containing the OpenTelemetry `TracerProvider` used to obtain tracers.
 
@@ -11,6 +11,6 @@ Context service containing the OpenTelemetry `TracerProvider` used to obtain tra
 declare class OtelTracerProvider
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Tracer.ts#L57)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/OtelTracer.ts#L57)
 
 Since v4.0.0

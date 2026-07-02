@@ -8,9 +8,9 @@ Converts an `HttpClientRequest` safely to a Web `Request` as a `Result`, failing
 **Signature**
 
 ```ts
-declare const toWebResult: (self: HttpClientRequest, options?: { readonly signal?: AbortSignal | undefined; readonly context?: Context.Context<never> | undefined; }) => Result.Result<Request, UrlParams.UrlParamsError>
+declare const toWebResult: (self: HttpClientRequest, options?: { readonly signal?: AbortSignal | undefined; readonly context?: Context.Context<never> | undefined; }) => Result.Result<Request, Url.UrlError>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClientRequest.ts#L903)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClientRequest.ts#L904)
 
 Since v4.0.0

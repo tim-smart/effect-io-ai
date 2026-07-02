@@ -1,7 +1,7 @@
 Package: `@effect/opentelemetry`<br />
-Module: `Tracer`<br />
+Module: `OtelTracer`<br />
 
-## Tracer.OtelTracer
+## OtelTracer.OtelTracer
 
 Context service containing the OpenTelemetry `Tracer` used to create spans for Effect tracing.
 
@@ -11,6 +11,6 @@ Context service containing the OpenTelemetry `Tracer` used to create spans for E
 declare class OtelTracer
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Tracer.ts#L46)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/OtelTracer.ts#L46)
 
 Since v4.0.0

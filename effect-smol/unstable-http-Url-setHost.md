@@ -11,6 +11,6 @@ Updates the host (domain and port) of the URL.
 declare const setHost: { (host: string): (url: URL) => URL; (url: URL, host: string): URL; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Url.ts#L134)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Url.ts#L189)
 
 Since v4.0.0

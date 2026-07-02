@@ -13,6 +13,6 @@ export interface DateTimeZonedFromString extends decodeTo<DateTimeZoned, String>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L12344)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L12347)
 
 Since v4.0.0

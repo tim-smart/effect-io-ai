@@ -19,6 +19,6 @@ export interface UrlParams extends Pipeable, Inspectable, Iterable<readonly [str
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/UrlParams.ts#L43)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/UrlParams.ts#L41)
 
 Since v4.0.0

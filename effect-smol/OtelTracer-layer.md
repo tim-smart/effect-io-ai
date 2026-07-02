@@ -1,7 +1,7 @@
 Package: `@effect/opentelemetry`<br />
-Module: `Tracer`<br />
+Module: `OtelTracer`<br />
 
-## Tracer.layer
+## OtelTracer.layer
 
 Layer that creates an OpenTelemetry tracer from a provider and resource, then installs it as the Effect tracer.
 
@@ -22,6 +22,6 @@ want Effect spans backed by a tracer derived from them.
 declare const layer: Layer.Layer<OtelTracer, never, OtelTracerProvider | Resource>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Tracer.ts#L237)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/OtelTracer.ts#L237)
 
 Since v4.0.0

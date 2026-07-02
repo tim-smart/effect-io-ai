@@ -1,7 +1,7 @@
 Package: `@effect/opentelemetry`<br />
-Module: `Logger`<br />
+Module: `OtelLogger`<br />
 
-## Logger.logLevelToSeverityNumber
+## OtelLogger.logLevelToSeverityNumber
 
 Maps an Effect `LogLevel` to the corresponding OpenTelemetry `SeverityNumber`.
 
@@ -19,6 +19,6 @@ treated as `UNSPECIFIED` by validating backends.
 declare const logLevelToSeverityNumber: (level: LogLevel.LogLevel) => SeverityNumber
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Logger.ts#L54)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/OtelLogger.ts#L54)
 
 Since v4.0.0

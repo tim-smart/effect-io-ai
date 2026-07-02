@@ -1,7 +1,7 @@
 Package: `@effect/opentelemetry`<br />
-Module: `Tracer`<br />
+Module: `OtelTracer`<br />
 
-## Tracer.layerTracer
+## OtelTracer.layerTracer
 
 Layer that creates an OpenTelemetry tracer from the provided tracer provider and resource metadata.
 
@@ -11,6 +11,6 @@ Layer that creates an OpenTelemetry tracer from the provided tracer provider and
 declare const layerTracer: Layer.Layer<OtelTracer, never, OtelTracerProvider | Resource>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Tracer.ts#L182)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/OtelTracer.ts#L182)
 
 Since v4.0.0

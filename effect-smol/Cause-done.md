@@ -32,6 +32,6 @@ Effect.runPromiseExit(program).then((exit) => {
 declare const done: <A = void>(value?: A) => Effect.Effect<never, Done<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1403)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cause.ts#L1405)
 
 Since v4.0.0
