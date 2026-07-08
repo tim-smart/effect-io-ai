@@ -40,6 +40,6 @@ const program = Effect.gen(function*() {
 declare const MiB: (n: number) => Size
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L528)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L538)
 
 Since v4.0.0

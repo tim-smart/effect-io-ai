@@ -13,6 +13,6 @@ export interface TimeZoneNamedFromString extends decodeTo<TimeZoneNamed, String>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L12168)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L12214)
 
 Since v4.0.0

@@ -13,6 +13,6 @@ annotations are those attached via `annotateKey` and live on the AST's
 declare const resolveAnnotationsKey: <S extends Constraint>(schema: S) => Annotations.Key<S["Type"]> | undefined
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L14136)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L14183)
 
 Since v4.0.0

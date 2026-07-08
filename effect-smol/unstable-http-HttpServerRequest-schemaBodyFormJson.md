@@ -14,9 +14,9 @@ with the supplied schema.
 **Signature**
 
 ```ts
-declare const schemaBodyFormJson: <A, I, RD, RE>(schema: Schema.Codec<A, I, RD, RE>, options?: ParseOptions | undefined) => (field: string) => Effect.Effect<A, Schema.SchemaError | HttpServerError, Scope.Scope | Path.Path | FileSystem.FileSystem | HttpServerRequest | RD>
+declare const schemaBodyFormJson: <A, RD>(schema: Schema.ConstraintDecoder<A, RD>, options?: ParseOptions | undefined) => (field: string) => Effect.Effect<A, Schema.SchemaError | HttpServerError, Scope.Scope | Path.Path | FileSystem.FileSystem | HttpServerRequest | RD>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerRequest.ts#L345)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerRequest.ts#L346)
 
 Since v4.0.0

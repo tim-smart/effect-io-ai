@@ -9,8 +9,8 @@ or the schema must encode to a record of those values.
 **Signature**
 
 ```ts
-type HeadersConstraint = | Record<string, Schema.Codec<unknown, string | undefined, unknown, unknown>>
-  | Schema.Codec<unknown, Record<string, string | undefined>, unknown, unknown>
+type HeadersConstraint = | Record<string, Schema.Encoder<string | undefined, unknown>>
+  | Schema.Encoder<Record<string, string | undefined>, unknown>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L1050)

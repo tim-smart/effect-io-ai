@@ -14,7 +14,7 @@ JSON serialization fails.
 **Signature**
 
 ```ts
-declare const schemaJson: <A, I, RD, RE>(schema: Schema.Codec<A, I, RD, RE>, options?: ParseOptions | undefined) => (body: A, options?: Options.WithContentType | undefined) => Effect.Effect<HttpServerResponse, Body.HttpBodyError, RE>
+declare const schemaJson: <A, RE>(schema: Schema.ConstraintCodec<A, unknown, unknown, RE>, options?: ParseOptions | undefined) => (body: A, options?: Options.WithContentType | undefined) => Effect.Effect<HttpServerResponse, Body.HttpBodyError, RE>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerResponse.ts#L316)

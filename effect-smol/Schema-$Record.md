@@ -26,6 +26,6 @@ export interface $Record<Key extends Record.Key, Value extends Constraint> exten
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3731)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3777)
 
 Since v4.0.0

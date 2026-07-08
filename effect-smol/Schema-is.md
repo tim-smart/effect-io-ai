@@ -39,9 +39,9 @@ if (isString(value)) {
 **Signature**
 
 ```ts
-declare const is: <T>(schema: Schema<T>) => <I>(input: I) => input is I & T
+declare const is: <S extends Constraint>(schema: S) => <I>(input: I) => input is I & S["Type"]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1256)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1302)
 
 Since v3.10.0

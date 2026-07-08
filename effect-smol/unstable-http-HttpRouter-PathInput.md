@@ -12,6 +12,6 @@ beginning with `/` or the wildcard `*`.
 type PathInput = `/${string}` | "*"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpRouter.ts#L684)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpRouter.ts#L682)
 
 Since v4.0.0

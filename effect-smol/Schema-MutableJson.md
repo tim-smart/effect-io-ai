@@ -12,6 +12,6 @@ Recursive TypeScript type for mutable JSON values: `null`, `number`,
 type MutableJson = null | number | boolean | string | MutableJsonArray | MutableJsonObject
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L14080)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L14127)
 
 Since v4.0.0

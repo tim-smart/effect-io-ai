@@ -20,6 +20,6 @@ succeeds with a fallback value or re-fails with a (possibly different) issue.
 declare const catchEncoding: <S extends Constraint>(f: (issue: SchemaIssue.Issue) => Effect.Effect<Option_.Option<S["Encoded"]>, SchemaIssue.Issue>) => (self: S) => middlewareEncoding<S, S["EncodingServices"]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5290)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5336)
 
 Since v4.0.0

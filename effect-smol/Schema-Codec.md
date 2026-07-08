@@ -13,8 +13,8 @@ about a schema — both what it decodes to and what it serializes from/to.
 Most concrete schemas produced by this module implement `Codec`.
 
 For APIs that only need one direction, prefer the narrower views:
-- `ConstraintDecoder``<T, RD>` — decode-only
-- `ConstraintEncoder``<E, RE>` — encode-only
+- `Decoder``<T, RD>` — decode-only
+- `Encoder``<E, RE>` — encode-only
 - `Schema``<T>` — type-only (no encoded representation)
 
 **Example** (Accepting a codec that decodes to `number` from `string`)
@@ -45,6 +45,6 @@ export interface Codec<out T, out E = T, out RD = never, out RE = never> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L949)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L924)
 
 Since v4.0.0

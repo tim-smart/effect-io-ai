@@ -13,9 +13,9 @@ key is also used as the atom label when the atom does not already have one.
 **Signature**
 
 ```ts
-declare const serializable: { <R extends Atom<any>, S extends Schema.Codec<Type<R>, any>>(options: { readonly key: string; readonly schema: S; }): (self: R) => R & Serializable<S>; <R extends Atom<any>, S extends Schema.Codec<Type<R>, any>>(self: R, options: { readonly key: string; readonly schema: S; }): R & Serializable<S>; }
+declare const serializable: { <R extends Atom<any>, S extends Schema.ConstraintCodec<Type<R>, any>>(options: { readonly key: string; readonly schema: S; }): (self: R) => R & Serializable<S>; <R extends Atom<any>, S extends Schema.ConstraintCodec<Type<R>, any>>(self: R, options: { readonly key: string; readonly schema: S; }): R & Serializable<S>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L2439)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L2442)
 
 Since v4.0.0

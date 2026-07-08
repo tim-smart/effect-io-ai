@@ -15,13 +15,13 @@ contribute their decoded `Type`.
 ```ts
 type Type<Parts> = Parts extends readonly [infer Head, ...infer Tail] ? readonly [
       Head extends TemplateLiteral.LiteralPart ? Head :
-        Head extends Codec<infer T, unknown, unknown, unknown> ? T
+        Head extends ConstraintDecoder<infer T, unknown> ? T
         : never,
       ...Type<Tail>
     ]
     : []
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2758)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2804)
 
 Since v3.10.0

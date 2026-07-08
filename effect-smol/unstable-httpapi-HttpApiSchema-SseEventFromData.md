@@ -9,7 +9,7 @@ Event schema produced when `StreamSse` is constructed from a JSON data schema.
 
 ```ts
 export interface SseEventFromData<Data extends Schema.Constraint> extends
-  Schema.Codec<
+  Schema.ConstraintCodec<
     {
       readonly id: string | undefined
       readonly event: string

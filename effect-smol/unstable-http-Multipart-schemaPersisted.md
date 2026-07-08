@@ -13,7 +13,7 @@ with `SchemaError` when validation fails.
 **Signature**
 
 ```ts
-declare const schemaPersisted: <A, I extends Partial<Persisted>, RD, RE>(schema: Schema.Codec<A, I, RD, RE>) => (input: unknown, options?: ParseOptions) => Effect.Effect<A, Schema.SchemaError, RD>
+declare const schemaPersisted: <A, I extends Partial<Persisted>, RD>(schema: Schema.ConstraintCodec<A, I, RD, unknown>) => (input: unknown, options?: ParseOptions) => Effect.Effect<A, Schema.SchemaError, RD>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Multipart.ts#L336)

@@ -10,9 +10,9 @@ and new values, and can apply patches back to the typed value.
 **Signature**
 
 ```ts
-declare const toDifferJsonPatch: <T, E>(schema: Codec<T, E>) => Differ<T, JsonPatch.JsonPatch>
+declare const toDifferJsonPatch: <T>(schema: ConstraintCodec<T, unknown>) => Differ<T, JsonPatch.JsonPatch>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L13961)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L14008)
 
 Since v4.0.0

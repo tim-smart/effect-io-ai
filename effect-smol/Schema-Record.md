@@ -37,6 +37,6 @@ console.log(result)
 declare const Record: <Key extends Record.Key, Value extends Constraint>(key: Key, value: Value, options?: { readonly keyValueCombiner: { readonly decode?: Combiner.Combiner<readonly [Key["Type"], Value["Type"]]> | undefined; readonly encode?: Combiner.Combiner<readonly [Key["Encoded"], Value["Encoded"]]> | undefined; }; }) => $Record<Key, Value>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3780)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3826)
 
 Since v3.10.0

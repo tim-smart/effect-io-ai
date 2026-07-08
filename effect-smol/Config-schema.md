@@ -51,7 +51,7 @@ const provider = ConfigProvider.fromUnknown({
 **Signature**
 
 ```ts
-declare const schema: <T, E>(codec: Schema.Codec<T, E>, path?: string | ConfigProvider.Path) => Config<T>
+declare const schema: <T>(codec: Schema.ConstraintCodec<T, unknown>, path?: string | ConfigProvider.Path) => Config<T>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Config.ts#L642)

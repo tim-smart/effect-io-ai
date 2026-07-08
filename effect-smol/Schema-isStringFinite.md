@@ -23,6 +23,6 @@ constraint to ensure generated strings match the number string pattern.
 declare const isStringFinite: (annotations?: Annotations.Filter) => SchemaAST.Filter<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6542)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6588)
 
 Since v4.0.0

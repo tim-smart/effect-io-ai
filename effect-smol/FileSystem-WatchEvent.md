@@ -25,6 +25,6 @@ reported `path`.
 type WatchEvent = WatchEvent.Create | WatchEvent.Update | WatchEvent.Remove
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L1295)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L1308)
 
 Since v4.0.0

@@ -12,6 +12,6 @@ The provided schemas must have a `identifier` annotation.
 declare class AdditionalSchemas
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApi.ts#L313)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApi.ts#L311)
 
 Since v4.0.0

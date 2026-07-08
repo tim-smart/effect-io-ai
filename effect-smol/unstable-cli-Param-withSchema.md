@@ -24,7 +24,7 @@ const email = Param.string(Param.flagKind, "email").pipe(
 **Signature**
 
 ```ts
-declare const withSchema: { <A, B>(schema: Schema.Codec<B, A, Environment, Environment>): <Kind extends ParamKind>(self: Param<Kind, A>) => Param<Kind, B>; <Kind extends ParamKind, A, B>(self: Param<Kind, A>, schema: Schema.Codec<B, A, Environment, Environment>): Param<Kind, B>; }
+declare const withSchema: { <A, B>(schema: Schema.ConstraintCodec<B, A, Environment, unknown>): <Kind extends ParamKind>(self: Param<Kind, A>) => Param<Kind, B>; <Kind extends ParamKind, A, B>(self: Param<Kind, A>, schema: Schema.ConstraintCodec<B, A, Environment, unknown>): Param<Kind, B>; }
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Param.ts#L1723)

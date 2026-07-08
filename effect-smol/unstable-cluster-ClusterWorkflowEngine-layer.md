@@ -17,6 +17,6 @@ durable clock entity used for workflow wakeups.
 declare const layer: Layer.Layer<WorkflowEngine.WorkflowEngine, never, Sharding.Sharding | MessageStorage>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ClusterWorkflowEngine.ts#L772)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ClusterWorkflowEngine.ts#L773)
 
 Since v4.0.0

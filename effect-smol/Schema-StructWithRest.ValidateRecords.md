@@ -42,6 +42,6 @@ type ValidateRecords<S, Records> = [IncompatibleRecords<S, Records>] extends [ne
     }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3960)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4006)
 
 Since v4.0.0

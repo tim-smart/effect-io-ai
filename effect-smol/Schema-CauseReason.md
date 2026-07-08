@@ -22,6 +22,6 @@ export interface CauseReason<E extends Constraint, D extends Constraint> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9042)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9088)
 
 Since v4.0.0

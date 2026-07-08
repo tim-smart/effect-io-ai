@@ -21,6 +21,6 @@ export interface HashSet<Value extends Constraint> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10014)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10060)
 
 Since v3.10.0

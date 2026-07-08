@@ -25,7 +25,7 @@ boundary throw an `Error` whose cause is the underlying `Cause`.
 **Signature**
 
 ```ts
-declare const is: <T>(schema: Schema.Schema<T>) => <I>(input: I) => input is I & T
+declare const is: <S extends Schema.Constraint>(schema: S) => <I>(input: I) => input is I & S["Type"]
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaParser.ts#L173)

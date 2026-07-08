@@ -25,6 +25,6 @@ When generating test data with fast-check, this applies node-local
 declare const isSizeBetween: (minimum: number, maximum: number, annotations?: Annotations.Filter) => SchemaAST.Filter<{ readonly size: number; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8164)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8210)
 
 Since v4.0.0

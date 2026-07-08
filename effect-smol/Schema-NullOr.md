@@ -13,6 +13,6 @@ export interface NullOr<S extends Constraint> extends Union<readonly [S, Null]> 
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4829)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4875)
 
 Since v3.10.0

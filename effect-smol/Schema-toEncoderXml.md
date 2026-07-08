@@ -14,9 +14,9 @@ codec encoding fails.
 **Signature**
 
 ```ts
-declare const toEncoderXml: <T, E, RD, RE>(codec: Codec<T, E, RD, RE>, options?: XmlEncoderOptions) => (t: T) => Effect.Effect<string, SchemaError, RE>
+declare const toEncoderXml: <T, RE>(codec: ConstraintCodec<T, unknown, unknown, RE>, options?: XmlEncoderOptions) => (t: T) => Effect.Effect<string, SchemaError, RE>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L13597)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L13644)
 
 Since v4.0.0

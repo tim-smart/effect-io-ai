@@ -94,6 +94,16 @@ export interface FileSystem {
     gid: number
   ) => Effect.Effect<void, PlatformError>
   /**
+   * Glob a directory.
+   */
+  readonly glob: (
+    pattern: string,
+    options?: {
+      readonly root?: string | undefined
+      readonly exclude?: ReadonlyArray<string> | undefined
+    }
+  ) => Effect.Effect<Array<string>, PlatformError>
+  /**
    * Checks whether a path exists.
    */
   readonly exists: (

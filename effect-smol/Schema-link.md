@@ -12,6 +12,6 @@ Used when building low-level AST transformations that bridge two schema types.
 declare const link: <T>() => <To extends Constraint>(encodeTo: To, transformation: { readonly decode: SchemaGetter.Getter<T, NoInfer<To["Type"]>>; readonly encode: SchemaGetter.Getter<NoInfer<To["Type"]>, T>; }) => SchemaAST.Link
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6319)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6365)
 
 Since v4.0.0

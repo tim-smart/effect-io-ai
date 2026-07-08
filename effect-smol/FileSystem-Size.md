@@ -34,6 +34,6 @@ const truncateToSize = Effect.fnUntraced(function*(path: string, size: FileSyste
 type Size = Brand.Branded<bigint, "Size">
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L390)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/FileSystem.ts#L400)
 
 Since v4.0.0

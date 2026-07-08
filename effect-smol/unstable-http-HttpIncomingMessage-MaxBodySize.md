@@ -11,6 +11,6 @@ Context reference for the optional maximum size allowed when reading an incoming
 declare const MaxBodySize: Context.Reference<FileSystem.Size | undefined>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpIncomingMessage.ts#L115)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpIncomingMessage.ts#L114)
 
 Since v4.0.0

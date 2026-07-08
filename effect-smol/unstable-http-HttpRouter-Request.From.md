@@ -11,6 +11,6 @@ Wraps a type in a request-level marker of the supplied kind.
 type From<Kind, R> = R extends infer T ? Request<Kind, T> : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpRouter.ts#L762)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpRouter.ts#L760)
 
 Since v4.0.0

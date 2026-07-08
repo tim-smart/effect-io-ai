@@ -12,6 +12,6 @@ schema's `Iso` type — the intermediate representation used for round-tripping.
 declare const toCodecIso: <S extends Constraint>(schema: S) => Codec<S["Type"], S["Iso"]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L13441)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L13488)
 
 Since v4.0.0

@@ -16,6 +16,6 @@ active registry.
 declare const refresh: <A>(self: Atom<A>) => Effect.Effect<void, never, AtomRegistry>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L2364)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Atom.ts#L2367)
 
 Since v4.0.0

@@ -17,6 +17,6 @@ return `Option.none`.
 declare const toURL: (self: HttpServerRequest) => Option.Option<URL>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerRequest.ts#L1010)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServerRequest.ts#L1011)
 
 Since v4.0.0

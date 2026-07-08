@@ -21,6 +21,6 @@ export interface Chunk<Value extends Constraint> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10103)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L10149)
 
 Since v3.10.0

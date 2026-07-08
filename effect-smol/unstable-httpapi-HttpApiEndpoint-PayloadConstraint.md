@@ -15,7 +15,7 @@ Payload schema depends on the HTTP method:
 ```ts
 type PayloadConstraint<Method> = Method extends HttpMethod.NoBody ? Record<
     string,
-    Schema.Codec<unknown, string | ReadonlyArray<string> | undefined, unknown, unknown>
+    Schema.Encoder<string | ReadonlyArray<string> | undefined, unknown>
   > :
   Schema.Top | ReadonlyArray<Schema.Top>
 ```

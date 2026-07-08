@@ -9,8 +9,8 @@ Constraint for path parameter schemas: each parameter must encode to
 **Signature**
 
 ```ts
-type ParamsConstraint = | Record<string, Schema.Codec<unknown, string | undefined, unknown, unknown>>
-  | Schema.Codec<unknown, Record<string, string | undefined>, unknown, unknown>
+type ParamsConstraint = | Record<string, Schema.Encoder<string | undefined, unknown>>
+  | Schema.Encoder<Record<string, string | undefined>, unknown>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L1039)

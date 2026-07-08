@@ -36,6 +36,6 @@ try {
 declare const SchemaError: typeof InternalSchema.SchemaError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1017)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1063)
 
 Since v4.0.0

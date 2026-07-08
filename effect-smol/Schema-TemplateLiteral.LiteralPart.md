@@ -11,6 +11,6 @@ Literal value that can be used directly as a part of a `TemplateLiteral`.
 type LiteralPart = string | number | bigint
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2647)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2693)
 
 Since v4.0.0

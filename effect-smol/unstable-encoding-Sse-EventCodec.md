@@ -9,15 +9,15 @@ A constraint for schemas that can decode SSE events.
 
 ```ts
 export interface EventCodec extends
-  Schema.Codec<
+  Schema.ConstraintCodec<
     any,
     {
       readonly id?: string | undefined
       readonly event?: string | undefined
       readonly data: string
     },
-    any,
-    any
+    unknown,
+    unknown
   >
 {}
 ```

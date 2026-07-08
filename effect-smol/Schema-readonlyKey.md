@@ -16,6 +16,6 @@ wrapped with `mutableKey`.
 declare const readonlyKey: readonlyKeyLambda
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2423)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2469)
 
 Since v4.0.0

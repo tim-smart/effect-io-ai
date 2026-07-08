@@ -19,7 +19,7 @@ const input = Argument.string("input").pipe(
 **Signature**
 
 ```ts
-declare const withSchema: { <A, B>(schema: Schema.Codec<B, A, Environment, Environment>): (self: Argument<A>) => Argument<B>; <A, B>(self: Argument<A>, schema: Schema.Codec<B, A, Environment, Environment>): Argument<B>; }
+declare const withSchema: { <A, B>(schema: Schema.ConstraintCodec<B, A, Environment, unknown>): (self: Argument<A>) => Argument<B>; <A, B>(self: Argument<A>, schema: Schema.ConstraintCodec<B, A, Environment, unknown>): Argument<B>; }
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Argument.ts#L592)
