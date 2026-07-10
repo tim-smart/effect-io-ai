@@ -13,6 +13,6 @@ export interface DateTimeUtc extends declare<DateTime.Utc> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L11947)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L11992)
 
 Since v3.10.0

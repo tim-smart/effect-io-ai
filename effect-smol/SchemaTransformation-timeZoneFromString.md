@@ -28,6 +28,6 @@ parsed as a time zone.
 declare const timeZoneFromString: Transformation<DateTime.TimeZone, string, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1737)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1777)
 
 Since v4.0.0

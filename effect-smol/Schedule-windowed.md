@@ -31,7 +31,7 @@ const program = Effect.gen(function*() {
       yield* Console.log("Window task executed")
       return "window-task"
     }),
-    windowSchedule.pipe(Schedule.take(4))
+    windowSchedule.pipe(Schedule.upTo({ times: 4 }))
   )
 })
 ```
@@ -42,6 +42,6 @@ const program = Effect.gen(function*() {
 declare const windowed: (interval: Duration.Input) => Schedule<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L3323)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L2090)
 
 Since v2.0.0

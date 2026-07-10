@@ -24,16 +24,12 @@ const schedule = Schedule.recurs(3).pipe(
 )
 ```
 
-**See**
-
-- `satisfiesInputType` for checking an existing input type
-
 **Signature**
 
 ```ts
 declare const setInputType: <T>() => <Output, Error, Env>(self: Schedule<Output, T, Error, Env>) => Schedule<Output, T, Error, Env>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L3455)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L2185)
 
 Since v4.0.0

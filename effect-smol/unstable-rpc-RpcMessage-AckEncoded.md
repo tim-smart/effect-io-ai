@@ -10,10 +10,10 @@ The transport-encoded acknowledgement for a streamed RPC response chunk.
 ```ts
 export interface AckEncoded {
   readonly _tag: "Ack"
-  readonly requestId: string
+  readonly requestId: string | number
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcMessage.ts#L120)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcMessage.ts#L119)
 
 Since v4.0.0

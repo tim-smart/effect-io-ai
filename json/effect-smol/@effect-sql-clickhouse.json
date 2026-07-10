@@ -76,7 +76,7 @@
     "examples": [],
     "since": "4.0.0",
     "category": "references",
-    "signature": "declare const ClickhouseSettings: Context.Reference<Partial<ClickHouseServerSettings> & Partial<ClickHouseHTTPSettings> & Record<string, string | number | boolean | Clickhouse.SettingsMap | undefined>>",
+    "signature": "declare const ClickhouseSettings: Context.Reference<Partial<ClickHouseServerSettings> & Partial<ClickHouseHTTPSettings> & Record<string, string | number | boolean | SettingsMap | undefined>>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql/clickhouse/src/ClickhouseClient.ts#L431"
   },
   {

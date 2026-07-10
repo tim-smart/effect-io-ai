@@ -9,7 +9,7 @@ commands, and inserts.
 **Signature**
 
 ```ts
-declare const ClickhouseSettings: Context.Reference<Partial<ClickHouseServerSettings> & Partial<ClickHouseHTTPSettings> & Record<string, string | number | boolean | Clickhouse.SettingsMap | undefined>>
+declare const ClickhouseSettings: Context.Reference<Partial<ClickHouseServerSettings> & Partial<ClickHouseHTTPSettings> & Record<string, string | number | boolean | SettingsMap | undefined>>
 ```
 
 [Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/clickhouse/src/ClickhouseClient.ts#L431)

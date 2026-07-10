@@ -22,6 +22,6 @@ requests. Scoped configuration overrides defaults supplied to `model`,
 declare class Config
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L77)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L71)
 
 Since v4.0.0

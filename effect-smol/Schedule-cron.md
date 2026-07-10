@@ -23,8 +23,8 @@ const minutelyProgram = Effect.gen(function*() {
       return "minute"
     }),
     everyMinute.pipe(
-      Schedule.take(3), // Run only 3 times for demo
-      Schedule.tapOutput((duration) =>
+      Schedule.upTo({ times: 3 }), // Run only 3 times for demo
+      Schedule.tap(({ output: duration }) =>
         Console.log(`Next execution in: ${duration}`)
       )
     )
@@ -44,7 +44,7 @@ const backupProgram = Effect.gen(function*() {
       return "backup-done"
     }),
     dailyBackup.pipe(
-      Schedule.take(2) // Run 2 times for demo
+      Schedule.upTo({ times: 2 }) // Run 2 times for demo
     )
   )
 })
@@ -63,7 +63,7 @@ const reportProgram = Effect.gen(function*() {
       yield* Console.log(`Report generated: ${JSON.stringify(report)}`)
       return report
     }),
-    weeklyReport.pipe(Schedule.take(1))
+    weeklyReport.pipe(Schedule.upTo({ times: 1 }))
   )
 })
 
@@ -82,7 +82,7 @@ const businessProgram = Effect.gen(function*() {
       return status
     }),
     businessHoursCheck.pipe(
-      Schedule.take(4) // Demo with 4 checks
+      Schedule.upTo({ times: 4 }) // Demo with 4 checks
     )
   )
 })
@@ -98,13 +98,13 @@ const invoiceProgram = Effect.gen(function*() {
       yield* Console.log(`Processed ${invoiceCount} invoices`)
       return { count: invoiceCount, batch: "2024-01-a" }
     }),
-    monthlyInvoice.pipe(Schedule.take(1))
+    monthlyInvoice.pipe(Schedule.upTo({ times: 1 }))
   )
 })
 
 // Complex cron with error handling
 const complexCron = Schedule.cron("0 2,4,6 * * *").pipe(
-  Schedule.tapOutput((duration) =>
+  Schedule.tap(({ output: duration }) =>
     Console.log(`Scheduled to run again in ${duration}`)
   )
 )
@@ -121,7 +121,7 @@ const robustProgram = Effect.gen(function*() {
       }
       return "success"
     }),
-    complexCron.pipe(Schedule.take(3))
+    complexCron.pipe(Schedule.upTo({ times: 3 }))
   ).pipe(
     Effect.catch((error: unknown) =>
       Console.log(`Cron task error: ${String(error)}`)
@@ -136,6 +136,6 @@ const robustProgram = Effect.gen(function*() {
 declare const cron: { (expression: Cron.Cron): Schedule<Duration.Duration, unknown, Cron.CronParseError>; (expression: string, tz?: string | DateTime.TimeZone): Schedule<Duration.Duration, unknown, Cron.CronParseError>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L1389)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L969)
 
 Since v2.0.0

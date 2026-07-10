@@ -9,7 +9,7 @@ chunks, acknowledgements, and interrupts.
 **Signature**
 
 ```ts
-type RequestId = Branded<bigint, "~effect/rpc/RpcMessage/RequestId">
+type RequestId = Branded<string | number, "~effect/rpc/RpcMessage/RequestId">
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcMessage.ts#L43)

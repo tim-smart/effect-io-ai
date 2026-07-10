@@ -16,6 +16,6 @@ Available for `text_editor_20241022` and `text_editor_20250124`, but not for
 type TextEditorUndoEditCommand = typeof TextEditorUndoEditCommand.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1850)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1851)
 
 Since v4.0.0

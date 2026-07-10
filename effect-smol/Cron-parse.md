@@ -49,6 +49,6 @@ assert.deepStrictEqual(
 declare const parse: (cron: string, tz?: DateTime.TimeZone | string) => Result.Result<Cron, CronParseError>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cron.ts#L565)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cron.ts#L572)
 
 Since v2.0.0

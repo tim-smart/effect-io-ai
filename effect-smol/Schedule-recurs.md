@@ -48,9 +48,10 @@ const program = Effect.gen(function*() {
 })
 
 // Combining recurs with other schedules for sophisticated retry logic
-const complexRetry = Schedule.exponential("100 millis").pipe(
-  Schedule.both(Schedule.recurs(3)) // At most 3 retries
-)
+const complexRetry = Schedule.max([
+  Schedule.exponential("100 millis"),
+  Schedule.recurs(3) // At most 3 retries
+])
 
 // Allow ten recurrences after the initial run
 const tenRecurrences = Effect.gen(function*() {
@@ -62,13 +63,13 @@ const tenRecurrences = Effect.gen(function*() {
 
 // The schedule outputs the current recurrence count (0-based)
 const countingSchedule = Schedule.recurs(3).pipe(
-  Schedule.tapOutput((count) => Console.log(`Execution #${count + 1}`))
+  Schedule.tap(({ output: count }) => Console.log(`Execution #${count + 1}`))
 )
 ```
 
 **See**
 
-- `take` for limiting an existing schedule
+- `upTo` for limiting an existing schedule
 
 **Signature**
 
@@ -76,6 +77,6 @@ const countingSchedule = Schedule.recurs(3).pipe(
 declare const recurs: (times: number) => Schedule<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L2491)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L1763)
 
 Since v2.0.0

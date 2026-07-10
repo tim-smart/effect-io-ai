@@ -21,6 +21,6 @@ model metadata and can be supplied directly to an Effect program.
 declare const model: (model: (string & {}) | Model, config?: Omit<typeof Config.Service, "model">) => AiModel.Model<"anthropic", LanguageModel.LanguageModel, AnthropicClient>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L642)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L636)
 
 Since v4.0.0

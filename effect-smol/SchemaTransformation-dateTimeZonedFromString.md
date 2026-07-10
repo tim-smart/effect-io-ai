@@ -27,6 +27,6 @@ the input is not a valid zoned date-time. Encode uses
 declare const dateTimeZonedFromString: Transformation<DateTime.Zoned, string, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1805)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1845)
 
 Since v4.0.0

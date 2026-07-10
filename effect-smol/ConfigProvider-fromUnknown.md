@@ -20,6 +20,16 @@ that cannot be resolved. Never fails with `SourceError`.
 Primitive values (`number`, `boolean`, `bigint`) are stringified via
 `String(...)`.
 
+Literal empty strings are treated as missing values when loaded as values by
+default. Pass `{ preserveEmptyStrings: true }` to keep empty strings as
+explicit values.
+
+**Gotchas**
+
+Object keys and array lengths reflect the original input shape. A leaf value
+of `""` is treated as missing when that leaf is loaded, but the parent
+container still reports its original keys or length.
+
 **Example** (Providing config from a plain object)
 
 ```ts
@@ -47,9 +57,9 @@ const host = Config.string("host").parse(
 **Signature**
 
 ```ts
-declare const fromUnknown: (root: unknown) => ConfigProvider
+declare const fromUnknown: (root: unknown, options?: { readonly preserveEmptyStrings?: boolean | undefined; }) => ConfigProvider
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L729)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L739)
 
 Since v4.0.0

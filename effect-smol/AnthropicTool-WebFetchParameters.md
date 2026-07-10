@@ -25,6 +25,6 @@ length is 250 characters.
 type WebFetchParameters = typeof WebFetchParameters.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L2354)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L2355)
 
 Since v4.0.0

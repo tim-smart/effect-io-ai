@@ -15,6 +15,6 @@ export interface ResponseDefect {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcMessage.ts#L369)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcMessage.ts#L368)
 
 Since v4.0.0

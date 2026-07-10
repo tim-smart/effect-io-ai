@@ -31,6 +31,6 @@ type AnthropicProviderDefinedTool = | typeof Generated.BetaBashTool_20241022.Enc
   | typeof Generated.BetaWebSearchTool_20250305.Encoded
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L1245)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L1239)
 
 Since v4.0.0

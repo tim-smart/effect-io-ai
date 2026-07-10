@@ -11,6 +11,6 @@ Checks if the response type is terminal.
 declare const isTerminalResponse: (response: FromServerEncoded) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcMessage.ts#L410)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcMessage.ts#L409)
 
 Since v4.0.0

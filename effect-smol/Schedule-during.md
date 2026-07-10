@@ -28,7 +28,7 @@ const timedProgram = Effect.gen(function*() {
       return "task done"
     }),
     fiveSecondSchedule.pipe(
-      Schedule.tapOutput((elapsedDuration) =>
+      Schedule.tap(({ output: elapsedDuration }) =>
         Console.log(`Total elapsed: ${elapsedDuration}`)
       )
     )
@@ -38,10 +38,11 @@ const timedProgram = Effect.gen(function*() {
 })
 
 // Combine with other schedules for time-bounded execution
-const timeAndCountLimited = Schedule.spaced("1 second").pipe(
-  Schedule.both(Schedule.during("10 seconds")), // Stop after 10 seconds OR
-  Schedule.both(Schedule.recurs(15)) // 15 attempts, whichever comes first
-)
+const timeAndCountLimited = Schedule.max([
+  Schedule.spaced("1 second"),
+  Schedule.during("10 seconds"), // Stop after 10 seconds OR
+  Schedule.recurs(15) // 15 attempts, whichever comes first
+])
 
 // Burst execution within time window
 const burstWindow = Schedule.during("3 seconds")
@@ -61,9 +62,10 @@ const burstProgram = Effect.gen(function*() {
 })
 
 // Timed retry window - retry for up to 30 seconds
-const timedRetry = Schedule.exponential("200 millis").pipe(
-  Schedule.both(Schedule.during("30 seconds"))
-)
+const timedRetry = Schedule.max([
+  Schedule.exponential("200 millis"),
+  Schedule.during("30 seconds")
+])
 
 const retryProgram = Effect.gen(function*() {
   let attempt = 0
@@ -98,6 +100,6 @@ const retryProgram = Effect.gen(function*() {
 declare const during: (duration: Duration.Input) => Schedule<Duration.Duration>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L1626)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L1116)
 
 Since v4.0.0

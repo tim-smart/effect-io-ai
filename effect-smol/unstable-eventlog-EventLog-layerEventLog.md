@@ -12,6 +12,6 @@ Provides `EventLog` and `Registry` using the configured `EventJournal` and
 declare const layerEventLog: Layer.Layer<Registry | EventLog, never, EventJournal | Identity>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLog.ts#L946)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/EventLog.ts#L947)
 
 Since v4.0.0

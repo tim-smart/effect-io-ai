@@ -27,6 +27,6 @@ such as `strict` and `cache_control`.
 type AnthropicUserDefinedTool = typeof Generated.BetaTool.Encoded
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L1232)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicLanguageModel.ts#L1226)
 
 Since v4.0.0

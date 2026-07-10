@@ -12,6 +12,6 @@ execution ID, the supplied name, and optionally the current attempt.
 declare const idempotencyKey: (name: string, options?: { readonly includeAttempt?: boolean | undefined; } | undefined) => Effect.Effect<string, never, WorkflowInstance>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Activity.ts#L245)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Activity.ts#L246)
 
 Since v4.0.0

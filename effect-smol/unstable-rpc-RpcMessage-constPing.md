@@ -11,6 +11,6 @@ Represents the reusable `Ping` message value.
 declare const constPing: Ping
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcMessage.ts#L172)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcMessage.ts#L171)
 
 Since v4.0.0

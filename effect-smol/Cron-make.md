@@ -13,7 +13,9 @@ Use to build a cron schedule from explicit sets of allowed time-field values.
 
 Constructs a cron schedule by specifying which seconds, minutes, hours,
 days, months, and weekdays the schedule should match. Empty arrays mean
-"match all" for that time unit.
+"match all" for that time unit. When both days and weekdays are restricted,
+the default matches either field; set `and: true` to require both fields to
+match.
 
 **Example** (Creating schedules from constraints)
 
@@ -110,9 +112,9 @@ const businessHours = Cron.make({
 **Signature**
 
 ```ts
-declare const make: (values: { readonly seconds?: Iterable<number> | undefined; readonly minutes: Iterable<number>; readonly hours: Iterable<number>; readonly days: Iterable<number>; readonly months: Iterable<number>; readonly weekdays: Iterable<number>; readonly tz?: DateTime.TimeZone | undefined; }) => Cron
+declare const make: (values: { readonly seconds?: Iterable<number> | undefined; readonly minutes: Iterable<number>; readonly hours: Iterable<number>; readonly days: Iterable<number>; readonly months: Iterable<number>; readonly weekdays: Iterable<number>; readonly and?: boolean | undefined; readonly tz?: DateTime.TimeZone | undefined; }) => Cron
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cron.ts#L350)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Cron.ts#L355)
 
 Since v2.0.0

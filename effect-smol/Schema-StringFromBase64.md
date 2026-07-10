@@ -13,6 +13,6 @@ export interface StringFromBase64 extends decodeTo<String, String> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L11600)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L11645)
 
 Since v3.10.0

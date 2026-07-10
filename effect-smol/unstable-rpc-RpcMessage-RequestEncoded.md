@@ -11,7 +11,7 @@ RPC tag, encoded payload, headers, and optional trace context.
 ```ts
 export interface RequestEncoded {
   readonly _tag: "Request"
-  readonly id: string
+  readonly id: string | number
   readonly tag: string
   readonly payload: unknown
   readonly headers: ReadonlyArray<[string, string]>
@@ -21,6 +21,6 @@ export interface RequestEncoded {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcMessage.ts#L61)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcMessage.ts#L60)
 
 Since v4.0.0

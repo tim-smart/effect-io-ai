@@ -46,6 +46,6 @@ export interface Declaration<T, TypeParameters extends ReadonlyArray<Constraint>
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L14396)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L14449)
 
 Since v4.0.0

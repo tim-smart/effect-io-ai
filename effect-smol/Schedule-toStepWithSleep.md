@@ -11,7 +11,7 @@ Extracts a step function from a Schedule that automatically handles sleep delays
 import { Effect, Schedule } from "effect"
 
 // Convert schedule to step function with automatic sleeping
-const schedule = Schedule.spaced("1 second").pipe(Schedule.take(3))
+const schedule = Schedule.spaced("1 second").pipe(Schedule.upTo({ times: 3 }))
 
 const program = Effect.gen(function*() {
   const stepWithSleep = yield* Schedule.toStepWithSleep(schedule)
@@ -35,6 +35,6 @@ const program = Effect.gen(function*() {
 declare const toStepWithSleep: <Output, Input, Error, Env>(schedule: Schedule<Output, Input, Error, Env>) => Effect<(input: Input) => Pull.Pull<Output, Error, Output, Env>, never, Env>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L504)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L461)
 
 Since v4.0.0

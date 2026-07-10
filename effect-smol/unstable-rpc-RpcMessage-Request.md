@@ -21,6 +21,6 @@ export interface Request<A extends Rpc.Any> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcMessage.ts#L79)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcMessage.ts#L78)
 
 Since v4.0.0

@@ -15,10 +15,10 @@ class RetryAttemptError extends Data.TaggedError("RetryAttemptError")<{ readonly
 
 // First retry 3 times quickly, then switch to slower retries
 const quickRetries = Schedule.exponential("100 millis").pipe(
-  Schedule.take(3)
+  Schedule.upTo({ times: 3 })
 )
 const slowRetries = Schedule.exponential("1 second").pipe(
-  Schedule.take(2)
+  Schedule.upTo({ times: 2 })
 )
 
 const combinedRetries = Schedule.andThen(quickRetries, slowRetries)
@@ -45,6 +45,6 @@ const program = Effect.gen(function*() {
 declare const andThen: { <Output2, Input2, Error2, Env2>(other: Schedule<Output2, Input2, Error2, Env2>): <Output, Input, Error, Env>(self: Schedule<Output, Input, Error, Env>) => Schedule<Output | Output2, Input & Input2, Error | Error2, Env | Env2>; <Output, Input, Error, Env, Output2, Input2, Error2, Env2>(self: Schedule<Output, Input, Error, Env>, other: Schedule<Output2, Input2, Error2, Env2>): Schedule<Output | Output2, Input & Input2, Error | Error2, Env | Env2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L675)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L631)
 
 Since v2.0.0

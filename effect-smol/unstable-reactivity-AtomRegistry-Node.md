@@ -16,8 +16,8 @@ and current lifecycle state.
 export interface Node<A> {
   readonly atom: Atom.Atom<A>
   readonly value: () => A
-  parents: Array<Node<any>>
-  children: Array<Node<any>>
+  parents: Set<Node<any>>
+  children: Set<Node<any>>
   listeners: Set<() => void>
   currentState(): "uninitialized" | "stale" | "valid" | "removed"
 }

@@ -23,9 +23,10 @@ const gentleExponential = Schedule.exponential("200 millis", 1.5)
 // Delays: 200ms, 300ms, 450ms, 675ms, 1012ms, ...
 
 // Retry with exponential backoff (limited to 5 attempts)
-const retryPolicy = Schedule.exponential("50 millis").pipe(
-  Schedule.both(Schedule.recurs(5))
-)
+const retryPolicy = Schedule.max([
+  Schedule.exponential("50 millis"),
+  Schedule.recurs(5)
+])
 
 const program = Effect.gen(function*() {
   let attempt = 0
@@ -54,6 +55,6 @@ const program = Effect.gen(function*() {
 declare const exponential: (base: Duration.Input, factor?: number) => Schedule<Duration.Duration>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L2015)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L1270)
 
 Since v2.0.0

@@ -24,7 +24,7 @@ const program = Effect.gen(function*() {
       yield* Console.log("Running forever...")
       return "continuous-task"
     }),
-    infiniteSchedule.pipe(Schedule.take(5)) // Limit for demo
+    infiniteSchedule.pipe(Schedule.upTo({ times: 5 })) // Limit for demo
   )
 })
 ```
@@ -35,6 +35,6 @@ const program = Effect.gen(function*() {
 declare const forever: Schedule<number, unknown, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L3363)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L2130)
 
 Since v2.0.0

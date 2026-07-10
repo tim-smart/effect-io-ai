@@ -23,6 +23,11 @@ purely numeric names, the node is reported as an `Array`; otherwise as a
 The default environment merges `process.env` and `import.meta.env` (when
 available). Override by passing `{ env: { ... } }`.
 
+Literal empty strings are treated as missing values when loaded as values by
+default. Pass `{ preserveEmptyStrings: true }` to keep empty strings as
+explicit values. Child discovery still reflects the environment variable
+names present in the source.
+
 Never fails with `SourceError` — all lookups are synchronous.
 
 **Example** (Reading from a custom env record)
@@ -52,9 +57,9 @@ const host = Config.string("HOST").parse(
 **Signature**
 
 ```ts
-declare const fromEnv: (options?: { readonly env?: Record<string, string> | undefined; }) => ConfigProvider
+declare const fromEnv: (options?: { readonly env?: Record<string, string> | undefined; readonly preserveEmptyStrings?: boolean | undefined; }) => ConfigProvider
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L821)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L848)
 
 Since v2.0.0

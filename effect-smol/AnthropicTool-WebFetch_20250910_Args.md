@@ -22,6 +22,6 @@ as PDFs.
 type WebFetch_20250910_Args = typeof WebFetch_20250910_Args.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L2299)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L2300)
 
 Since v4.0.0

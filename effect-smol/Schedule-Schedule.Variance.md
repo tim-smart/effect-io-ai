@@ -23,7 +23,7 @@ const stringSchedule = Schedule.spaced("1 second").pipe(
 
 // Schedule that only accepts Error inputs
 const errorSchedule = Schedule.exponential("100 millis").pipe(
-  Schedule.take(5)
+  Schedule.upTo({ times: 5 })
 )
 
 // Schedule requiring a service environment
@@ -38,6 +38,6 @@ export interface Variance<out Output, in Input, out Error, out Env> {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L246)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L171)
 
 Since v2.0.0

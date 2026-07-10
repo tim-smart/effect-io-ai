@@ -11,6 +11,6 @@ Type of the parameters Claude supplies when invoking BM25 natural-language Anthr
 type ToolSearchBM25Parameters = typeof ToolSearchBM25Parameters.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L2457)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L2458)
 
 Since v4.0.0

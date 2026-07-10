@@ -15,9 +15,10 @@ class NetworkError extends Data.TaggedError("NetworkError")<{
 }> {}
 
 // Basic retry schedule - retry up to 3 times with exponential backoff
-const retrySchedule = Schedule.exponential("100 millis").pipe(
-  Schedule.both(Schedule.recurs(3))
-)
+const retrySchedule = Schedule.max([
+  Schedule.exponential("100 millis"),
+  Schedule.recurs(3)
+])
 
 // Basic repeat schedule - repeat every 30 seconds forever
 const repeatSchedule: Schedule.Schedule<number, unknown, never> = Schedule
@@ -39,7 +40,7 @@ const program = Effect.gen(function*() {
   console.log(result1) // "Success"
 
   yield* Console.log("heartbeat").pipe(
-    Effect.repeat(repeatSchedule.pipe(Schedule.take(5)))
+    Effect.repeat(repeatSchedule.pipe(Schedule.upTo({ times: 5 })))
   )
 })
 ```
@@ -52,6 +53,6 @@ export interface Schedule<out Output, in Input = unknown, out Error = never, out
 {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L77)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L78)
 
 Since v2.0.0

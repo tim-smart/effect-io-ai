@@ -11,11 +11,11 @@ The transport-encoded terminal response for a request, carrying the encoded
 ```ts
 export interface ResponseExitEncoded {
   readonly _tag: "Exit"
-  readonly requestId: string
+  readonly requestId: string | number
   readonly exit: ExitEncoded<unknown, unknown>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcMessage.ts#L283)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcMessage.ts#L282)
 
 Since v4.0.0

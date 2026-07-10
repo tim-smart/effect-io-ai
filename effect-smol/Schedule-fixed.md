@@ -34,7 +34,7 @@ const healthCheck = Effect.gen(function*() {
   yield* Effect.sleep("200 millis") // simulate health check work
   return "healthy"
 }).pipe(
-  Effect.repeat(Schedule.fixed("2 seconds").pipe(Schedule.take(5)))
+  Effect.repeat(Schedule.fixed("2 seconds").pipe(Schedule.upTo({ times: 5 })))
 )
 
 // Difference between fixed and spaced:
@@ -51,12 +51,12 @@ const longRunningTask = Effect.gen(function*() {
 // Fixed schedule: if task takes 1.5s but interval is 1s,
 // next execution happens immediately (no pile-up)
 const fixedSchedule = longRunningTask.pipe(
-  Effect.repeat(Schedule.fixed("1 second").pipe(Schedule.take(3)))
+  Effect.repeat(Schedule.fixed("1 second").pipe(Schedule.upTo({ times: 3 })))
 )
 
 // Comparing with spaced (waits 1s AFTER each task)
 const spacedSchedule = longRunningTask.pipe(
-  Effect.repeat(Schedule.spaced("1 second").pipe(Schedule.take(3)))
+  Effect.repeat(Schedule.spaced("1 second").pipe(Schedule.upTo({ times: 3 })))
 )
 
 const program = Effect.gen(function*() {
@@ -78,6 +78,6 @@ const program = Effect.gen(function*() {
 declare const fixed: (interval: Duration.Input) => Schedule<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L2179)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L1436)
 
 Since v2.0.0

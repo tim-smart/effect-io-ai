@@ -16,6 +16,11 @@ Supports `export` prefixes, single/double/backtick quoting, inline comments,
 and escaped newlines. Variable expansion (for example, `${VAR}`) is disabled
 by default; enable with `{ expandVariables: true }`.
 
+Literal empty strings are treated as missing values when loaded as values by
+default. Pass `{ preserveEmptyStrings: true }` to keep empty strings as
+explicit values. Child discovery still reflects the keys present in the
+parsed `.env` source.
+
 Parsing is based on the `dotenv` / `dotenv-expand` algorithm.
 
 Internally delegates to `fromEnv` with the parsed key-value pairs.
@@ -42,9 +47,9 @@ const provider = ConfigProvider.fromDotEnvContents(contents)
 **Signature**
 
 ```ts
-declare const fromDotEnvContents: (lines: string, options?: { readonly expandVariables?: boolean | undefined; }) => ConfigProvider
+declare const fromDotEnvContents: (lines: string, options?: { readonly expandVariables?: boolean | undefined; readonly preserveEmptyStrings?: boolean | undefined; }) => ConfigProvider
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L931)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/ConfigProvider.ts#L967)
 
 Since v4.0.0

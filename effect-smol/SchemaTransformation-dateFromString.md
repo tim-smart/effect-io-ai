@@ -28,7 +28,7 @@ const schema = Schema.String.pipe(
 
 **See**
 
-- `numberFromString`
+- `dateFromMillis`
 - `dateTimeUtcFromString`
 
 **Signature**

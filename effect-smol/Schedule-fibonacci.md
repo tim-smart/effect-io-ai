@@ -33,9 +33,11 @@ const retryWithFib = Effect.gen(function*() {
 
       return `Success on attempt ${attempt}`
     }),
-    Schedule.fibonacci("50 millis").pipe(
-      Schedule.both(Schedule.recurs(6)), // Maximum 6 retries
-      Schedule.tapOutput((delay) => Console.log(`Next retry in ${delay}`))
+    Schedule.max([
+      Schedule.fibonacci("50 millis"),
+      Schedule.recurs(6) // Maximum 6 retries
+    ]).pipe(
+      Schedule.tap(({ output: delay }) => Console.log(`Next retry in ${delay}`))
     )
   )
 
@@ -49,7 +51,7 @@ const adaptiveHeartbeat = Effect.gen(function*() {
 }).pipe(
   Effect.repeat(
     Schedule.fibonacci("200 millis").pipe(
-      Schedule.take(8) // First 8 heartbeats
+      Schedule.upTo({ times: 8 }) // First 8 heartbeats
     )
   )
 )
@@ -72,6 +74,6 @@ const compareSchedules = Effect.gen(function*() {
 declare const fibonacci: (one: Duration.Input) => Schedule<Duration.Duration>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L2093)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L1350)
 
 Since v2.0.0

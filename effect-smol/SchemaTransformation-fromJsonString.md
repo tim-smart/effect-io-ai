@@ -38,6 +38,6 @@ const schema = Schema.String.pipe(
 declare const fromJsonString: Transformation<unknown, string, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1578)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaTransformation.ts#L1618)
 
 Since v4.0.0

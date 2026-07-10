@@ -11,11 +11,11 @@ chunk values for a request.
 ```ts
 export interface ResponseChunkEncoded {
   readonly _tag: "Chunk"
-  readonly requestId: string
+  readonly requestId: string | number
   readonly values: NonEmptyReadonlyArray<unknown>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcMessage.ts#L230)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/RpcMessage.ts#L229)
 
 Since v4.0.0

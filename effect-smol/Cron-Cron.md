@@ -87,6 +87,8 @@ export interface Cron extends Pipeable, Equal.Equal, Inspectable {
   readonly months: ReadonlySet<number>
   readonly weekdays: ReadonlySet<number>
   /** @internal */
+  readonly and: boolean
+  /** @internal */
   readonly first: {
     readonly second: number
     readonly minute: number

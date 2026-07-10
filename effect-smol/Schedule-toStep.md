@@ -11,7 +11,7 @@ Extracts the step function from a Schedule.
 import { Effect, Schedule } from "effect"
 
 // Extract step function from an existing schedule
-const schedule = Schedule.exponential("100 millis").pipe(Schedule.take(3))
+const schedule = Schedule.exponential("100 millis").pipe(Schedule.upTo({ times: 3 }))
 
 const program = Effect.gen(function*() {
   const stepFn = yield* Schedule.toStep(schedule)
@@ -31,6 +31,6 @@ const program = Effect.gen(function*() {
 declare const toStep: <Output, Input, Error, Env>(schedule: Schedule<Output, Input, Error, Env>) => Effect<(now: number, input: Input) => Pull.Pull<[Output, Duration.Duration], Error, Output, Env>, never, Env>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L412)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schedule.ts#L369)
 
 Since v4.0.0
