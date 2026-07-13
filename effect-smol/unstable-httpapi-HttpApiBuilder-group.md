@@ -14,9 +14,9 @@ be used to add handlers to the group. Implement endpoints with
 **Signature**
 
 ```ts
-declare const group: <ApiId extends string, Groups extends HttpApiGroup.Any, const Name extends HttpApiGroup.Name<Groups>, Return>(api: HttpApi.HttpApi<ApiId, Groups>, groupName: Name, build: (handlers: Handlers.FromGroup<HttpApiGroup.WithName<Groups, Name>>) => Handlers.ValidateReturn<Return>) => Layer.Layer<HttpApiGroup.ApiGroup<ApiId, Name>, Handlers.Error<Return>, Exclude<Handlers.Context<Return>, Scope.Scope>>
+declare const group: <ApiId extends string, Groups extends HttpApiGroup.Constraint, const Identifier extends HttpApiGroup.Identifier<Groups>, Return>(api: HttpApi.HttpApi<ApiId, Groups>, groupIdentifier: Identifier, build: (handlers: Handlers.FromGroup<HttpApiGroup.WithIdentifier<Groups, Identifier>>) => Handlers.ValidateReturn<Return>) => Layer.Layer<HttpApiGroup.Service<ApiId, Identifier>, Handlers.Error<Return>, Exclude<Handlers.Context<Return>, Scope.Scope>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiBuilder.ts#L119)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiBuilder.ts#L121)
 
 Since v4.0.0

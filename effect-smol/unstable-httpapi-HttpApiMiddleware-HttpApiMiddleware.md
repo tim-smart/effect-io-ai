@@ -17,8 +17,8 @@ middleware's declared error schema.
 type HttpApiMiddleware<Provides, E, Requires> = (
   httpEffect: Effect.Effect<HttpServerResponse, unhandled, Provides>,
   options: {
-    readonly endpoint: HttpApiEndpoint.AnyWithProps
-    readonly group: HttpApiGroup.AnyWithProps
+    readonly endpoint: HttpApiEndpoint.Top
+    readonly group: HttpApiGroup.Top
   }
 ) => Effect.Effect<HttpServerResponse, unhandled | ErrorSchemaFromConstraint<E>["Type"], Requires | HttpRouter.Provided>
 ```

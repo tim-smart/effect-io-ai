@@ -12,6 +12,6 @@ directly as a server response, it renders as an empty response with status 503.
 declare class ServiceUnavailable
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiError.ts#L372)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiError.ts#L405)
 
 Since v4.0.0

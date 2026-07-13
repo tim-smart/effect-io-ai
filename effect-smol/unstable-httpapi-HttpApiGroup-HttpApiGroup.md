@@ -15,21 +15,26 @@ Endpoint implementations can be provided later with `HttpApiBuilder.group`.
 ```ts
 export interface HttpApiGroup<
   out Id extends string,
-  out Endpoints extends HttpApiEndpoint.Any = never,
+  in out Endpoints extends HttpApiEndpoint.Constraint = never,
   out TopLevel extends boolean = false
 > extends Pipeable {
   new(_: never): {}
   readonly [TypeId]: typeof TypeId
+  /**
+   * Stable group identifier. This field intentionally is not named `name`
+   * because `HttpApiGroup` values can be extended as classes, where `name`
+   * would collide with JavaScript's built-in `Function.name`.
+   */
   readonly identifier: Id
   readonly key: string
   readonly topLevel: TopLevel
-  readonly endpoints: Record.ReadonlyRecord<string, Endpoints>
+  readonly endpoints: EndpointMap<Endpoints>
   readonly annotations: Context.Context<never>
 
   /**
    * Add an `HttpApiEndpoint` to an `HttpApiGroup`.
    */
-  add<const A extends NonEmptyReadonlyArray<HttpApiEndpoint.Any>>(
+  add<const A extends NonEmptyReadonlyArray<HttpApiEndpoint.Constraint>>(
     ...endpoints: A
   ): HttpApiGroup<Id, Endpoints | A[number], TopLevel>
 
@@ -85,6 +90,6 @@ export interface HttpApiGroup<
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiGroup.ts#L44)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiGroup.ts#L52)
 
 Since v4.0.0

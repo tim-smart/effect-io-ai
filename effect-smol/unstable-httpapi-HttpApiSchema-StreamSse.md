@@ -14,6 +14,14 @@ endpoint/server/client integrations using the reserved failure event. If
 constructed from `data`, handlers and clients expose raw data values while
 the server and client still use an SSE event schema internally.
 
+**Gotchas**
+
+The client treats `effect/httpapi/stream/failure` as a stream failure only
+when its decoded `data` is a `Cause`. If an event schema accepts that name
+dynamically but decodes `data` to another value, the client emits it as an
+application event. Endpoint construction rejects event schemas that declare
+the reserved name statically.
+
 **Signature**
 
 ```ts
@@ -46,6 +54,6 @@ export interface StreamSse<
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSchema.ts#L293)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSchema.ts#L301)
 
 Since v4.0.0

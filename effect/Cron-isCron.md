@@ -11,6 +11,6 @@ Checks if a given value is a `Cron` instance.
 declare const isCron: (u: unknown) => u is Cron
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cron.ts#L130)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cron.ts#L133)
 
 Since v2.0.0

@@ -38,6 +38,6 @@ type StringMeta = Schema.Annotations.BuiltInMetaDefinitions[
 ]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L531)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L532)
 
 Since v4.0.0

@@ -58,6 +58,6 @@ export interface Bottom<T, TypeParameters extends ReadonlyArray<Constraint>> ext
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L14365)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L14373)
 
 Since v4.0.0

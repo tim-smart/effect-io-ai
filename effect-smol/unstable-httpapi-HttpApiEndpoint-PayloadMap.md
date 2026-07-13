@@ -3,18 +3,18 @@ Module: `HttpApiEndpoint`<br />
 
 ## HttpApiEndpoint.PayloadMap
 
-Maps content types to the payload encoding strategy and one or more schemas that
-can decode or encode payloads for that content type.
+Maps normalized media types to a payload encoding strategy and one or more
+schemas. Each schema retains its declared content type in its encoding annotation.
 
 **Signature**
 
 ```ts
 type PayloadMap = ReadonlyMap<string, {
   readonly encoding: HttpApiSchema.PayloadEncoding
-  readonly schemas: [Schema.Top, ...Array<Schema.Top>]
+  readonly schemas: readonly [Schema.Top, ...Array<Schema.Top>]
 }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L52)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L128)
 
 Since v4.0.0

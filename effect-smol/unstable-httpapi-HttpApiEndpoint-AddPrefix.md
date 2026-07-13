@@ -10,7 +10,7 @@ preserving the endpoint's schemas, method, errors, and middleware.
 
 ```ts
 type AddPrefix<Endpoint, Prefix> = Endpoint extends HttpApiEndpoint<
-  infer _Name,
+  infer _Identifier,
   infer _Method,
   infer _Path,
   infer _Params,
@@ -22,7 +22,7 @@ type AddPrefix<Endpoint, Prefix> = Endpoint extends HttpApiEndpoint<
   infer _M,
   infer _MR
 > ? HttpApiEndpoint<
-    _Name,
+    _Identifier,
     _Method,
     `${Prefix}${_Path}`,
     _Params,
@@ -37,6 +37,6 @@ type AddPrefix<Endpoint, Prefix> = Endpoint extends HttpApiEndpoint<
   never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L866)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L720)
 
 Since v4.0.0

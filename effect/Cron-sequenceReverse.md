@@ -12,6 +12,6 @@ in reverse direction.
 declare const sequenceReverse: (cron: Cron, startFrom?: DateTime.DateTime.Input) => IterableIterator<Date>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cron.ts#L653)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cron.ts#L686)
 
 Since v3.20.0

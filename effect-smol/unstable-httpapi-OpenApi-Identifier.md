@@ -11,6 +11,6 @@ OpenAPI annotation for overriding generated identifiers, including operation ids
 declare class Identifier
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OpenApi.ts#L36)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OpenApi.ts#L38)
 
 Since v4.0.0

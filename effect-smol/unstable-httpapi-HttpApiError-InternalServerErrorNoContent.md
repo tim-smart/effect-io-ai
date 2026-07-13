@@ -12,6 +12,6 @@ response into an `InternalServerError` error value.
 declare const InternalServerErrorNoContent: HttpApiSchema.asNoContent<typeof InternalServerError>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiError.ts#L332)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiError.ts#L365)
 
 Since v4.0.0

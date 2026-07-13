@@ -29,6 +29,6 @@ const decode = SchemaGetter.decodeBase64<string>()
 declare const decodeBase64: <E extends string>() => Getter<Uint8Array, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1267)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1268)
 
 Since v4.0.0

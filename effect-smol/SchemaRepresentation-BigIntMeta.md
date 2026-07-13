@@ -22,6 +22,6 @@ type BigIntMeta = Schema.Annotations.BuiltInMetaDefinitions[
 ]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L584)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L585)
 
 Since v4.0.0

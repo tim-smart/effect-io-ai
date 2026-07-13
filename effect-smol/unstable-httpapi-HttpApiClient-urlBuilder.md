@@ -32,9 +32,9 @@ buildUrl.users.getUser({
 **Signature**
 
 ```ts
-declare const urlBuilder: <Api extends HttpApi.Any>(api: Api, options?: { readonly baseUrl?: URL | string | undefined; }) => UrlBuilder<Api>
+declare const urlBuilder: <Api extends HttpApi.Constraint>(api: Api, options?: { readonly baseUrl?: URL | string | undefined; }) => UrlBuilder<Api>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiClient.ts#L625)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiClient.ts#L657)
 
 Since v4.0.0

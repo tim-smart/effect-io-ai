@@ -12,6 +12,6 @@ directly as a server response, it renders as an empty response with status 500.
 declare class InternalServerError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiError.ts#L312)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiError.ts#L345)
 
 Since v4.0.0

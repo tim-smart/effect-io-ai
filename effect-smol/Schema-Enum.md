@@ -15,6 +15,6 @@ export interface Enum<A extends { [x: string]: string | number }>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2874)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2877)
 
 Since v4.0.0

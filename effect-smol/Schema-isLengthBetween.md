@@ -25,6 +25,6 @@ within the specified range.
 declare const isLengthBetween: (minimum: number, maximum: number, annotations?: Annotations.Filter) => SchemaAST.Filter<{ readonly length: number; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8082)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L8091)
 
 Since v4.0.0

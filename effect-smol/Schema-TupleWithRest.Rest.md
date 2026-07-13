@@ -16,6 +16,6 @@ present, describe trailing tuple elements after the repeated rest segment.
 type Rest = readonly [Constraint, ...Array<Constraint>]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4331)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4334)
 
 Since v3.10.0

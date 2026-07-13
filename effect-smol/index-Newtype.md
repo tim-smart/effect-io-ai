@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Newtype.ts" module as `Newtype`.
 export * as Newtype from "./Newtype.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L347)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L352)
 
 Since v4.0.0

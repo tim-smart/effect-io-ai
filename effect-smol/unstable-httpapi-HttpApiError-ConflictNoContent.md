@@ -12,6 +12,6 @@ No-content schema variant for `Conflict`, decoding an empty 409 response into a
 declare const ConflictNoContent: HttpApiSchema.asNoContent<typeof Conflict>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiError.ts#L271)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiError.ts#L272)
 
 Since v4.0.0

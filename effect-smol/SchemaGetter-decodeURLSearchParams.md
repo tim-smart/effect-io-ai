@@ -37,6 +37,6 @@ const decode = SchemaGetter.decodeURLSearchParams()
 declare const decodeURLSearchParams: () => Getter<Schema.TreeRecord<string>, URLSearchParams>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1644)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1645)
 
 Since v4.0.0

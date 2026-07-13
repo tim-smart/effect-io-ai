@@ -12,6 +12,6 @@ literal `string`, `number`, or `bigint`.
 type Part = SchemaPart | LiteralPart
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2702)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L2705)
 
 Since v4.0.0

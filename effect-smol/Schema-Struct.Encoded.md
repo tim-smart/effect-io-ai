@@ -17,6 +17,6 @@ the encoded shape.
 type Encoded<F> = View<F, "Encoded">
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3294)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L3297)
 
 Since v3.10.0

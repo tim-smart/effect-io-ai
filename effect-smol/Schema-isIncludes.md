@@ -18,6 +18,6 @@ equivalent to the runtime `includes` check.
 declare const isIncludes: (includes: string, annotations?: Annotations.Filter) => SchemaAST.Filter<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6904)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L6913)
 
 Since v4.0.0

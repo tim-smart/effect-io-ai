@@ -22,6 +22,6 @@ chain if present.
 declare const optionalKey: <A extends AST>(ast: A) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L3235)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaAST.ts#L3240)
 
 Since v4.0.0

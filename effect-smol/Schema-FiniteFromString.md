@@ -13,6 +13,6 @@ export interface FiniteFromString extends decodeTo<Finite, String> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L11528)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L11537)
 
 Since v4.0.0

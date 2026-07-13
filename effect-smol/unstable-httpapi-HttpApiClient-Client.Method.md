@@ -10,42 +10,19 @@ the endpoint schemas, middleware, and selected response mode.
 **Signature**
 
 ```ts
-type Method<Endpoint, E, R> = [Endpoint] extends [
-    HttpApiEndpoint.HttpApiEndpoint<
-      infer _Name,
-      infer _Method,
-      infer _Path,
-      infer _Params,
-      infer _Query,
-      infer _Payload,
-      infer _Headers,
-      infer _Success,
-      infer _Error,
-      infer _Middleware,
-      infer _MR
+type Method<Endpoint, E, R> = <Mode extends ResponseMode = ResponseMode>(
+    request: Simplify<
+      HttpApiEndpoint.ClientRequest<
+        Endpoint["~Params"],
+        Endpoint["~Query"],
+        Endpoint["~Payload"],
+        Endpoint["~Headers"],
+        Mode
+      >
     >
-  ] ? <Mode extends ResponseMode = ResponseMode>(
-      request: Simplify<HttpApiEndpoint.ClientRequest<_Params, _Query, _Payload, _Headers, Mode>>
-    ) => Effect.Effect<
-      Response<SuccessType<_Success>, Mode>,
-      | HttpApiMiddleware.Error<_Middleware>
-      | HttpApiMiddleware.ClientError<_Middleware>
-      | E
-      | HttpClientError.HttpClientError
-      | ([Mode] extends ["response-only"] ? never : _Error["Type"] | Schema.SchemaError),
-      | R
-      | _Params["EncodingServices"]
-      | _Query["EncodingServices"]
-      | _Payload["EncodingServices"]
-      | _Headers["EncodingServices"]
-      | ([Mode] extends ["response-only"] ? never
-        :
-          | SuccessDecodingServices<_Success>
-          | _Error["DecodingServices"])
-    > :
-    never
+  ) => MethodReturn<Endpoint, E, R, Mode>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiClient.ts#L147)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiClient.ts#L170)
 
 Since v4.0.0

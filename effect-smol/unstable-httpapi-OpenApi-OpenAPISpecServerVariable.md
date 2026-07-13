@@ -15,6 +15,6 @@ export interface OpenAPISpecServerVariable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OpenApi.ts#L902)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OpenApi.ts#L940)
 
 Since v4.0.0

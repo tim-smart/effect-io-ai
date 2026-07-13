@@ -12,6 +12,6 @@ endpoint.
 type MiddlewareError<Endpoint> = HttpApiMiddleware.Error<Middleware<Endpoint>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L470)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L426)
 
 Since v4.0.0

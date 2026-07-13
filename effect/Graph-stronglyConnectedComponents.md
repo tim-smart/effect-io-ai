@@ -27,9 +27,9 @@ console.log(sccs) // [[0, 1, 2]]
 **Signature**
 
 ```ts
-declare const stronglyConnectedComponents: <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>) => Array<Array<NodeIndex>>
+declare const stronglyConnectedComponents: <N, E>(graph: Graph<N, E, "directed"> | MutableGraph<N, E, "directed">) => Array<Array<NodeIndex>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L2205)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L2255)
 
 Since v3.18.0

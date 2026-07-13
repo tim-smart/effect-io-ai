@@ -18,6 +18,6 @@ type RpcHandlers<Workflows, Prefix> = Workflows extends Workflow.Workflow<
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/WorkflowProxyServer.ts#L145)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/WorkflowProxyServer.ts#L144)
 
 Since v4.0.0

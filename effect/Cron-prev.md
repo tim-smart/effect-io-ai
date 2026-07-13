@@ -29,6 +29,6 @@ assert.deepStrictEqual(Cron.prev(cron, before), new Date("2021-01-14 04:00:00"))
 declare const prev: (cron: Cron, startFrom?: DateTime.DateTime.Input) => Date
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cron.ts#L471)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cron.ts#L492)
 
 Since v3.20.0

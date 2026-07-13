@@ -14,9 +14,9 @@ version loaded from the CDN.
 **Signature**
 
 ```ts
-declare const layerCdn: <Id extends string, Groups extends HttpApiGroup.Any>(api: HttpApi.HttpApi<Id, Groups>, options?: { readonly path?: `/${string}` | undefined; readonly scalar?: ScalarConfig; readonly version?: string | undefined; } | undefined) => Layer.Layer<never, never, HttpRouter.HttpRouter>
+declare const layerCdn: <Id extends string, Groups extends HttpApiGroup.Constraint>(api: HttpApi.HttpApi<Id, Groups>, options?: { readonly path?: `/${string}` | undefined; readonly scalar?: ScalarConfig; readonly version?: string | undefined; } | undefined) => Layer.Layer<never, never, HttpRouter.HttpRouter>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiScalar.ts#L249)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiScalar.ts#L252)
 
 Since v4.0.0

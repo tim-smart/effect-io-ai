@@ -43,6 +43,6 @@ const NumberFromString = Schema.String.pipe(
 declare const transform: <T, E>(f: (e: E) => T) => Getter<T, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L499)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L500)
 
 Since v4.0.0

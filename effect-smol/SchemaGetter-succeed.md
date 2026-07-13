@@ -35,6 +35,6 @@ const alwaysZero = SchemaGetter.succeed(0)
 declare const succeed: <const T, E>(t: T) => Getter<T, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L120)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L121)
 
 Since v4.0.0

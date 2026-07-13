@@ -9,9 +9,9 @@ group interface.
 **Signature**
 
 ```ts
-declare const isHttpApiGroup: (u: unknown) => u is Any
+declare const isHttpApiGroup: (u: unknown) => u is Top
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiGroup.ts#L31)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiGroup.ts#L32)
 
 Since v4.0.0

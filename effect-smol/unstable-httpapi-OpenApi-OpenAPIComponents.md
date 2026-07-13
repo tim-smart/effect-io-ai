@@ -14,6 +14,6 @@ export interface OpenAPIComponents {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OpenApi.ts#L1030)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OpenApi.ts#L1068)
 
 Since v4.0.0

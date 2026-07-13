@@ -20,6 +20,6 @@ type PayloadConstraint<Method> = Method extends HttpMethod.NoBody ? Record<
   Schema.Top | ReadonlyArray<Schema.Top>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L1076)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L912)
 
 Since v4.0.0

@@ -23,6 +23,6 @@ const uncap = SchemaGetter.uncapitalize<string>()
 declare const uncapitalize: <E extends string>() => Getter<string, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L857)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L858)
 
 Since v4.0.0

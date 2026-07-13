@@ -12,6 +12,6 @@ a `BadRequest` error value.
 declare const BadRequestNoContent: HttpApiSchema.asNoContent<typeof BadRequest>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiError.ts#L61)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiError.ts#L62)
 
 Since v4.0.0

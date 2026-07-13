@@ -18,6 +18,6 @@ type MermaidNodeShape = | "rectangle"
   | "cylindrical"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L1662)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L1708)
 
 Since v3.18.0

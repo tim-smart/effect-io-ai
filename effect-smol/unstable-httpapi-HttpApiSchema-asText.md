@@ -15,6 +15,6 @@ The schema encoded side must be a string.
 declare const asText: (options?: { readonly contentType?: string; }) => <S extends Schema.Top & { readonly Encoded: string; }>(self: S) => S["Rebuild"]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSchema.ts#L617)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSchema.ts#L625)
 
 Since v4.0.0

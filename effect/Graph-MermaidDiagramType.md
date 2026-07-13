@@ -11,6 +11,6 @@ Mermaid diagram type.
 type MermaidDiagramType = "flowchart" | "graph"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L1686)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L1732)
 
 Since v3.18.0

@@ -41,6 +41,6 @@ const parseSubcommand = (subcommand: string) =>
 declare class UnknownSubcommand
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/CliError.ts#L403)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/CliError.ts#L408)
 
 Since v4.0.0

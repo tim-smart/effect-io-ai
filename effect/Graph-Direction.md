@@ -29,6 +29,6 @@ const incomingNodes = Array.from(Graph.indices(Graph.dfs(graph, { start: [1], di
 type Direction = "outgoing" | "incoming"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L1847)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L1893)
 
 Since v3.18.0

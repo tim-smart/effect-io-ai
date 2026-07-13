@@ -25,6 +25,6 @@ type ClientRequest<Params, Query, Payload, Headers, ResponseMode> = (
   void
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L590)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L481)
 
 Since v4.0.0

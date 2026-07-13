@@ -10,7 +10,9 @@ and allowing that client to be disconnected.
 
 ```ts
 export interface RpcServer<A extends Rpc.Any> {
-  readonly write: (clientId: number, message: FromClient<A>) => Effect.Effect<void>
+  readonly write: (clientId: number, message: FromClient<A>, options?: {
+    readonly onRequest?: (<A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>) | undefined
+  }) => Effect.Effect<void>
   readonly disconnect: (clientId: number) => Effect.Effect<void>
 }
 ```

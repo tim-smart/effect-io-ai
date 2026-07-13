@@ -12,6 +12,6 @@ schemas.
 type EncodingServices<E> = E[number]["EncodingServices"]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4182)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L4185)
 
 Since v4.0.0

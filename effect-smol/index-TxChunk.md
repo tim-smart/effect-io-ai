@@ -11,6 +11,6 @@ Re-exports all named exports from the "./TxChunk.ts" module as `TxChunk`.
 export * as TxChunk from "./TxChunk.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L642)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/index.ts#L652)
 
 Since v4.0.0

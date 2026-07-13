@@ -26,6 +26,6 @@ export interface SseEventFromData<Data extends Schema.Constraint> extends
 {}
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSchema.ts#L327)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiSchema.ts#L335)
 
 Since v4.0.0

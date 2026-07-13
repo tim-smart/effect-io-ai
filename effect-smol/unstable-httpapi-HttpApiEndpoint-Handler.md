@@ -10,10 +10,10 @@ and returning either the endpoint success value or a custom `HttpServerResponse`
 
 ```ts
 type Handler<Endpoint, E, R> = (
-  request: Types.Simplify<Request<Endpoint>>
+  request: Simplify<Endpoint["~Request"]>
 ) => Effect<SuccessType<Endpoint["~Success"]> | HttpServerResponse, Endpoint["~Error"]["Type"] | E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L726)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L571)
 
 Since v4.0.0

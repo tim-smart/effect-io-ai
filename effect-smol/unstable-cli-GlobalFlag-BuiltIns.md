@@ -31,9 +31,9 @@ exits, so this array controls built-in action precedence.
 **Signature**
 
 ```ts
-declare const BuiltIns: ReadonlyArray<GlobalFlag<any>>
+declare const BuiltIns: readonly [Action<boolean>, Action<boolean>, Action<Option.Option<"bash" | "zsh" | "fish">>, Setting<"log-level", Option.Option<LogLevelType>>]
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/GlobalFlag.ts#L282)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/GlobalFlag.ts#L279)
 
 Since v4.0.0

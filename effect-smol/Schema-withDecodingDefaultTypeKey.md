@@ -15,6 +15,6 @@ export interface withDecodingDefaultTypeKey<S extends Constraint, R = never>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5782)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L5791)
 
 Since v4.0.0

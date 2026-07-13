@@ -17,6 +17,6 @@ codec encoding fails.
 declare const toEncoderXml: <T, RE>(codec: ConstraintCodec<T, unknown, unknown, RE>, options?: XmlEncoderOptions) => (t: T) => Effect.Effect<string, SchemaError, RE>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L13697)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L13705)
 
 Since v4.0.0

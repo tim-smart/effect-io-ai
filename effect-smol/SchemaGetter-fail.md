@@ -36,6 +36,6 @@ const rejectAll = SchemaGetter.fail<string, string>(
 declare const fail: <T, E>(f: (oe: Option.Option<E>) => SchemaIssue.Issue) => Getter<T, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L153)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L154)
 
 Since v4.0.0

@@ -22,9 +22,9 @@ and overrides. Cached results are used for better performance when the same
 **Signature**
 
 ```ts
-declare const fromApi: <Id extends string, Groups extends HttpApiGroup.Any>(api: HttpApi.HttpApi<Id, Groups>) => OpenAPISpec
+declare const fromApi: <Id extends string, Groups extends HttpApiGroup.Constraint>(api: HttpApi.HttpApi<Id, Groups>) => OpenAPISpec
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OpenApi.ts#L249)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OpenApi.ts#L251)
 
 Since v4.0.0

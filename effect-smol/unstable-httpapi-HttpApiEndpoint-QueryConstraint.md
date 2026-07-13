@@ -13,6 +13,6 @@ type QueryConstraint = | Record<string, Schema.Encoder<string | ReadonlyArray<st
   | Schema.Encoder<string | ReadonlyArray<string> | undefined, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L1061)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L897)
 
 Since v4.0.0

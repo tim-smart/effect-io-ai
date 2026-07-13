@@ -11,6 +11,6 @@ Schema for the `Union` representation node.
 declare const $Union: Schema.Struct<{ readonly _tag: Schema.tag<"Union">; readonly annotations: Schema.optional<Schema.decodeTo<Schema.$Record<Schema.String, Schema.Unknown>, Schema.$Record<Schema.String, Schema.Codec<PrimitiveTree, PrimitiveTree, never, never>>, never, never>>; readonly types: Schema.$Array<Schema.suspend<$Representation>>; readonly mode: Schema.Literals<readonly ["anyOf", "oneOf"]>; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L1393)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L1394)
 
 Since v4.0.0

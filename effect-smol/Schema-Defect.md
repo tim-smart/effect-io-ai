@@ -13,6 +13,6 @@ export interface Defect extends decodeTo<Unknown, typeof Json> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9474)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L9483)
 
 Since v3.10.0

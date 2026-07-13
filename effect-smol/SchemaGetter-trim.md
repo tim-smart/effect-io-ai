@@ -23,6 +23,6 @@ const trimmed = SchemaGetter.trim<string>()
 declare const trim: <E extends string>() => Getter<string, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L813)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L814)
 
 Since v4.0.0

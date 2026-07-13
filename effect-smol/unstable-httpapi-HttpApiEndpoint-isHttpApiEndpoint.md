@@ -9,9 +9,9 @@ endpoint interface.
 **Signature**
 
 ```ts
-declare const isHttpApiEndpoint: (u: unknown) => u is HttpApiEndpoint<any, any, any>
+declare const isHttpApiEndpoint: (u: unknown) => u is Top
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L43)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L45)
 
 Since v4.0.0

@@ -44,6 +44,6 @@ const entries = collectStrings({ user: { name: "Alice", tags: ["admin", "editor"
 declare const collectBracketPathEntries: <A>(isLeaf: (value: unknown) => value is A) => (input: object) => Array<[bracketPath: string, value: A]>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1838)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1844)
 
 Since v4.0.0

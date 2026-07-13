@@ -13,6 +13,6 @@ as a server response.
 declare class HttpApiSchemaError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiError.ts#L420)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiError.ts#L453)
 
 Since v4.0.0

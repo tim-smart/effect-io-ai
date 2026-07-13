@@ -9,9 +9,9 @@ Builds a typed client object for a single API group from the supplied
 **Signature**
 
 ```ts
-declare const group: <ApiId extends string, Groups extends HttpApiGroup.Any, const GroupName extends HttpApiGroup.Name<Groups>, E, R>(api: HttpApi.HttpApi<ApiId, Groups>, options: { readonly group: GroupName; readonly httpClient: HttpClient.HttpClient.With<E, R>; readonly transformResponse?: ((effect: Effect.Effect<unknown, unknown, unknown>) => Effect.Effect<unknown, unknown, unknown>) | undefined; readonly baseUrl?: URL | string | undefined; }) => Effect.Effect<Client.Group<Groups, GroupName, E, R>, never, HttpApiGroup.MiddlewareClient<HttpApiGroup.WithName<Groups, GroupName>>>
+declare const group: <ApiId extends string, Groups extends HttpApiGroup.Constraint, const GroupIdentifier extends HttpApiGroup.Identifier<Groups>, E, R>(api: HttpApi.HttpApi<ApiId, Groups>, options: { readonly group: GroupIdentifier; readonly httpClient: HttpClient.HttpClient.With<E, R>; readonly transformResponse?: ((effect: Effect.Effect<unknown, unknown, unknown>) => Effect.Effect<unknown, unknown, unknown>) | undefined; readonly baseUrl?: URL | string | undefined; }) => Effect.Effect<Client.Group<HttpApiGroup.WithIdentifier<Groups, GroupIdentifier>, E, R>, never, HttpApiGroup.MiddlewareClient<HttpApiGroup.WithIdentifier<Groups, GroupIdentifier>>>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiClient.ts#L517)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiClient.ts#L542)
 
 Since v4.0.0

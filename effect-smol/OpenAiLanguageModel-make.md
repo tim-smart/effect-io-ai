@@ -25,9 +25,9 @@ context values taking precedence. The service supports both `generateText` and
 **Signature**
 
 ```ts
-declare const make: (args_0: { readonly model: string; readonly config?: Omit<typeof Config.Service, "model"> | undefined; }) => Effect.Effect<LanguageModel.Service, never, OpenAiClient>
+declare const make: (args_0: { readonly model: string; readonly config?: ModelConfig | undefined; }) => Effect.Effect<LanguageModel.Service, never, OpenAiClient>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiLanguageModel.ts#L570)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiLanguageModel.ts#L569)
 
 Since v4.0.0

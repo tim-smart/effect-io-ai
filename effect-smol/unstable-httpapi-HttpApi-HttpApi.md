@@ -16,23 +16,38 @@ completed API can be registered with `HttpApiBuilder.layer`.
 ```ts
 export interface HttpApi<
   out Id extends string,
-  out Groups extends HttpApiGroup.Any = never
+  in out Groups extends HttpApiGroup.Constraint = never
 > extends Pipeable {
   new(_: never): {}
   readonly [TypeId]: typeof TypeId
   readonly identifier: Id
-  readonly groups: Record.ReadonlyRecord<string, Groups>
+  readonly groups: GroupMap<Groups>
   readonly annotations: Context.Context<never>
 
   /**
    * Add a `HttpApiGroup` to the `HttpApi`.
    */
-  add<const A extends NonEmptyReadonlyArray<HttpApiGroup.Any>>(...groups: A): HttpApi<Id, Groups | A[number]>
+  add<const A extends NonEmptyReadonlyArray<HttpApiGroup.Constraint>>(...groups: A): HttpApi<Id, Groups | A[number]>
 
   /**
-   * Add another `HttpApi` to the `HttpApi`.
+   * Adds every group from another `HttpApi` while preserving its annotation scope.
+   *
+   * **When to use**
+   *
+   * Use when you want to compose an API from groups declared and annotated under another API.
+   *
+   * **Details**
+   *
+   * The added API is flattened into this API rather than retained as a nested value. Each added group
+   * is copied with the added API's annotations, leaving the added API unchanged. Annotation precedence
+   * from least to most specific is this API, the added API, the group, and then the endpoint.
+   *
+   * **Gotchas**
+   *
+   * Annotations from the added API do not become top-level annotations of the result and do not affect
+   * groups already present in this API. They remain scoped to the groups and endpoints being added.
    */
-  addHttpApi<Id2 extends string, Groups2 extends HttpApiGroup.Any>(
+  addHttpApi<Id2 extends string, Groups2 extends HttpApiGroup.Constraint>(
     api: HttpApi<Id2, Groups2>
   ): HttpApi<Id, Groups | Groups2>
 
@@ -64,6 +79,6 @@ export interface HttpApi<
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApi.ts#L47)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApi.ts#L54)
 
 Since v4.0.0

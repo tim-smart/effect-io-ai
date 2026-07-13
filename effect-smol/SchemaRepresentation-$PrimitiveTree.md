@@ -21,6 +21,6 @@ Use to validate recursive annotation metadata trees whose leaves are `null`,
 declare const $PrimitiveTree: Schema.Codec<PrimitiveTree, PrimitiveTree, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L763)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaRepresentation.ts#L764)
 
 Since v4.0.0

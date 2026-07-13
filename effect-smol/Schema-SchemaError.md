@@ -33,9 +33,9 @@ try {
 **Signature**
 
 ```ts
-declare const SchemaError: typeof InternalSchema.SchemaError
+declare const SchemaError: typeof SchemaError
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1063)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L1084)
 
 Since v4.0.0

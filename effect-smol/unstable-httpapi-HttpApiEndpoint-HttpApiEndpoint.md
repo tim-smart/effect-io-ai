@@ -10,7 +10,7 @@ the underlying `HttpRouter`.
 
 ```ts
 export interface HttpApiEndpoint<
-  out Name extends string,
+  out Identifier extends string,
   out Method extends HttpMethod,
   out Path extends string,
   out Params extends Schema.Top = never,
@@ -20,19 +20,22 @@ export interface HttpApiEndpoint<
   out Success extends Schema.Top = typeof HttpApiSchema.NoContent,
   out Error extends Schema.Top = never,
   in out Middleware = never,
-  out MiddlewareR = never
+  out MiddlewareServices = never
 > extends Pipeable {
-  readonly [TypeId]: {
-    readonly _MiddlewareR: Types.Covariant<MiddlewareR>
-  }
+  new(_: never): {}
+  readonly [TypeId]: typeof TypeId
   readonly "~Params": Params
   readonly "~Query": Query
   readonly "~Headers": Headers
   readonly "~Payload": Payload
   readonly "~Success": Success
   readonly "~Error": Error
+  readonly "~Middleware": Middleware
+  readonly "~MiddlewareServices": MiddlewareServices
+  readonly "~Request": RequestFromParts<this, Params["Type"], Query["Type"], Payload["Type"], Headers["Type"]>
+  readonly "~RequestRaw": RequestRawFromParts<this, Params["Type"], Query["Type"], Headers["Type"]>
 
-  readonly name: Name
+  readonly identifier: Identifier
   readonly path: Path
   readonly method: Method
   readonly params: Schema.Top | undefined
@@ -50,7 +53,7 @@ export interface HttpApiEndpoint<
   prefix<const Prefix extends HttpRouter.PathInput>(
     prefix: Prefix
   ): HttpApiEndpoint<
-    Name,
+    Identifier,
     Method,
     `${Prefix}${Path}`,
     Params,
@@ -60,14 +63,14 @@ export interface HttpApiEndpoint<
     Success,
     Error,
     Middleware,
-    MiddlewareR
+    MiddlewareServices
   >
 
   /**
    * Add an `HttpApiMiddleware` to the endpoint.
    */
   middleware<I extends HttpApiMiddleware.AnyId, S>(middleware: Context.Key<I, S>): HttpApiEndpoint<
-    Name,
+    Identifier,
     Method,
     Path,
     Params,
@@ -77,7 +80,7 @@ export interface HttpApiEndpoint<
     Success,
     Error,
     Middleware | I,
-    HttpApiMiddleware.ApplyServices<I, MiddlewareR>
+    HttpApiMiddleware.ApplyServices<I, MiddlewareServices>
   >
 
   /**
@@ -87,7 +90,7 @@ export interface HttpApiEndpoint<
     key: Context.Key<I, S>,
     value: Types.NoInfer<S>
   ): HttpApiEndpoint<
-    Name,
+    Identifier,
     Method,
     Path,
     Params,
@@ -97,7 +100,7 @@ export interface HttpApiEndpoint<
     Success,
     Error,
     Middleware,
-    MiddlewareR
+    MiddlewareServices
   >
 
   /**
@@ -106,7 +109,7 @@ export interface HttpApiEndpoint<
   annotateMerge<I>(
     annotations: Context.Context<I>
   ): HttpApiEndpoint<
-    Name,
+    Identifier,
     Method,
     Path,
     Params,
@@ -116,11 +119,11 @@ export interface HttpApiEndpoint<
     Success,
     Error,
     Middleware,
-    MiddlewareR
+    MiddlewareServices
   >
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L106)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L140)
 
 Since v4.0.0

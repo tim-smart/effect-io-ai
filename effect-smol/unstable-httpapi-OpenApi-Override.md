@@ -11,6 +11,6 @@ OpenAPI annotation for shallowly merging additional fields into a generated Open
 declare class Override
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OpenApi.ts#L120)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OpenApi.ts#L122)
 
 Since v4.0.0

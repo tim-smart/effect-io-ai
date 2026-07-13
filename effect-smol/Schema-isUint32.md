@@ -24,6 +24,6 @@ constraints to ensure generated numbers are 32-bit unsigned integers.
 declare const isUint32: (annotations?: Annotations.Filter) => SchemaAST.FilterGroup<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7575)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/Schema.ts#L7584)
 
 Since v4.0.0

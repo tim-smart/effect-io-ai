@@ -11,6 +11,6 @@ OpenAPI annotation for setting generated descriptions on APIs, groups, endpoints
 declare class Description
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OpenApi.ts#L60)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/OpenApi.ts#L62)
 
 Since v4.0.0

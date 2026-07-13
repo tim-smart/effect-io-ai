@@ -18,8 +18,8 @@ type HttpApiMiddlewareSecurity<Security, Provides, E, Requires> = {
     httpEffect: Effect.Effect<HttpServerResponse, unhandled, Provides>,
     options: {
       readonly credential: HttpApiSecurity.HttpApiSecurity.Type<Security[K]>
-      readonly endpoint: HttpApiEndpoint.AnyWithProps
-      readonly group: HttpApiGroup.AnyWithProps
+      readonly endpoint: HttpApiEndpoint.Top
+      readonly group: HttpApiGroup.Top
     }
   ) => Effect.Effect<
     HttpServerResponse,

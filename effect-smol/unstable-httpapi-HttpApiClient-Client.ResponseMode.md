@@ -12,6 +12,6 @@ call returns the decoded success value, the raw response, or both.
 type ResponseMode = HttpApiEndpoint.ClientResponseMode
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiClient.ts#L111)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiClient.ts#L110)
 
 Since v4.0.0

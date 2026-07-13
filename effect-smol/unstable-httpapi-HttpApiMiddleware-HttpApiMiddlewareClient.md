@@ -15,8 +15,8 @@ for continuing the request pipeline.
 ```ts
 export interface HttpApiMiddlewareClient<_E, CE, R> {
   (options: {
-    readonly endpoint: HttpApiEndpoint.AnyWithProps
-    readonly group: HttpApiGroup.AnyWithProps
+    readonly endpoint: HttpApiEndpoint.Top
+    readonly group: HttpApiGroup.Top
     readonly request: HttpClientRequest.HttpClientRequest
     readonly next: (
       request: HttpClientRequest.HttpClientRequest

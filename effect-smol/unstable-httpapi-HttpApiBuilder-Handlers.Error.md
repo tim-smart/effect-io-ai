@@ -12,7 +12,8 @@ collection, returning `never` for non-effectful handler collections.
 type Error<A> = A extends Effect.Effect<
     Handlers<
       infer _R,
-      infer _Endpoints
+      infer _EndpointsByIdentifier,
+      infer _HandledIdentifiers
     >,
     infer _EX,
     infer _RX
@@ -20,6 +21,6 @@ type Error<A> = A extends Effect.Effect<
     never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiBuilder.ts#L312)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiBuilder.ts#L364)
 
 Since v4.0.0

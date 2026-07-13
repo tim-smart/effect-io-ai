@@ -10,24 +10,9 @@ unhandled.
 **Signature**
 
 ```ts
-type ValidateReturn<A> = A extends (
-    | Handlers<
-      infer _R,
-      infer _Endpoints
-    >
-    | Effect.Effect<
-      Handlers<
-        infer _R,
-        infer _Endpoints
-      >,
-      infer _EX,
-      infer _RX
-    >
-  ) ? [_Endpoints] extends [never] ? A
-    : `Endpoint not handled: ${HttpApiEndpoint.Name<_Endpoints>}` :
-    `Must return the implemented handlers`
+type ValidateReturn<A> = ValidateHandlersReturn<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiBuilder.ts#L288)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiBuilder.ts#L355)
 
 Since v4.0.0

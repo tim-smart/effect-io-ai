@@ -35,6 +35,6 @@ if (Option.isSome(result)) {
 declare const dijkstra: <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>, config: DijkstraConfig<E>) => Option.Option<PathResult<E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L2380)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L2450)
 
 Since v3.18.0

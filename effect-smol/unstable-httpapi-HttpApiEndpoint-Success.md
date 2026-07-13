@@ -8,22 +8,9 @@ Extracts the success schema associated with an endpoint.
 **Signature**
 
 ```ts
-type Success<Endpoint> = Endpoint extends HttpApiEndpoint<
-  infer _Name,
-  infer _Method,
-  infer _Path,
-  infer _Params,
-  infer _Query,
-  infer _Payload,
-  infer _Headers,
-  infer _Success,
-  infer _Error,
-  infer _M,
-  infer _MR
-> ? _Success
-  : never
+type Success<Endpoint> = Endpoint extends Constraint ? Endpoint["~Success"] : never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L306)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L348)
 
 Since v4.0.0

@@ -15,6 +15,6 @@ export interface AllPairsResult<E> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L2513)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L2580)
 
 Since v3.18.0

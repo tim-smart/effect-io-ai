@@ -10,7 +10,7 @@ middleware service requirements updated accordingly.
 
 ```ts
 type AddMiddleware<Endpoint, M> = Endpoint extends HttpApiEndpoint<
-  infer _Name,
+  infer _Identifier,
   infer _Method,
   infer _Path,
   infer _Params,
@@ -22,7 +22,7 @@ type AddMiddleware<Endpoint, M> = Endpoint extends HttpApiEndpoint<
   infer _M,
   infer _MR
 > ? HttpApiEndpoint<
-    _Name,
+    _Identifier,
     _Method,
     _Path,
     _Params,
@@ -37,6 +37,6 @@ type AddMiddleware<Endpoint, M> = Endpoint extends HttpApiEndpoint<
   never
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L934)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiEndpoint.ts#L754)
 
 Since v4.0.0

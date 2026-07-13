@@ -29,6 +29,6 @@ const encode = SchemaGetter.encodeUriComponent<string>()
 declare const encodeUriComponent: <E extends string>() => Getter<string, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1453)
+[Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/SchemaGetter.ts#L1454)
 
 Since v4.0.0

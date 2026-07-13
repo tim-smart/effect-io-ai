@@ -18,9 +18,9 @@ provider and model metadata and can be supplied directly to an Effect program.
 **Signature**
 
 ```ts
-declare const model: (model: string, config?: Omit<typeof Config.Service, "model">) => AiModel.Model<"openai", LanguageModel.LanguageModel, OpenAiClient>
+declare const model: (model: string, config?: ModelConfig) => AiModel.Model<"openai", LanguageModel.LanguageModel, OpenAiClient>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiLanguageModel.ts#L532)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiLanguageModel.ts#L531)
 
 Since v4.0.0
