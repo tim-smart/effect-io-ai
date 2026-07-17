@@ -3,15 +3,40 @@ Module: `Config`<br />
 
 ## Config.withDefault
 
-Returns a config that describes the same structure as this one, but has the
-specified default value in case the information cannot be found.
+Provides a fallback value when the config fails due to missing data.
+
+**When to use**
+
+Use when you need to make a config key optional with a sensible default.
+
+**Gotchas**
+
+Only applies when the error is a `SchemaError` caused exclusively by
+missing data (missing keys, undefined values). Validation errors (wrong
+type, out of range) still propagate.
+
+**Example** (Defaulting a missing port)
+
+```ts
+import { Config, ConfigProvider, Effect } from "effect"
+
+const port = Config.number("port").pipe(Config.withDefault(3000))
+
+const provider = ConfigProvider.fromUnknown({})
+// Effect.runSync(port.parse(provider)) // 3000
+```
+
+**See**
+
+- `option` – returns `Option` instead of a default value
+- `orElse` – catches all errors, not just missing data
 
 **Signature**
 
 ```ts
-declare const withDefault: { <const A2>(def: A2): <A>(self: Config<A>) => Config<A2 | A>; <A, const A2>(self: Config<A>, def: A2): Config<A | A2>; }
+declare const withDefault: { <const A2>(defaultValue: A2): <A>(self: Config<A>) => Config<A2 | A>; <A, const A2>(self: Config<A>, defaultValue: A2): Config<A | A2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L504)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L357)
 
 Since v2.0.0

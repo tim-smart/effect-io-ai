@@ -3,15 +3,23 @@ Module: `AnthropicTool`<br />
 
 ## AnthropicTool.TextEditor_20250728
 
-Allow Claude to directly interact with your files, providing hands-on
-assistance rather than just suggesting changes.
+Defines the text editor tool for Claude 4 models.
+
+**Details**
+
+Uses Anthropic's `str_replace_based_edit_tool`. `max_characters` can limit
+file-view output for this version.
+
+**Gotchas**
+
+This version does not support the `undo_edit` command.
 
 **Signature**
 
 ```ts
-declare const TextEditor_20250728: <Mode extends Tool.FailureMode | undefined = undefined>(args: { readonly failureMode?: Mode | undefined; }) => Tool.ProviderDefined<"AnthropicTextEditor", { readonly args: Schema.Struct<{}>; readonly parameters: Schema.Struct<{ command: Schema.Literal<["view", "create", "str_replace", "insert"]>; path: typeof Schema.String; file_text: Schema.optional<typeof Schema.String>; insert_line: Schema.optional<typeof Schema.Number>; new_str: Schema.optional<typeof Schema.String>; old_str: Schema.optional<typeof Schema.String>; view_range: Schema.optional<Schema.Array$<typeof Schema.Number>>; }>; readonly success: typeof Schema.Void; readonly failure: typeof Schema.Never; readonly failureMode: Mode extends undefined ? "error" : Mode; }, true>
+declare const TextEditor_20250728: <Mode extends Tool.FailureMode | undefined = undefined>(args: { readonly max_characters?: number | undefined; readonly failureMode?: Mode | undefined; }) => Tool.ProviderDefined<"anthropic.text_editor_20250728", "AnthropicTextEditor", { readonly args: Schema.Struct<{ readonly max_characters: Schema.optional<Schema.Number>; }>; readonly parameters: Schema.Union<readonly [Schema.Struct<{ readonly command: Schema.Literal<"view">; readonly path: Schema.String; readonly view_range: Schema.optionalKey<Schema.Tuple<readonly [Schema.Number, Schema.Number]>>; }>, Schema.Struct<{ readonly command: Schema.Literal<"create">; readonly path: Schema.String; readonly file_text: Schema.String; }>, Schema.Struct<{ readonly command: Schema.Literal<"str_replace">; readonly path: Schema.String; readonly old_str: Schema.String; readonly new_str: Schema.String; }>, Schema.Struct<{ readonly command: Schema.Literal<"insert">; readonly path: Schema.String; readonly insert_line: Schema.Number; readonly new_str: Schema.String; }>]>; readonly success: Schema.String; readonly failure: Schema.Never; readonly failureMode: Mode extends undefined ? "error" : Mode; }, true>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L464)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1992)
 
-Since v1.0.0
+Since v4.0.0

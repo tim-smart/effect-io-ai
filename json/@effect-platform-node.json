@@ -6,14 +6,46 @@
       "path": "src/index.ts"
     },
     "project": "@effect/platform-node",
-    "name": "NodeClusterHttp",
-    "description": "Re-exports all named exports from the \"./NodeClusterHttp.js\" module as `NodeClusterHttp`.",
+    "name": "Mime",
+    "description": "Re-exports all named exports from the \"./Mime.ts\" module as `Mime`.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": null,
-    "signature": "export * as NodeClusterHttp from \"./NodeClusterHttp.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L4"
+    "signature": "export * as Mime from \"./Mime.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L10"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-node",
+    "name": "NodeChildProcessSpawner",
+    "description": "Re-exports all named exports from the \"./NodeChildProcessSpawner.ts\" module as `NodeChildProcessSpawner`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": null,
+    "signature": "export * as NodeChildProcessSpawner from \"./NodeChildProcessSpawner.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L15"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-node",
+    "name": "NodeClusterHttp",
+    "description": "Re-exports all named exports from the \"./NodeClusterHttp.ts\" module as `NodeClusterHttp`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": null,
+    "signature": "export * as NodeClusterHttp from \"./NodeClusterHttp.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L20"
   },
   {
     "_tag": "Export",
@@ -23,13 +55,13 @@
     },
     "project": "@effect/platform-node",
     "name": "NodeClusterSocket",
-    "description": "Re-exports all named exports from the \"./NodeClusterSocket.js\" module as `NodeClusterSocket`.",
+    "description": "Re-exports all named exports from the \"./NodeClusterSocket.ts\" module as `NodeClusterSocket`.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": null,
-    "signature": "export * as NodeClusterSocket from \"./NodeClusterSocket.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L9"
+    "signature": "export * as NodeClusterSocket from \"./NodeClusterSocket.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L25"
   },
   {
     "_tag": "Export",
@@ -38,30 +70,14 @@
       "path": "src/index.ts"
     },
     "project": "@effect/platform-node",
-    "name": "NodeCommandExecutor",
-    "description": "Re-exports all named exports from the \"./NodeCommandExecutor.js\" module as `NodeCommandExecutor`.",
+    "name": "NodeCrypto",
+    "description": "Re-exports all named exports from the \"./NodeCrypto.ts\" module as `NodeCrypto`.",
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": null,
-    "signature": "export * as NodeCommandExecutor from \"./NodeCommandExecutor.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L14"
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "index.ts",
-      "path": "src/index.ts"
-    },
-    "project": "@effect/platform-node",
-    "name": "NodeContext",
-    "description": "Re-exports all named exports from the \"./NodeContext.js\" module as `NodeContext`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": null,
-    "signature": "export * as NodeContext from \"./NodeContext.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L19"
+    "signature": "export * as NodeCrypto from \"./NodeCrypto.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L30"
   },
   {
     "_tag": "Export",
@@ -71,13 +87,13 @@
     },
     "project": "@effect/platform-node",
     "name": "NodeFileSystem",
-    "description": "Re-exports all named exports from the \"./NodeFileSystem.js\" module as `NodeFileSystem`.",
+    "description": "Re-exports all named exports from the \"./NodeFileSystem.ts\" module as `NodeFileSystem`.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": null,
-    "signature": "export * as NodeFileSystem from \"./NodeFileSystem.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L24"
+    "signature": "export * as NodeFileSystem from \"./NodeFileSystem.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L35"
   },
   {
     "_tag": "Export",
@@ -87,13 +103,29 @@
     },
     "project": "@effect/platform-node",
     "name": "NodeHttpClient",
-    "description": "Re-exports all named exports from the \"./NodeHttpClient.js\" module as `NodeHttpClient`.",
+    "description": "Re-exports all named exports from the \"./NodeHttpClient.ts\" module as `NodeHttpClient`.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": null,
-    "signature": "export * as NodeHttpClient from \"./NodeHttpClient.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L29"
+    "signature": "export * as NodeHttpClient from \"./NodeHttpClient.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L40"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-node",
+    "name": "NodeHttpIncomingMessage",
+    "description": "Re-exports all named exports from the \"./NodeHttpIncomingMessage.ts\" module as `NodeHttpIncomingMessage`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": null,
+    "signature": "export * as NodeHttpIncomingMessage from \"./NodeHttpIncomingMessage.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L45"
   },
   {
     "_tag": "Export",
@@ -103,13 +135,13 @@
     },
     "project": "@effect/platform-node",
     "name": "NodeHttpPlatform",
-    "description": "Re-exports all named exports from the \"./NodeHttpPlatform.js\" module as `NodeHttpPlatform`.",
+    "description": "Re-exports all named exports from the \"./NodeHttpPlatform.ts\" module as `NodeHttpPlatform`.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": null,
-    "signature": "export * as NodeHttpPlatform from \"./NodeHttpPlatform.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L34"
+    "signature": "export * as NodeHttpPlatform from \"./NodeHttpPlatform.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L50"
   },
   {
     "_tag": "Export",
@@ -119,13 +151,13 @@
     },
     "project": "@effect/platform-node",
     "name": "NodeHttpServer",
-    "description": "Re-exports all named exports from the \"./NodeHttpServer.js\" module as `NodeHttpServer`.",
+    "description": "Re-exports all named exports from the \"./NodeHttpServer.ts\" module as `NodeHttpServer`.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": null,
-    "signature": "export * as NodeHttpServer from \"./NodeHttpServer.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L39"
+    "signature": "export * as NodeHttpServer from \"./NodeHttpServer.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L55"
   },
   {
     "_tag": "Export",
@@ -135,29 +167,13 @@
     },
     "project": "@effect/platform-node",
     "name": "NodeHttpServerRequest",
-    "description": "Re-exports all named exports from the \"./NodeHttpServerRequest.js\" module as `NodeHttpServerRequest`.",
+    "description": "Re-exports all named exports from the \"./NodeHttpServerRequest.ts\" module as `NodeHttpServerRequest`.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": null,
-    "signature": "export * as NodeHttpServerRequest from \"./NodeHttpServerRequest.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L44"
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "index.ts",
-      "path": "src/index.ts"
-    },
-    "project": "@effect/platform-node",
-    "name": "NodeKeyValueStore",
-    "description": "Re-exports all named exports from the \"./NodeKeyValueStore.js\" module as `NodeKeyValueStore`.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": null,
-    "signature": "export * as NodeKeyValueStore from \"./NodeKeyValueStore.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L49"
+    "signature": "export * as NodeHttpServerRequest from \"./NodeHttpServerRequest.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L60"
   },
   {
     "_tag": "Export",
@@ -167,13 +183,13 @@
     },
     "project": "@effect/platform-node",
     "name": "NodeMultipart",
-    "description": "Re-exports all named exports from the \"./NodeMultipart.js\" module as `NodeMultipart`.",
+    "description": "Re-exports all named exports from the \"./NodeMultipart.ts\" module as `NodeMultipart`.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": null,
-    "signature": "export * as NodeMultipart from \"./NodeMultipart.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L54"
+    "signature": "export * as NodeMultipart from \"./NodeMultipart.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L65"
   },
   {
     "_tag": "Export",
@@ -183,13 +199,29 @@
     },
     "project": "@effect/platform-node",
     "name": "NodePath",
-    "description": "Re-exports all named exports from the \"./NodePath.js\" module as `NodePath`.",
+    "description": "Re-exports all named exports from the \"./NodePath.ts\" module as `NodePath`.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": null,
-    "signature": "export * as NodePath from \"./NodePath.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L59"
+    "signature": "export * as NodePath from \"./NodePath.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L70"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-node",
+    "name": "NodeRedis",
+    "description": "Re-exports all named exports from the \"./NodeRedis.ts\" module as `NodeRedis`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": null,
+    "signature": "export * as NodeRedis from \"./NodeRedis.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L75"
   },
   {
     "_tag": "Export",
@@ -199,13 +231,29 @@
     },
     "project": "@effect/platform-node",
     "name": "NodeRuntime",
-    "description": "Re-exports all named exports from the \"./NodeRuntime.js\" module as `NodeRuntime`.",
+    "description": "Re-exports all named exports from the \"./NodeRuntime.ts\" module as `NodeRuntime`.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": null,
-    "signature": "export * as NodeRuntime from \"./NodeRuntime.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L64"
+    "signature": "export * as NodeRuntime from \"./NodeRuntime.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L80"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-node",
+    "name": "NodeServices",
+    "description": "Re-exports all named exports from the \"./NodeServices.ts\" module as `NodeServices`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": null,
+    "signature": "export * as NodeServices from \"./NodeServices.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L85"
   },
   {
     "_tag": "Export",
@@ -215,13 +263,13 @@
     },
     "project": "@effect/platform-node",
     "name": "NodeSink",
-    "description": "Re-exports all named exports from the \"./NodeSink.js\" module as `NodeSink`.",
+    "description": "Re-exports all named exports from the \"./NodeSink.ts\" module as `NodeSink`.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": null,
-    "signature": "export * as NodeSink from \"./NodeSink.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L69"
+    "signature": "export * as NodeSink from \"./NodeSink.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L90"
   },
   {
     "_tag": "Export",
@@ -231,13 +279,13 @@
     },
     "project": "@effect/platform-node",
     "name": "NodeSocket",
-    "description": "Re-exports all named exports from the \"./NodeSocket.js\" module as `NodeSocket`.",
+    "description": "Re-exports all named exports from the \"./NodeSocket.ts\" module as `NodeSocket`.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": null,
-    "signature": "export * as NodeSocket from \"./NodeSocket.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L74"
+    "signature": "export * as NodeSocket from \"./NodeSocket.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L95"
   },
   {
     "_tag": "Export",
@@ -247,13 +295,29 @@
     },
     "project": "@effect/platform-node",
     "name": "NodeSocketServer",
-    "description": "Re-exports all named exports from the \"./NodeSocketServer.js\" module as `NodeSocketServer`.",
+    "description": "Re-exports all named exports from the \"./NodeSocketServer.ts\" module as `NodeSocketServer`.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": null,
-    "signature": "export * as NodeSocketServer from \"./NodeSocketServer.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L79"
+    "signature": "export * as NodeSocketServer from \"./NodeSocketServer.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L100"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-node",
+    "name": "NodeStdio",
+    "description": "Re-exports all named exports from the \"./NodeStdio.ts\" module as `NodeStdio`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": null,
+    "signature": "export * as NodeStdio from \"./NodeStdio.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L105"
   },
   {
     "_tag": "Export",
@@ -263,13 +327,13 @@
     },
     "project": "@effect/platform-node",
     "name": "NodeStream",
-    "description": "Re-exports all named exports from the \"./NodeStream.js\" module as `NodeStream`.",
+    "description": "Re-exports all named exports from the \"./NodeStream.ts\" module as `NodeStream`.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": null,
-    "signature": "export * as NodeStream from \"./NodeStream.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L84"
+    "signature": "export * as NodeStream from \"./NodeStream.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L110"
   },
   {
     "_tag": "Export",
@@ -279,13 +343,13 @@
     },
     "project": "@effect/platform-node",
     "name": "NodeTerminal",
-    "description": "Re-exports all named exports from the \"./NodeTerminal.js\" module as `NodeTerminal`.",
+    "description": "Re-exports all named exports from the \"./NodeTerminal.ts\" module as `NodeTerminal`.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": null,
-    "signature": "export * as NodeTerminal from \"./NodeTerminal.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L89"
+    "signature": "export * as NodeTerminal from \"./NodeTerminal.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L115"
   },
   {
     "_tag": "Export",
@@ -295,13 +359,13 @@
     },
     "project": "@effect/platform-node",
     "name": "NodeWorker",
-    "description": "Re-exports all named exports from the \"./NodeWorker.js\" module as `NodeWorker`.",
+    "description": "Re-exports all named exports from the \"./NodeWorker.ts\" module as `NodeWorker`.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": null,
-    "signature": "export * as NodeWorker from \"./NodeWorker.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L94"
+    "signature": "export * as NodeWorker from \"./NodeWorker.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L120"
   },
   {
     "_tag": "Export",
@@ -311,13 +375,13 @@
     },
     "project": "@effect/platform-node",
     "name": "NodeWorkerRunner",
-    "description": "Re-exports all named exports from the \"./NodeWorkerRunner.js\" module as `NodeWorkerRunner`.",
+    "description": "Re-exports all named exports from the \"./NodeWorkerRunner.ts\" module as `NodeWorkerRunner`.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": null,
-    "signature": "export * as NodeWorkerRunner from \"./NodeWorkerRunner.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L99"
+    "signature": "export * as NodeWorkerRunner from \"./NodeWorkerRunner.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L125"
   },
   {
     "_tag": "Export",
@@ -327,13 +391,45 @@
     },
     "project": "@effect/platform-node",
     "name": "Undici",
-    "description": "Re-exports all named exports from the \"./Undici.js\" module as `Undici`.",
+    "description": "Re-exports all named exports from the \"./Undici.ts\" module as `Undici`.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": null,
-    "signature": "export * as Undici from \"./Undici.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L104"
+    "signature": "export * as Undici from \"./Undici.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L130"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "Mime.ts",
+      "path": "src/Mime.ts"
+    },
+    "project": "@effect/platform-node",
+    "name": "\"mime\"",
+    "description": "Re-exports all named exports from the \"mime\" module.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "re-exports",
+    "signature": "export * from \"mime\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/Mime.ts#L19"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "NodeChildProcessSpawner.ts",
+      "path": "src/NodeChildProcessSpawner.ts"
+    },
+    "project": "@effect/platform-node",
+    "name": "\"@effect/platform-node-shared/NodeChildProcessSpawner\"",
+    "description": "Re-exports all named exports from the \"@effect/platform-node-shared/NodeChildProcessSpawner\" module.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": null,
+    "signature": "export * from \"@effect/platform-node-shared/NodeChildProcessSpawner\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeChildProcessSpawner.ts#L6"
   },
   {
     "_tag": "Constant",
@@ -343,12 +439,13 @@
     },
     "project": "@effect/platform-node",
     "name": "layerHttpServer",
+    "description": "Provides the HTTP server and Node HTTP services used by cluster runners,\nlistening on `ShardingConfig.runnerListenAddress` or `runnerAddress`.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
-    "category": "Layers",
-    "signature": "declare const layerHttpServer: Layer.Layer<HttpServer | HttpPlatform | Etag.Generator | NodeContext, ServeError, ShardingConfig.ShardingConfig>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeClusterHttp.ts#L124"
+    "since": "4.0.0",
+    "category": "layers",
+    "signature": "declare const layerHttpServer: Layer.Layer<NodeServices | HttpServer | HttpPlatform | Etag.Generator, ServeError, ShardingConfig.ShardingConfig>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeClusterHttp.ts#L141"
   },
   {
     "_tag": "Function",
@@ -358,12 +455,13 @@
     },
     "project": "@effect/platform-node",
     "name": "layer",
+    "description": "Builds the Node cluster HTTP/WebSocket sharding layer, configuring runner\ntransport, RPC serialization, message storage, runner health checks, and\noptional client-only mode.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
-    "category": "Layers",
-    "signature": "declare const layer: <const ClientOnly extends boolean = false, const Storage extends \"local\" | \"sql\" | \"byo\" = never, const Health extends \"ping\" | \"k8s\" = never>(options: { readonly transport: \"http\" | \"websocket\"; readonly serialization?: \"msgpack\" | \"ndjson\" | undefined; readonly clientOnly?: ClientOnly | undefined; readonly storage?: Storage | undefined; readonly runnerHealth?: Health | undefined; readonly runnerHealthK8s?: { readonly namespace?: string | undefined; readonly labelSelector?: string | undefined; } | undefined; readonly shardingConfig?: Partial<ShardingConfig.ShardingConfig[\"Type\"]> | undefined; }) => ClientOnly extends true ? Layer.Layer<Sharding | Runners.Runners | (\"byo\" extends Storage ? never : MessageStorage.MessageStorage), ConfigError, \"local\" extends Storage ? never : \"byo\" extends Storage ? (MessageStorage.MessageStorage | RunnerStorage.RunnerStorage) : SqlClient> : Layer.Layer<Sharding | Runners.Runners | (\"byo\" extends Storage ? never : MessageStorage.MessageStorage), ServeError | ConfigError, \"local\" extends Storage ? never : \"byo\" extends Storage ? (MessageStorage.MessageStorage | RunnerStorage.RunnerStorage) : SqlClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeClusterHttp.ts#L42"
+    "since": "4.0.0",
+    "category": "layers",
+    "signature": "declare const layer: <const ClientOnly extends boolean = false, const Storage extends \"local\" | \"sql\" | \"byo\" = never>(options: { readonly transport: \"http\" | \"websocket\"; readonly serialization?: \"msgpack\" | \"ndjson\" | undefined; readonly clientOnly?: ClientOnly | undefined; readonly storage?: Storage | undefined; readonly runnerHealth?: \"ping\" | \"k8s\" | undefined; readonly runnerHealthK8s?: { readonly namespace?: string | undefined; readonly labelSelector?: string | undefined; } | undefined; readonly shardingConfig?: Partial<ShardingConfig.ShardingConfig[\"Service\"]> | undefined; }) => ClientOnly extends true ? Layer.Layer<Sharding | Runners.Runners | (\"byo\" extends Storage ? never : MessageStorage.MessageStorage), Config.ConfigError, \"local\" extends Storage ? never : \"byo\" extends Storage ? (MessageStorage.MessageStorage | RunnerStorage.RunnerStorage) : SqlClient> : Layer.Layer<Sharding | Runners.Runners | (\"byo\" extends Storage ? never : MessageStorage.MessageStorage), ServeError | Config.ConfigError, \"local\" extends Storage ? never : \"byo\" extends Storage ? (MessageStorage.MessageStorage | RunnerStorage.RunnerStorage) : SqlClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeClusterHttp.ts#L57"
   },
   {
     "_tag": "Export",
@@ -373,12 +471,13 @@
     },
     "project": "@effect/platform-node",
     "name": "layerK8sHttpClient",
+    "description": "Provides the Kubernetes HTTP client layer used by Kubernetes runner health checks.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
-    "category": "Re-exports",
+    "since": "4.0.0",
+    "category": "re-exports",
     "signature": "declare const layerK8sHttpClient: Layer.Layer<K8sHttpClient, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeClusterHttp.ts#L35"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeClusterHttp.ts#L46"
   },
   {
     "_tag": "Constant",
@@ -388,12 +487,13 @@
     },
     "project": "@effect/platform-node",
     "name": "layerDispatcherK8s",
+    "description": "Provides an Undici dispatcher for Kubernetes API calls, using the service\naccount CA certificate when it is available and falling back to the default\ndispatcher otherwise.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
-    "category": "Layers",
+    "since": "4.0.0",
+    "category": "layers",
     "signature": "declare const layerDispatcherK8s: Layer.Layer<NodeHttpClient.Dispatcher, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeClusterSocket.ts#L118"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeClusterSocket.ts#L140"
   },
   {
     "_tag": "Constant",
@@ -403,12 +503,13 @@
     },
     "project": "@effect/platform-node",
     "name": "layerK8sHttpClient",
+    "description": "Provides a `K8sHttpClient` backed by the Undici HTTP client and the\nKubernetes-aware dispatcher.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
-    "category": "Layers",
+    "since": "4.0.0",
+    "category": "layers",
     "signature": "declare const layerK8sHttpClient: Layer.Layer<K8sHttpClient.K8sHttpClient, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeClusterSocket.ts#L147"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeClusterSocket.ts#L172"
   },
   {
     "_tag": "Function",
@@ -418,12 +519,13 @@
     },
     "project": "@effect/platform-node",
     "name": "layer",
+    "description": "Builds the Node cluster socket sharding layer, configuring RPC\nserialization, message storage, runner health checks, and optional\nclient-only mode.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
-    "category": "Layers",
-    "signature": "declare const layer: <const ClientOnly extends boolean = false, const Storage extends \"local\" | \"sql\" | \"byo\" = never, const Health extends \"ping\" | \"k8s\" = never>(options?: { readonly serialization?: \"msgpack\" | \"ndjson\" | undefined; readonly clientOnly?: ClientOnly | undefined; readonly storage?: Storage | undefined; readonly runnerHealth?: Health | undefined; readonly runnerHealthK8s?: { readonly namespace?: string | undefined; readonly labelSelector?: string | undefined; } | undefined; readonly shardingConfig?: Partial<ShardingConfig.ShardingConfig[\"Type\"]> | undefined; }) => ClientOnly extends true ? Layer.Layer<Sharding | Runners.Runners | (\"byo\" extends Storage ? never : MessageStorage.MessageStorage), ConfigError, \"local\" extends Storage ? never : \"byo\" extends Storage ? (MessageStorage.MessageStorage | RunnerStorage.RunnerStorage) : SqlClient> : Layer.Layer<Sharding | Runners.Runners | (\"byo\" extends Storage ? never : MessageStorage.MessageStorage), SocketServer.SocketServerError | ConfigError, \"local\" extends Storage ? never : \"byo\" extends Storage ? (MessageStorage.MessageStorage | RunnerStorage.RunnerStorage) : SqlClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeClusterSocket.ts#L43"
+    "since": "4.0.0",
+    "category": "layers",
+    "signature": "declare const layer: <const ClientOnly extends boolean = false, const Storage extends \"local\" | \"sql\" | \"byo\" = never>(options?: { readonly serialization?: \"msgpack\" | \"ndjson\" | undefined; readonly clientOnly?: ClientOnly | undefined; readonly storage?: Storage | undefined; readonly runnerHealth?: \"ping\" | \"k8s\" | undefined; readonly runnerHealthK8s?: { readonly namespace?: string | undefined; readonly labelSelector?: string | undefined; } | undefined; readonly shardingConfig?: Partial<ShardingConfig.ShardingConfig[\"Service\"]> | undefined; }) => ClientOnly extends true ? Layer.Layer<Sharding | Runners.Runners | (\"byo\" extends Storage ? never : MessageStorage.MessageStorage), ConfigError, \"local\" extends Storage ? never : \"byo\" extends Storage ? (MessageStorage.MessageStorage | RunnerStorage.RunnerStorage) : SqlClient> : Layer.Layer<Sharding | Runners.Runners | (\"byo\" extends Storage ? never : MessageStorage.MessageStorage), SocketServer.SocketServerError | ConfigError, \"local\" extends Storage ? never : \"byo\" extends Storage ? (MessageStorage.MessageStorage | RunnerStorage.RunnerStorage) : SqlClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeClusterSocket.ts#L62"
   },
   {
     "_tag": "Export",
@@ -433,12 +535,13 @@
     },
     "project": "@effect/platform-node",
     "name": "layerClientProtocol",
+    "description": "Provides the cluster `RpcClientProtocol` using the shared socket client\nimplementation.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
-    "category": "Re-exports",
+    "since": "4.0.0",
+    "category": "re-exports",
     "signature": "declare const layerClientProtocol: Layer.Layer<Runners.RpcClientProtocol, never, RpcSerialization.RpcSerialization>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeClusterSocket.ts#L31"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeClusterSocket.ts#L43"
   },
   {
     "_tag": "Export",
@@ -448,57 +551,29 @@
     },
     "project": "@effect/platform-node",
     "name": "layerSocketServer",
+    "description": "Provides the socket server used by Node cluster runners through the shared\nsocket server implementation.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
-    "category": "Re-exports",
+    "since": "4.0.0",
+    "category": "re-exports",
     "signature": "declare const layerSocketServer: Layer.Layer<SocketServer.SocketServer, SocketServer.SocketServerError, ShardingConfig.ShardingConfig>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeClusterSocket.ts#L36"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeClusterSocket.ts#L51"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "NodeCommandExecutor.ts",
-      "path": "src/NodeCommandExecutor.ts"
+      "name": "NodeCrypto.ts",
+      "path": "src/NodeCrypto.ts"
     },
     "project": "@effect/platform-node",
     "name": "layer",
+    "description": "Layer that provides the Node.js Crypto service implementation.",
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
-    "category": "layer",
-    "signature": "declare const layer: Layer<CommandExecutor, never, FileSystem>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeCommandExecutor.ts#L13"
-  },
-  {
-    "_tag": "Constant",
-    "module": {
-      "name": "NodeContext.ts",
-      "path": "src/NodeContext.ts"
-    },
-    "project": "@effect/platform-node",
-    "name": "layer",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "layer",
-    "signature": "declare const layer: Layer.Layer<NodeContext, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeContext.ts#L32"
-  },
-  {
-    "_tag": "TypeAlias",
-    "module": {
-      "name": "NodeContext.ts",
-      "path": "src/NodeContext.ts"
-    },
-    "project": "@effect/platform-node",
-    "name": "NodeContext",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "models",
-    "signature": "type NodeContext = | CommandExecutor.CommandExecutor\n  | FileSystem.FileSystem\n  | Path.Path\n  | Terminal.Terminal\n  | Worker.WorkerManager",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeContext.ts#L21"
+    "category": "layers",
+    "signature": "declare const layer: Layer.Layer<Crypto.Crypto, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeCrypto.ts#L24"
   },
   {
     "_tag": "Constant",
@@ -508,27 +583,13 @@
     },
     "project": "@effect/platform-node",
     "name": "layer",
+    "description": "Provides the `FileSystem` service backed by Node filesystem APIs.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
-    "category": "layer",
-    "signature": "declare const layer: Layer<FileSystem, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeFileSystem.ts#L12"
-  },
-  {
-    "_tag": "Constant",
-    "module": {
-      "name": "ParcelWatcher.ts",
-      "path": "src/NodeFileSystem/ParcelWatcher.ts"
-    },
-    "project": "@effect/platform-node",
-    "name": "layer",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "layer",
-    "signature": "declare const layer: Layer<WatchBackend, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/ParcelWatcher.ts#L12"
+    "since": "4.0.0",
+    "category": "layers",
+    "signature": "declare const layer: Layer.Layer<FileSystem, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeFileSystem.ts#L21"
   },
   {
     "_tag": "Class",
@@ -537,148 +598,30 @@
       "path": "src/NodeHttpClient.ts"
     },
     "project": "@effect/platform-node",
-    "name": "UndiciRequestOptions",
+    "name": "Dispatcher",
+    "description": "Service tag for the Undici `Dispatcher` used by the Undici-backed HTTP\nclient.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
-    "category": "undici",
-    "signature": "declare class UndiciRequestOptions",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L116"
+    "since": "4.0.0",
+    "category": "Dispatcher",
+    "signature": "declare class Dispatcher",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L89"
   },
   {
-    "_tag": "Constant",
-    "module": {
-      "name": "NodeHttpClient.ts",
-      "path": "src/NodeHttpClient.ts"
-    },
-    "project": "@effect/platform-node",
-    "name": "HttpAgentTypeId",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "agent",
-    "signature": "declare const HttpAgentTypeId: unique symbol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L19"
-  },
-  {
-    "_tag": "Constant",
+    "_tag": "Class",
     "module": {
       "name": "NodeHttpClient.ts",
       "path": "src/NodeHttpClient.ts"
     },
     "project": "@effect/platform-node",
     "name": "HttpAgent",
+    "description": "Service tag for the paired Node `http` and `https` agents used by the\nnode:http-backed HTTP client.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
-    "category": "agent",
-    "signature": "declare const HttpAgent: Context.Tag<HttpAgent, HttpAgent>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L41"
-  },
-  {
-    "_tag": "Constant",
-    "module": {
-      "name": "NodeHttpClient.ts",
-      "path": "src/NodeHttpClient.ts"
-    },
-    "project": "@effect/platform-node",
-    "name": "makeAgent",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "agent",
-    "signature": "declare const makeAgent: (options?: Https.AgentOptions) => Effect.Effect<HttpAgent, never, Scope.Scope>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L47"
-  },
-  {
-    "_tag": "Constant",
-    "module": {
-      "name": "NodeHttpClient.ts",
-      "path": "src/NodeHttpClient.ts"
-    },
-    "project": "@effect/platform-node",
-    "name": "agentLayer",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "agent",
-    "signature": "declare const agentLayer: Layer.Layer<HttpAgent, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L54"
-  },
-  {
-    "_tag": "Constant",
-    "module": {
-      "name": "NodeHttpClient.ts",
-      "path": "src/NodeHttpClient.ts"
-    },
-    "project": "@effect/platform-node",
-    "name": "makeAgentLayer",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "agent",
-    "signature": "declare const makeAgentLayer: (options?: Https.AgentOptions) => Layer.Layer<HttpAgent>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L60"
-  },
-  {
-    "_tag": "Constant",
-    "module": {
-      "name": "NodeHttpClient.ts",
-      "path": "src/NodeHttpClient.ts"
-    },
-    "project": "@effect/platform-node",
-    "name": "make",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "constructors",
-    "signature": "declare const make: Effect.Effect<Client.HttpClient, never, HttpAgent>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L66"
-  },
-  {
-    "_tag": "Constant",
-    "module": {
-      "name": "NodeHttpClient.ts",
-      "path": "src/NodeHttpClient.ts"
-    },
-    "project": "@effect/platform-node",
-    "name": "layer",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "layers",
-    "signature": "declare const layer: Layer.Layer<Client.HttpClient, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L72"
-  },
-  {
-    "_tag": "Constant",
-    "module": {
-      "name": "NodeHttpClient.ts",
-      "path": "src/NodeHttpClient.ts"
-    },
-    "project": "@effect/platform-node",
-    "name": "layerWithoutAgent",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "layers",
-    "signature": "declare const layerWithoutAgent: Layer.Layer<Client.HttpClient, never, HttpAgent>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L78"
-  },
-  {
-    "_tag": "Constant",
-    "module": {
-      "name": "NodeHttpClient.ts",
-      "path": "src/NodeHttpClient.ts"
-    },
-    "project": "@effect/platform-node",
-    "name": "Dispatcher",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "undici",
-    "signature": "declare const Dispatcher: Context.Tag<Dispatcher, Undici.Dispatcher>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L92"
+    "since": "4.0.0",
+    "category": "HttpAgent",
+    "signature": "declare class HttpAgent",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L385"
   },
   {
     "_tag": "Constant",
@@ -688,12 +631,13 @@
     },
     "project": "@effect/platform-node",
     "name": "makeDispatcher",
+    "description": "Acquires a new Undici `Agent` dispatcher and destroys it when the enclosing\nscope is finalized.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
-    "category": "undici",
+    "since": "4.0.0",
+    "category": "Dispatcher",
     "signature": "declare const makeDispatcher: Effect.Effect<Undici.Dispatcher, never, Scope.Scope>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L98"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L100"
   },
   {
     "_tag": "Constant",
@@ -702,13 +646,14 @@
       "path": "src/NodeHttpClient.ts"
     },
     "project": "@effect/platform-node",
-    "name": "dispatcherLayer",
+    "name": "layerDispatcher",
+    "description": "Provides the `Dispatcher` service using a scoped Undici `Agent`.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
-    "category": "undici",
-    "signature": "declare const dispatcherLayer: Layer.Layer<Dispatcher, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L104"
+    "since": "4.0.0",
+    "category": "Dispatcher",
+    "signature": "declare const layerDispatcher: Layer.Layer<Dispatcher, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L111"
   },
   {
     "_tag": "Constant",
@@ -718,12 +663,29 @@
     },
     "project": "@effect/platform-node",
     "name": "dispatcherLayerGlobal",
+    "description": "Provides the `Dispatcher` service from Undici's process-global dispatcher,\nwithout creating or owning a new agent.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
-    "category": "undici",
+    "since": "4.0.0",
+    "category": "Dispatcher",
     "signature": "declare const dispatcherLayerGlobal: Layer.Layer<Dispatcher, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L110"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L120"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "NodeHttpClient.ts",
+      "path": "src/NodeHttpClient.ts"
+    },
+    "project": "@effect/platform-node",
+    "name": "UndiciOptions",
+    "description": "Fiber reference containing default Undici request options applied to requests\nsent by `makeUndici`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "Undici",
+    "signature": "declare const UndiciOptions: Context.Reference<Partial<Undici.Dispatcher.RequestOptions<null>>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L129"
   },
   {
     "_tag": "Constant",
@@ -733,12 +695,29 @@
     },
     "project": "@effect/platform-node",
     "name": "makeUndici",
+    "description": "Creates an `HttpClient` that sends requests through the current Undici\n`Dispatcher`, converts Effect HTTP bodies to Undici bodies, and maps\ntransport and decode failures to `HttpClientError`.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
-    "category": "constructors",
-    "signature": "declare const makeUndici: (dispatcher: Undici.Dispatcher) => Client.HttpClient",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L125"
+    "since": "4.0.0",
+    "category": "Undici",
+    "signature": "declare const makeUndici: Effect.Effect<Client.HttpClient, never, Dispatcher>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L142"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "NodeHttpClient.ts",
+      "path": "src/NodeHttpClient.ts"
+    },
+    "project": "@effect/platform-node",
+    "name": "layerUndiciNoDispatcher",
+    "description": "Provides an Undici-backed `HttpClient` using the current `Dispatcher`\nservice.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "Undici",
+    "signature": "declare const layerUndiciNoDispatcher: Layer.Layer<Client.HttpClient, never, Dispatcher>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L359"
   },
   {
     "_tag": "Constant",
@@ -748,12 +727,13 @@
     },
     "project": "@effect/platform-node",
     "name": "layerUndici",
+    "description": "Provides an Undici-backed `HttpClient` together with a scoped default\nUndici `Agent` dispatcher.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
-    "category": "layers",
+    "since": "4.0.0",
+    "category": "Undici",
     "signature": "declare const layerUndici: Layer.Layer<Client.HttpClient, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L131"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L372"
   },
   {
     "_tag": "Constant",
@@ -762,58 +742,158 @@
       "path": "src/NodeHttpClient.ts"
     },
     "project": "@effect/platform-node",
-    "name": "layerUndiciWithoutDispatcher",
+    "name": "layerAgentOptions",
+    "description": "Provides the `HttpAgent` service using scoped Node `http` and `https`\nagents configured with the supplied options.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
-    "category": "layers",
-    "signature": "declare const layerUndiciWithoutDispatcher: Layer.Layer<Client.HttpClient, never, Dispatcher>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L137"
+    "since": "4.0.0",
+    "category": "HttpAgent",
+    "signature": "declare const layerAgentOptions: (options?: Https.AgentOptions | undefined) => Layer.Layer<HttpAgent>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L417"
   },
   {
-    "_tag": "Interface",
+    "_tag": "Constant",
     "module": {
       "name": "NodeHttpClient.ts",
       "path": "src/NodeHttpClient.ts"
     },
     "project": "@effect/platform-node",
-    "name": "HttpAgent",
+    "name": "layerAgent",
+    "description": "Provides the `HttpAgent` service using default scoped Node `http` and\n`https` agents.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
-    "category": "agent",
-    "signature": "export interface HttpAgent {\n  readonly [HttpAgentTypeId]: typeof HttpAgentTypeId\n  readonly http: Http.Agent\n  readonly https: Https.Agent\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L31"
+    "since": "4.0.0",
+    "category": "HttpAgent",
+    "signature": "declare const layerAgent: Layer.Layer<HttpAgent, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L428"
   },
   {
-    "_tag": "Interface",
+    "_tag": "Constant",
     "module": {
       "name": "NodeHttpClient.ts",
       "path": "src/NodeHttpClient.ts"
     },
     "project": "@effect/platform-node",
-    "name": "Dispatcher",
+    "name": "makeNodeHttp",
+    "description": "Creates an `HttpClient` backed by Node `http` and `https`, using the\ncurrent `HttpAgent`, streaming request bodies, and wrapping Node responses\nas `HttpClientResponse` values.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
-    "category": "undici",
-    "signature": "export interface Dispatcher {\n  readonly _: unique symbol\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L84"
+    "since": "4.0.0",
+    "category": "node:http",
+    "signature": "declare const makeNodeHttp: Effect.Effect<Client.HttpClient, never, HttpAgent>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L438"
   },
   {
-    "_tag": "TypeAlias",
+    "_tag": "Constant",
     "module": {
       "name": "NodeHttpClient.ts",
       "path": "src/NodeHttpClient.ts"
     },
     "project": "@effect/platform-node",
-    "name": "HttpAgentTypeId",
+    "name": "layerNodeHttpNoAgent",
+    "description": "Provides a node:http-backed `HttpClient` using the current `HttpAgent`\nservice.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
-    "category": "agent",
-    "signature": "type HttpAgentTypeId = typeof HttpAgentTypeId",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L25"
+    "since": "4.0.0",
+    "category": "node:http",
+    "signature": "declare const layerNodeHttpNoAgent: Layer.Layer<Client.HttpClient, never, HttpAgent>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L651"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "NodeHttpClient.ts",
+      "path": "src/NodeHttpClient.ts"
+    },
+    "project": "@effect/platform-node",
+    "name": "layerNodeHttp",
+    "description": "Provides a node:http-backed `HttpClient` together with default scoped Node\n`http` and `https` agents.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "node:http",
+    "signature": "declare const layerNodeHttp: Layer.Layer<Client.HttpClient, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L664"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "NodeHttpClient.ts",
+      "path": "src/NodeHttpClient.ts"
+    },
+    "project": "@effect/platform-node",
+    "name": "makeAgent",
+    "description": "Acquires Node `http` and `https` agents with the supplied options and\ndestroys both agents when the enclosing scope is finalized.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "HttpAgent",
+    "signature": "declare const makeAgent: (options?: Https.AgentOptions) => Effect.Effect<HttpAgent[\"Service\"], never, Scope.Scope>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L397"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "NodeHttpClient.ts",
+      "path": "src/NodeHttpClient.ts"
+    },
+    "project": "@effect/platform-node",
+    "name": "Fetch",
+    "description": "Provides a fetch-based HTTP client implementation for Node.js.\n\n**When to use**\n\nUse to access or override the fetch implementation used by the Node\nfetch-based HTTP client.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "fetch",
+    "signature": "declare const Fetch: Context.Reference<{ (input: RequestInfo | URL, init?: RequestInit): Promise<Response>; (input: string | URL | Request, init?: RequestInit): Promise<Response>; }>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L57"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "NodeHttpClient.ts",
+      "path": "src/NodeHttpClient.ts"
+    },
+    "project": "@effect/platform-node",
+    "name": "layerFetch",
+    "description": "Layer that provides the fetch-based HTTP client implementation.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "fetch",
+    "signature": "declare const layerFetch: Layer.Layer<Client.HttpClient, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L64"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "NodeHttpClient.ts",
+      "path": "src/NodeHttpClient.ts"
+    },
+    "project": "@effect/platform-node",
+    "name": "RequestInit",
+    "description": "Provides request initialization options accepted by the fetch-based HTTP client.\n\n**When to use**\n\nUse to provide default fetch request options for Node HTTP requests.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "fetch",
+    "signature": "declare const RequestInit: typeof RequestInit",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpClient.ts#L75"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "NodeHttpIncomingMessage.ts",
+      "path": "src/NodeHttpIncomingMessage.ts"
+    },
+    "project": "@effect/platform-node",
+    "name": "NodeHttpIncomingMessage",
+    "description": "Adapts a Node `IncomingMessage` to Effect HTTP incoming messages.\n\n**When to use**\n\nUse to implement Node HTTP request or response adapters that expose the\nEffect HTTP incoming-message interface.\n\n**Details**\n\nThe adapter exposes headers, remote address, stream access, and cached body\ndecoders. Subclasses provide the error mapping for unknown Node errors.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "constructors",
+    "signature": "declare class NodeHttpIncomingMessage<E> { constructor(\n    source: Http.IncomingMessage,\n    onError: (error: unknown) => E,\n    remoteAddressOverride?: Option.Option<string>\n  ) }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpIncomingMessage.ts#L41"
   },
   {
     "_tag": "Constant",
@@ -823,12 +903,13 @@
     },
     "project": "@effect/platform-node",
     "name": "make",
+    "description": "Creates the Node `HttpPlatform`, serving file responses from Node readable\nstreams and adding MIME type and content-length headers when needed.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": "constructors",
-    "signature": "declare const make: Effect.Effect<Platform.HttpPlatform, never, Etag.Generator | FileSystem.FileSystem>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpPlatform.ts#L15"
+    "signature": "declare const make: Effect<{ readonly fileResponse: (path: string, options?: ServerResponse.Options.WithContent & { readonly bytesToRead?: SizeInput | undefined; readonly chunkSize?: SizeInput | undefined; readonly offset?: SizeInput | undefined; }) => Effect<ServerResponse.HttpServerResponse, PlatformError>; readonly fileWebResponse: (file: HttpBody.FileLike, options?: ServerResponse.Options.WithContent & { readonly bytesToRead?: SizeInput | undefined; readonly chunkSize?: SizeInput | undefined; readonly offset?: SizeInput | undefined; }) => Effect<ServerResponse.HttpServerResponse>; }, never, FileSystem | EtagImpl.Generator>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpPlatform.ts#L29"
   },
   {
     "_tag": "Constant",
@@ -838,12 +919,13 @@
     },
     "project": "@effect/platform-node",
     "name": "layer",
+    "description": "Provides the Node `HttpPlatform` together with the filesystem and ETag\nservices it needs for file responses.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layer: Layer.Layer<Platform.HttpPlatform, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpPlatform.ts#L21"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpPlatform.ts#L66"
   },
   {
     "_tag": "Constant",
@@ -853,27 +935,13 @@
     },
     "project": "@effect/platform-node",
     "name": "make",
+    "description": "Creates a scoped `HttpServer` from a Node `http.Server`, starts listening\nwith the supplied options, registers request and upgrade handling, and closes\nthe server during scope finalization with optional graceful-shutdown control.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": "constructors",
-    "signature": "declare const make: (evaluate: LazyArg<Http.Server<typeof Http.IncomingMessage, typeof Http.ServerResponse>>, options: Net.ListenOptions) => Effect.Effect<Server.HttpServer, ServeError, Scope.Scope>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpServer.ts#L27"
-  },
-  {
-    "_tag": "Constant",
-    "module": {
-      "name": "NodeHttpServer.ts",
-      "path": "src/NodeHttpServer.ts"
-    },
-    "project": "@effect/platform-node",
-    "name": "makeHandler",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "constructors",
-    "signature": "declare const makeHandler: { <R, E>(httpApp: App.Default<E, R>): Effect.Effect<(nodeRequest: Http.IncomingMessage, nodeResponse: Http.ServerResponse) => void, never, Exclude<R, ServerRequest.HttpServerRequest | Scope.Scope>>; <R, E, App extends App.Default<any, any>>(httpApp: App.Default<E, R>, middleware: Middleware.HttpMiddleware.Applied<App, E, R>): Effect.Effect<(nodeRequest: Http.IncomingMessage, nodeResponse: Http.ServerResponse) => void, never, Exclude<Effect.Effect.Context<App>, ServerRequest.HttpServerRequest | Scope.Scope>>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpServer.ts#L40"
+    "signature": "declare const make: (evaluate: LazyArg<Http.Server<typeof Http.IncomingMessage, typeof Http.ServerResponse>>, options: Net.ListenOptions & { readonly disablePreemptiveShutdown?: boolean | undefined; readonly gracefulShutdownTimeout?: Duration.Input | undefined; }) => Effect.Effect<{ readonly serve: { <E, R>(effect: Effect.Effect<HttpServerResponse, E, R>): Effect.Effect<void, never, Exclude<R, HttpServerRequest> | Scope.Scope>; <E, R, App extends Effect.Effect<HttpServerResponse, any, any>>(effect: Effect.Effect<HttpServerResponse, E, R>, middleware: Middleware.HttpMiddleware.Applied<App, E, R>): Effect.Effect<void, never, Exclude<R, HttpServerRequest> | Scope.Scope>; }; readonly address: HttpServer.Address; }, ServeError, Scope.Scope>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpServer.ts#L73"
   },
   {
     "_tag": "Constant",
@@ -883,12 +951,13 @@
     },
     "project": "@effect/platform-node",
     "name": "layerServer",
+    "description": "Provides an `HttpServer` by creating and managing a scoped Node\n`http.Server` with the supplied listen and shutdown options.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": "layers",
-    "signature": "declare const layerServer: (evaluate: LazyArg<Http.Server>, options: Net.ListenOptions) => Layer.Layer<Server.HttpServer, ServeError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpServer.ts#L62"
+    "signature": "declare const layerServer: (evaluate: LazyArg<Http.Server<typeof Http.IncomingMessage, typeof Http.ServerResponse>>, options: Net.ListenOptions & { readonly disablePreemptiveShutdown?: boolean | undefined; readonly gracefulShutdownTimeout?: Duration.Input | undefined; }) => Layer.Layer<HttpServer.HttpServer, ServeError>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpServer.ts#L398"
   },
   {
     "_tag": "Constant",
@@ -897,28 +966,14 @@
       "path": "src/NodeHttpServer.ts"
     },
     "project": "@effect/platform-node",
-    "name": "layer",
+    "name": "layerHttpServices",
+    "description": "Provides the Node HTTP support services used by `NodeHttpServer`, including\nthe HTTP platform, ETag generator, and core Node platform services.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": "layers",
-    "signature": "declare const layer: (evaluate: LazyArg<Http.Server<typeof Http.IncomingMessage, typeof Http.ServerResponse>>, options: Net.ListenOptions) => Layer.Layer<Platform.HttpPlatform | Etag.Generator | NodeContext.NodeContext | Server.HttpServer, ServeError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpServer.ts#L71"
-  },
-  {
-    "_tag": "Constant",
-    "module": {
-      "name": "NodeHttpServer.ts",
-      "path": "src/NodeHttpServer.ts"
-    },
-    "project": "@effect/platform-node",
-    "name": "layerConfig",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "layers",
-    "signature": "declare const layerConfig: (evaluate: LazyArg<Http.Server<typeof Http.IncomingMessage, typeof Http.ServerResponse>>, options: Config.Config.Wrap<Net.ListenOptions>) => Layer.Layer<Platform.HttpPlatform | Etag.Generator | NodeContext.NodeContext | Server.HttpServer, ConfigError.ConfigError | ServeError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpServer.ts#L81"
+    "signature": "declare const layerHttpServices: Layer.Layer<NodeServices.NodeServices | HttpPlatform.HttpPlatform | Etag.Generator, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpServer.ts#L413"
   },
   {
     "_tag": "Constant",
@@ -928,90 +983,157 @@
     },
     "project": "@effect/platform-node",
     "name": "layerTest",
-    "description": "Layer starting a server on a random port and producing an `HttpClient`\nwith prepended url of the running http server.\n\n**Example**\n\n```ts\nimport * as assert from \"node:assert\"\nimport { HttpClient, HttpRouter, HttpServer } from \"@effect/platform\"\nimport { NodeHttpServer } from \"@effect/platform-node\"\nimport { Effect } from \"effect\"\n\nEffect.gen(function*() {\n  yield* HttpServer.serveEffect(HttpRouter.empty)\n  const response = yield* HttpClient.get(\"/\")\n  assert.strictEqual(response.status, 404)\n}).pipe(Effect.provide(NodeHttpServer.layerTest))\n```",
+    "description": "Provides a test HTTP server listening on an ephemeral port together with a\nFetch-backed `HttpClient` configured for server integration tests.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
-    "category": "layers",
-    "signature": "declare const layerTest: Layer.Layer<Server.HttpServer | Platform.HttpPlatform | Etag.Generator | NodeContext.NodeContext | HttpClient.HttpClient, ServeError, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpServer.ts#L111"
+    "since": "4.0.0",
+    "category": "testing",
+    "signature": "declare const layerTest: Layer.Layer<FileSystem.FileSystem | Path.Path | HttpServer.HttpServer | HttpPlatform.HttpPlatform | Etag.Generator | HttpClient, ServeError, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpServer.ts#L477"
   },
   {
-    "_tag": "Constant",
+    "_tag": "Function",
     "module": {
       "name": "NodeHttpServer.ts",
       "path": "src/NodeHttpServer.ts"
     },
     "project": "@effect/platform-node",
-    "name": "layerContext",
-    "description": "A Layer providing the `HttpPlatform`, `FileSystem`, `Etag.Generator`, and `Path`\nservices.\n\nThe `FileSystem` service is a no-op implementation, so this layer is only\nuseful for platforms that have no file system.",
+    "name": "makeHandler",
+    "description": "Creates a Node `request` event handler for an Effect HTTP application,\ninjecting a `HttpServerRequest` and interrupting the request fiber if the\nclient closes the response before it finishes.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
-    "category": "layers",
-    "signature": "declare const layerContext: Layer.Layer<Platform.HttpPlatform | Etag.Generator | NodeContext.NodeContext, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpServer.ts#L130"
+    "since": "4.0.0",
+    "category": "handlers",
+    "signature": "declare const makeHandler: <R, E, App extends Effect.Effect<HttpServerResponse, any, any> = Effect.Effect<HttpServerResponse, E, R>>(httpEffect: Effect.Effect<HttpServerResponse, E, R>, options: { readonly scope: Scope.Scope; readonly middleware?: Middleware.HttpMiddleware.Applied<App, E, R> | undefined; }) => Effect.Effect<(nodeRequest: Http.IncomingMessage, nodeResponse: Http.ServerResponse) => void, never, Exclude<Effect.Services<App>, HttpServerRequest | Scope.Scope>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpServer.ts#L170"
   },
   {
-    "_tag": "Constant",
+    "_tag": "Function",
+    "module": {
+      "name": "NodeHttpServer.ts",
+      "path": "src/NodeHttpServer.ts"
+    },
+    "project": "@effect/platform-node",
+    "name": "makeUpgradeHandler",
+    "description": "Creates a Node `upgrade` event handler for an Effect HTTP application,\nexposing the upgraded WebSocket as the request's `upgrade` effect and\ninterrupting the request fiber when the socket closes early.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "handlers",
+    "signature": "declare const makeUpgradeHandler: <R, E, App extends Effect.Effect<HttpServerResponse, any, any> = Effect.Effect<HttpServerResponse, E, R>>(lazyWss: Effect.Effect<NodeWS.WebSocketServer>, httpEffect: Effect.Effect<HttpServerResponse, E, R>, options: { readonly scope: Scope.Scope; readonly middleware?: Middleware.HttpMiddleware.Applied<App, E, R> | undefined; }) => Effect.Effect<(nodeRequest: Http.IncomingMessage, socket: Duplex, head: Buffer) => void, never, Exclude<Effect.Services<App>, HttpServerRequest | Scope.Scope>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpServer.ts#L212"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "NodeHttpServer.ts",
+      "path": "src/NodeHttpServer.ts"
+    },
+    "project": "@effect/platform-node",
+    "name": "layer",
+    "description": "Provides a Node `HttpServer` together with the Node HTTP platform, ETag, and\ncore platform services required to serve requests.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "layers",
+    "signature": "declare const layer: (evaluate: LazyArg<Http.Server>, options: Net.ListenOptions & { readonly disablePreemptiveShutdown?: boolean | undefined; readonly gracefulShutdownTimeout?: Duration.Input | undefined; }) => Layer.Layer<HttpServer.HttpServer | NodeServices.NodeServices | HttpPlatform.HttpPlatform | Etag.Generator, ServeError>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpServer.ts#L428"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "NodeHttpServer.ts",
+      "path": "src/NodeHttpServer.ts"
+    },
+    "project": "@effect/platform-node",
+    "name": "layerConfig",
+    "description": "Provides a Node `HttpServer` together with the Node HTTP platform, ETag,\nand core Node platform services, reading the listen and shutdown options from\na `Config` value.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "layers",
+    "signature": "declare const layerConfig: (evaluate: LazyArg<Http.Server>, options: Config.Wrap<Net.ListenOptions & { readonly disablePreemptiveShutdown?: boolean | undefined; readonly gracefulShutdownTimeout?: Duration.Input | undefined; }>) => Layer.Layer<HttpServer.HttpServer | NodeServices.NodeServices | HttpPlatform.HttpPlatform | Etag.Generator, ServeError | Config.ConfigError>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpServer.ts#L451"
+  },
+  {
+    "_tag": "Function",
     "module": {
       "name": "NodeHttpServerRequest.ts",
       "path": "src/NodeHttpServerRequest.ts"
     },
     "project": "@effect/platform-node",
     "name": "toIncomingMessage",
+    "description": "Returns the underlying Node `IncomingMessage` for a platform Node\n`HttpServerRequest`.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
-    "category": "conversions",
-    "signature": "declare const toIncomingMessage: (self: ServerRequest.HttpServerRequest) => Http.IncomingMessage",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpServerRequest.ts#L12"
+    "since": "4.0.0",
+    "category": "accessors",
+    "signature": "declare const toIncomingMessage: (self: HttpServerRequest) => Http.IncomingMessage",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpServerRequest.ts#L20"
   },
   {
-    "_tag": "Constant",
+    "_tag": "Function",
     "module": {
       "name": "NodeHttpServerRequest.ts",
       "path": "src/NodeHttpServerRequest.ts"
     },
     "project": "@effect/platform-node",
     "name": "toServerResponse",
+    "description": "Returns the underlying Node `ServerResponse` for a platform Node\n`HttpServerRequest`, evaluating the stored response thunk when the response\nwas created lazily.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
-    "category": "conversions",
-    "signature": "declare const toServerResponse: (self: ServerRequest.HttpServerRequest) => Http.ServerResponse",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpServerRequest.ts#L19"
+    "since": "4.0.0",
+    "category": "accessors",
+    "signature": "declare const toServerResponse: (self: HttpServerRequest) => Http.ServerResponse",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpServerRequest.ts#L30"
   },
   {
-    "_tag": "Constant",
-    "module": {
-      "name": "NodeKeyValueStore.ts",
-      "path": "src/NodeKeyValueStore.ts"
-    },
-    "project": "@effect/platform-node",
-    "name": "layerFileSystem",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "layers",
-    "signature": "declare const layerFileSystem: (directory: string) => Layer.Layer<KeyValueStore.KeyValueStore, PlatformError.PlatformError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeKeyValueStore.ts#L13"
-  },
-  {
-    "_tag": "Export",
+    "_tag": "Function",
     "module": {
       "name": "NodeMultipart.ts",
       "path": "src/NodeMultipart.ts"
     },
     "project": "@effect/platform-node",
-    "name": "\"@effect/platform-node-shared/NodeMultipart\"",
-    "description": "Re-exports all named exports from the \"@effect/platform-node-shared/NodeMultipart\" module.",
+    "name": "stream",
+    "description": "Parses multipart data from a Node readable request body and headers into a\nstream of `Multipart.Part` values, converting parser failures to\n`MultipartError`.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
-    "category": null,
-    "signature": "export * from \"@effect/platform-node-shared/NodeMultipart\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeMultipart.ts#L8"
+    "since": "4.0.0",
+    "category": "constructors",
+    "signature": "declare const stream: (source: Readable, headers: IncomingHttpHeaders) => Stream.Stream<Multipart.Part, Multipart.MultipartError>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeMultipart.ts#L35"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "NodeMultipart.ts",
+      "path": "src/NodeMultipart.ts"
+    },
+    "project": "@effect/platform-node",
+    "name": "persisted",
+    "description": "Parses multipart data from a Node readable request body and persists file\nparts using the current `FileSystem`, `Path`, and `Scope` services.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "constructors",
+    "signature": "declare const persisted: (source: Readable, headers: IncomingHttpHeaders) => Effect.Effect<Multipart.Persisted, Multipart.MultipartError, Scope.Scope | FileSystem.FileSystem | Path.Path>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeMultipart.ts#L61"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "NodeMultipart.ts",
+      "path": "src/NodeMultipart.ts"
+    },
+    "project": "@effect/platform-node",
+    "name": "fileToReadable",
+    "description": "Returns the underlying Node readable stream for a multipart file produced by\nthe Node multipart parser.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "converting",
+    "signature": "declare const fileToReadable: (file: Multipart.File) => Readable",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeMultipart.ts#L82"
   },
   {
     "_tag": "Constant",
@@ -1021,12 +1143,13 @@
     },
     "project": "@effect/platform-node",
     "name": "layer",
+    "description": "Provides the default Node `Path` service using the platform's `node:path`\nimplementation.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
-    "category": "layer",
-    "signature": "declare const layer: Layer<Path, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodePath.ts#L13"
+    "since": "4.0.0",
+    "category": "layers",
+    "signature": "declare const layer: Layer.Layer<Path, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodePath.ts#L22"
   },
   {
     "_tag": "Constant",
@@ -1036,12 +1159,13 @@
     },
     "project": "@effect/platform-node",
     "name": "layerPosix",
+    "description": "Provides the `Path` service using Node's POSIX path implementation,\nregardless of the host platform.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
-    "category": "layer",
-    "signature": "declare const layerPosix: Layer<Path, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodePath.ts#L19"
+    "since": "4.0.0",
+    "category": "layers",
+    "signature": "declare const layerPosix: Layer.Layer<Path, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodePath.ts#L31"
   },
   {
     "_tag": "Constant",
@@ -1051,12 +1175,61 @@
     },
     "project": "@effect/platform-node",
     "name": "layerWin32",
+    "description": "Provides the `Path` service using Node's Windows path implementation,\nregardless of the host platform.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
-    "category": "layer",
-    "signature": "declare const layerWin32: Layer<Path, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodePath.ts#L25"
+    "since": "4.0.0",
+    "category": "layers",
+    "signature": "declare const layerWin32: Layer.Layer<Path, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodePath.ts#L40"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "NodeRedis.ts",
+      "path": "src/NodeRedis.ts"
+    },
+    "project": "@effect/platform-node",
+    "name": "NodeRedis",
+    "description": "Service tag for the Node Redis integration, exposing the underlying\n`ioredis` client and a `use` helper that maps client failures to\n`RedisError`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "services",
+    "signature": "declare class NodeRedis",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeRedis.ts#L29"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "NodeRedis.ts",
+      "path": "src/NodeRedis.ts"
+    },
+    "project": "@effect/platform-node",
+    "name": "layer",
+    "description": "Provides `Redis` and `NodeRedis` services backed by an `ioredis` client\ncreated with the supplied options and closed when the layer scope ends.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "layers",
+    "signature": "declare const layer: (options?: IoRedis.RedisOptions | undefined) => Layer.Layer<Redis.Redis | NodeRedis>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeRedis.ts#L72"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "NodeRedis.ts",
+      "path": "src/NodeRedis.ts"
+    },
+    "project": "@effect/platform-node",
+    "name": "layerConfig",
+    "description": "Provides `Redis` and `NodeRedis` services from `Config`-backed ioredis\noptions, closing the client when the layer scope ends.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "layers",
+    "signature": "declare const layerConfig: (options: Config.Wrap<IoRedis.RedisOptions>) => Layer.Layer<Redis.Redis | NodeRedis, Config.ConfigError>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeRedis.ts#L83"
   },
   {
     "_tag": "Constant",
@@ -1066,12 +1239,45 @@
     },
     "project": "@effect/platform-node",
     "name": "runMain",
+    "description": "Helps you run a main effect with built-in error handling, logging, and signal management.\n\n**When to use**\n\nUse to run a Node.js application's main Effect with structured error\nhandling, log management, interrupt support, or advanced teardown\ncapabilities.\n\n**Details**\n\nThis function launches an Effect as the main entry point, setting exit codes\nbased on success or failure, handling interrupts (e.g., Ctrl+C), and optionally\nlogging errors. By default, it logs errors and uses a \"pretty\" format, but both\nbehaviors can be turned off. You can also provide custom teardown logic to\nfinalize resources or produce different exit codes.\n\nThe optional configuration object can include:\n- `disableErrorReporting`: Turn off automatic error logging.\n- `teardown`: Provide custom finalization logic.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
-    "category": "runtime",
-    "signature": "declare const runMain: RunMain",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeRuntime.ts#L11"
+    "since": "4.0.0",
+    "category": "running",
+    "signature": "declare const runMain: { (options?: { readonly disableErrorReporting?: boolean | undefined; readonly teardown?: Runtime.Teardown | undefined; }): <E, A>(effect: Effect<A, E>) => void; <E, A>(effect: Effect<A, E>, options?: { readonly disableErrorReporting?: boolean | undefined; readonly teardown?: Runtime.Teardown | undefined; }): void; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeRuntime.ts#L39"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "NodeServices.ts",
+      "path": "src/NodeServices.ts"
+    },
+    "project": "@effect/platform-node",
+    "name": "layer",
+    "description": "Provides the default Node implementations for child process spawning,\nfilesystem, path, stdio, and terminal services.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "layers",
+    "signature": "declare const layer: Layer.Layer<NodeServices, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeServices.ts#L41"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "NodeServices.ts",
+      "path": "src/NodeServices.ts"
+    },
+    "project": "@effect/platform-node",
+    "name": "NodeServices",
+    "description": "The union of core services provided by the Node platform layer, including\nchild process spawning, filesystem, path, stdio, and terminal services.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "models",
+    "signature": "type NodeServices = ChildProcessSpawner | Crypto | FileSystem | Path | Stdio | Terminal",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeServices.ts#L32"
   },
   {
     "_tag": "Export",
@@ -1084,7 +1290,7 @@
     "description": "Re-exports all named exports from the \"@effect/platform-node-shared/NodeSink\" module.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": null,
     "signature": "export * from \"@effect/platform-node-shared/NodeSink\"",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeSink.ts#L8"
@@ -1097,27 +1303,45 @@
     },
     "project": "@effect/platform-node",
     "name": "layerWebSocketConstructor",
+    "description": "Provides a `Socket.WebSocketConstructor`, using `globalThis.WebSocket` when\navailable and falling back to the `ws` package otherwise.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layerWebSocketConstructor: Layer.Layer<Socket.WebSocketConstructor, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeSocket.ts#L28"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeSocket.ts#L31"
   },
   {
-    "_tag": "Function",
+    "_tag": "Constant",
+    "module": {
+      "name": "NodeSocket.ts",
+      "path": "src/NodeSocket.ts"
+    },
+    "project": "@effect/platform-node",
+    "name": "layerWebSocketConstructorWS",
+    "description": "Provides a `Socket.WebSocketConstructor` backed explicitly by the `ws`\npackage.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "layers",
+    "signature": "declare const layerWebSocketConstructorWS: Layer.Layer<Socket.WebSocketConstructor, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeSocket.ts#L47"
+  },
+  {
+    "_tag": "Constant",
     "module": {
       "name": "NodeSocket.ts",
       "path": "src/NodeSocket.ts"
     },
     "project": "@effect/platform-node",
     "name": "layerWebSocket",
+    "description": "Creates a `Socket.Socket` layer for a WebSocket URL using the Node WebSocket\nconstructor layer, honoring protocol, open-timeout, and close-code error\noptions.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": "layers",
-    "signature": "declare const layerWebSocket: (url: string, options?: { readonly closeCodeIsError?: (code: number) => boolean; }) => Layer.Layer<Socket.Socket>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeSocket.ts#L17"
+    "signature": "declare const layerWebSocket: (url: string | Effect.Effect<string>, options?: { readonly closeCodeIsError?: ((code: number) => boolean) | undefined; readonly openTimeout?: Duration.Input | undefined; readonly protocols?: string | Array<string> | undefined; } | undefined) => Layer.Layer<Socket.Socket, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeSocket.ts#L61"
   },
   {
     "_tag": "Export",
@@ -1130,10 +1354,10 @@
     "description": "Re-exports all named exports from the \"@effect/platform-node-shared/NodeSocket\" module.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": null,
     "signature": "export * from \"@effect/platform-node-shared/NodeSocket\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeSocket.ts#L11"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeSocket.ts#L22"
   },
   {
     "_tag": "Export",
@@ -1146,10 +1370,26 @@
     "description": "Re-exports all named exports from the \"@effect/platform-node-shared/NodeSocketServer\" module.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": null,
     "signature": "export * from \"@effect/platform-node-shared/NodeSocketServer\"",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeSocketServer.ts#L8"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "NodeStdio.ts",
+      "path": "src/NodeStdio.ts"
+    },
+    "project": "@effect/platform-node",
+    "name": "layer",
+    "description": "Provides the `Stdio` service backed by the current process arguments,\nstdin, stdout, and stderr streams.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "layers",
+    "signature": "declare const layer: Layer.Layer<Stdio, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeStdio.ts#L22"
   },
   {
     "_tag": "Export",
@@ -1162,10 +1402,10 @@
     "description": "Re-exports all named exports from the \"@effect/platform-node-shared/NodeStream\" module.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
-    "category": "re-exports",
+    "since": "4.0.0",
+    "category": null,
     "signature": "export * from \"@effect/platform-node-shared/NodeStream\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeStream.ts#L9"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeStream.ts#L8"
   },
   {
     "_tag": "Constant",
@@ -1175,12 +1415,13 @@
     },
     "project": "@effect/platform-node",
     "name": "make",
+    "description": "Creates a scoped `Terminal` service backed by process stdin/stdout, using the\noptional predicate to decide when key input should end the input stream.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": "constructors",
     "signature": "declare const make: (shouldQuit?: (input: UserInput) => boolean) => Effect<Terminal, never, Scope>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeTerminal.ts#L14"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeTerminal.ts#L23"
   },
   {
     "_tag": "Constant",
@@ -1190,57 +1431,13 @@
     },
     "project": "@effect/platform-node",
     "name": "layer",
+    "description": "Provides the default process-backed `Terminal` service, ending key input on\nthe default quit keys.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
-    "category": "layer",
+    "since": "4.0.0",
+    "category": "layers",
     "signature": "declare const layer: Layer<Terminal, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeTerminal.ts#L20"
-  },
-  {
-    "_tag": "Constant",
-    "module": {
-      "name": "NodeWorker.ts",
-      "path": "src/NodeWorker.ts"
-    },
-    "project": "@effect/platform-node",
-    "name": "layerManager",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "layers",
-    "signature": "declare const layerManager: Layer.Layer<Worker.WorkerManager, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeWorker.ts#L14"
-  },
-  {
-    "_tag": "Constant",
-    "module": {
-      "name": "NodeWorker.ts",
-      "path": "src/NodeWorker.ts"
-    },
-    "project": "@effect/platform-node",
-    "name": "layerWorker",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "layers",
-    "signature": "declare const layerWorker: Layer.Layer<Worker.PlatformWorker, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeWorker.ts#L20"
-  },
-  {
-    "_tag": "Constant",
-    "module": {
-      "name": "NodeWorker.ts",
-      "path": "src/NodeWorker.ts"
-    },
-    "project": "@effect/platform-node",
-    "name": "layer",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "layers",
-    "signature": "declare const layer: (spawn: (id: number) => WorkerThreads.Worker | ChildProcess.ChildProcess) => Layer.Layer<Worker.WorkerManager | Worker.Spawner>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeWorker.ts#L26"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeTerminal.ts#L32"
   },
   {
     "_tag": "Constant",
@@ -1250,12 +1447,29 @@
     },
     "project": "@effect/platform-node",
     "name": "layerPlatform",
+    "description": "Provides the Node `WorkerPlatform` for `worker_threads` workers and child\nprocess workers, wiring messages, errors, and exits into Effect workers and\nterminating the worker if graceful shutdown times out.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": "layers",
-    "signature": "declare const layerPlatform: (spawn: (id: number) => WorkerThreads.Worker | ChildProcess.ChildProcess) => Layer.Layer<Worker.PlatformWorker | Worker.Spawner>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeWorker.ts#L34"
+    "signature": "declare const layerPlatform: Layer.Layer<Worker.WorkerPlatform, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeWorker.ts#L31"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "NodeWorker.ts",
+      "path": "src/NodeWorker.ts"
+    },
+    "project": "@effect/platform-node",
+    "name": "layer",
+    "description": "Provides the Node `WorkerPlatform` together with a `Worker.Spawner` created\nfrom the supplied worker or child-process spawning function.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "layers",
+    "signature": "declare const layer: (spawn: (id: number) => WorkerThreads.Worker | ChildProcess.ChildProcess) => Layer.Layer<Worker.WorkerPlatform | Worker.Spawner>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeWorker.ts#L115"
   },
   {
     "_tag": "Constant",
@@ -1265,42 +1479,13 @@
     },
     "project": "@effect/platform-node",
     "name": "layer",
+    "description": "Provides the `WorkerRunnerPlatform` for code running inside a Node worker\nthread or child process, routing parent messages to the registered handler\nand sending responses back through the parent channel.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": "layers",
-    "signature": "declare const layer: Layer.Layer<Runner.PlatformRunner, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeWorkerRunner.ts#L20"
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "NodeWorkerRunner.ts",
-      "path": "src/NodeWorkerRunner.ts"
-    },
-    "project": "@effect/platform-node",
-    "name": "launch",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "re-exports",
-    "signature": "declare const launch: <A, E, R>(layer: Layer.Layer<A, E, R>) => Effect<void, E | WorkerError, R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeWorkerRunner.ts#L13"
-  },
-  {
-    "_tag": "Export",
-    "module": {
-      "name": "Undici.ts",
-      "path": "src/Undici.ts"
-    },
-    "project": "@effect/platform-node",
-    "name": "default",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "undici",
-    "signature": "declare const default: typeof Undici",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/Undici.ts#L10"
+    "signature": "declare const layer: Layer.Layer<WorkerRunner.WorkerRunnerPlatform, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeWorkerRunner.ts#L31"
   },
   {
     "_tag": "Export",
@@ -1313,9 +1498,9 @@
     "description": "Re-exports all named exports from the \"undici\" module.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
-    "category": "undici",
+    "since": "4.0.0",
+    "category": "Undici",
     "signature": "export * from \"undici\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/Undici.ts#L16"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/Undici.ts#L23"
   }
 ]

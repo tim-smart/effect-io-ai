@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.ScopedCache
 
-Re-exports all named exports from the "./ScopedCache.js" module as `ScopedCache`.
+Re-exports all named exports from the "./ScopedCache.ts" module as `ScopedCache`.
 
 **Signature**
 
 ```ts
-export * as ScopedCache from "./ScopedCache.js"
+export * as ScopedCache from "./ScopedCache.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1298)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L572)
 
-Since v2.0.0
+Since v4.0.0

@@ -1,0 +1,16 @@
+Package: `effect`<br />
+Module: `SchemaRepresentation`<br />
+
+## SchemaRepresentation.$Boolean
+
+Schema for the `Boolean` representation node.
+
+**Signature**
+
+```ts
+declare const $Boolean: Schema.Struct<{ readonly _tag: Schema.tag<"Boolean">; readonly annotations: Schema.optional<Schema.decodeTo<Schema.$Record<Schema.String, Schema.Unknown>, Schema.$Record<Schema.String, Schema.Codec<PrimitiveTree, PrimitiveTree, never, never>>, never, never>>; }>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaRepresentation.ts#L1121)
+
+Since v4.0.0

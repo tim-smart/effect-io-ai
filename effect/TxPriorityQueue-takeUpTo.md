@@ -1,0 +1,28 @@
+Package: `effect`<br />
+Module: `TxPriorityQueue`<br />
+
+## TxPriorityQueue.takeUpTo
+
+Takes up to `n` elements from the queue in priority order.
+
+**Example** (Taking up to a limit)
+
+```ts
+import { Effect, Order, TxPriorityQueue } from "effect"
+
+const program = Effect.gen(function*() {
+  const pq = yield* TxPriorityQueue.fromIterable(Order.Number, [5, 3, 1, 4, 2])
+  const top2 = yield* TxPriorityQueue.takeUpTo(pq, 2)
+  console.log(top2) // [1, 2]
+})
+```
+
+**Signature**
+
+```ts
+declare const takeUpTo: { (n: number): <A>(self: TxPriorityQueue<A>) => Effect.Effect<Array<A>>; <A>(self: TxPriorityQueue<A>, n: number): Effect.Effect<Array<A>>; }
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TxPriorityQueue.ts#L456)
+
+Since v2.0.0

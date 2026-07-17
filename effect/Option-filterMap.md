@@ -3,33 +3,40 @@ Module: `Option`<br />
 
 ## Option.filterMap
 
-Alias of `flatMap`.
+Transforms and filters an `Option` using a `Filter` callback.
 
-**Example**
+**When to use**
+
+Use to transform an `Option`'s present value and discard it when the `Filter`
+fails.
+
+**Details**
+
+The callback returns a `Result`: `Result.succeed` keeps and transforms the
+value, while `Result.fail` discards it.
+
+**Example** (Filtering and transforming)
 
 ```ts
-import { Option } from "effect"
+import { Option, Result } from "effect"
 
-// Transform and filter numbers
-const transformEven = (n: Option.Option<number>): Option.Option<string> =>
-  Option.filterMap(n, (n) => (n % 2 === 0 ? Option.some(`Even: ${n}`) : Option.none()))
-
-console.log(transformEven(Option.none()))
-// Output: { _id: 'Option', _tag: 'None' }
-
-console.log(transformEven(Option.some(1)))
-// Output: { _id: 'Option', _tag: 'None' }
-
-console.log(transformEven(Option.some(2)))
+console.log(Option.filterMap(
+  Option.some(2),
+  (n) => (n % 2 === 0 ? Result.succeed(`Even: ${n}`) : Result.failVoid)
+))
 // Output: { _id: 'Option', _tag: 'Some', value: 'Even: 2' }
 ```
+
+**See**
+
+- `filter` for predicate-based filtering
 
 **Signature**
 
 ```ts
-declare const filterMap: { <A, B>(f: (a: A) => Option<B>): (self: Option<A>) => Option<B>; <A, B>(self: Option<A>, f: (a: A) => Option<B>): Option<B>; }
+declare const filterMap: { <A, B, X>(f: Filter.Filter<A, B, X>): (self: Option<A>) => Option<B>; <A, B, X>(self: Option<A>, f: Filter.Filter<A, B, X>): Option<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L1608)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L1969)
 
 Since v2.0.0

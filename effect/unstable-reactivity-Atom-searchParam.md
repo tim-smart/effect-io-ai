@@ -1,0 +1,20 @@
+Package: `effect`<br />
+Module: `Atom`<br />
+
+## Atom.searchParam
+
+Creates an atom that reads and writes a URL search parameter.
+
+**Gotchas**
+
+If you pass a schema, it has to be synchronous and have no context.
+
+**Signature**
+
+```ts
+declare const searchParam: <S extends Schema.ConstraintCodec<any, string> = never>(name: string, options?: { readonly schema?: S | undefined; }) => Writable<[S] extends [never] ? string : Option.Option<S["Type"]>>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Atom.ts#L2172)
+
+Since v4.0.0

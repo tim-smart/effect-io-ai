@@ -3,31 +3,27 @@ Module: `Option`<br />
 
 ## Option.tap
 
-Applies the provided function `f` to the value of the `Option` if it is
-`Some` and returns the original `Option`, unless `f` returns `None`, in which
-case it returns `None`.
+Runs a side-effecting `Option`-returning function on the value of a `Some`,
+returning the original `Option` if the function returns `Some`, or `None`
+if it returns `None`.
+
+**When to use**
+
+Use to validate an `Option`'s present value without transforming it, such as
+adding a side-condition check in a pipeline.
 
 **Details**
 
-This function allows you to perform additional computations on the value of
-an `Option` without modifying its original value. If the `Option` is `Some`,
-the provided function `f` is executed with the value, and its result
-determines whether the original `Option` is returned (`Some`) or the result
-is `None` if `f` returns `None`. If the input `Option` is `None`, the
-function is not executed, and `None` is returned.
+- `None` → `None`
+- `Some` → calls `f(value)`; if result is `Some`, returns original `self`; if `None`, returns `None`
 
-This is particularly useful for applying side conditions or performing
-validation checks while retaining the original `Option`'s value.
-
-**Example**
+**Example** (Validating without transforming)
 
 ```ts
 import { Option } from "effect"
 
-const getInteger = (n: number) => Number.isInteger(n) ? Option.some(n) : Option.none()
-
-console.log(Option.tap(Option.none(), getInteger))
-// Output: { _id: 'Option', _tag: 'None' }
+const getInteger = (n: number) =>
+  Number.isInteger(n) ? Option.some(n) : Option.none()
 
 console.log(Option.tap(Option.some(1), getInteger))
 // Output: { _id: 'Option', _tag: 'Some', value: 1 }
@@ -36,12 +32,17 @@ console.log(Option.tap(Option.some(1.14), getInteger))
 // Output: { _id: 'Option', _tag: 'None' }
 ```
 
+**See**
+
+- `flatMap` when you want to transform the value
+- `filter` for predicate-based filtering
+
 **Signature**
 
 ```ts
 declare const tap: { <A, X>(f: (a: A) => Option<X>): (self: Option<A>) => Option<A>; <A, X>(self: Option<A>, f: (a: A) => Option<X>): Option<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L1291)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L1597)
 
 Since v2.0.0

@@ -3,7 +3,34 @@ Module: `Chunk`<br />
 
 ## Chunk.split
 
-Splits this chunk into `n` equally sized chunks.
+Splits a chunk into up to `n` chunks, distributing elements in order.
+
+**Details**
+
+The chunk size is derived from the input length and `n`; the final chunk may
+contain fewer elements than the others.
+
+**Example** (Splitting chunks into groups)
+
+```ts
+import { Chunk } from "effect"
+
+const chunk = Chunk.make(1, 2, 3, 4, 5, 6, 7, 8, 9)
+const chunks = Chunk.split(chunk, 3)
+console.log(Chunk.toArray(chunks).map(Chunk.toArray))
+// [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+
+// Uneven split
+const chunk2 = Chunk.make(1, 2, 3, 4, 5, 6, 7, 8)
+const chunks2 = Chunk.split(chunk2, 3)
+console.log(Chunk.toArray(chunks2).map(Chunk.toArray))
+// [[1, 2, 3], [4, 5, 6], [7, 8]]
+
+// Split into 1 chunk
+const chunks3 = Chunk.split(chunk, 1)
+console.log(Chunk.toArray(chunks3).map(Chunk.toArray))
+// [[1, 2, 3, 4, 5, 6, 7, 8, 9]]
+```
 
 **Signature**
 
@@ -11,6 +38,6 @@ Splits this chunk into `n` equally sized chunks.
 declare const split: { (n: number): <A>(self: Chunk<A>) => Chunk<Chunk<A>>; <A>(self: Chunk<A>, n: number): Chunk<Chunk<A>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Chunk.ts#L1082)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Chunk.ts#L2036)
 
 Since v2.0.0

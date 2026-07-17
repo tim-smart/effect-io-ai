@@ -3,16 +3,31 @@ Module: `AnthropicTool`<br />
 
 ## AnthropicTool.ComputerUse_20250124
 
-Allow Claude to interact with computer environments through the computer use
-tool, which provides screenshot capabilities and mouse/keyboard control for
-autonomous desktop interaction.
+Defines the computer-use tool for Claude 4 models and Claude Sonnet 3.7.
+
+**When to use**
+
+Use when you need Anthropic computer use for Claude 4 models or Claude
+Sonnet 3.7 with the 2025-01-24 action set.
+
+**Details**
+
+Requires the "computer-use-2025-01-24" beta header.
+Includes basic actions plus enhanced actions: scroll, left_click_drag,
+right_click, middle_click, double_click, triple_click, left_mouse_down,
+left_mouse_up, hold_key, wait.
+
+**See**
+
+- `ComputerUse_20241022` for the older basic action set
+- `ComputerUse_20251124` for the newer zoom-capable version
 
 **Signature**
 
 ```ts
-declare const ComputerUse_20250124: <Mode extends Tool.FailureMode | undefined = undefined>(args: { readonly display_height_px: number; readonly display_width_px: number; readonly cache_control?: { readonly type: "ephemeral"; readonly ttl?: "5m" | "1h" | null | undefined; } | null | undefined; readonly display_number?: number | null | undefined; readonly failureMode?: Mode | undefined; }) => Tool.ProviderDefined<"AnthropicComputerUse", { readonly args: Schema.Struct<{ readonly cache_control: Schema.optionalWith<typeof Generated.BetaCacheControlEphemeral, { nullable: true; }>; readonly display_height_px: Schema.filter<typeof Schema.Int>; readonly display_number: Schema.optionalWith<Schema.filter<typeof Schema.Int>, { nullable: true; }>; readonly display_width_px: Schema.filter<typeof Schema.Int>; }>; readonly parameters: Schema.Struct<{ action: Schema.Literal<["screenshot", "left_click", "type", "key", "mouse_move", "scroll", "left_click_drag", "middle_click", "right_click", "double_click", "triple_click", "left_mouse_down", "left_mouse_up", "hold_key", "wait"]>; coordinate: Schema.optional<Schema.Tuple2<typeof Schema.Number, typeof Schema.Number>>; start_coordinate: Schema.optional<Schema.Tuple2<typeof Schema.Number, typeof Schema.Number>>; text: Schema.optional<typeof Schema.String>; scroll_direction: Schema.optional<Schema.Literal<["up", "down", "left", "right"]>>; scroll_amount: Schema.optional<typeof Schema.Number>; duration: Schema.optional<typeof Schema.Number>; }>; readonly success: typeof Schema.String; readonly failure: typeof Schema.Never; readonly failureMode: Mode extends undefined ? "error" : Mode; }, true>
+declare const ComputerUse_20250124: <Mode extends Tool.FailureMode | undefined = undefined>(args: { readonly displayWidthPx: number; readonly displayHeightPx: number; readonly displayNumber?: number | undefined; readonly failureMode?: Mode | undefined; }) => Tool.ProviderDefined<"anthropic.computer_20250124", "AnthropicComputerUse", { readonly args: Schema.Struct<{ readonly displayWidthPx: Schema.Number; readonly displayHeightPx: Schema.Number; readonly displayNumber: Schema.optional<Schema.Number>; }>; readonly parameters: Schema.Union<readonly [Schema.Struct<{ readonly action: Schema.Literal<"key">; readonly text: Schema.String; }>, Schema.Struct<{ readonly action: Schema.Literal<"left_click">; readonly coordinate: Schema.optionalKey<Schema.Tuple<readonly [Schema.Number, Schema.Number]>>; }>, Schema.Struct<{ readonly action: Schema.Literal<"mouse_move">; readonly coordinate: Schema.Tuple<readonly [Schema.Number, Schema.Number]>; }>, Schema.Struct<{ readonly action: Schema.Literal<"screenshot">; }>, Schema.Struct<{ readonly action: Schema.Literal<"type">; readonly text: Schema.String; }>, Schema.Struct<{ readonly action: Schema.Literal<"double_click">; readonly coordinate: Schema.optionalKey<Schema.Tuple<readonly [Schema.Number, Schema.Number]>>; }>, Schema.Struct<{ readonly action: Schema.Literal<"hold_key">; readonly text: Schema.String; readonly duration: Schema.Number; }>, Schema.Struct<{ readonly action: Schema.Literal<"left_click_drag">; readonly start_coordinate: Schema.Tuple<readonly [Schema.Number, Schema.Number]>; readonly coordinate: Schema.Tuple<readonly [Schema.Number, Schema.Number]>; }>, Schema.Struct<{ readonly action: Schema.Literal<"left_mouse_down">; readonly coordinate: Schema.optionalKey<Schema.Tuple<readonly [Schema.Number, Schema.Number]>>; }>, Schema.Struct<{ readonly action: Schema.Literal<"left_mouse_up">; readonly coordinate: Schema.optionalKey<Schema.Tuple<readonly [Schema.Number, Schema.Number]>>; }>, Schema.Struct<{ readonly action: Schema.Literal<"middle_click">; readonly coordinate: Schema.optionalKey<Schema.Tuple<readonly [Schema.Number, Schema.Number]>>; }>, Schema.Struct<{ readonly action: Schema.Literal<"right_click">; readonly coordinate: Schema.optionalKey<Schema.Tuple<readonly [Schema.Number, Schema.Number]>>; }>, Schema.Struct<{ readonly action: Schema.Literal<"scroll">; readonly coordinate: Schema.optionalKey<Schema.Tuple<readonly [Schema.Number, Schema.Number]>>; readonly scroll_direction: Schema.Literals<readonly ["up", "down", "left", "right"]>; readonly scroll_amount: Schema.Number; }>, Schema.Struct<{ readonly action: Schema.Literal<"triple_click">; readonly coordinate: Schema.optionalKey<Schema.Tuple<readonly [Schema.Number, Schema.Number]>>; }>, Schema.Struct<{ readonly action: Schema.Literal<"wait">; readonly duration: Schema.Number; }>]>; readonly success: Schema.String; readonly failure: Schema.Never; readonly failureMode: Mode extends undefined ? "error" : Mode; }, true>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L186)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicTool.ts#L1314)
 
-Since v1.0.0
+Since v4.0.0

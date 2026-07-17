@@ -3,40 +3,58 @@ Module: `Data`<br />
 
 ## Data.TaggedEnum
 
-Create a tagged enum data type, which is a union of `Data` structs.
+Transforms a record of variant definitions into a discriminated union type.
+
+**When to use**
+
+Use when you have two or more variants that share a common `_tag` discriminator.
+
+**Details**
+
+Each key in the record becomes a variant with `readonly _tag` set to that
+key. Use with `taggedEnum` to get constructors and matchers.
+
+**Gotchas**
+
+Variant records must **not** include a `_tag` property; it is added automatically.
+
+**Example** (Defining a tagged enum)
 
 ```ts
-import * as assert from "node:assert"
 import { Data } from "effect"
 
 type HttpError = Data.TaggedEnum<{
-  BadRequest: { readonly status: 400, readonly message: string }
-  NotFound: { readonly status: 404, readonly message: string }
+  BadRequest: { readonly status: 400; readonly message: string }
+  NotFound: { readonly status: 404 }
 }>
 
 // Equivalent to:
-type HttpErrorPlain =
-  | {
-    readonly _tag: "BadRequest"
-    readonly status: 400
-    readonly message: string
-  }
-  | {
-    readonly _tag: "NotFound"
-    readonly status: 404
-    readonly message: string
-  }
+// | { readonly _tag: "BadRequest"; readonly status: 400; readonly message: string }
+// | { readonly _tag: "NotFound"; readonly status: 404 }
+
+const { BadRequest, NotFound } = Data.taggedEnum<HttpError>()
+
+const err = BadRequest({ status: 400, message: "missing id" })
+console.log(err._tag)
+// "BadRequest"
 ```
+
+**See**
+
+- `taggedEnum` — constructors and matchers for a `TaggedEnum`
+- `TaggedEnum.WithGenerics` — generic tagged enums
+- `TaggedEnum.Constructor` — the constructor object type
 
 **Signature**
 
 ```ts
-type TaggedEnum<A> = keyof A extends infer Tag ?
-  Tag extends keyof A ? Types.Simplify<{ readonly _tag: Tag } & { readonly [K in keyof A[Tag]]: A[Tag][K] }>
+type TaggedEnum<A> = keyof A extends infer Tag ? Tag extends keyof A ? Types.Simplify<
+      { readonly _tag: Tag } & { readonly [K in keyof A[Tag]]: A[Tag][K] }
+    >
   : never
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Data.ts#L280)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Data.ts#L149)
 
 Since v2.0.0

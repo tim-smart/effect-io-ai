@@ -1,0 +1,27 @@
+Package: `effect`<br />
+Module: `ChildProcess`<br />
+
+## ChildProcess.StandardCommand
+
+A standard command with pre-parsed command and arguments.
+
+**Signature**
+
+```ts
+export interface StandardCommand extends
+  Effect.Effect<
+    ChildProcessHandle,
+    PlatformError.PlatformError,
+    ChildProcessSpawner | Scope.Scope
+  >
+{
+  readonly _tag: "StandardCommand"
+  readonly command: string
+  readonly args: ReadonlyArray<string>
+  readonly options: CommandOptions
+}
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/ChildProcess.ts#L42)
+
+Since v4.0.0

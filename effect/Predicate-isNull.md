@@ -3,19 +3,30 @@ Module: `Predicate`<br />
 
 ## Predicate.isNull
 
-A refinement that checks if a value is `null`.
+Checks whether a value is `null`.
 
-**Example**
+**When to use**
+
+Use when you need a `Predicate` guard for nullable values.
+
+**Details**
+
+Uses `input === null`.
+
+**Example** (Guarding null values)
 
 ```ts
-import * as assert from "node:assert"
-import { isNull } from "effect/Predicate"
+import { Predicate } from "effect"
 
-assert.strictEqual(isNull(null), true)
+const data: unknown = null
 
-assert.strictEqual(isNull(undefined), false)
-assert.strictEqual(isNull("null"), false)
+console.log(Predicate.isNull(data))
 ```
+
+**See**
+
+- `isNotNull`
+- `isNullish`
 
 **Signature**
 
@@ -23,6 +34,6 @@ assert.strictEqual(isNull("null"), false)
 declare const isNull: (input: unknown) => input is null
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L495)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L829)
 
 Since v2.0.0

@@ -1,0 +1,29 @@
+Package: `effect`<br />
+Module: `TxPriorityQueue`<br />
+
+## TxPriorityQueue.removeIf
+
+Removes elements matching the predicate.
+
+**Example** (Removing matching values)
+
+```ts
+import { Effect, Order, TxPriorityQueue } from "effect"
+
+const program = Effect.gen(function*() {
+  const pq = yield* TxPriorityQueue.fromIterable(Order.Number, [1, 2, 3, 4, 5])
+  yield* TxPriorityQueue.removeIf(pq, (n) => n % 2 === 0)
+  const all = yield* TxPriorityQueue.takeAll(pq)
+  console.log(all) // [1, 3, 5]
+})
+```
+
+**Signature**
+
+```ts
+declare const removeIf: { <A>(predicate: Predicate<A>): (self: TxPriorityQueue<A>) => Effect.Effect<void>; <A>(self: TxPriorityQueue<A>, predicate: Predicate<A>): Effect.Effect<void>; }
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TxPriorityQueue.ts#L491)
+
+Since v2.0.0

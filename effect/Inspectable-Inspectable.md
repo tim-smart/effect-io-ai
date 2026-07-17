@@ -1,0 +1,58 @@
+Package: `effect`<br />
+Module: `Inspectable`<br />
+
+## Inspectable.Inspectable
+
+Interface for objects that can be inspected and provide custom string representations.
+
+**When to use**
+
+Use to define values with custom string, JSON, and Node.js inspection output.
+
+**Details**
+
+Objects implementing this interface can control how they appear in debugging contexts,
+JSON serialization, and Node.js inspection. This is particularly useful for creating
+custom data types that display meaningful information during development.
+
+**Example** (Implementing inspectable objects)
+
+```ts
+import { Formatter, Inspectable } from "effect"
+
+class Result implements Inspectable.Inspectable {
+  constructor(
+    private readonly tag: "Success" | "Failure",
+    private readonly value: unknown
+  ) {}
+
+  toString(): string {
+    return Formatter.format(this.toJSON())
+  }
+
+  toJSON() {
+    return { _tag: this.tag, value: this.value }
+  }
+
+  [Inspectable.NodeInspectSymbol]() {
+    return this.toJSON()
+  }
+}
+
+const success = new Result("Success", 42)
+console.log(success.toString()) // Pretty formatted JSON
+```
+
+**Signature**
+
+```ts
+export interface Inspectable {
+  toString(): string
+  toJSON(): unknown
+  [NodeInspectSymbol](): unknown
+}
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Inspectable.ts#L126)
+
+Since v2.0.0

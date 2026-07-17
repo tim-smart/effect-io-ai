@@ -3,7 +3,17 @@ Module: `HashMap`<br />
 
 ## HashMap.empty
 
-Creates a new `HashMap`.
+Creates a new empty `HashMap`.
+
+**Example** (Creating an empty HashMap)
+
+```ts
+import { HashMap } from "effect"
+
+const map = HashMap.empty<string, number>()
+console.log(HashMap.isEmpty(map)) // true
+console.log(HashMap.size(map)) // 0
+```
 
 **Signature**
 
@@ -11,6 +21,6 @@ Creates a new `HashMap`.
 declare const empty: <K = never, V = never>() => HashMap<K, V>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashMap.ts#L108)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashMap.ts#L246)
 
 Since v2.0.0

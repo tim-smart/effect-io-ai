@@ -3,36 +3,20 @@ Module: `Effect`<br />
 
 ## Effect.runSync
 
-Executes an effect synchronously, running it immediately and returning the
-result.
+Executes an effect synchronously and returns its success value.
+
+**When to use**
+
+Use when you need to execute an effect that is guaranteed to complete
+synchronously.
 
 **Details**
 
-This function evaluates the provided effect synchronously, returning its
-result directly. It is ideal for effects that do not fail or include
-asynchronous operations. If the effect does fail or involves async tasks, it
-will throw an error. Execution stops at the point of failure or asynchronous
-operation, making it unsuitable for effects that require asynchronous
-handling.
+If the effect fails, dies, is interrupted, or performs asynchronous work,
+`runSync` throws a `FiberFailure` instead of returning a value. Use
+`runSyncExit` when you want the failure captured as an `Exit`.
 
-**Important**: Attempting to run effects that involve asynchronous operations
-or failures will result in exceptions being thrown, so use this function with
-care for purely synchronous and error-free effects.
-
-**When to Use**
-
-Use this function when:
-- You are sure that the effect will not fail or involve asynchronous
-  operations.
-- You need a direct, synchronous result from the effect.
-- You are working within a context where asynchronous effects are not
-  allowed.
-
-Avoid using this function for effects that can fail or require asynchronous
-handling. For such cases, consider using `runPromise` or
-`runSyncExit`.
-
-**Example** (Synchronous Logging)
+**Example** (Running a synchronous effect)
 
 ```ts
 import { Effect } from "effect"
@@ -49,7 +33,7 @@ console.log(result)
 // Output: 1
 ```
 
-**Example** (Incorrect Usage with Failing or Async Effects)
+**Example** (Throwing for failed or async effects)
 
 ```ts
 import { Effect } from "effect"
@@ -84,6 +68,6 @@ throwing an error.
 declare const runSync: <A, E>(effect: Effect<A, E>) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12279)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L9219)
 
 Since v2.0.0

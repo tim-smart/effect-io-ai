@@ -1,0 +1,37 @@
+Package: `effect`<br />
+Module: `TxDeferred`<br />
+
+## TxDeferred.poll
+
+Reads the current state of the deferred without retrying. Returns `None` if
+not yet completed.
+
+**When to use**
+
+Use to inspect a `TxDeferred` without retrying when it is not completed yet.
+
+**Example** (Polling a deferred)
+
+```ts
+import { Effect, Option, Result, TxDeferred } from "effect"
+
+const program = Effect.gen(function*() {
+  const deferred = yield* TxDeferred.make<number>()
+  const before = yield* TxDeferred.poll(deferred)
+  console.log(Option.isNone(before)) // true
+
+  yield* TxDeferred.succeed(deferred, 42)
+  const after = yield* TxDeferred.poll(deferred)
+  console.log(after) // Some(Success(42))
+})
+```
+
+**Signature**
+
+```ts
+declare const poll: <A, E>(self: TxDeferred<A, E>) => Effect.Effect<Option<Result<A, E>>>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TxDeferred.ts#L190)
+
+Since v2.0.0

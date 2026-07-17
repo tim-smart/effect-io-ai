@@ -3,22 +3,34 @@ Module: `Types`<br />
 
 ## Types.TupleOfAtLeast
 
-Represents a tuple with at least `N` elements of type `T`.
+Constructs a tuple type with at least `N` elements of type `T`.
 
-This type constructs a tuple that has a fixed number of elements `N` of type `T` at the start,
-followed by any number (including zero) of additional elements of the same type `T`.
+**When to use**
 
-**Example**
+Use when you need a minimum-length array type that still allows additional
+elements. This is useful for variadic function signatures that require a
+minimum arity.
+
+**Details**
+
+Produces a tuple with `N` fixed positions followed by `...Array<T>`.
+
+**Example** (Checking minimum-length tuples)
 
 ```ts
-import { TupleOfAtLeast } from "effect/Types"
+import type { Types } from "effect"
 
-// A tuple with at least 3 numbers
-const example1: TupleOfAtLeast<3, number> = [1, 2, 3]; // valid
-const example2: TupleOfAtLeast<3, number> = [1, 2, 3, 4, 5]; // valid
-// @ts-expect-error
-const example3: TupleOfAtLeast<3, number> = [1, 2]; // invalid
+// At least 2 strings
+const ok1: Types.TupleOfAtLeast<2, string> = ["a", "b"]
+const ok2: Types.TupleOfAtLeast<2, string> = ["a", "b", "c", "d"]
+
+// @ts-expect-error - too few elements
+const bad: Types.TupleOfAtLeast<2, string> = ["a"]
 ```
+
+**See**
+
+- `TupleOf`
 
 **Signature**
 
@@ -26,6 +38,6 @@ const example3: TupleOfAtLeast<3, number> = [1, 2]; // invalid
 type [...TupleOf<N, T>, ...T[]] = [...TupleOf<N, T>, ...Array<T>]
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L59)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L87)
 
 Since v3.3.0

@@ -1,0 +1,57 @@
+Package: `effect`<br />
+Module: `PubSub`<br />
+
+## PubSub.Subscription
+
+A subscription represents a consumer's connection to a PubSub, allowing them to take messages.
+
+**Example** (Taking messages from a subscription)
+
+```ts
+import { Effect, PubSub } from "effect"
+
+const program = Effect.gen(function*() {
+  const pubsub = yield* PubSub.bounded<string>(10)
+
+  // Subscribe within a scope for automatic cleanup
+  yield* Effect.scoped(Effect.gen(function*() {
+    const subscription: PubSub.Subscription<string> = yield* PubSub.subscribe(
+      pubsub
+    )
+
+    yield* PubSub.publishAll(pubsub, ["msg1", "msg2", "msg3"])
+
+    // Take individual messages
+    const message = yield* PubSub.take(subscription)
+    console.log(message) // "msg1"
+
+    // Take multiple messages
+    const messages = yield* PubSub.takeUpTo(subscription, 1)
+    console.log(messages) // ["msg2"]
+    const allMessages = yield* PubSub.takeAll(subscription)
+    console.log(allMessages) // ["msg3"]
+  }))
+})
+```
+
+**Signature**
+
+```ts
+export interface Subscription<out A> extends Pipeable {
+  readonly [SubscriptionTypeId]: {
+    readonly _A: Covariant<A>
+  }
+  readonly pubsub: PubSub.Atomic<any>
+  readonly subscribers: PubSub.Subscribers<any>
+  readonly subscription: PubSub.BackingSubscription<A>
+  readonly pollers: MutableList.MutableList<Deferred.Deferred<any>>
+  readonly shutdownHook: Latch.Latch
+  readonly shutdownFlag: MutableRef.MutableRef<boolean>
+  readonly strategy: PubSub.Strategy<any>
+  readonly replayWindow: PubSub.ReplayWindow<A>
+}
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/PubSub.ts#L237)
+
+Since v4.0.0

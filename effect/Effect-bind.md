@@ -3,42 +3,37 @@ Module: `Effect`<br />
 
 ## Effect.bind
 
-The "do simulation" in Effect allows you to write code in a more declarative style, similar to the "do notation" in other programming languages. It provides a way to define variables and perform operations on them using functions like `bind` and `let`.
+Adds an `Effect` value to the do notation record under a given name.
 
-Here's how the do simulation works:
+**When to use**
 
-1. Start the do simulation using the `Do` value
-2. Within the do simulation scope, you can use the `bind` function to define variables and bind them to `Effect` values
-3. You can accumulate multiple `bind` statements to define multiple variables within the scope
-4. Inside the do simulation scope, you can also use the `let` function to define variables and bind them to simple values
+Use to sequence an effectful step in a do-notation pipeline when that step
+depends on fields already accumulated in the record and its success value
+should be stored under a name.
 
-**Example**
+**Details**
 
-```ts
-import * as assert from "node:assert"
-import { Effect, pipe } from "effect"
+The function receives the current record, runs the returned effect after the
+input effect succeeds, and inserts its success value under `name`. The
+resulting effect combines the error and service requirements of both steps.
 
-const result = pipe(
-  Effect.Do,
-  Effect.bind("x", () => Effect.succeed(2)),
-  Effect.bind("y", () => Effect.succeed(3)),
-  Effect.let("sum", ({ x, y }) => x + y)
-)
-assert.deepStrictEqual(Effect.runSync(result), { x: 2, y: 3, sum: 5 })
-```
+**Gotchas**
+
+Binding a name that already exists replaces that field in the resulting
+record.
 
 **See**
 
-- `Do`
-- `bindTo`
-- `let`
+- `Do` for starting from an empty do-notation record
+- `bindTo` for naming the success value of an existing effect
+- `gen` for generator-based sequencing without accumulating a record
 
 **Signature**
 
 ```ts
-declare const bind: { <N extends string, A extends object, B, E2, R2>(name: Exclude<N, keyof A>, f: (a: NoInfer<A>) => Effect<B, E2, R2>): <E1, R1>(self: Effect<A, E1, R1>) => Effect<{ [K in N | keyof A]: K extends keyof A ? A[K] : B; }, E2 | E1, R2 | R1>; <A extends object, N extends string, E1, R1, B, E2, R2>(self: Effect<A, E1, R1>, name: Exclude<N, keyof A>, f: (a: NoInfer<A>) => Effect<B, E2, R2>): Effect<{ [K in N | keyof A]: K extends keyof A ? A[K] : B; }, E1 | E2, R1 | R2>; }
+declare const bind: { <N extends string, A extends Record<string, any>, B, E2, R2>(name: N, f: (a: NoInfer<A>) => Effect<B, E2, R2>): <E, R>(self: Effect<A, E, R>) => Effect<Simplify<Omit<A, N> & Record<N, B>>, E | E2, R | R2>; <A extends Record<string, any>, E, R, B, E2, R2, N extends string>(self: Effect<A, E, R>, name: N, f: (a: NoInfer<A>) => Effect<B, E2, R2>): Effect<Simplify<Omit<A, N> & Record<N, B>>, E | E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L7878)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L1341)
 
 Since v2.0.0

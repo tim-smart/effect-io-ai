@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.Resource
 
-Re-exports all named exports from the "./Resource.js" module as `Resource`.
+Re-exports all named exports from the "./Resource.ts" module as `Resource`.
 
 **Signature**
 
 ```ts
-export * as Resource from "./Resource.js"
+export * as Resource from "./Resource.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1233)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L497)
 
 Since v2.0.0

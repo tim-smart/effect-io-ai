@@ -3,19 +3,20 @@ Module: `DateTime`<br />
 
 ## DateTime.getPartUtc
 
-Get a part of a `DateTime` as a number.
+Gets one UTC part of a `DateTime` as a number.
+
+**Details**
 
 The part will be in the UTC time zone.
 
-**Example**
+**Example** (Reading UTC DateTime parts by key)
 
 ```ts
-import * as assert from "node:assert"
 import { DateTime } from "effect"
 
-const now = DateTime.unsafeMake({ year: 2024 })
-const year = DateTime.getPartUtc(now, "year")
-assert.strictEqual(year, 2024)
+const dateTime = DateTime.makeUnsafe({ year: 2024 })
+const year = DateTime.getPartUtc(dateTime, "year")
+console.log(year) // 2024
 ```
 
 **Signature**
@@ -24,6 +25,6 @@ assert.strictEqual(year, 2024)
 declare const getPartUtc: { (part: keyof DateTime.PartsWithWeekday): (self: DateTime) => number; (self: DateTime, part: keyof DateTime.PartsWithWeekday): number; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L1004)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L1765)
 
 Since v3.6.0

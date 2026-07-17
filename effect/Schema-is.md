@@ -3,14 +3,45 @@ Module: `Schema`<br />
 
 ## Schema.is
 
-By default the option `exact` is set to `true`.
+Creates a type guard function that checks if a value conforms to a given
+schema.
+
+**Details**
+
+This function returns a predicate that performs a type-safe check, narrowing
+the type of the input value if the check passes. The predicate returns `false`
+for schema mismatches.
+
+**Gotchas**
+
+Only causes made entirely of schema issues are converted to `false`. Causes
+that contain defects, interruptions, or other non-schema reasons throw
+instead.
+
+**Example** (Defining a basic type guard)
+
+```ts
+import { Schema } from "effect"
+
+const isString = Schema.is(Schema.String)
+
+console.log(isString("hello")) // true
+console.log(isString(42)) // false
+
+// Type narrowing in action
+const value: unknown = "hello"
+if (isString(value)) {
+  // value is now typed as string
+  console.log(value.toUpperCase()) // "HELLO"
+}
+```
 
 **Signature**
 
 ```ts
-declare const is: <A, I, R>(schema: Schema<A, I, R>, options?: AST.ParseOptions) => (u: unknown, overrideOptions?: AST.ParseOptions | number) => u is A
+declare const is: <S extends Constraint>(schema: S) => <I>(input: I) => input is I & S["Type"]
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L477)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L1299)
 
 Since v3.10.0

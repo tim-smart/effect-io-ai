@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.Config
 
-Re-exports all named exports from the "./Config.js" module as `Config`.
+Re-exports all named exports from the "./Config.ts" module as `Config`.
 
 **Signature**
 
 ```ts
-export * as Config from "./Config.js"
+export * as Config from "./Config.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L158)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L97)
 
-Since v2.0.0
+Since v4.0.0

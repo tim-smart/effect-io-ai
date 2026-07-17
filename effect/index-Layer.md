@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.Layer
 
-Re-exports all named exports from the "./Layer.js" module as `Layer`.
+Re-exports all named exports from the "./Layer.ts" module as `Layer`.
 
 **Signature**
 
 ```ts
-export * as Layer from "./Layer.js"
+export * as Layer from "./Layer.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L681)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L292)
 
 Since v2.0.0

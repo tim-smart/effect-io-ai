@@ -3,8 +3,23 @@ Module: `DateTime`<br />
 
 ## DateTime.zoneMakeNamed
 
-Create a named time zone from a IANA time zone identifier. If the time zone
-is invalid, `None` will be returned.
+Creates a named time zone safely from an IANA time zone identifier.
+
+**Details**
+
+If the time zone is invalid, `None` will be returned.
+
+**Example** (Creating optional named time zones)
+
+```ts
+import { DateTime } from "effect"
+
+const validZone = DateTime.zoneMakeNamed("Europe/London")
+console.log(validZone._tag === "Some") // true
+
+const invalidZone = DateTime.zoneMakeNamed("Invalid/Zone")
+console.log(invalidZone._tag === "None") // true
+```
 
 **Signature**
 
@@ -12,6 +27,6 @@ is invalid, `None` will be returned.
 declare const zoneMakeNamed: (zoneId: string) => Option.Option<TimeZone.Named>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L621)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L1065)
 
 Since v3.6.0

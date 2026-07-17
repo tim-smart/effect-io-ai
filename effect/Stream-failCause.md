@@ -3,7 +3,25 @@ Module: `Stream`<br />
 
 ## Stream.failCause
 
-The stream that always fails with the specified `Cause`.
+Creates a stream that fails with the specified `Cause`.
+
+**Example** (Failing with a cause)
+
+```ts
+import { Cause, Console, Effect, Stream } from "effect"
+
+const stream = Stream.failCause(Cause.fail("Database connection failed")).pipe(
+  Stream.catchCause(() => Stream.succeed("recovered"))
+)
+
+const program = Effect.gen(function*() {
+  const values = yield* Stream.runCollect(stream)
+  yield* Console.log(values)
+  // Output: [ "recovered" ]
+})
+
+Effect.runPromise(program)
+```
 
 **Signature**
 
@@ -11,6 +29,6 @@ The stream that always fails with the specified `Cause`.
 declare const failCause: <E>(cause: Cause.Cause<E>) => Stream<never, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L1597)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L977)
 
 Since v2.0.0

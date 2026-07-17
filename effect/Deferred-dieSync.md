@@ -3,15 +3,40 @@ Module: `Deferred`<br />
 
 ## Deferred.dieSync
 
-Kills the `Deferred` with the specified defect, which will be propagated to
-all fibers waiting on the value of the `Deferred`.
+Computes a defect when the returned effect is run, then attempts to complete
+the `Deferred` with that defect.
+
+**When to use**
+
+Use to lazily compute an unexpected defect when the completion effect runs.
+
+**Details**
+
+Fibers waiting on the `Deferred` die with the computed defect only if this
+call completes it. The returned effect succeeds with `true` when this call
+completed the `Deferred`, or `false` if it was already completed.
+
+**Example** (Killing a Deferred with a lazy defect)
+
+```ts
+import { Deferred, Effect } from "effect"
+
+const program = Effect.gen(function*() {
+  const deferred = yield* Deferred.make<number>()
+  const success = yield* Deferred.dieSync(
+    deferred,
+    () => new Error("Lazy error")
+  )
+  console.log(success) // true
+})
+```
 
 **Signature**
 
 ```ts
-declare const dieSync: { (evaluate: LazyArg<unknown>): <A, E>(self: Deferred<A, E>) => Effect.Effect<boolean>; <A, E>(self: Deferred<A, E>, evaluate: LazyArg<unknown>): Effect.Effect<boolean>; }
+declare const dieSync: { (evaluate: LazyArg<unknown>): <A, E>(self: Deferred<A, E>) => Effect<boolean>; <A, E>(self: Deferred<A, E>, evaluate: LazyArg<unknown>): Effect<boolean>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Deferred.ts#L217)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Deferred.ts#L585)
 
 Since v2.0.0

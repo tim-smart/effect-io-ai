@@ -5,14 +5,22 @@ Module: `BigInt`<br />
 
 Returns the minimum between two `bigint`s.
 
-**Example**
+**When to use**
+
+Use to select the smaller of two `bigint` values.
+
+**Example** (Finding the minimum bigint)
 
 ```ts
+import { BigInt } from "effect"
 import * as assert from "node:assert"
-import { min } from "effect/BigInt"
 
-assert.deepStrictEqual(min(2n, 3n), 2n)
+assert.deepStrictEqual(BigInt.min(2n, 3n), 2n)
 ```
+
+**See**
+
+- `max` for selecting the larger value
 
 **Signature**
 
@@ -20,6 +28,6 @@ assert.deepStrictEqual(min(2n, 3n), 2n)
 declare const min: { (that: bigint): (self: bigint) => bigint; (self: bigint, that: bigint): bigint; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L352)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L525)
 
 Since v2.0.0

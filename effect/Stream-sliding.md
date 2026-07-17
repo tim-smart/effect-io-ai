@@ -5,23 +5,28 @@ Module: `Stream`<br />
 
 Emits a sliding window of `n` elements.
 
-```ts
-import { pipe, Stream } from "effect"
+**Example** (Emitting sliding windows)
 
-pipe(
-  Stream.make(1, 2, 3, 4),
-  Stream.sliding(2),
-  Stream.runCollect
-)
-// => Chunk(Chunk(1, 2), Chunk(2, 3), Chunk(3, 4))
+```ts
+import { Console, Effect, pipe, Stream } from "effect"
+
+Effect.gen(function*() {
+  const result = yield* pipe(
+    Stream.make(1, 2, 3, 4, 5),
+    Stream.sliding(2),
+    Stream.runCollect
+  )
+  yield* Console.log(result)
+})
+// Output: [ [1, 2], [2, 3], [3, 4], [4, 5] ]
 ```
 
 **Signature**
 
 ```ts
-declare const sliding: { (chunkSize: number): <A, E, R>(self: Stream<A, E, R>) => Stream<Chunk.Chunk<A>, E, R>; <A, E, R>(self: Stream<A, E, R>, chunkSize: number): Stream<Chunk.Chunk<A>, E, R>; }
+declare const sliding: { (chunkSize: number): <A, E, R>(self: Stream<A, E, R>) => Stream<Arr.NonEmptyReadonlyArray<A>, E, R>; <A, E, R>(self: Stream<A, E, R>, chunkSize: number): Stream<Arr.NonEmptyReadonlyArray<A>, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L4661)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L7103)
 
 Since v2.0.0

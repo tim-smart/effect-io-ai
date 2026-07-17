@@ -1,0 +1,56 @@
+Package: `effect`<br />
+Module: `Ref`<br />
+
+## Ref.updateSomeAndGet
+
+Updates the value of the Ref atomically using the given partial function and returns the current value.
+
+**When to use**
+
+Use to apply a conditional `Ref` update and return the resulting current
+value.
+
+**Details**
+
+If the partial function returns `Option.some`, the Ref is updated with the
+new value. If it returns `Option.none`, the Ref is left unchanged. The effect
+returns the current value of the Ref after the potential update.
+
+**Example** (Conditionally updating and returning the current value)
+
+```ts
+import { Effect, Option, Ref } from "effect"
+
+const program = Effect.gen(function*() {
+  const counter = yield* Ref.make(10)
+
+  // Only update if value is greater than 5
+  const result1 = yield* Ref.updateSomeAndGet(
+    counter,
+    (n) => n > 5 ? Option.some(n / 2) : Option.none()
+  )
+  console.log(result1) // 5 (updated and returned)
+
+  // Try to update again with same condition
+  const result2 = yield* Ref.updateSomeAndGet(
+    counter,
+    (n) => n > 5 ? Option.some(n / 2) : Option.none()
+  )
+  console.log(result2) // 5 (unchanged because 5 is not > 5)
+})
+```
+
+**See**
+
+- `updateSome` for conditional updates without returning a value
+- `updateAndGet` for always updating and returning the new value
+
+**Signature**
+
+```ts
+declare const updateSomeAndGet: (<A>(pf: (a: A) => Option.Option<A>) => (self: Ref<A>) => Effect.Effect<A>) & (<A>(self: Ref<A>, pf: (a: A) => Option.Option<A>) => Effect.Effect<A>)
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Ref.ts#L758)
+
+Since v2.0.0

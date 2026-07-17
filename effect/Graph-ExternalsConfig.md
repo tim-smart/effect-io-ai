@@ -3,7 +3,23 @@ Module: `Graph`<br />
 
 ## Graph.ExternalsConfig
 
-Configuration for externals iterator.
+Configuration for selecting external nodes.
+
+**When to use**
+
+Use to configure how `externals` identifies graph boundary nodes when you
+need sinks with no outgoing edges or sources with no incoming edges.
+
+**Details**
+
+`direction` chooses which missing edge direction makes a node external:
+`"outgoing"` selects nodes with no outgoing edges, and `"incoming"` selects
+nodes with no incoming edges. If omitted, `direction` defaults to
+`"outgoing"`.
+
+**See**
+
+- `externals` for the iterator that consumes this configuration
 
 **Signature**
 
@@ -13,6 +29,6 @@ export interface ExternalsConfig {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L3797)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L5877)
 
 Since v3.18.0

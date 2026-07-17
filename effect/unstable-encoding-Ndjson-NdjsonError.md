@@ -1,0 +1,21 @@
+Package: `effect`<br />
+Module: `Ndjson`<br />
+
+## Ndjson.NdjsonError
+
+Error raised when NDJSON encoding or decoding fails.
+
+**Details**
+
+The `kind` field identifies whether the failure happened while packing or
+unpacking, and `cause` preserves the original error.
+
+**Signature**
+
+```ts
+declare class NdjsonError
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Ndjson.ts#L33)
+
+Since v4.0.0

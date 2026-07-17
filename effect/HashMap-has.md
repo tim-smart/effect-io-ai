@@ -3,7 +3,22 @@ Module: `HashMap`<br />
 
 ## HashMap.has
 
-Checks if the specified key has an entry in the `HashMap`.
+Checks whether the specified key has an entry in the `HashMap`.
+
+**Example** (Checking for keys)
+
+```ts
+import { HashMap } from "effect"
+
+const map = HashMap.make(["a", 1], ["b", 2])
+
+console.log(HashMap.has(map, "a")) // true
+console.log(HashMap.has(map, "c")) // false
+
+// Using pipe syntax
+const hasB = HashMap.has("b")(map)
+console.log(hasB) // true
+```
 
 **Signature**
 
@@ -11,6 +26,6 @@ Checks if the specified key has an entry in the `HashMap`.
 declare const has: { <K1 extends K, K>(key: K1): <K, V>(self: HashMap<K, V>) => boolean; <K1 extends K, K, V>(self: HashMap<K, V>, key: K1): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashMap.ts#L180)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashMap.ts#L440)
 
 Since v2.0.0

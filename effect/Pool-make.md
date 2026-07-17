@@ -3,10 +3,17 @@ Module: `Pool`<br />
 
 ## Pool.make
 
-Makes a new pool of the specified fixed size. The pool is returned in a
-`Scope`, which governs the lifetime of the pool. When the pool is shutdown
-because the `Scope` is closed, the individual items allocated by the pool
-will be released in some unspecified order.
+Makes a new pool of the specified fixed size.
+
+**When to use**
+
+Use when you need a fixed-size pool with no growth or shrinkage.
+
+**Details**
+
+The pool is returned in a `Scope`, which governs the lifetime of the pool.
+When the pool is shutdown because the `Scope` is closed, the individual
+items allocated by the pool will be released in some unspecified order.
 
 By setting the `concurrency` parameter, you can control the level of concurrent
 access per pool item. By default, the number of permits is set to `1`.
@@ -18,12 +25,17 @@ items are fully utilized.
 A `targetUtilization` of 0.5 will create new pool items when the existing items are
 50% utilized.
 
+**See**
+
+- `makeWithTTL` for pools with min/max sizes and a TTL-based shrinking policy
+- `makeWithStrategy` for pools with a custom resizing and reclamation strategy
+
 **Signature**
 
 ```ts
-declare const make: <A, E, R>(options: { readonly acquire: Effect.Effect<A, E, R>; readonly size: number; readonly concurrency?: number | undefined; readonly targetUtilization?: number | undefined; }) => Effect.Effect<Pool<A, E>, never, Scope.Scope | R>
+declare const make: <A, E, R>(options: { readonly acquire: Effect.Effect<A, E, R>; readonly size: number; readonly concurrency?: number | undefined; readonly targetUtilization?: number | undefined; }) => Effect.Effect<Pool<A, E>, never, R | Scope.Scope>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Pool.ts#L115)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Pool.ts#L220)
 
 Since v2.0.0

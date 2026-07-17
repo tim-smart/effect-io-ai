@@ -3,7 +3,28 @@ Module: `FiberMap`<br />
 
 ## FiberMap.has
 
-Check if a key exists in the FiberMap.
+Checks whether a key exists in the FiberMap.
+This is the Effect-wrapped version of `hasUnsafe`.
+
+**Example** (Checking if a key exists)
+
+```ts
+import { Effect, FiberMap } from "effect"
+
+const program = Effect.gen(function*() {
+  const map = yield* FiberMap.make<string>()
+
+  // Add a fiber to the map
+  yield* FiberMap.run(map, "task1", Effect.never)
+
+  // Check if keys exist using Effect
+  const exists1 = yield* FiberMap.has(map, "task1")
+  const exists2 = yield* FiberMap.has(map, "task2")
+
+  console.log(exists1) // true
+  console.log(exists2) // false
+})
+```
 
 **Signature**
 
@@ -11,6 +32,6 @@ Check if a key exists in the FiberMap.
 declare const has: { <K>(key: K): <A, E>(self: FiberMap<K, A, E>) => Effect.Effect<boolean>; <K, A, E>(self: FiberMap<K, A, E>, key: K): Effect.Effect<boolean>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/FiberMap.ts#L378)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/FiberMap.ts#L602)
 
 Since v2.0.0

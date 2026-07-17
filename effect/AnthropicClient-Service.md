@@ -3,52 +3,58 @@ Module: `AnthropicClient`<br />
 
 ## AnthropicClient.Service
 
-Represents the interface that the `AnthropicClient` service provides.
-
-This service abstracts the complexity of communicating with Anthropic's API,
-providing both high-level text generation methods and low-level HTTP access
-for advanced use cases.
+Represents the Anthropic client service with methods for the Messages API, including regular and streaming message
+creation.
 
 **Signature**
 
 ```ts
 export interface Service {
   /**
-   * The underlying HTTP client capable of communicating with the Anthropic API.
-   *
-   * This client is pre-configured with authentication, base URL, and standard
-   * headers required for Anthropic API communication. It provides direct access
-   * to the generated Anthropic API client for operations not covered by the
-   * higher-level methods.
-   *
-   * Use this when you need to:
-   * - Access provider-specific API endpoints not available through the AI SDK
-   * - Implement custom request/response handling
-   * - Use Anthropic API features not yet supported by the Effect AI abstractions
-   * - Perform batch operations or non-streaming requests
-   *
-   * The client automatically handles authentication and follows Anthropic's
-   * API conventions for request formatting and error handling.
+   * The underlying generated Anthropic client that exposes all API endpoints.
    */
-  readonly client: Generated.Client
+  readonly client: Generated.AnthropicClient
 
-  readonly streamRequest: <A, I, R>(
-    request: HttpClientRequest.HttpClientRequest,
-    schema: Schema.Schema<A, I, R>
-  ) => Stream.Stream<A, AiError.AiError, R>
+  /**
+   * Executes a low-level streaming HTTP request and decodes the Server-Sent Events response using the provided schema.
+   */
+  readonly streamRequest: <S extends Sse.EventCodec>(
+    schema: S
+  ) => (request: HttpClientRequest.HttpClientRequest) => Stream.Stream<
+    S["Type"],
+    HttpClientError.HttpClientError | Schema.SchemaError | Sse.Retry,
+    S["DecodingServices"]
+  >
 
+  /**
+   * Creates a message using the Anthropic Messages API and maps all errors to the unified `AiError` type.
+   */
   readonly createMessage: (options: {
-    readonly params?: typeof Generated.BetaMessagesPostParams.Encoded | undefined
     readonly payload: typeof Generated.BetaCreateMessageParams.Encoded
-  }) => Effect.Effect<Generated.BetaMessage, AiError.AiError>
-
-  readonly createMessageStream: (options: {
     readonly params?: typeof Generated.BetaMessagesPostParams.Encoded | undefined
+  }) => Effect.Effect<
+    [body: typeof Generated.BetaMessage.Type, response: HttpClientResponse.HttpClientResponse],
+    AiError.AiError
+  >
+
+  /**
+   * Creates a streaming message using the Anthropic Messages API and maps all errors to the unified `AiError` type.
+   *
+   * **Details**
+   *
+   * The returned Effect yields the HTTP response and a stream of events as the model generates its response. The stream
+   * automatically terminates when a `message_stop` event is received.
+   */
+  readonly createMessageStream: (options: {
     readonly payload: Omit<typeof Generated.BetaCreateMessageParams.Encoded, "stream">
-  }) => Stream.Stream<MessageStreamEvent, AiError.AiError>
+    readonly params?: typeof Generated.BetaMessagesPostParams.Encoded | undefined
+  }) => Effect.Effect<
+    [response: HttpClientResponse.HttpClientResponse, stream: Stream.Stream<MessageStreamEvent, AiError.AiError>],
+    AiError.AiError
+  >
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L44)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/AnthropicClient.ts#L42)
 
-Since v1.0.0
+Since v4.0.0

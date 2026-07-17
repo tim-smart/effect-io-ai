@@ -3,17 +3,33 @@ Module: `Stream`<br />
 
 ## Stream.toQueue
 
-Converts the stream to a scoped queue of chunks. After the scope is closed,
-the queue will never again produce values and should be discarded.
+Creates a scoped dequeue that is fed by the stream for concurrent
+consumption.
 
-Defaults to the "suspend" back pressure strategy with a capacity of 2.
+**Details**
+
+Elements are offered to the queue as the stream runs. Stream completion is
+signaled with `Cause.Done`, stream failures fail the queue, and the queue is
+shut down when the surrounding scope closes.
+
+**Example** (Converting a stream to a Queue for concurrent consumption)
+
+```ts
+import { Effect, Queue, Stream } from "effect"
+
+const program = Effect.gen(function* () {
+  const queue = yield* Stream.toQueue(Stream.fromIterable([1, 2, 3]), { capacity: 8 })
+  const chunk = yield* Queue.takeBetween(queue, 1, 3)
+  return chunk
+})
+```
 
 **Signature**
 
 ```ts
-declare const toQueue: { (options?: { readonly strategy?: "dropping" | "sliding" | "suspend" | undefined; readonly capacity?: number | undefined; } | { readonly strategy: "unbounded"; } | undefined): <A, E, R>(self: Stream<A, E, R>) => Effect.Effect<Queue.Dequeue<Take.Take<A, E>>, never, Scope.Scope | R>; <A, E, R>(self: Stream<A, E, R>, options?: { readonly strategy?: "dropping" | "sliding" | "suspend" | undefined; readonly capacity?: number | undefined; } | { readonly strategy: "unbounded"; } | undefined): Effect.Effect<Queue.Dequeue<Take.Take<A, E>>, never, Scope.Scope | R>; }
+declare const toQueue: { (options: { readonly capacity: "unbounded"; } | { readonly capacity: number; readonly strategy?: "dropping" | "sliding" | "suspend" | undefined; }): <A, E, R>(self: Stream<A, E, R>) => Effect.Effect<Queue.Dequeue<A, E | Cause.Done>, never, R | Scope.Scope>; <A, E, R>(self: Stream<A, E, R>, options: { readonly capacity: "unbounded"; } | { readonly capacity: number; readonly strategy?: "dropping" | "sliding" | "suspend" | undefined; }): Effect.Effect<Queue.Dequeue<A, E | Cause.Done>, never, R | Scope.Scope>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L5273)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L11654)
 
 Since v2.0.0

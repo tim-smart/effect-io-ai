@@ -1,0 +1,29 @@
+Package: `effect`<br />
+Module: `HashSet`<br />
+
+## HashSet.isHashSet
+
+Checks whether a value is a HashSet.
+
+**Example** (Checking for a HashSet)
+
+```ts
+import { HashSet } from "effect"
+
+const set = HashSet.make(1, 2, 3)
+const array = [1, 2, 3]
+
+console.log(HashSet.isHashSet(set)) // true
+console.log(HashSet.isHashSet(array)) // false
+console.log(HashSet.isHashSet(null)) // false
+```
+
+**Signature**
+
+```ts
+declare const isHashSet: { <V>(u: Iterable<V>): u is HashSet<V>; (u: unknown): u is HashSet<unknown>; }
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L195)
+
+Since v2.0.0

@@ -1,4 +1,4 @@
-Package: `@effect/ai-openai`<br />
+Package: `@effect/ai-openai-compat`<br />
 Module: `OpenAiTelemetry`<br />
 
 ## OpenAiTelemetry.RequestAttributes
@@ -21,6 +21,6 @@ export interface RequestAttributes {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiTelemetry.ts#L42)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiTelemetry.ts#L50)
 
-Since v1.0.0
+Since v4.0.0

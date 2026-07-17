@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.Metric
 
-Re-exports all named exports from the "./Metric.js" module as `Metric`.
+Re-exports all named exports from the "./Metric.ts" module as `Metric`.
 
 **Signature**
 
 ```ts
-export * as Metric from "./Metric.js"
+export * as Metric from "./Metric.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L777)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L327)
 
 Since v2.0.0

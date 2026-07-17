@@ -3,15 +3,19 @@ Module: `Function`<br />
 
 ## Function.constFalse
 
-A thunk that returns always `false`.
+Returns `false` when called.
 
-**Example**
+**When to use**
+
+Use when you need a thunk that returns `false` on every invocation.
+
+**Example** (Returning false from a thunk)
 
 ```ts
+import { Function } from "effect"
 import * as assert from "node:assert"
-import { constFalse } from "effect/Function"
 
-assert.deepStrictEqual(constFalse(), false)
+assert.deepStrictEqual(Function.constFalse(), false)
 ```
 
 **Signature**
@@ -20,6 +24,6 @@ assert.deepStrictEqual(constFalse(), false)
 declare const constFalse: LazyArg<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L322)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L366)
 
 Since v2.0.0

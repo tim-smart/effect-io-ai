@@ -1,0 +1,59 @@
+Package: `effect`<br />
+Module: `Config`<br />
+
+## Config.schema
+
+Creates a `Config<T>` from a `Schema.Codec`.
+
+**When to use**
+
+Use when you need to read structured or schema-validated configuration.
+
+**Details**
+
+The optional `path` sets the local path segment(s) for the config lookup.
+It is appended to the logical path prefix accumulated from outer
+`nested` calls. Pass a single string for a flat key or an array for
+nested paths.
+
+Convenience constructors such as `string`, `number`, and `boolean` delegate
+to this API.
+
+The codec is used to decode the raw `StringTree` produced by the provider
+into `T`. Schema validation errors are wrapped in `ConfigError`.
+
+**Example** (Reading a structured config)
+
+```ts
+import { Config, ConfigProvider, Effect, Schema } from "effect"
+
+const DbConfig = Config.schema(
+  Schema.Struct({
+    host: Schema.String,
+    port: Schema.Int
+  }),
+  "db"
+)
+
+const provider = ConfigProvider.fromUnknown({
+  db: { host: "localhost", port: 5432 }
+})
+
+// Effect.runSync(DbConfig.parse(provider))
+// { host: "localhost", port: 5432 }
+```
+
+**See**
+
+- `string` / `number` / `boolean` – shortcuts for
+  single-value configs
+
+**Signature**
+
+```ts
+declare const schema: <T>(codec: Schema.ConstraintCodec<T, unknown>, path?: string | ConfigProvider.Path) => Config<T>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L642)
+
+Since v4.0.0

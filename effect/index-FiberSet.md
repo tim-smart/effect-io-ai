@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.FiberSet
 
-Re-exports all named exports from the "./FiberSet.js" module as `FiberSet`.
+Re-exports all named exports from the "./FiberSet.ts" module as `FiberSet`.
 
 **Signature**
 
 ```ts
-export * as FiberSet from "./FiberSet.js"
+export * as FiberSet from "./FiberSet.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L325)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L207)
 
 Since v2.0.0

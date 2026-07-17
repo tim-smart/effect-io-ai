@@ -3,13 +3,13 @@ Module: `Trie`<br />
 
 ## Trie.reduce
 
-Reduce a state over the entries of the `Trie`.
+Reduces a state over the entries of the `Trie`.
 
-**Example**
+**Example** (Reducing entries)
 
 ```ts
-import * as assert from "node:assert"
 import { Trie } from "effect"
+import * as assert from "node:assert"
 
 const trie = Trie.empty<number>().pipe(
   Trie.insert("shells", 0),
@@ -43,6 +43,6 @@ assert.equal(
 declare const reduce: { <Z, V>(zero: Z, f: (accumulator: Z, value: V, key: string) => Z): (self: Trie<V>) => Z; <Z, V>(self: Trie<V>, zero: Z, f: (accumulator: Z, value: V, key: string) => Z): Z; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Trie.ts#L576)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Trie.ts#L660)
 
 Since v2.0.0

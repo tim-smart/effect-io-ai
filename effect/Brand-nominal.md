@@ -3,31 +3,25 @@ Module: `Brand`<br />
 
 ## Brand.nominal
 
-This function returns a `Brand.Constructor` that **does not apply any runtime checks**, it just returns the provided value.
-It can be used to create nominal types that allow distinguishing between two values of the same type but with different meanings.
+Returns a `Constructor` that **does not apply any runtime checks** and just
+returns the provided value.
 
-If you also want to perform some validation, see `refined`.
+**When to use**
 
-**Example**
+Use to create nominal types that allow distinguishing between two values
+of the same type but with different meanings.
 
-```ts
-import * as assert from "node:assert"
-import { Brand } from "effect"
+**See**
 
-type UserId = number & Brand.Brand<"UserId">
-
-const UserId = Brand.nominal<UserId>()
-
-console.log(UserId(1))
-// 1
-```
+- `make` for constructing branded values with validation.
+- `check` for constructing branded values from schema checks.
 
 **Signature**
 
 ```ts
-declare const nominal: <A extends Brand<any>>() => Brand.Constructor<A>
+declare const nominal: <A extends Brand<any>>() => Constructor<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Brand.ts#L269)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Brand.ts#L228)
 
 Since v2.0.0

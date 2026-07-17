@@ -1,0 +1,30 @@
+Package: `effect`<br />
+Module: `HttpApiMiddleware`<br />
+
+## HttpApiMiddleware.HttpApiMiddlewareClient
+
+Client-side middleware function for generated HTTP API clients.
+
+**Details**
+
+It receives endpoint/group metadata, the outgoing request, and a `next` function
+for continuing the request pipeline.
+
+**Signature**
+
+```ts
+export interface HttpApiMiddlewareClient<_E, CE, R> {
+  (options: {
+    readonly endpoint: HttpApiEndpoint.Top
+    readonly group: HttpApiGroup.Top
+    readonly request: HttpClientRequest.HttpClientRequest
+    readonly next: (
+      request: HttpClientRequest.HttpClientRequest
+    ) => Effect.Effect<HttpClientResponse.HttpClientResponse, HttpClientError.HttpClientError>
+  }): Effect.Effect<HttpClientResponse.HttpClientResponse, CE | HttpClientError.HttpClientError, R>
+}
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HttpApiMiddleware.ts#L114)
+
+Since v4.0.0

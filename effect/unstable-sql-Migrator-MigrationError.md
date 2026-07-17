@@ -1,0 +1,16 @@
+Package: `effect`<br />
+Module: `Migrator`<br />
+
+## Migrator.MigrationError
+
+Error raised while loading, validating, locking, or running SQL migrations.
+
+**Signature**
+
+```ts
+declare class MigrationError
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Migrator.ts#L79)
+
+Since v4.0.0

@@ -3,64 +3,45 @@ Module: `Effect`<br />
 
 ## Effect.exit
 
-Encapsulates both success and failure of an `Effect` using the `Exit` type.
+Transforms an effect to encapsulate both failure and success using the `Exit`
+data type.
+
+**When to use**
+
+Use when you need to inspect the full outcome, including typed failures, defects,
+and interruptions.
 
 **Details**
 
-This function converts an effect into one that always succeeds, wrapping its
-outcome in the `Exit` type. The `Exit` type provides explicit handling of
-both success (`Exit.Success`) and failure (`Exit.Failure`) cases, including
-defects (unrecoverable errors).
+`exit` wraps an effect's success or failure inside an `Exit` type, allowing
+you to handle both cases explicitly.
 
-Unlike `either` or `option`, this function also encapsulates
-defects, which are typically unrecoverable and would otherwise terminate the
-effect. With the `Exit` type, defects are represented in `Exit.Failure`,
-allowing for detailed introspection and structured error handling.
+The resulting effect cannot fail because the failure is encapsulated within
+the `Exit.Failure` type. The error type is set to `never`, indicating that
+the effect is structured to never fail directly.
 
-This makes the resulting effect robust and incapable of direct failure (its
-error type is `never`). It is particularly useful for workflows where all
-outcomes, including unexpected defects, must be managed and analyzed.
-
-**Example**
+**Example** (Capturing completion as Exit)
 
 ```ts
-import { Effect, Cause, Console, Exit } from "effect"
+import { Effect } from "effect"
 
-// Simulating a runtime error
-const task = Effect.dieMessage("Boom!")
+const success = Effect.succeed(42)
+const failure = Effect.fail("Something went wrong")
 
-const program = Effect.gen(function* () {
-  const exit = yield* Effect.exit(task)
-  if (Exit.isFailure(exit)) {
-    const cause = exit.cause
-    if (
-      Cause.isDieType(cause) &&
-      Cause.isRuntimeException(cause.defect)
-    ) {
-      yield* Console.log(
-        `RuntimeException defect caught: ${cause.defect.message}`
-      )
-    } else {
-      yield* Console.log("Unknown failure caught.")
-    }
-  }
-})
+const program1 = Effect.exit(success)
+const program2 = Effect.exit(failure)
 
-// We get an Exit.Success because we caught all failures
-Effect.runPromiseExit(program).then(console.log)
-// Output:
-// RuntimeException defect caught: Boom!
-// {
-//   _id: "Exit",
-//   _tag: "Success",
-//   value: undefined
-// }
+Effect.runPromise(program1).then(console.log)
+// { _id: 'Exit', _tag: 'Success', value: 42 }
+
+Effect.runPromise(program2).then(console.log)
+// { _id: 'Exit', _tag: 'Failure', cause: { _id: 'Cause', _tag: 'Fail', failure: 'Something went wrong' } }
 ```
 
 **See**
 
 - `option` for a version that uses `Option` instead.
-- `either` for a version that uses `Either` instead.
+- `result` for a version that uses `Result` instead.
 
 **Signature**
 
@@ -68,6 +49,6 @@ Effect.runPromiseExit(program).then(console.log)
 declare const exit: <A, E, R>(self: Effect<A, E, R>) => Effect<Exit.Exit<A, E>, never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L8243)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L2297)
 
 Since v2.0.0

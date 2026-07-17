@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.HashSet
 
-Re-exports all named exports from the "./HashSet.js" module as `HashSet`.
+Re-exports all named exports from the "./HashSet.ts" module as `HashSet`.
 
 **Signature**
 
 ```ts
-export * as HashSet from "./HashSet.js"
+export * as HashSet from "./HashSet.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L638)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L252)
 
 Since v2.0.0

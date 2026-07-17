@@ -1,0 +1,16 @@
+Package: `@effect/opentelemetry`<br />
+Module: `OtelMetrics`<br />
+
+## OtelMetrics.registerProducer
+
+Registers a metric producer with one or more metric readers.
+
+**Signature**
+
+```ts
+declare const registerProducer: (self: MetricProducer, metricReader: LazyArg<MetricReader | Arr.NonEmptyReadonlyArray<MetricReader>>, options?: { readonly shutdownTimeout?: Duration.Input | undefined; }) => Effect.Effect<Array<any>, never, Scope.Scope>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/OtelMetrics.ts#L71)
+
+Since v4.0.0

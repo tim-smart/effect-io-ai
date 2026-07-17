@@ -3,7 +3,7 @@ Module: `BrowserKeyValueStore`<br />
 
 ## BrowserKeyValueStore.layerLocalStorage
 
-Creates a KeyValueStore layer that uses the browser's localStorage api. Values are stored between sessions.
+Creates a `KeyValueStore` layer that uses the browser's `localStorage` API and stores values between browser sessions.
 
 **Signature**
 
@@ -11,6 +11,6 @@ Creates a KeyValueStore layer that uses the browser's localStorage api. Values a
 declare const layerLocalStorage: Layer.Layer<KeyValueStore.KeyValueStore, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserKeyValueStore.ts#L14)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/BrowserKeyValueStore.ts#L25)
 
-Since v1.0.0
+Since v4.0.0

@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.ScopedRef
 
-Re-exports all named exports from the "./ScopedRef.js" module as `ScopedRef`.
+Re-exports all named exports from the "./ScopedRef.ts" module as `ScopedRef`.
 
 **Signature**
 
 ```ts
-export * as ScopedRef from "./ScopedRef.js"
+export * as ScopedRef from "./ScopedRef.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1303)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L577)
 
 Since v2.0.0

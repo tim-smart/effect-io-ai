@@ -1,0 +1,37 @@
+Package: `effect`<br />
+Module: `Result`<br />
+
+## Result.succeed
+
+Creates a `Result` holding a `Success` value.
+
+**Details**
+
+- Use when you have a value and want to lift it into the `Result` type
+- The error type `E` defaults to `never`
+
+**Example** (Wrapping a value)
+
+```ts
+import { Result } from "effect"
+
+const result = Result.succeed(42)
+
+console.log(Result.isSuccess(result))
+// Output: true
+```
+
+**See**
+
+- `fail` to create a Failure
+- `void` for a pre-built `Success<void>`
+
+**Signature**
+
+```ts
+declare const succeed: <A>(right: A) => Result<A>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Result.ts#L284)
+
+Since v4.0.0

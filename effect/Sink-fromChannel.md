@@ -5,12 +5,21 @@ Module: `Sink`<br />
 
 Creates a sink from a `Channel`.
 
+**When to use**
+
+Use to create a `Sink` from a `Channel` that processes non-empty arrays of
+input values.
+
+**See**
+
+- `toChannel` for converting a `Sink` back to a `Channel`
+
 **Signature**
 
 ```ts
-declare const fromChannel: <L, In, E, A, R>(channel: Channel.Channel<Chunk.Chunk<L>, Chunk.Chunk<In>, E, never, A, unknown, R>) => Sink<A, In, L, E, R>
+declare const fromChannel: <L, In, E, A, R>(channel: Channel.Channel<never, E, End<A, L>, NonEmptyReadonlyArray<In>, never, void, R>) => Sink<A, In, L, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Sink.ts#L972)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Sink.ts#L224)
 
 Since v2.0.0

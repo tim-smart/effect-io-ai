@@ -1,0 +1,41 @@
+Package: `effect`<br />
+Module: `TxQueue`<br />
+
+## TxQueue.bounded
+
+Creates a new bounded `TxQueue` with the specified capacity.
+
+**Details**
+
+This function returns a new TxQueue reference with the specified capacity. No existing TxQueue instances are modified.
+
+**Example** (Creating bounded queues)
+
+```ts
+import { Effect, TxQueue } from "effect"
+
+const program = Effect.gen(function*() {
+  // Create a bounded queue (E defaults to never)
+  const queue = yield* TxQueue.bounded<number>(10)
+
+  // Create a bounded queue with error channel
+  const faultTolerantQueue = yield* TxQueue.bounded<number, string>(10)
+
+  // Offer items - will succeed until capacity is reached
+  yield* TxQueue.offer(queue, 1)
+  yield* TxQueue.offer(queue, 2)
+
+  const item = yield* TxQueue.take(queue)
+  console.log(item) // 1
+})
+```
+
+**Signature**
+
+```ts
+declare const bounded: <A = never, E = never>(capacity: number) => Effect.Effect<TxQueue<A, E>>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TxQueue.ts#L369)
+
+Since v2.0.0

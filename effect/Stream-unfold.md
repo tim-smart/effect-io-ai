@@ -3,25 +3,35 @@ Module: `Stream`<br />
 
 ## Stream.unfold
 
-Creates a stream by peeling off the "layers" of a value of type `S`.
+Creates a stream by repeatedly applying an effectful step function to a
+state.
 
-**Example**
+**Details**
+
+Each `readonly [value, nextState]` result emits `value` and continues with
+`nextState`; returning `undefined` ends the stream.
+
+**Example** (Unfolding stream state)
 
 ```ts
-import { Effect, Option, Stream } from "effect"
+import { Console, Effect, Stream } from "effect"
 
-const stream = Stream.unfold(1, (n) => Option.some([n, n + 1]))
+const program = Effect.gen(function*() {
+  const stream = Stream.unfold(1, (n) => Effect.succeed([n, n + 1] as const))
+  const values = yield* Stream.runCollect(stream.pipe(Stream.take(5)))
+  yield* Console.log(values)
+})
 
-Effect.runPromise(Stream.runCollect(stream.pipe(Stream.take(5)))).then(console.log)
-// { _id: 'Chunk', values: [ 1, 2, 3, 4, 5 ] }
+Effect.runPromise(program)
+// Output: [ 1, 2, 3, 4, 5 ]
 ```
 
 **Signature**
 
 ```ts
-declare const unfold: <S, A>(s: S, f: (s: S) => Option.Option<readonly [A, S]>) => Stream<A>
+declare const unfold: <S, A, E, R>(s: S, f: (s: S) => Effect.Effect<readonly [A, S] | undefined, E, R>) => Stream<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L5425)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L1638)
 
 Since v2.0.0

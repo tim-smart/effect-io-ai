@@ -3,15 +3,22 @@ Module: `RcRef`<br />
 
 ## RcRef.make
 
-Create an `RcRef` from an acquire `Effect`.
+Creates an `RcRef` from an acquire effect.
 
-An RcRef wraps a reference counted resource that can be acquired and released
-multiple times.
+**When to use**
 
-The resource is lazily acquired on the first call to `get` and released when
-the last reference is released.
+Use to create a lazily acquired, reference-counted resource from an acquire
+effect.
 
-**Example**
+**Details**
+
+The resource is acquired lazily on the first `get` and shared by subsequent
+gets while it remains cached. Each `get` adds a reference to the current
+`Scope`. When the last reference is released, the resource is closed
+immediately by default, or after `idleTimeToLive` when that option is
+provided.
+
+**Example** (Creating a reference-counted resource)
 
 ```ts
 import { Effect, RcRef } from "effect"
@@ -36,9 +43,9 @@ Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const make: <A, E, R>(options: { readonly acquire: Effect.Effect<A, E, R>; readonly idleTimeToLive?: Duration.DurationInput | undefined; }) => Effect.Effect<RcRef<A, E>, never, R | Scope.Scope>
+declare const make: <A, E, R>(options: { readonly acquire: Effect.Effect<A, E, R>; readonly idleTimeToLive?: Duration.Input | undefined; }) => Effect.Effect<RcRef<A, E>, never, R | Scope>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/RcRef.ts#L100)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/RcRef.ts#L147)
 
 Since v3.5.0

@@ -1,0 +1,25 @@
+Package: `effect`<br />
+Module: `Argument`<br />
+
+## Argument.none
+
+Creates an empty sentinel argument that always fails to parse.
+
+**Example** (Creating a sentinel argument)
+
+```ts
+import { Argument } from "effect/unstable/cli"
+
+// Used as a placeholder or default in combinators
+const noArg = Argument.none
+```
+
+**Signature**
+
+```ts
+declare const none: Argument<never>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Argument.ts#L284)
+
+Since v4.0.0

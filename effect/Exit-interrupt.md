@@ -3,15 +3,37 @@ Module: `Exit`<br />
 
 ## Exit.interrupt
 
-Constructs a new `Exit.Failure` from the specified `FiberId` indicating that
-the `Fiber` running an `Effect` workflow was terminated due to interruption.
+Creates a failed Exit representing fiber interruption.
+
+**When to use**
+
+Use to signal that a fiber was interrupted.
+
+**Details**
+
+Optionally pass a fiber ID to identify which fiber was interrupted. Returns
+a `Failure<never>` with an `Interrupt` cause.
+
+**Example** (Creating an interruption Exit)
+
+```ts
+import { Exit } from "effect"
+
+const exit = Exit.interrupt(123)
+console.log(Exit.isFailure(exit)) // true
+console.log(Exit.hasInterrupts(exit)) // true
+```
+
+**See**
+
+- `hasInterrupts` to check whether an Exit contains interruptions
 
 **Signature**
 
 ```ts
-declare const interrupt: (fiberId: FiberId.FiberId) => Exit<never>
+declare const interrupt: (fiberId?: number | undefined) => Exit<never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Exit.ts#L264)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Exit.ts#L343)
 
 Since v2.0.0

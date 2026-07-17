@@ -1,0 +1,34 @@
+Package: `effect`<br />
+Module: `TxQueue`<br />
+
+## TxQueue.isClosing
+
+Checks whether the queue is in the closing state.
+
+**Example** (Checking closing state)
+
+```ts
+import { Effect, TxQueue } from "effect"
+
+const program = Effect.gen(function*() {
+  const queue = yield* TxQueue.bounded<number>(10)
+  yield* TxQueue.offer(queue, 42)
+
+  const closing = yield* TxQueue.isClosing(queue)
+  console.log(closing) // false
+
+  yield* TxQueue.interrupt(queue)
+  const nowClosing = yield* TxQueue.isClosing(queue)
+  console.log(nowClosing) // true
+})
+```
+
+**Signature**
+
+```ts
+declare const isClosing: (self: TxQueueState) => Effect.Effect<boolean>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TxQueue.ts#L1401)
+
+Since v4.0.0

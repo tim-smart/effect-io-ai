@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.Permissions
 
-Re-exports all named exports from the "./Permissions.js" module as `Permissions`.
+Re-exports all named exports from the "./Permissions.ts" module as `Permissions`.
 
 **Signature**
 
 ```ts
-export * as Permissions from "./Permissions.js"
+export * as Permissions from "./Permissions.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L49)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L90)
 
-Since v1.0.0
+Since v4.0.0

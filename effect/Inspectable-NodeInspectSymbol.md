@@ -1,0 +1,39 @@
+Package: `effect`<br />
+Module: `Inspectable`<br />
+
+## Inspectable.NodeInspectSymbol
+
+The type of the Node.js inspection symbol used for custom object inspection.
+This symbol type is used to implement custom inspection behavior in Node.js
+environments.
+
+**When to use**
+
+Use to type methods keyed by the Node.js custom inspection symbol.
+
+**Example** (Typing custom Node inspection)
+
+```ts
+import { Inspectable } from "effect"
+
+class CustomObject {
+  constructor(private value: string) {}
+
+  [Inspectable.NodeInspectSymbol]() {
+    return `CustomObject(${this.value})`
+  }
+}
+
+const obj = new CustomObject("test")
+console.log(obj) // CustomObject(test)
+```
+
+**Signature**
+
+```ts
+type NodeInspectSymbol = typeof NodeInspectSymbol
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Inspectable.ts#L80)
+
+Since v2.0.0

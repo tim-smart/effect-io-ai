@@ -1,0 +1,46 @@
+Package: `effect`<br />
+Module: `SchemaIssue`<br />
+
+## SchemaIssue.getActual
+
+Extracts the actual input value from any `Issue` variant.
+
+**When to use**
+
+Use when you need to retrieve an `Issue`'s offending input value for logging
+or custom error rendering.
+
+**Details**
+
+- Returns `Option.none()` for `Pointer` and `MissingKey` (they carry no
+  value).
+- Returns the existing `Option` for variants that already store `actual` as
+  `Option<unknown>` (`InvalidType`, `InvalidValue`, `Forbidden`, `Encoding`,
+  `Composite`).
+- Wraps `actual` with `Option.some` for variants that store it as plain
+  `unknown` (`AnyOf`, `UnexpectedKey`, `OneOf`, `Filter`).
+
+**Example** (Extracting the actual value)
+
+```ts
+import { Option, SchemaIssue } from "effect"
+
+const issue = new SchemaIssue.MissingKey(undefined)
+console.log(SchemaIssue.getActual(issue))
+// { _tag: "None" }
+```
+
+**See**
+
+- `Issue`
+- `isIssue`
+
+**Signature**
+
+```ts
+declare const getActual: (issue: Issue) => Option.Option<unknown>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaIssue.ts#L778)
+
+Since v4.0.0

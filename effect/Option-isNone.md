@@ -3,9 +3,17 @@ Module: `Option`<br />
 
 ## Option.isNone
 
-Checks whether an `Option` represents the absence of a value (`None`).
+Checks whether an `Option` is `None` (absent).
 
-**Example**
+**When to use**
+
+Use when you need to branch on an absent `Option` before accessing `.value`.
+
+**Details**
+
+- Acts as a type guard, narrowing to `None<A>`
+
+**Example** (Checking for None)
 
 ```ts
 import { Option } from "effect"
@@ -27,6 +35,6 @@ console.log(Option.isNone(Option.none()))
 declare const isNone: <A>(self: Option<A>) => self is None<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L237)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L358)
 
 Since v2.0.0

@@ -5,12 +5,32 @@ Module: `DateTime`<br />
 
 Create a Layer from the given time zone offset.
 
+**Details**
+
+This layer provides the `CurrentTimeZone` service with a fixed offset time zone.
+
+**Example** (Providing fixed-offset time zone layers)
+
+```ts
+import { DateTime, Effect } from "effect"
+
+// Create a layer for UTC+3
+const layer = DateTime.layerCurrentZoneOffset(3 * 60 * 60 * 1000)
+
+const program = Effect.gen(function*() {
+  const now = yield* DateTime.nowInCurrentZone
+  return DateTime.formatIsoZoned(now)
+})
+
+Effect.provide(program, layer)
+```
+
 **Signature**
 
 ```ts
 declare const layerCurrentZoneOffset: (offset: number) => Layer.Layer<CurrentTimeZone>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L1666)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L2863)
 
 Since v3.6.0

@@ -3,7 +3,25 @@ Module: `Stream`<br />
 
 ## Stream.sync
 
-Creates a single-valued pure stream.
+Creates a stream that synchronously evaluates a function and emits the result as a single value.
+
+**Details**
+
+The function is evaluated each time the stream is run.
+
+**Example** (Evaluating a value synchronously)
+
+```ts
+import { Console, Effect, Stream } from "effect"
+
+const program = Effect.gen(function*() {
+  const values = yield* Stream.sync(() => 2 + 1).pipe(Stream.runCollect)
+  yield* Console.log(values)
+})
+
+Effect.runPromise(program)
+// Output: [ 3 ]
+```
 
 **Signature**
 
@@ -11,6 +29,6 @@ Creates a single-valued pure stream.
 declare const sync: <A>(evaluate: LazyArg<A>) => Stream<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L4778)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L876)
 
 Since v2.0.0

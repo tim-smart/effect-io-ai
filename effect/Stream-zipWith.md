@@ -3,25 +3,25 @@ Module: `Stream`<br />
 
 ## Stream.zipWith
 
-Zips this stream with another point-wise and applies the function to the
-paired elements.
+Zips two streams point-wise with a combining function, ending when either stream ends.
 
-The new stream will end when one of the sides ends.
-
-**Example**
+**Example** (Zipping streams with a function)
 
 ```ts
-import { Effect, Stream } from "effect"
+import { Console, Effect, Stream } from "effect"
 
-// We create two streams and zip them with custom logic.
-const stream = Stream.zipWith(
-  Stream.make(1, 2, 3, 4, 5, 6),
-  Stream.make("a", "b", "c"),
-  (n, s) => [n - s.length, s]
-)
+const stream1 = Stream.make(1, 2, 3, 4, 5, 6)
+const stream2 = Stream.make("a", "b", "c")
 
-Effect.runPromise(Stream.runCollect(stream)).then(console.log)
-// { _id: 'Chunk', values: [ [ 0, 'a' ], [ 1, 'b' ], [ 2, 'c' ] ] }
+const zipped = Stream.zipWith(stream1, stream2, (n, s) => `${n}-${s}`)
+
+const program = Effect.gen(function*() {
+  const result = yield* Stream.runCollect(zipped)
+  yield* Console.log(result)
+})
+
+Effect.runPromise(program)
+// Output: [ "1-a", "2-b", "3-c" ]
 ```
 
 **Signature**
@@ -30,6 +30,6 @@ Effect.runPromise(Stream.runCollect(stream)).then(console.log)
 declare const zipWith: { <AR, ER, RR, AL, A>(right: Stream<AR, ER, RR>, f: (left: AL, right: AR) => A): <EL, RL>(left: Stream<AL, EL, RL>) => Stream<A, EL | ER, RL | RR>; <AL, EL, RL, AR, ER, RR, A>(left: Stream<AL, EL, RL>, right: Stream<AR, ER, RR>, f: (left: AL, right: AR) => A): Stream<A, EL | ER, RL | RR>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L6059)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L3514)
 
 Since v2.0.0

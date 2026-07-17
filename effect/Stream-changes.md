@@ -3,19 +3,24 @@ Module: `Stream`<br />
 
 ## Stream.changes
 
-Returns a new stream that only emits elements that are not equal to the
-previous element emitted, using natural equality to determine whether two
-elements are equal.
+Emits only elements that differ from the previous one.
 
-**Example**
+**Example** (Emitting changed values)
 
 ```ts
-import { Effect, Stream } from "effect"
+import { Console, Effect, Stream } from "effect"
 
-const stream = Stream.make(1, 1, 1, 2, 2, 3, 4).pipe(Stream.changes)
+const program = Effect.gen(function*() {
+  const values = yield* Stream.fromIterable([1, 1, 2, 2, 3]).pipe(
+    Stream.changes,
+    Stream.runCollect
+  )
 
-Effect.runPromise(Stream.runCollect(stream)).then(console.log)
-// { _id: 'Chunk', values: [ 1, 2, 3, 4 ] }
+  yield* Console.log(values)
+})
+
+Effect.runPromise(program)
+// [1, 2, 3]
 ```
 
 **Signature**
@@ -24,6 +29,6 @@ Effect.runPromise(Stream.runCollect(stream)).then(console.log)
 declare const changes: <A, E, R>(self: Stream<A, E, R>) => Stream<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L921)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L9230)
 
 Since v2.0.0

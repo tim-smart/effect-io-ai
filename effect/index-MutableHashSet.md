@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.MutableHashSet
 
-Re-exports all named exports from the "./MutableHashSet.js" module as `MutableHashSet`.
+Re-exports all named exports from the "./MutableHashSet.ts" module as `MutableHashSet`.
 
 **Signature**
 
 ```ts
-export * as MutableHashSet from "./MutableHashSet.js"
+export * as MutableHashSet from "./MutableHashSet.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L938)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L337)
 
 Since v2.0.0

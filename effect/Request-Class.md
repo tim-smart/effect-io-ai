@@ -3,27 +3,34 @@ Module: `Request`<br />
 
 ## Request.Class
 
-Provides a constructor for a Request Class.
+Defines request types with TypeScript classes.
 
-**Example**
+**Details**
+
+Subclasses pass their data fields to `super`, and instances are marked as
+`Request` values while retaining the provided readonly fields.
+
+**Example** (Defining request classes)
 
 ```ts
 import { Request } from "effect"
 
-type Success = string
-type Error = never
+class GetUser extends Request.Class<{ id: number }, string, Error> {
+  constructor(readonly id: number) {
+    super({ id })
+  }
+}
 
-class MyRequest extends Request.Class<Success, Error, {
-  readonly id: string
-}> {}
+const getUserRequest = new GetUser(123)
+console.log(getUserRequest.id) // 123
 ```
 
 **Signature**
 
 ```ts
-declare const Class: new <Success, Error, A extends Record<string, any>>(args: Types.Equals<Omit<A, keyof Request<unknown, unknown>>, {}> extends true ? void : { readonly [P in keyof A as P extends keyof Request<unknown, unknown> ? never : P]: A[P]; }) => Request<Success, Error> & Readonly<A>
+declare const Class: new <A extends Record<string, any>, Success, Error = never, Context = never>(args: Types.Equals<Omit<A, keyof Request<unknown, unknown>>, {}> extends true ? void : { readonly [P in keyof A as P extends keyof Request<any, any, any> ? never : P]: A[P]; }) => Request<Success, Error, Context> & Readonly<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Request.ts#L142)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Request.ts#L363)
 
 Since v2.0.0

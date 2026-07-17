@@ -3,10 +3,28 @@ Module: `Function`<br />
 
 ## Function.absurd
 
-The `absurd` function is a stub for cases where a value of type `never` is encountered in your code,
-meaning that it should be impossible for this code to be executed.
+Marks an impossible branch by accepting a `never` value and returning any
+type.
 
-This function is particularly useful when it's necessary to specify that certain cases are impossible.
+**When to use**
+
+Use when you need a return value in a branch that exhaustive checks prove
+cannot be reached.
+
+**Gotchas**
+
+Calling `absurd` throws, because a value of type `never` should be
+impossible at runtime.
+
+**Example** (Handling impossible values)
+
+```ts
+import { absurd } from "effect"
+
+const handleNever = (value: never) => {
+  return absurd(value) // This will throw an error if called
+}
+```
 
 **Signature**
 
@@ -14,6 +32,6 @@ This function is particularly useful when it's necessary to specify that certain
 declare const absurd: <A>(_: never) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L420)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L518)
 
 Since v2.0.0

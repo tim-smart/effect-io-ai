@@ -1,0 +1,26 @@
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.isReason
+
+Checks whether an arbitrary value is a `Reason` (`Fail`, `Die`, or `Interrupt`).
+
+**Example** (Checking the runtime type)
+
+```ts
+import { Cause } from "effect"
+
+const reason = Cause.fail("error").reasons[0]
+console.log(Cause.isReason(reason)) // true
+console.log(Cause.isReason("not a reason")) // false
+```
+
+**Signature**
+
+```ts
+declare const isReason: (self: unknown) => self is Reason<unknown>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L115)
+
+Since v4.0.0

@@ -3,14 +3,16 @@ Module: `Schema`<br />
 
 ## Schema.DateTimeZoned
 
-Defines a schema that attempts to convert a `string` to a `DateTime.Zoned` instance.
+Type-level representation of `DateTimeZoned`.
 
 **Signature**
 
 ```ts
-declare class DateTimeZoned
+export interface DateTimeZoned extends declare<DateTime.Zoned> {
+  readonly "Rebuild": DateTimeZoned
+}
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L7090)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L12390)
 
 Since v3.10.0

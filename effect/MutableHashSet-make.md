@@ -3,72 +3,32 @@ Module: `MutableHashSet`<br />
 
 ## MutableHashSet.make
 
-Construct a new `MutableHashSet` from a variable number of values.
+Creates a MutableHashSet from a variable number of values.
+Duplicates are automatically removed.
 
-Time complexity: **`O(n)`** where n is the number of elements
+**When to use**
 
-**Example**
+Use to build a mutable hash set from explicit values.
+
+**Example** (Creating a set from values)
 
 ```ts
-import { Equal, Hash, MutableHashSet } from "effect"
-import assert from "node:assert/strict"
+import { MutableHashSet } from "effect"
 
-class Character implements Equal.Equal {
-  readonly name: string
-  readonly trait: string
+const set = MutableHashSet.make("apple", "banana", "apple", "cherry")
 
-  constructor(name: string, trait: string) {
-    this.name = name
-    this.trait = trait
-  }
+console.log(MutableHashSet.size(set)) // 3
+console.log(Array.from(set)) // ["apple", "banana", "cherry"]
 
-  // Define equality based on name, and trait
-  [Equal.symbol](that: Equal.Equal): boolean {
-    if (that instanceof Character) {
-      return (
-        Equal.equals(this.name, that.name) &&
-        Equal.equals(this.trait, that.trait)
-      )
-    }
-    return false
-  }
+// With numbers
+const numbers = MutableHashSet.make(1, 2, 3, 2, 1)
+console.log(MutableHashSet.size(numbers)) // 3
+console.log(Array.from(numbers)) // [1, 2, 3]
 
-  // Generate a hash code based on the sum of the character's name and trait
-  [Hash.symbol](): number {
-    return Hash.hash(this.name + this.trait)
-  }
-
-  static readonly of = (name: string, trait: string): Character => {
-    return new Character(name, trait)
-  }
-}
-
-const mutableCharacterHashSet = MutableHashSet.make(
-  Character.of("Alice", "Curious"),
-  Character.of("Alice", "Curious"),
-  Character.of("White Rabbit", "Always late"),
-  Character.of("Mad Hatter", "Tea enthusiast")
-)
-
-assert.equal(
-  MutableHashSet.has(
-    mutableCharacterHashSet,
-    Character.of("Alice", "Curious")
-  ),
-  true
-)
-assert.equal(
-  MutableHashSet.has(
-    mutableCharacterHashSet,
-    Character.of("Fluffy", "Kind")
-  ),
-  false
-)
+// Mixed types
+const mixed = MutableHashSet.make("hello", 42, true, "hello")
+console.log(MutableHashSet.size(mixed)) // 3
 ```
-
-**See**
-
-- Other `MutableHashSet` constructors are `module:MutableHashSet.fromIterable` `module:MutableHashSet.empty`
 
 **Signature**
 
@@ -76,6 +36,6 @@ assert.equal(
 declare const make: <Keys extends ReadonlyArray<unknown>>(...keys: Keys) => MutableHashSet<Keys[number]>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/MutableHashSet.ts#L368)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/MutableHashSet.ts#L223)
 
 Since v2.0.0

@@ -1,0 +1,20 @@
+Package: `effect`<br />
+Module: `DevToolsSchema`<br />
+
+## DevToolsSchema.Response
+
+Type of devtools protocol responses sent by the server.
+
+**Details**
+
+Responses include heartbeat pongs and requests for metric snapshots.
+
+**Signature**
+
+```ts
+type Response = Schema.Schema.Type<typeof Response>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DevToolsSchema.ts#L539)
+
+Since v4.0.0

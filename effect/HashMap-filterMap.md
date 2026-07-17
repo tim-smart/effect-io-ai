@@ -3,15 +3,31 @@ Module: `HashMap`<br />
 
 ## HashMap.filterMap
 
-Maps over the entries of the `HashMap` using the specified partial function
-and filters out `None` values.
+Maps over the entries of the `HashMap` using the specified filter and keeps
+only successful results.
+
+**Example** (Filtering and mapping Results)
+
+```ts
+import { HashMap, Result } from "effect"
+
+const map1 = HashMap.make(["a", 1], ["b", 2], ["c", 3], ["d", 4])
+const map2 = HashMap.filterMap(
+  map1,
+  (value) => value % 2 === 0 ? Result.succeed(value * 2) : Result.failVoid
+)
+
+console.log(HashMap.size(map2)) // 2
+console.log(HashMap.get(map2, "b")) // Option.some(4)
+console.log(HashMap.get(map2, "d")) // Option.some(8)
+```
 
 **Signature**
 
 ```ts
-declare const filterMap: { <A, K, B>(f: (value: A, key: K) => Option<B>): (self: HashMap<K, A>) => HashMap<K, B>; <K, A, B>(self: HashMap<K, A>, f: (value: A, key: K) => Option<B>): HashMap<K, B>; }
+declare const filterMap: { <A, K, B, X>(f: (input: A, key: K) => Result<B, X>): (self: HashMap<K, A>) => HashMap<K, B>; <K, A, B, X>(self: HashMap<K, A>, f: (input: A, key: K) => Result<B, X>): HashMap<K, B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashMap.ts#L477)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashMap.ts#L1166)
 
 Since v2.0.0

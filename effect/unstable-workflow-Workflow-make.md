@@ -1,0 +1,18 @@
+Package: `effect`<br />
+Module: `Workflow`<br />
+
+## Workflow.make
+
+Creates a durable workflow definition with schemas, annotations, and
+deterministic execution IDs derived from the workflow tag and idempotency
+key.
+
+**Signature**
+
+```ts
+declare const make: <const Tag extends string, Payload extends Schema.Struct.Fields | AnyStructSchema, Success extends Schema.Top = Schema.Void, Error extends Schema.Top = Schema.Never>(tag: Tag, options: { readonly payload: Payload; readonly idempotencyKey: (payload: Payload extends Schema.Struct.Fields ? Schema.Struct.Type<Payload> : Payload["Type"]) => string; readonly success?: Success; readonly error?: Error; readonly suspendedRetrySchedule?: Schedule.Schedule<any, unknown> | undefined; readonly annotations?: Context.Context<never>; }) => Workflow<Tag, Payload extends Schema.Struct.Fields ? Schema.Struct<Payload> : Payload, Success, Error>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Workflow.ts#L429)
+
+Since v4.0.0

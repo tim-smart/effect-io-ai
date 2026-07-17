@@ -3,16 +3,26 @@ Module: `PartitionedSemaphore`<br />
 
 ## PartitionedSemaphore.make
 
-A `PartitionedSemaphore` is a concurrency primitive that can be used to
-control concurrent access to a resource across multiple partitions identified
-by keys.
+Creates a `PartitionedSemaphore` inside an `Effect`.
 
-The total number of permits is shared across all partitions, with waiting
-permits equally distributed among partitions using a round-robin strategy.
+**When to use**
 
-This is useful when you want to limit the total number of concurrent accesses
-to a resource, while still allowing for fair distribution of access across
-different partitions.
+Use when semaphore construction should stay inside an `Effect` workflow.
+
+**Details**
+
+The `permits` option sets the shared permit capacity. The resulting
+semaphore tracks waiters by partition key and distributes released permits
+across waiting partitions in round-robin order.
+
+**Gotchas**
+
+Negative permit counts are clamped to `0`. Non-finite permit counts create
+an unbounded semaphore.
+
+**See**
+
+- `makeUnsafe` for synchronous construction
 
 **Signature**
 
@@ -20,6 +30,6 @@ different partitions.
 declare const make: <K = unknown>(options: { readonly permits: number; }) => Effect.Effect<PartitionedSemaphore<K>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/PartitionedSemaphore.ts#L198)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/PartitionedSemaphore.ts#L325)
 
 Since v3.19.4

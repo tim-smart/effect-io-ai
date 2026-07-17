@@ -3,28 +3,54 @@ Module: `Cause`<br />
 
 ## Cause.pretty
 
-Converts a `Cause` into a human-readable string.
+Formats a `Cause` as a human-readable string for logging or debugging.
+
+**When to use**
+
+Use to render a whole cause as one human-readable string for logs or
+diagnostics.
 
 **Details**
 
-This function pretty-prints the entire `Cause`, including any failures,
-defects, and interruptions. It can be especially helpful for logging,
-debugging, or displaying structured errors to users.
+Delegates to `prettyErrors` to convert each reason to an `Error`,
+then joins their stack traces with newlines. Nested `Error.cause` chains
+are rendered inline with indentation:
 
-You can optionally pass `options` to configure how the error cause is
-rendered. By default, it includes essential details of all errors in the
-`Cause`.
+```text
+ErrorName: message
+    at ...
+    at ... {
+  [cause]: NestedError: message
+      at ...
+}
+```
+
+Span annotations are appended to the relevant stack frames when available.
+
+**Gotchas**
+
+Rendering an empty cause produces an empty string because there are no
+errors to render.
+
+**Example** (Rendering a cause)
+
+```ts
+import { Cause } from "effect"
+
+const rendered = Cause.pretty(Cause.fail("something went wrong"))
+console.log(rendered.includes("something went wrong")) // true
+```
 
 **See**
 
-- `prettyErrors` Get a list of `PrettyError` objects instead of a single string.
+- `prettyErrors` — get the individual `Error` instances
 
 **Signature**
 
 ```ts
-declare const pretty: <E>(cause: Cause<E>, options?: { readonly renderErrorCause?: boolean | undefined; }) => string
+declare const pretty: <E>(cause: Cause<E>) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L1513)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L1159)
 
 Since v2.0.0

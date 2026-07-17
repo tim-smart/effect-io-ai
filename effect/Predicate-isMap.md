@@ -3,19 +3,32 @@ Module: `Predicate`<br />
 
 ## Predicate.isMap
 
-A refinement that checks if a value is a `Map`.
+Checks whether a value is a `Map`.
 
-**Example**
+**When to use**
+
+Use when you need a `Predicate` runtime guard for `Map` values.
+
+**Details**
+
+Uses `instanceof Map`.
+
+**Example** (Guarding a Map)
 
 ```ts
-import * as assert from "node:assert"
-import { isMap } from "effect/Predicate"
+import { Predicate } from "effect"
 
-assert.strictEqual(isMap(new Map()), true)
+const data: unknown = new Map([["a", 1]])
 
-assert.strictEqual(isMap({}), false)
-assert.strictEqual(isMap(new Set()), false)
+if (Predicate.isMap(data)) {
+  console.log(data.size)
+}
 ```
+
+**See**
+
+- `isSet`
+- `isIterable`
 
 **Signature**
 
@@ -23,6 +36,6 @@ assert.strictEqual(isMap(new Set()), false)
 declare const isMap: (input: unknown) => input is Map<unknown, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L314)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L505)
 
 Since v2.0.0

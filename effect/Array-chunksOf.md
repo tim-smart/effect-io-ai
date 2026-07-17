@@ -3,30 +3,31 @@ Module: `Array`<br />
 
 ## Array.chunksOf
 
-Splits an `Iterable` into length-`n` pieces. The last piece will be shorter if `n` does not evenly divide the length of
-the `Iterable`. Note that `chunksOf(n)([])` is `[]`, not `[[]]`. This is intentional, and is consistent with a recursive
-definition of `chunksOf`; it satisfies the property that
+Splits an iterable into chunks of length `n`. The last chunk may be shorter
+if `n` does not evenly divide the length.
 
-```ts
-chunksOf(n)(xs).concat(chunksOf(n)(ys)) == chunksOf(n)(xs.concat(ys)))
-```
+**When to use**
 
-whenever `n` evenly divides the length of `self`.
+Use to divide an iterable into a new array of non-overlapping chunks with a
+maximum chunk size.
 
-**Example**
+**Details**
+
+`chunksOf(n)([])` is `[]`, not `[[]]`. Each chunk is a `NonEmptyArray`, and
+the outer return type preserves `NonEmptyArray`.
+
+**Example** (Chunking an array)
 
 ```ts
 import { Array } from "effect"
 
-const result = Array.chunksOf([1, 2, 3, 4, 5], 2)
-console.log(result) // [[1, 2], [3, 4], [5]]
-
-// Explanation:
-// The `chunksOf` function takes an array of numbers `[1, 2, 3, 4, 5]` and a number `2`.
-// It splits the array into chunks of length 2. Since the array length is not evenly divisible by 2,
-// the last chunk contains the remaining elements.
-// The result is `[[1, 2], [3, 4], [5]]`.
+console.log(Array.chunksOf([1, 2, 3, 4, 5], 2)) // [[1, 2], [3, 4], [5]]
 ```
+
+**See**
+
+- `split` — split into a given number of groups
+- `window` — sliding windows
 
 **Signature**
 
@@ -34,6 +35,6 @@ console.log(result) // [[1, 2], [3, 4], [5]]
 declare const chunksOf: { (n: number): <S extends Iterable<any>>(self: S) => ReadonlyArray.With<S, NonEmptyArray<ReadonlyArray.Infer<S>>>; <A>(self: NonEmptyReadonlyArray<A>, n: number): NonEmptyArray<NonEmptyArray<A>>; <A>(self: Iterable<A>, n: number): Array<NonEmptyArray<A>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2103)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2887)
 
 Since v2.0.0

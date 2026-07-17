@@ -3,7 +3,24 @@ Module: `Random`<br />
 
 ## Random.nextInt
 
-Returns the next integer value from the pseudo-random number generator.
+Generates a random integer between `Number.MIN_SAFE_INTEGER` (inclusive)
+and `Number.MAX_SAFE_INTEGER` (inclusive).
+
+**When to use**
+
+Use to generate a pseudo-random safe integer across the full safe-integer
+range.
+
+**Example** (Generating a random integer)
+
+```ts
+import { Effect, Random } from "effect"
+
+const program = Effect.gen(function*() {
+  const randomInt = yield* Random.nextInt
+  console.log("Random integer:", randomInt)
+})
+```
 
 **Signature**
 
@@ -11,6 +28,6 @@ Returns the next integer value from the pseudo-random number generator.
 declare const nextInt: Effect.Effect<number, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Random.ts#L73)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Random.ts#L131)
 
 Since v2.0.0

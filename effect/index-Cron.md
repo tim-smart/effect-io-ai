@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.Cron
 
-Re-exports all named exports from the "./Cron.js" module as `Cron`.
+Re-exports all named exports from the "./Cron.ts" module as `Cron`.
 
 **Signature**
 
 ```ts
-export * as Cron from "./Cron.js"
+export * as Cron from "./Cron.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L194)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L117)
 
 Since v2.0.0

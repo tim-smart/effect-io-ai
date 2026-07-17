@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.RequestResolver
 
-Re-exports all named exports from the "./RequestResolver.js" module as `RequestResolver`.
+Re-exports all named exports from the "./RequestResolver.ts" module as `RequestResolver`.
 
 **Signature**
 
 ```ts
-export * as RequestResolver from "./RequestResolver.js"
+export * as RequestResolver from "./RequestResolver.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1228)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L492)
 
 Since v2.0.0

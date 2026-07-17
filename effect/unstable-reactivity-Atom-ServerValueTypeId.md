@@ -1,0 +1,16 @@
+Package: `effect`<br />
+Module: `Atom`<br />
+
+## Atom.ServerValueTypeId
+
+The type id used to mark atoms with a server-side read override.
+
+**Signature**
+
+```ts
+declare const ServerValueTypeId: "~effect-atom/atom/Atom/ServerValue"
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Atom.ts#L2473)
+
+Since v4.0.0

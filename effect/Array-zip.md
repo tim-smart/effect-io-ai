@@ -3,18 +3,29 @@ Module: `Array`<br />
 
 ## Array.zip
 
-Takes two `Iterable`s and returns an `Array` of corresponding pairs.
-If one input `Iterable` is short, excess elements of the
-longer `Iterable` are discarded.
+Pairs elements from two iterables by position. If the iterables differ in
+length, the extra elements from the longer one are discarded.
 
-**Example**
+**When to use**
+
+Use when you need simple pairs of corresponding elements from two iterables.
+
+**Details**
+
+Returns `NonEmptyArray` when both inputs are non-empty.
+
+**Example** (Zipping two arrays)
 
 ```ts
 import { Array } from "effect"
 
-const result = Array.zip([1, 2, 3], ['a', 'b'])
-console.log(result) // [[1, 'a'], [2, 'b']]
+console.log(Array.zip([1, 2, 3], ["a", "b"])) // [[1, "a"], [2, "b"]]
 ```
+
+**See**
+
+- `zipWith` — zip with a combiner function
+- `unzip` — inverse operation
 
 **Signature**
 
@@ -22,6 +33,6 @@ console.log(result) // [[1, 'a'], [2, 'b']]
 declare const zip: { <B>(that: NonEmptyReadonlyArray<B>): <A>(self: NonEmptyReadonlyArray<A>) => NonEmptyArray<[A, B]>; <B>(that: Iterable<B>): <A>(self: Iterable<A>) => Array<[A, B]>; <A, B>(self: NonEmptyReadonlyArray<A>, that: NonEmptyReadonlyArray<B>): NonEmptyArray<[A, B]>; <A, B>(self: Iterable<A>, that: Iterable<B>): Array<[A, B]>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L1566)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2208)
 
 Since v2.0.0

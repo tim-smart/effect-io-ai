@@ -5,7 +5,7 @@ Module: `Duration`<br />
 
 Converts a `Duration` to a human readable string.
 
-**Example**
+**Example** (Formatting durations)
 
 ```ts
 import { Duration } from "effect"
@@ -17,9 +17,9 @@ Duration.format(Duration.millis(1001)) // "1s 1ms"
 **Signature**
 
 ```ts
-declare const format: (self: DurationInput) => string
+declare const format: (self: Duration) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Duration.ts#L819)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Duration.ts#L1735)
 
 Since v2.0.0

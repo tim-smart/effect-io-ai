@@ -1,10 +1,12 @@
-Package: `@effect/ai-openai`<br />
+Package: `@effect/ai-openai-compat`<br />
 Module: `OpenAiTelemetry`<br />
 
 ## OpenAiTelemetry.WellKnownResponseFormat
 
-The `gen_ai.openai.request.response_format` attribute has the following
-list of well-known values.
+The `gen_ai.openai.request.response_format` attribute has a list of
+well-known values.
+
+**Details**
 
 If one of them applies, then the respective value **MUST** be used;
 otherwise, a custom value **MAY** be used.
@@ -15,6 +17,6 @@ otherwise, a custom value **MAY** be used.
 type WellKnownResponseFormat = "json_object" | "json_schema" | "text"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiTelemetry.ts#L82)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiTelemetry.ts#L92)
 
-Since v1.0.0
+Since v4.0.0

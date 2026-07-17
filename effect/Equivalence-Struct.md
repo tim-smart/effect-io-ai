@@ -1,0 +1,81 @@
+Package: `effect`<br />
+Module: `Equivalence`<br />
+
+## Equivalence.Struct
+
+Creates an equivalence for objects by comparing their properties using provided equivalences.
+
+**When to use**
+
+Use when you need an `Equivalence` for objects with known, fixed property
+names.
+
+**Details**
+
+Compares only the properties specified in the struct definition; other
+properties are ignored. String and symbol keys are supported via
+`Reflect.ownKeys`. The result returns `true` only if all specified properties
+are equivalent according to their equivalences, and it also satisfies
+reflexive, symmetric, and transitive properties.
+
+**Example** (Comparing structs with different equivalences per field)
+
+```ts
+import { Equivalence } from "effect"
+
+interface Person {
+  name: string
+  age: number
+  email: string
+}
+
+const caseInsensitive = Equivalence.mapInput(
+  Equivalence.strictEqual<string>(),
+  (s: string) => s.toLowerCase()
+)
+
+const personEq = Equivalence.Struct({
+  name: caseInsensitive,
+  age: Equivalence.strictEqual<number>(),
+  email: caseInsensitive
+})
+
+const person1 = { name: "Alice", age: 30, email: "alice@example.com" }
+const person2 = { name: "ALICE", age: 30, email: "ALICE@EXAMPLE.COM" }
+const person3 = { name: "Alice", age: 31, email: "alice@example.com" }
+
+console.log(personEq(person1, person2)) // true (case-insensitive match)
+console.log(personEq(person1, person3)) // false (different age)
+```
+
+**Example** (Comparing specific fields)
+
+```ts
+import { Equivalence } from "effect"
+
+const nameAgeEq = Equivalence.Struct({
+  name: Equivalence.strictEqual<string>(),
+  age: Equivalence.strictEqual<number>()
+})
+
+// Only compares name and age, ignores other properties
+const obj1 = { name: "Alice", age: 30, extra: "ignored" }
+const obj2 = { name: "Alice", age: 30, extra: "different" }
+console.log(nameAgeEq(obj1, obj2)) // true
+```
+
+**See**
+
+- `Record`
+- `mapInput`
+- `combine`
+
+**Signature**
+
+```ts
+declare const Struct: <R extends Record<string, Equivalence<any>>>(fields: R) => Equivalence<{ readonly [K in keyof R]: [R[K]] extends [Equivalence<infer A>] ? A : never; }>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Equivalence.ts#L693)
+
+Since v4.0.0

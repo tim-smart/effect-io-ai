@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.BunClusterSocket
 
-Re-exports all named exports from the "./BunClusterSocket.js" module as `BunClusterSocket`.
+Re-exports all named exports from the "./BunClusterSocket.ts" module as `BunClusterSocket`.
 
 **Signature**
 
 ```ts
-export * as BunClusterSocket from "./BunClusterSocket.js"
+export * as BunClusterSocket from "./BunClusterSocket.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L9)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L20)
 
-Since v1.0.0
+Since v4.0.0

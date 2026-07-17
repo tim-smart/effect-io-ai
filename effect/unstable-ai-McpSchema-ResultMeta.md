@@ -1,0 +1,21 @@
+Package: `effect`<br />
+Module: `McpSchema`<br />
+
+## McpSchema.ResultMeta
+
+Schema for optional MCP result metadata.
+
+**Details**
+
+The `_meta` field is reserved for protocol, extension, or implementation
+metadata attached to a result.
+
+**Signature**
+
+```ts
+declare class ResultMeta
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/McpSchema.ts#L169)
+
+Since v4.0.0

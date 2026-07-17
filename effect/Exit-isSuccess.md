@@ -3,7 +3,29 @@ Module: `Exit`<br />
 
 ## Exit.isSuccess
 
-Returns `true` if the specified `Exit` is a `Success`, `false` otherwise.
+Checks whether an Exit is a Success.
+
+**When to use**
+
+Use as a type guard to narrow `Exit<A, E>` to `Success<A, E>` and access the
+`value` property.
+
+**Example** (Narrowing to success)
+
+```ts
+import { Exit } from "effect"
+
+const exit = Exit.succeed(42)
+
+if (Exit.isSuccess(exit)) {
+  console.log(exit.value) // 42
+}
+```
+
+**See**
+
+- `isFailure` for the opposite check
+- `match` for exhaustive pattern matching
 
 **Signature**
 
@@ -11,6 +33,6 @@ Returns `true` if the specified `Exit` is a `Success`, `false` otherwise.
 declare const isSuccess: <A, E>(self: Exit<A, E>) => self is Success<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Exit.ts#L102)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Exit.ts#L403)
 
 Since v2.0.0

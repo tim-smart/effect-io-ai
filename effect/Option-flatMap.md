@@ -3,55 +3,48 @@ Module: `Option`<br />
 
 ## Option.flatMap
 
-Applies a function to the value of a `Some` and flattens the resulting
-`Option`. If the input is `None`, it remains `None`.
+Applies a function that returns an `Option` to the value of a `Some`,
+flattening the result. Returns `None` if the input is `None`.
+
+**When to use**
+
+Use when you need to chain dependent `Option` computations where each step
+may return `None`.
 
 **Details**
 
-This function allows you to chain computations that return `Option` values.
-If the input `Option` is `Some`, the provided function `f` is applied to the
-contained value, and the resulting `Option` is returned. If the input is
-`None`, the function is not applied, and the result remains `None`.
+- `Some` → applies `f` to the value and returns its `Option` result
+- `None` → returns `None` without calling `f`
+- Equivalent to `map` followed by `flatten`
 
-This utility is particularly useful for sequencing operations that may fail
-or produce optional results, enabling clean and concise workflows for
-handling such cases.
-
-**Example**
+**Example** (Chaining optional lookups)
 
 ```ts
 import { Option } from "effect"
 
-interface Address {
-  readonly city: string
-  readonly street: Option.Option<string>
-}
-
 interface User {
-  readonly id: number
-  readonly username: string
-  readonly email: Option.Option<string>
-  readonly address: Option.Option<Address>
+  readonly name: string
+  readonly address: Option.Option<{ readonly street: Option.Option<string> }>
 }
 
 const user: User = {
-  id: 1,
-  username: "john_doe",
-  email: Option.some("john.doe@example.com"),
-  address: Option.some({
-    city: "New York",
-    street: Option.some("123 Main St")
-  })
+  name: "John",
+  address: Option.some({ street: Option.some("123 Main St") })
 }
 
-// Use flatMap to extract the street value
 const street = user.address.pipe(
-  Option.flatMap((address) => address.street)
+  Option.flatMap((addr) => addr.street)
 )
 
 console.log(street)
 // Output: { _id: 'Option', _tag: 'Some', value: '123 Main St' }
 ```
+
+**See**
+
+- `map` when `f` returns a plain value
+- `andThen` for a more flexible variant
+- `flatten` to unwrap a nested `Option<Option<A>>`
 
 **Signature**
 
@@ -59,6 +52,6 @@ console.log(street)
 declare const flatMap: { <A, B>(f: (a: A) => Option<B>): (self: Option<A>) => Option<B>; <A, B>(self: Option<A>, f: (a: A) => Option<B>): Option<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L1047)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L1297)
 
 Since v2.0.0

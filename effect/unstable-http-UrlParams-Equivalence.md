@@ -1,0 +1,21 @@
+Package: `effect`<br />
+Module: `UrlParams`<br />
+
+## UrlParams.Equivalence
+
+Provides an order-sensitive `Equivalence` instance for `UrlParams`.
+
+**Details**
+
+Two values are equivalent when they contain the same key-value pairs in the same
+order.
+
+**Signature**
+
+```ts
+declare const Equivalence: Equ.Equivalence<UrlParams>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/UrlParams.ts#L210)
+
+Since v4.0.0

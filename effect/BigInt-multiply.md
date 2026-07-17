@@ -5,14 +5,22 @@ Module: `BigInt`<br />
 
 Provides a multiplication operation on `bigint`s.
 
-**Example**
+**When to use**
+
+Use to multiply two `bigint` values.
+
+**Example** (Multiplying bigints)
 
 ```ts
+import { BigInt } from "effect"
 import * as assert from "node:assert"
-import { multiply } from "effect/BigInt"
 
-assert.deepStrictEqual(multiply(2n, 3n), 6n)
+assert.deepStrictEqual(BigInt.multiply(2n, 3n), 6n)
 ```
+
+**See**
+
+- `multiplyAll` for multiplying an iterable of `bigint` values
 
 **Signature**
 
@@ -20,6 +28,6 @@ assert.deepStrictEqual(multiply(2n, 3n), 6n)
 declare const multiply: { (that: bigint): (self: bigint) => bigint; (self: bigint, that: bigint): bigint; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L73)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L128)
 
 Since v2.0.0

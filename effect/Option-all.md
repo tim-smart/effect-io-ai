@@ -3,25 +3,22 @@ Module: `Option`<br />
 
 ## Option.all
 
-Combines a structure of `Option`s into a single `Option` containing the
-values with the same structure.
+Combines a structure of `Option`s (tuple, struct, or iterable) into a single
+`Option` containing the unwrapped structure.
+
+**When to use**
+
+Use when you need to combine multiple `Option` values into one while
+preserving the input shape, with any `None` making the result `None`.
 
 **Details**
 
-This function takes a structure of `Option`s (a tuple, struct, or iterable)
-and produces a single `Option` that contains the values from the input
-structure if all `Option`s are `Some`. If any `Option` in the input is
-`None`, the result is `None`. The structure of the input is preserved in the
-output.
+- Tuple input → `Option` of a tuple with the same length
+- Struct input → `Option` of a struct with the same keys
+- Iterable input → `Option` of an `Array`
+- Any `None` in the input → entire result is `None`
 
-- If the input is a tuple (e.g., an array), the result will be an `Option`
-  containing a tuple with the same length.
-- If the input is a struct (e.g., an object), the result will be an `Option`
-  containing a struct with the same keys.
-- If the input is an iterable, the result will be an `Option` containing an
-  array.
-
-**Example**
+**Example** (Combining a tuple and a struct)
 
 ```ts
 import { Option } from "effect"
@@ -44,12 +41,17 @@ console.log(struct)
 // { _id: 'Option', _tag: 'Some', value: { name: 'John', age: 25 } }
 ```
 
+**See**
+
+- `product` for combining exactly two
+- `productMany` for a homogeneous collection
+
 **Signature**
 
 ```ts
 declare const all: <const I extends Iterable<Option<any>> | Record<string, Option<any>>>(input: I) => [I] extends [ReadonlyArray<Option<any>>] ? Option<{ -readonly [K in keyof I]: [I[K]] extends [Option<infer A>] ? A : never; }> : [I] extends [Iterable<Option<infer A>>] ? Option<Array<A>> : Option<{ -readonly [K in keyof I]: [I[K]] extends [Option<infer A>] ? A : never; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L1389)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L1735)
 
 Since v2.0.0

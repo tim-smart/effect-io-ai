@@ -3,18 +3,18 @@ Module: `DateTime`<br />
 
 ## DateTime.zoneToString
 
-Format a `TimeZone` as a string.
+Formats a `TimeZone` as a string.
 
-**Example**
+**Example** (Formatting time zones)
 
 ```ts
-import { DateTime, Effect } from "effect"
+import { DateTime } from "effect"
 
 // Outputs "+03:00"
 DateTime.zoneToString(DateTime.zoneMakeOffset(3 * 60 * 60 * 1000))
 
 // Outputs "Europe/London"
-DateTime.zoneToString(DateTime.zoneUnsafeMakeNamed("Europe/London"))
+DateTime.zoneToString(DateTime.zoneMakeNamedUnsafe("Europe/London"))
 ```
 
 **Signature**
@@ -23,6 +23,6 @@ DateTime.zoneToString(DateTime.zoneUnsafeMakeNamed("Europe/London"))
 declare const zoneToString: (self: TimeZone) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L665)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L1159)
 
 Since v3.6.0

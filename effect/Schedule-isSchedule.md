@@ -3,14 +3,28 @@ Module: `Schedule`<br />
 
 ## Schedule.isSchedule
 
-Checks whether a given value is a `Schedule`.
+Type guard that checks if a value is a Schedule.
+
+**Example** (Checking for schedules)
+
+```ts
+import { Schedule } from "effect"
+
+const schedule = Schedule.exponential("100 millis")
+const notSchedule = { foo: "bar" }
+
+console.log(Schedule.isSchedule(schedule)) // true
+console.log(Schedule.isSchedule(notSchedule)) // false
+console.log(Schedule.isSchedule(null)) // false
+console.log(Schedule.isSchedule(undefined)) // false
+```
 
 **Signature**
 
 ```ts
-declare const isSchedule: (u: unknown) => u is Schedule<unknown, never, unknown>
+declare const isSchedule: (u: unknown) => u is Schedule<unknown, never, unknown, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L183)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L258)
 
 Since v2.0.0

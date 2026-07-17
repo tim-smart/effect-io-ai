@@ -3,21 +3,27 @@ Module: `Array`<br />
 
 ## Array.remove
 
-Delete the element at the specified index, creating a new `Array`,
-or return a copy of the input if the index is out of bounds.
+Removes the element at the specified index, returning a new array. If the
+index is out of bounds, returns a copy of the original.
 
-**Example**
+**When to use**
+
+Use when you want a missing index to be a no-op and need a fresh array result
+instead of an optional failure.
+
+**Example** (Removing an element)
 
 ```ts
 import { Array } from "effect"
 
-const input = [1, 2, 3, 4]
-const result = Array.remove(input, 2)
-console.log(result) // [1, 2, 4]
-
-const outOfBoundsResult = Array.remove(input, 5)
-console.log(outOfBoundsResult) // [1, 2, 3, 4]
+console.log(Array.remove([1, 2, 3, 4], 2)) // [1, 2, 4]
+console.log(Array.remove([1, 2, 3, 4], 5)) // [1, 2, 3, 4]
 ```
+
+**See**
+
+- `insertAt` — insert an element
+- `filter` — remove elements by predicate
 
 **Signature**
 
@@ -25,6 +31,6 @@ console.log(outOfBoundsResult) // [1, 2, 3, 4]
 declare const remove: { (i: number): <A>(self: Iterable<A>) => Array<A>; <A>(self: Iterable<A>, i: number): Array<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L1377)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2006)
 
 Since v2.0.0

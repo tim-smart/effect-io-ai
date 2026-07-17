@@ -3,14 +3,16 @@ Module: `Schema`<br />
 
 ## Schema.DateTimeUtcFromDate
 
-Defines a schema that attempts to convert a `Date` to a `DateTime.Utc` instance using the `DateTime.unsafeMake` constructor.
+Type-level representation of `DateTimeUtcFromDate`.
 
 **Signature**
 
 ```ts
-declare class DateTimeUtcFromDate
+export interface DateTimeUtcFromDate extends decodeTo<DateTimeUtc, Date> {
+  readonly "Rebuild": DateTimeUtcFromDate
+}
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6923)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L12062)
 
 Since v3.12.0

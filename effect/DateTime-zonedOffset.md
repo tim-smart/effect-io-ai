@@ -3,7 +3,25 @@ Module: `DateTime`<br />
 
 ## DateTime.zonedOffset
 
-Calculate the time zone offset of a `DateTime.Zoned` in milliseconds.
+Computes the time zone offset of a `DateTime.Zoned` in milliseconds.
+
+**Details**
+
+Returns the offset from UTC in milliseconds. Positive values indicate
+time zones ahead of UTC, negative values indicate time zones behind UTC.
+
+**Example** (Reading zoned offsets)
+
+```ts
+import { DateTime } from "effect"
+
+const zoned = DateTime.makeZonedUnsafe("2024-01-01T12:00:00Z", {
+  timeZone: "Europe/London"
+})
+
+const offset = DateTime.zonedOffset(zoned)
+console.log(offset) // 0 (London is UTC+0 in winter)
+```
 
 **Signature**
 
@@ -11,6 +29,6 @@ Calculate the time zone offset of a `DateTime.Zoned` in milliseconds.
 declare const zonedOffset: (self: Zoned) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L921)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L1608)
 
 Since v3.6.0

@@ -5,11 +5,11 @@ Module: `Trie`<br />
 
 Creates an empty `Trie`.
 
-**Example**
+**Example** (Creating an empty trie)
 
 ```ts
+import { Trie } from "effect"
 import * as assert from "node:assert"
-import { Trie, Equal } from "effect"
 
 const trie = Trie.empty<string>()
 
@@ -23,6 +23,6 @@ assert.deepStrictEqual(Array.from(trie), [])
 declare const empty: <V = never>() => Trie<V>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Trie.ts#L60)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Trie.ts#L88)
 
 Since v2.0.0

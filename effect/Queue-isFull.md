@@ -3,15 +3,31 @@ Module: `Queue`<br />
 
 ## Queue.isFull
 
-Returns `true` if the `Queue` contains at least one element, `false`
-otherwise.
+Checks whether the queue is full.
+
+**Example** (Checking if queues are full)
+
+```ts
+import { Cause, Effect, Option, Queue } from "effect"
+
+const program = Effect.gen(function*() {
+  const queue = yield* Queue.bounded<number, Cause.Done>(3)
+
+  console.log(yield* Queue.isFull(queue)) // false
+
+  // Add some messages
+  yield* Queue.offerAll(queue, [1, 2, 3])
+
+  console.log(yield* Queue.isFull(queue)) // true
+})
+```
 
 **Signature**
 
 ```ts
-declare const isFull: <A>(self: Dequeue<A> | Enqueue<A>) => Effect.Effect<boolean>
+declare const isFull: <A, E>(self: Dequeue<A, E>) => Effect<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Queue.ts#L508)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Queue.ts#L1655)
 
 Since v2.0.0

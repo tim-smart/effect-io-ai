@@ -1,0 +1,16 @@
+Package: `effect`<br />
+Module: `index`<br />
+
+## index.Statement
+
+Re-exports all named exports from the "./Statement.ts" module as `Statement`.
+
+**Signature**
+
+```ts
+export * as Statement from "./Statement.ts"
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L50)
+
+Since v4.0.0

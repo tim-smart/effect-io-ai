@@ -5,12 +5,21 @@ Module: `Record`<br />
 
 Create a non-empty record from a single element.
 
+**Example** (Creating a singleton record)
+
+```ts
+import { Record } from "effect"
+import * as assert from "node:assert"
+
+assert.deepStrictEqual(Record.singleton("a", 1), { a: 1 })
+```
+
 **Signature**
 
 ```ts
 declare const singleton: <K extends string | symbol, A>(key: K, value: A) => Record<K, A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Record.ts#L1227)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Record.ts#L1450)
 
 Since v2.0.0

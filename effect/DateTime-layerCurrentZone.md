@@ -5,12 +5,33 @@ Module: `DateTime`<br />
 
 Create a Layer from the given time zone.
 
+**Details**
+
+This layer provides the `CurrentTimeZone` service with the specified time zone.
+
+**Example** (Providing current time zone layers)
+
+```ts
+import { DateTime, Effect } from "effect"
+
+const zone = DateTime.zoneMakeNamedUnsafe("Europe/London")
+const layer = DateTime.layerCurrentZone(zone)
+
+const program = Effect.gen(function*() {
+  const now = yield* DateTime.nowInCurrentZone
+  return DateTime.formatIsoZoned(now)
+})
+
+// Use the layer to provide the time zone
+Effect.provide(program, layer)
+```
+
 **Signature**
 
 ```ts
-declare const layerCurrentZone: (zone: TimeZone) => Layer.Layer<CurrentTimeZone>
+declare const layerCurrentZone: (resource: NoInfer<TimeZone>) => Layer.Layer<CurrentTimeZone>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L1658)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L2833)
 
 Since v3.6.0

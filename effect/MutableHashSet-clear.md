@@ -3,31 +3,33 @@ Module: `MutableHashSet`<br />
 
 ## MutableHashSet.clear
 
-Removes all values from the `MutableHashSet`.
+Removes all values from the MutableHashSet, mutating the set in place.
+The set becomes empty after this operation.
 
-This function operates by delegating the clearing action to the underlying
-key map associated with the given `MutableHashSet`. It ensures that the hash
-set becomes empty while maintaining its existence and structure.
+**When to use**
 
-**Example**
+Use to empty a mutable set while keeping the same set instance.
+
+**Example** (Clearing all values)
 
 ```ts
-import { MutableHashSet, pipe } from "effect"
-import assert from "node:assert/strict"
+import { MutableHashSet } from "effect"
 
-assert.deepStrictEqual(
-  pipe(
-    MutableHashSet.make(1, 2, 3, 4),
-    MutableHashSet.clear,
-    MutableHashSet.size
-  ),
-  0
-)
+const set = MutableHashSet.make("apple", "banana", "cherry")
+
+console.log(MutableHashSet.size(set)) // 3
+
+// Clear all values
+MutableHashSet.clear(set)
+
+console.log(MutableHashSet.size(set)) // 0
+console.log(MutableHashSet.has(set, "apple")) // false
+console.log(Array.from(set)) // []
+
+// Can still add new values after clearing
+MutableHashSet.add(set, "new")
+console.log(MutableHashSet.size(set)) // 1
 ```
-
-**See**
-
-- Other `MutableHashSet` elements are `module:MutableHashSet.add` `module:MutableHashSet.has` `module:MutableHashSet.remove` `module:MutableHashSet.size`
 
 **Signature**
 
@@ -35,6 +37,6 @@ assert.deepStrictEqual(
 declare const clear: <V>(self: MutableHashSet<V>) => MutableHashSet<V>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/MutableHashSet.ts#L704)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/MutableHashSet.ts#L422)
 
 Since v2.0.0

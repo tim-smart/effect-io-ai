@@ -3,24 +3,36 @@ Module: `Struct`<br />
 
 ## Struct.omit
 
-Create a new object by omitting properties of an existing object.
+Creates a new struct with the specified keys removed.
 
-**Example**
+**When to use**
+
+Use to exclude sensitive or irrelevant fields from a struct.
+
+**Gotchas**
+
+Keys not present in the struct are silently ignored.
+
+**Example** (Removing a property)
 
 ```ts
-import * as assert from "node:assert"
 import { pipe, Struct } from "effect"
 
-assert.deepStrictEqual(pipe({ a: "a", b: 1, c: true }, Struct.omit("c")), { a: "a", b: 1 })
-assert.deepStrictEqual(Struct.omit({ a: "a", b: 1, c: true }, "c"), { a: "a", b: 1 })
+const user = { name: "Alice", age: 30, password: "secret" }
+const safe = pipe(user, Struct.omit(["password"]))
+console.log(safe) // { name: "Alice", age: 30 }
 ```
+
+**See**
+
+- `pick` – the inverse (keep only specified keys)
 
 **Signature**
 
 ```ts
-declare const omit: { <Keys extends Array<PropertyKey>>(...keys: Keys): <S extends { [K in Keys[number]]?: any; }>(s: S) => Simplify<Omit<S, Keys[number]>>; <S extends object, Keys extends Array<keyof S>>(s: S, ...keys: Keys): Simplify<Omit<S, Keys[number]>>; }
+declare const omit: { <S extends object, const Keys extends ReadonlyArray<keyof S>>(keys: Keys): (self: S) => Simplify<Omit<S, Keys[number]>>; <S extends object, const Keys extends ReadonlyArray<keyof S>>(self: S, keys: Keys): Simplify<Omit<S, Keys[number]>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Struct.ts#L64)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Struct.ts#L234)
 
 Since v2.0.0

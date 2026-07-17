@@ -1,0 +1,30 @@
+Package: `effect`<br />
+Module: `Flag`<br />
+
+## Flag.choice
+
+Creates a flag that accepts one of the provided string choices and returns
+the selected string.
+
+**When to use**
+
+Use when you need to define a named CLI flag with fixed string choices and no
+custom value mapping.
+
+**Gotchas**
+
+An empty choices array compiles, but no input value can parse successfully.
+
+**See**
+
+- `choiceWithValue` for mapping accepted strings to different typed values
+
+**Signature**
+
+```ts
+declare const choice: <const Choices extends ReadonlyArray<string>>(name: string, choices: Choices) => Flag<Choices[number]>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Flag.ts#L172)
+
+Since v4.0.0

@@ -3,22 +3,20 @@ Module: `Option`<br />
 
 ## Option.getOrElse
 
-Returns the value contained in the `Option` if it is `Some`, otherwise
-evaluates and returns the result of `onNone`.
+Extracts the value from a `Some`, or evaluates a fallback thunk on `None`.
+
+**When to use**
+
+Use when providing a default value for an absent `Option`
+- Unwrapping with lazy evaluation of the fallback
 
 **Details**
 
-This function allows you to provide a fallback value or computation for when
-an `Option` is `None`. If the `Option` contains a value (`Some`), that value
-is returned. If it is empty (`None`), the `onNone` function is executed, and
-its result is returned instead.
+- `Some` → returns the inner value
+- `None` → calls `onNone()` and returns its result
+- `onNone` is only called when needed (lazy)
 
-This utility is helpful for safely handling `Option` values by ensuring you
-always receive a meaningful result, whether or not the `Option` contains a
-value. It is particularly useful for providing default values or alternative
-logic when working with optional values.
-
-**Example**
+**Example** (Unwrapping with a fallback)
 
 ```ts
 import { Option } from "effect"
@@ -32,8 +30,9 @@ console.log(Option.none().pipe(Option.getOrElse(() => 0)))
 
 **See**
 
-- `getOrNull` for a version that returns `null` instead of executing a function.
-- `getOrUndefined` for a version that returns `undefined` instead of executing a function.
+- `getOrNull` to fall back to `null`
+- `getOrUndefined` to fall back to `undefined`
+- `getOrThrow` to throw on `None`
 
 **Signature**
 
@@ -41,6 +40,6 @@ console.log(Option.none().pipe(Option.getOrElse(() => 0)))
 declare const getOrElse: { <B>(onNone: LazyArg<B>): <A>(self: Option<A>) => B | A; <A, B>(self: Option<A>, onNone: LazyArg<B>): A | B; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L500)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L617)
 
 Since v2.0.0

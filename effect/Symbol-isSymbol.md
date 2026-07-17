@@ -3,16 +3,19 @@ Module: `Symbol`<br />
 
 ## Symbol.isSymbol
 
-Tests if a value is a `symbol`.
+Checks whether a value is a `symbol`.
 
-**Example**
+**When to use**
+
+Use to validate unknown input before treating it as a JavaScript `symbol`.
+
+**Example** (Checking for symbols)
 
 ```ts
-import * as assert from "node:assert"
-import { Predicate } from "effect"
+import { Symbol } from "effect"
 
-assert.deepStrictEqual(Predicate.isSymbol(Symbol.for("a")), true)
-assert.deepStrictEqual(Predicate.isSymbol("a"), false)
+console.log(Symbol.isSymbol(globalThis.Symbol.for("a"))) // true
+console.log(Symbol.isSymbol("a")) // false
 ```
 
 **Signature**
@@ -21,6 +24,6 @@ assert.deepStrictEqual(Predicate.isSymbol("a"), false)
 declare const isSymbol: (u: unknown) => u is symbol
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Symbol.ts#L23)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Symbol.ts#L31)
 
 Since v2.0.0

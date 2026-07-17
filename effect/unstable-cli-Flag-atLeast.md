@@ -1,0 +1,31 @@
+Package: `effect`<br />
+Module: `Flag`<br />
+
+## Flag.atLeast
+
+Ensures a flag is specified at least a minimum number of times.
+
+**Example** (Requiring repeated values)
+
+```ts
+import { Flag } from "effect/unstable/cli"
+
+const sourceFlag = Flag.atLeast(Flag.file("source"), 2)
+// Requires at least 2 source files
+// Usage: --source file1.ts --source file2.ts
+
+const tagFlag = Flag.string("tag").pipe(
+  Flag.atLeast(1)
+)
+// Requires at least 1 tag
+```
+
+**Signature**
+
+```ts
+declare const atLeast: { <A>(min: number): (self: Flag<A>) => Flag<ReadonlyArray<A>>; <A>(self: Flag<A>, min: number): Flag<ReadonlyArray<A>>; }
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Flag.ts#L750)
+
+Since v4.0.0

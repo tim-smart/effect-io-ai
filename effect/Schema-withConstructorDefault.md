@@ -3,14 +3,34 @@ Module: `Schema`<br />
 
 ## Schema.withConstructorDefault
 
-Enhances a property signature with a default constructor value.
+Type-level representation returned by `withConstructorDefault`.
 
 **Signature**
 
 ```ts
-declare const withConstructorDefault: { <Type>(defaultValue: () => Types.NoInfer<Type>): <TypeToken extends PropertySignature.Token, Key extends PropertyKey, EncodedToken extends PropertySignature.Token, Encoded, R>(self: PropertySignature<TypeToken, Type, Key, EncodedToken, Encoded, boolean, R>) => PropertySignature<TypeToken, Type, Key, EncodedToken, Encoded, true, R>; <TypeToken extends PropertySignature.Token, Type, Key extends PropertyKey, EncodedToken extends PropertySignature.Token, Encoded, R>(self: PropertySignature<TypeToken, Type, Key, EncodedToken, Encoded, boolean, R>, defaultValue: () => Types.NoInfer<Type>): PropertySignature<TypeToken, Type, Key, EncodedToken, Encoded, true, R>; }
+export interface withConstructorDefault<S extends Constraint & WithoutConstructorDefault> extends
+  BottomLazy<
+    S["ast"],
+    withConstructorDefault<S>,
+    S["~type.parameters"],
+    S["~type.mutability"],
+    S["~type.optionality"],
+    "with-default",
+    S["~encoded.mutability"],
+    S["~encoded.optionality"]
+  >
+{
+  readonly "Type": S["Type"]
+  readonly "Encoded": S["Encoded"]
+  readonly "DecodingServices": S["DecodingServices"]
+  readonly "EncodingServices": S["EncodingServices"]
+  readonly "~type.make.in": S["~type.make.in"]
+  readonly "~type.make": S["~type.make"]
+  readonly "Iso": S["Iso"]
+  readonly schema: S
+}
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L1991)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L5646)
 
 Since v3.10.0

@@ -3,22 +3,41 @@ Module: `Types`<br />
 
 ## Types.Tags
 
-Returns the tags in a type.
+Extracts the `_tag` string literal types from a union.
 
-**Example**
+**When to use**
+
+Use to get all discriminant values from a tagged union type.
+
+**Details**
+
+Members without a `_tag` field are ignored and produce `never`.
+
+**Example** (Extracting tags)
 
 ```ts
 import type { Types } from "effect"
 
-type Res = Types.Tags<string | { _tag: "a" } | { _tag: "b" } > // "a" | "b"
+type MyError =
+  | { readonly _tag: "NotFound"; readonly id: string }
+  | { readonly _tag: "Timeout"; readonly ms: number }
+  | string
+
+type Result = Types.Tags<MyError>
+// "NotFound" | "Timeout"
 ```
+
+**See**
+
+- `ExtractTag`
+- `ExcludeTag`
 
 **Signature**
 
 ```ts
-type Tags<E> = E extends { _tag: string } ? E["_tag"] : never
+type Tags<E> = E extends { readonly _tag: string } ? E["_tag"] : never
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L73)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L120)
 
 Since v2.0.0

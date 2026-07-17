@@ -1,0 +1,41 @@
+Package: `effect`<br />
+Module: `Predicate`<br />
+
+## Predicate.isNullish
+
+Checks whether a value is `null` or `undefined`.
+
+**When to use**
+
+Use when you need a `Predicate` guard for nullish values.
+
+**Details**
+
+Uses `input === null || input === undefined`.
+
+**Example** (Guarding nullish values)
+
+```ts
+import { Predicate } from "effect"
+
+const values = [0, null, "", undefined]
+const nullish = values.filter(Predicate.isNullish)
+
+console.log(nullish)
+```
+
+**See**
+
+- `isNotNullish`
+- `isUndefined`
+- `isNull`
+
+**Signature**
+
+```ts
+declare const isNullish: <A>(input: A) => input is A & (null | undefined)
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L893)
+
+Since v4.0.0

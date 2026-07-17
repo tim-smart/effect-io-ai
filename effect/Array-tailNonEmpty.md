@@ -3,16 +3,24 @@ Module: `Array`<br />
 
 ## Array.tailNonEmpty
 
-Get all but the first element of a `NonEmptyReadonlyArray`.
+Returns all elements except the first of a `NonEmptyReadonlyArray`.
 
-**Example**
+**When to use**
+
+Use to get all elements after the first when the array is known to be non-empty.
+
+**Example** (Getting the tail of a non-empty array)
 
 ```ts
 import { Array } from "effect"
 
-const result = Array.tailNonEmpty([1, 2, 3, 4])
-console.log(result) // [2, 3, 4]
+console.log(Array.tailNonEmpty([1, 2, 3, 4])) // [2, 3, 4]
 ```
+
+**See**
+
+- `tail` — safe version for possibly-empty arrays
+- `initNonEmpty` — all elements except the last
 
 **Signature**
 
@@ -20,6 +28,6 @@ console.log(result) // [2, 3, 4]
 declare const tailNonEmpty: <A>(self: NonEmptyReadonlyArray<A>) => Array<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L750)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L1213)
 
 Since v2.0.0

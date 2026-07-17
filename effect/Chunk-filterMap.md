@@ -5,12 +5,32 @@ Module: `Chunk`<br />
 
 Returns a filtered and mapped subset of the elements.
 
+**Example** (Filtering and mapping values)
+
+```ts
+import { Chunk, Result } from "effect"
+
+const chunk = Chunk.make("1", "2", "hello", "3", "world")
+const numbers = Chunk.filterMap(chunk, (str) => {
+  const num = parseInt(str)
+  return isNaN(num) ? Result.failVoid : Result.succeed(num)
+})
+console.log(Chunk.toArray(numbers)) // [1, 2, 3]
+
+// With index parameter
+const evenIndexNumbers = Chunk.filterMap(chunk, (str, i) => {
+  const num = parseInt(str)
+  return isNaN(num) || i % 2 !== 0 ? Result.failVoid : Result.succeed(num)
+})
+console.log(Chunk.toArray(evenIndexNumbers)) // [1]
+```
+
 **Signature**
 
 ```ts
-declare const filterMap: { <A, B>(f: (a: A, i: number) => Option<B>): (self: Chunk<A>) => Chunk<B>; <A, B>(self: Chunk<A>, f: (a: A, i: number) => Option<B>): Chunk<B>; }
+declare const filterMap: { <A, B, X>(f: (input: A, i: number) => Result<B, X>): (self: Chunk<A>) => Chunk<B>; <A, B, X>(self: Chunk<A>, f: (input: A, i: number) => Result<B, X>): Chunk<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Chunk.ts#L678)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Chunk.ts#L1022)
 
 Since v2.0.0

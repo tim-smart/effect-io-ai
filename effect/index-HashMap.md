@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.HashMap
 
-Re-exports all named exports from the "./HashMap.js" module as `HashMap`.
+Re-exports all named exports from the "./HashMap.ts" module as `HashMap`.
 
 **Signature**
 
 ```ts
-export * as HashMap from "./HashMap.js"
+export * as HashMap from "./HashMap.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L377)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L242)
 
 Since v2.0.0

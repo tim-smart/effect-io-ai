@@ -3,29 +3,33 @@ Module: `Cause`<br />
 
 ## Cause.Interrupt
 
-Represents fiber interruption within a `Cause`.
+A fiber interruption signal, optionally carrying the ID of the fiber that
+initiated the interruption.
 
 **Details**
 
-This interface models a scenario where an effect was halted by an external
-signal, carrying a `FiberId` that identifies which fiber was interrupted.
-Interruption is a normal part of concurrency, used for cancellation or
-resource cleanup.
+Use `isInterruptReason` to narrow a `Reason` to this type.
 
-**See**
+**Example** (Accessing the fiber ID)
 
-- `interrupt` Construct an `Interrupt` cause
-- `isInterruptType` Check if a `Cause` is an `Interrupt`
+```ts
+import { Cause } from "effect"
+
+const cause = Cause.interrupt(123)
+const reason = cause.reasons[0]
+if (Cause.isInterruptReason(reason)) {
+  console.log(reason.fiberId) // 123
+}
+```
 
 **Signature**
 
 ```ts
-export interface Interrupt extends Cause.Variance<never>, Equal.Equal, Pipeable, Inspectable {
-  readonly _tag: "Interrupt"
-  readonly fiberId: FiberId.FiberId
+export interface Interrupt extends Cause.ReasonProto<"Interrupt"> {
+  readonly fiberId: number | undefined
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L515)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L390)
 
 Since v2.0.0

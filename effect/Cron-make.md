@@ -3,7 +3,111 @@ Module: `Cron`<br />
 
 ## Cron.make
 
-Creates a `Cron` instance.
+Creates a Cron instance from time constraints.
+
+**When to use**
+
+Use to build a cron schedule from explicit sets of allowed time-field values.
+
+**Details**
+
+Constructs a cron schedule by specifying which seconds, minutes, hours,
+days, months, and weekdays the schedule should match. Empty arrays mean
+"match all" for that time unit. When both days and weekdays are restricted,
+the default matches either field; set `and: true` to require both fields to
+match.
+
+**Example** (Creating schedules from constraints)
+
+```ts
+import { Cron } from "effect"
+
+// Every day at midnight
+const midnight = Cron.make({
+  minutes: [0],
+  hours: [0],
+  days: [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+  ],
+  months: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+  weekdays: [0, 1, 2, 3, 4, 5, 6]
+})
+
+// Every 15 minutes during business hours on weekdays
+const businessHours = Cron.make({
+  minutes: [0, 15, 30, 45],
+  hours: [9, 10, 11, 12, 13, 14, 15, 16, 17],
+  days: [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+  ],
+  months: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+  weekdays: [1, 2, 3, 4, 5] // Monday to Friday
+})
+```
+
+**See**
+
+- `parse` for building a schedule from a cron expression string
 
 **Signature**
 
@@ -11,6 +115,6 @@ Creates a `Cron` instance.
 declare const make: (values: { readonly seconds?: Iterable<number> | undefined; readonly minutes: Iterable<number>; readonly hours: Iterable<number>; readonly days: Iterable<number>; readonly months: Iterable<number>; readonly weekdays: Iterable<number>; readonly and?: boolean | undefined; readonly tz?: DateTime.TimeZone | undefined; }) => Cron
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cron.ts#L141)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cron.ts#L355)
 
 Since v2.0.0

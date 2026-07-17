@@ -3,18 +3,25 @@ Module: `Resource`<br />
 
 ## Resource.auto
 
-Creates a new `Resource` value that is automatically refreshed according to
-the specified policy. Note that error retrying is not performed
-automatically, so if you want to retry on errors, you should first apply
-retry policies to the acquisition effect before passing it to this
-constructor.
+Creates a `Resource` that refreshes automatically according to the supplied
+schedule.
+
+**When to use**
+
+Use when a resource should refresh in the background according to a schedule
+for the lifetime of its scope.
+
+**See**
+
+- `manual` for caller-controlled refresh timing
+- `refresh` to trigger a refresh explicitly
 
 **Signature**
 
 ```ts
-declare const auto: <A, E, R, Out, R2>(acquire: Effect.Effect<A, E, R>, policy: Schedule.Schedule<Out, unknown, R2>) => Effect.Effect<Resource<A, E>, never, R | R2 | Scope.Scope>
+declare const auto: <A, E, R, Out, E2, R2>(acquire: Effect.Effect<A, E, R>, policy: Schedule.Schedule<Out, unknown, E2, R2>) => Effect.Effect<Resource<A, E>, never, R | R2 | Scope.Scope>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Resource.ts#L85)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Resource.ts#L128)
 
 Since v2.0.0

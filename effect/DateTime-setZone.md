@@ -3,16 +3,16 @@ Module: `DateTime`<br />
 
 ## DateTime.setZone
 
-Set the time zone of a `DateTime`, returning a new `DateTime.Zoned`.
+Sets the time zone of a `DateTime`, returning a new `DateTime.Zoned`.
 
-**Example**
+**Example** (Setting time zones)
 
 ```ts
 import { DateTime, Effect } from "effect"
 
-Effect.gen(function* () {
+Effect.gen(function*() {
   const now = yield* DateTime.now
-  const zone = DateTime.zoneUnsafeMakeNamed("Europe/London")
+  const zone = DateTime.zoneMakeNamedUnsafe("Europe/London")
 
   // set the time zone
   const zoned: DateTime.Zoned = DateTime.setZone(now, zone)
@@ -25,6 +25,6 @@ Effect.gen(function* () {
 declare const setZone: { (zone: TimeZone, options?: { readonly adjustForTimeZone?: boolean | undefined; readonly disambiguation?: Disambiguation | undefined; }): (self: DateTime) => Zoned; (self: DateTime, zone: TimeZone, options?: { readonly adjustForTimeZone?: boolean | undefined; readonly disambiguation?: Disambiguation | undefined; }): Zoned; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L555)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L940)
 
 Since v3.6.0

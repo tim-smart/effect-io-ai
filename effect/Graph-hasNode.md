@@ -3,9 +3,9 @@ Module: `Graph`<br />
 
 ## Graph.hasNode
 
-Checks if a node with the given index exists in the graph.
+Checks whether a node with the given index exists in the graph.
 
-**Example**
+**Example** (Checking node existence)
 
 ```ts
 import { Graph } from "effect"
@@ -26,9 +26,9 @@ console.log(notExists) // false
 **Signature**
 
 ```ts
-declare const hasNode: <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>, nodeIndex: NodeIndex) => boolean
+declare const hasNode: { (nodeIndex: NodeIndex): <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>) => boolean; <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>, nodeIndex: NodeIndex): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L527)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L1562)
 
 Since v3.18.0

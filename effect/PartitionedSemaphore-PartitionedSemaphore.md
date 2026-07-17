@@ -3,30 +3,38 @@ Module: `PartitionedSemaphore`<br />
 
 ## PartitionedSemaphore.PartitionedSemaphore
 
-A `PartitionedSemaphore` is a concurrency primitive that can be used to
-control concurrent access to a resource across multiple partitions identified
-by keys.
+A `PartitionedSemaphore` controls access to a shared permit pool while
+tracking waiters by partition key.
 
-The total number of permits is shared across all partitions, with waiting
-permits equally distributed among partitions using a round-robin strategy.
+**When to use**
 
-This is useful when you want to limit the total number of concurrent accesses
-to a resource, while still allowing for fair distribution of access across
-different partitions.
+Use to coordinate shared permits across partition keys so waiting groups make
+progress without one group monopolizing the pool.
+
+**Details**
+
+Waiting permits are distributed across partitions in round-robin order.
 
 **Signature**
 
 ```ts
 export interface PartitionedSemaphore<in K> {
-  readonly [TypeId]: TypeId
-
+  readonly [PartitionedTypeId]: PartitionedTypeId
+  readonly capacity: number
+  readonly available: Effect.Effect<number>
+  readonly take: (key: K, permits: number) => Effect.Effect<void>
+  readonly release: (permits: number) => Effect.Effect<number>
   readonly withPermits: (
     key: K,
     permits: number
   ) => <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>
+  readonly withPermit: (key: K) => <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>
+  readonly withPermitsIfAvailable: (
+    permits: number
+  ) => <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<Option.Option<A>, E, R>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/PartitionedSemaphore.ts#L40)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/PartitionedSemaphore.ts#L62)
 
 Since v3.19.4

@@ -3,16 +3,19 @@ Module: `Sink`<br />
 
 ## Sink.ensuring
 
-Returns a new sink with an attached finalizer. The finalizer is guaranteed
-to be executed so long as the sink begins execution (and regardless of
-whether or not it completes).
+Runs a finalizer effect after this sink completes, fails, or is interrupted.
+
+**Details**
+
+The original sink result and leftovers are preserved unless the finalizer
+itself fails.
 
 **Signature**
 
 ```ts
-declare const ensuring: { <X, R2>(finalizer: Effect.Effect<X, never, R2>): <A, In, L, E, R>(self: Sink<A, In, L, E, R>) => Sink<A, In, L, E, R2 | R>; <A, In, L, E, R, X, R2>(self: Sink<A, In, L, E, R>, finalizer: Effect.Effect<X, never, R2>): Sink<A, In, L, E, R | R2>; }
+declare const ensuring: { <X, E2, R2>(effect: Effect.Effect<X, E2, R2>): <A, E, In, L, R>(self: Sink<A, In, L, E, R>) => Sink<A, In, L, E | E2, R2 | R>; <A, In, L, E, R, X, E2, R2>(self: Sink<A, In, L, E, R>, effect: Effect.Effect<X, E2, R2>): Sink<A, In, L, E | E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Sink.ts#L496)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Sink.ts#L2163)
 
 Since v2.0.0

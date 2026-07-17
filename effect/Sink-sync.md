@@ -3,14 +3,14 @@ Module: `Sink`<br />
 
 ## Sink.sync
 
-A sink that immediately ends with the specified lazy value.
+A sink that immediately ends with the specified lazily evaluated value.
 
 **Signature**
 
 ```ts
-declare const sync: <A>(evaluate: LazyArg<A>) => Sink<A, unknown>
+declare const sync: <A>(a: LazyArg<A>) => Sink<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Sink.ts#L1328)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Sink.ts#L523)
 
 Since v2.0.0

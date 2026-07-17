@@ -5,16 +5,24 @@ Module: `BigInt`<br />
 
 Determines the least common multiple of two `bigint`s.
 
-**Example**
+**When to use**
+
+Use to compute the least common multiple of two integer values.
+
+**Example** (Calculating least common multiples)
 
 ```ts
+import { BigInt } from "effect"
 import * as assert from "node:assert"
-import { lcm } from "effect/BigInt"
 
-assert.deepStrictEqual(lcm(2n, 3n), 6n)
-assert.deepStrictEqual(lcm(2n, 4n), 4n)
-assert.deepStrictEqual(lcm(16n, 24n), 48n)
+assert.deepStrictEqual(BigInt.lcm(2n, 3n), 6n)
+assert.deepStrictEqual(BigInt.lcm(2n, 4n), 4n)
+assert.deepStrictEqual(BigInt.lcm(16n, 24n), 48n)
 ```
+
+**See**
+
+- `gcd` for computing the greatest common divisor
 
 **Signature**
 
@@ -22,6 +30,6 @@ assert.deepStrictEqual(lcm(16n, 24n), 48n)
 declare const lcm: { (that: bigint): (self: bigint) => bigint; (self: bigint, that: bigint): bigint; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L455)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L660)
 
 Since v2.0.0

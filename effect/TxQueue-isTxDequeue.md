@@ -1,0 +1,29 @@
+Package: `effect`<br />
+Module: `TxQueue`<br />
+
+## TxQueue.isTxDequeue
+
+Checks whether the given value is a TxDequeue.
+
+**Example** (Checking dequeue handles)
+
+```ts
+import { TxQueue } from "effect"
+
+declare const someValue: unknown
+
+if (TxQueue.isTxDequeue(someValue)) {
+  // someValue is now typed as TxDequeue<unknown, unknown>
+  console.log("This is a TxDequeue")
+}
+```
+
+**Signature**
+
+```ts
+declare const isTxDequeue: <A = unknown, E = unknown>(u: unknown) => u is TxDequeue<A, E>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TxQueue.ts#L288)
+
+Since v4.0.0

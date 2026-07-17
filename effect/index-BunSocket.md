@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.BunSocket
 
-Re-exports all named exports from the "./BunSocket.js" module as `BunSocket`.
+Re-exports all named exports from the "./BunSocket.ts" module as `BunSocket`.
 
 **Signature**
 
 ```ts
-export * as BunSocket from "./BunSocket.js"
+export * as BunSocket from "./BunSocket.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L69)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L85)
 
-Since v1.0.0
+Since v4.0.0

@@ -3,26 +3,43 @@ Module: `Effect`<br />
 
 ## Effect.updateService
 
-Updates a service in the context with a new implementation.
+Runs an effect with a service implementation transformed by the provided
+function.
 
 **Details**
 
-This function modifies the existing implementation of a service in the
-context. It retrieves the current service, applies the provided
-transformation function `f`, and replaces the old service with the
-transformed one.
+The service must be available in the effect's context; `updateService`
+replaces it for the wrapped effect with the value returned by the updater.
 
-**When to Use**
+**Example** (Replacing a service for one effect)
 
-This is useful for adapting or extending a service's behavior during the
-execution of an effect.
+```ts
+import { Console, Context, Effect } from "effect"
+
+// Define a counter service
+const Counter = Context.Service<{ count: number }>("Counter")
+
+const program = Effect.gen(function*() {
+  const updatedCounter = yield* Effect.service(Counter)
+  yield* Console.log(`Updated count: ${updatedCounter.count}`)
+  return updatedCounter.count
+}).pipe(
+  Effect.updateService(Counter, (counter) => ({ count: counter.count + 1 }))
+)
+
+// Provide initial service and run
+const result = Effect.provideService(program, Counter, { count: 0 })
+Effect.runPromise(result).then(console.log)
+// Output: Updated count: 1
+// 1
+```
 
 **Signature**
 
 ```ts
-declare const updateService: { <I, S>(tag: Context.Tag<I, S>, f: (service: NoInfer<S>) => NoInfer<S>): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, R | I>; <A, E, R, I, S>(self: Effect<A, E, R>, tag: Context.Tag<I, S>, f: (service: NoInfer<S>) => NoInfer<S>): Effect<A, E, R | I>; }
+declare const updateService: { <I, A>(service: Context.Key<I, A>, f: (value: A) => A): <XA, E, R>(self: Effect<XA, E, R>) => Effect<XA, E, R | I>; <XA, E, R, I, A>(self: Effect<XA, E, R>, service: Context.Key<I, A>, f: (value: A) => A): Effect<XA, E, R | I>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L7800)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L6160)
 
 Since v2.0.0

@@ -5,14 +5,18 @@ Module: `BigDecimal`<br />
 
 Provides a negate operation on `BigDecimal`s.
 
-**Example**
+**When to use**
+
+Use to flip the sign of a `BigDecimal`.
+
+**Example** (Negating decimals)
 
 ```ts
+import { BigDecimal } from "effect"
 import * as assert from "node:assert"
-import { negate, unsafeFromString } from "effect/BigDecimal"
 
-assert.deepStrictEqual(negate(unsafeFromString("3")), unsafeFromString("-3"))
-assert.deepStrictEqual(negate(unsafeFromString("-6")), unsafeFromString("6"))
+assert.deepStrictEqual(BigDecimal.negate(BigDecimal.fromStringUnsafe("3")), BigDecimal.fromStringUnsafe("-3"))
+assert.deepStrictEqual(BigDecimal.negate(BigDecimal.fromStringUnsafe("-6")), BigDecimal.fromStringUnsafe("6"))
 ```
 
 **Signature**
@@ -21,6 +25,6 @@ assert.deepStrictEqual(negate(unsafeFromString("-6")), unsafeFromString("6"))
 declare const negate: (n: BigDecimal) => BigDecimal
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L708)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L1057)
 
 Since v2.0.0

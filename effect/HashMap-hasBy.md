@@ -3,17 +3,16 @@ Module: `HashMap`<br />
 
 ## HashMap.hasBy
 
-Checks if an element matching the given predicate exists in the given `HashMap`.
+Checks whether an element matching the given predicate exists in the given `HashMap`.
 
-**Example**
+**Example** (Checking entries by predicate)
 
 ```ts
 import { HashMap } from "effect"
 
-const hm = HashMap.make([1, 'a'])
-HashMap.hasBy(hm, (value, key) => value === 'a' && key === 1); // -> true
-HashMap.hasBy(hm, (value) => value === 'b'); // -> false
-
+const hm = HashMap.make([1, "a"])
+HashMap.hasBy(hm, (value, key) => value === "a" && key === 1) // -> true
+HashMap.hasBy(hm, (value) => value === "b") // -> false
 ```
 
 **Signature**
@@ -22,6 +21,6 @@ HashMap.hasBy(hm, (value) => value === 'b'); // -> false
 declare const hasBy: { <K, V>(predicate: (value: NoInfer<V>, key: NoInfer<K>) => boolean): (self: HashMap<K, V>) => boolean; <K, V>(self: HashMap<K, V>, predicate: (value: NoInfer<V>, key: NoInfer<K>) => boolean): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashMap.ts#L213)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashMap.ts#L496)
 
 Since v3.16.0

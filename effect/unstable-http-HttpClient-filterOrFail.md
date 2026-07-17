@@ -1,0 +1,16 @@
+Package: `effect`<br />
+Module: `HttpClient`<br />
+
+## HttpClient.filterOrFail
+
+Filters successful responses, or fails with the error produced by `orFailWith` when the predicate does not match.
+
+**Signature**
+
+```ts
+declare const filterOrFail: { <B extends HttpClientResponse.HttpClientResponse, E2>(refinement: Predicate.Refinement<NoInfer<HttpClientResponse.HttpClientResponse>, B>, orFailWith: (response: NoInfer<HttpClientResponse.HttpClientResponse>) => E2): <E, R>(self: HttpClient.With<E, R>) => HttpClient.With<E2 | E, R>; <E2>(predicate: Predicate.Predicate<NoInfer<HttpClientResponse.HttpClientResponse>>, orFailWith: (response: NoInfer<HttpClientResponse.HttpClientResponse>) => E2): <E, R>(self: HttpClient.With<E, R>) => HttpClient.With<E2 | E, R>; <E, R, B extends HttpClientResponse.HttpClientResponse, E2>(self: HttpClient.With<E, R>, refinement: Predicate.Refinement<NoInfer<HttpClientResponse.HttpClientResponse>, B>, orFailWith: (response: NoInfer<HttpClientResponse.HttpClientResponse>) => E2): HttpClient.With<E2 | E, R>; <E, R, E2>(self: HttpClient.With<E, R>, predicate: Predicate.Predicate<NoInfer<HttpClientResponse.HttpClientResponse>>, orFailWith: (response: NoInfer<HttpClientResponse.HttpClientResponse>) => E2): HttpClient.With<E2 | E, R>; }
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HttpClient.ts#L527)
+
+Since v4.0.0

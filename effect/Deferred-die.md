@@ -3,15 +3,39 @@ Module: `Deferred`<br />
 
 ## Deferred.die
 
-Kills the `Deferred` with the specified defect, which will be propagated to
-all fibers waiting on the value of the `Deferred`.
+Attempts to complete the `Deferred` with a defect.
+
+**When to use**
+
+Use to complete a `Deferred` with an unexpected defect.
+
+**Details**
+
+Fibers waiting on the `Deferred` die with that defect only if this call
+completes it. The returned effect succeeds with `true` when this call
+completed the `Deferred`, or `false` if it was already completed.
+
+**Example** (Killing a Deferred with a defect)
+
+```ts
+import { Deferred, Effect } from "effect"
+
+const program = Effect.gen(function*() {
+  const deferred = yield* Deferred.make<number>()
+  const success = yield* Deferred.die(
+    deferred,
+    new Error("Something went wrong")
+  )
+  console.log(success) // true
+})
+```
 
 **Signature**
 
 ```ts
-declare const die: { (defect: unknown): <A, E>(self: Deferred<A, E>) => Effect.Effect<boolean>; <A, E>(self: Deferred<A, E>, defect: unknown): Effect.Effect<boolean>; }
+declare const die: { (defect: unknown): <A, E>(self: Deferred<A, E>) => Effect<boolean>; <A, E>(self: Deferred<A, E>, defect: unknown): Effect<boolean>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Deferred.ts#L205)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Deferred.ts#L548)
 
 Since v2.0.0

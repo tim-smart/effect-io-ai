@@ -1,0 +1,25 @@
+Package: `effect`<br />
+Module: `Param`<br />
+
+## Param.flagKind
+
+Defines the kind discriminator for flag parameters.
+
+**When to use**
+
+Use to build low-level `Param` constructors or type positions for named flag
+parameters.
+
+**See**
+
+- `argumentKind` for the positional argument parameter discriminator
+
+**Signature**
+
+```ts
+declare const flagKind: "flag"
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Param.ts#L85)
+
+Since v4.0.0

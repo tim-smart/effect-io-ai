@@ -3,14 +3,16 @@ Module: `Schema`<br />
 
 ## Schema.Char
 
-A schema representing a single character.
+Type-level representation of `Char`.
 
 **Signature**
 
 ```ts
-declare class Char
+export interface Char extends String {
+  readonly "Rebuild": Char
+}
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L4652)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L8483)
 
 Since v3.10.0

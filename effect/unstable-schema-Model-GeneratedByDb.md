@@ -1,0 +1,32 @@
+Package: `effect`<br />
+Module: `Model`<br />
+
+## Model.GeneratedByDb
+
+Variant field type for a database-generated column that is present in read
+variants only.
+
+**Details**
+
+The field is included in `select` and `json`, and omitted from `insert`,
+`update`, `jsonCreate`, and `jsonUpdate`.
+
+**See**
+
+- `Field` for generated columns that need a custom variant set, such
+as primary keys used in update payloads.
+
+**Signature**
+
+```ts
+export interface GeneratedByDb<S extends Schema.Top> extends
+  VariantSchema.Field<{
+    readonly select: S
+    readonly json: S
+  }>
+{}
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Model.ts#L202)
+
+Since v4.0.0

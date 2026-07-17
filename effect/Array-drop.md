@@ -3,18 +3,31 @@ Module: `Array`<br />
 
 ## Array.drop
 
-Drop a max number of elements from the start of an `Iterable`, creating a new `Array`.
+Removes the first `n` elements, creating a new array.
 
-**Note**. `n` is normalized to a non negative integer.
+**When to use**
 
-**Example**
+Use to keep the suffix of an iterable after skipping a fixed number of
+leading elements.
+
+**Details**
+
+`n` is clamped to `[0, length]`. When `n <= 0`, this returns a copy of the
+full array.
+
+**Example** (Dropping from the start)
 
 ```ts
 import { Array } from "effect"
 
-const result = Array.drop([1, 2, 3, 4, 5], 2)
-console.log(result) // [3, 4, 5]
+console.log(Array.drop([1, 2, 3, 4, 5], 2)) // [3, 4, 5]
 ```
+
+**See**
+
+- `dropRight` for removing a fixed number of elements from the end
+- `dropWhile` for removing a prefix based on a predicate instead of a fixed count
+- `take` for keeping a fixed number of elements from the start
 
 **Signature**
 
@@ -22,6 +35,6 @@ console.log(result) // [3, 4, 5]
 declare const drop: { (n: number): <A>(self: Iterable<A>) => Array<A>; <A>(self: Iterable<A>, n: number): Array<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L923)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L1508)
 
 Since v2.0.0

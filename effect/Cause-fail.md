@@ -3,17 +3,27 @@ Module: `Cause`<br />
 
 ## Cause.fail
 
-Creates a `Fail` cause from an expected error.
+Creates a `Cause` containing a single `Fail` reason with the
+given typed error.
 
-**Details**
+**When to use**
 
-This function constructs a `Cause` carrying an error of type `E`. It's used
-when you want to represent a known or anticipated failure in your effectful
-computations.
+Use to construct a cause from an expected typed error.
+
+**Example** (Creating a fail cause)
+
+```ts
+import { Cause } from "effect"
+
+const cause = Cause.fail("Something went wrong")
+console.log(cause.reasons.length) // 1
+console.log(Cause.isFailReason(cause.reasons[0])) // true
+```
 
 **See**
 
-- `isFailure` Check if a `Cause` contains a failure
+- `die` — for untyped defects
+- `interrupt` — for fiber interruptions
 
 **Signature**
 
@@ -21,6 +31,6 @@ computations.
 declare const fail: <E>(error: E) => Cause<E>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L591)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L490)
 
 Since v2.0.0

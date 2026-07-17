@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.AnthropicTool
 
-Re-exports all named exports from the "./AnthropicTool.js" module as `AnthropicTool`.
+Re-exports all named exports from the "./AnthropicTool.ts" module as `AnthropicTool`.
 
 **Signature**
 
 ```ts
-export * as AnthropicTool from "./AnthropicTool.js"
+export * as AnthropicTool from "./AnthropicTool.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/index.ts#L24)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/index.ts#L35)
 
-Since v1.0.0
+Since v4.0.0

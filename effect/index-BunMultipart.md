@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.BunMultipart
 
-Re-exports all named exports from the "./BunMultipart.js" module as `BunMultipart`.
+Re-exports all named exports from the "./BunMultipart.ts" module as `BunMultipart`.
 
 **Signature**
 
 ```ts
-export * as BunMultipart from "./BunMultipart.js"
+export * as BunMultipart from "./BunMultipart.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L49)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L55)
 
-Since v1.0.0
+Since v4.0.0

@@ -1,0 +1,18 @@
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.OptionFromOptionalKey
+
+Type-level representation returned by `OptionFromOptionalKey`.
+
+**Signature**
+
+```ts
+export interface OptionFromOptionalKey<S extends Constraint> extends decodeTo<Option<toType<S>>, optionalKey<S>> {
+  readonly "Rebuild": OptionFromOptionalKey<S>
+}
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L8708)
+
+Since v4.0.0

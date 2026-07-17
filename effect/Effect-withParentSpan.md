@@ -5,12 +5,25 @@ Module: `Effect`<br />
 
 Adds the provided span to the current span stack.
 
+**Example** (Setting a parent span)
+
+```ts
+import { Effect } from "effect"
+
+const program = Effect.gen(function*() {
+  const span = yield* Effect.makeSpan("parent-span")
+  const childTask = Effect.log("Child operation")
+  yield* Effect.withParentSpan(childTask, span)
+  return "completed"
+})
+```
+
 **Signature**
 
 ```ts
-declare const withParentSpan: { (span: Tracer.AnySpan): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, Exclude<R, Tracer.ParentSpan>>; <A, E, R>(self: Effect<A, E, R>, span: Tracer.AnySpan): Effect<A, E, Exclude<R, Tracer.ParentSpan>>; }
+declare const withParentSpan: { (value: AnySpan, options?: TraceOptions): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, Exclude<R, ParentSpan>>; <A, E, R>(self: Effect<A, E, R>, value: AnySpan, options?: TraceOptions): Effect<A, E, Exclude<R, ParentSpan>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13187)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L8411)
 
 Since v2.0.0

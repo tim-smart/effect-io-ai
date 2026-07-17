@@ -3,41 +3,27 @@ Module: `HashSet`<br />
 
 ## HashSet.intersection
 
-Returns a `HashSet` of values which are present in both this set and that
-`Iterable<A>`. Computes set intersection (A ∩ B)
+Creates the intersection of two HashSets.
 
-Time complexity: **`O(n)`** where n is the number of elements in the smaller
-set
-
-**NOTE**: the hash and equal of the values in both the set and the iterable
-must be the same.
-
-**Example**
+**Example** (Finding common HashSet values)
 
 ```ts
-// Syntax
-import { HashSet, pipe } from "effect"
+import { HashSet } from "effect"
 
-// with data-last, a.k.a. pipeable API
-pipe(HashSet.make(1, 2, 3), HashSet.intersection(HashSet.make(2, 3, 4)))
+const set1 = HashSet.make("a", "b", "c")
+const set2 = HashSet.make("b", "c", "d")
+const common = HashSet.intersection(set1, set2)
 
-// or piped with the pipe function
-HashSet.make(1, 2, 3).pipe(HashSet.intersection(HashSet.make(2, 3, 4)))
-
-// or with data-first API
-HashSet.intersection(HashSet.make(1, 2, 3), HashSet.make(2, 3, 4))
+console.log(Array.from(common).sort()) // ["b", "c"]
+console.log(HashSet.size(common)) // 2
 ```
-
-**See**
-
-- Other `HashSet` operations are `module:HashSet.difference` `module:HashSet.union`
 
 **Signature**
 
 ```ts
-declare const intersection: { <A>(that: Iterable<A>): (self: HashSet<A>) => HashSet<A>; <A>(self: HashSet<A>, that: Iterable<A>): HashSet<A>; }
+declare const intersection: { <V1>(that: HashSet<V1>): <V0>(self: HashSet<V0>) => HashSet<V1 & V0>; <V0, V1>(self: HashSet<V0>, that: HashSet<V1>): HashSet<V0 & V1>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L1497)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L393)
 
 Since v2.0.0

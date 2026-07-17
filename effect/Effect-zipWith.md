@@ -6,15 +6,19 @@ Module: `Effect`<br />
 Combines two effects sequentially and applies a function to their results to
 produce a single value.
 
+**When to use**
+
+Use when you need to run two effects sequentially and combine their results
+with a function instead of keeping the results as a tuple.
+
 **Details**
 
-This function runs two effects in sequence (or concurrently, if the `{
-concurrent: true }` option is provided) and combines their results using a
-provided function. Unlike `zip`, which returns a tuple of the results,
-this function processes the results with a custom function to produce a
-single output.
+Concurrency:
 
-**Example** (Combining Effects with a Custom Function)
+By default, the effects are run sequentially. To execute them concurrently,
+use the `{ concurrent: true }` option.
+
+**Example** (Combining two success values with a function)
 
 ```ts
 import { Effect } from "effect"
@@ -45,9 +49,9 @@ Effect.runPromise(task3).then(console.log)
 **Signature**
 
 ```ts
-declare const zipWith: { <A2, E2, R2, A, B>(that: Effect<A2, E2, R2>, f: (a: A, b: A2) => B, options?: { readonly concurrent?: boolean | undefined; readonly batching?: boolean | "inherit" | undefined; readonly concurrentFinalizers?: boolean | undefined; }): <E, R>(self: Effect<A, E, R>) => Effect<B, E2 | E, R2 | R>; <A, E, R, A2, E2, R2, B>(self: Effect<A, E, R>, that: Effect<A2, E2, R2>, f: (a: A, b: A2) => B, options?: { readonly concurrent?: boolean | undefined; readonly batching?: boolean | "inherit" | undefined; readonly concurrentFinalizers?: boolean | undefined; }): Effect<B, E2 | E, R2 | R>; }
+declare const zipWith: { <A2, E2, R2, A, B>(that: Effect<A2, E2, R2>, f: (a: A, b: A2) => B, options?: { readonly concurrent?: boolean | undefined; }): <E, R>(self: Effect<A, E, R>) => Effect<B, E2 | E, R2 | R>; <A, E, R, A2, E2, R2, B>(self: Effect<A, E, R>, that: Effect<A2, E2, R2>, f: (a: A, b: A2) => B, options?: { readonly concurrent?: boolean | undefined; }): Effect<B, E2 | E, R2 | R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12762)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L2602)
 
 Since v2.0.0

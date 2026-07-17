@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.Redacted
 
-Re-exports all named exports from the "./Redacted.js" module as `Redacted`.
+Re-exports all named exports from the "./Redacted.ts" module as `Redacted`.
 
 **Signature**
 
 ```ts
-export * as Redacted from "./Redacted.js"
+export * as Redacted from "./Redacted.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1196)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L462)
 
 Since v3.3.0

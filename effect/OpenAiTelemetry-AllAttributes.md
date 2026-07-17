@@ -1,10 +1,10 @@
-Package: `@effect/ai-openai`<br />
+Package: `@effect/ai-openai-compat`<br />
 Module: `OpenAiTelemetry`<br />
 
 ## OpenAiTelemetry.AllAttributes
 
 All telemetry attributes which are part of the GenAI specification,
-including the OpenAi-specific attributes.
+including the OpenAI-specific attributes.
 
 **Signature**
 
@@ -12,6 +12,6 @@ including the OpenAi-specific attributes.
 type AllAttributes = Telemetry.AllAttributes & RequestAttributes & ResponseAttributes
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiTelemetry.ts#L33)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiTelemetry.ts#L41)
 
-Since v1.0.0
+Since v4.0.0

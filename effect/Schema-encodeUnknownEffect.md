@@ -1,0 +1,44 @@
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.encodeUnknownEffect
+
+Encodes an `unknown` input against a schema, returning an `Effect` that
+succeeds with the encoded value or fails with a `SchemaError`.
+
+**When to use**
+
+Use when you need to encode unknown input in an `Effect` whose failure
+channel is `SchemaError`.
+
+**Details**
+
+Prefer `encodeEffect` when the value is already typed as the schema's
+`Type`.
+Options may be provided either when creating the encoder or when applying it;
+application options override creation options.
+
+**Example** (Encoding a value to a string)
+
+```ts
+import { Effect, Schema } from "effect"
+
+const NumberFromString = Schema.NumberFromString
+
+Effect.runPromise(Schema.encodeUnknownEffect(NumberFromString)(42)).then(console.log)
+// Output: "42"
+```
+
+**See**
+
+- `SchemaParser.encodeUnknownEffect` for the adapter that fails with `SchemaIssue.Issue` directly
+
+**Signature**
+
+```ts
+declare const encodeUnknownEffect: <S extends Constraint>(schema: S, options?: SchemaAST.ParseOptions) => (input: unknown, options?: SchemaAST.ParseOptions) => Effect.Effect<S["Encoded"], SchemaError, S["EncodingServices"]>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L1837)
+
+Since v4.0.0

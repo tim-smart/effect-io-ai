@@ -3,20 +3,45 @@ Module: `Effect`<br />
 
 ## Effect.schedule
 
-Repeats an effect based on a specified schedule.
+Runs an effect repeatedly according to a schedule and returns the schedule's
+final output.
+
+**When to use**
+
+Use to rerun a successful effect according to a `Schedule` when the schedule
+does not need a custom initial input.
 
 **Details**
 
-This function allows you to execute an effect repeatedly according to a given
-schedule. The schedule determines the timing and number of repetitions. Each
-repetition can also depend on the decision of the schedule, providing
-flexibility for complex workflows. This function does not modify the effect's
-success or failure; it only controls its repetition.
+The schedule is first stepped with `undefined`. After each successful
+execution, the effect's success value is fed to the schedule to decide
+whether to run again. The returned effect fails if the effect or schedule
+fails, and otherwise succeeds with the schedule output when the schedule
+completes.
 
-For example, you can use a schedule that recurs a specific number of times,
-adds delays between repetitions, or customizes repetition behavior based on
-external inputs. The effect runs initially and is repeated according to the
-schedule.
+**Example** (Scheduling repeated execution)
+
+```ts
+import { Console, Effect, Schedule } from "effect"
+
+const task = Effect.gen(function*() {
+  yield* Console.log("Task executing...")
+  return Math.random()
+})
+
+// Repeat 3 times with 1 second delay between executions
+const program = Effect.schedule(
+  task,
+  Schedule.addDelay(Schedule.recurs(2), () => Effect.succeed("1 second"))
+)
+
+Effect.runPromise(program).then(console.log)
+// Output:
+// Task executing... (immediate)
+// Task executing... (after 1 second)
+// Task executing... (after 1 second)
+// Returns the count from Schedule.recurs
+```
 
 **See**
 
@@ -26,9 +51,9 @@ to depend on the result of this effect.
 **Signature**
 
 ```ts
-declare const schedule: { <A, R2, Out>(schedule: Schedule.Schedule<Out, NoInfer<A> | undefined, R2>): <E, R>(self: Effect<A, E, R>) => Effect<Out, E, R2 | R>; <A, E, R, R2, Out>(self: Effect<A, E, R>, schedule: Schedule.Schedule<Out, A | undefined, R2>): Effect<Out, E, R | R2>; }
+declare const schedule: { <Output, Error, Env>(schedule: Schedule<Output, unknown, Error, Env>): <A, E, R>(self: Effect<A, E, R>) => Effect<Output, E, R | Env>; <A, E, R, Output, Error, Env>(self: Effect<A, E, R>, schedule: Schedule<Output, unknown, Error, Env>): Effect<Output, E, R | Env>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L10319)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L7804)
 
 Since v2.0.0

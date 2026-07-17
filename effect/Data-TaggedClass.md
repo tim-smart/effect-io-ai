@@ -3,34 +3,44 @@ Module: `Data`<br />
 
 ## Data.TaggedClass
 
-Provides a Tagged constructor for a Case Class.
+Provides a base class for immutable data types with a `_tag` discriminator.
 
-**Example**
+**When to use**
+
+Use when you need a single-variant tagged type or an ad-hoc discriminator.
+
+**Details**
+
+Like `Class`, but the resulting instances also carry a
+`readonly _tag: Tag` property. The `_tag` is excluded from the constructor
+argument.
+
+**Example** (Defining a tagged class)
 
 ```ts
-import * as assert from "node:assert"
-import { Data, Equal } from "effect"
+import { Data } from "effect"
 
-class Person extends Data.TaggedClass("Person")<{ readonly name: string }> {}
+class Person extends Data.TaggedClass("Person")<{
+  readonly name: string
+}> {}
 
-// Creating instances of Person
-const mike1 = new Person({ name: "Mike" })
-const mike2 = new Person({ name: "Mike" })
-const john = new Person({ name: "John" })
-
-// Checking equality
-assert.deepStrictEqual(Equal.equals(mike1, mike2), true)
-assert.deepStrictEqual(Equal.equals(mike1, john), false)
-
-assert.deepStrictEqual(mike1._tag, "Person")
+const mike = new Person({ name: "Mike" })
+console.log(mike._tag)
+// "Person"
 ```
+
+**See**
+
+- `Class` — without a `_tag`
+- `TaggedError` — tagged error variant
+- `TaggedEnum` — multi-variant unions
 
 **Signature**
 
 ```ts
-declare const TaggedClass: <Tag extends string>(tag: Tag) => new <A extends Record<string, any> = {}>(args: Types.VoidIfEmpty<{ readonly [P in keyof A as P extends "_tag" ? never : P]: A[P]; }>) => Readonly<A> & { readonly _tag: Tag; }
+declare const TaggedClass: <Tag extends string>(tag: Tag) => new <A extends Record<string, any> = {}>(args: Types.VoidIfEmpty<{ readonly [P in keyof A as P extends "_tag" ? never : P]: A[P]; }>) => Readonly<A> & { readonly _tag: Tag; } & Pipeable.Pipeable
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Data.ts#L232)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Data.ts#L96)
 
 Since v2.0.0

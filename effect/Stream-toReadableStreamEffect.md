@@ -3,9 +3,31 @@ Module: `Stream`<br />
 
 ## Stream.toReadableStreamEffect
 
-Converts the stream to a `Effect<ReadableStream>`.
+Creates an Effect that builds a ReadableStream from the stream.
+
+**When to use**
+
+Use when bridging to Web Streams from inside an `Effect` so the required
+services can be captured from the current context.
+
+**Details**
 
 See https://developer.mozilla.org/en-US/docs/Web/API/ReadableStream.
+
+**Example** (Creating a ReadableStream effect)
+
+```ts
+import { Console, Effect, Stream } from "effect"
+
+const stream = Stream.make(1, 2, 3, 4, 5)
+
+const effect = Effect.gen(function*() {
+  const readableStream = yield* Stream.toReadableStreamEffect(stream)
+  yield* Console.log(readableStream instanceof ReadableStream) // true
+})
+
+Effect.runPromise(effect)
+```
 
 **Signature**
 
@@ -13,6 +35,6 @@ See https://developer.mozilla.org/en-US/docs/Web/API/ReadableStream.
 declare const toReadableStreamEffect: { <A>(options?: { readonly strategy?: QueuingStrategy<A> | undefined; }): <E, R>(self: Stream<A, E, R>) => Effect.Effect<ReadableStream<A>, never, R>; <A, E, R>(self: Stream<A, E, R>, options?: { readonly strategy?: QueuingStrategy<A> | undefined; }): Effect.Effect<ReadableStream<A>, never, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L5338)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L11269)
 
 Since v2.0.0

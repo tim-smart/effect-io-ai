@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.Match
 
-Re-exports all named exports from the "./Match.js" module as `Match`.
+Re-exports all named exports from the "./Match.ts" module as `Match`.
 
 **Signature**
 
 ```ts
-export * as Match from "./Match.js"
+export * as Match from "./Match.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L757)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L322)
 
-Since v1.0.0
+Since v4.0.0

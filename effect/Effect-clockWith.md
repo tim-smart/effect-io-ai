@@ -6,7 +6,7 @@ Module: `Effect`<br />
 Retrieves the `Clock` service from the context and provides it to the
 specified effectful function.
 
-**Example**
+**Example** (Accessing the Clock service)
 
 ```ts
 import { Console, Effect } from "effect"
@@ -26,9 +26,9 @@ Effect.runFork(program)
 **Signature**
 
 ```ts
-declare const clockWith: <A, E, R>(f: (clock: Clock.Clock) => Effect<A, E, R>) => Effect<A, E, R>
+declare const clockWith: <A, E, R>(f: (clock: Clock) => Effect<A, E, R>) => Effect<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L6766)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13714)
 
 Since v2.0.0

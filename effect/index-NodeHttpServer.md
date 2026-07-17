@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.NodeHttpServer
 
-Re-exports all named exports from the "./NodeHttpServer.js" module as `NodeHttpServer`.
+Re-exports all named exports from the "./NodeHttpServer.ts" module as `NodeHttpServer`.
 
 **Signature**
 
 ```ts
-export * as NodeHttpServer from "./NodeHttpServer.js"
+export * as NodeHttpServer from "./NodeHttpServer.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L39)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L55)
 
-Since v1.0.0
+Since v4.0.0

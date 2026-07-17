@@ -1,0 +1,23 @@
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.takeWhileFilter
+
+Applies a `Filter` to input elements while it succeeds, collecting each
+successful output.
+
+**Details**
+
+The first input for which the filter fails is consumed and excluded from the
+result. Any later elements from the same pulled array are returned as
+leftovers.
+
+**Signature**
+
+```ts
+declare const takeWhileFilter: <In, Out, X>(filter: Filter.Filter<In, Out, X>) => Sink<Array<Out>, In, In>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Sink.ts#L1594)
+
+Since v4.0.0

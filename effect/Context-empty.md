@@ -5,11 +5,11 @@ Module: `Context`<br />
 
 Returns an empty `Context`.
 
-**Example**
+**Example** (Creating an empty context)
 
 ```ts
-import * as assert from "node:assert"
 import { Context } from "effect"
+import * as assert from "node:assert"
 
 assert.strictEqual(Context.isContext(Context.empty()), true)
 ```
@@ -20,6 +20,6 @@ assert.strictEqual(Context.isContext(Context.empty()), true)
 declare const empty: () => Context<never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Context.ts#L270)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Context.ts#L621)
 
 Since v2.0.0

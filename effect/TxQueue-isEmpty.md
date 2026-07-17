@@ -1,0 +1,33 @@
+Package: `effect`<br />
+Module: `TxQueue`<br />
+
+## TxQueue.isEmpty
+
+Checks whether the queue is empty.
+
+**Example** (Checking whether a queue is empty)
+
+```ts
+import { Effect, TxQueue } from "effect"
+
+const program = Effect.gen(function*() {
+  const queue = yield* TxQueue.bounded<number>(10)
+
+  const empty = yield* TxQueue.isEmpty(queue)
+  console.log(empty) // true
+
+  yield* TxQueue.offer(queue, 42)
+  const stillEmpty = yield* TxQueue.isEmpty(queue)
+  console.log(stillEmpty) // false
+})
+```
+
+**Signature**
+
+```ts
+declare const isEmpty: (self: TxQueueState) => Effect.Effect<boolean>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TxQueue.ts#L1080)
+
+Since v2.0.0

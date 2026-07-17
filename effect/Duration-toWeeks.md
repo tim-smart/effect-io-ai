@@ -1,0 +1,25 @@
+Package: `effect`<br />
+Module: `Duration`<br />
+
+## Duration.toWeeks
+
+Converts a Duration to weeks.
+
+**Example** (Converting durations to weeks)
+
+```ts
+import { Duration } from "effect"
+
+console.log(Duration.toWeeks(Duration.days(14))) // 2
+console.log(Duration.toWeeks(Duration.days(7))) // 1
+```
+
+**Signature**
+
+```ts
+declare const toWeeks: (self: Input) => number
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Duration.ts#L887)
+
+Since v3.8.0

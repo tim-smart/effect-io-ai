@@ -5,15 +5,19 @@ Module: `BigInt`<br />
 
 Determines the absolute value of a given `bigint`.
 
-**Example**
+**When to use**
+
+Use to remove the sign from a `bigint` while preserving its magnitude.
+
+**Example** (Calculating absolute values)
 
 ```ts
+import { BigInt } from "effect"
 import * as assert from "node:assert"
-import { abs } from "effect/BigInt"
 
-assert.deepStrictEqual(abs(-5n), 5n)
-assert.deepStrictEqual(abs(0n), 0n)
-assert.deepStrictEqual(abs(5n), 5n)
+assert.deepStrictEqual(BigInt.abs(-5n), 5n)
+assert.deepStrictEqual(BigInt.abs(0n), 0n)
+assert.deepStrictEqual(BigInt.abs(5n), 5n)
 ```
 
 **Signature**
@@ -22,6 +26,6 @@ assert.deepStrictEqual(abs(5n), 5n)
 declare const abs: (n: bigint) => bigint
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L409)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L600)
 
 Since v2.0.0

@@ -5,14 +5,17 @@ Module: `Iterable`<br />
 
 Takes a record and returns an Iterable of tuples containing its keys and values.
 
-**Example**
+**Example** (Converting a record to entries)
 
 ```ts
+import { Iterable } from "effect"
 import * as assert from "node:assert"
-import { fromRecord } from "effect/Iterable"
 
 const x = { a: 1, b: 2, c: 3 }
-assert.deepStrictEqual(Array.from(fromRecord(x)), [["a", 1], ["b", 2], ["c", 3]])
+assert.deepStrictEqual(Array.from(Iterable.fromRecord(x)), [["a", 1], ["b", 2], [
+  "c",
+  3
+]])
 ```
 
 **Signature**
@@ -21,6 +24,6 @@ assert.deepStrictEqual(Array.from(fromRecord(x)), [["a", 1], ["b", 2], ["c", 3]]
 declare const fromRecord: <K extends string, A>(self: Readonly<Record<K, A>>) => Iterable<[K, A]>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Iterable.ts#L117)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Iterable.ts#L190)
 
 Since v2.0.0

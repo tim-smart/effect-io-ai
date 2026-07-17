@@ -3,25 +3,35 @@ Module: `Stream`<br />
 
 ## Stream.split
 
-Splits elements based on a predicate or refinement.
+Splits the stream into non-empty groups whenever the predicate matches.
+
+**Details**
+
+Matching elements act as delimiters and are not included in the output.
+
+**Example** (Splitting on matching values)
 
 ```ts
-import { pipe, Stream } from "effect"
+import { Console, Effect, Stream } from "effect"
 
-pipe(
-  Stream.range(1, 10),
-  Stream.split((n) => n % 4 === 0),
-  Stream.runCollect
-)
-// => Chunk(Chunk(1, 2, 3), Chunk(5, 6, 7), Chunk(9))
+const program = Effect.gen(function*() {
+  const result = yield* Stream.range(0, 9).pipe(
+    Stream.split((n) => n % 4 === 0),
+    Stream.runCollect
+  )
+  yield* Console.log(result)
+})
+
+Effect.runPromise(program)
+// Output: [ [1, 2, 3], [5, 6, 7], [9] ]
 ```
 
 **Signature**
 
 ```ts
-declare const split: { <A, B extends A>(refinement: Refinement<NoInfer<A>, B>): <E, R>(self: Stream<A, E, R>) => Stream<Chunk.Chunk<Exclude<A, B>>, E, R>; <A>(predicate: Predicate<NoInfer<A>>): <E, R>(self: Stream<A, E, R>) => Stream<Chunk.Chunk<A>, E, R>; <A, E, R, B extends A>(self: Stream<A, E, R>, refinement: Refinement<A, B>): Stream<Chunk.Chunk<Exclude<A, B>>, E, R>; <A, E, R>(self: Stream<A, E, R>, predicate: Predicate<A>): Stream<Chunk.Chunk<A>, E, R>; }
+declare const split: { <A, B extends A>(refinement: Refinement<NoInfer<A>, B>): <E, R>(self: Stream<A, E, R>) => Stream<Arr.NonEmptyReadonlyArray<Exclude<A, B>>, E, R>; <A>(predicate: Predicate<NoInfer<A>>): <E, R>(self: Stream<A, E, R>) => Stream<Arr.NonEmptyReadonlyArray<A>, E, R>; <A, E, R, B extends A>(self: Stream<A, E, R>, refinement: Refinement<A, B>): Stream<Arr.NonEmptyReadonlyArray<Exclude<A, B>>, E, R>; <A, E, R>(self: Stream<A, E, R>, predicate: Predicate<A>): Stream<Arr.NonEmptyReadonlyArray<A>, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L4724)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L7208)
 
 Since v2.0.0

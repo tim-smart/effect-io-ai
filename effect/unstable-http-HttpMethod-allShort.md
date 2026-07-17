@@ -1,0 +1,22 @@
+Package: `effect`<br />
+Module: `HttpMethod`<br />
+
+## HttpMethod.allShort
+
+Provides tuples mapping each supported HTTP method to its short
+request-constructor name.
+
+**When to use**
+
+Use when you need the mapping from supported HTTP method literals to their
+short request-constructor names.
+
+**Signature**
+
+```ts
+declare const allShort: readonly [readonly ["GET", "get"], readonly ["POST", "post"], readonly ["PUT", "put"], readonly ["DELETE", "del"], readonly ["PATCH", "patch"], readonly ["HEAD", "head"], readonly ["OPTIONS", "options"], readonly ["TRACE", "trace"]]
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HttpMethod.ts#L94)
+
+Since v4.0.0

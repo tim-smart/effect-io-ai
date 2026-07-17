@@ -5,12 +5,27 @@ Module: `HashMap`<br />
 
 Applies the specified function to the entries of the `HashMap`.
 
+**Example** (Iterating with side effects)
+
+```ts
+import { HashMap } from "effect"
+
+const map = HashMap.make(["a", 1], ["b", 2])
+const collected: Array<[string, number]> = []
+
+HashMap.forEach(map, (value, key) => {
+  collected.push([key, value])
+})
+
+console.log(collected.sort()) // [["a", 1], ["b", 2]]
+```
+
 **Signature**
 
 ```ts
 declare const forEach: { <V, K>(f: (value: V, key: K) => void): (self: HashMap<K, V>) => void; <V, K>(self: HashMap<K, V>, f: (value: V, key: K) => void): void; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashMap.ts#L433)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashMap.ts#L1066)
 
 Since v2.0.0

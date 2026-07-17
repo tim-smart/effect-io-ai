@@ -5,12 +5,23 @@ Module: `HashMap`<br />
 
 Reduces the specified state over the entries of the `HashMap`.
 
+**Example** (Reducing values)
+
+```ts
+import { HashMap } from "effect"
+
+const map = HashMap.make(["a", 1], ["b", 2], ["c", 3])
+const sum = HashMap.reduce(map, 0, (acc, value) => acc + value)
+
+console.log(sum) // 6
+```
+
 **Signature**
 
 ```ts
 declare const reduce: { <Z, V, K>(zero: Z, f: (accumulator: Z, value: V, key: K) => Z): (self: HashMap<K, V>) => Z; <K, V, Z>(self: HashMap<K, V>, zero: Z, f: (accumulator: Z, value: V, key: K) => Z): Z; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashMap.ts#L444)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashMap.ts#L1088)
 
 Since v2.0.0

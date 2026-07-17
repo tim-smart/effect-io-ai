@@ -1,0 +1,61 @@
+Package: `effect`<br />
+Module: `PubSub`<br />
+
+## PubSub.SlidingStrategy
+
+Represents the sliding strategy for bounded `PubSub` values.
+
+**When to use**
+
+Use to keep the most recent messages when the `PubSub` is at capacity.
+
+**Details**
+
+New messages are accepted by evicting older messages from the bounded
+`PubSub`.
+
+**Gotchas**
+
+Slow subscribers may miss older messages that are evicted before they are
+consumed.
+
+**Example** (Applying a sliding strategy)
+
+```ts
+import { Effect, PubSub } from "effect"
+
+const program = Effect.gen(function*() {
+  // Create PubSub with sliding strategy
+  const pubsub = yield* PubSub.sliding<string>(2)
+
+  // Or explicitly create with sliding strategy
+  const customPubsub = yield* PubSub.make<string>({
+    atomicPubSub: () => PubSub.makeAtomicBounded(2),
+    strategy: () => new PubSub.SlidingStrategy()
+  })
+
+  yield* Effect.scoped(Effect.gen(function*() {
+    const subscription = yield* PubSub.subscribe(pubsub)
+
+    // Publish messages that exceed capacity
+    yield* PubSub.publish(pubsub, "msg1") // stored
+    yield* PubSub.publish(pubsub, "msg2") // stored
+    yield* PubSub.publish(pubsub, "msg3") // "msg1" evicted, "msg3" stored
+    yield* PubSub.publish(pubsub, "msg4") // "msg2" evicted, "msg4" stored
+
+    // Subscribers will see the most recent messages
+    const messages = yield* PubSub.takeAll(subscription)
+    console.log("Recent messages:", messages) // ["msg3", "msg4"]
+  }))
+})
+```
+
+**Signature**
+
+```ts
+declare class SlidingStrategy<A>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/PubSub.ts#L2603)
+
+Since v4.0.0

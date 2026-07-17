@@ -1,0 +1,28 @@
+Package: `effect`<br />
+Module: `TxPriorityQueue`<br />
+
+## TxPriorityQueue.empty
+
+Creates an empty `TxPriorityQueue` with the given ordering.
+
+**Example** (Creating an empty priority queue)
+
+```ts
+import { Effect, Order, TxPriorityQueue } from "effect"
+
+const program = Effect.gen(function*() {
+  const pq = yield* TxPriorityQueue.empty<number>(Order.Number)
+  const empty = yield* TxPriorityQueue.isEmpty(pq)
+  console.log(empty) // true
+})
+```
+
+**Signature**
+
+```ts
+declare const empty: <A>(order: Order<A>) => Effect.Effect<TxPriorityQueue<A>>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TxPriorityQueue.ts#L123)
+
+Since v2.0.0

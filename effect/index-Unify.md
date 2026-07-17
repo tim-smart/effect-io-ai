@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.Unify
 
-Re-exports all named exports from the "./Unify.js" module as `Unify`.
+Re-exports all named exports from the "./Unify.ts" module as `Unify`.
 
 **Signature**
 
 ```ts
-export * as Unify from "./Unify.js"
+export * as Unify from "./Unify.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1546)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L717)
 
 Since v2.0.0

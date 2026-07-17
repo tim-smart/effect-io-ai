@@ -3,10 +3,24 @@ Module: `Stream`<br />
 
 ## Stream.zipRight
 
-Zips this stream with another point-wise, but keeps only the outputs of the
-`right` stream.
+Zips this stream with another point-wise, keeping only right values and ending when either stream ends.
 
-The new stream will end when one of the sides ends.
+**Example** (Zipping streams while keeping right values)
+
+```ts
+import { Console, Effect, Stream } from "effect"
+
+const stream1 = Stream.make(1, 2)
+const stream2 = Stream.make("a", "b", "c", "d")
+
+const program = Effect.gen(function*() {
+  const result = yield* Stream.zipRight(stream1, stream2).pipe(Stream.runCollect)
+  yield* Console.log(result)
+})
+
+Effect.runPromise(program)
+// Output: ["a", "b"]
+```
 
 **Signature**
 
@@ -14,6 +28,6 @@ The new stream will end when one of the sides ends.
 declare const zipRight: { <AR, ER, RR>(right: Stream<AR, ER, RR>): <AL, EL, RL>(left: Stream<AL, EL, RL>) => Stream<AR, ER | EL, RR | RL>; <AL, EL, RL, AR, ER, RR>(left: Stream<AL, EL, RL>, right: Stream<AR, ER, RR>): Stream<AR, EL | ER, RL | RR>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L6030)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L3766)
 
 Since v2.0.0

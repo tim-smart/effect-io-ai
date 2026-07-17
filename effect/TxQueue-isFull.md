@@ -1,0 +1,33 @@
+Package: `effect`<br />
+Module: `TxQueue`<br />
+
+## TxQueue.isFull
+
+Checks whether the queue is at capacity.
+
+**Example** (Checking whether a queue is full)
+
+```ts
+import { Effect, TxQueue } from "effect"
+
+const program = Effect.gen(function*() {
+  const queue = yield* TxQueue.bounded<number>(2)
+
+  const full = yield* TxQueue.isFull(queue)
+  console.log(full) // false
+
+  yield* TxQueue.offerAll(queue, [1, 2])
+  const nowFull = yield* TxQueue.isFull(queue)
+  console.log(nowFull) // true
+})
+```
+
+**Signature**
+
+```ts
+declare const isFull: (self: TxQueueState) => Effect.Effect<boolean>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TxQueue.ts#L1105)
+
+Since v2.0.0

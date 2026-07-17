@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.SqliteMigrator
 
-Re-exports all named exports from the "./SqliteMigrator.js" module as `SqliteMigrator`.
+Re-exports all named exports from the "./SqliteMigrator.ts" module as `SqliteMigrator`.
 
 **Signature**
 
 ```ts
-export * as SqliteMigrator from "./SqliteMigrator.js"
+export * as SqliteMigrator from "./SqliteMigrator.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql-sqlite-bun/src/index.ts#L9)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-bun/src/index.ts#L15)
 
-Since v1.0.0
+Since v4.0.0

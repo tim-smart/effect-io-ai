@@ -3,14 +3,29 @@ Module: `String`<br />
 
 ## String.match
 
-It is the `pipe`-able version of the native `match` method.
+Matches a string against a pattern safely and returns `Option.some` with the match
+array, or `Option.none` when the pattern does not match.
+
+**Example** (Matching regular expressions)
+
+```ts
+import { Option, pipe, String } from "effect"
+
+const match = pipe("hello", String.match(/l+/))
+
+if (Option.isSome(match)) {
+  console.log(`${match.value[0]}@${match.value.index}`) // "ll@2"
+}
+
+console.log(Option.isNone(pipe("hello", String.match(/x/)))) // true
+```
 
 **Signature**
 
 ```ts
-declare const match: (regexp: RegExp | string) => (self: string) => Option.Option<RegExpMatchArray>
+declare const match: (regExp: RegExp | string) => (self: string) => Option.Option<RegExpMatchArray>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/String.ts#L432)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/String.ts#L706)
 
 Since v2.0.0

@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.RcMap
 
-Re-exports all named exports from the "./RcMap.js" module as `RcMap`.
+Re-exports all named exports from the "./RcMap.ts" module as `RcMap`.
 
 **Signature**
 
 ```ts
-export * as RcMap from "./RcMap.js"
+export * as RcMap from "./RcMap.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1164)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L442)
 
 Since v3.5.0

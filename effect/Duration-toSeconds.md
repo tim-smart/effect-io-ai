@@ -1,0 +1,25 @@
+Package: `effect`<br />
+Module: `Duration`<br />
+
+## Duration.toSeconds
+
+Converts a Duration to seconds.
+
+**Example** (Converting durations to seconds)
+
+```ts
+import { Duration } from "effect"
+
+console.log(Duration.toSeconds(Duration.millis(5000))) // 5
+console.log(Duration.toSeconds(Duration.minutes(2))) // 120
+```
+
+**Signature**
+
+```ts
+declare const toSeconds: (self: Input) => number
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Duration.ts#L795)
+
+Since v2.0.0

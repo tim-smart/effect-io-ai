@@ -3,19 +3,29 @@ Module: `Array`<br />
 
 ## Array.pad
 
-Pads an array.
-Returns a new array of length `n` with the elements of `array` followed by `fill` elements if `array` is shorter than `n`.
-If `array` is longer than `n`, the returned array will be a slice of `array` containing the `n` first elements of `array`.
-If `n` is less than or equal to 0, the returned array will be an empty array.
+Pads or truncates an array to exactly `n` elements, filling with `fill`
+if the array is shorter, or slicing if longer.
 
-**Example**
+**When to use**
+
+Use to ensure an array has a specific length, padding with a fill value or truncating as needed.
+
+**Details**
+
+Returns an empty array when `n <= 0`.
+
+**Example** (Padding an array)
 
 ```ts
 import { Array } from "effect"
 
-const result = Array.pad([1, 2, 3], 6, 0)
-console.log(result) // [1, 2, 3, 0, 0, 0]
+console.log(Array.pad([1, 2, 3], 6, 0)) // [1, 2, 3, 0, 0, 0]
 ```
+
+**See**
+
+- `take` — truncate without padding
+- `replicate` — create an array of a single repeated value
 
 **Signature**
 
@@ -23,6 +33,6 @@ console.log(result) // [1, 2, 3, 0, 0, 0]
 declare const pad: { <A, T>(n: number, fill: T): (self: Array<A>) => Array<A | T>; <A, T>(self: Array<A>, n: number, fill: T): Array<A | T>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2056)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2841)
 
 Since v3.8.4

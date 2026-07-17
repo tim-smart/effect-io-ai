@@ -3,16 +3,16 @@ Module: `DateTime`<br />
 
 ## DateTime.removeTime
 
-Remove the time aspect of a `DateTime`, first adjusting for the time
+Removes the time aspect of a `DateTime`, first adjusting for the time
 zone. It will return a `DateTime.Utc` only containing the date.
 
-**Example**
+**Example** (Removing time components)
 
 ```ts
 import { DateTime } from "effect"
 
 // returns "2024-01-01T00:00:00Z"
-DateTime.unsafeMakeZoned("2024-01-01T05:00:00Z", {
+DateTime.makeZonedUnsafe("2024-01-01T05:00:00Z", {
   timeZone: "Pacific/Auckland",
   adjustForTimeZone: true
 }).pipe(
@@ -27,6 +27,6 @@ DateTime.unsafeMakeZoned("2024-01-01T05:00:00Z", {
 declare const removeTime: (self: DateTime) => Utc
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L961)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L1680)
 
 Since v3.6.0

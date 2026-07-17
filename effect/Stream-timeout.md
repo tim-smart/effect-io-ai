@@ -3,14 +3,32 @@ Module: `Stream`<br />
 
 ## Stream.timeout
 
-Ends the stream if it does not produce a value after the specified duration.
+Ends the stream if it does not produce a value within the specified duration.
+
+**Example** (Timing out a stream)
+
+```ts
+import { Console, Effect, Stream } from "effect"
+
+const program = Effect.gen(function*() {
+  const values = yield* Stream.make(1).pipe(
+    Stream.concat(Stream.never),
+    Stream.timeout("1 second"),
+    Stream.runCollect
+  )
+  yield* Console.log(values)
+})
+
+Effect.runPromise(program)
+// Output: [ 1 ]
+```
 
 **Signature**
 
 ```ts
-declare const timeout: { (duration: Duration.DurationInput): <A, E, R>(self: Stream<A, E, R>) => Stream<A, E, R>; <A, E, R>(self: Stream<A, E, R>, duration: Duration.DurationInput): Stream<A, E, R>; }
+declare const timeout: { (duration: Duration.Input): <A, E, R>(self: Stream<A, E, R>) => Stream<A, E, R>; <A, E, R>(self: Stream<A, E, R>, duration: Duration.Input): Stream<A, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L5143)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L2779)
 
 Since v2.0.0

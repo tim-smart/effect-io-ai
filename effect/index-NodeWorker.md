@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.NodeWorker
 
-Re-exports all named exports from the "./NodeWorker.js" module as `NodeWorker`.
+Re-exports all named exports from the "./NodeWorker.ts" module as `NodeWorker`.
 
 **Signature**
 
 ```ts
-export * as NodeWorker from "./NodeWorker.js"
+export * as NodeWorker from "./NodeWorker.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L94)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L120)
 
-Since v1.0.0
+Since v4.0.0

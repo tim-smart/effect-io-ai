@@ -3,17 +3,17 @@ Module: `Record`<br />
 
 ## Record.separate
 
-Partitions a record of `Either` values into two separate records,
-one with the `Left` values and one with the `Right` values.
+Partitions a record of `Result` values into two separate records,
+one with the `Err` values and one with the `Ok` values.
 
-**Example**
+**Example** (Separating Result values)
 
 ```ts
+import { Record, Result } from "effect"
 import * as assert from "node:assert"
-import { Record, Either } from "effect"
 
 assert.deepStrictEqual(
-  Record.separate({ a: Either.left("e"), b: Either.right(1) }),
+  Record.separate({ a: Result.fail("e"), b: Result.succeed(1) }),
   [{ a: "e" }, { b: 1 }]
 )
 ```
@@ -21,9 +21,9 @@ assert.deepStrictEqual(
 **Signature**
 
 ```ts
-declare const separate: <K extends string, A, B>(self: ReadonlyRecord<K, Either<B, A>>) => [Record<ReadonlyRecord.NonLiteralKey<K>, A>, Record<ReadonlyRecord.NonLiteralKey<K>, B>]
+declare const separate: <K extends string, A, B>(self: ReadonlyRecord<K, Result<B, A>>) => [Record<ReadonlyRecord.NonLiteralKey<K>, A>, Record<ReadonlyRecord.NonLiteralKey<K>, B>]
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Record.ts#L844)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Record.ts#L985)
 
 Since v2.0.0

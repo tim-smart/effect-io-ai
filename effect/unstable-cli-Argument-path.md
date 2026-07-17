@@ -1,0 +1,24 @@
+Package: `effect`<br />
+Module: `Argument`<br />
+
+## Argument.path
+
+Creates a positional path argument.
+
+**Example** (Creating a path argument)
+
+```ts
+import { Argument } from "effect/unstable/cli"
+
+const configPath = Argument.path("config")
+```
+
+**Signature**
+
+```ts
+declare const path: (name: string, options?: { pathType?: "file" | "directory" | "either"; mustExist?: boolean; }) => Argument<string>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Argument.ts#L181)
+
+Since v4.0.0

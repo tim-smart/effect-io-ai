@@ -3,50 +3,34 @@ Module: `Array`<br />
 
 ## Array.bindTo
 
-The "do simulation" for array allows you to sequentially apply operations to the elements of arrays, just as nested loops allow you to go through all combinations of elements in an arrays.
+Wraps each array element in an object with the given key, starting a do-notation scope.
 
-It can be used to simulate "array comprehension".
-It's a technique that allows you to create new arrays by iterating over existing ones and applying specific **conditions** or **transformations** to the elements. It's like assembling a new collection from pieces of other collections based on certain rules.
+**When to use**
 
-Here's how the do simulation works:
+Use when you already have an array and want to start a do-notation pipeline
+by naming each element.
 
-1. Start the do simulation using the `Do` value
-2. Within the do simulation scope, you can use the `bind` function to define variables and bind them to `Array` values
-3. You can accumulate multiple `bind` statements to define multiple variables within the scope
-4. Inside the do simulation scope, you can also use the `let` function to define variables and bind them to simple values
-5. Regular `Array` functions like `map` and `filter` can still be used within the do simulation. These functions will receive the accumulated variables as arguments within the scope
+**Details**
 
-**Example**
+Equivalent to `Array.map(self, (a) => ({ [tag]: a }))`. This is an
+alternative to starting with `Do` plus `bind` when you already have an array.
+
+**Example** (Naming an existing array)
 
 ```ts
 import { Array, pipe } from "effect"
 
-const doResult = pipe(
-  Array.Do,
-  Array.bind("x", () => [1, 3, 5]),
-  Array.bind("y", () => [2, 4, 6]),
-  Array.filter(({ x, y }) => x < y), // condition
-  Array.map(({ x, y }) => [x, y] as const) // transformation
+const result = pipe(
+  [1, 2, 3],
+  Array.bindTo("x")
 )
-console.log(doResult) // [[1, 2], [1, 4], [1, 6], [3, 4], [3, 6], [5, 6]]
-
-// equivalent
-const x = [1, 3, 5],
-      y = [2, 4, 6],
-      result = [];
-for(let i = 0; i < x.length; i++) {
-  for(let j = 0; j < y.length; j++) {
-    const _x = x[i], _y = y[j];
-    if(_x < _y) result.push([_x, _y] as const)
-  }
-}
+console.log(result) // [{ x: 1 }, { x: 2 }, { x: 3 }]
 ```
 
 **See**
 
-- `bindTo`
-- `Do`
-- `let`
+- `Do` — start with an empty scope
+- `bind` — add another array variable to the scope
 
 **Signature**
 
@@ -54,6 +38,6 @@ for(let i = 0; i < x.length; i++) {
 declare const bindTo: { <N extends string>(tag: N): <A>(self: ReadonlyArray<A>) => Array<{ [K in N]: A; }>; <A, N extends string>(self: ReadonlyArray<A>, tag: N): Array<{ [K in N]: A; }>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L3523)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L4781)
 
 Since v3.2.0

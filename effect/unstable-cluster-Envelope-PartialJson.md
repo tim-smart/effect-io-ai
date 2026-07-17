@@ -1,0 +1,16 @@
+Package: `effect`<br />
+Module: `Envelope`<br />
+
+## Envelope.PartialJson
+
+JSON codec for partial cluster envelopes.
+
+**Signature**
+
+```ts
+declare const PartialJson: Schema.Codec<PartialRequest | AckChunk | Interrupt, Encoded, never, never>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Envelope.ts#L286)
+
+Since v4.0.0

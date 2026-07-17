@@ -3,16 +3,59 @@ Module: `Layer`<br />
 
 ## Layer.span
 
-Create and add a span to the current span stack.
+Constructs a new `Layer` which creates a span and registers it as the current
+parent span.
 
-The span is ended when the Layer is released.
+**Details**
+
+This allows you to create a traced scope for layer construction, making all
+operations within the layer constructor part of the same trace span. The span
+is automatically ended when the layer's scope is closed. If `onEnd` is
+provided, it receives the span and the layer scope's exit value when the span
+ends.
+
+**Example** (Tracing layer construction with a span)
+
+```ts
+import { Console, Context, Effect, Layer } from "effect"
+import type { Tracer } from "effect"
+
+class Database extends Context.Service<Database, {
+  readonly query: (sql: string) => Effect.Effect<string>
+}>()("Database") {}
+
+// Create a traced layer - all operations performed during construction of
+// the `Database` service are part of the "database-init" span
+const databaseLayer = Layer.effect(Database, Effect.gen(function*() {
+  // These operations are traced under "database-init" span
+  yield* Effect.log("Connecting to database")
+  yield* Effect.sleep("100 millis")
+  yield* Effect.log("Database connected")
+
+  const parentSpan = yield* Effect.currentParentSpan
+  yield* Console.log((parentSpan as Tracer.Span).name) // "database-init"
+
+  return {
+    query: Effect.fn("Database.query")((sql: string) => Effect.succeed(`Result: ${sql}`))
+  }
+})).pipe(Layer.provide(Layer.span("database-init")))
+
+// Can also use the `onEnd` callback to execute logic when the span ends
+const tracedLayer = Layer.span("service-initialization", {
+  attributes: { version: "1.0.0" },
+  onEnd: (span, exit) =>
+    Effect.sync(() => {
+      console.log(`Span ${span.name} ended with:`, exit._tag)
+    })
+})
+```
 
 **Signature**
 
 ```ts
-declare const span: (name: string, options?: Tracer.SpanOptions & { readonly onEnd?: ((span: Tracer.Span, exit: Exit.Exit<unknown, unknown>) => Effect.Effect<void>) | undefined; }) => Layer<Tracer.ParentSpan>
+declare const span: (name: string, options?: SpanOptions) => Layer<Tracer.ParentSpan>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Layer.ts#L1075)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Layer.ts#L2508)
 
 Since v2.0.0

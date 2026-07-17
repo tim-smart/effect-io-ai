@@ -3,14 +3,30 @@ Module: `Stream`<br />
 
 ## Stream.filterMapEffect
 
-Performs an effectful filter and map in a single step.
+Filters and maps elements in one pass effectfully using a `FilterEffect`.
+
+**When to use**
+
+Use to apply effectful logic that can reject stream elements or emit
+transformed values before they continue downstream.
+
+**Details**
+
+`Result.succeed` values are emitted, `Result.fail` values are skipped, and
+effect failures fail the stream.
+
+**See**
+
+- `filterMap` for the synchronous `Filter` variant
+- `filterEffect` for effectfully keeping original elements
+- `mapEffect` for effectfully transforming every element
 
 **Signature**
 
 ```ts
-declare const filterMapEffect: { <A, A2, E2, R2>(pf: (a: A) => Option.Option<Effect.Effect<A2, E2, R2>>): <E, R>(self: Stream<A, E, R>) => Stream<A2, E2 | E, R2 | R>; <A, E, R, A2, E2, R2>(self: Stream<A, E, R>, pf: (a: A) => Option.Option<Effect.Effect<A2, E2, R2>>): Stream<A2, E | E2, R | R2>; }
+declare const filterMapEffect: { <A, B, X, EX, RX>(filter: Filter.FilterEffect<NoInfer<A>, B, X, EX, RX>): <E, R>(self: Stream<A, E, R>) => Stream<B, E | EX, R | RX>; <A, E, R, B, X, EX, RX>(self: Stream<A, E, R>, filter: Filter.FilterEffect<A, B, X, EX, RX>): Stream<B, E | EX, R | RX>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L1660)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L4415)
 
 Since v2.0.0

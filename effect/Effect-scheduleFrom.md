@@ -3,26 +3,45 @@ Module: `Effect`<br />
 
 ## Effect.scheduleFrom
 
-Runs an effect repeatedly according to a schedule, starting from a specified
-input value.
+Runs an effect repeatedly according to a schedule that is initialized with a
+specific schedule input.
 
 **Details**
 
-This function allows you to repeatedly execute an effect based on a schedule.
-The schedule starts with the given `initial` input value, which is passed to
-the first execution. Subsequent executions of the effect are controlled by
-the schedule's rules, using the output of the previous iteration as the input
-for the next one.
+`initial` is passed to the schedule before the first execution, not to the
+effect itself. After each successful execution, the effect's success value is
+fed back into the schedule to decide whether to continue. The returned effect
+succeeds with the schedule output when the schedule completes and fails if
+the effect or schedule fails.
 
-The returned effect will complete when the schedule ends or the effect fails,
-propagating the error.
+**Example** (Scheduling from an initial value)
+
+```ts
+import { Console, Effect, Schedule } from "effect"
+
+const task = (input: number) =>
+  Effect.gen(function*() {
+    yield* Console.log(`Processing: ${input}`)
+    return input + 1
+  })
+
+// Start with 0, repeat 3 times
+const program = Effect.scheduleFrom(
+  task(0),
+  0,
+  Schedule.recurs(2)
+)
+
+Effect.runPromise(program).then(console.log)
+// Returns the schedule count
+```
 
 **Signature**
 
 ```ts
-declare const scheduleFrom: { <R2, In, Out>(initial: In, schedule: Schedule.Schedule<Out, In, R2>): <E, R>(self: Effect<In, E, R>) => Effect<Out, E, R2 | R>; <In, E, R, R2, Out>(self: Effect<In, E, R>, initial: In, schedule: Schedule.Schedule<Out, In, R2>): Effect<Out, E, R | R2>; }
+declare const scheduleFrom: { <Input, Output, Error, Env>(initial: Input, schedule: Schedule<Output, Input, Error, Env>): <E, R>(self: Effect<Input, E, R>) => Effect<Output, E, R | Env>; <Input, E, R, Output, Error, Env>(self: Effect<Input, E, R>, initial: Input, schedule: Schedule<Output, Input, Error, Env>): Effect<Output, E, R | Env>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L10380)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L7854)
 
 Since v2.0.0

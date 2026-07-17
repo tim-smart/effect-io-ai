@@ -3,14 +3,34 @@ Module: `Stream`<br />
 
 ## Stream.updateService
 
-Updates the specified service within the context of the `Stream`.
+Updates a single service in the stream environment by applying a function.
+
+**Example** (Updating a stream service)
+
+```ts
+import { Console, Context, Effect, Stream } from "effect"
+
+class Counter extends Context.Service<Counter, { count: number }>()("Counter") {}
+
+const stream = Stream.fromEffect(Effect.service(Counter)).pipe(
+  Stream.updateService(Counter, (counter) => ({ count: counter.count + 1 }))
+)
+
+const program = Effect.gen(function*() {
+  const counters = yield* Stream.runCollect(stream)
+  yield* Console.log(`Updated count: ${counters[0].count}`)
+})
+
+Effect.runPromise(Effect.provideService(program, Counter, { count: 0 }))
+// Output: Updated count: 1
+```
 
 **Signature**
 
 ```ts
-declare const updateService: { <I, S>(tag: Context.Tag<I, S>, f: (service: NoInfer<S>) => NoInfer<S>): <A, E, R>(self: Stream<A, E, R>) => Stream<A, E, I | R>; <A, E, R, I, S>(self: Stream<A, E, R>, tag: Context.Tag<I, S>, f: (service: NoInfer<S>) => NoInfer<S>): Stream<A, E, I | R>; }
+declare const updateService: { <I, S>(key: Context.Key<I, S>, f: (service: NoInfer<S>) => S): <A, E, R>(self: Stream<A, E, R>) => Stream<A, E, R | I>; <A, E, R, I, S>(self: Stream<A, E, R>, key: Context.Key<I, S>, f: (service: NoInfer<S>) => S): Stream<A, E, R | I>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L5533)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L10292)
 
 Since v2.0.0

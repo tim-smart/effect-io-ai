@@ -3,16 +3,16 @@ Module: `DateTime`<br />
 
 ## DateTime.withCurrentZone
 
-Provide the `CurrentTimeZone` to an effect.
+Provides the `CurrentTimeZone` to an effect.
 
-**Example**
+**Example** (Providing the current time zone)
 
 ```ts
 import { DateTime, Effect } from "effect"
 
-const zone = DateTime.zoneUnsafeMakeNamed("Europe/London")
+const zone = DateTime.zoneMakeNamedUnsafe("Europe/London")
 
-Effect.gen(function* () {
+Effect.gen(function*() {
   const now = yield* DateTime.nowInCurrentZone
 }).pipe(DateTime.withCurrentZone(zone))
 ```
@@ -20,9 +20,9 @@ Effect.gen(function* () {
 **Signature**
 
 ```ts
-declare const withCurrentZone: { (zone: TimeZone): <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, Exclude<R, CurrentTimeZone>>; <A, E, R>(effect: Effect.Effect<A, E, R>, zone: TimeZone): Effect.Effect<A, E, Exclude<R, CurrentTimeZone>>; }
+declare const withCurrentZone: { (value: TimeZone): <A, E, R>(self: Effect.Effect<A, E, R>) => Effect.Effect<A, E, Exclude<R, CurrentTimeZone>>; <A, E, R>(self: Effect.Effect<A, E, R>, value: TimeZone): Effect.Effect<A, E, Exclude<R, CurrentTimeZone>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L1102)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L1934)
 
 Since v3.6.0

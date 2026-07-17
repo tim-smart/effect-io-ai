@@ -3,7 +3,34 @@ Module: `Order`<br />
 
 ## Order.min
 
-Take the minimum of two values. If they are considered equal, the first argument is chosen.
+Returns the minimum of two values according to the given order. If they are equal, returns the first argument.
+
+**When to use**
+
+Use when you need to select the smaller of two values according to an
+`Order`.
+
+**Details**
+
+Returns the value that compares as less than or equal to the other value. If
+values are equal, the first argument is returned.
+
+**Example** (Selecting the minimum value)
+
+```ts
+import { Order } from "effect"
+
+const minNumber = Order.min(Order.Number)
+
+console.log(minNumber(1, 2)) // 1
+console.log(minNumber(2, 1)) // 1
+console.log(minNumber(1, 1)) // 1
+```
+
+**See**
+
+- `max` for the maximum of two values
+- `clamp` to clamp a value between min and max
 
 **Signature**
 
@@ -11,6 +38,6 @@ Take the minimum of two values. If they are considered equal, the first argument
 declare const min: <A>(O: Order<A>) => { (that: A): (self: A) => A; (self: A, that: A): A; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Order.ts#L302)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Order.ts#L800)
 
 Since v2.0.0

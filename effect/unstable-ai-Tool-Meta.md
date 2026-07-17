@@ -1,0 +1,25 @@
+Package: `effect`<br />
+Module: `Tool`<br />
+
+## Tool.Meta
+
+Annotation for providing tool metadata for MCP.
+
+**Example** (Annotating MCP metadata)
+
+```ts
+import { Tool } from "effect/unstable/ai"
+
+const myCalculatorUi = Tool.make("calculator_ui", {})
+  .annotate(Tool.Meta, { ui: { resourceUri: "ui://example/calculator-ui" } })
+```
+
+**Signature**
+
+```ts
+declare class Meta
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Tool.ts#L1715)
+
+Since v4.0.0

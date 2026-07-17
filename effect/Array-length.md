@@ -3,7 +3,19 @@ Module: `Array`<br />
 
 ## Array.length
 
-Return the number of elements in a `ReadonlyArray`.
+Returns the number of elements in a `ReadonlyArray`.
+
+**When to use**
+
+Use when you need length as a composable function rather than a property access.
+
+**Example** (Getting the length)
+
+```ts
+import { Array } from "effect"
+
+console.log(Array.length([1, 2, 3])) // 3
+```
 
 **Signature**
 
@@ -11,6 +23,6 @@ Return the number of elements in a `ReadonlyArray`.
 declare const length: <A>(self: ReadonlyArray<A>) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L598)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L913)
 
 Since v2.0.0

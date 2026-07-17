@@ -1,0 +1,32 @@
+Package: `effect`<br />
+Module: `TxHashSet`<br />
+
+## TxHashSet.some
+
+Checks whether at least one value in the TxHashSet satisfies the predicate.
+
+**Example** (Testing whether some values match)
+
+```ts
+import { Effect, TxHashSet } from "effect"
+
+const program = Effect.gen(function*() {
+  const numbers = yield* TxHashSet.make(1, 2, 3, 4, 5)
+
+  console.log(yield* TxHashSet.some(numbers, (n) => n > 3)) // true
+  console.log(yield* TxHashSet.some(numbers, (n) => n > 10)) // false
+
+  const empty = yield* TxHashSet.empty<number>()
+  console.log(yield* TxHashSet.some(empty, (n) => n > 0)) // false
+})
+```
+
+**Signature**
+
+```ts
+declare const some: { <V>(predicate: Predicate<V>): (self: TxHashSet<V>) => Effect.Effect<boolean>; <V>(self: TxHashSet<V>, predicate: Predicate<V>): Effect.Effect<boolean>; }
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TxHashSet.ts#L692)
+
+Since v4.0.0

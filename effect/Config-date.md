@@ -3,7 +3,31 @@ Module: `Config`<br />
 
 ## Config.date
 
-Constructs a config for a date value.
+Creates a config for a `Date` value parsed from a string.
+
+**When to use**
+
+Use to read date settings that must parse to valid `Date` values.
+
+**Details**
+
+Shortcut for `Config.schema(Schema.DateValid, name)`.
+
+**Gotchas**
+
+Fails with a `SchemaError` if the string produces an invalid `Date`.
+
+**Example** (Reading a date)
+
+```ts
+import { Config, ConfigProvider, Effect } from "effect"
+
+const createdAt = Config.date("CREATED_AT")
+
+const provider = ConfigProvider.fromUnknown({ CREATED_AT: "2024-01-15" })
+// Effect.runSync(createdAt.parse(provider))
+// Date("2024-01-15T00:00:00.000Z")
+```
 
 **Signature**
 
@@ -11,6 +35,6 @@ Constructs a config for a date value.
 declare const date: (name?: string) => Config<Date>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L162)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L1362)
 
 Since v2.0.0

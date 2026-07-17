@@ -3,14 +3,14 @@ Module: `utils`<br />
 
 ## utils.assertSuccess
 
-Asserts that `exit` is a success.
+Asserts that `result` is `Success` and contains a value equal to `expected`.
 
 **Signature**
 
 ```ts
-declare const assertSuccess: <A, E>(exit: Exit.Exit<A, E>, expected: A, ..._: Array<never>) => asserts exit is Exit.Success<A, never>
+declare const assertSuccess: <A, E>(result: Result.Result<A, E>, expected: A, ..._: Array<never>) => asserts result is Result.Success<A, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L257)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L269)
 
-Since v0.21.0
+Since v4.0.0

@@ -3,15 +3,47 @@ Module: `Stream`<br />
 
 ## Stream.provideServiceEffect
 
-Provides the stream with the single service it requires. If the stream
-requires more than one service use `Stream.provideContext` instead.
+Provides a service to the stream using an effect, removing the requirement and adding the effect's error and environment.
+
+**Example** (Providing a stream service effectfully)
+
+```ts
+import { Console, Context, Effect, Stream } from "effect"
+
+class ApiConfig extends Context.Service<ApiConfig, { readonly baseUrl: string }>()("ApiConfig") {}
+
+const stream = Stream.fromEffect(
+  Effect.gen(function*() {
+    const config = yield* Effect.service(ApiConfig)
+    return config.baseUrl
+  })
+)
+
+const withConfig = stream.pipe(
+  Stream.provideServiceEffect(
+    ApiConfig,
+    Effect.succeed({ baseUrl: "https://example.com" }).pipe(
+      Effect.tap(() => Console.log("Loading config..."))
+    )
+  )
+)
+
+const program = Stream.runCollect(withConfig).pipe(
+  Effect.flatMap((values) => Console.log(values))
+)
+
+Effect.runPromise(program)
+// Output:
+// Loading config...
+// ["https://example.com"]
+```
 
 **Signature**
 
 ```ts
-declare const provideServiceEffect: { <I, S, E2, R2>(tag: Context.Tag<I, S>, effect: Effect.Effect<NoInfer<S>, E2, R2>): <A, E, R>(self: Stream<A, E, R>) => Stream<A, E2 | E, R2 | Exclude<R, I>>; <A, E, R, I, S, E2, R2>(self: Stream<A, E, R>, tag: Context.Tag<I, S>, effect: Effect.Effect<NoInfer<S>, E2, R2>): Stream<A, E2 | E, R2 | Exclude<R, I>>; }
+declare const provideServiceEffect: { <I, S, ES, RS>(key: Context.Key<I, S>, service: Effect.Effect<NoInfer<S>, ES, RS>): <A, E, R>(self: Stream<A, E, R>) => Stream<A, E | ES, Exclude<R, I> | RS>; <A, E, R, I, S, ES, RS>(self: Stream<A, E, R>, key: Context.Key<I, S>, service: Effect.Effect<NoInfer<S>, ES, RS>): Stream<A, E | ES, Exclude<R, I> | RS>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L3674)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L10193)
 
 Since v2.0.0

@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.Take
 
-Re-exports all named exports from the "./Take.js" module as `Take`.
+Re-exports all named exports from the "./Take.ts" module as `Take`.
 
 **Signature**
 
 ```ts
-export * as Take from "./Take.js"
+export * as Take from "./Take.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1458)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L627)
 
 Since v2.0.0

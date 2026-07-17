@@ -3,51 +3,37 @@ Module: `Array`<br />
 
 ## Array.let
 
-The "do simulation" for array allows you to sequentially apply operations to the elements of arrays, just as nested loops allow you to go through all combinations of elements in an arrays.
+Adds a computed plain value to the do-notation scope without introducing a new array dimension.
 
-It can be used to simulate "array comprehension".
-It's a technique that allows you to create new arrays by iterating over existing ones and applying specific **conditions** or **transformations** to the elements. It's like assembling a new collection from pieces of other collections based on certain rules.
+**When to use**
 
-Here's how the do simulation works:
+Use when each do-notation branch needs a derived field from the current
+bindings without multiplying the number of branches.
 
-1. Start the do simulation using the `Do` value
-2. Within the do simulation scope, you can use the `bind` function to define variables and bind them to `Array` values
-3. You can accumulate multiple `bind` statements to define multiple variables within the scope
-4. Inside the do simulation scope, you can also use the `let` function to define variables and bind them to simple values
-5. Regular `Array` functions like `map` and `filter` can still be used within the do simulation. These functions will receive the accumulated variables as arguments within the scope
+**Details**
 
-**Example**
+Unlike `bind`, the callback returns a single value instead of an array, so
+no cartesian product occurs. Use this for derived or intermediate values
+that depend on previously bound variables.
+
+**Example** (Adding a computed value)
 
 ```ts
 import { Array, pipe } from "effect"
 
-const doResult = pipe(
+const result = pipe(
   Array.Do,
-  Array.bind("x", () => [1, 3, 5]),
-  Array.bind("y", () => [2, 4, 6]),
-  Array.filter(({ x, y }) => x < y), // condition
-  Array.map(({ x, y }) => [x, y] as const) // transformation
+  Array.bind("x", () => [1, 2, 3]),
+  Array.let("doubled", ({ x }) => x * 2)
 )
-console.log(doResult) // [[1, 2], [1, 4], [1, 6], [3, 4], [3, 6], [5, 6]]
-
-// equivalent
-const x = [1, 3, 5],
-      y = [2, 4, 6],
-      result = [];
-for(let i = 0; i < x.length; i++) {
-  for(let j = 0; j < y.length; j++) {
-    const _x = x[i], _y = y[j];
-    if(_x < _y) result.push([_x, _y] as const)
-  }
-}
-
+console.log(result)
+// [{ x: 1, doubled: 2 }, { x: 2, doubled: 4 }, { x: 3, doubled: 6 }]
 ```
 
 **See**
 
-- `bindTo`
-- `bind`
-- `Do`
+- `Do` — start a do-notation pipeline
+- `bind` — introduce an array variable (produces cartesian product)
 
 **Signature**
 
@@ -55,6 +41,6 @@ for(let i = 0; i < x.length; i++) {
 declare const let: { <N extends string, B, A extends object>(tag: Exclude<N, keyof A>, f: (a: NoInfer<A>) => B): (self: ReadonlyArray<A>) => Array<{ [K in N | keyof A]: K extends keyof A ? A[K] : B; }>; <N extends string, A extends object, B>(self: ReadonlyArray<A>, tag: Exclude<N, keyof A>, f: (a: NoInfer<A>) => B): Array<{ [K in N | keyof A]: K extends keyof A ? A[K] : B; }>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L3589)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L4833)
 
 Since v3.2.0

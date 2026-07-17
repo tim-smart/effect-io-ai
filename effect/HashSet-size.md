@@ -3,34 +3,29 @@ Module: `HashSet`<br />
 
 ## HashSet.size
 
-Calculates the number of values in the `HashSet`.
+Returns the number of values in the HashSet.
 
-Time complexity: **`O(1)`**
-
-**Example**
+**Example** (Getting the HashSet size)
 
 ```ts
-import { HashSet, pipe } from "effect"
-import assert from "node:assert/strict"
+import { HashSet } from "effect"
 
-assert.deepStrictEqual(pipe(HashSet.empty(), HashSet.size), 0)
+const empty = HashSet.empty<string>()
+console.log(HashSet.size(empty)) // 0
 
-assert.deepStrictEqual(
-  pipe(HashSet.make(1, 2, 2, 3, 4, 3), HashSet.size),
-  4
-)
+const small = HashSet.make("a", "b")
+console.log(HashSet.size(small)) // 2
+
+const withDuplicates = HashSet.fromIterable(["x", "y", "z", "x", "y"])
+console.log(HashSet.size(withDuplicates)) // 3
 ```
-
-**See**
-
-- Other `HashSet` getters are `module:HashSet.values` `module:HashSet.toValues`
 
 **Signature**
 
 ```ts
-declare const size: <A>(self: HashSet<A>) => number
+declare const size: <V>(self: HashSet<V>) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L1020)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L325)
 
 Since v2.0.0

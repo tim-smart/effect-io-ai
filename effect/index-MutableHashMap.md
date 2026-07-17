@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.MutableHashMap
 
-Re-exports all named exports from the "./MutableHashMap.js" module as `MutableHashMap`.
+Re-exports all named exports from the "./MutableHashMap.ts" module as `MutableHashMap`.
 
 **Signature**
 
 ```ts
-export * as MutableHashMap from "./MutableHashMap.js"
+export * as MutableHashMap from "./MutableHashMap.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L842)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L332)
 
 Since v2.0.0

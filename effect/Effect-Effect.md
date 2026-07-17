@@ -3,35 +3,38 @@ Module: `Effect`<br />
 
 ## Effect.Effect
 
-The `Effect` interface defines a value that describes a workflow or job,
-which can succeed or fail.
+The `Effect` interface defines a value that lazily describes a workflow or
+job. The workflow requires some context `R`, and may fail with an error of
+type `E`, or succeed with a value of type `A`.
+
+**When to use**
+
+Use when you need to represent a lazy, composable workflow that can require
+services, fail with a typed error, or succeed with a typed value.
 
 **Details**
 
-The `Effect` interface represents a computation that can model a workflow
-involving various types of operations, such as synchronous, asynchronous,
-concurrent, and parallel interactions. It operates within a context of type
-`R`, and the result can either be a success with a value of type `A` or a
-failure with an error of type `E`. The `Effect` is designed to handle complex
-interactions with external resources, offering advanced features such as
-fiber-based concurrency, scheduling, interruption handling, and scalability.
-This makes it suitable for tasks that require fine-grained control over
-concurrency and error management.
+`Effect` values model resourceful interaction with the outside world,
+including synchronous, asynchronous, concurrent, and parallel interaction.
+They use a fiber-based concurrency model, with built-in support for
+scheduling, fine-grained interruption, structured concurrency, and high
+scalability.
 
-To execute an `Effect` value, you need a `Runtime`, which provides the
-environment necessary to run and manage the computation.
+To run an `Effect` value, you need a `Runtime`, which is a type that is
+capable of executing `Effect` values.
 
 **Signature**
 
 ```ts
-export interface Effect<out A, out E = never, out R = never> extends Effect.Variance<A, E, R>, Pipeable {
-  readonly [Unify.typeSymbol]?: unknown
-  readonly [Unify.unifySymbol]?: EffectUnify<this>
-  readonly [Unify.ignoreSymbol]?: EffectUnifyIgnore
-  [Symbol.iterator](): EffectGenerator<Effect<A, E, R>>
+export interface Effect<out A, out E = never, out R = never> extends Pipeable, Inspectable {
+  readonly [TypeId]: Variance<A, E, R>
+  [Symbol.iterator](): EffectIterator<Effect<A, E, R>>
+  [Unify.typeSymbol]?: unknown
+  [Unify.unifySymbol]?: EffectUnify<this>
+  [Unify.ignoreSymbol]?: {}
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L111)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L116)
 
 Since v2.0.0

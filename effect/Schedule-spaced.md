@@ -3,25 +3,67 @@ Module: `Schedule`<br />
 
 ## Schedule.spaced
 
-Returns a schedule that recurs continuously, with each repetition
-spaced by the specified `duration` from the last run.
+Returns a schedule that recurs continuously, each repetition spaced the
+specified duration from the last run.
 
-**Details**
+**When to use**
 
-This schedule ensures that executions occur at a fixed interval,
-maintaining a consistent delay between repetitions. The delay starts
-from the end of the last execution, not from the schedule start time.
+Use when each delay should start after the previous action completes.
+
+**Example** (Repeating with fixed spacing)
+
+```ts
+import { Console, Effect, Schedule } from "effect"
+
+// Basic spaced schedule - runs every 2 seconds
+const everyTwoSeconds = Schedule.spaced("2 seconds")
+
+// Heartbeat that runs indefinitely with fixed spacing
+const heartbeat = Effect.gen(function*() {
+  yield* Console.log("Heartbeat")
+}).pipe(
+  Effect.repeat(everyTwoSeconds)
+)
+
+// Limited repeat - run only 5 times with 1-second spacing
+const limitedTask = Effect.gen(function*() {
+  yield* Console.log("Executing scheduled task...")
+  yield* Effect.sleep("500 millis") // simulate work
+  return "Task completed"
+}).pipe(
+  Effect.repeat(
+    Schedule.spaced("1 second").pipe(Schedule.upTo({ times: 5 }))
+  )
+)
+
+// Simple spaced schedule with limited repetitions
+const limitedSpaced = Schedule.max([
+  Schedule.spaced("100 millis"),
+  Schedule.recurs(5) // at most 5 times
+])
+
+const program = Effect.gen(function*() {
+  yield* Console.log("Starting spaced execution...")
+
+  yield* Effect.repeat(
+    Effect.succeed("work item"),
+    limitedSpaced
+  )
+
+  yield* Console.log("Completed executions")
+})
+```
 
 **See**
 
-- `fixed` If you need to run at a fixed interval from the start.
+- `fixed` for recurrence aligned to a regular cadence
 
 **Signature**
 
 ```ts
-declare const spaced: (duration: Duration.DurationInput) => Schedule<number>
+declare const spaced: (duration: Duration.Input) => Schedule<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L1757)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L1823)
 
 Since v2.0.0

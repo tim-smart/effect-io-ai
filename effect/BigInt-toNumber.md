@@ -3,22 +3,31 @@ Module: `BigInt`<br />
 
 ## BigInt.toNumber
 
-Takes a `bigint` and returns an `Option` of `number`.
+Converts a `bigint` to a `number` safely.
+
+**When to use**
+
+Use to convert a `bigint` to a JavaScript number only when it is a safe
+integer.
+
+**Details**
 
 If the `bigint` is outside the safe integer range for JavaScript (`Number.MAX_SAFE_INTEGER`
-and `Number.MIN_SAFE_INTEGER`), it returns `Option.none()`. Otherwise, it converts the `bigint`
-to a number and returns `Option.some(number)`.
+and `Number.MIN_SAFE_INTEGER`), it returns `Option.none()`.
 
-**Example**
+**Example** (Converting bigints to numbers)
 
 ```ts
-import * as assert from "node:assert"
-import { BigInt as BI, Option } from "effect"
+import { BigInt as BI } from "effect"
 
-assert.deepStrictEqual(BI.toNumber(BigInt(42)), Option.some(42))
-assert.deepStrictEqual(BI.toNumber(BigInt(Number.MAX_SAFE_INTEGER) + BigInt(1)), Option.none())
-assert.deepStrictEqual(BI.toNumber(BigInt(Number.MIN_SAFE_INTEGER) - BigInt(1)), Option.none())
+BI.toNumber(42n) // Option.some(42)
+BI.toNumber(BigInt(Number.MAX_SAFE_INTEGER) + 1n) // Option.none()
+BI.toNumber(BigInt(Number.MIN_SAFE_INTEGER) - 1n) // Option.none()
 ```
+
+**See**
+
+- `fromNumber` for converting a safe integer number to `bigint`
 
 **Signature**
 
@@ -26,6 +35,6 @@ assert.deepStrictEqual(BI.toNumber(BigInt(Number.MIN_SAFE_INTEGER) - BigInt(1)),
 declare const toNumber: (b: bigint) => Option.Option<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L577)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L838)
 
 Since v2.0.0

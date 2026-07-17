@@ -3,15 +3,35 @@ Module: `Stream`<br />
 
 ## Stream.toPubSub
 
-Converts the stream to a scoped `PubSub` of chunks. After the scope is closed,
-the `PubSub` will never again produce values and should be discarded.
+Converts a stream to a PubSub of emitted values for concurrent consumption.
+
+**Details**
+
+`shutdownOnEnd` indicates whether the PubSub should be shut down when the
+stream ends. By default this is `true`.
+
+**Example** (Converting a stream to a PubSub for concurrent consumption)
+
+```ts
+import { Console, Effect, PubSub, Stream } from "effect"
+
+const program = Effect.scoped(Effect.gen(function* () {
+  const pubsub = yield* Stream.fromArray([1, 2]).pipe(
+    Stream.toPubSub({ capacity: 8 })
+  )
+  const subscription = yield* PubSub.subscribe(pubsub)
+  const first = yield* PubSub.take(subscription)
+
+  yield* Console.log(first)
+}))
+```
 
 **Signature**
 
 ```ts
-declare const toPubSub: { (capacity: number | { readonly capacity: "unbounded"; readonly replay?: number | undefined; } | { readonly capacity: number; readonly strategy?: "sliding" | "dropping" | "suspend" | undefined; readonly replay?: number | undefined; }): <A, E, R>(self: Stream<A, E, R>) => Effect.Effect<PubSub.PubSub<Take.Take<A, E>>, never, Scope.Scope | R>; <A, E, R>(self: Stream<A, E, R>, capacity: number | { readonly capacity: "unbounded"; readonly replay?: number | undefined; } | { readonly capacity: number; readonly strategy?: "sliding" | "dropping" | "suspend" | undefined; readonly replay?: number | undefined; }): Effect.Effect<PubSub.PubSub<Take.Take<A, E>>, never, Scope.Scope | R>; }
+declare const toPubSub: { (options: { readonly capacity: "unbounded"; readonly replay?: number | undefined; readonly shutdownOnEnd?: boolean | undefined; } | { readonly capacity: number; readonly strategy?: "dropping" | "sliding" | "suspend" | undefined; readonly replay?: number | undefined; readonly shutdownOnEnd?: boolean | undefined; }): <A, E, R>(self: Stream<A, E, R>) => Effect.Effect<PubSub.PubSub<A>, never, R | Scope.Scope>; <A, E, R>(self: Stream<A, E, R>, options: { readonly capacity: "unbounded"; readonly replay?: number | undefined; readonly shutdownOnEnd?: boolean | undefined; } | { readonly capacity: number; readonly strategy?: "dropping" | "sliding" | "suspend" | undefined; readonly replay?: number | undefined; readonly shutdownOnEnd?: boolean | undefined; }): Effect.Effect<PubSub.PubSub<A>, never, R | Scope.Scope>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L5205)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L11520)
 
 Since v2.0.0

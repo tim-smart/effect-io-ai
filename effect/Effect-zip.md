@@ -3,21 +3,23 @@ Module: `Effect`<br />
 
 ## Effect.zip
 
-Combines two effects into a single effect, producing a tuple of their
-results.
+Combines two effects into a single effect, producing a tuple with the results of both effects.
+
+**When to use**
+
+Use to combine exactly two effects into a tuple.
 
 **Details**
 
-This function combines two effects, `self` and `that`, into one. It executes
-the first effect (`self`) and then the second effect (`that`), collecting
-their results into a tuple. Both effects must succeed for the resulting
-effect to succeed. If either effect fails, the entire operation fails.
+The `zip` function executes the first effect (left) and then the second effect (right).
+Once both effects succeed, their results are combined into a tuple.
 
-By default, the effects are executed sequentially. If the `concurrent` option
-is set to `true`, the effects will run concurrently, potentially improving
-performance for independent operations.
+Concurrency:
 
-**Example** (Combining Two Effects Sequentially)
+By default, `zip` processes the effects sequentially. To execute the effects concurrently,
+use the `{ concurrent: true }` option.
+
+**Example** (Combining two effects sequentially)
 
 ```ts
 import { Effect } from "effect"
@@ -44,7 +46,7 @@ Effect.runPromise(program).then(console.log)
 // [ 1, 'hello' ]
 ```
 
-**Example** (Combining Two Effects Concurrently)
+**Example** (Combining two effects concurrently)
 
 ```ts
 import { Effect } from "effect"
@@ -70,16 +72,15 @@ Effect.runPromise(program).then(console.log)
 
 **See**
 
-- `zipWith` for a version that combines the results with a custom
-function.
-- `validate` for a version that accumulates errors.
+- `zipWith` for a version that combines the results with a custom function.
+- `all` for collecting a larger structure of effects.
 
 **Signature**
 
 ```ts
-declare const zip: { <A2, E2, R2>(that: Effect<A2, E2, R2>, options?: { readonly concurrent?: boolean | undefined; readonly batching?: boolean | "inherit" | undefined; readonly concurrentFinalizers?: boolean | undefined; } | undefined): <A, E, R>(self: Effect<A, E, R>) => Effect<[A, A2], E2 | E, R2 | R>; <A, E, R, A2, E2, R2>(self: Effect<A, E, R>, that: Effect<A2, E2, R2>, options?: { readonly concurrent?: boolean | undefined; readonly batching?: boolean | "inherit" | undefined; readonly concurrentFinalizers?: boolean | undefined; } | undefined): Effect<[A, A2], E | E2, R | R2>; }
+declare const zip: { <A2, E2, R2>(that: Effect<A2, E2, R2>, options?: { readonly concurrent?: boolean | undefined; } | undefined): <A, E, R>(self: Effect<A, E, R>) => Effect<[A, A2], E2 | E, R2 | R>; <A, E, R, A2, E2, R2>(self: Effect<A, E, R>, that: Effect<A2, E2, R2>, options?: { readonly concurrent?: boolean | undefined; }): Effect<[A, A2], E | E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12551)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L2543)
 
 Since v2.0.0

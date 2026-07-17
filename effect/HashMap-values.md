@@ -5,12 +5,22 @@ Module: `HashMap`<br />
 
 Returns an `IterableIterator` of the values within the `HashMap`.
 
+**Example** (Iterating values)
+
+```ts
+import { HashMap } from "effect"
+
+const map = HashMap.make(["a", 1], ["b", 2], ["c", 3])
+const values = Array.from(HashMap.values(map))
+console.log(values.sort()) // [1, 2, 3]
+```
+
 **Signature**
 
 ```ts
 declare const values: <K, V>(self: HashMap<K, V>) => IterableIterator<V>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashMap.ts#L251)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashMap.ts#L562)
 
 Since v2.0.0

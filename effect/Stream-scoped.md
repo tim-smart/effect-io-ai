@@ -3,36 +3,35 @@ Module: `Stream`<br />
 
 ## Stream.scoped
 
-Creates a single-valued stream from a scoped resource.
+Runs a stream that requires `Scope` in a managed scope, ensuring its
+finalizers are run when the stream completes.
 
-**Example**
+**Example** (Scoping a stream)
 
 ```ts
 import { Console, Effect, Stream } from "effect"
 
-// Creating a single-valued stream from a scoped resource
 const stream = Stream.scoped(
- Effect.acquireRelease(
-   Console.log("acquire"),
-   () => Console.log("release")
- )
-).pipe(
- Stream.flatMap(() => Console.log("use"))
+  Stream.fromEffect(
+    Effect.acquireRelease(
+      Console.log("acquire").pipe(Effect.as("resource")),
+      () => Console.log("release")
+    )
+  )
 )
 
 Effect.runPromise(Stream.runCollect(stream)).then(console.log)
 // acquire
-// use
 // release
-// { _id: 'Chunk', values: [ undefined ] }
+// [ "resource" ]
 ```
 
 **Signature**
 
 ```ts
-declare const scoped: <A, E, R>(effect: Effect.Effect<A, E, R>) => Stream<A, E, Exclude<R, Scope.Scope>>
+declare const scoped: <A, E, R>(self: Stream<A, E, R>) => Stream<A, E, Exclude<R, Scope.Scope>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L4630)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L1854)
 
 Since v2.0.0

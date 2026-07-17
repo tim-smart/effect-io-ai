@@ -3,21 +3,41 @@ Module: `Queue`<br />
 
 ## Queue.sliding
 
-Makes a new bounded `Queue` with the sliding strategy.
+Creates a bounded queue with sliding strategy. When the queue reaches capacity,
+new elements are added and the oldest elements are dropped.
 
-When the capacity of the queue is reached, new elements will be added and the
-old elements will be dropped.
+**When to use**
 
-**Note**: When possible use only power of 2 capacities; this will provide
-better performance by utilising an optimised version of the underlying
-`RingBuffer`.
+Use when you need producer offers not to block and can accept dropping the
+oldest messages, such as when maintaining a rolling window of recent values.
+
+**Example** (Creating sliding queues)
+
+```ts
+import { Effect, Queue } from "effect"
+
+const program = Effect.gen(function*() {
+  const queue = yield* Queue.sliding<number>(3)
+
+  // Fill the queue to capacity
+  yield* Queue.offer(queue, 1)
+  yield* Queue.offer(queue, 2)
+  yield* Queue.offer(queue, 3)
+
+  // This will succeed, dropping the oldest element (1)
+  yield* Queue.offer(queue, 4)
+
+  const all = yield* Queue.takeAll(queue)
+  console.log(all) // [2, 3, 4] - oldest element (1) was dropped
+})
+```
 
 **Signature**
 
 ```ts
-declare const sliding: <A>(requestedCapacity: number) => Effect.Effect<Queue<A>>
+declare const sliding: <A, E = never>(capacity: number) => Effect<Queue<A, E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Queue.ts#L465)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Queue.ts#L526)
 
 Since v2.0.0

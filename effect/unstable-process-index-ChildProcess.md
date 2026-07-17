@@ -1,0 +1,16 @@
+Package: `effect`<br />
+Module: `index`<br />
+
+## index.ChildProcess
+
+Re-exports all named exports from the "./ChildProcess.ts" module as `ChildProcess`.
+
+**Signature**
+
+```ts
+export * as ChildProcess from "./ChildProcess.ts"
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L10)
+
+Since v4.0.0

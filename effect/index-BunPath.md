@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.BunPath
 
-Re-exports all named exports from the "./BunPath.js" module as `BunPath`.
+Re-exports all named exports from the "./BunPath.ts" module as `BunPath`.
 
 **Signature**
 
 ```ts
-export * as BunPath from "./BunPath.js"
+export * as BunPath from "./BunPath.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L54)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L60)
 
-Since v1.0.0
+Since v4.0.0

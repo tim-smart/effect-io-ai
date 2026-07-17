@@ -1,0 +1,36 @@
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.isFailReason
+
+Narrows a `Reason` to `Fail`.
+
+**When to use**
+
+Use as a predicate for `Array.filter` to pick out typed `Fail` reasons when
+iterating over `cause.reasons`.
+
+**Example** (Filtering fail reasons)
+
+```ts
+import { Cause } from "effect"
+
+const cause = Cause.fail("error")
+const fails = cause.reasons.filter(Cause.isFailReason)
+console.log(fails[0].error) // "error"
+```
+
+**See**
+
+- `isDieReason` — narrow to `Die`
+- `isInterruptReason` — narrow to `Interrupt`
+
+**Signature**
+
+```ts
+declare const isFailReason: <E>(self: Reason<E>) => self is Fail<E>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L172)
+
+Since v4.0.0

@@ -1,0 +1,21 @@
+Package: `effect`<br />
+Module: `HttpServerRequest`<br />
+
+## HttpServerRequest.fromWeb
+
+Wraps a Web `Request` as an `HttpServerRequest`.
+
+**Details**
+
+The request's current URL is stored without the scheme and host, while the
+original Web URL remains available as `originalUrl`.
+
+**Signature**
+
+```ts
+declare const fromWeb: (request: globalThis.Request) => HttpServerRequest
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HttpServerRequest.ts#L411)
+
+Since v4.0.0

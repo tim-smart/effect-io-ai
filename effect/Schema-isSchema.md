@@ -3,14 +3,14 @@ Module: `Schema`<br />
 
 ## Schema.isSchema
 
-Tests if a value is a `Schema`.
+Checks whether a value is a `Schema`.
 
 **Signature**
 
 ```ts
-declare const isSchema: (u: unknown) => u is Schema.Any
+declare const isSchema: (u: unknown) => u is Top
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L666)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L2260)
 
 Since v3.10.0

@@ -3,8 +3,32 @@ Module: `Config`<br />
 
 ## Config.option
 
-Returns an optional version of this config, which will be `None` if the
-data is missing from configuration, and `Some` otherwise.
+Makes a config optional: returns `Some(value)` on success and `None` when
+data is missing.
+
+**When to use**
+
+Use when you need to handle a config key that may or may not be present.
+
+**Gotchas**
+
+Like `withDefault`, only missing-data errors produce `None`.
+Validation errors still propagate.
+
+**Example** (Reading optional config)
+
+```ts
+import { Config, ConfigProvider, Effect } from "effect"
+
+const maybePort = Config.option(Config.number("port"))
+
+const provider = ConfigProvider.fromUnknown({})
+// Effect.runSync(maybePort.parse(provider)) // { _tag: "None" }
+```
+
+**See**
+
+- `withDefault` – provide a concrete fallback value instead
 
 **Signature**
 
@@ -12,6 +36,6 @@ data is missing from configuration, and `Some` otherwise.
 declare const option: <A>(self: Config<A>) => Config<Option.Option<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L330)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L401)
 
 Since v2.0.0

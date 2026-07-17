@@ -3,7 +3,24 @@ Module: `Chunk`<br />
 
 ## Chunk.tailNonEmpty
 
-Returns every elements after the first.
+Returns every element after the first from a non-empty chunk.
+
+**Example** (Getting the tail of a non-empty chunk)
+
+```ts
+import { Chunk } from "effect"
+
+const nonEmptyChunk = Chunk.make(1, 2, 3, 4)
+const result = Chunk.tailNonEmpty(nonEmptyChunk)
+console.log(Chunk.toArray(result)) // [2, 3, 4]
+
+const singleElement = Chunk.make(1)
+const resultSingle = Chunk.tailNonEmpty(singleElement)
+console.log(Chunk.toArray(resultSingle)) // []
+
+// Type safety: this function only accepts NonEmptyChunk
+// Chunk.tailNonEmpty(Chunk.empty()) // TypeScript error
+```
 
 **Signature**
 
@@ -11,6 +28,6 @@ Returns every elements after the first.
 declare const tailNonEmpty: <A>(self: NonEmptyChunk<A>) => Chunk<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Chunk.ts#L1123)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Chunk.ts#L2130)
 
 Since v2.0.0

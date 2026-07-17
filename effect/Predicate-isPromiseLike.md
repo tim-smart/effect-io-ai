@@ -3,24 +3,30 @@ Module: `Predicate`<br />
 
 ## Predicate.isPromiseLike
 
-A refinement that checks if a value is `PromiseLike`. It performs a duck-typing
-check for a `.then` method.
+Checks whether a value is `PromiseLike` (has a `then` method).
 
-**Example**
+**When to use**
+
+Use when you need a `Predicate` guard for promise-like values with a
+callable `then` method.
+
+**Details**
+
+Performs a structural check for a callable `then`.
+
+**Example** (Guarding promise-like values)
 
 ```ts
-import * as assert from "node:assert"
-import { isPromiseLike } from "effect/Predicate"
+import { Predicate } from "effect"
 
-assert.strictEqual(isPromiseLike(Promise.resolve(1)), true)
-assert.strictEqual(isPromiseLike({ then: () => {} }), true)
+const data: unknown = { then: () => {} }
 
-assert.strictEqual(isPromiseLike({}), false)
+console.log(Predicate.isPromiseLike(data))
 ```
 
 **See**
 
-- isPromise
+- `isPromise`
 
 **Signature**
 
@@ -28,6 +34,6 @@ assert.strictEqual(isPromiseLike({}), false)
 declare const isPromiseLike: (input: unknown) => input is PromiseLike<unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L868)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L1347)
 
 Since v2.0.0

@@ -1,9 +1,30 @@
-Package: `@effect/platform`<br />
+Package: `effect`<br />
 Module: `FileSystem`<br />
 
 ## FileSystem.SizeInput
 
-Represents a size in bytes.
+Input type for size parameters that accepts multiple numeric types.
+
+**Details**
+
+This union type allows file system operations to accept size values in
+different formats for convenience, which are then normalized to the
+branded `Size` type internally.
+
+**Example** (Using size inputs)
+
+```ts
+import { Effect, FileSystem } from "effect"
+
+const program = Effect.gen(function*() {
+  const fs = yield* FileSystem.FileSystem
+
+  // All of these are valid SizeInput values
+  yield* fs.truncate("file1.txt", 1024) // number
+  yield* fs.truncate("file2.txt", BigInt(2048)) // bigint
+  yield* fs.truncate("file3.txt", FileSystem.Size(4096)) // Size
+})
+```
 
 **Signature**
 
@@ -11,6 +32,6 @@ Represents a size in bytes.
 type SizeInput = bigint | number | Size
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L277)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/FileSystem.ts#L429)
 
-Since v1.0.0
+Since v4.0.0

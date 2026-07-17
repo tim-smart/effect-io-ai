@@ -3,43 +3,73 @@ Module: `RequestResolver`<br />
 
 ## RequestResolver.RequestResolver
 
-The `RequestResolver<A, R>` interface requires an environment `R` and handles
-the execution of requests of type `A`.
+A resolver that executes and completes batched `Request` entries.
 
-Implementations must provide a `runAll` method, which processes a collection
-of requests and produces an effect that fulfills these requests. Requests are
-organized into a `Array<Array<A>>`, where the outer `Array` groups requests
-into batches that are executed sequentially, and each inner `Array` contains
-requests that can be executed in parallel. This structure allows
-implementations to analyze all incoming requests collectively and optimize
-query execution accordingly.
+**Details**
 
-Implementations are typically specialized for a subtype of `Request<A, E>`.
-However, they are not strictly limited to these subtypes as long as they can
-map any given request type to `Request<A, E>`. Implementations should inspect
-the collection of requests to identify the needed information and execute the
-corresponding queries. It is imperative that implementations resolve all the
-requests they receive. Failing to do so will lead to a `QueryFailure` error
-during query execution.
+A resolver controls how requests are grouped, delayed, optionally
+pre-checked, and finally run. Its `runAll` method receives a non-empty batch
+of `Request.Entry` values for a single batch key and must complete every
+received entry, usually by calling `completeUnsafe` or one of the `Request`
+completion helpers.
+
+**Gotchas**
+
+If a resolver finishes without completing an entry, the waiting request fails
+because the resolver did not supply a result.
+
+**Example** (Defining a request resolver)
+
+```ts
+import { Effect, Exit, RequestResolver } from "effect"
+import type { Request } from "effect"
+
+interface GetUserRequest extends Request.Request<string, Error> {
+  readonly _tag: "GetUserRequest"
+  readonly id: number
+}
+
+// In practice, you would typically use RequestResolver.make() instead
+const resolver = RequestResolver.make<GetUserRequest>((entries) =>
+  Effect.sync(() => {
+    for (const entry of entries) {
+      entry.completeUnsafe(Exit.succeed(`User ${entry.request.id}`))
+    }
+  })
+)
+```
 
 **Signature**
 
 ```ts
-export interface RequestResolver<in A, out R = never> extends RequestResolver.Variance<A, R>, Equal.Equal, Pipeable {
-  /**
-   * Execute a collection of requests. The outer `Array` represents batches
-   * of requests that must be performed sequentially. The inner `Array`
-   * represents a batch of requests that can be performed in parallel.
-   */
-  runAll(requests: Array<Array<Request.Entry<A>>>): Effect.Effect<void, never, R>
+export interface RequestResolver<in A extends Request.Any> extends RequestResolver.Variance<A>, Pipeable {
+  readonly delay: Effect.Effect<void>
 
   /**
-   * Identify the data source using the specific identifier
+   * Get a batch key for the given request.
    */
-  identified(...identifiers: Array<unknown>): RequestResolver<A, R>
+  batchKey(entry: Request.Entry<A>): unknown
+
+  /**
+   * An optional pre-check function that can be used to filter requests before
+   * they are added to a batch. If the function returns `false`, the request
+   * will not be processed.
+   */
+  readonly preCheck: ((entry: Request.Entry<A>) => boolean) | undefined
+
+  /**
+   * Should the resolver continue collecting requests? Otherwise, it will
+   * immediately execute the collected requests cutting the delay short.
+   */
+  collectWhile(entries: ReadonlySet<Request.Entry<A>>): boolean
+
+  /**
+   * Execute a collection of requests.
+   */
+  runAll(entries: NonEmptyArray<Request.Entry<A>>, key: unknown): Effect.Effect<void, Request.Error<A>>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/RequestResolver.ts#L52)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/RequestResolver.ts#L77)
 
 Since v2.0.0

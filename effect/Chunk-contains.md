@@ -5,12 +5,31 @@ Module: `Chunk`<br />
 
 Returns a function that checks if a `Chunk` contains a given value using the default `Equivalence`.
 
+**Example** (Checking membership)
+
+```ts
+import { Chunk } from "effect"
+
+const chunk = Chunk.make(1, 2, 3, 4, 5)
+console.log(Chunk.contains(chunk, 3)) // true
+console.log(Chunk.contains(chunk, 6)) // false
+
+// Works with strings
+const words = Chunk.make("apple", "banana", "cherry")
+console.log(Chunk.contains(words, "banana")) // true
+console.log(Chunk.contains(words, "grape")) // false
+
+// Empty chunk
+const empty = Chunk.empty<number>()
+console.log(Chunk.contains(empty, 1)) // false
+```
+
 **Signature**
 
 ```ts
 declare const contains: { <A>(a: A): (self: Chunk<A>) => boolean; <A>(self: Chunk<A>, a: A): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Chunk.ts#L1340)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Chunk.ts#L2558)
 
 Since v2.0.0

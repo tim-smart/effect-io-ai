@@ -1,0 +1,16 @@
+Package: `effect`<br />
+Module: `MessageStorage`<br />
+
+## MessageStorage.MemoryTransaction
+
+Provides a context reference used in tests to simulate a transaction.
+
+**Signature**
+
+```ts
+declare const MemoryTransaction: Context.Reference<boolean>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/MessageStorage.ts#L812)
+
+Since v4.0.0

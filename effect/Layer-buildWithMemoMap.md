@@ -6,12 +6,53 @@ Module: `Layer`<br />
 Builds a layer into an `Effect` value, using the specified `MemoMap` to memoize
 the layer construction.
 
+**Example** (Building layers with an explicit memo map)
+
+```ts
+import { Context, Effect, Layer } from "effect"
+
+class Database extends Context.Service<Database, {
+  readonly query: (sql: string) => Effect.Effect<string>
+}>()("Database") {}
+
+class Logger extends Context.Service<Logger, {
+  readonly log: (msg: string) => Effect.Effect<void>
+}>()("Logger") {}
+
+// Build layers with explicit memoization control
+const program = Effect.gen(function*() {
+  const memoMap = yield* Layer.makeMemoMap
+  const scope = yield* Effect.scope
+
+  // Build database layer with memoization
+  const dbLayer = Layer.succeed(Database, {
+    query: Effect.fn("Database.query")((sql: string) => Effect.succeed("result"))
+  })
+  const dbContext = yield* Layer.buildWithMemoMap(dbLayer, memoMap, scope)
+
+  // Build logger layer with same memoization (reuses memo if same layer)
+  const loggerLayer = Layer.succeed(Logger, {
+    log: Effect.fn("Logger.log")((msg: string) => Effect.sync(() => console.log(msg)))
+  })
+  const loggerContext = yield* Layer.buildWithMemoMap(
+    loggerLayer,
+    memoMap,
+    scope
+  )
+
+  return {
+    database: Context.get(dbContext, Database),
+    logger: Context.get(loggerContext, Logger)
+  }
+})
+```
+
 **Signature**
 
 ```ts
-declare const buildWithMemoMap: { (memoMap: MemoMap, scope: Scope.Scope): <RIn, E, ROut>(self: Layer<ROut, E, RIn>) => Effect.Effect<Context.Context<ROut>, E, RIn>; <RIn, E, ROut>(self: Layer<ROut, E, RIn>, memoMap: MemoMap, scope: Scope.Scope): Effect.Effect<Context.Context<ROut>, E, RIn>; }
+declare const buildWithMemoMap: { (memoMap: MemoMap, scope: Scope.Scope): <RIn, E, ROut>(self: Layer<ROut, E, RIn>) => Effect<Context.Context<ROut>, E, RIn>; <RIn, E, ROut>(self: Layer<ROut, E, RIn>, memoMap: MemoMap, scope: Scope.Scope): Effect<Context.Context<ROut>, E, RIn>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Layer.ts#L1184)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Layer.ts#L622)
 
 Since v2.0.0

@@ -1,0 +1,41 @@
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.SchemaError
+
+Error thrown (or returned as the error channel value) when schema decoding
+or encoding fails.
+
+**Details**
+
+The `issue` field contains a structured `SchemaIssue.Issue` tree describing
+every validation failure, including the path to the problematic value,
+expected types, and actual values received. `message` renders the issue tree
+as a human-readable string.
+
+Use `isSchemaError` to narrow an unknown value to `SchemaError`.
+
+**Example** (Catching a SchemaError)
+
+```ts
+import { Schema } from "effect"
+
+try {
+  Schema.decodeUnknownSync(Schema.Number)("not a number")
+} catch (err) {
+  if (Schema.isSchemaError(err)) {
+    console.log(err.message)
+    // Expected number, actual "not a number"
+  }
+}
+```
+
+**Signature**
+
+```ts
+declare const SchemaError: typeof SchemaError
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L1084)
+
+Since v4.0.0

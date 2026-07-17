@@ -1,0 +1,46 @@
+Package: `effect`<br />
+Module: `Result`<br />
+
+## Result.getOrElse
+
+Extracts the success value, or computes a fallback from the error.
+
+**When to use**
+
+Use when you need the success value from a `Result`, with a fallback computed
+from the failure value.
+
+**Details**
+
+- `Success<A>` returns the inner value
+- `Failure<E>` applies `onFailure` to the error and returns the result
+- The return type is `A | A2` (union of both branches)
+
+**Example** (Providing a fallback)
+
+```ts
+import { Result } from "effect"
+
+console.log(Result.getOrElse(Result.succeed(1), () => 0))
+// Output: 1
+
+console.log(Result.getOrElse(Result.fail("err"), () => 0))
+// Output: 0
+```
+
+**See**
+
+- `getOrNull` / `getOrUndefined` for simpler fallbacks
+- `getOrThrow` to throw on failure
+- `match` to map both branches
+- `orElse` to recover with another Result instead of unwrapping
+
+**Signature**
+
+```ts
+declare const getOrElse: { <E, A2>(onFailure: (err: E) => A2): <A>(self: Result<A, E>) => A2 | A; <A, E, A2>(self: Result<A, E>, onFailure: (err: E) => A2): A | A2; }
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Result.ts#L1105)
+
+Since v2.0.0

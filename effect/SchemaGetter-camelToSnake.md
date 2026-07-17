@@ -1,0 +1,32 @@
+Package: `effect`<br />
+Module: `SchemaGetter`<br />
+
+## SchemaGetter.camelToSnake
+
+Converts a `camelCase` string to `snake_case`.
+
+**Details**
+
+- Pure, delegates to `String.camelToSnake`.
+
+**Example** (Converting camel case to snake case)
+
+```ts
+import { SchemaGetter } from "effect"
+
+const toSnake = SchemaGetter.camelToSnake<string>()
+```
+
+**See**
+
+- `snakeToCamel` for the inverse operation
+
+**Signature**
+
+```ts
+declare const camelToSnake: <E extends string>() => Getter<string, E>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaGetter.ts#L906)
+
+Since v4.0.0

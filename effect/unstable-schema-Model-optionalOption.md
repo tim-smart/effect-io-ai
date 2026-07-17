@@ -1,0 +1,19 @@
+Package: `effect`<br />
+Module: `Model`<br />
+
+## Model.optionalOption
+
+Schema type for an optional object key whose encoded value may be missing or
+null and whose decoded value is an `Option`.
+
+**Signature**
+
+```ts
+export interface optionalOption<S extends Schema.Constraint>
+  extends Schema.decodeTo<Schema.Option<Schema.toType<S>>, Schema.optionalKey<Schema.NullOr<S>>>
+{}
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Model.ts#L301)
+
+Since v4.0.0

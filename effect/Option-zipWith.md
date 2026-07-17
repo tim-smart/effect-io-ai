@@ -3,37 +3,38 @@ Module: `Option`<br />
 
 ## Option.zipWith
 
-Combines two `Option` values into a new `Option` by applying a provided
-function to their values.
+Combines two `Option`s using a provided function.
+
+**When to use**
+
+Use when you need to combine two present `Option` values into a computed
+result.
 
 **Details**
 
-This function takes two `Option` values (`self` and `that`) and a combining
-function `f`. If both `Option` values are `Some`, the function `f` is applied
-to their values, and the result is wrapped in a new `Some`. If either
-`Option` is `None`, the result is `None`.
+- Both `Some` → applies `f(a, b)` and wraps in `Some`
+- Either `None` → `None`
 
-This utility is useful for combining two optional computations into a single
-result while maintaining type safety and avoiding explicit checks for `None`.
-
-**Example**
+**Example** (Combining with a function)
 
 ```ts
 import { Option } from "effect"
 
-const maybeName: Option.Option<string> = Option.some("John")
-const maybeAge: Option.Option<number> = Option.some(25)
-
-// Combine the name and age into a person object
-const person = Option.zipWith(maybeName, maybeAge, (name, age) => ({
-  name: name.toUpperCase(),
-  age
-}))
+const person = Option.zipWith(
+  Option.some("John"),
+  Option.some(25),
+  (name, age) => ({ name: name.toUpperCase(), age })
+)
 
 console.log(person)
 // Output:
 // { _id: 'Option', _tag: 'Some', value: { name: 'JOHN', age: 25 } }
 ```
+
+**See**
+
+- `product` to combine into a tuple instead
+- `lift2` to lift a binary function
 
 **Signature**
 
@@ -41,6 +42,6 @@ console.log(person)
 declare const zipWith: { <B, A, C>(that: Option<B>, f: (a: A, b: B) => C): (self: Option<A>) => Option<C>; <A, B, C>(self: Option<A>, that: Option<B>, f: (a: A, b: B) => C): Option<C>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L1455)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L1801)
 
 Since v2.0.0

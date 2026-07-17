@@ -1,0 +1,38 @@
+Package: `effect`<br />
+Module: `TxChunk`<br />
+
+## TxChunk.prependAll
+
+Concatenates another chunk to the beginning of the `TxChunk`.
+
+**Details**
+
+This function mutates the original TxChunk by prepending all elements from the other chunk. It
+does not return a new TxChunk reference.
+
+**Example** (Prepending another chunk)
+
+```ts
+import { Chunk, Effect, TxChunk } from "effect"
+
+const program = Effect.gen(function*() {
+  const txChunk = yield* TxChunk.fromIterable([4, 5, 6])
+  const otherChunk = Chunk.fromIterable([1, 2, 3])
+
+  // Prepend all elements from another chunk atomically
+  yield* TxChunk.prependAll(txChunk, otherChunk)
+
+  const result = yield* TxChunk.get(txChunk)
+  console.log(Chunk.toReadonlyArray(result)) // [1, 2, 3, 4, 5, 6]
+})
+```
+
+**Signature**
+
+```ts
+declare const prependAll: { <A>(other: Chunk.Chunk<A>): (self: TxChunk<A>) => Effect.Effect<void>; <A>(self: TxChunk<A>, other: Chunk.Chunk<A>): Effect.Effect<void>; }
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TxChunk.ts#L771)
+
+Since v4.0.0

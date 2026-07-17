@@ -3,43 +3,29 @@ Module: `Effect`<br />
 
 ## Effect.delay
 
-Delays the execution of an effect by a specified `Duration`.
+Returns an effect that is delayed from this effect by the specified
+`Duration`.
 
-**Details
-
-This function postpones the execution of the provided effect by the specified
-duration. The duration can be provided in various formats supported by the
-`Duration` module.
-
-Internally, this function does not block the thread; instead, it uses an
-efficient, non-blocking mechanism to introduce the delay.
-
-**Example**
+**Example** (Delaying an effect)
 
 ```ts
 import { Console, Effect } from "effect"
 
-const task = Console.log("Task executed")
-
-const program = Console.log("start").pipe(
-  Effect.andThen(
-    // Delays the log message by 2 seconds
-    task.pipe(Effect.delay("2 seconds"))
-  )
+const program = Effect.delay(
+  Console.log("Delayed message"),
+  "1 second"
 )
 
 Effect.runFork(program)
-// Output:
-// start
-// Task executed
+// Waits 1 second, then prints: "Delayed message"
 ```
 
 **Signature**
 
 ```ts
-declare const delay: { (duration: Duration.DurationInput): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, R>; <A, E, R>(self: Effect<A, E, R>, duration: Duration.DurationInput): Effect<A, E, R>; }
+declare const delay: { (duration: Duration.Input): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, R>; <A, E, R>(self: Effect<A, E, R>, duration: Duration.Input): Effect<A, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L6864)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L4649)
 
 Since v2.0.0

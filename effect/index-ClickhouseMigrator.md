@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.ClickhouseMigrator
 
-Re-exports all named exports from the "./ClickhouseMigrator.js" module as `ClickhouseMigrator`.
+Re-exports all named exports from the "./ClickhouseMigrator.ts" module as `ClickhouseMigrator`.
 
 **Signature**
 
 ```ts
-export * as ClickhouseMigrator from "./ClickhouseMigrator.js"
+export * as ClickhouseMigrator from "./ClickhouseMigrator.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql-clickhouse/src/index.ts#L9)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/clickhouse/src/index.ts#L15)
 
-Since v1.0.0
+Since v4.0.0

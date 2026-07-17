@@ -1,0 +1,17 @@
+Package: `effect`<br />
+Module: `Sink`<br />
+
+## Sink.reduceWhile
+
+A sink that reduces input elements from the provided `initial` state with
+`f` while the specified `predicate` returns `true`.
+
+**Signature**
+
+```ts
+declare const reduceWhile: <S, In>(initial: LazyArg<S>, predicate: Predicate<S>, f: (s: S, input: In) => S) => Sink<S, In, In>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Sink.ts#L1218)
+
+Since v4.0.0

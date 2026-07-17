@@ -1,0 +1,17 @@
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.isLessThanOrEqualToBigDecimal
+
+Validates that a BigDecimal is less than or equal to the specified value
+(inclusive).
+
+**Signature**
+
+```ts
+declare const isLessThanOrEqualToBigDecimal: (maximum: BigDecimal_.BigDecimal, annotations?: Annotations.Filter) => SchemaAST.Filter<BigDecimal_.BigDecimal>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L7936)
+
+Since v4.0.0

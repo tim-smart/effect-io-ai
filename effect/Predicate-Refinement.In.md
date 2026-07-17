@@ -5,14 +5,28 @@ Module: `Predicate`<br />
 
 Extracts the input type `A` from a `Refinement<A, B>`.
 
-**Example**
+**When to use**
+
+Use when you want to infer the input type from a refinement type.
+
+**Details**
+
+This is type-only and creates no runtime value. It resolves to `never` if
+the type does not match `Refinement`.
+
+**Example** (Inferring the input type)
 
 ```ts
-import { type Predicate } from "effect"
+import { Predicate } from "effect"
 
-type IsString = Predicate.Refinement<unknown, string>
-type T = Predicate.Refinement.In<IsString> // T is unknown
+type R = Predicate.Refinement<unknown, string>
+type Input = Predicate.Refinement.In<R>
 ```
+
+**See**
+
+- `Refinement.Out`
+- `Predicate.In`
 
 **Signature**
 
@@ -20,6 +34,6 @@ type T = Predicate.Refinement.In<IsString> // T is unknown
 type In<T> = [T] extends [Refinement<infer _A, infer _>] ? _A : never
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L136)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L254)
 
 Since v3.6.0

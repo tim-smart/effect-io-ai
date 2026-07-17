@@ -5,15 +5,19 @@ Module: `BigInt`<br />
 
 Determines the sign of a given `bigint`.
 
-**Example**
+**When to use**
+
+Use to classify a `bigint` as negative, zero, or positive.
+
+**Example** (Determining bigint signs)
 
 ```ts
+import { BigInt } from "effect"
 import * as assert from "node:assert"
-import { sign } from "effect/BigInt"
 
-assert.deepStrictEqual(sign(-5n), -1)
-assert.deepStrictEqual(sign(0n), 0)
-assert.deepStrictEqual(sign(5n), 1)
+assert.deepStrictEqual(BigInt.sign(-5n), -1)
+assert.deepStrictEqual(BigInt.sign(0n), 0)
+assert.deepStrictEqual(BigInt.sign(5n), 1)
 ```
 
 **Signature**
@@ -22,6 +26,6 @@ assert.deepStrictEqual(sign(5n), 1)
 declare const sign: (n: bigint) => Ordering
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L391)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L577)
 
 Since v2.0.0

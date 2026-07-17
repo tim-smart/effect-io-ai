@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.Sink
 
-Re-exports all named exports from the "./Sink.js" module as `Sink`.
+Re-exports all named exports from the "./Sink.ts" module as `Sink`.
 
 **Signature**
 
 ```ts
-export * as Sink from "./Sink.js"
+export * as Sink from "./Sink.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1319)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L587)
 
 Since v2.0.0

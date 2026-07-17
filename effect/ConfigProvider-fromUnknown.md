@@ -1,0 +1,65 @@
+Package: `effect`<br />
+Module: `ConfigProvider`<br />
+
+## ConfigProvider.fromUnknown
+
+Creates a `ConfigProvider` backed by an in-memory JavaScript value
+(typically a parsed JSON object).
+
+**When to use**
+
+Use when you need deterministic config from an in-memory JavaScript value,
+such as in tests, embedded config, or parsed JSON.
+
+**Details**
+
+Path traversal follows standard JS rules: string segments index into object
+keys, numeric segments index into arrays. Returns `undefined` for any path
+that cannot be resolved. Never fails with `SourceError`.
+
+Primitive values (`number`, `boolean`, `bigint`) are stringified via
+`String(...)`.
+
+Literal empty strings are treated as missing values when loaded as values by
+default. Pass `{ preserveEmptyStrings: true }` to keep empty strings as
+explicit values.
+
+**Gotchas**
+
+Object keys and array lengths reflect the original input shape. A leaf value
+of `""` is treated as missing when that leaf is loaded, but the parent
+container still reports its original keys or length.
+
+**Example** (Providing config from a plain object)
+
+```ts
+import { Config, ConfigProvider, Effect } from "effect"
+
+const provider = ConfigProvider.fromUnknown({
+  database: {
+    host: "localhost",
+    port: 5432
+  }
+})
+
+const host = Config.string("host").parse(
+  provider.pipe(ConfigProvider.nested("database"))
+)
+
+// Effect.runSync(host) // "localhost"
+```
+
+**See**
+
+- `fromEnv` – for environment variables
+- `make` – for custom backing stores
+
+**Signature**
+
+```ts
+declare const fromUnknown: (root: unknown, options?: { readonly preserveEmptyStrings?: boolean | undefined; }) => ConfigProvider
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/ConfigProvider.ts#L739)
+
+Since v4.0.0

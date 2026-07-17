@@ -1,0 +1,16 @@
+Package: `effect`<br />
+Module: `index`<br />
+
+## index.Stdio
+
+Re-exports all named exports from the "./Stdio.ts" module as `Stdio`.
+
+**Signature**
+
+```ts
+export * as Stdio from "./Stdio.ts"
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L592)
+
+Since v4.0.0

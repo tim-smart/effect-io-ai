@@ -3,7 +3,28 @@ Module: `Types`<br />
 
 ## Types.EqualsWith
 
-Determines if two types are equal, allowing to specify the return types.
+Determines if two types are equal, returning custom types for each case.
+
+**When to use**
+
+Use when you need a type-level if/else based on type equality.
+
+**Details**
+
+Returns `Y` when `A` and `B` are equal, `N` otherwise.
+
+**Example** (Choosing a conditional type based on equality)
+
+```ts
+import type { Types } from "effect"
+
+type R1 = Types.EqualsWith<string, string, "same", "diff"> // "same"
+type R2 = Types.EqualsWith<string, number, "same", "diff"> // "diff"
+```
+
+**See**
+
+- `Equals`
 
 **Signature**
 
@@ -11,6 +32,6 @@ Determines if two types are equal, allowing to specify the return types.
 type EqualsWith<A, B, Y, N> = (<T>() => T extends A ? 1 : 2) extends (<T>() => T extends B ? 1 : 2) ? Y : N
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L155)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L312)
 
 Since v3.15.0

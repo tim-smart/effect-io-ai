@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.BrowserKeyValueStore
 
-Re-exports all named exports from the "./BrowserKeyValueStore.js" module as `BrowserKeyValueStore`.
+Re-exports all named exports from the "./BrowserKeyValueStore.ts" module as `BrowserKeyValueStore`.
 
 **Signature**
 
 ```ts
-export * as BrowserKeyValueStore from "./BrowserKeyValueStore.js"
+export * as BrowserKeyValueStore from "./BrowserKeyValueStore.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L9)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L20)
 
-Since v1.0.0
+Since v4.0.0

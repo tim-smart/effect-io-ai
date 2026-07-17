@@ -3,15 +3,19 @@ Module: `Sink`<br />
 
 ## Sink.forEachWhile
 
-A sink that executes the provided effectful function for every element fed
-to it until `f` evaluates to `false`.
+Runs an effectful function for each input element while it returns `true`.
+
+**Details**
+
+The sink stops consuming input when the function returns `false` or when the
+upstream stream ends, and completes with `void`.
 
 **Signature**
 
 ```ts
-declare const forEachWhile: <In, E, R>(f: (input: In) => Effect.Effect<boolean, E, R>) => Sink<void, In, In, E, R>
+declare const forEachWhile: <In, E, R>(f: (input: In) => Effect.Effect<boolean, E, R>) => Sink<void, In, never, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Sink.ts#L943)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Sink.ts#L1832)
 
 Since v2.0.0

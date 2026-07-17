@@ -1,0 +1,16 @@
+Package: `effect`<br />
+Module: `Completions`<br />
+
+## Completions.Shell
+
+Shell type used to generate completion scripts.
+
+**Signature**
+
+```ts
+type Shell = "bash" | "zsh" | "fish"
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Completions.ts#L19)
+
+Since v4.0.0

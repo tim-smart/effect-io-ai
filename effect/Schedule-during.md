@@ -1,0 +1,105 @@
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.during
+
+Returns a new `Schedule` that will always recur, but only during the
+specified `duration` of time.
+
+**When to use**
+
+Use to bound a repeating or retrying schedule by elapsed time.
+
+**Example** (Repeating work during a duration)
+
+```ts
+import { Console, Data, Effect, Schedule } from "effect"
+
+class RetryAttemptError extends Data.TaggedError("RetryAttemptError")<{ readonly message: string }> {}
+
+// Run a task for exactly 5 seconds, regardless of how many iterations
+const fiveSecondSchedule = Schedule.during("5 seconds")
+
+const timedProgram = Effect.gen(function*() {
+  yield* Effect.repeat(
+    Effect.gen(function*() {
+      yield* Console.log("Task executed inside the time window")
+      yield* Effect.sleep("500 millis") // Each task takes 500ms
+      return "task done"
+    }),
+    fiveSecondSchedule.pipe(
+      Schedule.tap(({ output: elapsedDuration }) =>
+        Console.log(`Total elapsed: ${elapsedDuration}`)
+      )
+    )
+  )
+
+  yield* Console.log("Time limit reached!")
+})
+
+// Combine with other schedules for time-bounded execution
+const timeAndCountLimited = Schedule.max([
+  Schedule.spaced("1 second"),
+  Schedule.during("10 seconds"), // Stop after 10 seconds OR
+  Schedule.recurs(15) // 15 attempts, whichever comes first
+])
+
+// Burst execution within time window
+const burstWindow = Schedule.during("3 seconds")
+
+const burstProgram = Effect.gen(function*() {
+  yield* Console.log("Starting burst execution...")
+
+  yield* Effect.repeat(
+    Effect.gen(function*() {
+      yield* Console.log("Burst task")
+      return "burst"
+    }),
+    burstWindow
+  )
+
+  yield* Console.log("Burst window completed")
+})
+
+// Timed retry window - retry for up to 30 seconds
+const timedRetry = Schedule.max([
+  Schedule.exponential("200 millis"),
+  Schedule.during("30 seconds")
+])
+
+const retryProgram = Effect.gen(function*() {
+  let attempt = 0
+
+  const result = yield* Effect.retry(
+    Effect.gen(function*() {
+      attempt++
+      yield* Console.log(`Retry attempt ${attempt}`)
+
+      if (attempt < 4) {
+        return yield* Effect.fail(new RetryAttemptError({ message: `Attempt ${attempt} failed` }))
+      }
+
+      return `Success on attempt ${attempt}`
+    }),
+    timedRetry
+  )
+
+  yield* Console.log(`Result: ${result}`)
+}).pipe(
+  Effect.catch((error: unknown) => Console.log(`Timed out: ${String(error)}`))
+)
+```
+
+**See**
+
+- `duration` for one delayed recurrence
+
+**Signature**
+
+```ts
+declare const during: (duration: Duration.Input) => Schedule<Duration.Duration>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L1116)
+
+Since v4.0.0

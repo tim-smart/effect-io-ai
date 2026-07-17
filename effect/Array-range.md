@@ -3,16 +3,29 @@ Module: `Array`<br />
 
 ## Array.range
 
-Return a `NonEmptyArray` containing a range of integers, including both endpoints.
+Creates a `NonEmptyArray` containing a range of integers, inclusive on both
+ends.
 
-**Example**
+**When to use**
+
+Use when you need a non-empty sequence of consecutive integers.
+
+**Details**
+
+If `start > end`, returns `[start]`.
+
+**Example** (Creating a range)
 
 ```ts
-import { range } from "effect/Array"
+import { Array } from "effect"
 
-const result = range(1, 3)
+const result = Array.range(1, 3)
 console.log(result) // [1, 2, 3]
 ```
+
+**See**
+
+- `makeBy` — generate values from a function
 
 **Signature**
 
@@ -20,6 +33,6 @@ console.log(result) // [1, 2, 3]
 declare const range: (start: number, end: number) => NonEmptyArray<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L123)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L241)
 
 Since v2.0.0

@@ -5,12 +5,36 @@ Module: `HashMap`<br />
 
 Returns an `Array` of the values within the `HashMap`.
 
+**Example** (Converting values to an array)
+
+```ts
+import { HashMap } from "effect"
+
+const employees = HashMap.make(
+  ["alice", { department: "engineering", salary: 90000 }],
+  ["bob", { department: "marketing", salary: 75000 }],
+  ["charlie", { department: "engineering", salary: 95000 }]
+)
+
+// Extract all employee records
+const allEmployees = HashMap.toValues(employees)
+console.log(allEmployees.length) // 3
+
+// Calculate total salary
+const totalSalary = allEmployees.reduce((sum, emp) => sum + emp.salary, 0)
+console.log(totalSalary) // 260000
+
+// Filter by department
+const engineers = allEmployees.filter((emp) => emp.department === "engineering")
+console.log(engineers.length) // 2
+```
+
 **Signature**
 
 ```ts
 declare const toValues: <K, V>(self: HashMap<K, V>) => Array<V>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashMap.ts#L259)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashMap.ts#L594)
 
 Since v3.13.0

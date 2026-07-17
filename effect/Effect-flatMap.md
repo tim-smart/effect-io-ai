@@ -6,15 +6,11 @@ Module: `Effect`<br />
 Chains effects to produce new `Effect` instances, useful for combining
 operations that depend on previous results.
 
-**Syntax**
+**When to use**
 
-```ts
-const flatMappedEffect = pipe(myEffect, Effect.flatMap(transformation))
-// or
-const flatMappedEffect = Effect.flatMap(myEffect, transformation)
-// or
-const flatMappedEffect = myEffect.pipe(Effect.flatMap(transformation))
-```
+Use when you need to chain multiple effects, ensuring that each
+step produces a new `Effect` while flattening any nested effects that may
+occur.
 
 **Details**
 
@@ -26,24 +22,33 @@ effect structures.
 Since effects are immutable, `flatMap` always returns a new effect instead of
 changing the original one.
 
-**When to Use**
-
-Use `flatMap` when you need to chain multiple effects, ensuring that each
-step produces a new `Effect` while flattening any nested effects that may
-occur.
-
-**Example**
+**Example** (Choosing flatMap syntax variants)
 
 ```ts
-import { pipe, Effect } from "effect"
+import { Effect, pipe } from "effect"
+
+const myEffect = Effect.succeed(1)
+const transformation = (n: number) => Effect.succeed(n + 1)
+
+const flatMappedWithPipe = pipe(myEffect, Effect.flatMap(transformation))
+const flatMappedWithDataFirst = Effect.flatMap(myEffect, transformation)
+const flatMappedWithMethod = myEffect.pipe(Effect.flatMap(transformation))
+```
+
+**Example** (Sequencing dependent effects)
+
+```ts
+import { Data, Effect, pipe } from "effect"
+
+class DiscountRateError extends Data.TaggedError("DiscountRateError")<{}> {}
 
 // Function to apply a discount safely to a transaction amount
 const applyDiscount = (
   total: number,
   discountRate: number
-): Effect.Effect<number, Error> =>
+): Effect.Effect<number, DiscountRateError> =>
   discountRate === 0
-    ? Effect.fail(new Error("Discount rate cannot be zero"))
+    ? Effect.fail(new DiscountRateError())
     : Effect.succeed(total - (total * discountRate) / 100)
 
 // Simulated asynchronous task to fetch a transaction amount from database
@@ -69,6 +74,6 @@ Effect.runPromise(finalAmount).then(console.log)
 declare const flatMap: { <A, B, E1, R1>(f: (a: A) => Effect<B, E1, R1>): <E, R>(self: Effect<A, E, R>) => Effect<B, E1 | E, R1 | R>; <A, E, R, B, E1, R1>(self: Effect<A, E, R>, f: (a: A) => Effect<B, E1, R1>): Effect<B, E | E1, R | R1>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L8844)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L1958)
 
 Since v2.0.0

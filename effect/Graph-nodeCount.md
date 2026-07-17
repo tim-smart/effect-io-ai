@@ -5,7 +5,7 @@ Module: `Graph`<br />
 
 Returns the number of nodes in the graph.
 
-**Example**
+**Example** (Counting nodes)
 
 ```ts
 import { Graph } from "effect"
@@ -28,6 +28,6 @@ console.log(Graph.nodeCount(graphWithNodes)) // 3
 declare const nodeCount: <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L554)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L1593)
 
 Since v3.18.0

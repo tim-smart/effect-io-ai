@@ -1,0 +1,34 @@
+Package: `effect`<br />
+Module: `Stream`<br />
+
+## Stream.toReadableStreamWith
+
+Converts the stream to a `ReadableStream` using the provided services.
+
+**When to use**
+
+Use when bridging to Web Streams and you already have the `Context` required
+to run the stream outside an `Effect`.
+
+**Details**
+
+See https://developer.mozilla.org/en-US/docs/Web/API/ReadableStream.
+
+**Example** (Converting to a ReadableStream with services)
+
+```ts
+import { Context, Stream } from "effect"
+
+const stream = Stream.make(1, 2, 3, 4, 5)
+const readableStream = Stream.toReadableStreamWith(stream, Context.empty())
+```
+
+**Signature**
+
+```ts
+declare const toReadableStreamWith: (<A, XR>(context: Context.Context<XR>, options?: { readonly strategy?: QueuingStrategy<A> | undefined; }) => <E, R extends XR>(self: Stream<A, E, R>) => ReadableStream<A>) & (<A, E, XR, R extends XR>(self: Stream<A, E, R>, context: Context.Context<XR>, options?: { readonly strategy?: QueuingStrategy<A> | undefined; }) => ReadableStream<A>)
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L11145)
+
+Since v4.0.0

@@ -3,7 +3,22 @@ Module: `SubscriptionRef`<br />
 
 ## SubscriptionRef.make
 
-Creates a new `SubscriptionRef` with the specified value.
+Constructs a new `SubscriptionRef` from an initial value.
+
+**When to use**
+
+Use to create a `SubscriptionRef` when consumers need to read the latest
+value and subscribe to every update.
+
+**Details**
+
+The initial value is published during construction, so `changes` starts new
+subscribers with that value before future updates.
+
+**See**
+
+- `changes` for streaming the current value and subsequent updates
+- `set` for replacing the value and notifying subscribers
 
 **Signature**
 
@@ -11,6 +26,6 @@ Creates a new `SubscriptionRef` with the specified value.
 declare const make: <A>(value: A) => Effect.Effect<SubscriptionRef<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SubscriptionRef.ts#L148)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SubscriptionRef.ts#L111)
 
 Since v2.0.0

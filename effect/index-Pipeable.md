@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.Pipeable
 
-Re-exports all named exports from the "./Pipeable.js" module as `Pipeable`.
+Re-exports all named exports from the "./Pipeable.ts" module as `Pipeable`.
 
 **Signature**
 
 ```ts
-export * as Pipeable from "./Pipeable.js"
+export * as Pipeable from "./Pipeable.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1102)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L397)
 
 Since v2.0.0

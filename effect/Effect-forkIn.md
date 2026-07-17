@@ -3,78 +3,36 @@ Module: `Effect`<br />
 
 ## Effect.forkIn
 
-Forks an effect in a specific scope, allowing finer control over its
-execution.
+Forks the effect in the specified scope. The fiber will be interrupted
+when the scope is closed.
 
-**Details**
-
-There are some cases where we need more fine-grained control, so we want to
-fork a fiber in a specific scope. We can use the `Effect.forkIn` operator
-which takes the target scope as an argument.
-
-The fiber will be interrupted when the scope is closed.
-
-**Example** (Forking a Fiber in a Specific Scope)
-
-In this example, the child fiber is forked into the outerScope,
-allowing it to outlive the inner scope but still be terminated
-when the outerScope is closed.
+**Example** (Forking into a supplied scope)
 
 ```ts
-import { Console, Effect, Schedule } from "effect"
+import { Effect } from "effect"
 
-// Child fiber that logs a message repeatedly every second
-const child = Effect.repeat(
-  Console.log("child: still running!"),
-  Schedule.fixed("1 second")
-)
+const task = Effect.gen(function*() {
+  yield* Effect.sleep("10 seconds")
+  return "completed"
+})
 
 const program = Effect.scoped(
-  Effect.gen(function* () {
-    yield* Effect.addFinalizer(() =>
-      Console.log("The outer scope is about to be closed!")
-    )
-
-    // Capture the outer scope
-    const outerScope = yield* Effect.scope
-
-    // Create an inner scope
-    yield* Effect.scoped(
-      Effect.gen(function* () {
-        yield* Effect.addFinalizer(() =>
-          Console.log("The inner scope is about to be closed!")
-        )
-        // Fork the child fiber in the outer scope
-        yield* Effect.forkIn(child, outerScope)
-        yield* Effect.sleep("3 seconds")
-      })
-    )
-
-    yield* Effect.sleep("5 seconds")
+  Effect.gen(function*() {
+    const scope = yield* Effect.scope
+    const fiber = yield* Effect.forkIn(task, scope)
+    yield* Effect.sleep("1 second")
+    // Fiber will be interrupted when scope closes
+    return "done"
   })
 )
-
-Effect.runFork(program)
-// Output:
-// child: still running!
-// child: still running!
-// child: still running!
-// The inner scope is about to be closed!
-// child: still running!
-// child: still running!
-// child: still running!
-// child: still running!
-// child: still running!
-// child: still running!
-// The outer scope is about to be closed!
 ```
 
 **Signature**
 
 ```ts
-declare const forkIn: { (scope: Scope.Scope): <A, E, R>(self: Effect<A, E, R>) => Effect<Fiber.RuntimeFiber<A, E>, never, R>; <A, E, R>(self: Effect<A, E, R>, scope: Scope.Scope): Effect<Fiber.RuntimeFiber<A, E>, never, R>; }
+declare const forkIn: { (scope: Scope, options?: { readonly startImmediately?: boolean | undefined; readonly uninterruptible?: boolean | "inherit" | undefined; }): <A, E, R>(self: Effect<A, E, R>) => Effect<Fiber<A, E>, never, R>; <A, E, R>(self: Effect<A, E, R>, scope: Scope, options?: { readonly startImmediately?: boolean | undefined; readonly uninterruptible?: boolean | "inherit" | undefined; }): Effect<Fiber<A, E>, never, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L6433)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L8591)
 
 Since v2.0.0

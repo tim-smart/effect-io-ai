@@ -3,19 +3,29 @@ Module: `Predicate`<br />
 
 ## Predicate.isDate
 
-A refinement that checks if a value is a `Date` object.
+Checks whether a value is a `Date`.
 
-**Example**
+**When to use**
+
+Use when you need a `Predicate` runtime guard for dates.
+
+**Details**
+
+Uses `instanceof Date`.
+
+**Example** (Guarding Date values)
 
 ```ts
-import * as assert from "node:assert"
-import { isDate } from "effect/Predicate"
+import { Predicate } from "effect"
 
-assert.strictEqual(isDate(new Date()), true)
+const data: unknown = new Date()
 
-assert.strictEqual(isDate(Date.now()), false) // `Date.now()` returns a number
-assert.strictEqual(isDate("2023-01-01"), false)
+console.log(Predicate.isDate(data))
 ```
+
+**See**
+
+- `isRegExp`
 
 **Signature**
 
@@ -23,6 +33,6 @@ assert.strictEqual(isDate("2023-01-01"), false)
 declare const isDate: (input: unknown) => input is Date
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L749)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L1258)
 
 Since v2.0.0

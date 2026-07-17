@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.Undici
 
-Re-exports all named exports from the "./Undici.js" module as `Undici`.
+Re-exports all named exports from the "./Undici.ts" module as `Undici`.
 
 **Signature**
 
 ```ts
-export * as Undici from "./Undici.js"
+export * as Undici from "./Undici.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L104)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L130)
 
-Since v1.0.0
+Since v4.0.0

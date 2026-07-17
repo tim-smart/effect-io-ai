@@ -1,0 +1,22 @@
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.Struct.Encoded
+
+Computes the encoded object type for a struct field map.
+
+**Details**
+
+Field schemas contribute their `Encoded` type. Encoded-side optionality and
+mutability modifiers determine whether properties are optional or writable in
+the encoded shape.
+
+**Signature**
+
+```ts
+type Encoded<F> = View<F, "Encoded">
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L3297)
+
+Since v3.10.0

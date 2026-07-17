@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.Schedule
 
-Re-exports all named exports from the "./Schedule.js" module as `Schedule`.
+Re-exports all named exports from the "./Schedule.ts" module as `Schedule`.
 
 **Signature**
 
 ```ts
-export * as Schedule from "./Schedule.js"
+export * as Schedule from "./Schedule.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1258)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L512)
 
 Since v2.0.0

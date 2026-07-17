@@ -3,14 +3,16 @@ Module: `Schema`<br />
 
 ## Schema.withDecodingDefault
 
-Enhances a property signature with a default decoding value.
+Type-level representation returned by `withDecodingDefault`.
 
 **Signature**
 
 ```ts
-declare const withDecodingDefault: { <Type>(defaultValue: () => Types.NoInfer<Exclude<Type, undefined>>): <Key extends PropertyKey, Encoded, R>(self: PropertySignature<"?:", Type, Key, "?:", Encoded, false, R>) => PropertySignature<":", Exclude<Type, undefined>, Key, "?:", Encoded, false, R>; <Type, Key extends PropertyKey, Encoded, R>(self: PropertySignature<"?:", Type, Key, "?:", Encoded, false, R>, defaultValue: () => Types.NoInfer<Exclude<Type, undefined>>): PropertySignature<":", Exclude<Type, undefined>, Key, "?:", Encoded, false, R>; }
+export interface withDecodingDefault<S extends Constraint, R = never> extends decodeTo<S, optional<toEncoded<S>>, R> {
+  readonly "Rebuild": withDecodingDefault<S, R>
+}
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L2061)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L5837)
 
 Since v3.10.0

@@ -5,11 +5,11 @@ Module: `Record`<br />
 
 Creates a new record from an iterable, utilizing the provided function to determine the key for each element.
 
-**Example**
+**Example** (Building a record keyed by iterable values)
 
 ```ts
+import { Record } from "effect"
 import * as assert from "node:assert"
-import { fromIterableBy } from "effect/Record"
 
 const users = [
   { id: "2", name: "name2" },
@@ -17,7 +17,7 @@ const users = [
 ]
 
 assert.deepStrictEqual(
-  fromIterableBy(users, user => user.id),
+  Record.fromIterableBy(users, (user) => user.id),
   {
     "2": { id: "2", name: "name2" },
     "1": { id: "1", name: "name1" }
@@ -31,6 +31,6 @@ assert.deepStrictEqual(
 declare const fromIterableBy: <A, K extends string | symbol>(items: Iterable<A>, f: (a: A) => K) => Record<ReadonlyRecord.NonLiteralKey<K>, A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Record.ts#L171)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Record.ts#L283)
 
 Since v2.0.0

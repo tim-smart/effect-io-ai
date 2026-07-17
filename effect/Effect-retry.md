@@ -3,115 +3,50 @@ Module: `Effect`<br />
 
 ## Effect.retry
 
-Retries a failing effect based on a defined retry policy.
+Retries typed failures from an effect according to a retry policy.
+
+**When to use**
+
+Use when you need to rerun an effect after transient typed failures, such as
+network issues or temporary resource unavailability.
 
 **Details**
 
-The `Effect.retry` function takes an effect and a `Schedule` policy,
-and will automatically retry the effect if it fails, following the rules of
-the policy.
+The policy can be a `Schedule`, a schedule builder, or a `Retry.Options`
+object using `schedule`, `times`, `while`, or `until`. If a retry eventually
+succeeds, the returned effect succeeds with that value. If the policy stops
+while the effect is still failing, the last failure is propagated.
 
-If the effect ultimately succeeds, the result will be returned.
+**Gotchas**
 
-If the maximum retries are exhausted and the effect still fails, the failure
-is propagated.
+The source effect is always evaluated once before any retry policy is
+applied. For example, `Schedule.recurs(3)` allows up to three retries after
+the initial attempt.
 
-**When to Use**
+Defects and interruptions are not retried.
 
-This can be useful when dealing with intermittent failures, such as network
-issues or temporary resource unavailability. By defining a retry policy, you
-can control the number of retries, the delay between them, and when to stop
-retrying.
-
-**Example** (Retrying with a Fixed Delay)
+**Example** (Retrying with a schedule)
 
 ```ts
-import { Effect, Schedule } from "effect"
+import { Data, Effect, Schedule } from "effect"
 
-let count = 0
+class AttemptError extends Data.TaggedError("AttemptError")<{ readonly attempt: number }> {}
 
-// Simulates an effect with possible failures
-const task = Effect.async<string, Error>((resume) => {
-  if (count <= 2) {
-    count++
-    console.log("failure")
-    resume(Effect.fail(new Error()))
+let attempt = 0
+const task = Effect.callback<string, AttemptError>((resume) => {
+  attempt++
+  if (attempt <= 2) {
+    resume(Effect.fail(new AttemptError({ attempt })))
   } else {
-    console.log("success")
-    resume(Effect.succeed("yay!"))
+    resume(Effect.succeed("Success!"))
   }
 })
 
-// Define a repetition policy using a fixed delay between retries
-const policy = Schedule.fixed("100 millis")
+const policy = Schedule.addDelay(Schedule.recurs(5), () => Effect.succeed("100 millis"))
+const program = Effect.retry(task, policy)
 
-const repeated = Effect.retry(task, policy)
-
-Effect.runPromise(repeated).then(console.log)
-// Output:
-// failure
-// failure
-// failure
-// success
-// yay!
-```
-
-**Example** (Retrying a Task up to 5 times)
-
-```ts
-import { Effect } from "effect"
-
-let count = 0
-
-// Simulates an effect with possible failures
-const task = Effect.async<string, Error>((resume) => {
-  if (count <= 2) {
-    count++
-    console.log("failure")
-    resume(Effect.fail(new Error()))
-  } else {
-    console.log("success")
-    resume(Effect.succeed("yay!"))
-  }
-})
-
-// Retry the task up to 5 times
-Effect.runPromise(Effect.retry(task, { times: 5 })).then(console.log)
-// Output:
-// failure
-// failure
-// failure
-// success
-```
-
-**Example** (Retrying Until a Specific Condition is Met)
-
-```ts
-import { Effect } from "effect"
-
-let count = 0
-
-// Define an effect that simulates varying error on each invocation
-const action = Effect.failSync(() => {
-  console.log(`Action called ${++count} time(s)`)
-  return `Error ${count}`
-})
-
-// Retry the action until a specific condition is met
-const program = Effect.retry(action, {
-  until: (err) => err === "Error 3"
-})
-
-Effect.runPromiseExit(program).then(console.log)
-// Output:
-// Action called 1 time(s)
-// Action called 2 time(s)
-// Action called 3 time(s)
-// {
-//   _id: 'Exit',
-//   _tag: 'Failure',
-//   cause: { _id: 'Cause', _tag: 'Fail', failure: 'Error 3' }
-// }
+Effect.runPromise(program).then(console.log)
+// Output: "Success!" (after 2 retries)
 ```
 
 **See**
@@ -122,9 +57,9 @@ Effect.runPromiseExit(program).then(console.log)
 **Signature**
 
 ```ts
-declare const retry: { <E, O extends NoExcessProperties<Retry.Options<E>, O>>(options: O): <A, R>(self: Effect<A, E, R>) => Retry.Return<R, E, A, O>; <B, E, R1>(policy: Schedule.Schedule<B, NoInfer<E>, R1>): <A, R>(self: Effect<A, E, R>) => Effect<A, E, R1 | R>; <A, E, R, O extends NoExcessProperties<Retry.Options<E>, O>>(self: Effect<A, E, R>, options: O): Retry.Return<R, E, A, O>; <A, E, R, B, R1>(self: Effect<A, E, R>, policy: Schedule.Schedule<B, NoInfer<E>, R1>): Effect<A, E, R1 | R>; }
+declare const retry: { <E, O extends Retry.Options<E>>(options: O): <A, R>(self: Effect<A, E, R>) => Retry.Return<R, E, A, O>; <B, E, Error, Env>(policy: Schedule<B, NoInfer<E>, Error, Env>): <A, R>(self: Effect<A, E, R>) => Effect<A, E | Error, R | Env>; <B, E, Error, Env>(builder: ($: <O, SE, R>(_: Schedule<O, NoInfer<E>, SE, R>) => Schedule<O, E, SE, R>) => Schedule<B, NoInfer<E>, Error, Env>): <A, R>(self: Effect<A, E, R>) => Effect<A, E | Error, R | Env>; <A, E, R, O extends Retry.Options<E>>(self: Effect<A, E, R>, options: O): Retry.Return<R, E, A, O>; <A, E, R, B, Error, Env>(self: Effect<A, E, R>, policy: Schedule<B, NoInfer<E>, Error, Env>): Effect<A, E | Error, R | Env>; <A, E, R, B, Error, Env>(self: Effect<A, E, R>, builder: ($: <O, SE, R>(_: Schedule<O, NoInfer<E>, SE, R>) => Schedule<O, E, SE, R>) => Schedule<B, NoInfer<E>, Error, Env>): Effect<A, E | Error, R | Env>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L4400)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L4040)
 
 Since v2.0.0

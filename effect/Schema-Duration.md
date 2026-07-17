@@ -3,14 +3,16 @@ Module: `Schema`<br />
 
 ## Schema.Duration
 
-A schema that converts a JSON-compatible tagged union into a `Duration`.
+Type-level representation of `Duration`.
 
 **Signature**
 
 ```ts
-declare class Duration
+export interface Duration extends declare<Duration_.Duration> {
+  readonly "Rebuild": Duration
+}
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6012)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10604)
 
 Since v3.10.0

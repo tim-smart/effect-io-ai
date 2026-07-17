@@ -3,19 +3,22 @@ Module: `Ordering`<br />
 
 ## Ordering.match
 
-Depending on the `Ordering` parameter given to it, returns a value produced by one of the 3 functions provided as parameters.
+Matches an `Ordering` value and returns the branch selected by that ordering.
 
-**Example**
+**When to use**
+
+Use to branch on the three possible comparison outcomes in one expression.
+
+**Example** (Pattern matching on orderings)
 
 ```ts
+import { Function, Ordering } from "effect"
 import * as assert from "node:assert"
-import { Ordering } from "effect"
-import { constant } from "effect/Function"
 
 const toMessage = Ordering.match({
-  onLessThan: constant('less than'),
-  onEqual: constant('equal'),
-  onGreaterThan: constant('greater than')
+  onLessThan: Function.constant("less than"),
+  onEqual: Function.constant("equal"),
+  onGreaterThan: Function.constant("greater than")
 })
 
 assert.deepStrictEqual(toMessage(-1), "less than")
@@ -29,6 +32,6 @@ assert.deepStrictEqual(toMessage(1), "greater than")
 declare const match: { <A, B, C = B>(options: { readonly onLessThan: LazyArg<A>; readonly onEqual: LazyArg<B>; readonly onGreaterThan: LazyArg<C>; }): (self: Ordering) => A | B | C; <A, B, C = B>(o: Ordering, options: { readonly onLessThan: LazyArg<A>; readonly onEqual: LazyArg<B>; readonly onGreaterThan: LazyArg<C>; }): A | B | C; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Ordering.ts#L53)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Ordering.ts#L124)
 
 Since v2.0.0

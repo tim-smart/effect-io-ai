@@ -3,16 +3,25 @@ Module: `Array`<br />
 
 ## Array.contains
 
-Returns a function that checks if a `ReadonlyArray` contains a given value using the default `Equivalence`.
+Checks whether an array contains a value, using `Equal.equivalence()` for
+comparison.
 
-**Example**
+**When to use**
+
+Use to check whether an iterable contains a value using Effect's default
+equality instead of providing a comparison function.
+
+**Example** (Checking membership)
 
 ```ts
 import { Array, pipe } from "effect"
 
-const result = pipe(['a', 'b', 'c', 'd'], Array.contains('c'))
-console.log(result) // true
+console.log(pipe(["a", "b", "c", "d"], Array.contains("c"))) // true
 ```
+
+**See**
+
+- `containsWith` — use custom equality
 
 **Signature**
 
@@ -20,6 +29,6 @@ console.log(result) // true
 declare const contains: { <A>(a: A): (self: Iterable<A>) => boolean; <A>(self: Iterable<A>, a: A): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L1856)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2573)
 
 Since v2.0.0

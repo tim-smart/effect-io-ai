@@ -3,14 +3,52 @@ Module: `Metric`<br />
 
 ## Metric.value
 
-Retrieves a snapshot of the value of the metric at this moment in time.
+Retrieves the current state of the specified `Metric`.
+
+**Details**
+
+The returned state depends on the metric type. Counters return
+`CounterState<number | bigint>` with `count` and `incremental`, gauges return
+`GaugeState<number | bigint>` with `value`, frequencies return
+`FrequencyState` with `occurrences`, histograms return `HistogramState` with
+buckets, count, min, max, and sum, and summaries return `SummaryState` with
+quantiles, count, min, max, and sum.
+
+**Example** (Reading metric state)
+
+```ts
+import { Effect, Metric } from "effect"
+
+const requestCounter = Metric.counter("requests")
+const responseTime = Metric.histogram("response_time", {
+  boundaries: [100, 500, 1000, 2000]
+})
+
+const program = Effect.gen(function*() {
+  // Update metrics
+  yield* Metric.update(requestCounter, 1)
+  yield* Metric.update(responseTime, 750)
+
+  // Get current values
+  const counterState = yield* Metric.value(requestCounter)
+  console.log(`Request count: ${counterState.count}`)
+
+  const histogramState = yield* Metric.value(responseTime)
+  console.log(`Response time stats:`, {
+    count: histogramState.count,
+    min: histogramState.min,
+    max: histogramState.max,
+    average: histogramState.sum / histogramState.count
+  })
+})
+```
 
 **Signature**
 
 ```ts
-declare const value: <Type, In, Out>(self: Metric<Type, In, Out>) => Effect.Effect<Out>
+declare const value: <Input, State>(self: Metric<Input, State>) => Effect<State>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Metric.ts#L710)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Metric.ts#L2679)
 
 Since v2.0.0

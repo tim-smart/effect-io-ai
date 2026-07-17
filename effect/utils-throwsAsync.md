@@ -3,7 +3,7 @@ Module: `utils`<br />
 
 ## utils.throwsAsync
 
-Asserts that `thunk` throws an error.
+Asserts that `thunk` throws or returns a rejected promise, optionally checking the failure value against an expected `Error` or validation function.
 
 **Signature**
 
@@ -11,6 +11,6 @@ Asserts that `thunk` throws an error.
 declare const throwsAsync: (thunk: () => Promise<void>, error?: Error | ((u: unknown) => undefined), ..._: Array<never>) => Promise<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L160)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L182)
 
-Since v0.21.0
+Since v4.0.0

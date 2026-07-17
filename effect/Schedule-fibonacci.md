@@ -3,26 +3,77 @@ Module: `Schedule`<br />
 
 ## Schedule.fibonacci
 
-Creates a schedule that recurs indefinitely with Fibonacci-based increasing
-delays.
+Schedule that always recurs, increasing delays by summing the preceding
+two delays (similar to the Fibonacci sequence). Returns the current
+duration between recurrences.
 
-**Details**
+**Example** (Retrying with Fibonacci backoff)
 
-This schedule starts with an initial delay of `one` and increases subsequent
-delays by summing the two previous delays, following the Fibonacci sequence.
-The delay pattern follows: `one, one, one + one, (one + one) + one, ...`,
-resulting in `1s, 1s, 2s, 3s, 5s, 8s, 13s, ...` if `one = 1s`.
+```ts
+import { Console, Data, Effect, Schedule } from "effect"
 
-This is useful for progressive backoff strategies, where delays grow
-naturally over time without increasing as aggressively as an exponential
-schedule.
+class RetryAttemptError extends Data.TaggedError("RetryAttemptError")<{ readonly message: string }> {}
+
+// Basic Fibonacci schedule starting with 100ms
+const fibSchedule = Schedule.fibonacci("100 millis")
+// Delays: 100ms, 100ms, 200ms, 300ms, 500ms, 800ms, 1300ms, ...
+
+// Retry with Fibonacci backoff for gradual increase
+const retryWithFib = Effect.gen(function*() {
+  let attempt = 0
+
+  const result = yield* Effect.retry(
+    Effect.gen(function*() {
+      attempt++
+      yield* Console.log(`Attempt ${attempt}`)
+
+      if (attempt < 5) {
+        return yield* Effect.fail(new RetryAttemptError({ message: `Attempt ${attempt} failed` }))
+      }
+
+      return `Success on attempt ${attempt}`
+    }),
+    Schedule.max([
+      Schedule.fibonacci("50 millis"),
+      Schedule.recurs(6) // Maximum 6 retries
+    ]).pipe(
+      Schedule.tap(({ output: delay }) => Console.log(`Next retry in ${delay}`))
+    )
+  )
+
+  yield* Console.log(`Final result: ${result}`)
+})
+
+// Heartbeat with Fibonacci intervals (starts fast, gets slower)
+const adaptiveHeartbeat = Effect.gen(function*() {
+  yield* Console.log("Heartbeat")
+  return "pulse"
+}).pipe(
+  Effect.repeat(
+    Schedule.fibonacci("200 millis").pipe(
+      Schedule.upTo({ times: 8 }) // First 8 heartbeats
+    )
+  )
+)
+
+// Fibonacci vs exponential comparison
+const compareSchedules = Effect.gen(function*() {
+  yield* Console.log("=== Fibonacci Delays ===")
+  // 100ms, 100ms, 200ms, 300ms, 500ms, 800ms
+
+  yield* Console.log("=== Exponential Delays ===")
+  // 100ms, 200ms, 400ms, 800ms, 1600ms, 3200ms
+
+  // Fibonacci grows more slowly than exponential
+})
+```
 
 **Signature**
 
 ```ts
-declare const fibonacci: (one: Duration.DurationInput) => Schedule<Duration.Duration>
+declare const fibonacci: (one: Duration.Input) => Schedule<Duration.Duration>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L1026)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L1350)
 
 Since v2.0.0

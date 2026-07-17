@@ -1,0 +1,37 @@
+Package: `effect`<br />
+Module: `LanguageModel`<br />
+
+## LanguageModel.streamText
+
+Generates text using a language model with streaming output.
+
+**Details**
+
+Returns a stream of response parts that are emitted as soon as they are
+available from the model, enabling real-time text generation experiences.
+
+**Example** (Streaming text deltas)
+
+```ts
+import { Console, Effect, Stream } from "effect"
+import { LanguageModel } from "effect/unstable/ai"
+
+const program = LanguageModel.streamText({
+  prompt: "Write a story about a space explorer"
+}).pipe(Stream.runForEach((part) => {
+  if (part.type === "text-delta") {
+    return Console.log(part.delta)
+  }
+  return Effect.void
+}))
+```
+
+**Signature**
+
+```ts
+declare const streamText: { <Options extends NoExcessProperties<GenerateTextOptionsWithoutToolkit, Options>>(options: Options & GenerateTextOptionsWithoutToolkit): Stream.Stream<Response.StreamPart<{}>, ExtractError<Options>, ExtractServices<Options> | LanguageModel>; <Tools extends Record<string, Tool.Any>, Options extends NoExcessProperties<GenerateTextOptions<Tools> & { readonly toolkit: ToolkitInput<Tools>; }, Options>>(options: Options & GenerateTextOptions<Tools> & { readonly toolkit: ToolkitInput<Tools>; }): Stream.Stream<Response.StreamPart<Tools>, ExtractError<Options>, ExtractServices<Options> | LanguageModel>; <Options extends { readonly toolkit: ToolkitOption<any>; } & NoExcessProperties<GenerateTextOptions<any>, Options>>(options: Options & GenerateTextOptions<ExtractTools<Options>> & { readonly toolkit: Options["toolkit"]; }): Stream.Stream<Response.StreamPart<ExtractTools<Options>>, ExtractError<Options>, ExtractServices<Options> | LanguageModel>; }
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/LanguageModel.ts#L1738)
+
+Since v4.0.0

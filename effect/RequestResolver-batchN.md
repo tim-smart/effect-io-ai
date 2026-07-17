@@ -3,14 +3,51 @@ Module: `RequestResolver`<br />
 
 ## RequestResolver.batchN
 
-Returns a data source that executes at most `n` requests in parallel.
+Returns a request resolver that collects at most `n` requests into each
+batch.
+
+**Details**
+
+When more than `n` requests are waiting for the same resolver and batch key,
+the current batch is run and additional requests are collected into later
+batches.
+
+**Example** (Limiting parallel request batches)
+
+```ts
+import { Effect, Exit, Request, RequestResolver } from "effect"
+
+interface GetDataRequest extends Request.Request<string> {
+  readonly _tag: "GetDataRequest"
+  readonly id: number
+}
+const GetDataRequest = Request.tagged<GetDataRequest>("GetDataRequest")
+
+const resolver = RequestResolver.make<GetDataRequest>((entries) =>
+  Effect.sync(() => {
+    console.log(`Processing batch of ${entries.length} requests`)
+    for (const entry of entries) {
+      entry.completeUnsafe(Exit.succeed(`data-${entry.request.id}`))
+    }
+  })
+)
+
+// Limit batches to maximum 5 requests
+const limitedResolver = RequestResolver.batchN(resolver, 5)
+
+// When more than 5 requests are made, they'll be split into multiple batches
+const requests = Array.from(
+  { length: 12 },
+  (_, i) => Effect.request(GetDataRequest({ id: i }), limitedResolver)
+)
+```
 
 **Signature**
 
 ```ts
-declare const batchN: { (n: number): <A, R>(self: RequestResolver<A, R>) => RequestResolver<A, R>; <A, R>(self: RequestResolver<A, R>, n: number): RequestResolver<A, R>; }
+declare const batchN: { (n: number): <A extends Request.Any>(self: RequestResolver<A>) => RequestResolver<A>; <A extends Request.Any>(self: RequestResolver<A>, n: number): RequestResolver<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/RequestResolver.ts#L207)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/RequestResolver.ts#L750)
 
 Since v2.0.0

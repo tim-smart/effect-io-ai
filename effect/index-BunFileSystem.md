@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.BunFileSystem
 
-Re-exports all named exports from the "./BunFileSystem.js" module as `BunFileSystem`.
+Re-exports all named exports from the "./BunFileSystem.ts" module as `BunFileSystem`.
 
 **Signature**
 
 ```ts
-export * as BunFileSystem from "./BunFileSystem.js"
+export * as BunFileSystem from "./BunFileSystem.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L24)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L30)
 
-Since v1.0.0
+Since v4.0.0

@@ -3,18 +3,20 @@ Module: `Option`<br />
 
 ## Option.contains
 
-Returns a function that checks if an `Option` contains a specified value
-using the default `Equivalence`.
+Checks whether an `Option` contains a value equal to the given one, using default
+structural equality.
+
+**When to use**
+
+Use when you need a quick membership test for an `Option` value using
+standard equality.
 
 **Details**
 
-This function allows you to check whether an `Option` contains a specific
-value. It uses the default `Equivalence` for equality comparison. If the
-`Option` is `Some` and its value is equivalent to the provided value, the
-result is `true`. If the `Option` is `None` or the values are not equivalent,
-the result is `false`.
+- `Some` where `Equal.equals(value, a)` is `true` → `true`
+- `Some` where not equal, or `None` → `false`
 
-**Example**
+**Example** (Checking containment)
 
 ```ts
 import { Option } from "effect"
@@ -31,7 +33,8 @@ console.log(Option.none().pipe(Option.contains(2)))
 
 **See**
 
-- `containsWith` for a version that allows you to specify a custom equivalence function.
+- `containsWith` for custom equality
+- `exists` to test with a predicate
 
 **Signature**
 
@@ -39,6 +42,6 @@ console.log(Option.none().pipe(Option.contains(2)))
 declare const contains: { <A>(a: A): (self: Option<A>) => boolean; <A>(self: Option<A>, a: A): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L1892)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L2270)
 
 Since v2.0.0

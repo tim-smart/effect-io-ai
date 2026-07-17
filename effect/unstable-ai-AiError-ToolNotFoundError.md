@@ -1,0 +1,36 @@
+Package: `effect`<br />
+Module: `AiError`<br />
+
+## AiError.ToolNotFoundError
+
+Error indicating the model requested a tool that doesn't exist in the toolkit.
+
+**Details**
+
+This error is retryable because the model may self-correct when provided
+with the list of available tools.
+
+**Example** (Creating a tool not found error)
+
+```ts
+import { AiError } from "effect/unstable/ai"
+
+const error = new AiError.ToolNotFoundError({
+  toolName: "unknownTool",
+  availableTools: ["GetWeather", "GetTime"]
+})
+
+console.log(error.isRetryable) // true
+console.log(error.message)
+// "Tool 'unknownTool' not found. Available tools: GetWeather, GetTime"
+```
+
+**Signature**
+
+```ts
+declare class ToolNotFoundError
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/AiError.ts#L971)
+
+Since v4.0.0

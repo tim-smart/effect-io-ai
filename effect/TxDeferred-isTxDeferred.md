@@ -1,0 +1,32 @@
+Package: `effect`<br />
+Module: `TxDeferred`<br />
+
+## TxDeferred.isTxDeferred
+
+Determines if the provided value is a `TxDeferred`.
+
+**When to use**
+
+Use to narrow an unknown value before treating it as a transactional deferred.
+
+**Example** (Checking transactional deferreds)
+
+```ts
+import { Effect, TxDeferred } from "effect"
+
+const program = Effect.gen(function*() {
+  const deferred = yield* TxDeferred.make<number>()
+  console.log(TxDeferred.isTxDeferred(deferred)) // true
+  console.log(TxDeferred.isTxDeferred("not a deferred")) // false
+})
+```
+
+**Signature**
+
+```ts
+declare const isTxDeferred: (u: unknown) => u is TxDeferred<unknown, unknown>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TxDeferred.ts#L319)
+
+Since v4.0.0

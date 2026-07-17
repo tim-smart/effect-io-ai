@@ -1,0 +1,27 @@
+Package: `effect`<br />
+Module: `Argument`<br />
+
+## Argument.withSchema
+
+Validates parsed values against a Schema.
+
+**Example** (Validating parsed values with a schema)
+
+```ts
+import { Schema } from "effect"
+import { Argument } from "effect/unstable/cli"
+
+const input = Argument.string("input").pipe(
+  Argument.withSchema(Schema.NonEmptyString)
+)
+```
+
+**Signature**
+
+```ts
+declare const withSchema: { <A, B>(schema: Schema.ConstraintCodec<B, A, Environment, unknown>): (self: Argument<A>) => Argument<B>; <A, B>(self: Argument<A>, schema: Schema.ConstraintCodec<B, A, Environment, unknown>): Argument<B>; }
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Argument.ts#L592)
+
+Since v4.0.0

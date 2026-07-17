@@ -1,0 +1,30 @@
+Package: `effect`<br />
+Module: `Param`<br />
+
+## Param.fileText
+
+Creates a parameter that reads and returns file content as a string.
+
+**Example** (Reading file text)
+
+```ts
+import { Param } from "effect/unstable/cli"
+
+// Read a config file as string
+const configContent = Param.fileText(Param.flagKind, "config")
+
+// Read a template file as argument
+const templateContent = Param.fileText(Param.argumentKind, "template")
+
+// Usage: --config config.txt (reads file content into string)
+```
+
+**Signature**
+
+```ts
+declare const fileText: <Kind extends ParamKind>(kind: Kind, name: string) => Param<Kind, string>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Param.ts#L742)
+
+Since v4.0.0

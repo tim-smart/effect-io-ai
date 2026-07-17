@@ -1,0 +1,30 @@
+Package: `effect`<br />
+Module: `SchemaAST`<br />
+
+## SchemaAST.KeyValueCombiner
+
+Represents a bidirectional merge strategy for index signature key-value pairs.
+
+**Details**
+
+Used by `IndexSignature` when the same key appears multiple times
+(e.g. from `Schema.extend` or overlapping records). Provides separate
+`decode` and `encode` combiners that determine how duplicate entries are
+merged.
+
+**See**
+
+- `IndexSignature`
+
+**Signature**
+
+```ts
+declare class KeyValueCombiner { constructor(
+    decode: Combiner.Combiner<readonly [key: PropertyKey, value: any]> | undefined,
+    encode: Combiner.Combiner<readonly [key: PropertyKey, value: any]> | undefined
+  ) }
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaAST.ts#L1904)
+
+Since v4.0.0

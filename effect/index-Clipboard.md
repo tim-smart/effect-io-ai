@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.Clipboard
 
-Re-exports all named exports from the "./Clipboard.js" module as `Clipboard`.
+Re-exports all named exports from the "./Clipboard.ts" module as `Clipboard`.
 
 **Signature**
 
 ```ts
-export * as Clipboard from "./Clipboard.js"
+export * as Clipboard from "./Clipboard.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L39)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L55)
 
-Since v1.0.0
+Since v4.0.0

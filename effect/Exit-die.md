@@ -3,7 +3,33 @@ Module: `Exit`<br />
 
 ## Exit.die
 
-Constructs a new `Exit.Failure` from the specified unrecoverable defect.
+Creates a failed Exit from a defect (unexpected error).
+
+**When to use**
+
+Use when you need unexpected, unrecoverable errors that should not appear in
+the typed error channel.
+
+**Details**
+
+The defect is wrapped in a `Cause.Die` internally.
+
+Returns a `Failure<never>` with `E = never`, since defects do not appear in
+the typed error channel.
+
+**Example** (Creating a defect Exit)
+
+```ts
+import { Exit } from "effect"
+
+const exit = Exit.die(new Error("Unexpected error"))
+console.log(Exit.isFailure(exit)) // true
+```
+
+**See**
+
+- `fail` to create a Failure from a typed error
+- `hasDies` to check whether an Exit contains defects
 
 **Signature**
 
@@ -11,6 +37,6 @@ Constructs a new `Exit.Failure` from the specified unrecoverable defect.
 declare const die: (defect: unknown) => Exit<never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Exit.ts#L160)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Exit.ts#L314)
 
 Since v2.0.0

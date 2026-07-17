@@ -1,0 +1,39 @@
+Package: `effect`<br />
+Module: `Combiner`<br />
+
+## Combiner.last
+
+Creates a `Combiner` that always returns the last (right) argument.
+
+**When to use**
+
+Use when you want "last write wins" semantics while merging values.
+
+**Details**
+
+`combine(self, that)` returns `that` and ignores `self`.
+
+**Example** (Keeping the last value)
+
+```ts
+import { Combiner } from "effect"
+
+const Last = Combiner.last<number>()
+
+console.log(Last.combine(1, 2))
+// Output: 2
+```
+
+**See**
+
+- `first`
+
+**Signature**
+
+```ts
+declare const last: <A>() => Combiner<A>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Combiner.ts#L245)
+
+Since v4.0.0

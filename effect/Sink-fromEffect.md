@@ -3,7 +3,12 @@ Module: `Sink`<br />
 
 ## Sink.fromEffect
 
-Creates a single-value sink produced from an effect.
+Creates a sink that ignores upstream input and completes with the success
+value of the provided effect.
+
+**Details**
+
+If the effect fails, the sink fails with the same error.
 
 **Signature**
 
@@ -11,6 +16,6 @@ Creates a single-value sink produced from an effect.
 declare const fromEffect: <A, E, R>(effect: Effect.Effect<A, E, R>) => Sink<A, unknown, never, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Sink.ts#L992)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Sink.ts#L449)
 
 Since v2.0.0

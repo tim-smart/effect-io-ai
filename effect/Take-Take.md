@@ -3,19 +3,24 @@ Module: `Take`<br />
 
 ## Take.Take
 
-A `Take<A, E>` represents a single `take` from a queue modeling a stream of
-values. A `Take` may be a failure cause `Cause<E>`, a chunk value `Chunk<A>`,
-or an end-of-stream marker.
+Represents one pull result: either a non-empty batch of values, a failure
+`Exit`, or a successful `Exit` that signals completion with a `Done` value.
+
+**When to use**
+
+Use to store, transfer, or interpret pull results later while preserving
+emitted values, failures, and normal completion.
+
+**See**
+
+- `toPull` for interpreting a `Take` as a `Pull` step
 
 **Signature**
 
 ```ts
-export interface Take<out A, out E = never> extends Take.Variance<A, E>, Pipeable {
-  /** @internal */
-  readonly exit: Exit.Exit<Chunk.Chunk<A>, Option.Option<E>>
-}
+type Take<A, E, Done> = NonEmptyReadonlyArray<A> | Exit.Exit<Done, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Take.ts#L33)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Take.ts#L29)
 
 Since v2.0.0

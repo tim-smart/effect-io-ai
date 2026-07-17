@@ -3,40 +3,42 @@ Module: `Predicate`<br />
 
 ## Predicate.compose
 
-Composes a `Refinement` with another `Refinement` or `Predicate`.
+Composes two predicates or refinements into one.
 
-This can be used to chain checks. The first refinement is applied, and if it
-passes, the second check is applied to the same value, potentially refining
-the type further.
+**When to use**
 
-**Example**
+Use when you want to compose two `Predicate` checks in sequence, especially
+when chaining refinements for progressive narrowing.
+
+**Details**
+
+For refinements, the output type is narrowed by both checks. Evaluation
+short-circuits on the first `false`.
+
+**Example** (Composing refinements)
 
 ```ts
 import { Predicate } from "effect"
-import * as assert from "node:assert"
 
-const isString = (u: unknown): u is string => typeof u === "string"
-const minLength = (n: number) => (s: string): boolean => s.length >= n
+const isNumber: Predicate.Refinement<unknown, number> = (u): u is number => typeof u === "number"
+const isInteger: Predicate.Refinement<number, number> = (n): n is number => Number.isInteger(n)
 
-// Create a refinement that checks for a string with a minimum length of 3
-const isLongString = Predicate.compose(isString, minLength(3))
+const isIntegerNumber = Predicate.compose(isNumber, isInteger)
 
-let value: unknown = "hello"
-
-assert.strictEqual(isLongString(value), true)
-if (isLongString(value)) {
-  // value is narrowed to string
-  assert.strictEqual(value.toUpperCase(), "HELLO")
-}
-assert.strictEqual(isLongString("hi"), false)
+console.log(isIntegerNumber(1))
 ```
+
+**See**
+
+- `and`
+- `Refinement`
 
 **Signature**
 
 ```ts
-declare const compose: { <A, B extends A, C extends B, D extends C>(bc: Refinement<C, D>): (ab: Refinement<A, B>) => Refinement<A, D>; <A, B extends A>(bc: Predicate<NoInfer<B>>): (ab: Refinement<A, B>) => Refinement<A, B>; <A, B extends A, C extends B, D extends C>(ab: Refinement<A, B>, bc: Refinement<C, D>): Refinement<A, D>; <A, B extends A>(ab: Refinement<A, B>, bc: Predicate<NoInfer<B>>): Refinement<A, B>; }
+declare const compose: { <A, B extends A, C extends B>(bc: Refinement<B, C>): (ab: Refinement<A, B>) => Refinement<A, C>; <A, B extends A>(bc: Predicate<NoInfer<B>>): (ab: Refinement<A, B>) => Refinement<A, B>; <A, B extends A, C extends B>(ab: Refinement<A, B>, bc: Refinement<B, C>): Refinement<A, C>; <A, B extends A>(ab: Refinement<A, B>, bc: Predicate<NoInfer<B>>): Refinement<A, B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L921)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L1411)
 
 Since v2.0.0

@@ -3,14 +3,37 @@ Module: `Layer`<br />
 
 ## Layer.makeMemoMap
 
-Constructs a `MemoMap` that can be used to build additional layers.
+Constructs a `MemoMap` effectfully so it can be used to build additional layers.
+
+**Example** (Creating a memo map in an effect)
+
+```ts
+import { Context, Effect, Layer } from "effect"
+
+class Database extends Context.Service<Database, {
+  readonly query: (sql: string) => Effect.Effect<string>
+}>()("Database") {}
+
+// Create a memo map safely within an Effect
+const program = Effect.gen(function*() {
+  const memoMap = yield* Layer.makeMemoMap
+  const scope = yield* Effect.scope
+
+  const dbLayer = Layer.succeed(Database, {
+    query: Effect.fn("Database.query")((sql: string) => Effect.succeed("result"))
+  })
+  const context = yield* Layer.buildWithMemoMap(dbLayer, memoMap, scope)
+
+  return Context.get(context, Database)
+})
+```
 
 **Signature**
 
 ```ts
-declare const makeMemoMap: Effect.Effect<MemoMap, never, never>
+declare const makeMemoMap: Effect<MemoMap, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Layer.ts#L1175)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Layer.ts#L528)
 
 Since v2.0.0

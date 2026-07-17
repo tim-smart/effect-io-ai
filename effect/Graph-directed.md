@@ -5,7 +5,7 @@ Module: `Graph`<br />
 
 Creates a directed graph, optionally with initial mutations.
 
-**Example**
+**Example** (Creating a directed graph)
 
 ```ts
 import { Graph } from "effect"
@@ -23,9 +23,9 @@ const graph = Graph.directed<string, string>((mutable) => {
 **Signature**
 
 ```ts
-declare const directed: <N, E>(mutate?: (mutable: MutableDirectedGraph<N, E>) => void) => DirectedGraph<N, E>
+declare const directed: <N, E>(mutate?: (mutable: MutableDirectedGraph<N, E>) => undefined) => DirectedGraph<N, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L259)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L544)
 
 Since v3.18.0

@@ -1,0 +1,25 @@
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.isIllegalArgumentError
+
+Checks whether an arbitrary value is an `IllegalArgumentError`.
+
+**Example** (Checking the runtime type)
+
+```ts
+import { Cause } from "effect"
+
+console.log(Cause.isIllegalArgumentError(new Cause.IllegalArgumentError())) // true
+console.log(Cause.isIllegalArgumentError("nope")) // false
+```
+
+**Signature**
+
+```ts
+declare const isIllegalArgumentError: (u: unknown) => u is IllegalArgumentError
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L1498)
+
+Since v4.0.0

@@ -3,30 +3,26 @@ Module: `Effect`<br />
 
 ## Effect.timeoutOption
 
-Gracefully handles timeouts by returning an `Option` that represents either
-the result or a timeout.
+Runs an effect with a time limit and represents only the timeout case as
+`Option.none`.
+
+**When to use**
+
+Use when a timeout of an `Effect` should be handled as `Option.none`.
 
 **Details**
 
-This function wraps the outcome of an effect in an `Option` type. If the
-effect completes within the specified duration, it returns a `Some`
-containing the result. If the effect times out, it returns a `None`. Unlike
-other timeout methods, this approach does not raise errors or exceptions;
-instead, it allows you to treat timeouts as a regular outcome, simplifying
-the logic for handling delays.
+If the source effect succeeds before the timeout, the returned effect
+succeeds with `Option.some(value)`. If the timeout wins, the source effect is
+interrupted and the returned effect succeeds with `Option.none`. If the
+source effect fails before the timeout, that failure is preserved.
 
-**When to Use**
-
-This is useful when you want to handle timeouts without causing the program
-to fail, making it easier to manage situations where you expect tasks might
-take too long but want to continue executing other tasks.
-
-**Example**
+**Example** (Returning None on timeout)
 
 ```ts
 import { Effect } from "effect"
 
-const task = Effect.gen(function* () {
+const task = Effect.gen(function*() {
   console.log("Start processing...")
   yield* Effect.sleep("2 seconds") // Simulates a delay in processing
   console.log("Processing complete.")
@@ -52,17 +48,14 @@ Effect.runPromise(timedOutEffect).then(console.log)
 **See**
 
 - `timeout` for a version that raises a `TimeoutException`.
-- `timeoutFail` for a version that raises a custom error.
-- `timeoutFailCause` for a version that raises a custom defect.
-- `timeoutTo` for a version that allows specifying both success and
-timeout handlers.
+- `timeoutOrElse` for a version that allows specifying both success and timeout handlers.
 
 **Signature**
 
 ```ts
-declare const timeoutOption: { (duration: Duration.DurationInput): <A, E, R>(self: Effect<A, E, R>) => Effect<Option.Option<A>, E, R>; <A, E, R>(self: Effect<A, E, R>, duration: Duration.DurationInput): Effect<Option.Option<A>, E, R>; }
+declare const timeoutOption: { (duration: Duration.Input): <A, E, R>(self: Effect<A, E, R>) => Effect<Option<A>, E, R>; <A, E, R>(self: Effect<A, E, R>, duration: Duration.Input): Effect<Option<A>, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L7088)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L4553)
 
 Since v3.1.0

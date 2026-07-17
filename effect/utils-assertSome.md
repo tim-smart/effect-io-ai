@@ -3,7 +3,7 @@ Module: `utils`<br />
 
 ## utils.assertSome
 
-Asserts that `option` is `Some`.
+Asserts that `option` is `Some` and contains a value equal to `expected`.
 
 **Signature**
 
@@ -11,6 +11,6 @@ Asserts that `option` is `Some`.
 declare const assertSome: <A>(option: Option.Option<A>, expected: A, ..._: Array<never>) => asserts option is Option.Some<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L197)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L251)
 
-Since v0.21.0
+Since v4.0.0

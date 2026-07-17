@@ -3,7 +3,26 @@ Module: `DateTime`<br />
 
 ## DateTime.formatIsoOffset
 
-Format a `DateTime.Zoned` as a ISO string with an offset.
+Formats a `DateTime.Zoned` as an ISO string with an offset.
+
+**Details**
+
+For `DateTime.Utc`, returns the same as `formatIso`. For `DateTime.Zoned`,
+includes the time zone offset in the format.
+
+**Example** (Formatting DateTime values with offsets)
+
+```ts
+import { DateTime } from "effect"
+
+const utc = DateTime.makeUnsafe("2024-01-01T12:00:00Z")
+console.log(DateTime.formatIsoOffset(utc)) // "2024-01-01T12:00:00.000Z"
+
+const zoned = DateTime.makeZonedUnsafe("2024-01-01T12:00:00Z", {
+  timeZone: DateTime.zoneMakeOffset(3 * 60 * 60 * 1000)
+})
+console.log(DateTime.formatIsoOffset(zoned)) // "2024-01-01T15:00:00.000+03:00"
+```
 
 **Signature**
 
@@ -11,6 +30,6 @@ Format a `DateTime.Zoned` as a ISO string with an offset.
 declare const formatIsoOffset: (self: DateTime) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L1640)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L2772)
 
 Since v3.6.0

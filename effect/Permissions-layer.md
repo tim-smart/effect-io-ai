@@ -3,7 +3,17 @@ Module: `Permissions`<br />
 
 ## Permissions.layer
 
-A layer that directly interfaces with the `navigator.permissions` api
+Provides the `Permissions` service using the browser `navigator.permissions` API.
+
+**When to use**
+
+Use when you need a live browser `Permissions` service backed by the ambient
+`navigator.permissions` implementation.
+
+**Details**
+
+`query` delegates to `navigator.permissions.query({ name })` and wraps
+rejected browser operations in `PermissionsError`.
 
 **Signature**
 
@@ -11,6 +21,6 @@ A layer that directly interfaces with the `navigator.permissions` api
 declare const layer: Layer.Layer<Permissions, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Permissions.ts#L84)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Permissions.ts#L131)
 
-Since v1.0.0
+Since v4.0.0

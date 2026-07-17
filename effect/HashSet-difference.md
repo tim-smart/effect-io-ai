@@ -3,42 +3,27 @@ Module: `HashSet`<br />
 
 ## HashSet.difference
 
-Computes the set difference `(A - B)` between this `HashSet` and the
-specified `Iterable<A>`.
+Creates the difference of two HashSets (elements in the first set that are not in the second).
 
-Time complexity: **`O(n)`** where n is the number of elements in the set
-
-**NOTE**: the hash and equal of the values in both the set and the iterable
-must be the same; meaning we cannot compute a difference between a `HashSet
-of bananas` and a `HashSet of elephants` as they are not the same type and
-won't implement the Equal trait in the same way.
-
-**Example**
+**Example** (Finding HashSet differences)
 
 ```ts
-// Syntax
-import { HashSet, pipe } from "effect"
+import { HashSet } from "effect"
 
-// with data-last, a.k.a. pipeable API
-pipe(HashSet.make(1, 2, 3), HashSet.difference(HashSet.make(3, 4, 5)))
+const set1 = HashSet.make("a", "b", "c")
+const set2 = HashSet.make("b", "d")
+const diff = HashSet.difference(set1, set2)
 
-// or piped with the pipe function
-HashSet.make(1, 2, 3).pipe(HashSet.difference(HashSet.make(3, 4, 5)))
-
-// or with data-first API
-HashSet.difference(HashSet.make(1, 2, 3), HashSet.make(3, 4, 5))
+console.log(Array.from(diff).sort()) // ["a", "c"]
+console.log(HashSet.size(diff)) // 2
 ```
-
-**See**
-
-- Other `HashSet` operations are `module:HashSet.intersection` `module:HashSet.union`
 
 **Signature**
 
 ```ts
-declare const difference: { <A>(that: Iterable<A>): (self: HashSet<A>) => HashSet<A>; <A>(self: HashSet<A>, that: Iterable<A>): HashSet<A>; }
+declare const difference: { <V1>(that: HashSet<V1>): <V0>(self: HashSet<V0>) => HashSet<V0>; <V0, V1>(self: HashSet<V0>, that: HashSet<V1>): HashSet<V0>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L1401)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L420)
 
 Since v2.0.0

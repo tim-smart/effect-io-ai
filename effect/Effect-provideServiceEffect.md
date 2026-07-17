@@ -3,26 +3,66 @@ Module: `Effect`<br />
 
 ## Effect.provideServiceEffect
 
-Dynamically provides an implementation for a service using an effect.
+Provides one service to an effect using an effectful acquisition.
+
+**When to use**
+
+Use when the service implementation must be created by an effect and its
+acquisition failure should remain in the returned effect.
 
 **Details**
 
-This function allows you to provide an implementation for a service
-dynamically by using another effect. The provided effect is executed to
-produce the service implementation, which is then made available to the
-consuming effect. This is particularly useful when the service implementation
-itself requires asynchronous or resource-intensive initialization.
+`provideServiceEffect` runs the acquisition effect to produce the service
+implementation, removes that service from the wrapped effect's requirements,
+and leaves any other requirements to be provided later. Acquisition failures
+are included in the returned effect's error channel.
 
-For example, you can use this function to lazily initialize a database
-connection or fetch configuration values from an external source before
-making the service available to your effect.
+**Example** (Providing a service with an effect)
+
+```ts
+import { Console, Context, Effect } from "effect"
+
+// Define a database connection service
+interface DatabaseConnection {
+  readonly query: (sql: string) => Effect.Effect<string>
+}
+const Database = Context.Service<DatabaseConnection>("Database")
+
+// Effect that creates a database connection
+const createConnection = Effect.gen(function*() {
+  yield* Console.log("Establishing database connection...")
+  yield* Effect.sleep("100 millis") // Simulate connection time
+  yield* Console.log("Database connected!")
+  return {
+    query: (sql: string) => Effect.succeed(`Result for: ${sql}`)
+  }
+})
+
+const program = Effect.gen(function*() {
+  const db = yield* Effect.service(Database)
+  return yield* db.query("SELECT * FROM users")
+})
+
+// Provide the service through an effect
+const withDatabase = Effect.provideServiceEffect(
+  program,
+  Database,
+  createConnection
+)
+
+Effect.runPromise(withDatabase).then(console.log)
+// Output:
+// Establishing database connection...
+// Database connected!
+// Result for: SELECT * FROM users
+```
 
 **Signature**
 
 ```ts
-declare const provideServiceEffect: { <I, S, E1, R1>(tag: Context.Tag<I, S>, effect: Effect<NoInfer<S>, E1, R1>): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E | E1, R1 | Exclude<R, I>>; <A, E, R, I, S, E1, R1>(self: Effect<A, E, R>, tag: Context.Tag<I, S>, effect: Effect<NoInfer<S>, E1, R1>): Effect<A, E | E1, R1 | Exclude<R, I>>; }
+declare const provideServiceEffect: { <I, S, E2, R2>(service: Context.Key<I, S>, acquire: Effect<S, E2, R2>): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E | E2, Exclude<R, I> | R2>; <A, E, R, I, S, E2, R2>(self: Effect<A, E, R>, service: Context.Key<I, S>, acquire: Effect<S, E2, R2>): Effect<A, E | E2, Exclude<R, I> | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L7659)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L6297)
 
 Since v2.0.0

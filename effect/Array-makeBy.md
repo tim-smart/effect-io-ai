@@ -3,18 +3,31 @@ Module: `Array`<br />
 
 ## Array.makeBy
 
-Return a `NonEmptyArray` of length `n` with element `i` initialized with `f(i)`.
+Creates a `NonEmptyArray` of length `n` where element `i` is computed by `f(i)`.
 
-**Note**. `n` is normalized to an integer >= 1.
+**When to use**
 
-**Example**
+Use when you need to compute each array element from its index.
+
+**Details**
+
+`n` is normalized to an integer greater than or equal to 1, so this function
+always returns at least one element. Supports both data-first and data-last
+usage.
+
+**Example** (Generating values from indices)
 
 ```ts
-import { makeBy } from "effect/Array"
+import { Array } from "effect"
 
-const result = makeBy(5, n => n * 2)
+const result = Array.makeBy(5, (n) => n * 2)
 console.log(result) // [0, 2, 4, 6, 8]
 ```
+
+**See**
+
+- `range` — create a range of integers
+- `replicate` — repeat a single value
 
 **Signature**
 
@@ -22,6 +35,6 @@ console.log(result) // [0, 2, 4, 6, 8]
 declare const makeBy: { <A>(f: (i: number) => A): (n: number) => NonEmptyArray<A>; <A>(n: number, f: (i: number) => A): NonEmptyArray<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L96)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L203)
 
 Since v2.0.0

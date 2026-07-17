@@ -3,15 +3,19 @@ Module: `Function`<br />
 
 ## Function.constTrue
 
-A thunk that returns always `true`.
+Returns `true` when called.
 
-**Example**
+**When to use**
+
+Use when you need a thunk that returns `true` on every invocation.
+
+**Example** (Returning true from a thunk)
 
 ```ts
+import { Function } from "effect"
 import * as assert from "node:assert"
-import { constTrue } from "effect/Function"
 
-assert.deepStrictEqual(constTrue(), true)
+assert.deepStrictEqual(Function.constTrue(), true)
 ```
 
 **Signature**
@@ -20,6 +24,6 @@ assert.deepStrictEqual(constTrue(), true)
 declare const constTrue: LazyArg<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L307)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L345)
 
 Since v2.0.0

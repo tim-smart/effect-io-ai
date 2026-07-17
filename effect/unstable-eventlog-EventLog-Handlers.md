@@ -1,0 +1,51 @@
+Package: `effect`<br />
+Module: `EventLog`<br />
+
+## EventLog.Handlers
+
+Builder for the handlers associated with an `EventGroup`.
+
+**Details**
+
+The `Events` type parameter tracks the event tags that still need handlers, and
+each call to `handle` records a handler while accumulating any required
+services.
+
+**Signature**
+
+```ts
+export interface Handlers<
+  R,
+  Events extends Event.Any = never
+> extends Pipeable {
+  readonly [HandlersTypeId]: {
+    _Events: Covariant<Events>
+  }
+  readonly group: EventGroup.AnyWithProps
+  readonly handlers: Record.ReadonlyRecord<string, Handlers.Item<R>>
+  readonly context: Context.Context<R>
+
+  /**
+   * Add the implementation for an `Event` to a `Handlers` group.
+   */
+  handle<Tag extends Event.Tag<Events>, R1>(
+    name: Tag,
+    handler: (options: {
+      readonly storeId: StoreId
+      readonly payload: Event.PayloadWithTag<Events, Tag>
+      readonly entry: Entry
+      readonly conflicts: ReadonlyArray<{
+        readonly entry: Entry
+        readonly payload: Event.PayloadWithTag<Events, Tag>
+      }>
+    }) => Effect.Effect<Event.SuccessWithTag<Events, Tag>, Event.ErrorWithTag<Events, Tag>, R1>
+  ): Handlers<
+    R | R1,
+    Event.ExcludeTag<Events, Tag>
+  >
+}
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/EventLog.ts#L266)
+
+Since v4.0.0

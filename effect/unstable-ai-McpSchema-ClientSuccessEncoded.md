@@ -1,0 +1,16 @@
+Package: `effect`<br />
+Module: `McpSchema`<br />
+
+## McpSchema.ClientSuccessEncoded
+
+Encoded success response sent by a client for a server-initiated request.
+
+**Signature**
+
+```ts
+type ClientSuccessEncoded = SuccessEncoded<typeof ServerRequestRpcs>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/McpSchema.ts#L2356)
+
+Since v4.0.0

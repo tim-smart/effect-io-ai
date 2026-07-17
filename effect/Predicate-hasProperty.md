@@ -3,24 +3,35 @@ Module: `Predicate`<br />
 
 ## Predicate.hasProperty
 
-A refinement that checks if a value is an object-like value and has a specific property key.
+Checks whether a value has a given property key.
 
-**Example**
+**When to use**
+
+Use when you need a `Predicate` guard for property access on `unknown`
+values with a simple structural object check.
+
+**Details**
+
+Uses the `in` operator and `isObjectKeyword`. This does not check property
+value types.
+
+**Example** (Guarding object properties)
 
 ```ts
-import * as assert from "node:assert"
-import { hasProperty } from "effect/Predicate"
+import { Predicate } from "effect"
 
-assert.strictEqual(hasProperty({ a: 1 }, "a"), true)
-assert.strictEqual(hasProperty({ a: 1 }, "b"), false)
+const hasName = Predicate.hasProperty("name")
+const data: unknown = { name: "Ada" }
 
-const value: unknown = { name: "Alice" };
-if (hasProperty(value, "name")) {
-  // The type of `value` is narrowed to `{ name: unknown }`
-  // and we can safely access `value.name`
-  console.log(value.name)
+if (hasName(data)) {
+  console.log(data.name)
 }
 ```
+
+**See**
+
+- `isTagged`
+- `isObjectKeyword`
 
 **Signature**
 
@@ -28,6 +39,6 @@ if (hasProperty(value, "name")) {
 declare const hasProperty: { <P extends PropertyKey>(property: P): (self: unknown) => self is { [K in P]: unknown; }; <P extends PropertyKey>(self: unknown, property: P): self is { [K in P]: unknown; }; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L604)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L1131)
 
 Since v2.0.0

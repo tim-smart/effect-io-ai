@@ -3,19 +3,22 @@ Module: `DateTime`<br />
 
 ## DateTime.getPart
 
-Get a part of a `DateTime` as a number.
+Gets one time-zone-adjusted part of a `DateTime` as a number.
+
+**Details**
 
 The part will be time zone adjusted.
 
-**Example**
+**Example** (Reading DateTime parts by key)
 
 ```ts
-import * as assert from "node:assert"
 import { DateTime } from "effect"
 
-const now = DateTime.unsafeMakeZoned({ year: 2024 }, { timeZone: "Europe/London" })
-const year = DateTime.getPart(now, "year")
-assert.strictEqual(year, 2024)
+const dateTime = DateTime.makeZonedUnsafe({ year: 2024 }, {
+  timeZone: "Europe/London"
+})
+const year = DateTime.getPart(dateTime, "year")
+console.log(year) // 2024
 ```
 
 **Signature**
@@ -24,6 +27,6 @@ assert.strictEqual(year, 2024)
 declare const getPart: { (part: keyof DateTime.PartsWithWeekday): (self: DateTime) => number; (self: DateTime, part: keyof DateTime.PartsWithWeekday): number; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L1026)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L1792)
 
 Since v3.6.0

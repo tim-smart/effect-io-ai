@@ -3,10 +3,34 @@ Module: `ConfigProvider`<br />
 
 ## ConfigProvider.constantCase
 
-Returns a new config provider that will automatically convert all property
-names to constant case. This can be utilized to adapt the names of
-configuration properties from the default naming convention of camel case
-to the naming convention of a config provider.
+Converts all string path segments to `CONSTANT_CASE` before lookup.
+
+**When to use**
+
+Use to bridge camelCase schema keys to `SCREAMING_SNAKE_CASE`
+environment variables.
+
+**Details**
+
+Numeric segments are left unchanged. String segments use `String.configCase`
+so numeric word groups such as `v2` are preserved for environment variable
+names. This is a specialization of `mapInput`.
+
+**Example** (Resolving camelCase keys to env vars)
+
+```ts
+import { ConfigProvider } from "effect"
+
+const provider = ConfigProvider.fromEnv({
+  env: { DATABASE_HOST: "localhost" }
+}).pipe(ConfigProvider.constantCase)
+
+// path ["databaseHost"] now resolves to env var DATABASE_HOST
+```
+
+**See**
+
+- `mapInput` – for arbitrary path transformations
 
 **Signature**
 
@@ -14,6 +38,6 @@ to the naming convention of a config provider.
 declare const constantCase: (self: ConfigProvider) => ConfigProvider
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/ConfigProvider.ts#L222)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/ConfigProvider.ts#L535)
 
 Since v2.0.0

@@ -1,0 +1,34 @@
+Package: `effect`<br />
+Module: `TxQueue`<br />
+
+## TxQueue.poll
+
+Tries to take an item from the queue without blocking.
+
+**Example** (Polling without blocking)
+
+```ts
+import { Effect, Option, TxQueue } from "effect"
+
+const program = Effect.gen(function*() {
+  const queue = yield* TxQueue.bounded<number>(10)
+
+  // Poll returns Option.none if empty
+  const maybe = yield* TxQueue.poll(queue)
+  console.log(Option.isNone(maybe)) // true
+
+  yield* TxQueue.offer(queue, 42)
+  const item = yield* TxQueue.poll(queue)
+  console.log(Option.getOrNull(item)) // 42
+})
+```
+
+**Signature**
+
+```ts
+declare const poll: <A, E>(self: TxDequeue<A, E>) => Effect.Effect<Option.Option<A>>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TxQueue.ts#L720)
+
+Since v2.0.0

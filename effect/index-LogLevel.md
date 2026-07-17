@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.LogLevel
 
-Re-exports all named exports from the "./LogLevel.js" module as `LogLevel`.
+Re-exports all named exports from the "./LogLevel.ts" module as `LogLevel`.
 
 **Signature**
 
 ```ts
-export * as LogLevel from "./LogLevel.js"
+export * as LogLevel from "./LogLevel.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L706)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L312)
 
 Since v2.0.0

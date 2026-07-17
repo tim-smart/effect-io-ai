@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.Chunk
 
-Re-exports all named exports from the "./Chunk.js" module as `Chunk`.
+Re-exports all named exports from the "./Chunk.ts" module as `Chunk`.
 
 **Signature**
 
 ```ts
-export * as Chunk from "./Chunk.js"
+export * as Chunk from "./Chunk.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L148)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L82)
 
 Since v2.0.0

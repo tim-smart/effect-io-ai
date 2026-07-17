@@ -7,13 +7,13 @@
     },
     "project": "@effect/ai-openrouter",
     "name": "Generated",
-    "description": "Re-exports all named exports from the \"./Generated.js\" module as `Generated`.",
+    "description": "Re-exports all named exports from the \"./Generated.ts\" module as `Generated`.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": null,
-    "signature": "export * as Generated from \"./Generated.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/index.ts#L4"
+    "signature": "export * as Generated from \"./Generated.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/index.ts#L10"
   },
   {
     "_tag": "Export",
@@ -23,13 +23,13 @@
     },
     "project": "@effect/ai-openrouter",
     "name": "OpenRouterClient",
-    "description": "Re-exports all named exports from the \"./OpenRouterClient.js\" module as `OpenRouterClient`.",
+    "description": "Re-exports all named exports from the \"./OpenRouterClient.ts\" module as `OpenRouterClient`.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": null,
-    "signature": "export * as OpenRouterClient from \"./OpenRouterClient.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/index.ts#L9"
+    "signature": "export * as OpenRouterClient from \"./OpenRouterClient.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/index.ts#L15"
   },
   {
     "_tag": "Export",
@@ -39,13 +39,29 @@
     },
     "project": "@effect/ai-openrouter",
     "name": "OpenRouterConfig",
-    "description": "Re-exports all named exports from the \"./OpenRouterConfig.js\" module as `OpenRouterConfig`.",
+    "description": "Re-exports all named exports from the \"./OpenRouterConfig.ts\" module as `OpenRouterConfig`.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": null,
-    "signature": "export * as OpenRouterConfig from \"./OpenRouterConfig.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/index.ts#L14"
+    "signature": "export * as OpenRouterConfig from \"./OpenRouterConfig.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/index.ts#L20"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/ai-openrouter",
+    "name": "OpenRouterError",
+    "description": "Re-exports all named exports from the \"./OpenRouterError.ts\" module as `OpenRouterError`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": null,
+    "signature": "export * as OpenRouterError from \"./OpenRouterError.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/index.ts#L25"
   },
   {
     "_tag": "Export",
@@ -55,13 +71,13 @@
     },
     "project": "@effect/ai-openrouter",
     "name": "OpenRouterLanguageModel",
-    "description": "Re-exports all named exports from the \"./OpenRouterLanguageModel.js\" module as `OpenRouterLanguageModel`.",
+    "description": "Re-exports all named exports from the \"./OpenRouterLanguageModel.ts\" module as `OpenRouterLanguageModel`.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": null,
-    "signature": "export * as OpenRouterLanguageModel from \"./OpenRouterLanguageModel.js\"",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/index.ts#L19"
+    "signature": "export * as OpenRouterLanguageModel from \"./OpenRouterLanguageModel.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/index.ts#L30"
   },
   {
     "_tag": "Class",
@@ -71,72 +87,13 @@
     },
     "project": "@effect/ai-openrouter",
     "name": "OpenRouterClient",
+    "description": "Service tag for the OpenRouter client.\n\n**When to use**\n\nUse when accessing or providing the OpenRouter client service through\nEffect's context.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
-    "category": "Context",
+    "since": "4.0.0",
+    "category": "services",
     "signature": "declare class OpenRouterClient",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterClient.ts#L25"
-  },
-  {
-    "_tag": "Class",
-    "module": {
-      "name": "OpenRouterClient.ts",
-      "path": "src/OpenRouterClient.ts"
-    },
-    "project": "@effect/ai-openrouter",
-    "name": "ChatStreamingMessageToolCall",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "Schemas",
-    "signature": "declare class ChatStreamingMessageToolCall",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterClient.ts#L311"
-  },
-  {
-    "_tag": "Class",
-    "module": {
-      "name": "OpenRouterClient.ts",
-      "path": "src/OpenRouterClient.ts"
-    },
-    "project": "@effect/ai-openrouter",
-    "name": "ChatStreamingMessageChunk",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "Schemas",
-    "signature": "declare class ChatStreamingMessageChunk",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterClient.ts#L327"
-  },
-  {
-    "_tag": "Class",
-    "module": {
-      "name": "OpenRouterClient.ts",
-      "path": "src/OpenRouterClient.ts"
-    },
-    "project": "@effect/ai-openrouter",
-    "name": "ChatStreamingChoice",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "Schemas",
-    "signature": "declare class ChatStreamingChoice",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterClient.ts#L344"
-  },
-  {
-    "_tag": "Class",
-    "module": {
-      "name": "OpenRouterClient.ts",
-      "path": "src/OpenRouterClient.ts"
-    },
-    "project": "@effect/ai-openrouter",
-    "name": "ChatStreamingResponseChunk",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "Schemas",
-    "signature": "declare class ChatStreamingResponseChunk",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterClient.ts#L358"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterClient.ts#L96"
   },
   {
     "_tag": "Constant",
@@ -146,12 +103,13 @@
     },
     "project": "@effect/ai-openrouter",
     "name": "make",
+    "description": "Creates an OpenRouter client service from explicit options.\n\n**When to use**\n\nUse when you need the OpenRouter client service value inside an effect.\n\n**Details**\n\nThe returned service uses the current `HttpClient`, prepends `apiUrl` or\n`https://openrouter.ai/api/v1`, adds the bearer token and optional\n`HTTP-Referer` and `X-Title` headers, accepts JSON responses, and applies\n`transformClient` when provided.\n\n**Gotchas**\n\nScoped `OpenRouterConfig.withClientTransform` applies to generated client\nrequest methods. Streaming chat completion requests are sent directly by this\nmodule and do not read that scoped transform.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
-    "category": "Constructors",
-    "signature": "declare const make: (options: { readonly apiKey?: Redacted.Redacted | undefined; readonly apiUrl?: string | undefined; readonly referrer?: string | undefined; readonly title?: string | undefined; readonly transformClient?: ((client: HttpClient.HttpClient) => HttpClient.HttpClient) | undefined; }) => Effect.Effect<Service, never, HttpClient.HttpClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterClient.ts#L66"
+    "since": "4.0.0",
+    "category": "constructors",
+    "signature": "declare const make: (options: Options) => Effect.Effect<Service, never, HttpClient.HttpClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterClient.ts#L166"
   },
   {
     "_tag": "Function",
@@ -161,12 +119,13 @@
     },
     "project": "@effect/ai-openrouter",
     "name": "layer",
+    "description": "Creates a layer for the OpenRouter client with the given options.\n\n**When to use**\n\nUse when you already have the OpenRouter client options in code and want to\nprovide `OpenRouterClient` as a layer.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
-    "category": "Layers",
-    "signature": "declare const layer: (options: { readonly apiKey?: Redacted.Redacted | undefined; readonly apiUrl?: string | undefined; readonly referrer?: string | undefined; readonly title?: string | undefined; readonly transformClient?: ((client: HttpClient.HttpClient) => HttpClient.HttpClient) | undefined; }) => Layer.Layer<OpenRouterClient, never, HttpClient.HttpClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterClient.ts#L227"
+    "since": "4.0.0",
+    "category": "layers",
+    "signature": "declare const layer: (options: Options) => Layer.Layer<OpenRouterClient, never, HttpClient.HttpClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterClient.ts#L271"
   },
   {
     "_tag": "Function",
@@ -176,12 +135,13 @@
     },
     "project": "@effect/ai-openrouter",
     "name": "layerConfig",
+    "description": "Creates a layer for the OpenRouter client from provided `Config` values.\n\n**When to use**\n\nUse when you need client settings for OpenRouter to be read from Effect\n`Config` values while providing `OpenRouterClient` as a layer.\n\n**Details**\n\nOnly config values supplied in `options` are loaded. Omitted fields are\npassed to `make` as `undefined`, and `transformClient` is forwarded as a\nplain option.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
-    "category": "Layers",
-    "signature": "declare const layerConfig: (options: { readonly apiKey?: Config.Config<Redacted.Redacted> | undefined; readonly apiUrl?: Config.Config<string> | undefined; readonly referrer?: Config.Config<string> | undefined; readonly title?: Config.Config<string> | undefined; readonly transformClient?: ((client: HttpClient.HttpClient) => HttpClient.HttpClient) | undefined; }) => Layer.Layer<OpenRouterClient, ConfigError, HttpClient.HttpClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterClient.ts#L266"
+    "since": "4.0.0",
+    "category": "layers",
+    "signature": "declare const layerConfig: (options?: { readonly apiKey?: Config.Config<Redacted.Redacted<string> | undefined> | undefined; readonly apiUrl?: Config.Config<string> | undefined; readonly siteReferrer?: Config.Config<string> | undefined; readonly siteTitle?: Config.Config<string> | undefined; readonly transformClient?: ((client: HttpClient.HttpClient) => HttpClient.HttpClient) | undefined; }) => Layer.Layer<OpenRouterClient, Config.ConfigError, HttpClient.HttpClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterClient.ts#L294"
   },
   {
     "_tag": "Interface",
@@ -191,12 +151,45 @@
     },
     "project": "@effect/ai-openrouter",
     "name": "Service",
+    "description": "The OpenRouter client service interface.\n\n**Details**\n\nProvides methods for interacting with OpenRouter's Chat Completions API,\nincluding both synchronous and streaming message creation.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
-    "category": "Models",
-    "signature": "export interface Service {\n  /**\n   * The underlying HTTP client capable of communicating with the OpenRouter API.\n   *\n   * This client is pre-configured with authentication, base URL, and standard\n   * headers required for OpenRouter API communication. It provides direct access\n   * to the generated OpenRouter API client for operations not covered by the\n   * higher-level methods.\n   *\n   * Use this when you need to:\n   * - Access provider-specific API endpoints not available through the AI SDK\n   * - Implement custom request/response handling\n   * - Use OpenRouter API features not yet supported by the Effect AI abstractions\n   * - Perform batch operations or non-streaming requests\n   *\n   * The client automatically handles authentication and follows OpenRouter's\n   * API conventions for request formatting and error handling.\n   */\n  readonly client: Generated.Client\n\n  readonly createChatCompletion: (\n    options: typeof Generated.ChatGenerationParams.Encoded\n  ) => Effect.Effect<Generated.ChatResponse, AiError.AiError>\n\n  readonly createChatCompletionStream: (\n    options: Omit<typeof Generated.ChatGenerationParams.Encoded, \"stream\">\n  ) => Stream.Stream<ChatStreamingResponseChunk, AiError.AiError>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterClient.ts#L33"
+    "since": "4.0.0",
+    "category": "models",
+    "signature": "export interface Service {\n  readonly client: Generated.OpenRouterClient\n\n  readonly createChatCompletion: (\n    options: typeof Generated.ChatGenerationParams.Encoded\n  ) => Effect.Effect<\n    [body: typeof Generated.SendChatCompletionRequest200.Type, response: HttpClientResponse.HttpClientResponse],\n    AiError.AiError\n  >\n\n  readonly createChatCompletionStream: (\n    options: Omit<typeof Generated.ChatGenerationParams.Encoded, \"stream\" | \"stream_options\">\n  ) => Effect.Effect<\n    [\n      response: HttpClientResponse.HttpClientResponse,\n      stream: Stream.Stream<ChatStreamingResponseChunkData, AiError.AiError>\n    ],\n    AiError.AiError\n  >\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterClient.ts#L43"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "OpenRouterClient.ts",
+      "path": "src/OpenRouterClient.ts"
+    },
+    "project": "@effect/ai-openrouter",
+    "name": "ChatStreamingResponseChunkData",
+    "description": "Decoded `data` payload from an OpenRouter chat completion streaming chunk.\n\n**Details**\n\nThe payload contains streamed choices, model metadata, optional usage, and may\ninclude an OpenRouter error object for a streamed response.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "models",
+    "signature": "type ChatStreamingResponseChunkData = typeof Generated.ChatStreamingResponseChunk.fields.data.Type",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterClient.ts#L75"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "OpenRouterClient.ts",
+      "path": "src/OpenRouterClient.ts"
+    },
+    "project": "@effect/ai-openrouter",
+    "name": "Options",
+    "description": "Configuration for creating an OpenRouter client.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "options",
+    "signature": "type Options = {\n  readonly apiKey?: Redacted.Redacted<string> | undefined\n\n  readonly apiUrl?: string | undefined\n\n  /**\n   * Optional URL of your site for rankings on `openrouter.ai`.\n   */\n  readonly siteReferrer?: string | undefined\n\n  /**\n   * Optional title of your site for rankings on `openrouter.ai`.\n   */\n  readonly siteTitle?: string | undefined\n\n  /**\n   * Optional transformer for the underlying HTTP client.\n   *\n   * **When to use**\n   *\n   * Use to add middleware, logging, or custom request/response handling.\n   */\n  readonly transformClient?: ((client: HttpClient.HttpClient) => HttpClient.HttpClient) | undefined\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterClient.ts#L111"
   },
   {
     "_tag": "Class",
@@ -206,12 +199,13 @@
     },
     "project": "@effect/ai-openrouter",
     "name": "OpenRouterConfig",
+    "description": "Context service for scoped OpenRouter provider configuration used by client\noperations.\n\n**When to use**\n\nUse as the context service tag when manually providing or reading scoped\nOpenRouter provider configuration in an Effect context.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
-    "category": "Context",
+    "since": "4.0.0",
+    "category": "services",
     "signature": "declare class OpenRouterConfig",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterConfig.ts#L13"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterConfig.ts#L28"
   },
   {
     "_tag": "Constant",
@@ -221,12 +215,13 @@
     },
     "project": "@effect/ai-openrouter",
     "name": "withClientTransform",
+    "description": "Provides a scoped transform for the OpenRouter HTTP client used by provider\noperations.\n\n**When to use**\n\nUse when you need temporary OpenRouter HTTP client customization for a\nsingle effect or workflow without rebuilding the client layer.\n\n**Details**\n\nSupports both data-first and data-last forms. The transform is stored in the\nscoped `OpenRouterConfig` service and read by generated OpenRouter request\noperations while running the supplied effect.\n\n**Gotchas**\n\nIf a transform is already present in the scoped config, this helper replaces\nit. Compose transforms manually when both should apply. Streaming chat\ncompletion requests are sent directly by `OpenRouterClient.make` and do not\nread this scoped transform.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
-    "category": "Configuration",
+    "since": "4.0.0",
+    "category": "configuration",
     "signature": "declare const withClientTransform: { (transform: (client: HttpClient) => HttpClient): <A, E, R>(self: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>; <A, E, R>(self: Effect.Effect<A, E, R>, transform: (client: HttpClient) => HttpClient): Effect.Effect<A, E, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterConfig.ts#L43"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterConfig.ts#L86"
   },
   {
     "_tag": "Interface",
@@ -236,12 +231,45 @@
     },
     "project": "@effect/ai-openrouter",
     "name": "OpenRouterConfig.Service",
+    "description": "Configuration values read by OpenRouter provider operations when resolving\nthe generated HTTP client.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
-    "category": "Models",
-    "signature": "export interface Service {\n    readonly transformClient?: (client: HttpClient) => HttpClient\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterConfig.ts#L34"
+    "since": "4.0.0",
+    "category": "models",
+    "signature": "export interface Service {\n    readonly transformClient?: ((client: HttpClient) => HttpClient) | undefined\n  }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterConfig.ts#L56"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "OpenRouterError.ts",
+      "path": "src/OpenRouterError.ts"
+    },
+    "project": "@effect/ai-openrouter",
+    "name": "OpenRouterErrorMetadata",
+    "description": "OpenRouter-specific error metadata fields.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "models",
+    "signature": "type OpenRouterErrorMetadata = {\n  /**\n   * The error code returned by the API.\n   */\n  readonly errorCode: string | number | null\n  /**\n   * The error type returned by the API.\n   */\n  readonly errorType: string | null\n  /**\n   * The unique request ID for debugging.\n   */\n  readonly requestId: string | null\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterError.ts#L16"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "OpenRouterError.ts",
+      "path": "src/OpenRouterError.ts"
+    },
+    "project": "@effect/ai-openrouter",
+    "name": "OpenRouterRateLimitMetadata",
+    "description": "OpenRouter-specific rate limit metadata fields.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "models",
+    "signature": "type OpenRouterRateLimitMetadata = OpenRouterErrorMetadata & {\n  readonly limit: string | null\n  readonly remaining: number | null\n  readonly resetRequests: string | null\n  readonly resetTokens: string | null\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterError.ts#L37"
   },
   {
     "_tag": "Class",
@@ -251,12 +279,13 @@
     },
     "project": "@effect/ai-openrouter",
     "name": "Config",
+    "description": "Context service for OpenRouter language model configuration.\n\n**When to use**\n\nUse to provide scoped OpenRouter chat completion defaults or per-operation\noverrides for an OpenRouter language model service.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
-    "category": "Context",
+    "since": "4.0.0",
+    "category": "services",
     "signature": "declare class Config",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterLanguageModel.ts#L35"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterLanguageModel.ts#L60"
   },
   {
     "_tag": "Constant",
@@ -266,12 +295,13 @@
     },
     "project": "@effect/ai-openrouter",
     "name": "make",
+    "description": "Creates an OpenRouter `LanguageModel` service from a model identifier and\noptional request defaults.\n\n**When to use**\n\nUse when you need to construct a `LanguageModel.Service` value backed by\n`OpenRouterClient` inside an Effect.\n\n**Details**\n\nThe returned effect requires `OpenRouterClient`. Request defaults from the\n`config` option are merged with any `Config` service in the context, with\ncontext values taking precedence. The service supports both `generateText`\nand `streamText`.\n\n**Gotchas**\n\nProvider-defined tools are not supported by this provider integration;\nrequests that include them fail with an `InvalidUserInputError`.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
-    "category": "Constructors",
-    "signature": "declare const make: (options: { readonly model: string; readonly config?: Omit<Config.Service, \"model\">; }) => Effect.Effect<LanguageModel.Service, never, OpenRouterClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterLanguageModel.ts#L249"
+    "since": "4.0.0",
+    "category": "constructors",
+    "signature": "declare const make: (args_0: { readonly model: string; readonly config?: Omit<typeof Config.Service, \"model\"> | undefined; }) => Effect.Effect<LanguageModel.Service, never, OpenRouterClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterLanguageModel.ts#L541"
   },
   {
     "_tag": "Constant",
@@ -281,12 +311,13 @@
     },
     "project": "@effect/ai-openrouter",
     "name": "withConfigOverride",
+    "description": "Provides config overrides for OpenRouter language model operations.\n\n**When to use**\n\nUse to apply OpenRouter request configuration to one effect without changing\nthe model's default configuration.\n\n**Details**\n\nThe overrides are merged with any existing `Config` service for the duration\nof the supplied effect. Fields in `overrides` take precedence over existing\nconfig, and the helper supports both pipe form and\n`withConfigOverride(effect, overrides)`.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
-    "category": "Configuration",
-    "signature": "declare const withConfigOverride: { (config: Config.Service): <A, E, R>(self: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>; <A, E, R>(self: Effect.Effect<A, E, R>, config: Config.Service): Effect.Effect<A, E, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterLanguageModel.ts#L324"
+    "since": "4.0.0",
+    "category": "configuration",
+    "signature": "declare const withConfigOverride: { (overrides: typeof Config.Service): <A, E, R>(self: Effect.Effect<A, E, R>) => Effect.Effect<A, E, Exclude<R, Config>>; <A, E, R>(self: Effect.Effect<A, E, R>, overrides: typeof Config.Service): Effect.Effect<A, E, Exclude<R, Config>>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterLanguageModel.ts#L645"
   },
   {
     "_tag": "Function",
@@ -296,12 +327,13 @@
     },
     "project": "@effect/ai-openrouter",
     "name": "model",
+    "description": "Creates an OpenRouter model descriptor that can be provided with\n`Effect.provide`.\n\n**When to use**\n\nUse when you want an OpenRouter language model value that carries provider\nand model metadata and can be supplied directly to an Effect program.\n\n**Details**\n\nThe returned model requires `OpenRouterClient` and provides\n`LanguageModel.LanguageModel`.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
-    "category": "Ai Models",
-    "signature": "declare const model: (model: string, config?: Omit<Config.Service, \"model\">) => AiModel.Model<\"openrouter\", LanguageModel.LanguageModel, OpenRouterClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterLanguageModel.ts#L239"
+    "since": "4.0.0",
+    "category": "constructors",
+    "signature": "declare const model: (model: string, config?: Omit<typeof Config.Service, \"model\">) => AiModel.Model<\"openai\", LanguageModel.LanguageModel, OpenRouterClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterLanguageModel.ts#L507"
   },
   {
     "_tag": "Function",
@@ -311,12 +343,13 @@
     },
     "project": "@effect/ai-openrouter",
     "name": "layer",
+    "description": "Creates a layer for the OpenRouter language model.\n\n**When to use**\n\nUse when composing application layers and you want OpenRouter to satisfy\n`LanguageModel.LanguageModel` while supplying `OpenRouterClient` from another\nlayer.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
-    "category": "Layers",
-    "signature": "declare const layer: (options: { readonly model: string; readonly config?: Omit<Config.Service, \"model\">; }) => Layer.Layer<LanguageModel.LanguageModel, never, OpenRouterClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterLanguageModel.ts#L314"
+    "since": "4.0.0",
+    "category": "layers",
+    "signature": "declare const layer: (options: { readonly model: string; readonly config?: Omit<typeof Config.Service, \"model\"> | undefined; }) => Layer.Layer<LanguageModel.LanguageModel, never, OpenRouterClient>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterLanguageModel.ts#L619"
   },
   {
     "_tag": "TypeAlias",
@@ -325,27 +358,29 @@
       "path": "src/OpenRouterLanguageModel.ts"
     },
     "project": "@effect/ai-openrouter",
-    "name": "OpenRouterReasoningInfo",
+    "name": "ReasoningDetails",
+    "description": "OpenRouter assistant reasoning detail blocks preserved for multi-turn\nconversations.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
-    "category": "Provider Metadata",
-    "signature": "type OpenRouterReasoningInfo = {\n  readonly type: \"reasoning\"\n  readonly signature: string | undefined\n} | {\n  readonly type: \"encrypted_reasoning\"\n  readonly format: typeof Generated.ReasoningDetailSummary.Type[\"format\"]\n  readonly redactedData: string\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterLanguageModel.ts#L75"
+    "since": "4.0.0",
+    "category": "models",
+    "signature": "type ReasoningDetails = Exclude<typeof Generated.AssistantMessage.Encoded[\"reasoning_details\"], undefined>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterLanguageModel.ts#L92"
   },
   {
-    "_tag": "Interface",
+    "_tag": "TypeAlias",
     "module": {
       "name": "OpenRouterLanguageModel.ts",
       "path": "src/OpenRouterLanguageModel.ts"
     },
     "project": "@effect/ai-openrouter",
-    "name": "Config.Service",
+    "name": "FileAnnotation",
+    "description": "File annotations emitted on OpenRouter assistant messages and exposed in\nfinish metadata.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
-    "category": "Configuration",
-    "signature": "export interface Service extends\n    Simplify<\n      Partial<\n        Omit<\n          typeof Generated.ChatGenerationParams.Encoded,\n          \"messages\" | \"response_format\" | \"tools\" | \"tool_choice\" | \"stream\"\n        >\n      >\n    >\n  {}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterLanguageModel.ts#L55"
+    "since": "4.0.0",
+    "category": "models",
+    "signature": "type FileAnnotation = Extract<\n  NonNullable<typeof Generated.AssistantMessage.fields.annotations.Type>[number],\n  { type: \"file\" }\n>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterLanguageModel.ts#L101"
   }
 ]

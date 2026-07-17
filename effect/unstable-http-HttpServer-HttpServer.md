@@ -1,0 +1,21 @@
+Package: `effect`<br />
+Module: `HttpServer`<br />
+
+## HttpServer.HttpServer
+
+Service tag for an HTTP server runtime.
+
+**Details**
+
+The service can serve an HTTP response effect and exposes the address where the
+server is listening.
+
+**Signature**
+
+```ts
+declare class HttpServer
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HttpServer.ts#L38)
+
+Since v4.0.0

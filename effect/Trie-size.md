@@ -5,11 +5,11 @@ Module: `Trie`<br />
 
 Returns the size of the `Trie` (number of entries in the `Trie`).
 
-**Example**
+**Example** (Getting the size)
 
 ```ts
-import * as assert from "node:assert"
 import { Trie } from "effect"
+import * as assert from "node:assert"
 
 const trie = Trie.empty<number>().pipe(
   Trie.insert("a", 0),
@@ -25,6 +25,6 @@ assert.equal(Trie.size(trie), 2)
 declare const size: <V>(self: Trie<V>) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Trie.ts#L393)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Trie.ts#L464)
 
 Since v2.0.0

@@ -3,40 +3,27 @@ Module: `HashSet`<br />
 
 ## HashSet.union
 
-Computes the set union `( self ∪ that )` between this `HashSet` and the
-specified `Iterable<A>`.
+Creates the union of two HashSets.
 
-Time complexity: **`O(n)`** where n is the number of elements in the set
-
-**NOTE**: the hash and equal of the values in both the set and the iterable
-must be the same.
-
-**Example**
+**Example** (Combining HashSets)
 
 ```ts
-// Syntax
-import { HashSet, pipe } from "effect"
+import { HashSet } from "effect"
 
-// with data-last, a.k.a. pipeable API
-pipe(HashSet.make(1, 2, 3), HashSet.union(HashSet.make(3, 4, 5)))
+const set1 = HashSet.make("a", "b")
+const set2 = HashSet.make("b", "c")
+const combined = HashSet.union(set1, set2)
 
-// or piped with the pipe function
-HashSet.make(1, 2, 3).pipe(HashSet.union(HashSet.make(3, 4, 5)))
-
-// or with data-first API
-HashSet.union(HashSet.make(1, 2, 3), HashSet.make(3, 4, 5))
+console.log(Array.from(combined).sort()) // ["a", "b", "c"]
+console.log(HashSet.size(combined)) // 3
 ```
-
-**See**
-
-- Other `HashSet` operations are `module:HashSet.difference` `module:HashSet.intersection`
 
 **Signature**
 
 ```ts
-declare const union: { <A>(that: Iterable<A>): (self: HashSet<A>) => HashSet<A>; <A>(self: HashSet<A>, that: Iterable<A>): HashSet<A>; }
+declare const union: { <V1>(that: HashSet<V1>): <V0>(self: HashSet<V0>) => HashSet<V1 | V0>; <V0, V1>(self: HashSet<V0>, that: HashSet<V1>): HashSet<V0 | V1>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L1592)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L366)
 
 Since v2.0.0

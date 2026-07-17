@@ -1,0 +1,16 @@
+Package: `effect`<br />
+Module: `EventGroup`<br />
+
+## EventGroup.TypeId
+
+Unique type identifier used to mark event log event groups.
+
+**Signature**
+
+```ts
+type TypeId = "~effect/eventlog/EventGroup"
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/EventGroup.ts#L24)
+
+Since v4.0.0

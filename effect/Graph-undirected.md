@@ -5,7 +5,7 @@ Module: `Graph`<br />
 
 Creates an undirected graph, optionally with initial mutations.
 
-**Example**
+**Example** (Creating an undirected graph)
 
 ```ts
 import { Graph } from "effect"
@@ -23,9 +23,9 @@ const graph = Graph.undirected<string, string>((mutable) => {
 **Signature**
 
 ```ts
-declare const undirected: <N, E>(mutate?: (mutable: MutableUndirectedGraph<N, E>) => void) => UndirectedGraph<N, E>
+declare const undirected: <N, E>(mutate?: (mutable: MutableUndirectedGraph<N, E>) => undefined) => UndirectedGraph<N, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L300)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L569)
 
 Since v3.18.0

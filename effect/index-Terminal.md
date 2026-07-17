@@ -1,16 +1,16 @@
-Package: `@effect/platform`<br />
+Package: `effect`<br />
 Module: `index`<br />
 
 ## index.Terminal
 
-Re-exports all named exports from the "./Terminal.js" module as `Terminal`.
+Re-exports all named exports from the "./Terminal.ts" module as `Terminal`.
 
 **Signature**
 
 ```ts
-export * as Terminal from "./Terminal.js"
+export * as Terminal from "./Terminal.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L270)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L632)
 
-Since v1.0.0
+Since v4.0.0

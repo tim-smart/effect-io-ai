@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.ConfigProvider
 
-Re-exports all named exports from the "./ConfigProvider.js" module as `ConfigProvider`.
+Re-exports all named exports from the "./ConfigProvider.ts" module as `ConfigProvider`.
 
 **Signature**
 
 ```ts
-export * as ConfigProvider from "./ConfigProvider.js"
+export * as ConfigProvider from "./ConfigProvider.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L168)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L102)
 
-Since v2.0.0
+Since v4.0.0

@@ -3,21 +3,39 @@ Module: `Types`<br />
 
 ## Types.Mutable
 
-Make all properties in `T` mutable. Supports arrays, tuples, and records as well.
+Removes `readonly` from all properties of `T`. Supports arrays, tuples,
+and records.
 
-**Example**
+**When to use**
+
+Use when you need a mutable version of a readonly type.
+
+**Details**
+
+Only affects the top level; nested properties remain readonly.
+
+**Example** (Converting shallowly to mutable types)
 
 ```ts
 import type { Types } from "effect"
 
-type MutableStruct = Types.Mutable<{ readonly a: string; readonly b: number }> // { a: string; b: number; }
+type Obj = Types.Mutable<{
+  readonly a: string
+  readonly b: ReadonlyArray<number>
+}>
+// { a: string; b: ReadonlyArray<number> }
+//   ^ mutable    ^ still readonly inside
 
-type MutableArray = Types.Mutable<ReadonlyArray<string>> // string[]
+type Arr = Types.Mutable<ReadonlyArray<string>>
+// string[]
 
-type MutableTuple = Types.Mutable<readonly [string, number]> // [string, number]
-
-type MutableRecord = Types.Mutable<{ readonly [_: string]: number }> // { [x: string]: number; }
+type Tup = Types.Mutable<readonly [string, number]>
+// [string, number]
 ```
+
+**See**
+
+- `DeepMutable`
 
 **Signature**
 
@@ -27,6 +45,6 @@ type Mutable<T> = {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L241)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L478)
 
 Since v2.0.0

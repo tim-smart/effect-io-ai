@@ -1,0 +1,18 @@
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.toDifferJsonPatch
+
+Derives a JSON Patch differ from a codec. Serializes values to JSON (via
+`toCodecJson`), computes RFC 6902 JSON Patch operations between old
+and new values, and can apply patches back to the typed value.
+
+**Signature**
+
+```ts
+declare const toDifferJsonPatch: <T>(schema: ConstraintCodec<T, unknown>) => Differ<T, JsonPatch.JsonPatch>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L14069)
+
+Since v4.0.0

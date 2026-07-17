@@ -5,25 +5,33 @@ Module: `Stream`<br />
 
 Creates a new `Stream` from an iterable collection of values.
 
-**Example**
+**Details**
+
+- `chunkSize`: Maximum number of values emitted per chunk.
+
+**Example** (Creating a stream from an iterable)
 
 ```ts
-import { Effect, Stream } from "effect"
+import { Console, Effect, Stream } from "effect"
 
 const numbers = [1, 2, 3]
 
-const stream = Stream.fromIterable(numbers)
+const program = Effect.gen(function*() {
+  const stream = Stream.fromIterable(numbers)
+  const values = yield* Stream.runCollect(stream)
+  yield* Console.log(values)
+})
 
-Effect.runPromise(Stream.runCollect(stream)).then(console.log)
-// { _id: 'Chunk', values: [ 1, 2, 3 ] }
+Effect.runPromise(program)
+// Output: [ 1, 2, 3 ]
 ```
 
 **Signature**
 
 ```ts
-declare const fromIterable: <A>(iterable: Iterable<A>) => Stream<A>
+declare const fromIterable: <A>(iterable: Iterable<A>, options?: { readonly chunkSize?: number | undefined; }) => Stream<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L2086)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L1102)
 
 Since v2.0.0

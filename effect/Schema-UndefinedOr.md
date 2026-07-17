@@ -1,0 +1,18 @@
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.UndefinedOr
+
+Type-level representation returned by `UndefinedOr`.
+
+**Signature**
+
+```ts
+export interface UndefinedOr<S extends Constraint> extends Union<readonly [S, Undefined]> {
+  readonly "Rebuild": UndefinedOr<S>
+}
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L4901)
+
+Since v3.10.0

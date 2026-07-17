@@ -5,12 +5,27 @@ Module: `Chunk`<br />
 
 Returns the last element of this non empty chunk.
 
+**Example** (Getting the last element of a non-empty chunk)
+
+```ts
+import { Chunk } from "effect"
+
+const nonEmptyChunk = Chunk.make(1, 2, 3, 4)
+console.log(Chunk.lastNonEmpty(nonEmptyChunk)) // 4
+
+const singleElement = Chunk.make("hello")
+console.log(Chunk.lastNonEmpty(singleElement)) // "hello"
+
+// Type safety: this function only accepts NonEmptyChunk
+// Chunk.lastNonEmpty(Chunk.empty()) // TypeScript error
+```
+
 **Signature**
 
 ```ts
 declare const lastNonEmpty: <A>(self: NonEmptyChunk<A>) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Chunk.ts#L879)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Chunk.ts#L1533)
 
 Since v3.4.0

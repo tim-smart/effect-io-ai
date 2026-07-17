@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.OpfsWorker
 
-Re-exports all named exports from the "./OpfsWorker.js" module as `OpfsWorker`.
+Re-exports all named exports from the "./OpfsWorker.ts" module as `OpfsWorker`.
 
 **Signature**
 
 ```ts
-export * as OpfsWorker from "./OpfsWorker.js"
+export * as OpfsWorker from "./OpfsWorker.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql-sqlite-wasm/src/index.ts#L4)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-wasm/src/index.ts#L4)
 
-Since v1.0.0
+Since v4.0.0

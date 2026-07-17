@@ -1,0 +1,16 @@
+Package: `effect`<br />
+Module: `index`<br />
+
+## index.PlatformError
+
+Re-exports all named exports from the "./PlatformError.ts" module as `PlatformError`.
+
+**Signature**
+
+```ts
+export * as PlatformError from "./PlatformError.ts"
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L402)
+
+Since v4.0.0

@@ -3,14 +3,16 @@ Module: `Schema`<br />
 
 ## Schema.StringFromBase64Url
 
-Decodes a base64 (URL) encoded string into a UTF-8 string.
+Type-level representation of `StringFromBase64Url`.
 
 **Signature**
 
 ```ts
-declare const StringFromBase64Url: Schema<string, string, never>
+export interface StringFromBase64Url extends decodeTo<String, String> {
+  readonly "Rebuild": StringFromBase64Url
+}
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6338)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L11684)
 
 Since v3.10.0

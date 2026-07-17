@@ -3,31 +3,81 @@ Module: `Schedule`<br />
 
 ## Schedule.fixed
 
-Creates a schedule that recurs at a fixed interval.
+Returns a `Schedule` that recurs on the specified fixed `interval` and
+outputs the number of repetitions of the schedule so far.
 
-**Details**
+**When to use**
 
-This schedule executes at regular, evenly spaced intervals, returning the
-number of times it has run so far. If the action being executed takes longer
-than the interval, the next execution will happen immediately to prevent
-"pile-ups," ensuring that the schedule remains consistent without overlapping
-executions.
+Use when recurrences should stay aligned to a regular cadence.
+
+**Gotchas**
+
+If the action run between recurrences takes longer than the interval, the
+next recurrence happens immediately, but missed intervals are not replayed.
 
 ```text
 |-----interval-----|-----interval-----|-----interval-----|
 |---------action--------||action|-----|action|-----------|
 ```
 
+**Example** (Repeating on fixed intervals)
+
+```ts
+import { Console, Effect, Schedule } from "effect"
+
+// Fixed interval schedule - recurs on a one-second cadence
+const everySecond = Schedule.fixed("1 second")
+
+// Health check that runs at fixed intervals
+const healthCheck = Effect.gen(function*() {
+  yield* Console.log("Health check")
+  yield* Effect.sleep("200 millis") // simulate health check work
+  return "healthy"
+}).pipe(
+  Effect.repeat(Schedule.fixed("2 seconds").pipe(Schedule.upTo({ times: 5 })))
+)
+
+// Difference between fixed and spaced:
+// - fixed: maintains constant rate regardless of action duration
+// - spaced: waits for the duration AFTER each action completes
+
+const longRunningTask = Effect.gen(function*() {
+  yield* Console.log("Task started")
+  yield* Effect.sleep("1.5 seconds") // Longer than interval
+  yield* Console.log("Task completed")
+  return "done"
+})
+
+// Fixed schedule: if task takes 1.5s but interval is 1s,
+// next execution happens immediately (no pile-up)
+const fixedSchedule = longRunningTask.pipe(
+  Effect.repeat(Schedule.fixed("1 second").pipe(Schedule.upTo({ times: 3 })))
+)
+
+// Comparing with spaced (waits 1s AFTER each task)
+const spacedSchedule = longRunningTask.pipe(
+  Effect.repeat(Schedule.spaced("1 second").pipe(Schedule.upTo({ times: 3 })))
+)
+
+const program = Effect.gen(function*() {
+  yield* Console.log("=== Fixed Schedule Demo ===")
+  yield* fixedSchedule
+
+  yield* Console.log("=== Spaced Schedule Demo ===")
+  yield* spacedSchedule
+})
+```
+
 **See**
 
-- `spaced` If you need to run from the end of the last execution.
+- `spaced` for delaying after each action completes
 
 **Signature**
 
 ```ts
-declare const fixed: (interval: Duration.DurationInput) => Schedule<number>
+declare const fixed: (interval: Duration.Input) => Schedule<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L1049)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L1436)
 
 Since v2.0.0

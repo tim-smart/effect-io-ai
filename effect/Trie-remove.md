@@ -3,13 +3,13 @@ Module: `Trie`<br />
 
 ## Trie.remove
 
-Remove the entry for the specified key in the `Trie`.
+Removes the entry for the specified key in the `Trie`.
 
-**Example**
+**Example** (Removing entries)
 
 ```ts
+import { Option, Trie } from "effect"
 import * as assert from "node:assert"
-import { Trie, Option } from "effect"
 
 const trie = Trie.empty<number>().pipe(
   Trie.insert("call", 0),
@@ -32,6 +32,6 @@ assert.deepStrictEqual(Trie.get(trie2, "call"), Option.none())
 declare const remove: { (key: string): <V>(self: Trie<V>) => Trie<V>; <V>(self: Trie<V>, key: string): Trie<V>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Trie.ts#L534)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Trie.ts#L617)
 
 Since v2.0.0

@@ -1,0 +1,54 @@
+Package: `effect`<br />
+Module: `Tool`<br />
+
+## Tool.dynamic
+
+Creates a dynamic tool that can accept either an Effect Schema or a raw
+JSON Schema for its parameters.
+
+**When to use**
+
+Use when you do not know a tool schema at compile time, such as MCP tools
+discovered at runtime or tools from external configurations.
+
+**Details**
+
+- When `parameters` is an Effect Schema: full type safety with validation
+- When `parameters` is a JSON Schema: handler receives `unknown`, no validation
+
+**Example** (Creating a dynamic tool)
+
+```ts
+import { Schema } from "effect"
+import { Tool } from "effect/unstable/ai"
+
+// With Effect Schema (typed parameters)
+const Calculator = Tool.dynamic("Calculator", {
+  parameters: Schema.Struct({
+    operation: Schema.Literals(["add", "subtract"]),
+    a: Schema.Number,
+    b: Schema.Number
+  }),
+  success: Schema.Number
+})
+
+// With JSON Schema (untyped parameters)
+const McpTool = Tool.dynamic("McpTool", {
+  description: "Tool from MCP server",
+  parameters: {
+    type: "object",
+    properties: { query: { type: "string" } },
+    required: ["query"]
+  }
+})
+```
+
+**Signature**
+
+```ts
+declare const dynamic: <const Name extends string, const Options extends { readonly description?: string | undefined; readonly parameters?: Schema.Constraint | JsonSchema.JsonSchema | undefined; readonly success?: Schema.Constraint | undefined; readonly failure?: Schema.Constraint | undefined; readonly failureMode?: FailureMode | undefined; readonly needsApproval?: NeedsApproval<any> | undefined; }>(name: Name, options?: Options) => Dynamic<Name, { readonly parameters: Options extends { readonly parameters: infer P; } ? P extends Schema.Constraint ? P : P extends JsonSchema.JsonSchema ? P : typeof Schema.Unknown : typeof Schema.Unknown; readonly success: Options extends { readonly success: infer S extends Schema.Constraint; } ? S : typeof Schema.Unknown; readonly failure: Options extends { readonly failure: infer F extends Schema.Constraint; } ? F : typeof Schema.Never; readonly failureMode: Options extends { readonly failureMode: infer M extends FailureMode; } ? M : "error"; }>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Tool.ts#L1312)
+
+Since v4.0.0

@@ -1,0 +1,27 @@
+Package: `effect`<br />
+Module: `Flag`<br />
+
+## Flag.withFallbackConfig
+
+Adds a fallback config that is loaded when a required flag is missing.
+
+**Example** (Falling back to config)
+
+```ts
+import { Config } from "effect"
+import { Flag } from "effect/unstable/cli"
+
+const verbose = Flag.boolean("verbose").pipe(
+  Flag.withFallbackConfig(Config.boolean("VERBOSE"))
+)
+```
+
+**Signature**
+
+```ts
+declare const withFallbackConfig: { <B>(config: Config.Config<B>): <A>(self: Flag<A>) => Flag<A | B>; <A, B>(self: Flag<A>, config: Config.Config<B>): Flag<A | B>; }
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Flag.ts#L604)
+
+Since v4.0.0

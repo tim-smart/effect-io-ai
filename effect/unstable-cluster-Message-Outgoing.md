@@ -1,0 +1,20 @@
+Package: `effect`<br />
+Module: `Message`<br />
+
+## Message.Outgoing
+
+Message produced for storage or transport.
+
+**Details**
+
+An outgoing message is either an entity request or a control envelope.
+
+**Signature**
+
+```ts
+type Outgoing<R> = OutgoingRequest<R> | OutgoingEnvelope
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Message.ts#L134)
+
+Since v4.0.0

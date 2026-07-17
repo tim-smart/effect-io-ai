@@ -1,0 +1,59 @@
+Package: `effect`<br />
+Module: `TxHashMap`<br />
+
+## TxHashMap.compact
+
+Removes all None values from a TxHashMap containing Option values.
+
+**Details**
+
+This function returns a new TxHashMap reference with only the Some values
+unwrapped. The original TxHashMap is not modified.
+
+**Example** (Compacting optional values)
+
+```ts
+import { Effect, Option, TxHashMap } from "effect"
+
+const program = Effect.gen(function*() {
+  // Create a map with optional user data
+  const userData = yield* TxHashMap.make<
+    string,
+    Option.Option<{ age: number; email?: string }>
+  >(
+    ["alice", Option.some({ age: 30, email: "alice@example.com" })],
+    ["bob", Option.none()], // incomplete data
+    ["charlie", Option.some({ age: 25 })],
+    ["diana", Option.none()], // missing data
+    ["eve", Option.some({ age: 28, email: "eve@example.com" })]
+  )
+
+  // Remove all None values and unwrap Some values
+  const validUsers = yield* TxHashMap.compact(userData)
+
+  const size = yield* TxHashMap.size(validUsers)
+  console.log(size) // 3 (alice, charlie, eve)
+
+  const alice = yield* TxHashMap.get(validUsers, "alice")
+  console.log(alice) // Option.some({ age: 30, email: "alice@example.com" })
+
+  const bob = yield* TxHashMap.get(validUsers, "bob")
+  console.log(bob) // Option.none() (removed from map)
+
+  // Useful for cleaning up optional data processing results
+  const userAges = yield* TxHashMap.map(validUsers, (user) => user.age)
+  const ageEntries = yield* TxHashMap.entries(userAges)
+  const sortedAgeEntries = ageEntries.toSorted(([left], [right]) => left.localeCompare(right))
+  console.log(sortedAgeEntries) // [["alice", 30], ["charlie", 25], ["eve", 28]]
+})
+```
+
+**Signature**
+
+```ts
+declare const compact: <K, A>(self: TxHashMap<K, Option.Option<A>>) => Effect.Effect<TxHashMap<K, A>>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TxHashMap.ts#L2070)
+
+Since v4.0.0

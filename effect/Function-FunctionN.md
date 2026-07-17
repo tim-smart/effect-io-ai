@@ -1,0 +1,31 @@
+Package: `effect`<br />
+Module: `Function`<br />
+
+## Function.FunctionN
+
+Represents a function with multiple arguments.
+
+**When to use**
+
+Use to describe a function whose argument list is represented as a tuple
+type.
+
+**Example** (Typing a variadic function)
+
+```ts
+import type { Function } from "effect"
+import * as assert from "node:assert"
+
+const sum: Function.FunctionN<[number, number], number> = (a, b) => a + b
+assert.deepStrictEqual(sum(2, 3), 5)
+```
+
+**Signature**
+
+```ts
+type FunctionN<A, B> = (...args: A) => B
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L227)
+
+Since v2.0.0

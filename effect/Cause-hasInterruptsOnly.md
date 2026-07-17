@@ -1,0 +1,35 @@
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.hasInterruptsOnly
+
+Returns `true` if every reason in the cause is an `Interrupt` (and
+there is at least one reason).
+
+**When to use**
+
+Use when you need to detect failures caused only by interruption.
+
+**Example** (Checking interrupt-only causes)
+
+```ts
+import { Cause } from "effect"
+
+console.log(Cause.hasInterruptsOnly(Cause.interrupt(123))) // true
+console.log(Cause.hasInterruptsOnly(Cause.fail("error")))  // false
+console.log(Cause.hasInterruptsOnly(Cause.empty))          // false
+```
+
+**See**
+
+- `hasInterrupts` — `true` if the cause contains *any* interrupts
+
+**Signature**
+
+```ts
+declare const hasInterruptsOnly: <E>(self: Cause<E>) => boolean
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L642)
+
+Since v4.0.0

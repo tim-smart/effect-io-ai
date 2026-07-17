@@ -1,16 +1,16 @@
-Package: `@effect/ai-openai`<br />
+Package: `@effect/ai-openai-compat`<br />
 Module: `index`<br />
 
 ## index.OpenAiLanguageModel
 
-Re-exports all named exports from the "./OpenAiLanguageModel.js" module as `OpenAiLanguageModel`.
+Re-exports all named exports from the "./OpenAiLanguageModel.ts" module as `OpenAiLanguageModel`.
 
 **Signature**
 
 ```ts
-export * as OpenAiLanguageModel from "./OpenAiLanguageModel.js"
+export * as OpenAiLanguageModel from "./OpenAiLanguageModel.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/index.ts#L24)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/index.ts#L30)
 
-Since v1.0.0
+Since v4.0.0

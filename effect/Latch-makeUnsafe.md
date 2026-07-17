@@ -1,0 +1,51 @@
+Package: `effect`<br />
+Module: `Latch`<br />
+
+## Latch.makeUnsafe
+
+Creates a `Latch` synchronously, outside of `Effect`.
+
+**When to use**
+
+Use when you need to allocate a `Latch` synchronously outside an Effect
+workflow.
+
+**Details**
+
+The latch starts closed by default; pass `true` to create it open.
+
+**Example** (Creating a latch unsafely)
+
+```ts
+import { Effect, Latch } from "effect"
+
+const latch = Latch.makeUnsafe(false)
+
+const waiter = Effect.gen(function*() {
+  yield* Effect.log("Waiting for latch to open...")
+  yield* latch.await
+  yield* Effect.log("Latch opened! Continuing...")
+})
+
+const opener = Effect.gen(function*() {
+  yield* Effect.sleep("2 seconds")
+  yield* Effect.log("Opening latch...")
+  yield* latch.open
+})
+
+const program = Effect.all([waiter, opener])
+```
+
+**See**
+
+- `make` for creating a latch inside Effect code
+
+**Signature**
+
+```ts
+declare const makeUnsafe: (open?: boolean | undefined) => Latch
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Latch.ts#L166)
+
+Since v4.0.0

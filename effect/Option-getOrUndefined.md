@@ -3,19 +3,19 @@ Module: `Option`<br />
 
 ## Option.getOrUndefined
 
-Returns the value contained in the `Option` if it is `Some`; otherwise,
-returns `undefined`.
+Extracts the value from a `Some`, or returns `undefined` for `None`.
+
+**When to use**
+
+Use when you need to pass absent `Option` values to APIs that expect
+`undefined`.
 
 **Details**
 
-This function provides a way to extract the value of an `Option` while
-falling back to `undefined` if the `Option` is `None`.
+- `Some` → the inner value
+- `None` → `undefined`
 
-It is particularly useful in scenarios where `undefined` is an acceptable
-placeholder for the absence of a value, such as when interacting with APIs or
-systems that use `undefined` as a default for missing values.
-
-**Example**
+**Example** (Unwrapping to undefined)
 
 ```ts
 import { Option } from "effect"
@@ -27,12 +27,17 @@ console.log(Option.getOrUndefined(Option.none()))
 // Output: undefined
 ```
 
+**See**
+
+- `getOrNull` to return `null` instead
+- `getOrElse` for a custom fallback
+
 **Signature**
 
 ```ts
 declare const getOrUndefined: <A>(self: Option<A>) => A | undefined
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L782)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L1009)
 
 Since v2.0.0

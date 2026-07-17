@@ -1,0 +1,43 @@
+Package: `effect`<br />
+Module: `HttpApiMiddleware`<br />
+
+## HttpApiMiddleware.layerSchemaErrorTransform
+
+Creates a middleware layer that transforms `HttpApiSchemaError` failures.
+
+**Details**
+
+The middleware catches schema errors produced while running an endpoint and uses
+the supplied `transform` function to convert them into the middleware's declared
+error schema.
+
+**Example** (Mapping schema errors to custom errors)
+
+```ts
+import { Effect, Schema } from "effect"
+import { HttpApiMiddleware } from "effect/unstable/httpapi"
+
+export class CustomError extends Schema.TaggedErrorClass<CustomError>()("CustomError", {}) {}
+
+export class ErrorHandler extends HttpApiMiddleware.Service<ErrorHandler>()("api/ErrorHandler", {
+  error: CustomError
+}) {}
+
+export const ErrorHandlerLayer = HttpApiMiddleware.layerSchemaErrorTransform(
+  ErrorHandler,
+  (schemaError) =>
+    Effect.log("Got SchemaError", schemaError).pipe(
+      Effect.andThen(Effect.fail(new CustomError()))
+    )
+)
+```
+
+**Signature**
+
+```ts
+declare const layerSchemaErrorTransform: <Id, E extends ErrorConstraint, Requires>(service: Context.Service<Id, HttpApiMiddleware<never, E, Requires>>, transform: (error: HttpApiSchemaError, context: { readonly endpoint: HttpApiEndpoint.Top; readonly group: HttpApiGroup.Top; }) => Effect.Effect<HttpServerResponse, ErrorSchemaFromConstraint<E>["Type"] | HttpApiSchemaError, Requires | HttpRouter.Provided>) => Layer.Layer<Id>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HttpApiMiddleware.ts#L419)
+
+Since v4.0.0

@@ -1,0 +1,16 @@
+Package: `effect`<br />
+Module: `SchemaRepresentation`<br />
+
+## SchemaRepresentation.$Reference
+
+Schema for the `Reference` representation node.
+
+**Signature**
+
+```ts
+declare const $Reference: Schema.Struct<{ readonly _tag: Schema.tag<"Reference">; readonly $ref: Schema.String; }>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaRepresentation.ts#L1407)
+
+Since v4.0.0

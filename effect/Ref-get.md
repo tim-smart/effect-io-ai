@@ -1,0 +1,36 @@
+Package: `effect`<br />
+Module: `Ref`<br />
+
+## Ref.get
+
+Gets the current value of the Ref.
+
+**When to use**
+
+Use to read the current `Ref` value without changing it.
+
+**Example** (Getting the current value)
+
+```ts
+import { Effect, Ref } from "effect"
+
+const program = Effect.gen(function*() {
+  const ref = yield* Ref.make(42)
+  const value = yield* Ref.get(ref)
+  console.log(value) // 42
+})
+```
+
+**See**
+
+- `set` for replacing the current value
+
+**Signature**
+
+```ts
+declare const get: <A>(self: Ref<A>) => Effect.Effect<A, never, never>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Ref.ts#L212)
+
+Since v2.0.0

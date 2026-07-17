@@ -1,0 +1,20 @@
+Package: `effect`<br />
+Module: `HttpTraceContext`<br />
+
+## HttpTraceContext.w3c
+
+Decodes an external span safely from the W3C `traceparent` header.
+
+**Details**
+
+Only version `00` headers with valid trace and span identifiers are accepted.
+
+**Signature**
+
+```ts
+declare const w3c: FromHeaders
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HttpTraceContext.ts#L136)
+
+Since v4.0.0

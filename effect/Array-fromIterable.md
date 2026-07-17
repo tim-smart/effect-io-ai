@@ -3,11 +3,19 @@ Module: `Array`<br />
 
 ## Array.fromIterable
 
-Creates a new `Array` from an iterable collection of values.
-If the input is already an array, it returns the input as-is.
-Otherwise, it converts the iterable collection to an array.
+Converts an `Iterable` to an `Array`.
 
-**Example**
+**When to use**
+
+Use to convert any `Iterable` (Set, Generator, etc.) into an array.
+
+**Details**
+
+If the input is already an array, this returns it by reference without
+copying. Otherwise, it creates a new array from the iterable. Use `copy` if
+you need a fresh array even when the input is already an array.
+
+**Example** (Converting a Set to an array)
 
 ```ts
 import { Array } from "effect"
@@ -16,12 +24,17 @@ const result = Array.fromIterable(new Set([1, 2, 3]))
 console.log(result) // [1, 2, 3]
 ```
 
+**See**
+
+- `ensure` — wrap a single value or return an existing array
+- `copy` — create a shallow copy of an array
+
 **Signature**
 
 ```ts
 declare const fromIterable: <A>(collection: Iterable<A>) => Array<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L165)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L304)
 
 Since v2.0.0

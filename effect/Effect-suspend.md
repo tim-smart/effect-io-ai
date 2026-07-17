@@ -3,32 +3,22 @@ Module: `Effect`<br />
 
 ## Effect.suspend
 
-Delays the creation of an `Effect` until it is actually needed.
+Creates an `Effect` lazily, delaying construction until it is needed.
+
+**When to use**
+
+Use when you need to defer the evaluation of an effect until it is required.
 
 **Details**
 
-The `Effect.suspend` function takes a thunk that represents the effect and
-wraps it in a suspended effect. This means the effect will not be created
-until it is explicitly needed, which is helpful in various scenarios:
-- **Lazy Evaluation**: Helps optimize performance by deferring computations,
-  especially when the effect might not be needed, or when its computation is
-  expensive. This also ensures that any side effects or scoped captures are
-  re-executed on each invocation.
-- **Handling Circular Dependencies**: Useful in managing circular
-  dependencies, such as recursive functions that need to avoid eager
-  evaluation to prevent stack overflow.
-- **Unifying Return Types**: Can help TypeScript unify return types in
-  situations where multiple branches of logic return different effects,
-  simplifying type inference.
+`suspend` takes a thunk that represents an effect and delays creating it
+until the suspended effect is evaluated. This is useful for optimizing
+expensive computations, managing circular dependencies such as recursive
+functions, and helping TypeScript unify return types when branches construct
+different effects. Any side effects or scoped captures inside the thunk are
+re-executed on each invocation.
 
-**When to Use**
-
-Use this function when you need to defer the evaluation of an effect until it
-is required. This is particularly useful for optimizing expensive
-computations, managing circular dependencies, or resolving type inference
-issues.
-
-**Example** (Lazy Evaluation with Side Effects)
+**Example** (Lazily evaluating side effects)
 
 ```ts
 import { Effect } from "effect"
@@ -46,7 +36,7 @@ console.log(Effect.runSync(good)) // Output: 1
 console.log(Effect.runSync(good)) // Output: 2
 ```
 
-**Example** (Recursive Fibonacci)
+**Example** (Suspending recursive Fibonacci evaluation)
 
 ```ts
 import { Effect } from "effect"
@@ -56,7 +46,7 @@ const blowsUp = (n: number): Effect.Effect<number> =>
     ? Effect.succeed(1)
     : Effect.zipWith(blowsUp(n - 1), blowsUp(n - 2), (a, b) => a + b)
 
-console.log(Effect.runSync(blowsUp(32)))
+// console.log(Effect.runSync(blowsUp(32)))
 // crash: JavaScript heap out of memory
 
 const allGood = (n: number): Effect.Effect<number> =>
@@ -72,7 +62,7 @@ console.log(Effect.runSync(allGood(32)))
 // Output: 3524578
 ```
 
-**Example** (Using Effect.suspend to Help TypeScript Infer Types)
+**Example** (Helping TypeScript infer recursive effect types)
 
 ```ts
 import { Effect } from "effect"
@@ -103,6 +93,6 @@ const withSuspend = (a: number, b: number) =>
 declare const suspend: <A, E, R>(effect: LazyArg<Effect<A, E, R>>) => Effect<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L3287)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L1101)
 
 Since v2.0.0

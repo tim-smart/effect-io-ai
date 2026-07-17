@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.Logger
 
-Re-exports all named exports from the "./Logger.js" module as `Logger`.
+Re-exports all named exports from the "./Logger.ts" module as `Logger`.
 
 **Signature**
 
 ```ts
-export * as Logger from "./Logger.js"
+export * as Logger from "./Logger.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L716)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L307)
 
 Since v2.0.0

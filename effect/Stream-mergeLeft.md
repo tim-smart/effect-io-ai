@@ -3,8 +3,34 @@ Module: `Stream`<br />
 
 ## Stream.mergeLeft
 
-Merges this stream and the specified stream together, discarding the values
-from the right stream.
+Merges two streams while emitting only the values from the left stream.
+
+**When to use**
+
+Use when the right stream is needed for its effects or failures, but downstream
+consumers should only receive values from the left stream.
+
+**Details**
+
+The right stream still runs for its effects, and any failures from the right
+stream are propagated. The merged stream completes when the left stream
+completes, interrupting the right stream.
+
+**Example** (Merging streams while keeping left values)
+
+```ts
+import { Console, Effect, Stream } from "effect"
+
+const program = Effect.gen(function*() {
+  const left = Stream.make(1, 2)
+  const right = Stream.make("a", "b")
+  const values = yield* left.pipe(Stream.mergeLeft(right), Stream.runCollect)
+  yield* Console.log(values)
+})
+
+Effect.runPromise(program)
+// Output: [ 1, 2 ]
+```
 
 **Signature**
 
@@ -12,6 +38,6 @@ from the right stream.
 declare const mergeLeft: { <AR, ER, RR>(right: Stream<AR, ER, RR>): <AL, EL, RL>(left: Stream<AL, EL, RL>) => Stream<AL, ER | EL, RR | RL>; <AL, EL, RL, AR, ER, RR>(left: Stream<AL, EL, RL>, right: Stream<AR, ER, RR>): Stream<AL, EL | ER, RL | RR>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L3117)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L3290)
 
 Since v2.0.0

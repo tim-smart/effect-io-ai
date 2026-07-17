@@ -1,0 +1,16 @@
+Package: `@effect/sql-pglite`<br />
+Module: `index`<br />
+
+## index.PgliteClient
+
+Re-exports all named exports from the "./PgliteClient.ts" module as `PgliteClient`.
+
+**Signature**
+
+```ts
+export * as PgliteClient from "./PgliteClient.ts"
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/pglite/src/index.ts#L10)
+
+Since v4.0.0

@@ -6,15 +6,32 @@ Module: `Effect`<br />
 Create a new span for tracing, and automatically close it when the Scope
 finalizes.
 
+**Details**
+
 The span is not added to the current span stack, so no child spans will be
 created for it.
+
+**Example** (Creating a scoped standalone span)
+
+```ts
+import { Effect } from "effect"
+
+const program = Effect.scoped(
+  Effect.gen(function*() {
+    const span = yield* Effect.makeSpanScoped("scoped-operation")
+    yield* Effect.log("Working...")
+    return "done"
+    // Span automatically closes when scope ends
+  })
+)
+```
 
 **Signature**
 
 ```ts
-declare const makeSpanScoped: (name: string, options?: Tracer.SpanOptions | undefined) => Effect<Tracer.Span, never, Scope.Scope>
+declare const makeSpanScoped: (name: string, options?: SpanOptionsNoTrace | undefined) => Effect<Span, never, Scope>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13075)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L8280)
 
 Since v2.0.0

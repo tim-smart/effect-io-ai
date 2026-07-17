@@ -1,0 +1,33 @@
+Package: `effect`<br />
+Module: `SubscriptionRef`<br />
+
+## SubscriptionRef.getAndUpdate
+
+Retrieves the current value and updates it atomically with the result of
+applying a function, notifying subscribers of the change.
+
+**Example** (Getting and updating a value)
+
+```ts
+import { Effect, SubscriptionRef } from "effect"
+
+const program = Effect.gen(function*() {
+  const ref = yield* SubscriptionRef.make(10)
+
+  const oldValue = yield* SubscriptionRef.getAndUpdate(ref, (n) => n * 2)
+  console.log("Old value:", oldValue)
+
+  const newValue = yield* SubscriptionRef.get(ref)
+  console.log("New value:", newValue)
+})
+```
+
+**Signature**
+
+```ts
+declare const getAndUpdate: { <A>(update: (a: A) => A): (self: SubscriptionRef<A>) => Effect.Effect<A>; <A>(self: SubscriptionRef<A>, update: (a: A) => A): Effect.Effect<A>; }
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SubscriptionRef.ts#L276)
+
+Since v2.0.0

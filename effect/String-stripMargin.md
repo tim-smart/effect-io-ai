@@ -3,8 +3,17 @@ Module: `String`<br />
 
 ## String.stripMargin
 
-For every line in this string, strip a leading prefix consisting of blanks
-or control characters followed by the `"|"` character from the line.
+Strips a leading `|` margin prefix from every line.
+
+**Example** (Stripping pipe margins)
+
+```ts
+import { String } from "effect"
+
+const text = "  |hello\n  |world"
+const result = String.stripMargin(text)
+console.log(result) // "hello\nworld"
+```
 
 **Signature**
 
@@ -12,6 +21,6 @@ or control characters followed by the `"|"` character from the line.
 declare const stripMargin: (self: string) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/String.ts#L678)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/String.ts#L1049)
 
 Since v2.0.0

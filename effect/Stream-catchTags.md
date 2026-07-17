@@ -3,15 +3,45 @@ Module: `Stream`<br />
 
 ## Stream.catchTags
 
-Switches over to the stream produced by one of the provided functions, in
-case this one fails with an error matching one of the given `_tag`'s.
+Switches to a recovery stream based on matching `_tag` handlers.
+
+**Example** (Catching tagged failures with handlers)
+
+```ts
+import { Console, Effect, Stream } from "effect"
+
+class NotFound {
+  readonly _tag = "NotFound"
+  constructor(readonly resource: string) {}
+}
+
+class Unauthorized {
+  readonly _tag = "Unauthorized"
+  constructor(readonly user: string) {}
+}
+
+const stream = Stream.fail(new NotFound("profile"))
+
+const program = Effect.gen(function* () {
+  const result = yield* stream.pipe(
+    Stream.catchTags({
+      NotFound: () => Stream.succeed("fallback"),
+      Unauthorized: () => Stream.succeed("login")
+    }),
+    Stream.runCollect
+  )
+  yield* Console.log(result)
+})
+
+// Output: [ "fallback" ]
+```
 
 **Signature**
 
 ```ts
-declare const catchTags: { <E extends { _tag: string; }, Cases extends { [K in E["_tag"]]+?: (error: Extract<E, { _tag: K; }>) => Stream<any, any, any>; }>(cases: Cases): <A, R>(self: Stream<A, E, R>) => Stream<A | { [K in keyof Cases]: Cases[K] extends (...args: Array<any>) => Stream.Variance<infer A, infer _E, infer _R> ? A : never; }[keyof Cases], Exclude<E, { _tag: keyof Cases; }> | { [K in keyof Cases]: Cases[K] extends (...args: Array<any>) => Stream.Variance<infer _A, infer E, infer _R> ? E : never; }[keyof Cases], R | { [K in keyof Cases]: Cases[K] extends (...args: Array<any>) => Stream.Variance<infer _A, infer _E, infer R> ? R : never; }[keyof Cases]>; <A, E extends { _tag: string; }, R, Cases extends { [K in E["_tag"]]+?: (error: Extract<E, { _tag: K; }>) => Stream<any, any, any>; }>(self: Stream<A, E, R>, cases: Cases): Stream<A | { [K in keyof Cases]: Cases[K] extends (...args: Array<any>) => Stream.Variance<infer _R, infer _E, infer A> ? A : never; }[keyof Cases], Exclude<E, { _tag: keyof Cases; }> | { [K in keyof Cases]: Cases[K] extends (...args: Array<any>) => Stream.Variance<infer _R, infer E, infer _A> ? E : never; }[keyof Cases], R | { [K in keyof Cases]: Cases[K] extends (...args: Array<any>) => Stream.Variance<infer R, infer _E, infer _A> ? R : never; }[keyof Cases]>; }
+declare const catchTags: { <E, Cases extends (E extends { _tag: string; } ? { [K in E["_tag"]]+?: (error: Extract<E, { _tag: K; }>) => Stream<any, any, any>; } : {}), A2 = unassigned, E2 = never, R2 = never>(cases: Cases, orElse?: ((e: Exclude<E, { _tag: keyof Cases; }>) => Stream<A2, E2, R2>) | undefined): <A, R>(self: Stream<A, E, R>) => Stream<A | Exclude<A2, unassigned> | { [K in keyof Cases]: Cases[K] extends ((...args: Array<any>) => Stream<infer A, any, any>) ? A : never; }[keyof Cases], E2 | (A2 extends unassigned ? Exclude<E, { _tag: keyof Cases; }> : never) | { [K in keyof Cases]: Cases[K] extends ((...args: Array<any>) => Stream<any, infer E, any>) ? E : never; }[keyof Cases], R | R2 | { [K in keyof Cases]: Cases[K] extends ((...args: Array<any>) => Stream<any, any, infer R>) ? R : never; }[keyof Cases]>; <R, E, A, Cases extends (E extends { _tag: string; } ? { [K in E["_tag"]]+?: (error: Extract<E, { _tag: K; }>) => Stream<any, any, any>; } : {}), A2 = unassigned, E2 = never, R2 = never>(self: Stream<A, E, R>, cases: Cases, orElse?: ((e: Exclude<E, { _tag: keyof Cases; }>) => Stream<A2, E2, R2>) | undefined): Stream<A | Exclude<A2, unassigned> | { [K in keyof Cases]: Cases[K] extends ((...args: Array<any>) => Stream<infer A, any, any>) ? A : never; }[keyof Cases], E2 | (A2 extends unassigned ? Exclude<E, { _tag: keyof Cases; }> : never) | { [K in keyof Cases]: Cases[K] extends ((...args: Array<any>) => Stream<any, infer E, any>) ? E : never; }[keyof Cases], R | R2 | { [K in keyof Cases]: Cases[K] extends ((...args: Array<any>) => Stream<any, any, infer R>) ? R : never; }[keyof Cases]>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L833)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L5390)
 
 Since v2.0.0

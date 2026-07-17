@@ -3,14 +3,40 @@ Module: `MutableList`<br />
 
 ## MutableList.append
 
-Appends the specified element to the end of the `MutableList`.
+Appends an element to the end of the MutableList.
+This operation is optimized for high-frequency usage.
+
+**Example** (Appending elements)
+
+```ts
+import { MutableList } from "effect"
+
+const list = MutableList.make<number>()
+
+// Append elements one by one
+MutableList.append(list, 1)
+MutableList.append(list, 2)
+MutableList.append(list, 3)
+
+console.log(list.length) // 3
+
+// Elements are taken from head (FIFO)
+console.log(MutableList.take(list)) // 1
+console.log(MutableList.take(list)) // 2
+console.log(MutableList.take(list)) // 3
+
+// High-throughput usage
+for (let i = 0; i < 10000; i++) {
+  MutableList.append(list, i)
+}
+```
 
 **Signature**
 
 ```ts
-declare const append: { <A>(value: A): (self: MutableList<A>) => MutableList<A>; <A>(self: MutableList<A>, value: A): MutableList<A>; }
+declare const append: <A>(self: MutableList<A>, message: A) => void
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/MutableList.ts#L200)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/MutableList.ts#L299)
 
 Since v2.0.0

@@ -3,50 +3,44 @@ Module: `Effect`<br />
 
 ## Effect.annotateLogsScoped
 
-Adds log annotations with a limited scope to enhance contextual logging.
+Adds log annotations to the current scope.
+
+**When to use**
+
+Use to attach log annotations that last until the current scope closes.
 
 **Details**
 
-This function allows you to apply key-value annotations to log entries
-generated within a specific scope of your effect computations. The
-annotations are restricted to the defined `Scope`, ensuring that they are
-only applied to logs produced during that scope. Once the scope ends, the
-annotations are automatically removed, making it easier to manage
-context-specific logging without affecting other parts of your application.
+This differs from `annotateLogs`, which only annotates a specific effect.
+`annotateLogsScoped` updates annotations for the entire current `Scope` and
+restores the previous annotations when the scope closes.
 
-The annotations can be provided as a single key-value pair or as a record of
-multiple key-value pairs. This flexibility enables fine-grained control over
-the additional metadata included in logs for specific tasks or operations.
-
-**Example**
+**Example** (Adding scoped log annotations)
 
 ```ts
 import { Effect } from "effect"
 
-const program = Effect.gen(function*() {
-  yield* Effect.log("no annotations")
-  yield* Effect.annotateLogsScoped({ key: "value" })
-  yield* Effect.log("message1") // Annotation is applied to this log
-  yield* Effect.log("message2") // Annotation is applied to this log
-}).pipe(Effect.scoped, Effect.andThen(Effect.log("no annotations again")))
+const program = Effect.scoped(
+  Effect.gen(function*() {
+    yield* Effect.log("before")
+    yield* Effect.annotateLogsScoped({ requestId: "req-123" })
+    yield* Effect.log("inside scope")
+  })
+)
 
-Effect.runFork(program)
-// timestamp=... level=INFO fiber=#0 message="no annotations"
-// timestamp=... level=INFO fiber=#0 message=message1 key=value
-// timestamp=... level=INFO fiber=#0 message=message2 key=value
-// timestamp=... level=INFO fiber=#0 message="no annotations again"
+Effect.runPromise(program)
 ```
 
 **See**
 
-- `annotateLogs` to add custom annotations to log entries generated within an effect.
+- `annotateLogs` for annotating one effect
 
 **Signature**
 
 ```ts
-declare const annotateLogsScoped: { (key: string, value: unknown): Effect<void, never, Scope.Scope>; (values: Record<string, unknown>): Effect<void, never, Scope.Scope>; }
+declare const annotateLogsScoped: { (key: string, value: unknown): Effect<void, never, Scope>; (values: Record<string, unknown>): Effect<void, never, Scope>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L11119)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L14109)
 
 Since v3.1.0

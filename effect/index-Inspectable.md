@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.Inspectable
 
-Re-exports all named exports from the "./Inspectable.js" module as `Inspectable`.
+Re-exports all named exports from the "./Inspectable.ts" module as `Inspectable`.
 
 **Signature**
 
 ```ts
-export * as Inspectable from "./Inspectable.js"
+export * as Inspectable from "./Inspectable.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L643)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L262)
 
 Since v2.0.0

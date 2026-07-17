@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.Random
 
-Re-exports all named exports from the "./Random.js" module as `Random`.
+Re-exports all named exports from the "./Random.ts" module as `Random`.
 
 **Signature**
 
 ```ts
-export * as Random from "./Random.js"
+export * as Random from "./Random.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1152)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L437)
 
-Since v2.0.0
+Since v4.0.0

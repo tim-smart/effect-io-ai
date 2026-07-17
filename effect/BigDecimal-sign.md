@@ -5,15 +5,19 @@ Module: `BigDecimal`<br />
 
 Determines the sign of a given `BigDecimal`.
 
-**Example**
+**When to use**
+
+Use to classify a `BigDecimal` as negative, zero, or positive.
+
+**Example** (Reading decimal signs)
 
 ```ts
+import { BigDecimal } from "effect"
 import * as assert from "node:assert"
-import { sign, unsafeFromString } from "effect/BigDecimal"
 
-assert.deepStrictEqual(sign(unsafeFromString("-5")), -1)
-assert.deepStrictEqual(sign(unsafeFromString("0")), 0)
-assert.deepStrictEqual(sign(unsafeFromString("5")), 1)
+assert.deepStrictEqual(BigDecimal.sign(BigDecimal.fromStringUnsafe("-5")), -1)
+assert.deepStrictEqual(BigDecimal.sign(BigDecimal.fromStringUnsafe("0")), 0)
+assert.deepStrictEqual(BigDecimal.sign(BigDecimal.fromStringUnsafe("5")), 1)
 ```
 
 **Signature**
@@ -22,6 +26,6 @@ assert.deepStrictEqual(sign(unsafeFromString("5")), 1)
 declare const sign: (n: BigDecimal) => Ordering
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L673)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L1012)
 
 Since v2.0.0

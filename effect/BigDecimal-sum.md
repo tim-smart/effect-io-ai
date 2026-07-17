@@ -5,14 +5,26 @@ Module: `BigDecimal`<br />
 
 Provides an addition operation on `BigDecimal`s.
 
-**Example**
+**When to use**
+
+Use when you need a decimal addition function for piping or higher-order APIs
+while preserving decimal precision.
+
+**Example** (Adding decimals)
 
 ```ts
+import { BigDecimal } from "effect"
 import * as assert from "node:assert"
-import { sum, unsafeFromString } from "effect/BigDecimal"
 
-assert.deepStrictEqual(sum(unsafeFromString("2"), unsafeFromString("3")), unsafeFromString("5"))
+assert.deepStrictEqual(
+  BigDecimal.sum(BigDecimal.fromStringUnsafe("2"), BigDecimal.fromStringUnsafe("3")),
+  BigDecimal.fromStringUnsafe("5")
+)
 ```
+
+**See**
+
+- `sumAll` for summing an iterable of `BigDecimal` values
 
 **Signature**
 
@@ -20,6 +32,6 @@ assert.deepStrictEqual(sum(unsafeFromString("2"), unsafeFromString("3")), unsafe
 declare const sum: { (that: BigDecimal): (self: BigDecimal) => BigDecimal; (self: BigDecimal, that: BigDecimal): BigDecimal; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L213)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L298)
 
 Since v2.0.0

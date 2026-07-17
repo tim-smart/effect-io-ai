@@ -5,15 +5,19 @@ Module: `Number`<br />
 
 Determines the sign of a given `number`.
 
-**Example**
+**When to use**
+
+Use to classify a number as negative, zero, or positive.
+
+**Example** (Determining the sign)
 
 ```ts
-import * as assert from "node:assert/strict"
-import { sign } from "effect/Number"
+import { Number } from "effect"
+import * as assert from "node:assert"
 
-assert.equal(sign(-5), -1)
-assert.equal(sign(0), 0)
-assert.equal(sign(5), 1)
+assert.deepStrictEqual(Number.sign(-5), -1)
+assert.deepStrictEqual(Number.sign(0), 0)
+assert.deepStrictEqual(Number.sign(5), 1)
 ```
 
 **Signature**
@@ -22,6 +26,6 @@ assert.equal(sign(5), 1)
 declare const sign: (n: number) => Ordering
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Number.ts#L956)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Number.ts#L557)
 
 Since v2.0.0

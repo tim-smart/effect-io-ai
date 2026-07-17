@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.SqliteClient
 
-Re-exports all named exports from the "./SqliteClient.js" module as `SqliteClient`.
+Re-exports all named exports from the "./SqliteClient.ts" module as `SqliteClient`.
 
 **Signature**
 
 ```ts
-export * as SqliteClient from "./SqliteClient.js"
+export * as SqliteClient from "./SqliteClient.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql-sqlite-bun/src/index.ts#L4)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-bun/src/index.ts#L10)
 
-Since v1.0.0
+Since v4.0.0

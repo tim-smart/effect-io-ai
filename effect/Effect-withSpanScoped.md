@@ -3,16 +3,32 @@ Module: `Effect`<br />
 
 ## Effect.withSpanScoped
 
-Wraps the effect with a new span for tracing.
+Wraps the effect with a scoped child span for tracing.
+
+**Details**
 
 The span is ended when the Scope is finalized.
+
+**Example** (Creating a scoped child span)
+
+```ts
+import { Effect } from "effect"
+
+const program = Effect.scoped(
+  Effect.gen(function*() {
+    const task = Effect.log("Working...")
+    yield* Effect.withSpanScoped(task, "scoped-task")
+    return "completed"
+  })
+)
+```
 
 **Signature**
 
 ```ts
-declare const withSpanScoped: { (name: string, options?: Tracer.SpanOptions): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, Exclude<R, Tracer.ParentSpan> | Scope.Scope>; <A, E, R>(self: Effect<A, E, R>, name: string, options?: Tracer.SpanOptions): Effect<A, E, Exclude<R, Tracer.ParentSpan> | Scope.Scope>; }
+declare const withSpanScoped: { (name: string, options?: SpanOptions): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, Exclude<R, ParentSpan> | Scope>; <A, E, R>(self: Effect<A, E, R>, name: string, options?: SpanOptions): Effect<A, E, Exclude<R, ParentSpan> | Scope>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13169)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L8378)
 
 Since v2.0.0

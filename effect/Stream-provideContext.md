@@ -3,15 +3,43 @@ Module: `Stream`<br />
 
 ## Stream.provideContext
 
-Provides the stream with its required context, which eliminates its
-dependency on `R`.
+Provides multiple services to the stream using a context.
+
+**Example** (Providing multiple services to the stream using a context)
+
+```ts
+import { Console, Context, Effect, Stream } from "effect"
+
+class Config extends Context.Service<Config, { readonly prefix: string }>()("Config") {}
+class Greeter extends Context.Service<Greeter, { greet: (name: string) => string }>()("Greeter") {}
+
+const context = Context.make(Config, { prefix: "Hello" }).pipe(
+  Context.add(Greeter, { greet: (name: string) => `${name}!` })
+)
+
+const stream = Stream.fromEffect(
+  Effect.gen(function*() {
+    const config = yield* Effect.service(Config)
+    const greeter = yield* Effect.service(Greeter)
+    return greeter.greet(config.prefix)
+  })
+)
+
+const program = Effect.gen(function*() {
+  const result = yield* Stream.runCollect(Stream.provideContext(stream, context))
+  yield* Console.log(result)
+})
+
+Effect.runPromise(program)
+// ["Hello!"]
+```
 
 **Signature**
 
 ```ts
-declare const provideContext: { <R>(context: Context.Context<R>): <A, E>(self: Stream<A, E, R>) => Stream<A, E>; <A, E, R>(self: Stream<A, E, R>, context: Context.Context<R>): Stream<A, E>; }
+declare const provideContext: { <R2>(context: Context.Context<R2>): <A, E, R>(self: Stream<A, E, R>) => Stream<A, E, Exclude<R, R2>>; <A, E, R, R2>(self: Stream<A, E, R>, context: Context.Context<R2>): Stream<A, E, Exclude<R, R2>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L3627)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L10090)
 
 Since v2.0.0

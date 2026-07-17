@@ -3,38 +3,40 @@ Module: `MutableHashSet`<br />
 
 ## MutableHashSet.has
 
-Checks if the specified value exists in the `MutableHashSet`.
+Checks whether the MutableHashSet contains the specified value.
 
-Time complexity: `O(1)` average
+**When to use**
 
-**Syntax**
+Use to test whether a mutable set currently contains a value.
+
+**Details**
+
+Membership follows the same hashing and equality rules as the underlying
+`MutableHashMap`.
+
+**Example** (Checking for a value)
 
 ```ts
-import { MutableHashSet, pipe } from "effect"
-import assert from "node:assert/strict"
+import { MutableHashSet } from "effect"
 
-assert.equal(
-  // with `data-last`, a.k.a. `pipeable` API
-  pipe(MutableHashSet.make(0, 1, 2), MutableHashSet.has(3)),
-  false
-)
+const set = MutableHashSet.make("apple", "banana", "cherry")
 
-assert.equal(
-  // or piped with the pipe function
-  MutableHashSet.make(0, 1, 2).pipe(MutableHashSet.has(3)),
-  false
-)
+console.log(MutableHashSet.has(set, "apple")) // true
+console.log(MutableHashSet.has(set, "grape")) // false
 
-assert.equal(
-  // or with `data-first` API
-  MutableHashSet.has(MutableHashSet.make(0, 1, 2), 3),
-  false
-)
+// Pipe-able version
+const hasApple = MutableHashSet.has("apple")
+console.log(hasApple(set)) // true
+
+// Check after adding
+MutableHashSet.add(set, "grape")
+console.log(MutableHashSet.has(set, "grape")) // true
 ```
 
 **See**
 
-- Other `MutableHashSet` elements are `module:MutableHashSet.add` `module:MutableHashSet.remove` `module:MutableHashSet.size` `module:MutableHashSet.clear`
+- `add` for adding a value to the set
+- `remove` for removing a value from the set
 
 **Signature**
 
@@ -42,6 +44,6 @@ assert.equal(
 declare const has: { <V>(key: V): (self: MutableHashSet<V>) => boolean; <V>(self: MutableHashSet<V>, key: V): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/MutableHashSet.ts#L501)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/MutableHashSet.ts#L307)
 
 Since v2.0.0

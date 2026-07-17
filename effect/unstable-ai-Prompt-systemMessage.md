@@ -1,0 +1,16 @@
+Package: `effect`<br />
+Module: `Prompt`<br />
+
+## Prompt.systemMessage
+
+Constructs a new system message.
+
+**Signature**
+
+```ts
+declare const systemMessage: (params: MessageConstructorParams<SystemMessage>) => SystemMessage
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Prompt.ts#L1168)
+
+Since v4.0.0

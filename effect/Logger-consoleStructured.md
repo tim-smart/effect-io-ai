@@ -1,0 +1,64 @@
+Package: `effect`<br />
+Module: `Logger`<br />
+
+## Logger.consoleStructured
+
+A `Logger` which outputs logs using a structured format and writes them to
+the console.
+
+**Details**
+
+For example, console structured output can contain
+`message: [ "info", "message" ]`, `level: "INFO"`,
+`timestamp: "2025-01-03T14:25:39.666Z"`,
+`annotations: { key: "value" }`, `spans: { label: 0 }`, and
+`fiberId: "#1"`.
+
+**Example** (Logging structured output to the console)
+
+```ts
+import { Effect, Logger } from "effect"
+
+// Use the console structured logger
+const structuredProgram = Effect.log("Hello Structured Console").pipe(
+  Effect.provide(Logger.layer([Logger.consoleStructured]))
+)
+
+// Perfect for development debugging
+const debugProgram = Effect.gen(function*() {
+  yield* Effect.log("User event", {
+    userId: 123,
+    action: "login",
+    ip: "192.168.1.1"
+  })
+  yield* Effect.logInfo("API call", {
+    endpoint: "/users",
+    method: "GET",
+    duration: 120
+  })
+}).pipe(
+  Effect.annotateLogs("requestId", "req-123"),
+  Effect.withLogSpan("authentication"),
+  Effect.provide(Logger.layer([Logger.consoleStructured]))
+)
+
+// Easy to parse and inspect object structure
+const inspectionProgram = Effect.gen(function*() {
+  yield* Effect.log("Complex data", {
+    user: { id: 1, name: "John" },
+    metadata: { source: "api", version: 2 }
+  })
+}).pipe(
+  Effect.provide(Logger.layer([Logger.consoleStructured]))
+)
+```
+
+**Signature**
+
+```ts
+declare const consoleStructured: Logger<unknown, void>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Logger.ts#L969)
+
+Since v4.0.0

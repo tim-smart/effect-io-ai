@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.BrowserSocket
 
-Re-exports all named exports from the "./BrowserSocket.js" module as `BrowserSocket`.
+Re-exports all named exports from the "./BrowserSocket.ts" module as `BrowserSocket`.
 
 **Signature**
 
 ```ts
-export * as BrowserSocket from "./BrowserSocket.js"
+export * as BrowserSocket from "./BrowserSocket.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L19)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L35)
 
-Since v1.0.0
+Since v4.0.0

@@ -1,0 +1,29 @@
+Package: `effect`<br />
+Module: `TxPriorityQueue`<br />
+
+## TxPriorityQueue.retainIf
+
+Keeps only elements matching the predicate.
+
+**Example** (Retaining matching values)
+
+```ts
+import { Effect, Order, TxPriorityQueue } from "effect"
+
+const program = Effect.gen(function*() {
+  const pq = yield* TxPriorityQueue.fromIterable(Order.Number, [1, 2, 3, 4, 5])
+  yield* TxPriorityQueue.retainIf(pq, (n) => n % 2 === 0)
+  const all = yield* TxPriorityQueue.takeAll(pq)
+  console.log(all) // [2, 4]
+})
+```
+
+**Signature**
+
+```ts
+declare const retainIf: { <A>(predicate: Predicate<A>): (self: TxPriorityQueue<A>) => Effect.Effect<void>; <A>(self: TxPriorityQueue<A>, predicate: Predicate<A>): Effect.Effect<void>; }
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TxPriorityQueue.ts#L519)
+
+Since v2.0.0

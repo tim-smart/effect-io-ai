@@ -3,63 +3,60 @@ Module: `Effect`<br />
 
 ## Effect.provideService
 
-Provides an implementation for a service in the context of an effect.
+Provides one concrete service implementation to an effect.
+
+**When to use**
+
+Use to satisfy one service requirement with an already-built implementation.
 
 **Details**
 
-This function allows you to supply a specific implementation for a service
-required by an effect. Services are typically defined using `Context.Tag`,
-which acts as a unique identifier for the service. By using this function,
-you link the service to its concrete implementation, enabling the effect to
-execute successfully without additional requirements.
+The service requirement identified by the `Context.Key` is removed from the
+effect requirements after the implementation is provided.
 
-For example, you can use this function to provide a random number generator,
-a logger, or any other service your effect depends on. Once the service is
-provided, all parts of the effect that rely on the service will automatically
-use the implementation you supplied.
-
-**Example**
+**Example** (Providing a service value)
 
 ```ts
-import { Effect, Context } from "effect"
+import { Console, Context, Effect } from "effect"
 
-// Declaring a tag for a service that generates random numbers
-class Random extends Context.Tag("MyRandomService")<
-  Random,
-  { readonly next: Effect.Effect<number> }
->() {}
+// Define a service for configuration
+const Config = Context.Service<{
+  apiUrl: string
+  timeout: number
+}>("Config")
 
-// Using the service
-const program = Effect.gen(function* () {
-  const random = yield* Random
-  const randomNumber = yield* random.next
-  console.log(`random number: ${randomNumber}`)
+const fetchData = Effect.gen(function*() {
+  const config = yield* Effect.service(Config)
+  yield* Console.log(`Fetching from: ${config.apiUrl}`)
+  yield* Console.log(`Timeout: ${config.timeout}ms`)
+  return "data"
 })
 
-// Providing the implementation
-//
-//      ┌─── Effect<void, never, never>
-//      ▼
-const runnable = Effect.provideService(program, Random, {
-  next: Effect.sync(() => Math.random())
+// Provide the service implementation
+const program = Effect.provideService(fetchData, Config, {
+  apiUrl: "https://api.example.com",
+  timeout: 5000
 })
 
-// Run successfully
-Effect.runPromise(runnable)
-// Example Output:
-// random number: 0.8241872233134417
+Effect.runPromise(program).then(console.log)
+// Output:
+// Fetching from: https://api.example.com
+// Timeout: 5000ms
+// data
 ```
 
 **See**
 
 - `provide` for providing multiple layers to an effect.
+- `provideServiceEffect` for acquiring the service implementation effectfully.
+- `provideContext` for providing a complete context.
 
 **Signature**
 
 ```ts
-declare const provideService: { <I, S>(tag: Context.Tag<I, S>, service: NoInfer<S>): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, Exclude<R, I>>; <A, E, R, I, S>(self: Effect<A, E, R>, tag: Context.Tag<I, S>, service: NoInfer<S>): Effect<A, E, Exclude<R, I>>; }
+declare const provideService: { <I, S>(service: Context.Key<I, S>): { (implementation: S): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, Exclude<R, I>>; <A, E, R>(self: Effect<A, E, R>, implementation: S): Effect<A, E, Exclude<R, I>>; }; <I, S>(service: Context.Key<I, S>, implementation: S): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, Exclude<R, I>>; <A, E, R, I, S>(self: Effect<A, E, R>, service: Context.Key<I, S>, implementation: S): Effect<A, E, Exclude<R, I>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L7636)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L6221)
 
 Since v2.0.0

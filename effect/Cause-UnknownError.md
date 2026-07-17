@@ -1,0 +1,35 @@
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.UnknownError
+
+A wrapper for errors whose type is not statically known.
+
+**Details**
+
+Used when a thrown or rejected value is not represented by a more specific
+typed error. The original value is stored in the `cause` property inherited
+from `Error`. Implements `YieldableError`.
+
+**Example** (Creating and checking an UnknownError)
+
+```ts
+import { Cause } from "effect"
+
+const error = new Cause.UnknownError("original", "Something unknown")
+console.log(error._tag)    // "UnknownError"
+console.log(error.message) // "Something unknown"
+```
+
+**Signature**
+
+```ts
+export interface UnknownError extends YieldableError {
+  readonly [UnknownErrorTypeId]: typeof UnknownErrorTypeId
+  readonly _tag: "UnknownError"
+}
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L1762)
+
+Since v4.0.0

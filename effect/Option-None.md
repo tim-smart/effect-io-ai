@@ -1,0 +1,41 @@
+Package: `effect`<br />
+Module: `Option`<br />
+
+## Option.None
+
+Represents the absence of a value within an `Option`.
+
+**When to use**
+
+Use as a type guard target when narrowing via `isNone`
+
+**Details**
+
+- `_tag` is always `"None"`
+- Implements `Pipeable`, `Inspectable`, and structural equality
+
+**See**
+
+- `isNone` to check if an `Option` is `None`
+- `none` to construct a `None`
+
+**Signature**
+
+```ts
+export interface None<out A> extends Pipeable, Inspectable {
+  readonly _tag: "None"
+  readonly _op: "None"
+  readonly valueOrUndefined: undefined
+  readonly [TypeId]: {
+    readonly _A: Covariant<A>
+  }
+  [Symbol.iterator](): OptionIterator<Option<A>>
+  [Unify.typeSymbol]?: unknown
+  [Unify.unifySymbol]?: OptionUnify<this>
+  [Unify.ignoreSymbol]?: OptionUnifyIgnore
+}
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L74)
+
+Since v2.0.0

@@ -5,12 +5,22 @@ Module: `Sink`<br />
 
 Creates a `Channel` from a Sink.
 
+**Example** (Converting a sink to a channel)
+
+```ts
+import { Sink } from "effect"
+
+// Create a sink and extract its channel
+const sink = Sink.succeed(42)
+const channel = Sink.toChannel(sink)
+```
+
 **Signature**
 
 ```ts
-declare const toChannel: <A, In, L, E, R>(self: Sink<A, In, L, E, R>) => Channel.Channel<Chunk.Chunk<L>, Chunk.Chunk<In>, E, never, A, unknown, R>
+declare const toChannel: <A, In, L, E, R>(self: Sink<A, In, L, E, R>) => Channel.Channel<never, E, End<A, L>, NonEmptyReadonlyArray<In>, never, void, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Sink.ts#L982)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Sink.ts#L281)
 
 Since v2.0.0

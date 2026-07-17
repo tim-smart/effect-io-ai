@@ -1,0 +1,28 @@
+Package: `effect`<br />
+Module: `SchemaGetter`<br />
+
+## SchemaGetter.uncapitalize
+
+Uncapitalizes the first character of a string.
+
+**Details**
+
+- Pure, delegates to `String.uncapitalize`.
+
+**Example** (Uncapitalizing a string)
+
+```ts
+import { SchemaGetter } from "effect"
+
+const uncap = SchemaGetter.uncapitalize<string>()
+```
+
+**Signature**
+
+```ts
+declare const uncapitalize: <E extends string>() => Getter<string, E>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaGetter.ts#L858)
+
+Since v4.0.0

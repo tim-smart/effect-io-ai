@@ -3,14 +3,29 @@ Module: `Sink`<br />
 
 ## Sink.findEffect
 
-Creates a sink that produces values until one verifies the predicate `f`.
+Creates a sink containing the first value matched by an effectful predicate.
+
+**When to use**
+
+Use when you need to run effects, fail, or use services while searching for
+the first matching input.
+
+**Details**
+
+Returns `Option.some` with the first input whose predicate result is `true`,
+or `Option.none` if the upstream stream ends first. If the predicate effect
+fails, the sink fails with the same error.
+
+**See**
+
+- `find` for the synchronous predicate variant
 
 **Signature**
 
 ```ts
-declare const findEffect: { <A, E2, R2>(f: (a: A) => Effect.Effect<boolean, E2, R2>): <In, L extends In, E, R>(self: Sink<A, In, L, E, R>) => Sink<Option.Option<A>, In, L, E2 | E, R2 | R>; <A, In, L extends In, E, R, E2, R2>(self: Sink<A, In, L, E, R>, f: (a: A) => Effect.Effect<boolean, E2, R2>): Sink<Option.Option<A>, In, L, E | E2, R | R2>; }
+declare const findEffect: <In, E, R>(predicate: (input: In) => Effect.Effect<boolean, E, R>) => Sink<Option.Option<In>, In, In, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Sink.ts#L634)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Sink.ts#L1493)
 
 Since v2.0.0

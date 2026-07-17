@@ -16,7 +16,7 @@ ensures that multiple conditions are met before executing the callback. It is
 useful when checking for values that need to fulfill multiple criteria at
 once.
 
-**Example**
+**Example** (Matching all provided patterns)
 
 ```ts
 import { Match } from "effect"
@@ -45,6 +45,6 @@ console.log(checkUser({ age: 20, role: "user" }))
 declare const whenAnd: <R, const P extends ReadonlyArray<Types.PatternPrimitive<R> | Types.PatternBase<R>>, Ret, Fn extends (_: Types.WhenMatch<R, T.UnionToIntersection<P[number]>>) => Ret>(...args: [...patterns: P, f: Fn]) => <I, F, A, Pr>(self: Matcher<I, F, R, A, Pr, Ret>) => Matcher<I, Types.AddWithout<F, Types.PForExclude<T.UnionToIntersection<P[number]>>>, Types.ApplyFilters<I, Types.AddWithout<F, Types.PForExclude<T.UnionToIntersection<P[number]>>>>, A | ReturnType<Fn>, Pr>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L486)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L650)
 
-Since v1.0.0
+Since v4.0.0

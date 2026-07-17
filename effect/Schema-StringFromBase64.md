@@ -3,14 +3,16 @@ Module: `Schema`<br />
 
 ## Schema.StringFromBase64
 
-Decodes a base64 (RFC4648) encoded string into a UTF-8 string.
+Type-level representation of `StringFromBase64`.
 
 **Signature**
 
 ```ts
-declare const StringFromBase64: Schema<string, string, never>
+export interface StringFromBase64 extends decodeTo<String, String> {
+  readonly "Rebuild": StringFromBase64
+}
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6326)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L11654)
 
 Since v3.10.0

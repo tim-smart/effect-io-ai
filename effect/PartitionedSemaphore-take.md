@@ -1,0 +1,39 @@
+Package: `effect`<br />
+Module: `PartitionedSemaphore`<br />
+
+## PartitionedSemaphore.take
+
+Returns an effect that acquires the requested number of permits for the
+given partition key.
+
+**When to use**
+
+Use when you need manual permit acquisition for a partition and want to
+control acquisition and release as separate effects.
+
+**Details**
+
+If enough permits are available, the effect completes immediately. Otherwise
+it waits until released permits are assigned to this partition.
+
+**Gotchas**
+
+Requests for more permits than the semaphore capacity never complete.
+Requests for zero or a negative number of permits complete without acquiring
+anything.
+
+**See**
+
+- `release` for manually returning permits to the shared pool
+- `withPermits` for automatic acquire and release around an effect
+- `withPermit` for acquiring exactly one permit around an effect
+
+**Signature**
+
+```ts
+declare const take: { <K>(key: K, permits: number): (self: PartitionedSemaphore<K>) => Effect.Effect<void>; <K>(self: PartitionedSemaphore<K>, key: K, permits: number): Effect.Effect<void>; }
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/PartitionedSemaphore.ts#L401)
+
+Since v4.0.0

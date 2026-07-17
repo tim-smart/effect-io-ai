@@ -1,0 +1,22 @@
+Package: `effect`<br />
+Module: `CliError`<br />
+
+## CliError.ShowHelp
+
+Error data requesting CLI help rendering for a command path.
+
+**Details**
+
+It is used for explicit help requests and for parse or validation failures
+that should be shown with help text. When `errors` is non-empty, the runtime
+exit code is `1`; otherwise it is `0`.
+
+**Signature**
+
+```ts
+declare class ShowHelp
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/CliError.ts#L546)
+
+Since v4.0.0

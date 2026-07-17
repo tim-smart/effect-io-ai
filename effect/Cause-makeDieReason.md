@@ -1,0 +1,36 @@
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.makeDieReason
+
+Creates a standalone `Die` reason (not wrapped in a `Cause`).
+
+**When to use**
+
+Use when constructing a standalone defect reason for `fromReasons` or
+direct comparison.
+
+**Example** (Creating a Die reason)
+
+```ts
+import { Cause } from "effect"
+
+const reason = Cause.makeDieReason("bug")
+console.log(reason._tag) // "Die"
+console.log(reason.defect) // "bug"
+```
+
+**See**
+
+- `makeFailReason` — create a `Fail` reason
+- `makeInterruptReason` — create an `Interrupt` reason
+
+**Signature**
+
+```ts
+declare const makeDieReason: (defect: unknown) => Die
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L590)
+
+Since v4.0.0

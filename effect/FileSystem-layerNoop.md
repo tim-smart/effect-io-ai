@@ -1,16 +1,42 @@
-Package: `@effect/platform`<br />
+Package: `effect`<br />
 Module: `FileSystem`<br />
 
 ## FileSystem.layerNoop
 
-Create a no-op file system that can be used for testing.
+Creates a Layer that provides a no-op FileSystem implementation for testing.
+
+**Details**
+
+This is a convenience function that wraps `makeNoop` in a Layer, making it easy
+to provide the test filesystem to your Effect programs.
+
+**Example** (Providing a no-op FileSystem layer)
+
+```ts
+import { Effect, FileSystem } from "effect"
+
+// Create a test layer with specific behaviors
+const testLayer = FileSystem.layerNoop({
+  readFileString: (path) => Effect.succeed("mocked content"),
+  exists: () => Effect.succeed(true)
+})
+
+const program = Effect.gen(function*() {
+  const fs = yield* FileSystem.FileSystem
+  const content = yield* fs.readFileString("any-file.txt")
+  return content
+})
+
+// Provide the test layer
+const testProgram = Effect.provide(program, testLayer)
+```
 
 **Signature**
 
 ```ts
-declare const layerNoop: (fileSystem: Partial<FileSystem>) => Layer<FileSystem>
+declare const layerNoop: (fileSystem: Partial<FileSystem>) => Layer.Layer<FileSystem>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/FileSystem.ts#L484)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/FileSystem.ts#L1040)
 
-Since v1.0.0
+Since v4.0.0

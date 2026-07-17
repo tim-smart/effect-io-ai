@@ -3,33 +3,39 @@ Module: `Struct`<br />
 
 ## Struct.keys
 
-Retrieves the object keys that are strings in a typed manner
+Returns the string keys of a struct as a properly typed `Array<keyof S & string>`.
 
-**Example**
+**When to use**
+
+Use when you want a typed replacement for `Object.keys` that narrows the result
+to the known string keys of the struct.
+
+**Gotchas**
+
+Symbol keys are excluded; only string keys are returned.
+
+**Example** (Reading typed keys)
 
 ```ts
-import * as assert from "node:assert"
 import { Struct } from "effect"
 
-const symbol: unique symbol = Symbol()
+const user = { name: "Alice", age: 30, [Symbol.for("id")]: 1 }
 
-const value = {
-  a: 1,
-  b: 2,
-  [symbol]: 3
-}
-
-const keys: Array<"a" | "b"> = Struct.keys(value)
-
-assert.deepStrictEqual(keys, ["a", "b"])
+const k: Array<"name" | "age"> = Struct.keys(user)
+console.log(k) // ["name", "age"]
 ```
+
+**See**
+
+- `get` – access a single key's value
+- `pick` – select a subset of keys into a new struct
 
 **Signature**
 
 ```ts
-declare const keys: <T extends {}>(o: T) => Array<(keyof T) & string>
+declare const keys: <S extends object>(self: S) => Array<(keyof S) & string>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Struct.ts#L221)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Struct.ts#L168)
 
 Since v3.6.0

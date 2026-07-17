@@ -1,0 +1,25 @@
+Package: `effect`<br />
+Module: `Context`<br />
+
+## Context.isKey
+
+Checks whether the provided argument is a `Key`.
+
+**Example** (Checking for keys)
+
+```ts
+import { Context } from "effect"
+import * as assert from "node:assert"
+
+assert.strictEqual(Context.isKey(Context.Service("Service")), true)
+```
+
+**Signature**
+
+```ts
+declare const isKey: (u: unknown) => u is Key<any, any>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Context.ts#L582)
+
+Since v4.0.0

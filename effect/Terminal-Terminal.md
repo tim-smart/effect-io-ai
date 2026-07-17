@@ -1,4 +1,4 @@
-Package: `@effect/platform`<br />
+Package: `effect`<br />
 Module: `Terminal`<br />
 
 ## Terminal.Terminal
@@ -10,33 +10,32 @@ user and display messages to a user.
 
 ```ts
 export interface Terminal {
+  readonly [TypeId]: typeof TypeId
+
   /**
    * The number of columns available on the platform's terminal interface.
    */
-  readonly columns: Effect<number>
+  readonly columns: Effect.Effect<number>
   /**
    * The number of rows available on the platform's terminal interface.
    */
-  readonly rows: Effect<number>
-  /**
-   * Determines if the current terminal interface is interactive.
-   */
-  readonly isTTY: Effect<boolean>
+
+  readonly rows: Effect.Effect<number>
   /**
    * Reads input events from the default standard input.
    */
-  readonly readInput: Effect<ReadonlyMailbox<UserInput>, never, Scope.Scope>
+  readonly readInput: Effect.Effect<Queue.Dequeue<UserInput, Cause.Done>, never, Scope.Scope>
   /**
    * Reads a single line from the default standard input.
    */
-  readonly readLine: Effect<string, QuitException>
+  readonly readLine: Effect.Effect<string, QuitError>
   /**
-   * Displays text to the the default standard output.
+   * Displays text to the default standard output.
    */
-  readonly display: (text: string) => Effect<void, PlatformError>
+  readonly display: (text: string) => Effect.Effect<void, PlatformError>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Terminal.ts#L20)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Terminal.ts#L31)
 
-Since v1.0.0
+Since v4.0.0

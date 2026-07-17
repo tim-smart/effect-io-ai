@@ -3,7 +3,26 @@ Module: `HashMap`<br />
 
 ## HashMap.mutate
 
-Mutates the `HashMap` within the context of the provided function.
+Runs a batch of updates against a transient mutable copy of the `HashMap`
+and returns the finalized immutable result.
+
+**Details**
+
+The callback may call mutation-oriented helpers such as `set` and `remove`
+on the transient map.
+
+**Example** (Applying batched mutations)
+
+```ts
+import { HashMap } from "effect"
+
+const map1 = HashMap.make(["a", 1])
+const map2 = HashMap.mutate(map1, (mutable) => {
+  HashMap.set(mutable, "b", 2)
+  HashMap.set(mutable, "c", 3)
+})
+// Returns a new HashMap with mutations applied
+```
 
 **Signature**
 
@@ -11,6 +30,6 @@ Mutates the `HashMap` within the context of the provided function.
 declare const mutate: { <K, V>(f: (self: HashMap<K, V>) => void): (self: HashMap<K, V>) => HashMap<K, V>; <K, V>(self: HashMap<K, V>, f: (self: HashMap<K, V>) => void): HashMap<K, V>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashMap.ts#L325)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashMap.ts#L773)
 
 Since v2.0.0

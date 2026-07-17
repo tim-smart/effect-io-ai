@@ -3,20 +3,40 @@ Module: `Effect`<br />
 
 ## Effect.logError
 
-Logs messages at the ERROR log level.
+Logs one or more messages at the ERROR level.
 
-**Details**
+**Example** (Logging errors)
 
-This function logs messages at the ERROR level, suitable for reporting
-application errors or failures. These logs are typically used for unexpected
-issues that need immediate attention.
+```ts
+import { Effect } from "effect"
+
+const program = Effect.gen(function*() {
+  yield* Effect.logError("Database connection failed")
+  yield* Effect.logError(
+    "Error code:",
+    500,
+    "Message:",
+    "Internal server error"
+  )
+
+  // Can be used with error objects
+  const error = new Error("Something went wrong")
+  yield* Effect.logError("Caught error:", error.message)
+})
+
+Effect.runPromise(program)
+// Output:
+// timestamp=2023-... level=ERROR message="Database connection failed"
+// timestamp=2023-... level=ERROR message="Error code: 500 Message: Internal server error"
+// timestamp=2023-... level=ERROR message="Caught error: Something went wrong"
+```
 
 **Signature**
 
 ```ts
-declare const logError: (...message: ReadonlyArray<any>) => Effect<void, never, never>
+declare const logError: (...message: ReadonlyArray<any>) => Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L10980)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13870)
 
 Since v2.0.0

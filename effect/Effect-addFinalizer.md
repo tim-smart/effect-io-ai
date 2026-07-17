@@ -3,129 +3,58 @@ Module: `Effect`<br />
 
 ## Effect.addFinalizer
 
-Ensures a finalizer is added to the scope of the calling effect, guaranteeing
-it runs when the scope is closed.
+Adds a finalizer to the current scope.
+
+**When to use**
+
+Use to register low-level cleanup in the current scope.
 
 **Details**
 
-This function adds a finalizer that will execute whenever the scope of the
-effect is closed, regardless of whether the effect succeeds, fails, or is
-interrupted. The finalizer receives the `Exit` value of the effect's scope,
-allowing it to react differently depending on how the effect concludes.
+The finalizer runs when the surrounding scope is closed and receives the
+`Exit` value used to close the scope.
 
-Finalizers are a reliable way to manage resource cleanup, ensuring that
-resources such as file handles, network connections, or database transactions
-are properly closed even in the event of an unexpected interruption or error.
-
-Finalizers operate in conjunction with Effect's scoped resources. If an
-effect with a finalizer is wrapped in a scope, the finalizer will execute
-automatically when the scope ends.
-
-**Example** (Adding a Finalizer on Success)
+**Example** (Registering scope finalizers)
 
 ```ts
-import { Effect, Console } from "effect"
+import { Console, Effect, Exit } from "effect"
 
-//      ┌─── Effect<string, never, Scope>
-//      ▼
-const program = Effect.gen(function* () {
-  yield* Effect.addFinalizer((exit) =>
-    Console.log(`Finalizer executed. Exit status: ${exit._tag}`)
-  )
-  return "some result"
-})
+const program = Effect.scoped(
+  Effect.gen(function*() {
+    // Add a finalizer that runs when the scope closes
+    yield* Effect.addFinalizer((exit) =>
+      Console.log(
+        Exit.isSuccess(exit)
+          ? "Cleanup: Operation completed successfully"
+          : "Cleanup: Operation failed, cleaning up resources"
+      )
+    )
 
-// Wrapping the effect in a scope
-//
-//      ┌─── Effect<string, never, never>
-//      ▼
-const runnable = Effect.scoped(program)
+    yield* Console.log("Performing main operation...")
 
-Effect.runPromiseExit(runnable).then(console.log)
+    // This could succeed or fail
+    return "operation result"
+  })
+)
+
+Effect.runPromise(program).then(console.log)
 // Output:
-// Finalizer executed. Exit status: Success
-// { _id: 'Exit', _tag: 'Success', value: 'some result' }
-```
-
-**Example** (Adding a Finalizer on Failure)
-
-```ts
-import { Effect, Console } from "effect"
-
-//      ┌─── Effect<never, string, Scope>
-//      ▼
-const program = Effect.gen(function* () {
-  yield* Effect.addFinalizer((exit) =>
-    Console.log(`Finalizer executed. Exit status: ${exit._tag}`)
-  )
-  return yield* Effect.fail("Uh oh!")
-})
-
-// Wrapping the effect in a scope
-//
-//      ┌─── Effect<never, string, never>
-//      ▼
-const runnable = Effect.scoped(program)
-
-Effect.runPromiseExit(runnable).then(console.log)
-// Output:
-// Finalizer executed. Exit status: Failure
-// {
-//   _id: 'Exit',
-//   _tag: 'Failure',
-//   cause: { _id: 'Cause', _tag: 'Fail', failure: 'Uh oh!' }
-// }
-```
-
-**Example** (Adding a Finalizer on Interruption)
-
-```ts
-import { Effect, Console } from "effect"
-
-//      ┌─── Effect<never, never, Scope>
-//      ▼
-const program = Effect.gen(function* () {
-  yield* Effect.addFinalizer((exit) =>
-    Console.log(`Finalizer executed. Exit status: ${exit._tag}`)
-  )
-  return yield* Effect.interrupt
-})
-
-// Wrapping the effect in a scope
-//
-//      ┌─── Effect<never, never, never>
-//      ▼
-const runnable = Effect.scoped(program)
-
-Effect.runPromiseExit(runnable).then(console.log)
-// Output:
-// Finalizer executed. Exit status: Failure
-// {
-//   _id: 'Exit',
-//   _tag: 'Failure',
-//   cause: {
-//     _id: 'Cause',
-//     _tag: 'Interrupt',
-//     fiberId: {
-//       _id: 'FiberId',
-//       _tag: 'Runtime',
-//       id: 0,
-//       startTimeMillis: ...
-//     }
-//   }
-// }
+// Performing main operation...
+// Cleanup: Operation completed successfully
+// operation result
 ```
 
 **See**
 
-- `onExit` for attaching a finalizer directly to an effect.
+- `acquireRelease` for resource acquisition with a release finalizer
+- `ensuring` for attaching a finalizer to one effect
 
 **Signature**
 
 ```ts
-declare const addFinalizer: <X, R>(finalizer: (exit: Exit.Exit<unknown, unknown>) => Effect<X, never, R>) => Effect<void, never, Scope.Scope | R>
+declare const addFinalizer: <R>(finalizer: (exit: Exit.Exit<unknown, unknown>) => Effect<void, never, R>) => Effect<void, never, R | Scope>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L5681)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L6731)
 
 Since v2.0.0

@@ -1,0 +1,16 @@
+Package: `effect`<br />
+Module: `AiError`<br />
+
+## AiError.RateLimitErrorMetadata
+
+Provider-specific metadata attached to `RateLimitError`.
+
+**Signature**
+
+```ts
+export interface RateLimitErrorMetadata extends ProviderMetadata {}
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/AiError.ts#L223)
+
+Since v4.0.0

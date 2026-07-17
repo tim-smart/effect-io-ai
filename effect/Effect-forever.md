@@ -3,27 +3,38 @@ Module: `Effect`<br />
 
 ## Effect.forever
 
-Repeats an effect indefinitely until an error occurs.
+Repeats this effect forever (until the first error).
 
-**Details**
+**Example** (Repeating forever)
 
-This function executes an effect repeatedly in an infinite loop. Each
-iteration is executed sequentially, and the loop continues until the first
-error occurs. If the effect succeeds, it starts over from the beginning. If
-the effect fails, the error is propagated, and the loop stops.
+```ts
+import { Console, Effect, Fiber } from "effect"
 
-Be cautious when using this function, as it will run indefinitely unless an
-error interrupts it. This makes it suitable for long-running processes or
-continuous polling tasks, but you should ensure proper error handling or
-combine it with other operators like `timeout` or `schedule` to prevent
-unintentional infinite loops.
+const task = Effect.gen(function*() {
+  yield* Console.log("Task running...")
+  yield* Effect.sleep("1 second")
+})
+
+// This will run forever, printing every second
+const program = task.pipe(Effect.forever)
+
+// This will run forever, without yielding every iteration
+const programNoYield = task.pipe(Effect.forever({ disableYield: true }))
+
+// Run for 5 seconds then interrupt
+const timedProgram = Effect.gen(function*() {
+  const fiber = yield* Effect.forkChild(program)
+  yield* Effect.sleep("5 seconds")
+  yield* Fiber.interrupt(fiber)
+})
+```
 
 **Signature**
 
 ```ts
-declare const forever: <A, E, R>(self: Effect<A, E, R>) => Effect<never, E, R>
+declare const forever: <Arg extends Effect<any, any, any> | { readonly disableYield?: boolean | undefined; } | undefined = { readonly disableYield?: boolean | undefined; }>(effectOrOptions?: Arg, options?: { readonly disableYield?: boolean | undefined; } | undefined) => [Arg] extends [Effect<infer _A, infer _E, infer _R>] ? Effect<never, _E, _R> : <A, E, R>(self: Effect<A, E, R>) => Effect<never, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L9870)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L7515)
 
 Since v2.0.0

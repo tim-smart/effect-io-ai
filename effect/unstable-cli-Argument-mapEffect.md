@@ -1,0 +1,35 @@
+Package: `effect`<br />
+Module: `Argument`<br />
+
+## Argument.mapEffect
+
+Transforms the parsed value of a positional argument using an effectful function.
+
+**Example** (Validating values effectfully)
+
+```ts
+import { Effect } from "effect"
+import { Argument, CliError } from "effect/unstable/cli"
+
+const files = Argument.string("files").pipe(
+  Argument.mapEffect((file) =>
+    file.endsWith(".txt")
+      ? Effect.succeed(file)
+      : Effect.fail(
+        new CliError.UserError({
+          cause: new Error("Only .txt files allowed")
+        })
+      )
+  )
+)
+```
+
+**Signature**
+
+```ts
+declare const mapEffect: { <A, B>(f: (a: A) => Effect.Effect<B, CliError.CliError, Environment>): (self: Argument<A>) => Argument<B>; <A, B>(self: Argument<A>, f: (a: A) => Effect.Effect<B, CliError.CliError, Environment>): Argument<B>; }
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Argument.ts#L473)
+
+Since v4.0.0

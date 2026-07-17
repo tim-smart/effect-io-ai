@@ -3,59 +3,73 @@ Module: `Fiber`<br />
 
 ## Fiber.Fiber
 
-A fiber is a lightweight thread of execution that never consumes more than a
-whole thread (but may consume much less, depending on contention and
-asynchronicity). Fibers are spawned by forking effects, which run
-concurrently with the parent effect.
+A runtime fiber is a lightweight thread that executes Effects. Fibers are
+the unit of concurrency in Effect. They provide a way to run multiple
+Effects concurrently while maintaining structured concurrency and
+cancellation safety.
 
-Fibers can be joined, yielding their result to other fibers, or interrupted,
-which terminates the fiber, safely releasing all resources.
+**When to use**
+
+Use to observe, join, interrupt, or coordinate work that has already been
+forked.
+
+**Details**
+
+A fiber exposes both safe Effect-based operations, such as `await`,
+`join`, and `interrupt`, and low-level runtime fields used by
+the scheduler and runtime internals.
+
+**Gotchas**
+
+Prefer the exported functions in this module over calling `interruptUnsafe`
+or `pollUnsafe` directly. The unsafe methods are immediate runtime hooks and
+do not provide the same Effect-based sequencing guarantees.
+
+**Example** (Awaiting a forked fiber)
+
+```ts
+import { Effect, Fiber } from "effect"
+
+const program = Effect.gen(function*() {
+  // Fork an effect to run in a new fiber
+  const fiber = yield* Effect.forkChild(Effect.succeed(42))
+
+  // Wait for the fiber to complete and get its result
+  const result = yield* Fiber.await(fiber)
+  console.log(result) // Exit.succeed(42)
+
+  return result
+})
+```
 
 **Signature**
 
 ```ts
-export interface Fiber<out A, out E = never> extends Effect.Effect<A, E>, Fiber.Variance<A, E> {
-  /**
-   * The identity of the fiber.
-   */
-  id(): FiberId.FiberId
+export interface Fiber<out A, out E = never> extends Pipeable {
+  readonly [TypeId]: Fiber.Variance<A, E>
 
-  /**
-   * Awaits the fiber, which suspends the awaiting fiber until the result of the
-   * fiber has been determined.
-   */
-  readonly await: Effect.Effect<Exit.Exit<A, E>>
-
-  /**
-   * Retrieves the immediate children of the fiber.
-   */
-  readonly children: Effect.Effect<Array<Fiber.Runtime<any, any>>>
-
-  /**
-   * Inherits values from all `FiberRef` instances into current fiber. This
-   * will resume immediately.
-   */
-  readonly inheritAll: Effect.Effect<void>
-
-  /**
-   * Tentatively observes the fiber, but returns immediately if it is not
-   * already done.
-   */
-  readonly poll: Effect.Effect<Option.Option<Exit.Exit<A, E>>>
-
-  /**
-   * In the background, interrupts the fiber as if interrupted from the
-   * specified fiber. If the fiber has already exited, the returned effect will
-   * resume immediately. Otherwise, the effect will resume when the fiber exits.
-   */
-  interruptAsFork(fiberId: FiberId.FiberId): Effect.Effect<void>
-
-  readonly [Unify.typeSymbol]?: unknown
-  readonly [Unify.unifySymbol]?: FiberUnify<this>
-  readonly [Unify.ignoreSymbol]?: FiberUnifyIgnore
+  readonly id: number
+  readonly currentOpCount: number
+  readonly getRef: <A>(ref: Context.Reference<A>) => A
+  readonly context: Context.Context<never>
+  setContext(context: Context.Context<never>): void
+  readonly currentScheduler: Scheduler
+  readonly currentDispatcher: SchedulerDispatcher
+  readonly currentSpan?: AnySpan | undefined
+  readonly currentLogLevel: LogLevel
+  readonly minimumLogLevel: LogLevel
+  readonly currentStackFrame?: StackFrame | undefined
+  readonly maxOpsBeforeYield: number
+  readonly currentPreventYield: boolean
+  readonly addObserver: (cb: (exit: Exit<A, E>) => void) => () => void
+  readonly interruptUnsafe: (
+    fiberId?: number | undefined,
+    annotations?: Context.Context<never> | undefined
+  ) => void
+  readonly pollUnsafe: () => Exit<A, E> | undefined
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Fiber.ts#L65)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Fiber.ts#L70)
 
 Since v2.0.0

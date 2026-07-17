@@ -3,29 +3,44 @@ Module: `Types`<br />
 
 ## Types.TupleOf
 
-Represents a tuple with a fixed number of elements of type `T`.
+Constructs a tuple type with exactly `N` elements of type `T`.
 
-This type constructs a tuple that has exactly `N` elements of type `T`.
+**When to use**
 
-**Example**
+Use when you need a fixed-length array type, especially instead of manually
+writing `[T, T, T, ...]` for longer tuples.
+
+**Details**
+
+- If `N` is a literal number, produces a tuple of that exact length.
+- If `N` is the general `number` type (non-literal), degrades to `Array<T>`.
+- Negative numbers produce `never`.
+
+**Example** (Checking fixed-length tuples)
 
 ```ts
-import { TupleOf } from "effect/Types"
+import type { Types } from "effect"
 
-// A tuple with exactly 3 numbers
-const example1: TupleOf<3, number> = [1, 2, 3]; // valid
-// @ts-expect-error
-const example2: TupleOf<3, number> = [1, 2]; // invalid
-// @ts-expect-error
-const example3: TupleOf<3, number> = [1, 2, 3, 4]; // invalid
+// Exactly 3 numbers
+const triple: Types.TupleOf<3, number> = [1, 2, 3]
+
+// @ts-expect-error - too few elements
+const tooFew: Types.TupleOf<3, number> = [1, 2]
+
+// @ts-expect-error - too many elements
+const tooMany: Types.TupleOf<3, number> = [1, 2, 3, 4]
 ```
+
+**See**
+
+- `TupleOfAtLeast`
 
 **Signature**
 
 ```ts
-type TupleOf<N, T> = N extends N ? number extends N ? Array<T> : _TupleOf<T, N, []> : never
+type TupleOf<N, T> = N extends N ? number extends N ? Array<T> : TupleOf_<T, N, []> : never
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L34)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L54)
 
 Since v3.3.0

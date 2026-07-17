@@ -3,7 +3,24 @@ Module: `DateTime`<br />
 
 ## DateTime.toDateUtc
 
-Get the UTC `Date` of a `DateTime`.
+Gets the UTC `Date` of a `DateTime`.
+
+**Details**
+
+This always returns the UTC representation, ignoring any time zone information.
+
+**Example** (Converting DateTime values to UTC Dates)
+
+```ts
+import { DateTime } from "effect"
+
+const dt = DateTime.makeZonedUnsafe("2024-01-01T12:00:00Z", {
+  timeZone: "Europe/London"
+})
+
+const utcDate = DateTime.toDateUtc(dt)
+console.log(utcDate.toISOString()) // "2024-01-01T12:00:00.000Z"
+```
 
 **Signature**
 
@@ -11,6 +28,6 @@ Get the UTC `Date` of a `DateTime`.
 declare const toDateUtc: (self: DateTime) => Date
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L905)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L1555)
 
 Since v3.6.0

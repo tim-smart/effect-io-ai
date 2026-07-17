@@ -1,0 +1,24 @@
+Package: `effect`<br />
+Module: `Argument`<br />
+
+## Argument.float
+
+Creates a positional float argument.
+
+**Example** (Creating a float argument)
+
+```ts
+import { Argument } from "effect/unstable/cli"
+
+const ratio = Argument.float("ratio")
+```
+
+**Signature**
+
+```ts
+declare const float: (name: string) => Argument<number>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Argument.ts#L130)
+
+Since v4.0.0

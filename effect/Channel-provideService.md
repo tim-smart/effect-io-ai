@@ -3,15 +3,15 @@ Module: `Channel`<br />
 
 ## Channel.provideService
 
-Provides the effect with the single service it requires. If the effect
-requires more than one service use `provideContext` instead.
+Provides a concrete service for a context key, removing that service
+requirement from the returned channel.
 
 **Signature**
 
 ```ts
-declare const provideService: { <I, S>(tag: Context.Tag<I, S>, service: Types.NoInfer<S>): <OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>(self: Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>) => Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Exclude<Env, I>>; <OutElem, InElem, OutErr, InErr, OutDone, InDone, Env, I, S>(self: Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>, tag: Context.Tag<I, S>, service: Types.NoInfer<S>): Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Exclude<Env, I>>; }
+declare const provideService: { <I, S>(key: Context.Key<I, S>, service: NoInfer<S>): <OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>(self: Channel<OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>) => Channel<OutElem, OutErr, OutDone, InElem, InErr, InDone, Exclude<Env, I>>; <OutElem, OutErr, OutDone, InElem, InErr, InDone, Env, I, S>(self: Channel<OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>, key: Context.Key<I, S>, service: NoInfer<S>): Channel<OutElem, OutErr, OutDone, InElem, InErr, InDone, Exclude<Env, I>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Channel.ts#L1815)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Channel.ts#L7218)
 
 Since v2.0.0

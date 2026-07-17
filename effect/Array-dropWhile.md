@@ -3,16 +3,28 @@ Module: `Array`<br />
 
 ## Array.dropWhile
 
-Remove the longest initial subarray for which all element satisfy the specified predicate, creating a new `Array`.
+Drops elements from the start while the predicate holds, returning the rest.
 
-**Example**
+**When to use**
+
+Use to remove a leading prefix of elements that satisfy a predicate.
+
+**Details**
+
+The predicate receives `(element, index)`.
+
+**Example** (Dropping while condition holds)
 
 ```ts
 import { Array } from "effect"
 
-const result = Array.dropWhile([1, 2, 3, 4, 5], x => x < 4)
-console.log(result) // [4, 5]
+console.log(Array.dropWhile([1, 2, 3, 4, 5], (x) => x < 4)) // [4, 5]
 ```
+
+**See**
+
+- `takeWhile` — keep the matching prefix instead
+- `drop` — drop a fixed count
 
 **Signature**
 
@@ -20,6 +32,6 @@ console.log(result) // [4, 5]
 declare const dropWhile: { <A>(predicate: (a: NoInfer<A>, i: number) => boolean): (self: Iterable<A>) => Array<A>; <A>(self: Iterable<A>, predicate: (a: A, i: number) => boolean): Array<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L971)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L1574)
 
 Since v2.0.0

@@ -1,0 +1,59 @@
+Package: `effect`<br />
+Module: `References`<br />
+
+## References.TracerEnabled
+
+Context reference for controlling whether tracing is enabled globally. When set to false,
+spans will not be registered with the tracer and tracing overhead is minimized.
+
+**When to use**
+
+Use to disable or re-enable span registration in the current context.
+
+**Example** (Toggling tracing)
+
+```ts
+import { Effect, References } from "effect"
+
+const tracingControl = Effect.gen(function*() {
+  // Check if tracing is enabled (default is true)
+  const current = yield* References.TracerEnabled
+  console.log(current) // true
+
+  // Disable tracing globally
+  yield* Effect.provideService(
+    Effect.gen(function*() {
+      const isEnabled = yield* References.TracerEnabled
+      console.log(isEnabled) // false
+
+      // Spans will not be traced in this context
+      yield* Effect.log("This will not be traced")
+    }),
+    References.TracerEnabled,
+    false
+  )
+
+  // Re-enable tracing
+  yield* Effect.provideService(
+    Effect.gen(function*() {
+      const isEnabled = yield* References.TracerEnabled
+      console.log(isEnabled) // true
+
+      // All subsequent spans will be traced
+      yield* Effect.log("This will be traced")
+    }),
+    References.TracerEnabled,
+    true
+  )
+})
+```
+
+**Signature**
+
+```ts
+declare const TracerEnabled: Context.Reference<boolean>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/References.ts#L484)
+
+Since v4.0.0

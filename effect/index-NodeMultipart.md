@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.NodeMultipart
 
-Re-exports all named exports from the "./NodeMultipart.js" module as `NodeMultipart`.
+Re-exports all named exports from the "./NodeMultipart.ts" module as `NodeMultipart`.
 
 **Signature**
 
 ```ts
-export * as NodeMultipart from "./NodeMultipart.js"
+export * as NodeMultipart from "./NodeMultipart.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L54)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L65)
 
-Since v1.0.0
+Since v4.0.0

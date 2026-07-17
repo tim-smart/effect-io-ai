@@ -3,23 +3,40 @@ Module: `Array`<br />
 
 ## Array.partition
 
-Separate elements based on a predicate that also exposes the index of the element.
+Splits an iterable using a `Filter` into failures and successes.
 
-**Example**
+**When to use**
+
+Use to partition an iterable by evaluating each element with a
+`Result`-returning filter and keeping both failure and success values.
+
+**Details**
+
+Returns `[excluded, satisfying]`. The filter receives `(element, index)`.
+
+**Example** (Partitioning with a filter)
 
 ```ts
-import { Array } from "effect"
+import { Array, Result } from "effect"
 
-const result = Array.partition([1, 2, 3, 4], n => n % 2 === 0)
-console.log(result) // [[1, 3], [2, 4]]
+console.log(Array.partition([1, -2, 3], (n, i) =>
+  n > 0 ? Result.succeed(n + i) : Result.fail(`negative:${n}`)
+))
+// [["negative:-2"], [1, 5]]
 ```
+
+**See**
+
+- `filter` — keep only matching elements
+- `filterMap` for discarding failures
+- `separate` — split an iterable of `Result` values
 
 **Signature**
 
 ```ts
-declare const partition: { <A, B extends A>(refinement: (a: NoInfer<A>, i: number) => a is B): (self: Iterable<A>) => [excluded: Array<Exclude<A, B>>, satisfying: Array<B>]; <A>(predicate: (a: NoInfer<A>, i: number) => boolean): (self: Iterable<A>) => [excluded: Array<A>, satisfying: Array<A>]; <A, B extends A>(self: Iterable<A>, refinement: (a: A, i: number) => a is B): [excluded: Array<Exclude<A, B>>, satisfying: Array<B>]; <A>(self: Iterable<A>, predicate: (a: A, i: number) => boolean): [excluded: Array<A>, satisfying: Array<A>]; }
+declare const partition: { <A, Pass, Fail>(f: (input: NoInfer<A>, i: number) => Result.Result<Pass, Fail>): (self: Iterable<A>) => [excluded: Array<Fail>, satisfying: Array<Pass>]; <A, Pass, Fail>(self: Iterable<A>, f: (input: A, i: number) => Result.Result<Pass, Fail>): [excluded: Array<Fail>, satisfying: Array<Pass>]; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2791)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L3801)
 
 Since v2.0.0

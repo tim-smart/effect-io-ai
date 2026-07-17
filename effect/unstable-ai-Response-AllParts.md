@@ -1,0 +1,35 @@
+Package: `effect`<br />
+Module: `Response`<br />
+
+## Response.AllParts
+
+Union type for all response parts with tool-specific typing.
+
+**Signature**
+
+```ts
+type AllParts<Tools> = | TextPart
+  | TextStartPart
+  | TextDeltaPart
+  | TextEndPart
+  | ReasoningPart
+  | ReasoningStartPart
+  | ReasoningDeltaPart
+  | ReasoningEndPart
+  | ToolParamsStartPart
+  | ToolParamsDeltaPart
+  | ToolParamsEndPart
+  | ToolCallParts<Tools>
+  | ToolResultParts<Tools>
+  | ToolApprovalRequestPart
+  | FilePart
+  | DocumentSourcePart
+  | UrlSourcePart
+  | ResponseMetadataPart
+  | FinishPart
+  | ErrorPart
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Response.ts#L98)
+
+Since v4.0.0

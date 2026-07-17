@@ -5,7 +5,7 @@ Module: `Graph`<br />
 
 Transforms all edge data in a mutable graph using the provided mapping function.
 
-**Example**
+**Example** (Mapping edge data)
 
 ```ts
 import { Graph } from "effect"
@@ -20,7 +20,7 @@ const graph = Graph.directed<string, number>((mutable) => {
 })
 
 const edgeData = Graph.getEdge(graph, 0)
-console.log(edgeData) // Option.some({ source: 0, target: 1, data: 20 })
+console.log(edgeData) // Option.some(new Graph.Edge({ source: 0, target: 1, data: 20 }))
 ```
 
 **Signature**
@@ -29,6 +29,6 @@ console.log(edgeData) // Option.some({ source: 0, target: 1, data: 20 })
 declare const mapEdges: <N, E, T extends Kind = "directed">(mutable: MutableGraph<N, E, T>, f: (data: E) => E) => void
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L832)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L1926)
 
 Since v3.18.0

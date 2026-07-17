@@ -1,16 +1,16 @@
-Package: `@effect/platform-node`<br />
+Package: `@effect/platform-node-shared`<br />
 Module: `index`<br />
 
 ## index.NodeSink
 
-Re-exports all named exports from the "./NodeSink.js" module as `NodeSink`.
+Re-exports all named exports from the "./NodeSink.ts" module as `NodeSink`.
 
 **Signature**
 
 ```ts
-export * as NodeSink from "./NodeSink.js"
+export * as NodeSink from "./NodeSink.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L69)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/index.ts#L40)
 
-Since v1.0.0
+Since v4.0.0

@@ -5,10 +5,10 @@ Module: `Graph`<br />
 
 Finds the first edge that matches the given predicate.
 
-**Example**
+**Example** (Finding the first matching edge)
 
 ```ts
-import { Graph, Option } from "effect"
+import { Graph } from "effect"
 
 const graph = Graph.mutate(Graph.directed<string, number>(), (mutable) => {
   const nodeA = Graph.addNode(mutable, "Node A")
@@ -28,9 +28,9 @@ console.log(notFound) // Option.none()
 **Signature**
 
 ```ts
-declare const findEdge: <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>, predicate: (data: E, source: NodeIndex, target: NodeIndex) => boolean) => Option.Option<EdgeIndex>
+declare const findEdge: { <E>(predicate: (data: E, source: NodeIndex, target: NodeIndex) => boolean): <N, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>) => Option.Option<EdgeIndex>; <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>, predicate: (data: E, source: NodeIndex, target: NodeIndex) => boolean): Option.Option<EdgeIndex>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L654)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L1714)
 
 Since v3.18.0

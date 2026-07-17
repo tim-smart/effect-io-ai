@@ -3,17 +3,21 @@ Module: `BigDecimal`<br />
 
 ## BigDecimal.isPositive
 
-Checks if a given `BigDecimal` is positive.
+Checks whether a given `BigDecimal` is positive.
 
-**Example**
+**When to use**
+
+Use to test whether a `BigDecimal` is greater than zero.
+
+**Example** (Checking positive decimals)
 
 ```ts
+import { BigDecimal } from "effect"
 import * as assert from "node:assert"
-import { isPositive, unsafeFromString } from "effect/BigDecimal"
 
-assert.deepStrictEqual(isPositive(unsafeFromString("-1")), false)
-assert.deepStrictEqual(isPositive(unsafeFromString("0")), false)
-assert.deepStrictEqual(isPositive(unsafeFromString("1")), true)
+assert.deepStrictEqual(BigDecimal.isPositive(BigDecimal.fromStringUnsafe("-1")), false)
+assert.deepStrictEqual(BigDecimal.isPositive(BigDecimal.fromStringUnsafe("0")), false)
+assert.deepStrictEqual(BigDecimal.isPositive(BigDecimal.fromStringUnsafe("1")), true)
 ```
 
 **Signature**
@@ -22,6 +26,6 @@ assert.deepStrictEqual(isPositive(unsafeFromString("1")), true)
 declare const isPositive: (n: BigDecimal) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L1128)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L1675)
 
 Since v2.0.0

@@ -1,0 +1,16 @@
+Package: `effect`<br />
+Module: `McpSchema`<br />
+
+## McpSchema.Tool
+
+Schema for the definition of a tool the client can call.
+
+**Signature**
+
+```ts
+declare class Tool
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/McpSchema.ts#L1455)
+
+Since v4.0.0

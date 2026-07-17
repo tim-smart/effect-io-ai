@@ -3,18 +3,24 @@ Module: `Array`<br />
 
 ## Array.flatten
 
-Combines multiple arrays into a single array by concatenating all elements
-from each nested array. This function ensures that the structure of nested
-arrays is collapsed into a single, flat array.
+Flattens a nested array of arrays into a single array.
 
-**Example**
+**When to use**
+
+Use to collapse one level of nested arrays when no per-element mapping is
+needed.
+
+**Example** (Flattening nested arrays)
 
 ```ts
 import { Array } from "effect"
 
-const result = Array.flatten([[1, 2], [], [3, 4], [], [5, 6]])
-console.log(result) // [1, 2, 3, 4, 5, 6]
+console.log(Array.flatten([[1, 2], [], [3, 4], [], [5, 6]])) // [1, 2, 3, 4, 5, 6]
 ```
+
+**See**
+
+- `flatMap` — map then flatten in one step
 
 **Signature**
 
@@ -22,6 +28,6 @@ console.log(result) // [1, 2, 3, 4, 5, 6]
 declare const flatten: <const S extends ReadonlyArray<ReadonlyArray<any>>>(self: S) => ReadonlyArray.Flatten<S>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2551)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L3571)
 
 Since v2.0.0

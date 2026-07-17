@@ -3,33 +3,39 @@ Module: `Predicate`<br />
 
 ## Predicate.isObject
 
-A refinement that checks if a value is an `object`. Note that in JavaScript,
-arrays and functions are also considered objects.
+Checks whether a value is a non-null object value that is not an array.
 
-**Example**
+**When to use**
+
+Use to narrow unknown input to a non-null, non-array object with a
+`Predicate` guard.
+
+**Details**
+
+This is a structural runtime check using `typeof input === "object"`, so it
+also accepts object instances such as `Date`, `Map`, class instances, and
+typed arrays. It excludes `null` and arrays.
+
+**Example** (Guarding objects)
 
 ```ts
-import * as assert from "node:assert"
-import { isObject } from "effect/Predicate"
+import { Predicate } from "effect"
 
-assert.strictEqual(isObject({}), true)
-assert.strictEqual(isObject([]), true)
-assert.strictEqual(isObject(() => {}), true)
-
-assert.strictEqual(isObject(null), false)
-assert.strictEqual(isObject("hello"), false)
+console.log(Predicate.isObject({ a: 1 }))
+console.log(Predicate.isObject([1, 2]))
 ```
 
 **See**
 
-- isRecord to check for plain objects (excluding arrays and functions).
+- `isObjectOrArray`
+- `isReadonlyObject`
 
 **Signature**
 
 ```ts
-declare const isObject: (input: unknown) => input is object
+declare const isObject: (input: unknown) => input is { [x: PropertyKey]: unknown; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L580)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L1033)
 
 Since v2.0.0

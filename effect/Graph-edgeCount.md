@@ -5,7 +5,7 @@ Module: `Graph`<br />
 
 Returns the number of edges in the graph.
 
-**Example**
+**Example** (Counting edges)
 
 ```ts
 import { Graph } from "effect"
@@ -31,6 +31,6 @@ console.log(Graph.edgeCount(graphWithEdges)) // 3
 declare const edgeCount: <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L1474)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L2658)
 
 Since v3.18.0

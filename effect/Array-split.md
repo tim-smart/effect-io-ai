@@ -3,16 +3,27 @@ Module: `Array`<br />
 
 ## Array.split
 
-Splits this iterable into `n` equally sized arrays.
+Splits an iterable into `n` roughly equal-sized chunks.
 
-**Example**
+**When to use**
+
+Use to distribute elements across a fixed number of groups, such as when splitting work across threads.
+
+**Details**
+
+Uses `chunksOf(ceil(length / n))` internally. The last chunk may be shorter.
+
+**Example** (Splitting into groups)
 
 ```ts
 import { Array } from "effect"
 
-const result = Array.split([1, 2, 3, 4, 5, 6, 7, 8], 3)
-console.log(result) // [[1, 2, 3], [4, 5, 6], [7, 8]]
+console.log(Array.split([1, 2, 3, 4, 5, 6, 7, 8], 3)) // [[1, 2, 3], [4, 5, 6], [7, 8]]
 ```
+
+**See**
+
+- `chunksOf` — split into fixed-size chunks
 
 **Signature**
 
@@ -20,6 +31,6 @@ console.log(result) // [[1, 2, 3], [4, 5, 6], [7, 8]]
 declare const split: { (n: number): <A>(self: Iterable<A>) => Array<Array<A>>; <A>(self: Iterable<A>, n: number): Array<Array<A>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L1985)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2739)
 
 Since v2.0.0

@@ -1,0 +1,242 @@
+[
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Hooks.ts",
+      "path": "src/Hooks.ts"
+    },
+    "project": "@effect/atom-solid",
+    "name": "useAtomInitialValues",
+    "description": "Seeds initial atom values in the current Solid atom registry.\n\n**When to use**\n\nUse to seed atom values from a Solid component after the current registry\nalready exists.\n\n**Details**\n\nFor each atom in the current registry, this hook applies the first value\nsupplied through the hook. Later calls for the same atom in that registry are\nignored.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "hooks",
+    "signature": "declare const useAtomInitialValues: (initialValues: Iterable<readonly [Atom.Atom<any>, any]>) => void",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/solid/src/Hooks.ts#L39"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Hooks.ts",
+      "path": "src/Hooks.ts"
+    },
+    "project": "@effect/atom-solid",
+    "name": "useAtomValue",
+    "description": "Subscribes to an atom in the current Solid registry and returns its value as\na Solid accessor.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "hooks",
+    "signature": "declare const useAtomValue: { <A>(atom: () => Atom.Atom<A>): Accessor<A>; <A, B>(atom: () => Atom.Atom<A>, f: (_: A) => B): Accessor<B>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/solid/src/Hooks.ts#L61"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Hooks.ts",
+      "path": "src/Hooks.ts"
+    },
+    "project": "@effect/atom-solid",
+    "name": "useAtomMount",
+    "description": "Mounts an atom in the current Solid registry for the lifetime of the current\nSolid computation.\n\n**When to use**\n\nUse to keep an atom mounted from a Solid owner without reading, writing, or\nrefreshing it.\n\n**Details**\n\nThe hook uses the current `RegistryContext`, mounts inside a Solid\ncomputation, and releases the mount through Solid cleanup when the\ncomputation changes or the owner is disposed.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "hooks",
+    "signature": "declare const useAtomMount: <A>(atom: () => Atom.Atom<A>) => void",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/solid/src/Hooks.ts#L142"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Hooks.ts",
+      "path": "src/Hooks.ts"
+    },
+    "project": "@effect/atom-solid",
+    "name": "useAtomSet",
+    "description": "Returns a setter for a writable atom without subscribing to its value.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "hooks",
+    "signature": "declare const useAtomSet: <R, W, Mode extends \"value\" | \"promise\" | \"promiseExit\" = never>(atom: () => Atom.Writable<R, W>, options?: { readonly mode?: ([R] extends [AsyncResult.AsyncResult<any, any>] ? Mode : \"value\") | undefined; }) => \"promise\" extends Mode ? ((value: W) => Promise<AsyncResult.AsyncResult.Success<R>>) : \"promiseExit\" extends Mode ? ((value: W) => Promise<Exit.Exit<AsyncResult.AsyncResult.Success<R>, AsyncResult.AsyncResult.Failure<R>>>) : ((value: W | ((value: R) => W)) => void)",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/solid/src/Hooks.ts#L153"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Hooks.ts",
+      "path": "src/Hooks.ts"
+    },
+    "project": "@effect/atom-solid",
+    "name": "useAtomRefresh",
+    "description": "Mounts an atom and returns a callback that refreshes the current atom.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "hooks",
+    "signature": "declare const useAtomRefresh: <A>(atom: () => Atom.Atom<A>) => () => void",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/solid/src/Hooks.ts#L181"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Hooks.ts",
+      "path": "src/Hooks.ts"
+    },
+    "project": "@effect/atom-solid",
+    "name": "useAtom",
+    "description": "Returns a Solid accessor for a writable atom together with a setter for\nupdating it.\n\n**When to use**\n\nUse when a Solid component or computation needs both a reactive accessor for\na writable atom and a write function for that same atom.\n\n**Details**\n\nThe setter accepts either a write value or an updater function. For\n`AsyncResult` atoms, `promise` and `promiseExit` modes return promises for the\nsuccess value or full `Exit`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "hooks",
+    "signature": "declare const useAtom: <R, W, const Mode extends \"value\" | \"promise\" | \"promiseExit\" = never>(atom: () => Atom.Writable<R, W>, options?: { readonly mode?: ([R] extends [AsyncResult.AsyncResult<any, any>] ? Mode : \"value\") | undefined; }) => readonly [value: Accessor<R>, write: \"promise\" extends Mode ? ((value: W) => Promise<AsyncResult.AsyncResult.Success<R>>) : \"promiseExit\" extends Mode ? ((value: W) => Promise<Exit.Exit<AsyncResult.AsyncResult.Success<R>, AsyncResult.AsyncResult.Failure<R>>>) : ((value: W | ((value: R) => W)) => void)]",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/solid/src/Hooks.ts#L209"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Hooks.ts",
+      "path": "src/Hooks.ts"
+    },
+    "project": "@effect/atom-solid",
+    "name": "useAtomSubscribe",
+    "description": "Subscribes a callback to an atom in the current Solid registry.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "hooks",
+    "signature": "declare const useAtomSubscribe: <A>(atom: () => Atom.Atom<A>, f: (_: A) => void, options?: { readonly immediate?: boolean; }) => void",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/solid/src/Hooks.ts#L237"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Hooks.ts",
+      "path": "src/Hooks.ts"
+    },
+    "project": "@effect/atom-solid",
+    "name": "useAtomResource",
+    "description": "Converts an `AsyncResult` atom into a Solid resource.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "hooks",
+    "signature": "declare const useAtomResource: <A, E>(atom: () => Atom.Atom<AsyncResult.AsyncResult<A, E>>, options?: ResourceOptions<A> & { readonly suspendOnWaiting?: boolean | undefined; }) => ResourceReturn<A, void>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/solid/src/Hooks.ts#L254"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Hooks.ts",
+      "path": "src/Hooks.ts"
+    },
+    "project": "@effect/atom-solid",
+    "name": "useAtomRef",
+    "description": "Subscribes to an atom ref and returns its value as a Solid accessor.\n\n**When to use**\n\nUse when a Solid component or computation should render from an\n`AtomRef.ReadonlyRef` directly instead of reading an atom through the current\nregistry.\n\n**Details**\n\nThe hook accepts a thunk for the ref, reads `ref().value`, subscribes with\n`ref.subscribe`, and releases the subscription through Solid cleanup when\nthe selected ref changes or the owner is disposed.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "hooks",
+    "signature": "declare const useAtomRef: <A>(ref: () => AtomRef.ReadonlyRef<A>) => Accessor<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/solid/src/Hooks.ts#L294"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Hooks.ts",
+      "path": "src/Hooks.ts"
+    },
+    "project": "@effect/atom-solid",
+    "name": "useAtomRefProp",
+    "description": "Returns a Solid accessor for a property ref derived from an atom ref.\n\n**When to use**\n\nUse to derive an `AtomRef` for one property of an object-shaped atom ref in a\nSolid computation.\n\n**Details**\n\nThe returned accessor memoizes `ref().prop(prop)`, updating when the source\nref thunk produces a different ref.\n\n**Gotchas**\n\nThe `prop` argument is captured as a plain value. Recreate the hook call when\nthe property key should change.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "hooks",
+    "signature": "declare const useAtomRefProp: <A, K extends keyof A>(ref: () => AtomRef.AtomRef<A>, prop: K) => Accessor<AtomRef.AtomRef<A[K]>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/solid/src/Hooks.ts#L328"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "Hooks.ts",
+      "path": "src/Hooks.ts"
+    },
+    "project": "@effect/atom-solid",
+    "name": "useAtomRefPropValue",
+    "description": "Returns a Solid accessor for the value of a property ref derived from an atom\nref.\n\n**When to use**\n\nUse when a Solid component or computation needs the value of one property\nfrom an object-shaped `AtomRef` without keeping the intermediate property ref.\n\n**Details**\n\nThe hook composes `useAtomRefProp(ref, prop)` with `useAtomRef`, returning a\nSolid accessor for the selected property value.\n\n**Gotchas**\n\nThe `prop` argument is captured as a plain value. Recreate the hook call when\nthe property key should change.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "hooks",
+    "signature": "declare const useAtomRefPropValue: <A, K extends keyof A>(ref: () => AtomRef.AtomRef<A>, prop: K) => Accessor<A[K]>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/solid/src/Hooks.ts#L358"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/atom-solid",
+    "name": "\"./Hooks.ts\"",
+    "description": "Re-exports all named exports from the \"./Hooks.ts\" module.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": null,
+    "signature": "export * from \"./Hooks.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/solid/src/index.ts#L8"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/atom-solid",
+    "name": "\"./RegistryContext.ts\"",
+    "description": "Re-exports all named exports from the \"./RegistryContext.ts\" module.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": null,
+    "signature": "export * from \"./RegistryContext.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/solid/src/index.ts#L13"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "RegistryContext.ts",
+      "path": "src/RegistryContext.ts"
+    },
+    "project": "@effect/atom-solid",
+    "name": "RegistryContext",
+    "description": "Provides a Solid context that carries the `AtomRegistry` used by atom hooks in the\ncurrent owner tree.\n\n**When to use**\n\nUse when you need to integrate lower-level Solid context APIs, such as custom\nproviders or hooks, instead of using the default atom hook setup.\n\n**Details**\n\nWhen no provider is present, the context uses a standalone default registry.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "context",
+    "signature": "declare const RegistryContext: Context<AtomRegistry.AtomRegistry>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/solid/src/RegistryContext.ts#L32"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "RegistryContext.ts",
+      "path": "src/RegistryContext.ts"
+    },
+    "project": "@effect/atom-solid",
+    "name": "RegistryProvider",
+    "description": "Creates an `AtomRegistry` for a Solid subtree, optionally seeding initial atom\nvalues and scheduler settings, and disposes the registry when the owner is\ncleaned up.\n\n**When to use**\n\nUse to scope atom state, scheduling, and cleanup to a Solid subtree.\n\n**Details**\n\nThe provider creates an `AtomRegistry` with `AtomRegistry.make`, forwards\n`initialValues`, `scheduleTask`, `timeoutResolution`, and\n`defaultIdleTTL`, and supplies the registry through `RegistryContext`.\n\n**Gotchas**\n\nProvider options are consumed when the registry is created; they are not\nreactive updates. A custom `scheduleTask` should return a cancellation\nfunction that is safe to call during Solid cleanup.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "context",
+    "signature": "declare const RegistryProvider: (options: { readonly children?: JSX.Element | undefined; readonly initialValues?: Iterable<readonly [Atom.Atom<any>, any]> | undefined; readonly scheduleTask?: ((f: () => void) => () => void) | undefined; readonly timeoutResolution?: number | undefined; readonly defaultIdleTTL?: number | undefined; }) => JSX.Element",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/atom/solid/src/RegistryContext.ts#L60"
+  }
+]

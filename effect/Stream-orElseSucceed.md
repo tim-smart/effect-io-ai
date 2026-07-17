@@ -3,14 +3,32 @@ Module: `Stream`<br />
 
 ## Stream.orElseSucceed
 
-Succeeds with the specified value if this one fails with a typed error.
+Returns a stream that emits a fallback value when this stream fails.
+
+**Example** (Recovering with a fallback value)
+
+```ts
+import { Console, Effect, Stream } from "effect"
+
+const program = Effect.gen(function*() {
+  const stream = Stream.fail("NetworkError").pipe(
+    Stream.orElseSucceed((error) => `Recovered: ${error}`)
+  )
+
+  const values = yield* Stream.runCollect(stream)
+  yield* Console.log(values)
+})
+
+Effect.runPromise(program)
+// Output: [ "Recovered: NetworkError" ]
+```
 
 **Signature**
 
 ```ts
-declare const orElseSucceed: { <A2>(value: LazyArg<A2>): <A, E, R>(self: Stream<A, E, R>) => Stream<A2 | A, never, R>; <A, E, R, A2>(self: Stream<A, E, R>, value: LazyArg<A2>): Stream<A | A2, never, R>; }
+declare const orElseSucceed: { <E, A2>(f: (error: E) => A2): <A, R>(self: Stream<A, E, R>) => Stream<A | A2, never, R>; <A, E, R, A2>(self: Stream<A, E, R>, f: (error: E) => A2): Stream<A | A2, never, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L3354)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L5952)
 
 Since v2.0.0

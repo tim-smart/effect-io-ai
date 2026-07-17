@@ -1,0 +1,66 @@
+Package: `effect`<br />
+Module: `Utils`<br />
+
+## Utils.Gen
+
+Type-level signature for generator-based monadic composition over any
+`TypeLambda`.
+
+**When to use**
+
+Use to type the `gen` function of a module that supports generator syntax,
+such as `Option.gen`, `Result.gen`, and `Effect.gen`.
+
+**Details**
+
+This is a pure type alias with no runtime behavior. It infers `R`, `O`, and
+`E` from the yielded values via `Variance` or `Kind` constraints. The
+generator's return type `A` becomes the output's `A` parameter.
+
+**Example** (Typing a gen function for Option)
+
+```ts
+import type { Option, Utils } from "effect"
+
+declare const gen: Utils.Gen<Option.OptionTypeLambda>
+```
+
+**See**
+
+- `Variance` for encoding the variance used for inference
+- `SingleShotGen` for the iterator protocol that makes yielding work
+
+**Signature**
+
+```ts
+type Gen<F> = <
+  Self,
+  K extends Variance<F, any, any, any> | Kind<F, any, any, any, any>,
+  A
+>(
+  ...args:
+    | [
+      self: Self,
+      body: (this: Self) => Generator<K, A, never>
+    ]
+    | [
+      body: () => Generator<K, A, never>
+    ]
+) => Kind<
+  F,
+  [K] extends [Variance<F, infer R, any, any>] ? R
+    : [K] extends [Kind<F, infer R, any, any, any>] ? R
+    : never,
+  [K] extends [Variance<F, any, infer O, any>] ? O
+    : [K] extends [Kind<F, any, infer O, any, any>] ? O
+    : never,
+  [K] extends [Variance<F, any, any, infer E>] ? E
+    : [K] extends [Kind<F, any, any, infer E, any>] ? E
+    : never,
+  A
+>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Utils.ts#L166)
+
+Since v2.0.0

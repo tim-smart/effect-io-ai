@@ -3,15 +3,17 @@ Module: `Effect`<br />
 
 ## Effect.flip
 
-Swaps the success and error channels of an effect.
+Swaps an effect's success and failure channels.
+
+**When to use**
+
+Use to swap an `Effect`'s success and failure channels.
 
 **Details**
 
-This function reverses the flow of an effect by swapping its success and
-error channels. The success value becomes an error, and the error value
-becomes a success.
+For an `Effect<A, E, R>`, the returned effect has type `Effect<E, A, R>`.
 
-**Example**
+**Example** (Swapping success and failure channels)
 
 ```ts
 import { Effect } from "effect"
@@ -31,6 +33,6 @@ const flipped = Effect.flip(program)
 declare const flip: <A, E, R>(self: Effect<A, E, R>) => Effect<E, A, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L5104)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L2463)
 
 Since v2.0.0

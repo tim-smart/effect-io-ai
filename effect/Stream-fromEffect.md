@@ -3,18 +3,21 @@ Module: `Stream`<br />
 
 ## Stream.fromEffect
 
-Either emits the success value of this effect or terminates the stream
-with the failure value of this effect.
+Creates a stream from an effect.
 
-**Example**
+**Example** (Creating a stream from an effect)
 
 ```ts
-import { Effect, Random, Stream } from "effect"
+import { Console, Effect, Stream } from "effect"
 
-const stream = Stream.fromEffect(Random.nextInt)
+const program = Effect.gen(function*() {
+  const stream = Stream.fromEffect(Effect.succeed(42))
+  const values = yield* Stream.runCollect(stream)
+  yield* Console.log(values)
+})
 
-Effect.runPromise(Stream.runCollect(stream)).then(console.log)
-// Example Output: { _id: 'Chunk', values: [ 922694024 ] }
+Effect.runPromise(program)
+// Output: [ 42 ]
 ```
 
 **Signature**
@@ -23,6 +26,6 @@ Effect.runPromise(Stream.runCollect(stream)).then(console.log)
 declare const fromEffect: <A, E, R>(effect: Effect.Effect<A, E, R>) => Stream<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L2019)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L364)
 
 Since v2.0.0

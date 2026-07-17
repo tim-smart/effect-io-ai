@@ -7,31 +7,46 @@ A `PubSub<A>` is an asynchronous message hub into which publishers can publish
 messages of type `A` and subscribers can subscribe to take messages of type
 `A`.
 
+**Example** (Publishing and subscribing to messages)
+
+```ts
+import { Effect, PubSub } from "effect"
+
+const program = Effect.gen(function*() {
+  // Create a bounded PubSub with capacity 10
+  const pubsub = yield* PubSub.bounded<string>(10)
+
+  // Subscribe and consume messages
+  yield* Effect.scoped(Effect.gen(function*() {
+    const subscription = yield* PubSub.subscribe(pubsub)
+
+    // Publish messages
+    yield* PubSub.publish(pubsub, "Hello")
+    yield* PubSub.publish(pubsub, "World")
+
+    const message1 = yield* PubSub.take(subscription)
+    const message2 = yield* PubSub.take(subscription)
+    console.log(message1, message2) // "Hello", "World"
+  }))
+})
+```
+
 **Signature**
 
 ```ts
-export interface PubSub<in out A> extends Queue.Enqueue<A>, Pipeable {
-  /**
-   * Publishes a message to the `PubSub`, returning whether the message was published
-   * to the `PubSub`.
-   */
-  publish(value: A): Effect.Effect<boolean>
-
-  /**
-   * Publishes all of the specified messages to the `PubSub`, returning whether they
-   * were published to the `PubSub`.
-   */
-  publishAll(elements: Iterable<A>): Effect.Effect<boolean>
-
-  /**
-   * Subscribes to receive messages from the `PubSub`. The resulting subscription can
-   * be evaluated multiple times within the scope to take a message from the `PubSub`
-   * each time.
-   */
-  readonly subscribe: Effect.Effect<Queue.Dequeue<A>, never, Scope.Scope>
+export interface PubSub<in out A> extends Pipeable {
+  readonly [TypeId]: {
+    readonly _A: Invariant<A>
+  }
+  readonly pubsub: PubSub.Atomic<A>
+  readonly subscribers: PubSub.Subscribers<A>
+  readonly scope: Scope.Closeable
+  readonly shutdownHook: Latch.Latch
+  readonly shutdownFlag: MutableRef.MutableRef<boolean>
+  readonly strategy: PubSub.Strategy<A>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/PubSub.ts#L18)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/PubSub.ts#L63)
 
 Since v2.0.0

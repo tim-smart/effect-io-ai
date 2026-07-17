@@ -15,7 +15,7 @@ Unlike `when`, which requires separate conditions for each pattern,
 this function enables combining them into a single statement, making the
 matcher more concise.
 
-**Example**
+**Example** (Matching one of several patterns)
 
 ```ts
 import { Match } from "effect"
@@ -48,6 +48,6 @@ console.log(handleError({ _tag: "ValidationError", field: "email" }))
 declare const whenOr: <R, const P extends ReadonlyArray<Types.PatternPrimitive<R> | Types.PatternBase<R>>, Ret, Fn extends (_: Types.WhenMatch<R, P[number]>) => Ret>(...args: [...patterns: P, f: Fn]) => <I, F, A, Pr>(self: Matcher<I, F, R, A, Pr, Ret>) => Matcher<I, Types.AddWithout<F, Types.PForExclude<P[number]>>, Types.ApplyFilters<I, Types.AddWithout<F, Types.PForExclude<P[number]>>>, A | ReturnType<Fn>, Pr, Ret>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L429)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L592)
 
-Since v1.0.0
+Since v4.0.0

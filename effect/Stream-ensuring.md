@@ -5,31 +5,31 @@ Module: `Stream`<br />
 
 Executes the provided finalizer after this stream's finalizers run.
 
-**Example**
+**Example** (Ensuring finalization)
 
 ```ts
 import { Console, Effect, Stream } from "effect"
 
-const program = Stream.fromEffect(Console.log("Application Logic.")).pipe(
-  Stream.concat(Stream.finalizer(Console.log("Finalizing the stream"))),
-  Stream.ensuring(
-    Console.log("Doing some other works after stream's finalization")
-  )
+const stream = Stream.fromArray([1, 2]).pipe(
+  Stream.ensuring(Effect.orDie(Console.log("cleanup")))
 )
 
-Effect.runPromise(Stream.runCollect(program)).then(console.log)
-// Application Logic.
-// Finalizing the stream
-// Doing some other works after stream's finalization
-// { _id: 'Chunk', values: [ undefined, undefined ] }
+const program = Effect.gen(function*() {
+  const collected = yield* Stream.runCollect(stream)
+  yield* Console.log(collected)
+})
+
+Effect.runPromise(program)
+//=> cleanup
+//=> [1, 2]
 ```
 
 **Signature**
 
 ```ts
-declare const ensuring: { <X, R2>(finalizer: Effect.Effect<X, never, R2>): <A, E, R>(self: Stream<A, E, R>) => Stream<A, E, R2 | R>; <A, E, R, X, R2>(self: Stream<A, E, R>, finalizer: Effect.Effect<X, never, R2>): Stream<A, E, R | R2>; }
+declare const ensuring: { <R2>(finalizer: Effect.Effect<unknown, never, R2>): <A, E, R>(self: Stream<A, E, R>) => Stream<A, E, R | R2>; <A, E, R, R2>(self: Stream<A, E, R>, finalizer: Effect.Effect<unknown, never, R2>): Stream<A, E, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L1496)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L9987)
 
 Since v2.0.0

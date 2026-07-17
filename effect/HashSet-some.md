@@ -3,41 +3,28 @@ Module: `HashSet`<br />
 
 ## HashSet.some
 
-Check if a predicate holds true for some `HashSet` element.
+Checks whether at least one value in the HashSet satisfies the predicate.
 
-Time complexity: **`O(n)`** where n is the number of elements in the set
-
-**Example**
+**Example** (Testing whether some values match)
 
 ```ts
-// Syntax
-import { HashSet, pipe } from "effect"
+import { HashSet } from "effect"
 
-const set: HashSet.HashSet<number> = HashSet.make(0, 1, 2)
+const numbers = HashSet.make(1, 2, 3, 4, 5)
 
-// with `data-last`, a.k.a. `pipeable` API
-pipe(
-  set,
-  HashSet.some((n) => n > 0)
-) // true
+console.log(HashSet.some(numbers, (n) => n > 3)) // true
+console.log(HashSet.some(numbers, (n) => n > 10)) // false
 
-// or piped with the pipe function
-set.pipe(HashSet.some((n) => n > 0)) // true
-
-// or with `data-first` API
-HashSet.some(set, (n) => n > 0) // true
+const empty = HashSet.empty<number>()
+console.log(HashSet.some(empty, (n) => n > 0)) // false
 ```
-
-**See**
-
-- Other `HashSet` elements are `module:HashSet.has` `module:HashSet.every` `module:HashSet.isSubset`
 
 **Signature**
 
 ```ts
-declare const some: { <A>(f: Predicate<A>): (self: HashSet<A>) => boolean; <A>(self: HashSet<A>, f: Predicate<A>): boolean; }
+declare const some: { <V>(predicate: Predicate<V>): (self: HashSet<V>) => boolean; <V>(self: HashSet<V>, predicate: Predicate<V>): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L657)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L542)
 
 Since v2.0.0

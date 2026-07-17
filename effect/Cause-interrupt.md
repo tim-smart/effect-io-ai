@@ -3,24 +3,30 @@ Module: `Cause`<br />
 
 ## Cause.interrupt
 
-Creates an `Interrupt` cause from a `FiberId`.
+Creates a `Cause` containing a single `Interrupt` reason,
+optionally carrying the interrupting fiber's ID.
 
-**Details**
+**Example** (Creating an interrupt cause)
 
-This function represents a fiber that has been interrupted. It stores the
-identifier of the interrupted fiber, enabling precise tracking of concurrent
-cancellations.
+```ts
+import { Cause } from "effect"
+
+const cause = Cause.interrupt(123)
+console.log(cause.reasons.length) // 1
+console.log(Cause.isInterruptReason(cause.reasons[0])) // true
+```
 
 **See**
 
-- `isInterrupted` Check if a `Cause` contains an interruption
+- `fail` — for typed errors
+- `die` — for untyped defects
 
 **Signature**
 
 ```ts
-declare const interrupt: (fiberId: FiberId.FiberId) => Cause<never>
+declare const interrupt: (fiberId?: number | undefined) => Cause<never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L623)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L538)
 
 Since v2.0.0

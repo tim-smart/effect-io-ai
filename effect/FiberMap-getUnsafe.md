@@ -1,0 +1,45 @@
+Package: `effect`<br />
+Module: `FiberMap`<br />
+
+## FiberMap.getUnsafe
+
+Retrieves a fiber from the FiberMap synchronously.
+
+**When to use**
+
+Use when synchronous keyed lookup of a fiber in a `FiberMap` is needed and an
+`Option` result is enough outside the Effect workflow.
+
+**Example** (Retrieving a fiber unsafely)
+
+```ts
+import { Deferred, Effect, Fiber, FiberMap } from "effect"
+
+const program = Effect.gen(function*() {
+  const map = yield* FiberMap.make<string>()
+  const deferred = yield* Deferred.make<string>()
+
+  // Add a fiber to the map
+  const fiber = yield* Effect.forkChild(Deferred.await(deferred))
+  FiberMap.setUnsafe(map, "greeting", fiber)
+
+  // Retrieve the fiber
+  const retrieved = FiberMap.getUnsafe(map, "greeting")
+  if (retrieved._tag === "Some") {
+    yield* Deferred.succeed(deferred, "Hello")
+
+    const result = yield* Fiber.join(retrieved.value)
+    console.log(result) // "Hello"
+  }
+})
+```
+
+**Signature**
+
+```ts
+declare const getUnsafe: { <K>(key: K): <A, E>(self: FiberMap<K, A, E>) => Option.Option<Fiber.Fiber<A, E>>; <K, A, E>(self: FiberMap<K, A, E>, key: K): Option.Option<Fiber.Fiber<A, E>>; }
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/FiberMap.ts#L490)
+
+Since v4.0.0

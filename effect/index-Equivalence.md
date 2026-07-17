@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.Equivalence
 
-Re-exports all named exports from the "./Equivalence.js" module as `Equivalence`.
+Re-exports all named exports from the "./Equivalence.ts" module as `Equivalence`.
 
 **Signature**
 
 ```ts
-export * as Equivalence from "./Equivalence.js"
+export * as Equivalence from "./Equivalence.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L264)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L172)
 
 Since v2.0.0

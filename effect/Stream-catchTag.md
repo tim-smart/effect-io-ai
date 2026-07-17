@@ -3,15 +3,42 @@ Module: `Stream`<br />
 
 ## Stream.catchTag
 
-Switches over to the stream produced by the provided function in case this
-one fails with an error matching the given `_tag`.
+Recovers from failures whose `_tag` matches the provided value by switching to
+the stream returned by `f`.
+
+**When to use**
+
+Use when you need to handle a specific error case from a stream whose error
+type is a tagged union with a readonly `_tag` field.
+
+**Example** (Catching tagged failures)
+
+```ts
+import { Console, Data, Effect, Stream } from "effect"
+
+class HttpError extends Data.TaggedError("HttpError")<{ message: string }> {}
+
+const stream = Stream.fail(new HttpError({ message: "timeout" }))
+
+const recovered = Stream.catchTag(stream, "HttpError", (error) =>
+  Stream.make(`Recovered: ${error.message}`)
+)
+
+const program = Effect.gen(function*() {
+  const values = yield* Stream.runCollect(recovered)
+  yield* Console.log(values)
+  // Output: [ "Recovered: timeout" ]
+})
+
+Effect.runPromise(program)
+```
 
 **Signature**
 
 ```ts
-declare const catchTag: { <K extends E["_tag"] & string, E extends { _tag: string; }, A1, E1, R1>(k: K, f: (e: Extract<E, { _tag: K; }>) => Stream<A1, E1, R1>): <A, R>(self: Stream<A, E, R>) => Stream<A1 | A, E1 | Exclude<E, { _tag: K; }>, R1 | R>; <A, E extends { _tag: string; }, R, K extends E["_tag"] & string, A1, E1, R1>(self: Stream<A, E, R>, k: K, f: (e: Extract<E, { _tag: K; }>) => Stream<A1, E1, R1>): Stream<A | A1, E1 | Exclude<E, { _tag: K; }>, R | R1>; }
+declare const catchTag: { <const K extends Tags<E> | Arr.NonEmptyReadonlyArray<Tags<E>>, E, A1, E1, R1, A2 = unassigned, E2 = never, R2 = never>(k: K, f: (e: ExtractTag<NoInfer<E>, K extends Arr.NonEmptyReadonlyArray<string> ? K[number] : K>) => Stream<A1, E1, R1>, orElse?: ((e: ExcludeTag<E, K extends Arr.NonEmptyReadonlyArray<string> ? K[number] : K>) => Stream<A2, E2, R2>) | undefined): <A, R>(self: Stream<A, E, R>) => Stream<A | A1 | Exclude<A2, unassigned>, E1 | E2 | (A2 extends unassigned ? ExcludeTag<E, K extends Arr.NonEmptyReadonlyArray<string> ? K[number] : K> : never), R | R1 | R2>; <A, E, R, const K extends Tags<E> | Arr.NonEmptyReadonlyArray<Tags<E>>, R1, E1, A1, A2 = unassigned, E2 = never, R2 = never>(self: Stream<A, E, R>, k: K, f: (e: ExtractTag<E, K extends Arr.NonEmptyReadonlyArray<string> ? K[number] : K>) => Stream<A1, E1, R1>, orElse?: ((e: ExcludeTag<E, K extends Arr.NonEmptyReadonlyArray<string> ? K[number] : K>) => Stream<A2, E2, R2>) | undefined): Stream<A | A1 | Exclude<A2, unassigned>, E1 | E2 | (A2 extends unassigned ? ExcludeTag<E, K extends Arr.NonEmptyReadonlyArray<string> ? K[number] : K> : never), R | R1 | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L814)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L5273)
 
 Since v2.0.0

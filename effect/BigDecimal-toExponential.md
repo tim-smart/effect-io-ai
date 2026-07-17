@@ -5,14 +5,22 @@ Module: `BigDecimal`<br />
 
 Formats a given `BigDecimal` as a `string` in scientific notation.
 
-**Example**
+**When to use**
+
+Use to render a `BigDecimal` in scientific notation.
+
+**Example** (Formatting decimals exponentially)
 
 ```ts
+import { BigDecimal } from "effect"
 import * as assert from "node:assert"
-import { toExponential, make } from "effect/BigDecimal"
 
-assert.deepStrictEqual(toExponential(make(123456n, -5)), "1.23456e+10")
+assert.deepStrictEqual(BigDecimal.toExponential(BigDecimal.make(123456n, -5)), "1.23456e+10")
 ```
+
+**See**
+
+- `format` for plain decimal formatting when possible
 
 **Signature**
 
@@ -20,6 +28,6 @@ assert.deepStrictEqual(toExponential(make(123456n, -5)), "1.23456e+10")
 declare const toExponential: (n: BigDecimal) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L1022)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L1537)
 
 Since v3.11.0

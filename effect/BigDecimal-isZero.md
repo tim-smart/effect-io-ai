@@ -3,16 +3,20 @@ Module: `BigDecimal`<br />
 
 ## BigDecimal.isZero
 
-Checks if a given `BigDecimal` is `0`.
+Checks whether a given `BigDecimal` is `0`.
 
-**Example**
+**When to use**
+
+Use to test whether a `BigDecimal` is exactly zero.
+
+**Example** (Checking zero decimals)
 
 ```ts
+import { BigDecimal } from "effect"
 import * as assert from "node:assert"
-import { isZero, unsafeFromString } from "effect/BigDecimal"
 
-assert.deepStrictEqual(isZero(unsafeFromString("0")), true)
-assert.deepStrictEqual(isZero(unsafeFromString("1")), false)
+assert.deepStrictEqual(BigDecimal.isZero(BigDecimal.fromStringUnsafe("0")), true)
+assert.deepStrictEqual(BigDecimal.isZero(BigDecimal.fromStringUnsafe("1")), false)
 ```
 
 **Signature**
@@ -21,6 +25,6 @@ assert.deepStrictEqual(isZero(unsafeFromString("1")), false)
 declare const isZero: (n: BigDecimal) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L1092)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L1629)
 
 Since v2.0.0

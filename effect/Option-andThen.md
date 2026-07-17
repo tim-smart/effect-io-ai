@@ -3,21 +3,43 @@ Module: `Option`<br />
 
 ## Option.andThen
 
-Chains two `Option`s together. The second `Option` can either be a static
-value or depend on the result of the first `Option`.
+Chains a second computation onto an `Option`. The second value can be a
+plain value, an `Option`, or a function returning either.
+
+**When to use**
+
+Use when you need to chain an `Option` with a next step that may be another
+`Option`, a plain value, or a function.
 
 **Details**
 
-This function enables sequencing of two `Option` computations. If the first
-`Option` is `Some`, the second `Option` is evaluated. The second `Option` can
-either:
+- If `self` is `None`, returns `None` immediately
+- If `f` is a function, calls it with the `Some` value
+- If `f` returns an `Option`, returns it as-is; if a plain value, wraps in `Some`
+- If `f` is not a function, uses it directly (same wrapping rules)
 
-- Be a static `Option` value.
-- Be a function that produces an `Option`, optionally based on the value of
-  the first `Option`.
+**Example** (Chaining with andThen)
 
-If the first `Option` is `None`, the function skips the evaluation of the
-second `Option` and directly returns `None`.
+```ts
+import { Option } from "effect"
+
+// Chain with a function returning Option
+console.log(Option.andThen(Option.some(5), (x) => Option.some(x * 2)))
+// Output: { _id: 'Option', _tag: 'Some', value: 10 }
+
+// Chain with a static value
+console.log(Option.andThen(Option.some(5), "hello"))
+// Output: { _id: 'Option', _tag: 'Some', value: "hello" }
+
+// Chain with None - skips
+console.log(Option.andThen(Option.none(), (x) => Option.some(x * 2)))
+// Output: { _id: 'Option', _tag: 'None' }
+```
+
+**See**
+
+- `flatMap` for the standard monadic bind
+- `map` when you always return a plain value
 
 **Signature**
 
@@ -25,6 +47,6 @@ second `Option` and directly returns `None`.
 declare const andThen: { <A, B>(f: (a: A) => Option<B>): (self: Option<A>) => Option<B>; <B>(f: Option<B>): <A>(self: Option<A>) => Option<B>; <A, B>(f: (a: A) => B): (self: Option<A>) => Option<B>; <B>(f: NotFunction<B>): <A>(self: Option<A>) => Option<B>; <A, B>(self: Option<A>, f: (a: A) => Option<B>): Option<B>; <A, B>(self: Option<A>, f: Option<B>): Option<B>; <A, B>(self: Option<A>, f: (a: A) => B): Option<B>; <A, B>(self: Option<A>, f: NotFunction<B>): Option<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L1075)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L1345)
 
 Since v2.0.0

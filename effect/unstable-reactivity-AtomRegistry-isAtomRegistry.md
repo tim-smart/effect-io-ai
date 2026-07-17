@@ -1,0 +1,16 @@
+Package: `effect`<br />
+Module: `AtomRegistry`<br />
+
+## AtomRegistry.isAtomRegistry
+
+Returns `true` when the value has the `AtomRegistry` type id.
+
+**Signature**
+
+```ts
+declare const isAtomRegistry: (u: unknown) => u is AtomRegistry
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/AtomRegistry.ts#L50)
+
+Since v4.0.0

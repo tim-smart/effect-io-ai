@@ -3,21 +3,47 @@ Module: `Effect`<br />
 
 ## Effect.scoped
 
-Scopes all resources used in an effect to the lifetime of the effect.
+Runs an effect with a scope that closes when the effect completes.
+
+**When to use**
+
+Use to acquire scoped resources for the duration of a single workflow.
 
 **Details**
 
-This function ensures that all resources used within an effect are tied to
-its lifetime. Finalizers for these resources are executed automatically when
-the effect completes, whether through success, failure, or interruption. This
-guarantees proper resource cleanup without requiring explicit management.
+Finalizers for resources acquired inside the workflow run as soon as the
+workflow completes, whether by success, failure, or interruption.
+
+**Example** (Running a scoped acquisition)
+
+```ts
+import { Console, Effect } from "effect"
+
+const resource = Effect.acquireRelease(
+  Console.log("Acquiring resource").pipe(Effect.as("resource")),
+  () => Console.log("Releasing resource")
+)
+
+const program = Effect.scoped(
+  Effect.gen(function*() {
+    const res = yield* resource
+    yield* Console.log(`Using ${res}`)
+    return res
+  })
+)
+
+Effect.runFork(program)
+// Output: "Acquiring resource"
+// Output: "Using resource"
+// Output: "Releasing resource"
+```
 
 **Signature**
 
 ```ts
-declare const scoped: <A, E, R>(effect: Effect<A, E, R>) => Effect<A, E, Exclude<R, Scope.Scope>>
+declare const scoped: <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, Exclude<R, Scope>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L6053)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L6432)
 
 Since v2.0.0

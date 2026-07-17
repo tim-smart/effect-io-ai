@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.Function
 
-Re-exports all named exports from the "./Function.js" module as `Function`.
+Re-exports all named exports from the "./Function.ts" module as `Function`.
 
 **Signature**
 
 ```ts
-export * as Function from "./Function.js"
+export * as Function from "./Function.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L335)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L227)
 
 Since v2.0.0

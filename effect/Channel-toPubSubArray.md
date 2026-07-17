@@ -1,0 +1,23 @@
+Package: `effect`<br />
+Module: `Channel`<br />
+
+## Channel.toPubSubArray
+
+Converts an array-emitting channel to a scoped `PubSub` for concurrent
+consumption.
+
+**Details**
+
+Each element inside emitted non-empty arrays is published as an individual
+PubSub message. `shutdownOnEnd` indicates whether the PubSub should be shut
+down when the channel ends. By default this is `true`.
+
+**Signature**
+
+```ts
+declare const toPubSubArray: { (options: { readonly capacity: "unbounded"; readonly replay?: number | undefined; readonly shutdownOnEnd?: boolean | undefined; } | { readonly capacity: number; readonly strategy?: "dropping" | "sliding" | "suspend" | undefined; readonly replay?: number | undefined; readonly shutdownOnEnd?: boolean | undefined; }): <OutElem, OutErr, OutDone, Env>(self: Channel<Arr.NonEmptyReadonlyArray<OutElem>, OutErr, OutDone, unknown, unknown, unknown, Env>) => Effect.Effect<PubSub.PubSub<OutElem>, never, Env | Scope.Scope>; <OutElem, OutErr, OutDone, Env>(self: Channel<Arr.NonEmptyReadonlyArray<OutElem>, OutErr, OutDone, unknown, unknown, unknown, Env>, options: { readonly capacity: "unbounded"; readonly replay?: number | undefined; readonly shutdownOnEnd?: boolean | undefined; } | { readonly capacity: number; readonly strategy?: "dropping" | "sliding" | "suspend" | undefined; readonly replay?: number | undefined; readonly shutdownOnEnd?: boolean | undefined; }): Effect.Effect<PubSub.PubSub<OutElem>, never, Env | Scope.Scope>; }
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Channel.ts#L8457)
+
+Since v4.0.0

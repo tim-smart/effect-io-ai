@@ -6,7 +6,7 @@ Module: `Graph`<br />
 Filters and optionally transforms nodes in a mutable graph using a predicate function.
 Nodes that return Option.none are removed along with all their connected edges.
 
-**Example**
+**Example** (Filtering and mapping nodes)
 
 ```ts
 import { Graph, Option } from "effect"
@@ -19,8 +19,10 @@ const graph = Graph.directed<string, number>((mutable) => {
   Graph.addEdge(mutable, b, c, 2)
 
   // Keep only "active" nodes and transform to uppercase
-  Graph.filterMapNodes(mutable, (data) =>
-    data === "active" ? Option.some(data.toUpperCase()) : Option.none()
+  Graph.filterMapNodes(
+    mutable,
+    (data) =>
+      data === "active" ? Option.some(data.toUpperCase()) : Option.none()
   )
 })
 
@@ -33,6 +35,6 @@ console.log(Graph.nodeCount(graph)) // 2 (only "active" nodes remain)
 declare const filterMapNodes: <N, E, T extends Kind = "directed">(mutable: MutableGraph<N, E, T>, f: (data: N) => Option.Option<N>) => void
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L941)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L2053)
 
 Since v3.18.0

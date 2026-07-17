@@ -3,36 +3,31 @@ Module: `HashSet`<br />
 
 ## HashSet.remove
 
-Removes a value from the `HashSet`.
+Removes a value from the HashSet, returning a new HashSet.
 
-Time complexity: **`O(1)`** average
-
-**Example**
+**Example** (Removing values from a HashSet)
 
 ```ts
-// Syntax
-import { HashSet, pipe } from "effect"
+import { HashSet } from "effect"
 
-// with `data-last`, a.k.a. `pipeable` API
-pipe(HashSet.make(0, 1, 2), HashSet.remove(0))
+const set = HashSet.make("a", "b", "c")
+const withoutB = HashSet.remove(set, "b")
 
-// or piped with the pipe function
-HashSet.make(0, 1, 2).pipe(HashSet.remove(0))
+console.log(HashSet.size(set)) // 3 (original unchanged)
+console.log(HashSet.size(withoutB)) // 2
+console.log(HashSet.has(withoutB, "b")) // false
 
-// or with `data-first` API
-HashSet.remove(HashSet.make(0, 1, 2), 0)
+// Removing non-existent value has no effect
+const same = HashSet.remove(set, "d")
+console.log(HashSet.size(same)) // 3
 ```
-
-**See**
-
-- Other `HashSet` mutations are `module:HashSet.add` `module:HashSet.toggle` `module:HashSet.beginMutation` `module:HashSet.endMutation` `module:HashSet.mutate`
 
 **Signature**
 
 ```ts
-declare const remove: { <A>(value: A): (self: HashSet<A>) => HashSet<A>; <A>(self: HashSet<A>, value: A): HashSet<A>; }
+declare const remove: { <V>(value: V): (self: HashSet<V>) => HashSet<V>; <V>(self: HashSet<V>, value: V): HashSet<V>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L1330)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L296)
 
 Since v2.0.0

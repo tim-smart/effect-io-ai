@@ -3,15 +3,45 @@ Module: `Stream`<br />
 
 ## Stream.provideService
 
-Provides the stream with the single service it requires. If the stream
-requires more than one service use `Stream.provideContext` instead.
+Provides the stream with a single required service, eliminating that
+requirement from its environment.
+
+**Example** (Providing a stream service)
+
+```ts
+import { Console, Context, Effect, Stream } from "effect"
+
+class Greeter extends Context.Service<Greeter, {
+  greet: (name: string) => string
+}>()("Greeter") {}
+
+const stream = Stream.fromEffect(
+  Effect.service(Greeter).pipe(
+    Effect.map((greeter) => greeter.greet("Ada"))
+  )
+)
+
+const program = Effect.gen(function*() {
+  const collected = yield* Stream.runCollect(
+    stream.pipe(
+      Stream.provideService(Greeter, {
+        greet: (name) => `Hello, ${name}`
+      })
+    )
+  )
+  yield* Console.log(collected)
+})
+
+Effect.runPromise(program)
+//=> ["Hello, Ada"]
+```
 
 **Signature**
 
 ```ts
-declare const provideService: { <I, S>(tag: Context.Tag<I, S>, resource: NoInfer<S>): <A, E, R>(self: Stream<A, E, R>) => Stream<A, E, Exclude<R, I>>; <A, E, R, I, S>(self: Stream<A, E, R>, tag: Context.Tag<I, S>, resource: NoInfer<S>): Stream<A, E, Exclude<R, I>>; }
+declare const provideService: { <I, S>(key: Context.Key<I, S>, service: NoInfer<S>): <A, E, R>(self: Stream<A, E, R>) => Stream<A, E, Exclude<R, I>>; <A, E, R, I, S>(self: Stream<A, E, R>, key: Context.Key<I, S>, service: NoInfer<S>): Stream<A, E, Exclude<R, I>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L3662)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L10136)
 
 Since v2.0.0

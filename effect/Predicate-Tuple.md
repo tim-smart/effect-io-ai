@@ -1,0 +1,41 @@
+Package: `effect`<br />
+Module: `Predicate`<br />
+
+## Predicate.Tuple
+
+Creates a predicate for tuples by applying predicates to each element.
+
+**When to use**
+
+Use when you want to validate tuple positions independently by lifting
+element predicates into a tuple predicate.
+
+**Details**
+
+Returns a refinement if any element predicate is a refinement. Evaluation
+stops at the first failing element.
+
+**Example** (Checking tuples)
+
+```ts
+import { Predicate } from "effect"
+
+const tupleCheck = Predicate.Tuple([(n: number) => n > 0, Predicate.isString])
+
+console.log(tupleCheck([1, "ok"]))
+```
+
+**See**
+
+- `Struct`
+- `isTupleOf`
+
+**Signature**
+
+```ts
+declare const Tuple: <const T extends ReadonlyArray<Predicate.Any>>(elements: T) => [Extract<T[number], Refinement.Any>] extends [never] ? Predicate<{ readonly [I in keyof T]: Predicate.In<T[I]>; }> : Refinement<{ readonly [I in keyof T]: T[I] extends Refinement.Any ? Refinement.In<T[I]> : Predicate.In<T[I]>; }, { readonly [I in keyof T]: T[I] extends Refinement.Any ? Refinement.Out<T[I]> : Predicate.In<T[I]>; }>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L1450)
+
+Since v4.0.0

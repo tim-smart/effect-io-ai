@@ -1,0 +1,16 @@
+Package: `effect`<br />
+Module: `SchemaRepresentation`<br />
+
+## SchemaRepresentation.$Declaration
+
+Schema for the `Declaration` representation node.
+
+**Signature**
+
+```ts
+declare const $Declaration: Schema.Struct<{ readonly _tag: Schema.tag<"Declaration">; readonly annotations: Schema.optional<Schema.decodeTo<Schema.$Record<Schema.String, Schema.Unknown>, Schema.$Record<Schema.String, Schema.Codec<PrimitiveTree, PrimitiveTree, never, never>>, never, never>>; readonly typeParameters: Schema.$Array<Schema.suspend<$Representation>>; readonly checks: Schema.$Array<Schema.Codec<Check<Schema.Struct.ReadonlySide<{ readonly _tag: Schema.tag<"isDateValid">; }, "Type"> | Schema.Struct.ReadonlySide<{ readonly _tag: Schema.tag<"isGreaterThanDate">; readonly exclusiveMinimum: Schema.Date; }, "Type"> | Schema.Struct.ReadonlySide<{ readonly _tag: Schema.tag<"isGreaterThanOrEqualToDate">; readonly minimum: Schema.Date; }, "Type"> | Schema.Struct.ReadonlySide<{ readonly _tag: Schema.tag<"isLessThanDate">; readonly exclusiveMaximum: Schema.Date; }, "Type"> | Schema.Struct.ReadonlySide<{ readonly _tag: Schema.tag<"isLessThanOrEqualToDate">; readonly maximum: Schema.Date; }, "Type"> | { readonly _tag: "isBetweenDate"; readonly minimum: Date; readonly maximum: Date; readonly exclusiveMinimum?: boolean | undefined; readonly exclusiveMaximum?: boolean | undefined; } | Schema.Struct.ReadonlySide<{ readonly _tag: Schema.tag<"isMinSize">; readonly minSize: Schema.Int; }, "Type"> | Schema.Struct.ReadonlySide<{ readonly _tag: Schema.tag<"isMaxSize">; readonly maxSize: Schema.Int; }, "Type"> | Schema.Struct.ReadonlySide<{ readonly _tag: Schema.tag<"isSizeBetween">; readonly minimum: Schema.Int; readonly maximum: Schema.Int; }, "Type">>, Check<Schema.Struct.ReadonlySide<{ readonly _tag: Schema.tag<"isDateValid">; }, "Type"> | Schema.Struct.ReadonlySide<{ readonly _tag: Schema.tag<"isGreaterThanDate">; readonly exclusiveMinimum: Schema.Date; }, "Type"> | Schema.Struct.ReadonlySide<{ readonly _tag: Schema.tag<"isGreaterThanOrEqualToDate">; readonly minimum: Schema.Date; }, "Type"> | Schema.Struct.ReadonlySide<{ readonly _tag: Schema.tag<"isLessThanDate">; readonly exclusiveMaximum: Schema.Date; }, "Type"> | Schema.Struct.ReadonlySide<{ readonly _tag: Schema.tag<"isLessThanOrEqualToDate">; readonly maximum: Schema.Date; }, "Type"> | { readonly _tag: "isBetweenDate"; readonly minimum: Date; readonly maximum: Date; readonly exclusiveMinimum?: boolean | undefined; readonly exclusiveMaximum?: boolean | undefined; } | Schema.Struct.ReadonlySide<{ readonly _tag: Schema.tag<"isMinSize">; readonly minSize: Schema.Int; }, "Type"> | Schema.Struct.ReadonlySide<{ readonly _tag: Schema.tag<"isMaxSize">; readonly maxSize: Schema.Int; }, "Type"> | Schema.Struct.ReadonlySide<{ readonly _tag: Schema.tag<"isSizeBetween">; readonly minimum: Schema.Int; readonly maximum: Schema.Int; }, "Type">>, never, never>>; readonly encodedSchema: Schema.suspend<$Representation>; }>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaRepresentation.ts#L1504)
+
+Since v4.0.0

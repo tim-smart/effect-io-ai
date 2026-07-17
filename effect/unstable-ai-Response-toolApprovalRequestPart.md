@@ -1,0 +1,16 @@
+Package: `effect`<br />
+Module: `Response`<br />
+
+## Response.toolApprovalRequestPart
+
+Constructs a new tool approval request part.
+
+**Signature**
+
+```ts
+declare const toolApprovalRequestPart: (params: ConstructorParams<ToolApprovalRequestPart>) => ToolApprovalRequestPart
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Response.ts#L1810)
+
+Since v4.0.0

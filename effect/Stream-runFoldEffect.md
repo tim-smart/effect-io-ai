@@ -3,14 +3,37 @@ Module: `Stream`<br />
 
 ## Stream.runFoldEffect
 
-Executes an effectful fold over the stream of values.
+Runs the stream and folds elements using an effectful reducer.
+
+**When to use**
+
+Use when reducing stream elements needs Effects, services, or failures in the
+reducer.
+
+**Example** (Effectfully folding stream values)
+
+```ts
+import { Console, Effect, Stream } from "effect"
+
+const program = Effect.gen(function*() {
+  const total = yield* Stream.runFoldEffect(
+    Stream.make(1, 2, 3),
+    () => 0,
+    (acc, n) => Effect.succeed(acc + n)
+  )
+  yield* Console.log(total)
+})
+
+Effect.runPromise(program)
+// 6
+```
 
 **Signature**
 
 ```ts
-declare const runFoldEffect: { <S, A, E2, R2>(s: S, f: (s: S, a: A) => Effect.Effect<S, E2, R2>): <E, R>(self: Stream<A, E, R>) => Effect.Effect<S, E2 | E, Exclude<R | R2, Scope.Scope>>; <A, E, R, S, E2, R2>(self: Stream<A, E, R>, s: S, f: (s: S, a: A) => Effect.Effect<S, E2, R2>): Effect.Effect<S, E | E2, Exclude<R | R2, Scope.Scope>>; }
+declare const runFoldEffect: { <Z, A, EX, RX>(initial: LazyArg<Z>, f: (acc: Z, a: A) => Effect.Effect<Z, EX, RX>): <E, R>(self: Stream<A, E, R>) => Effect.Effect<Z, E | EX, R | RX>; <A, E, R, Z, EX, RX>(self: Stream<A, E, R>, initial: LazyArg<Z>, f: (acc: Z, a: A) => Effect.Effect<Z, EX, RX>): Effect.Effect<Z, E | EX, R | RX>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L4165)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L10760)
 
 Since v2.0.0

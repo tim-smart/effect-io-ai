@@ -5,16 +5,23 @@ Module: `Stream`<br />
 
 Constructs a stream from a range of integers, including both endpoints.
 
-**Example**
+**Details**
+
+If the provided `min` is greater than `max`, the stream will not emit any
+values.
+
+**Example** (Creating a numeric range)
 
 ```ts
-import { Effect, Stream } from "effect"
+import { Console, Effect, Stream } from "effect"
 
-// A Stream with a range of numbers from 1 to 5
-const stream = Stream.range(1, 5)
+const program = Effect.gen(function*() {
+  const values = yield* Stream.range(1, 5).pipe(Stream.runCollect)
+  yield* Console.log(values)
+})
 
-Effect.runPromise(Stream.runCollect(stream)).then(console.log)
-// { _id: 'Chunk', values: [ 1, 2, 3, 4, 5 ] }
+Effect.runPromise(program)
+// Output: [ 1, 2, 3, 4, 5 ]
 ```
 
 **Signature**
@@ -23,6 +30,6 @@ Effect.runPromise(Stream.runCollect(stream)).then(console.log)
 declare const range: (min: number, max: number, chunkSize?: number) => Stream<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L3825)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L1757)
 
 Since v2.0.0

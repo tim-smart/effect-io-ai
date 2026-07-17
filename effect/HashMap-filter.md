@@ -5,12 +5,26 @@ Module: `HashMap`<br />
 
 Filters entries out of a `HashMap` using the specified predicate.
 
+**Example** (Filtering entries)
+
+```ts
+import { HashMap } from "effect"
+
+const map1 = HashMap.make(["a", 1], ["b", 2], ["c", 3], ["d", 4])
+const map2 = HashMap.filter(map1, (value) => value % 2 === 0)
+
+console.log(HashMap.size(map2)) // 2
+console.log(HashMap.has(map2, "b")) // true
+console.log(HashMap.has(map2, "d")) // true
+console.log(HashMap.has(map2, "a")) // false
+```
+
 **Signature**
 
 ```ts
-declare const filter: { <K, A, B extends A>(f: (a: NoInfer<A>, k: K) => a is B): (self: HashMap<K, A>) => HashMap<K, B>; <K, A>(f: (a: NoInfer<A>, k: K) => boolean): (self: HashMap<K, A>) => HashMap<K, A>; <K, A, B extends A>(self: HashMap<K, A>, f: (a: A, k: K) => a is B): HashMap<K, B>; <K, A>(self: HashMap<K, A>, f: (a: A, k: K) => boolean): HashMap<K, A>; }
+declare const filter: { <K, A>(f: (a: NoInfer<A>, k: K) => boolean): (self: HashMap<K, A>) => HashMap<K, A>; <K, A>(self: HashMap<K, A>, f: (a: A, k: K) => boolean): HashMap<K, A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashMap.ts#L455)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashMap.ts#L1113)
 
 Since v2.0.0

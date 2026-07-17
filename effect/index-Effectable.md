@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.Effectable
 
-Re-exports all named exports from the "./Effectable.js" module as `Effectable`.
+Re-exports all named exports from the "./Effectable.ts" module as `Effectable`.
 
 **Signature**
 
 ```ts
-export * as Effectable from "./Effectable.js"
+export * as Effectable from "./Effectable.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L234)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L157)
 
-Since v2.0.0
+Since v4.0.0

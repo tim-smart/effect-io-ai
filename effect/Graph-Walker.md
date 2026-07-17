@@ -3,13 +3,15 @@ Module: `Graph`<br />
 
 ## Graph.Walker
 
-Concrete class for iterables that produce [NodeIndex, NodeData] tuples.
+Represents an iterable wrapper used by graph traversal and listing APIs.
 
-This class provides a common abstraction for all iterables that return node data,
-including traversal iterators (DFS, BFS, etc.) and element iterators (nodes, externals).
-It uses a mapEntry function pattern for flexible iteration and transformation.
+**Details**
 
-**Example**
+A `Walker` yields `[index, data]` pairs lazily and can be viewed as just the
+indices, just the values, or mapped entries with `indices`, `values`,
+`entries`, and `visit`.
+
+**Example** (Working with node walkers)
 
 ```ts
 import { Graph } from "effect"
@@ -45,7 +47,8 @@ declare class Walker<T, N> { constructor(
      * and returns an iterable of the mapped values. Skips elements that
      * no longer exist in the graph.
      *
-     * @example
+     * **Example** (Visiting walker elements)
+     *
      * ```ts
      * import { Graph } from "effect"
      *
@@ -62,17 +65,19 @@ declare class Walker<T, N> { constructor(
      * console.log(values) // ["A", "B"]
      *
      * // Map to custom objects
-     * const custom = Array.from(dfs.visit((index, data) => ({ id: index, name: data })))
+     * const custom = Array.from(
+     *   dfs.visit((index, data) => ({ id: index, name: data }))
+     * )
      * console.log(custom) // [{ id: 0, name: "A" }, { id: 1, name: "B" }]
      * ```
      *
-     * @since 3.18.0
      * @category iterators
+     * @since 4.0.0
      */
     visit: <U>(f: (index: T, data: N) => U) => Iterable<U>
   ) }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L3110)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L4996)
 
 Since v3.18.0

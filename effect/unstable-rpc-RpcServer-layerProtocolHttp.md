@@ -1,0 +1,17 @@
+Package: `effect`<br />
+Module: `RpcServer`<br />
+
+## RpcServer.layerProtocolHttp
+
+Provides a server `Protocol` that uses HTTP POST requests for RPC
+communication.
+
+**Signature**
+
+```ts
+declare const layerProtocolHttp: (options: { readonly path: HttpRouter.PathInput; }) => Layer.Layer<Protocol, never, RpcSerialization.RpcSerialization | HttpRouter.HttpRouter>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/RpcServer.ts#L1158)
+
+Since v4.0.0

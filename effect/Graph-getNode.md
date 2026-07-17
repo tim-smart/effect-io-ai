@@ -3,9 +3,9 @@ Module: `Graph`<br />
 
 ## Graph.getNode
 
-Gets the data associated with a node index, if it exists.
+Gets the data associated with a node index safely, if it exists.
 
-**Example**
+**Example** (Getting node data)
 
 ```ts
 import { Graph, Option } from "effect"
@@ -25,9 +25,9 @@ if (Option.isSome(nodeData)) {
 **Signature**
 
 ```ts
-declare const getNode: <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>, nodeIndex: NodeIndex) => Option.Option<N>
+declare const getNode: { (nodeIndex: NodeIndex): <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>) => Option.Option<N>; <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>, nodeIndex: NodeIndex): Option.Option<N>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L499)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L1522)
 
 Since v3.18.0

@@ -5,16 +5,23 @@ Module: `HashMap`<br />
 
 This type-level utility extracts the key type `K` from a `HashMap<K, V>` type.
 
-**Example**
+**Example** (Extracting key types)
 
 ```ts
 import { HashMap } from "effect"
 
-declare const hm: HashMap.HashMap<string, number>
+// Create a HashMap to extract key type from
+const userMap = HashMap.make(
+  ["alice", { name: "Alice", age: 30 }],
+  ["bob", { name: "Bob", age: 25 }]
+)
 
-// $ExpectType string
-type K = HashMap.HashMap.Key<typeof hm>
+// Extract the key type (string)
+type UserKey = HashMap.HashMap.Key<typeof userMap>
 
+// Use the extracted type in functions
+const getUserById = (id: UserKey) => HashMap.get(userMap, id)
+console.log(getUserById("alice")) // Option.some({ name: "Alice", age: 30 })
 ```
 
 **Signature**
@@ -23,6 +30,6 @@ type K = HashMap.HashMap.Key<typeof hm>
 type Key<T> = [T] extends [HashMap<infer _K, infer _V>] ? _K : never
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashMap.ts#L55)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashMap.ts#L140)
 
 Since v2.0.0

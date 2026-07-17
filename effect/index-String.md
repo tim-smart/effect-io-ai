@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.String
 
-Re-exports all named exports from the "./String.js" module as `String`.
+Re-exports all named exports from the "./String.ts" module as `String`.
 
 **Signature**
 
 ```ts
-export * as String from "./String.js"
+export * as String from "./String.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1358)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L602)
 
 Since v2.0.0

@@ -3,19 +3,20 @@ Module: `Option`<br />
 
 ## Option.exists
 
-Checks if a value in an `Option` satisfies a given predicate or refinement.
+Checks whether the value in a `Some` satisfies a predicate or refinement.
+
+**When to use**
+
+Use to check a condition on an optional value without unwrapping
 
 **Details**
 
-This function allows you to check if a value inside a `Some` meets a
-specified condition. If the `Option` is `None`, the result is `false`. If the
-`Option` is `Some`, the provided predicate or refinement is applied to the
-value:
+- `None` → `false`
+- `Some` where `predicate(value)` is `true` → `true`
+- `Some` where `predicate(value)` is `false` → `false`
+- With a refinement, narrows the `Option` type on `true`
 
-- If the condition is met, the result is `true`.
-- If the condition is not met, the result is `false`.
-
-**Example**
+**Example** (Testing a condition)
 
 ```ts
 import { Option } from "effect"
@@ -32,12 +33,17 @@ console.log(Option.none().pipe(Option.exists(isEven)))
 // Output: false
 ```
 
+**See**
+
+- `filter` to keep or discard based on a predicate
+- `contains` to test for a specific value
+
 **Signature**
 
 ```ts
 declare const exists: { <A, B extends A>(refinement: Refinement<NoInfer<A>, B>): (self: Option<A>) => self is Option<B>; <A>(predicate: Predicate<NoInfer<A>>): (self: Option<A>) => boolean; <A, B extends A>(self: Option<A>, refinement: Refinement<A, B>): self is Option<B>; <A>(self: Option<A>, predicate: Predicate<A>): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L1929)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L2312)
 
 Since v2.0.0

@@ -1,0 +1,32 @@
+Package: `effect`<br />
+Module: `TxDeferred`<br />
+
+## TxDeferred.make
+
+Creates a new empty `TxDeferred`.
+
+**When to use**
+
+Use to create a transactional deferred that can be completed exactly once.
+
+**Example** (Creating a transactional deferred)
+
+```ts
+import { Effect, Option, TxDeferred } from "effect"
+
+const program = Effect.gen(function*() {
+  const deferred = yield* TxDeferred.make<string, Error>()
+  const state = yield* TxDeferred.poll(deferred)
+  console.log(Option.isNone(state)) // true
+})
+```
+
+**Signature**
+
+```ts
+declare const make: <A, E = never>() => Effect.Effect<TxDeferred<A, E>>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TxDeferred.ts#L111)
+
+Since v2.0.0

@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.Runtime
 
-Re-exports all named exports from the "./Runtime.js" module as `Runtime`.
+Re-exports all named exports from the "./Runtime.ts" module as `Runtime`.
 
 **Signature**
 
 ```ts
-export * as Runtime from "./Runtime.js"
+export * as Runtime from "./Runtime.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1238)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L507)
 
-Since v2.0.0
+Since v4.0.0

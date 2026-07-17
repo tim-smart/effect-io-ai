@@ -3,15 +3,33 @@ Module: `Chunk`<br />
 
 ## Chunk.replace
 
-Change the element at the specified index, creating a new `Chunk`,
-or returning the input if the index is out of bounds.
+Changes the element at the specified index safely, creating a new `Chunk`,
+or returns `None` if the index is out of bounds.
+
+**Example** (Replacing an element)
+
+```ts
+import { Chunk } from "effect"
+
+const chunk = Chunk.make("a", "b", "c", "d")
+const result = Chunk.replace(chunk, 1, "X")
+console.log(result) // Option.some(Chunk.make("a", "X", "c", "d"))
+
+// Index out of bounds returns None
+const outOfBounds = chunk.pipe(Chunk.replace(10, "Y"))
+console.log(outOfBounds) // Option.none()
+
+// Negative index returns None
+const negative = chunk.pipe(Chunk.replace(-1, "Z"))
+console.log(negative) // Option.none()
+```
 
 **Signature**
 
 ```ts
-declare const replace: { <B>(i: number, b: B): <A>(self: Chunk<A>) => Chunk<B | A>; <A, B>(self: Chunk<A>, i: number, b: B): Chunk<B | A>; }
+declare const replace: { <B>(i: number, b: B): <A>(self: Chunk<A>) => O.Option<Chunk<B | A>>; <A, B>(self: Chunk<A>, i: number, b: B): O.Option<Chunk<B | A>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Chunk.ts#L1295)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Chunk.ts#L2476)
 
 Since v2.0.0

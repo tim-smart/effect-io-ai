@@ -3,14 +3,57 @@ Module: `Duration`<br />
 
 ## Duration.parts
 
-Converts a `Duration` to its parts.
+Decomposes a `Duration` into normalized signed components.
+
+**Details**
+
+Finite durations are returned as `{ days, hours, minutes, seconds, millis,
+nanos }`. Infinite durations return every component as `Infinity` or
+`-Infinity`.
+
+**Example** (Decomposing durations into parts)
+
+```ts
+import { Duration } from "effect"
+
+// Create a complex duration by adding multiple parts
+const duration = Duration.sum(
+  Duration.sum(
+    Duration.sum(Duration.days(1), Duration.hours(2)),
+    Duration.sum(Duration.minutes(30), Duration.seconds(45))
+  ),
+  Duration.millis(123)
+)
+const components = Duration.parts(duration)
+console.log(components)
+// {
+//   days: 1,
+//   hours: 2,
+//   minutes: 30,
+//   seconds: 45,
+//   millis: 123,
+//   nanos: 0
+// }
+
+const complex = Duration.sum(Duration.hours(25), Duration.minutes(90))
+const complexParts = Duration.parts(complex)
+console.log(complexParts)
+// {
+//   days: 1,
+//   hours: 2,
+//   minutes: 30,
+//   seconds: 0,
+//   millis: 0,
+//   nanos: 0
+// }
+```
 
 **Signature**
 
 ```ts
-declare const parts: (self: DurationInput) => { days: number; hours: number; minutes: number; seconds: number; millis: number; nanos: number; }
+declare const parts: (self: Duration) => { days: number; hours: number; minutes: number; seconds: number; millis: number; nanos: number; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Duration.ts#L769)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Duration.ts#L1671)
 
 Since v3.8.0

@@ -3,27 +3,27 @@ Module: `Option`<br />
 
 ## Option.reduceCompact
 
-Reduces an `Iterable` of `Option<A>` to a single value of type `B`, ignoring
-elements that are `None`.
+Reduces an iterable of `Option`s to a single value, skipping `None` entries.
+
+**When to use**
+
+Use when you need to aggregate values from a collection where some may be
+absent.
 
 **Details**
 
-This function takes an initial value of type `B` and a reducing function `f`
-that combines the accumulator with values of type `A`. It processes an
-iterable of `Option<A>`, applying `f` only to the `Some` values while
-ignoring the `None` values. The result is a single value of type `B`.
+- Iterates through the collection, applying `f` only to `Some` values
+- `None` values are skipped entirely
+- Returns the accumulated result
 
-This utility is particularly useful for aggregating values from an iterable
-of `Option`s while skipping the absent (`None`) values.
-
-**Example**
+**Example** (Summing present values)
 
 ```ts
 import { Option, pipe } from "effect"
 
-const iterable = [Option.some(1), Option.none(), Option.some(2), Option.none()]
+const items = [Option.some(1), Option.none(), Option.some(2), Option.none()]
 
-console.log(pipe(iterable, Option.reduceCompact(0, (b, a) => b + a)))
+console.log(pipe(items, Option.reduceCompact(0, (b, a) => b + a)))
 // Output: 3
 ```
 
@@ -33,6 +33,6 @@ console.log(pipe(iterable, Option.reduceCompact(0, (b, a) => b + a)))
 declare const reduceCompact: { <B, A>(b: B, f: (b: B, a: A) => B): (self: Iterable<Option<A>>) => B; <A, B>(self: Iterable<Option<A>>, b: B, f: (b: B, a: A) => B): B; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L1510)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L1838)
 
 Since v2.0.0

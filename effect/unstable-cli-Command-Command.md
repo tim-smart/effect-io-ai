@@ -1,0 +1,113 @@
+Package: `effect`<br />
+Module: `Command`<br />
+
+## Command.Command
+
+Represents a CLI command with its configuration, handler, and metadata.
+
+**Details**
+
+Commands are the core building blocks of CLI applications. They define:
+
+- The command name and description
+- Configuration including flags and arguments
+- Handler function for execution
+- Optional subcommands for hierarchical structures
+
+**Example** (Defining CLI commands)
+
+```ts
+import { Console } from "effect"
+import { Argument, Command, Flag } from "effect/unstable/cli"
+
+// Simple command with no configuration
+const version: Command.Command<"version", {}, {}, never, never> = Command.make(
+  "version"
+)
+
+// Command with flags and arguments
+const deploy: Command.Command<
+  "deploy",
+  {
+    readonly env: string
+    readonly force: boolean
+    readonly files: ReadonlyArray<string>
+  },
+  {},
+  never,
+  never
+> = Command.make("deploy", {
+  env: Flag.string("env"),
+  force: Flag.boolean("force"),
+  files: Argument.string("files").pipe(Argument.variadic())
+})
+
+// Command with handler
+const greet = Command.make("greet", {
+  name: Flag.string("name")
+}, (config) => Console.log(`Hello, ${config.name}!`))
+```
+
+**Signature**
+
+```ts
+export interface Command<in out Name extends string, in Input, out ContextInput = {}, out E = never, out R = never>
+  extends
+    Effect.Effect<
+      ContextInput,
+      never,
+      CommandContext<Name>
+    >
+{
+  readonly [TypeId]: Command.Variance<Input, E, R>
+
+  /**
+   * The name of the command.
+   */
+  readonly name: Name
+
+  /**
+   * An optional description of the command.
+   */
+  readonly description: string | undefined
+
+  /**
+   * An optional short description used when listing subcommands.
+   */
+  readonly shortDescription: string | undefined
+
+  /**
+   * An optional alias that can be used as a shorter command name.
+   */
+  readonly alias: string | undefined
+
+  /**
+   * Optional usage examples for the command.
+   */
+  readonly examples: ReadonlyArray<Command.Example>
+
+  /**
+   * The subcommands available under this command.
+   */
+  readonly subcommands: ReadonlyArray<{
+    readonly group: string | undefined
+    readonly commands: NonEmptyReadonlyArray<Command.Any>
+  }>
+
+  /**
+   * Custom annotations associated with this command.
+   */
+  readonly annotations: Context.Context<never>
+
+  /**
+   * Whether this command is hidden from parent help output, shell
+   * completions, and unknown-subcommand suggestions. Hidden commands still
+   * parse and execute normally when invoked by exact name.
+   */
+  readonly hidden: boolean
+}
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Command.ts#L95)
+
+Since v4.0.0

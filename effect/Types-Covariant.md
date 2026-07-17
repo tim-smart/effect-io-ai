@@ -3,7 +3,35 @@ Module: `Types`<br />
 
 ## Types.Covariant
 
-Covariant helper.
+Function-type alias encoding covariant variance for a phantom type
+parameter.
+
+**When to use**
+
+Use as a phantom field type to make a type parameter covariant in output
+position.
+
+**Details**
+
+`Covariant<A>` is assignable to `Covariant<B>` when `A extends B`, following
+the subtype direction.
+
+**Example** (Defining a covariant phantom type)
+
+```ts
+import type { Types } from "effect"
+
+interface Producer<T> {
+  readonly _phantom: Types.Covariant<T>
+  readonly get: () => T
+}
+```
+
+**See**
+
+- `Covariant.Type`
+- `Contravariant`
+- `Invariant`
 
 **Signature**
 
@@ -11,6 +39,6 @@ Covariant helper.
 type Covariant<A> = (_: never) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L301)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L646)
 
 Since v2.0.0

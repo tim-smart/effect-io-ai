@@ -3,20 +3,52 @@ Module: `Scope`<br />
 
 ## Scope.addFinalizerExit
 
-Adds a finalizer to this scope. The finalizer receives the `Exit` value
-when the scope is closed, allowing it to perform different actions based
-on the exit status.
+Registers an exit-aware finalizer on a scope.
 
-**See**
+**When to use**
 
-- `addFinalizer`
+Use when cleanup needs to know whether the scope closed with success,
+failure, or interruption.
+
+**Details**
+
+If the scope is open, the finalizer runs when the scope closes and receives
+the scope's exit value. If the scope is already closed, the finalizer runs
+immediately with the stored exit value.
+
+**Example** (Adding an exit-aware finalizer)
+
+```ts
+import { Console, Effect, Exit, Scope } from "effect"
+
+const withResource = Effect.gen(function*() {
+  const scope = yield* Scope.make()
+
+  // Add a finalizer for cleanup
+  yield* Scope.addFinalizerExit(
+    scope,
+    (exit) =>
+      Console.log(
+        `Cleaning up resource. Exit: ${
+          Exit.isSuccess(exit) ? "Success" : "Failure"
+        }`
+      )
+  )
+
+  // Use the resource
+  yield* Console.log("Using resource")
+
+  // Close the scope
+  yield* Scope.close(scope, Exit.void)
+})
+```
 
 **Signature**
 
 ```ts
-declare const addFinalizerExit: (self: Scope, finalizer: Scope.Finalizer) => Effect.Effect<void>
+declare const addFinalizerExit: (scope: Scope, finalizer: (exit: Exit<any, any>) => Effect<unknown>) => Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Scope.ts#L142)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Scope.ts#L366)
 
 Since v2.0.0

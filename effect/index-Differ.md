@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.Differ
 
-Re-exports all named exports from the "./Differ.js" module as `Differ`.
+Re-exports all named exports from the "./Differ.ts" module as `Differ`.
 
 **Signature**
 
 ```ts
-export * as Differ from "./Differ.js"
+export * as Differ from "./Differ.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L219)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L142)
 
-Since v2.0.0
+Since v4.0.0

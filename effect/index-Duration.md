@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.Duration
 
-Re-exports all named exports from the "./Duration.js" module as `Duration`.
+Re-exports all named exports from the "./Duration.ts" module as `Duration`.
 
 **Signature**
 
 ```ts
-export * as Duration from "./Duration.js"
+export * as Duration from "./Duration.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L224)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L147)
 
 Since v2.0.0

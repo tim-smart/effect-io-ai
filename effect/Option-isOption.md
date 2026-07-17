@@ -5,14 +5,17 @@ Module: `Option`<br />
 
 Determines whether the given value is an `Option`.
 
+**When to use**
+
+Use to validate unknown values at runtime boundaries, such as type-narrowing
+in union types.
+
 **Details**
 
-This function checks if a value is an instance of `Option`. It returns `true`
-if the value is either `Option.some` or `Option.none`, and `false` otherwise.
-This is particularly useful when working with unknown values or when you need
-to ensure type safety in your code.
+- Returns `true` for both `Some` and `None` instances
+- Acts as a type guard, narrowing the input to `Option<unknown>`
 
-**Example**
+**Example** (Checking if a value is an Option)
 
 ```ts
 import { Option } from "effect"
@@ -27,12 +30,17 @@ console.log(Option.isOption({}))
 // Output: false
 ```
 
+**See**
+
+- `isNone` to check for `None` specifically
+- `isSome` to check for `Some` specifically
+
 **Signature**
 
 ```ts
 declare const isOption: (input: unknown) => input is Option<unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L216)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L328)
 
 Since v2.0.0

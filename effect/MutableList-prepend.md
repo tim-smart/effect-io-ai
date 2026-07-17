@@ -3,14 +3,40 @@ Module: `MutableList`<br />
 
 ## MutableList.prepend
 
-Prepends the specified value to the beginning of the list.
+Prepends an element to the beginning of the MutableList.
+This operation is optimized for high-frequency usage.
+
+**Example** (Prepending elements)
+
+```ts
+import { MutableList } from "effect"
+
+const list = MutableList.make<string>()
+
+// Prepend elements (they'll be at the front)
+MutableList.prepend(list, "third")
+MutableList.prepend(list, "second")
+MutableList.prepend(list, "first")
+
+console.log(list.length) // 3
+
+// Elements taken from head (most recently prepended first)
+console.log(MutableList.take(list)) // "first"
+console.log(MutableList.take(list)) // "second"
+console.log(MutableList.take(list)) // "third"
+
+// Use case: priority items or stack-like behavior
+MutableList.append(list, "normal")
+MutableList.prepend(list, "priority") // This will be taken first
+console.log(MutableList.take(list)) // "priority"
+```
 
 **Signature**
 
 ```ts
-declare const prepend: { <A>(value: A): (self: MutableList<A>) => MutableList<A>; <A>(self: MutableList<A>, value: A): MutableList<A>; }
+declare const prepend: <A>(self: MutableList<A>, message: A) => void
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/MutableList.ts#L256)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/MutableList.ts#L342)
 
 Since v2.0.0

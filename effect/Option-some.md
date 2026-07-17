@@ -5,13 +5,21 @@ Module: `Option`<br />
 
 Wraps the given value into an `Option` to represent its presence.
 
-**Example** (Creating an Option with a Value)
+**When to use**
+
+Use to wrap a known present value as `Option`
+- Returning a successful result from a partial function
+
+**Details**
+
+- Always returns `Some<A>`
+- Does not filter `null` or `undefined`; use `fromNullishOr` for that
+
+**Example** (Wrapping a value)
 
 ```ts
 import { Option } from "effect"
 
-// An Option holding the number 1
-//
 //      ┌─── Option<number>
 //      ▼
 const value = Option.some(1)
@@ -30,6 +38,6 @@ console.log(value)
 declare const some: <A>(value: A) => Option<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L187)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L292)
 
 Since v2.0.0

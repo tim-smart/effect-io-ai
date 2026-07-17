@@ -3,35 +3,29 @@ Module: `Option`<br />
 
 ## Option.as
 
-Replaces the value inside a `Some` with the specified constant value, leaving
-`None` unchanged.
+Replaces the value inside a `Some` with a constant, leaving `None` unchanged.
 
-**Details**
+**When to use**
 
-This function transforms an `Option` by replacing the value inside a `Some`
-with the given constant value `b`. If the `Option` is `None`, it remains
-unchanged.
+Use when you need to replace a present `Option` value while preserving
+whether it was `Some` or `None`.
 
-This is useful when you want to preserve the presence of a value (`Some`) but
-replace its content with a fixed value.
-
-**Example**
+**Example** (Replacing a value)
 
 ```ts
 import { Option } from "effect"
 
-// Replacing the value of a `Some`
-const someValue = Option.some(42)
-
-console.log(Option.as(someValue, "new value"))
+console.log(Option.as(Option.some(42), "new value"))
 // Output: { _id: 'Option', _tag: 'Some', value: 'new value' }
 
-// Replacing a `None` (no effect)
-const noneValue = Option.none<number>()
-
-console.log(Option.as(noneValue, "new value"))
+console.log(Option.as(Option.none(), "new value"))
 // Output: { _id: 'Option', _tag: 'None' }
 ```
+
+**See**
+
+- `asVoid` to replace with `undefined`
+- `map` for a general transformation
 
 **Signature**
 
@@ -39,6 +33,6 @@ console.log(Option.as(noneValue, "new value"))
 declare const as: { <B>(b: B): <X>(self: Option<X>) => Option<B>; <X, B>(self: Option<X>, b: B): Option<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L964)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L1193)
 
 Since v2.0.0

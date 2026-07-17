@@ -1,0 +1,24 @@
+Package: `effect`<br />
+Module: `Tool`<br />
+
+## Tool.NameMapper
+
+Maps between a provider-defined tool name and the name given to the tool by
+the Effect AI SDK.
+
+**Details**
+
+The custom names used by the Effect AI SDK are to allow for toolkits which
+contain tools from multiple different providers that would otherwise have
+naming conflicts (i.e. `"web_search"`) to instead use custom names (i.e.
+`"OpenAiWebSearch"`).
+
+**Signature**
+
+```ts
+declare class NameMapper<Tools> { constructor(tools: Tools) }
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Tool.ts#L1515)
+
+Since v4.0.0

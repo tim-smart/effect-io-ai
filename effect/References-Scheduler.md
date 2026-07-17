@@ -1,0 +1,47 @@
+Package: `effect`<br />
+Module: `References`<br />
+
+## References.Scheduler
+
+Context reference for the current scheduler implementation used by the Effect runtime.
+Controls how Effects are scheduled and executed.
+
+**When to use**
+
+Use to provide the scheduler implementation that fibers use in the current
+context.
+
+**Example** (Providing a custom scheduler)
+
+```ts
+import { Effect, References, Scheduler } from "effect"
+
+const customScheduling = Effect.gen(function*() {
+  // Get current scheduler (default is MixedScheduler)
+  const current = yield* References.Scheduler
+  console.log(current) // MixedScheduler instance
+
+  // Use a custom scheduler
+  yield* Effect.provideService(
+    Effect.gen(function*() {
+      const scheduler = yield* References.Scheduler
+      console.log(scheduler) // Custom scheduler instance
+
+      // Effects will use the custom scheduler in this context
+      yield* Effect.log("Using custom scheduler")
+    }),
+    References.Scheduler,
+    new Scheduler.MixedScheduler()
+  )
+})
+```
+
+**Signature**
+
+```ts
+declare const Scheduler: Context.Reference<Scheduler>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/References.ts#L785)
+
+Since v4.0.0

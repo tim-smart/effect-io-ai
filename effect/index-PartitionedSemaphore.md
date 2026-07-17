@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.PartitionedSemaphore
 
-Re-exports all named exports from the "./PartitionedSemaphore.js" module as `PartitionedSemaphore`.
+Re-exports all named exports from the "./PartitionedSemaphore.ts" module as `PartitionedSemaphore`.
 
 **Signature**
 
 ```ts
-export * as PartitionedSemaphore from "./PartitionedSemaphore.js"
+export * as PartitionedSemaphore from "./PartitionedSemaphore.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1097)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L387)
 
-Since v3.19.4
+Since v4.0.0

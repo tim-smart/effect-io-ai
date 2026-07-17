@@ -1,0 +1,16 @@
+Package: `effect`<br />
+Module: `HttpClientRequest`<br />
+
+## HttpClientRequest.setHash
+
+Sets the URL fragment on a request without the leading `#`.
+
+**Signature**
+
+```ts
+declare const setHash: { (hash: string): (self: HttpClientRequest) => HttpClientRequest; (self: HttpClientRequest, hash: string): HttpClientRequest; }
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HttpClientRequest.ts#L580)
+
+Since v4.0.0

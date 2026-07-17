@@ -3,27 +3,37 @@ Module: `Predicate`<br />
 
 ## Predicate.Refinement
 
-Represents a function that serves as a type guard.
+A predicate that also narrows the input type when it returns `true`.
 
-A `Refinement<A, B>` is a function that takes a value of type `A` and returns a
-type predicate `a is B`, where `B` is a subtype of `A`. If the function returns
-`true`, TypeScript will narrow the type of the input variable to `B`.
+**When to use**
 
-**Example**
+Use when you want a runtime check that refines `A` to `B` for TypeScript,
+especially when composing type guards with `compose` or safely
+checking `unknown` values.
+
+**Details**
+
+A refinement returns a type predicate (`a is B`). Use it with `if` or
+`filter` to narrow types.
+
+**Example** (Narrowing unknown values)
 
 ```ts
 import { Predicate } from "effect"
-import * as assert from "node:assert"
 
 const isString: Predicate.Refinement<unknown, string> = (u): u is string => typeof u === "string"
 
-const value: unknown = "hello"
-
-if (isString(value)) {
-  // value is now known to be a string
-  assert.strictEqual(value.toUpperCase(), "HELLO")
+const data: unknown = "hello"
+if (isString(data)) {
+  console.log(data.toUpperCase())
 }
 ```
+
+**See**
+
+- `Predicate`
+- `compose`
+- `isString`
 
 **Signature**
 
@@ -33,6 +43,6 @@ export interface Refinement<in A, out B extends A> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L81)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L113)
 
 Since v2.0.0

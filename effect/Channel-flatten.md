@@ -3,16 +3,36 @@ Module: `Channel`<br />
 
 ## Channel.flatten
 
-Returns a new channel, which flattens the terminal value of this channel.
-This function may only be called if the terminal value of this channel is
-another channel of compatible types.
+Flattens a channel of channels.
+
+**Example** (Flattening nested channels)
+
+```ts
+import { Channel, Data } from "effect"
+
+class FlattenError extends Data.TaggedError("FlattenError")<{
+  readonly cause: string
+}> {}
+
+// Create a channel that outputs channels
+const nestedChannels = Channel.fromIterable([
+  Channel.fromIterable([1, 2]),
+  Channel.fromIterable([3, 4]),
+  Channel.fromIterable([5, 6])
+])
+
+// Flatten the nested channels
+const flattenedChannel = Channel.flatten(nestedChannels)
+
+// Outputs: 1, 2, 3, 4, 5, 6
+```
 
 **Signature**
 
 ```ts
-declare const flatten: <OutElem, InElem, OutErr, InErr, OutElem1, InElem1, OutErr1, InErr1, OutDone2, InDone1, Env1, InDone, Env>(self: Channel<OutElem, InElem, OutErr, InErr, Channel<OutElem1, InElem1, OutErr1, InErr1, OutDone2, InDone1, Env1>, InDone, Env>) => Channel<OutElem | OutElem1, InElem & InElem1, OutErr | OutErr1, InErr & InErr1, OutDone2, InDone & InDone1, Env1 | Env>
+declare const flatten: <OutElem, OutErr, OutDone, InElem, InErr, InDone, Env, OutErr1, OutDone1, InElem1, InErr1, InDone1, Env1>(channels: Channel<Channel<OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>, OutErr1, OutDone1, InElem1, InErr1, InDone1, Env1>) => Channel<OutElem, OutErr | OutErr1, OutDone1, InElem & InElem1, InErr & InErr1, InDone & InDone1, Env | Env1>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Channel.ts#L882)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Channel.ts#L2857)
 
 Since v2.0.0

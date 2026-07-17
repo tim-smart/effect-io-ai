@@ -1,0 +1,18 @@
+Package: `effect`<br />
+Module: `OtlpTracer`<br />
+
+## OtlpTracer.TraceData
+
+Root OTLP traces payload containing spans grouped by resource.
+
+**Signature**
+
+```ts
+export interface TraceData {
+  readonly resourceSpans: Array<ResourceSpan>
+}
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/OtlpTracer.ts#L357)
+
+Since v4.0.0

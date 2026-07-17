@@ -1,0 +1,42 @@
+Package: `effect`<br />
+Module: `Layer`<br />
+
+## Layer.unwrap
+
+Unwraps a `Layer` from an `Effect`, flattening the nested structure.
+
+**When to use**
+
+Use when you have an `Effect` that produces a `Layer` and you want to
+use that layer directly.
+
+**Details**
+
+The resulting Layer will have the combined error and dependency types from
+both the outer Effect and the inner Layer.
+
+**Example** (Unwrapping an effectful layer)
+
+```ts
+import { Context, Effect, Layer } from "effect"
+
+class Database extends Context.Service<Database, {
+  readonly query: (sql: string) => Effect.Effect<string>
+}>()("Database") {}
+
+const layerEffect = Effect.succeed(
+  Layer.succeed(Database, { query: Effect.fn("Database.query")((sql: string) => Effect.succeed("result")) })
+)
+
+const unwrappedLayer = Layer.unwrap(layerEffect)
+```
+
+**Signature**
+
+```ts
+declare const unwrap: <A, E1, R1, E, R>(self: Effect<Layer<A, E1, R1>, E, R>) => Layer<A, E | E1, R1 | Exclude<R, Scope.Scope>>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Layer.ts#L1126)
+
+Since v4.0.0

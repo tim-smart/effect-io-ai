@@ -5,12 +5,12 @@ Module: `Effect`<br />
 
 Creates an `Effect` that always succeeds with a given value.
 
-**When to Use**
+**When to use**
 
-Use this function when you need an effect that completes successfully with a
-specific value without any errors or external dependencies.
+Use when an effect should complete successfully with a specific value without any errors
+or external dependencies.
 
-**Example** (Creating a Successful Effect)
+**Example** (Creating a successful effect)
 
 ```ts
 import { Effect } from "effect"
@@ -32,6 +32,6 @@ const success = Effect.succeed(42)
 declare const succeed: <A>(value: A) => Effect<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L3160)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L973)
 
 Since v2.0.0

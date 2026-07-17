@@ -5,36 +5,38 @@ Module: `Effect`<br />
 
 Converts an `Option` of an `Effect` into an `Effect` of an `Option`.
 
+**When to use**
+
+Use when an effect should run only when an optional value is present, while
+preserving absence as a successful `None`.
+
 **Details**
 
-This function transforms an `Option<Effect<A, E, R>>` into an
-`Effect<Option<A>, E, R>`. If the `Option` is `None`, the resulting `Effect`
-will immediately succeed with a `None` value. If the `Option` is `Some`, the
-inner `Effect` will be executed, and its result wrapped in a `Some`.
+- `None` becomes an effect that succeeds with `None`
+- `Some(effect)` runs the inner effect and wraps its success value in `Some`
+- Inner failures are preserved in the resulting effect
 
-**Example**
+**Example** (Transposing an Option of an Effect)
 
 ```ts
 import { Effect, Option } from "effect"
 
-//      ┌─── Option<Effect<number, never, never>>
-//      ▼
-const maybe = Option.some(Effect.succeed(42))
+const some = Option.some(Effect.succeed(42))
 
 //      ┌─── Effect<Option<number>, never, never>
 //      ▼
-const result = Effect.transposeOption(maybe)
+const program = Effect.transposeOption(some)
 
-console.log(Effect.runSync(result))
+Effect.runPromise(program).then(console.log)
 // Output: { _id: 'Option', _tag: 'Some', value: 42 }
 ```
 
 **Signature**
 
 ```ts
-declare const transposeOption: <A = never, E = never, R = never>(self: Option.Option<Effect<A, E, R>>) => Effect<Option.Option<A>, E, R>
+declare const transposeOption: <A = never, E = never, R = never>(self: Option<Effect<A, E, R>>) => Effect<Option<A>, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13338)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L1857)
 
 Since v3.13.0

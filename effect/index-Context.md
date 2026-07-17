@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.Context
 
-Re-exports all named exports from the "./Context.js" module as `Context`.
+Re-exports all named exports from the "./Context.ts" module as `Context`.
 
 **Signature**
 
 ```ts
-export * as Context from "./Context.js"
+export * as Context from "./Context.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L189)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L112)
 
-Since v2.0.0
+Since v4.0.0

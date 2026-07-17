@@ -3,31 +3,23 @@ Module: `Option`<br />
 
 ## Option.orElse
 
-Returns the provided `Option` `that` if the current `Option` (`self`) is
-`None`; otherwise, it returns `self`.
+Returns the fallback `Option` if `self` is `None`; otherwise returns `self`.
+
+**When to use**
+
+Use when you need a lazy fallback `Option`, such as when building priority
+chains of optional values.
 
 **Details**
 
-This function provides a fallback mechanism for `Option` values. If the
-current `Option` is `None` (i.e., it contains no value), the `that` function
-is evaluated, and its resulting `Option` is returned. If the current `Option`
-is `Some` (i.e., it contains a value), the original `Option` is returned
-unchanged.
+- `Some` → returns `self` unchanged
+- `None` → evaluates and returns `that()`
+- `that` is lazily evaluated
 
-This is particularly useful for chaining fallback values or computations,
-allowing you to provide alternative `Option` values when the first one is
-empty.
-
-**Example**
+**Example** (Providing a fallback Option)
 
 ```ts
 import { Option } from "effect"
-
-console.log(Option.none().pipe(Option.orElse(() => Option.none())))
-// Output: { _id: 'Option', _tag: 'None' }
-
-console.log(Option.some("a").pipe(Option.orElse(() => Option.none())))
-// Output: { _id: 'Option', _tag: 'Some', value: 'a' }
 
 console.log(Option.none().pipe(Option.orElse(() => Option.some("b"))))
 // Output: { _id: 'Option', _tag: 'Some', value: 'b' }
@@ -36,12 +28,17 @@ console.log(Option.some("a").pipe(Option.orElse(() => Option.some("b"))))
 // Output: { _id: 'Option', _tag: 'Some', value: 'a' }
 ```
 
+**See**
+
+- `orElseSome` to wrap the fallback value in `Some` automatically
+- `firstSomeOf` to pick the first `Some` from a collection
+
 **Signature**
 
 ```ts
 declare const orElse: { <B>(that: LazyArg<Option<B>>): <A>(self: Option<A>) => Option<B | A>; <A, B>(self: Option<A>, that: LazyArg<Option<B>>): Option<A | B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L544)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L657)
 
 Since v2.0.0

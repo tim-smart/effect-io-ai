@@ -3,18 +3,26 @@ Module: `Boolean`<br />
 
 ## Boolean.and
 
-Combines two boolean using AND: `self && that`.
+Combines two booleans using logical AND: `self && that`.
 
-**Example**
+**When to use**
+
+Use to require both boolean operands to be `true`.
+
+**Details**
+
+Supports both data-first and data-last forms.
+
+**Example** (Combining booleans with AND)
 
 ```ts
+import { Boolean } from "effect"
 import * as assert from "node:assert"
-import { and } from "effect/Boolean"
 
-assert.deepStrictEqual(and(true, true), true)
-assert.deepStrictEqual(and(true, false), false)
-assert.deepStrictEqual(and(false, true), false)
-assert.deepStrictEqual(and(false, false), false)
+assert.deepStrictEqual(Boolean.and(true, true), true)
+assert.deepStrictEqual(Boolean.and(true, false), false)
+assert.deepStrictEqual(Boolean.and(false, true), false)
+assert.deepStrictEqual(Boolean.and(false, false), false)
 ```
 
 **Signature**
@@ -23,6 +31,6 @@ assert.deepStrictEqual(and(false, false), false)
 declare const and: { (that: boolean): (self: boolean) => boolean; (self: boolean, that: boolean): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Boolean.ts#L106)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Boolean.ts#L207)
 
 Since v2.0.0

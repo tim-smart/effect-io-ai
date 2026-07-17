@@ -3,7 +3,17 @@ Module: `Chunk`<br />
 
 ## Chunk.compact
 
-Filter out optional values
+Filters out optional values
+
+**Example** (Compacting optional values)
+
+```ts
+import { Chunk, Option } from "effect"
+
+const chunk = Chunk.make(Option.some(1), Option.none(), Option.some(3))
+const result = Chunk.compact(chunk)
+console.log(Chunk.toArray(result)) // [1, 3]
+```
 
 **Signature**
 
@@ -11,6 +21,6 @@ Filter out optional values
 declare const compact: <A>(self: Chunk<Option<A>>) => Chunk<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Chunk.ts#L719)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Chunk.ts#L1130)
 
 Since v2.0.0

@@ -1,0 +1,52 @@
+Package: `effect`<br />
+Module: `Schedule`<br />
+
+## Schedule.andThenResult
+
+Returns a schedule that runs `self` to completion, then runs `other`, and
+preserves which schedule produced each output.
+
+**Details**
+
+The resulting schedule emits a `Result` to indicate which phase produced
+each output: outputs from `self` are emitted as `Failure`, and outputs from
+`other` are emitted as `Success`.
+
+**Example** (Tracking sequential schedule phases)
+
+```ts
+import { Console, Effect, Result, Schedule } from "effect"
+
+// Track which phase of the schedule we're in
+const phaseTracker = Schedule.andThenResult(
+  Schedule.exponential("100 millis").pipe(Schedule.upTo({ times: 2 })),
+  Schedule.spaced("500 millis").pipe(Schedule.upTo({ times: 2 }))
+)
+
+const program = Effect.gen(function*() {
+  yield* Effect.repeat(
+    Effect.gen(function*() {
+      yield* Console.log("Task executed")
+      return "task-result"
+    }),
+    phaseTracker.pipe(
+      Schedule.tap(({ output: result }) =>
+        Result.match(result, {
+          onFailure: (phase1Output) => Console.log(`Phase 1: ${phase1Output}`),
+          onSuccess: (phase2Output) => Console.log(`Phase 2: ${phase2Output}`)
+        })
+      )
+    )
+  )
+})
+```
+
+**Signature**
+
+```ts
+declare const andThenResult: { <Output2, Input2, Error2, Env2>(other: Schedule<Output2, Input2, Error2, Env2>): <Output, Input, Error, Env>(self: Schedule<Output, Input, Error, Env>) => Schedule<Result.Result<Output2, Output>, Input & Input2, Error | Error2, Env | Env2>; <Output, Input, Error, Env, Output2, Input2, Error2, Env2>(self: Schedule<Output, Input, Error, Env>, other: Schedule<Output2, Input2, Error2, Env2>): Schedule<Result.Result<Output2, Output>, Input & Input2, Error | Error2, Env | Env2>; }
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L689)
+
+Since v4.0.0

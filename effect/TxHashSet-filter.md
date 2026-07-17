@@ -1,0 +1,31 @@
+Package: `effect`<br />
+Module: `TxHashSet`<br />
+
+## TxHashSet.filter
+
+Filters the TxHashSet keeping only values that satisfy the predicate, returning a new TxHashSet.
+
+**Example** (Filtering values)
+
+```ts
+import { Effect, TxHashSet } from "effect"
+
+const program = Effect.gen(function*() {
+  const numbers = yield* TxHashSet.make(1, 2, 3, 4, 5, 6)
+  const evens = yield* TxHashSet.filter(numbers, (n) => n % 2 === 0)
+
+  const values = yield* TxHashSet.toHashSet(evens)
+  console.log(Array.from(values).sort()) // [2, 4, 6]
+  console.log(yield* TxHashSet.size(evens)) // 3
+})
+```
+
+**Signature**
+
+```ts
+declare const filter: { <V, U extends V>(refinement: Refinement<NoInfer<V>, U>): (self: TxHashSet<V>) => Effect.Effect<TxHashSet<U>>; <V>(predicate: Predicate<NoInfer<V>>): (self: TxHashSet<V>) => Effect.Effect<TxHashSet<V>>; <V, U extends V>(self: TxHashSet<V>, refinement: Refinement<V, U>): Effect.Effect<TxHashSet<U>>; <V>(self: TxHashSet<V>, predicate: Predicate<V>): Effect.Effect<TxHashSet<V>>; }
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TxHashSet.ts#L799)
+
+Since v4.0.0

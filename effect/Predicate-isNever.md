@@ -3,25 +3,30 @@ Module: `Predicate`<br />
 
 ## Predicate.isNever
 
-A refinement that always returns `false`. The type is narrowed to `never`.
+Type guard that always returns `false`.
 
-**Example**
+**When to use**
+
+Use when you need a `Predicate` that never accepts, e.g. in default branches.
+
+**Example** (Matching no values)
 
 ```ts
-import * as assert from "node:assert"
-import { isNever } from "effect/Predicate"
+import { Predicate } from "effect"
 
-assert.strictEqual(isNever(1), false)
-assert.strictEqual(isNever(null), false)
-assert.strictEqual(isNever({}), false)
+console.log(Predicate.isNever("anything"))
 ```
+
+**See**
+
+- `isUnknown`
 
 **Signature**
 
 ```ts
-declare const isNever: (input: unknown) => input is never
+declare const isNever: (_: unknown) => _ is never
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L532)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L949)
 
 Since v2.0.0

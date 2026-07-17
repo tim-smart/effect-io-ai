@@ -3,36 +3,63 @@ Module: `ManagedRuntime`<br />
 
 ## ManagedRuntime.make
 
-Convert a Layer into an ManagedRuntime, that can be used to run Effect's using
-your services.
+Creates a `ManagedRuntime` from a layer.
 
-**Example**
+**When to use**
+
+Use to create a reusable runtime from a `Layer` for application entry points
+or integration code that runs many effects without rebuilding services.
+
+**Details**
+
+The layer is built lazily on first use and its context is cached for
+subsequent runs. Resources acquired by the layer are owned by the runtime and
+are released when `dispose` or `disposeEffect` is run. `options.memoMap` can
+be used to share layer memoization with other layer builds.
+
+**Gotchas**
+
+Dispose the runtime when it is no longer needed. A runtime cannot be reused
+after disposal.
+
+**Example** (Creating a managed runtime)
 
 ```ts
-import { Console, Effect, Layer, ManagedRuntime } from "effect"
+import { Context, Effect, Layer, ManagedRuntime } from "effect"
 
-class Notifications extends Effect.Tag("Notifications")<
+class Notifications extends Context.Service<Notifications, {
+  readonly notify: (message: string) => Effect.Effect<void>
+}>()("Notifications") {
+  static readonly layer = Layer.succeed(this)({
+    notify: Effect.fn("Notifications.notify")((message) =>
+      Effect.sync(() => console.log(message))
+    )
+  })
+}
+
+const runtime = ManagedRuntime.make(Notifications.layer)
+
+const program = Effect.flatMap(
   Notifications,
-  { readonly notify: (message: string) => Effect.Effect<void> }
->() {
-  static Live = Layer.succeed(this, { notify: (message) => Console.log(message) })
-}
+  (_) => _.notify("Hello, world!")
+).pipe(Effect.ensuring(runtime.disposeEffect))
 
-async function main() {
-  const runtime = ManagedRuntime.make(Notifications.Live)
-  await runtime.runPromise(Notifications.notify("Hello, world!"))
-  await runtime.dispose()
-}
-
-main()
+runtime.runPromise(program)
+// Hello, world!
 ```
+
+**See**
+
+- `ManagedRuntime` for the returned runtime interface
+- `Layer.MemoMap` for shared layer memoization
+- `Layer.build` for lower-level scoped layer construction
 
 **Signature**
 
 ```ts
-declare const make: <R, E>(layer: Layer.Layer<R, E, never>, memoMap?: Layer.MemoMap | undefined) => ManagedRuntime<R, E>
+declare const make: <R, ER>(layer: Layer.Layer<R, ER, never>, options?: { readonly memoMap?: Layer.MemoMap | undefined; } | undefined) => ManagedRuntime<R, ER>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/ManagedRuntime.ts#L177)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/ManagedRuntime.ts#L273)
 
 Since v2.0.0

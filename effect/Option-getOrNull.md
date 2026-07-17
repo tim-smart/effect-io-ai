@@ -3,19 +3,18 @@ Module: `Option`<br />
 
 ## Option.getOrNull
 
-Returns the value contained in the `Option` if it is `Some`; otherwise,
-returns `null`.
+Extracts the value from a `Some`, or returns `null` for `None`.
+
+**When to use**
+
+Use when you need to pass absent `Option` values to APIs that expect `null`.
 
 **Details**
 
-This function provides a way to extract the value of an `Option` while
-falling back to `null` if the `Option` is `None`.
+- `Some` → the inner value
+- `None` → `null`
 
-It is particularly useful in scenarios where `null` is an acceptable
-placeholder for the absence of a value, such as when interacting with APIs or
-systems that use `null` as a default for missing values.
-
-**Example**
+**Example** (Unwrapping to null)
 
 ```ts
 import { Option } from "effect"
@@ -27,12 +26,17 @@ console.log(Option.getOrNull(Option.none()))
 // Output: null
 ```
 
+**See**
+
+- `getOrUndefined` to return `undefined` instead
+- `getOrElse` for a custom fallback
+
 **Signature**
 
 ```ts
 declare const getOrNull: <A>(self: Option<A>) => A | null
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L753)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L976)
 
 Since v2.0.0

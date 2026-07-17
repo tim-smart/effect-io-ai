@@ -3,14 +3,41 @@ Module: `Array`<br />
 
 ## Array.separate
 
-Separates an `Iterable` into two arrays based on a predicate.
+Separates an iterable of `Result`s into failure values and success values.
+
+**When to use**
+
+Use to split an iterable of `Result` values into failure and success arrays.
+
+**Details**
+
+Returns `[failures, successes]`. This is equivalent to
+`partition(identity)`.
+
+**Example** (Separating Results)
+
+```ts
+import { Array, Result } from "effect"
+
+const [failures, successes] = Array.separate([
+  Result.succeed(1), Result.fail("error"), Result.succeed(2)
+])
+console.log(failures) // ["error"]
+console.log(successes) // [1, 2]
+```
+
+**See**
+
+- `getFailures` — extract only failures
+- `getSuccesses` — extract only successes
+- `partition` for computing `Result` values while splitting
 
 **Signature**
 
 ```ts
-declare const separate: <T extends Iterable<Either.Either<any, any>>>(self: T) => [Array<Either.Either.Left<ReadonlyArray.Infer<T>>>, Array<Either.Either.Right<ReadonlyArray.Infer<T>>>]
+declare const separate: <T extends Iterable<Result.Result<any, any>>>(self: T) => [failures: Array<Result.Result.Failure<ReadonlyArray.Infer<T>>>, successes: Array<Result.Result.Success<ReadonlyArray.Infer<T>>>]
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2826)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L3861)
 
 Since v2.0.0

@@ -1,0 +1,56 @@
+Package: `effect`<br />
+Module: `Layer`<br />
+
+## Layer.MemoMap
+
+A `MemoMap` is used to memoize layer construction and ensure sharing of
+layers.
+
+**Details**
+
+The `MemoMap` prevents duplicate construction of the same layer instance,
+enabling efficient resource sharing across layer dependencies.
+
+**Example** (Sharing layer construction with a memo map)
+
+```ts
+import { Context, Effect, Layer } from "effect"
+
+class Database extends Context.Service<Database, {
+  readonly query: (sql: string) => Effect.Effect<string>
+}>()("Database") {}
+
+// Create a custom MemoMap for manual layer building
+const program = Effect.gen(function*() {
+  const memoMap = yield* Layer.makeMemoMap
+  const scope = yield* Effect.scope
+
+  const dbLayer = Layer.succeed(Database, {
+    query: Effect.fn("Database.query")((sql: string) => Effect.succeed("result"))
+  })
+  const context = yield* Layer.buildWithMemoMap(dbLayer, memoMap, scope)
+
+  return Context.get(context, Database)
+})
+```
+
+**Signature**
+
+```ts
+export interface MemoMap {
+  readonly [MemoMapTypeId]: typeof MemoMapTypeId
+  readonly get: <RIn, E, ROut>(
+    layer: Layer<ROut, E, RIn>,
+    scope: Scope.Scope
+  ) => Effect<Context.Context<ROut>, E, RIn> | undefined
+  readonly getOrElseMemoize: <RIn, E, ROut>(
+    layer: Layer<ROut, E, RIn>,
+    scope: Scope.Scope,
+    build: (memoMap: MemoMap, scope: Scope.Scope) => Effect<Context.Context<ROut>, E, RIn>
+  ) => Effect<Context.Context<ROut>, E, RIn>
+}
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Layer.ts#L219)
+
+Since v2.0.0

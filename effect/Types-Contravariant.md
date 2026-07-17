@@ -3,7 +3,35 @@ Module: `Types`<br />
 
 ## Types.Contravariant
 
-Contravariant helper.
+Function-type alias encoding contravariant variance for a phantom type
+parameter.
+
+**When to use**
+
+Use as a phantom field type to make a type parameter contravariant in input
+position.
+
+**Details**
+
+`Contravariant<A>` is assignable to `Contravariant<B>` when `B extends A`,
+following the supertype direction.
+
+**Example** (Defining a contravariant phantom type)
+
+```ts
+import type { Types } from "effect"
+
+interface Consumer<T> {
+  readonly _phantom: Types.Contravariant<T>
+  readonly accept: (value: T) => void
+}
+```
+
+**See**
+
+- `Contravariant.Type`
+- `Covariant`
+- `Invariant`
 
 **Signature**
 
@@ -11,6 +39,6 @@ Contravariant helper.
 type Contravariant<A> = (_: A) => void
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L321)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L714)
 
 Since v2.0.0

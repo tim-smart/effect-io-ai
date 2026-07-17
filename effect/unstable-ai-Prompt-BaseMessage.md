@@ -1,0 +1,31 @@
+Package: `effect`<br />
+Module: `Prompt`<br />
+
+## Prompt.BaseMessage
+
+Base interface for all message types.
+
+**Details**
+
+It provides the common structure shared by all messages, including the role
+and provider options.
+
+**Signature**
+
+```ts
+export interface BaseMessage<Role extends string, Options extends ProviderOptions> {
+  readonly [MessageTypeId]: typeof MessageTypeId
+  /**
+   * The role of the message participant.
+   */
+  readonly role: Role
+  /**
+   * Provider-specific options for this message.
+   */
+  readonly options: Options
+}
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Prompt.ts#L974)
+
+Since v4.0.0

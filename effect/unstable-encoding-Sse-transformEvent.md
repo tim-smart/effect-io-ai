@@ -1,0 +1,17 @@
+Package: `effect`<br />
+Module: `Sse`<br />
+
+## Sse.transformEvent
+
+Schema for transforming untagged SSE event payloads into tagged `Event`
+models.
+
+**Signature**
+
+```ts
+declare const transformEvent: SchemaTransformation.Transformation<{ readonly id?: string | undefined; readonly event?: string | undefined; readonly data: string; }, { readonly _tag: "Event"; readonly id: string | undefined; readonly event: string; readonly data: string; }, never, never>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Sse.ts#L480)
+
+Since v4.0.0

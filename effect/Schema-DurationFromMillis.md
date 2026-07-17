@@ -3,15 +3,16 @@ Module: `Schema`<br />
 
 ## Schema.DurationFromMillis
 
-A schema that transforms a (possibly Infinite) non negative number into a
-`Duration`. Treats the value as the number of milliseconds.
+Type-level representation of `DurationFromMillis`.
 
 **Signature**
 
 ```ts
-declare class DurationFromMillis
+export interface DurationFromMillis extends decodeTo<Duration, Number> {
+  readonly "Rebuild": DurationFromMillis
+}
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L5947)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10758)
 
 Since v3.10.0

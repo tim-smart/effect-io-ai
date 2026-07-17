@@ -1,0 +1,17 @@
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.fromBrand
+
+Creates a branded schema from a `Brand.Constructor`, applying the
+constructor's checks and brand tag to the underlying schema.
+
+**Signature**
+
+```ts
+declare const fromBrand: <A extends Brand.Brand<any>>(identifier: string, ctor: Brand.Constructor<A>) => <S extends Top & { readonly "Type": Brand.Brand.Unbranded<A>; }>(self: S) => brand<S["Rebuild"], Brand.Brand.Keys<A>>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L5132)
+
+Since v3.10.0

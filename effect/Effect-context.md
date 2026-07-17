@@ -3,21 +3,58 @@ Module: `Effect`<br />
 
 ## Effect.context
 
-Accesses the full context of the effect.
+Returns the complete context.
+
+**When to use**
+
+Use to read the complete `Context` available to the current effect.
 
 **Details**
 
-This function provides the ability to access the entire context required by
-an effect. The context is a container that holds dependencies or environment
-values needed by an effect to run. By using this function, you can retrieve
-and work with the context directly within an effect.
+This function allows you to access all services that are currently available
+in the effect's environment. This can be useful for debugging, introspection,
+or when you need to pass the entire context to another function.
+
+**Example** (Reading the full context)
+
+```ts
+import { Console, Context, Effect, Option } from "effect"
+
+const Logger = Context.Service<{
+  log: (msg: string) => void
+}>("Logger")
+const Database = Context.Service<{
+  query: (sql: string) => string
+}>("Database")
+
+const program = Effect.gen(function*() {
+  const allServices = yield* Effect.context()
+
+  // Check if specific services are available
+  const loggerOption = Context.getOption(allServices, Logger)
+  const databaseOption = Context.getOption(allServices, Database)
+
+  yield* Console.log(`Logger available: ${Option.isSome(loggerOption)}`)
+  yield* Console.log(`Database available: ${Option.isSome(databaseOption)}`)
+})
+
+const context = Context.make(Logger, { log: console.log })
+  .pipe(Context.add(Database, { query: () => "result" }))
+
+const provided = Effect.provideContext(program, context)
+```
+
+**See**
+
+- `contextWith` for deriving an effect from the complete context
+- `service` for reading one service from the context
 
 **Signature**
 
 ```ts
-declare const context: <R>() => Effect<Context.Context<R>, never, R>
+declare const context: <R = never>() => Effect<Context.Context<R>, never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L7401)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L5768)
 
 Since v2.0.0

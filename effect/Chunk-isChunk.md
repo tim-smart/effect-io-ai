@@ -3,7 +3,20 @@ Module: `Chunk`<br />
 
 ## Chunk.isChunk
 
-Checks if `u` is a `Chunk<unknown>`
+Checks whether `u` is a `Chunk<unknown>`
+
+**Example** (Checking for chunks)
+
+```ts
+import { Chunk } from "effect"
+
+const chunk = Chunk.make(1, 2, 3)
+const array = [1, 2, 3]
+
+console.log(Chunk.isChunk(chunk)) // true
+console.log(Chunk.isChunk(array)) // false
+console.log(Chunk.isChunk("string")) // false
+```
 
 **Signature**
 
@@ -11,6 +24,6 @@ Checks if `u` is a `Chunk<unknown>`
 declare const isChunk: { <A>(u: Iterable<A>): u is Chunk<A>; (u: unknown): u is Chunk<unknown>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Chunk.ts#L214)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Chunk.ts#L279)
 
 Since v2.0.0

@@ -3,17 +3,30 @@ Module: `Array`<br />
 
 ## Array.findLast
 
-Finds the last element in an iterable collection that satisfies the given predicate or refinement.
-Returns an `Option` containing the found element, or `Option.none` if no element matches.
+Returns the last element matching a predicate, refinement, or mapping
+function, wrapped in `Option`.
 
-**Example**
+**When to use**
+
+Use to find the last matching element from the end of an array.
+
+**Details**
+
+Searches from the end of the array. If no element matches, this returns
+`Option.none()`.
+
+**Example** (Finding the last match)
 
 ```ts
 import { Array } from "effect"
 
-const result = Array.findLast([1, 2, 3, 4, 5], n => n % 2 === 0)
-console.log(result) // Option.some(4)
+console.log(Array.findLast([1, 2, 3, 4, 5], (n) => n % 2 === 0)) // Option.some(4)
 ```
+
+**See**
+
+- `findFirst` — search from the start
+- `findLastIndex` — get the index instead
 
 **Signature**
 
@@ -21,6 +34,6 @@ console.log(result) // Option.some(4)
 declare const findLast: { <A, B>(f: (a: NoInfer<A>, i: number) => Option.Option<B>): (self: Iterable<A>) => Option.Option<B>; <A, B extends A>(refinement: (a: NoInfer<A>, i: number) => a is B): (self: Iterable<A>) => Option.Option<B>; <A>(predicate: (a: NoInfer<A>, i: number) => boolean): (self: Iterable<A>) => Option.Option<A>; <A, B>(self: Iterable<A>, f: (a: A, i: number) => Option.Option<B>): Option.Option<B>; <A, B extends A>(self: Iterable<A>, refinement: (a: A, i: number) => a is B): Option.Option<B>; <A>(self: Iterable<A>, predicate: (a: A, i: number) => boolean): Option.Option<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L1078)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L1823)
 
 Since v2.0.0

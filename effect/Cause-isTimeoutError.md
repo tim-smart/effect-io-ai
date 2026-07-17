@@ -1,0 +1,25 @@
+Package: `effect`<br />
+Module: `Cause`<br />
+
+## Cause.isTimeoutError
+
+Checks whether an arbitrary value is a `TimeoutError`.
+
+**Example** (Checking the runtime type)
+
+```ts
+import { Cause } from "effect"
+
+console.log(Cause.isTimeoutError(new Cause.TimeoutError())) // true
+console.log(Cause.isTimeoutError("nope")) // false
+```
+
+**Signature**
+
+```ts
+declare const isTimeoutError: (u: unknown) => u is TimeoutError
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L1430)
+
+Since v4.0.0

@@ -3,15 +3,37 @@ Module: `Deferred`<br />
 
 ## Deferred.poll
 
-Returns a `Some<Effect<A, E, R>>` from the `Deferred` if this `Deferred` has
-already been completed, `None` otherwise.
+Returns the current completion effect as an `Option`. This returns
+`Option.some(effect)` when the `Deferred` is completed, `Option.none()`
+otherwise.
+
+**When to use**
+
+Use to inspect whether a `Deferred` is already completed and retrieve its
+stored completion effect when available.
+
+**Example** (Polling Deferred completion)
+
+```ts
+import { Deferred, Effect } from "effect"
+
+const program = Effect.gen(function*() {
+  const deferred = yield* Deferred.make<number>()
+  const beforeCompletion = yield* Deferred.poll(deferred)
+  console.log(beforeCompletion._tag === "None") // true
+
+  yield* Deferred.succeed(deferred, 42)
+  const afterCompletion = yield* Deferred.poll(deferred)
+  console.log(afterCompletion._tag === "Some") // true
+})
+```
 
 **Signature**
 
 ```ts
-declare const poll: <A, E>(self: Deferred<A, E>) => Effect.Effect<Option.Option<Effect.Effect<A, E>>>
+declare const poll: <A, E>(self: Deferred<A, E>) => Effect<Option.Option<Effect<A, E>>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Deferred.ts#L260)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Deferred.ts#L738)
 
 Since v2.0.0

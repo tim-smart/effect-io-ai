@@ -5,13 +5,17 @@ Module: `Effect`<br />
 
 Discards both the success and failure values of an effect.
 
-**When to Use**
+**When to use**
 
-`ignore` allows you to run an effect without caring about its result, whether
-it succeeds or fails. This is useful when you only care about the side
-effects of the effect and do not need to handle or process its outcome.
+Use when an effect should run for its side effects while both success and
+failure values are discarded.
 
-**Example** (Using Effect.ignore to Discard Values)
+**Details**
+
+Use the `log` option to emit the full `Cause` when the effect fails,
+and `message` to prepend a custom log message.
+
+**Example** (Discarding success and failure values)
 
 ```ts
 import { Effect } from "effect"
@@ -22,19 +26,26 @@ const task = Effect.fail("Uh oh!").pipe(Effect.as(5))
 
 //      ┌─── Effect<void, never, never>
 //      ▼
-const program = Effect.ignore(task)
+const program = task.pipe(Effect.ignore)
 ```
 
-**See**
+**Example** (Logging failures while ignoring results)
 
-- `ignoreLogged` to log failures while ignoring them.
+```ts
+import { Effect } from "effect"
+
+const task = Effect.fail("Uh oh!")
+
+const program = task.pipe(Effect.ignore({ log: true }))
+const programWarn = task.pipe(Effect.ignore({ log: "Warn", message: "Ignoring task failure" }))
+```
 
 **Signature**
 
 ```ts
-declare const ignore: <A, E, R>(self: Effect<A, E, R>) => Effect<void, never, R>
+declare const ignore: <Arg extends Effect<any, any, any> | { readonly log?: boolean | Severity | undefined; readonly message?: string | undefined; } | undefined = { readonly log?: boolean | Severity | undefined; readonly message?: string | undefined; }>(effectOrOptions?: Arg, options?: { readonly log?: boolean | Severity | undefined; readonly message?: string | undefined; } | undefined) => [Arg] extends [Effect<infer _A, infer _E, infer _R>] ? Effect<void, never, _R> : <A, E, R>(self: Effect<A, E, R>) => Effect<void, never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L4117)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L4205)
 
 Since v2.0.0

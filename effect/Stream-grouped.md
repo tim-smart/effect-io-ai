@@ -3,33 +3,35 @@ Module: `Stream`<br />
 
 ## Stream.grouped
 
-Partitions the stream with specified `chunkSize`.
+Partitions the stream into non-empty arrays of the specified size.
 
-**Example**
+**Details**
+
+The final array may be smaller if there are not enough elements to fill it.
+
+**Example** (Grouping elements by size)
 
 ```ts
-import { Effect, Stream } from "effect"
+import { Console, Effect, Stream } from "effect"
 
-const stream = Stream.range(0, 8).pipe(Stream.grouped(3))
+const program = Effect.gen(function*() {
+  const grouped = yield* Stream.range(1, 8).pipe(
+    Stream.grouped(3),
+    Stream.runCollect
+  )
+  yield* Console.log(grouped)
+})
 
-Effect.runPromise(Stream.runCollect(stream)).then((chunks) => console.log("%o", chunks))
-// {
-//   _id: 'Chunk',
-//   values: [
-//     { _id: 'Chunk', values: [ 0, 1, 2, [length]: 3 ] },
-//     { _id: 'Chunk', values: [ 3, 4, 5, [length]: 3 ] },
-//     { _id: 'Chunk', values: [ 6, 7, 8, [length]: 3 ] },
-//     [length]: 3
-//   ]
-// }
+Effect.runPromise(program)
+// Output: [ [ 1, 2, 3 ], [ 4, 5, 6 ], [ 7, 8 ] ]
 ```
 
 **Signature**
 
 ```ts
-declare const grouped: { (chunkSize: number): <A, E, R>(self: Stream<A, E, R>) => Stream<Chunk.Chunk<A>, E, R>; <A, E, R>(self: Stream<A, E, R>, chunkSize: number): Stream<Chunk.Chunk<A>, E, R>; }
+declare const grouped: { (n: number): <A, E, R>(self: Stream<A, E, R>) => Stream<Arr.NonEmptyReadonlyArray<A>, E, R>; <A, E, R>(self: Stream<A, E, R>, n: number): Stream<Arr.NonEmptyReadonlyArray<A>, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L2370)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L8182)
 
 Since v2.0.0

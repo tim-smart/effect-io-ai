@@ -1,0 +1,34 @@
+Package: `effect`<br />
+Module: `Event`<br />
+
+## Event.Event
+
+Definition of an event type that can be written to an `EventLog`.
+
+**Details**
+
+An event definition contains its tag, primary-key function, payload schema,
+MessagePack payload schema, success schema, and error schema.
+
+**Signature**
+
+```ts
+export interface Event<
+  out Tag extends string,
+  in out Payload extends Schema.Top = typeof Schema.Void,
+  in out Success extends Schema.Top = typeof Schema.Void,
+  in out Error extends Schema.Top = typeof Schema.Never
+> {
+  readonly [TypeId]: TypeId
+  readonly tag: Tag
+  readonly primaryKey: (payload: Schema.Schema.Type<Payload>) => string
+  readonly payload: Payload
+  readonly payloadMsgPack: Msgpack.schema<Payload>
+  readonly success: Success
+  readonly error: Error
+}
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Event.ts#L53)
+
+Since v4.0.0

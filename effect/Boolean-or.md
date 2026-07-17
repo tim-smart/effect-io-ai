@@ -3,18 +3,22 @@ Module: `Boolean`<br />
 
 ## Boolean.or
 
-Combines two boolean using OR: `self || that`.
+Combines two booleans using OR: `self || that`.
 
-**Example**
+**When to use**
+
+Use to accept when either boolean operand is `true`.
+
+**Example** (Combining booleans with OR)
 
 ```ts
+import { Boolean } from "effect"
 import * as assert from "node:assert"
-import { or } from "effect/Boolean"
 
-assert.deepStrictEqual(or(true, true), true)
-assert.deepStrictEqual(or(true, false), true)
-assert.deepStrictEqual(or(false, true), true)
-assert.deepStrictEqual(or(false, false), false)
+assert.deepStrictEqual(Boolean.or(true, true), true)
+assert.deepStrictEqual(Boolean.or(true, false), true)
+assert.deepStrictEqual(Boolean.or(false, true), true)
+assert.deepStrictEqual(Boolean.or(false, false), false)
 ```
 
 **Signature**
@@ -23,6 +27,6 @@ assert.deepStrictEqual(or(false, false), false)
 declare const or: { (that: boolean): (self: boolean) => boolean; (self: boolean, that: boolean): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Boolean.ts#L150)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Boolean.ts#L261)
 
 Since v2.0.0

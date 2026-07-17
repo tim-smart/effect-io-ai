@@ -3,16 +3,29 @@ Module: `Pool`<br />
 
 ## Pool.invalidate
 
-Invalidates the specified item. This will cause the pool to eventually
-reallocate the item, although this reallocation may occur lazily rather
-than eagerly.
+Invalidates the specified item so the pool can remove it and reallocate the
+item, lazily if needed.
+
+**When to use**
+
+Use to prevent a pooled item from being reused after it becomes unsuitable,
+such as a stale connection or a resource that failed a health check.
+
+**Gotchas**
+
+The item is matched with strict equality. Passing an equivalent but different
+object instance does nothing.
+
+**See**
+
+- `get` for retrieving scoped items from the pool
 
 **Signature**
 
 ```ts
-declare const invalidate: { <A>(value: A): <E>(self: Pool<A, E>) => Effect.Effect<void, never, Scope.Scope>; <A, E>(self: Pool<A, E>, value: A): Effect.Effect<void, never, Scope.Scope>; }
+declare const invalidate: { <A>(item: A): <E>(self: Pool<A, E>) => Effect.Effect<void, never, Scope.Scope>; <A, E>(self: Pool<A, E>, item: A): Effect.Effect<void, never, Scope.Scope>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Pool.ts#L201)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Pool.ts#L509)
 
 Since v2.0.0

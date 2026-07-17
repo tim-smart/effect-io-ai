@@ -3,26 +3,31 @@ Module: `Stream`<br />
 
 ## Stream.scan
 
-Statefully maps over the elements of this stream to produce all
-intermediate results of type `S` given an initial S.
+Accumulates state across the stream, emitting the initial state and each updated state.
 
-**Example**
+**Example** (Scanning stream state)
 
 ```ts
-import { Effect, Stream } from "effect"
+import { Console, Effect, Stream } from "effect"
 
-const stream = Stream.range(1, 6).pipe(Stream.scan(0, (a, b) => a + b))
+const program = Effect.gen(function*() {
+  const values = yield* Stream.make(1, 2, 3).pipe(
+    Stream.scan(0, (acc, n) => acc + n),
+    Stream.runCollect
+  )
+  yield* Console.log(values)
+})
 
-Effect.runPromise(Stream.runCollect(stream)).then(console.log)
-// { _id: 'Chunk', values: [ 0,  1,  3, 6, 10, 15, 21 ] }
+Effect.runPromise(program)
+// Output: [ 0, 1, 3, 6 ]
 ```
 
 **Signature**
 
 ```ts
-declare const scan: { <S, A>(s: S, f: (s: S, a: A) => S): <E, R>(self: Stream<A, E, R>) => Stream<S, E, R>; <A, E, R, S>(self: Stream<A, E, R>, s: S, f: (s: S, a: A) => S): Stream<S, E, R>; }
+declare const scan: { <S, A>(initial: S, f: (s: S, a: A) => S): <E, R>(self: Stream<A, E, R>) => Stream<S, E, R>; <A, E, R, S>(self: Stream<A, E, R>, initial: S, f: (s: S, a: A) => S): Stream<S, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L4513)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L7741)
 
 Since v2.0.0

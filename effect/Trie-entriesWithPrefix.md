@@ -6,11 +6,11 @@ Module: `Trie`<br />
 Returns an `IterableIterator` of the entries within the `Trie`
 that have `prefix` as prefix (`prefix` included if it exists).
 
-**Example**
+**Example** (Finding entries with a prefix)
 
 ```ts
-import * as assert from "node:assert"
 import { Trie } from "effect"
+import * as assert from "node:assert"
 
 const trie = Trie.empty<number>().pipe(
   Trie.insert("she", 0),
@@ -29,6 +29,6 @@ assert.deepStrictEqual(result, [["she", 0], ["shells", 1]])
 declare const entriesWithPrefix: { (prefix: string): <V>(self: Trie<V>) => IterableIterator<[string, V]>; <V>(self: Trie<V>, prefix: string): IterableIterator<[string, V]>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Trie.ts#L312)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Trie.ts#L376)
 
 Since v2.0.0

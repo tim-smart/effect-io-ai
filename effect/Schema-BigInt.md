@@ -3,16 +3,14 @@ Module: `Schema`<br />
 
 ## Schema.BigInt
 
-This schema transforms a `string` into a `bigint` by parsing the string using the `BigInt` function.
-
-It returns an error if the value can't be converted (for example when non-numeric characters are provided).
+Type-level representation of `BigInt`.
 
 **Signature**
 
 ```ts
-declare const BigInt: typeof BigInt$
+export interface BigInt extends Bottom<bigint, bigint, never, never, SchemaAST.BigInt, BigInt> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L5716)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L3088)
 
-Since v3.10.0
+Since v4.0.0

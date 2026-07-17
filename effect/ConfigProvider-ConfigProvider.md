@@ -3,25 +3,45 @@ Module: `ConfigProvider`<br />
 
 ## ConfigProvider.ConfigProvider
 
-A ConfigProvider is a service that provides configuration given a description
-of the structure of that configuration.
+The core interface for loading raw configuration data.
+
+**When to use**
+
+Use to type-annotate variables that hold a provider or to implement a
+custom provider via `make`.
+
+**Details**
+
+`load(path)` is the semantic lookup operation used by the `Config` module.
+It applies provider transformations and composition before consulting the
+underlying source. `undefined` means "not found" and `SourceError` means the
+source itself failed.
+
+**See**
+
+- `make` – construct a provider from a lookup function
+- `orElse` – compose providers with fallback
 
 **Signature**
 
 ```ts
-export interface ConfigProvider extends ConfigProvider.Proto, Pipeable {
+export interface ConfigProvider extends Pipeable {
   /**
-   * Loads the specified configuration, or fails with a config error.
+   * Returns the node found at `path`, or `undefined` if it does not exist.
+   * Fails with `SourceError` when the underlying source cannot be read.
+   *
+   * **When to use**
+   *
+   * Use to resolve a path through this provider's path transformations before
+   * reading the backing source.
    */
-  load<A>(config: Config.Config<A>): Effect.Effect<A, ConfigError.ConfigError>
-  /**
-   * Flattens this config provider into a simplified config provider that knows
-   * only how to deal with flat (key/value) properties.
-   */
-  readonly flattened: ConfigProvider.Flat
+  readonly load: (path: Path) => Effect.Effect<Node | undefined, SourceError>
+
+  /** @internal */
+  readonly state: ProviderState
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/ConfigProvider.ts#L45)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/ConfigProvider.ts#L248)
 
 Since v2.0.0

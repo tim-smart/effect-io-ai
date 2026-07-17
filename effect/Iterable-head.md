@@ -3,7 +3,29 @@ Module: `Iterable`<br />
 
 ## Iterable.head
 
-Get the first element of a `Iterable`, or `None` if the `Iterable` is empty.
+Gets the first element of a `Iterable` safely, or `None` if the `Iterable` is empty.
+
+**Example** (Getting the first element)
+
+```ts
+import { Iterable, Option } from "effect"
+
+const numbers = [1, 2, 3]
+console.log(Iterable.head(numbers)) // Option.some(1)
+
+const empty = Iterable.empty<number>()
+console.log(Iterable.head(empty)) // Option.none()
+
+// Safe way to get first element
+const firstEven = Iterable.head(
+  Iterable.filter([1, 3, 4, 5], (x) => x % 2 === 0)
+)
+console.log(firstEven) // Option.some(4)
+
+// Use with Option methods
+const doubled = Option.map(Iterable.head([5, 10, 15]), (x) => x * 2)
+console.log(doubled) // Option.some(10)
+```
 
 **Signature**
 
@@ -11,6 +33,6 @@ Get the first element of a `Iterable`, or `None` if the `Iterable` is empty.
 declare const head: <A>(self: Iterable<A>) => Option<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Iterable.ts#L278)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Iterable.ts#L506)
 
 Since v2.0.0

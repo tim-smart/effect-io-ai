@@ -1,0 +1,32 @@
+Package: `effect`<br />
+Module: `SchemaGetter`<br />
+
+## SchemaGetter.toLowerCase
+
+Converts a string to lowercase.
+
+**Details**
+
+- Pure, delegates to `String.toLowerCase`.
+
+**Example** (Converting to lowercase)
+
+```ts
+import { SchemaGetter } from "effect"
+
+const lower = SchemaGetter.toLowerCase<string>()
+```
+
+**See**
+
+- `toUpperCase` for the inverse operation
+
+**Signature**
+
+```ts
+declare const toLowerCase: <E extends string>() => Getter<string, E>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaGetter.ts#L930)
+
+Since v4.0.0

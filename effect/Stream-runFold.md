@@ -3,15 +3,32 @@ Module: `Stream`<br />
 
 ## Stream.runFold
 
-Executes a pure fold over the stream of values - reduces all elements in
-the stream to a value of type `S`.
+Runs the stream and folds elements using a pure reducer.
+
+**Example** (Folding stream values)
+
+```ts
+import { Console, Effect, Stream } from "effect"
+
+const program = Effect.gen(function*() {
+  const total = yield* Stream.runFold(
+    Stream.make(1, 2, 3),
+    () => 0,
+    (acc, n) => acc + n
+  )
+  yield* Console.log(total)
+})
+
+Effect.runPromise(program)
+// 6
+```
 
 **Signature**
 
 ```ts
-declare const runFold: { <S, A>(s: S, f: (s: S, a: A) => S): <E, R>(self: Stream<A, E, R>) => Effect.Effect<S, E, R>; <A, E, R, S>(self: Stream<A, E, R>, s: S, f: (s: S, a: A) => S): Effect.Effect<S, E, R>; }
+declare const runFold: { <Z, A>(initial: LazyArg<Z>, f: (acc: Z, a: A) => Z): <E, R>(self: Stream<A, E, R>) => Effect.Effect<Z, E, R>; <A, E, R, Z>(self: Stream<A, E, R>, initial: LazyArg<Z>, f: (acc: Z, a: A) => Z): Effect.Effect<Z, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L4154)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L10707)
 
 Since v2.0.0

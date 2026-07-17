@@ -3,14 +3,30 @@ Module: `Stream`<br />
 
 ## Stream.filterEffect
 
-Effectfully filters the elements emitted by this stream.
+Filters elements in a single pass effectfully.
+
+**Example** (Effectfully filtering stream values)
+
+```ts
+import { Console, Effect, Stream } from "effect"
+
+const stream = Stream.make(1, 2, 3, 4).pipe(Stream.filterEffect((n) => Effect.succeed(n > 2)))
+
+const program = Effect.gen(function*() {
+  const result = yield* Stream.runCollect(stream)
+  yield* Console.log(result)
+})
+
+Effect.runPromise(program)
+// Output: [ 3, 4 ]
+```
 
 **Signature**
 
 ```ts
-declare const filterEffect: { <A, E2, R2>(f: (a: NoInfer<A>) => Effect.Effect<boolean, E2, R2>): <E, R>(self: Stream<A, E, R>) => Stream<A, E2 | E, R2 | R>; <A, E, R, E2, R2>(self: Stream<A, E, R>, f: (a: A) => Effect.Effect<boolean, E2, R2>): Stream<A, E | E2, R | R2>; }
+declare const filterEffect: { <A, EX, RX>(predicate: (a: NoInfer<A>, i: number) => Effect.Effect<boolean, EX, RX>): <E, R>(self: Stream<A, E, R>) => Stream<A, E | EX, R | RX>; <A, E, R, EX, RX>(self: Stream<A, E, R>, predicate: (a: NoInfer<A>, i: number) => Effect.Effect<boolean, EX, RX>): Stream<A, E | EX, R | RX>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L1636)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L4379)
 
 Since v2.0.0

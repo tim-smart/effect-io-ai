@@ -1,0 +1,21 @@
+Package: `effect`<br />
+Module: `ClusterSchema`<br />
+
+## ClusterSchema.Persisted
+
+Annotation that marks whether a cluster request should be persisted in mailbox
+storage.
+
+**Details**
+
+The default value is `false`.
+
+**Signature**
+
+```ts
+declare const Persisted: Context.Reference<boolean>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/ClusterSchema.ts#L26)
+
+Since v4.0.0

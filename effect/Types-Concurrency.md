@@ -3,7 +3,29 @@ Module: `Types`<br />
 
 ## Types.Concurrency
 
-Describes the concurrency to use when executing multiple Effect's.
+Describes the concurrency level for Effect operations that run multiple
+effects.
+
+**When to use**
+
+Use to type options that control how many effects may run at the same time.
+
+**Details**
+
+- `number` — run at most N effects concurrently.
+- `"unbounded"` — run all effects concurrently with no limit.
+- `"inherit"` — inherit the concurrency from the surrounding context.
+
+**Example** (Setting concurrency values)
+
+```ts
+import type { Types } from "effect"
+
+const sequential: Types.Concurrency = 1
+const limited: Types.Concurrency = 5
+const unbounded: Types.Concurrency = "unbounded"
+const inherit: Types.Concurrency = "inherit"
+```
 
 **Signature**
 
@@ -11,6 +33,6 @@ Describes the concurrency to use when executing multiple Effect's.
 type Concurrency = number | "unbounded" | "inherit"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L220)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L440)
 
 Since v2.0.0

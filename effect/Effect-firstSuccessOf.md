@@ -6,84 +6,49 @@ Module: `Effect`<br />
 Runs a sequence of effects and returns the result of the first successful
 one.
 
+**When to use**
+
+Use when you have prioritized fallback `Effect`s, such as attempting
+multiple APIs, reading configuration from several sources, or trying
+alternative resource locations in order.
+
 **Details**
 
-This function allows you to execute a collection of effects in sequence,
-stopping at the first success. If an effect succeeds, its result is
-immediately returned, and no further effects in the sequence are executed.
-However, if all the effects fail, the function will return the error of the
-last effect.
+This function executes the provided effects in sequence, stopping at the
+first success. If an effect succeeds, its result is returned immediately and
+no further effects in the sequence are executed.
 
-The execution is sequential, meaning that effects are evaluated one at a time
-in the order they are provided. This ensures predictable behavior and avoids
-unnecessary computations.
+If all effects fail, the returned effect fails with the error from the last
+effect. If the collection is empty, the returned effect defects with an
+`Error` whose message is `"Received an empty collection of effects"`.
 
-If the collection of effects is empty, an `IllegalArgumentException` is
-thrown, indicating that the operation is invalid without any effects to try.
-
-**When to Use**
-
-This is particularly useful when you have multiple fallback strategies or
-alternative sources to obtain a result, such as attempting multiple APIs,
-retrieving configurations, or accessing resources in a prioritized manner.
-
-**Example**
+**Example** (Trying alternatives until one succeeds)
 
 ```ts
-import { Effect, Console } from "effect"
+import { Effect } from "effect"
 
-interface Config {
-  host: string
-  port: number
-  apiKey: string
-}
-
-// Create a configuration object with sample values
-const makeConfig = (name: string): Config => ({
-  host: `${name}.example.com`,
-  port: 8080,
-  apiKey: "12345-abcde"
+const primary = Effect.fail("primary unavailable")
+const secondary = Effect.succeed("secondary result")
+const tertiary = Effect.sync(() => {
+  throw new Error("not evaluated")
 })
 
-// Simulate retrieving configuration from a remote node
-const remoteConfig = (name: string): Effect.Effect<Config, Error> =>
-  Effect.gen(function* () {
-    // Simulate node3 being the only one with available config
-    if (name === "node3") {
-      yield* Console.log(`Config for ${name} found`)
-      return makeConfig(name)
-    } else {
-      yield* Console.log(`Unavailable config for ${name}`)
-      return yield* Effect.fail(new Error(`Config not found for ${name}`))
-    }
-  })
+const program = Effect.firstSuccessOf([
+  primary,
+  secondary,
+  tertiary
+])
 
-// Define the master configuration and potential fallback nodes
-const masterConfig = remoteConfig("master")
-const nodeConfigs = ["node1", "node2", "node3", "node4"].map(remoteConfig)
-
-// Attempt to find a working configuration,
-// starting with the master and then falling back to other nodes
-const config = Effect.firstSuccessOf([masterConfig, ...nodeConfigs])
-
-// Run the effect to retrieve the configuration
-const result = Effect.runSync(config)
-
-console.log(result)
-// Output:
-// Unavailable config for master
-// Unavailable config for node1
-// Unavailable config for node2
-// Config for node3 found
-// { host: 'node3.example.com', port: 8080, apiKey: '12345-abcde' }
+console.log(Effect.runSync(program))
+// Output: "secondary result"
 ```
 
 **Signature**
 
 ```ts
-declare const firstSuccessOf: <Eff extends Effect<any, any, any>>(effects: Iterable<Eff>) => Effect<Effect.Success<Eff>, Effect.Error<Eff>, Effect.Context<Eff>>
+declare const firstSuccessOf: <Eff extends Effect<any, any, any>>(effects: Iterable<Eff>) => Effect<Success<Eff>, Error<Eff>, Services<Eff>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L11541)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L4429)
 
 Since v2.0.0

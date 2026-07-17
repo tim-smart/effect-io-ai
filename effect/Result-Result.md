@@ -1,0 +1,51 @@
+Package: `effect`<br />
+Module: `Result`<br />
+
+## Result.Result
+
+A value that is either `Success<A, E>` or `Failure<A, E>`.
+
+**When to use**
+
+Use when both success and failure should remain available as data and
+`Option` would lose failure information.
+
+**Details**
+
+- Use `succeed` / `fail` to construct
+- Use `match` to fold both branches
+- Use `isSuccess` / `isFailure` to narrow the type
+
+`E` defaults to `never`, so `Result<number>` means a result that cannot fail.
+
+**Example** (Creating and matching a Result)
+
+```ts
+import { Result } from "effect"
+
+const success = Result.succeed(42)
+const failure = Result.fail("something went wrong")
+
+const message = Result.match(success, {
+  onSuccess: (value) => `Success: ${value}`,
+  onFailure: (error) => `Error: ${error}`
+})
+console.log(message)
+// Output: "Success: 42"
+```
+
+**See**
+
+- `succeed` / `fail` to create values
+- `match` to fold both branches
+- `isSuccess` / `isFailure` for type guards
+
+**Signature**
+
+```ts
+type Result<A, E> = Success<A, E> | Failure<A, E>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Result.ts#L70)
+
+Since v4.0.0

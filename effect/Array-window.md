@@ -3,27 +3,36 @@ Module: `Array`<br />
 
 ## Array.window
 
-Creates sliding windows of size `n` from an `Iterable`.
-If the number of elements is less than `n` or if `n` is not greater than zero,
-an empty array is returned.
+Creates overlapping sliding windows of size `n`.
 
-**Example**
+**When to use**
+
+Use to process sequences with a moving window, such as for computing running averages or detecting patterns.
+
+**Details**
+
+Returns an empty array if `n <= 0` or the array has fewer than `n` elements.
+Each window is a tuple of exactly `n` elements.
+
+**Example** (Creating sliding windows)
 
 ```ts
-import * as assert from "node:assert"
 import { Array } from "effect"
 
-const numbers = [1, 2, 3, 4, 5]
-assert.deepStrictEqual(Array.window(numbers, 3), [[1, 2, 3], [2, 3, 4], [3, 4, 5]])
-assert.deepStrictEqual(Array.window(numbers, 6), [])
+console.log(Array.window([1, 2, 3, 4, 5], 3)) // [[1, 2, 3], [2, 3, 4], [3, 4, 5]]
+console.log(Array.window([1, 2, 3, 4, 5], 6)) // []
 ```
+
+**See**
+
+- `chunksOf` — non-overlapping chunks
 
 **Signature**
 
 ```ts
-declare const window: { <N extends number = number>(n: N): <A>(self: Iterable<A>) => Array<TupleOf<N, A>>; <A, N extends number = number>(self: Iterable<A>, n: N): Array<TupleOf<N, A>>; }
+declare const window: { <N extends number>(n: N): <A>(self: Iterable<A>) => Array<TupleOf<N, A>>; <A, N extends number>(self: Iterable<A>, n: N): Array<TupleOf<N, A>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2137)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2929)
 
 Since v3.13.2

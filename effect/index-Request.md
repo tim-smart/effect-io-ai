@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.Request
 
-Re-exports all named exports from the "./Request.js" module as `Request`.
+Re-exports all named exports from the "./Request.ts" module as `Request`.
 
 **Signature**
 
 ```ts
-export * as Request from "./Request.js"
+export * as Request from "./Request.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1218)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L487)
 
 Since v2.0.0

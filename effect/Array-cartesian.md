@@ -3,9 +3,18 @@ Module: `Array`<br />
 
 ## Array.cartesian
 
-Zips this chunk crosswise with the specified chunk.
+Computes the cartesian product of two arrays, returning all pairs as tuples.
 
-**Example**
+**When to use**
+
+Use when you need every `[a, b]` pair from two arrays as tuples.
+
+**Details**
+
+Produces every `[a, b]` combination of an element from `self` with an element
+from `that`, so the result length is `self.length * that.length`.
+
+**Example** (Generating all pairs from two arrays)
 
 ```ts
 import { Array } from "effect"
@@ -14,12 +23,16 @@ const result = Array.cartesian([1, 2], ["a", "b"])
 console.log(result) // [[1, "a"], [1, "b"], [2, "a"], [2, "b"]]
 ```
 
+**See**
+
+- `cartesianWith` — apply a combiner to each pair
+
 **Signature**
 
 ```ts
 declare const cartesian: { <B>(that: ReadonlyArray<B>): <A>(self: ReadonlyArray<A>) => Array<[A, B]>; <A, B>(self: ReadonlyArray<A>, that: ReadonlyArray<B>): Array<[A, B]>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L3354)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L4651)
 
 Since v2.0.0

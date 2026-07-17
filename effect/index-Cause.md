@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.Cause
 
-Re-exports all named exports from the "./Cause.js" module as `Cause`.
+Re-exports all named exports from the "./Cause.ts" module as `Cause`.
 
 **Signature**
 
 ```ts
-export * as Cause from "./Cause.js"
+export * as Cause from "./Cause.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L133)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L67)
 
 Since v2.0.0

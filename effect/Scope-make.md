@@ -3,16 +3,33 @@ Module: `Scope`<br />
 
 ## Scope.make
 
-Creates a new closeable scope where finalizers will run according to the
-specified `ExecutionStrategy`. If no execution strategy is provided, `sequential`
-will be used by default.
+Creates a new `Scope` with the specified finalizer strategy.
+
+**Example** (Creating a scope)
+
+```ts
+import { Console, Effect, Exit, Scope } from "effect"
+
+const program = Effect.gen(function*() {
+  // Create a scope with sequential cleanup
+  const scope = yield* Scope.make("sequential")
+
+  // Add finalizers
+  yield* Scope.addFinalizer(scope, Console.log("Cleanup 1"))
+  yield* Scope.addFinalizer(scope, Console.log("Cleanup 2"))
+
+  // Close the scope (finalizers run in reverse order)
+  yield* Scope.close(scope, Exit.void)
+  // Output: "Cleanup 2", then "Cleanup 1"
+})
+```
 
 **Signature**
 
 ```ts
-declare const make: (executionStrategy?: ExecutionStrategy.ExecutionStrategy) => Effect.Effect<CloseableScope>
+declare const make: (finalizerStrategy?: "sequential" | "parallel") => Effect<Closeable>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Scope.ts#L202)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Scope.ts#L251)
 
 Since v2.0.0

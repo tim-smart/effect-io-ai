@@ -3,38 +3,38 @@ Module: `Stream`<br />
 
 ## Stream.raceAll
 
-Returns a stream that mirrors the first upstream to emit an item.
-As soon as one of the upstream emits a first value, all the others are interrupted.
-The resulting stream will forward all items from the "winning" source stream.
-Any upstream failures will cause the returned stream to fail.
+Runs all streams concurrently until one stream emits its first value, then
+mirrors that winning stream and interrupts the rest.
 
-**Example**
+**Details**
+
+Failures or completion from losing streams before a winner is chosen are
+ignored unless every stream fails or completes before emitting. After a
+winner is chosen, that stream's later failures are propagated.
+
+**Example** (Racing multiple streams)
 
 ```ts
-import { Stream, Schedule, Console, Effect } from "effect"
+import { Console, Effect, Schedule, Stream } from "effect"
 
-const stream = Stream.raceAll(
-  Stream.fromSchedule(Schedule.spaced('1 millis')),
-  Stream.fromSchedule(Schedule.spaced('2 millis')),
-  Stream.fromSchedule(Schedule.spaced('4 millis')),
-).pipe(Stream.take(6), Stream.tap(Console.log))
+const program = Effect.gen(function*() {
+  const result = yield* Stream.raceAll(
+    Stream.fromSchedule(Schedule.spaced("1 second")),
+    Stream.make(0, 1, 2)
+  ).pipe(Stream.runCollect)
+  yield* Console.log(result)
+})
 
-Effect.runPromise(Stream.runDrain(stream))
-// Output each millisecond from the first stream, the rest streams are interrupted
-// 0
-// 1
-// 2
-// 3
-// 4
-// 5
+Effect.runPromise(program)
+// Output: [ 0, 1, 2 ]
 ```
 
 **Signature**
 
 ```ts
-declare const raceAll: <S extends ReadonlyArray<Stream<any, any, any>>>(...streams: S) => Stream<Stream.Success<S[number]>, Stream.Error<S[number]>, Stream.Context<S[number]>>
+declare const raceAll: <S extends ReadonlyArray<Stream<any, any, any>>>(...streams: S) => Stream<Success<S[number]>, Error<S[number]>, Services<S[number]>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L3800)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L4209)
 
 Since v3.5.0

@@ -1,0 +1,16 @@
+Package: `effect`<br />
+Module: `AiError`<br />
+
+## AiError.StructuredOutputErrorMetadata
+
+Provider-specific metadata attached to `StructuredOutputError`.
+
+**Signature**
+
+```ts
+export interface StructuredOutputErrorMetadata extends ProviderMetadata {}
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/AiError.ts#L279)
+
+Since v4.0.0

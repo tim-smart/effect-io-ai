@@ -3,17 +3,32 @@ Module: `Channel`<br />
 
 ## Channel.runCollect
 
-Run the channel until it finishes with a done value or fails with an error
-and collects its emitted output elements.
+Runs a channel and collects all output elements into an array.
 
-The channel must not read any input.
+**Example** (Collecting channel output)
+
+```ts
+import { Channel, Data } from "effect"
+
+class CollectError extends Data.TaggedError("CollectError")<{
+  readonly reason: string
+}> {}
+
+// Create a channel with elements
+const numbersChannel = Channel.fromIterable([1, 2, 3, 4, 5])
+
+// Collect all elements into an array
+const collectEffect = Channel.runCollect(numbersChannel)
+
+// Effect.runSync(collectEffect) // Returns: [1, 2, 3, 4, 5]
+```
 
 **Signature**
 
 ```ts
-declare const runCollect: <OutElem, OutErr, InErr, OutDone, InDone, Env>(self: Channel<OutElem, unknown, OutErr, InErr, OutDone, InDone, Env>) => Effect.Effect<[Chunk.Chunk<OutElem>, OutDone], OutErr, Env>
+declare const runCollect: <OutElem, OutErr, OutDone, Env>(self: Channel<OutElem, OutErr, OutDone, unknown, unknown, unknown, Env>) => Effect.Effect<Array<OutElem>, OutErr, Env>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Channel.ts#L1942)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Channel.ts#L7834)
 
 Since v2.0.0

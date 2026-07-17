@@ -3,17 +3,19 @@ Module: `Sink`<br />
 
 ## Sink.fromQueue
 
-Create a sink which enqueues each element into the specified queue.
+Creates a sink that offers every consumed input element to a queue.
 
-If the `shutdown` parameter is `true`, the queue will be shutdown after the
-sink is evaluated (defaults to `false`).
+**Details**
+
+When the upstream stream ends, the sink ends the queue and completes with
+`void`.
 
 **Signature**
 
 ```ts
-declare const fromQueue: <In>(queue: Queue.Enqueue<In>, options?: { readonly shutdown?: boolean | undefined; }) => Sink<void, In>
+declare const fromQueue: <A>(queue: Queue.Queue<A, Cause.Done>) => Sink<void, A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Sink.ts#L1034)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Sink.ts#L464)
 
 Since v2.0.0

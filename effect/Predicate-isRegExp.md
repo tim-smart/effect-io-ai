@@ -3,19 +3,29 @@ Module: `Predicate`<br />
 
 ## Predicate.isRegExp
 
-A refinement that checks if a value is a `RegExp`.
+Checks whether a value is a `RegExp`.
 
-**Example**
+**When to use**
+
+Use when you need a `Predicate` runtime guard for regular expressions.
+
+**Details**
+
+Uses `instanceof RegExp`.
+
+**Example** (Guarding RegExp values)
 
 ```ts
-import * as assert from "node:assert"
 import { Predicate } from "effect"
 
-assert.strictEqual(Predicate.isRegExp(/a/), true)
-assert.strictEqual(Predicate.isRegExp(new RegExp("a")), true)
+const data: unknown = /abc/
 
-assert.strictEqual(Predicate.isRegExp("/a/"), false)
+console.log(Predicate.isRegExp(data))
 ```
+
+**See**
+
+- `isDate`
 
 **Signature**
 
@@ -23,6 +33,6 @@ assert.strictEqual(Predicate.isRegExp("/a/"), false)
 declare const isRegExp: (input: unknown) => input is RegExp
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L889)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L1376)
 
 Since v3.9.0

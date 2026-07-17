@@ -3,42 +3,31 @@ Module: `Stream`<br />
 
 ## Stream.buffer
 
-Allows a faster producer to progress independently of a slower consumer by
-buffering up to `capacity` elements in a queue.
+Buffers up to `capacity` elements so a faster producer can progress
+independently of a slower consumer.
 
-Note: This combinator destroys the chunking structure. It's recommended to
-      use rechunk afterwards. Additionally, prefer capacities that are powers
-      of 2 for better performance.
+**Details**
 
-**Example**
+Finite buffers use the configured queue strategy: `"suspend"` applies
+backpressure, while `"dropping"` and `"sliding"` may discard elements when
+the buffer is full. This combinator destroys chunking; use `Stream.rechunk`
+afterward if you need fixed chunk sizes.
+
+**Example** (Buffering stream elements)
 
 ```ts
-import { Console, Effect, Schedule, Stream } from "effect"
+import { Console, Effect, Stream } from "effect"
 
-const stream = Stream.range(1, 10).pipe(
-  Stream.tap((n) => Console.log(`before buffering: ${n}`)),
-  Stream.buffer({ capacity: 4 }),
-  Stream.tap((n) => Console.log(`after buffering: ${n}`)),
-  Stream.schedule(Schedule.spaced("5 seconds"))
-)
+const program = Effect.gen(function*() {
+  const values = yield* Stream.make(1, 2, 3).pipe(
+    Stream.buffer({ capacity: 1 }),
+    Stream.runCollect
+  )
+  yield* Console.log(values)
+})
 
-Effect.runPromise(Stream.runCollect(stream)).then(console.log)
-// before buffering: 1
-// before buffering: 2
-// before buffering: 3
-// before buffering: 4
-// before buffering: 5
-// before buffering: 6
-// after buffering: 1
-// after buffering: 2
-// before buffering: 7
-// after buffering: 3
-// before buffering: 8
-// after buffering: 4
-// before buffering: 9
-// after buffering: 5
-// before buffering: 10
-// ...
+Effect.runPromise(program)
+// Output: [ 1, 2, 3 ]
 ```
 
 **Signature**
@@ -47,6 +36,6 @@ Effect.runPromise(Stream.runCollect(stream)).then(console.log)
 declare const buffer: { (options: { readonly capacity: "unbounded"; } | { readonly capacity: number; readonly strategy?: "dropping" | "sliding" | "suspend" | undefined; }): <A, E, R>(self: Stream<A, E, R>) => Stream<A, E, R>; <A, E, R>(self: Stream<A, E, R>, options: { readonly capacity: "unbounded"; } | { readonly capacity: number; readonly strategy?: "dropping" | "sliding" | "suspend" | undefined; }): Stream<A, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L726)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L4836)
 
 Since v2.0.0

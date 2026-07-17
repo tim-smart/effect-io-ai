@@ -3,21 +3,25 @@ Module: `DateTime`<br />
 
 ## DateTime.distance
 
-Calulate the difference between two `DateTime` values, returning the number
-of milliseconds the `other` DateTime is from `self`.
+Computes the difference between two `DateTime` values, returning a
+`Duration` representing the amount of time between them.
 
-If `other` is *after* `self`, the result will be a positive number.
+**Details**
 
-**Example**
+If `other` is *after* `self`, the result will be a positive `Duration`. If
+`other` is *before* `self`, the result will be a negative `Duration`. If they
+are equal, the result will be a `Duration` of zero.
+
+**Example** (Measuring distance between DateTime values)
 
 ```ts
 import { DateTime, Effect } from "effect"
 
-Effect.gen(function* () {
+Effect.gen(function*() {
   const now = yield* DateTime.now
   const other = DateTime.add(now, { minutes: 1 })
 
-  // returns 60000
+  // returns Duration.minutes(1)
   DateTime.distance(now, other)
 })
 ```
@@ -25,9 +29,9 @@ Effect.gen(function* () {
 **Signature**
 
 ```ts
-declare const distance: { (other: DateTime): (self: DateTime) => number; (self: DateTime, other: DateTime): number; }
+declare const distance: { (other: DateTime): (self: DateTime) => Duration.Duration; (self: DateTime, other: DateTime): Duration.Duration; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L748)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L1252)
 
 Since v3.6.0

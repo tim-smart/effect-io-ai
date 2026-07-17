@@ -3,30 +3,15 @@ Module: `NodeHttpServer`<br />
 
 ## NodeHttpServer.layerTest
 
-Layer starting a server on a random port and producing an `HttpClient`
-with prepended url of the running http server.
-
-**Example**
-
-```ts
-import * as assert from "node:assert"
-import { HttpClient, HttpRouter, HttpServer } from "@effect/platform"
-import { NodeHttpServer } from "@effect/platform-node"
-import { Effect } from "effect"
-
-Effect.gen(function*() {
-  yield* HttpServer.serveEffect(HttpRouter.empty)
-  const response = yield* HttpClient.get("/")
-  assert.strictEqual(response.status, 404)
-}).pipe(Effect.provide(NodeHttpServer.layerTest))
-```
+Provides a test HTTP server listening on an ephemeral port together with a
+Fetch-backed `HttpClient` configured for server integration tests.
 
 **Signature**
 
 ```ts
-declare const layerTest: Layer.Layer<Server.HttpServer | Platform.HttpPlatform | Etag.Generator | NodeContext.NodeContext | HttpClient.HttpClient, ServeError, never>
+declare const layerTest: Layer.Layer<FileSystem.FileSystem | Path.Path | HttpServer.HttpServer | HttpPlatform.HttpPlatform | Etag.Generator | HttpClient, ServeError, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpServer.ts#L111)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/NodeHttpServer.ts#L477)
 
-Since v1.0.0
+Since v4.0.0

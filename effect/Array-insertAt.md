@@ -3,17 +3,29 @@ Module: `Array`<br />
 
 ## Array.insertAt
 
-Insert an element at the specified index, creating a new `NonEmptyArray`,
-or return `None` if the index is out of bounds.
+Inserts an element at the specified index safely, returning a new `NonEmptyArray`
+wrapped in an `Option`.
 
-**Example**
+**When to use**
+
+Use to insert a single element at a specific position in an array.
+
+**Details**
+
+Valid indices are `0` to `length`, inclusive. Inserting at `length` appends.
+
+**Example** (Inserting at an index)
 
 ```ts
 import { Array } from "effect"
 
-const result = Array.insertAt(['a', 'b', 'c', 'e'], 3, 'd')
-console.log(result) // Option.some(['a', 'b', 'c', 'd', 'e'])
+console.log(Array.insertAt(["a", "b", "c", "e"], 3, "d")) // Option.some(["a", "b", "c", "d", "e"])
 ```
+
+**See**
+
+- `replace` — replace an existing element
+- `modify` — transform an element at an index
 
 **Signature**
 
@@ -21,6 +33,6 @@ console.log(result) // Option.some(['a', 'b', 'c', 'd', 'e'])
 declare const insertAt: { <B>(i: number, b: B): <A>(self: Iterable<A>) => Option.Option<NonEmptyArray<A | B>>; <A, B>(self: Iterable<A>, i: number, b: B): Option.Option<NonEmptyArray<A | B>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L1207)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L1880)
 
 Since v2.0.0

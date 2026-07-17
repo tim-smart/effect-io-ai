@@ -5,12 +5,28 @@ Module: `Sink`<br />
 
 A sink that immediately ends with the specified value.
 
+**Example** (Succeeding with a value)
+
+```ts
+import { Effect, Sink, Stream } from "effect"
+
+// Create a sink that always yields the same value
+const sink = Sink.succeed(42)
+
+// Use it with a stream
+const stream = Stream.make(1, 2, 3)
+const program = Stream.run(stream, sink)
+
+Effect.runPromise(program).then(console.log)
+// Output: 42
+```
+
 **Signature**
 
 ```ts
-declare const succeed: <A>(a: A) => Sink<A, unknown>
+declare const succeed: <A, L = never>(a: A, leftovers?: NonEmptyReadonlyArray<L> | undefined) => Sink<A, unknown, L>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Sink.ts#L1283)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Sink.ts#L514)
 
 Since v2.0.0

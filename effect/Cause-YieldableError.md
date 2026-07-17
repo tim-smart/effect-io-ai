@@ -3,20 +3,37 @@ Module: `Cause`<br />
 
 ## Cause.YieldableError
 
-Represents an error object that can be yielded in `Effect.gen`.
+Base interface for error classes that can be yielded directly inside
+`Effect.gen`. Yielding one of these errors fails the generator with that
+error as the typed failure value.
+
+**Details**
+
+All built-in error classes in this module (`NoSuchElementError`,
+`TimeoutError`, `IllegalArgumentError`, `ExceededCapacityError`,
+`AsyncFiberError`, and `UnknownError`) implement this interface.
+
+**Example** (Yielding an error in Effect.gen)
+
+```ts
+import { Cause, Effect } from "effect"
+
+const error = new Cause.NoSuchElementError("not found")
+
+const program = Effect.gen(function*() {
+  return yield* error // fails the effect with NoSuchElementError
+})
+```
 
 **Signature**
 
 ```ts
-export interface YieldableError extends Pipeable, Inspectable, Error {
-  readonly [Effect.EffectTypeId]: Effect.Effect.VarianceStruct<never, this, never>
-  readonly [Stream.StreamTypeId]: Stream.Stream.VarianceStruct<never, this, never>
-  readonly [Sink.SinkTypeId]: Sink.Sink.VarianceStruct<never, unknown, never, this, never>
-  readonly [Channel.ChannelTypeId]: Channel.Channel.VarianceStruct<never, unknown, this, unknown, never, unknown, never>
-  [Symbol.iterator](): Effect.EffectGenerator<Effect.Effect<never, this, never>>
+export interface YieldableError extends Error, Pipeable, Inspectable {
+  readonly [Effect.TypeId]: Effect.Variance<never, this, never>
+  [Symbol.iterator](): Effect.EffectIterator<Effect.Effect<never, this, never>>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L311)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L1187)
 
 Since v2.0.0

@@ -1,0 +1,16 @@
+Package: `effect`<br />
+Module: `index`<br />
+
+## index.ChildProcessSpawner
+
+Re-exports all named exports from the "./ChildProcessSpawner.ts" module as `ChildProcessSpawner`.
+
+**Signature**
+
+```ts
+export * as ChildProcessSpawner from "./ChildProcessSpawner.ts"
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L15)
+
+Since v4.0.0

@@ -3,23 +3,58 @@ Module: `Schedule`<br />
 
 ## Schedule.exponential
 
-Creates a schedule that recurs indefinitely with exponentially increasing
-delays.
+Schedule that always recurs, but will wait a certain amount between
+repetitions, given by `base * factor.pow(n)`, where `n` is the number of
+repetitions so far. Returns the current duration between recurrences.
 
-**Details**
+**Example** (Retrying with exponential backoff)
 
-This schedule starts with an initial delay of `base` and increases the delay
-exponentially on each repetition using the formula `base * factor^n`, where
-`n` is the number of times the schedule has executed so far. If no `factor`
-is provided, it defaults to `2`, causing the delay to double after each
-execution.
+```ts
+import { Console, Data, Effect, Schedule } from "effect"
+
+class RetryFailure extends Data.TaggedError("RetryFailure")<{ readonly message: string }> {}
+
+// Basic exponential backoff with default factor of 2
+const basicExponential = Schedule.exponential("100 millis")
+// Delays: 100ms, 200ms, 400ms, 800ms, 1600ms, ...
+
+// Custom exponential backoff with factor 1.5
+const gentleExponential = Schedule.exponential("200 millis", 1.5)
+// Delays: 200ms, 300ms, 450ms, 675ms, 1012ms, ...
+
+// Retry with exponential backoff (limited to 5 attempts)
+const retryPolicy = Schedule.max([
+  Schedule.exponential("50 millis"),
+  Schedule.recurs(5)
+])
+
+const program = Effect.gen(function*() {
+  let attempt = 0
+
+  const result = yield* Effect.retry(
+    Effect.gen(function*() {
+      attempt++
+      if (attempt < 4) {
+        yield* Console.log(`Attempt ${attempt} failed, retrying...`)
+        return yield* Effect.fail(new RetryFailure({ message: `Failure ${attempt}` }))
+      }
+      return `Success on attempt ${attempt}`
+    }),
+    retryPolicy
+  )
+
+  yield* Console.log(`Final result: ${result}`)
+})
+
+// Will retry with delays: 50ms, 100ms, 200ms before success
+```
 
 **Signature**
 
 ```ts
-declare const exponential: (base: Duration.DurationInput, factor?: number) => Schedule<Duration.Duration>
+declare const exponential: (base: Duration.Input, factor?: number) => Schedule<Duration.Duration>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L1003)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L1270)
 
 Since v2.0.0

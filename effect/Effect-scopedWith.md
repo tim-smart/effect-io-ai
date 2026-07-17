@@ -3,16 +3,52 @@ Module: `Effect`<br />
 
 ## Effect.scopedWith
 
-Creates a `Scope`, passes it to the specified effectful function, and closes
-the scope when the effect completes (whether through success, failure, or
-interruption).
+Creates a scoped effect by providing access to the scope.
+
+**When to use**
+
+Use when resource acquisition needs direct access to the scope being created,
+for example to register finalizers manually.
+
+**Example** (Working with an explicit scope)
+
+```ts
+import { Console, Effect, Scope } from "effect"
+
+const program = Effect.scopedWith((scope) =>
+  Effect.gen(function*() {
+    yield* Console.log("Inside scoped context")
+
+    // Manually add a finalizer to the scope
+    yield* Scope.addFinalizer(scope, Console.log("Manual finalizer"))
+
+    // Create a scoped resource
+    const resource = yield* Effect.scoped(
+      Effect.acquireRelease(
+        Console.log("Acquiring resource").pipe(Effect.as("resource")),
+        () => Console.log("Releasing resource")
+      )
+    )
+
+    return resource
+  })
+)
+
+Effect.runPromise(program).then(console.log)
+// Output:
+// Inside scoped context
+// Acquiring resource
+// resource
+// Releasing resource
+// Manual finalizer
+```
 
 **Signature**
 
 ```ts
-declare const scopedWith: <A, E, R>(f: (scope: Scope.Scope) => Effect<A, E, R>) => Effect<A, E, R>
+declare const scopedWith: <A, E, R>(f: (scope: Scope) => Effect<A, E, R>) => Effect<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L6037)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L6480)
 
 Since v3.11.0

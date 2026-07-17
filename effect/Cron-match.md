@@ -3,22 +3,41 @@ Module: `Cron`<br />
 
 ## Cron.match
 
-Checks if a given `Date` falls within an active `Cron` time window.
+Returns `true` when a date/time matches a `Cron` schedule.
 
-**Throws**
+**When to use**
 
-`IllegalArgumentException` if the given `DateTime.Input` is invalid.
+Use to test whether a specific date/time satisfies a cron schedule.
 
-**Example**
+**Details**
+
+Seconds, minutes, hours, months, and the optional timezone are checked
+directly. For day constraints, an empty `days` or `weekdays` set means that
+field matches every value; when both sets are non-empty, a date matches if
+either the day-of-month or weekday matches.
+
+**Example** (Matching dates against a schedule)
 
 ```ts
-import * as assert from "node:assert"
-import { Cron, Either } from "effect"
+import { Cron, Result } from "effect"
 
-const cron = Either.getOrThrow(Cron.parse("0 4 8-14 * *"))
-assert.deepStrictEqual(Cron.match(cron, new Date("2021-01-08 04:00:00")), true)
-assert.deepStrictEqual(Cron.match(cron, new Date("2021-01-08 05:00:00")), false)
+const cron = Result.getOrThrow(Cron.parse("0 0 4 8-14 * *"))
+
+// Check if specific dates match
+const matches1 = Cron.match(cron, new Date("2021-01-08T04:00:00Z"))
+console.log(matches1) // true - 4 AM on the 8th
+
+const matches2 = Cron.match(cron, new Date("2021-01-08T05:00:00Z"))
+console.log(matches2) // false - wrong hour
+
+const matches3 = Cron.match(cron, new Date("2021-01-07T04:00:00Z"))
+console.log(matches3) // false - wrong day
 ```
+
+**See**
+
+- `next` for finding the next matching date/time
+- `prev` for finding the previous matching date/time
 
 **Signature**
 
@@ -26,6 +45,6 @@ assert.deepStrictEqual(Cron.match(cron, new Date("2021-01-08 05:00:00")), false)
 declare const match: (cron: Cron, date: DateTime.DateTime.Input) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cron.ts#L404)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cron.ts#L678)
 
 Since v2.0.0

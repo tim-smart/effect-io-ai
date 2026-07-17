@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.Tuple
 
-Re-exports all named exports from the "./Tuple.js" module as `Tuple`.
+Re-exports all named exports from the "./Tuple.ts" module as `Tuple`.
 
 **Signature**
 
 ```ts
-export * as Tuple from "./Tuple.js"
+export * as Tuple from "./Tuple.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1534)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L647)
 
 Since v2.0.0

@@ -4,14 +4,14 @@ Module: `Channel`<br />
 ## Channel.mapInputError
 
 Returns a new channel which is the same as this one but applies the given
-function to the input channel's error value.
+function to the input errors.
 
 **Signature**
 
 ```ts
-declare const mapInputError: { <InErr0, InErr>(f: (a: InErr0) => InErr): <OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>(self: Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>) => Channel<OutElem, InElem, OutErr, InErr0, OutDone, InDone, Env>; <OutElem, InElem, OutErr, InErr, OutDone, InDone, Env, InErr0>(self: Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>, f: (a: InErr0) => InErr): Channel<OutElem, InElem, OutErr, InErr0, OutDone, InDone, Env>; }
+declare const mapInputError: { <InErr, InErr2, R = never>(f: (i: InErr2) => Effect.Effect<InErr, InErr, R>): <OutElem, OutErr, OutDone, InElem, InDone, Env>(self: Channel<OutElem, OutErr, OutDone, InElem, InErr, InDone, Env | R>) => Channel<OutElem, OutErr, OutDone, InElem, InErr2, InDone, Env>; <OutElem, OutErr, OutDone, InElem, InErr, InDone, Env, InErr2, R = never>(self: Channel<OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>, f: (i: InErr2) => Effect.Effect<InErr, InErr, R>): Channel<OutElem, OutErr, OutDone, InElem, InErr2, InDone, Env | R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Channel.ts#L594)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Channel.ts#L2091)
 
 Since v2.0.0

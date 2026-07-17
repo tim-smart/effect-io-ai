@@ -3,19 +3,20 @@ Module: `Option`<br />
 
 ## Option.Option
 
-The `Option` data type represents optional values. An `Option<A>` can either
-be `Some<A>`, containing a value of type `A`, or `None`, representing the
-absence of a value.
+The `Option` data type represents optional values. An `Option<A>` is either
+`Some<A>`, containing a value of type `A`, or `None`, representing absence.
 
-**When to Use**
+**When to use**
 
-You can use `Option` in scenarios like:
-
-- Using it for initial values
-- Returning values from functions that are not defined for all possible
-  inputs (referred to as “partial functions”)
+Use to represent initial values that may not yet exist
+- Returning from partial functions (not defined for all inputs)
 - Managing optional fields in data structures
-- Handling optional function arguments
+
+**See**
+
+- `some` for creating a `Some`
+- `none` for creating a `None`
+- `match` for pattern matching
 
 **Signature**
 
@@ -23,6 +24,6 @@ You can use `Option` in scenarios like:
 type Option<A> = None<A> | Some<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L40)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L54)
 
 Since v2.0.0

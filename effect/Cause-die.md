@@ -3,17 +3,27 @@ Module: `Cause`<br />
 
 ## Cause.die
 
-Creates a `Die` cause from an unexpected error.
+Creates a `Cause` containing a single `Die` reason with the
+given defect.
 
-**Details**
+**When to use**
 
-This function wraps an unhandled or unknown defect (like a runtime crash)
-into a `Cause`. It's useful for capturing unforeseen issues in a structured
-way.
+Use to construct a cause from an untyped defect or unexpected thrown value.
+
+**Example** (Creating a die cause)
+
+```ts
+import { Cause } from "effect"
+
+const cause = Cause.die("Unexpected")
+console.log(cause.reasons.length) // 1
+console.log(Cause.isDieReason(cause.reasons[0])) // true
+```
 
 **See**
 
-- `isDie` Check if a `Cause` contains a defect
+- `fail` — for typed errors
+- `interrupt` — for fiber interruptions
 
 **Signature**
 
@@ -21,6 +31,6 @@ way.
 declare const die: (defect: unknown) => Cause<never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L607)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L516)
 
 Since v2.0.0

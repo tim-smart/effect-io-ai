@@ -5,6 +5,10 @@ Module: `Match`<br />
 
 Provides a fallback value when no patterns match.
 
+**When to use**
+
+Use to finalize a matcher with a fallback for unmatched input.
+
 **Details**
 
 This function ensures that a matcher always returns a valid result, even if
@@ -12,7 +16,7 @@ no defined patterns match. It acts as a default case, similar to the
 `default` clause in a `switch` statement or the final `else` in an `if-else`
 chain.
 
-**Example** (Providing a Default Value When No Patterns Match)
+**Example** (Providing a default value when no patterns match)
 
 ```ts
 import { Match } from "effect"
@@ -32,12 +36,18 @@ console.log(match("b"))
 // Output: "fallback"
 ```
 
+**See**
+
+- `option` for finalizing unmatched input as `Option.none`
+- `result` for returning unmatched input as a `Result` failure
+- `orElseAbsurd` for finalizing when unmatched input should be impossible
+
 **Signature**
 
 ```ts
 declare const orElse: <RA, Ret, F extends (_: RA) => Ret>(f: F) => <I, R, A, Pr>(self: Matcher<I, R, RA, A, Pr, Ret>) => [Pr] extends [never] ? (input: I) => Unify<ReturnType<F> | A> : Unify<ReturnType<F> | A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L1108)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L1825)
 
-Since v1.0.0
+Since v4.0.0

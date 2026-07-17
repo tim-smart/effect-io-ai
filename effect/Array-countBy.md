@@ -3,16 +3,30 @@ Module: `Array`<br />
 
 ## Array.countBy
 
-Counts all the element of the given array that pass the given predicate
+Computes the number of elements in an iterable that satisfy a predicate.
 
-**Example**
+**When to use**
+
+Use when you need to count how many elements of an iterable satisfy a
+predicate.
+
+**Details**
+
+The predicate receives both the element and its index. Empty iterables return
+`0`.
+
+**Example** (Counting even numbers)
 
 ```ts
 import { Array } from "effect"
 
-const result = Array.countBy([1, 2, 3, 4, 5], n => n % 2 === 0)
+const result = Array.countBy([1, 2, 3, 4, 5], (n) => n % 2 === 0)
 console.log(result) // 2
 ```
+
+**See**
+
+- `filter` — when you need the matching elements, not just the count
 
 **Signature**
 
@@ -20,6 +34,6 @@ console.log(result) // 2
 declare const countBy: { <A>(predicate: (a: NoInfer<A>, i: number) => boolean): (self: Iterable<A>) => number; <A>(self: Iterable<A>, predicate: (a: A, i: number) => boolean): number; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L1171)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L4889)
 
 Since v3.16.0

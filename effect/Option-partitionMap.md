@@ -3,30 +3,49 @@ Module: `Option`<br />
 
 ## Option.partitionMap
 
-Splits an `Option` into two `Option`s based on the result of a mapping
-function that produces an `Either`.
+Splits an `Option` into two `Option`s using a function that returns a `Result`.
+
+**When to use**
+
+Use when you need to split an optional value into "left" and "right"
+channels using a `Result`-returning function.
 
 **Details**
 
-This function takes an `Option` and a mapping function `f` that converts its
-value into an `Either`. It returns a tuple of two `Option`s:
+- `None` → `[None, None]`
+- `Some` where `f` returns `Err` → `[Some(error), None]`
+- `Some` where `f` returns `Ok` → `[None, Some(value)]`
 
-- The first `Option` (`left`) contains the value from the `Left` side of the
-  `Either` if it exists, otherwise `None`.
-- The second `Option` (`right`) contains the value from the `Right` side of
-  the `Either` if it exists, otherwise `None`.
+**Example** (Partitioning by Result)
 
-If the input `Option` is `None`, both returned `Option`s are `None`.
+```ts
+import { Option, Result } from "effect"
 
-This utility is useful for filtering and categorizing the contents of an
-`Option` based on a bifurcating computation.
+const parseNumber = (s: string): Result.Result<number, string> => {
+  const n = Number(s)
+  return isNaN(n) ? Result.fail("Not a number") : Result.succeed(n)
+}
+
+console.log(Option.partitionMap(Option.some("42"), parseNumber))
+// Output: [{ _id: 'Option', _tag: 'None' }, { _id: 'Option', _tag: 'Some', value: 42 }]
+
+console.log(Option.partitionMap(Option.some("abc"), parseNumber))
+// Output: [{ _id: 'Option', _tag: 'Some', value: 'Not a number' }, { _id: 'Option', _tag: 'None' }]
+
+console.log(Option.partitionMap(Option.none(), parseNumber))
+// Output: [{ _id: 'Option', _tag: 'None' }, { _id: 'Option', _tag: 'None' }]
+```
+
+**See**
+
+- `filter` for simple predicate-based filtering
 
 **Signature**
 
 ```ts
-declare const partitionMap: { <A, B, C>(f: (a: A) => Either<C, B>): (self: Option<A>) => [left: Option<B>, right: Option<C>]; <A, B, C>(self: Option<A>, f: (a: A) => Either<C, B>): [left: Option<B>, right: Option<C>]; }
+declare const partitionMap: { <A, B, C>(f: (a: A) => Result<C, B>): (self: Option<A>) => [left: Option<B>, right: Option<C>]; <A, B, C>(self: Option<A>, f: (a: A) => Result<C, B>): [left: Option<B>, right: Option<C>]; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L1569)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L1925)
 
 Since v2.0.0

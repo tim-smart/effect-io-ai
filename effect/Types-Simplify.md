@@ -3,15 +3,31 @@ Module: `Types`<br />
 
 ## Types.Simplify
 
-Simplifies the type signature of a type.
+Flattens an intersection type into a single object type for readability.
 
-**Example**
+**When to use**
+
+Use to clean up IDE tooltips that show `A & B & C` instead of a merged
+object.
+
+**Details**
+
+Does not change the type semantically, only its display.
+
+**Example** (Simplifying an intersection)
 
 ```ts
 import type { Types } from "effect"
 
-type Res = Types.Simplify<{ a: number } & { b: number }> // { a: number; b: number; }
+// Without Simplify: IDE shows { a: number } & { b: string }
+// With Simplify: IDE shows { a: number; b: string }
+type Clean = Types.Simplify<{ a: number } & { b: string }>
 ```
+
+**See**
+
+- `MergeLeft`
+- `MergeRight`
 
 **Signature**
 
@@ -21,6 +37,6 @@ type Simplify<A> = {
 } extends infer B ? B : never
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L126)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L250)
 
 Since v2.0.0

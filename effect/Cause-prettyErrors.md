@@ -3,20 +3,53 @@ Module: `Cause`<br />
 
 ## Cause.prettyErrors
 
-Returns a list of prettified errors (`PrettyError`) from a `Cause`.
+Converts a `Cause` into an `Array<Error>` suitable for logging or
+rethrowing.
+
+**When to use**
+
+Use to convert every renderable failure in a cause into individual `Error`
+values before logging or rethrowing.
 
 **Details**
 
-This function inspects the entire `Cause` and produces an array of
-`PrettyError` objects. Each object may include additional metadata, such as a
-`Span`, to provide deeper insights into where and how the error occurred.
+Each `Fail` and `Die` reason is converted into a standard
+`Error`:
+
+- **Objects / Error instances** — `message`, `name`, `stack`, and `cause`
+  are preserved. Extra enumerable properties are copied. Stack traces are
+  cleaned up and enriched with span annotations when available.
+- **Strings** — used directly as the `Error` message.
+- **Other primitives** (`null`, `undefined`, numbers, …) — wrapped in an
+  `Error` with message `"Unknown error: <value>"`.
+
+`Interrupt` reasons are collected separately. If the cause contains
+**only** interrupts (no `Fail` or `Die`), a single `InterruptError` is
+returned whose `cause` lists the interrupting fiber IDs.
+
+An empty cause returns an empty array.
+
+**Example** (Converting a cause to errors)
+
+```ts
+import { Cause } from "effect"
+
+const cause = Cause.fail(new Error("boom"))
+const errors = Cause.prettyErrors(cause)
+console.log(errors[0].message) // "boom"
+```
+
+**See**
+
+- `pretty` — renders the cause as a single string
+- `squash` — lossy collapse to a single thrown value
 
 **Signature**
 
 ```ts
-declare const prettyErrors: <E>(cause: Cause<E>) => Array<PrettyError>
+declare const prettyErrors: <E>(self: Cause<E>, options?: { readonly includeCauseInStack?: boolean | undefined; }) => Array<Error>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L1539)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L1111)
 
 Since v3.2.0

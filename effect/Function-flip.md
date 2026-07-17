@@ -5,15 +5,20 @@ Module: `Function`<br />
 
 Reverses the order of arguments for a curried function.
 
-**Example**
+**When to use**
+
+Use to adapt a curried function when its argument groups need to be supplied
+in the opposite order.
+
+**Example** (Flipping curried arguments)
 
 ```ts
+import { Function } from "effect"
 import * as assert from "node:assert"
-import { flip } from "effect/Function"
 
 const f = (a: number) => (b: string) => a - b.length
 
-assert.deepStrictEqual(flip(f)('aaa')(2), -1)
+assert.deepStrictEqual(Function.flip(f)("aaa")(2), -1)
 ```
 
 **Signature**
@@ -22,6 +27,6 @@ assert.deepStrictEqual(flip(f)('aaa')(2), -1)
 declare const flip: <A extends Array<unknown>, B extends Array<unknown>, C>(f: (...a: A) => (...b: B) => C) => (...b: B) => (...a: A) => C
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L384)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L454)
 
 Since v2.0.0

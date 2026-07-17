@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.DateTime
 
-Re-exports all named exports from the "./DateTime.js" module as `DateTime`.
+Re-exports all named exports from the "./DateTime.ts" module as `DateTime`.
 
 **Signature**
 
 ```ts
-export * as DateTime from "./DateTime.js"
+export * as DateTime from "./DateTime.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L204)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L132)
 
 Since v3.6.0

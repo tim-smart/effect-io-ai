@@ -5,10 +5,12 @@ Module: `Graph`<br />
 
 Creates a new topological sort iterator with optional configuration.
 
+**Details**
+
 The iterator uses Kahn's algorithm to lazily produce nodes in topological order.
 Throws an error if the graph contains cycles.
 
-**Example**
+**Example** (Sorting topologically)
 
 ```ts
 import { Graph } from "effect"
@@ -30,7 +32,7 @@ for (const nodeIndex of Graph.indices(topo1)) {
 // With initial nodes
 const topo2 = Graph.topo(graph, { initials: [0] })
 
-// Throws error for cyclic graph
+// Check before sorting a cyclic graph
 const cyclicGraph = Graph.directed<string, number>((mutable) => {
   const a = Graph.addNode(mutable, "A")
   const b = Graph.addNode(mutable, "B")
@@ -38,19 +40,17 @@ const cyclicGraph = Graph.directed<string, number>((mutable) => {
   Graph.addEdge(mutable, b, a, 2) // Creates cycle
 })
 
-try {
-  Graph.topo(cyclicGraph) // Throws: "Cannot perform topological sort on cyclic graph"
-} catch (error) {
-  console.log((error as Error).message)
+if (!Graph.isAcyclic(cyclicGraph)) {
+  console.log("cyclic graph") // cyclic graph
 }
 ```
 
 **Signature**
 
 ```ts
-declare const topo: <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>, config?: TopoConfig) => NodeWalker<N>
+declare const topo: { (config?: TopoConfig): <N, E>(graph: Graph<N, E, "directed"> | MutableGraph<N, E, "directed">) => NodeWalker<N>; <N, E>(graph: Graph<N, E, "directed"> | MutableGraph<N, E, "directed">, config?: TopoConfig): NodeWalker<N>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L3509)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L5528)
 
 Since v3.18.0

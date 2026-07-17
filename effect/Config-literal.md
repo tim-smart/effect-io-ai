@@ -3,22 +3,34 @@ Module: `Config`<br />
 
 ## Config.literal
 
-Constructs a config for a literal value.
+Creates a config that only accepts a specific literal value.
 
-**Example**
+**When to use**
+
+Use to restrict a config to a single, specific literal value.
+
+**Details**
+
+Shortcut for `Config.schema(Schema.Literal(literal), name)`.
+
+**Example** (Restricting to a literal)
 
 ```ts
 import { Config } from "effect"
 
-const config = Config.literal("http", "https")("PROTOCOL")
+const env = Config.literal("production", "ENV")
 ```
+
+**See**
+
+- `literals` – accepts multiple literal values
 
 **Signature**
 
 ```ts
-declare const literal: <Literals extends ReadonlyArray<LiteralValue>>(...literals: Literals) => (name?: string) => Config<Literals[number]>
+declare const literal: <L extends SchemaAST.LiteralValue>(literal: L, name?: string) => Config<L>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L202)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L1016)
 
 Since v2.0.0

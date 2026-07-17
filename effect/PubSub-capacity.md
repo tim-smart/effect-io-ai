@@ -5,12 +5,28 @@ Module: `PubSub`<br />
 
 Returns the number of elements the queue can hold.
 
+**Example** (Getting PubSub capacity)
+
+```ts
+import { Effect, PubSub } from "effect"
+
+const program = Effect.gen(function*() {
+  const pubsub = yield* PubSub.bounded<string>(100)
+  const cap = PubSub.capacity(pubsub)
+  console.log("PubSub capacity:", cap) // 100
+
+  const unboundedPubsub = yield* PubSub.unbounded<string>()
+  const unboundedCap = PubSub.capacity(unboundedPubsub)
+  console.log("Unbounded capacity:", unboundedCap) // Number.MAX_SAFE_INTEGER
+})
+```
+
 **Signature**
 
 ```ts
 declare const capacity: <A>(self: PubSub<A>) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/PubSub.ts#L94)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/PubSub.ts#L572)
 
 Since v2.0.0

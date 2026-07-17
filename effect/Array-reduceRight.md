@@ -3,16 +3,28 @@ Module: `Array`<br />
 
 ## Array.reduceRight
 
-Reduces an array from the right.
+Folds an iterable from right to left into a single value.
 
-**Example**
+**When to use**
+
+Use when you need to fold values from right to left.
+
+**Details**
+
+The function receives `(accumulator, element, index)`.
+
+**Example** (Folding from right to left)
 
 ```ts
 import { Array } from "effect"
 
-const result = Array.reduceRight([1, 2, 3], 0, (acc, n) => acc + n)
-console.log(result) // 6
+console.log(Array.reduceRight([1, 2, 3], 0, (acc, n) => acc + n)) // 6
 ```
+
+**See**
+
+- `reduce` — fold from left to right
+- `scanRight` — fold keeping intermediate values
 
 **Signature**
 
@@ -20,6 +32,6 @@ console.log(result) // 6
 declare const reduceRight: { <B, A>(b: B, f: (b: B, a: A, i: number) => B): (self: Iterable<A>) => B; <A, B>(self: Iterable<A>, b: B, f: (b: B, a: A, i: number) => B): B; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2870)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L3927)
 
 Since v2.0.0

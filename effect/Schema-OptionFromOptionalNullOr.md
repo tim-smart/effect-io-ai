@@ -1,0 +1,20 @@
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.OptionFromOptionalNullOr
+
+Type-level representation returned by `OptionFromOptionalNullOr`.
+
+**Signature**
+
+```ts
+export interface OptionFromOptionalNullOr<S extends Constraint>
+  extends decodeTo<Option<toType<S>>, optional<NullOr<S>>>
+{
+  readonly "Rebuild": OptionFromOptionalNullOr<S>
+}
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L8766)
+
+Since v4.0.0

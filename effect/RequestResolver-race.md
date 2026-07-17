@@ -3,16 +3,55 @@ Module: `RequestResolver`<br />
 
 ## RequestResolver.race
 
-Returns a new data source that executes requests by sending them to this
-data source and that data source, returning the results from the first data
-source to complete and safely interrupting the loser.
+Returns a request resolver that sends each batch to both resolvers and
+completes with the first resolver to finish.
+
+**Details**
+
+The losing resolver run is interrupted after the winning resolver completes
+the batch.
+
+**Example** (Racing request resolvers)
+
+```ts
+import { Effect, Exit, Request, RequestResolver } from "effect"
+
+interface GetDataRequest extends Request.Request<string> {
+  readonly _tag: "GetDataRequest"
+  readonly id: number
+}
+const GetDataRequest = Request.tagged<GetDataRequest>("GetDataRequest")
+
+// Fast resolver (simulating cache)
+const fastResolver = RequestResolver.make<GetDataRequest>((entries) =>
+  Effect.gen(function*() {
+    yield* Effect.sleep("10 millis")
+    for (const entry of entries) {
+      entry.completeUnsafe(Exit.succeed(`fast-${entry.request.id}`))
+    }
+  })
+)
+
+// Slow resolver (simulating database)
+const slowResolver = RequestResolver.make<GetDataRequest>((entries) =>
+  Effect.gen(function*() {
+    yield* Effect.sleep("100 millis")
+    for (const entry of entries) {
+      entry.completeUnsafe(Exit.succeed(`slow-${entry.request.id}`))
+    }
+  })
+)
+
+// Race resolvers - will use whichever completes first
+const racingResolver = RequestResolver.race(fastResolver, slowResolver)
+```
 
 **Signature**
 
 ```ts
-declare const race: { <A2 extends Request.Request<any, any>, R2>(that: RequestResolver<A2, R2>): <A extends Request.Request<any, any>, R>(self: RequestResolver<A, R>) => RequestResolver<A2 | A, R2 | R>; <A extends Request.Request<any, any>, R, A2 extends Request.Request<any, any>, R2>(self: RequestResolver<A, R>, that: RequestResolver<A2, R2>): RequestResolver<A | A2, R | R2>; }
+declare const race: { <A2 extends Request.Any>(that: RequestResolver<A2>): <A extends Request.Any>(self: RequestResolver<A>) => RequestResolver<A2 & A>; <A extends Request.Any, A2 extends Request.Any>(self: RequestResolver<A>, that: RequestResolver<A2>): RequestResolver<A & A2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/RequestResolver.ts#L340)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/RequestResolver.ts#L869)
 
 Since v2.0.0

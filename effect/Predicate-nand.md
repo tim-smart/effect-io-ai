@@ -3,9 +3,30 @@ Module: `Predicate`<br />
 
 ## Predicate.nand
 
-Combines two predicates with a logical "NAND" (negated AND). The resulting predicate
-returns `true` if at least one of the predicates returns `false`.
-This is equivalent to `not(and(p, q))`.
+Creates a predicate that returns `true` unless both predicates are `true`.
+
+**When to use**
+
+Use when you want to combine two `Predicate`s with logical NAND semantics.
+
+**Details**
+
+Returns the negation of `and`.
+
+**Example** (Checking NAND conditions)
+
+```ts
+import { Predicate } from "effect"
+
+const notBoth = Predicate.nand(Predicate.isString, Predicate.isNumber)
+
+console.log(notBoth("a"))
+```
+
+**See**
+
+- `and`
+- `not`
 
 **Signature**
 
@@ -13,6 +34,6 @@ This is equivalent to `not(and(p, q))`.
 declare const nand: { <A>(that: Predicate<A>): (self: Predicate<A>) => Predicate<A>; <A>(self: Predicate<A>, that: Predicate<A>): Predicate<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L1331)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L1790)
 
 Since v2.0.0

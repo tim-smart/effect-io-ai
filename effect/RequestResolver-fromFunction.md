@@ -3,14 +3,38 @@ Module: `RequestResolver`<br />
 
 ## RequestResolver.fromFunction
 
-Constructs a data source from a pure function.
+Constructs a request resolver from a pure function.
+
+**Example** (Creating a resolver from a pure function)
+
+```ts
+import { Effect, Request, RequestResolver } from "effect"
+
+interface GetSquareRequest extends Request.Request<number> {
+  readonly _tag: "GetSquareRequest"
+  readonly value: number
+}
+const GetSquareRequest = Request.tagged<GetSquareRequest>("GetSquareRequest")
+
+// Create a resolver from a pure function
+const SquareResolver = RequestResolver.fromFunction<GetSquareRequest>(
+  (entry) => entry.request.value * entry.request.value
+)
+
+// Usage
+const getSquareEffect = Effect.request(
+  GetSquareRequest({ value: 5 }),
+  SquareResolver
+)
+// Will resolve to 25
+```
 
 **Signature**
 
 ```ts
-declare const fromFunction: <A extends Request.Request<any>>(f: (request: A) => Request.Request.Success<A>) => RequestResolver<A>
+declare const fromFunction: <A extends Request.Any>(f: (entry: Request.Entry<A>) => Request.Success<A>) => RequestResolver<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/RequestResolver.ts#L260)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/RequestResolver.ts#L333)
 
 Since v2.0.0

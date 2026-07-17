@@ -1,0 +1,30 @@
+Package: `effect`<br />
+Module: `OpenApi`<br />
+
+## OpenApi.fromApi
+
+Converts an `HttpApi` instance into an OpenAPI Specification object.
+
+**Details**
+
+This function takes an `HttpApi` instance, which defines a structured API,
+and generates an OpenAPI Specification (`OpenAPISpec`). The resulting spec
+adheres to the OpenAPI 3.1.0 standard and includes detailed metadata such as
+paths, operations, security schemes, and components. The function processes
+the API's annotations, middleware, groups, and endpoints to build a complete
+and accurate representation of the API in OpenAPI format.
+
+The function also deduplicates schemas, applies transformations, and
+integrates annotations like descriptions, summaries, external documentation,
+and overrides. Cached results are used for better performance when the same
+`HttpApi` instance is processed multiple times.
+
+**Signature**
+
+```ts
+declare const fromApi: <Id extends string, Groups extends HttpApiGroup.Constraint>(api: HttpApi.HttpApi<Id, Groups>) => OpenAPISpec
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/OpenApi.ts#L251)
+
+Since v4.0.0

@@ -6,25 +6,29 @@ Module: `Effect`<br />
 Adds a time limit to an effect, triggering a timeout if the effect exceeds
 the duration.
 
+**When to use**
+
+Use when you need a timeout of an `Effect` to be represented as a typed
+failure.
+
 **Details**
 
-This function allows you to enforce a time limit on the execution of an
-effect. If the effect does not complete within the given duration, it fails
-with a `TimeoutException`. This is useful for preventing tasks from hanging
-indefinitely, especially in scenarios where responsiveness or resource limits
-are critical.
+The `timeout` function allows you to specify a time limit for an
+effect's execution. If the effect does not complete within the given time, a
+`TimeoutException` is raised. This can be useful for controlling how long
+your program waits for a task to finish, ensuring that it doesn't hang
+indefinitely if the task takes too long.
 
-The returned effect will either:
-- Succeed with the original effect's result if it completes within the
-  specified duration.
-- Fail with a `TimeoutException` if the time limit is exceeded.
+**Gotchas**
 
-**Example**
+If the timeout wins, the source effect is interrupted.
+
+**Example** (Failing when work takes too long)
 
 ```ts
 import { Effect } from "effect"
 
-const task = Effect.gen(function* () {
+const task = Effect.gen(function*() {
   console.log("Start processing...")
   yield* Effect.sleep("2 seconds") // Simulates a delay in processing
   console.log("Processing complete.")
@@ -51,17 +55,15 @@ Effect.runPromiseExit(timedEffect).then(console.log)
 
 **See**
 
-- `timeoutFail` for a version that raises a custom error.
-- `timeoutFailCause` for a version that raises a custom defect.
-- `timeoutTo` for a version that allows specifying both success and
-timeout handlers.
+- `timeoutOption` for returning `Option.none` on timeout.
+- `timeoutOrElse` for a version that allows specifying both success and timeout handlers.
 
 **Signature**
 
 ```ts
-declare const timeout: { (duration: Duration.DurationInput): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E | Cause.TimeoutException, R>; <A, E, R>(self: Effect<A, E, R>, duration: Duration.DurationInput): Effect<A, Cause.TimeoutException | E, R>; }
+declare const timeout: { (duration: Duration.Input): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E | Cause.TimeoutError, R>; <A, E, R>(self: Effect<A, E, R>, duration: Duration.Input): Effect<A, E | Cause.TimeoutError, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L7027)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L4494)
 
 Since v2.0.0

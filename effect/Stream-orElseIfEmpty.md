@@ -3,14 +3,31 @@ Module: `Stream`<br />
 
 ## Stream.orElseIfEmpty
 
-Produces the specified element if this stream is empty.
+Switches to a fallback stream if this stream is empty.
+
+**Example** (Switching on empty streams)
+
+```ts
+import { Console, Effect, Stream } from "effect"
+
+const program = Effect.gen(function*() {
+  const values = yield* Stream.empty.pipe(
+    Stream.orElseIfEmpty(() => Stream.make(1, 2)),
+    Stream.runCollect
+  )
+  yield* Console.log(values)
+})
+
+Effect.runPromise(program)
+// Output: [ 1, 2 ]
+```
 
 **Signature**
 
 ```ts
-declare const orElseIfEmpty: { <A2>(element: LazyArg<A2>): <A, E, R>(self: Stream<A, E, R>) => Stream<A2 | A, E, R>; <A, E, R, A2>(self: Stream<A, E, R>, element: LazyArg<A2>): Stream<A | A2, E, R>; }
+declare const orElseIfEmpty: { <E, A2, E2, R2>(orElse: LazyArg<Stream<A2, E2, R2>>): <A, R>(self: Stream<A, E, R>) => Stream<A | A2, E | E2, R | R2>; <A, E, R, A2, E2, R2>(self: Stream<A, E, R>, orElse: LazyArg<Stream<A2, E2, R2>>): Stream<A | A2, E | E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L3321)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L5911)
 
 Since v2.0.0

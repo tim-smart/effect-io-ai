@@ -3,31 +3,30 @@ Module: `Predicate`<br />
 
 ## Predicate.isTagged
 
-A refinement that checks if a value is an object with a `_tag` property
-that matches the given tag. This is a powerful tool for working with
-discriminated union types.
+Checks whether a value has a `_tag` property equal to the given tag.
 
-**Example**
+**When to use**
+
+Use when you model tagged unions with a `_tag` field and want a quick
+`Predicate` guard for tagged values.
+
+**Details**
+
+Uses `hasProperty` and strict equality on `_tag`.
+
+**Example** (Guarding tagged values)
 
 ```ts
-import * as assert from "node:assert"
-import { isTagged } from "effect/Predicate"
+import { Predicate } from "effect"
 
-type Shape = { _tag: "circle"; radius: number } | { _tag: "square"; side: number }
+const isOk = Predicate.isTagged("Ok")
 
-const isCircle = isTagged("circle")
-
-const shape1: Shape = { _tag: "circle", radius: 10 }
-const shape2: Shape = { _tag: "square", side: 5 }
-
-assert.strictEqual(isCircle(shape1), true)
-assert.strictEqual(isCircle(shape2), false)
-
-if (isCircle(shape1)) {
-  // shape1 is now narrowed to { _tag: "circle"; radius: number }
-  assert.strictEqual(shape1.radius, 10)
-}
+console.log(isOk({ _tag: "Ok", value: 1 }))
 ```
+
+**See**
+
+- `hasProperty`
 
 **Signature**
 
@@ -35,6 +34,6 @@ if (isCircle(shape1)) {
 declare const isTagged: { <K extends string>(tag: K): (self: unknown) => self is { _tag: K; }; <K extends string>(self: unknown, tag: K): self is { _tag: K; }; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L642)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L1166)
 
 Since v2.0.0

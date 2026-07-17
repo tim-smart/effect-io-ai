@@ -3,19 +3,14 @@ Module: `index`<br />
 
 ## index.Number
 
-Re-exports all named exports from the "./Number.js" module as `Number`.
-
-**See**
-
-- `module:BigInt` for more similar operations on `bigint` types
-- `module:BigDecimal` for more similar operations on `BigDecimal` types
+Re-exports all named exports from the "./Number.ts" module as `Number`.
 
 **Signature**
 
 ```ts
-export * as Number from "./Number.js"
+export * as Number from "./Number.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1056)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L362)
 
 Since v2.0.0

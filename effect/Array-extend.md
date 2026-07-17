@@ -3,22 +3,29 @@ Module: `Array`<br />
 
 ## Array.extend
 
-Extends an array with a function that maps each subarray to a value.
+Applies a function to each suffix of the array (starting from each index),
+collecting the results.
 
-**Example**
+**When to use**
+
+Use when you need to compute a result from every suffix of an array, such as
+cumulative aggregations from each position.
+
+**Details**
+
+For index `i`, the function receives `self.slice(i)`.
+
+**Example** (Computing suffix lengths)
 
 ```ts
 import { Array } from "effect"
 
-const result = Array.extend([1, 2, 3], as => as.length)
-console.log(result) // [3, 2, 1]
-
-// Explanation:
-// The function maps each subarray starting from each element to its length.
-// The subarrays are: [1, 2, 3], [2, 3], [3].
-// The lengths are: 3, 2, 1.
-// Therefore, the result is [3, 2, 1].
+console.log(Array.extend([1, 2, 3], (as) => as.length)) // [3, 2, 1]
 ```
+
+**See**
+
+- `scan` for keeping intermediate accumulator values during a fold
 
 **Signature**
 
@@ -26,6 +33,6 @@ console.log(result) // [3, 2, 1]
 declare const extend: { <A, B>(f: (as: ReadonlyArray<A>) => B): (self: ReadonlyArray<A>) => Array<B>; <A, B>(self: ReadonlyArray<A>, f: (as: ReadonlyArray<A>) => B): Array<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L3048)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L4210)
 
 Since v2.0.0

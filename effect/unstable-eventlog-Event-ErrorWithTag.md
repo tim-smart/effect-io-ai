@@ -1,0 +1,16 @@
+Package: `effect`<br />
+Module: `Event`<br />
+
+## Event.ErrorWithTag
+
+Decoded error value type for the event in a union with the specified tag.
+
+**Signature**
+
+```ts
+type ErrorWithTag<Events, Tag> = Error<WithTag<Events, Tag>>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Event.ts#L362)
+
+Since v4.0.0

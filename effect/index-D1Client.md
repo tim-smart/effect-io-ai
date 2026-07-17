@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.D1Client
 
-Re-exports all named exports from the "./D1Client.js" module as `D1Client`.
+Re-exports all named exports from the "./D1Client.ts" module as `D1Client`.
 
 **Signature**
 
 ```ts
-export * as D1Client from "./D1Client.js"
+export * as D1Client from "./D1Client.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql-d1/src/index.ts#L4)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/d1/src/index.ts#L10)
 
-Since v1.0.0
+Since v4.0.0

@@ -5,7 +5,7 @@ Module: `Graph`<br />
 
 Creates a mutable scope for safe graph mutations by copying the data structure.
 
-**Example**
+**Example** (Beginning a mutation scope)
 
 ```ts
 import { Graph } from "effect"
@@ -21,6 +21,6 @@ const mutable = Graph.beginMutation(graph)
 declare const beginMutation: <N, E, T extends Kind = "directed">(graph: Graph<N, E, T>) => MutableGraph<N, E, T>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L340)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L593)
 
 Since v3.18.0

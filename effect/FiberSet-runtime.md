@@ -3,9 +3,9 @@ Module: `FiberSet`<br />
 
 ## FiberSet.runtime
 
-Capture a Runtime and use it to fork Effect's, adding the forked fibers to the FiberSet.
+Captures a `Runtime` and uses it to fork effects into the `FiberSet`.
 
-**Example**
+**Example** (Capturing a runtime)
 
 ```ts
 import { Context, Effect, FiberSet } from "effect"
@@ -13,8 +13,8 @@ import { Context, Effect, FiberSet } from "effect"
 interface Users {
   readonly _: unique symbol
 }
-const Users = Context.GenericTag<Users, {
-   getAll: Effect.Effect<Array<unknown>>
+const Users = Context.Service<Users, {
+  getAll: Effect.Effect<Array<unknown>>
 }>("Users")
 
 Effect.gen(function*() {
@@ -22,7 +22,7 @@ Effect.gen(function*() {
   const run = yield* FiberSet.runtime(set)<Users>()
 
   // run some effects and add the fibers to the set
-  run(Effect.andThen(Users, _ => _.getAll))
+  run(Effect.andThen(Users, (_) => _.getAll))
 }).pipe(
   Effect.scoped // The fibers will be interrupted when the scope is closed
 )
@@ -31,9 +31,9 @@ Effect.gen(function*() {
 **Signature**
 
 ```ts
-declare const runtime: <A, E>(self: FiberSet<A, E>) => <R = never>() => Effect.Effect<(<XE extends E, XA extends A>(effect: Effect.Effect<XA, XE, R>, options?: (Runtime.RunForkOptions & { readonly propagateInterruption?: boolean | undefined; }) | undefined) => Fiber.RuntimeFiber<XA, XE>), never, R>
+declare const runtime: <A, E>(self: FiberSet<A, E>) => <R = never>() => Effect.Effect<(<XE extends E, XA extends A>(effect: Effect.Effect<XA, XE, R>, options?: (Effect.RunOptions & { readonly propagateInterruption?: boolean | undefined; }) | undefined) => Fiber.Fiber<XA, XE>), never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/FiberSet.ts#L380)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/FiberSet.ts#L531)
 
 Since v2.0.0

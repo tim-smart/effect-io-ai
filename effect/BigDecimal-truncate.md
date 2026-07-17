@@ -3,17 +3,28 @@ Module: `BigDecimal`<br />
 
 ## BigDecimal.truncate
 
-Truncate a `BigDecimal` at the given scale. This is the same operation as rounding away from zero.
+Computes a truncated `BigDecimal` at the given scale. This removes fractional digits beyond the scale,
+rounding toward zero.
 
-**Example**
+**When to use**
+
+Use when you need to discard fractional digits beyond a scale rather than
+round half up, half down, or toward an infinity.
+
+**Example** (Truncating decimals)
 
 ```ts
-import * as assert from "node:assert"
-import { truncate, unsafeFromString } from "effect/BigDecimal"
+import { BigDecimal } from "effect"
 
-assert.deepStrictEqual(truncate(unsafeFromString("145"), -1), unsafeFromString("140"))
-assert.deepStrictEqual(truncate(unsafeFromString("-14.5")), unsafeFromString("-14"))
+console.log(BigDecimal.truncate(BigDecimal.fromStringUnsafe("145"), -1)) // BigDecimal(140)
+console.log(BigDecimal.truncate(BigDecimal.fromStringUnsafe("-14.5"))) // BigDecimal(-14)
 ```
+
+**See**
+
+- `round` for configurable rounding modes
+- `ceil` for rounding toward positive infinity
+- `floor` for rounding toward negative infinity
 
 **Signature**
 
@@ -21,6 +32,6 @@ assert.deepStrictEqual(truncate(unsafeFromString("-14.5")), unsafeFromString("-1
 declare const truncate: { (scale: number): (self: BigDecimal) => BigDecimal; (self: BigDecimal, scale?: number): BigDecimal; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L1203)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L1825)
 
 Since v3.16.0

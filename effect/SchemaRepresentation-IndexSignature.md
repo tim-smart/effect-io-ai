@@ -1,0 +1,29 @@
+Package: `effect`<br />
+Module: `SchemaRepresentation`<br />
+
+## SchemaRepresentation.IndexSignature
+
+An index signature, such as `[key: string]: number`, within an
+`Objects`.
+
+**Details**
+
+`parameter` is the key type representation. `type` is the value type
+representation.
+
+**See**
+
+- `Objects`
+
+**Signature**
+
+```ts
+export interface IndexSignature {
+  readonly parameter: Representation
+  readonly type: Representation
+}
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaRepresentation.ts#L418)
+
+Since v4.0.0

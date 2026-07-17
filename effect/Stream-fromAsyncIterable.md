@@ -3,33 +3,36 @@ Module: `Stream`<br />
 
 ## Stream.fromAsyncIterable
 
-Creates a stream from an `AsyncIterable`.
+Creates a stream from an AsyncIterable.
 
-**Example**
+**Example** (Creating a stream from an AsyncIterable)
 
 ```ts
-import { Effect, Stream } from "effect"
+import { Data, Effect, Stream } from "effect"
 
-const myAsyncIterable = async function*() {
+class StreamError extends Data.TaggedError("StreamError")<{ readonly cause: unknown }> {}
+
+const iterable = (async function*() {
   yield 1
   yield 2
-}
+  yield 3
+})()
 
-const stream = Stream.fromAsyncIterable(
-  myAsyncIterable(),
-  (e) => new Error(String(e)) // Error Handling
-)
+Effect.runPromise(Effect.gen(function*() {
+  const stream = Stream.fromAsyncIterable(iterable, (cause) => new StreamError({ cause }))
+  const values = yield* Stream.runCollect(stream)
+  yield* Effect.sync(() => console.log(values))
+}))
 
-Effect.runPromise(Stream.runCollect(stream)).then(console.log)
-// { _id: 'Chunk', values: [ 1, 2 ] }
+// [ 1, 2, 3 ]
 ```
 
 **Signature**
 
 ```ts
-declare const fromAsyncIterable: <A, E>(iterable: AsyncIterable<A>, onError: (e: unknown) => E) => Stream<A, E>
+declare const fromAsyncIterable: <A, E>(iterable: AsyncIterable<A>, onError: (error: unknown) => E) => Stream<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L1903)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L1458)
 
 Since v2.0.0

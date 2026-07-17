@@ -3,7 +3,24 @@ Module: `Stream`<br />
 
 ## Stream.encodeText
 
-Encode a stream of strings into a stream of Uint8Array chunks using the specified encoding.
+Encodes a stream of strings into UTF-8 `Uint8Array` chunks.
+
+**Example** (Encoding a stream of strings into UTF-8 Uint8Array chunks)
+
+```ts
+import { Console, Effect, Stream } from "effect"
+
+const stream = Stream.make("Hello", " ", "World")
+const program = Effect.gen(function*() {
+  const encoded = Stream.encodeText(stream)
+  const chunks = yield* Stream.runCollect(encoded)
+  const bytes = chunks.map((chunk) => [...chunk])
+  yield* Console.log(bytes)
+})
+
+Effect.runPromise(program)
+// [[72, 101, 108, 108, 111], [32], [87, 111, 114, 108, 100]]
+```
 
 **Signature**
 
@@ -11,6 +28,6 @@ Encode a stream of strings into a stream of Uint8Array chunks using the specifie
 declare const encodeText: <E, R>(self: Stream<string, E, R>) => Stream<Uint8Array, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L6429)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L9433)
 
 Since v2.0.0

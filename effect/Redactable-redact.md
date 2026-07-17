@@ -1,0 +1,37 @@
+Package: `effect`<br />
+Module: `Redactable`<br />
+
+## Redactable.redact
+
+Returns a redacted value if it implements `Redactable`, otherwise returns it
+unchanged.
+
+**When to use**
+
+Use as the general-purpose entry point for redaction when the input may
+or may not implement the redaction protocol.
+
+**Details**
+
+This function calls `isRedactable` and, when it returns `true`,
+delegates to `getRedacted`.
+
+**Gotchas**
+
+Redaction is not recursive. Nested redactable values inside the returned
+object are not automatically redacted.
+
+**See**
+
+- `isRedactable` to check before redacting
+- `getRedacted` for the lower-level variant for known redactables
+
+**Signature**
+
+```ts
+declare const redact: (u: unknown) => unknown
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Redactable.ts#L127)
+
+Since v3.10.0

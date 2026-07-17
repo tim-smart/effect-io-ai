@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.Order
 
-Re-exports all named exports from the "./Order.js" module as `Order`.
+Re-exports all named exports from the "./Order.ts" module as `Order`.
 
 **Signature**
 
 ```ts
-export * as Order from "./Order.js"
+export * as Order from "./Order.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1081)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L377)
 
 Since v2.0.0

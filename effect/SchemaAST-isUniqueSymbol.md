@@ -1,0 +1,16 @@
+Package: `effect`<br />
+Module: `SchemaAST`<br />
+
+## SchemaAST.isUniqueSymbol
+
+Narrows an `AST` to `UniqueSymbol`.
+
+**Signature**
+
+```ts
+declare const isUniqueSymbol: (ast: AST) => ast is UniqueSymbol
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaAST.ts#L302)
+
+Since v3.10.0

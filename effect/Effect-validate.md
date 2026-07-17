@@ -3,62 +3,46 @@ Module: `Effect`<br />
 
 ## Effect.validate
 
-Combines multiple effects and accumulates both successes and failures.
+Applies an effectful function to each element and accumulates all failures.
 
 **Details**
 
-This function allows you to combine multiple effects, continuing through all
-effects even if some of them fail. Unlike other functions that stop execution
-upon encountering an error, this function collects all errors into a `Cause`.
-The final result includes all successes and the accumulated failures.
+This function always evaluates every element. If at least one effect fails,
+all failures are returned as a non-empty array and successes are discarded.
+If all effects succeed, it returns all collected successes.
 
-By default, effects are executed sequentially, but you can control
-concurrency and batching behavior using the `options` parameter. This
-provides flexibility in scenarios where you want to maximize performance or
-ensure specific ordering.
+Use `discard: true` to ignore successful values while still validating all
+elements.
 
-**Example**
+**Example** (Validating every element)
 
 ```ts
-import { Effect, Console } from "effect"
+import { Effect } from "effect"
 
-const task1 = Console.log("task1").pipe(Effect.as(1))
-const task2 = Effect.fail("Oh uh!").pipe(Effect.as(2))
-const task3 = Console.log("task2").pipe(Effect.as(3))
-const task4 = Effect.fail("Oh no!").pipe(Effect.as(4))
-
-const program = task1.pipe(
-  Effect.validate(task2),
-  Effect.validate(task3),
-  Effect.validate(task4)
+const program = Effect.validate([0, 1, 2, 3], (n) =>
+  n % 2 === 0 ? Effect.fail(`${n} is even`) : Effect.succeed(n)
 )
 
 Effect.runPromiseExit(program).then(console.log)
-// Output:
-// task1
-// task2
 // {
 //   _id: 'Exit',
 //   _tag: 'Failure',
 //   cause: {
 //     _id: 'Cause',
-//     _tag: 'Sequential',
-//     left: { _id: 'Cause', _tag: 'Fail', failure: 'Oh uh!' },
-//     right: { _id: 'Cause', _tag: 'Fail', failure: 'Oh no!' }
+//     reasons: [
+//       { _id: 'Reason', _tag: 'Fail', error: '0 is even' },
+//       { _id: 'Reason', _tag: 'Fail', error: '2 is even' }
+//     ]
 //   }
 // }
 ```
 
-**See**
-
-- `zip` for a version that stops at the first error.
-
 **Signature**
 
 ```ts
-declare const validate: { <B, E1, R1>(that: Effect<B, E1, R1>, options?: { readonly concurrent?: boolean | undefined; readonly batching?: boolean | "inherit" | undefined; readonly concurrentFinalizers?: boolean | undefined; } | undefined): <A, E, R>(self: Effect<A, E, R>) => Effect<[A, B], E1 | E, R1 | R>; <A, E, R, B, E1, R1>(self: Effect<A, E, R>, that: Effect<B, E1, R1>, options?: { readonly concurrent?: boolean | undefined; readonly batching?: boolean | "inherit" | undefined; readonly concurrentFinalizers?: boolean | undefined; } | undefined): Effect<[A, B], E | E1, R | R1>; }
+declare const validate: { <A, B, E, R>(f: (a: A, i: number) => Effect<B, E, R>, options?: { readonly concurrency?: Concurrency | undefined; readonly discard?: false | undefined; } | undefined): (elements: Iterable<A>) => Effect<Array<B>, Arr.NonEmptyArray<E>, R>; <A, B, E, R>(f: (a: A, i: number) => Effect<B, E, R>, options: { readonly concurrency?: Concurrency | undefined; readonly discard: true; }): (elements: Iterable<A>) => Effect<void, Arr.NonEmptyArray<E>, R>; <A, B, E, R>(elements: Iterable<A>, f: (a: A, i: number) => Effect<B, E, R>, options?: { readonly concurrency?: Concurrency | undefined; readonly discard?: false | undefined; } | undefined): Effect<Array<B>, Arr.NonEmptyArray<E>, R>; <A, B, E, R>(elements: Iterable<A>, f: (a: A, i: number) => Effect<B, E, R>, options: { readonly concurrency?: Concurrency | undefined; readonly discard: true; }): Effect<void, Arr.NonEmptyArray<E>, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12411)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L606)
 
 Since v2.0.0

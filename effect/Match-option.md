@@ -5,6 +5,11 @@ Module: `Match`<br />
 
 Wraps the match result in an `Option`, representing an optional match.
 
+**When to use**
+
+Use to finalize a matcher when unmatched input is expected and should become
+`Option.none`.
+
 **Details**
 
 This function ensures that the result of a matcher is wrapped in an `Option`,
@@ -15,7 +20,7 @@ This is useful in cases where a missing match is expected and should be
 handled explicitly rather than throwing an error or returning a default
 value.
 
-**Example** (Extracting a User Role with `Match.option`)
+**Example** (Extracting a user role with `Match.option`)
 
 ```ts
 import { Match } from "effect"
@@ -36,12 +41,17 @@ console.log(getRole({ role: "viewer" }))
 // Output: { _id: 'Option', _tag: 'None' }
 ```
 
+**See**
+
+- `result` for preserving unmatched input as a `Result` failure
+- `orElse` for replacing unmatched input with a fallback value
+
 **Signature**
 
 ```ts
 declare const option: <I, F, R, A, Pr, Ret>(self: Matcher<I, F, R, A, Pr, Ret>) => [Pr] extends [never] ? (input: I) => Option.Option<Unify<A>> : Option.Option<Unify<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L1215)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L1967)
 
-Since v1.0.0
+Since v4.0.0

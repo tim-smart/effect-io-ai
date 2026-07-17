@@ -1,0 +1,22 @@
+Package: `effect`<br />
+Module: `HttpApi`<br />
+
+## HttpApi.make
+
+Creates an empty `HttpApi` with the supplied identifier.
+
+**When to use**
+
+Use when you need to start defining an HTTP API, add groups with `add` or
+`addHttpApi`, provide endpoint implementations with `HttpApiBuilder.group`,
+and register the API with `HttpApiBuilder.layer`.
+
+**Signature**
+
+```ts
+declare const make: <const Id extends string>(identifier: Id) => HttpApi<Id, never>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HttpApi.ts#L229)
+
+Since v4.0.0

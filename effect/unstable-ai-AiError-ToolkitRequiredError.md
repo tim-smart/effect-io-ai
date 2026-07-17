@@ -1,0 +1,35 @@
+Package: `effect`<br />
+Module: `AiError`<br />
+
+## AiError.ToolkitRequiredError
+
+Error indicating an operation requires a toolkit but none was provided.
+
+**Details**
+
+This error occurs when tool approval responses are present in the prompt
+but no toolkit was provided to resolve them.
+
+**Example** (Creating a toolkit required error)
+
+```ts
+import { AiError } from "effect/unstable/ai"
+
+const error = new AiError.ToolkitRequiredError({
+  pendingApprovals: ["GetWeather", "SendEmail"]
+})
+
+console.log(error.isRetryable) // false
+console.log(error.message)
+// "Toolkit required to resolve pending tool approvals: GetWeather, SendEmail"
+```
+
+**Signature**
+
+```ts
+declare class ToolkitRequiredError
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/AiError.ts#L1246)
+
+Since v4.0.0

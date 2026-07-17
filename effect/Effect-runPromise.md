@@ -5,23 +5,16 @@ Module: `Effect`<br />
 
 Executes an effect and returns the result as a `Promise`.
 
-**Details**
+**When to use**
 
-This function runs an effect and converts its result into a `Promise`. If the
-effect succeeds, the `Promise` will resolve with the successful result. If
-the effect fails, the `Promise` will reject with an error, which includes the
-failure details of the effect.
+Use when you need to execute an effect and work with the
+result using `Promise` syntax, typically for compatibility with other
+promise-based code.
 
-The optional `options` parameter allows you to pass an `AbortSignal` for
-cancellation, enabling more fine-grained control over asynchronous tasks.
+If the effect succeeds, the promise will resolve with the result. If the
+effect fails, the promise will reject with an error.
 
-**When to Use**
-
-Use this function when you need to execute an effect and work with its result
-in a promise-based system, such as when integrating with third-party
-libraries that expect `Promise` results.
-
-**Example** (Running a Successful Effect as a Promise)
+**Example** (Running a successful effect as a Promise)
 
 ```ts
 import { Effect } from "effect"
@@ -30,9 +23,10 @@ Effect.runPromise(Effect.succeed(1)).then(console.log)
 // Output: 1
 ```
 
-**Example** (Handling a Failing Effect as a Rejected Promise)
+**Example** (Running effects as promises)
 
 ```ts
+//Example: Handling a Failing Effect as a Rejected Promise
 import { Effect } from "effect"
 
 Effect.runPromise(Effect.fail("my error")).catch(console.error)
@@ -42,15 +36,14 @@ Effect.runPromise(Effect.fail("my error")).catch(console.error)
 
 **See**
 
-- `runPromiseExit` for a version that returns an `Exit` type instead
-of rejecting.
+- `runPromiseExit` for a version that returns an `Exit` type instead of rejecting.
 
 **Signature**
 
 ```ts
-declare const runPromise: <A, E>(effect: Effect<A, E, never>, options?: { readonly signal?: AbortSignal | undefined; } | undefined) => Promise<A>
+declare const runPromise: <A, E>(effect: Effect<A, E>, options?: RunOptions | undefined) => Promise<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12136)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L9020)
 
 Since v2.0.0

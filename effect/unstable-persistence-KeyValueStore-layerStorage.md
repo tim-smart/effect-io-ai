@@ -1,0 +1,22 @@
+Package: `effect`<br />
+Module: `KeyValueStore`<br />
+
+## KeyValueStore.layerStorage
+
+Provides a `KeyValueStore` backed by a Web `Storage` instance such as
+`localStorage` or `sessionStorage`.
+
+**Details**
+
+This layer uses the Web Storage API:
+https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API
+
+**Signature**
+
+```ts
+declare const layerStorage: (evaluate: LazyArg<Storage>) => Layer.Layer<KeyValueStore>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/KeyValueStore.ts#L802)
+
+Since v4.0.0

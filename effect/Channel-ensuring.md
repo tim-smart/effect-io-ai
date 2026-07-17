@@ -3,16 +3,34 @@ Module: `Channel`<br />
 
 ## Channel.ensuring
 
-Returns a new channel with an attached finalizer. The finalizer is
-guaranteed to be executed so long as the channel begins execution (and
-regardless of whether or not it completes).
+Returns a channel with a finalizer effect that is guaranteed to run once the
+channel begins execution, whether it succeeds or fails.
+
+**Example** (Ensuring cleanup runs)
+
+```ts
+import { Channel, Console, Data } from "effect"
+
+class EnsureError extends Data.TaggedError("EnsureError")<{
+  readonly operation: string
+}> {}
+
+// Create a channel
+const dataChannel = Channel.fromIterable([1, 2, 3])
+
+// Ensure cleanup always runs
+const channelWithCleanup = Channel.ensuring(
+  dataChannel,
+  Console.log("Cleanup executed regardless of success or failure")
+)
+```
 
 **Signature**
 
 ```ts
-declare const ensuring: { <Z, Env1>(finalizer: Effect.Effect<Z, never, Env1>): <OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>(self: Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>) => Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env1 | Env>; <OutElem, InElem, OutErr, InErr, OutDone, InDone, Env, Z, Env1>(self: Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>, finalizer: Effect.Effect<Z, never, Env1>): Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env | Env1>; }
+declare const ensuring: { <Env2>(finalizer: Effect.Effect<unknown, never, Env2>): <OutElem, OutDone, OutErr, InElem, InErr, InDone, Env>(self: Channel<OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>) => Channel<OutElem, OutErr, OutDone, InElem, InErr, InDone, Env2 | Env>; <OutElem, OutErr, OutDone, InElem, InErr, InDone, Env, Env2>(self: Channel<OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>, finalizer: Effect.Effect<unknown, never, Env2>): Channel<OutElem, OutErr, OutDone, InElem, InErr, InDone, Env2 | Env>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Channel.ts#L728)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Channel.ts#L7132)
 
 Since v2.0.0

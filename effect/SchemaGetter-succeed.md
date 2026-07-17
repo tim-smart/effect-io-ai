@@ -1,0 +1,40 @@
+Package: `effect`<br />
+Module: `SchemaGetter`<br />
+
+## SchemaGetter.succeed
+
+Creates a getter that always produces the given constant value, ignoring the input.
+
+**When to use**
+
+Use when you need a schema getter that always decodes a field to a fixed
+value.
+
+**Details**
+
+The getter is pure and always returns `Option.some(t)` regardless of whether
+the input is `Some` or `None`.
+
+**Example** (Returning a constant getter)
+
+```ts
+import { SchemaGetter } from "effect"
+
+const alwaysZero = SchemaGetter.succeed(0)
+// alwaysZero: Getter<0, unknown> — always produces 0
+```
+
+**See**
+
+- `transform` when you need to use the input value
+- `passthrough` when you want to keep the input as-is
+
+**Signature**
+
+```ts
+declare const succeed: <const T, E>(t: T) => Getter<T, E>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaGetter.ts#L121)
+
+Since v4.0.0

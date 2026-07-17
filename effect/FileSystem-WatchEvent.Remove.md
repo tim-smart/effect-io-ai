@@ -1,0 +1,24 @@
+Package: `effect`<br />
+Module: `FileSystem`<br />
+
+## FileSystem.WatchEvent.Remove
+
+Event representing the deletion of a file or directory.
+
+**Details**
+
+This event is triggered when a file or directory is deleted
+from the watched location.
+
+**Signature**
+
+```ts
+export interface Remove {
+    readonly _tag: "Remove"
+    readonly path: string
+  }
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/FileSystem.ts#L1359)
+
+Since v4.0.0

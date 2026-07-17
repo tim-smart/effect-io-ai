@@ -1,0 +1,24 @@
+Package: `effect`<br />
+Module: `Argument`<br />
+
+## Argument.string
+
+Creates a positional string argument.
+
+**Example** (Creating a string argument)
+
+```ts
+import { Argument } from "effect/unstable/cli"
+
+const filename = Argument.string("filename")
+```
+
+**Signature**
+
+```ts
+declare const string: (name: string) => Argument<string>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Argument.ts#L61)
+
+Since v4.0.0

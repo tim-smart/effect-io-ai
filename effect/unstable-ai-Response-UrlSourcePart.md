@@ -1,0 +1,34 @@
+Package: `effect`<br />
+Module: `Response`<br />
+
+## Response.UrlSourcePart
+
+Response part representing a URL source reference used in generating the
+response.
+
+**Signature**
+
+```ts
+export interface UrlSourcePart extends BasePart<"source", UrlSourcePartMetadata> {
+  /**
+   * Type discriminator for URL sources.
+   */
+  readonly sourceType: "url"
+  /**
+   * Unique identifier for the URL.
+   */
+  readonly id: string
+  /**
+   * The URL that was referenced.
+   */
+  readonly url: URL
+  /**
+   * Display title of the URL content.
+   */
+  readonly title: string
+}
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Response.ts#L2026)
+
+Since v4.0.0

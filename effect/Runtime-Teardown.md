@@ -1,0 +1,58 @@
+Package: `effect`<br />
+Module: `Runtime`<br />
+
+## Runtime.Teardown
+
+Represents a teardown function that handles program completion and determines the exit code.
+
+**When to use**
+
+Use when integrating `makeRunMain` with a host platform that needs to
+translate an Effect `Exit` into a process, worker, or application exit code.
+
+**Details**
+
+A teardown function is called when an Effect program completes, either
+successfully or with a failure. It determines the appropriate exit code and
+can perform cleanup before invoking the supplied `onExit` callback.
+
+**Example** (Customizing teardown behavior)
+
+```ts
+import { Effect, Exit, Runtime } from "effect"
+
+// Custom teardown that logs completion status
+const customTeardown: Runtime.Teardown = (exit, onExit) => {
+  if (Exit.isSuccess(exit)) {
+    console.log("Program completed successfully with value:", exit.value)
+    onExit(0)
+  } else {
+    console.log("Program failed with cause:", exit.cause)
+    onExit(1)
+  }
+}
+
+// Use with makeRunMain
+const runMain = Runtime.makeRunMain(({ fiber, teardown }) => {
+  fiber.addObserver((exit) => {
+    teardown(exit, (code) => {
+      console.log(`Exiting with code: ${code}`)
+    })
+  })
+})
+
+const program = Effect.succeed("Hello, World!")
+runMain(program, { teardown: customTeardown })
+```
+
+**Signature**
+
+```ts
+export interface Teardown {
+  <E, A>(exit: Exit.Exit<E, A>, onExit: (code: number) => void): void
+}
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Runtime.ts#L64)
+
+Since v4.0.0

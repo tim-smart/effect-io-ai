@@ -5,22 +5,21 @@ Module: `Effect`<br />
 
 Creates an effect that terminates a fiber with a specified error.
 
+**When to use**
+
+Use when you need an `Effect` to report an unrecoverable defect instead of a
+typed error.
+
 **Details**
 
-This function is used to signal a defect, which represents a critical and
-unexpected error in the code. When invoked, it produces an effect that does
-not handle the error and instead terminates the fiber.
+The `die` function is used to signal a defect, which represents a critical
+and unexpected error in the code. When invoked, it produces an effect that
+does not handle the error and instead terminates the fiber.
 
 The error channel of the resulting effect is of type `never`, indicating that
 it cannot recover from this failure.
 
-**When to Use**
-
-Use this function when encountering unexpected conditions in your code that
-should not be handled as regular errors but instead represent unrecoverable
-defects.
-
-**Example** (Terminating on Division by Zero with a Specified Error)
+**Example** (Failing on division by zero)
 
 ```ts
 import { Effect } from "effect"
@@ -40,19 +39,12 @@ Effect.runPromise(program).catch(console.error)
 //   ...stack trace...
 ```
 
-**See**
-
-- `dieSync` for a variant that throws a specified error, evaluated
-lazily.
-- `dieMessage` for a variant that throws a `RuntimeException` with a
-message.
-
 **Signature**
 
 ```ts
 declare const die: (defect: unknown) => Effect<never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L2647)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L1612)
 
 Since v2.0.0

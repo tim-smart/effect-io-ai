@@ -1,0 +1,50 @@
+Package: `effect`<br />
+Module: `Order`<br />
+
+## Order.Struct
+
+Creates an `Order` for structs by applying the given `Order`s to each property in sequence.
+
+**When to use**
+
+Use when you need multi-field ordering for objects with known properties.
+
+**Details**
+
+Compares structs field-by-field in the key order of the fields object and
+stops at the first non-zero comparison result. Field order matters: earlier
+fields take precedence. The result is `0` only if all fields are equal.
+
+**Example** (Ordering structs)
+
+```ts
+import { Order } from "effect"
+
+const personOrder = Order.Struct({
+  name: Order.String,
+  age: Order.Number
+})
+
+const person1 = { name: "Alice", age: 30 }
+const person2 = { name: "Bob", age: 25 }
+const person3 = { name: "Alice", age: 25 }
+
+console.log(personOrder(person1, person2)) // -1 (Alice < Bob)
+console.log(personOrder(person1, person3)) // 1 (same name, 30 > 25)
+console.log(personOrder(person1, person1)) // 0
+```
+
+**See**
+
+- `combine` to combine orders manually
+- `mapInput` to extract and compare by a single property
+
+**Signature**
+
+```ts
+declare const Struct: <const R extends { readonly [x: string]: Order<any>; }>(fields: R) => Order<{ [K in keyof R]: [R[K]] extends [Order<infer A>] ? A : never; }>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Order.ts#L618)
+
+Since v4.0.0

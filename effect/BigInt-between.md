@@ -3,13 +3,17 @@ Module: `BigInt`<br />
 
 ## BigInt.between
 
-Checks if a `bigint` is between a `minimum` and `maximum` value (inclusive).
+Checks whether a `bigint` is between a `minimum` and `maximum` value (inclusive).
 
-**Example**
+**When to use**
+
+Use to test whether a `bigint` falls inside an inclusive range.
+
+**Example** (Checking whether a bigint is within bounds)
 
 ```ts
-import * as assert from "node:assert"
 import { BigInt } from "effect"
+import * as assert from "node:assert"
 
 const between = BigInt.between({ minimum: 0n, maximum: 5n })
 
@@ -18,12 +22,16 @@ assert.deepStrictEqual(between(-1n), false)
 assert.deepStrictEqual(between(6n), false)
 ```
 
+**See**
+
+- `clamp` for forcing a `bigint` into an inclusive range
+
 **Signature**
 
 ```ts
 declare const between: { (options: { minimum: bigint; maximum: bigint; }): (self: bigint) => boolean; (self: bigint, options: { minimum: bigint; maximum: bigint; }): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L296)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L451)
 
 Since v2.0.0

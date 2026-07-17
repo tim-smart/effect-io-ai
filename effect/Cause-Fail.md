@@ -3,28 +3,43 @@ Module: `Cause`<br />
 
 ## Cause.Fail
 
-Represents an expected error within a `Cause`.
+A typed, expected error produced by `Effect.fail`.
+
+**When to use**
+
+Use when inspecting `Cause` reasons that represent expected failures from the
+typed error channel.
 
 **Details**
 
-This interface models a `Cause` that carries an expected or known error of
-type `E`. For example, if you validate user input and find it invalid, you
-might store that error within a `Fail`.
+The `error` property carries the typed value `E`. Use `isFailReason`
+to narrow a `Reason` to this type.
+
+**Example** (Accessing the error)
+
+```ts
+import { Cause } from "effect"
+
+const cause = Cause.fail("Something went wrong")
+const reason = cause.reasons[0]
+if (Cause.isFailReason(reason)) {
+  console.log(reason.error) // "Something went wrong"
+}
+```
 
 **See**
 
-- `fail` Construct a `Fail` cause
-- `isFailType` Check if a `Cause` is a `Fail`
+- `fail` for constructing a cause with a single `Fail` reason
+- `isFailReason` for narrowing a `Reason` to `Fail`
 
 **Signature**
 
 ```ts
-export interface Fail<out E> extends Cause.Variance<E>, Equal.Equal, Pipeable, Inspectable {
-  readonly _tag: "Fail"
+export interface Fail<out E> extends Cause.ReasonProto<"Fail"> {
   readonly error: E
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L474)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L363)
 
 Since v2.0.0

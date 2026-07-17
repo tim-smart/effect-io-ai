@@ -1,16 +1,16 @@
-Package: `@effect/platform-node`<br />
+Package: `@effect/platform-node-shared`<br />
 Module: `index`<br />
 
 ## index.NodeStream
 
-Re-exports all named exports from the "./NodeStream.js" module as `NodeStream`.
+Re-exports all named exports from the "./NodeStream.ts" module as `NodeStream`.
 
 **Signature**
 
 ```ts
-export * as NodeStream from "./NodeStream.js"
+export * as NodeStream from "./NodeStream.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L84)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/index.ts#L60)
 
-Since v1.0.0
+Since v4.0.0

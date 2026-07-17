@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.Utils
 
-Re-exports all named exports from the "./Utils.js" module as `Utils`.
+Re-exports all named exports from the "./Utils.ts" module as `Utils`.
 
 **Signature**
 
 ```ts
-export * as Utils from "./Utils.js"
+export * as Utils from "./Utils.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1561)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L722)
 
 Since v2.0.0

@@ -3,17 +3,33 @@ Module: `Option`<br />
 
 ## Option.flatten
 
-Flattens an `Option` of `Option` into a single `Option`.
+Flattens a nested `Option<Option<A>>` into `Option<A>`.
+
+**When to use**
+
+Use when you need to remove one layer of nested `Option`.
 
 **Details**
 
-This function takes an `Option` that wraps another `Option` and flattens it
-into a single `Option`. If the outer `Option` is `Some`, the function
-extracts the inner `Option`. If the outer `Option` is `None`, the result
-remains `None`.
+- `Some(Some(value))` → `Some(value)`
+- `Some(None)` → `None`
+- `None` → `None`
 
-This is useful for simplifying nested `Option` structures that may arise
-during functional operations.
+**Example** (Flattening nested Options)
+
+```ts
+import { Option } from "effect"
+
+console.log(Option.flatten(Option.some(Option.some("value"))))
+// Output: { _id: 'Option', _tag: 'Some', value: 'value' }
+
+console.log(Option.flatten(Option.some(Option.none())))
+// Output: { _id: 'Option', _tag: 'None' }
+```
+
+**See**
+
+- `flatMap` which is `map` + `flatten`
 
 **Signature**
 
@@ -21,6 +37,6 @@ during functional operations.
 declare const flatten: <A>(self: Option<Option<A>>) => Option<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L1170)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L1443)
 
 Since v2.0.0

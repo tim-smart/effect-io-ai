@@ -3,13 +3,14 @@ Module: `Record`<br />
 
 ## Record.getSomes
 
-Given a record with `Option` values, returns a new record containing only the `Some` values, preserving the original keys.
+Returns a new record containing only the `Some` values from a record of
+`Option` values, preserving the original keys.
 
-**Example**
+**Example** (Extracting Some values)
 
 ```ts
+import { Option, Record } from "effect"
 import * as assert from "node:assert"
-import { Record, Option } from "effect"
 
 assert.deepStrictEqual(
   Record.getSomes({ a: Option.some(1), b: Option.none(), c: Option.some(2) }),
@@ -23,6 +24,6 @@ assert.deepStrictEqual(
 declare const getSomes: <K extends string, A>(self: ReadonlyRecord<K, Option.Option<A>>) => Record<ReadonlyRecord.NonLiteralKey<K>, A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Record.ts#L712)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Record.ts#L824)
 
 Since v2.0.0

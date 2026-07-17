@@ -3,13 +3,13 @@ Module: `Trie`<br />
 
 ## Trie.get
 
-Safely lookup the value for the specified key in the `Trie`.
+Looks up the value for the specified key in the `Trie` safely.
 
-**Example**
+**Example** (Looking up values safely)
 
 ```ts
+import { Option, Trie } from "effect"
 import * as assert from "node:assert"
-import { Trie, Option } from "effect"
 
 const trie = Trie.empty<number>().pipe(
   Trie.insert("call", 0),
@@ -34,6 +34,6 @@ assert.deepStrictEqual(Trie.get(trie, "mea"), Option.none())
 declare const get: { (key: string): <V>(self: Trie<V>) => Option<V>; <V>(self: Trie<V>, key: string): Option<V>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Trie.ts#L423)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Trie.ts#L495)
 
 Since v2.0.0

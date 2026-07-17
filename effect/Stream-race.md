@@ -3,30 +3,32 @@ Module: `Stream`<br />
 
 ## Stream.race
 
-Returns a stream that mirrors the first upstream to emit an item.
-As soon as one of the upstream emits a first value, the other is interrupted.
-The resulting stream will forward all items from the "winning" source stream.
-Any upstream failures will cause the returned stream to fail.
+Runs both streams concurrently until one stream emits its first value, then
+mirrors that winning stream and interrupts the other.
 
-**Example**
+**Details**
+
+A failure or completion from one side before the other side emits does not
+win the race unless both sides fail or complete before emitting. After a
+winner is chosen, that stream's later failures are propagated.
+
+**Example** (Racing two streams)
 
 ```ts
-import { Stream, Schedule, Console, Effect } from "effect"
+import { Console, Effect, Schedule, Stream } from "effect"
 
-const stream = Stream.fromSchedule(Schedule.spaced('2 millis')).pipe(
-  Stream.race(Stream.fromSchedule(Schedule.spaced('1 millis'))),
-  Stream.take(6),
-  Stream.tap(Console.log)
+const stream = Stream.race(
+  Stream.make(0, 1, 2),
+  Stream.fromSchedule(Schedule.spaced("1 second"))
 )
 
-Effect.runPromise(Stream.runDrain(stream))
-// Output each millisecond from the first stream, the rest streams are interrupted
-// 0
-// 1
-// 2
-// 3
-// 4
-// 5
+const program = Effect.gen(function*() {
+  const result = yield* Stream.runCollect(stream)
+  yield* Console.log(result)
+})
+
+Effect.runPromise(program)
+// Output: [ 0, 1, 2 ]
 ```
 
 **Signature**
@@ -35,6 +37,6 @@ Effect.runPromise(Stream.runDrain(stream))
 declare const race: { <AR, ER, RR>(right: Stream<AR, ER, RR>): <AL, EL, RL>(left: Stream<AL, EL, RL>) => Stream<AL | AR, EL | ER, RL | RR>; <AL, EL, RL, AR, ER, RR>(left: Stream<AL, EL, RL>, right: Stream<AR, ER, RR>): Stream<AL | AR, EL | ER, RL | RR>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L3762)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L4270)
 
 Since v3.7.0

@@ -1,0 +1,16 @@
+Package: `effect`<br />
+Module: `SchemaRepresentation`<br />
+
+## SchemaRepresentation.$Symbol
+
+Schema for the `Symbol` representation node.
+
+**Signature**
+
+```ts
+declare const $Symbol: Schema.Struct<{ readonly _tag: Schema.tag<"Symbol">; readonly annotations: Schema.optional<Schema.decodeTo<Schema.$Record<Schema.String, Schema.Unknown>, Schema.$Record<Schema.String, Schema.Codec<PrimitiveTree, PrimitiveTree, never, never>>, never, never>>; }>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaRepresentation.ts#L1192)
+
+Since v4.0.0

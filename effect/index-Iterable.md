@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.Iterable
 
-Re-exports all named exports from the "./Iterable.js" module as `Iterable`.
+Re-exports all named exports from the "./Iterable.ts" module as `Iterable`.
 
 **Signature**
 
 ```ts
-export * as Iterable from "./Iterable.js"
+export * as Iterable from "./Iterable.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L650)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L267)
 
 Since v2.0.0

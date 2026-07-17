@@ -1,0 +1,26 @@
+Package: `effect`<br />
+Module: `String`<br />
+
+## String.capitalize
+
+Capitalizes the first character of a string.
+
+**Example** (Capitalizing a string)
+
+```ts
+import { pipe, String } from "effect"
+import * as assert from "node:assert"
+
+assert.deepStrictEqual(pipe("abc", String.capitalize), "Abc")
+assert.deepStrictEqual(String.capitalize("hello"), "Hello")
+```
+
+**Signature**
+
+```ts
+declare const capitalize: <T extends string>(self: T) => Capitalize<T>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/String.ts#L211)
+
+Since v2.0.0

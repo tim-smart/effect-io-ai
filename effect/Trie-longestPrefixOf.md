@@ -6,11 +6,11 @@ Module: `Trie`<br />
 Returns the longest key/value in the `Trie`
 that is a prefix of that `key` if it exists, `None` otherwise.
 
-**Example**
+**Example** (Finding the longest prefix)
 
 ```ts
+import { Trie } from "effect"
 import * as assert from "node:assert"
-import { Trie, Option } from "effect"
 
 const trie = Trie.empty<number>().pipe(
   Trie.insert("shells", 0),
@@ -18,10 +18,14 @@ const trie = Trie.empty<number>().pipe(
   Trie.insert("she", 2)
 )
 
-assert.deepStrictEqual(Trie.longestPrefixOf(trie, "sell"), Option.none())
-assert.deepStrictEqual(Trie.longestPrefixOf(trie, "sells"), Option.some(["sells", 1]))
-assert.deepStrictEqual(Trie.longestPrefixOf(trie, "shell"), Option.some(["she", 2]))
-assert.deepStrictEqual(Trie.longestPrefixOf(trie, "shellsort"), Option.some(["shells", 0]))
+const none = Trie.longestPrefixOf(trie, "sell")
+const some = Trie.longestPrefixOf(trie, "sells")
+
+assert.equal(none._tag, "None")
+assert.equal(some._tag, "Some")
+if (some._tag === "Some") {
+  assert.deepStrictEqual(some.value, ["sells", 1])
+}
 ```
 
 **Signature**
@@ -30,6 +34,6 @@ assert.deepStrictEqual(Trie.longestPrefixOf(trie, "shellsort"), Option.some(["sh
 declare const longestPrefixOf: { (key: string): <V>(self: Trie<V>) => Option<[string, V]>; <V>(self: Trie<V>, key: string): Option<[string, V]>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Trie.ts#L369)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Trie.ts#L439)
 
 Since v2.0.0

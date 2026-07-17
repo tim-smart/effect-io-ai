@@ -6,6 +6,11 @@ Module: `Effect`<br />
 Handles both success and failure cases of an effect without performing side
 effects.
 
+**When to use**
+
+Use when you need to fold an `Effect` into a value by handling success and
+failure differently without triggering side effects.
+
 **Details**
 
 `match` lets you define custom handlers for both success and failure
@@ -13,17 +18,14 @@ scenarios. You provide separate functions to handle each case, allowing you
 to process the result if the effect succeeds, or handle the error if the
 effect fails.
 
-**When to Use**
-
-This is useful for structuring your code to respond differently to success or
-failure without triggering side effects.
-
-**Example** (Handling Both Success and Failure Cases)
+**Example** (Matching success and failure values)
 
 ```ts
-import { Effect } from "effect"
+import { Data, Effect } from "effect"
 
-const success: Effect.Effect<number, Error> = Effect.succeed(42)
+class ExampleError extends Data.TaggedError("ExampleError")<{ readonly message: string }> {}
+
+const success: Effect.Effect<number, ExampleError> = Effect.succeed(42)
 
 const program1 = Effect.match(success, {
   onFailure: (error) => `failure: ${error.message}`,
@@ -34,8 +36,8 @@ const program1 = Effect.match(success, {
 Effect.runPromise(program1).then(console.log)
 // Output: "success: 42"
 
-const failure: Effect.Effect<number, Error> = Effect.fail(
-  new Error("Uh oh!")
+const failure: Effect.Effect<number, ExampleError> = Effect.fail(
+  new ExampleError({ message: "Uh oh!" })
 )
 
 const program2 = Effect.match(failure, {
@@ -58,6 +60,6 @@ Effect.runPromise(program2).then(console.log)
 declare const match: { <E, A2, A, A3>(options: { readonly onFailure: (error: E) => A2; readonly onSuccess: (value: A) => A3; }): <R>(self: Effect<A, E, R>) => Effect<A2 | A3, never, R>; <A, E, R, A2, A3>(self: Effect<A, E, R>, options: { readonly onFailure: (error: E) => A2; readonly onSuccess: (value: A) => A3; }): Effect<A2 | A3, never, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L10587)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L5318)
 
 Since v2.0.0

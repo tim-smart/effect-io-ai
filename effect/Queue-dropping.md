@@ -3,21 +3,42 @@ Module: `Queue`<br />
 
 ## Queue.dropping
 
-Makes a new bounded `Queue` with the dropping strategy.
+Creates a bounded queue with dropping strategy. When the queue reaches capacity,
+new elements are dropped and the offer operation returns false.
 
-When the capacity of the queue is reached, new elements will be dropped and the
-old elements will remain.
+**When to use**
 
-**Note**: When possible use only power of 2 capacities; this will provide
-better performance by utilising an optimised version of the underlying
-`RingBuffer`.
+Use when you need producer offers not to block while preserving existing
+queued messages, even if new messages may be dropped when the queue is full.
+
+**Example** (Creating dropping queues)
+
+```ts
+import { Effect, Queue } from "effect"
+
+const program = Effect.gen(function*() {
+  const queue = yield* Queue.dropping<number>(2)
+
+  // Fill the queue to capacity
+  const success1 = yield* Queue.offer(queue, 1)
+  const success2 = yield* Queue.offer(queue, 2)
+  console.log(success1, success2) // true, true
+
+  // This will be dropped
+  const success3 = yield* Queue.offer(queue, 3)
+  console.log(success3) // false
+
+  const all = yield* Queue.takeAll(queue)
+  console.log(all) // [1, 2] - element 3 was dropped
+})
+```
 
 **Signature**
 
 ```ts
-declare const dropping: <A>(requestedCapacity: number) => Effect.Effect<Queue<A>>
+declare const dropping: <A, E = never>(capacity: number) => Effect<Queue<A, E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Queue.ts#L450)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Queue.ts#L562)
 
 Since v2.0.0

@@ -3,14 +3,30 @@ Module: `Config`<br />
 
 ## Config.succeed
 
-Constructs a config which contains the specified value.
+Creates a config that always succeeds with the given value, ignoring the
+provider entirely.
+
+**When to use**
+
+Use when you need a hardcoded config value, such as inside `orElse` or
+tests.
+
+**Example** (Returning a constant fallback)
+
+```ts
+import { Config } from "effect"
+
+const host = Config.string("HOST").pipe(
+  Config.orElse(() => Config.succeed("localhost"))
+)
+```
 
 **Signature**
 
 ```ts
-declare const succeed: <A>(value: A) => Config<A>
+declare const succeed: <T>(value: T) => Config<T>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L422)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L872)
 
 Since v2.0.0

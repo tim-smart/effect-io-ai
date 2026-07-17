@@ -5,12 +5,21 @@ Module: `Chunk`<br />
 
 Determines if the chunk is empty.
 
+**Example** (Checking for empty chunks)
+
+```ts
+import { Chunk } from "effect"
+
+console.log(Chunk.isEmpty(Chunk.empty())) // true
+console.log(Chunk.isEmpty(Chunk.make(1, 2, 3))) // false
+```
+
 **Signature**
 
 ```ts
 declare const isEmpty: <A>(self: Chunk<A>) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Chunk.ts#L819)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Chunk.ts#L1372)
 
 Since v2.0.0

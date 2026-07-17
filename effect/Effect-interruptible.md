@@ -3,7 +3,21 @@ Module: `Effect`<br />
 
 ## Effect.interruptible
 
-Marks an effect as interruptible.
+Returns a new effect that allows the effect to be interruptible.
+
+**Example** (Allowing interruption)
+
+```ts
+import { Effect } from "effect"
+
+const longRunning = Effect.forever(Effect.succeed("working..."))
+
+const program = Effect.interruptible(longRunning)
+
+// This effect can now be interrupted
+const fiber = Effect.runFork(program)
+// Later: fiber.interrupt()
+```
 
 **Signature**
 
@@ -11,6 +25,6 @@ Marks an effect as interruptible.
 declare const interruptible: <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L4895)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L7266)
 
 Since v2.0.0

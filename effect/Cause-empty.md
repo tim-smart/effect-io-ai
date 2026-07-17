@@ -3,16 +3,32 @@ Module: `Cause`<br />
 
 ## Cause.empty
 
-Creates an `Empty` cause.
+Represents a `Cause` with an empty `reasons` array.
+
+**When to use**
+
+Use to represent the absence of failure when constructing or combining
+causes.
 
 **Details**
 
-This function returns a cause that signifies "no error." It's commonly used
-to represent an absence of failure conditions.
+Represents the absence of failure. Combining any cause with `empty` via
+`combine` returns the original cause unchanged.
+
+**Example** (Combining with the empty cause)
+
+```ts
+import { Cause } from "effect"
+
+const cause = Cause.combine(Cause.empty, Cause.fail("boom"))
+
+console.log(cause.reasons.length) // 1
+console.log(Cause.hasFails(cause)) // true
+```
 
 **See**
 
-- `isEmpty` Check if a `Cause` is empty
+- `combine` for merging causes where `empty` acts as the identity
 
 **Signature**
 
@@ -20,6 +36,6 @@ to represent an absence of failure conditions.
 declare const empty: Cause<never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L575)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L464)
 
 Since v2.0.0

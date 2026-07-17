@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.Struct
 
-Re-exports all named exports from the "./Struct.js" module as `Struct`.
+Re-exports all named exports from the "./Struct.ts" module as `Struct`.
 
 **Signature**
 
 ```ts
-export * as Struct from "./Struct.js"
+export * as Struct from "./Struct.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1365)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L607)
 
 Since v2.0.0

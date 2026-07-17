@@ -5,7 +5,15 @@ Module: `Option`<br />
 
 Checks whether an `Option` contains a value (`Some`).
 
-**Example**
+**When to use**
+
+Use when you need to branch on a present `Option` before accessing `.value`.
+
+**Details**
+
+- Acts as a type guard, narrowing to `Some<A>`
+
+**Example** (Checking for Some)
 
 ```ts
 import { Option } from "effect"
@@ -27,6 +35,6 @@ console.log(Option.isSome(Option.none()))
 declare const isSome: <A>(self: Option<A>) => self is Some<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L258)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L388)
 
 Since v2.0.0

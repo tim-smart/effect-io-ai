@@ -3,14 +3,16 @@ Module: `Schema`<br />
 
 ## Schema.TimeZone
 
-Defines a schema that attempts to convert a `string` to a `TimeZone` using the `DateTime.zoneFromString` constructor.
+Type-level representation of `TimeZone`.
 
 **Signature**
 
 ```ts
-declare class TimeZone
+export interface TimeZone extends declare<DateTime.TimeZone> {
+  readonly "Rebuild": TimeZone
+}
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L7037)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L12304)
 
 Since v3.10.0

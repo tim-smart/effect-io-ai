@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.PrimaryKey
 
-Re-exports all named exports from the "./PrimaryKey.js" module as `PrimaryKey`.
+Re-exports all named exports from the "./PrimaryKey.ts" module as `PrimaryKey`.
 
 **Signature**
 
 ```ts
-export * as PrimaryKey from "./PrimaryKey.js"
+export * as PrimaryKey from "./PrimaryKey.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1137)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L417)
 
 Since v2.0.0

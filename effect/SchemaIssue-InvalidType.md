@@ -1,0 +1,57 @@
+Package: `effect`<br />
+Module: `SchemaIssue`<br />
+
+## SchemaIssue.InvalidType
+
+Represents a schema issue produced when the runtime type of the input does not match the type
+expected by the schema (e.g. got `null` when `string` was expected).
+
+**When to use**
+
+Use when you need to detect basic type mismatches, such as a wrong primitive
+or `null` where an object was expected.
+
+**Details**
+
+- `ast` is the schema node that expected a different type.
+- `actual` is `Option.some(value)` when the input was present, or
+  `Option.none()` when no value was provided.
+- The default formatter renders this as `"Expected <type>, got <actual>"`.
+
+**Example** (Formatting output)
+
+```ts
+import { Schema } from "effect"
+
+try {
+  Schema.decodeUnknownSync(Schema.String)(42)
+} catch (e) {
+  if (Schema.isSchemaError(e)) {
+    console.log(String(e.issue))
+    // "Expected string, got 42"
+  }
+}
+```
+
+**See**
+
+- `InvalidValue` — the input has the right type but fails a value constraint
+
+**Signature**
+
+```ts
+declare class InvalidType { constructor(
+    /**
+     * The schema that caused the issue.
+     */
+    ast: SchemaAST.AST,
+    /**
+     * The input value that caused the issue.
+     */
+    actual: Option.Option<unknown>
+  ) }
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaIssue.ts#L478)
+
+Since v4.0.0

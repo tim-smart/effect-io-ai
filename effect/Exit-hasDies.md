@@ -1,0 +1,40 @@
+Package: `effect`<br />
+Module: `Exit`<br />
+
+## Exit.hasDies
+
+Checks whether a failed Exit contains defects (Die reasons).
+
+**When to use**
+
+Use to check whether an `Exit` failure cause contains unexpected errors.
+
+**Details**
+
+Returns `false` for successful exits. Only checks for `Die` reasons in the
+Cause. A Cause with only `Fail` or `Interrupt` reasons returns `false`.
+
+**Example** (Checking for defects)
+
+```ts
+import { Exit } from "effect"
+
+console.log(Exit.hasDies(Exit.die(new Error("bug")))) // true
+console.log(Exit.hasDies(Exit.fail("err")))           // false
+console.log(Exit.hasDies(Exit.succeed(42)))            // false
+```
+
+**See**
+
+- `hasFails` to check for typed errors
+- `hasInterrupts` to check for interruptions
+
+**Signature**
+
+```ts
+declare const hasDies: <A, E>(self: Exit<A, E>) => self is Failure<A, E>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Exit.ts#L491)
+
+Since v4.0.0

@@ -1,0 +1,35 @@
+Package: `effect`<br />
+Module: `AiError`<br />
+
+## AiError.RateLimitError
+
+Error indicating the request was rate limited.
+
+**Details**
+
+Rate limit errors are always retryable. When `retryAfter` is provided,
+callers should wait that duration before retrying.
+
+**Example** (Creating a rate limit error)
+
+```ts
+import { Duration } from "effect"
+import { AiError } from "effect/unstable/ai"
+
+const rateLimitError = new AiError.RateLimitError({
+  retryAfter: Duration.seconds(60)
+})
+
+console.log(rateLimitError.isRetryable) // true
+console.log(rateLimitError.message) // "Rate limit exceeded. Retry after 1 minute"
+```
+
+**Signature**
+
+```ts
+declare class RateLimitError
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/AiError.ts#L368)
+
+Since v4.0.0

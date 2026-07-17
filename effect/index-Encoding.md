@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.Encoding
 
-Re-exports all named exports from the "./Encoding.js" module as `Encoding`.
+Re-exports all named exports from the "./Encoding.ts" module as `Encoding`.
 
 **Signature**
 
 ```ts
-export * as Encoding from "./Encoding.js"
+export * as Encoding from "./Encoding.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L250)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L162)
 
-Since v2.0.0
+Since v4.0.0

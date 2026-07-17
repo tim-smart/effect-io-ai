@@ -3,62 +3,55 @@ Module: `Effect`<br />
 
 ## Effect.repeatOrElse
 
-Repeats an effect with a schedule, handling failures using a custom handler.
+Repeats an effect according to a schedule and runs a fallback effect if
+repetition fails before the schedule completes.
+
+**When to use**
+
+Use when successful repetitions should follow a schedule, but failures from
+the repeated effect or schedule need an effectful fallback.
 
 **Details**
 
-This function allows you to execute an effect repeatedly based on a specified
-schedule. If the effect fails at any point, a custom failure handler is
-invoked. The handler is provided with both the failure value and the output
-of the schedule at the time of failure. This enables advanced error recovery
-or alternative fallback logic while maintaining flexibility in how
-repetitions are handled.
+If the repeated effect or schedule step fails, `orElse` receives the failure
+and the latest schedule metadata when at least one schedule step has run;
+otherwise it receives `None`. If the schedule completes normally, the
+returned effect succeeds with the schedule's output.
 
-For example, using a schedule with `recurs(2)` will allow for two additional
-repetitions after the initial execution, provided the effect succeeds. If a
-failure occurs during any iteration, the failure handler is invoked to handle
-the situation.
-
-**Example**
+**Example** (Recovering after repetition stops)
 
 ```ts
-import { Effect, Schedule } from "effect"
+import { Console, Effect, Option, Schedule } from "effect"
 
-let count = 0
-
-// Define an async effect that simulates an action with possible failures
-const action = Effect.async<string, string>((resume) => {
-  if (count > 1) {
-    console.log("failure")
-    resume(Effect.fail("Uh oh!"))
-  } else {
-    count++
-    console.log("success")
-    resume(Effect.succeed("yay!"))
+let attempt = 0
+const task = Effect.gen(function*() {
+  attempt++
+  if (attempt <= 2) {
+    yield* Console.log(`Attempt ${attempt} failed`)
+    return yield* Effect.fail(`Error ${attempt}`)
   }
+  yield* Console.log(`Attempt ${attempt} succeeded`)
+  return "success"
 })
 
-const policy = Schedule.addDelay(
-  Schedule.recurs(2), // Repeat for a maximum of 2 times
-  () => "100 millis" // Add a delay of 100 milliseconds between repetitions
+const program = Effect.repeatOrElse(
+  task,
+  Schedule.recurs(3),
+  (error, attempts) =>
+    Console.log(
+      `Final failure: ${error}, after ${
+        Option.getOrElse(attempts, () => 0)
+      } attempts`
+    ).pipe(Effect.map(() => 0))
 )
-
-const program = Effect.repeatOrElse(action, policy, () =>
-  Effect.sync(() => {
-    console.log("orElse")
-    return count - 1
-  })
-)
-
-Effect.runPromise(program).then((n) => console.log(`repetitions: ${n}`))
 ```
 
 **Signature**
 
 ```ts
-declare const repeatOrElse: { <R2, A, B, E, E2, R3>(schedule: Schedule.Schedule<B, A, R2>, orElse: (error: E, option: Option.Option<B>) => Effect<B, E2, R3>): <R>(self: Effect<A, E, R>) => Effect<B, E2, R2 | R3 | R>; <A, E, R, R2, B, E2, R3>(self: Effect<A, E, R>, schedule: Schedule.Schedule<B, A, R2>, orElse: (error: E, option: Option.Option<B>) => Effect<B, E2, R3>): Effect<B, E2, R | R2 | R3>; }
+declare const repeatOrElse: { <R2, A, B, E, E2, E3, R3>(schedule: Schedule<B, A, E2, R2>, orElse: (error: E | E2, option: Option<B>) => Effect<B, E3, R3>): <R>(self: Effect<A, E, R>) => Effect<B, E3, R | R2 | R3>; <A, E, R, R2, B, E2, E3, R3>(self: Effect<A, E, R>, schedule: Schedule<B, A, E2, R2>, orElse: (error: E | E2, option: Option<B>) => Effect<B, E3, R3>): Effect<B, E3, R | R2 | R3>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L10285)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L7675)
 
 Since v2.0.0

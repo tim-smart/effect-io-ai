@@ -3,37 +3,34 @@ Module: `Option`<br />
 
 ## Option.bindTo
 
-The "do simulation" in Effect allows you to write code in a more declarative style, similar to the "do notation" in other programming languages. It provides a way to define variables and perform operations on them using functions like `bind` and `let`.
+Gives a name to the value of an `Option`, creating a single-key record
+inside `Some`. Starting point for the do notation pipeline.
 
-Here's how the do simulation works:
+**When to use**
 
-1. Start the do simulation using the `Do` value
-2. Within the do simulation scope, you can use the `bind` function to define variables and bind them to `Option` values
-3. You can accumulate multiple `bind` statements to define multiple variables within the scope
-4. Inside the do simulation scope, you can also use the `let` function to define variables and bind them to simple values
-5. Regular `Option` functions like `map` and `filter` can still be used within the do simulation. These functions will receive the accumulated variables as arguments within the scope
+Use when you need to start an `Option` do notation chain by naming the first
+value.
 
-**Example**
+**Example** (Starting do notation)
 
 ```ts
-import * as assert from "node:assert"
 import { Option, pipe } from "effect"
+import * as assert from "node:assert"
 
 const result = pipe(
-  Option.Do,
-  Option.bind("x", () => Option.some(2)),
+  Option.some(2),
+  Option.bindTo("x"),
   Option.bind("y", () => Option.some(3)),
-  Option.let("sum", ({ x, y }) => x + y),
-  Option.filter(({ x, y }) => x * y > 5)
+  Option.let("sum", ({ x, y }) => x + y)
 )
 assert.deepStrictEqual(result, Option.some({ x: 2, y: 3, sum: 5 }))
 ```
 
 **See**
 
-- `Do`
-- `bind`
-- `let`
+- `Do` for starting with an empty record
+- `bind` to add `Option` values
+- `let` to add plain values
 
 **Signature**
 
@@ -41,6 +38,6 @@ assert.deepStrictEqual(result, Option.some({ x: 2, y: 3, sum: 5 }))
 declare const bindTo: { <N extends string>(name: N): <A>(self: Option<A>) => Option<{ [K in N]: A; }>; <A, N extends string>(self: Option<A>, name: N): Option<{ [K in N]: A; }>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L1977)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L2358)
 
 Since v2.0.0

@@ -1,0 +1,36 @@
+Package: `effect`<br />
+Module: `AiError`<br />
+
+## AiError.InvalidUserInputError
+
+Error indicating the user provided invalid input in their prompt.
+
+**Details**
+
+This error is raised when the prompt contains content that is structurally
+valid but not supported by the provider (e.g., unsupported media types,
+unsupported file formats, etc.).
+
+**Example** (Creating an invalid user input error)
+
+```ts
+import { AiError } from "effect/unstable/ai"
+
+const error = new AiError.InvalidUserInputError({
+  description: "Unsupported media type 'video/mp4'. Supported types include images, application/pdf, text/plain"
+})
+
+console.log(error.isRetryable) // false
+console.log(error.message)
+// "Invalid user input: Unsupported media type 'video/mp4'. Supported types include images, application/pdf, text/plain"
+```
+
+**Signature**
+
+```ts
+declare class InvalidUserInputError
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/AiError.ts#L1301)
+
+Since v4.0.0

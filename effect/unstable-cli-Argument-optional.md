@@ -1,0 +1,24 @@
+Package: `effect`<br />
+Module: `Argument`<br />
+
+## Argument.optional
+
+Makes a positional argument optional.
+
+**Example** (Making an argument optional)
+
+```ts
+import { Argument } from "effect/unstable/cli"
+
+const optionalVersion = Argument.string("version").pipe(Argument.optional)
+```
+
+**Signature**
+
+```ts
+declare const optional: <A>(arg: Argument<A>) => Argument<Option.Option<A>>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Argument.ts#L304)
+
+Since v4.0.0

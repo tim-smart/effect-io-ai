@@ -5,7 +5,7 @@ Module: `Graph`<br />
 
 Finds all edges that match the given predicate.
 
-**Example**
+**Example** (Finding matching edges)
 
 ```ts
 import { Graph } from "effect"
@@ -29,9 +29,9 @@ console.log(empty) // []
 **Signature**
 
 ```ts
-declare const findEdges: <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>, predicate: (data: E, source: NodeIndex, target: NodeIndex) => boolean) => Array<EdgeIndex>
+declare const findEdges: { <E>(predicate: (data: E, source: NodeIndex, target: NodeIndex) => boolean): <N, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>) => Array<EdgeIndex>; <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>, predicate: (data: E, source: NodeIndex, target: NodeIndex) => boolean): Array<EdgeIndex>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L692)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L1762)
 
 Since v3.18.0

@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.Geolocation
 
-Re-exports all named exports from the "./Geolocation.js" module as `Geolocation`.
+Re-exports all named exports from the "./Geolocation.ts" module as `Geolocation`.
 
 **Signature**
 
 ```ts
-export * as Geolocation from "./Geolocation.js"
+export * as Geolocation from "./Geolocation.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L44)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/index.ts#L60)
 
-Since v1.0.0
+Since v4.0.0

@@ -3,26 +3,31 @@ Module: `Record`<br />
 
 ## Record.partition
 
-Partitions a record into two separate records based on the result of a predicate function.
+Applies a function to each record entry and partitions the returned `Result`
+values into two records.
 
-**Example**
+**Details**
+
+Failure values are collected in the left record, and success values are
+collected in the right record, preserving the original keys.
+
+**Example** (Partitioning with Result)
 
 ```ts
+import { Record, Result } from "effect"
 import * as assert from "node:assert"
-import { partition } from "effect/Record"
 
-assert.deepStrictEqual(
-  partition({ a: 1, b: 3 }, (n) => n > 2),
-  [{ a: 1 }, { b: 3 }]
-)
+const x = { a: 1, b: 2, c: 3 }
+const f = (n: number) => (n % 2 === 0 ? Result.succeed(n) : Result.fail(n))
+assert.deepStrictEqual(Record.partition(x, f), [{ a: 1, c: 3 }, { b: 2 }])
 ```
 
 **Signature**
 
 ```ts
-declare const partition: { <K extends string, A, B extends A>(refinement: (a: NoInfer<A>, key: K) => a is B): (self: ReadonlyRecord<K, A>) => [excluded: Record<ReadonlyRecord.NonLiteralKey<K>, Exclude<A, B>>, satisfying: Record<ReadonlyRecord.NonLiteralKey<K>, B>]; <K extends string, A>(predicate: (a: NoInfer<A>, key: K) => boolean): (self: ReadonlyRecord<K, A>) => [excluded: Record<ReadonlyRecord.NonLiteralKey<K>, A>, satisfying: Record<ReadonlyRecord.NonLiteralKey<K>, A>]; <K extends string, A, B extends A>(self: ReadonlyRecord<K, A>, refinement: (a: A, key: K) => a is B): [excluded: Record<ReadonlyRecord.NonLiteralKey<K>, Exclude<A, B>>, satisfying: Record<ReadonlyRecord.NonLiteralKey<K>, B>]; <K extends string, A>(self: ReadonlyRecord<K, A>, predicate: (a: A, key: K) => boolean): [excluded: Record<ReadonlyRecord.NonLiteralKey<K>, A>, satisfying: Record<ReadonlyRecord.NonLiteralKey<K>, A>]; }
+declare const partition: { <K extends string, A, B, C>(f: (input: A, key: K) => Result<C, B>): (self: ReadonlyRecord<K, A>) => [left: Record<ReadonlyRecord.NonLiteralKey<K>, B>, right: Record<ReadonlyRecord.NonLiteralKey<K>, C>]; <K extends string, A, B, C>(self: ReadonlyRecord<K, A>, f: (input: A, key: K) => Result<C, B>): [left: Record<ReadonlyRecord.NonLiteralKey<K>, B>, right: Record<ReadonlyRecord.NonLiteralKey<K>, C>]; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Record.ts#L865)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Record.ts#L936)
 
 Since v2.0.0

@@ -3,28 +3,35 @@ Module: `Predicate`<br />
 
 ## Predicate.mapInput
 
-Transforms a `Predicate<A>` into a `Predicate<B>` by applying a function `(b: B) => A`
-to the input before passing it to the predicate. This is also known as "contramap" or
-"pre-composition".
+Transforms the input of a predicate using a mapping function.
 
-**Example**
+**When to use**
+
+Use when you have a predicate on `A` and want to check `B` values by mapping
+each `B` to an `A`, such as checking lengths or projections.
+
+**Details**
+
+Returns a new predicate that applies `f` before `self`. There is no
+additional short-circuiting beyond what `self` does.
+
+**Example** (Checking string length)
 
 ```ts
-import { Predicate, Number } from "effect"
-import * as assert from "node:assert"
+import { Predicate } from "effect"
 
-// A predicate on numbers
-const isPositive: Predicate.Predicate<number> = Number.greaterThan(0)
+const isLongerThan2 = Predicate.mapInput((s: string) => s.length)(
+  (n: number) => n > 2
+)
 
-// A function from `string` to `number`
-const stringLength = (s: string): number => s.length
-
-// Create a new predicate on strings by mapping the input
-const hasPositiveLength = Predicate.mapInput(isPositive, stringLength)
-
-assert.strictEqual(hasPositiveLength("hello"), true)
-assert.strictEqual(hasPositiveLength(""), false)
+console.log(isLongerThan2("hello"))
 ```
+
+**See**
+
+- `Predicate`
+- `and`
+- `not`
 
 **Signature**
 
@@ -32,6 +39,6 @@ assert.strictEqual(hasPositiveLength(""), false)
 declare const mapInput: { <B, A>(f: (b: B) => A): (self: Predicate<A>) => Predicate<B>; <A, B>(self: Predicate<A>, f: (b: B) => A): Predicate<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L187)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L341)
 
 Since v2.0.0

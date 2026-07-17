@@ -1,0 +1,28 @@
+Package: `effect`<br />
+Module: `AsyncResult`<br />
+
+## AsyncResult.Schema
+
+Schema interface for `AsyncResult` values, retaining the schemas used for success values and failure errors.
+
+**Signature**
+
+```ts
+export interface Schema<
+  Success extends Schema_.Constraint,
+  Error extends Schema_.Constraint
+> extends
+  Schema_.declareConstructor<
+    AsyncResult<Success["Type"], Error["Type"]>,
+    AsyncResult<Success["Encoded"], Error["Encoded"]>,
+    readonly [Success, Schema_.Cause<Error, Schema_.Defect>]
+  >
+{
+  readonly success: Success
+  readonly error: Error
+}
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/AsyncResult.ts#L925)
+
+Since v4.0.0

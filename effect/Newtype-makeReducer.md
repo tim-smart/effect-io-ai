@@ -1,0 +1,44 @@
+Package: `effect`<br />
+Module: `Newtype`<br />
+
+## Newtype.makeReducer
+
+Lifts a `Reducer` for the carrier type into a `Reducer` for the newtype.
+
+**When to use**
+
+Use when you need to reduce a collection of newtype-wrapped values with the
+carrier's reducer, without manually unwrapping.
+
+**Details**
+
+The returned reducer delegates to the provided carrier reducer.
+
+**Example** (Reducing newtypes)
+
+```ts
+import { Newtype, Reducer } from "effect"
+
+interface Score extends Newtype.Newtype<"Score", number> {}
+
+const sum = Reducer.make<number>((a, b) => a + b, 0)
+const reducer = Newtype.makeReducer<Score>(sum)
+const iso = Newtype.makeIso<Score>()
+
+const total = reducer.combineAll([iso.set(1), iso.set(2), iso.set(3)])
+Newtype.value(total) // 6
+```
+
+**See**
+
+- `makeCombiner` — lift a `Combiner` for the carrier
+
+**Signature**
+
+```ts
+declare const makeReducer: <N extends Newtype.Any>(reducer: Reducer.Reducer<Newtype.Carrier<N>>) => Reducer.Reducer<N>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Newtype.ts#L318)
+
+Since v4.0.0

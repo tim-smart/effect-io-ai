@@ -3,21 +3,19 @@ Module: `Option`<br />
 
 ## Option.firstSomeOf
 
-Returns the first `Some` value found in an `Iterable` collection of
-`Option`s, or `None` if no `Some` is found.
+Returns the first `Some` found in an iterable of `Option`s, or `None` if
+all are `None`.
+
+**When to use**
+
+Use when you need the first available `Some` value from a priority list.
 
 **Details**
 
-This function iterates over a collection of `Option` values and returns the
-first `Some` it encounters. If the collection contains only `None` values,
-the result will also be `None`. This utility is useful for efficiently
-finding the first valid value in a sequence of potentially empty or invalid
-options.
+- Short-circuits on the first `Some`
+- Returns `None` only when every element is `None`
 
-The iteration stops as soon as a `Some` is found, making this function
-efficient for large collections.
-
-**Example**
+**Example** (Finding the first Some)
 
 ```ts
 import { Option } from "effect"
@@ -30,12 +28,16 @@ console.log(Option.firstSomeOf([
 // Output: { _id: 'Option', _tag: 'Some', value: 1 }
 ```
 
+**See**
+
+- `orElse` for a two-option fallback
+
 **Signature**
 
 ```ts
 declare const firstSomeOf: <T, C extends Iterable<Option<T>> = Iterable<Option<T>>>(collection: C) => [C] extends [Iterable<Option<infer A>>] ? Option<A> : never
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L651)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L774)
 
 Since v2.0.0

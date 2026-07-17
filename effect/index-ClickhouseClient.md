@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.ClickhouseClient
 
-Re-exports all named exports from the "./ClickhouseClient.js" module as `ClickhouseClient`.
+Re-exports all named exports from the "./ClickhouseClient.ts" module as `ClickhouseClient`.
 
 **Signature**
 
 ```ts
-export * as ClickhouseClient from "./ClickhouseClient.js"
+export * as ClickhouseClient from "./ClickhouseClient.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql-clickhouse/src/index.ts#L4)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/clickhouse/src/index.ts#L10)
 
-Since v1.0.0
+Since v4.0.0

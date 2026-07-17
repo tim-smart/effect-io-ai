@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.Exit
 
-Re-exports all named exports from the "./Exit.js" module as `Exit`.
+Re-exports all named exports from the "./Exit.ts" module as `Exit`.
 
 **Signature**
 
 ```ts
-export * as Exit from "./Exit.js"
+export * as Exit from "./Exit.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L280)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L187)
 
 Since v2.0.0

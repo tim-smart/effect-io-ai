@@ -3,15 +3,46 @@ Module: `Stream`<br />
 
 ## Stream.mapAccumEffect
 
-Statefully and effectfully maps over the elements of this stream to produce
-new elements.
+Maps each element statefully and effectfully, emitting zero or more output
+values per input.
+
+**When to use**
+
+Use when stateful element mapping needs Effects or can fail while emitting
+zero or more values per input element.
+
+**Details**
+
+The mapping effect receives the current state and element, then returns the
+next state plus the values to emit. The state is threaded through the
+stream.
+
+**Example** (Effectfully mapping stream values with state)
+
+```ts
+import { Console, Effect, Stream } from "effect"
+
+const program = Effect.gen(function*() {
+  const result = yield* Stream.make(1, 1, 1).pipe(
+    Stream.mapAccumEffect(() => 0, (total, n) =>
+      Effect.succeed([total + n, [total + n]])
+    ),
+    Stream.runCollect
+  )
+
+  yield* Console.log(result)
+})
+
+Effect.runPromise(program)
+// Output: [ 1, 2, 3 ]
+```
 
 **Signature**
 
 ```ts
-declare const mapAccumEffect: { <S, A, A2, E2, R2>(s: S, f: (s: S, a: A) => Effect.Effect<readonly [S, A2], E2, R2>): <E, R>(self: Stream<A, E, R>) => Stream<A2, E2 | E, R2 | R>; <A, E, R, S, A2, E2, R2>(self: Stream<A, E, R>, s: S, f: (s: S, a: A) => Effect.Effect<readonly [S, A2], E2, R2>): Stream<A2, E | E2, R | R2>; }
+declare const mapAccumEffect: { <S, A, B, E2, R2>(initial: LazyArg<S>, f: (s: S, a: A) => Effect.Effect<readonly [state: S, values: ReadonlyArray<B>], E2, R2>, options?: { readonly onHalt?: ((state: S) => ReadonlyArray<B>) | undefined; }): <E, R>(self: Stream<A, E, R>) => Stream<B, E | E2, R | R2>; <A, E, R, S, B, E2, R2>(self: Stream<A, E, R>, initial: LazyArg<S>, f: (s: S, a: A) => Effect.Effect<readonly [state: S, values: ReadonlyArray<B>], E2, R2>, options?: { readonly onHalt?: ((state: S) => ReadonlyArray<B>) | undefined; }): Stream<B, E | E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L2755)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L7583)
 
 Since v2.0.0

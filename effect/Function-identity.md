@@ -3,13 +3,17 @@ Module: `Function`<br />
 
 ## Function.identity
 
-The identity function, i.e. A function that returns its input argument.
+Returns its input argument unchanged.
 
-**Example**
+**When to use**
+
+Use to return a value unchanged where a function is required.
+
+**Example** (Returning the same value)
 
 ```ts
+import { identity } from "effect"
 import * as assert from "node:assert"
-import { identity } from "effect/Function"
 
 assert.deepStrictEqual(identity(5), 5)
 ```
@@ -20,6 +24,6 @@ assert.deepStrictEqual(identity(5), 5)
 declare const identity: <A>(a: A) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L234)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L248)
 
 Since v2.0.0

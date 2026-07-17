@@ -3,17 +3,40 @@ Module: `Channel`<br />
 
 ## Channel.toPull
 
-Returns a scoped `Effect` that can be used to repeatedly pull elements from
-the constructed `Channel`. The pull effect fails with the channel's failure
-in case the channel fails, or returns either the channel's done value or an
-emitted element.
+Converts a channel to a scoped `Pull` for low-level consumption.
+
+**Details**
+
+The effect requires a `Scope`. The returned pull should be consumed only
+while that scope remains open. Pulls are serialized so only one pull is
+evaluated at a time.
+
+**Example** (Converting channels to pulls)
+
+```ts
+import { Channel, Data, Effect } from "effect"
+
+class PullError extends Data.TaggedError("PullError")<{
+  readonly step: string
+}> {}
+
+// Create a channel
+const numbersChannel = Channel.fromIterable([1, 2, 3])
+
+// Convert to Pull within a scope
+const pullEffect = Effect.scoped(
+  Channel.toPull(numbersChannel)
+)
+
+// Use the Pull to manually consume elements
+```
 
 **Signature**
 
 ```ts
-declare const toPull: <OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>(self: Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>) => Effect.Effect<Effect.Effect<Either.Either<OutElem, OutDone>, OutErr, Env>, never, Scope.Scope | Env>
+declare const toPull: <OutElem, OutErr, OutDone, Env>(self: Channel<OutElem, OutErr, OutDone, unknown, unknown, unknown, Env>) => Effect.Effect<Pull.Pull<OutElem, OutErr, OutDone>, never, Env | Scope.Scope>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Channel.ts#L2056)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Channel.ts#L8053)
 
 Since v2.0.0

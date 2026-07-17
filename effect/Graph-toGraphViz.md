@@ -5,7 +5,7 @@ Module: `Graph`<br />
 
 Exports a graph to GraphViz DOT format for visualization.
 
-**Example**
+**Example** (Exporting GraphViz DOT)
 
 ```ts
 import { Graph } from "effect"
@@ -21,7 +21,7 @@ const graph = Graph.mutate(Graph.directed<string, number>(), (mutable) => {
 
 const dot = Graph.toGraphViz(graph)
 console.log(dot)
-// digraph G {
+// digraph "G" {
 //   "0" [label="Node A"];
 //   "1" [label="Node B"];
 //   "2" [label="Node C"];
@@ -34,9 +34,9 @@ console.log(dot)
 **Signature**
 
 ```ts
-declare const toGraphViz: <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>, options?: GraphVizOptions<N, E>) => string
+declare const toGraphViz: { <N, E>(options?: GraphVizOptions<N, E>): <T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>) => string; <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>, options?: GraphVizOptions<N, E>): string; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L1665)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L2964)
 
 Since v3.18.0

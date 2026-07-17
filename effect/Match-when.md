@@ -5,18 +5,19 @@ Module: `Match`<br />
 
 Defines a condition for matching values.
 
+**When to use**
+
+Use to add one positive pattern case to a `Match.type` or `Match.value`
+pipeline when a direct value, predicate, or structured object pattern should
+run a handler for matching input.
+
 **Details**
 
-This function enables pattern matching by checking whether a given value
-satisfies a condition. It supports both direct value comparisons and
-predicate functions. If the condition is met, the associated function is
-executed.
+Supports both direct value comparisons and predicate functions. If the
+pattern matches, the associated function is executed and the matched input is
+removed from the remaining cases tracked by the matcher.
 
-This function is useful when defining matchers that need to check for
-specific values or apply logical conditions to determine a match. It works
-well with structured objects and primitive types.
-
-**Example** (Matching with Values and Predicates)
+**Example** (Matching with values and predicates)
 
 ```ts
 import { Match } from "effect"
@@ -24,11 +25,14 @@ import { Match } from "effect"
 // Create a matcher for objects with an "age" property
 const match = Match.type<{ age: number }>().pipe(
   // Match when age is greater than 18
-  Match.when({ age: (age) => age > 18 }, (user) => `Age: ${user.age}`),
+  Match.when(
+    { age: (age: number) => age > 18 },
+    (user: { age: number }) => `Age: ${user.age}`
+  ),
   // Match when age is exactly 18
   Match.when({ age: 18 }, () => "You can vote"),
   // Fallback case for all other ages
-  Match.orElse((user) => `${user.age} is too young`)
+  Match.orElse((user: { age: number }) => `${user.age} is too young`)
 )
 
 console.log(match({ age: 20 }))
@@ -43,10 +47,10 @@ console.log(match({ age: 4 }))
 
 **See**
 
-- `whenOr` Use this when multiple patterns should match in a single
-condition.
-- `whenAnd` Use this when a value must match all provided patterns.
-- `orElse` Provides a fallback when no patterns match.
+- `whenOr` for handling any one of several patterns with the same handler
+- `whenAnd` for requiring all provided patterns to match before running a handler
+- `not` for handling inputs that do not match a pattern
+- `orElse` for providing a fallback when no pattern case matches
 
 **Signature**
 
@@ -54,6 +58,6 @@ condition.
 declare const when: <R, const P extends Types.PatternPrimitive<R> | Types.PatternBase<R>, Ret, Fn extends (_: Types.WhenMatch<R, P>) => Ret>(pattern: P, f: Fn) => <I, F, A, Pr>(self: Matcher<I, F, R, A, Pr, Ret>) => Matcher<I, Types.AddWithout<F, Types.PForExclude<P>>, Types.ApplyFilters<I, Types.AddWithout<F, Types.PForExclude<P>>>, A | ReturnType<Fn>, Pr, Ret>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L368)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L530)
 
-Since v1.0.0
+Since v4.0.0

@@ -1,0 +1,24 @@
+Package: `effect`<br />
+Module: `Duration`<br />
+
+## Duration.negativeInfinity
+
+A Duration representing negative infinite time.
+
+**Example** (Referencing negative infinite duration)
+
+```ts
+import { Duration } from "effect"
+
+console.log(Duration.toMillis(Duration.negativeInfinity)) // -Infinity
+```
+
+**Signature**
+
+```ts
+declare const negativeInfinity: Duration
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Duration.ts#L619)
+
+Since v4.0.0

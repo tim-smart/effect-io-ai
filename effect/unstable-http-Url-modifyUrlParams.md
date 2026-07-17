@@ -1,0 +1,36 @@
+Package: `effect`<br />
+Module: `Url`<br />
+
+## Url.modifyUrlParams
+
+Reads the query parameters of a URL, modifies them, and updates the URL.
+
+**Details**
+
+This function provides a functional way to interact with query parameters by
+reading the current parameters, applying a transformation function, and then
+writing the updated parameters back to the URL. It returns a new `URL` object
+with the modified parameters, ensuring immutability.
+
+**Example** (Modifying query parameters)
+
+```ts
+import { Url, UrlParams } from "effect/unstable/http"
+
+const myUrl = new URL("https://example.com?foo=bar")
+
+const changedUrl = Url.modifyUrlParams(myUrl, UrlParams.append("key", "value"))
+
+console.log(changedUrl.toString())
+// Output: https://example.com/?foo=bar&key=value
+```
+
+**Signature**
+
+```ts
+declare const modifyUrlParams: { (f: (urlParams: UrlParams.UrlParams) => UrlParams.Input): (url: URL) => URL; (url: URL, f: (urlParams: UrlParams.UrlParams) => UrlParams.Input): URL; }
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Url.ts#L378)
+
+Since v4.0.0

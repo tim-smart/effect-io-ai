@@ -3,16 +3,29 @@ Module: `Array`<br />
 
 ## Array.group
 
-Group equal, consecutive elements of a `NonEmptyReadonlyArray` into `NonEmptyArray`s.
+Groups consecutive equal elements using `Equal.equivalence()`.
 
-**Example**
+**When to use**
+
+Use when you already have adjacent equal values and Effect's default equality
+is the right comparison.
+
+**Details**
+
+Only adjacent elements are grouped.
+
+**Example** (Grouping adjacent equal elements)
 
 ```ts
 import { Array } from "effect"
 
-const result = Array.group([1, 1, 2, 2, 2, 3, 1])
-console.log(result) // [[1, 1], [2, 2, 2], [3], [1]]
+console.log(Array.group([1, 1, 2, 2, 2, 3, 1])) // [[1, 1], [2, 2, 2], [3], [1]]
 ```
+
+**See**
+
+- `groupWith` — use custom equality
+- `groupBy` — group by a key function into a record
 
 **Signature**
 
@@ -20,6 +33,6 @@ console.log(result) // [[1, 1], [2, 2, 2], [3], [1]]
 declare const group: <A>(self: NonEmptyReadonlyArray<A>) => NonEmptyArray<NonEmptyArray<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2208)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L3019)
 
 Since v2.0.0

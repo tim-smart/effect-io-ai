@@ -1,0 +1,25 @@
+Package: `effect`<br />
+Module: `ScopedRef`<br />
+
+## ScopedRef.getUnsafe
+
+Retrieves the current value of the scoped reference synchronously.
+
+**When to use**
+
+Use when you need immediate synchronous access to the current `ScopedRef`
+value and can guarantee that reading outside the `Effect` API is safe.
+
+**See**
+
+- `get` for Effect-wrapped access in Effect programs
+
+**Signature**
+
+```ts
+declare const getUnsafe: <A>(self: ScopedRef<A>) => A
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/ScopedRef.ts#L103)
+
+Since v4.0.0

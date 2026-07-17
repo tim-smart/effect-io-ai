@@ -3,14 +3,38 @@ Module: `Schedule`<br />
 
 ## Schedule.duration
 
-Alias of `fromDelay`.
+Returns a schedule that recurs once after the specified duration.
+
+**When to use**
+
+Use when you need a schedule that recurs once after a fixed delay.
+
+**Details**
+
+The schedule outputs the configured duration for its first recurrence and
+then completes.
+
+**Example** (Recurring once after a duration)
+
+```ts
+import { Console, Effect, Schedule } from "effect"
+
+const program = Effect.repeat(
+  Console.log("runs again after one second"),
+  Schedule.duration("1 second")
+)
+```
+
+**See**
+
+- `during` for recurring until a duration has elapsed
 
 **Signature**
 
 ```ts
-declare const duration: (duration: Duration.DurationInput) => Schedule<Duration.Duration>
+declare const duration: (durationInput: Duration.Input) => Schedule<Duration.Duration>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L910)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L1014)
 
 Since v2.0.0

@@ -1,0 +1,16 @@
+Package: `effect`<br />
+Module: `SchemaRepresentation`<br />
+
+## SchemaRepresentation.$Never
+
+Schema for the `Never` representation node.
+
+**Signature**
+
+```ts
+declare const $Never: Schema.Struct<{ readonly _tag: Schema.tag<"Never">; readonly annotations: Schema.optional<Schema.decodeTo<Schema.$Record<Schema.String, Schema.Unknown>, Schema.$Record<Schema.String, Schema.Codec<PrimitiveTree, PrimitiveTree, never, never>>, never, never>>; }>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaRepresentation.ts#L851)
+
+Since v4.0.0

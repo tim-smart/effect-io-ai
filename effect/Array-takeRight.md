@@ -3,18 +3,28 @@ Module: `Array`<br />
 
 ## Array.takeRight
 
-Keep only a max number of elements from the end of an `Iterable`, creating a new `Array`.
+Keeps the last `n` elements, creating a new array.
 
-**Note**. `n` is normalized to a non negative integer.
+**When to use**
 
-**Example**
+Use to keep the last `n` elements of an iterable.
+
+**Details**
+
+`n` is clamped to `[0, length]`. Returns an empty array when `n <= 0`.
+
+**Example** (Taking from the end)
 
 ```ts
 import { Array } from "effect"
 
-const result = Array.takeRight([1, 2, 3, 4, 5], 3)
-console.log(result) // [3, 4, 5]
+console.log(Array.takeRight([1, 2, 3, 4, 5], 3)) // [3, 4, 5]
 ```
+
+**See**
+
+- `take` — keep from the start
+- `dropRight` — remove from the end
 
 **Signature**
 
@@ -22,6 +32,6 @@ console.log(result) // [3, 4, 5]
 declare const takeRight: { (n: number): <A>(self: Iterable<A>) => Array<A>; <A>(self: Iterable<A>, n: number): Array<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L822)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L1329)
 
 Since v2.0.0

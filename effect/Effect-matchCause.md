@@ -5,47 +5,30 @@ Module: `Effect`<br />
 
 Handles failures by matching the cause of failure.
 
+**When to use**
+
+Use when you need to fold an `Effect` while the failure handler inspects the
+full `Cause`.
+
 **Details**
 
 The `matchCause` function allows you to handle failures with access to the
 full cause of the failure within a fiber.
 
-**When to Use**
-
-This is useful for differentiating between different types of errors, such as
-regular failures, defects, or interruptions. You can provide specific
-handling logic for each failure type based on the cause.
-
-**Example** (Handling Different Failure Causes)
+**Example** (Matching on success or failure causes)
 
 ```ts
-import { Effect } from "effect"
+import { Cause, Effect } from "effect"
 
-const task: Effect.Effect<number, Error> = Effect.die("Uh oh!")
+const task = Effect.fail("Something went wrong")
 
 const program = Effect.matchCause(task, {
-  onFailure: (cause) => {
-    switch (cause._tag) {
-      case "Fail":
-        // Handle standard failure
-        return `Fail: ${cause.error.message}`
-      case "Die":
-        // Handle defects (unexpected errors)
-        return `Die: ${cause.defect}`
-      case "Interrupt":
-        // Handle interruption
-        return `${cause.fiberId} interrupted!`
-    }
-    // Fallback for other causes
-    return "failed due to other causes"
-  },
-  onSuccess: (value) =>
-    // task completes successfully
-    `succeeded with ${value} value`
+  onFailure: (cause) => `Failed: ${Cause.squash(cause)}`,
+  onSuccess: (value) => `Success: ${value}`
 })
 
 Effect.runPromise(program).then(console.log)
-// Output: "Die: Uh oh!"
+// Output: "Failed: Error: Something went wrong"
 ```
 
 **See**
@@ -60,6 +43,6 @@ handlers.
 declare const matchCause: { <E, A2, A, A3>(options: { readonly onFailure: (cause: Cause.Cause<E>) => A2; readonly onSuccess: (a: A) => A3; }): <R>(self: Effect<A, E, R>) => Effect<A2 | A3, never, R>; <A, E, R, A2, A3>(self: Effect<A, E, R>, options: { readonly onFailure: (cause: Cause.Cause<E>) => A2; readonly onSuccess: (a: A) => A3; }): Effect<A2 | A3, never, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L10656)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L5416)
 
 Since v2.0.0

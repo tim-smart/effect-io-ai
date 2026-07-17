@@ -1,0 +1,44 @@
+Package: `effect`<br />
+Module: `TxSemaphore`<br />
+
+## TxSemaphore.isTxSemaphore
+
+Determines if the provided value is a TxSemaphore.
+
+**When to use**
+
+Use to narrow an unknown value before treating it as a `TxSemaphore`.
+
+**Example** (Checking semaphore values)
+
+```ts
+import { Effect, TxSemaphore } from "effect"
+
+const program = Effect.gen(function*() {
+  const semaphore = yield* TxSemaphore.make(5)
+  const notSemaphore = { some: "object" }
+
+  console.log(TxSemaphore.isTxSemaphore(semaphore)) // true
+  console.log(TxSemaphore.isTxSemaphore(notSemaphore)) // false
+
+  // Useful for runtime type checking in generic functions
+  if (TxSemaphore.isTxSemaphore(semaphore)) {
+    const available = yield* TxSemaphore.available(semaphore)
+    console.log(`Available permits: ${available}`)
+  }
+})
+```
+
+**See**
+
+- `make` for creating a `TxSemaphore`
+
+**Signature**
+
+```ts
+declare const isTxSemaphore: (u: unknown) => u is TxSemaphore
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/TxSemaphore.ts#L707)
+
+Since v4.0.0

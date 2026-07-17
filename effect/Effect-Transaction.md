@@ -1,0 +1,34 @@
+Package: `effect`<br />
+Module: `Effect`<br />
+
+## Effect.Transaction
+
+Service that holds the current transaction state.
+
+**Details**
+
+It includes a journal that stores non-committed changes to `TxRef` values and
+a retry flag that records whether the transaction should be retried.
+
+**Example** (Building transactions)
+
+```ts
+import { Effect } from "effect"
+
+// Transaction class for software transactional memory operations
+const txEffect = Effect.gen(function*() {
+  const tx = yield* Effect.Transaction
+  // Use transaction for coordinated state changes
+  return "Transaction complete"
+})
+```
+
+**Signature**
+
+```ts
+declare class Transaction
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L14596)
+
+Since v4.0.0

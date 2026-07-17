@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.Option
 
-Re-exports all named exports from the "./Option.js" module as `Option`.
+Re-exports all named exports from the "./Option.ts" module as `Option`.
 
 **Signature**
 
 ```ts
-export * as Option from "./Option.js"
+export * as Option from "./Option.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1061)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L372)
 
 Since v2.0.0

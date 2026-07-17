@@ -3,14 +3,16 @@ Module: `Schema`<br />
 
 ## Schema.StringFromHex
 
-Decodes a hex encoded string into a UTF-8 string.
+Type-level representation of `StringFromHex`.
 
 **Signature**
 
 ```ts
-declare const StringFromHex: Schema<string, string, never>
+export interface StringFromHex extends decodeTo<String, String> {
+  readonly "Rebuild": StringFromHex
+}
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6350)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L11714)
 
 Since v3.10.0

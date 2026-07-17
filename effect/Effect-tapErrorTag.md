@@ -3,44 +3,35 @@ Module: `Effect`<br />
 
 ## Effect.tapErrorTag
 
-Inspect errors matching a specific tag without altering the original effect.
+Runs an effectful handler when a failure's `_tag` matches.
 
 **Details**
 
-This function allows you to inspect and handle specific error types based on
-their `_tag` property. It is particularly useful in applications where errors
-are modeled with tagged types (e.g., union types with discriminating tags).
-By targeting errors with a specific `_tag`, you can log or perform actions on
-them while leaving the error channel and overall effect unchanged.
+Use this with tagged-union errors to perform side effects for one tag or a
+list of tags. When the handler succeeds, the original failure is preserved;
+if the handler fails, its error is also included in the returned effect.
 
-If the error doesn't match the specified tag, this function does nothing, and
-the effect proceeds as usual.
-
-**Example**
+**Example** (Running effects for tagged failures)
 
 ```ts
-import { Effect, Console } from "effect"
+import { Console, Data, Effect } from "effect"
 
-class NetworkError {
-  readonly _tag = "NetworkError"
-  constructor(readonly statusCode: number) {}
-}
+class NetworkError extends Data.TaggedError("NetworkError")<{
+  statusCode: number
+}> {}
 
-class ValidationError {
-  readonly _tag = "ValidationError"
-  constructor(readonly field: string) {}
-}
+class ValidationError extends Data.TaggedError("ValidationError")<{
+  field: string
+}> {}
 
-// Create a task that fails with a NetworkError
 const task: Effect.Effect<number, NetworkError | ValidationError> =
-  Effect.fail(new NetworkError(504))
+  Effect.fail(new NetworkError({ statusCode: 504 }))
 
-// Use tapErrorTag to inspect only NetworkError types and log the status code
-const tapping = Effect.tapErrorTag(task, "NetworkError", (error) =>
+const program = Effect.tapErrorTag(task, "NetworkError", (error) =>
   Console.log(`expected error: ${error.statusCode}`)
 )
 
-Effect.runFork(tapping)
+Effect.runPromiseExit(program)
 // Output:
 // expected error: 504
 ```
@@ -48,9 +39,9 @@ Effect.runFork(tapping)
 **Signature**
 
 ```ts
-declare const tapErrorTag: { <K extends E extends { _tag: string; } ? E["_tag"] : never, E, A1, E1, R1>(k: K, f: (e: NoInfer<Extract<E, { _tag: K; }>>) => Effect<A1, E1, R1>): <A, R>(self: Effect<A, E, R>) => Effect<A, E | E1, R1 | R>; <A, E, R, K extends E extends { _tag: string; } ? E["_tag"] : never, A1, E1, R1>(self: Effect<A, E, R>, k: K, f: (e: Extract<E, { _tag: K; }>) => Effect<A1, E1, R1>): Effect<A, E | E1, R | R1>; }
+declare const tapErrorTag: { <const K extends Tags<E> | Arr.NonEmptyReadonlyArray<Tags<E>>, E, A1, E1, R1>(k: K, f: (e: ExtractTag<NoInfer<E>, K extends Arr.NonEmptyReadonlyArray<string> ? K[number] : K>) => Effect<A1, E1, R1>): <A, R>(self: Effect<A, E, R>) => Effect<A, E | E1, R1 | R>; <A, E, R, const K extends Tags<E> | Arr.NonEmptyReadonlyArray<Tags<E>>, R1, E1, A1>(self: Effect<A, E, R>, k: K, f: (e: ExtractTag<E, K extends Arr.NonEmptyReadonlyArray<string> ? K[number] : K>) => Effect<A1, E1, R1>): Effect<A, E | E1, R | R1>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L9780)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L3703)
 
 Since v2.0.0

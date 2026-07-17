@@ -3,13 +3,13 @@ Module: `Trie`<br />
 
 ## Trie.has
 
-Check if the given key exists in the `Trie`.
+Checks whether the given key exists in the `Trie`.
 
-**Example**
+**Example** (Checking key membership)
 
 ```ts
-import * as assert from "node:assert"
 import { Trie } from "effect"
+import * as assert from "node:assert"
 
 const trie = Trie.empty<number>().pipe(
   Trie.insert("call", 0),
@@ -34,6 +34,6 @@ assert.equal(Trie.has(trie, "mea"), false)
 declare const has: { (key: string): <V>(self: Trie<V>) => boolean; <V>(self: Trie<V>, key: string): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Trie.ts#L456)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Trie.ts#L529)
 
 Since v2.0.0

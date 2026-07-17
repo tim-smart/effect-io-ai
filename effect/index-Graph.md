@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.Graph
 
-Re-exports all named exports from the "./Graph.js" module as `Graph`.
+Re-exports all named exports from the "./Graph.ts" module as `Graph`.
 
 **Signature**
 
 ```ts
-export * as Graph from "./Graph.js"
+export * as Graph from "./Graph.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L357)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L232)
 
-Since v3.18.0
+Since v4.0.0

@@ -3,7 +3,33 @@ Module: `Exit`<br />
 
 ## Exit.failCause
 
-Constructs a new `Exit.Failure` from the specified `Cause` of type `E`.
+Creates a failed Exit from a Cause.
+
+**When to use**
+
+Use when you already have a `Cause<E>` and want to wrap it in an Exit
+for advanced error handling where you need full control over the Cause
+structure.
+
+**Details**
+
+Returns a `Failure<never, E>`. If you only have an error value, use
+`fail` instead.
+
+**Example** (Creating a failed Exit from a Cause)
+
+```ts
+import { Cause, Exit } from "effect"
+
+const cause = Cause.fail("Something went wrong")
+const exit = Exit.failCause(cause)
+console.log(Exit.isFailure(exit)) // true
+```
+
+**See**
+
+- `fail` to create a Failure from a plain error value
+- `die` to create a Failure from a defect
 
 **Signature**
 
@@ -11,6 +37,6 @@ Constructs a new `Exit.Failure` from the specified `Cause` of type `E`.
 declare const failCause: <E>(cause: Cause.Cause<E>) => Exit<never, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Exit.ts#L191)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Exit.ts#L251)
 
 Since v2.0.0

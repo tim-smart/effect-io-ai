@@ -3,37 +3,31 @@ Module: `Effect`<br />
 
 ## Effect.logWithLevel
 
-Logs messages or error causes at a specified log level.
+Creates a logger function that logs at the specified level.
 
 **Details**
 
-This function allows you to log one or more messages or error causes while
-specifying the desired log level (e.g., DEBUG, INFO, ERROR). It provides
-flexibility in categorizing logs based on their importance or severity,
-making it easier to filter logs during debugging or production monitoring.
+If no level is provided, the logger uses the fiber's current log level and
+extracts any `Cause` values from the message list.
 
-**Example**
+**Example** (Logging at a dynamic level)
 
 ```ts
-import { Cause, Effect, LogLevel } from "effect"
+import { Effect } from "effect"
 
-const program = Effect.logWithLevel(
-  LogLevel.Error,
-  "Critical error encountered",
-  Cause.die("System failure!")
-)
+const logWarn = Effect.logWithLevel("Warn")
 
-Effect.runFork(program)
-// Output:
-// timestamp=... level=ERROR fiber=#0 message=Critical error encountered cause="Error: System failure!"
+const program = Effect.gen(function*() {
+  yield* logWarn("Cache miss", { key: "user:1" })
+})
 ```
 
 **Signature**
 
 ```ts
-declare const logWithLevel: (level: LogLevel.LogLevel, ...message: ReadonlyArray<any>) => Effect<void>
+declare const logWithLevel: (level?: Severity) => (...message: ReadonlyArray<any>) => Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L10881)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13745)
 
 Since v2.0.0

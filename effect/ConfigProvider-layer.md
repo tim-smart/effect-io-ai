@@ -1,0 +1,47 @@
+Package: `effect`<br />
+Module: `ConfigProvider`<br />
+
+## ConfigProvider.layer
+
+Provides a layer that installs a `ConfigProvider` as the active provider for
+all downstream effects, replacing any previously installed provider.
+
+**When to use**
+
+Use to set the config source for an entire application or test suite.
+
+**Details**
+
+Accepts either a plain `ConfigProvider` or an `Effect` that produces one.
+When given an Effect, it is evaluated once when the layer is built.
+
+**Example** (Reading config from a JSON object)
+
+```ts
+import { Config, ConfigProvider, Effect, Layer } from "effect"
+
+const TestLayer = ConfigProvider.layer(
+  ConfigProvider.fromUnknown({ port: 8080 })
+)
+
+const program = Effect.gen(function*() {
+  const port = yield* Config.number("port")
+  return port
+})
+
+// Effect.runSync(Effect.provide(program, TestLayer)) // 8080
+```
+
+**See**
+
+- `layerAdd` – add a provider without replacing the existing one
+
+**Signature**
+
+```ts
+declare const layer: <E = never, R = never>(self: ConfigProvider | Effect.Effect<ConfigProvider, E, R>) => Layer.Layer<never, E, Exclude<R, Scope>>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/ConfigProvider.ts#L631)
+
+Since v4.0.0

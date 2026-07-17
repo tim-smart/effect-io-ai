@@ -5,14 +5,16 @@ Module: `Iterable`<br />
 
 Retrieves the `Some` values from an `Iterable` of `Option`s.
 
-**Example**
+**Example** (Extracting Some values)
 
 ```ts
-import * as assert from "node:assert"
 import { Iterable, Option } from "effect"
+import * as assert from "node:assert"
 
 assert.deepStrictEqual(
-  Array.from(Iterable.getSomes([Option.some(1), Option.none(), Option.some(2)])),
+  Array.from(
+    Iterable.getSomes([Option.some(1), Option.none(), Option.some(2)])
+  ),
   [1, 2]
 )
 ```
@@ -23,6 +25,6 @@ assert.deepStrictEqual(
 declare const getSomes: <A>(self: Iterable<Option<A>>) => Iterable<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Iterable.ts#L851)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Iterable.ts#L1765)
 
 Since v2.0.0

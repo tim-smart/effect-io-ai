@@ -3,17 +3,33 @@ Module: `Array`<br />
 
 ## Array.findFirst
 
-Returns the first element that satisfies the specified
-predicate, or `None` if no such element exists.
+Returns the first element matching a predicate, refinement, or mapping
+function, wrapped in `Option`.
 
-**Example**
+**When to use**
+
+Use to scan an iterable in iteration order and return the first selected
+element or mapped value as an `Option`.
+
+**Details**
+
+Accepts a predicate `(a, i) => boolean`, a refinement, or a function
+`(a, i) => Option<B>` for simultaneous find-and-transform. If no element
+matches, this returns `Option.none()`.
+
+**Example** (Finding the first match)
 
 ```ts
 import { Array } from "effect"
 
-const result = Array.findFirst([1, 2, 3, 4, 5], x => x > 3)
-console.log(result) // Option.some(4)
+console.log(Array.findFirst([1, 2, 3, 4, 5], (x) => x > 3)) // Option.some(4)
 ```
+
+**See**
+
+- `findLast` — search from the end
+- `findFirstIndex` — get the index instead
+- `findFirstWithIndex` — get both element and index
 
 **Signature**
 
@@ -21,6 +37,6 @@ console.log(result) // Option.some(4)
 declare const findFirst: { <A, B>(f: (a: NoInfer<A>, i: number) => Option.Option<B>): (self: Iterable<A>) => Option.Option<B>; <A, B extends A>(refinement: (a: NoInfer<A>, i: number) => a is B): (self: Iterable<A>) => Option.Option<B>; <A>(predicate: (a: NoInfer<A>, i: number) => boolean): (self: Iterable<A>) => Option.Option<A>; <A, B>(self: Iterable<A>, f: (a: A, i: number) => Option.Option<B>): Option.Option<B>; <A, B extends A>(self: Iterable<A>, refinement: (a: A, i: number) => a is B): Option.Option<B>; <A>(self: Iterable<A>, predicate: (a: A, i: number) => boolean): Option.Option<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L1053)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L1728)
 
 Since v2.0.0

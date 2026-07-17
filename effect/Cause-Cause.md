@@ -3,27 +3,47 @@ Module: `Cause`<br />
 
 ## Cause.Cause
 
-Represents the full history of a failure within an `Effect`.
+A structured representation of how an Effect failed.
+
+**When to use**
+
+Use to preserve the full structured failure information for an effect instead
+of collapsing it to a single error value.
 
 **Details**
 
-This type is a data structure that captures all information about why and how
-an effect has failed, including parallel errors, sequential errors, defects,
-and interruptions. It enables a "lossless" error model: no error-related
-information is discarded, which helps in debugging and understanding the root
-cause of failures.
+Access the individual failure entries through the `reasons` array, then
+narrow each entry with `isFailReason`, `isDieReason`, or
+`isInterruptReason`.
+
+- Use `hasFails` / `hasDies` / `hasInterrupts` to test
+  for the presence of specific reason kinds without iterating.
+- Use `findError` / `findDefect` to extract the first value
+  of a given kind.
+- Use `combine` to merge two causes.
+
+`Cause` implements `Equal` — two causes with the same reasons (by value)
+compare as equal.
+
+**Example** (Creating and inspecting a cause)
+
+```ts
+import { Cause } from "effect"
+
+const cause = Cause.fail("Something went wrong")
+console.log(cause.reasons.length) // 1
+console.log(Cause.isFailReason(cause.reasons[0])) // true
+```
 
 **Signature**
 
 ```ts
-type Cause<E> = | Empty
-  | Fail<E>
-  | Die
-  | Interrupt
-  | Sequential<E>
-  | Parallel<E>
+export interface Cause<out E> extends Pipeable, Inspectable, Equal {
+  readonly [TypeId]: typeof TypeId
+  readonly reasons: ReadonlyArray<Reason<E>>
+}
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L254)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L77)
 
 Since v2.0.0

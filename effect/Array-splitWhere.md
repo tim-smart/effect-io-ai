@@ -3,17 +3,26 @@ Module: `Array`<br />
 
 ## Array.splitWhere
 
-Splits this iterable on the first element that matches this predicate.
-Returns a tuple containing two arrays: the first one is before the match, and the second one is from the match onward.
+Splits an iterable at the first element matching the predicate. The matching
+element is included in the second array.
 
-**Example**
+**When to use**
+
+Use when you need to split an array at the first element that marks a
+condition boundary.
+
+**Example** (Splitting at a condition)
 
 ```ts
 import { Array } from "effect"
 
-const result = Array.splitWhere([1, 2, 3, 4, 5], n => n > 3)
-console.log(result) // [[1, 2, 3], [4, 5]]
+console.log(Array.splitWhere([1, 2, 3, 4, 5], (n) => n > 3)) // [[1, 2, 3], [4, 5]]
 ```
+
+**See**
+
+- `span` — splits at the first element that fails the predicate
+- `splitAt` — split at a fixed index
 
 **Signature**
 
@@ -21,6 +30,6 @@ console.log(result) // [[1, 2, 3], [4, 5]]
 declare const splitWhere: { <A>(predicate: (a: NoInfer<A>, i: number) => boolean): (self: Iterable<A>) => [beforeMatch: Array<A>, fromMatch: Array<A>]; <A>(self: Iterable<A>, predicate: (a: A, i: number) => boolean): [beforeMatch: Array<A>, fromMatch: Array<A>]; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2009)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2770)
 
 Since v2.0.0

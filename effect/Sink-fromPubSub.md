@@ -3,17 +3,18 @@ Module: `Sink`<br />
 
 ## Sink.fromPubSub
 
-Create a sink which publishes each element to the specified `PubSub`.
+Creates a sink that publishes every consumed input element to a `PubSub`.
 
-If the `shutdown` parameter is `true`, the `PubSub` will be shutdown after
-the sink is evaluated (defaults to `false`).
+**Details**
+
+The sink completes with `void` when the upstream stream ends.
 
 **Signature**
 
 ```ts
-declare const fromPubSub: <In>(pubsub: PubSub.PubSub<In>, options?: { readonly shutdown?: boolean | undefined; }) => Sink<void, In>
+declare const fromPubSub: <A>(pubsub: PubSub.PubSub<A>) => Sink<void, A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Sink.ts#L1004)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Sink.ts#L488)
 
 Since v2.0.0

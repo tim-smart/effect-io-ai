@@ -5,12 +5,21 @@ Module: `String`<br />
 
 Concatenates two strings at the type level.
 
+**Example** (Concatenating string literal types)
+
+```ts
+import type { String } from "effect"
+
+// Type-level concatenation
+type Result = String.Concat<"hello", "world"> // "helloworld"
+```
+
 **Signature**
 
 ```ts
 type `${A}${B}` = `${A}${B}`
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/String.ts#L61)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/String.ts#L134)
 
 Since v2.0.0

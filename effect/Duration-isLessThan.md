@@ -1,0 +1,25 @@
+Package: `effect`<br />
+Module: `Duration`<br />
+
+## Duration.isLessThan
+
+Checks whether the first Duration is less than the second.
+
+**Example** (Comparing durations with less than)
+
+```ts
+import { Duration } from "effect"
+
+const isLess = Duration.isLessThan(Duration.seconds(3), Duration.seconds(5))
+console.log(isLess) // true
+```
+
+**Signature**
+
+```ts
+declare const isLessThan: { (that: Duration): (self: Duration) => boolean; (self: Duration, that: Duration): boolean; }
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Duration.ts#L1531)
+
+Since v4.0.0

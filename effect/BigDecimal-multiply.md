@@ -5,14 +5,25 @@ Module: `BigDecimal`<br />
 
 Provides a multiplication operation on `BigDecimal`s.
 
-**Example**
+**When to use**
+
+Use to multiply two `BigDecimal` values.
+
+**Example** (Multiplying decimals)
 
 ```ts
+import { BigDecimal } from "effect"
 import * as assert from "node:assert"
-import { multiply, unsafeFromString } from "effect/BigDecimal"
 
-assert.deepStrictEqual(multiply(unsafeFromString("2"), unsafeFromString("3")), unsafeFromString("6"))
+assert.deepStrictEqual(
+  BigDecimal.multiply(BigDecimal.fromStringUnsafe("2"), BigDecimal.fromStringUnsafe("3")),
+  BigDecimal.fromStringUnsafe("6")
+)
 ```
+
+**See**
+
+- `multiplyAll` for multiplying an iterable of `BigDecimal` values
 
 **Signature**
 
@@ -20,6 +31,6 @@ assert.deepStrictEqual(multiply(unsafeFromString("2"), unsafeFromString("3")), u
 declare const multiply: { (that: BigDecimal): (self: BigDecimal) => BigDecimal; (self: BigDecimal, that: BigDecimal): BigDecimal; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L250)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L378)
 
 Since v2.0.0

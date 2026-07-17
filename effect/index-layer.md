@@ -9,22 +9,22 @@ the tests in a `describe` block if a name is provided.
 **Signature**
 
 ```ts
-declare const layer: <R, E, const ExcludeTestServices extends boolean = false>(layer_: Layer.Layer<R, E>, options?: { readonly memoMap?: Layer.MemoMap; readonly timeout?: Duration.DurationInput; readonly excludeTestServices?: ExcludeTestServices; }) => { (f: (it: Vitest.MethodsNonLive<R, ExcludeTestServices>) => void): void; (name: string, f: (it: Vitest.MethodsNonLive<R, ExcludeTestServices>) => void): void; }
+declare const layer: <R, E>(layer_: Layer.Layer<R, E>, options?: { readonly memoMap?: Layer.MemoMap; readonly timeout?: Duration.Input; readonly excludeTestServices?: boolean; }) => { (f: (it: Vitest.MethodsNonLive<R>) => void): void; (name: string, f: (it: Vitest.MethodsNonLive<R>) => void): void; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/index.ts#L245)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/index.ts#L216)
 
-Since v1.0.0
+Since v4.0.0
 
 ```ts
 import { expect, layer } from "@effect/vitest"
-import { Context, Effect, Layer } from "effect"
+import { Effect, Layer, Context } from "effect"
 
-class Foo extends Context.Tag("Foo")<Foo, "foo">() {
+class Foo extends Context.Service("Foo")<Foo, "foo">() {
   static Live = Layer.succeed(Foo, "foo")
 }
 
-class Bar extends Context.Tag("Bar")<Bar, "bar">() {
+class Bar extends Context.Service("Bar")<Bar, "bar">() {
   static Live = Layer.effect(
     Bar,
     Effect.map(Foo, () => "bar" as const)
@@ -33,21 +33,19 @@ class Bar extends Context.Tag("Bar")<Bar, "bar">() {
 
 layer(Foo.Live)("layer", (it) => {
   it.effect("adds context", () =>
-    Effect.gen(function* () {
+    Effect.gen(function*() {
       const foo = yield* Foo
       expect(foo).toEqual("foo")
-    })
-  )
+    }))
 
   it.layer(Bar.Live)("nested", (it) => {
     it.effect("adds context", () =>
-      Effect.gen(function* () {
+      Effect.gen(function*() {
         const foo = yield* Foo
         const bar = yield* Bar
         expect(foo).toEqual("foo")
         expect(bar).toEqual("bar")
-      })
-    )
+      }))
   })
 })
 ```

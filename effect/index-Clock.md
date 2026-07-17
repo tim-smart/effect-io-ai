@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.Clock
 
-Re-exports all named exports from the "./Clock.js" module as `Clock`.
+Re-exports all named exports from the "./Clock.ts" module as `Clock`.
 
 **Signature**
 
 ```ts
-export * as Clock from "./Clock.js"
+export * as Clock from "./Clock.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L153)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L87)
 
 Since v2.0.0

@@ -1,0 +1,17 @@
+Package: `effect`<br />
+Module: `Headers`<br />
+
+## Headers.Equivalence
+
+Provides an `Equivalence` instance that compares `Headers` by header names
+and string values.
+
+**Signature**
+
+```ts
+declare const Equivalence: Equ.Equivalence<Headers>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Headers.ts#L110)
+
+Since v4.0.0

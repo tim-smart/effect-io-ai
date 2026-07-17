@@ -1,0 +1,16 @@
+Package: `@effect/sql-pglite`<br />
+Module: `PgliteClient`<br />
+
+## PgliteClient.TypeId
+
+Type-level identifier used to mark `PgliteClient` values.
+
+**Signature**
+
+```ts
+type TypeId = "~@effect/sql-pglite/PgliteClient"
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/pglite/src/PgliteClient.ts#L58)
+
+Since v4.0.0

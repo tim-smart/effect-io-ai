@@ -1,5 +1,245 @@
 [
   {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "NodeChildProcessSpawner",
+    "description": "Re-exports all named exports from the \"./NodeChildProcessSpawner.ts\" module as `NodeChildProcessSpawner`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": null,
+    "signature": "export * as NodeChildProcessSpawner from \"./NodeChildProcessSpawner.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/index.ts#L10"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "NodeClusterSocket",
+    "description": "Re-exports all named exports from the \"./NodeClusterSocket.ts\" module as `NodeClusterSocket`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": null,
+    "signature": "export * as NodeClusterSocket from \"./NodeClusterSocket.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/index.ts#L15"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "NodeCrypto",
+    "description": "Re-exports all named exports from the \"./NodeCrypto.ts\" module as `NodeCrypto`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": null,
+    "signature": "export * as NodeCrypto from \"./NodeCrypto.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/index.ts#L20"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "NodeFileSystem",
+    "description": "Re-exports all named exports from the \"./NodeFileSystem.ts\" module as `NodeFileSystem`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": null,
+    "signature": "export * as NodeFileSystem from \"./NodeFileSystem.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/index.ts#L25"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "NodePath",
+    "description": "Re-exports all named exports from the \"./NodePath.ts\" module as `NodePath`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": null,
+    "signature": "export * as NodePath from \"./NodePath.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/index.ts#L30"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "NodeRuntime",
+    "description": "Re-exports all named exports from the \"./NodeRuntime.ts\" module as `NodeRuntime`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": null,
+    "signature": "export * as NodeRuntime from \"./NodeRuntime.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/index.ts#L35"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "NodeSink",
+    "description": "Re-exports all named exports from the \"./NodeSink.ts\" module as `NodeSink`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": null,
+    "signature": "export * as NodeSink from \"./NodeSink.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/index.ts#L40"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "NodeSocket",
+    "description": "Re-exports all named exports from the \"./NodeSocket.ts\" module as `NodeSocket`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": null,
+    "signature": "export * as NodeSocket from \"./NodeSocket.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/index.ts#L45"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "NodeSocketServer",
+    "description": "Re-exports all named exports from the \"./NodeSocketServer.ts\" module as `NodeSocketServer`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": null,
+    "signature": "export * as NodeSocketServer from \"./NodeSocketServer.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/index.ts#L50"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "NodeStdio",
+    "description": "Re-exports all named exports from the \"./NodeStdio.ts\" module as `NodeStdio`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": null,
+    "signature": "export * as NodeStdio from \"./NodeStdio.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/index.ts#L55"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "NodeStream",
+    "description": "Re-exports all named exports from the \"./NodeStream.ts\" module as `NodeStream`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": null,
+    "signature": "export * as NodeStream from \"./NodeStream.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/index.ts#L60"
+  },
+  {
+    "_tag": "Export",
+    "module": {
+      "name": "index.ts",
+      "path": "src/index.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "NodeTerminal",
+    "description": "Re-exports all named exports from the \"./NodeTerminal.ts\" module as `NodeTerminal`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": null,
+    "signature": "export * as NodeTerminal from \"./NodeTerminal.ts\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/index.ts#L65"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "NodeChildProcessSpawner.ts",
+      "path": "src/NodeChildProcessSpawner.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "layer",
+    "description": "Layer that provides the `NodeChildProcessSpawner` implementation.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "layers",
+    "signature": "declare const layer: Layer.Layer<ChildProcessSpawner, never, Path.Path | FileSystem.FileSystem>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeChildProcessSpawner.ts#L656"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "NodeChildProcessSpawner.ts",
+      "path": "src/NodeChildProcessSpawner.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "flattenCommand",
+    "description": "Flattens a `Command` into an array of `StandardCommand`s along with pipe\noptions for each connection.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "transforming",
+    "signature": "declare const flattenCommand: (command: ChildProcess.Command) => FlattenedPipeline",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeChildProcessSpawner.ts#L684"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "NodeChildProcessSpawner.ts",
+      "path": "src/NodeChildProcessSpawner.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "FlattenedPipeline",
+    "description": "Result of flattening a pipeline of commands.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "models",
+    "signature": "export interface FlattenedPipeline {\n  readonly commands: Arr.NonEmptyReadonlyArray<ChildProcess.StandardCommand>\n  readonly pipeOptions: ReadonlyArray<ChildProcess.PipeOptions>\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeChildProcessSpawner.ts#L672"
+  },
+  {
     "_tag": "Constant",
     "module": {
       "name": "NodeClusterSocket.ts",
@@ -7,12 +247,13 @@
     },
     "project": "@effect/platform-node-shared",
     "name": "layerClientProtocol",
+    "description": "Provides the cluster `RpcClientProtocol` by opening TCP sockets to runner\naddresses and using the current RPC serialization service.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
-    "category": "Layers",
+    "since": "4.0.0",
+    "category": "layers",
     "signature": "declare const layerClientProtocol: Layer.Layer<Runners.RpcClientProtocol, never, RpcSerialization.RpcSerialization>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeClusterSocket.ts#L20"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeClusterSocket.ts#L30"
   },
   {
     "_tag": "Constant",
@@ -22,27 +263,45 @@
     },
     "project": "@effect/platform-node-shared",
     "name": "layerSocketServer",
+    "description": "Provides the socket server used by cluster runners, listening on\n`ShardingConfig.runnerListenAddress` or `runnerAddress`.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
-    "category": "Layers",
+    "since": "4.0.0",
+    "category": "layers",
     "signature": "declare const layerSocketServer: Layer.Layer<SocketServer.SocketServer, SocketServer.SocketServerError, ShardingConfig.ShardingConfig>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeClusterSocket.ts#L46"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeClusterSocket.ts#L59"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "NodeCommandExecutor.ts",
-      "path": "src/NodeCommandExecutor.ts"
+      "name": "NodeCrypto.ts",
+      "path": "src/NodeCrypto.ts"
     },
     "project": "@effect/platform-node-shared",
-    "name": "layer",
+    "name": "make",
+    "description": "The default Node.js Crypto service implementation.",
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
-    "category": "layer",
-    "signature": "declare const layer: Layer<CommandExecutor, never, FileSystem>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeCommandExecutor.ts#L13"
+    "category": "constructors",
+    "signature": "declare const make: EffectCrypto.Crypto",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeCrypto.ts#L49"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "NodeCrypto.ts",
+      "path": "src/NodeCrypto.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "layer",
+    "description": "Layer that provides the Node.js Crypto service implementation.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "layers",
+    "signature": "declare const layer: Layer.Layer<EffectCrypto.Crypto, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeCrypto.ts#L60"
   },
   {
     "_tag": "Constant",
@@ -52,103 +311,13 @@
     },
     "project": "@effect/platform-node-shared",
     "name": "layer",
+    "description": "Provides the `FileSystem` service backed by Node filesystem APIs, including\nfile operations, directory operations, links, metadata, and file watching.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
-    "category": "layer",
-    "signature": "declare const layer: Layer<FileSystem, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeFileSystem.ts#L13"
-  },
-  {
-    "_tag": "Constant",
-    "module": {
-      "name": "ParcelWatcher.ts",
-      "path": "src/NodeFileSystem/ParcelWatcher.ts"
-    },
-    "project": "@effect/platform-node-shared",
-    "name": "layer",
-    "description": "You can provide this Layer to use `@parcel/watcher` as the backend for watching files.",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "layer",
-    "signature": "declare const layer: Layer<WatchBackend, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/ParcelWatcher.ts#L15"
-  },
-  {
-    "_tag": "Function",
-    "module": {
-      "name": "NodeKeyValueStore.ts",
-      "path": "src/NodeKeyValueStore.ts"
-    },
-    "project": "@effect/platform-node-shared",
-    "name": "layerFileSystem",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": "layers",
-    "signature": "declare const layerFileSystem: (directory: string) => Layer.Layer<KeyValueStore.KeyValueStore, PlatformError.PlatformError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeKeyValueStore.ts#L14"
-  },
-  {
-    "_tag": "Constant",
-    "module": {
-      "name": "NodeMultipart.ts",
-      "path": "src/NodeMultipart.ts"
-    },
-    "project": "@effect/platform-node-shared",
-    "name": "stream",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "constructors",
-    "signature": "declare const stream: (source: Readable, headers: IncomingHttpHeaders) => Stream.Stream<Multipart.Part, Multipart.MultipartError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeMultipart.ts#L18"
-  },
-  {
-    "_tag": "Constant",
-    "module": {
-      "name": "NodeMultipart.ts",
-      "path": "src/NodeMultipart.ts"
-    },
-    "project": "@effect/platform-node-shared",
-    "name": "persisted",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "constructors",
-    "signature": "declare const persisted: (source: Readable, headers: IncomingHttpHeaders) => Effect.Effect<Multipart.Persisted, Multipart.MultipartError, FileSystem.FileSystem | Path.Path | Scope.Scope>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeMultipart.ts#L27"
-  },
-  {
-    "_tag": "Constant",
-    "module": {
-      "name": "NodeMultipart.ts",
-      "path": "src/NodeMultipart.ts"
-    },
-    "project": "@effect/platform-node-shared",
-    "name": "fileToReadable",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "conversions",
-    "signature": "declare const fileToReadable: (file: Multipart.File) => Readable",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeMultipart.ts#L40"
-  },
-  {
-    "_tag": "Constant",
-    "module": {
-      "name": "NodePath.ts",
-      "path": "src/NodePath.ts"
-    },
-    "project": "@effect/platform-node-shared",
-    "name": "layer",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "layer",
-    "signature": "declare const layer: Layer<Path, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodePath.ts#L13"
+    "signature": "declare const layer: Layer.Layer<FileSystem.FileSystem, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeFileSystem.ts#L668"
   },
   {
     "_tag": "Constant",
@@ -158,12 +327,13 @@
     },
     "project": "@effect/platform-node-shared",
     "name": "layerPosix",
+    "description": "Provides the `Path` service using Node's POSIX path implementation plus\nfile URL conversion helpers.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
-    "category": "layer",
-    "signature": "declare const layerPosix: Layer<Path, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodePath.ts#L19"
+    "since": "4.0.0",
+    "category": "layers",
+    "signature": "declare const layerPosix: Layer.Layer<Path, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodePath.ts#L47"
   },
   {
     "_tag": "Constant",
@@ -173,12 +343,29 @@
     },
     "project": "@effect/platform-node-shared",
     "name": "layerWin32",
+    "description": "Provides the `Path` service using Node's Windows path implementation plus\nfile URL conversion helpers.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
-    "category": "layer",
-    "signature": "declare const layerWin32: Layer<Path, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodePath.ts#L25"
+    "since": "4.0.0",
+    "category": "layers",
+    "signature": "declare const layerWin32: Layer.Layer<Path, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodePath.ts#L61"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "NodePath.ts",
+      "path": "src/NodePath.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "layer",
+    "description": "Provides the default `Path` service using the host platform's Node path\nimplementation plus file URL conversion helpers.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "layers",
+    "signature": "declare const layer: Layer.Layer<Path, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodePath.ts#L75"
   },
   {
     "_tag": "Constant",
@@ -188,87 +375,77 @@
     },
     "project": "@effect/platform-node-shared",
     "name": "runMain",
+    "description": "Runs an Effect as the Node process main program, interrupting the fiber on\n`SIGINT` or `SIGTERM` and invoking the configured teardown to determine the\nprocess exit code.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
-    "category": "runtime",
-    "signature": "declare const runMain: RunMain",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeRuntime.ts#L11"
+    "since": "4.0.0",
+    "category": "running",
+    "signature": "declare const runMain: { (options?: { readonly disableErrorReporting?: boolean | undefined; readonly teardown?: Runtime.Teardown | undefined; }): <E, A>(effect: Effect<A, E>) => void; <E, A>(effect: Effect<A, E>, options?: { readonly disableErrorReporting?: boolean | undefined; readonly teardown?: Runtime.Teardown | undefined; }): void; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeRuntime.ts#L22"
   },
   {
-    "_tag": "Constant",
+    "_tag": "Function",
     "module": {
       "name": "NodeSink.ts",
       "path": "src/NodeSink.ts"
     },
     "project": "@effect/platform-node-shared",
     "name": "fromWritable",
+    "description": "Creates a `Sink` that writes chunks to a Node writable stream, respecting\nbackpressure, mapping writable errors with `onError`, and ending the stream\non completion unless `endOnDone` is `false`.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
-    "category": "constructor",
-    "signature": "declare const fromWritable: <E, A = string | Uint8Array<ArrayBufferLike>>(evaluate: LazyArg<Writable | NodeJS.WritableStream>, onError: (error: unknown) => E, options?: FromWritableOptions) => Sink.Sink<void, A, never, E>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeSink.ts#L18"
+    "since": "4.0.0",
+    "category": "constructors",
+    "signature": "declare const fromWritable: <E, A = string | Uint8Array<ArrayBufferLike>>(options: { readonly evaluate: LazyArg<Writable | NodeJS.WritableStream>; readonly onError: (error: unknown) => E; readonly endOnDone?: boolean | undefined; readonly encoding?: BufferEncoding | undefined; }) => Sink.Sink<void, A, never, E>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeSink.ts#L29"
   },
   {
-    "_tag": "Constant",
+    "_tag": "Function",
     "module": {
       "name": "NodeSink.ts",
       "path": "src/NodeSink.ts"
     },
     "project": "@effect/platform-node-shared",
     "name": "fromWritableChannel",
+    "description": "Creates a `Channel` that pulls chunks from upstream and writes them to a\nNode writable stream, respecting backpressure and optionally ending the\nwritable when upstream is done.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
-    "category": "constructor",
-    "signature": "declare const fromWritableChannel: <IE, OE, A>(writable: LazyArg<Writable | NodeJS.WritableStream>, onError: (error: unknown) => OE, options?: FromWritableOptions) => Channel<Chunk<never>, Chunk<A>, IE | OE, IE, void, unknown>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeSink.ts#L28"
+    "since": "4.0.0",
+    "category": "constructors",
+    "signature": "declare const fromWritableChannel: <IE, E, A = string | Uint8Array<ArrayBufferLike>>(options: { readonly evaluate: LazyArg<Writable | NodeJS.WritableStream>; readonly onError: (error: unknown) => E; readonly endOnDone?: boolean | undefined; readonly encoding?: BufferEncoding | undefined; }) => Channel.Channel<never, IE | E, void, NonEmptyReadonlyArray<A>, IE>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeSink.ts#L47"
   },
   {
-    "_tag": "Constant",
+    "_tag": "Function",
     "module": {
       "name": "NodeSink.ts",
       "path": "src/NodeSink.ts"
     },
     "project": "@effect/platform-node-shared",
-    "name": "stdout",
+    "name": "pullIntoWritable",
+    "description": "Writes Effect chunks into a Node writable stream.\n\n**When to use**\n\nUse to implement custom Node stream adapters that already have an upstream\npull and need direct control over a writable stream.\n\n**Details**\n\nThe loop waits for `drain` when needed, fails on writable errors, and ends\nthe writable on upstream completion unless `endOnDone` is `false`.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
-    "category": "stdio",
-    "signature": "declare const stdout: Sink.Sink<void, string | Uint8Array<ArrayBufferLike>, never, PlatformError, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeSink.ts#L38"
+    "since": "4.0.0",
+    "category": "converting",
+    "signature": "declare const pullIntoWritable: <A, IE, E>(options: { readonly pull: Pull.Pull<NonEmptyReadonlyArray<A>, IE, unknown>; readonly writable: Writable; readonly onError: (error: unknown) => E; readonly endOnDone?: boolean | undefined; readonly encoding?: BufferEncoding | undefined; }) => Pull.Pull<never, IE | E, unknown>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeSink.ts#L76"
   },
   {
-    "_tag": "Constant",
+    "_tag": "Class",
     "module": {
-      "name": "NodeSink.ts",
-      "path": "src/NodeSink.ts"
+      "name": "NodeSocket.ts",
+      "path": "src/NodeSocket.ts"
     },
     "project": "@effect/platform-node-shared",
-    "name": "stderr",
+    "name": "NetSocket",
+    "description": "Service tag for the underlying Node `net.Socket` associated with the current\nsocket connection.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
-    "category": "stdio",
-    "signature": "declare const stderr: Sink.Sink<void, string | Uint8Array<ArrayBufferLike>, never, PlatformError, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeSink.ts#L53"
-  },
-  {
-    "_tag": "Constant",
-    "module": {
-      "name": "NodeSink.ts",
-      "path": "src/NodeSink.ts"
-    },
-    "project": "@effect/platform-node-shared",
-    "name": "stdin",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "stdio",
-    "signature": "declare const stdin: Sink.Sink<void, string | Uint8Array<ArrayBufferLike>, never, PlatformError, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeSink.ts#L68"
+    "since": "4.0.0",
+    "category": "services",
+    "signature": "declare class NetSocket",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeSocket.ts#L40"
   },
   {
     "_tag": "Constant",
@@ -277,13 +454,14 @@
       "path": "src/NodeSocket.ts"
     },
     "project": "@effect/platform-node-shared",
-    "name": "NetSocket",
+    "name": "layerNet",
+    "description": "Provides a `Socket.Socket` by opening a TCP connection with the supplied\nNode `net` connection options.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
-    "category": "tags",
-    "signature": "declare const NetSocket: Context.Tag<NetSocket, Net.Socket>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeSocket.ts#L30"
+    "since": "4.0.0",
+    "category": "layers",
+    "signature": "declare const layerNet: (options: Net.NetConnectOpts) => Layer.Layer<Socket.Socket, Socket.SocketError>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeSocket.ts#L266"
   },
   {
     "_tag": "Function",
@@ -293,12 +471,13 @@
     },
     "project": "@effect/platform-node-shared",
     "name": "makeNet",
+    "description": "Opens a Node TCP connection as an Effect socket.\n\n**When to use**\n\nUse to create a scoped `Socket.Socket` from Node `net.createConnection`.\n\n**Details**\n\nSupports `openTimeout` and closes or destroys the underlying socket when the\nenclosing scope is finalized.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": "constructors",
-    "signature": "declare const makeNet: (options: Net.NetConnectOpts & { readonly openTimeout?: Duration.DurationInput | undefined; }) => Effect.Effect<Socket.Socket, Socket.SocketError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeSocket.ts#L38"
+    "signature": "declare const makeNet: (options: Net.NetConnectOpts & { readonly openTimeout?: Duration.Input | undefined; }) => Effect.Effect<Socket.Socket>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeSocket.ts#L59"
   },
   {
     "_tag": "Function",
@@ -308,12 +487,13 @@
     },
     "project": "@effect/platform-node-shared",
     "name": "fromDuplex",
+    "description": "Adapts a Node `Duplex` into a `Socket.Socket`, wiring data events to socket\nhandlers, providing a scoped writer, and mapping open, read, write, and close\nfailures to `SocketError`.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": "constructors",
-    "signature": "declare const fromDuplex: <RO>(open: Effect.Effect<Duplex, Socket.SocketError, RO>, options?: { readonly openTimeout?: Duration.DurationInput | undefined; }) => Effect.Effect<Socket.Socket, never, Exclude<RO, Scope.Scope>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeSocket.ts#L79"
+    "signature": "declare const fromDuplex: <RO>(open: Effect.Effect<Duplex, Socket.SocketError, RO>, options?: { readonly openTimeout?: Duration.Input | undefined; }) => Effect.Effect<Socket.Socket, never, Exclude<RO, Scope.Scope>>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeSocket.ts#L108"
   },
   {
     "_tag": "Function",
@@ -323,42 +503,29 @@
     },
     "project": "@effect/platform-node-shared",
     "name": "makeNetChannel",
+    "description": "Creates a `Channel` over a TCP socket, reading arrays of `Uint8Array`\nchunks and writing arrays of bytes, strings, or socket close events.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": "constructors",
-    "signature": "declare const makeNetChannel: <IE = never>(options: Net.NetConnectOpts) => Channel.Channel<Chunk.Chunk<Uint8Array>, Chunk.Chunk<Uint8Array | string | Socket.CloseEvent>, Socket.SocketError | IE, IE, void, unknown>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeSocket.ts#L203"
+    "signature": "declare const makeNetChannel: <IE = never>(options: Net.NetConnectOpts) => Channel.Channel<Array.NonEmptyReadonlyArray<Uint8Array>, Socket.SocketError | IE, void, Array.NonEmptyReadonlyArray<Uint8Array | string | Socket.CloseEvent>, IE>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeSocket.ts#L246"
   },
   {
-    "_tag": "Function",
+    "_tag": "Export",
     "module": {
       "name": "NodeSocket.ts",
       "path": "src/NodeSocket.ts"
     },
     "project": "@effect/platform-node-shared",
-    "name": "layerNet",
+    "name": "NodeWS",
+    "description": "Re-exports all named exports from the \"ws\" module as `NodeWS`.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
-    "category": "layers",
-    "signature": "declare const layerNet: (options: Net.NetConnectOpts) => Layer.Layer<Socket.Socket, Socket.SocketError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeSocket.ts#L221"
-  },
-  {
-    "_tag": "Interface",
-    "module": {
-      "name": "NodeSocket.ts",
-      "path": "src/NodeSocket.ts"
-    },
-    "project": "@effect/platform-node-shared",
-    "name": "NetSocket",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "tags",
-    "signature": "export interface NetSocket {\n  readonly _: unique symbol\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeSocket.ts#L22"
+    "since": "4.0.0",
+    "category": "re-exports",
+    "signature": "export * as NodeWS from \"ws\"",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeSocket.ts#L31"
   },
   {
     "_tag": "Class",
@@ -368,12 +535,13 @@
     },
     "project": "@effect/platform-node-shared",
     "name": "IncomingMessage",
+    "description": "Service tag for the Node `IncomingMessage` associated with the current\nWebSocket server connection.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
-    "category": "tags",
+    "since": "4.0.0",
+    "category": "services",
     "signature": "declare class IncomingMessage",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeSocketServer.ts#L25"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeSocketServer.ts#L38"
   },
   {
     "_tag": "Constant",
@@ -383,12 +551,29 @@
     },
     "project": "@effect/platform-node-shared",
     "name": "make",
+    "description": "Creates a scoped TCP `SocketServer` from a Node `net.Server`, starts\nlistening with the supplied options, queues pending connections until `run`\nis called, and closes the server when the scope ends.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": "constructors",
     "signature": "declare const make: (options: Net.ServerOpts & Net.ListenOptions) => Effect.Effect<{ readonly address: SocketServer.Address; readonly run: <R, E, _>(handler: (socket: Socket.Socket) => Effect.Effect<_, E, R>) => Effect.Effect<never, SocketServer.SocketServerError, R>; }, SocketServer.SocketServerError, Scope.Scope>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeSocketServer.ts#L34"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeSocketServer.ts#L51"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "NodeSocketServer.ts",
+      "path": "src/NodeSocketServer.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "layer",
+    "description": "Provides a TCP `SocketServer` by creating and managing a scoped Node\n`net.Server` with the supplied server and listen options.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "layers",
+    "signature": "declare const layer: (options: Net.ServerOpts & Net.ListenOptions) => Layer.Layer<SocketServer.SocketServer, SocketServer.SocketServerError>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeSocketServer.ts#L169"
   },
   {
     "_tag": "Constant",
@@ -398,87 +583,45 @@
     },
     "project": "@effect/platform-node-shared",
     "name": "makeWebSocket",
+    "description": "Creates a scoped WebSocket `SocketServer` backed by the `ws` package,\nproviding the WebSocket and its Node `IncomingMessage` to connection\nhandlers and closing the server when the scope ends.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": "constructors",
-    "signature": "declare const makeWebSocket: (options: WS.ServerOptions<typeof WS.WebSocket, typeof Http.IncomingMessage>) => Effect.Effect<SocketServer.SocketServer[\"Type\"], SocketServer.SocketServerError, Scope.Scope>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeSocketServer.ts#L155"
+    "signature": "declare const makeWebSocket: (options: NodeWS.ServerOptions<typeof NodeWS.WebSocket, typeof Http.IncomingMessage>) => Effect.Effect<SocketServer.SocketServer[\"Service\"], SocketServer.SocketServerError, Scope.Scope>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeSocketServer.ts#L184"
   },
   {
-    "_tag": "Function",
-    "module": {
-      "name": "NodeSocketServer.ts",
-      "path": "src/NodeSocketServer.ts"
-    },
-    "project": "@effect/platform-node-shared",
-    "name": "layer",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "layers",
-    "signature": "declare const layer: (options: Net.ServerOpts & Net.ListenOptions) => Layer.Layer<SocketServer.SocketServer, SocketServer.SocketServerError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeSocketServer.ts#L143"
-  },
-  {
-    "_tag": "Function",
+    "_tag": "Constant",
     "module": {
       "name": "NodeSocketServer.ts",
       "path": "src/NodeSocketServer.ts"
     },
     "project": "@effect/platform-node-shared",
     "name": "layerWebSocket",
+    "description": "Provides a WebSocket `SocketServer` backed by the `ws` package and managed\nwith the supplied server options.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": "layers",
-    "signature": "declare const layerWebSocket: (options: WS.ServerOptions) => Layer.Layer<SocketServer.SocketServer, SocketServer.SocketServerError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeSocketServer.ts#L240"
+    "signature": "declare const layerWebSocket: (options: NodeSocket.NodeWS.ServerOptions<typeof NodeSocket.NodeWS.WebSocket, typeof Http.IncomingMessage>) => Layer.Layer<SocketServer.SocketServer, SocketServer.SocketServerError>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeSocketServer.ts#L287"
   },
   {
     "_tag": "Constant",
     "module": {
-      "name": "NodeStream.ts",
-      "path": "src/NodeStream.ts"
+      "name": "NodeStdio.ts",
+      "path": "src/NodeStdio.ts"
     },
     "project": "@effect/platform-node-shared",
-    "name": "fromReadable",
+    "name": "layer",
+    "description": "Provides `Stdio` from `process.argv`, `process.stdin`, `process.stdout`,\nand `process.stderr`; stdin remains open and stdout/stderr are not ended by\ndefault.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
-    "category": "constructors",
-    "signature": "declare const fromReadable: <E, A = Uint8Array<ArrayBufferLike>>(evaluate: LazyArg<Readable | NodeJS.ReadableStream>, onError: (error: unknown) => E, options?: FromReadableOptions) => Stream.Stream<A, E>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeStream.ts#L38"
-  },
-  {
-    "_tag": "Constant",
-    "module": {
-      "name": "NodeStream.ts",
-      "path": "src/NodeStream.ts"
-    },
-    "project": "@effect/platform-node-shared",
-    "name": "fromReadableChannel",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "constructors",
-    "signature": "declare const fromReadableChannel: <E, A = Uint8Array<ArrayBufferLike>>(evaluate: LazyArg<Readable | NodeJS.ReadableStream>, onError: (error: unknown) => E, options?: FromReadableOptions | undefined) => Channel<Chunk<A>, unknown, E>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeStream.ts#L48"
-  },
-  {
-    "_tag": "Constant",
-    "module": {
-      "name": "NodeStream.ts",
-      "path": "src/NodeStream.ts"
-    },
-    "project": "@effect/platform-node-shared",
-    "name": "fromDuplex",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "constructors",
-    "signature": "declare const fromDuplex: <IE, E, I = Uint8Array<ArrayBufferLike>, O = Uint8Array<ArrayBufferLike>>(evaluate: LazyArg<Duplex>, onError: (error: unknown) => E, options?: FromReadableOptions & FromWritableOptions) => Channel<Chunk<O>, Chunk<I>, IE | E, IE, void, unknown>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeStream.ts#L58"
+    "since": "4.0.0",
+    "category": "layers",
+    "signature": "declare const layer: Layer.Layer<Stdio.Stdio, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeStdio.ts#L27"
   },
   {
     "_tag": "Constant",
@@ -488,12 +631,13 @@
     },
     "project": "@effect/platform-node-shared",
     "name": "pipeThroughDuplex",
+    "description": "Pipes an Effect `Stream` through a Node `Duplex`, writing the stream's\nchunks to the duplex and emitting chunks read back from it.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": "combinators",
-    "signature": "declare const pipeThroughDuplex: { <E2, B = Uint8Array<ArrayBufferLike>>(duplex: LazyArg<Duplex>, onError: (error: unknown) => E2, options?: (FromReadableOptions & FromWritableOptions) | undefined): <R, E, A>(self: Stream.Stream<A, E, R>) => Stream.Stream<B, E2 | E, R>; <R, E, A, E2, B = Uint8Array<ArrayBufferLike>>(self: Stream.Stream<A, E, R>, duplex: LazyArg<Duplex>, onError: (error: unknown) => E2, options?: (FromReadableOptions & FromWritableOptions) | undefined): Stream.Stream<B, E | E2, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeStream.ts#L68"
+    "signature": "declare const pipeThroughDuplex: { <B = Uint8Array<ArrayBufferLike>, E2 = Cause.UnknownError>(options: { readonly evaluate: LazyArg<Duplex>; readonly onError?: (error: unknown) => E2; readonly chunkSize?: number | undefined; readonly bufferSize?: number | undefined; readonly endOnDone?: boolean | undefined; readonly encoding?: BufferEncoding | undefined; }): <R, E, A>(self: Stream.Stream<A, E, R>) => Stream.Stream<B, E2 | E, R>; <R, E, A, B = Uint8Array<ArrayBufferLike>, E2 = Cause.UnknownError>(self: Stream.Stream<A, E, R>, options: { readonly evaluate: LazyArg<Duplex>; readonly onError?: (error: unknown) => E2; readonly chunkSize?: number | undefined; readonly bufferSize?: number | undefined; readonly endOnDone?: boolean | undefined; readonly encoding?: BufferEncoding | undefined; }): Stream.Stream<B, E | E2, R>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeStream.ts#L124"
   },
   {
     "_tag": "Constant",
@@ -503,147 +647,141 @@
     },
     "project": "@effect/platform-node-shared",
     "name": "pipeThroughSimple",
+    "description": "Pipes a stream of strings or bytes through a Node `Duplex` using default\noptions and `Cause.UnknownError` for stream failures.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": "combinators",
-    "signature": "declare const pipeThroughSimple: { (duplex: LazyArg<Duplex>): <R, E>(self: Stream.Stream<string | Uint8Array, E, R>) => Stream.Stream<Uint8Array, E | PlatformError, R>; <R, E>(self: Stream.Stream<string | Uint8Array, E, R>, duplex: LazyArg<Duplex>): Stream.Stream<Uint8Array, PlatformError | E, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeStream.ts#L86"
+    "signature": "declare const pipeThroughSimple: { (duplex: LazyArg<Duplex>): <R, E>(self: Stream.Stream<string | Uint8Array, E, R>) => Stream.Stream<Uint8Array, E | Cause.UnknownError, R>; <R, E>(self: Stream.Stream<string | Uint8Array, E, R>, duplex: LazyArg<Duplex>): Stream.Stream<Uint8Array, Cause.UnknownError | E, R>; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeStream.ts#L169"
   },
   {
-    "_tag": "Constant",
+    "_tag": "Function",
+    "module": {
+      "name": "NodeStream.ts",
+      "path": "src/NodeStream.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "fromReadable",
+    "description": "Converts a Node readable stream into an Effect `Stream`, reading chunks with\nan optional chunk size, mapping stream errors with `onError`, and destroying\nthe readable on completion unless `closeOnDone` is `false`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "constructors",
+    "signature": "declare const fromReadable: <A = Uint8Array<ArrayBufferLike>, E = Cause.UnknownError>(options: { readonly evaluate: LazyArg<Readable | NodeJS.ReadableStream>; readonly onError?: (error: unknown) => E; readonly chunkSize?: number | undefined; readonly bufferSize?: number | undefined; readonly closeOnDone?: boolean | undefined; }) => Stream.Stream<A, E>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeStream.ts#L38"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "NodeStream.ts",
+      "path": "src/NodeStream.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "fromReadableChannel",
+    "description": "Creates a `Channel` that pulls chunks from a Node readable stream, mapping\nerrors with `onError` and destroying the readable on completion unless\n`closeOnDone` is `false`.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "constructors",
+    "signature": "declare const fromReadableChannel: <A = Uint8Array<ArrayBufferLike>, E = Cause.UnknownError>(options: { readonly evaluate: LazyArg<Readable | NodeJS.ReadableStream>; readonly onError?: (error: unknown) => E; readonly chunkSize?: number | undefined; readonly closeOnDone?: boolean | undefined; }) => Channel.Channel<Arr.NonEmptyReadonlyArray<A>, E>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeStream.ts#L54"
+  },
+  {
+    "_tag": "Function",
+    "module": {
+      "name": "NodeStream.ts",
+      "path": "src/NodeStream.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "fromDuplex",
+    "description": "Creates a `Channel` over a Node `Duplex`, writing upstream chunks with\nbackpressure while emitting chunks read from the duplex and optionally ending\nthe writable side when upstream completes.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "constructors",
+    "signature": "declare const fromDuplex: <IE, I = Uint8Array<ArrayBufferLike>, O = Uint8Array<ArrayBufferLike>, E = Cause.UnknownError>(options: { readonly evaluate: LazyArg<Duplex>; readonly onError?: (error: unknown) => E; readonly chunkSize?: number | undefined; readonly bufferSize?: number | undefined; readonly endOnDone?: boolean | undefined; readonly encoding?: BufferEncoding | undefined; }) => Channel.Channel<Arr.NonEmptyReadonlyArray<O>, IE | E, void, Arr.NonEmptyReadonlyArray<I>, IE>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeStream.ts#L78"
+  },
+  {
+    "_tag": "Function",
     "module": {
       "name": "NodeStream.ts",
       "path": "src/NodeStream.ts"
     },
     "project": "@effect/platform-node-shared",
     "name": "toReadable",
+    "description": "Converts an Effect `Stream` into a Node `Readable`, using the caller's\nEffect context to run the stream and destroying the readable if the stream\nfails.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
-    "category": "conversions",
-    "signature": "declare const toReadable: <E, R>(stream: Stream.Stream<string | Uint8Array, E, R>) => Effect<Readable, never, R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeStream.ts#L100"
+    "since": "4.0.0",
+    "category": "converting",
+    "signature": "declare const toReadable: <E, R>(stream: Stream.Stream<string | Uint8Array, E, R>) => Effect.Effect<Readable, never, R>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeStream.ts#L190"
   },
   {
-    "_tag": "Constant",
+    "_tag": "Function",
     "module": {
       "name": "NodeStream.ts",
       "path": "src/NodeStream.ts"
     },
     "project": "@effect/platform-node-shared",
     "name": "toReadableNever",
+    "description": "Converts a service-free Effect `Stream` into a Node `Readable` using an\nempty Effect context.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
-    "category": "conversions",
+    "since": "4.0.0",
+    "category": "converting",
     "signature": "declare const toReadableNever: <E>(stream: Stream.Stream<string | Uint8Array, E, never>) => Readable",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeStream.ts#L107"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeStream.ts#L203"
   },
   {
-    "_tag": "Constant",
+    "_tag": "Function",
     "module": {
       "name": "NodeStream.ts",
       "path": "src/NodeStream.ts"
     },
     "project": "@effect/platform-node-shared",
     "name": "toString",
+    "description": "Consumes a Node readable stream into a string using the selected encoding,\nfailing through `onError` on stream errors or when `maxBytes` is exceeded\nand destroying the stream on interruption or failure.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
-    "category": "conversions",
-    "signature": "declare const toString: <E>(readable: LazyArg<Readable | NodeJS.ReadableStream>, options: { readonly onFailure: (error: unknown) => E; readonly encoding?: BufferEncoding | undefined; readonly maxBytes?: SizeInput | undefined; }) => Effect<string, E>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeStream.ts#L114"
+    "since": "4.0.0",
+    "category": "converting",
+    "signature": "declare const toString: <E = Cause.UnknownError>(readable: LazyArg<Readable | NodeJS.ReadableStream>, options?: { readonly onError?: (error: unknown) => E; readonly encoding?: BufferEncoding | undefined; readonly maxBytes?: SizeInput | undefined; }) => Effect.Effect<string, E>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeStream.ts#L217"
   },
   {
-    "_tag": "Constant",
+    "_tag": "Function",
+    "module": {
+      "name": "NodeStream.ts",
+      "path": "src/NodeStream.ts"
+    },
+    "project": "@effect/platform-node-shared",
+    "name": "toArrayBuffer",
+    "description": "Consumes a Node readable stream into an `ArrayBuffer`, failing through\n`onError` on stream errors or when `maxBytes` is exceeded and destroying the\nstream on interruption or failure.",
+    "deprecated": false,
+    "examples": [],
+    "since": "4.0.0",
+    "category": "converting",
+    "signature": "declare const toArrayBuffer: <E = Cause.UnknownError>(readable: LazyArg<Readable | NodeJS.ReadableStream>, options?: { readonly onError?: (error: unknown) => E; readonly maxBytes?: SizeInput | undefined; }) => Effect.Effect<ArrayBuffer, E>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeStream.ts#L270"
+  },
+  {
+    "_tag": "Function",
     "module": {
       "name": "NodeStream.ts",
       "path": "src/NodeStream.ts"
     },
     "project": "@effect/platform-node-shared",
     "name": "toUint8Array",
+    "description": "Consumes a Node readable stream into a `Uint8Array`, using the same error\nmapping and `maxBytes` handling as `toArrayBuffer`.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
-    "category": "conversions",
-    "signature": "declare const toUint8Array: <E>(readable: LazyArg<Readable | NodeJS.ReadableStream>, options: { readonly onFailure: (error: unknown) => E; readonly maxBytes?: SizeInput | undefined; }) => Effect<Uint8Array, E>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeStream.ts#L127"
-  },
-  {
-    "_tag": "Constant",
-    "module": {
-      "name": "NodeStream.ts",
-      "path": "src/NodeStream.ts"
-    },
-    "project": "@effect/platform-node-shared",
-    "name": "stdin",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "stdio",
-    "signature": "declare const stdin: Stream.Stream<Uint8Array<ArrayBufferLike>, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeStream.ts#L136"
-  },
-  {
-    "_tag": "Constant",
-    "module": {
-      "name": "NodeStream.ts",
-      "path": "src/NodeStream.ts"
-    },
-    "project": "@effect/platform-node-shared",
-    "name": "stdout",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "stdio",
-    "signature": "declare const stdout: Stream.Stream<Uint8Array<ArrayBufferLike>, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeStream.ts#L144"
-  },
-  {
-    "_tag": "Constant",
-    "module": {
-      "name": "NodeStream.ts",
-      "path": "src/NodeStream.ts"
-    },
-    "project": "@effect/platform-node-shared",
-    "name": "stderr",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "stdio",
-    "signature": "declare const stderr: Stream.Stream<Uint8Array<ArrayBufferLike>, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeStream.ts#L152"
-  },
-  {
-    "_tag": "Interface",
-    "module": {
-      "name": "NodeStream.ts",
-      "path": "src/NodeStream.ts"
-    },
-    "project": "@effect/platform-node-shared",
-    "name": "FromReadableOptions",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "models",
-    "signature": "export interface FromReadableOptions {\n  /** Defaults to undefined, which lets Node.js decide the chunk size */\n  readonly chunkSize?: SizeInput\n  /** Default to true, which means the stream will be closed when done */\n  readonly closeOnDone?: boolean | undefined\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeStream.ts#L18"
-  },
-  {
-    "_tag": "Interface",
-    "module": {
-      "name": "NodeStream.ts",
-      "path": "src/NodeStream.ts"
-    },
-    "project": "@effect/platform-node-shared",
-    "name": "FromWritableOptions",
-    "deprecated": false,
-    "examples": [],
-    "since": "1.0.0",
-    "category": "model",
-    "signature": "export interface FromWritableOptions {\n  readonly endOnDone?: boolean\n  readonly encoding?: BufferEncoding\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeStream.ts#L29"
+    "since": "4.0.0",
+    "category": "converting",
+    "signature": "declare const toUint8Array: <E = Cause.UnknownError>(readable: LazyArg<Readable | NodeJS.ReadableStream>, options?: { readonly onError?: (error: unknown) => E; readonly maxBytes?: SizeInput | undefined; }) => Effect.Effect<Uint8Array, E>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeStream.ts#L320"
   },
   {
     "_tag": "Constant",
@@ -653,12 +791,13 @@
     },
     "project": "@effect/platform-node-shared",
     "name": "make",
+    "description": "Creates a scoped process-backed `Terminal` using Node `readline`, enabling\nTTY raw mode while in scope and using the supplied predicate to decide when\nkey input should end.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
+    "since": "4.0.0",
     "category": "constructors",
-    "signature": "declare const make: (shouldQuit?: (input: UserInput) => boolean) => Effect<Terminal, never, Scope>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeTerminal.ts#L13"
+    "signature": "declare const make: (shouldQuit?: (input: Terminal.UserInput) => boolean) => Effect.Effect<Terminal.Terminal, never, Scope.Scope>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeTerminal.ts#L32"
   },
   {
     "_tag": "Constant",
@@ -668,11 +807,12 @@
     },
     "project": "@effect/platform-node-shared",
     "name": "layer",
+    "description": "Provides the default process-backed `Terminal` service, ending key input on\nCtrl+C or Ctrl+D.",
     "deprecated": false,
     "examples": [],
-    "since": "1.0.0",
-    "category": "layer",
-    "signature": "declare const layer: Layer<Terminal, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeTerminal.ts#L20"
+    "since": "4.0.0",
+    "category": "layers",
+    "signature": "declare const layer: Layer.Layer<Terminal.Terminal, never, never>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/NodeTerminal.ts#L125"
   }
 ]

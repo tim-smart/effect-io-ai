@@ -3,15 +3,49 @@ Module: `RequestResolver`<br />
 
 ## RequestResolver.around
 
-A data source aspect that executes requests between two effects, `before`
-and `after`, where the result of `before` can be used by `after`.
+Wraps request resolver execution between `before` and `after` effects.
+
+**Example** (Running effects around request resolution)
+
+```ts
+import { Effect, Exit, Request, RequestResolver } from "effect"
+
+interface GetDataRequest extends Request.Request<string> {
+  readonly _tag: "GetDataRequest"
+}
+const GetDataRequest = Request.tagged<GetDataRequest>("GetDataRequest")
+
+const resolver = RequestResolver.make<GetDataRequest>((entries) =>
+  Effect.sync(() => {
+    for (const entry of entries) {
+      entry.completeUnsafe(Exit.succeed("data"))
+    }
+  })
+)
+
+// Add setup and cleanup around request execution
+const resolverWithAround = RequestResolver.around(
+  resolver,
+  (entries) =>
+    Effect.gen(function*() {
+      yield* Effect.log(`Starting batch of ${entries.length} requests`)
+      return entries.length
+    }),
+  (entries, initialSize) =>
+    Effect.gen(function*() {
+      yield* Effect.log(
+        `Batch completed with ${entries.length} requests (started with ${initialSize})`
+      )
+    })
+)
+```
 
 **Signature**
 
 ```ts
-declare const around: { <A2, R2, X, R3>(before: Effect.Effect<A2, never, R2>, after: (a: A2) => Effect.Effect<X, never, R3>): <A, R>(self: RequestResolver<A, R>) => RequestResolver<A, R2 | R3 | R>; <A, R, A2, R2, X, R3>(self: RequestResolver<A, R>, before: Effect.Effect<A2, never, R2>, after: (a: A2) => Effect.Effect<X, never, R3>): RequestResolver<A, R | R2 | R3>; }
+declare const around: { <A extends Request.Any, A2, X>(before: (entries: NonEmptyArray<Request.Entry<NoInfer<A>>>) => Effect.Effect<A2, Request.Error<A>>, after: (entries: NonEmptyArray<Request.Entry<NoInfer<A>>>, a: A2) => Effect.Effect<X, Request.Error<A>>): (self: RequestResolver<A>) => RequestResolver<A>; <A extends Request.Any, A2, X>(self: RequestResolver<A>, before: (entries: NonEmptyArray<Request.Entry<NoInfer<A>>>) => Effect.Effect<A2, Request.Error<A>>, after: (entries: NonEmptyArray<Request.Entry<NoInfer<A>>>, a: A2) => Effect.Effect<X, Request.Error<A>>): RequestResolver<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/RequestResolver.ts#L150)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/RequestResolver.ts#L662)
 
 Since v2.0.0

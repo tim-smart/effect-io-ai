@@ -3,7 +3,7 @@ Module: `Sink`<br />
 
 ## Sink.sum
 
-A sink that sums incoming numeric values.
+Creates a sink which sums up its inputs.
 
 **Signature**
 
@@ -11,6 +11,6 @@ A sink that sums incoming numeric values.
 declare const sum: Sink<number, number, never, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Sink.ts#L1291)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Sink.ts#L1508)
 
 Since v2.0.0

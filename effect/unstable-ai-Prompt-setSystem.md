@@ -1,0 +1,42 @@
+Package: `effect`<br />
+Module: `Prompt`<br />
+
+## Prompt.setSystem
+
+Creates a new prompt from the specified prompt with the system message set
+to the specified text content.
+
+**Gotchas**
+
+This method removes and replaces any previous system message from the
+prompt.
+
+**Example** (Replacing system instructions)
+
+```ts
+import { Prompt } from "effect/unstable/ai"
+
+const systemPrompt = Prompt.make([{
+  role: "system",
+  content: "You are a helpful assistant."
+}])
+
+const userPrompt = Prompt.make("Hello, world!")
+
+const prompt = Prompt.concat(systemPrompt, userPrompt)
+
+const replaced = Prompt.setSystem(
+  prompt,
+  "You are an expert in programming"
+)
+```
+
+**Signature**
+
+```ts
+declare const setSystem: { (content: string): (self: Prompt) => Prompt; (self: Prompt, content: string): Prompt; }
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Prompt.ts#L2125)
+
+Since v4.0.0

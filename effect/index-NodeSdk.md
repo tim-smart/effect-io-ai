@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.NodeSdk
 
-Re-exports all named exports from the "./NodeSdk.js" module as `NodeSdk`.
+Re-exports all named exports from the "./NodeSdk.ts" module as `NodeSdk`.
 
 **Signature**
 
 ```ts
-export * as NodeSdk from "./NodeSdk.js"
+export * as NodeSdk from "./NodeSdk.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/index.ts#L14)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/index.ts#L10)
 
-Since v1.0.0
+Since v4.0.0

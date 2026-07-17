@@ -1,0 +1,17 @@
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.toIso
+
+Derives an `Iso` optic from a schema that isomorphically converts between
+the schema's `Type` and its `Iso` (intermediate / serialized form).
+
+**Signature**
+
+```ts
+declare const toIso: <S extends Constraint>(schema: S) => Optic_.Iso<S["Type"], S["Iso"]>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L13970)
+
+Since v4.0.0

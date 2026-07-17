@@ -3,7 +3,29 @@ Module: `Array`<br />
 
 ## Array.tail
 
-Get all but the first element of an `Iterable`, creating a new `Array`, or `None` if the `Iterable` is empty.
+Returns all elements except the first safely, wrapped in an `Option`.
+
+**When to use**
+
+Use to safely get all elements after the first when the iterable may be empty.
+
+**Details**
+
+Allocates a new array via `slice(1)`. Empty inputs return `Option.none()`.
+
+**Example** (Getting the tail)
+
+```ts
+import { Array } from "effect"
+
+console.log(Array.tail([1, 2, 3, 4])) // Option.some([2, 3, 4])
+console.log(Array.tail([])) // Option.none()
+```
+
+**See**
+
+- `tailNonEmpty` — when the array is known non-empty
+- `init` — all elements except the last
 
 **Signature**
 
@@ -11,6 +33,6 @@ Get all but the first element of an `Iterable`, creating a new `Array`, or `None
 declare const tail: <A>(self: Iterable<A>) => Option.Option<Array<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L730)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L1187)
 
 Since v2.0.0

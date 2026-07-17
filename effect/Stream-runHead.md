@@ -3,8 +3,21 @@ Module: `Stream`<br />
 
 ## Stream.runHead
 
-Runs the stream to completion and yields the first value emitted by it,
-discarding the rest of the elements.
+Runs the stream and returns the first element as an `Option`.
+
+**Example** (Getting the first stream value)
+
+```ts
+import { Console, Effect, Option, Stream } from "effect"
+
+const program = Effect.gen(function*() {
+  const head = yield* Stream.runHead(Stream.make(1, 2, 3))
+  yield* Console.log(Option.getOrThrow(head))
+})
+
+Effect.runPromise(program)
+// 1
+```
 
 **Signature**
 
@@ -12,6 +25,6 @@ discarding the rest of the elements.
 declare const runHead: <A, E, R>(self: Stream<A, E, R>) => Effect.Effect<Option.Option<A>, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L4394)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L10813)
 
 Since v2.0.0

@@ -3,7 +3,26 @@ Module: `DateTime`<br />
 
 ## DateTime.layerCurrentZoneLocal
 
-Create a Layer from the systems local time zone.
+Create a Layer from the system's local time zone.
+
+**Details**
+
+This layer provides the `CurrentTimeZone` service using the system's
+configured local time zone.
+
+**Example** (Providing local time zone layers)
+
+```ts
+import { DateTime, Effect } from "effect"
+
+const program = Effect.gen(function*() {
+  const now = yield* DateTime.nowInCurrentZone
+  return DateTime.formatIsoZoned(now)
+})
+
+// Use the system's local time zone
+Effect.provide(program, DateTime.layerCurrentZoneLocal)
+```
 
 **Signature**
 
@@ -11,6 +30,6 @@ Create a Layer from the systems local time zone.
 declare const layerCurrentZoneLocal: Layer.Layer<CurrentTimeZone, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L1686)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L2922)
 
 Since v3.6.0

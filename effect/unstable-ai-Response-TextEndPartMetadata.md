@@ -1,0 +1,17 @@
+Package: `effect`<br />
+Module: `Response`<br />
+
+## Response.TextEndPartMetadata
+
+Represents provider-specific metadata that can be associated with a
+`TextEndPart` through module augmentation.
+
+**Signature**
+
+```ts
+export interface TextEndPartMetadata extends ProviderMetadata {}
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Response.ts#L784)
+
+Since v4.0.0

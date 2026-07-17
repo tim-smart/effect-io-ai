@@ -3,17 +3,19 @@ Module: `Match`<br />
 
 ## Match.tag
 
-The `Match.tag` function allows pattern matching based on the `_tag` field in
-a [Discriminated Union](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes-func.html#discriminated-unions).
-You can specify multiple tags to match within a single pattern.
+Matches discriminated union members by their `_tag` field.
 
-**Note**
+**When to use**
 
-The `Match.tag` function relies on the convention within the Effect ecosystem
-of naming the tag field as `"_tag"`. Ensure that your discriminated unions
-follow this naming convention for proper functionality.
+Use to handle one or more `_tag` cases with the same matcher branch.
 
-**Example** (Matching a Discriminated Union by Tag)
+**Details**
+
+This helper follows the Effect convention that discriminated unions use
+`"_tag"` as their discriminator field. Use `discriminator` for a
+different discriminator field.
+
+**Example** (Matching a discriminated union by tag)
 
 ```ts
 import { Match } from "effect"
@@ -24,7 +26,6 @@ type Event =
   | { readonly _tag: "error"; readonly error: Error }
   | { readonly _tag: "cancel" }
 
-// Create a Matcher for Either<number, string>
 const match = Match.type<Event>().pipe(
   // Match either "fetch" or "success"
   Match.tag("fetch", "success", () => `Ok!`),
@@ -48,6 +49,6 @@ console.log(match({ _tag: "error", error: new Error("Oops!") }))
 declare const tag: <R, P extends Types.Tags<"_tag", R> & string, Ret, Fn extends (_: Extract<R, Record<"_tag", P>>) => Ret>(...pattern: [first: P, ...values: Array<P>, f: Fn]) => <I, F, A, Pr>(self: Matcher<I, F, R, A, Pr, Ret>) => Matcher<I, Types.AddWithout<F, Extract<R, Record<"_tag", P>>>, Types.ApplyFilters<I, Types.AddWithout<F, Extract<R, Record<"_tag", P>>>>, ReturnType<Fn> | A, Pr, Ret>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L736)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L939)
 
-Since v1.0.0
+Since v4.0.0

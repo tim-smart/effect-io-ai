@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.FiberMap
 
-Re-exports all named exports from the "./FiberMap.js" module as `FiberMap`.
+Re-exports all named exports from the "./FiberMap.ts" module as `FiberMap`.
 
 **Signature**
 
 ```ts
-export * as FiberMap from "./FiberMap.js"
+export * as FiberMap from "./FiberMap.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L305)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L202)
 
 Since v2.0.0

@@ -3,10 +3,10 @@ Module: `Graph`<br />
 
 ## Graph.connectedComponents
 
-Find connected components in an undirected graph.
+Finds connected components in an undirected graph.
 Each component is represented as an array of node indices.
 
-**Example**
+**Example** (Finding connected components)
 
 ```ts
 import { Graph } from "effect"
@@ -30,6 +30,6 @@ console.log(components) // [[0, 1], [2, 3]]
 declare const connectedComponents: <N, E>(graph: Graph<N, E, "undirected"> | MutableGraph<N, E, "undirected">) => Array<Array<NodeIndex>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L2197)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L3886)
 
 Since v3.18.0

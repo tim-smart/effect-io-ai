@@ -3,8 +3,21 @@ Module: `Stream`<br />
 
 ## Stream.splitLines
 
-Splits strings on newlines. Handles both Windows newlines (`\r\n`) and UNIX
-newlines (`\n`).
+Splits a stream of strings into lines, handling `\n`, `\r`, and `\r\n` delimiters across chunks.
+
+**Example** (Splitting streamed text into lines)
+
+```ts
+import { Console, Effect, Stream } from "effect"
+
+Effect.runPromise(Effect.gen(function* () {
+  const lines = yield* Stream.runCollect(
+    Stream.make("a\nb\r\n", "c\n").pipe(Stream.splitLines)
+  )
+  yield* Console.log(lines)
+}))
+// ["a", "b", "c"]
+```
 
 **Signature**
 
@@ -12,6 +25,6 @@ newlines (`\n`).
 declare const splitLines: <E, R>(self: Stream<string, E, R>) => Stream<string, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L4751)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L9459)
 
 Since v2.0.0

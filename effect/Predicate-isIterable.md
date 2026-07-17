@@ -3,22 +3,30 @@ Module: `Predicate`<br />
 
 ## Predicate.isIterable
 
-A refinement that checks if a value is an `Iterable`.
-Many built-in types are iterable, such as `Array`, `string`, `Map`, and `Set`.
+Checks whether a value is iterable.
 
-**Example**
+**When to use**
+
+Use when you need a `Predicate` guard before iterating an unknown value.
+
+**Details**
+
+Accepts strings as iterable and uses `hasProperty` for `Symbol.iterator`.
+
+**Example** (Guarding iterables)
 
 ```ts
-import * as assert from "node:assert"
-import { isIterable } from "effect/Predicate"
+import { Predicate } from "effect"
 
-assert.strictEqual(isIterable([]), true)
-assert.strictEqual(isIterable("hello"), true)
-assert.strictEqual(isIterable(new Set()), true)
+const data: unknown = [1, 2, 3]
 
-assert.strictEqual(isIterable({}), false)
-assert.strictEqual(isIterable(123), false)
+console.log(Predicate.isIterable(data))
 ```
+
+**See**
+
+- `isSet`
+- `isMap`
 
 **Signature**
 
@@ -26,6 +34,6 @@ assert.strictEqual(isIterable(123), false)
 declare const isIterable: (input: unknown) => input is Iterable<unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L771)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L1288)
 
 Since v2.0.0

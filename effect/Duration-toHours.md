@@ -1,0 +1,25 @@
+Package: `effect`<br />
+Module: `Duration`<br />
+
+## Duration.toHours
+
+Converts a Duration to hours.
+
+**Example** (Converting durations to hours)
+
+```ts
+import { Duration } from "effect"
+
+console.log(Duration.toHours(Duration.minutes(120))) // 2
+console.log(Duration.toHours(Duration.days(1))) // 24
+```
+
+**Signature**
+
+```ts
+declare const toHours: (self: Input) => number
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Duration.ts#L841)
+
+Since v3.8.0

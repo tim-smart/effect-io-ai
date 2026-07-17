@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.AnthropicClient
 
-Re-exports all named exports from the "./AnthropicClient.js" module as `AnthropicClient`.
+Re-exports all named exports from the "./AnthropicClient.ts" module as `AnthropicClient`.
 
 **Signature**
 
 ```ts
-export * as AnthropicClient from "./AnthropicClient.js"
+export * as AnthropicClient from "./AnthropicClient.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/index.ts#L4)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/index.ts#L10)
 
-Since v1.0.0
+Since v4.0.0

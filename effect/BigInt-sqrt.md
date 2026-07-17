@@ -3,19 +3,33 @@ Module: `BigInt`<br />
 
 ## BigInt.sqrt
 
-Determines the square root of a given `bigint` safely. Returns `none` if the given `bigint` is negative.
+Computes the integer square root of a `bigint` safely.
 
-**Example**
+**When to use**
+
+Use to compute an integer square root while representing negative input as
+`Option.none`.
+
+**Details**
+
+For non-perfect squares, returns the largest `bigint` whose square is less
+than or equal to the input. Returns `Option.none()` when the input is
+negative.
+
+**Example** (Calculating square roots safely)
 
 ```ts
-import * as assert from "node:assert"
-import { BigInt, Option } from "effect"
+import { BigInt } from "effect"
 
-assert.deepStrictEqual(BigInt.sqrt(4n), Option.some(2n))
-assert.deepStrictEqual(BigInt.sqrt(9n), Option.some(3n))
-assert.deepStrictEqual(BigInt.sqrt(16n), Option.some(4n))
-assert.deepStrictEqual(BigInt.sqrt(-1n), Option.none())
+BigInt.sqrt(4n) // Option.some(2n)
+BigInt.sqrt(9n) // Option.some(3n)
+BigInt.sqrt(16n) // Option.some(4n)
+BigInt.sqrt(-1n) // Option.none()
 ```
+
+**See**
+
+- `sqrtUnsafe` for square root computation that throws on negative input
 
 **Signature**
 
@@ -23,6 +37,6 @@ assert.deepStrictEqual(BigInt.sqrt(-1n), Option.none())
 declare const sqrt: (n: bigint) => Option.Option<bigint>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L507)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L743)
 
 Since v2.0.0

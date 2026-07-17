@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.NodeClusterHttp
 
-Re-exports all named exports from the "./NodeClusterHttp.js" module as `NodeClusterHttp`.
+Re-exports all named exports from the "./NodeClusterHttp.ts" module as `NodeClusterHttp`.
 
 **Signature**
 
 ```ts
-export * as NodeClusterHttp from "./NodeClusterHttp.js"
+export * as NodeClusterHttp from "./NodeClusterHttp.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L4)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L20)
 
-Since v1.0.0
+Since v4.0.0

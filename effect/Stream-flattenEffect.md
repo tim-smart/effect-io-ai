@@ -3,15 +3,35 @@ Module: `Stream`<br />
 
 ## Stream.flattenEffect
 
-Flattens `Effect` values into the stream's structure, preserving all
-information about the effect.
+Flattens a stream of `Effect` values into a stream of their results.
+
+**When to use**
+
+Use when stream elements already are effects and their successes should become
+stream elements while their failures enter the stream error channel.
+
+**Example** (Flattening a stream of Effect values into a stream of their results)
+
+```ts
+import { Console, Effect, Stream } from "effect"
+
+const stream = Stream.make(Effect.succeed(1), Effect.succeed(2), Effect.succeed(3))
+
+const program = Effect.gen(function*() {
+  const result = yield* Stream.runCollect(stream.pipe(Stream.flattenEffect()))
+  yield* Console.log(result)
+})
+
+Effect.runPromise(program)
+// Output: [1, 2, 3]
+```
 
 **Signature**
 
 ```ts
-declare const flattenEffect: { (options?: { readonly concurrency?: number | "unbounded" | undefined; readonly unordered?: boolean | undefined; } | undefined): <A, E2, R2, E, R>(self: Stream<Effect.Effect<A, E2, R2>, E, R>) => Stream<A, E2 | E, R2 | R>; <A, E2, R2, E, R>(self: Stream<Effect.Effect<A, E2, R2>, E, R>, options?: { readonly concurrency?: number | "unbounded" | undefined; readonly unordered?: boolean | undefined; } | undefined): Stream<A, E2 | E, R2 | R>; }
+declare const flattenEffect: <Arg extends Stream<Effect.Effect<any, any, any>, any, any> | { readonly concurrency?: number | "unbounded" | undefined; readonly unordered?: boolean | undefined; } | undefined = { readonly concurrency?: number | "unbounded" | undefined; readonly unordered?: boolean | undefined; }>(selfOrOptions?: Arg, options?: { readonly concurrency?: number | "unbounded" | undefined; readonly unordered?: boolean | undefined; } | undefined) => [Arg] extends [Stream<Effect.Effect<infer _A, infer _EX, infer _RX>, infer _E, infer _R>] ? Stream<_A, _EX | _E, _RX | _R> : <A, EX, RX, E, R>(self: Stream<Effect.Effect<A, EX, RX>, E, R>) => Stream<A, EX | E, RX | R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L1828)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L2078)
 
 Since v2.0.0

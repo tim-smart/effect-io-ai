@@ -3,30 +3,48 @@ Module: `Schedule`<br />
 
 ## Schedule.andThen
 
-Runs two schedules sequentially, merging their outputs.
+Returns a schedule that runs `self` to completion, then runs `other`, and
+merges their outputs.
 
-**Details**
+**Example** (Sequencing quick and slow retries)
 
-This function executes two schedules one after the other. The first schedule
-runs to completion, and then the second schedule begins execution. Unlike
-`andThenEither`, this function merges the outputs instead of wrapping
-them in `Either`, allowing both schedules to contribute their results
-directly.
+```ts
+import { Console, Data, Effect, Schedule } from "effect"
 
-This is useful when a workflow consists of two phases where the second phase
-should start only after the first one has fully completed.
+class RetryAttemptError extends Data.TaggedError("RetryAttemptError")<{ readonly message: string }> {}
 
-**See**
+// First retry 3 times quickly, then switch to slower retries
+const quickRetries = Schedule.exponential("100 millis").pipe(
+  Schedule.upTo({ times: 3 })
+)
+const slowRetries = Schedule.exponential("1 second").pipe(
+  Schedule.upTo({ times: 2 })
+)
 
-- `andThenEither` If you need to keep track of which schedule
-produced each result.
+const combinedRetries = Schedule.andThen(quickRetries, slowRetries)
+
+const program = Effect.gen(function*() {
+  let attempt = 0
+  yield* Effect.retry(
+    Effect.gen(function*() {
+      attempt++
+      yield* Console.log(`Attempt ${attempt}`)
+      if (attempt < 6) {
+        return yield* Effect.fail(new RetryAttemptError({ message: `Failure ${attempt}` }))
+      }
+      return `Success on attempt ${attempt}`
+    }),
+    combinedRetries
+  )
+})
+```
 
 **Signature**
 
 ```ts
-declare const andThen: { <Out2, In2, R2>(that: Schedule<Out2, In2, R2>): <Out, In, R>(self: Schedule<Out, In, R>) => Schedule<Out2 | Out, In & In2, R2 | R>; <Out, In, R, Out2, In2, R2>(self: Schedule<Out, In, R>, that: Schedule<Out2, In2, R2>): Schedule<Out | Out2, In & In2, R | R2>; }
+declare const andThen: { <Output2, Input2, Error2, Env2>(other: Schedule<Output2, Input2, Error2, Env2>): <Output, Input, Error, Env>(self: Schedule<Output, Input, Error, Env>) => Schedule<Output | Output2, Input & Input2, Error | Error2, Env | Env2>; <Output, Input, Error, Env, Output2, Input2, Error2, Env2>(self: Schedule<Output, Input, Error, Env>, other: Schedule<Output2, Input2, Error2, Env2>): Schedule<Output | Output2, Input & Input2, Error | Error2, Env | Env2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L249)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L631)
 
 Since v2.0.0

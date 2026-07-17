@@ -1,0 +1,18 @@
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.NonEmptyString
+
+Type-level representation of `NonEmptyString`.
+
+**Signature**
+
+```ts
+export interface NonEmptyString extends String {
+  readonly "Rebuild": NonEmptyString
+}
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L8464)
+
+Since v3.10.0

@@ -3,61 +3,44 @@ Module: `Effect`<br />
 
 ## Effect.when
 
-Conditionally executes an effect based on a boolean condition.
+Runs an effect conditionally based on the result of an effectful boolean
+condition.
+
+**When to use**
+
+Use when you need an effectful check to decide whether another effect should
+run while representing the skipped case explicitly.
 
 **Details**
 
-This function allows you to run an effect only if a given condition evaluates
-to `true`. If the condition is `true`, the effect is executed, and its result
-is wrapped in an `Option.some`. If the condition is `false`, the effect is
-skipped, and the result is `Option.none`.
+The condition effect is evaluated first. If it succeeds with `true`, the
+source effect is run and its success value is wrapped in `Option.some`. If it
+succeeds with `false`, the source effect is skipped and the result is
+`Option.none`. If the condition effect fails, that failure is preserved.
 
-**When to Use**
-
-This function is useful for scenarios where you need to dynamically decide
-whether to execute an effect based on runtime logic, while also representing
-the skipped case explicitly.
-
-**Example** (Conditional Effect Execution)
+**Example** (Conditionally running an effect)
 
 ```ts
-import { Effect, Option } from "effect"
+import { Console, Effect } from "effect"
 
-const validateWeightOption = (
-  weight: number
-): Effect.Effect<Option.Option<number>> =>
-  // Conditionally execute the effect if the weight is non-negative
-  Effect.succeed(weight).pipe(Effect.when(() => weight >= 0))
+const shouldLog = true
 
-// Run with a valid weight
-Effect.runPromise(validateWeightOption(100)).then(console.log)
-// Output:
-// {
-//   _id: "Option",
-//   _tag: "Some",
-//   value: 100
-// }
+const program = Effect.when(
+  Console.log("Condition is true!"),
+  Effect.succeed(shouldLog)
+)
 
-// Run with an invalid weight
-Effect.runPromise(validateWeightOption(-5)).then(console.log)
-// Output:
-// {
-//   _id: "Option",
-//   _tag: "None"
-// }
+Effect.runPromise(program).then(console.log)
+// Output: "Condition is true!"
+// { _id: 'Option', _tag: 'Some', value: undefined }
 ```
-
-**See**
-
-- `whenEffect` for a version that allows the condition to be an effect.
-- `unless` for a version that executes the effect when the condition is `false`.
 
 **Signature**
 
 ```ts
-declare const when: { (condition: LazyArg<boolean>): <A, E, R>(self: Effect<A, E, R>) => Effect<Option.Option<A>, E, R>; <A, E, R>(self: Effect<A, E, R>, condition: LazyArg<boolean>): Effect<Option.Option<A>, E, R>; }
+declare const when: { <E2 = never, R2 = never>(condition: Effect<boolean, E2, R2>): <A, E, R>(self: Effect<A, E, R>) => Effect<Option<A>, E | E2, R | R2>; <A, E, R, E2 = never, R2 = never>(self: Effect<A, E, R>, condition: Effect<boolean, E2, R2>): Effect<Option<A>, E | E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L8684)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L5252)
 
 Since v2.0.0

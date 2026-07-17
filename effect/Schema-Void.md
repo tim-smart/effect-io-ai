@@ -1,0 +1,16 @@
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.Void
+
+Type-level representation of `Void`.
+
+**Signature**
+
+```ts
+export interface Void extends Bottom<void, void, never, never, SchemaAST.Void, Void> {}
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L3111)
+
+Since v3.10.0

@@ -5,12 +5,24 @@ Module: `HashMap`<br />
 
 Returns the number of entries within the `HashMap`.
 
+**Example** (Getting the size)
+
+```ts
+import { HashMap } from "effect"
+
+const emptyMap = HashMap.empty<string, number>()
+const map = HashMap.make(["a", 1], ["b", 2], ["c", 3])
+
+console.log(HashMap.size(emptyMap)) // 0
+console.log(HashMap.size(map)) // 3
+```
+
 **Signature**
 
 ```ts
 declare const size: <K, V>(self: HashMap<K, V>) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashMap.ts#L283)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashMap.ts#L681)
 
 Since v2.0.0

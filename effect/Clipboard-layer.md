@@ -3,7 +3,7 @@ Module: `Clipboard`<br />
 
 ## Clipboard.layer
 
-A layer that directly interfaces with the navigator.clipboard api
+Layer that directly interfaces with the browser Clipboard API.
 
 **Signature**
 
@@ -11,6 +11,6 @@ A layer that directly interfaces with the navigator.clipboard api
 declare const layer: Layer.Layer<Clipboard, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Clipboard.ts#L85)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/Clipboard.ts#L105)
 
-Since v1.0.0
+Since v4.0.0

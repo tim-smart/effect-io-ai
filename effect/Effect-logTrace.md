@@ -3,33 +3,39 @@ Module: `Effect`<br />
 
 ## Effect.logTrace
 
-Logs messages at the TRACE log level.
+Logs one or more messages at the TRACE level.
 
-**Details**
-
-This function logs the specified messages at the TRACE level. TRACE logs are
-typically used for very detailed diagnostic information. These messages are
-not displayed by default. To view them, you must adjust the logging
-configuration by setting the minimum log level to `LogLevel.Trace` using
-`Logger.withMinimumLogLevel`.
-
-**Example**
+**Example** (Logging trace messages)
 
 ```ts
-import { Effect, Logger, LogLevel } from "effect"
+import { Effect } from "effect"
 
-const program = Effect.logTrace("message1").pipe(Logger.withMinimumLogLevel(LogLevel.Trace))
+const program = Effect.gen(function*() {
+  yield* Effect.logTrace("Entering function processData")
 
-Effect.runFork(program)
-// timestamp=... level=TRACE fiber=#0 message=message1
+  // Trace detailed execution flow
+  for (let i = 0; i < 3; i++) {
+    yield* Effect.logTrace("Loop iteration:", i, "Processing item")
+  }
+
+  yield* Effect.logTrace("Exiting function processData")
+})
+
+Effect.runPromise(program)
+// Output:
+// timestamp=2023-... level=TRACE message="Entering function processData"
+// timestamp=2023-... level=TRACE message="Loop iteration: 0 Processing item"
+// timestamp=2023-... level=TRACE message="Loop iteration: 1 Processing item"
+// timestamp=2023-... level=TRACE message="Loop iteration: 2 Processing item"
+// timestamp=2023-... level=TRACE message="Exiting function processData"
 ```
 
 **Signature**
 
 ```ts
-declare const logTrace: (...message: ReadonlyArray<any>) => Effect<void, never, never>
+declare const logTrace: (...message: ReadonlyArray<any>) => Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L10911)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13962)
 
 Since v2.0.0

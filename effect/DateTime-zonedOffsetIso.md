@@ -3,9 +3,24 @@ Module: `DateTime`<br />
 
 ## DateTime.zonedOffsetIso
 
-Calculate the time zone offset of a `DateTime` in milliseconds.
+Formats the time zone offset of a `DateTime.Zoned` as an ISO string.
+
+**Details**
 
 The offset is formatted as "±HH:MM".
+
+**Example** (Formatting zoned offsets)
+
+```ts
+import { DateTime } from "effect"
+
+const zoned = DateTime.makeZonedUnsafe("2024-01-01T12:00:00Z", {
+  timeZone: DateTime.zoneMakeOffset(3 * 60 * 60 * 1000) // +3 hours
+})
+
+const offsetString = DateTime.zonedOffsetIso(zoned)
+console.log(offsetString) // "+03:00"
+```
 
 **Signature**
 
@@ -13,6 +28,6 @@ The offset is formatted as "±HH:MM".
 declare const zonedOffsetIso: (self: Zoned) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L931)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L1633)
 
 Since v3.6.0

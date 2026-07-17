@@ -3,17 +3,16 @@ Module: `Schema`<br />
 
 ## Schema.Date
 
-This schema converts a `string` into a `Date` object using the `new Date`
-constructor. It ensures that only valid date strings are accepted,
-rejecting any strings that would result in an invalid date, such as `new
-Date("Invalid Date")`.
+Type-level representation of `Date`.
 
 **Signature**
 
 ```ts
-declare const Date: typeof Date$
+export interface Date extends instanceOf<globalThis.Date> {
+  readonly "Rebuild": Date
+}
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6852)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10401)
 
-Since v3.10.0
+Since v4.0.0

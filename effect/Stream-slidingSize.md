@@ -3,14 +3,31 @@ Module: `Stream`<br />
 
 ## Stream.slidingSize
 
-Like `sliding`, but with a configurable `stepSize` parameter.
+Emits sliding windows of `chunkSize` elements, advancing by `stepSize`.
+
+**Example** (Emitting sliding windows with a step size)
+
+```ts
+import { Console, Effect, Stream } from "effect"
+
+const program = Effect.gen(function*() {
+  const chunks = yield* Stream.make(1, 2, 3, 4, 5).pipe(
+    Stream.slidingSize(3, 2),
+    Stream.runCollect
+  )
+  yield* Console.log(chunks)
+})
+
+Effect.runPromise(program)
+// Output: [ [ 1, 2, 3 ], [ 3, 4, 5 ] ]
+```
 
 **Signature**
 
 ```ts
-declare const slidingSize: { (chunkSize: number, stepSize: number): <A, E, R>(self: Stream<A, E, R>) => Stream<Chunk.Chunk<A>, E, R>; <A, E, R>(self: Stream<A, E, R>, chunkSize: number, stepSize: number): Stream<Chunk.Chunk<A>, E, R>; }
+declare const slidingSize: { (chunkSize: number, stepSize: number): <A, E, R>(self: Stream<A, E, R>) => Stream<Arr.NonEmptyReadonlyArray<A>, E, R>; <A, E, R>(self: Stream<A, E, R>, chunkSize: number, stepSize: number): Stream<Arr.NonEmptyReadonlyArray<A>, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L4672)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L7135)
 
 Since v2.0.0

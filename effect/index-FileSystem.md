@@ -1,16 +1,16 @@
-Package: `@effect/platform`<br />
+Package: `effect`<br />
 Module: `index`<br />
 
 ## index.FileSystem
 
-Re-exports all named exports from the "./FileSystem.js" module as `FileSystem`.
+Re-exports all named exports from the "./FileSystem.ts" module as `FileSystem`.
 
 **Signature**
 
 ```ts
-export * as FileSystem from "./FileSystem.js"
+export * as FileSystem from "./FileSystem.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L44)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L212)
 
-Since v1.0.0
+Since v4.0.0

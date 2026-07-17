@@ -1,0 +1,31 @@
+Package: `effect`<br />
+Module: `Response`<br />
+
+## Response.TextPart
+
+Response part representing plain text content.
+
+**Example** (Creating a text part)
+
+```ts
+import { Response } from "effect/unstable/ai"
+
+const textPart: Response.TextPart = Response.makePart("text", {
+  text: "The answer to your question is 42."
+})
+```
+
+**Signature**
+
+```ts
+export interface TextPart extends BasePart<"text", TextPartMetadata> {
+  /**
+   * The text content.
+   */
+  readonly text: string
+}
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Response.ts#L571)
+
+Since v4.0.0

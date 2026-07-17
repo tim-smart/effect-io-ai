@@ -1,0 +1,27 @@
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.isPattern
+
+Validates that a string matches the specified regular expression pattern.
+
+**Details**
+
+JSON Schema:
+
+This check corresponds to the `pattern` constraint in JSON Schema.
+
+Arbitrary:
+
+When generating test data with fast-check, this applies a `patterns`
+constraint to ensure generated strings match the specified RegExp pattern.
+
+**Signature**
+
+```ts
+declare const isPattern: (regExp: globalThis.RegExp, annotations?: Annotations.Filter) => SchemaAST.Filter<string>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6576)
+
+Since v4.0.0

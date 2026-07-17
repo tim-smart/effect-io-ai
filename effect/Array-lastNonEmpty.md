@@ -3,16 +3,25 @@ Module: `Array`<br />
 
 ## Array.lastNonEmpty
 
-Get the last element of a non empty array.
+Returns the last element of a `NonEmptyReadonlyArray` directly (no `Option`
+wrapper).
 
-**Example**
+**When to use**
+
+Use to get the last element without `Option` wrapping when the array is known
+to be non-empty.
+
+**Example** (Getting the last of a non-empty array)
 
 ```ts
 import { Array } from "effect"
 
-const result = Array.lastNonEmpty([1, 2, 3, 4])
-console.log(result) // 4
+console.log(Array.lastNonEmpty([1, 2, 3, 4])) // 4
 ```
+
+**See**
+
+- `last` — safe version for possibly-empty arrays
 
 **Signature**
 
@@ -20,6 +29,6 @@ console.log(result) // 4
 declare const lastNonEmpty: <A>(self: NonEmptyReadonlyArray<A>) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L722)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L1159)
 
 Since v2.0.0

@@ -1,0 +1,24 @@
+Package: `effect`<br />
+Module: `Argument`<br />
+
+## Argument.redacted
+
+Creates a positional redacted argument that obscures its value.
+
+**Example** (Creating a redacted argument)
+
+```ts
+import { Argument } from "effect/unstable/cli"
+
+const secret = Argument.redacted("secret")
+```
+
+**Signature**
+
+```ts
+declare const redacted: (name: string) => Argument<Redacted.Redacted<string>>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Argument.ts#L200)
+
+Since v4.0.0

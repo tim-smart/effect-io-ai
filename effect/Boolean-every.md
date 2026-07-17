@@ -3,17 +3,26 @@ Module: `Boolean`<br />
 
 ## Boolean.every
 
-This utility function is used to check if all the elements in a collection of boolean values are `true`.
+Checks whether every boolean in a collection is `true`.
 
-**Example**
+**When to use**
+
+Use to check that every boolean in an iterable is `true`.
+
+**Example** (Checking every boolean)
 
 ```ts
+import { Boolean } from "effect"
 import * as assert from "node:assert"
-import { every } from "effect/Boolean"
 
-assert.deepStrictEqual(every([true, true, true]), true)
-assert.deepStrictEqual(every([true, false, true]), false)
+assert.deepStrictEqual(Boolean.every([true, true, true]), true)
+assert.deepStrictEqual(Boolean.every([true, false, true]), false)
 ```
+
+**See**
+
+- `some` for checking whether at least one value is `true`
+- `ReducerAnd` for reducing booleans with AND through a `Reducer`
 
 **Signature**
 
@@ -21,6 +30,6 @@ assert.deepStrictEqual(every([true, false, true]), false)
 declare const every: (collection: Iterable<boolean>) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Boolean.ts#L257)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Boolean.ts#L397)
 
 Since v2.0.0

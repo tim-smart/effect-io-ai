@@ -3,24 +3,31 @@ Module: `Array`<br />
 
 ## Array.scan
 
-Accumulates values from an `Iterable` starting from the left, storing
-each intermediate result in an array. Useful for tracking the progression of
-a value through a series of transformations.
+Folds left-to-right while keeping every intermediate accumulator value.
 
-**Example**
+**When to use**
+
+Use to compute a running accumulator where each intermediate value is needed.
+
+**Details**
+
+The output length is `input.length + 1` because it starts with the initial
+value. The result is always a `NonEmptyArray`. Use `reduce` if you only need
+the final accumulated value.
+
+**Example** (Running totals)
 
 ```ts
-import { Array } from "effect";
+import { Array } from "effect"
 
 const result = Array.scan([1, 2, 3, 4], 0, (acc, value) => acc + value)
 console.log(result) // [0, 1, 3, 6, 10]
-
-// Explanation:
-// This function starts with the initial value (0 in this case)
-// and adds each element of the array to this accumulator one by one,
-// keeping track of the cumulative sum after each addition.
-// Each of these sums is captured in the resulting array.
 ```
+
+**See**
+
+- `scanRight` — right-to-left scan
+- `reduce` — fold without intermediate values
 
 **Signature**
 
@@ -28,6 +35,6 @@ console.log(result) // [0, 1, 3, 6, 10]
 declare const scan: { <B, A>(b: B, f: (b: B, a: A) => B): (self: Iterable<A>) => NonEmptyArray<B>; <A, B>(self: Iterable<A>, b: B, f: (b: B, a: A) => B): NonEmptyArray<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L456)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L716)
 
 Since v2.0.0

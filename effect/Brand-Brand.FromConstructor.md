@@ -3,14 +3,14 @@ Module: `Brand`<br />
 
 ## Brand.Brand.FromConstructor
 
-A utility type to extract a branded type from a `Brand.Constructor`.
+A utility type to extract a branded type from a `Constructor`.
 
 **Signature**
 
 ```ts
-type FromConstructor<A> = A extends Brand.Constructor<infer B> ? B : never
+type FromConstructor<C> = C extends Constructor<infer B> ? B : never
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Brand.ts#L119)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Brand.ts#L159)
 
 Since v2.0.0

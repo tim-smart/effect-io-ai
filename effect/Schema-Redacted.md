@@ -3,15 +3,23 @@ Module: `Schema`<br />
 
 ## Schema.Redacted
 
-A transformation that transform a `Schema<A, I, R>` into a
-`RedactedFromSelf<A>`.
+Type-level representation returned by `Redacted`.
 
 **Signature**
 
 ```ts
-declare const Redacted: <Value extends Schema.Any>(value: Value) => Redacted<Value>
+export interface Redacted<S extends Constraint> extends
+  declareConstructor<
+    Redacted_.Redacted<S["Type"]>,
+    Redacted_.Redacted<S["Encoded"]>,
+    readonly [S]
+  >
+{
+  readonly "Rebuild": Redacted<S>
+  readonly value: S
+}
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L5879)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L8930)
 
 Since v3.10.0

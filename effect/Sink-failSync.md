@@ -5,6 +5,22 @@ Module: `Sink`<br />
 
 A sink that always fails with the specified lazily evaluated error.
 
+**Example** (Failing with a lazy error)
+
+```ts
+import { Effect, Sink, Stream } from "effect"
+
+// Create a sink that fails with a lazy error
+const sink = Sink.failSync(() => new Error("Lazy error"))
+
+// Use it with a stream
+const stream = Stream.make(1, 2, 3)
+const program = Stream.run(stream, sink)
+
+Effect.runPromise(program).catch(console.log)
+// Output: Error: Lazy error
+```
+
 **Signature**
 
 ```ts

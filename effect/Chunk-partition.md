@@ -3,14 +3,31 @@ Module: `Chunk`<br />
 
 ## Chunk.partition
 
-Separate elements based on a predicate that also exposes the index of the element.
+Splits a chunk using a `Filter` into failures and successes.
+
+**Details**
+
+Returns `[excluded, satisfying]`. The filter receives `(element, index)`.
+
+**Example** (Partitioning with a Result)
+
+```ts
+import { Chunk, Result } from "effect"
+
+const [excluded, satisfying] = Chunk.partition(Chunk.make(1, -2, 3), (n, i) =>
+  n > 0 ? Result.succeed(n + i) : Result.fail(`negative:${n}`)
+)
+
+console.log(Chunk.toArray(excluded)) // ["negative:-2"]
+console.log(Chunk.toArray(satisfying)) // [1, 5]
+```
 
 **Signature**
 
 ```ts
-declare const partition: { <A, B extends A>(refinement: (a: NoInfer<A>, i: number) => a is B): (self: Chunk<A>) => [excluded: Chunk<Exclude<A, B>>, satisfying: Chunk<B>]; <A>(predicate: (a: NoInfer<A>, i: number) => boolean): (self: Chunk<A>) => [excluded: Chunk<A>, satisfying: Chunk<A>]; <A, B extends A>(self: Chunk<A>, refinement: (a: A, i: number) => a is B): [excluded: Chunk<Exclude<A, B>>, satisfying: Chunk<B>]; <A>(self: Chunk<A>, predicate: (a: A, i: number) => boolean): [excluded: Chunk<A>, satisfying: Chunk<A>]; }
+declare const partition: { <A, Pass, Fail>(f: (input: NoInfer<A>, i: number) => Result<Pass, Fail>): (self: Chunk<A>) => [excluded: Chunk<Fail>, satisfying: Chunk<Pass>]; <A, Pass, Fail>(self: Chunk<A>, f: (input: A, i: number) => Result<Pass, Fail>): [excluded: Chunk<Fail>, satisfying: Chunk<Pass>]; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Chunk.ts#L966)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Chunk.ts#L1777)
 
 Since v2.0.0

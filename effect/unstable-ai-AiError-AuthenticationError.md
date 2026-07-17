@@ -1,0 +1,34 @@
+Package: `effect`<br />
+Module: `AiError`<br />
+
+## AiError.AuthenticationError
+
+Error indicating authentication or authorization failure.
+
+**Details**
+
+Authentication errors are never retryable without credential changes.
+
+**Example** (Creating an authentication error)
+
+```ts
+import { AiError } from "effect/unstable/ai"
+
+const authError = new AiError.AuthenticationError({
+  kind: "InvalidKey"
+})
+
+console.log(authError.isRetryable) // false
+console.log(authError.message)
+// "InvalidKey: Verify your API key is correct"
+```
+
+**Signature**
+
+```ts
+declare class AuthenticationError
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/AiError.ts#L476)
+
+Since v4.0.0

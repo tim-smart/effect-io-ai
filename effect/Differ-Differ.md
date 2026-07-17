@@ -3,36 +3,30 @@ Module: `Differ`<br />
 
 ## Differ.Differ
 
-A `Differ<Value, Patch>` knows how to compare an old value and new value of
-type `Value` to produce a patch of type `Patch` that describes the
-differences between those values. A `Differ` also knows how to apply a patch
-to an old value to produce a new value that represents the old value updated
-with the changes described by the patch.
+Describes how to compute, combine, and apply patches for values of type `T`.
 
-A `Differ` can be used to construct a `FiberRef` supporting compositional
-updates using the `FiberRef.makePatch` constructor.
+**When to use**
 
-The `Differ` companion object contains constructors for `Differ` values for
-common data types such as `Chunk`, `HashMap`, and `HashSet``. In addition,
-`Differ`values can be transformed using the `transform` operator and combined
-using the `orElseEither` and `zip` operators. This allows creating `Differ`
-values for arbitrarily complex data types compositionally.
+Use to model patch-based updates for a value type when callers need to
+compute a patch from two values, combine patches, and apply a patch later.
+
+**Details**
+
+A `Differ` provides an empty patch, computes the patch between two values,
+combines patches, and applies a patch to an old value to produce an updated
+value.
 
 **Signature**
 
 ```ts
-export interface Differ<in out Value, in out Patch> extends Pipeable {
-  readonly [TypeId]: {
-    readonly _V: Types.Invariant<Value>
-    readonly _P: Types.Invariant<Patch>
-  }
+export interface Differ<in out T, in out Patch> {
   readonly empty: Patch
-  diff(oldValue: Value, newValue: Value): Patch
+  diff(oldValue: T, newValue: T): Patch
   combine(first: Patch, second: Patch): Patch
-  patch(patch: Patch, oldValue: Value): Value
+  patch(oldValue: T, patch: Patch): T
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Differ.ts#L52)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Differ.ts#L27)
 
 Since v2.0.0

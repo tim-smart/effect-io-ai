@@ -3,7 +3,35 @@ Module: `Stream`<br />
 
 ## Stream.toAsyncIterableEffect
 
-Converts the stream to a `AsyncIterable` capturing the required dependencies.
+Creates an effect that yields an `AsyncIterable` using the current services.
+
+**When to use**
+
+Use when the `AsyncIterable` should be created inside Effect with the current
+context supplying the stream's services.
+
+**Example** (Creating an AsyncIterable effect)
+
+```ts
+import { Effect, Stream } from "effect"
+
+const stream = Stream.make(1, 2, 3)
+
+const program = Effect.gen(function*() {
+  const iterable = yield* Stream.toAsyncIterableEffect(stream)
+  const values = yield* Effect.promise(async () => {
+    const collected: Array<number> = []
+    for await (const value of iterable) {
+      collected.push(value)
+    }
+    return collected
+  })
+  yield* Effect.sync(() => console.log(values))
+})
+
+Effect.runPromise(program)
+// [ 1, 2, 3 ]
+```
 
 **Signature**
 
@@ -11,6 +39,6 @@ Converts the stream to a `AsyncIterable` capturing the required dependencies.
 declare const toAsyncIterableEffect: <A, E, R>(self: Stream<A, E, R>) => Effect.Effect<AsyncIterable<A>, never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L5387)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L11402)
 
 Since v3.15.0

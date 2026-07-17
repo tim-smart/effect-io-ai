@@ -3,25 +3,17 @@ Module: `Effect`<br />
 
 ## Effect.orElseSucceed
 
-Ensures the effect always succeeds by replacing failures with a default
-success value.
+Recovers from a typed failure by producing a fallback success value.
 
 **Details**
 
-This function transforms an effect that may fail into one that cannot fail by
-replacing any failure with a provided success value. If the original effect
-fails, the failure is "swallowed," and the specified success value is
-returned instead. If the original effect succeeds, its value remains
-unchanged.
+If the source effect succeeds, its value is preserved. If it fails in the
+error channel, `orElseSucceed` evaluates the fallback and succeeds with that
+value, removing the typed error from the returned effect.
 
-**When to Use**
+Defects and interruptions are not recovered by this operator.
 
-This is especially useful for providing default values in case of failure,
-ensuring that an effect always completes successfully. By using this
-function, you can avoid the need for complex error handling and guarantee a
-fallback result.
-
-**Example**
+**Example** (Replacing failures with a value)
 
 ```ts
 import { Effect } from "effect"
@@ -49,6 +41,6 @@ console.log(Effect.runSyncExit(program))
 declare const orElseSucceed: { <A2>(evaluate: LazyArg<A2>): <A, E, R>(self: Effect<A, E, R>) => Effect<A2 | A, never, R>; <A, E, R, A2>(self: Effect<A, E, R>, evaluate: LazyArg<A2>): Effect<A | A2, never, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L11457)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L4375)
 
 Since v2.0.0

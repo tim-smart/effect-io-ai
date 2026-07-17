@@ -3,7 +3,16 @@ Module: `Record`<br />
 
 ## Record.keys
 
-Retrieve the keys of a given record as an array.
+Retrieves the keys of a given record as an array.
+
+**Example** (Getting record keys)
+
+```ts
+import { Record } from "effect"
+import * as assert from "node:assert"
+
+assert.deepStrictEqual(Record.keys({ a: 1, b: 2, c: 3 }), ["a", "b", "c"])
+```
 
 **Signature**
 
@@ -11,6 +20,6 @@ Retrieve the keys of a given record as an array.
 declare const keys: <K extends string | symbol, A>(self: ReadonlyRecord<K, A>) => Array<K & string>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Record.ts#L912)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Record.ts#L1004)
 
 Since v2.0.0

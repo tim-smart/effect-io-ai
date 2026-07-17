@@ -3,19 +3,34 @@ Module: `Option`<br />
 
 ## Option.zipLeft
 
-Combines two `Option`s, keeping the value from the first `Option` if both are
-`Some`.
+Sequences two `Option`s, keeping the value from the first if both are `Some`.
+
+**When to use**
+
+Use when you need two `Option` values to both be `Some`, then keep only the
+first value.
 
 **Details**
 
-This function takes two `Option`s and returns the first one if it is `Some`.
-If either the first `Option` or the second `Option` is `None`, the result
-will be `None`. This operation "zips" the two `Option`s while discarding the
-value from the second `Option`.
+- Both `Some` → returns `self`
+- Either `None` → returns `None`
 
-This is useful when sequencing computations where the second `Option`
-represents a dependency or condition that must hold, but its value is
-irrelevant.
+**Example** (Keeping the first value)
+
+```ts
+import { Option } from "effect"
+
+console.log(Option.zipLeft(Option.some("hello"), Option.some(1)))
+// Output: { _id: 'Option', _tag: 'Some', value: 'hello' }
+
+console.log(Option.zipLeft(Option.some("hello"), Option.none()))
+// Output: { _id: 'Option', _tag: 'None' }
+```
+
+**See**
+
+- `zipRight` to keep the second value instead
+- `zipWith` to combine both values
 
 **Signature**
 
@@ -23,6 +38,6 @@ irrelevant.
 declare const zipLeft: { <_>(that: Option<_>): <A>(self: Option<A>) => Option<A>; <A, X>(self: Option<A>, that: Option<X>): Option<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L1213)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L1512)
 
 Since v2.0.0

@@ -3,18 +3,41 @@ Module: `Fiber`<br />
 
 ## Fiber.join
 
-Joins the fiber, which suspends the joining fiber until the result of the
-fiber has been determined. Attempting to join a fiber that has erred will
-result in a catchable error. Joining an interrupted fiber will result in an
-"inner interruption" of this fiber, unlike interruption triggered by
-another fiber, "inner interruption" can be caught and recovered.
+Joins a fiber, blocking until it completes. If the fiber succeeds,
+returns its value. If it fails, the error is propagated.
+
+**When to use**
+
+Use when you need a forked fiber's failure to fail the current Effect because
+that fiber is part of the current workflow.
+
+**Gotchas**
+
+Joining a failed fiber propagates the fiber's Cause. Use `await` when
+you need to inspect the `Exit` instead of failing.
+
+**Example** (Joining a fiber)
+
+```ts
+import { Effect, Fiber } from "effect"
+
+const program = Effect.gen(function*() {
+  const fiber = yield* Effect.forkChild(Effect.succeed(42))
+  const result = yield* Fiber.join(fiber)
+  console.log(result) // 42
+})
+```
+
+**See**
+
+- `await` for inspecting the fiber outcome as an Exit
 
 **Signature**
 
 ```ts
-declare const join: <A, E>(self: Fiber<A, E>) => Effect.Effect<A, E>
+declare const join: <A, E>(self: Fiber<A, E>) => Effect<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Fiber.ts#L527)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Fiber.ts#L272)
 
 Since v2.0.0

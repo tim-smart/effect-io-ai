@@ -3,9 +3,31 @@ Module: `Effect`<br />
 
 ## Effect.interruptibleMask
 
-This function behaves like `interruptible`, but it also provides a
-`restore` function. This function can be used to restore the interruptibility
-of any specific region of code.
+Runs an effect in an interruptible region while providing `restore` for
+locally restoring the previous interruptibility.
+
+**Example** (Controlling interruptibility locally)
+
+```ts
+import { Console, Effect } from "effect"
+
+const program = Effect.interruptibleMask((restore) =>
+  Effect.gen(function*() {
+    yield* Console.log("Interruptible phase...")
+    yield* Effect.sleep("1 second")
+
+    // Make this part uninterruptible
+    yield* restore(
+      Effect.gen(function*() {
+        yield* Console.log("Uninterruptible phase...")
+        yield* Effect.sleep("2 seconds")
+      })
+    )
+
+    yield* Console.log("Back to interruptible")
+  })
+)
+```
 
 **Signature**
 
@@ -13,6 +35,6 @@ of any specific region of code.
 declare const interruptibleMask: <A, E, R>(f: (restore: <AX, EX, RX>(effect: Effect<AX, EX, RX>) => Effect<AX, EX, RX>) => Effect<A, E, R>) => Effect<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L4905)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L7398)
 
 Since v2.0.0

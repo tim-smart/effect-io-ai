@@ -3,15 +3,25 @@ Module: `Types`<br />
 
 ## Types.Has
 
-Determines if a record contains any of the given keys.
+Checks whether an object type contains any of the specified keys.
 
-**Example**
+**When to use**
+
+Use to branch type-level logic when at least one key from a candidate key set
+exists on an object type.
+
+**Details**
+
+Returns `true` if at least one key from `Key` exists in `A`, `false`
+otherwise.
+
+**Example** (Checking key presence)
 
 ```ts
 import type { Types } from "effect"
 
-type Res1 = Types.Has<{ a: number }, "a" | "b"> // true
-type Res2 = Types.Has<{ c: number }, "a" | "b"> // false
+type Yes = Types.Has<{ a: number; b: string }, "a" | "c"> // true
+type No = Types.Has<{ a: number }, "b" | "c"> // false
 ```
 
 **Signature**
@@ -22,6 +32,6 @@ type Has<A, Key> = (Key extends infer K ? K extends keyof A ? true : never : nev
   : true
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L171)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L339)
 
 Since v2.0.0

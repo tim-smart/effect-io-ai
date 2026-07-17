@@ -5,7 +5,12 @@ Module: `Graph`<br />
 
 Converts a mutable graph back to an immutable graph, ending the mutation scope.
 
-**Example**
+**Details**
+
+Finalizes the mutable handle. Later public mutation operations on that handle
+fail with a `GraphError`.
+
+**Example** (Ending a mutation scope)
 
 ```ts
 import { Graph } from "effect"
@@ -22,6 +27,6 @@ const newGraph = Graph.endMutation(mutable)
 declare const endMutation: <N, E, T extends Kind = "directed">(mutable: MutableGraph<N, E, T>) => Graph<N, E, T>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L385)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L636)
 
 Since v3.18.0

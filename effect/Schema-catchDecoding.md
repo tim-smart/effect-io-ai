@@ -1,0 +1,35 @@
+Package: `effect`<br />
+Module: `Schema`<br />
+
+## Schema.catchDecoding
+
+Recovers from a decoding error by providing a fallback value.
+
+**Details**
+
+The handler receives the `Issue` and returns an `Effect` that either
+succeeds with a fallback value or re-fails with a (possibly different) issue.
+
+**Example** (Returning a default on decode failure)
+
+```ts
+import { Effect, Option, Schema } from "effect"
+
+const schema = Schema.Number.pipe(
+  Schema.catchDecoding((_issue) => Effect.succeed(Option.some(0)))
+)
+```
+
+**See**
+
+- `catchDecodingWithContext` to add service requirements to the handler
+
+**Signature**
+
+```ts
+declare const catchDecoding: <S extends Constraint>(f: (issue: SchemaIssue.Issue) => Effect.Effect<Option_.Option<S["Type"]>, SchemaIssue.Issue>) => (self: S) => middlewareDecoding<S, S["DecodingServices"]>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L5294)
+
+Since v4.0.0

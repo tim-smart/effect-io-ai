@@ -5,12 +5,34 @@ Module: `Match`<br />
 
 Matches values of type `string`.
 
+**Details**
+
+This predicate refines unknown values to strings, allowing pattern matching
+on string types. It's commonly used in type-based matchers to handle string cases.
+
+**Example** (Matching string values)
+
+```ts
+import { Match } from "effect"
+
+const processValue = Match.type<string | number | boolean>().pipe(
+  Match.when(Match.string, (str) => `String: ${str.toUpperCase()}`),
+  Match.when(Match.number, (num) => `Number: ${num * 2}`),
+  Match.when(Match.boolean, (bool) => `Boolean: ${bool ? "yes" : "no"}`),
+  Match.exhaustive
+)
+
+console.log(processValue("hello")) // "String: HELLO"
+console.log(processValue(42)) // "Number: 84"
+console.log(processValue(true)) // "Boolean: yes"
+```
+
 **Signature**
 
 ```ts
 declare const string: Predicate.Refinement<unknown, string>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L969)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L1281)
 
-Since v1.0.0
+Since v4.0.0

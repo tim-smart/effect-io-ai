@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.PubSub
 
-Re-exports all named exports from the "./PubSub.js" module as `PubSub`.
+Re-exports all named exports from the "./PubSub.ts" module as `PubSub`.
 
 **Signature**
 
 ```ts
-export * as PubSub from "./PubSub.js"
+export * as PubSub from "./PubSub.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1142)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L422)
 
 Since v2.0.0

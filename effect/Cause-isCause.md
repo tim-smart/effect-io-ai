@@ -3,14 +3,23 @@ Module: `Cause`<br />
 
 ## Cause.isCause
 
-Checks if a value is a `Cause`.
+Checks whether an arbitrary value is a `Cause`.
+
+**Example** (Checking the runtime type)
+
+```ts
+import { Cause } from "effect"
+
+console.log(Cause.isCause(Cause.fail("error"))) // true
+console.log(Cause.isCause("not a cause")) // false
+```
 
 **Signature**
 
 ```ts
-declare const isCause: (u: unknown) => u is Cause<unknown>
+declare const isCause: (self: unknown) => self is Cause<unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L663)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L97)
 
 Since v2.0.0
