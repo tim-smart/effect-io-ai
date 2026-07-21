@@ -36,6 +36,6 @@ try {
 declare const SchemaError: typeof SchemaError
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L1084)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L1085)
 
 Since v4.0.0

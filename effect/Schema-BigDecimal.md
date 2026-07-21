@@ -13,6 +13,6 @@ export interface BigDecimal extends declare<BigDecimal_.BigDecimal> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10790)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10808)
 
 Since v3.10.0

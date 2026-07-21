@@ -13,6 +13,6 @@ export interface DurationFromString extends decodeTo<Duration, String> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10696)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10714)
 
 Since v4.0.0

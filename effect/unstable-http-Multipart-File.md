@@ -23,6 +23,6 @@ export interface File extends Part.Proto {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Multipart.ts#L124)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Multipart.ts#L127)
 
 Since v4.0.0

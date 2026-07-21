@@ -11,6 +11,6 @@ Checks whether a value is a `Schema`.
 declare const isSchema: (u: unknown) => u is Top
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L2260)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L2261)
 
 Since v3.10.0

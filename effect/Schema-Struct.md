@@ -63,6 +63,6 @@ export interface Struct<Fields extends Struct.Fields> extends BottomLazy<SchemaA
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L3349)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L3350)
 
 Since v3.10.0

@@ -34,6 +34,6 @@ Effect.runPromise(program)
 declare const logWarning: (...message: ReadonlyArray<any>) => Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13836)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13888)
 
 Since v2.0.0

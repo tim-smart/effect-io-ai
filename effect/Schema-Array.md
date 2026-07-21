@@ -23,6 +23,6 @@ console.log(result)
 declare const Array: ArrayLambda
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L4534)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L4535)
 
 Since v4.0.0

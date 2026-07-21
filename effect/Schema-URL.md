@@ -13,6 +13,6 @@ export interface URL extends instanceOf<globalThis.URL> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10330)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10348)
 
 Since v4.0.0

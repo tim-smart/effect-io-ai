@@ -29,6 +29,6 @@ const txEffect = Effect.gen(function*() {
 declare class Transaction
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L14596)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L14648)
 
 Since v4.0.0

@@ -33,6 +33,6 @@ export interface Augment extends Annotations {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L14315)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L14333)
 
 Since v4.0.0

@@ -22,6 +22,6 @@ export interface PersistedFile extends Part.Proto {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Multipart.ts#L152)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Multipart.ts#L155)
 
 Since v4.0.0

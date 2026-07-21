@@ -48,6 +48,6 @@ try {
 declare const asserts: <S extends Constraint, I>(schema: S, input: I) => asserts input is I & S["Type"]
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L1344)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L1345)
 
 Since v4.0.0

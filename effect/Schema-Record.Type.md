@@ -23,6 +23,6 @@ type Type<Key, Value> = Value extends
     : { readonly [P in Key["Type"]]: Value["Type"] }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L3692)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L3693)
 
 Since v3.10.0

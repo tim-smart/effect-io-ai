@@ -23,6 +23,6 @@ export interface declareConstructor<T, E, TypeParameters extends ReadonlyArray<C
 {}
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L311)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L312)
 
 Since v4.0.0

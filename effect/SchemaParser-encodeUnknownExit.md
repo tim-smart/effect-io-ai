@@ -33,6 +33,6 @@ issues and non-schema reasons, all reasons remain in the returned `Cause`.
 declare const encodeUnknownExit: <S extends Schema.ConstraintEncoder<unknown>>(schema: S, options?: SchemaAST.ParseOptions) => (input: unknown, options?: SchemaAST.ParseOptions) => Exit.Exit<S["Encoded"], SchemaIssue.Issue>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaParser.ts#L725)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaParser.ts#L728)
 
 Since v4.0.0

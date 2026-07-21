@@ -11,6 +11,6 @@ Returns `true` when a value is a multipart `File`.
 declare const isFile: (u: unknown) => u is File
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Multipart.ts#L139)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Multipart.ts#L142)
 
 Since v4.0.0

@@ -15,6 +15,6 @@ export interface withDecodingDefaultType<S extends Constraint, R = never>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L5899)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L5900)
 
 Since v4.0.0

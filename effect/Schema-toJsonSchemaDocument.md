@@ -24,6 +24,6 @@ shape.
 declare const toJsonSchemaDocument: (schema: Constraint, options?: ToJsonSchemaOptions) => JsonSchema.Document<"draft-2020-12">
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L13426)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L13444)
 
 Since v4.0.0

@@ -35,6 +35,6 @@ work at this synchronous boundary throw instead.
 declare const encodeUnknownResult: <S extends Schema.ConstraintEncoder<unknown>>(schema: S, options?: SchemaAST.ParseOptions) => (input: unknown, options?: SchemaAST.ParseOptions) => Result.Result<S["Encoded"], SchemaIssue.Issue>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaParser.ts#L806)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaParser.ts#L809)
 
 Since v4.0.0

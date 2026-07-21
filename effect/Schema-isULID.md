@@ -24,6 +24,6 @@ constraint to ensure generated strings match the ULID pattern.
 declare const isULID: (annotations?: Annotations.Filter) => SchemaAST.Filter<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6751)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6769)
 
 Since v4.0.0

@@ -40,6 +40,6 @@ Effect.runPromiseExit(effect2).then(console.log)
 declare const fromOption: <Arg extends Option<unknown> | LazyArg<unknown>, E = Cause.NoSuchElementError>(arg: Arg, ...rest: [Arg] extends [Option<unknown>] ? [onNone?: LazyArg<E>] : []) => [Arg] extends [Option<infer A>] ? Effect<A, E> : [Arg] extends [LazyArg<infer E>] ? <A>(option: Option<A>) => Effect<A, E> : never
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L1818)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L1870)
 
 Since v4.0.0

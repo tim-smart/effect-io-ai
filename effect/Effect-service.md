@@ -28,6 +28,6 @@ const program = Effect.gen(function*() {
 declare const service: <I, S>(service: Context.Key<I, S>) => Effect<S, never, I>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L6030)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L6082)
 
 Since v4.0.0

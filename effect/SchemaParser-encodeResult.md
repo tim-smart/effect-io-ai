@@ -33,6 +33,6 @@ non-schema reasons throw instead.
 declare const encodeResult: <S extends Schema.ConstraintEncoder<unknown>>(schema: S, options?: SchemaAST.ParseOptions) => (input: S["Type"], options?: SchemaAST.ParseOptions) => Result.Result<S["Encoded"], SchemaIssue.Issue>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaParser.ts#L839)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaParser.ts#L842)
 
 Since v4.0.0

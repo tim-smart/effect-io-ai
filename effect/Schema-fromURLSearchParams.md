@@ -13,6 +13,6 @@ export interface fromURLSearchParams<S extends Constraint> extends decodeTo<S, U
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L11376)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L11394)
 
 Since v4.0.0

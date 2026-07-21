@@ -32,6 +32,6 @@ Effect.runPromiseExit(program).then(console.log)
 declare const failSync: <E>(evaluate: LazyArg<E>) => Effect<never, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L1507)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L1559)
 
 Since v2.0.0

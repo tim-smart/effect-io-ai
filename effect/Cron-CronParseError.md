@@ -38,6 +38,6 @@ if (Result.isFailure(result)) {
 declare class CronParseError
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cron.ts#L487)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cron.ts#L464)
 
 Since v4.0.0

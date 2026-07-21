@@ -54,6 +54,6 @@ const program = delay("Async operation completed successfully!")
 declare const promise: <A>(evaluate: (signal: AbortSignal) => PromiseLike<A>) => Effect<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L869)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L921)
 
 Since v2.0.0

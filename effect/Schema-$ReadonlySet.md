@@ -21,6 +21,6 @@ export interface $ReadonlySet<Value extends Constraint> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9980)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9998)
 
 Since v4.0.0

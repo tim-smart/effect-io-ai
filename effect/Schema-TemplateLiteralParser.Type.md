@@ -22,6 +22,6 @@ type Type<Parts> = Parts extends readonly [infer Head, ...infer Tail] ? readonly
     : []
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L2807)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L2808)
 
 Since v3.10.0

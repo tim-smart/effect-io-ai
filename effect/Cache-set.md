@@ -102,6 +102,6 @@ const program = Effect.gen(function*() {
 declare const set: { <Key, A>(key: Key, value: A): <E, R>(self: Cache<Key, A, E, R>) => Effect.Effect<void>; <Key, A, E, R>(self: Cache<Key, A, E, R>, key: Key, value: A): Effect.Effect<void>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cache.ts#L710)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cache.ts#L736)
 
 Since v4.0.0

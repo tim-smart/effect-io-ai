@@ -51,6 +51,6 @@ Schema.decodeUnknownSync(NumberFromString)("not a number")
 declare const decodeUnknownSync: <S extends ConstraintDecoder<unknown>>(schema: S, options?: SchemaAST.ParseOptions) => (input: unknown, options?: SchemaAST.ParseOptions) => S["Type"]
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L1767)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L1768)
 
 Since v4.0.0

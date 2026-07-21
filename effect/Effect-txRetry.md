@@ -44,6 +44,6 @@ Effect.runPromise(program).catch(console.error)
 declare const txRetry: Effect<never, never, Transaction>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L14780)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L14832)
 
 Since v4.0.0

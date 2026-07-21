@@ -13,6 +13,6 @@ export interface UniqueArray<S extends Constraint> extends $Array<S> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L4638)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L4639)
 
 Since v4.0.0

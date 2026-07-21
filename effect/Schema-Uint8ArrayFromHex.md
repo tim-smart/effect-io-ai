@@ -13,6 +13,6 @@ export interface Uint8ArrayFromHex extends decodeTo<Uint8Array, String> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L11967)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L11985)
 
 Since v3.10.0

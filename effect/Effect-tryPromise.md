@@ -78,6 +78,6 @@ const program = getTodo(1)
 declare const tryPromise: <A, E = Cause.UnknownError>(options: { readonly try: (signal: AbortSignal) => PromiseLike<A>; readonly catch: (error: unknown) => E; } | ((signal: AbortSignal) => PromiseLike<A>)) => Effect<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L943)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L995)
 
 Since v2.0.0

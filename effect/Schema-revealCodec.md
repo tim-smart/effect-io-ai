@@ -30,6 +30,6 @@ type Enc = typeof codec["Encoded"] // string
 declare const revealCodec: <T, E, RD, RE>(codec: Codec<T, E, RD, RE>) => Codec<T, E, RD, RE>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L1002)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L1003)
 
 Since v4.0.0

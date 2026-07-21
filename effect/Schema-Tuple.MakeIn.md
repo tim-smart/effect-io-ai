@@ -16,6 +16,6 @@ with constructor defaults produce optional tuple positions.
 type MakeIn<E> = MakeIn_<E>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L4210)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L4211)
 
 Since v4.0.0

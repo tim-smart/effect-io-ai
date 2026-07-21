@@ -49,6 +49,6 @@ Effect.runPromise(runnable).then(console.log)
 declare const setContext: { <R>(context: Context.Context<R>): <A, E>(self: Effect<A, E, R>) => Effect<A, E>; <A, E, R>(self: Effect<A, E, R>, context: Context.Context<R>): Effect<A, E>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L6002)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L6054)
 
 Since v4.0.0

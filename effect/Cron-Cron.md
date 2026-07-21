@@ -25,39 +25,7 @@ import { Cron } from "effect"
 const weekdayMorning = Cron.make({
   minutes: [0],
   hours: [9],
-  days: [
-    1,
-    2,
-    3,
-    4,
-    5,
-    6,
-    7,
-    8,
-    9,
-    10,
-    11,
-    12,
-    13,
-    14,
-    15,
-    16,
-    17,
-    18,
-    19,
-    20,
-    21,
-    22,
-    23,
-    24,
-    25,
-    26,
-    27,
-    28,
-    29,
-    30,
-    31
-  ],
+  days: [],
   months: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   weekdays: [1, 2, 3, 4, 5] // Monday to Friday
 })
@@ -127,6 +95,6 @@ export interface Cron extends Pipeable, Equal.Equal, Inspectable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cron.ts#L103)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cron.ts#L71)
 
 Since v2.0.0

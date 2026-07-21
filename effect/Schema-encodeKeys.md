@@ -25,6 +25,6 @@ export interface encodeKeys<
 {}
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L3502)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L3503)
 
 Since v4.0.0

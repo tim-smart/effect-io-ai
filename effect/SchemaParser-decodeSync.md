@@ -34,6 +34,6 @@ instead of being converted to a schema validation error.
 declare const decodeSync: <S extends Schema.ConstraintDecoder<unknown>>(schema: S, options?: SchemaAST.ParseOptions) => (input: S["Encoded"], options?: SchemaAST.ParseOptions) => S["Type"]
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaParser.ts#L571)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaParser.ts#L574)
 
 Since v3.10.0

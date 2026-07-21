@@ -23,6 +23,6 @@ type Type<T, Rest> = Rest extends
     T
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L4348)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L4349)
 
 Since v3.10.0

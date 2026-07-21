@@ -13,6 +13,6 @@ export interface DateFromString extends decodeTo<Date, String> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10499)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10517)
 
 Since v3.10.0

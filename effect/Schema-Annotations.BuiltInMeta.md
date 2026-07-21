@@ -11,6 +11,6 @@ Union of all metadata payloads defined by `BuiltInMetaDefinitions`.
 type BuiltInMeta = BuiltInMetaDefinitions[keyof BuiltInMetaDefinitions]
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L15098)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L15116)
 
 Since v4.0.0

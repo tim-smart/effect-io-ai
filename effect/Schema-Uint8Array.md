@@ -13,6 +13,6 @@ export interface Uint8Array extends instanceOf<globalThis.Uint8Array<ArrayBuffer
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L11859)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L11877)
 
 Since v4.0.0

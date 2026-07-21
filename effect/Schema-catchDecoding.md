@@ -30,6 +30,6 @@ const schema = Schema.Number.pipe(
 declare const catchDecoding: <S extends Constraint>(f: (issue: SchemaIssue.Issue) => Effect.Effect<Option_.Option<S["Type"]>, SchemaIssue.Issue>) => (self: S) => middlewareDecoding<S, S["DecodingServices"]>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L5294)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L5295)
 
 Since v4.0.0

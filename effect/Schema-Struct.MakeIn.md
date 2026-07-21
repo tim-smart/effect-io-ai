@@ -16,6 +16,6 @@ optional or with a constructor default may be omitted.
 type MakeIn<F> = MakeInView<F>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L3340)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L3341)
 
 Since v4.0.0

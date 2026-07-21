@@ -18,6 +18,6 @@ the default formatting logic runs.
 declare const toFormatter: <S extends Constraint>(schema: S, options?: { readonly onBefore?: ((ast: SchemaAST.AST, recur: (ast: SchemaAST.AST) => Formatter<any>) => Formatter<any> | undefined) | undefined; }) => Formatter<S["Type"]>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L13135)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L13153)
 
 Since v4.0.0

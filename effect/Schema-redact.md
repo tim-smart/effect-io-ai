@@ -12,6 +12,6 @@ schema details from leaking in error messages.
 declare const redact: <S extends Constraint>(schema: S) => middlewareDecoding<S, S["DecodingServices"]>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9055)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9073)
 
 Since v4.0.0

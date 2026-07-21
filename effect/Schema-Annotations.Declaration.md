@@ -46,6 +46,6 @@ export interface Declaration<T, TypeParameters extends ReadonlyArray<Constraint>
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L14457)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L14475)
 
 Since v4.0.0

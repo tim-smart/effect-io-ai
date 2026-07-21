@@ -26,6 +26,6 @@ type FilterIssue = string | SchemaIssue.Issue | {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6472)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6490)
 
 Since v3.10.0

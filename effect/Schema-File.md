@@ -13,6 +13,6 @@ export interface File extends instanceOf<globalThis.File> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L11100)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L11118)
 
 Since v4.0.0

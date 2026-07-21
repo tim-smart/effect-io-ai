@@ -12,6 +12,6 @@ the schema's `Type` and its `Iso` (intermediate / serialized form).
 declare const toIso: <S extends Constraint>(schema: S) => Optic_.Iso<S["Type"], S["Iso"]>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L13970)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L13988)
 
 Since v4.0.0

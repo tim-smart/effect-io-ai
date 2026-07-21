@@ -13,6 +13,6 @@ export interface MutableJsonObject {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L14204)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L14222)
 
 Since v4.0.0

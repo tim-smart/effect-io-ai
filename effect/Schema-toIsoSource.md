@@ -11,6 +11,6 @@ Returns an identity `Iso` over the schema's source (`Type`) side.
 declare const toIsoSource: <S extends Constraint>(_: S) => Optic_.Iso<S["Type"], S["Type"]>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L13981)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L13999)
 
 Since v4.0.0

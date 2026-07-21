@@ -17,6 +17,6 @@ exit code is `1`; otherwise it is `0`.
 declare class ShowHelp
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/CliError.ts#L546)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/CliError.ts#L549)
 
 Since v4.0.0

@@ -11,6 +11,6 @@ A mutable array of `MutableJson` values.
 export interface MutableJsonArray extends Array<MutableJson> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L14196)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L14214)
 
 Since v4.0.0

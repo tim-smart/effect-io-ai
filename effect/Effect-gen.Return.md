@@ -11,6 +11,6 @@ Generator return type accepted by `Effect.gen`.
 type Return<A, E, R> = Generator<Effect<any, E, R>, A, any>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L1445)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L1497)
 
 Since v4.0.0

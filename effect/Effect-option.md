@@ -53,6 +53,6 @@ Effect.runPromise(program)
 declare const option: <A, E, R>(self: Effect<A, E, R>) => Effect<Option<A>, never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L2253)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L2305)
 
 Since v2.0.0

@@ -22,6 +22,6 @@ type ExitIso<A, E, D> = {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9572)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9590)
 
 Since v4.0.0

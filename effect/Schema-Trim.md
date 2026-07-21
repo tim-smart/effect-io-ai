@@ -13,6 +13,6 @@ export interface Trim extends decodeTo<Trimmed, String> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L11626)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L11644)
 
 Since v3.10.0

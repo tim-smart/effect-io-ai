@@ -25,6 +25,6 @@ sets and maps, interpret it as final cardinality.
 declare const isMinSize: (minSize: number, annotations?: Annotations.Filter) => SchemaAST.Filter<{ readonly size: number; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L8137)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L8155)
 
 Since v4.0.0

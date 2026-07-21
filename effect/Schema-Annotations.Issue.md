@@ -17,6 +17,6 @@ export interface Issue extends Annotations {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L14867)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L14885)
 
 Since v4.0.0

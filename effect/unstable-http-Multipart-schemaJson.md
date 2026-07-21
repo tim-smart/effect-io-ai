@@ -16,6 +16,6 @@ schema.
 declare const schemaJson: <A, RD>(schema: Schema.ConstraintDecoder<A, RD>, options?: ParseOptions | undefined) => { (field: string): (persisted: Persisted) => Effect.Effect<A, Schema.SchemaError, RD>; (persisted: Persisted, field: string): Effect.Effect<A, Schema.SchemaError, RD>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Multipart.ts#L352)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Multipart.ts#L382)
 
 Since v4.0.0

@@ -16,6 +16,6 @@ many parts, total body size limits, parse errors, and internal errors.
 declare class MultipartErrorReason
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Multipart.ts#L197)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Multipart.ts#L200)
 
 Since v4.0.0

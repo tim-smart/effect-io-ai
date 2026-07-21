@@ -42,6 +42,6 @@ if (isString(value)) {
 declare const is: <S extends Constraint>(schema: S) => <I>(input: I) => input is I & S["Type"]
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L1299)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L1300)
 
 Since v3.10.0

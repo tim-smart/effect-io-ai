@@ -25,6 +25,6 @@ export interface TemplateLiteralParser<Parts extends TemplateLiteral.Parts> exte
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L2822)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L2823)
 
 Since v3.10.0

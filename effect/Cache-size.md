@@ -45,6 +45,6 @@ const program = Effect.gen(function*() {
 declare const size: <Key, A, E, R>(self: Cache<Key, A, E, R>) => Effect.Effect<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cache.ts#L1188)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cache.ts#L1210)
 
 Since v4.0.0

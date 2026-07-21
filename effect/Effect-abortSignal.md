@@ -31,6 +31,6 @@ work that outlives that scope.
 declare const abortSignal: Effect<AbortSignal, never, Scope>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L7428)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L7480)
 
 Since v4.0.0

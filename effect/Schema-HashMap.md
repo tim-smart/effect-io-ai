@@ -22,6 +22,6 @@ export interface HashMap<Key extends Constraint, Value extends Constraint> exten
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9888)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9906)
 
 Since v3.10.0

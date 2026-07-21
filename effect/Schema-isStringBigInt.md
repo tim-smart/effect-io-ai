@@ -22,6 +22,6 @@ base-10 integer pattern.
 declare const isStringBigInt: (annotations?: Annotations.Filter) => SchemaAST.Filter<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6616)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6634)
 
 Since v4.0.0

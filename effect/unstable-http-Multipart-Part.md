@@ -15,6 +15,6 @@ A part is either a text `Field` or a streamed `File`.
 type Part = Field | File
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Multipart.ts#L54)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Multipart.ts#L57)
 
 Since v4.0.0

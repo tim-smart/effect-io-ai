@@ -34,6 +34,6 @@ const NumberFromString = Schema.Number.pipe(
 declare const encodeTo: { <To extends Constraint>(to: To): <From extends Constraint>(from: From) => decodeTo<From, To>; <To extends Constraint, From extends Constraint, RD = never, RE = never>(to: To, transformation: { readonly decode: SchemaGetter.Getter<NoInfer<From["Encoded"]>, NoInfer<To["Type"]>, RD>; readonly encode: SchemaGetter.Getter<NoInfer<To["Type"]>, NoInfer<From["Encoded"]>, RE>; }): (from: From) => decodeTo<From, To, RD, RE>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L5578)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L5579)
 
 Since v4.0.0

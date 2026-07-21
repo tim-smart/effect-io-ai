@@ -31,6 +31,6 @@ export interface Opaque<Self, S extends Top, Brand> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6278)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6296)
 
 Since v4.0.0

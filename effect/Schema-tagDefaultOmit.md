@@ -40,6 +40,6 @@ const encoded = Schema.encodeUnknownSync(A)({ _tag: "A", value: 1 })
 declare const tagDefaultOmit: <Tag extends SchemaAST.LiteralValue>(literal: Tag) => withDecodingDefaultKey<tag<Tag>, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6010)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6011)
 
 Since v4.0.0

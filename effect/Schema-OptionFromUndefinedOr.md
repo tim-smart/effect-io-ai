@@ -13,6 +13,6 @@ export interface OptionFromUndefinedOr<S extends Constraint> extends decodeTo<Op
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L8644)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L8662)
 
 Since v3.10.0

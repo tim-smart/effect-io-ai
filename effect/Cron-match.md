@@ -11,17 +11,20 @@ Use to test whether a specific date/time satisfies a cron schedule.
 
 **Details**
 
-Seconds, minutes, hours, months, and the optional timezone are checked
-directly. For day constraints, an empty `days` or `weekdays` set means that
-field matches every value; when both sets are non-empty, a date matches if
-either the day-of-month or weekday matches.
+The schedule's timezone determines which calendar fields are read from the
+input; the host system's timezone is used when the schedule has no timezone.
+Seconds, minutes, hours, and months are checked against their restrictions;
+an empty set leaves that field unrestricted. If only `days` or `weekdays` is
+restricted, that field must match. If both are restricted, either may match
+unless the schedule was created with `and: true`, which requires both to
+match.
 
 **Example** (Matching dates against a schedule)
 
 ```ts
 import { Cron, Result } from "effect"
 
-const cron = Result.getOrThrow(Cron.parse("0 0 4 8-14 * *"))
+const cron = Result.getOrThrow(Cron.parse("0 0 4 8-14 * *", "UTC"))
 
 // Check if specific dates match
 const matches1 = Cron.match(cron, new Date("2021-01-08T04:00:00Z"))
@@ -45,6 +48,6 @@ console.log(matches3) // false - wrong day
 declare const match: (cron: Cron, date: DateTime.DateTime.Input) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cron.ts#L678)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cron.ts#L660)
 
 Since v2.0.0

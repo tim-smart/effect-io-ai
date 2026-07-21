@@ -24,6 +24,6 @@ constraint to ensure generated strings match the Base64URL pattern.
 declare const isBase64Url: (annotations?: Annotations.Filter) => SchemaAST.Filter<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6817)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6835)
 
 Since v4.0.0

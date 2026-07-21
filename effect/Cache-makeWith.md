@@ -50,6 +50,6 @@ const userCache = Effect.gen(function*() {
 declare const makeWith: <Key, A, E = never, R = never, ServiceMode extends "lookup" | "construction" = never>(lookup: (key: Key) => Effect.Effect<A, E, R>, options: { readonly capacity: number; readonly timeToLive?: ((exit: Exit.Exit<A, E>, key: Key) => Duration.Input) | undefined; readonly requireServicesAt?: ServiceMode | undefined; }) => Effect.Effect<Cache<Key, A, E, "lookup" extends ServiceMode ? R : never>, never, "lookup" extends ServiceMode ? never : R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cache.ts#L177)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cache.ts#L178)
 
 Since v2.0.0

@@ -23,6 +23,6 @@ export interface Exit<A extends Constraint, E extends Constraint, D extends Cons
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9547)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9565)
 
 Since v3.10.0

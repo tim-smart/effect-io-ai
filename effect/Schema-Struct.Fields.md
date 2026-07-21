@@ -11,6 +11,6 @@ Constraint for a struct field map: an object whose values are schemas.
 type Fields = { readonly [x: PropertyKey]: Constraint }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L3205)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L3206)
 
 Since v3.10.0

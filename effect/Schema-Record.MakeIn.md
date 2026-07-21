@@ -22,6 +22,6 @@ type MakeIn<Key, Value> = Value extends
     : { readonly [P in Key["~type.make"]]: Value["~type.make"] }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L3766)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L3767)
 
 Since v4.0.0

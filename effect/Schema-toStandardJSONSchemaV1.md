@@ -15,6 +15,6 @@ https://github.com/standard-schema/standard-schema/pull/134
 declare const toStandardJSONSchemaV1: <S extends Constraint>(self: S) => StandardJSONSchemaV1<S["Encoded"], S["Type"]> & S
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L1235)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L1236)
 
 Since v4.0.0

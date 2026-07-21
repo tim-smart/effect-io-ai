@@ -44,6 +44,6 @@ console.log(Cron.isCron("not a cron")) // false
 declare const isCron: (u: unknown) => u is Cron
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cron.ts#L245)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cron.ts#L207)
 
 Since v2.0.0

@@ -27,6 +27,6 @@ instead of being converted to a schema validation error.
 declare const make: <S extends Schema.Constraint>(schema: S) => (input: S["~type.make.in"], options?: Schema.MakeOptions) => S["Type"]
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaParser.ts#L135)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaParser.ts#L138)
 
 Since v4.0.0

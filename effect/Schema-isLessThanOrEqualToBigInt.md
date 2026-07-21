@@ -20,6 +20,6 @@ value.
 declare const isLessThanOrEqualToBigInt: (maximum: bigint, annotations?: Annotations.Filter) => SchemaAST.Filter<bigint>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L7860)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L7878)
 
 Since v4.0.0

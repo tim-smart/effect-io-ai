@@ -16,6 +16,6 @@ with `SchemaError` when validation fails.
 declare const schemaPersisted: <A, I extends Partial<Persisted>, RD>(schema: Schema.ConstraintCodec<A, I, RD, unknown>) => (input: unknown, options?: ParseOptions) => Effect.Effect<A, Schema.SchemaError, RD>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Multipart.ts#L336)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Multipart.ts#L366)
 
 Since v4.0.0

@@ -21,6 +21,6 @@ type Person = Schema.Schema.Type<typeof Person>
 type Type<S> = S extends { readonly "Type": infer T } ? T : never
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L792)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L793)
 
 Since v3.10.0

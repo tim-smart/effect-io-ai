@@ -3,8 +3,8 @@ Module: `Cron`<br />
 
 ## Cron.Equivalence
 
-Equivalence instance for comparing the field restrictions of two `Cron`
-schedules.
+Equivalence instance for comparing the timezone, field restrictions, and
+day-matching mode of two `Cron` schedules.
 
 **When to use**
 
@@ -13,8 +13,8 @@ relation.
 
 **Details**
 
-This comparison checks seconds, minutes, hours, days, months, and weekdays.
-It does not compare the optional timezone.
+This comparison checks the optional timezone, the `and` day-matching mode,
+seconds, minutes, hours, days, months, and weekdays.
 
 **Example** (Comparing schedules with equivalence)
 
@@ -50,6 +50,6 @@ console.log(Cron.Equivalence(cron1, cron2)) // true
 declare const Equivalence: Equ.Equivalence<Cron>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cron.ts#L1042)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cron.ts#L1034)
 
 Since v2.0.0

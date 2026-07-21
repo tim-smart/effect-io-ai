@@ -13,6 +13,6 @@ functions to produce JSON Schema output.
 declare const toRepresentation: (schema: Constraint) => SchemaRepresentation.Document
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L13325)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L13343)
 
 Since v4.0.0

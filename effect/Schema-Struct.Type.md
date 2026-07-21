@@ -16,6 +16,6 @@ produce optional properties, while `mutableKey` produces writable properties.
 type Type<F> = View<F, "Type">
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L3269)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L3270)
 
 Since v3.10.0

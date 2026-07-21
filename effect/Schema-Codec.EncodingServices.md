@@ -21,6 +21,6 @@ type RE = Schema.Codec.EncodingServices<typeof schema>
 type EncodingServices<S> = S extends { readonly "EncodingServices": infer R } ? R : never
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L888)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L889)
 
 Since v4.0.0

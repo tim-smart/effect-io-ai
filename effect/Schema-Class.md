@@ -103,6 +103,6 @@ export interface Class<Self, S extends Constraint & { readonly fields: Struct.Fi
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L12487)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L12505)
 
 Since v3.10.0

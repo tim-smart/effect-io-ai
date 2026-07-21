@@ -32,6 +32,6 @@ export interface brand<S extends Constraint, B> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L5078)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L5079)
 
 Since v3.10.0

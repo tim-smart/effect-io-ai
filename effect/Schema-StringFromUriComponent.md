@@ -13,6 +13,6 @@ export interface StringFromUriComponent extends decodeTo<String, String> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L11744)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L11762)
 
 Since v3.12.0

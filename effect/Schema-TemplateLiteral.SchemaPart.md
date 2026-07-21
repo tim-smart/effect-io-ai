@@ -18,6 +18,6 @@ export interface SchemaPart extends Constraint {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L2686)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L2687)
 
 Since v4.0.0

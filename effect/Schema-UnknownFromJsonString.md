@@ -13,6 +13,6 @@ export interface UnknownFromJsonString extends fromJsonString<Unknown> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10976)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10994)
 
 Since v4.0.0

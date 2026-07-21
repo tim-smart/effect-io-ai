@@ -22,6 +22,6 @@ const program = Effect.gen(function*() {
 declare const fiber: Effect<Fiber<unknown, unknown>, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L8750)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L8802)
 
 Since v4.0.0

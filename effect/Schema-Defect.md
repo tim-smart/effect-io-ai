@@ -13,6 +13,6 @@ export interface Defect extends decodeTo<Unknown, typeof Json> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9483)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9501)
 
 Since v3.10.0

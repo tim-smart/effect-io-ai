@@ -12,6 +12,6 @@ element schema's `Iso` type.
 type Iso<E> = Iso_<E>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L4144)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L4145)
 
 Since v4.0.0

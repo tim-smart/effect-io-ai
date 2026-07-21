@@ -25,6 +25,6 @@ of own properties.
 declare const isMinProperties: (minProperties: number, annotations?: Annotations.Filter) => SchemaAST.Filter<object>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L8265)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L8283)
 
 Since v4.0.0

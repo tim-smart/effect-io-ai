@@ -37,6 +37,6 @@ Effect.runPromise(Effect.scoped(program)).then(console.log)
 declare const scope: Effect<Scope, never, Scope>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L6391)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L6443)
 
 Since v2.0.0

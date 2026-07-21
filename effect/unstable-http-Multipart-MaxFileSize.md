@@ -15,6 +15,6 @@ The default is `undefined`, meaning no explicit per-file limit.
 declare const MaxFileSize: Context.Reference<FileSystem.SizeInput | undefined>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Multipart.ts#L814)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Multipart.ts#L844)
 
 Since v4.0.0

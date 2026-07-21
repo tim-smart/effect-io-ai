@@ -18,6 +18,6 @@ patterns may not be equivalent to the runtime `endsWith` check.
 declare const isEndsWith: (endsWith: string, annotations?: Annotations.Filter) => SchemaAST.Filter<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6879)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6897)
 
 Since v4.0.0

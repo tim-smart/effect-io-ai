@@ -94,6 +94,6 @@ const program = Effect.gen(function*() {
 declare const has: { <Key, A>(key: Key): <E, R>(self: Cache<Key, A, E, R>) => Effect.Effect<boolean>; <Key, A, E, R>(self: Cache<Key, A, E, R>, key: Key): Effect.Effect<boolean>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cache.ts#L825)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cache.ts#L848)
 
 Since v4.0.0

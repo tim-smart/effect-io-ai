@@ -11,6 +11,6 @@ Type-level representation of `Never`.
 export interface Never extends Bottom<never, never, never, never, SchemaAST.Never, Never> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L2920)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L2921)
 
 Since v3.10.0

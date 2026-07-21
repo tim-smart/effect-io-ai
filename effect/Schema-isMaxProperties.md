@@ -24,6 +24,6 @@ of own properties.
 declare const isMaxProperties: (maxProperties: number, annotations?: Annotations.Filter) => SchemaAST.Filter<object>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L8305)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L8323)
 
 Since v4.0.0

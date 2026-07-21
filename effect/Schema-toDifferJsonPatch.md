@@ -13,6 +13,6 @@ and new values, and can apply patches back to the typed value.
 declare const toDifferJsonPatch: <T>(schema: ConstraintCodec<T, unknown>) => Differ<T, JsonPatch.JsonPatch>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L14069)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L14087)
 
 Since v4.0.0

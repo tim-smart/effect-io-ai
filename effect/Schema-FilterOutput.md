@@ -31,6 +31,6 @@ type FilterOutput = | undefined
   | ReadonlyArray<FilterIssue>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6500)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6518)
 
 Since v3.10.0

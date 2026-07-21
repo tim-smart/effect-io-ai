@@ -16,7 +16,9 @@ invalid input as a `Result`.
 The expression may contain five fields, where seconds default to `0`, or six
 fields including seconds. Fields support `*`, comma-separated values, ranges,
 steps, and month or weekday aliases. Invalid expressions fail with
-`CronParseError`.
+`CronParseError`. When both the day-of-month and weekday fields are
+restricted, a date matches if either field matches. When either field starts
+with `*`, both fields must match; an unrestricted field always matches.
 
 **Example** (Parsing cron expressions)
 
@@ -49,6 +51,6 @@ assert.deepStrictEqual(
 declare const parse: (cron: string, tz?: DateTime.TimeZone | string) => Result.Result<Cron, CronParseError>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cron.ts#L572)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cron.ts#L551)
 
 Since v2.0.0

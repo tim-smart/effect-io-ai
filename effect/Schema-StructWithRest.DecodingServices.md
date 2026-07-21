@@ -16,6 +16,6 @@ type DecodingServices<S, Records> = Services<
   >
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L3938)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L3939)
 
 Since v4.0.0

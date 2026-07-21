@@ -45,6 +45,6 @@ const program = Effect.gen(function*() {
 declare const serviceOption: <I, S>(key: Context.Key<I, S>) => Effect<Option<S>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L6072)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L6124)
 
 Since v2.0.0

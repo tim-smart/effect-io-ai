@@ -55,6 +55,6 @@ Effect.runPromiseExit(Effect.fail("my error")).then(console.log)
 declare const runPromiseExit: <A, E>(effect: Effect<A, E>, options?: RunOptions | undefined) => Promise<Exit.Exit<A, E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L9111)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L9163)
 
 Since v2.0.0

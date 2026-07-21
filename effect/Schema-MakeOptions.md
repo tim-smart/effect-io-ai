@@ -36,6 +36,6 @@ export interface MakeOptions {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L116)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L117)
 
 Since v3.13.4

@@ -35,6 +35,6 @@ const mappedPending = Effect.mapEager(pending, (n) => n * 2) // Uses regular map
 declare const mapEager: { <A, B>(f: (a: A) => B): <E, R>(self: Effect<A, E, R>) => Effect<B, E, R>; <A, E, R, B>(self: Effect<A, E, R>, f: (a: A) => B): Effect<B, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L15235)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L15287)
 
 Since v4.0.0

@@ -20,14 +20,14 @@ time when no date is provided.
 ```ts
 import { Cron, Result } from "effect"
 
-const cron = Result.getOrThrow(Cron.parse("0 0 9 * * 1-5")) // 9 AM weekdays
+const cron = Result.getOrThrow(Cron.parse("0 0 9 * * 1-5", "UTC")) // 9 AM weekdays
 
 // Get first 5 occurrences
-const iterator = Cron.sequence(cron, new Date("2023-01-01"))
-const next5 = Array.from({ length: 5 }, () => iterator.next().value)
+const iterator = Cron.sequence(cron, new Date("2023-01-01T00:00:00Z"))
+const next5 = Array.from({ length: 5 }, () => iterator.next().value.toISOString())
 
 console.log(next5)
-// [Mon Jan 02 2023 09:00:00, Tue Jan 03 2023 09:00:00, ...]
+// ["2023-01-02T09:00:00.000Z", "2023-01-03T09:00:00.000Z", ...]
 ```
 
 **See**
@@ -40,6 +40,6 @@ console.log(next5)
 declare const sequence: (cron: Cron, now?: DateTime.DateTime.Input) => IterableIterator<Date>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cron.ts#L993)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cron.ts#L985)
 
 Since v2.0.0

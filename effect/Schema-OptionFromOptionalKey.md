@@ -13,6 +13,6 @@ export interface OptionFromOptionalKey<S extends Constraint> extends decodeTo<Op
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L8708)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L8726)
 
 Since v4.0.0

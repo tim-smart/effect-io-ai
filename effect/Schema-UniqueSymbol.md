@@ -13,6 +13,6 @@ export interface UniqueSymbol<sym extends symbol>
 {}
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L3157)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L3158)
 
 Since v4.0.0

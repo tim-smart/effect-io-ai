@@ -17,6 +17,6 @@ type ResultIso<A, E> = | { readonly _tag: "Success"; readonly success: A["Iso"] 
   | { readonly _tag: "Failure"; readonly failure: E["Iso"] }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L8837)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L8855)
 
 Since v4.0.0

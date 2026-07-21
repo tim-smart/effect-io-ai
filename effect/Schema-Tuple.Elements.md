@@ -12,6 +12,6 @@ fixed-length `Tuple` schema.
 type Elements = ReadonlyArray<Constraint>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L4102)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L4103)
 
 Since v3.10.0

@@ -32,6 +32,6 @@ export interface decodeTo<To extends Constraint, From extends Constraint, RD = n
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L5378)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L5379)
 
 Since v4.0.0

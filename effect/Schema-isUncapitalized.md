@@ -17,6 +17,6 @@ as a digit, punctuation mark, or whitespace, also pass.
 declare const isUncapitalized: (annotations?: Annotations.Filter) => SchemaAST.Filter<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L7047)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L7065)
 
 Since v4.0.0

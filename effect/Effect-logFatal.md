@@ -33,6 +33,6 @@ Effect.runPromise(program)
 declare const logFatal: (...message: ReadonlyArray<any>) => Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13805)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13857)
 
 Since v2.0.0

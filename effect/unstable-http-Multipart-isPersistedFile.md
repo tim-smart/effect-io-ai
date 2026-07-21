@@ -11,6 +11,6 @@ Returns `true` when a value is a persisted multipart file.
 declare const isPersistedFile: (u: unknown) => u is PersistedFile
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Multipart.ts#L166)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Multipart.ts#L169)
 
 Since v4.0.0

@@ -31,6 +31,6 @@ export interface middlewareEncoding<S extends Constraint, RE> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L5212)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L5213)
 
 Since v4.0.0

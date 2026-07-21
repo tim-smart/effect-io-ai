@@ -22,6 +22,6 @@ generated numbers are multiples of the specified divisor.
 declare const isMultipleOf: (divisor: number, annotations?: Annotations.Filter) => SchemaAST.Filter<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L7485)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L7503)
 
 Since v4.0.0

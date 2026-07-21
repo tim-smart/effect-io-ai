@@ -39,6 +39,6 @@ Effect.runPromise(program).catch(console.error)
 declare const orDie: <A, E, R>(self: Effect<A, E, R>) => Effect<A, never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L3622)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L3674)
 
 Since v2.0.0

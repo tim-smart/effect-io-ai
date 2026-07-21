@@ -42,6 +42,6 @@ const program = Effect.gen(function*() {
 declare const invalidateAll: <Key, A, E, R>(self: Cache<Key, A, E, R>) => Effect.Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cache.ts#L1143)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cache.ts#L1165)
 
 Since v4.0.0

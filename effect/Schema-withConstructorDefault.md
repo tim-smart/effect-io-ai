@@ -31,6 +31,6 @@ export interface withConstructorDefault<S extends Constraint & WithoutConstructo
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L5646)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L5647)
 
 Since v3.10.0

@@ -84,6 +84,6 @@ export interface Cache<in out Key, in out A, in out E = never, out R = never> ex
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cache.ts#L103)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cache.ts#L102)
 
 Since v2.0.0

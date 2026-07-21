@@ -3,17 +3,18 @@ Module: `Cron`<br />
 
 ## Cron.equals
 
-Checks whether two `Cron` instances have the same field restrictions.
+Checks whether two `Cron` instances have equal timezone values, field
+restrictions, and day-matching modes.
 
 **When to use**
 
-Use to directly compare whether two cron schedules have the same field
-restrictions.
+Use to directly compare two cron schedules, including their timezones and
+day-matching modes.
 
 **Details**
 
-The comparison checks seconds, minutes, hours, days, months, and weekdays.
-It does not compare the optional timezone.
+The comparison checks the optional timezone, the `and` day-matching mode,
+seconds, minutes, hours, days, months, and weekdays.
 
 **Example** (Checking schedule equality)
 
@@ -50,6 +51,6 @@ console.log(Cron.equals(cron1)(cron2)) // true (curried form)
 declare const equals: { (that: Cron): (self: Cron) => boolean; (self: Cron, that: Cron): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cron.ts#L1099)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cron.ts#L1093)
 
 Since v2.0.0

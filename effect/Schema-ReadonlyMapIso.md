@@ -14,6 +14,6 @@ type ReadonlyMapIso<Key, Value> = ReadonlyArray<
 >
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9723)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9741)
 
 Since v4.0.0

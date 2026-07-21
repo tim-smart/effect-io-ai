@@ -30,6 +30,6 @@ const traced = Effect.withSpan(program, "my-span")
 declare const currentSpan: Effect<Span, Cause.NoSuchElementError, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L8066)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L8118)
 
 Since v2.0.0

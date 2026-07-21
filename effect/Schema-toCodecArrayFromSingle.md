@@ -30,6 +30,6 @@ export interface toCodecArrayFromSingle<S extends Constraint> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L13637)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L13655)
 
 Since v4.0.0

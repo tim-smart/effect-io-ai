@@ -28,6 +28,6 @@ instead of being converted to a schema validation error.
 declare const asserts: <S extends Schema.Constraint, I>(schema: S, input: I) => asserts input is I & S["Type"]
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaParser.ts#L225)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaParser.ts#L228)
 
 Since v4.0.0

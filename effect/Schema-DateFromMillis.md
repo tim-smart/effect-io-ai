@@ -13,6 +13,6 @@ export interface DateFromMillis extends decodeTo<Date, Number> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10540)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10558)
 
 Since v4.0.0

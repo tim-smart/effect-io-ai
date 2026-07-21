@@ -23,6 +23,6 @@ synchronous boundary throw an `Error` whose cause is the underlying `Cause`.
 declare const makeOption: <S extends Schema.Constraint>(schema: S) => (input: S["~type.make.in"], options?: Schema.MakeOptions) => Option.Option<S["Type"]>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaParser.ts#L101)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaParser.ts#L104)
 
 Since v4.0.0

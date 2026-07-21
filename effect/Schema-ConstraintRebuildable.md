@@ -20,6 +20,6 @@ export interface ConstraintRebuildable extends Constraint {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L766)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L767)
 
 Since v4.0.0

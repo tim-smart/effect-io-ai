@@ -11,6 +11,6 @@ Union of built-in and user-augmented schema filter metadata payloads.
 type Meta = MetaDefinitions[keyof MetaDefinitions]
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L15119)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L15137)
 
 Since v4.0.0

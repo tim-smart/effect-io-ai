@@ -97,6 +97,6 @@ const program = Effect.gen(function*() {
 declare const refresh: { <Key, A>(key: Key): <E, R>(self: Cache<Key, A, E, R>) => Effect.Effect<A, E, R>; <Key, A, E, R>(self: Cache<Key, A, E, R>, key: Key): Effect.Effect<A, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cache.ts#L1071)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cache.ts#L1094)
 
 Since v4.0.0

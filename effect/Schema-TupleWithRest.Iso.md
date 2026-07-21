@@ -23,6 +23,6 @@ type Iso<T, Rest> = Rest extends
     T
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L4368)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L4369)
 
 Since v4.0.0

@@ -13,6 +13,6 @@ export interface optional<S extends Constraint> extends optionalKey<UndefinedOr<
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L2348)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L2349)
 
 Since v3.10.0

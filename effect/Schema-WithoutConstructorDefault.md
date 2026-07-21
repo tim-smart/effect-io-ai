@@ -17,6 +17,6 @@ export interface WithoutConstructorDefault {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L5636)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L5637)
 
 Since v4.0.0

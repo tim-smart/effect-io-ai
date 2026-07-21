@@ -39,6 +39,6 @@ Effect.runPromiseWith(context)(program).then(console.log)
 declare const runPromiseWith: <R>(context: Context.Context<R>) => <A, E>(effect: Effect<A, E, R>, options?: RunOptions | undefined) => Promise<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L9059)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L9111)
 
 Since v4.0.0

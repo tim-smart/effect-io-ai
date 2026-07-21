@@ -23,6 +23,6 @@ type Encoded<E, Rest> = Rest extends
     E
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L4388)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L4389)
 
 Since v3.10.0

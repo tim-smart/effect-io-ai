@@ -12,6 +12,6 @@ schemas.
 type DecodingServices<E> = E[number]["DecodingServices"]
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L4176)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L4177)
 
 Since v4.0.0

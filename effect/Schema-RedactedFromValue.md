@@ -15,6 +15,6 @@ export interface RedactedFromValue<S extends Constraint>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9042)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9060)
 
 Since v4.0.0

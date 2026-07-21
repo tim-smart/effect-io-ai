@@ -55,6 +55,6 @@ const provided = Effect.provideContext(program, context)
 declare const context: <R = never>() => Effect<Context.Context<R>, never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L5768)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L5820)
 
 Since v2.0.0

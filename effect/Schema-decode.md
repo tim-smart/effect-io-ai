@@ -48,6 +48,6 @@ const result = Schema.decodeUnknownSync(Trimmed)("  hello  ")
 declare const decode: <S extends Constraint, RD = never, RE = never>(transformation: { readonly decode: SchemaGetter.Getter<S["Type"], S["Type"], RD>; readonly encode: SchemaGetter.Getter<S["Type"], S["Type"], RE>; }) => (self: S) => decodeTo<toType<S>, S, RD, RE>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L5530)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L5531)
 
 Since v3.10.0

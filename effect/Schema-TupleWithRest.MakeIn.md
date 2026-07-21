@@ -23,6 +23,6 @@ type MakeIn<M, Rest> = Rest extends
     M
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L4408)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L4409)
 
 Since v4.0.0

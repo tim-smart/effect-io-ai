@@ -12,10 +12,12 @@ Use to build a cron schedule from explicit sets of allowed time-field values.
 **Details**
 
 Constructs a cron schedule by specifying which seconds, minutes, hours,
-days, months, and weekdays the schedule should match. Empty arrays mean
-"match all" for that time unit. When both days and weekdays are restricted,
-the default matches either field; set `and: true` to require both fields to
-match.
+days, months, and weekdays the schedule should match. Empty arrays leave a
+time unit unrestricted. If only days or weekdays are restricted, that field
+must match. When both are restricted, the default matches either field; set
+`and: true` to require both fields to match. Weekdays range from `0` (Sunday)
+to `7` (also Sunday). The constructor throws a `RangeError` when a field
+contains a non-integer or out-of-range value.
 
 **Example** (Creating schedules from constraints)
 
@@ -67,39 +69,7 @@ const midnight = Cron.make({
 const businessHours = Cron.make({
   minutes: [0, 15, 30, 45],
   hours: [9, 10, 11, 12, 13, 14, 15, 16, 17],
-  days: [
-    1,
-    2,
-    3,
-    4,
-    5,
-    6,
-    7,
-    8,
-    9,
-    10,
-    11,
-    12,
-    13,
-    14,
-    15,
-    16,
-    17,
-    18,
-    19,
-    20,
-    21,
-    22,
-    23,
-    24,
-    25,
-    26,
-    27,
-    28,
-    29,
-    30,
-    31
-  ],
+  days: [],
   months: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
   weekdays: [1, 2, 3, 4, 5] // Monday to Friday
 })
@@ -115,6 +85,6 @@ const businessHours = Cron.make({
 declare const make: (values: { readonly seconds?: Iterable<number> | undefined; readonly minutes: Iterable<number>; readonly hours: Iterable<number>; readonly days: Iterable<number>; readonly months: Iterable<number>; readonly weekdays: Iterable<number>; readonly and?: boolean | undefined; readonly tz?: DateTime.TimeZone | undefined; }) => Cron
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cron.ts#L355)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cron.ts#L287)
 
 Since v2.0.0

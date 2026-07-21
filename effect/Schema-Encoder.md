@@ -28,6 +28,6 @@ export interface Encoder<out E, out RE = never> extends Schema<unknown> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L970)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L971)
 
 Since v4.0.0

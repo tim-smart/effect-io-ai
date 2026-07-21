@@ -11,6 +11,6 @@ Ordered list of parts used to construct a `TemplateLiteral` schema.
 type Parts = ReadonlyArray<Part>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L2713)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L2714)
 
 Since v4.0.0

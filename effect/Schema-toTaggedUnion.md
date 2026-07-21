@@ -11,6 +11,6 @@ Type-level representation returned by `toTaggedUnion`.
 type toTaggedUnion<Tag, Members> = Union<Members> & TaggedUnionUtils<Tag, Members>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6120)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6125)
 
 Since v4.0.0

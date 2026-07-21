@@ -48,6 +48,6 @@ export interface Constraint {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L671)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L672)
 
 Since v4.0.0

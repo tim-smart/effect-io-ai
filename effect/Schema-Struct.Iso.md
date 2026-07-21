@@ -17,6 +17,6 @@ modifiers used by `Struct.Type`.
 type Iso<F> = View<F, "Iso">
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L3283)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L3284)
 
 Since v4.0.0

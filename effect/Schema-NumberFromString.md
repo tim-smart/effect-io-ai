@@ -13,6 +13,6 @@ export interface NumberFromString extends decodeTo<Finite, String> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L11506)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L11524)
 
 Since v3.10.0
