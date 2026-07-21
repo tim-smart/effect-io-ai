@@ -8,7 +8,7 @@ Default HTTP runner client protocol layer using path `/`.
 **Signature**
 
 ```ts
-declare const layerClientProtocolHttpDefault: Layer.Layer<Runners.RpcClientProtocol, never, RpcSerialization.RpcSerialization | HttpClient.HttpClient>
+declare const layerClientProtocolHttpDefault: Layer.Layer<Runners.RpcClientProtocol, never, HttpClient.HttpClient | RpcSerialization.RpcSerialization>
 ```
 
 [Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HttpRunner.ts#L77)
