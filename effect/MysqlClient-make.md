@@ -11,6 +11,6 @@ Creates a scoped MySQL client backed by a managed mysql2 pool, verifying connect
 declare const make: (options: MysqlClientConfig) => Effect.Effect<MysqlClient, SqlError, Scope | Reactivity.Reactivity>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/mysql2/src/MysqlClient.ts#L211)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/mysql2/src/MysqlClient.ts#L217)
 
 Since v4.0.0

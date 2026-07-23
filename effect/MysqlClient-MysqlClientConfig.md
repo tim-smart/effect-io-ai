@@ -25,6 +25,12 @@ export interface MysqlClientConfig {
 
   readonly poolConfig?: Mysql.PoolOptions | undefined
 
+  /**
+   * Use the text protocol instead of prepared statements, for proxies like
+   * Cloudflare Hyperdrive that do not support `COM_STMT_PREPARE`.
+   */
+  readonly disablePreparedStatements?: boolean | undefined
+
   readonly spanAttributes?: Record<string, unknown> | undefined
 
   readonly transformResultNames?: ((str: string) => string) | undefined
