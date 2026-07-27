@@ -3,13 +3,7 @@ Module: `SchemaRepresentation`<br />
 
 ## SchemaRepresentation.Artifact
 
-An auxiliary code artifact produced during code generation — a symbol
-declaration, an enum declaration, or an import statement.
-
-**See**
-
-- `CodeDocument`
-- `toCodeDocument`
+Auxiliary source artifact emitted while generating schema code.
 
 **Signature**
 
@@ -17,12 +11,12 @@ declaration, an enum declaration, or an import statement.
 type Artifact = | {
     readonly _tag: "Symbol"
     readonly identifier: string
-    readonly generation: Code
+    readonly code: Code
   }
   | {
     readonly _tag: "Enum"
     readonly identifier: string
-    readonly generation: Code
+    readonly code: Code
   }
   | {
     readonly _tag: "Import"
@@ -30,6 +24,6 @@ type Artifact = | {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaRepresentation.ts#L2279)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaRepresentation.ts#L652)
 
 Since v4.0.0

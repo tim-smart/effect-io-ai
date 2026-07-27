@@ -31,6 +31,6 @@ collect()
 declare const toAsyncIterable: <A, E>(self: Stream<A, E>) => AsyncIterable<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L11434)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L11474)
 
 Since v3.15.0

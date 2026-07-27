@@ -29,6 +29,6 @@ console.log(parseError.message)
 declare class InvalidOutputError
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/AiError.ts#L703)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/AiError.ts#L704)
 
 Since v4.0.0

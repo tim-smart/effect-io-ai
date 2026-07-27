@@ -11,6 +11,6 @@ OpenAPI annotation for setting the generated API server list.
 declare class Servers
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/OpenApi.ts#L88)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/OpenApi.ts#L89)
 
 Since v4.0.0

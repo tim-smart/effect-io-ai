@@ -11,6 +11,6 @@ Removes the URL fragment from a request.
 declare const removeHash: (self: HttpClientRequest) => HttpClientRequest
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HttpClientRequest.ts#L599)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HttpClientRequest.ts#L632)
 
 Since v4.0.0

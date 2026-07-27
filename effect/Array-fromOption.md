@@ -28,6 +28,6 @@ console.log(Array.fromOption(Option.none())) // []
 declare const fromOption: <A>(self: Option.Option<A>) => Array<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L389)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L391)
 
 Since v2.0.0

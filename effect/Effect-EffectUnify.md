@@ -16,6 +16,6 @@ export interface EffectUnify<A extends { [Unify.typeSymbol]?: any }> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L130)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L131)
 
 Since v2.0.0

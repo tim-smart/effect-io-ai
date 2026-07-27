@@ -22,6 +22,6 @@ export interface Serializable<S extends Schema.Constraint> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Atom.ts#L2415)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Atom.ts#L2455)
 
 Since v4.0.0

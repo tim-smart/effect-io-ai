@@ -133,6 +133,16 @@ export interface ManagedRuntime<in R, out ER> {
    *
    * **When to use**
    *
+   * Use with the `await using` syntax to automatically dispose the runtime
+   * when it goes out of scope.
+   */
+  readonly [Symbol.asyncDispose]: () => Promise<void>
+
+  /**
+   * Dispose of the resources associated with the runtime.
+   *
+   * **When to use**
+   *
    * Use to release this runtime's layer resources from an `Effect` workflow.
    */
   readonly disposeEffect: Effect.Effect<void, never, never>

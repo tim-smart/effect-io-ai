@@ -18,6 +18,6 @@ type Segment = | Literal
   | Custom<any, any, any, any>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Statement.ts#L133)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Statement.ts#L134)
 
 Since v4.0.0

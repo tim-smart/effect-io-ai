@@ -38,6 +38,6 @@ console.log(Option.getOrUndefined(Option.none()))
 declare const getOrUndefined: <A>(self: Option<A>) => A | undefined
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L1009)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L1010)
 
 Since v2.0.0

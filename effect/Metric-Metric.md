@@ -93,6 +93,6 @@ export interface Metric<in Input, out State> extends Pipeable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Metric.ts#L107)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Metric.ts#L108)
 
 Since v2.0.0

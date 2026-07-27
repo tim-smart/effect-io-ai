@@ -31,6 +31,6 @@ console.log(Array.getFailures([Result.succeed(1), Result.fail("err"), Result.suc
 declare const getFailures: <T extends Iterable<Result.Result<any, any>>>(self: T) => Array<Result.Result.Failure<ReadonlyArray.Infer<T>>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L3633)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L3701)
 
 Since v4.0.0

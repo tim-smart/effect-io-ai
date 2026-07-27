@@ -34,6 +34,6 @@ const customLogger = Logger.make((options) => {
 declare const defaultLogger: Logger<unknown, void>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Logger.ts#L509)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Logger.ts#L510)
 
 Since v2.0.0

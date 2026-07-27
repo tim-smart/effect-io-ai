@@ -31,6 +31,6 @@ console.log(Iterable.size(range)) // 100
 declare const size: <A>(self: Iterable<A>) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Iterable.ts#L469)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Iterable.ts#L470)
 
 Since v2.0.0

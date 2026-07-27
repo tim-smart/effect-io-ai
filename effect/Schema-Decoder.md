@@ -28,6 +28,6 @@ export interface Decoder<out T, out RD = never> extends Schema<T> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L948)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L1051)
 
 Since v4.0.0

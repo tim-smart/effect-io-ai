@@ -32,6 +32,6 @@ type ToolChoice<ToolName> = | "auto"
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/LanguageModel.ts#L320)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/LanguageModel.ts#L323)
 
 Since v4.0.0

@@ -11,6 +11,6 @@ Creates a generated OpenAI client service with the given options.
 declare const make: (options: Options) => Effect.Effect<Generated.OpenAiClient, never, HttpClient.HttpClient>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClientGenerated.ts#L87)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiClientGenerated.ts#L92)
 
 Since v4.0.0

@@ -31,6 +31,6 @@ console.log(Array.intersection([1, 2, 3], [3, 4, 1])) // [1, 3]
 declare const intersection: { <B>(that: Iterable<B>): <A>(self: Iterable<A>) => Array<A & B>; <A, B>(self: Iterable<A>, that: Iterable<B>): Array<A & B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L3233)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L3282)
 
 Since v2.0.0

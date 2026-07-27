@@ -44,6 +44,6 @@ type Args<A, K, E> = {
     : never
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Data.ts#L312)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Data.ts#L313)
 
 Since v2.0.0

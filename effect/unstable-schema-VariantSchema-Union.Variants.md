@@ -17,6 +17,6 @@ type Union.Variants<Members, Variants> = {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/VariantSchema.ts#L329)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/VariantSchema.ts#L319)
 
 Since v4.0.0

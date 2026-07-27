@@ -17,6 +17,6 @@ with `ElicitationDeclined`, and canceled requests interrupt the effect.
 declare const elicit: <S extends Schema.ConstraintEncoder<Record<string, unknown>, unknown>>(options: { readonly message: string; readonly schema: S; }) => Effect.Effect<S["Type"], ElicitationDeclined, McpServerClient | S["DecodingServices"]>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/McpServer.ts#L1183)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/McpServer.ts#L1296)
 
 Since v4.0.0

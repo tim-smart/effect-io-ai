@@ -17,7 +17,7 @@ Schema converters, error formatters, and other tooling. Common keys include
 ```ts
 import { Schema } from "effect"
 
-const Age = Schema.Number.pipe(
+const Age = Schema.Natural.pipe(
   Schema.annotate({
     title: "Age",
     description: "A non-negative integer representing age in years"
@@ -35,6 +35,6 @@ const Age = Schema.Number.pipe(
 declare const annotate: <S extends Top>(annotations: Annotations.Bottom<S["Type"], S["~type.parameters"]>) => (self: S) => S["Rebuild"]
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L538)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L641)
 
 Since v4.0.0

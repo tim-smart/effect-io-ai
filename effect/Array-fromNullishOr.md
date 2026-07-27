@@ -31,6 +31,6 @@ console.log(Array.fromNullishOr(undefined)) // []
 declare const fromNullishOr: <A>(a: A) => Array<NonNullable<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L4018)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L4086)
 
 Since v4.0.0

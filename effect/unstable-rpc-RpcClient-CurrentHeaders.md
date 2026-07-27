@@ -17,6 +17,6 @@ RPC client messages.
 declare const CurrentHeaders: Context.Reference<Headers.Headers>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/RpcClient.ts#L812)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/RpcClient.ts#L813)
 
 Since v4.0.0

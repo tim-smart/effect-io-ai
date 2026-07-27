@@ -17,6 +17,6 @@ forwarded to its own value.
 declare const makeRefreshOnSignal: <_>(signal: Atom<_>) => <A extends Atom<any>>(self: A) => WithoutSerializable<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Atom.ts#L2068)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Atom.ts#L2108)
 
 Since v4.0.0

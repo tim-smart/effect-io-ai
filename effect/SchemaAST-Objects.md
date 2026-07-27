@@ -61,6 +61,6 @@ declare class Objects { constructor(
   ) }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaAST.ts#L2038)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaAST.ts#L2050)
 
 Since v4.0.0

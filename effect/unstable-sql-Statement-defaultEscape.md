@@ -13,6 +13,6 @@ parts.
 declare const defaultEscape: (c: string) => (str: string) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Statement.ts#L1081)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Statement.ts#L1082)
 
 Since v4.0.0

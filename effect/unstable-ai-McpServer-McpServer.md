@@ -17,6 +17,6 @@ requests.
 declare class McpServer
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/McpServer.ts#L95)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/McpServer.ts#L96)
 
 Since v4.0.0

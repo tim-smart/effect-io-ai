@@ -29,6 +29,6 @@ export interface MssqlClient extends Client.SqlClient {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/mssql/src/MssqlClient.ts#L165)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/mssql/src/MssqlClient.ts#L166)
 
 Since v4.0.0

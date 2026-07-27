@@ -32,6 +32,6 @@ const result = hasData
 declare const empty: <A = never>() => Iterable<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Iterable.ts#L1413)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Iterable.ts#L1414)
 
 Since v2.0.0

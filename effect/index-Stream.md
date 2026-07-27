@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Stream.ts" module as `Stream`.
 export * as Stream from "./Stream.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L597)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L592)
 
 Since v2.0.0

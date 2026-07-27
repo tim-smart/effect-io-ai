@@ -33,6 +33,6 @@ const validEffect = satisfiesNumber(Effect.succeed(42))
 declare const satisfiesSuccessType: <A>() => <A2 extends A, E, R>(effect: Effect<A2, E, R>) => Effect<A2, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L15193)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L15214)
 
 Since v4.0.0

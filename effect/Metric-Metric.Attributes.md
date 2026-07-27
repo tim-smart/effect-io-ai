@@ -79,6 +79,6 @@ const program = Effect.gen(function*() {
 type Attributes = AttributeSet | ReadonlyArray<[string, string]>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Metric.ts#L1128)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Metric.ts#L1129)
 
 Since v4.0.0

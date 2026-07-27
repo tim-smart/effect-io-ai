@@ -24,6 +24,6 @@ assert.deepStrictEqual(
 declare const separate: <K extends string, A, B>(self: ReadonlyRecord<K, Result<B, A>>) => [Record<ReadonlyRecord.NonLiteralKey<K>, A>, Record<ReadonlyRecord.NonLiteralKey<K>, B>]
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Record.ts#L985)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Record.ts#L997)
 
 Since v2.0.0

@@ -37,6 +37,6 @@ declare class IndexSignature { constructor(
   ) }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaAST.ts#L1971)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaAST.ts#L1983)
 
 Since v3.10.0

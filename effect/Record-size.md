@@ -20,6 +20,6 @@ assert.deepStrictEqual(Record.size({ a: "a", b: 1, c: true }), 3)
 declare const size: <K extends string, A>(self: ReadonlyRecord<K, A>) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Record.ts#L383)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Record.ts#L395)
 
 Since v2.0.0

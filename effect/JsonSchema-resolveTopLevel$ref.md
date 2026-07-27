@@ -43,6 +43,6 @@ console.log(resolved.schema) // { type: "object", properties: { name: { type: "s
 declare const resolveTopLevel$ref: (document: Document<"draft-2020-12">) => Document<"draft-2020-12">
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/JsonSchema.ts#L940)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/JsonSchema.ts#L938)
 
 Since v4.0.0

@@ -11,6 +11,6 @@ Re-exports all named exports from the "./UndefinedOr.ts" module as `UndefinedOr`
 export * as UndefinedOr from "./UndefinedOr.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L712)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L707)
 
 Since v4.0.0

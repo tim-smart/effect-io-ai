@@ -23,6 +23,6 @@ type Flatten<T> = T extends
     : Array<T[number][number]>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L3463)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L3531)
 
 Since v2.0.0

@@ -28,6 +28,6 @@ export interface Cookie extends Inspectable.Inspectable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cookies.ts#L106)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cookies.ts#L107)
 
 Since v4.0.0

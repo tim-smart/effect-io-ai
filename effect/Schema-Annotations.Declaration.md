@@ -15,11 +15,17 @@ provided for the custom type.
 export interface Declaration<T, TypeParameters extends ReadonlyArray<Constraint> = readonly []>
     extends Bottom<T, TypeParameters>
   {
+    readonly representation?:
+      | SchemaRepresentation.RepresentationAnnotation
+      | undefined
     readonly toCodec?:
       | ((typeParameters: TypeParameters.Encoded<TypeParameters>) => SchemaAST.Link)
       | undefined
     readonly toCodecJson?:
-      | ((typeParameters: TypeParameters.Encoded<TypeParameters>) => SchemaAST.Link)
+      | ((typeParameters: TypeParameters.Encoded<TypeParameters>) => SchemaAST.Link | undefined)
+      | undefined
+    readonly toCodecStringTree?:
+      | ((typeParameters: TypeParameters.Encoded<TypeParameters>) => SchemaAST.Link | undefined)
       | undefined
     readonly toCodecIso?:
       | ((typeParameters: TypeParameters.Type<TypeParameters>) => SchemaAST.Link)
@@ -27,25 +33,18 @@ export interface Declaration<T, TypeParameters extends ReadonlyArray<Constraint>
     readonly toArbitrary?: ToArbitrary.Declaration<T, TypeParameters> | undefined
     readonly toEquivalence?: ToEquivalence.Declaration<T, TypeParameters> | undefined
     readonly toFormatter?: ToFormatter.Declaration<T, TypeParameters> | undefined
-    readonly typeConstructor?: {
-      readonly _tag: string
-      readonly [key: string]: unknown
-    } | undefined
-    readonly generation?: {
-      readonly runtime: string
-      readonly Type: string
-      readonly Encoded?: string | undefined
-      readonly importDeclaration?: string | undefined
-    } | undefined
+    readonly toCode?: SchemaRepresentation.Generation.Declaration | undefined
     /**
      * Used to collect sentinels from a Declaration SchemaAST.
      *
-     * @internal
+     * **Details**
+     *
+     * Reserved to internal use only.
      */
     readonly "~sentinels"?: ReadonlyArray<SchemaAST.Sentinel> | undefined
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L14475)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L16275)
 
 Since v4.0.0

@@ -106,6 +106,6 @@ export interface Constructor {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Statement.ts#L430)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Statement.ts#L431)
 
 Since v4.0.0

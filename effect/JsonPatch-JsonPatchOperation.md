@@ -92,6 +92,6 @@ type JsonPatchOperation = | {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/JsonPatch.ts#L61)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/JsonPatch.ts#L62)
 
 Since v4.0.0

@@ -14,6 +14,6 @@ type HashMapIso<Key, Value> = ReadonlyArray<
 >
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9926)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L11170)
 
 Since v4.0.0

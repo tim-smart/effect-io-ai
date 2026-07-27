@@ -3,28 +3,23 @@ Module: `Schema`<br />
 
 ## Schema.BottomLazy
 
-Lazy `Bottom` variant for schema implementations that compute their public
-views on demand.
+Lazy `Bottom` variant for schemas that can be extended directly by TypeScript
+classes.
 
 **When to use**
 
-Use as an implementation base for schema interfaces that must expose
-`Bottom` behavior without forcing TypeScript to eagerly evaluate expensive
-`Type`, `Encoded`, or service views.
+Use as the base for concrete lazy schema interfaces whose runtime values
+support `class ... extends schema`.
 
 **Details**
 
-The laziness is purely type-level; runtime behavior is unchanged.
-`BottomLazy` keeps the structural operations inherited from `Bottom`, but
-erases the expensive schema views to `unknown`. Concrete schema interfaces can
-then redeclare the precise views they expose. This keeps wide schemas such as
-`Struct` and `Union` cheaper when generic code reads a single view, while
-preserving their exact public types.
+Extends `BottomLazyWithoutNew` with a construct signature that accepts `never`.
+The signature enables class extension without making ordinary schemas
+directly constructible.
 
 **See**
 
-- `Bottom` for the fully parameterized schema interface when every
-view must be supplied directly.
+- `BottomLazyWithoutNew` for the lazy schema protocol without a construct signature
 
 **Signature**
 
@@ -39,26 +34,21 @@ export interface BottomLazy<
   out EncodedMutability extends Mutability = "readonly",
   out EncodedOptionality extends Optionality = "required"
 > extends
-  Bottom<
-    unknown,
-    unknown,
-    unknown,
-    unknown,
+  BottomLazyWithoutNew<
     Ast,
     Rebuild,
-    unknown,
-    unknown,
     TypeParameters,
-    unknown,
     TypeMutability,
     TypeOptionality,
     TypeConstructorDefault,
     EncodedMutability,
     EncodedOptionality
   >
-{}
+{
+  new(_: never): {}
+}
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L277)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L385)
 
 Since v4.0.0

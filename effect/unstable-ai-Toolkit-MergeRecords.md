@@ -16,6 +16,6 @@ type MergeRecords<U> = {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Toolkit.ts#L492)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Toolkit.ts#L504)
 
 Since v4.0.0

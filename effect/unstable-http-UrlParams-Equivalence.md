@@ -16,6 +16,6 @@ order.
 declare const Equivalence: Equ.Equivalence<UrlParams>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/UrlParams.ts#L210)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/UrlParams.ts#L211)
 
 Since v4.0.0

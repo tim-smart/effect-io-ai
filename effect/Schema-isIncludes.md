@@ -7,10 +7,9 @@ Validates at runtime that a string contains the specified literal substring.
 
 **Details**
 
-Notes:
-The JSON Schema and arbitrary metadata use the substring as a raw regexp
-pattern. If the substring contains regexp syntax, generated patterns may not be
-equivalent to the runtime `includes` check.
+RegExp metacharacters in the substring are escaped in JSON Schema and
+arbitrary metadata so that the generated patterns retain literal `includes`
+semantics.
 
 **Signature**
 
@@ -18,6 +17,6 @@ equivalent to the runtime `includes` check.
 declare const isIncludes: (includes: string, annotations?: Annotations.Filter) => SchemaAST.Filter<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6931)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L7295)
 
 Since v4.0.0

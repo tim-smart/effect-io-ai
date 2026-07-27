@@ -31,6 +31,6 @@ export interface refine<T extends S["Type"], S extends Constraint> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L5026)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L5102)
 
 Since v3.10.0

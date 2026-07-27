@@ -13,9 +13,9 @@ completion tokens, and total tokens.
 **Signature**
 
 ```ts
-declare const UsageInfo: Schema.Struct<{ readonly promptTokens: Schema.optional<Schema.Number>; readonly completionTokens: Schema.optional<Schema.Number>; readonly totalTokens: Schema.optional<Schema.Number>; }>
+declare const UsageInfo: Schema.Struct<{ readonly promptTokens: Schema.optional<Schema.Int>; readonly completionTokens: Schema.optional<Schema.Int>; readonly totalTokens: Schema.optional<Schema.Int>; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/AiError.ts#L308)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/AiError.ts#L309)
 
 Since v4.0.0

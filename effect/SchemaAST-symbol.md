@@ -25,6 +25,6 @@ because the implementation uses `Symbol.keyFor`.
 declare const symbol: Symbol
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaAST.ts#L1514)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaAST.ts#L1526)
 
 Since v4.0.0

@@ -31,6 +31,6 @@ const env = Config.literal("production", "ENV")
 declare const literal: <L extends SchemaAST.LiteralValue>(literal: L, name?: string) => Config<L>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L1016)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L1017)
 
 Since v2.0.0

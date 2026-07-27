@@ -3,28 +3,17 @@ Module: `SchemaRepresentation`<br />
 
 ## SchemaRepresentation.MultiDocument
 
-One or more `Representation`s sharing a common `References` map.
-
-**When to use**
-
-Use when you use `fromASTs` to create this from multiple Schema ASTs,
-`toCodeDocument` to generate TypeScript code, and
-`toJsonSchemaMultiDocument` to convert to JSON Schema.
-
-**See**
-
-- `Document`
-- `fromASTs`
+Multiple representations sharing definitions.
 
 **Signature**
 
 ```ts
-type MultiDocument = {
+export interface MultiDocument {
   readonly representations: readonly [Representation, ...Array<Representation>]
   readonly references: References
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaRepresentation.ts#L724)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaRepresentation.ts#L485)
 
 Since v4.0.0

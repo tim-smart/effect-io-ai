@@ -42,6 +42,6 @@ console.log(Option.fromNullOr(42))
 declare const fromNullOr: <A>(a: A) => Option<Exclude<A, null>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L899)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L900)
 
 Since v4.0.0

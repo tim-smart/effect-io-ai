@@ -11,6 +11,6 @@ RPC used to send an encoded write payload that fits in one message.
 declare class WriteSingleRpc
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/EventLogMessage.ts#L304)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/EventLogMessage.ts#L311)
 
 Since v4.0.0

@@ -11,6 +11,6 @@ Constructs a `RecordInsertHelper` from one or more row objects.
 declare const recordInsertHelper: (value: ReadonlyArray<Record<string, unknown>>) => RecordInsertHelper
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Statement.ts#L270)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Statement.ts#L271)
 
 Since v4.0.0

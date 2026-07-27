@@ -39,6 +39,6 @@ response format prepared in `ProviderOptions`; invalid parts fail decoding as
 declare const make: (params: { readonly generateText: (options: ProviderOptions) => Effect.Effect<Array<Response.PartEncoded>, AiError.AiError, IdGenerator>; readonly streamText: (options: ProviderOptions) => Stream.Stream<Response.StreamPartEncoded, AiError.AiError, IdGenerator>; readonly codecTransformer?: CodecTransformer | undefined; }) => Effect.Effect<Service>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/LanguageModel.ts#L748)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/LanguageModel.ts#L751)
 
 Since v4.0.0

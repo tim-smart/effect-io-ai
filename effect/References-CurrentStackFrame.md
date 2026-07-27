@@ -27,6 +27,6 @@ rather than provided directly by application code.
 declare const CurrentStackFrame: Context.Reference<StackFrame | undefined>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/References.ts#L377)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/References.ts#L331)
 
 Since v4.0.0

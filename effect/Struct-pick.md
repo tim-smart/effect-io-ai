@@ -34,6 +34,6 @@ console.log(nameAndAge) // { name: "Alice", age: 30 }
 declare const pick: { <S extends object, const Keys extends ReadonlyArray<keyof S>>(keys: Keys): (self: S) => Simplify<Pick<S, Keys[number]>>; <S extends object, const Keys extends ReadonlyArray<keyof S>>(self: S, keys: Keys): Simplify<Pick<S, Keys[number]>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Struct.ts#L197)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Struct.ts#L198)
 
 Since v2.0.0

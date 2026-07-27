@@ -86,6 +86,6 @@ type Constructor<A> = Types.Simplify<
   >
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Data.ts#L398)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Data.ts#L399)
 
 Since v3.1.0

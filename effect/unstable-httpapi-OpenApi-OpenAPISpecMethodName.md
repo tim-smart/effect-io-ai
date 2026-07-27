@@ -18,6 +18,6 @@ type OpenAPISpecMethodName = | "get"
   | "trace"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/OpenApi.ts#L960)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/OpenApi.ts#L984)
 
 Since v4.0.0

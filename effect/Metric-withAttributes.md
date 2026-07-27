@@ -63,6 +63,6 @@ const viewMetrics = Effect.gen(function*() {
 declare const withAttributes: { (attributes: Metric.Attributes): <Input, State>(self: Metric<Input, State>) => Metric<Input, State>; <Input, State>(self: Metric<Input, State>, attributes: Metric.Attributes): Metric<Input, State>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Metric.ts#L2972)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Metric.ts#L2973)
 
 Since v4.0.0

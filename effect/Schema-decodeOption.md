@@ -30,6 +30,6 @@ instead.
 declare const decodeOption: <S extends ConstraintDecoder<unknown>>(schema: S, options?: SchemaAST.ParseOptions) => (input: S["Encoded"], options?: SchemaAST.ParseOptions) => Option_.Option<S["Type"]>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L1580)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L1683)
 
 Since v3.10.0

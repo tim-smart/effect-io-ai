@@ -34,6 +34,6 @@ console.log(eq(Result.succeed(1), Result.fail("x")))
 declare const makeEquivalence: <A, E>(success: Equivalence.Equivalence<A>, failure: Equivalence.Equivalence<E>) => Equivalence.Equivalence<Result<A, E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Result.ts#L722)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Result.ts#L723)
 
 Since v4.0.0

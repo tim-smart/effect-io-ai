@@ -43,6 +43,6 @@ type Kind<Z, A, B, C, D> = (Z & {
   })["taggedEnum"]
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Data.ts#L265)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Data.ts#L266)
 
 Since v2.0.0

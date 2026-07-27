@@ -30,6 +30,6 @@ console.log(parseNumber("abc")) // []
 declare const liftNullishOr: <A extends Array<unknown>, B>(f: (...a: A) => B) => (...a: A) => Array<NonNullable<B>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L4043)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L4111)
 
 Since v4.0.0

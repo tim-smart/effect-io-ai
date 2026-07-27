@@ -27,6 +27,6 @@ export interface unhandled {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L856)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L854)
 
 Since v4.0.0

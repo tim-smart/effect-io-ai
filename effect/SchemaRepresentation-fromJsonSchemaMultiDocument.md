@@ -3,40 +3,27 @@ Module: `SchemaRepresentation`<br />
 
 ## SchemaRepresentation.fromJsonSchemaMultiDocument
 
-Parses a Draft 2020-12 JSON Schema multi-document into a
-`MultiDocument`.
+Imports multiple JSON Schema Draft 2020-12 roots as runtime schemas with shared definitions.
 
 **When to use**
 
-Use when you need to import a Draft 2020-12 JSON Schema multi-document whose
-schemas share definitions.
-
-**Details**
-
-`options.onEnter` is an optional hook called on each JSON Schema node before
-processing.
+Use when multiple imported roots must preserve shared definitions, aliases, and recursion.
 
 **Gotchas**
 
-JSON Schema import is best-effort. Some JSON Schema constructs do not map
-exactly to Effect schema representations, and importing schemas previously
-emitted by `toJsonSchemaMultiDocument` may produce equivalent approximations
-rather than the original representation shapes.
-
-This throws if a `$ref` cannot be resolved.
+Every definition is translated, including definitions that no root references. Callback results are used directly, and exceptions raised by a callback pass through unchanged.
 
 **See**
 
-- `MultiDocument`
-- `toJsonSchemaMultiDocument`
-- `fromJsonSchemaDocument`
+- `fromJsonSchemaDocument` for a single root
+- `fromSchemaMultiDocument` for converting the result to a representation document
 
 **Signature**
 
 ```ts
-declare const fromJsonSchemaMultiDocument: (document: JsonSchema.MultiDocument<"draft-2020-12">, options?: { readonly onEnter?: ((js: JsonSchema.JsonSchema) => JsonSchema.JsonSchema) | undefined; }) => MultiDocument
+declare const fromJsonSchemaMultiDocument: (document: JsonSchema.MultiDocument<"draft-2020-12">, options?: FromJsonSchemaOptions) => SchemaMultiDocument
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaRepresentation.ts#L3039)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaRepresentation.ts#L1201)
 
 Since v4.0.0

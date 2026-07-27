@@ -47,6 +47,6 @@ console.log(fahrenheit.set(32))
 export interface Iso<in out S, in out A> extends Lens<S, A>, Prism<S, A> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Optic.ts#L66)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Optic.ts#L67)
 
 Since v4.0.0

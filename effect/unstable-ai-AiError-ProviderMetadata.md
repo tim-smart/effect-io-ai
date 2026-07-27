@@ -16,6 +16,6 @@ JSON metadata or `null`.
 type ProviderMetadata = typeof ProviderMetadata.Type
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/AiError.ts#L215)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/AiError.ts#L216)
 
 Since v4.0.0

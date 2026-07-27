@@ -20,6 +20,6 @@ do not need to reference this interface directly.
 export interface OptionUnifyIgnore {}
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L211)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L212)
 
 Since v2.0.0

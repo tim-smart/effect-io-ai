@@ -40,6 +40,6 @@ console.log(result) // 5
 declare const runSyncWith: <R>(context: Context.Context<R>) => <A, E>(effect: Effect<A, E, R>) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L9308)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L9329)
 
 Since v4.0.0

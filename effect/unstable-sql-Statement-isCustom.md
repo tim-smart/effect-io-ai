@@ -11,6 +11,6 @@ Creates a type guard for custom SQL segments with the specified custom kind.
 declare const isCustom: <A extends Custom<any, any, any, any>>(kind: A["kind"]) => (u: unknown) => u is A
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Statement.ts#L122)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Statement.ts#L123)
 
 Since v4.0.0

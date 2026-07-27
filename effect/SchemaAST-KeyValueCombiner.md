@@ -25,6 +25,6 @@ declare class KeyValueCombiner { constructor(
   ) }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaAST.ts#L1904)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaAST.ts#L1916)
 
 Since v4.0.0

@@ -30,6 +30,6 @@ console.log(Array.last([])) // None
 declare const last: <A>(self: ReadonlyArray<A>) => Option.Option<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L1134)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L1136)
 
 Since v2.0.0

@@ -12,6 +12,6 @@ request value.
 type TimeToLiveFn<K> = (exit: Exit.Exit<Success<K>, Error<K>>, request: K) => Duration.Input
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Persistable.ts#L128)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Persistable.ts#L129)
 
 Since v4.0.0

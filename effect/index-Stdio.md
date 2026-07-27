@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Stdio.ts" module as `Stdio`.
 export * as Stdio from "./Stdio.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L592)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L587)
 
 Since v4.0.0

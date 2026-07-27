@@ -41,6 +41,6 @@ export interface HttpServerRequest extends HttpIncomingMessage.HttpIncomingMessa
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HttpServerRequest.ts#L73)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HttpServerRequest.ts#L74)
 
 Since v4.0.0

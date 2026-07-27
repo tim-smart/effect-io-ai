@@ -13,6 +13,6 @@ export interface MetricsData {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/OtlpMetrics.ts#L527)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/OtlpMetrics.ts#L531)
 
 Since v4.0.0

@@ -10,7 +10,7 @@ finish metadata.
 
 ```ts
 type FileAnnotation = Extract<
-  NonNullable<typeof Generated.AssistantMessage.fields.annotations.Type>[number],
+  NonNullable<typeof Generated.ChatAssistantMessage.fields.annotations.Type>[number],
   { type: "file" }
 >
 ```

@@ -31,6 +31,6 @@ console.log(error.message)
 declare class ToolConfigurationError
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/AiError.ts#L1193)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/AiError.ts#L1194)
 
 Since v4.0.0

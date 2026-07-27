@@ -25,6 +25,6 @@ console.log(Logger.isLogger({ log: () => {} })) // false
 declare const isLogger: (u: unknown) => u is Logger<unknown, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Logger.ts#L131)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Logger.ts#L132)
 
 Since v4.0.0

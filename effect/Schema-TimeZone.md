@@ -13,6 +13,6 @@ export interface TimeZone extends declare<DateTime.TimeZone> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L12322)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L13754)
 
 Since v3.10.0

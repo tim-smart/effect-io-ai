@@ -42,6 +42,6 @@ const customScheduling = Effect.gen(function*() {
 declare const Scheduler: Context.Reference<Scheduler>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/References.ts#L785)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/References.ts#L739)
 
 Since v4.0.0

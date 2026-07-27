@@ -44,7 +44,7 @@ export interface FinishPart extends BasePart<"finish", FinishPartMetadata> {
   /**
    * Optional HTTP response details from the AI provider.
    */
-  readonly response: typeof HttpResponseDetails.Type | undefined
+  readonly response?: typeof HttpResponseDetails.Type | undefined
 }
 ```
 

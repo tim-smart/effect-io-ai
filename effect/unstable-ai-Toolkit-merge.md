@@ -36,6 +36,6 @@ const combined = Toolkit.merge(mathToolkit, utilityToolkit)
 declare const merge: <const Toolkits extends ReadonlyArray<Any>>(...toolkits: Toolkits) => Toolkit<MergedTools<Toolkits>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Toolkit.ts#L541)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Toolkit.ts#L553)
 
 Since v4.0.0

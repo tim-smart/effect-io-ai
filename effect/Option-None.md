@@ -36,6 +36,6 @@ export interface None<out A> extends Pipeable, Inspectable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L74)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L75)
 
 Since v2.0.0

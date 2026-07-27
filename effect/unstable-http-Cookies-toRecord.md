@@ -11,6 +11,6 @@ Converts a `Cookies` collection to a record of decoded cookie values keyed by co
 declare const toRecord: (self: Cookies) => Record<string, string>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cookies.ts#L863)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cookies.ts#L866)
 
 Since v4.0.0

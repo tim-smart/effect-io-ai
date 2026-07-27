@@ -27,6 +27,6 @@ The map is dialect-neutral. Conversion APIs emit it as `$defs`,
 export interface Definitions extends Record<string, JsonSchema> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/JsonSchema.ts#L89)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/JsonSchema.ts#L90)
 
 Since v4.0.0

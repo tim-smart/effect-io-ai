@@ -93,6 +93,6 @@ export interface ProviderDefined<
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Tool.ts#L386)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Tool.ts#L393)
 
 Since v4.0.0

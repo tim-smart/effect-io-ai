@@ -30,6 +30,6 @@ assert.deepStrictEqual(
 declare const getSuccesses: <R0, L>(self: Iterable<Result<R0, L>>) => Iterable<R0>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Iterable.ts#L1855)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Iterable.ts#L1856)
 
 Since v4.0.0

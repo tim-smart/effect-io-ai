@@ -11,6 +11,6 @@ An empty `UrlParams` value.
 declare const empty: UrlParams
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/UrlParams.ts#L267)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/UrlParams.ts#L268)
 
 Since v4.0.0

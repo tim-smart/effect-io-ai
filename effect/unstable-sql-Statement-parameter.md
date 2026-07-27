@@ -11,6 +11,6 @@ Constructs a bound parameter segment for a statement value.
 declare const parameter: (value: unknown) => Parameter
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Statement.ts#L210)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Statement.ts#L211)
 
 Since v4.0.0

@@ -32,6 +32,6 @@ export interface mutable<S extends Constraint & { readonly "ast": SchemaAST.Arra
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L4664)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L4740)
 
 Since v3.10.0

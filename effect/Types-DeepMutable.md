@@ -40,6 +40,6 @@ type DeepMutable<T> = T extends ReadonlyMap<infer K, infer V> ? Map<DeepMutable<
   : { -readonly [K in keyof T]: DeepMutable<T[K]> }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L512)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L510)
 
 Since v3.1.0

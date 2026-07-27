@@ -22,6 +22,6 @@ export interface Variance<out A, out E, out R> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Request.ts#L82)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Request.ts#L83)
 
 Since v2.0.0

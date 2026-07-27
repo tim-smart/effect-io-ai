@@ -28,6 +28,6 @@ Effect.runPromise(program)
 declare const dropWhile: { <A>(predicate: (a: NoInfer<A>, index: number) => boolean): <E, R>(self: Stream<A, E, R>) => Stream<A, E, R>; <A, E, R>(self: Stream<A, E, R>, predicate: (a: NoInfer<A>, index: number) => boolean): Stream<A, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L6811)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L6812)
 
 Since v2.0.0

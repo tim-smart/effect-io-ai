@@ -35,6 +35,6 @@ console.log(result) // [1, [2, 3, 4]]
 declare const unprepend: <A>(self: NonEmptyReadonlyArray<A>) => [firstElement: A, remainingElements: Array<A>]
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L1025)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L1027)
 
 Since v2.0.0

@@ -51,6 +51,6 @@ const patch = JsonPatch.get(oldValue, newValue)
 declare const get: (oldValue: Schema.Json, newValue: Schema.Json) => JsonPatch
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/JsonPatch.ts#L182)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/JsonPatch.ts#L183)
 
 Since v4.0.0

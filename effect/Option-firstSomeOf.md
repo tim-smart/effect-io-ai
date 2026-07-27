@@ -38,6 +38,6 @@ console.log(Option.firstSomeOf([
 declare const firstSomeOf: <T, C extends Iterable<Option<T>> = Iterable<Option<T>>>(collection: C) => [C] extends [Iterable<Option<infer A>>] ? Option<A> : never
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L774)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L775)
 
 Since v2.0.0

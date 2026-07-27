@@ -59,6 +59,6 @@ const inspectionProgram = Effect.gen(function*() {
 declare const consoleStructured: Logger<unknown, void>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Logger.ts#L969)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Logger.ts#L970)
 
 Since v4.0.0

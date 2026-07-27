@@ -24,6 +24,6 @@ export interface Statement<A> extends Fragment, Effect.Effect<ReadonlyArray<A>, 
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Statement.ts#L70)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Statement.ts#L71)
 
 Since v4.0.0

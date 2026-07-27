@@ -11,6 +11,6 @@ Appends query parameters from an input collection without removing existing valu
 declare const appendUrlParams: { (input: UrlParams.Input): (self: HttpClientRequest) => HttpClientRequest; (self: HttpClientRequest, input: UrlParams.Input): HttpClientRequest; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HttpClientRequest.ts#L561)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HttpClientRequest.ts#L594)
 
 Since v4.0.0

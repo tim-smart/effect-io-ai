@@ -16,6 +16,6 @@ request bodies.
 declare const MaxBodySize: Context.Reference<FileSystem.Size | undefined>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HttpServerRequest.ts#L50)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HttpServerRequest.ts#L51)
 
 Since v4.0.0

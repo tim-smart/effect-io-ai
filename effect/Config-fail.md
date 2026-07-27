@@ -16,6 +16,6 @@ Use when you need to re-raise a specific config error, such as inside
 declare const fail: (err: SourceError | Schema.SchemaError) => Config<never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L846)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L847)
 
 Since v2.0.0

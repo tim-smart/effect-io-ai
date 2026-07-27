@@ -28,6 +28,6 @@ export interface ConstraintCodec<out T, out E = T, out RD = never, out RE = neve
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L709)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L812)
 
 Since v4.0.0

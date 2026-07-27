@@ -24,6 +24,10 @@ entries into structured objects.
   - `"foo[]"` → append to array `foo`
   - `""` → real empty key
 - Duplicate keys for the same path are merged into arrays.
+- If a structural path conflicts with a previous leaf or a different container
+  type, the later structural path replaces the conflicting value.
+- The notation has no escaping for `.`, `[` or `]`, so keys containing these
+  delimiters cannot be round-tripped without changing their structure.
 
 **Example** (Building a tree from bracket paths)
 
@@ -40,7 +44,7 @@ const tree = SchemaGetter.makeTreeRecord([
 
 **See**
 
-- `collectBracketPathEntries` for the inverse operation (tree to flat entries)
+- `collectBracketPathEntries` for flattening trees into bracket-path entries
 - `decodeFormData` for a higher-level FormData decoder
 - `decodeURLSearchParams` for a higher-level URLSearchParams decoder
 
@@ -50,6 +54,6 @@ const tree = SchemaGetter.makeTreeRecord([
 declare const makeTreeRecord: <A>(bracketPathEntries: ReadonlyArray<readonly [bracketPath: string, value: A]>) => Schema.TreeRecord<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaGetter.ts#L1764)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaGetter.ts#L1757)
 
 Since v4.0.0

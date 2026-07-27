@@ -84,6 +84,6 @@ const program = Effect.gen(function*() {
 type Type = "Counter" | "Frequency" | "Gauge" | "Histogram" | "Summary"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Metric.ts#L1052)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Metric.ts#L1053)
 
 Since v4.0.0

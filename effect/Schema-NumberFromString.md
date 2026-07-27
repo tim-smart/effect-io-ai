@@ -8,11 +8,11 @@ Type-level representation of `NumberFromString`.
 **Signature**
 
 ```ts
-export interface NumberFromString extends decodeTo<Finite, String> {
+export interface NumberFromString extends decodeTo<Number, String> {
   readonly "Rebuild": NumberFromString
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L11524)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L12885)
 
 Since v3.10.0

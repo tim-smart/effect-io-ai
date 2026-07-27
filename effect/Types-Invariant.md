@@ -39,6 +39,6 @@ interface Container<T> {
 type Invariant<A> = (_: A) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L578)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L576)
 
 Since v2.0.0

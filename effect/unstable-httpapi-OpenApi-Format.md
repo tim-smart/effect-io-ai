@@ -11,6 +11,6 @@ OpenAPI annotation for setting the format metadata, such as a bearer token forma
 declare class Format
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/OpenApi.ts#L98)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/OpenApi.ts#L99)
 
 Since v4.0.0

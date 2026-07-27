@@ -74,6 +74,6 @@ export interface GaugeState<in Input extends number | bigint> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Metric.ts#L553)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Metric.ts#L554)
 
 Since v4.0.0

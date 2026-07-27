@@ -45,6 +45,6 @@ console.log(Result.isFailure(posInt.getResult(-1)))
 declare const fromChecks: <T>(checks_0: SchemaAST.Check<T>, ...checks: Array<SchemaAST.Check<T>>) => Prism<T, T>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Optic.ts#L316)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Optic.ts#L317)
 
 Since v4.0.0

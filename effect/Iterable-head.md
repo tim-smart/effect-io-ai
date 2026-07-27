@@ -33,6 +33,6 @@ console.log(doubled) // Option.some(10)
 declare const head: <A>(self: Iterable<A>) => Option<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Iterable.ts#L506)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Iterable.ts#L507)
 
 Since v2.0.0

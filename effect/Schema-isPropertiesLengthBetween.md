@@ -25,6 +25,6 @@ the final number of own properties.
 declare const isPropertiesLengthBetween: (minimum: number, maximum: number, annotations?: Annotations.Filter) => SchemaAST.Filter<object>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L8364)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9305)
 
 Since v4.0.0

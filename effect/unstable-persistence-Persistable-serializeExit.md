@@ -12,6 +12,6 @@ schemas.
 declare const serializeExit: <A extends Schema.Constraint, E extends Schema.Constraint>(self: Persistable<A, E>, exit: Exit.Exit<A["Type"], E["Type"]>) => Effect.Effect<unknown, Schema.SchemaError, A["EncodingServices"] | E["EncodingServices"]>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Persistable.ts#L227)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Persistable.ts#L228)
 
 Since v4.0.0

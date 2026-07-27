@@ -16,6 +16,6 @@ Whether a schema field has a constructor default value.
 type ConstructorDefault = "no-default" | "with-default"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L101)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L103)
 
 Since v4.0.0

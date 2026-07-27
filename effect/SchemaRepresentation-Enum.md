@@ -3,18 +3,21 @@ Module: `SchemaRepresentation`<br />
 
 ## SchemaRepresentation.Enum
 
-A TypeScript-style enum. Each entry is a `[name, value]` pair.
+An enum representation.
+
+**Details**
+
+Enum members are stored as native string or number values. Persistent
+codecs add an explicit type discriminator when encoding them.
 
 **Signature**
 
 ```ts
-export interface Enum {
-  readonly _tag: "Enum"
-  readonly annotations?: Schema.Annotations.Annotations | undefined
+export interface Enum extends Keyword<"Enum"> {
   readonly enums: ReadonlyArray<readonly [string, string | number]>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaRepresentation.ts#L296)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaRepresentation.ts#L300)
 
 Since v4.0.0

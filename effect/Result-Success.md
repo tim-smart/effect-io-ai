@@ -48,6 +48,6 @@ export interface Success<out A, out E> extends Pipeable, Inspectable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Result.ts#L164)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Result.ts#L165)
 
 Since v4.0.0

@@ -50,6 +50,6 @@ const program = Effect.gen(function*() {
 declare const FiberRuntimeMetricsImpl: FiberRuntimeMetricsService
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Metric.ts#L3672)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Metric.ts#L3673)
 
 Since v4.0.0

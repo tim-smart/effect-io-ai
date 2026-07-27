@@ -21,6 +21,6 @@ export interface OpenAPISpec {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/OpenApi.ts#L863)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/OpenApi.ts#L887)
 
 Since v4.0.0

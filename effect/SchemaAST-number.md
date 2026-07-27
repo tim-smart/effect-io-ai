@@ -21,6 +21,6 @@ JavaScript number value.
 declare const number: Number
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaAST.ts#L1419)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaAST.ts#L1431)
 
 Since v4.0.0

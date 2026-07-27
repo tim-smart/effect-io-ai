@@ -17,6 +17,6 @@ export interface Persistable<A extends Schema.Constraint, E extends Schema.Const
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Persistable.ts#L40)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Persistable.ts#L41)
 
 Since v4.0.0

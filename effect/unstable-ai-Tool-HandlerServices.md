@@ -22,6 +22,6 @@ type HandlerServices<T> = T extends Tool<
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Tool.ts#L886)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Tool.ts#L893)
 
 Since v4.0.0

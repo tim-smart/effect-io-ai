@@ -39,6 +39,6 @@ assert.deepStrictEqual(result, Option.some({ x: 2, y: 3, sum: 5 }))
 declare const Do: Option<{}>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L2484)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L2485)
 
 Since v2.0.0

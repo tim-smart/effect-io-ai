@@ -11,6 +11,6 @@ Detects whether `Effect.all` should collect results in `Result` mode.
 type IsResult<A> = [Extract<A, { readonly mode: "result" }>] extends [never] ? false : true
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L360)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L361)
 
 Since v4.0.0

@@ -36,6 +36,6 @@ console.log(Result.isSuccess(result))
 declare const void: Result<void, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Result.ts#L347)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Result.ts#L348)
 
 Since v3.13.0

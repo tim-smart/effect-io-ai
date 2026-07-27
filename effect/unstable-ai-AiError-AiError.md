@@ -40,6 +40,6 @@ const handled = aiOperation.pipe(
 declare class AiError
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/AiError.ts#L1461)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/AiError.ts#L1462)
 
 Since v4.0.0

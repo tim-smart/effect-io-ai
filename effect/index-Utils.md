@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Utils.ts" module as `Utils`.
 export * as Utils from "./Utils.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L722)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L717)
 
 Since v2.0.0

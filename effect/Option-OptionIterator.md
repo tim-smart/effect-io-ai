@@ -25,6 +25,6 @@ export interface OptionIterator<T extends Option<any>> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L101)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L102)
 
 Since v4.0.0

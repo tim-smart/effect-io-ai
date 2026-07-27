@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Trie.ts" module as `Trie`.
 export * as Trie from "./Trie.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L642)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L637)
 
 Since v2.0.0

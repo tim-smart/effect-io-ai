@@ -16,6 +16,6 @@ Pass a single key list for all events or a mapping from event tag to key list.
 declare const groupReactivity: <Events extends Event.Any>(group: EventGroup.EventGroup<Events>, keys: { readonly [Tag in Event.Tag<Events>]?: ReadonlyArray<string>; } | ReadonlyArray<string>) => Layer.Layer<never, never, Registry>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/EventLog.ts#L665)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/EventLog.ts#L668)
 
 Since v4.0.0

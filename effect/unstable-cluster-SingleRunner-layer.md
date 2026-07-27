@@ -22,7 +22,8 @@ when `runnerStorage` is set to `"memory"`.
 **Gotchas**
 
 - Even when `runnerStorage` is `"memory"`, message storage remains
-  SQL-backed, so callers must still provide `SqlClient`.
+  SQL-backed, so callers must still provide `SqlClient` and `Crypto.Crypto`
+  (used to hash over-length message deduplication keys).
 - Runner communication and runner health are no-op services, so this layer is
   for single-process use rather than multi-runner coordination.
 
@@ -36,9 +37,9 @@ when `runnerStorage` is set to `"memory"`.
 **Signature**
 
 ```ts
-declare const layer: (options?: { readonly shardingConfig?: Partial<ShardingConfig.ShardingConfig["Service"]> | undefined; readonly runnerStorage?: "memory" | "sql" | undefined; }) => Layer.Layer<Sharding.Sharding | Runners.Runners | MessageStorage.MessageStorage, ConfigError, SqlClient.SqlClient>
+declare const layer: (options?: { readonly shardingConfig?: Partial<ShardingConfig.ShardingConfig["Service"]> | undefined; readonly runnerStorage?: "memory" | "sql" | undefined; }) => Layer.Layer<Sharding.Sharding | Runners.Runners | MessageStorage.MessageStorage, ConfigError, SqlClient.SqlClient | Crypto.Crypto>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SingleRunner.ts#L57)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SingleRunner.ts#L59)
 
 Since v4.0.0

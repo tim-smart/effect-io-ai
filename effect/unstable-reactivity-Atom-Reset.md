@@ -11,6 +11,6 @@ Type of the `Reset` control symbol accepted by `AtomResultFn` writes.
 type Reset = typeof Reset
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Atom.ts#L1097)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Atom.ts#L1099)
 
 Since v4.0.0

@@ -12,6 +12,6 @@ field map.
 type EncodingServices<F> = { readonly [K in keyof F]: F[K]["EncodingServices"] }[keyof F]
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L3316)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L3392)
 
 Since v4.0.0

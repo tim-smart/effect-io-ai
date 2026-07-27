@@ -42,6 +42,6 @@ const productionLogger = Logger.formatLogFmt
 declare const formatLogFmt: Logger<unknown, string>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Logger.ts#L583)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Logger.ts#L584)
 
 Since v4.0.0

@@ -16,6 +16,6 @@ endpoint operation.
 declare class Transform
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/OpenApi.ts#L151)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/OpenApi.ts#L152)
 
 Since v4.0.0

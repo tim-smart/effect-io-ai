@@ -13,6 +13,6 @@ type OpenAPISpecPathItem = {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/OpenApi.ts#L976)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/OpenApi.ts#L1000)
 
 Since v4.0.0

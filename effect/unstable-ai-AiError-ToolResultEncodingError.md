@@ -32,6 +32,6 @@ console.log(error.message)
 declare class ToolResultEncodingError
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/AiError.ts#L1138)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/AiError.ts#L1139)
 
 Since v4.0.0

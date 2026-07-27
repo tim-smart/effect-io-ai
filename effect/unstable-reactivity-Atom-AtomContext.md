@@ -43,6 +43,6 @@ export interface AtomContext {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Atom.ts#L159)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Atom.ts#L160)
 
 Since v4.0.0

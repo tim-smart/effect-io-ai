@@ -11,6 +11,6 @@ Reads an atom's current value from the `AtomRegistry` service.
 declare const get: <A>(self: Atom<A>) => Effect.Effect<A, never, AtomRegistry>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Atom.ts#L2287)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Atom.ts#L2327)
 
 Since v4.0.0

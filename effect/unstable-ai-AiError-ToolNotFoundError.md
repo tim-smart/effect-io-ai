@@ -31,6 +31,6 @@ console.log(error.message)
 declare class ToolNotFoundError
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/AiError.ts#L971)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/AiError.ts#L972)
 
 Since v4.0.0

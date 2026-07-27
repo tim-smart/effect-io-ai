@@ -15,6 +15,6 @@ export interface OptionFromOptionalNullOr<S extends Constraint>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L8784)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9811)
 
 Since v4.0.0

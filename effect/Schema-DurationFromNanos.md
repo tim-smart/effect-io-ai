@@ -13,6 +13,6 @@ export interface DurationFromNanos extends decodeTo<Duration, BigInt> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10743)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L12110)
 
 Since v3.10.0

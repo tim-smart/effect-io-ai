@@ -11,6 +11,6 @@ Returns `true` when an atom is writable.
 declare const isWritable: <R, W>(atom: Atom<R>) => atom is Writable<R, W>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Atom.ts#L359)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Atom.ts#L361)
 
 Since v4.0.0

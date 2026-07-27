@@ -29,6 +29,6 @@ Effect.runFork(Fiber.interrupt(fiber))
 declare const onInterrupt: { <XE, XR>(finalizer: (interruptors: ReadonlySet<number>) => Effect<void, XE, XR>): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E | XE, R | XR>; <A, E, R, XE, XR>(self: Effect<A, E, R>, finalizer: (interruptors: ReadonlySet<number>) => Effect<void, XE, XR>): Effect<A, E | XE, R | XR>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L7346)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L7367)
 
 Since v2.0.0

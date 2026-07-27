@@ -50,6 +50,6 @@ const apiOperation = Effect.gen(function*() {
 declare const timer: (name: string, options?: { readonly description?: string | undefined; readonly attributes?: Metric.Attributes | undefined; readonly boundaries?: ReadonlyArray<number>; }) => Histogram<Duration.Duration>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Metric.ts#L2622)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Metric.ts#L2623)
 
 Since v2.0.0

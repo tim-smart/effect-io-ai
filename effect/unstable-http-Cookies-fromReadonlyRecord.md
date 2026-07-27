@@ -11,6 +11,6 @@ Creates a `Cookies` collection from an existing readonly record of cookies keyed
 declare const fromReadonlyRecord: (cookies: Record.ReadonlyRecord<string, Cookie>) => Cookies
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cookies.ts#L239)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cookies.ts#L241)
 
 Since v4.0.0

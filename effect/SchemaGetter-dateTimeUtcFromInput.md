@@ -38,6 +38,6 @@ const parseDate = SchemaGetter.dateTimeUtcFromInput<string>()
 declare const dateTimeUtcFromInput: <E extends DateTime.DateTime.Input>() => Getter<DateTime.Utc, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaGetter.ts#L1524)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaGetter.ts#L1527)
 
 Since v4.0.0

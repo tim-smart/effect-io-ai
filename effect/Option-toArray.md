@@ -37,6 +37,6 @@ console.log(Option.toArray(Option.none()))
 declare const toArray: <A>(self: Option<A>) => Array<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L1884)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L1885)
 
 Since v2.0.0

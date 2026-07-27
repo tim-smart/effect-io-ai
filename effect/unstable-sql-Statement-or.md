@@ -12,6 +12,6 @@ Combines clauses with `OR`, parenthesizing multiple clauses and returning
 declare const or: (clauses: ReadonlyArray<string | Fragment>) => Fragment
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Statement.ts#L702)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Statement.ts#L703)
 
 Since v4.0.0

@@ -19,6 +19,6 @@ type OpenApiSpecEffectStream = | {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/OpenApi.ts#L1040)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/OpenApi.ts#L1064)
 
 Since v4.0.0

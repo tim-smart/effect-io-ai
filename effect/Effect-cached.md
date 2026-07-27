@@ -69,6 +69,6 @@ additional effect for manually invalidating the cached value.
 declare const cached: <A, E, R>(self: Effect<A, E, R>) => Effect<Effect<A, E, R>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L7135)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L7156)
 
 Since v2.0.0

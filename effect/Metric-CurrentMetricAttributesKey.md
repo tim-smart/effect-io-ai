@@ -54,6 +54,6 @@ const program = Effect.gen(function*() {
 declare const CurrentMetricAttributesKey: "effect/Metric/CurrentMetricAttributes"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Metric.ts#L1635)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Metric.ts#L1636)
 
 Since v4.0.0

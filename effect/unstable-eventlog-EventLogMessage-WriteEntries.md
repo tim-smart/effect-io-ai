@@ -16,6 +16,6 @@ vector, and encrypted entries.
 declare class WriteEntries
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/EventLogMessage.ts#L263)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/EventLogMessage.ts#L270)
 
 Since v4.0.0

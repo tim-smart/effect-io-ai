@@ -11,6 +11,6 @@ RPC used to send one chunk of a large encoded write payload.
 declare class WriteChunkedRpc
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/EventLogMessage.ts#L247)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/EventLogMessage.ts#L254)
 
 Since v4.0.0

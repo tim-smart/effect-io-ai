@@ -28,9 +28,9 @@ assert.deepStrictEqual(
 **Signature**
 
 ```ts
-declare const fromIterableBy: <A, K extends string | symbol>(items: Iterable<A>, f: (a: A) => K) => Record<ReadonlyRecord.NonLiteralKey<K>, A>
+declare const fromIterableBy: { <A, K extends string | symbol>(f: (a: A) => K): (items: Iterable<A>) => Record<ReadonlyRecord.NonLiteralKey<K>, A>; <A, K extends string | symbol>(items: Iterable<A>, f: (a: A) => K): Record<ReadonlyRecord.NonLiteralKey<K>, A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Record.ts#L283)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Record.ts#L284)
 
 Since v2.0.0

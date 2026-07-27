@@ -18,6 +18,6 @@ export interface schemaRecord extends
 {}
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/UrlParams.ts#L573)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/UrlParams.ts#L576)
 
 Since v4.0.0

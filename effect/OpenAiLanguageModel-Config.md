@@ -21,6 +21,6 @@ supplied to `model`, `make`, or `layer`.
 declare class Config
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiLanguageModel.ts#L114)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiLanguageModel.ts#L115)
 
 Since v4.0.0

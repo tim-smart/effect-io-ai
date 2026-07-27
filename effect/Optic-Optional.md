@@ -492,6 +492,6 @@ export interface Optional<in out S, in out A> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Optic.ts#L502)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Optic.ts#L503)
 
 Since v4.0.0

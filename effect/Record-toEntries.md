@@ -21,6 +21,6 @@ assert.deepStrictEqual(Record.toEntries(x), [["a", 1], ["b", 2], ["c", 3]])
 declare const toEntries: <K extends string, A>(self: ReadonlyRecord<K, A>) => Array<[K, A]>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Record.ts#L363)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Record.ts#L375)
 
 Since v2.0.0

@@ -25,6 +25,6 @@ console.log(Config.isConfig("not a config"))        // false
 declare const isConfig: (u: unknown) => u is Config<unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L48)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L49)
 
 Since v2.0.0

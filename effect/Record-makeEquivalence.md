@@ -24,6 +24,6 @@ assert.deepStrictEqual(recordEquivalence({ a: 1, b: 2 }, { a: 1, b: 3 }), false)
 declare const makeEquivalence: <K extends string, A>(equivalence: Equivalence<A>) => Equivalence<ReadonlyRecord<K, A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Record.ts#L1428)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Record.ts#L1478)
 
 Since v4.0.0

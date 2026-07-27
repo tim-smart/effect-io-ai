@@ -14,6 +14,6 @@ export interface Any {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Toolkit.ts#L125)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Toolkit.ts#L130)
 
 Since v4.0.0

@@ -37,6 +37,6 @@ console.log(result) // { first: "Alice", last: "Smith", age: 30 }
 declare const renameKeys: { <S extends object, const M extends { readonly [K in keyof S]?: PropertyKey; }>(mapping: M): (self: S) => { [K in keyof S as K extends keyof M ? M[K] extends PropertyKey ? M[K] : K : K]: S[K]; }; <S extends object, const M extends { readonly [K in keyof S]?: PropertyKey; }>(self: S, mapping: M): { [K in keyof S as K extends keyof M ? M[K] extends PropertyKey ? M[K] : K : K]: S[K]; }; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Struct.ts#L467)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Struct.ts#L468)
 
 Since v4.0.0

@@ -39,6 +39,6 @@ interface Producer<T> {
 type Covariant<A> = (_: never) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L646)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L644)
 
 Since v2.0.0

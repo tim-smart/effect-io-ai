@@ -31,6 +31,6 @@ export interface toEncoded<S extends Constraint> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L2523)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L2599)
 
 Since v4.0.0

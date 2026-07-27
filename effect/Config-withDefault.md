@@ -37,6 +37,6 @@ const provider = ConfigProvider.fromUnknown({})
 declare const withDefault: { <const A2>(defaultValue: A2): <A>(self: Config<A>) => Config<A2 | A>; <A, const A2>(self: Config<A>, defaultValue: A2): Config<A | A2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L357)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L358)
 
 Since v2.0.0

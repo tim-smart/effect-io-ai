@@ -28,6 +28,6 @@ console.log(Option.void)
 declare const void: Option<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L1249)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L1250)
 
 Since v2.0.0

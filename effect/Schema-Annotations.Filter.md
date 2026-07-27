@@ -11,6 +11,11 @@ Filters are intentionally non-parametric to keep them covariant.
 
 ```ts
 export interface Filter extends Augment {
+    readonly representation?:
+      | SchemaRepresentation.CheckRepresentationAnnotation<SchemaAST.AST>
+      | undefined
+    readonly toJsonSchema?: SchemaRepresentation.ToJsonSchema.Check | undefined
+    readonly toCode?: SchemaRepresentation.Generation.Check | undefined
     /**
      * Complete message to use when this filter or refinement fails.
      *
@@ -32,10 +37,6 @@ export interface Filter extends Augment {
      */
     readonly identifier?: string | undefined
     /**
-     * Optional metadata used to identify or extend the filter with custom data.
-     */
-    readonly meta?: Meta | undefined
-    /**
      * Optional hints used by arbitrary derivation for this filter.
      *
      * **Details**
@@ -54,12 +55,14 @@ export interface Filter extends Augment {
      *
      * **Details**
      *
+     * Reserved to internal use only.
+     *
      * Example: `minLength` on an array is a structural filter.
      */
     readonly "~structural"?: boolean | undefined
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L14516)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L16315)
 
 Since v4.0.0

@@ -29,6 +29,6 @@ console.log(pipe(["a", "b", "c", "d"], Array.contains("c"))) // true
 declare const contains: { <A>(a: A): (self: Iterable<A>) => boolean; <A>(self: Iterable<A>, a: A): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2573)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2575)
 
 Since v2.0.0

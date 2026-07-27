@@ -11,7 +11,7 @@ Use to read date settings that must parse to valid `Date` values.
 
 **Details**
 
-Shortcut for `Config.schema(Schema.DateValid, name)`.
+Shortcut for `Config.schema(Schema.Date, name)`.
 
 **Gotchas**
 
@@ -35,6 +35,6 @@ const provider = ConfigProvider.fromUnknown({ CREATED_AT: "2024-01-15" })
 declare const date: (name?: string) => Config<Date>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L1362)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L1363)
 
 Since v2.0.0

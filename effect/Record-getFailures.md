@@ -28,6 +28,6 @@ assert.deepStrictEqual(
 declare const getFailures: <K extends string, A, E>(self: ReadonlyRecord<K, Result<A, E>>) => Record<ReadonlyRecord.NonLiteralKey<K>, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Record.ts#L862)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Record.ts#L874)
 
 Since v4.0.0

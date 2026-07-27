@@ -18,6 +18,6 @@ export interface OptionTypeLambda extends TypeLambda {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L224)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L225)
 
 Since v2.0.0

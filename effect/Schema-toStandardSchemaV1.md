@@ -41,7 +41,7 @@ const leafHook = (issue: any) => {
 // Create a standard schema from a regular schema
 const PersonSchema = Schema.Struct({
   name: Schema.NonEmptyString,
-  age: Schema.Number.check(Schema.isBetween({ minimum: 0, maximum: 150 }))
+  age: Schema.Finite.check(Schema.isBetween({ minimum: 0, maximum: 150 }))
 })
 
 const standardSchema = Schema.toStandardSchemaV1(PersonSchema, {
@@ -68,6 +68,6 @@ console.log(invalidResult) // { issues: [{ path: ["name"], message: "..." }, { p
 declare const toStandardSchemaV1: <S extends ConstraintDecoder<unknown>>(self: S, options?: { readonly leafHook?: SchemaIssue.LeafHook | undefined; readonly checkHook?: SchemaIssue.CheckHook | undefined; readonly parseOptions?: SchemaAST.ParseOptions | undefined; }) => StandardSchemaV1<S["Encoded"], S["Type"]> & S
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L1157)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L1260)
 
 Since v4.0.0

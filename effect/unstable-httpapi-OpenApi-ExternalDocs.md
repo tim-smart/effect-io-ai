@@ -11,6 +11,6 @@ OpenAPI annotation for adding external documentation metadata to groups or endpo
 declare class ExternalDocs
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/OpenApi.ts#L78)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/OpenApi.ts#L79)
 
 Since v4.0.0

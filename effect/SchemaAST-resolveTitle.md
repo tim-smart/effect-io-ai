@@ -17,6 +17,6 @@ Returns the `title` annotation from the AST node, if set.
 declare const resolveTitle: (ast: AST) => string | undefined
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaAST.ts#L3843)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaAST.ts#L3913)
 
 Since v4.0.0

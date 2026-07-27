@@ -122,6 +122,6 @@ const program = f("hello")
 declare const fn: fn.Traced & ((name: string, options?: SpanOptionsNoTrace) => fn.Traced)
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13734)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13755)
 
 Since v3.11.0

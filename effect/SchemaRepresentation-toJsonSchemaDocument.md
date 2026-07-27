@@ -3,36 +3,19 @@ Module: `SchemaRepresentation`<br />
 
 ## SchemaRepresentation.toJsonSchemaDocument
 
-Converts a `Document` to a Draft 2020-12 JSON Schema document.
+Compiles a live representation document to JSON Schema Draft 2020-12.
 
 **When to use**
 
-Use when you need to produce a standard JSON Schema document from a schema
-representation `Document`.
+Use when you need JSON Schema output from a representation whose checks carry compiler annotations.
 
 **Gotchas**
 
-JSON Schema generation is best-effort. Some Effect schema representation
-semantics cannot be represented exactly in JSON Schema, and importing an
-emitted JSON Schema may produce an equivalent approximation rather than the
-original representation shape.
-
-**Example** (Generating JSON Schema)
-
-```ts
-import { Schema, SchemaRepresentation } from "effect"
-
-const doc = SchemaRepresentation.fromAST(Schema.String.ast)
-const jsonSchema = SchemaRepresentation.toJsonSchemaDocument(doc)
-console.log(jsonSchema.schema.type)
-// "string"
-```
+Opaque declarations are represented by an unconstrained JSON Schema. Check callback results are used directly, and exceptions raised by a callback pass through unchanged.
 
 **See**
 
-- `Document`
-- `toJsonSchemaMultiDocument`
-- `fromJsonSchemaDocument`
+- `toJsonSchemaMultiDocument` for multiple roots sharing definitions
 
 **Signature**
 
@@ -40,6 +23,6 @@ console.log(jsonSchema.schema.type)
 declare const toJsonSchemaDocument: (document: Document, options?: Schema.ToJsonSchemaOptions) => JsonSchema.Document<"draft-2020-12">
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaRepresentation.ts#L2208)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaRepresentation.ts#L770)
 
 Since v4.0.0

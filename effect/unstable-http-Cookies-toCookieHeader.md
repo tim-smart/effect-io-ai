@@ -11,6 +11,6 @@ Serializes a `Cookies` object into a Cookie header.
 declare const toCookieHeader: (self: Cookies) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cookies.ts#L854)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cookies.ts#L857)
 
 Since v4.0.0

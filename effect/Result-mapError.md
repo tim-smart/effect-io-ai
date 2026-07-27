@@ -38,6 +38,6 @@ console.log(result)
 declare const mapError: { <E, E2>(f: (err: E) => E2): <A>(self: Result<A, E>) => Result<A, E2>; <A, E, E2>(self: Result<A, E>, f: (err: E) => E2): Result<A, E2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Result.ts#L816)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Result.ts#L817)
 
 Since v4.0.0

@@ -15,6 +15,6 @@ Primitive value that can be converted into a URL parameter string.
 type Coercible = string | number | bigint | boolean | null | undefined
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/UrlParams.ts#L85)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/UrlParams.ts#L86)
 
 Since v4.0.0

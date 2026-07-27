@@ -26,7 +26,7 @@ const encode = SchemaGetter.encodeURLSearchParams()
 
 **See**
 
-- `decodeURLSearchParams` for the inverse operation
+- `decodeURLSearchParams` for the corresponding decoder
 - `collectBracketPathEntries` for the underlying flattener
 - `encodeFormData` for the FormData variant
 
@@ -36,6 +36,6 @@ const encode = SchemaGetter.encodeURLSearchParams()
 declare const encodeURLSearchParams: () => Getter<URLSearchParams, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaGetter.ts#L1680)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaGetter.ts#L1683)
 
 Since v4.0.0

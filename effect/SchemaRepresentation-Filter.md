@@ -3,23 +3,19 @@ Module: `SchemaRepresentation`<br />
 
 ## SchemaRepresentation.Filter
 
-A single validation constraint with typed metadata describing the check
-(e.g. `{ _tag: "isMinLength", minLength: 3 }`).
-
-**See**
-
-- `Check`
+An opaque leaf check.
 
 **Signature**
 
 ```ts
-export interface Filter<M> {
+export interface Filter {
   readonly _tag: "Filter"
-  readonly annotations?: Schema.Annotations.Filter | undefined
-  readonly meta: M
+  readonly representation?: CheckRepresentationAnnotation<Representation> | undefined
+  readonly annotations?: Schema.Annotations.Annotations | undefined
+  readonly aborted: boolean
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaRepresentation.ts#L501)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaRepresentation.ts#L438)
 
 Since v4.0.0

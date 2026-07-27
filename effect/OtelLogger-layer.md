@@ -27,6 +27,6 @@ to `true`; set it to `false` to replace the current logger set.
 declare const layer: (options: { readonly mergeWithExisting?: boolean | undefined; }) => Layer.Layer<never, never, OtelLoggerProvider>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/OtelLogger.ts#L141)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/OtelLogger.ts#L142)
 
 Since v4.0.0

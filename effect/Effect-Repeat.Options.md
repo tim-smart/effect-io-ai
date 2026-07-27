@@ -16,6 +16,6 @@ export interface Options<A> {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L7529)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L7550)
 
 Since v2.0.0

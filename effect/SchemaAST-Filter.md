@@ -9,8 +9,8 @@ Represents a single validation check attached to an AST node.
 
 - `run` — the validation function. Returns `undefined` on success, or an
   `Issue` on failure.
-- `annotations` — optional filter-level metadata (expected message, meta
-  tags, arbitrary constraint hints).
+- `annotations` — optional filter-level annotations (expected message,
+  representation, arbitrary constraint hints).
 - `aborted` — when `true`, parsing stops immediately after this filter
   fails (no further checks run).
 
@@ -36,6 +36,6 @@ declare class Filter<E> { constructor(
   ) }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaAST.ts#L2906)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaAST.ts#L2910)
 
 Since v4.0.0

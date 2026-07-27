@@ -35,6 +35,6 @@ const provider = ConfigProvider.fromUnknown({ HOST: "localhost" })
 declare const string: (name?: string) => Config<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L904)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L905)
 
 Since v2.0.0

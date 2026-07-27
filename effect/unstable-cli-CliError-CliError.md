@@ -38,6 +38,7 @@ type CliError = | UnrecognizedOption
   | DuplicateOption
   | MissingOption
   | MissingArgument
+  | UnexpectedArgument
   | InvalidValue
   | UnknownSubcommand
   | ShowHelp

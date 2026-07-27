@@ -11,6 +11,6 @@ Fiber reference that stores transferables to include with worker-backed SQLite W
 declare const Transferables: Context.Reference<ReadonlyArray<Transferable>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-wasm/src/SqliteClient.ts#L472)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-wasm/src/SqliteClient.ts#L473)
 
 Since v4.0.0

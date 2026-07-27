@@ -40,6 +40,6 @@ console.log(ord(Option.some(1), Option.some(2)))
 declare const makeOrder: <A>(O: Order<A>) => Order<Option<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L2103)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L2104)
 
 Since v4.0.0

@@ -13,6 +13,6 @@ export interface UndefinedOr<S extends Constraint> extends Union<readonly [S, Un
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L4902)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L4978)
 
 Since v3.10.0

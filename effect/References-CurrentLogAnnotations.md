@@ -65,6 +65,6 @@ const logAnnotationExample = Effect.gen(function*() {
 declare const CurrentLogAnnotations: Context.Reference<ReadonlyRecord<string, unknown>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/References.ts#L233)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/References.ts#L187)
 
 Since v4.0.0

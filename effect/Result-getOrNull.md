@@ -38,6 +38,6 @@ console.log(Result.getOrNull(Result.fail("err")))
 declare const getOrNull: <A, E>(self: Result<A, E>) => A | null
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Result.ts#L1145)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Result.ts#L1146)
 
 Since v2.0.0

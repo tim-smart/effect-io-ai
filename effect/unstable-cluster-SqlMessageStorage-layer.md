@@ -15,7 +15,9 @@ the default `cluster` table prefix and the standard snowflake generator.
 
 The layer runs the SQL migrations through `make`, provides `MessageStorage`,
 and supplies `Snowflake.layerGenerator` internally. Callers still provide
-`SqlClient` and `ShardingConfig`.
+`SqlClient`, `ShardingConfig`, and `Crypto.Crypto`, which is used to hash
+message deduplication keys that would overflow the fixed-width
+`message_id` column.
 
 **Gotchas**
 
@@ -31,9 +33,9 @@ later points the runtime at a different set of tables.
 **Signature**
 
 ```ts
-declare const layer: Layer.Layer<MessageStorage.MessageStorage, never, SqlClient.SqlClient | ShardingConfig>
+declare const layer: Layer.Layer<MessageStorage.MessageStorage, never, Crypto.Crypto | SqlClient.SqlClient | ShardingConfig>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SqlMessageStorage.ts#L662)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SqlMessageStorage.ts#L710)
 
 Since v4.0.0

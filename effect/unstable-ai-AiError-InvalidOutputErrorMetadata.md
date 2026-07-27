@@ -11,6 +11,6 @@ Provider-specific metadata attached to `InvalidOutputError`.
 export interface InvalidOutputErrorMetadata extends ProviderMetadata {}
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/AiError.ts#L271)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/AiError.ts#L272)
 
 Since v4.0.0

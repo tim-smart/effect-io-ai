@@ -25,6 +25,6 @@ try {
 declare const isSchemaError: (u: unknown) => u is SchemaError
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L1053)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L1156)
 
 Since v4.0.0

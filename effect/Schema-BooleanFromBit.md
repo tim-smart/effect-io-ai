@@ -13,6 +13,6 @@ export interface BooleanFromBit extends decodeTo<Boolean, Literals<readonly [0, 
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L11838)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L13199)
 
 Since v4.0.0

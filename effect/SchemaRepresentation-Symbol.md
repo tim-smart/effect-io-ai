@@ -3,17 +3,14 @@ Module: `SchemaRepresentation`<br />
 
 ## SchemaRepresentation.Symbol
 
-The `symbol` type.
+A symbol representation.
 
 **Signature**
 
 ```ts
-export interface Symbol {
-  readonly _tag: "Symbol"
-  readonly annotations?: Schema.Annotations.Annotations | undefined
-}
+export interface Symbol extends Keyword<"Symbol"> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaRepresentation.ts#L250)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaRepresentation.ts#L254)
 
 Since v4.0.0

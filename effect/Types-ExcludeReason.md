@@ -42,6 +42,6 @@ type ExcludeReason<E, K> = E extends { readonly reason: infer R }
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L1107)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L1105)
 
 Since v4.0.0

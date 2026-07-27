@@ -20,6 +20,6 @@ custom paths.
 declare const Port: Schema.Int
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L709)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L710)
 
 Since v4.0.0

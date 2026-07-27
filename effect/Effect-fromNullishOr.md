@@ -30,6 +30,6 @@ Effect.runPromise(program("hello"))
 declare const fromNullishOr: <A>(value: A) => Effect<NonNullable<A>, Cause.NoSuchElementError>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L1938)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L1939)
 
 Since v4.0.0

@@ -42,6 +42,6 @@ console.log(Option.none().pipe(Option.contains(2)))
 declare const contains: { <A>(a: A): (self: Option<A>) => boolean; <A>(self: Option<A>, a: A): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L2270)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L2271)
 
 Since v2.0.0

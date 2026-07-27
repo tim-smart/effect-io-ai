@@ -34,6 +34,6 @@ console.log(annotations?.title) // "Name"
 declare const resolve: (ast: AST) => Schema.Annotations.Annotations | undefined
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaAST.ts#L3802)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaAST.ts#L3872)
 
 Since v4.0.0

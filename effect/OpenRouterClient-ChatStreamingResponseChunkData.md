@@ -13,7 +13,7 @@ include an OpenRouter error object for a streamed response.
 **Signature**
 
 ```ts
-type ChatStreamingResponseChunkData = typeof Generated.ChatStreamingResponseChunk.fields.data.Type
+type ChatStreamingResponseChunkData = typeof Generated.ChatStreamingResponse.fields.data.Type
 ```
 
 [Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterClient.ts#L75)

@@ -37,6 +37,6 @@ console.log(Option.getSuccess(Result.fail("err")))
 declare const getSuccess: <A, E>(self: Result<A, E>) => Option<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L550)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L551)
 
 Since v4.0.0

@@ -29,6 +29,6 @@ export interface Entry<out R> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Request.ts#L560)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Request.ts#L558)
 
 Since v2.0.0

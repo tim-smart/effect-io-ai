@@ -36,6 +36,6 @@ console.log(original === copied) // false
 declare const copy: { <A>(self: NonEmptyReadonlyArray<A>): NonEmptyArray<A>; <A>(self: ReadonlyArray<A>): Array<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2810)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2812)
 
 Since v2.0.0

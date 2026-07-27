@@ -11,6 +11,6 @@ Builds a layer from an in-memory SQLite WASM client configuration, providing bot
 declare const layerMemory: (config: SqliteClientMemoryConfig) => Layer.Layer<SqliteClient | Client.SqlClient, SqlError>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-wasm/src/SqliteClient.ts#L513)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-wasm/src/SqliteClient.ts#L514)
 
 Since v4.0.0

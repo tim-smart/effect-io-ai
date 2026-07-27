@@ -88,6 +88,6 @@ const program = Effect.gen(function*() {
 export interface Frequency extends Metric<string, FrequencyState> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Metric.ts#L336)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Metric.ts#L337)
 
 Since v2.0.0

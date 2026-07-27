@@ -49,6 +49,6 @@ const McpTool = Tool.dynamic("McpTool", {
 declare const dynamic: <const Name extends string, const Options extends { readonly description?: string | undefined; readonly parameters?: Schema.Constraint | JsonSchema.JsonSchema | undefined; readonly success?: Schema.Constraint | undefined; readonly failure?: Schema.Constraint | undefined; readonly failureMode?: FailureMode | undefined; readonly needsApproval?: NeedsApproval<any> | undefined; }>(name: Name, options?: Options) => Dynamic<Name, { readonly parameters: Options extends { readonly parameters: infer P; } ? P extends Schema.Constraint ? P : P extends JsonSchema.JsonSchema ? P : typeof Schema.Unknown : typeof Schema.Unknown; readonly success: Options extends { readonly success: infer S extends Schema.Constraint; } ? S : typeof Schema.Unknown; readonly failure: Options extends { readonly failure: infer F extends Schema.Constraint; } ? F : typeof Schema.Never; readonly failureMode: Options extends { readonly failureMode: infer M extends FailureMode; } ? M : "error"; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Tool.ts#L1312)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Tool.ts#L1322)
 
 Since v4.0.0

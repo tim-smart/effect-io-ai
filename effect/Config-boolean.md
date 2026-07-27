@@ -49,6 +49,6 @@ Effect.runSync(
 declare const boolean: (name?: string) => Config<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L1090)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L1091)
 
 Since v2.0.0

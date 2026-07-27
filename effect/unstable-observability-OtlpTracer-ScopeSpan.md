@@ -15,6 +15,6 @@ export interface ScopeSpan {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/OtlpTracer.ts#L379)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/OtlpTracer.ts#L383)
 
 Since v4.0.0

@@ -3,51 +3,22 @@ Module: `SchemaRepresentation`<br />
 
 ## SchemaRepresentation.toCodeDocument
 
-Generates TypeScript code strings from a `MultiDocument`.
+Generates TypeScript source for live schema representations and their definitions.
 
 **When to use**
 
-Use when you need to produce source code for Effect Schema definitions from a
-schema representation `MultiDocument`.
+Use when custom declarations and checks provide `toCode` callbacks and must be emitted without a central handler registry.
 
-**Details**
+**Gotchas**
 
-`options.reviver` can customize code generation for `Declaration`
-nodes. Return `undefined` to fall back to the default logic, which uses
-`generation` annotations or the encoded schema. References are
-topologically sorted so non-recursive definitions are emitted before their
-dependents. `$ref` keys are converted to sanitized JavaScript identifiers.
-
-**Example** (Generating TypeScript code)
-
-```ts
-import { Schema, SchemaRepresentation } from "effect"
-
-const Person = Schema.Struct({
-  name: Schema.String,
-  age: Schema.Int
-})
-
-const multi = SchemaRepresentation.toMultiDocument(
-  SchemaRepresentation.fromAST(Person.ast)
-)
-const codeDoc = SchemaRepresentation.toCodeDocument(multi)
-console.log(codeDoc.codes[0].runtime)
-// Schema.Struct({ ... })
-```
-
-**See**
-
-- `CodeDocument`
-- `MultiDocument`
-- `Reviver`
+Opaque declarations and leaf checks require `toCode` callbacks. Callback results are used directly, and exceptions raised by a callback pass through unchanged.
 
 **Signature**
 
 ```ts
-declare const toCodeDocument: (multiDocument: MultiDocument, options?: { readonly reviver?: Reviver<Code> | undefined; }) => CodeDocument
+declare const toCodeDocument: (document: MultiDocument) => CodeDocument
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaRepresentation.ts#L2369)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaRepresentation.ts#L814)
 
 Since v4.0.0

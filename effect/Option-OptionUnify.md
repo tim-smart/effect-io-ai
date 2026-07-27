@@ -23,6 +23,6 @@ export interface OptionUnify<A extends { [Unify.typeSymbol]?: any }> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L157)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L158)
 
 Since v2.0.0

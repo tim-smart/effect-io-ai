@@ -28,6 +28,6 @@ type ReadonlyRecord<K, A> = {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Record.ts#L45)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Record.ts#L46)
 
 Since v2.0.0

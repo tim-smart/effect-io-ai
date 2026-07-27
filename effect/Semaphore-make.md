@@ -38,6 +38,6 @@ const program = Effect.gen(function*() {
 declare const make: (permits: number) => Effect.Effect<Semaphore>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Semaphore.ts#L329)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Semaphore.ts#L331)
 
 Since v4.0.0

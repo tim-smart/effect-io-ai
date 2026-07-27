@@ -15,6 +15,6 @@ type ValidateCompletions<Completions, Keys> = & Completions
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/McpServer.ts#L767)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/McpServer.ts#L878)
 
 Since v4.0.0

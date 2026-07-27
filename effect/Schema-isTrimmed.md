@@ -23,6 +23,6 @@ constraint to ensure generated strings match the trimmed pattern.
 declare const isTrimmed: (annotations?: Annotations.Filter) => SchemaAST.Filter<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6558)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6649)
 
 Since v4.0.0

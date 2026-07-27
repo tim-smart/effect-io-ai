@@ -19,6 +19,6 @@ export interface Compiler {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Statement.ts#L743)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Statement.ts#L744)
 
 Since v4.0.0

@@ -3,18 +3,11 @@ Module: `SchemaRepresentation`<br />
 
 ## SchemaRepresentation.toMultiDocument
 
-Wraps a single `Document` as a `MultiDocument` with one
-representation.
+Wraps a single representation document as a multi-document with one root.
 
 **When to use**
 
-Use when you need to pass a single schema representation `Document` where an
-API expects a `MultiDocument`.
-
-**See**
-
-- `Document`
-- `MultiDocument`
+Use when an API such as `toCodeDocument` requires a `MultiDocument`.
 
 **Signature**
 
@@ -22,6 +15,6 @@ API expects a `MultiDocument`.
 declare const toMultiDocument: (document: Document) => MultiDocument
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaRepresentation.ts#L1712)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaRepresentation.ts#L747)
 
 Since v4.0.0

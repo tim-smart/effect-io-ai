@@ -27,6 +27,6 @@ Wraps either:
 declare class ConfigError { constructor(cause: SourceError | Schema.SchemaError) }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L70)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L71)
 
 Since v4.0.0

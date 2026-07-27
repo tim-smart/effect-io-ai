@@ -75,6 +75,6 @@ export interface Dynamic<
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Tool.ts#L481)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Tool.ts#L488)
 
 Since v4.0.0

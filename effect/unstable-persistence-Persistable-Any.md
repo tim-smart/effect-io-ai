@@ -11,6 +11,6 @@ Any persistable request regardless of its success and error schemas.
 type Any = Persistable<Schema.Constraint, Schema.Constraint>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Persistable.ts#L53)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Persistable.ts#L54)
 
 Since v4.0.0

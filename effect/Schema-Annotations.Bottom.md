@@ -45,10 +45,6 @@ export interface Bottom<T, TypeParameters extends ReadonlyArray<Constraint>> ext
     readonly identifier?: string | undefined
     readonly parseOptions?: SchemaAST.ParseOptions | undefined
     /**
-     * Optional metadata used to identify or extend the filter with custom data.
-     */
-    readonly meta?: Meta | undefined
-    /**
      * Accumulated brands when multiple brands are added with `Schema.brand`.
      */
     readonly brands?: ReadonlyArray<string> | undefined
@@ -58,6 +54,6 @@ export interface Bottom<T, TypeParameters extends ReadonlyArray<Constraint>> ext
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L14391)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L16195)
 
 Since v4.0.0

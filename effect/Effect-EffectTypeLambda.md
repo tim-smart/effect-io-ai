@@ -13,6 +13,6 @@ export interface EffectTypeLambda extends TypeLambda {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L143)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L144)
 
 Since v2.0.0

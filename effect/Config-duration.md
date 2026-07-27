@@ -49,6 +49,6 @@ Effect.runSync(
 declare const duration: (name?: string) => Config<Duration>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L1136)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L1137)
 
 Since v2.5.0

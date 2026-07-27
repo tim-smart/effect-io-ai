@@ -36,6 +36,6 @@ export interface Config<out T> extends Effect.Effect<T, ConfigError> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L108)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L109)
 
 Since v2.0.0

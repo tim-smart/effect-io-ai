@@ -3,17 +3,14 @@ Module: `SchemaRepresentation`<br />
 
 ## SchemaRepresentation.Void
 
-The `void` type.
+The void keyword representation.
 
 **Signature**
 
 ```ts
-export interface Void {
-  readonly _tag: "Void"
-  readonly annotations?: Schema.Annotations.Annotations | undefined
-}
+export interface Void extends Keyword<"Void"> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaRepresentation.ts#L138)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaRepresentation.ts#L196)
 
 Since v4.0.0

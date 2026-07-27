@@ -47,6 +47,6 @@ console.log(missing) // undefined
 declare const resolve$ref: ($ref: string, definitions: Definitions) => JsonSchema | undefined
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/JsonSchema.ts#L894)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/JsonSchema.ts#L895)
 
 Since v4.0.0

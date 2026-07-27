@@ -46,6 +46,6 @@ console.log(result) // { n: 6, s: "abc" }
 declare const makeReducer: <A>(reducers: { readonly [K in keyof A]: Reducer.Reducer<A[K]>; }, options?: { readonly omitKeyWhen?: ((a: A[keyof A]) => boolean) | undefined; }) => Reducer.Reducer<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Struct.ts#L935)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Struct.ts#L936)
 
 Since v4.0.0

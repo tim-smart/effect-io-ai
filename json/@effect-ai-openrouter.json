@@ -125,7 +125,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layer: (options: Options) => Layer.Layer<OpenRouterClient, never, HttpClient.HttpClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterClient.ts#L271"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterClient.ts#L281"
   },
   {
     "_tag": "Function",
@@ -141,7 +141,7 @@
     "since": "4.0.0",
     "category": "layers",
     "signature": "declare const layerConfig: (options?: { readonly apiKey?: Config.Config<Redacted.Redacted<string> | undefined> | undefined; readonly apiUrl?: Config.Config<string> | undefined; readonly siteReferrer?: Config.Config<string> | undefined; readonly siteTitle?: Config.Config<string> | undefined; readonly transformClient?: ((client: HttpClient.HttpClient) => HttpClient.HttpClient) | undefined; }) => Layer.Layer<OpenRouterClient, Config.ConfigError, HttpClient.HttpClient>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterClient.ts#L294"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterClient.ts#L304"
   },
   {
     "_tag": "Interface",
@@ -156,7 +156,7 @@
     "examples": [],
     "since": "4.0.0",
     "category": "models",
-    "signature": "export interface Service {\n  readonly client: Generated.OpenRouterClient\n\n  readonly createChatCompletion: (\n    options: typeof Generated.ChatGenerationParams.Encoded\n  ) => Effect.Effect<\n    [body: typeof Generated.SendChatCompletionRequest200.Type, response: HttpClientResponse.HttpClientResponse],\n    AiError.AiError\n  >\n\n  readonly createChatCompletionStream: (\n    options: Omit<typeof Generated.ChatGenerationParams.Encoded, \"stream\" | \"stream_options\">\n  ) => Effect.Effect<\n    [\n      response: HttpClientResponse.HttpClientResponse,\n      stream: Stream.Stream<ChatStreamingResponseChunkData, AiError.AiError>\n    ],\n    AiError.AiError\n  >\n}",
+    "signature": "export interface Service {\n  readonly client: Generated.OpenRouterClient\n\n  readonly createChatCompletion: (\n    options: typeof Generated.ChatRequest.Encoded\n  ) => Effect.Effect<\n    [body: typeof Generated.SendChatCompletionRequest200.Type, response: HttpClientResponse.HttpClientResponse],\n    AiError.AiError\n  >\n\n  readonly createChatCompletionStream: (\n    options: Omit<typeof Generated.ChatRequest.Encoded, \"stream\" | \"stream_options\">\n  ) => Effect.Effect<\n    [\n      response: HttpClientResponse.HttpClientResponse,\n      stream: Stream.Stream<ChatStreamingResponseChunkData, AiError.AiError>\n    ],\n    AiError.AiError\n  >\n}",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterClient.ts#L43"
   },
   {
@@ -172,7 +172,7 @@
     "examples": [],
     "since": "4.0.0",
     "category": "models",
-    "signature": "type ChatStreamingResponseChunkData = typeof Generated.ChatStreamingResponseChunk.fields.data.Type",
+    "signature": "type ChatStreamingResponseChunkData = typeof Generated.ChatStreamingResponse.fields.data.Type",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterClient.ts#L75"
   },
   {
@@ -364,7 +364,7 @@
     "examples": [],
     "since": "4.0.0",
     "category": "models",
-    "signature": "type ReasoningDetails = Exclude<typeof Generated.AssistantMessage.Encoded[\"reasoning_details\"], undefined>",
+    "signature": "type ReasoningDetails = Exclude<typeof Generated.ChatAssistantMessage.Encoded[\"reasoning_details\"], undefined>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterLanguageModel.ts#L92"
   },
   {
@@ -380,7 +380,7 @@
     "examples": [],
     "since": "4.0.0",
     "category": "models",
-    "signature": "type FileAnnotation = Extract<\n  NonNullable<typeof Generated.AssistantMessage.fields.annotations.Type>[number],\n  { type: \"file\" }\n>",
+    "signature": "type FileAnnotation = Extract<\n  NonNullable<typeof Generated.ChatAssistantMessage.fields.annotations.Type>[number],\n  { type: \"file\" }\n>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterLanguageModel.ts#L101"
   }
 ]

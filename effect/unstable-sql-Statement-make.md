@@ -12,6 +12,6 @@ compiler, tracing attributes, and optional row transformation function.
 declare const make: (acquirer: Acquirer, compiler: Compiler, spanAttributes: ReadonlyArray<readonly [string, unknown]>, transformRows: (<A extends object>(row: ReadonlyArray<A>) => ReadonlyArray<A>) | undefined) => Constructor
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Statement.ts#L531)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Statement.ts#L532)
 
 Since v4.0.0

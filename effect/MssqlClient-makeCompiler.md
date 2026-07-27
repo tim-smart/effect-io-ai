@@ -11,6 +11,6 @@ Creates the SQL Server statement compiler, using `@1`-style placeholders, bracke
 declare const makeCompiler: (transform?: (_: string) => string) => Statement.Compiler
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/mssql/src/MssqlClient.ts#L654)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/mssql/src/MssqlClient.ts#L655)
 
 Since v4.0.0

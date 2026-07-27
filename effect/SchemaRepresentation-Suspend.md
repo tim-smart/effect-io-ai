@@ -3,16 +3,7 @@ Module: `SchemaRepresentation`<br />
 
 ## SchemaRepresentation.Suspend
 
-A lazily resolved representation used for recursive schemas.
-
-**Details**
-
-`thunk` points to the actual representation, possibly via a
-`Reference`. `checks` is always empty on `Suspend` nodes.
-
-**See**
-
-- `Reference`
+A lazily resolved representation.
 
 **Signature**
 
@@ -25,6 +16,6 @@ export interface Suspend {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaRepresentation.ts#L74)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaRepresentation.ts#L152)
 
 Since v4.0.0

@@ -34,6 +34,6 @@ const parseArguments = (args: Array<string>) =>
 declare class MissingArgument
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/CliError.ts#L288)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/CliError.ts#L289)
 
 Since v4.0.0

@@ -3,16 +3,7 @@ Module: `SchemaRepresentation`<br />
 
 ## SchemaRepresentation.Element
 
-A positional element within an `Arrays` tuple.
-
-**Details**
-
-`isOptional` indicates whether this element can be absent. `type` is the
-schema representation for this element's value.
-
-**See**
-
-- `Arrays`
+A tuple element.
 
 **Signature**
 
@@ -24,6 +15,6 @@ export interface Element {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaRepresentation.ts#L352)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaRepresentation.ts#L320)
 
 Since v4.0.0

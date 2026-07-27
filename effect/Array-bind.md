@@ -42,6 +42,6 @@ console.log(result)
 declare const bind: { <A extends object, N extends string, B>(tag: Exclude<N, keyof A>, f: (a: NoInfer<A>) => ReadonlyArray<B>): (self: ReadonlyArray<A>) => Array<{ [K in N | keyof A]: K extends keyof A ? A[K] : B; }>; <A extends object, N extends string, B>(self: ReadonlyArray<A>, tag: Exclude<N, keyof A>, f: (a: NoInfer<A>) => ReadonlyArray<B>): Array<{ [K in N | keyof A]: K extends keyof A ? A[K] : B; }>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L4736)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L4816)
 
 Since v3.2.0

@@ -30,6 +30,6 @@ console.log(error.message)
 declare class ToolkitRequiredError
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/AiError.ts#L1246)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/AiError.ts#L1247)
 
 Since v4.0.0

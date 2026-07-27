@@ -22,6 +22,6 @@ type ResultEncoded<T> = T extends Tool<
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Tool.ts#L872)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Tool.ts#L879)
 
 Since v4.0.0

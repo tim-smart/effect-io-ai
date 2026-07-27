@@ -39,6 +39,6 @@ console.log(addOptions(Option.some(2), Option.none()))
 declare const lift2: <A, B, C>(f: (a: A, b: B) => C) => { (that: Option<B>): (self: Option<A>) => Option<C>; (self: Option<A>, that: Option<B>): Option<C>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L2138)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L2139)
 
 Since v2.0.0

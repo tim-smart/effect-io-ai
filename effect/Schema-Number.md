@@ -11,6 +11,6 @@ Type-level representation of `Number`.
 export interface Number extends Bottom<number, number, never, never, SchemaAST.Number, Number> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L3026)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L3102)
 
 Since v4.0.0

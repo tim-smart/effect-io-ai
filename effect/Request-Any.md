@@ -25,6 +25,6 @@ each concrete request's success, error, and service types.
 type Any = Request<any, any, any>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Request.ts#L69)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Request.ts#L70)
 
 Since v4.0.0

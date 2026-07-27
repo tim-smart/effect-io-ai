@@ -11,6 +11,6 @@ A readonly array of `Json` values.
 export interface JsonArray extends ReadonlyArray<Json> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L14163)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L15922)
 
 Since v4.0.0

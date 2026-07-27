@@ -14,6 +14,6 @@ type ExtractTools<Options> = Options extends {
   : {}
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/LanguageModel.ts#L551)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/LanguageModel.ts#L554)
 
 Since v4.0.0

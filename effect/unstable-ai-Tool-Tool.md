@@ -116,6 +116,13 @@ export interface Tool<
   readonly needsApproval?: boolean | NeedsApprovalFunction<any> | undefined
 
   /**
+   * Set whether user approval is required before executing this tool.
+   */
+  setNeedsApproval(
+    needsApproval: NeedsApproval<Config["parameters"]>
+  ): Tool<Name, Config, Requirements>
+
+  /**
    * Adds a _request-level_ dependency which must be provided before the tool
    * call handler can be executed.
    *

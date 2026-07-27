@@ -3,40 +3,27 @@ Module: `SchemaRepresentation`<br />
 
 ## SchemaRepresentation.fromJsonSchemaDocument
 
-Parses a Draft 2020-12 JSON Schema document into a `Document`.
+Imports a JSON Schema Draft 2020-12 document as a runtime schema.
 
 **When to use**
 
-Use when you need to import a Draft 2020-12 JSON Schema document into the
-Effect schema representation system.
-
-**Details**
-
-`options.onEnter` is an optional hook called on each JSON Schema node before
-processing, allowing pre-transformation.
+Use when you need to validate or transform values described by an external JSON Schema document.
 
 **Gotchas**
 
-JSON Schema import is best-effort. Some JSON Schema constructs do not map
-exactly to Effect schema representations, and importing a schema previously
-emitted by `toJsonSchemaDocument` may produce an equivalent approximation
-rather than the original representation shape.
-
-This throws if a `$ref` cannot be resolved within the document's definitions.
-Circular `$ref`s are detected and cause an error.
+Import is best-effort. Built-in declarations and checks are reconstructed with importer-owned revivers. Callback results are used directly, and exceptions raised by a callback pass through unchanged.
 
 **See**
 
-- `Document`
-- `toJsonSchemaDocument`
-- `fromJsonSchemaMultiDocument`
+- `fromJsonSchemaMultiDocument` for multiple roots sharing definitions
+- `toRepresentation` for converting the result to a representation document
 
 **Signature**
 
 ```ts
-declare const fromJsonSchemaDocument: (document: JsonSchema.Document<"draft-2020-12">, options?: { readonly onEnter?: ((js: JsonSchema.JsonSchema) => JsonSchema.JsonSchema) | undefined; }) => Document
+declare const fromJsonSchemaDocument: (document: JsonSchema.Document<"draft-2020-12">, options?: FromJsonSchemaOptions) => Schema.Top
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaRepresentation.ts#L2995)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaRepresentation.ts#L1177)
 
 Since v4.0.0

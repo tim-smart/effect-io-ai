@@ -28,6 +28,6 @@ copies schema definitions into `$defs`.
 declare const defaultCodecTransformer: CodecTransformer
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/LanguageModel.ts#L220)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/LanguageModel.ts#L223)
 
 Since v4.0.0

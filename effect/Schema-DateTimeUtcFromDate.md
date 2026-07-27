@@ -13,6 +13,6 @@ export interface DateTimeUtcFromDate extends decodeTo<DateTimeUtc, Date> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L12080)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L13476)
 
 Since v3.12.0

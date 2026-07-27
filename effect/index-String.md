@@ -11,6 +11,6 @@ Re-exports all named exports from the "./String.ts" module as `String`.
 export * as String from "./String.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L602)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L597)
 
 Since v2.0.0

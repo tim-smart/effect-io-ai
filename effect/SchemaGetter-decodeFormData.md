@@ -27,7 +27,7 @@ const decode = SchemaGetter.decodeFormData()
 
 **See**
 
-- `encodeFormData` for the inverse operation
+- `encodeFormData` for the corresponding encoder
 - `makeTreeRecord` for the underlying bracket-path parser
 - `decodeURLSearchParams` for the URLSearchParams variant
 
@@ -37,6 +37,6 @@ const decode = SchemaGetter.decodeFormData()
 declare const decodeFormData: () => Getter<Schema.TreeRecord<string | Blob>, FormData>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaGetter.ts#L1564)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaGetter.ts#L1567)
 
 Since v4.0.0

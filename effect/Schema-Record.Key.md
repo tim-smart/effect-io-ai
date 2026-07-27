@@ -19,6 +19,6 @@ export interface Key extends Codec<PropertyKey, PropertyKey, unknown, unknown> {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L3675)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L3751)
 
 Since v4.0.0

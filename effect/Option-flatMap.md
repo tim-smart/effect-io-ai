@@ -52,6 +52,6 @@ console.log(street)
 declare const flatMap: { <A, B>(f: (a: A) => Option<B>): (self: Option<A>) => Option<B>; <A, B>(self: Option<A>, f: (a: A) => Option<B>): Option<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L1297)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L1298)
 
 Since v2.0.0

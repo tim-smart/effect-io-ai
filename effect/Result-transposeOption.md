@@ -40,6 +40,6 @@ console.log(Result.transposeOption(none))
 declare const transposeOption: <A = never, E = never>(self: Option<Result<A, E>>) => Result<Option<A>, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Result.ts#L1789)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Result.ts#L1790)
 
 Since v3.14.0

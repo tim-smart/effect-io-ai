@@ -12,6 +12,6 @@ to omit from the update.
 declare const recordUpdateHelperSingle: (value: Record<string, unknown>, omit: ReadonlyArray<string>) => RecordUpdateHelperSingle
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Statement.ts#L344)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Statement.ts#L345)
 
 Since v4.0.0

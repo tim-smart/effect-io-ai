@@ -27,7 +27,7 @@ const decode = SchemaGetter.decodeURLSearchParams()
 
 **See**
 
-- `encodeURLSearchParams` for the inverse operation
+- `encodeURLSearchParams` for the corresponding encoder
 - `makeTreeRecord` for the underlying bracket-path parser
 - `decodeFormData` for the FormData variant
 
@@ -37,6 +37,6 @@ const decode = SchemaGetter.decodeURLSearchParams()
 declare const decodeURLSearchParams: () => Getter<Schema.TreeRecord<string>, URLSearchParams>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaGetter.ts#L1645)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaGetter.ts#L1648)
 
 Since v4.0.0

@@ -54,6 +54,6 @@ type Input<A> = A extends Metric<infer _Input, infer _State> ? _Input
     : never
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Metric.ts#L1256)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Metric.ts#L1257)
 
 Since v4.0.0

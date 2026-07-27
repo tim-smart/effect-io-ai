@@ -22,6 +22,6 @@ export interface JsonSchema {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/JsonSchema.ts#L31)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/JsonSchema.ts#L32)
 
 Since v4.0.0

@@ -19,6 +19,6 @@ export interface RecordUpdateHelper {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Statement.ts#L285)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Statement.ts#L286)
 
 Since v4.0.0

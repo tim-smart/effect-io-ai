@@ -11,6 +11,6 @@ Builds a layer from an Effect `Config` value, providing both the in-memory SQLit
 declare const layerMemoryConfig: (config: Config.Wrap<SqliteClientMemoryConfig>) => Layer.Layer<SqliteClient | Client.SqlClient, Config.ConfigError | SqlError>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-wasm/src/SqliteClient.ts#L493)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-wasm/src/SqliteClient.ts#L494)
 
 Since v4.0.0

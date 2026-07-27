@@ -12,6 +12,6 @@ compiler.
 declare const identifier: (value: string) => Identifier
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Statement.ts#L187)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Statement.ts#L188)
 
 Since v4.0.0

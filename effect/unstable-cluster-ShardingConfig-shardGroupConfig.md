@@ -12,6 +12,6 @@ Normalizes the provided `ShardingConfig` to calculate the `available` and
 declare const shardGroupConfig: (config: ShardingConfig["Service"]) => { readonly available: ReadonlySet<string>; readonly assigned: ReadonlySet<string>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/ShardingConfig.ts#L355)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/ShardingConfig.ts#L359)
 
 Since v4.0.0

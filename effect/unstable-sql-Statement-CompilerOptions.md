@@ -39,6 +39,6 @@ type CompilerOptions<C> = {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Statement.ts#L759)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Statement.ts#L760)
 
 Since v4.0.0

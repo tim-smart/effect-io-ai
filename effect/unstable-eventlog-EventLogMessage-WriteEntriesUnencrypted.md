@@ -11,6 +11,6 @@ Schema for plaintext event-log write payloads sent to a remote store.
 declare class WriteEntriesUnencrypted
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/EventLogMessage.ts#L283)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/EventLogMessage.ts#L290)
 
 Since v4.0.0

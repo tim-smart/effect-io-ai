@@ -30,6 +30,6 @@ Effect.runPromise(program)
 declare const accumulate: <A, E, R>(self: Stream<A, E, R>) => Stream<Arr.NonEmptyArray<A>, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L9200)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L9201)
 
 Since v2.0.0

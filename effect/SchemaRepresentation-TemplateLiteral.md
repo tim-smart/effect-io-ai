@@ -3,19 +3,16 @@ Module: `SchemaRepresentation`<br />
 
 ## SchemaRepresentation.TemplateLiteral
 
-A template literal type composed of a sequence of parts (literals, strings,
-numbers, etc.).
+A template literal representation.
 
 **Signature**
 
 ```ts
-export interface TemplateLiteral {
-  readonly _tag: "TemplateLiteral"
-  readonly annotations?: Schema.Annotations.Annotations | undefined
+export interface TemplateLiteral extends Keyword<"TemplateLiteral"> {
   readonly parts: ReadonlyArray<Representation>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaRepresentation.ts#L309)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaRepresentation.ts#L310)
 
 Since v4.0.0

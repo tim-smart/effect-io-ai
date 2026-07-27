@@ -35,6 +35,6 @@ console.log(Option.isNone(Option.none()))
 declare const isNone: <A>(self: Option<A>) => self is None<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L358)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L359)
 
 Since v2.0.0

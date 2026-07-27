@@ -18,6 +18,6 @@ export interface RecordInsertHelper {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Statement.ts#L245)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Statement.ts#L246)
 
 Since v4.0.0

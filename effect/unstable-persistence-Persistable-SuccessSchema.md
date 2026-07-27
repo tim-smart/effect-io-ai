@@ -11,6 +11,6 @@ Extracts the success schema from a persistable request.
 type SuccessSchema<A> = A["~effect/persistence/Persistable"]["success"]
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Persistable.ts#L61)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Persistable.ts#L62)
 
 Since v4.0.0

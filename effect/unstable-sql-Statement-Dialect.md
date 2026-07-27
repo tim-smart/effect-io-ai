@@ -11,6 +11,6 @@ Supported SQL dialect identifiers used by statement compilers.
 type Dialect = "sqlite" | "pg" | "mysql" | "mssql" | "clickhouse"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Statement.ts#L60)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Statement.ts#L61)
 
 Since v4.0.0

@@ -26,6 +26,6 @@ type Error<T> = T extends Effect<infer _A, infer _E, infer _R> ? _E
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L194)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L195)
 
 Since v2.0.0

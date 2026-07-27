@@ -11,6 +11,6 @@ Creates an `EventLogSchema` from one or more event groups.
 declare const schema: <Groups extends ReadonlyArray<EventGroup.Any>>(...groups: Groups) => EventLogSchema<Groups[number]>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/EventLog.ts#L228)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/EventLog.ts#L231)
 
 Since v4.0.0

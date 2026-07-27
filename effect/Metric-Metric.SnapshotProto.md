@@ -76,6 +76,6 @@ export interface SnapshotProto<T extends Type, State> {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Metric.ts#L1501)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Metric.ts#L1502)
 
 Since v4.0.0

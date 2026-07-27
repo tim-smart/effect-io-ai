@@ -16,6 +16,6 @@ The default treats `application/json` parts as fields.
 declare const FieldMimeTypes: Context.Reference<ReadonlyArray<string>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Multipart.ts#L860)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Multipart.ts#L863)
 
 Since v4.0.0

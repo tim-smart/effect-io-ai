@@ -11,6 +11,6 @@ OpenAPI annotation for marking a generated endpoint operation as deprecated.
 declare class Deprecated
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/OpenApi.ts#L114)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/OpenApi.ts#L115)
 
 Since v4.0.0

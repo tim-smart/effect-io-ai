@@ -41,6 +41,6 @@ const handleError = (error: CliError.CliError): Effect.Effect<number> => {
 declare class UserError
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/CliError.ts#L479)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/CliError.ts#L523)
 
 Since v4.0.0

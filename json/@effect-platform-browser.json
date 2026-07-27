@@ -924,7 +924,7 @@
     "examples": [],
     "since": "4.0.0",
     "category": "schemas",
-    "signature": "declare const IDBValidKey: Schema.Union<readonly [Schema.Union<readonly [Schema.String, Schema.Number, Schema.DateValid, Schema.declare<BufferSource, unknown>]>, Schema.$Array<Schema.Union<readonly [Schema.String, Schema.Number, Schema.DateValid, Schema.declare<BufferSource, unknown>]>>]>",
+    "signature": "declare const IDBValidKey: Schema.Union<readonly [Schema.Union<readonly [Schema.String, Schema.Number, Schema.Date, Schema.declare<BufferSource, unknown>]>, Schema.$Array<Schema.Union<readonly [Schema.String, Schema.Number, Schema.Date, Schema.declare<BufferSource, unknown>]>>]>",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-browser/src/IndexedDb.ts#L57"
   },
   {

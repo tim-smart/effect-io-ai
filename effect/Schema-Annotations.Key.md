@@ -18,6 +18,6 @@ export interface Key<T> extends Documentation<T> {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L14375)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L16179)
 
 Since v4.0.0

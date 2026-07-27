@@ -3,24 +3,17 @@ Module: `SchemaRepresentation`<br />
 
 ## SchemaRepresentation.Union
 
-A union of multiple representations.
-
-**Details**
-
-`types` are the union members. `mode` controls JSON Schema output as either
-`"anyOf"` (the default) or mutually exclusive `"oneOf"`.
+A union representation.
 
 **Signature**
 
 ```ts
-export interface Union {
-  readonly _tag: "Union"
-  readonly annotations?: Schema.Annotations.Annotations | undefined
+export interface Union extends Keyword<"Union"> {
   readonly types: ReadonlyArray<Representation>
   readonly mode: "anyOf" | "oneOf"
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaRepresentation.ts#L434)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaRepresentation.ts#L389)
 
 Since v4.0.0

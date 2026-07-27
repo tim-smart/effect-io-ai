@@ -16,6 +16,6 @@ export interface WriteContext<A> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Atom.ts#L199)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Atom.ts#L200)
 
 Since v4.0.0

@@ -20,6 +20,6 @@ starts with the provided value before it is first rebuilt.
 declare const initialValue: { <A>(initialValue: A): (self: Atom<A>) => readonly [Atom<A>, A]; <A>(self: Atom<A>, initialValue: A): readonly [Atom<A>, A]; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Atom.ts#L1546)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Atom.ts#L1586)
 
 Since v4.0.0

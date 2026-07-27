@@ -3,27 +3,14 @@ Module: `SchemaRepresentation`<br />
 
 ## SchemaRepresentation.Number
 
-The `number` type with optional validation checks.
-
-**Details**
-
-`checks` holds number-specific constraints, such as int, finite, min, max,
-multipleOf, and between checks.
-
-**See**
-
-- `NumberMeta`
+A number representation.
 
 **Signature**
 
 ```ts
-export interface Number {
-  readonly _tag: "Number"
-  readonly annotations?: Schema.Annotations.Annotations | undefined
-  readonly checks: ReadonlyArray<Check<NumberMeta>>
-}
+export interface Number extends Keyword<"Number"> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaRepresentation.ts#L213)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaRepresentation.ts#L233)
 
 Since v4.0.0

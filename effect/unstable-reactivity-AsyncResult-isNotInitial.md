@@ -11,6 +11,6 @@ Returns `true` when an `AsyncResult` is either `Success` or `Failure`.
 declare const isNotInitial: <A, E>(result: AsyncResult<A, E>) => result is Success<A, E> | Failure<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/AsyncResult.ts#L207)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/AsyncResult.ts#L208)
 
 Since v4.0.0

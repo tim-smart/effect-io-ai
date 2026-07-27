@@ -13,6 +13,6 @@ export interface Error extends instanceOf<globalThis.Error> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L9409)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10563)
 
 Since v4.0.0

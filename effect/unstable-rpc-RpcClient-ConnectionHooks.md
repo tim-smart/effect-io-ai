@@ -17,6 +17,6 @@ closes.
 declare class ConnectionHooks
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/RpcClient.ts#L1386)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/RpcClient.ts#L1387)
 
 Since v4.0.0

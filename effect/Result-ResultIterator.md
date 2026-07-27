@@ -25,6 +25,6 @@ export interface ResultIterator<T extends Result<any, any>> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Result.ts#L129)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Result.ts#L130)
 
 Since v4.0.0

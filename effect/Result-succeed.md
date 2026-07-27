@@ -32,6 +32,6 @@ console.log(Result.isSuccess(result))
 declare const succeed: <A>(right: A) => Result<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Result.ts#L284)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Result.ts#L285)
 
 Since v4.0.0

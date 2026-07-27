@@ -92,6 +92,6 @@ const program = Effect.gen(function*() {
 export interface Histogram<Input> extends Metric<Input, HistogramState> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Metric.ts#L644)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Metric.ts#L645)
 
 Since v2.0.0

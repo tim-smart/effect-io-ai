@@ -14,6 +14,6 @@ export interface OpenAPISpecRequestBody {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/OpenApi.ts#L1057)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/OpenApi.ts#L1081)
 
 Since v4.0.0

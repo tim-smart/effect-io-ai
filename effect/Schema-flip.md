@@ -32,6 +32,6 @@ export interface flip<S extends Top> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L2567)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L2643)
 
 Since v4.0.0

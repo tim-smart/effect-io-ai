@@ -3,17 +3,14 @@ Module: `SchemaRepresentation`<br />
 
 ## SchemaRepresentation.Unknown
 
-The `unknown` type (any value accepted).
+The unknown keyword representation.
 
 **Signature**
 
 ```ts
-export interface Unknown {
-  readonly _tag: "Unknown"
-  readonly annotations?: Schema.Annotations.Annotations | undefined
-}
+export interface Unknown extends Keyword<"Unknown"> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaRepresentation.ts#L160)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaRepresentation.ts#L210)
 
 Since v4.0.0

@@ -23,6 +23,6 @@ Use to report a request-specific typed error while implementing a
 declare const fail: { <A extends Any>(error: Error<A>): (self: Entry<A>) => Effect.Effect<void>; <A extends Any>(self: Entry<A>, error: Error<A>): Effect.Effect<void>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Request.ts#L490)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Request.ts#L488)
 
 Since v2.0.0

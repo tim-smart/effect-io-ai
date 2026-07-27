@@ -30,6 +30,6 @@ const effect = computation() // Executed immediately if all effects are sync
 declare const fnUntracedEager: fn.Untraced
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L15496)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L15517)
 
 Since v4.0.0

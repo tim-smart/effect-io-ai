@@ -10,6 +10,10 @@ Context provided to tool handlers during execution.
 ```ts
 export interface HandlerContext<Tool extends Tool.Any> {
   /**
+   * The unique identifier of the tool call, when available.
+   */
+  readonly toolCallId?: string | undefined
+  /**
    * Emit a preliminary result during long-running tool calls.
    *
    * **Details**
@@ -21,6 +25,6 @@ export interface HandlerContext<Tool extends Tool.Any> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Toolkit.ts#L107)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Toolkit.ts#L108)
 
 Since v4.0.0

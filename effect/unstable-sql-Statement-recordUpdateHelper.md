@@ -12,6 +12,6 @@ provided alias.
 declare const recordUpdateHelper: (value: ReadonlyArray<Record<string, unknown>>, alias: string) => RecordUpdateHelper
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Statement.ts#L306)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Statement.ts#L307)
 
 Since v4.0.0

@@ -28,6 +28,6 @@ loggers call `console.error` instead of `console.log`.
 declare const LogToStderr: Context.Reference<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Logger.ts#L189)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Logger.ts#L190)
 
 Since v4.0.0

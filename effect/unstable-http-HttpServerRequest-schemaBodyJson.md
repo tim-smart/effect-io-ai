@@ -16,6 +16,6 @@ fails.
 declare const schemaBodyJson: <A, RD>(schema: Schema.ConstraintDecoder<A, RD>, options?: ParseOptions | undefined) => Effect.Effect<A, HttpServerError | Schema.SchemaError, HttpServerRequest | RD>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HttpServerRequest.ts#L244)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HttpServerRequest.ts#L245)
 
 Since v4.0.0

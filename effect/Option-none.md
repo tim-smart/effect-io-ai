@@ -38,6 +38,6 @@ console.log(noValue)
 declare const none: <A = never>() => Option<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L259)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L260)
 
 Since v2.0.0

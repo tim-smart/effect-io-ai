@@ -13,6 +13,6 @@ type DecodingServices<A> = | A["~effect/persistence/Persistable"]["success"]["De
   | A["~effect/persistence/Persistable"]["error"]["DecodingServices"]
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Persistable.ts#L94)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Persistable.ts#L95)
 
 Since v4.0.0

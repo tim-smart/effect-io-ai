@@ -15,17 +15,21 @@ application type.
 **Details**
 
 Returns the JSON Schema to include in the request and the codec to use when
-decoding the model response. If the input schema already fits Anthropic's
-supported JSON Schema subset, the original codec is returned unchanged.
+decoding the model response. The codec remains authoritative: the provider
+JSON Schema can be a lossy, less restrictive representation when Anthropic
+cannot express an Effect Schema constraint.
 
 **Gotchas**
 
 - Some schemas use a provider-safe encoded shape: tuples become objects with
-  numeric string keys, records become arrays of `[key, value]` pairs, and
-  optional properties become required nullable properties.
+  numeric string keys, objects with index signatures become arrays of
+  `[key, value]` pairs, and optional properties become required nullable
+  properties.
 - `oneOf` unions are emitted as `anyOf` unions.
-- Unsupported schema kinds throw during conversion instead of producing a
-  lossy schema.
+- Unsupported constraints are removed from the provider schema and are still
+  checked while decoding with the returned codec.
+- Recursive schemas throw during conversion because Anthropic structured
+  output does not support recursive references.
 
 **See**
 
@@ -38,6 +42,6 @@ supported JSON Schema subset, the original codec is returned unchanged.
 declare const toCodecAnthropic: <T, E, RD, RE>(schema: Schema.ConstraintCodec<T, E, RD, RE>) => { readonly codec: Schema.ConstraintCodec<T, unknown, RD, RE>; readonly jsonSchema: JsonSchema.JsonSchema; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/AnthropicStructuredOutput.ts#L56)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/AnthropicStructuredOutput.ts#L54)
 
 Since v4.0.0

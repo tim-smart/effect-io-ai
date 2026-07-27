@@ -40,6 +40,6 @@ type ReasonTags<E> = E extends { readonly reason: { readonly _tag: string } } ? 
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L956)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L954)
 
 Since v4.0.0

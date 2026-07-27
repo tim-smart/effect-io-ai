@@ -51,6 +51,6 @@ const tracingControl = Effect.gen(function*() {
 declare const TracerTimingEnabled: Context.Reference<boolean>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/References.ts#L657)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/References.ts#L611)
 
 Since v4.0.0

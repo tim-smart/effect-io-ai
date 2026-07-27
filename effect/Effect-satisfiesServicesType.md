@@ -33,6 +33,6 @@ const constrainedEffect = satisfiesStringServices(validEffect)
 declare const satisfiesServicesType: <R>() => <A, E, R2 extends R>(effect: Effect<A, E, R2>) => Effect<A, E, R2>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L15255)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L15276)
 
 Since v4.0.0

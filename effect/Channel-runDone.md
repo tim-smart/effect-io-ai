@@ -11,6 +11,6 @@ Runs a channel and outputs the done value.
 declare const runDone: <OutElem, OutErr, OutDone, Env>(self: Channel<OutElem, OutErr, OutDone, unknown, unknown, unknown, Env>) => Effect.Effect<OutDone, OutErr, Env>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Channel.ts#L7848)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Channel.ts#L7866)
 
 Since v4.0.0

@@ -38,6 +38,6 @@ export interface TaggedUnion<Cases extends Record<string, Constraint>> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6222)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6302)
 
 Since v4.0.0

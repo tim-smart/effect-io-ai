@@ -37,6 +37,6 @@ console.log(Option.flatten(Option.some(Option.none())))
 declare const flatten: <A>(self: Option<Option<A>>) => Option<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L1443)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L1444)
 
 Since v2.0.0

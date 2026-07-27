@@ -56,6 +56,6 @@ const program = Effect.gen(function*() {
 declare const snapshot: Effect<ReadonlyArray<Metric.Snapshot>, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Metric.ts#L3042)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Metric.ts#L3043)
 
 Since v2.0.0

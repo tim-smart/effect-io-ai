@@ -3,17 +3,14 @@ Module: `SchemaRepresentation`<br />
 
 ## SchemaRepresentation.Any
 
-The `any` type.
+The any keyword representation.
 
 **Signature**
 
 ```ts
-export interface Any {
-  readonly _tag: "Any"
-  readonly annotations?: Schema.Annotations.Annotations | undefined
-}
+export interface Any extends Keyword<"Any"> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaRepresentation.ts#L171)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaRepresentation.ts#L217)
 
 Since v4.0.0

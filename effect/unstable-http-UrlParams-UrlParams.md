@@ -19,6 +19,6 @@ export interface UrlParams extends Pipeable, Inspectable, Iterable<readonly [str
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/UrlParams.ts#L41)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/UrlParams.ts#L42)
 
 Since v4.0.0

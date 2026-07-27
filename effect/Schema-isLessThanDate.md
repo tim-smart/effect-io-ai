@@ -19,6 +19,6 @@ are less than it.
 declare const isLessThanDate: (exclusiveMaximum: globalThis.Date, annotations?: Annotations.Filter) => SchemaAST.Filter<globalThis.Date>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L7720)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L8418)
 
 Since v4.0.0

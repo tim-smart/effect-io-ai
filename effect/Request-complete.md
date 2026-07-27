@@ -23,6 +23,6 @@ result.
 declare const complete: { <A extends Any>(result: Result<A>): (self: Entry<A>) => Effect.Effect<void>; <A extends Any>(self: Entry<A>, result: Result<A>): Effect.Effect<void>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Request.ts#L428)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Request.ts#L426)
 
 Since v2.0.0

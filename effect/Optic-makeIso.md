@@ -43,6 +43,6 @@ console.log(meters.set(42))
 declare const makeIso: <S, A>(get: (s: S) => A, set: (a: A) => S) => Iso<S, A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Optic.ts#L104)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Optic.ts#L105)
 
 Since v4.0.0

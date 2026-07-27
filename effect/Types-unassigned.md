@@ -27,6 +27,6 @@ export interface unassigned {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L834)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L832)
 
 Since v4.0.0

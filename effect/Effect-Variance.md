@@ -15,6 +15,6 @@ export interface Variance<A, E, R> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L153)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L154)
 
 Since v2.0.0

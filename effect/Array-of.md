@@ -24,6 +24,6 @@ console.log(Array.of(1)) // [1]
 declare const of: <A>(a: A) => NonEmptyArray<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L3347)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L3415)
 
 Since v2.0.0

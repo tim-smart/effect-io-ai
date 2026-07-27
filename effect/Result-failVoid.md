@@ -37,6 +37,6 @@ console.log(Result.isFailure(result))
 declare const failVoid: Result<never, void>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Result.ts#L380)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Result.ts#L381)
 
 Since v4.0.0

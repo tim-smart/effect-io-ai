@@ -3,14 +3,7 @@ Module: `SchemaRepresentation`<br />
 
 ## SchemaRepresentation.References
 
-A string-keyed map of named `Representation` definitions. Used by
-`Document` and `MultiDocument` for `$ref` resolution (analogous
-to JSON Schema `$defs`).
-
-**See**
-
-- `Reference`
-- `Document`
+Named representation definitions.
 
 **Signature**
 
@@ -20,6 +13,6 @@ export interface References {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaRepresentation.ts#L685)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaRepresentation.ts#L464)
 
 Since v4.0.0

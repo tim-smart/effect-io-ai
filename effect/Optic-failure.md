@@ -40,6 +40,6 @@ console.log(Result.isFailure(_err.getResult(Result.succeed(42))))
 declare const failure: <A, E>() => Prism<Result.Result<A, E>, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Optic.ts#L1684)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Optic.ts#L1685)
 
 Since v4.0.0

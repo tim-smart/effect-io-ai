@@ -7,8 +7,8 @@ Decodes a `string` into a `Date` and encodes a `Date` back to a `string`.
 
 **When to use**
 
-Use when you need a schema transformation to parse ISO 8601 date strings from
-APIs or user input.
+Use when you need a schema transformation to parse date strings from APIs or
+user input.
 
 **Details**
 

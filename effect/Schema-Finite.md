@@ -13,6 +13,6 @@ export interface Finite extends Number {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L11488)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L7560)
 
 Since v3.10.0

@@ -44,6 +44,6 @@ type OmitReason<E, K> = E extends { readonly reason: infer R }
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L1069)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L1067)
 
 Since v4.0.0

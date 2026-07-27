@@ -41,6 +41,6 @@ console.log(result) // { NAME: "Alice", age: 30 }
 declare const evolveKeys: { <S extends object, E extends KeyEvolver<S>>(e: E): (self: S) => KeyEvolved<S, E>; <S extends object, E extends KeyEvolver<S>>(self: S, e: E): KeyEvolved<S, E>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Struct.ts#L373)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Struct.ts#L374)
 
 Since v4.0.0

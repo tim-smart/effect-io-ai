@@ -31,6 +31,6 @@ Effect.runPromise(effect)
 declare const Do: Stream<{}, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L10378)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L10381)
 
 Since v2.0.0

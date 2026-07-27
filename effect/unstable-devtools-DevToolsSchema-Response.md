@@ -15,6 +15,6 @@ Responses include heartbeat pongs and requests for metric snapshots.
 type Response = Schema.Schema.Type<typeof Response>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DevToolsSchema.ts#L539)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DevToolsSchema.ts#L544)
 
 Since v4.0.0

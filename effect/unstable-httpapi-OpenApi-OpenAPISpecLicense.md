@@ -15,6 +15,6 @@ export interface OpenAPISpecLicense {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/OpenApi.ts#L916)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/OpenApi.ts#L940)
 
 Since v4.0.0

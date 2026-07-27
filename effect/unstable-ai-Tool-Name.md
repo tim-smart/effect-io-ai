@@ -16,6 +16,6 @@ type Name<T> = T extends Tool<
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Tool.ts#L697)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Tool.ts#L704)
 
 Since v4.0.0

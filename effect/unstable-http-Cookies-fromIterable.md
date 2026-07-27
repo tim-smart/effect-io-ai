@@ -11,6 +11,6 @@ Create a Cookies object from an Iterable
 declare const fromIterable: (cookies: Iterable<Cookie>) => Cookies
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cookies.ts#L251)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cookies.ts#L253)
 
 Since v4.0.0

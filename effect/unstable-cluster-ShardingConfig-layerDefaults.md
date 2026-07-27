@@ -11,6 +11,6 @@ Layer that provides the default `ShardingConfig` values.
 declare const layerDefaults: Layer.Layer<ShardingConfig, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/ShardingConfig.ts#L212)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/ShardingConfig.ts#L216)
 
 Since v4.0.0

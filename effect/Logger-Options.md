@@ -43,6 +43,6 @@ export interface Options<out Message> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Logger.ts#L103)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Logger.ts#L104)
 
 Since v2.0.0

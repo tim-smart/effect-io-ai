@@ -13,6 +13,6 @@ type Encoded<Parts> = Parts extends readonly [...infer Init, infer Last] ? Appen
     : ``
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L2730)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L2806)
 
 Since v3.10.0

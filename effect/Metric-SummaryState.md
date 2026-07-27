@@ -91,6 +91,6 @@ export interface SummaryState {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Metric.ts#L919)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Metric.ts#L920)
 
 Since v4.0.0

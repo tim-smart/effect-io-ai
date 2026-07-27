@@ -7,10 +7,8 @@ Validates at runtime that a string ends with the specified literal suffix.
 
 **Details**
 
-Notes:
-The JSON Schema and arbitrary metadata are built from `${endsWith}$` without
-escaping regexp metacharacters. If the suffix contains regexp syntax, generated
-patterns may not be equivalent to the runtime `endsWith` check.
+RegExp metacharacters in the suffix are escaped in JSON Schema and arbitrary
+metadata so that the generated patterns retain literal `endsWith` semantics.
 
 **Signature**
 
@@ -18,6 +16,6 @@ patterns may not be equivalent to the runtime `endsWith` check.
 declare const isEndsWith: (endsWith: string, annotations?: Annotations.Filter) => SchemaAST.Filter<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6897)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L7240)
 
 Since v4.0.0

@@ -3,22 +3,14 @@ Module: `SchemaRepresentation`<br />
 
 ## SchemaRepresentation.BigInt
 
-The `bigint` type with optional validation checks.
-
-**See**
-
-- `BigIntMeta`
+A bigint representation.
 
 **Signature**
 
 ```ts
-export interface BigInt {
-  readonly _tag: "BigInt"
-  readonly annotations?: Schema.Annotations.Annotations | undefined
-  readonly checks: ReadonlyArray<Check<BigIntMeta>>
-}
+export interface BigInt extends Keyword<"BigInt"> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaRepresentation.ts#L238)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaRepresentation.ts#L247)
 
 Since v4.0.0

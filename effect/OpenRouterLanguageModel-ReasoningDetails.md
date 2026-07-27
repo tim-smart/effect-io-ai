@@ -9,7 +9,7 @@ conversations.
 **Signature**
 
 ```ts
-type ReasoningDetails = Exclude<typeof Generated.AssistantMessage.Encoded["reasoning_details"], undefined>
+type ReasoningDetails = Exclude<typeof Generated.ChatAssistantMessage.Encoded["reasoning_details"], undefined>
 ```
 
 [Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openrouter/src/OpenRouterLanguageModel.ts#L92)

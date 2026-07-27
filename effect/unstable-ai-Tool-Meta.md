@@ -20,6 +20,6 @@ const myCalculatorUi = Tool.make("calculator_ui", {})
 declare class Meta
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Tool.ts#L1715)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Tool.ts#L1733)
 
 Since v4.0.0

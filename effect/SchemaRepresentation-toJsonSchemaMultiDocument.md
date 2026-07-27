@@ -3,26 +3,19 @@ Module: `SchemaRepresentation`<br />
 
 ## SchemaRepresentation.toJsonSchemaMultiDocument
 
-Converts a `MultiDocument` to a Draft 2020-12 JSON Schema
-multi-document.
+Compiles multiple live representations to a shared JSON Schema Draft 2020-12 document.
 
 **When to use**
 
-Use when you need to export related schema representation documents together
-so shared definitions stay in multi-document JSON Schema form.
+Use when several representation roots must share the same JSON Schema definitions.
 
 **Gotchas**
 
-JSON Schema generation is best-effort. Some Effect schema representation
-semantics cannot be represented exactly in JSON Schema, and importing an
-emitted JSON Schema may produce equivalent approximations rather than the
-original representation shapes.
+Every definition is compiled, including definitions that are not reachable from a root.
 
 **See**
 
-- `MultiDocument`
-- `toJsonSchemaDocument`
-- `fromJsonSchemaMultiDocument`
+- `toJsonSchemaDocument` for a single root
 
 **Signature**
 
@@ -30,6 +23,6 @@ original representation shapes.
 declare const toJsonSchemaMultiDocument: (document: MultiDocument, options?: Schema.ToJsonSchemaOptions) => JsonSchema.MultiDocument<"draft-2020-12">
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaRepresentation.ts#L2236)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaRepresentation.ts#L793)
 
 Since v4.0.0

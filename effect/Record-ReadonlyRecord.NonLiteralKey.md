@@ -25,6 +25,6 @@ type NonLiteralKey<K> = K extends string ? IsFiniteString<K> extends true ? stri
     : symbol
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Record.ts#L92)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Record.ts#L93)
 
 Since v2.0.0

@@ -30,6 +30,6 @@ const trimmed = Config.string("name").pipe(
 declare const mapOrFail: { <A, B>(f: (a: A) => Effect.Effect<B, ConfigError>): (self: Config<A>) => Config<B>; <A, B>(self: Config<A>, f: (a: A) => Effect.Effect<B, ConfigError>): Config<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L195)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L196)
 
 Since v2.0.0

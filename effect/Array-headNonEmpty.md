@@ -29,6 +29,6 @@ console.log(Array.headNonEmpty([1, 2, 3, 4])) // 1
 declare const headNonEmpty: <A>(self: NonEmptyReadonlyArray<A>) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L1109)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L1111)
 
 Since v2.0.0

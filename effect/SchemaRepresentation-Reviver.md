@@ -3,28 +3,14 @@ Module: `SchemaRepresentation`<br />
 
 ## SchemaRepresentation.Reviver
 
-A callback that handles `Declaration` nodes during reconstruction
-(`toSchema`) or code generation (`toCodeDocument`).
-
-**Details**
-
-Return a value to handle the declaration. Return `undefined` to fall back to
-default behavior, which uses `encodedSchema` for `toSchema` or the
-`generation` annotation for `toCodeDocument`. `recur` processes child
-representations recursively.
-
-**See**
-
-- `toSchema`
-- `toSchemaDefaultReviver`
-- `toCodeDocument`
+A typed reviver.
 
 **Signature**
 
 ```ts
-type Reviver<T> = (declaration: Declaration, recur: (representation: Representation) => T) => T | undefined
+type Reviver<P> = DeclarationReviver<P> | CheckReviver<P>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaRepresentation.ts#L1737)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaRepresentation.ts#L563)
 
 Since v4.0.0

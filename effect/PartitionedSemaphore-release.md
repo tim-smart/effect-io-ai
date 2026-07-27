@@ -29,6 +29,6 @@ which is capped at the semaphore capacity.
 declare const release: { (permits: number): <K>(self: PartitionedSemaphore<K>) => Effect.Effect<number>; <K>(self: PartitionedSemaphore<K>, permits: number): Effect.Effect<number>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/PartitionedSemaphore.ts#L428)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/PartitionedSemaphore.ts#L425)
 
 Since v4.0.0

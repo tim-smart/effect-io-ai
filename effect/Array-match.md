@@ -38,6 +38,6 @@ console.log(describe([1, 2, 3])) // "head: 1, tail: 2"
 declare const match: { <B, A, C = B>(options: { readonly onEmpty: LazyArg<B>; readonly onNonEmpty: (self: NonEmptyReadonlyArray<A>) => C; }): (self: ReadonlyArray<A>) => B | C; <A, B, C = B>(self: ReadonlyArray<A>, options: { readonly onEmpty: LazyArg<B>; readonly onNonEmpty: (self: NonEmptyReadonlyArray<A>) => C; }): B | C; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L422)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L424)
 
 Since v2.0.0

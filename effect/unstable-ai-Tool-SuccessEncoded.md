@@ -17,6 +17,6 @@ type SuccessEncoded<T> = T extends Tool<
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Tool.ts#L764)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Tool.ts#L771)
 
 Since v4.0.0

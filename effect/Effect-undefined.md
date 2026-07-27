@@ -11,6 +11,6 @@ Returns an effect that succeeds with `undefined`.
 declare const undefined: Effect<undefined, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L1214)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L1215)
 
 Since v4.0.0

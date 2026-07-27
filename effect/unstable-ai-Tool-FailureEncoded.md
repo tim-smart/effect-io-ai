@@ -17,6 +17,6 @@ type FailureEncoded<T> = T extends Tool<
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Tool.ts#L805)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Tool.ts#L812)
 
 Since v4.0.0

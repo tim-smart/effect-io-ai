@@ -13,6 +13,6 @@ export interface Interrupt {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/AsyncResult.ts#L740)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/AsyncResult.ts#L741)
 
 Since v4.0.0

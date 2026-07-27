@@ -57,6 +57,6 @@ export interface GenerateTextOptions<Tools extends Record<string, Tool.Any>> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/LanguageModel.ts#L228)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/LanguageModel.ts#L231)
 
 Since v4.0.0

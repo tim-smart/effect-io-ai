@@ -3,23 +3,19 @@ Module: `SchemaRepresentation`<br />
 
 ## SchemaRepresentation.FilterGroup
 
-A group of validation constraints that are logically combined. Contains
-at least one `Check`.
-
-**See**
-
-- `Check`
+A non-empty group of checks.
 
 **Signature**
 
 ```ts
-export interface FilterGroup<M> {
+export interface FilterGroup {
   readonly _tag: "FilterGroup"
-  readonly annotations?: Schema.Annotations.Filter | undefined
-  readonly checks: readonly [Check<M>, ...Array<Check<M>>]
+  readonly representation?: CheckRepresentationAnnotation<Representation> | undefined
+  readonly annotations?: Schema.Annotations.Annotations | undefined
+  readonly checks: readonly [Check, ...Array<Check>]
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaRepresentation.ts#L516)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaRepresentation.ts#L451)
 
 Since v4.0.0

@@ -11,6 +11,6 @@ Appends a URL segment to the request URL, inserting or trimming one slash as nee
 declare const appendUrl: { (path: string): (self: HttpClientRequest) => HttpClientRequest; (self: HttpClientRequest, path: string): HttpClientRequest; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HttpClientRequest.ts#L452)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HttpClientRequest.ts#L485)
 
 Since v4.0.0

@@ -13,6 +13,7 @@ export interface Atom<A> extends Pipeable, Inspectable.Inspectable {
   readonly keepAlive: boolean
   readonly lazy: boolean
   readonly read: (get: AtomContext) => A
+  equals(value: A, next: A): boolean
   readonly refresh?: (f: <A>(atom: Atom<A>) => void) => void
   readonly label?: readonly [name: string, stack: string]
   readonly idleTTL?: number

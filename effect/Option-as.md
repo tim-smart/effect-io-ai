@@ -33,6 +33,6 @@ console.log(Option.as(Option.none(), "new value"))
 declare const as: { <B>(b: B): <X>(self: Option<X>) => Option<B>; <X, B>(self: Option<X>, b: B): Option<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L1193)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L1194)
 
 Since v2.0.0

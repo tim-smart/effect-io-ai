@@ -33,6 +33,6 @@ Effect.runPromise(program)
 declare const logDebug: (...message: ReadonlyArray<any>) => Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13981)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L14002)
 
 Since v2.0.0

@@ -11,6 +11,6 @@ Re-exports all named exports from the "./SynchronizedRef.ts" module as `Synchron
 export * as SynchronizedRef from "./SynchronizedRef.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L622)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L617)
 
 Since v2.0.0

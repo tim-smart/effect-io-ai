@@ -16,6 +16,6 @@ and sum.
 type Summary = Schema.Schema.Type<typeof Summary>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DevToolsSchema.ts#L427)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DevToolsSchema.ts#L432)
 
 Since v4.0.0

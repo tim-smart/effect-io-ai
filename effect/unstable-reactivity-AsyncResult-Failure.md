@@ -15,6 +15,6 @@ export interface Failure<A, E = never> extends AsyncResult.Proto<A, E> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/AsyncResult.ts#L267)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/AsyncResult.ts#L268)
 
 Since v4.0.0

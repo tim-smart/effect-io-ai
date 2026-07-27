@@ -34,6 +34,6 @@ type Writable = Struct.Mutable<ReadOnly>
 type { -readonly [K in keyof T]: T[K]; } = { -readonly [K in keyof T]: T[K] } & {}
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Struct.ts#L77)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Struct.ts#L78)
 
 Since v4.0.0

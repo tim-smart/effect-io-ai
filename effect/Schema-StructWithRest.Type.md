@@ -12,6 +12,6 @@ schema's decoded `Type` with the decoded types of all rest record schemas.
 type Type<S, Records> = Intersect<S, Records, "Type">
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L3894)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L3970)
 
 Since v3.10.0

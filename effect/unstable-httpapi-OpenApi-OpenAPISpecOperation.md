@@ -23,6 +23,6 @@ export interface OpenAPISpecOperation {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/OpenApi.ts#L1124)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/OpenApi.ts#L1148)
 
 Since v4.0.0

@@ -15,19 +15,7 @@ export interface Class<
   S extends Schema.Top & {
     readonly fields: Schema.Struct.Fields
   }
-> extends
-  Schema.BottomLazy<
-    SchemaAST.Declaration,
-    Schema.decodeTo<Schema.declareConstructor<Self, S["Encoded"], readonly [S], S["Iso"]>, S>,
-    readonly [S],
-    S["~type.mutability"],
-    S["~type.optionality"],
-    S["~type.constructor.default"],
-    S["~encoded.mutability"],
-    S["~encoded.optionality"]
-  >,
-  Struct<Struct_.Simplify<Fields>>
-{
+> extends Schema.Class<Self, S, {}>, Struct<Struct_.Simplify<Fields>> {
   readonly "Type": Self
   readonly "Encoded": S["Encoded"]
   readonly "DecodingServices": S["DecodingServices"]
@@ -52,6 +40,6 @@ export interface Class<
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/VariantSchema.ts#L258)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/VariantSchema.ts#L260)
 
 Since v4.0.0

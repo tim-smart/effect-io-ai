@@ -40,6 +40,6 @@ console.log(Option.none().pipe(Option.getOrElse(() => 0)))
 declare const getOrElse: { <B>(onNone: LazyArg<B>): <A>(self: Option<A>) => B | A; <A, B>(self: Option<A>, onNone: LazyArg<B>): A | B; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L617)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L618)
 
 Since v2.0.0

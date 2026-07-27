@@ -70,6 +70,6 @@ export interface GenericMatchers<Z extends WithGenerics<number>> {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Data.ts#L469)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Data.ts#L470)
 
 Since v3.2.0

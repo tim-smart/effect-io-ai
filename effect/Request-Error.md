@@ -24,6 +24,6 @@ type UserError = Request.Error<GetUser> // Error
 type Error<T> = [T] extends [Request<infer _A, infer _E, infer _R>] ? _E : never
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Request.ts#L140)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Request.ts#L141)
 
 Since v2.0.0

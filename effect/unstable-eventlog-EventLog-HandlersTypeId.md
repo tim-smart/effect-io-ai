@@ -11,6 +11,6 @@ Type-level identifier used to brand `Handlers` values.
 type HandlersTypeId = "~effect/eventlog/EventLog/Handlers"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/EventLog.ts#L244)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/EventLog.ts#L247)
 
 Since v4.0.0

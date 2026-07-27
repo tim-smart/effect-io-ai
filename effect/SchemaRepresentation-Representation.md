@@ -3,18 +3,7 @@ Module: `SchemaRepresentation`<br />
 
 ## SchemaRepresentation.Representation
 
-The core tagged union of all supported schema shapes.
-
-**Details**
-
-Each variant has a `_tag` discriminator. Switch on `_tag` to handle each
-shape. Most variants carry optional `annotations` and some carry `checks`
-for validation constraints.
-
-**See**
-
-- `Document`
-- `fromAST`
+The structural schema representation.
 
 **Signature**
 
@@ -43,6 +32,6 @@ type Representation = | Declaration
   | Union
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaRepresentation.ts#L456)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaRepresentation.ts#L400)
 
 Since v4.0.0

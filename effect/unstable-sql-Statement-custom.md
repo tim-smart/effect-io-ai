@@ -12,6 +12,6 @@ the active compiler.
 declare const custom: <C extends Custom<any, any, any, any>>(kind: C["kind"]) => (paramA: C["paramA"], paramB: C["paramB"], paramC: C["paramC"]) => C
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Statement.ts#L381)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Statement.ts#L382)
 
 Since v4.0.0

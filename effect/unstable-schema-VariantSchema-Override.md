@@ -11,6 +11,6 @@ Marks a value as an explicit override for an `Overrideable` schema default.
 declare const Override: <A>(value: A) => A & Brand<"Override">
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/VariantSchema.ts#L522)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/VariantSchema.ts#L512)
 
 Since v4.0.0

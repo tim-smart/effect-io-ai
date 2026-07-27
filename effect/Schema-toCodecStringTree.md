@@ -31,6 +31,6 @@ export interface toCodecStringTree<S extends Constraint> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L13611)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L15159)
 
 Since v4.0.0

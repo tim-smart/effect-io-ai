@@ -46,6 +46,6 @@ console.log(getPositive({ values: [-1, -2] }))
 declare const getAll: <S, A>(traversal: Traversal<S, A>) => (s: S) => Array<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Optic.ts#L1425)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Optic.ts#L1426)
 
 Since v4.0.0

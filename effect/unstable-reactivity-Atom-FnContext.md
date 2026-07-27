@@ -36,6 +36,6 @@ export interface FnContext {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Atom.ts#L991)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Atom.ts#L993)
 
 Since v4.0.0

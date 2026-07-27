@@ -53,6 +53,6 @@ export interface Prism<in out S, in out A> extends Optional<S, A> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Optic.ts#L232)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Optic.ts#L233)
 
 Since v4.0.0

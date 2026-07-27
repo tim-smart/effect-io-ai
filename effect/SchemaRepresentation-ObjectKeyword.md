@@ -3,17 +3,14 @@ Module: `SchemaRepresentation`<br />
 
 ## SchemaRepresentation.ObjectKeyword
 
-The `object` keyword type (matches any non-primitive).
+The object keyword representation.
 
 **Signature**
 
 ```ts
-export interface ObjectKeyword {
-  readonly _tag: "ObjectKeyword"
-  readonly annotations?: Schema.Annotations.Annotations | undefined
-}
+export interface ObjectKeyword extends Keyword<"ObjectKeyword"> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaRepresentation.ts#L285)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaRepresentation.ts#L287)
 
 Since v4.0.0

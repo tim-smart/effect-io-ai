@@ -29,6 +29,6 @@ export interface StructWithRest<
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L4025)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L4101)
 
 Since v4.0.0

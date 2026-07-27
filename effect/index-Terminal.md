@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Terminal.ts" module as `Terminal`.
 export * as Terminal from "./Terminal.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L632)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L627)
 
 Since v4.0.0

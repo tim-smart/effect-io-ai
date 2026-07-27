@@ -38,6 +38,6 @@ const parseCommand = Effect.gen(function*() {
 declare class UnrecognizedOption
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/CliError.ts#L130)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/CliError.ts#L131)
 
 Since v4.0.0

@@ -16,6 +16,6 @@ finalizer releases it.
 declare const mount: <A>(self: Atom<A>) => Effect.Effect<void, never, AtomRegistry | Scope.Scope>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Atom.ts#L2381)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Atom.ts#L2421)
 
 Since v4.0.0

@@ -17,6 +17,6 @@ change when lowercased.
 declare const isLowercased: (annotations?: Annotations.Filter) => SchemaAST.Filter<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6999)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L7406)
 
 Since v4.0.0

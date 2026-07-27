@@ -13,6 +13,6 @@ type TaggedStruct<Tag, Fields> = Struct<
 >
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6021)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6097)
 
 Since v3.10.0

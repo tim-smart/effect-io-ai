@@ -8,17 +8,18 @@ Type-level representation returned by `Class`.
 **Signature**
 
 ```ts
-export interface Class<Self, S extends Constraint & { readonly fields: Struct.Fields }, Inherited> extends
-  BottomLazy<
-    SchemaAST.Declaration,
-    decodeTo<declareConstructor<Self, S["Encoded"], readonly [S], S["Iso"]>, S>,
-    readonly [S],
-    S["~type.mutability"],
-    S["~type.optionality"],
-    S["~type.constructor.default"],
-    S["~encoded.mutability"],
-    S["~encoded.optionality"]
-  >
+export interface Class<Self, S extends Constraint & { readonly fields: Struct.Fields }, Inherited>
+  extends
+    BottomLazyWithoutNew<
+      SchemaAST.Declaration,
+      decodeTo<declareConstructor<Self, S["Encoded"], readonly [S], S["Iso"]>, S>,
+      readonly [S],
+      S["~type.mutability"],
+      S["~type.optionality"],
+      S["~type.constructor.default"],
+      S["~encoded.mutability"],
+      S["~encoded.optionality"]
+    >
 {
   readonly "Type": Self
   readonly "Encoded": S["Encoded"]
@@ -103,6 +104,6 @@ export interface Class<Self, S extends Constraint & { readonly fields: Struct.Fi
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L12505)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L13972)
 
 Since v3.10.0

@@ -17,6 +17,6 @@ workers, sockets, or custom protocols.
 declare class Protocol
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/RpcClient.ts#L844)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/RpcClient.ts#L845)
 
 Since v4.0.0

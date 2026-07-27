@@ -11,6 +11,6 @@ A utility type which flattens a record type for improved IDE display.
 type { [K in keyof T]: T[K]; } = { [K in keyof T]: T[K] } & {}
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Toolkit.ts#L484)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Toolkit.ts#L496)
 
 Since v4.0.0

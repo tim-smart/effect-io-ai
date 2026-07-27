@@ -15,6 +15,6 @@ export interface ResourceSpan {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/OtlpTracer.ts#L367)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/OtlpTracer.ts#L371)
 
 Since v4.0.0

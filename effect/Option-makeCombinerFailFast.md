@@ -40,6 +40,6 @@ console.log(combiner.combine(Option.some(1), Option.none()))
 declare const makeCombinerFailFast: <A>(combiner: Combiner.Combiner<A>) => Combiner.Combiner<Option<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L2612)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L2613)
 
 Since v4.0.0

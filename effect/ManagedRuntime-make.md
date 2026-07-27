@@ -60,6 +60,6 @@ runtime.runPromise(program)
 declare const make: <R, ER>(layer: Layer.Layer<R, ER, never>, options?: { readonly memoMap?: Layer.MemoMap | undefined; } | undefined) => ManagedRuntime<R, ER>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/ManagedRuntime.ts#L273)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/ManagedRuntime.ts#L283)
 
 Since v2.0.0

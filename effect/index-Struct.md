@@ -11,6 +11,6 @@ Re-exports all named exports from the "./Struct.ts" module as `Struct`.
 export * as Struct from "./Struct.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L607)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L602)
 
 Since v2.0.0

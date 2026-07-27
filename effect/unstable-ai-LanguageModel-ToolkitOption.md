@@ -19,6 +19,6 @@ type ToolkitOption<Tools, E, R> = Tools extends any ? (
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/LanguageModel.ts#L498)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/LanguageModel.ts#L501)
 
 Since v4.0.0

@@ -19,6 +19,6 @@ treated as `UNSPECIFIED` by validating backends.
 declare const logLevelToSeverityNumber: (level: LogLevel.LogLevel) => SeverityNumber
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/OtelLogger.ts#L54)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/OtelLogger.ts#L55)
 
 Since v4.0.0

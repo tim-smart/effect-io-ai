@@ -30,6 +30,6 @@ console.log(Array.head([])) // None
 declare const head: <A>(self: ReadonlyArray<A>) => Option.Option<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L1085)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L1087)
 
 Since v2.0.0

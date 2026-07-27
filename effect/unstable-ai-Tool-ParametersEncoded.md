@@ -16,6 +16,6 @@ type ParametersEncoded<T> = T extends Tool<
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Tool.ts#L723)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Tool.ts#L730)
 
 Since v4.0.0

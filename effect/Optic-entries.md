@@ -42,6 +42,6 @@ console.log(inc({ a: 0, b: 3, c: -1 }))
 declare const entries: <A>() => Iso<Record<string, A>, ReadonlyArray<readonly [string, A]>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Optic.ts#L1509)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Optic.ts#L1510)
 
 Since v4.0.0

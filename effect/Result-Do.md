@@ -45,6 +45,6 @@ console.log(result)
 declare const Do: Result<{}, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Result.ts#L1616)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Result.ts#L1617)
 
 Since v2.0.0

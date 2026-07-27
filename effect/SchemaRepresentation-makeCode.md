@@ -3,12 +3,7 @@ Module: `SchemaRepresentation`<br />
 
 ## SchemaRepresentation.makeCode
 
-Constructs a `Code` value from a runtime expression string and a
-TypeScript type string.
-
-**See**
-
-- `Code`
+Creates generated runtime and TypeScript source strings for a schema.
 
 **Signature**
 
@@ -16,6 +11,6 @@ TypeScript type string.
 declare const makeCode: (runtime: string, Type: string) => Code
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaRepresentation.ts#L2265)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaRepresentation.ts#L644)
 
 Since v4.0.0

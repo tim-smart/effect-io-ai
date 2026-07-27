@@ -12,6 +12,6 @@ type Services<T> = [T] extends [Request<infer _A, infer _E, infer _R>] ? _R
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Request.ts#L171)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Request.ts#L172)
 
 Since v4.0.0

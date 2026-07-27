@@ -11,6 +11,6 @@ Sets the `Authorization` header using a bearer token.
 declare const bearerToken: { (token: string | Redacted.Redacted): (self: HttpClientRequest) => HttpClientRequest; (self: HttpClientRequest, token: string | Redacted.Redacted): HttpClientRequest; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HttpClientRequest.ts#L362)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HttpClientRequest.ts#L395)
 
 Since v4.0.0

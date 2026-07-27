@@ -11,6 +11,6 @@ Type-level identifier for `Effect` values.
 type TypeId = "~effect/Effect"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L82)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L83)
 
 Since v4.0.0

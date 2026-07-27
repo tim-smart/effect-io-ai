@@ -3,17 +3,17 @@ Module: `SchemaRepresentation`<br />
 
 ## SchemaRepresentation.PropertySignature
 
-A named property within an `Objects` representation.
+A property signature.
 
 **Details**
 
-`name` is the property key, which can be a string, number, or symbol.
-`isOptional` indicates whether the key can be absent. `isMutable` indicates
-whether the property is mutable rather than readonly.
+The live representation stores the native property key. Persistent codecs
+add an explicit type discriminator when encoding it.
 
-**See**
+**Gotchas**
 
-- `Objects`
+Local symbols can be represented while the schema is live, but persistent
+codecs reject them because they cannot be reconstructed by identity.
 
 **Signature**
 
@@ -27,6 +27,6 @@ export interface PropertySignature {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaRepresentation.ts#L396)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaRepresentation.ts#L353)
 
 Since v4.0.0

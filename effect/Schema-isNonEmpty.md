@@ -24,6 +24,6 @@ constraint to ensure generated strings or arrays are non-empty.
 declare const isNonEmpty: (annotations?: Annotations.Filter) => SchemaAST.Filter<{ readonly length: number; }>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L8044)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L8826)
 
 Since v4.0.0

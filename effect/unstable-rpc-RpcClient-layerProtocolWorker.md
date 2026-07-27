@@ -12,6 +12,6 @@ platform and spawner services.
 declare const layerProtocolWorker: (options: { readonly size: number; readonly concurrency?: number | undefined; readonly targetUtilization?: number | undefined; } | { readonly minSize: number; readonly maxSize: number; readonly concurrency?: number | undefined; readonly targetUtilization?: number | undefined; readonly timeToLive: Duration.Input; }) => Layer.Layer<Protocol, WorkerError, Worker.WorkerPlatform | Worker.Spawner>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/RpcClient.ts#L1356)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/RpcClient.ts#L1357)
 
 Since v4.0.0

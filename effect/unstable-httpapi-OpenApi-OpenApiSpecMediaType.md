@@ -14,6 +14,6 @@ export interface OpenApiSpecMediaType {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/OpenApi.ts#L1029)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/OpenApi.ts#L1053)
 
 Since v4.0.0

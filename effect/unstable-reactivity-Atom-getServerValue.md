@@ -16,6 +16,6 @@ Nested reads performed by the override are resolved against the same registry.
 declare const getServerValue: { (registry: Registry.AtomRegistry): <A>(self: Atom<A>) => A; <A>(self: Atom<A>, registry: Registry.AtomRegistry): A; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Atom.ts#L2514)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Atom.ts#L2554)
 
 Since v4.0.0

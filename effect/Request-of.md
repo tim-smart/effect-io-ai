@@ -34,6 +34,6 @@ const request = GetUserProfile({
 declare const of: <R extends Request<any, any, any>>() => Constructor<R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Request.ts#L282)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Request.ts#L283)
 
 Since v2.0.0

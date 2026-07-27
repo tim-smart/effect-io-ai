@@ -22,6 +22,6 @@ type ResourceCompletions<Schemas> = {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/McpServer.ts#L785)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/McpServer.ts#L896)
 
 Since v4.0.0

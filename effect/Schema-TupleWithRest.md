@@ -29,6 +29,6 @@ export interface TupleWithRest<
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L4424)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L4500)
 
 Since v4.0.0

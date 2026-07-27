@@ -12,6 +12,6 @@ value, domain, path, or infinite max-age.
 declare class CookiesErrorReason
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cookies.ts#L170)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cookies.ts#L172)
 
 Since v4.0.0

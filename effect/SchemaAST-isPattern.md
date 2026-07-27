@@ -40,6 +40,6 @@ const emailFilter = SchemaAST.isPattern(/^[^@]+@[^@]+$/)
 declare const isPattern: (regExp: globalThis.RegExp, annotations?: Schema.Annotations.Filter) => Filter<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaAST.ts#L3048)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaAST.ts#L3078)
 
 Since v4.0.0

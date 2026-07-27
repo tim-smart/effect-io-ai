@@ -42,6 +42,6 @@ export interface Lambda {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Struct.ts#L583)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Struct.ts#L584)
 
 Since v4.0.0

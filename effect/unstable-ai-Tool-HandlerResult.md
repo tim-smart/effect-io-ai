@@ -32,6 +32,6 @@ export interface HandlerResult<Tool extends Any> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Tool.ts#L946)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Tool.ts#L953)
 
 Since v4.0.0

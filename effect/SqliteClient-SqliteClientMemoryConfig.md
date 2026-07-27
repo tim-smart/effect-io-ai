@@ -16,6 +16,6 @@ export interface SqliteClientMemoryConfig {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-wasm/src/SqliteClient.ts#L89)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/sqlite-wasm/src/SqliteClient.ts#L90)
 
 Since v4.0.0

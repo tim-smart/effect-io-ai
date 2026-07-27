@@ -21,6 +21,6 @@ type Enc = Schema.Codec.Encoded<typeof schema>
 type Encoded<S> = S extends { readonly "Encoded": infer E } ? E : never
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L853)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L956)
 
 Since v3.10.0

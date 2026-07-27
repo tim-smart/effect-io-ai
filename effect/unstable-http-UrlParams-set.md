@@ -16,6 +16,6 @@ the end.
 declare const set: { (key: string, value: Coercible): (self: UrlParams) => UrlParams; (self: UrlParams, key: string, value: Coercible): UrlParams; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/UrlParams.ts#L353)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/UrlParams.ts#L354)
 
 Since v4.0.0

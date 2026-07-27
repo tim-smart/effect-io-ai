@@ -27,6 +27,6 @@ Effect.runPromise(program)
 declare const runCount: <A, E, R>(self: Stream<A, E, R>) => Effect.Effect<number, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L10652)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L10655)
 
 Since v2.0.0

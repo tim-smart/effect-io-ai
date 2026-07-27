@@ -29,19 +29,19 @@ export interface ResponseMetadataPart extends BasePart<"response-metadata", Resp
   /**
    * Optional unique identifier for this specific response.
    */
-  readonly id: string | undefined
+  readonly id?: string | undefined
   /**
    * Optional identifier of the AI model that generated the response.
    */
-  readonly modelId: string | undefined
+  readonly modelId?: string | undefined
   /**
    * Optional timestamp when the response was generated.
    */
-  readonly timestamp: DateTime.Utc | undefined
+  readonly timestamp?: DateTime.Utc | undefined
   /**
    * Optional HTTP request details for the request made to the AI provider.
    */
-  readonly request: typeof HttpRequestDetails.Type | undefined
+  readonly request?: typeof HttpRequestDetails.Type | undefined
 }
 ```
 

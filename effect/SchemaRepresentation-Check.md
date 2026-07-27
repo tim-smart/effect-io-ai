@@ -3,20 +3,14 @@ Module: `SchemaRepresentation`<br />
 
 ## SchemaRepresentation.Check
 
-A validation constraint attached to a type. Either a single `Filter`
-or a `FilterGroup` combining multiple checks.
-
-**See**
-
-- `Filter`
-- `FilterGroup`
+A structural check.
 
 **Signature**
 
 ```ts
-type Check<M> = Filter<M> | FilterGroup<M>
+type Check = Filter | FilterGroup
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaRepresentation.ts#L490)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaRepresentation.ts#L430)
 
 Since v4.0.0

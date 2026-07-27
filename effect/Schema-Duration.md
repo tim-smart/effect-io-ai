@@ -13,6 +13,6 @@ export interface Duration extends declare<Duration_.Duration> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L10622)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L11971)
 
 Since v3.10.0

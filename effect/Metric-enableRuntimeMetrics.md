@@ -87,6 +87,6 @@ const programWithLayer = program.pipe(
 declare const enableRuntimeMetrics: <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Metric.ts#L3910)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Metric.ts#L3911)
 
 Since v4.0.0

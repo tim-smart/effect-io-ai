@@ -33,6 +33,6 @@ export interface ReadonlyRecordTypeLambda<K extends string = string> extends Typ
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Record.ts#L145)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Record.ts#L146)
 
 Since v2.0.0

@@ -35,6 +35,6 @@ console.log(parseNumber("abc")) // []
 declare const liftOption: <A extends Array<unknown>, B>(f: (...a: A) => Option.Option<B>) => (...a: A) => Array<B>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L3989)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L4057)
 
 Since v2.0.0

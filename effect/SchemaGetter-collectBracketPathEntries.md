@@ -13,7 +13,6 @@ key-value entries.
 
 **Details**
 
-- This is the inverse of `makeTreeRecord`.
 - Takes a nested object and produces flat `[bracketPath, value]` pairs suitable for
   `FormData` or `URLSearchParams`.
 - Returns a curried function: first call provides the leaf type guard, second call provides the object.
@@ -21,6 +20,8 @@ key-value entries.
 - If all elements of an array are leaves, encodes them as multiple entries with the same key
   (e.g. `tags=a&tags=b`). Otherwise uses indexed bracket paths (e.g. `items[0]`, `items[1]`).
 - Non-leaf values that aren't objects or arrays are silently skipped.
+- Empty arrays and objects produce no entries, and path delimiters in property
+  names are not escaped. The resulting format is therefore lossy.
 
 **Example** (Flattening an object to bracket paths)
 
@@ -34,7 +35,7 @@ const entries = collectStrings({ user: { name: "Alice", tags: ["admin", "editor"
 
 **See**
 
-- `makeTreeRecord` for the inverse operation (flat entries to tree)
+- `makeTreeRecord` for building trees from bracket-path entries
 - `encodeFormData` for a higher-level FormData encoder
 - `encodeURLSearchParams` for a higher-level URLSearchParams encoder
 
@@ -44,6 +45,6 @@ const entries = collectStrings({ user: { name: "Alice", tags: ["admin", "editor"
 declare const collectBracketPathEntries: <A>(isLeaf: (value: unknown) => value is A) => (input: object) => Array<[bracketPath: string, value: A]>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaGetter.ts#L1844)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaGetter.ts#L1851)
 
 Since v4.0.0

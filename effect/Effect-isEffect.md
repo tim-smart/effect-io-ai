@@ -20,6 +20,6 @@ console.log(Effect.isEffect("hello")) // false
 declare const isEffect: (u: unknown) => u is Effect<any, any, any>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L229)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L230)
 
 Since v2.0.0

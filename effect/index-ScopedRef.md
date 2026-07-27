@@ -11,6 +11,6 @@ Re-exports all named exports from the "./ScopedRef.ts" module as `ScopedRef`.
 export * as ScopedRef from "./ScopedRef.ts"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L577)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L572)
 
 Since v2.0.0

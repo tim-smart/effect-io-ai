@@ -45,6 +45,6 @@ console.log(numeric.set(42))
 declare const makePrism: <S, A>(getResult: (s: S) => Result.Result<A, string>, set: (a: A) => S) => Prism<S, A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Optic.ts#L274)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Optic.ts#L275)
 
 Since v4.0.0

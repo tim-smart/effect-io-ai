@@ -75,6 +75,6 @@ export interface Toolkit<in out Tools extends Record<string, Tool.Any>> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Toolkit.ts#L60)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Toolkit.ts#L61)
 
 Since v4.0.0

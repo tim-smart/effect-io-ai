@@ -16,6 +16,6 @@ derived from the request when possible.
 declare const toClientRequest: (request: HttpServerRequest) => HttpClientRequest.HttpClientRequest
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HttpServerRequest.ts#L425)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HttpServerRequest.ts#L426)
 
 Since v4.0.0

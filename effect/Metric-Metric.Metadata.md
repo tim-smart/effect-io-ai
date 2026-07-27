@@ -71,6 +71,6 @@ export interface Metadata<in Input, out State> {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Metric.ts#L1428)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Metric.ts#L1429)
 
 Since v4.0.0

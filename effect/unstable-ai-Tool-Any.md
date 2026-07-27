@@ -18,6 +18,6 @@ export interface Any extends
 {}
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Tool.ts#L643)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Tool.ts#L650)
 
 Since v4.0.0

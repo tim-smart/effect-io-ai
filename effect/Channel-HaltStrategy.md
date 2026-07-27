@@ -23,6 +23,6 @@ const either: Channel.HaltStrategy = "either" // Stop when either channel halts
 type HaltStrategy = "left" | "right" | "both" | "either"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Channel.ts#L6099)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Channel.ts#L6118)
 
 Since v4.0.0

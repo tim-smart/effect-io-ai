@@ -13,6 +13,6 @@ export interface TimeZoneOffset extends declare<DateTime.TimeZone.Offset> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L12196)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L13592)
 
 Since v3.10.0

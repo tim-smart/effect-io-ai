@@ -54,6 +54,6 @@ const provider = ConfigProvider.fromUnknown({
 declare const schema: <T>(codec: Schema.ConstraintCodec<T, unknown>, path?: string | ConfigProvider.Path) => Config<T>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L642)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L643)
 
 Since v4.0.0

@@ -29,6 +29,6 @@ console.log(description) // "This is an example tool"
 declare const getDescription: <Tool extends Any>(tool: Tool) => string | undefined
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Tool.ts#L1593)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Tool.ts#L1603)
 
 Since v4.0.0

@@ -47,6 +47,6 @@ console.log(postRequest._tag) // "GetPost"
 declare const tagged: <R extends Request<any, any, any> & { _tag: string; }>(tag: R["_tag"]) => Constructor<R, "_tag">
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Request.ts#L327)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Request.ts#L328)
 
 Since v2.0.0

@@ -30,9 +30,10 @@ export interface Augment extends Annotations {
     readonly format?: string | undefined
     readonly contentEncoding?: string | undefined
     readonly contentMediaType?: string | undefined
+    readonly contentSchema?: Json | undefined
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L14333)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L16136)
 
 Since v4.0.0

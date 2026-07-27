@@ -15,6 +15,6 @@ Adapted from https://github.com/fastify/fastify-cookie under MIT License
 declare const serializeCookie: (self: Cookie) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cookies.ts#L778)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cookies.ts#L781)
 
 Since v4.0.0

@@ -39,6 +39,6 @@ console.log(eq(Option.none(), Option.none()))
 declare const makeEquivalence: <A>(isEquivalent: Equivalence.Equivalence<A>) => Equivalence.Equivalence<Option<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L2065)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L2066)
 
 Since v4.0.0

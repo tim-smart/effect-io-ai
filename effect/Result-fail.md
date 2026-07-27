@@ -35,6 +35,6 @@ console.log(Result.isFailure(result))
 declare const fail: <E>(left: E) => Result<never, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Result.ts#L314)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Result.ts#L315)
 
 Since v4.0.0

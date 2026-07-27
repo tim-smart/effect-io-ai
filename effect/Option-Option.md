@@ -24,6 +24,6 @@ Use to represent initial values that may not yet exist
 type Option<A> = None<A> | Some<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L54)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L55)
 
 Since v2.0.0

@@ -11,6 +11,6 @@ Extracts the failure error type from an `AsyncResult`.
 type Failure<R> = R extends AsyncResult<infer _, infer E> ? E : never
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/AsyncResult.ts#L97)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/AsyncResult.ts#L98)
 
 Since v4.0.0

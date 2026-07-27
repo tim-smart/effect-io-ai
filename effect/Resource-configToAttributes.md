@@ -33,6 +33,6 @@ helper. An empty `serviceVersion` is treated as absent.
 declare const configToAttributes: (options: { readonly serviceName: string; readonly serviceVersion?: string; readonly attributes?: OtelApi.Attributes; }) => Record<string, string>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Resource.ts#L80)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/Resource.ts#L81)
 
 Since v4.0.0

@@ -13,13 +13,10 @@ JSON text during encoding.
 **Details**
 
 - Skips `None` inputs.
-- On thrown stringify failures, such as circular references, fails with
+- If `JSON.stringify` throws or returns `undefined`, fails with
   `SchemaIssue.InvalidValue`.
 - Supports optional `replacer` and `space` options, matching
   `JSON.stringify`.
-- If `JSON.stringify` returns `undefined`, such as for `undefined`,
-  functions, symbols, or a replacer that removes the root value, that
-  `undefined` result is returned rather than converted into an `Issue`.
 
 **Example** (Stringifying JSON)
 
@@ -40,6 +37,6 @@ const stringify = SchemaGetter.stringifyJson()
 declare const stringifyJson: (options?: StringifyJsonOptions) => Getter<string, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaGetter.ts#L1040)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaGetter.ts#L1037)
 
 Since v4.0.0

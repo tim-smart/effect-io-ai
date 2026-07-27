@@ -48,6 +48,6 @@ console.log(
 declare const flatMapNullishOr: { <A, B>(f: (a: A) => B): (self: Option<A>) => Option<NonNullable<B>>; <A, B>(self: Option<A>, f: (a: A) => B): Option<NonNullable<B>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L1404)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L1405)
 
 Since v4.0.0

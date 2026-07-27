@@ -16,6 +16,6 @@ type Success<T> = T extends Tool<
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Tool.ts#L750)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Tool.ts#L757)
 
 Since v4.0.0

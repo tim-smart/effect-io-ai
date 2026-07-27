@@ -16,6 +16,6 @@ Whether a schema field is required or optional within a struct.
 type Optionality = "required" | "optional"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L80)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L82)
 
 Since v4.0.0

@@ -11,6 +11,6 @@ Returns `true` when a value is an `Atom`.
 declare const isAtom: (u: unknown) => u is Atom<any>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Atom.ts#L83)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Atom.ts#L84)
 
 Since v4.0.0

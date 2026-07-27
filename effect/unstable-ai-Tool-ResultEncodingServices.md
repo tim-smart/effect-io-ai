@@ -17,6 +17,6 @@ type ResultEncodingServices<T> = T extends Tool<
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Tool.ts#L906)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Tool.ts#L913)
 
 Since v4.0.0

@@ -23,6 +23,6 @@ value.
 declare const succeed: { <A extends Any>(value: Success<A>): (self: Entry<A>) => Effect.Effect<void>; <A extends Any>(self: Entry<A>, value: Success<A>): Effect.Effect<void>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Request.ts#L539)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Request.ts#L537)
 
 Since v2.0.0

@@ -78,6 +78,6 @@ type Snapshot = | SnapshotProto<"Counter", CounterState<number | bigint>>
     | SnapshotProto<"Summary", SummaryState>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Metric.ts#L1578)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Metric.ts#L1579)
 
 Since v4.0.0

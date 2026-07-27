@@ -11,6 +11,6 @@ Serializes `UrlParams` to a URL query string without a leading question mark.
 declare const toString: (input: Input) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/UrlParams.ts#L457)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/UrlParams.ts#L458)
 
 Since v4.0.0

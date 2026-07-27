@@ -9,7 +9,7 @@ Type-level representation returned by `Opaque`.
 
 ```ts
 export interface Opaque<Self, S extends Top, Brand> extends
-  BottomLazy<
+  BottomLazyWithoutNew<
     S["ast"],
     S["Rebuild"],
     S["~type.parameters"],
@@ -31,6 +31,6 @@ export interface Opaque<Self, S extends Top, Brand> extends
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6296)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6378)
 
 Since v4.0.0

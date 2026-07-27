@@ -19,6 +19,6 @@ type Input = | UrlParams
   | URLSearchParams
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/UrlParams.ts#L65)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/UrlParams.ts#L66)
 
 Since v4.0.0

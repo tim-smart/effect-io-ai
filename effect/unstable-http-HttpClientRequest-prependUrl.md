@@ -11,6 +11,6 @@ Prepends a URL segment to the request URL, inserting or trimming one slash as ne
 declare const prependUrl: { (path: string): (self: HttpClientRequest) => HttpClientRequest; (self: HttpClientRequest, path: string): HttpClientRequest; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HttpClientRequest.ts#L431)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HttpClientRequest.ts#L464)
 
 Since v4.0.0

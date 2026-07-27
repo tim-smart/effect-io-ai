@@ -37,6 +37,6 @@ type Simplified = Struct.Simplify<Original>
 type { [K in keyof T]: T[K]; } = { [K in keyof T]: T[K] } & {}
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Struct.ts#L49)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Struct.ts#L50)
 
 Since v4.0.0

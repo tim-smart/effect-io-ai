@@ -90,6 +90,6 @@ export interface FrequencyState {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Metric.ts#L421)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Metric.ts#L422)
 
 Since v4.0.0

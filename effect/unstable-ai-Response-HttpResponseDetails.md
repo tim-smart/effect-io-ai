@@ -28,7 +28,7 @@ const responseDetails: typeof Response.HttpResponseDetails.Type = {
 **Signature**
 
 ```ts
-declare const HttpResponseDetails: Schema.Struct<{ readonly status: Schema.Number; readonly headers: Schema.$Record<Schema.String, Schema.Union<readonly [Schema.String, Schema.Redacted<Schema.String>]>>; }>
+declare const HttpResponseDetails: Schema.Struct<{ readonly status: Schema.Int; readonly headers: Schema.$Record<Schema.String, Schema.Union<readonly [Schema.String, Schema.Redacted<Schema.String>]>>; }>
 ```
 
 [Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Response.ts#L2174)

@@ -96,6 +96,6 @@ export interface HistogramState {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Metric.ts#L731)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Metric.ts#L732)
 
 Since v4.0.0

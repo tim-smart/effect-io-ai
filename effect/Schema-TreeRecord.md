@@ -14,6 +14,6 @@ export interface TreeRecord<A> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L14119)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L15878)
 
 Since v4.0.0

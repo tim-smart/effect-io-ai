@@ -13,6 +13,6 @@ export interface instanceOf<T, Iso = T> extends declare<T, Iso> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6356)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6436)
 
 Since v3.10.0

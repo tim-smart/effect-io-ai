@@ -34,6 +34,6 @@ console.log(Array.isArray([1, 2, 3])) // true
 declare const isArray: { (self: unknown): self is Array<unknown>; <T>(self: T): self is Extract<T, ReadonlyArray<any>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L797)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L799)
 
 Since v2.0.0

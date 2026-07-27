@@ -11,6 +11,6 @@ Creates a `Failure` result from a typed error while carrying forward the latest 
 declare const failWithPrevious: <A, E>(error: E, options: { readonly previous: Option.Option<AsyncResult<A, E>>; readonly waiting?: boolean | undefined; }) => Failure<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/AsyncResult.ts#L351)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/AsyncResult.ts#L352)
 
 Since v4.0.0

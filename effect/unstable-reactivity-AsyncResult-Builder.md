@@ -64,6 +64,6 @@ type Builder<Out, A, E, I, F> = & Pipeable
     unknown)
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/AsyncResult.ts#L750)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/AsyncResult.ts#L751)
 
 Since v4.0.0

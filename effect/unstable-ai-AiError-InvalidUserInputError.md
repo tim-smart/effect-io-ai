@@ -31,6 +31,6 @@ console.log(error.message)
 declare class InvalidUserInputError
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/AiError.ts#L1301)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/AiError.ts#L1302)
 
 Since v4.0.0

@@ -16,6 +16,6 @@ the source atom's write input type.
 declare const map: { <R extends Atom<any>, B>(f: (_: Type<R>) => B): (self: R) => [R] extends [Writable<infer _, infer RW>] ? Writable<B, RW> : Atom<B>; <R extends Atom<any>, B>(self: R, f: (_: Type<R>) => B): [R] extends [Writable<infer _, infer RW>] ? Writable<B, RW> : Atom<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Atom.ts#L1636)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Atom.ts#L1676)
 
 Since v4.0.0

@@ -37,6 +37,6 @@ console.log(Option.some("a").pipe(Option.orElseSome(() => "b")))
 declare const orElseSome: { <B>(onNone: LazyArg<B>): <A>(self: Option<A>) => Option<B | A>; <A, B>(self: Option<A>, onNone: LazyArg<B>): Option<A | B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L695)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L696)
 
 Since v2.0.0

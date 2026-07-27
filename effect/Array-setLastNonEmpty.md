@@ -29,6 +29,6 @@ console.log(Array.setLastNonEmpty([1, 2, 3], 4)) // [1, 2, 4]
 declare const setLastNonEmpty: { <B>(b: B): <A>(self: NonEmptyReadonlyArray<A>) => NonEmptyArray<A | B>; <A, B>(self: NonEmptyReadonlyArray<A>, b: B): NonEmptyArray<A | B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2457)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2459)
 
 Since v4.0.0

@@ -36,6 +36,6 @@ console.log(Result.isSuccess(Result.succeedNone))
 declare const succeedNone: Result<Option<never>, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Result.ts#L1871)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Result.ts#L1872)
 
 Since v4.0.0

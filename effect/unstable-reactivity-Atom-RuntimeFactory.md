@@ -27,6 +27,6 @@ export interface RuntimeFactory {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Atom.ts#L700)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Atom.ts#L702)
 
 Since v4.0.0

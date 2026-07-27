@@ -27,6 +27,6 @@ form, `"openapi-3.1"` for OpenAPI 3.1, and `"openapi-3.0"` for OpenAPI 3.0.
 type Dialect = "draft-07" | "draft-2020-12" | "openapi-3.1" | "openapi-3.0"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/JsonSchema.ts#L55)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/JsonSchema.ts#L56)
 
 Since v4.0.0

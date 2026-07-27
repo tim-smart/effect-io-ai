@@ -12,6 +12,6 @@ type OpenAPISecurityScheme = | OpenAPIHTTPSecurityScheme
   | OpenAPIApiKeySecurityScheme
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/OpenApi.ts#L1106)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/OpenApi.ts#L1130)
 
 Since v4.0.0

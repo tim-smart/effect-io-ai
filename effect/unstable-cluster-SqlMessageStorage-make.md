@@ -29,9 +29,9 @@ tables, including the migration history table.
 **Signature**
 
 ```ts
-declare const make: (options?: { readonly prefix?: string | undefined; }) => Effect.Effect<MessageStorage.MessageStorage["Service"], never, SqlClient.SqlClient | Snowflake.Generator>
+declare const make: (options?: { readonly prefix?: string | undefined; }) => Effect.Effect<MessageStorage.MessageStorage["Service"], never, SqlClient.SqlClient | Snowflake.Generator | Crypto.Crypto>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SqlMessageStorage.ts#L59)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SqlMessageStorage.ts#L67)
 
 Since v4.0.0

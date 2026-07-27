@@ -13,6 +13,6 @@ export interface StringFromBase64 extends decodeTo<String, String> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L11672)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L13033)
 
 Since v3.10.0

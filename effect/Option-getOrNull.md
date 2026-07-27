@@ -37,6 +37,6 @@ console.log(Option.getOrNull(Option.none()))
 declare const getOrNull: <A>(self: Option<A>) => A | null
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L976)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L977)
 
 Since v2.0.0

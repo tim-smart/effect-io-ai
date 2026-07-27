@@ -38,6 +38,6 @@ if (Result.isFailure(result)) {
 declare const isFailure: <A, E>(self: Result<A, E>) => self is Failure<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Result.ts#L592)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Result.ts#L593)
 
 Since v4.0.0

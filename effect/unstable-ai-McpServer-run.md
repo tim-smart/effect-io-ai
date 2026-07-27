@@ -17,6 +17,6 @@ initialized clients.
 declare const run: (options: { readonly name: string; readonly version: string; readonly extensions?: Record<`${string}/${string}`, unknown> | undefined; }) => Effect.Effect<never, never, McpServer | RpcServer.Protocol>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/McpServer.ts#L358)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/McpServer.ts#L373)
 
 Since v4.0.0

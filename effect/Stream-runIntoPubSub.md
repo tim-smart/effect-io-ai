@@ -39,6 +39,6 @@ Effect.runPromise(program)
 declare const runIntoPubSub: { <A>(pubsub: PubSub.PubSub<A>, options?: { readonly shutdownOnEnd?: boolean | undefined; } | undefined): <E, R>(self: Stream<A, E, R>) => Effect.Effect<void, E, R>; <A, E, R>(self: Stream<A, E, R>, pubsub: PubSub.PubSub<A>, options?: { readonly shutdownOnEnd?: boolean | undefined; } | undefined): Effect.Effect<void, never, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L11471)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L11511)
 
 Since v2.0.0

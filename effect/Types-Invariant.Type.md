@@ -28,6 +28,6 @@ type Inner = Types.Invariant.Type<Types.Invariant<number>>
 type Type<A> = A extends Invariant<infer U> ? U : never
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L611)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L609)
 
 Since v3.9.0

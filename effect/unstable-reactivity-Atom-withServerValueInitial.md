@@ -12,6 +12,6 @@ Sets an `AsyncResult` atom's server-side value to
 declare const withServerValueInitial: <A extends Atom<AsyncResult.AsyncResult<any, any>>>(self: A) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Atom.ts#L2500)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Atom.ts#L2540)
 
 Since v4.0.0

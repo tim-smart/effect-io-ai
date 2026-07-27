@@ -31,7 +31,11 @@ export interface WithHandler<in out Tools extends Record<string, Tool.Any>> {
     /**
      * Parameters to pass to the tool handler.
      */
-    params: Tool.Parameters<Tools[Name]>
+    params: Tool.Parameters<Tools[Name]>,
+    /**
+     * The unique identifier of the tool call.
+     */
+    toolCallId?: string
   ) => Effect.Effect<
     Stream.Stream<
       Tool.HandlerResult<Tools[Name]>,
@@ -43,6 +47,6 @@ export interface WithHandler<in out Tools extends Record<string, Tool.Any>> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Toolkit.ts#L179)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Toolkit.ts#L184)
 
 Since v4.0.0

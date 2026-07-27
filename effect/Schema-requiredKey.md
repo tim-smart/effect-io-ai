@@ -16,6 +16,6 @@ wrapped with `optionalKey`.
 declare const requiredKey: requiredKeyLambda
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L2341)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L2417)
 
 Since v4.0.0

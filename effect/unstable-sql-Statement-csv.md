@@ -12,6 +12,6 @@ prefix, and returns an empty fragment when no values are provided.
 declare const csv: { (values: ReadonlyArray<string | Fragment>): Fragment; (prefix: string, values: ReadonlyArray<string | Fragment>): Fragment; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Statement.ts#L711)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Statement.ts#L712)
 
 Since v4.0.0

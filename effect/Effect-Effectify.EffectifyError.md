@@ -86,6 +86,6 @@ type EffectifyError<T> = T extends {
     : never
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L15007)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L15028)
 
 Since v4.0.0

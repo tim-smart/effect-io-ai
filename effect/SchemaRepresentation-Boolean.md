@@ -3,17 +3,14 @@ Module: `SchemaRepresentation`<br />
 
 ## SchemaRepresentation.Boolean
 
-The `boolean` type.
+A boolean representation.
 
 **Signature**
 
 ```ts
-export interface Boolean {
-  readonly _tag: "Boolean"
-  readonly annotations?: Schema.Annotations.Annotations | undefined
-}
+export interface Boolean extends Keyword<"Boolean"> {}
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaRepresentation.ts#L225)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/SchemaRepresentation.ts#L240)
 
 Since v4.0.0

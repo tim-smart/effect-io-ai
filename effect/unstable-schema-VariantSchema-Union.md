@@ -17,6 +17,6 @@ export interface Union<Members extends ReadonlyArray<Struct<any>>> extends
 {}
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/VariantSchema.ts#L309)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/VariantSchema.ts#L299)
 
 Since v4.0.0

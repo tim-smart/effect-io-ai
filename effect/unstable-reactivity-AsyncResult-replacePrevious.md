@@ -12,6 +12,6 @@ found in another result.
 declare const replacePrevious: <R extends AsyncResult<any, any>, XE, A>(self: R, previous: Option.Option<AsyncResult<A, XE>>) => With<R, A, AsyncResult.Failure<R>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/AsyncResult.ts#L399)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/AsyncResult.ts#L400)
 
 Since v4.0.0

@@ -16,6 +16,6 @@ export interface Literal {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Statement.ts#L150)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Statement.ts#L151)
 
 Since v4.0.0

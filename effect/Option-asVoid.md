@@ -33,6 +33,6 @@ console.log(Option.asVoid(Option.none()))
 declare const asVoid: <_>(self: Option<_>) => Option<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L1224)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L1225)
 
 Since v2.0.0

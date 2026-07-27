@@ -12,6 +12,6 @@ error schemas.
 declare const exitSchema: <A extends Schema.Constraint, E extends Schema.Constraint>(self: Persistable<A, E>) => Schema.Exit<A, E, Schema.Defect>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Persistable.ts#L208)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Persistable.ts#L209)
 
 Since v4.0.0

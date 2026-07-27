@@ -12,8 +12,8 @@ Use when passing `disableChecks: true` to skip validation when you trust the dat
 
 **See**
 
-- `Bottom.makeEffect`
-- `Bottom.make`
+- `BottomWithoutNew.makeEffect`
+- `BottomWithoutNew.make`
 
 **Signature**
 
@@ -36,6 +36,6 @@ export interface MakeOptions {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L117)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L119)
 
 Since v3.13.4

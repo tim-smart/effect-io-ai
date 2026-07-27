@@ -12,6 +12,6 @@ Provides a client `Protocol` backed by the current `Socket` and
 declare const layerProtocolSocket: (options?: { readonly retryTransientErrors?: boolean | undefined; }) => Layer.Layer<Protocol, never, Socket.Socket | RpcSerialization.RpcSerialization>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/RpcClient.ts#L1175)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/RpcClient.ts#L1176)
 
 Since v4.0.0

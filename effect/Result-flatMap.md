@@ -43,6 +43,6 @@ console.log(result)
 declare const flatMap: { <A, A2, E2>(f: (a: A) => Result<A2, E2>): <E>(self: Result<A, E>) => Result<A2, E | E2>; <A, E, A2, E2>(self: Result<A, E>, f: (a: A) => Result<A2, E2>): Result<A2, E | E2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Result.ts#L1337)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Result.ts#L1338)
 
 Since v2.0.0

@@ -17,6 +17,6 @@ export interface Proto<A, E> extends Pipeable {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/AsyncResult.ts#L75)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/AsyncResult.ts#L76)
 
 Since v4.0.0

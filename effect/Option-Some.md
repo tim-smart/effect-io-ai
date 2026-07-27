@@ -39,6 +39,6 @@ export interface Some<out A> extends Pipeable, Inspectable {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L127)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L128)
 
 Since v2.0.0

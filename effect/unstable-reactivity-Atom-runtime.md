@@ -11,6 +11,6 @@ Default `RuntimeFactory` created with `defaultMemoMap`.
 declare const runtime: RuntimeFactory
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Atom.ts#L793)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Atom.ts#L795)
 
 Since v4.0.0

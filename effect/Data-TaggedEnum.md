@@ -55,6 +55,6 @@ type TaggedEnum<A> = keyof A extends infer Tag ? Tag extends keyof A ? Types.Sim
   : never
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Data.ts#L149)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Data.ts#L150)
 
 Since v2.0.0

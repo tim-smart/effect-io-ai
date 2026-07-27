@@ -3,9 +3,12 @@ Module: `Schema`<br />
 
 ## Schema.toRepresentation
 
-Derives an intermediate `SchemaRepresentation.Document` from a schema. This
-document is used internally by `toJsonSchemaDocument` and related
-functions to produce JSON Schema output.
+Derives an intermediate `SchemaRepresentation.Document` from the encoded
+side of a schema.
+
+**Details**
+
+Use `toType` before this function to represent the type side instead.
 
 **Signature**
 
@@ -13,6 +16,6 @@ functions to produce JSON Schema output.
 declare const toRepresentation: (schema: Constraint) => SchemaRepresentation.Document
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L13343)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L14817)
 
 Since v4.0.0

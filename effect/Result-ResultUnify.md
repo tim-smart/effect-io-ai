@@ -18,6 +18,6 @@ export interface ResultUnify<T extends { [Unify.typeSymbol]?: any }> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Result.ts#L189)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Result.ts#L190)
 
 Since v4.0.0

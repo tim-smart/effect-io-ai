@@ -63,6 +63,6 @@ Effect.runSync(
 declare const url: (name?: string) => Config<URL>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L1328)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L1329)
 
 Since v3.11.0

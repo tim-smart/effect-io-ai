@@ -24,6 +24,6 @@ Shortcut for `Config.schema(Schema.Int, name)`.
 declare const int: (name?: string) => Config<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L989)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L990)
 
 Since v4.0.0
