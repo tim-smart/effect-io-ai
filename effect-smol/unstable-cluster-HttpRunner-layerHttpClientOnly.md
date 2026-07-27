@@ -18,7 +18,7 @@ HTTP routes.
 **Signature**
 
 ```ts
-declare const layerHttpClientOnly: Layer.Layer<Sharding.Sharding | Runners.Runners, never, HttpClient.HttpClient | RpcSerialization.RpcSerialization | MessageStorage | RunnerStorage | ShardingConfig.ShardingConfig>
+declare const layerHttpClientOnly: Layer.Layer<Sharding.Sharding | Runners.Runners, never, RpcSerialization.RpcSerialization | HttpClient.HttpClient | MessageStorage | RunnerStorage | ShardingConfig.ShardingConfig>
 ```
 
 [Source](https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpRunner.ts#L282)
