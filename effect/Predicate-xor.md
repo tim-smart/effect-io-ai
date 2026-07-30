@@ -3,32 +3,25 @@ Module: `Predicate`<br />
 
 ## Predicate.xor
 
-Creates a predicate that returns `true` if exactly one predicate is `true`.
+Combines two predicates with a logical "XOR" (exclusive OR). The resulting predicate
+returns `true` if one of the predicates returns `true`, but not both.
 
-**When to use**
-
-Use when you want to combine two `Predicate`s with exclusive-or semantics.
-
-**Details**
-
-Returns `true` when results differ.
-
-**Example** (Checking exclusive-or conditions)
+**Example**
 
 ```ts
+import * as assert from "node:assert"
 import { Predicate } from "effect"
 
-const isEven = (n: number) => n % 2 === 0
 const isPositive = (n: number) => n > 0
-const either = Predicate.xor(isEven, isPositive)
+const isEven = (n: number) => n % 2 === 0
 
-console.log(either(-2))
+const isPositiveXorEven = Predicate.xor(isPositive, isEven)
+
+assert.strictEqual(isPositiveXorEven(4), false)  // both true -> false
+assert.strictEqual(isPositiveXorEven(3), true)   // one true -> true
+assert.strictEqual(isPositiveXorEven(-2), true)  // one true -> true
+assert.strictEqual(isPositiveXorEven(-1), false) // both false -> false
 ```
-
-**See**
-
-- `or`
-- `and`
 
 **Signature**
 
@@ -36,6 +29,6 @@ console.log(either(-2))
 declare const xor: { <A>(that: Predicate<A>): (self: Predicate<A>) => Predicate<A>; <A>(self: Predicate<A>, that: Predicate<A>): Predicate<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L1656)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L1207)
 
 Since v2.0.0

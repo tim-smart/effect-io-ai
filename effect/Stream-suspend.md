@@ -3,25 +3,7 @@ Module: `Stream`<br />
 
 ## Stream.suspend
 
-Creates a lazily constructed stream.
-
-**Details**
-
-The stream factory is evaluated each time the stream is run.
-
-**Example** (Creating a lazily constructed stream)
-
-```ts
-import { Console, Effect, Stream } from "effect"
-
-const program = Effect.gen(function*() {
-  const values = yield* Stream.suspend(() => Stream.make(1, 2, 3)).pipe(Stream.runCollect)
-  yield* Console.log(values)
-})
-
-Effect.runPromise(program)
-// Output: [ 1, 2, 3 ]
-```
+Returns a lazily constructed stream.
 
 **Signature**
 
@@ -29,6 +11,6 @@ Effect.runPromise(program)
 declare const suspend: <A, E, R>(stream: LazyArg<Stream<A, E, R>>) => Stream<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L902)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L4786)
 
 Since v2.0.0

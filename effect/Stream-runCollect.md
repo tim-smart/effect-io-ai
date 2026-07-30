@@ -3,30 +3,14 @@ Module: `Stream`<br />
 
 ## Stream.runCollect
 
-Runs the stream and collects all elements into an array.
-
-**Example** (Collecting stream values)
-
-```ts
-import { Console, Effect, Stream } from "effect"
-
-const stream = Stream.make(1, 2, 3, 4, 5)
-
-const program = Effect.gen(function*() {
-  const collected = yield* Stream.runCollect(stream)
-  yield* Console.log(collected)
-})
-
-Effect.runPromise(program)
-// [1, 2, 3, 4, 5]
-```
+Runs the stream and collects all of its elements to a chunk.
 
 **Signature**
 
 ```ts
-declare const runCollect: <A, E, R>(self: Stream<A, E, R>) => Effect.Effect<Array<A>, E, R>
+declare const runCollect: <A, E, R>(self: Stream<A, E, R>) => Effect.Effect<Chunk.Chunk<A>, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L10621)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L4129)
 
 Since v2.0.0

@@ -3,23 +3,7 @@ Module: `Graph`<br />
 
 ## Graph.BellmanFordConfig
 
-Configuration for finding a shortest path with the Bellman-Ford algorithm.
-
-**When to use**
-
-Use when configuring `bellmanFord` to find a shortest path where edge
-weights may be negative.
-
-**Details**
-
-Specifies the source and target node indices, plus a cost function that maps
-each edge's data to a numeric weight.
-
-**See**
-
-- `bellmanFord` for the algorithm that consumes this configuration
-- `DijkstraConfig` for non-negative edge costs
-- `AstarConfig` for heuristic shortest-path search
+Configuration for Bellman-Ford algorithm.
 
 **Signature**
 
@@ -31,6 +15,6 @@ export interface BellmanFordConfig<E> {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L4779)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L2399)
 
 Since v3.18.0

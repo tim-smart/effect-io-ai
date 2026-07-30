@@ -3,18 +3,9 @@ Module: `Graph`<br />
 
 ## ~~Graph.neighborsDirected~~
 
-Gets directed neighbors of a node in a specific direction.
+Get directed neighbors of a node in a specific direction.
 
-**When to use**
-
-Use when maintaining existing code that already passes an explicit traversal
-direction. New code should prefer `successors` or `predecessors`.
-
-**Gotchas**
-
-Throws a `GraphError` when used with an undirected graph.
-
-**Example** (Traversing directed neighbors)
+**Example**
 
 ```ts
 import { Graph } from "effect"
@@ -35,17 +26,12 @@ const outgoing = Graph.neighborsDirected(graph, nodeA, "outgoing")
 const incoming = Graph.neighborsDirected(graph, nodeB, "incoming")
 ```
 
-**See**
-
-- `successors` for outgoing neighbors in a directed graph
-- `predecessors` for incoming neighbors in a directed graph
-
 **Signature**
 
 ```ts
-declare const neighborsDirected: { (nodeIndex: NodeIndex, direction: Direction): <N, E>(graph: Graph<N, E, "directed"> | MutableGraph<N, E, "directed">) => Array<NodeIndex>; <N, E>(graph: Graph<N, E, "directed"> | MutableGraph<N, E, "directed">, nodeIndex: NodeIndex, direction: Direction): Array<NodeIndex>; }
+declare const neighborsDirected: <N, E>(graph: Graph<N, E, "directed"> | MutableGraph<N, E, "directed">, nodeIndex: NodeIndex, direction: Direction) => Array<NodeIndex>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L2854)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L1607)
 
 Since v3.18.0

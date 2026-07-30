@@ -3,14 +3,14 @@ Module: `Brand`<br />
 
 ## Brand.Brand.Unbranded
 
-A utility type to extract the unbranded value type from a brand.
+A utility type to extract the value type from a brand.
 
 **Signature**
 
 ```ts
-type Unbranded<B> = B extends infer U & Brands<B> ? U : B
+type Unbranded<P> = P extends infer Q & Brands<P> ? Q : P
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Brand.ts#L167)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Brand.ts#L127)
 
 Since v2.0.0

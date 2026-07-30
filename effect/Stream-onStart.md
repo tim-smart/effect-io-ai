@@ -3,34 +3,33 @@ Module: `Stream`<br />
 
 ## Stream.onStart
 
-Runs the provided effect before this stream starts.
+Adds an effect to be executed at the start of the stream.
 
-**Example** (Running an effect on start)
+**Example**
 
 ```ts
 import { Console, Effect, Stream } from "effect"
 
-const program = Effect.gen(function*() {
-  const stream = Stream.fromArray([1, 2, 3]).pipe(
-    Stream.onStart(Console.log("Stream started"))
-  )
+const stream = Stream.make(1, 2, 3).pipe(
+  Stream.onStart(Console.log("Stream started")),
+  Stream.map((n) => n * 2),
+  Stream.tap((n) => Console.log(`after mapping: ${n}`))
+)
 
-  const values = yield* Stream.runCollect(stream)
-  yield* Console.log(values)
-})
-
-Effect.runPromise(program)
-// Output:
+Effect.runPromise(Stream.runCollect(stream)).then(console.log)
 // Stream started
-// [1, 2, 3]
+// after mapping: 2
+// after mapping: 4
+// after mapping: 6
+// { _id: 'Chunk', values: [ 2, 4, 6 ] }
 ```
 
 **Signature**
 
 ```ts
-declare const onStart: { <X, EX, RX>(onStart: Effect.Effect<X, EX, RX>): <A, E, R>(self: Stream<A, E, R>) => Stream<A, E | EX, R | RX>; <A, E, R, X, EX, RX>(self: Stream<A, E, R>, onStart: Effect.Effect<X, EX, RX>): Stream<A, E | EX, R | RX>; }
+declare const onStart: { <_, E2, R2>(effect: Effect.Effect<_, E2, R2>): <A, E, R>(self: Stream<A, E, R>) => Stream<A, E2 | E, R2 | R>; <A, E, R, _, E2, R2>(self: Stream<A, E, R>, effect: Effect.Effect<_, E2, R2>): Stream<A, E | E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L9882)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L3240)
 
 Since v3.6.0

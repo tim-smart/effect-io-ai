@@ -3,33 +3,20 @@ Module: `Predicate`<br />
 
 ## Predicate.isBoolean
 
-Checks whether a value is a `boolean`.
+A refinement that checks if a value is a `boolean`.
 
-**When to use**
-
-Use when you need a `Predicate` guard to narrow an `unknown` value to a
-boolean.
-
-**Details**
-
-Uses `typeof input === "boolean"`.
-
-**Example** (Guarding booleans)
+**Example**
 
 ```ts
-import { Predicate } from "effect"
+import * as assert from "node:assert"
+import { isBoolean } from "effect/Predicate"
 
-const data: unknown = true
+assert.strictEqual(isBoolean(true), true)
+assert.strictEqual(isBoolean(false), true)
 
-if (Predicate.isBoolean(data)) {
-  console.log(data ? "yes" : "no")
-}
+assert.strictEqual(isBoolean("true"), false)
+assert.strictEqual(isBoolean(0), false)
 ```
-
-**See**
-
-- `isString`
-- `isNumber`
 
 **Signature**
 
@@ -37,6 +24,6 @@ if (Predicate.isBoolean(data)) {
 declare const isBoolean: (input: unknown) => input is boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L605)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L375)
 
 Since v2.0.0

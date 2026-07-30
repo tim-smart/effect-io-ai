@@ -3,29 +3,44 @@ Module: `Effect`<br />
 
 ## Effect.filterMap
 
-Filters and maps elements of an iterable with a `Filter`.
+Filters and maps elements sequentially in one operation.
 
-**When to use**
+This function processes each element one by one. It applies a function that
+returns an `Option` to each element. If the function returns `Some`, the
+element is kept; if it returns `None`, the element is removed. The operation
+is done sequentially for each element.
 
-Use when you need to filter an iterable with a `Filter` inside an `Effect`,
-collecting each filter success value.
+**Example**
 
-**Details**
+```ts
+import { Console, Effect, Option } from "effect"
 
-`Result.succeed` values are collected in the returned array, and
-`Result.fail` values are skipped.
+const task = (n: number) =>
+  Effect.succeed(n).pipe(
+    Effect.delay(1000 - (n * 100)),
+    Effect.tap(Console.log(`task${n} done`))
+  )
 
-**See**
+const program = Effect.filterMap(
+  [task(1), task(2), task(3), task(4)],
+  (n) => n % 2 === 0 ? Option.some(n) : Option.none()
+)
 
-- `filter` for keeping original elements with a boolean predicate, refinement, or effectful predicate
-- `filterMapEffect` for using an effectful `Filter`
+Effect.runPromise(program).then(console.log)
+// Output:
+// task1 done
+// task2 done
+// task3 done
+// task4 done
+// [ 2, 4 ]
+```
 
 **Signature**
 
 ```ts
-declare const filterMap: { <A, B, X>(filter: Filter.Filter<NoInfer<A>, B, X>): (elements: Iterable<A>) => Effect<Array<B>>; <A, B, X>(elements: Iterable<A>, filter: Filter.Filter<NoInfer<A>, B, X>): Effect<Array<B>>; }
+declare const filterMap: { <Eff extends Effect<any, any, any>, B>(pf: (a: Effect.Success<Eff>) => Option.Option<B>): (elements: Iterable<Eff>) => Effect<Array<B>, Effect.Error<Eff>, Effect.Context<Eff>>; <Eff extends Effect<any, any, any>, B>(elements: Iterable<Eff>, pf: (a: Effect.Success<Eff>) => Option.Option<B>): Effect<Array<B>, Effect.Error<Eff>, Effect.Context<Eff>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L5026)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L1475)
 
 Since v2.0.0

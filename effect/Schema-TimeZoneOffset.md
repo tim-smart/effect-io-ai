@@ -3,16 +3,14 @@ Module: `Schema`<br />
 
 ## Schema.TimeZoneOffset
 
-Type-level representation of `TimeZoneOffset`.
+Defines a schema that converts a `number` to a `TimeZone.Offset` instance using the `DateTime.zoneMakeOffset` constructor.
 
 **Signature**
 
 ```ts
-export interface TimeZoneOffset extends declare<DateTime.TimeZone.Offset> {
-  readonly "Rebuild": TimeZoneOffset
-}
+declare class TimeZoneOffset
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L13592)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6975)
 
 Since v3.10.0

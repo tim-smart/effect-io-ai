@@ -5,25 +5,12 @@ Module: `HashMap`<br />
 
 Removes all entries in the `HashMap` which have the specified keys.
 
-**Example** (Removing multiple keys)
-
-```ts
-import { HashMap } from "effect"
-
-const map1 = HashMap.make(["a", 1], ["b", 2], ["c", 3], ["d", 4])
-const map2 = HashMap.removeMany(map1, ["b", "d"])
-
-console.log(HashMap.size(map2)) // 2
-console.log(HashMap.has(map2, "a")) // true
-console.log(HashMap.has(map2, "c")) // true
-```
-
 **Signature**
 
 ```ts
 declare const removeMany: { <K>(keys: Iterable<K>): <V>(self: HashMap<K, V>) => HashMap<K, V>; <K, V>(self: HashMap<K, V>, keys: Iterable<K>): HashMap<K, V>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashMap.ts#L961)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashMap.ts#L398)
 
 Since v2.0.0

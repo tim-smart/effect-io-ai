@@ -3,49 +3,15 @@ Module: `Deferred`<br />
 
 ## Deferred.completeWith
 
-Attempts to complete the `Deferred` with the specified effect directly.
-
-**When to use**
-
-Use to store an already environment-free effect as the completion without
-running it during completion.
-
-**Details**
-
-The returned effect succeeds with `true` when this call completed the
-`Deferred`, or `false` if it was already completed.
-
-**Gotchas**
-
-The supplied effect is not memoized by `completeWith`; each awaiter may run
-the stored effect independently.
-
-**Example** (Completing a Deferred with an effect)
-
-```ts
-import { Deferred, Effect } from "effect"
-
-const program = Effect.gen(function*() {
-  const deferred = yield* Deferred.make<number>()
-  const completed = yield* Deferred.completeWith(deferred, Effect.succeed(42))
-  console.log(completed) // true
-
-  const value = yield* Deferred.await(deferred)
-  console.log(value) // 42
-})
-```
-
-**See**
-
-- `complete` for running an effect once and sharing its result
-- `done` for completing from an already computed `Exit`
+Completes the deferred with the result of the specified effect. If the
+deferred has already been completed, the method will produce false.
 
 **Signature**
 
 ```ts
-declare const completeWith: { <A, E>(effect: Effect<A, E>): (self: Deferred<A, E>) => Effect<boolean>; <A, E>(self: Deferred<A, E>, effect: Effect<A, E>): Effect<boolean>; }
+declare const completeWith: { <A, E>(effect: Effect.Effect<A, E>): (self: Deferred<A, E>) => Effect.Effect<boolean>; <A, E>(self: Deferred<A, E>, effect: Effect.Effect<A, E>): Effect.Effect<boolean>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Deferred.ts#L315)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Deferred.ts#L133)
 
 Since v2.0.0

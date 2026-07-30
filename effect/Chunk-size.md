@@ -3,16 +3,7 @@ Module: `Chunk`<br />
 
 ## Chunk.size
 
-Retrieves the size of the chunk.
-
-**Example** (Getting chunk size)
-
-```ts
-import { Chunk } from "effect"
-
-const chunk = Chunk.make(1, 2, 3)
-console.log(Chunk.size(chunk)) // 3
-```
+Retireves the size of the chunk
 
 **Signature**
 
@@ -20,6 +11,6 @@ console.log(Chunk.size(chunk)) // 3
 declare const size: <A>(self: Chunk<A>) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Chunk.ts#L1853)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Chunk.ts#L1020)
 
 Since v2.0.0

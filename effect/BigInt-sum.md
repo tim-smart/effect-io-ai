@@ -5,23 +5,14 @@ Module: `BigInt`<br />
 
 Provides an addition operation on `bigint`s.
 
-**When to use**
-
-Use when you need a binary addition function for piping or higher-order APIs
-instead of the infix addition operator.
-
-**Example** (Adding bigints)
+**Example**
 
 ```ts
-import { BigInt } from "effect"
 import * as assert from "node:assert"
+import { sum } from "effect/BigInt"
 
-assert.deepStrictEqual(BigInt.sum(2n, 3n), 5n)
+assert.deepStrictEqual(sum(2n, 3n), 5n)
 ```
-
-**See**
-
-- `sumAll` for summing an iterable of `bigint` values
 
 **Signature**
 
@@ -29,6 +20,6 @@ assert.deepStrictEqual(BigInt.sum(2n, 3n), 5n)
 declare const sum: { (that: bigint): (self: bigint) => bigint; (self: bigint, that: bigint): bigint; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L102)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L54)
 
 Since v2.0.0

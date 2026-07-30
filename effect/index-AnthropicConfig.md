@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.AnthropicConfig
 
-Re-exports all named exports from the "./AnthropicConfig.ts" module as `AnthropicConfig`.
+Re-exports all named exports from the "./AnthropicConfig.js" module as `AnthropicConfig`.
 
 **Signature**
 
 ```ts
-export * as AnthropicConfig from "./AnthropicConfig.ts"
+export * as AnthropicConfig from "./AnthropicConfig.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/index.ts#L15)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/index.ts#L9)
 
-Since v4.0.0
+Since v1.0.0

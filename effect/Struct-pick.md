@@ -3,37 +3,24 @@ Module: `Struct`<br />
 
 ## Struct.pick
 
-Creates a new struct containing only the specified keys.
+Create a new object by picking properties of an existing object.
 
-**When to use**
-
-Use to narrow a struct down to a subset of its properties.
-
-**Gotchas**
-
-Keys not present in the struct are silently ignored.
-
-**Example** (Selecting specific properties)
+**Example**
 
 ```ts
+import * as assert from "node:assert"
 import { pipe, Struct } from "effect"
 
-const user = { name: "Alice", age: 30, admin: true }
-const nameAndAge = pipe(user, Struct.pick(["name", "age"]))
-console.log(nameAndAge) // { name: "Alice", age: 30 }
+assert.deepStrictEqual(pipe({ a: "a", b: 1, c: true }, Struct.pick("a", "b")), { a: "a", b: 1 })
+assert.deepStrictEqual(Struct.pick({ a: "a", b: 1, c: true }, "a", "b"), { a: "a", b: 1 })
 ```
-
-**See**
-
-- `omit` – the inverse (exclude keys instead)
-- `get` – extract a single value
 
 **Signature**
 
 ```ts
-declare const pick: { <S extends object, const Keys extends ReadonlyArray<keyof S>>(keys: Keys): (self: S) => Simplify<Pick<S, Keys[number]>>; <S extends object, const Keys extends ReadonlyArray<keyof S>>(self: S, keys: Keys): Simplify<Pick<S, Keys[number]>>; }
+declare const pick: { <Keys extends Array<PropertyKey>>(...keys: Keys): <S extends { [K in Keys[number]]?: any; }>(s: S) => MatchRecord<S, { [K in Keys[number]]?: S[K]; }, Simplify<Pick<S, Keys[number]>>>; <S extends object, Keys extends Array<keyof S>>(s: S, ...keys: Keys): MatchRecord<S, { [K in Keys[number]]?: S[K]; }, Simplify<Pick<S, Keys[number]>>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Struct.ts#L198)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Struct.ts#L27)
 
 Since v2.0.0

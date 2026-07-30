@@ -3,34 +3,20 @@ Module: `Array`<br />
 
 ## Array.match
 
-Pattern-matches on an array, handling empty and non-empty cases separately.
+Matches the elements of an array, applying functions to cases of empty and non-empty arrays.
 
-**When to use**
-
-Use when you need to branch on whether an array is empty.
-
-**Details**
-
-`onNonEmpty` receives a `NonEmptyReadonlyArray`. Supports both data-first and
-data-last usage.
-
-**Example** (Branching on emptiness)
+**Example**
 
 ```ts
 import { Array } from "effect"
 
-const describe = Array.match({
+const match = Array.match({
   onEmpty: () => "empty",
   onNonEmpty: ([head, ...tail]) => `head: ${head}, tail: ${tail.length}`
 })
-console.log(describe([])) // "empty"
-console.log(describe([1, 2, 3])) // "head: 1, tail: 2"
+console.log(match([])) // "empty"
+console.log(match([1, 2, 3])) // "head: 1, tail: 2"
 ```
-
-**See**
-
-- `matchLeft` — destructures into head + tail
-- `matchRight` — destructures into init + last
 
 **Signature**
 
@@ -38,6 +24,6 @@ console.log(describe([1, 2, 3])) // "head: 1, tail: 2"
 declare const match: { <B, A, C = B>(options: { readonly onEmpty: LazyArg<B>; readonly onNonEmpty: (self: NonEmptyReadonlyArray<A>) => C; }): (self: ReadonlyArray<A>) => B | C; <A, B, C = B>(self: ReadonlyArray<A>, options: { readonly onEmpty: LazyArg<B>; readonly onNonEmpty: (self: NonEmptyReadonlyArray<A>) => C; }): B | C; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L424)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L239)
 
 Since v2.0.0

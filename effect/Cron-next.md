@@ -3,47 +3,32 @@ Module: `Cron`<br />
 
 ## Cron.next
 
-Returns the next scheduled date/time for the given Cron instance.
+Returns the next run `Date` for the given `Cron` instance.
 
-**When to use**
+Uses the current time as a starting point if no value is provided for `startFrom`.
 
-Use to find the next occurrence of a cron schedule after a specific date/time
-or after the current time.
+**Throws**
 
-**Details**
+`IllegalArgumentException` if the given `DateTime.Input` is invalid.
+`Error` if the next run date cannot be found within 10,000 iterations.
 
-Searches for the next date and time when the cron schedule should trigger,
-starting after the specified date/time or after the current time when no
-date is provided.
-
-**Example** (Finding the next occurrence)
+**Example**
 
 ```ts
-import { Cron, Result } from "effect"
+import * as assert from "node:assert"
+import { Cron, Either } from "effect"
 
-const cron = Result.getOrThrow(Cron.parse("0 0 4 8-14 * *", "UTC"))
-
-// Get next run after a specific date
-const after = new Date("2021-01-01T00:00:00Z")
-const nextRun = Cron.next(cron, after)
-console.log(nextRun.toISOString()) // 2021-01-08T04:00:00.000Z
-
-// Get next run from current time
-const nextFromNow = Cron.next(cron)
-console.log(nextFromNow) // Next occurrence from now
+const after = new Date("2021-01-01 00:00:00")
+const cron = Either.getOrThrow(Cron.parse("0 4 8-14 * *"))
+assert.deepStrictEqual(Cron.next(cron, after), new Date("2021-01-08 04:00:00"))
 ```
-
-**See**
-
-- `prev` for finding the previous scheduled occurrence
-- `sequence` for iterating future scheduled occurrences
 
 **Signature**
 
 ```ts
-declare const next: (cron: Cron, now?: DateTime.DateTime.Input) => Date
+declare const next: (cron: Cron, startFrom?: DateTime.DateTime.Input) => Date
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cron.ts#L741)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cron.ts#L468)
 
 Since v2.0.0

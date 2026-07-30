@@ -3,14 +3,9 @@ Module: `Graph`<br />
 
 ## Graph.mapNodes
 
-Transforms every node's data in a mutable graph in place using the provided
-mapping function.
+Creates a new graph with transformed node data using the provided mapping function.
 
-**Details**
-
-Node indices and edges are preserved; only the stored node data is replaced.
-
-**Example** (Mapping node data)
+**Example**
 
 ```ts
 import { Graph } from "effect"
@@ -32,6 +27,6 @@ console.log(nodeData) // Option.some("NODE A")
 declare const mapNodes: <N, E, T extends Kind = "directed">(mutable: MutableGraph<N, E, T>, f: (data: N) => N) => void
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L1888)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L798)
 
 Since v3.18.0

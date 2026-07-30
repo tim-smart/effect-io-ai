@@ -3,56 +3,67 @@ Module: `Effect`<br />
 
 ## Effect.option
 
-Converts success to `Option.some` and failure to `Option.none`.
-
-**When to use**
-
-Use when you only care whether an effect succeeds and want recoverable
-failures represented as `Option.none`.
+Encapsulates the result of an effect in an `Option`.
 
 **Details**
 
-Success values become `Option.some`, recoverable failures become
-`Option.none`, and defects still fail the effect.
+This function wraps the outcome of an effect in an `Option` type. If the
+original effect succeeds, the success value is wrapped in `Option.some`. If
+the effect fails, the failure is converted to `Option.none`.
 
-**Gotchas**
+This is particularly useful for scenarios where you want to represent the
+absence of a value explicitly, without causing the resulting effect to fail.
+The resulting effect has an error type of `never`, meaning it cannot fail
+directly. However, unrecoverable errors, also referred to as defects, are
+not captured and will still result in failure.
 
-`option` only captures typed, recoverable failures as `Option.none`.
-Defects and interruptions are not captured inside the `Option` and still
-fail the effect.
-
-`option` also discards typed failure values. Use `result` if the failure
-value matters.
-
-**Example** (Capturing success or failure as Option)
+**Example** (Using Effect.option to Handle Errors)
 
 ```ts
-import { Console, Effect, Option } from "effect"
+import { Effect } from "effect"
 
-const program = Effect.gen(function*() {
-  const someValue = yield* Effect.option(Effect.succeed(1))
-  const noneValue = yield* Effect.option(Effect.fail("missing"))
+const maybe1 = Effect.option(Effect.succeed(1))
 
-  yield* Console.log(Option.isSome(someValue))
-  yield* Console.log(Option.isNone(noneValue))
-})
+Effect.runPromiseExit(maybe1).then(console.log)
+// Output:
+// {
+//   _id: 'Exit',
+//   _tag: 'Success',
+//   value: { _id: 'Option', _tag: 'Some', value: 1 }
+// }
 
-Effect.runPromise(program)
-// true
-// true
+const maybe2 = Effect.option(Effect.fail("Uh oh!"))
+
+Effect.runPromiseExit(maybe2).then(console.log)
+// Output:
+// {
+//   _id: 'Exit',
+//   _tag: 'Success',
+//   value: { _id: 'Option', _tag: 'None' }
+// }
+
+const maybe3 = Effect.option(Effect.die("Boom!"))
+
+Effect.runPromiseExit(maybe3).then(console.log)
+// Output:
+// {
+//   _id: 'Exit',
+//   _tag: 'Failure',
+//   cause: { _id: 'Cause', _tag: 'Die', defect: 'Boom!' }
+// }
 ```
 
 **See**
 
-- `result` for a version that uses `Result` instead.
+- `either` for a version that uses `Either` instead.
 - `exit` for a version that encapsulates both recoverable errors and defects in an `Exit`.
 
 **Signature**
 
 ```ts
-declare const option: <A, E, R>(self: Effect<A, E, R>) => Effect<Option<A>, never, R>
+declare const option: <A, E, R>(self: Effect<A, E, R>) => Effect<Option.Option<A>, never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L2306)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L8109)
 
 Since v2.0.0

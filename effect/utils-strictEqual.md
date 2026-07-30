@@ -3,7 +3,7 @@ Module: `utils`<br />
 
 ## utils.strictEqual
 
-Asserts that `actual` is strictly equal to `expected` using Node's `assert.strictEqual`.
+Asserts that `actual` is equal to `expected` using the `Equal.equals` trait.
 
 **Signature**
 
@@ -11,6 +11,6 @@ Asserts that `actual` is strictly equal to `expected` using Node's `assert.stric
 declare const strictEqual: <A>(actual: A, expected: A, message?: string, ..._: Array<never>) => void
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L61)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L49)
 
-Since v4.0.0
+Since v0.21.0

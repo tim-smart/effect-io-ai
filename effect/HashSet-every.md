@@ -3,28 +3,67 @@ Module: `HashSet`<br />
 
 ## HashSet.every
 
-Checks whether all values in the HashSet satisfy the predicate.
+Check if a predicate holds true for every `HashSet` element.
 
-**Example** (Testing whether every value matches)
+Time complexity is **`O(n)`** as it needs to traverse the whole HashSet
+collection
+
+**Example**
 
 ```ts
-import { HashSet } from "effect"
+// Syntax with Refinement
+import { HashSet, pipe, Predicate } from "effect"
 
-const numbers = HashSet.make(2, 4, 6, 8)
+const numberOrString = HashSet.make(1, "1", "one", "uno")
 
-console.log(HashSet.every(numbers, (n) => n % 2 === 0)) // true
-console.log(HashSet.every(numbers, (n) => n > 5)) // false
+// with `data-last`, a.k.a. `pipeable` API and `Refinement`
+pipe(
+  numberOrString, // HashSet.HashSet<number | string>
+  HashSet.every(Predicate.isString)
+) // HashSet.HashSet<string>
 
-const empty = HashSet.empty<number>()
-console.log(HashSet.every(empty, (n) => n > 0)) // true (vacuously true)
+// or piped with the pipe function and  `Refinement`
+numberOrString // HashSet.HashSet<number | string>
+  .pipe(HashSet.every(Predicate.isString)) // HashSet.HashSet<string>
+
+// or with `data-first` API and `Refinement`
+HashSet.every(
+  numberOrString, // HashSet.HashSet<number | string>
+  Predicate.isString
+) // HashSet.HashSet<string>
 ```
+
+**Example**
+
+```ts
+// Syntax with Predicate
+import { HashSet, pipe } from "effect"
+
+const set = HashSet.make(1, 2, 3)
+
+// with `data-last`, a.k.a. `pipeable` API
+pipe(
+  set,
+  HashSet.every((n) => n >= 0)
+) // true
+
+// or piped with the pipe function
+set.pipe(HashSet.every((n) => n >= 0)) // true
+
+// or with `data-first` API
+HashSet.every(set, (n) => n >= 0) // true
+```
+
+**See**
+
+- Other `HashSet` elements are `module:HashSet.has` `module:HashSet.some` `module:HashSet.isSubset`
 
 **Signature**
 
 ```ts
-declare const every: { <V>(predicate: Predicate<V>): (self: HashSet<V>) => boolean; <V>(self: HashSet<V>, predicate: Predicate<V>): boolean; }
+declare const every: { <A, B extends A>(refinement: Refinement<NoInfer<A>, B>): (self: HashSet<A>) => self is HashSet<B>; <A>(predicate: Predicate<A>): (self: HashSet<A>) => boolean; <A, B extends A>(self: HashSet<A>, refinement: Refinement<A, B>): self is HashSet<B>; <A>(self: HashSet<A>, predicate: Predicate<A>): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L570)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L770)
 
 Since v2.0.0

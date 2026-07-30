@@ -3,37 +3,27 @@ Module: `MutableHashSet`<br />
 
 ## MutableHashSet.empty
 
-Creates an empty MutableHashSet.
+Creates an empty mutable hash set.
 
-**When to use**
+This function initializes and returns an empty `MutableHashSet` instance,
+which allows for efficient storage and manipulation of unique elements.
 
-Use to create a fresh mutable set before adding values over time.
+Time complexity: **`O(1)`**
 
-**Details**
-
-Each call returns a new empty set backed by an empty `MutableHashMap`.
-
-**Example** (Creating an empty set)
+**Example**
 
 ```ts
 import { MutableHashSet } from "effect"
 
-const set = MutableHashSet.empty<string>()
+type T = unknown // replace with your type
 
-// Add some values
-MutableHashSet.add(set, "apple")
-MutableHashSet.add(set, "banana")
-MutableHashSet.add(set, "apple") // Duplicate, no effect
-
-console.log(MutableHashSet.size(set)) // 2
-console.log(Array.from(set)) // ["apple", "banana"]
+// in places where the type can't be inferred, replace with your type
+const set: MutableHashSet.MutableHashSet<T> = MutableHashSet.empty<T>()
 ```
 
 **See**
 
-- `make` for creating a set from explicit values
-- `fromIterable` for creating a set from an iterable of values
-- `clear` for emptying an existing mutable set
+- Other `MutableHashSet` constructors are `module:MutableHashSet.make` `module:MutableHashSet.fromIterable`
 
 **Signature**
 
@@ -41,6 +31,6 @@ console.log(Array.from(set)) // ["apple", "banana"]
 declare const empty: <K = never>() => MutableHashSet<K>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/MutableHashSet.ts#L156)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/MutableHashSet.ts#L179)
 
 Since v2.0.0

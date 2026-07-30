@@ -3,38 +3,27 @@ Module: `Tuple`<br />
 
 ## Tuple.isTupleOfAtLeast
 
-Checks whether an array has at least `N` elements, narrowing the type to a
-tuple with a minimum length.
+Determine if an `Array` is a tuple with at least `N` elements, narrowing down the type to `TupleOfAtLeast`.
 
-**When to use**
+An `Array` is considered to be a `TupleOfAtLeast` if its length is at least `N`.
 
-Use to guard that an array has at least the tuple length expected at
-runtime.
-
-**Details**
-
-This is a re-export of `Predicate.isTupleOfAtLeast`. It narrows the type to
-`TupleOfAtLeast<N, T>` in the truthy branch.
-
-**Gotchas**
-
-This only checks `.length`; it does not validate element types.
-
-**Example** (Checking minimum length)
+**Example**
 
 ```ts
-import { Tuple } from "effect"
+import * as assert from "node:assert"
+import { isTupleOfAtLeast } from "effect/Tuple"
 
-const arr: Array<number> = [1, 2, 3, 4]
-if (Tuple.isTupleOfAtLeast(arr, 3)) {
-  console.log(arr)
+assert.deepStrictEqual(isTupleOfAtLeast([1, 2, 3], 3), true);
+assert.deepStrictEqual(isTupleOfAtLeast([1, 2, 3], 2), true);
+assert.deepStrictEqual(isTupleOfAtLeast([1, 2, 3], 4), false);
+
+const arr: number[] = [1, 2, 3, 4];
+if (isTupleOfAtLeast(arr, 3)) {
+  console.log(arr);
   // ^? [number, number, number, ...number[]]
 }
+
 ```
-
-**See**
-
-- `isTupleOf` – check for an exact length
 
 **Signature**
 
@@ -42,6 +31,6 @@ if (Tuple.isTupleOfAtLeast(arr, 3)) {
 declare const isTupleOfAtLeast: { <N extends number>(n: N): <T>(self: ReadonlyArray<T>) => self is TupleOfAtLeast<N, T>; <T, N extends number>(self: ReadonlyArray<T>, n: N): self is TupleOfAtLeast<N, T>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Tuple.ts#L652)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Tuple.ts#L304)
 
 Since v3.3.0

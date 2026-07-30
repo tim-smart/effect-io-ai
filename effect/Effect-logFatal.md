@@ -3,36 +3,21 @@ Module: `Effect`<br />
 
 ## Effect.logFatal
 
-Logs one or more messages at the FATAL level.
+Logs messages at the FATAL log level.
 
-**Example** (Logging fatal messages)
+**Details**
 
-```ts
-import { Effect } from "effect"
-
-const program = Effect.gen(function*() {
-  try {
-    // Simulate a critical system failure
-    throw new Error("System memory exhausted")
-  } catch (error) {
-    const errorMessage = error instanceof Error ? error.message : String(error)
-    yield* Effect.logFatal("Critical system failure:", errorMessage)
-    yield* Effect.logFatal("System shutting down")
-  }
-})
-
-Effect.runPromise(program)
-// Output:
-// timestamp=2023-... level=FATAL message="Critical system failure: System memory exhausted"
-// timestamp=2023-... level=FATAL message="System shutting down"
-```
+This function logs messages at the FATAL level, suitable for reporting
+critical errors that cause the application to terminate or stop functioning.
+These logs are typically used for unrecoverable errors that require immediate
+attention.
 
 **Signature**
 
 ```ts
-declare const logFatal: (...message: ReadonlyArray<any>) => Effect<void>
+declare const logFatal: (...message: ReadonlyArray<any>) => Effect<void, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13878)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L10995)
 
 Since v2.0.0

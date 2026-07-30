@@ -3,14 +3,14 @@ Module: `Iterable`<br />
 
 ## Iterable.countBy
 
-Computes how many elements of the iterable pass the given predicate.
+Counts all the element of the given iterable that pass the given predicate
 
-**Example** (Counting matching elements)
+**Example**
 
 ```ts
 import { Iterable } from "effect"
 
-const result = Iterable.countBy([1, 2, 3, 4, 5], (n) => n % 2 === 0)
+const result = Iterable.countBy([1, 2, 3, 4, 5], n => n % 2 === 0)
 console.log(result) // 2
 ```
 
@@ -20,6 +20,6 @@ console.log(result) // 2
 declare const countBy: { <A>(predicate: (a: NoInfer<A>, i: number) => boolean): (self: Iterable<A>) => number; <A>(self: Iterable<A>, predicate: (a: A, i: number) => boolean): number; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Iterable.ts#L2495)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Iterable.ts#L1100)
 
 Since v3.16.0

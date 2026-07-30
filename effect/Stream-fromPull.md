@@ -3,38 +3,16 @@ Module: `Stream`<br />
 
 ## Stream.fromPull
 
-Creates a stream from a pull effect, such as one produced by `Stream.toPull`.
+Creates a stream from an effect that pulls elements from another stream.
 
-**Details**
-
-A pull effect yields chunks on demand and completes when the upstream stream ends.
-See `Stream.toPull` for a matching producer.
-
-**Example** (Creating a stream from a pull effect)
-
-```ts
-import { Console, Effect, Stream } from "effect"
-
-const program = Effect.scoped(
-  Effect.gen(function*() {
-    const source = Stream.make(1, 2, 3)
-    const pull = yield* Stream.toPull(source)
-    const stream = Stream.fromPull(Effect.succeed(pull))
-    const values = yield* Stream.runCollect(stream)
-    yield* Console.log(values)
-  })
-)
-
-Effect.runPromise(program)
-// Output: [1, 2, 3]
-```
+See `Stream.toPull` for reference.
 
 **Signature**
 
 ```ts
-declare const fromPull: <A, E, R, EX, RX>(pull: Effect.Effect<Pull.Pull<Arr.NonEmptyReadonlyArray<A>, E, void, R>, EX, RX>) => Stream<A, Pull.ExcludeDone<E> | EX, R | RX>
+declare const fromPull: <R, R2, E, A>(effect: Effect.Effect<Effect.Effect<Chunk.Chunk<A>, Option.Option<E>, R2>, never, Scope.Scope | R>) => Stream<A, E, R2 | Exclude<R, Scope.Scope>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L614)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L2133)
 
 Since v2.0.0

@@ -5,15 +5,11 @@ Module: `RegExp`<br />
 
 Escapes special characters in a regular expression pattern.
 
-**When to use**
-
-Use to turn literal text into a safe regular expression pattern fragment.
-
-**Example** (Escaping a pattern string)
+**Example**
 
 ```ts
-import { RegExp } from "effect"
 import * as assert from "node:assert"
+import { RegExp } from "effect"
 
 assert.deepStrictEqual(RegExp.escape("a*b"), "a\\*b")
 ```
@@ -24,6 +20,6 @@ assert.deepStrictEqual(RegExp.escape("a*b"), "a\\*b")
 declare const escape: (string: string) => string
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/RegExp.ts#L82)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/RegExp.ts#L38)
 
 Since v2.0.0

@@ -5,36 +5,12 @@ Module: `Channel`<br />
 
 Constructs a channel that fails immediately with the specified error.
 
-**Example** (Failing with an error)
-
-```ts
-import { Channel } from "effect"
-
-// Create a channel that fails with a string error
-const failedChannel = Channel.fail("Something went wrong")
-
-// Create a channel that fails with a custom error
-class CustomError extends Error {
-  constructor(message: string) {
-    super(message)
-    this.name = "CustomError"
-  }
-}
-const customErrorChannel = Channel.fail(new CustomError("Custom error"))
-
-// Use in error handling by piping to another channel
-const channelWithFallback = Channel.concatWith(
-  failedChannel,
-  () => Channel.succeed("fallback value")
-)
-```
-
 **Signature**
 
 ```ts
-declare const fail: <E>(error: E) => Channel<never, E, never>
+declare const fail: <E>(error: E) => Channel<never, unknown, E, unknown, never, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Channel.ts#L949)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Channel.ts#L805)
 
 Since v2.0.0

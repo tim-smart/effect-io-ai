@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.LibsqlMigrator
 
-Re-exports all named exports from the "./LibsqlMigrator.ts" module as `LibsqlMigrator`.
+Re-exports all named exports from the "./LibsqlMigrator.js" module as `LibsqlMigrator`.
 
 **Signature**
 
 ```ts
-export * as LibsqlMigrator from "./LibsqlMigrator.ts"
+export * as LibsqlMigrator from "./LibsqlMigrator.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/libsql/src/index.ts#L15)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql-libsql/src/index.ts#L9)
 
-Since v4.0.0
+Since v1.0.0

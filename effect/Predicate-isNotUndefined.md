@@ -3,32 +3,19 @@ Module: `Predicate`<br />
 
 ## Predicate.isNotUndefined
 
-Checks whether a value is not `undefined`.
+A refinement that checks if a value is not `undefined`.
 
-**When to use**
-
-Use when you need a `Predicate` refinement that filters out `undefined`
-while preserving other falsy values.
-
-**Details**
-
-Returns a refinement that excludes `undefined`.
-
-**Example** (Filtering undefined values)
+**Example**
 
 ```ts
-import { Predicate } from "effect"
+import * as assert from "node:assert"
+import { isNotUndefined } from "effect/Predicate"
 
-const values = [1, undefined, 2]
-const defined = values.filter(Predicate.isNotUndefined)
+assert.strictEqual(isNotUndefined(null), true)
+assert.strictEqual(isNotUndefined("value"), true)
 
-console.log(defined)
+assert.strictEqual(isNotUndefined(undefined), false)
 ```
-
-**See**
-
-- `isUndefined`
-- `isNotNullish`
 
 **Signature**
 
@@ -36,6 +23,6 @@ console.log(defined)
 declare const isNotUndefined: <A>(input: A) => input is Exclude<A, undefined>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L799)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L476)
 
 Since v2.0.0

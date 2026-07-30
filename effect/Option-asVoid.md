@@ -3,29 +3,16 @@ Module: `Option`<br />
 
 ## Option.asVoid
 
-Replaces the value inside a `Some` with `void` (`undefined`), leaving `None`
-unchanged.
+Replaces the value inside a `Some` with the constant value `void`, leaving
+`None` unchanged.
 
-**When to use**
+**Details**
 
-Use when you need to discard a present `Option` value while preserving
-whether it was `Some` or `None`.
+This function transforms an `Option` by replacing the value inside a `Some`
+with `void`. If the `Option` is `None`, it remains unchanged.
 
-**Example** (Voiding the value)
-
-```ts
-import { Option } from "effect"
-
-console.log(Option.asVoid(Option.some(42)))
-// Output: { _id: 'Option', _tag: 'Some', value: undefined }
-
-console.log(Option.asVoid(Option.none()))
-// Output: { _id: 'Option', _tag: 'None' }
-```
-
-**See**
-
-- `as` to replace with a specific constant
+This is particularly useful in scenarios where the presence or absence of a
+value is significant, but the actual content of the value is irrelevant.
 
 **Signature**
 
@@ -33,6 +20,6 @@ console.log(Option.asVoid(Option.none()))
 declare const asVoid: <_>(self: Option<_>) => Option<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L1225)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L984)
 
 Since v2.0.0

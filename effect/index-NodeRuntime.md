@@ -1,16 +1,16 @@
-Package: `@effect/platform-node-shared`<br />
+Package: `@effect/platform-node`<br />
 Module: `index`<br />
 
 ## index.NodeRuntime
 
-Re-exports all named exports from the "./NodeRuntime.ts" module as `NodeRuntime`.
+Re-exports all named exports from the "./NodeRuntime.js" module as `NodeRuntime`.
 
 **Signature**
 
 ```ts
-export * as NodeRuntime from "./NodeRuntime.ts"
+export * as NodeRuntime from "./NodeRuntime.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/index.ts#L35)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L64)
 
-Since v4.0.0
+Since v1.0.0

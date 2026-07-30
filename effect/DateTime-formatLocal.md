@@ -3,34 +3,16 @@ Module: `DateTime`<br />
 
 ## DateTime.formatLocal
 
-Formats a `DateTime` with `Intl.DateTimeFormat` using the system local time
-zone and locale.
+Format a `DateTime` as a string using the `DateTimeFormat` API.
 
-**Example** (Formatting DateTime values locally)
-
-```ts
-import { DateTime } from "effect"
-
-const dt = DateTime.makeUnsafe("2024-06-15T14:30:00Z")
-
-// Uses system local time zone and locale
-const local = DateTime.formatLocal(dt, {
-  year: "numeric",
-  month: "long",
-  day: "numeric",
-  hour: "2-digit",
-  minute: "2-digit"
-})
-
-console.log(local) // Output depends on system locale/timezone
-```
+It will use the system's local time zone & locale.
 
 **Signature**
 
 ```ts
-declare const formatLocal: { (options?: (Intl.DateTimeFormatOptions & { readonly locale?: string | undefined; }) | undefined): (self: DateTime) => string; (self: DateTime, options?: (Intl.DateTimeFormatOptions & { readonly locale?: string | undefined; }) | undefined): string; }
+declare const formatLocal: { (options?: (Intl.DateTimeFormatOptions & { readonly locale?: Intl.LocalesArgument; }) | undefined): (self: DateTime) => string; (self: DateTime, options?: (Intl.DateTimeFormatOptions & { readonly locale?: Intl.LocalesArgument; }) | undefined): string; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L2556)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L1555)
 
 Since v3.6.0

@@ -3,32 +3,55 @@ Module: `Stream`<br />
 
 ## Stream.groupedWithin
 
-Partitions the stream into arrays, emitting when the chunk size is reached
-or the duration passes.
+Partitions the stream with the specified `chunkSize` or until the specified
+`duration` has passed, whichever is satisfied first.
 
-**Example** (Grouping elements by size or time)
+**Example**
 
 ```ts
-import { Console, Effect, Stream } from "effect"
+import { Chunk, Effect, Schedule, Stream } from "effect"
 
-const program = Effect.gen(function*() {
-  const values = yield* Stream.make(1, 2, 3).pipe(
-    Stream.groupedWithin(2, "5 seconds"),
-    Stream.runCollect
-  )
-  yield* Console.log(values)
-})
+const stream = Stream.range(0, 9).pipe(
+  Stream.repeat(Schedule.spaced("1 second")),
+  Stream.groupedWithin(18, "1.5 seconds"),
+  Stream.take(3)
+)
 
-Effect.runPromise(program)
-// Output: [ [ 1, 2 ], [ 3 ] ]
+Effect.runPromise(Stream.runCollect(stream)).then((chunks) => console.log(Chunk.toArray(chunks)))
+// [
+//   {
+//     _id: 'Chunk',
+//     values: [
+//       0, 1, 2, 3, 4, 5, 6,
+//       7, 8, 9, 0, 1, 2, 3,
+//       4, 5, 6, 7
+//     ]
+//   },
+//   {
+//     _id: 'Chunk',
+//     values: [
+//       8, 9, 0, 1, 2,
+//       3, 4, 5, 6, 7,
+//       8, 9
+//     ]
+//   },
+//   {
+//     _id: 'Chunk',
+//     values: [
+//       0, 1, 2, 3, 4, 5, 6,
+//       7, 8, 9, 0, 1, 2, 3,
+//       4, 5, 6, 7
+//     ]
+//   }
+// ]
 ```
 
 **Signature**
 
 ```ts
-declare const groupedWithin: { (chunkSize: number, duration: Duration.Input): <A, E, R>(self: Stream<A, E, R>) => Stream<Array<A>, E, R>; <A, E, R>(self: Stream<A, E, R>, chunkSize: number, duration: Duration.Input): Stream<Array<A>, E, R>; }
+declare const groupedWithin: { (chunkSize: number, duration: Duration.DurationInput): <A, E, R>(self: Stream<A, E, R>) => Stream<Chunk.Chunk<A>, E, R>; <A, E, R>(self: Stream<A, E, R>, chunkSize: number, duration: Duration.DurationInput): Stream<Chunk.Chunk<A>, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L8215)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L2421)
 
 Since v2.0.0

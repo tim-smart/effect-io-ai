@@ -3,32 +3,19 @@ Module: `Predicate`<br />
 
 ## Predicate.isNotNull
 
-Checks whether a value is not `null`.
+A refinement that checks if a value is not `null`.
 
-**When to use**
-
-Use when you need a `Predicate` refinement that filters out `null` while
-preserving other falsy values.
-
-**Details**
-
-Returns a refinement that excludes `null`.
-
-**Example** (Filtering null values)
+**Example**
 
 ```ts
-import { Predicate } from "effect"
+import * as assert from "node:assert"
+import { isNotNull } from "effect/Predicate"
 
-const values = [1, null, 2]
-const nonNull = values.filter(Predicate.isNotNull)
+assert.strictEqual(isNotNull(undefined), true)
+assert.strictEqual(isNotNull("value"), true)
 
-console.log(nonNull)
+assert.strictEqual(isNotNull(null), false)
 ```
-
-**See**
-
-- `isNull`
-- `isNotNullish`
 
 **Signature**
 
@@ -36,6 +23,6 @@ console.log(nonNull)
 declare const isNotNull: <A>(input: A) => input is Exclude<A, null>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L861)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L514)
 
 Since v2.0.0

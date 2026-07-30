@@ -3,31 +3,30 @@ Module: `Predicate`<br />
 
 ## Predicate.some
 
-Creates a predicate that returns `true` if any predicate in the collection returns `true`.
+Takes an iterable of predicates and returns a new predicate. The new predicate
+returns `true` if at least one predicate in the collection returns `true` for a given value.
 
-**When to use**
+This is like `Array.prototype.some` but for a collection of predicates.
 
-Use when you have a dynamic list of predicates and only need one to pass.
-
-**Details**
-
-Evaluation short-circuits on the first `true`. The collection is iterated
-each time the predicate is called.
-
-**Example** (Checking any predicate)
+**Example**
 
 ```ts
+import * as assert from "node:assert"
 import { Predicate } from "effect"
 
-const anyCheck = Predicate.some([Predicate.isString, Predicate.isNumber])
+const isNegative = (n: number) => n < 0
+const isOdd = (n: number) => n % 2 !== 0
 
-console.log(anyCheck("ok"))
+const isNegativeOrOdd = Predicate.some([isNegative, isOdd])
+
+assert.strictEqual(isNegativeOrOdd(-2), true) // isNegative is true
+assert.strictEqual(isNegativeOrOdd(3), true)  // isOdd is true
+assert.strictEqual(isNegativeOrOdd(4), false) // both are false
 ```
 
 **See**
 
-- `every`
-- `or`
+- every
 
 **Signature**
 
@@ -35,6 +34,6 @@ console.log(anyCheck("ok"))
 declare const some: <A>(collection: Iterable<Predicate<A>>) => Predicate<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L1863)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L1398)
 
 Since v2.0.0

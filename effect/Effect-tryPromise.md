@@ -3,67 +3,60 @@ Module: `Effect`<br />
 
 ## Effect.tryPromise
 
-Creates an `Effect` from an asynchronous computation that may throw or
-reject, mapping failures into the error channel.
+Creates an `Effect` that represents an asynchronous computation that might
+fail.
 
-**When to use**
+**When to Use**
 
-Use when you need to perform asynchronous operations that might fail, such
-as fetching data from an API, and want thrown exceptions or rejected promises
-captured as Effect errors.
+In situations where you need to perform asynchronous operations that might
+fail, such as fetching data from an API, you can use the `tryPromise`
+constructor. This constructor is designed to handle operations that could
+throw exceptions by capturing those exceptions and transforming them into
+manageable errors.
 
-**Details**
+**Error Handling**
 
-The promise thunk is evaluated when the effect runs. If it returns a promise
-that resolves, the resolved value becomes the success value. If the thunk
-throws before returning a promise, or if the returned promise rejects, the
-thrown or rejected value is mapped into the error channel.
+There are two ways to handle errors with `tryPromise`:
 
-Passing the thunk directly maps failures to `Cause.UnknownError`.
-Passing `{ try, catch }` uses `catch` to map failures to an error of type
-`E`.
+1. If you don't provide a `catch` function, the error is caught and the
+   effect fails with an `UnknownException`.
+2. If you provide a `catch` function, the error is caught and the `catch`
+   function maps it to an error of type `E`.
 
-The thunk receives an `AbortSignal` that is aborted if the effect is
-interrupted. The underlying asynchronous operation only stops if it observes
-that signal.
+**Interruptions**
 
-**Gotchas**
+An optional `AbortSignal` can be provided to allow for interruption of the
+wrapped `Promise` API.
 
-If `catch` throws while mapping the error, that thrown value is treated as a
-defect. Return the error value you want in the error channel instead of
-throwing it.
-
-**Example** (Wrapping a fetch request that may fail)
+**Example** (Fetching a TODO Item)
 
 ```ts
 import { Effect } from "effect"
 
 const getTodo = (id: number) =>
-  // Will catch any errors and propagate them as UnknownError
+  // Will catch any errors and propagate them as UnknownException
   Effect.tryPromise(() =>
     fetch(`https://jsonplaceholder.typicode.com/todos/${id}`)
   )
 
-//      ┌─── Effect<Response, UnknownError, never>
+//      ┌─── Effect<Response, UnknownException, never>
 //      ▼
 const program = getTodo(1)
 ```
 
-**Example** (Mapping Promise rejections to a tagged error)
+**Example** (Custom Error Handling)
 
 ```ts
-import { Data, Effect } from "effect"
-
-class TodoFetchError extends Data.TaggedError("TodoFetchError")<{ readonly cause: unknown }> {}
+import { Effect } from "effect"
 
 const getTodo = (id: number) =>
   Effect.tryPromise({
     try: () => fetch(`https://jsonplaceholder.typicode.com/todos/${id}`),
     // remap the error
-    catch: (cause) => new TodoFetchError({ cause })
+    catch: (unknown) => new Error(`something went wrong ${unknown}`)
   })
 
-//      ┌─── Effect<Response, TodoFetchError, never>
+//      ┌─── Effect<Response, Error, never>
 //      ▼
 const program = getTodo(1)
 ```
@@ -75,9 +68,9 @@ const program = getTodo(1)
 **Signature**
 
 ```ts
-declare const tryPromise: <A, E = Cause.UnknownError>(options: { readonly try: (signal: AbortSignal) => PromiseLike<A>; readonly catch: (error: unknown) => E; } | ((signal: AbortSignal) => PromiseLike<A>)) => Effect<A, E>
+declare const tryPromise: { <A, E>(options: { readonly try: (signal: AbortSignal) => PromiseLike<A>; readonly catch: (error: unknown) => E; }): Effect<A, E>; <A>(evaluate: (signal: AbortSignal) => PromiseLike<A>): Effect<A, Cause.UnknownException>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L996)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L4677)
 
 Since v2.0.0

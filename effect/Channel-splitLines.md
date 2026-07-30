@@ -3,37 +3,15 @@ Module: `Channel`<br />
 
 ## Channel.splitLines
 
-Splits upstream string chunks into lines, recognizing `\n`, `\r\n`, and
-standalone `\r` as line terminators. The behavior matches
-`String.linesIterator` regardless of how the input is chunked.
-
-**Details**
-
-A line terminator at the very end of the stream does **not** produce a
-trailing empty line (consistent with `String.linesIterator`). Conversely,
-if the stream ends without a terminator the final partial line is still
-emitted.
-
-**Example** (Splitting string chunks into lines)
-
-```ts
-import { Effect, Stream } from "effect"
-
-Effect.runPromise(Effect.gen(function*() {
-  const result = yield* Stream.runCollect(
-    Stream.splitLines(Stream.make("hel", "lo\r\nwor", "ld\n"))
-  )
-  console.log(result)
-  // [ 'hello', 'world' ]
-}))
-```
+Splits strings on newlines. Handles both Windows newlines (`\r\n`) and UNIX
+newlines (`\n`).
 
 **Signature**
 
 ```ts
-declare const splitLines: <Err, Done>() => Channel<Arr.NonEmptyReadonlyArray<string>, Err, Done, Arr.NonEmptyReadonlyArray<string>, Err, Done>
+declare const splitLines: <Err, Done>() => Channel<Chunk.Chunk<string>, Chunk.Chunk<string>, Err, Err, Done, Done, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Channel.ts#L6351)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Channel.ts#L1999)
 
 Since v2.0.0

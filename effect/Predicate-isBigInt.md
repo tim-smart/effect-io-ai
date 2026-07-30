@@ -3,32 +3,19 @@ Module: `Predicate`<br />
 
 ## Predicate.isBigInt
 
-Checks whether a value is a `bigint`.
+A refinement that checks if a value is a `bigint`.
 
-**When to use**
-
-Use when you need a `Predicate` guard to narrow an `unknown` value to a
-bigint.
-
-**Details**
-
-Uses `typeof input === "bigint"`.
-
-**Example** (Guarding bigints)
+**Example**
 
 ```ts
-import { Predicate } from "effect"
+import * as assert from "node:assert"
+import { isBigInt } from "effect/Predicate"
 
-const data: unknown = 1n
+assert.strictEqual(isBigInt(1n), true)
 
-if (Predicate.isBigInt(data)) {
-  console.log(data + 2n)
-}
+assert.strictEqual(isBigInt(1), false)
+assert.strictEqual(isBigInt("1"), false)
 ```
-
-**See**
-
-- `isNumber`
 
 **Signature**
 
@@ -36,6 +23,6 @@ if (Predicate.isBigInt(data)) {
 declare const isBigInt: (input: unknown) => input is bigint
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L637)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L394)
 
 Since v2.0.0

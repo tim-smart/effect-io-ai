@@ -3,13 +3,13 @@ Module: `Trie`<br />
 
 ## Trie.insertMany
 
-Inserts multiple entries in the `Trie` at once.
+Insert multiple entries in the `Trie` at once.
 
-**Example** (Inserting multiple entries)
+**Example**
 
 ```ts
-import { Equal, Trie } from "effect"
 import * as assert from "node:assert"
+import { Trie, Equal } from "effect"
 
 const trie = Trie.empty<number>().pipe(
   Trie.insert("shells", 0),
@@ -33,9 +33,9 @@ assert.equal(
 **Signature**
 
 ```ts
-declare const insertMany: { <V>(iter: Iterable<[string, V]>): (self: Trie<V>) => Trie<V>; <V>(self: Trie<V>, iter: Iterable<[string, V]>): Trie<V>; }
+declare const insertMany: { <V1>(iter: Iterable<[string, V1]>): <V>(self: Trie<V>) => Trie<V | V1>; <V1, V>(self: Trie<V>, iter: Iterable<[string, V1]>): Trie<V | V1>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Trie.ts#L950)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Trie.ts#L837)
 
 Since v2.0.0

@@ -3,31 +3,19 @@ Module: `Iterable`<br />
 
 ## Iterable.makeBy
 
-Creates an iterable by applying a function to consecutive integers.
+Return a `Iterable` with element `i` initialized with `f(i)`.
 
-**Details**
+If the `length` is not specified, the `Iterable` will be infinite.
 
-The function is called with each index starting from `0`. If no length is
-specified, the iterable is infinite. This is useful for generating
-sequences, patterns, or any indexed data.
+**Note**. `length` is normalized to an integer >= 1.
 
-**Example** (Generating values by index)
+**Example**
 
 ```ts
-import { Iterable } from "effect"
+import * as assert from "node:assert"
+import { makeBy } from "effect/Iterable"
 
-// Generate first 5 even numbers
-const evens = Iterable.makeBy((n) => n * 2, { length: 5 })
-console.log(Array.from(evens)) // [0, 2, 4, 6, 8]
-
-// Generate squares
-const squares = Iterable.makeBy((n) => n * n, { length: 4 })
-console.log(Array.from(squares)) // [0, 1, 4, 9]
-
-// Infinite sequence (be careful when consuming!)
-const naturals = Iterable.makeBy((n) => n)
-const first10 = Iterable.take(naturals, 10)
-console.log(Array.from(first10)) // [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+assert.deepStrictEqual(Array.from(makeBy(n => n * 2, { length: 5 })), [0, 2, 4, 6, 8])
 ```
 
 **Signature**
@@ -36,6 +24,6 @@ console.log(Array.from(first10)) // [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 declare const makeBy: <A>(f: (i: number) => A, options?: { readonly length?: number; }) => Iterable<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Iterable.ts#L56)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Iterable.ts#L37)
 
 Since v2.0.0

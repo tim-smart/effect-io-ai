@@ -18,6 +18,6 @@ type EnsureCommonBase<Brands> = {
   }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Brand.ts#L193)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Brand.ts#L149)
 
 Since v2.0.0

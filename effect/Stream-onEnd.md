@@ -3,32 +3,33 @@ Module: `Stream`<br />
 
 ## Stream.onEnd
 
-Runs the provided effect when the stream ends successfully.
+Adds an effect to be executed at the end of the stream.
 
-**Example** (Running an effect on end)
+**Example**
 
 ```ts
 import { Console, Effect, Stream } from "effect"
 
-const program = Effect.gen(function*() {
-  const values = yield* Stream.make(1, 2, 3).pipe(
-    Stream.onEnd(Console.log("Stream ended")),
-    Stream.runCollect
-  )
-  yield* Console.log(values)
-})
+const stream = Stream.make(1, 2, 3).pipe(
+  Stream.map((n) => n * 2),
+  Stream.tap((n) => Console.log(`after mapping: ${n}`)),
+  Stream.onEnd(Console.log("Stream ended"))
+)
 
-Effect.runPromise(program)
+Effect.runPromise(Stream.runCollect(stream)).then(console.log)
+// after mapping: 2
+// after mapping: 4
+// after mapping: 6
 // Stream ended
-// [1, 2, 3]
+// { _id: 'Chunk', values: [ 2, 4, 6 ] }
 ```
 
 **Signature**
 
 ```ts
-declare const onEnd: { <X, EX, RX>(onEnd: Effect.Effect<X, EX, RX>): <A, E, R>(self: Stream<A, E, R>) => Stream<A, E | EX, R | RX>; <A, E, R, X, EX, RX>(self: Stream<A, E, R>, onEnd: Effect.Effect<X, EX, RX>): Stream<A, E | EX, R | RX>; }
+declare const onEnd: { <_, E2, R2>(effect: Effect.Effect<_, E2, R2>): <A, E, R>(self: Stream<A, E, R>) => Stream<A, E2 | E, R2 | R>; <A, E, R, _, E2, R2>(self: Stream<A, E, R>, effect: Effect.Effect<_, E2, R2>): Stream<A, E | E2, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L9952)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L3175)
 
 Since v3.6.0

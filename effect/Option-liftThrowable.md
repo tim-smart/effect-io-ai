@@ -3,18 +3,18 @@ Module: `Option`<br />
 
 ## Option.liftThrowable
 
-Lifts a function that may throw into one that returns an `Option`.
-
-**When to use**
-
-Use to wrap exception-throwing APIs (e.g. `JSON.parse`) for safe usage
+Lifts a function that throws exceptions into a function that returns an
+`Option`.
 
 **Details**
 
-- If the function returns normally → `Some` with the result
-- If the function throws → `None` (exception is swallowed)
+This utility function takes a function `f` that might throw an exception and
+transforms it into a safer function that returns an `Option`. If the original
+function executes successfully, the result is wrapped in a `Some`. If an
+exception is thrown, the result is `None`, allowing the developer to handle
+errors in a functional, type-safe way.
 
-**Example** (Lifting JSON.parse)
+**Example**
 
 ```ts
 import { Option } from "effect"
@@ -28,16 +28,12 @@ console.log(parse(""))
 // Output: { _id: 'Option', _tag: 'None' }
 ```
 
-**See**
-
-- `liftNullishOr` for nullable-returning functions
-
 **Signature**
 
 ```ts
 declare const liftThrowable: <A extends ReadonlyArray<unknown>, B>(f: (...a: A) => B) => (...a: A) => Option<B>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L1043)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L812)
 
 Since v2.0.0

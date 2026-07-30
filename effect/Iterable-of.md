@@ -3,36 +3,7 @@ Module: `Iterable`<br />
 
 ## Iterable.of
 
-Creates an iterable containing a single element.
-
-**When to use**
-
-Use to wrap a single value in an iterable context so it can be combined
-with other iterable operations.
-
-**Example** (Wrapping a single value)
-
-```ts
-import { Iterable } from "effect"
-
-const single = Iterable.of(42)
-console.log(Array.from(single)) // [42]
-
-// Useful for creating homogeneous sequences
-const sequences = [
-  Iterable.of("hello"),
-  Iterable.range(1, 3),
-  Iterable.empty<string>()
-]
-
-// Can be used with flatMap for conditional inclusion
-const numbers = [1, 2, 3, 4, 5]
-const evensOnly = Iterable.flatMap(
-  numbers,
-  (n) => n % 2 === 0 ? Iterable.of(n) : Iterable.empty()
-)
-console.log(Array.from(evensOnly)) // [2, 4]
-```
+Constructs a new `Iterable<A>` from the specified value.
 
 **Signature**
 
@@ -40,6 +11,6 @@ console.log(Array.from(evensOnly)) // [2, 4]
 declare const of: <A>(a: A) => Iterable<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Iterable.ts#L1451)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Iterable.ts#L703)
 
 Since v2.0.0

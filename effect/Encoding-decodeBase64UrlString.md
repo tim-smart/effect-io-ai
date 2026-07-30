@@ -3,36 +3,14 @@ Module: `Encoding`<br />
 
 ## Encoding.decodeBase64UrlString
 
-Decodes a URL-safe base64 string into a UTF-8 string safely.
-
-**When to use**
-
-Use to decode padded or unpadded Base64Url text into UTF-8 text without
-throwing on invalid input.
-
-**Details**
-
-Returns `Result.succeed` with the decoded text when decoding succeeds, or
-`Result.fail` with an `EncodingError` when the input is not valid URL-safe
-base64.
-
-**Example** (Decoding URL-safe Base64 strings)
-
-```ts
-import { Encoding, Result } from "effect"
-
-const result = Encoding.decodeBase64UrlString("aGVsbG8_")
-if (Result.isSuccess(result)) {
-  console.log(result.success) // "hello?"
-}
-```
+Decodes a base64 (URL) encoded `string` into a UTF-8 `string`.
 
 **Signature**
 
 ```ts
-declare const decodeBase64UrlString: (str: string) => Result.Result<string, EncodingError>
+declare const decodeBase64UrlString: (str: string) => Either.Either<string, DecodeException>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Encoding.ts#L388)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Encoding.ts#L64)
 
 Since v2.0.0

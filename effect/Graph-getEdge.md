@@ -3,12 +3,12 @@ Module: `Graph`<br />
 
 ## Graph.getEdge
 
-Gets the edge data associated with an edge index safely, if it exists.
+Gets the edge data associated with an edge index, if it exists.
 
-**Example** (Getting edge data)
+**Example**
 
 ```ts
-import { Graph } from "effect"
+import { Graph, Option } from "effect"
 
 const graph = Graph.mutate(Graph.directed<string, number>(), (mutable) => {
   const nodeA = Graph.addNode(mutable, "Node A")
@@ -19,19 +19,19 @@ const graph = Graph.mutate(Graph.directed<string, number>(), (mutable) => {
 const edgeIndex = 0
 const edgeData = Graph.getEdge(graph, edgeIndex)
 
-if (edgeData._tag === "Some") {
+if (Option.isSome(edgeData)) {
   console.log(edgeData.value.data) // 42
-  console.log(edgeData.value.source) // 0
-  console.log(edgeData.value.target) // 1
+  console.log(edgeData.value.source) // NodeIndex(0)
+  console.log(edgeData.value.target) // NodeIndex(1)
 }
 ```
 
 **Signature**
 
 ```ts
-declare const getEdge: { (edgeIndex: EdgeIndex): <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>) => Option.Option<Edge<E>>; <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>, edgeIndex: EdgeIndex): Option.Option<Edge<E>>; }
+declare const getEdge: <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>, edgeIndex: EdgeIndex) => Option.Option<Edge<E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L2555)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L1392)
 
 Since v3.18.0

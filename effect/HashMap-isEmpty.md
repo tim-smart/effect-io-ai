@@ -3,19 +3,7 @@ Module: `HashMap`<br />
 
 ## HashMap.isEmpty
 
-Checks whether the `HashMap` contains no entries.
-
-**Example** (Checking for empty HashMaps)
-
-```ts
-import { HashMap } from "effect"
-
-const emptyMap = HashMap.empty<string, number>()
-const nonEmptyMap = HashMap.make(["a", 1])
-
-console.log(HashMap.isEmpty(emptyMap)) // true
-console.log(HashMap.isEmpty(nonEmptyMap)) // false
-```
+Checks if the `HashMap` contains any entries.
 
 **Signature**
 
@@ -23,6 +11,6 @@ console.log(HashMap.isEmpty(nonEmptyMap)) // false
 declare const isEmpty: <K, V>(self: HashMap<K, V>) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashMap.ts#L308)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashMap.ts#L137)
 
 Since v2.0.0

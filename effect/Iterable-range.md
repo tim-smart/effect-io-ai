@@ -3,21 +3,17 @@ Module: `Iterable`<br />
 
 ## Iterable.range
 
-Returns an iterable of integers starting at `start` and increasing by `1`.
+Return a `Iterable` containing a range of integers, including both endpoints.
 
-**Details**
+If `end` is omitted, the range will not have an upper bound.
 
-When `end` is provided and `start <= end`, both endpoints are included. When
-`end` is omitted, the iterable is unbounded. When `start > end`, the
-iterable contains only `start`.
-
-**Example** (Creating a range)
+**Example**
 
 ```ts
-import { Iterable } from "effect"
 import * as assert from "node:assert"
+import { range } from "effect/Iterable"
 
-assert.deepStrictEqual(Array.from(Iterable.range(1, 3)), [1, 2, 3])
+assert.deepStrictEqual(Array.from(range(1, 3)), [1, 2, 3])
 ```
 
 **Signature**
@@ -26,6 +22,6 @@ assert.deepStrictEqual(Array.from(Iterable.range(1, 3)), [1, 2, 3])
 declare const range: (start: number, end?: number) => Iterable<number>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Iterable.ts#L96)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Iterable.ts#L72)
 
 Since v2.0.0

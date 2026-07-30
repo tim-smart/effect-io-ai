@@ -5,11 +5,11 @@ Module: `Iterable`<br />
 
 Prepends the specified prefix iterable to the beginning of the specified iterable.
 
-**Example** (Prepending another iterable)
+**Example**
 
 ```ts
-import { Iterable } from "effect"
 import * as assert from "node:assert"
+import { Iterable } from "effect"
 
 assert.deepStrictEqual(
   Array.from(Iterable.prependAll([1, 2], ["a", "b"])),
@@ -23,6 +23,6 @@ assert.deepStrictEqual(
 declare const prependAll: { <B>(that: Iterable<B>): <A>(self: Iterable<A>) => Iterable<A | B>; <A, B>(self: Iterable<A>, that: Iterable<B>): Iterable<A | B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Iterable.ts#L245)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Iterable.ts#L155)
 
 Since v2.0.0

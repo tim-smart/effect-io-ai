@@ -3,29 +3,25 @@ Module: `Record`<br />
 
 ## Record.replace
 
-Replaces the value at an existing key safely and returns the updated record in
-`Option.some`.
+Replace a key's value in a record and return the updated record.
+If the key does not exist in the record, a copy of the original record is returned.
 
-**Details**
-
-If the key is not present, returns `Option.none()` and leaves the record
-unchanged.
-
-**Example** (Replacing a value at a key)
+**Example**
 
 ```ts
+import * as assert from "node:assert"
 import { Record } from "effect"
 
-Record.replace({ a: 1, b: 2, c: 3 }, "a", 10) // Option.some({ a: 10, b: 2, c: 3 })
-Record.replace(Record.empty<string>(), "a", 10) // Option.none()
+assert.deepStrictEqual(Record.replace("a", 3)({ a: 1, b: 2 }), { a: 3, b: 2 });
+assert.deepStrictEqual(Record.replace("c", 3)({ a: 1, b: 2 }), { a: 1, b: 2 });
 ```
 
 **Signature**
 
 ```ts
-declare const replace: { <K extends string | symbol, B>(key: NoInfer<K>, b: B): <A>(self: ReadonlyRecord<K, A>) => Option.Option<Record<K, A | B>>; <K extends string | symbol, A, B>(self: ReadonlyRecord<K, A>, key: NoInfer<K>, b: B): Option.Option<Record<K, A | B>>; }
+declare const replace: { <K extends string | symbol, B>(key: NoInfer<K>, value: B): <A>(self: ReadonlyRecord<K, A>) => Record<K, A | B>; <K extends string | symbol, A, B>(self: ReadonlyRecord<K, A>, key: NoInfer<K>, value: B): Record<K, A | B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Record.ts#L519)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Record.ts#L972)
 
 Since v2.0.0

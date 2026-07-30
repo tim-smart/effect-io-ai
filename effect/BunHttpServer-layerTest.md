@@ -3,14 +3,15 @@ Module: `BunHttpServer`<br />
 
 ## BunHttpServer.layerTest
 
-Layer that starts a Bun HTTP server on an ephemeral port for tests.
+Layer starting a server on a random port and producing an `HttpClient`
+with prepended url of the running http server.
 
 **Signature**
 
 ```ts
-declare const layerTest: Layer.Layer<FileSystem.FileSystem | Path.Path | Server.HttpServer | HttpPlatform | Etag.Generator | HttpClient, never, never>
+declare const layerTest: Layer.Layer<Server.HttpServer | Platform.HttpPlatform | Etag.Generator | BunContext.BunContext | HttpClient.HttpClient, HttpServerError.ServeError, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L279)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L62)
 
-Since v4.0.0
+Since v1.0.0

@@ -3,16 +3,14 @@ Module: `Schema`<br />
 
 ## Schema.Uint8ArrayFromHex
 
-Type-level representation of `Uint8ArrayFromHex`.
+Decodes a hex encoded string into a `Uint8Array`.
 
 **Signature**
 
 ```ts
-export interface Uint8ArrayFromHex extends decodeTo<Uint8Array, String> {
-  readonly "Rebuild": Uint8ArrayFromHex
-}
+declare const Uint8ArrayFromHex: Schema<Uint8Array<ArrayBufferLike>, string, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L13364)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6293)
 
 Since v3.10.0

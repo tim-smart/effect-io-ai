@@ -3,33 +3,14 @@ Module: `Types`<br />
 
 ## Types.MergeLeft
 
-Left-biased merge of two object types where keys from `Source` take
-precedence over `Target` on conflict.
+Merges two object where the keys of the left object take precedence in the case of a conflict.
 
-**When to use**
-
-Use when you want left-biased merging where the first argument wins.
-
-**Details**
-
-Implemented as `MergeRight<Target, Source>`.
-
-**Example** (Merging with left bias)
+**Example**
 
 ```ts
 import type { Types } from "effect"
-
-type Result = Types.MergeLeft<
-  { a: number; b: number },
-  { a: string; c: boolean }
->
-// { a: number; b: number; c: boolean }
+type MergeLeft = Types.MergeLeft<{ a: number, b: number; }, { a: string }> // { a: number; b: number; }
 ```
-
-**See**
-
-- `MergeRight`
-- `Simplify`
 
 **Signature**
 
@@ -37,6 +18,6 @@ type Result = Types.MergeLeft<
 type MergeLeft<Source, Target> = MergeRight<Target, Source>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L373)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L187)
 
 Since v2.0.0

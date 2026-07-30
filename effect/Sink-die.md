@@ -3,30 +3,14 @@ Module: `Sink`<br />
 
 ## Sink.die
 
-Creates a sink halting with a specified defect.
-
-**Example** (Dying with a defect)
-
-```ts
-import { Effect, Sink, Stream } from "effect"
-
-// Create a sink that dies with a defect
-const sink = Sink.die(new Error("Defect error"))
-
-// Use it with a stream
-const stream = Stream.make(1, 2, 3)
-const program = Stream.run(stream, sink)
-
-Effect.runPromise(program).catch(console.log)
-// Output: Error: Defect error
-```
+Creates a sink halting with the specified defect.
 
 **Signature**
 
 ```ts
-declare const die: (defect: unknown) => Sink<never>
+declare const die: (defect: unknown) => Sink<never, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Sink.ts#L655)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Sink.ts#L337)
 
 Since v2.0.0

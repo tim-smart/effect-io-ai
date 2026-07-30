@@ -3,26 +3,16 @@ Module: `Array`<br />
 
 ## Array.append
 
-Adds a single element to the end of an iterable, returning a `NonEmptyArray`.
+Append an element to the end of an `Iterable`, creating a new `NonEmptyArray`.
 
-**When to use**
-
-Use when you need to guarantee a non-empty result after adding a required
-trailing value.
-
-**Example** (Appending an element)
+**Example**
 
 ```ts
 import { Array } from "effect"
 
-const result = Array.append([1, 2, 3], 4)
+const result = Array.append([1, 2, 3], 4);
 console.log(result) // [1, 2, 3, 4]
 ```
-
-**See**
-
-- `prepend` — add to the front
-- `appendAll` — append multiple elements
 
 **Signature**
 
@@ -30,6 +20,6 @@ console.log(result) // [1, 2, 3, 4]
 declare const append: { <B>(last: B): <A>(self: Iterable<A>) => NonEmptyArray<A | B>; <A, B>(self: Iterable<A>, last: B): NonEmptyArray<A | B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L646)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L409)
 
 Since v2.0.0

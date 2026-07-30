@@ -3,33 +3,22 @@ Module: `BigInt`<br />
 
 ## BigInt.fromNumber
 
-Converts a number to a `bigint`.
+Takes a number and returns an `Option` of `bigint`.
 
-**When to use**
+If the number is outside the safe integer range for JavaScript (`Number.MAX_SAFE_INTEGER`
+and `Number.MIN_SAFE_INTEGER`), it returns `Option.none()`. Otherwise, it attempts to
+convert the number to a `bigint` and returns `Option.some(bigint)`.
 
-Use to convert a JavaScript number to `bigint` only when it is a safe integer.
-
-**Details**
-
-If the number is outside the safe integer range for JavaScript
-(`Number.MAX_SAFE_INTEGER` and `Number.MIN_SAFE_INTEGER`) or if the number is
-not a valid `bigint`, it returns `Option.none()`.
-
-**Example** (Converting numbers to bigints)
+**Example**
 
 ```ts
-import { BigInt } from "effect"
+import * as assert from "node:assert"
+import { BigInt as BI, Option } from "effect"
 
-BigInt.fromNumber(42) // Option.some(42n)
-
-BigInt.fromNumber(Number.MAX_SAFE_INTEGER + 1) // Option.none()
-BigInt.fromNumber(Number.MIN_SAFE_INTEGER - 1) // Option.none()
+assert.deepStrictEqual(BI.fromNumber(42), Option.some(BigInt(42)))
+assert.deepStrictEqual(BI.fromNumber(Number.MAX_SAFE_INTEGER + 1), Option.none())
+assert.deepStrictEqual(BI.fromNumber(Number.MIN_SAFE_INTEGER - 1), Option.none())
 ```
-
-**See**
-
-- `toNumber` for converting `bigint` values back to safe integer numbers
-- `BigInt` for native constructor coercion
 
 **Signature**
 
@@ -37,6 +26,6 @@ BigInt.fromNumber(Number.MIN_SAFE_INTEGER - 1) // Option.none()
 declare const fromNumber: (n: number) => Option.Option<bigint>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L912)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L633)
 
 Since v2.4.12

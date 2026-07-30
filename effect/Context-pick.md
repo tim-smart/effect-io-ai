@@ -5,43 +5,32 @@ Module: `Context`<br />
 
 Returns a new `Context` that contains only the specified services.
 
-**When to use**
-
-Use when you want to keep an allowlist of services in a `Context`.
-
-**Example** (Picking services from a context)
+**Example**
 
 ```ts
-import { Context, Option, pipe } from "effect"
 import * as assert from "node:assert"
+import { pipe, Context, Option } from "effect"
 
-const Port = Context.Service<{ PORT: number }>("Port")
-const Timeout = Context.Service<{ TIMEOUT: number }>("Timeout")
+const Port = Context.GenericTag<{ PORT: number }>("Port")
+const Timeout = Context.GenericTag<{ TIMEOUT: number }>("Timeout")
 
 const someContext = pipe(
   Context.make(Port, { PORT: 8080 }),
   Context.add(Timeout, { TIMEOUT: 5000 })
 )
 
-const context = pipe(someContext, Context.pick(Port))
+const Services = pipe(someContext, Context.pick(Port))
 
-assert.deepStrictEqual(
-  Context.getOption(context, Port),
-  Option.some({ PORT: 8080 })
-)
-assert.deepStrictEqual(Context.getOption(context, Timeout), Option.none())
+assert.deepStrictEqual(Context.getOption(Services, Port), Option.some({ PORT: 8080 }))
+assert.deepStrictEqual(Context.getOption(Services, Timeout), Option.none())
 ```
-
-**See**
-
-- `omit` for removing selected services
 
 **Signature**
 
 ```ts
-declare const pick: <S extends ReadonlyArray<Key<any, any>>>(...services: S) => <Services>(self: Context<Services>) => Context<Services & Service.Identifier<S[number]>>
+declare const pick: <Tags extends ReadonlyArray<Tag<any, any>>>(...tags: Tags) => <Services>(self: Context<Services>) => Context<Services & Tag.Identifier<Tags[number]>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Context.ts#L1192)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Context.ts#L496)
 
 Since v2.0.0

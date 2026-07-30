@@ -3,29 +3,34 @@ Module: `HashSet`<br />
 
 ## HashSet.reduce
 
-Reduces the HashSet to a single value by iterating through the values and applying an accumulator function.
+Reduces the specified state over the values of the `HashSet`.
 
-**Example** (Reducing HashSet values)
+The time complexity is of **`O(n)`**.
+
+**Example**
 
 ```ts
-import { HashSet } from "effect"
+// Syntax
+import { HashSet, pipe } from "effect"
 
-const numbers = HashSet.make(1, 2, 3, 4, 5)
-const sum = HashSet.reduce(numbers, 0, (acc, n) => acc + n)
+const sum = (a: number, b: number): number => a + b
 
-console.log(sum) // 15
+// with `data-last`, a.k.a. `pipeable` API
+pipe(HashSet.make(0, 1, 2), HashSet.reduce(0, sum))
 
-const strings = HashSet.make("a", "b", "c")
-const concatenated = HashSet.reduce(strings, "", (acc, s) => acc + s)
-console.log(concatenated) // Order may vary: "abc", "bac", etc.
+// or with the pipe method
+HashSet.make(0, 1, 2).pipe(HashSet.reduce(0, sum))
+
+// or with `data-first` API
+HashSet.reduce(HashSet.make(0, 1, 2), 0, sum)
 ```
 
 **Signature**
 
 ```ts
-declare const reduce: { <V, U>(zero: U, f: (accumulator: U, value: V) => U): (self: HashSet<V>) => U; <V, U>(self: HashSet<V>, zero: U, f: (accumulator: U, value: V) => U): U; }
+declare const reduce: { <A, Z>(zero: Z, f: (accumulator: Z, value: A) => Z): (self: HashSet<A>) => Z; <A, Z>(self: HashSet<A>, zero: Z, f: (accumulator: Z, value: A) => Z): Z; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L599)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L1982)
 
 Since v2.0.0

@@ -3,42 +3,15 @@ Module: `Queue`<br />
 
 ## Queue.takeAll
 
-Takes all currently available messages, waiting until at least one message
-is available when the queue is empty.
-
-**When to use**
-
-Use when consumers should process the next non-empty batch of buffered
-messages instead of repeatedly taking one message at a time.
-
-**Details**
-
-Returns a non-empty array. If the queue completes or fails before a message
-can be taken, the effect fails with the queue's terminal error.
-
-**Example** (Taking all available values)
-
-```ts
-import { Cause, Effect, Queue } from "effect"
-
-const program = Effect.gen(function*() {
-  const queue = yield* Queue.bounded<number, Cause.Done>(5)
-
-  // Add several messages
-  yield* Queue.offerAll(queue, [1, 2, 3, 4, 5])
-
-  // Take all available messages
-  const messages1 = yield* Queue.takeAll(queue)
-  console.log(messages1) // [1, 2, 3, 4, 5]
-})
-```
+Takes all the values in the queue and returns the values. If the queue is
+empty returns an empty collection.
 
 **Signature**
 
 ```ts
-declare const takeAll: <A, E>(self: Dequeue<A, E>) => Effect<Arr.NonEmptyArray<A>, E>
+declare const takeAll: <A>(self: Dequeue<A>) => Effect.Effect<Chunk.Chunk<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Queue.ts#L1218)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Queue.ts#L607)
 
 Since v2.0.0

@@ -3,20 +3,19 @@ Module: `Stream`<br />
 
 ## Stream.drain
 
-Converts this stream to one that runs its effects but emits no elements.
+Converts this stream to a stream that executes its effects but emits no
+elements. Useful for sequencing effects using streams:
 
-**Example** (Draining stream values)
+**Example**
 
 ```ts
-import { Console, Effect, Stream } from "effect"
+import { Effect, Stream } from "effect"
 
-const program = Effect.gen(function*() {
-  const result = yield* Stream.range(1, 6).pipe(Stream.drain, Stream.runCollect)
-  yield* Console.log(result)
-})
+// We create a stream and immediately drain it.
+const stream = Stream.range(1, 6).pipe(Stream.drain)
 
-Effect.runPromise(program)
-// Output: []
+Effect.runPromise(Stream.runCollect(stream)).then(console.log)
+// { _id: 'Chunk', values: [] }
 ```
 
 **Signature**
@@ -25,6 +24,6 @@ Effect.runPromise(program)
 declare const drain: <A, E, R>(self: Stream<A, E, R>) => Stream<never, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L2624)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L1345)
 
 Since v2.0.0

@@ -2127,12 +2127,13 @@
     },
     "project": "@effect/cli",
     "name": "makeProvider",
+    "description": "`fileName` must be a static application-defined value and must not be derived\nfrom untrusted input.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
     "category": "constructors",
     "signature": "declare const makeProvider: (fileName: string, options?: { readonly formats?: ReadonlyArray<Kind>; readonly searchPaths?: ReadonlyArray<string>; } | undefined) => Effect<ConfigProvider, ConfigFileError, Path | FileSystem>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ConfigFile.ts#L50"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ConfigFile.ts#L53"
   },
   {
     "_tag": "Constant",
@@ -2142,12 +2143,13 @@
     },
     "project": "@effect/cli",
     "name": "layer",
+    "description": "`fileName` must be a static application-defined value and must not be derived\nfrom untrusted input.",
     "deprecated": false,
     "examples": [],
     "since": "2.0.0",
     "category": "layers",
     "signature": "declare const layer: (fileName: string, options?: { readonly formats?: ReadonlyArray<Kind>; readonly searchPaths?: ReadonlyArray<string>; } | undefined) => Layer<never, ConfigFileError, Path | FileSystem>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ConfigFile.ts#L64"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cli/src/ConfigFile.ts#L70"
   },
   {
     "_tag": "Interface",

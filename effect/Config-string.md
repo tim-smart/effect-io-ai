@@ -3,31 +3,7 @@ Module: `Config`<br />
 
 ## Config.string
 
-Creates a config for a single string value.
-
-**When to use**
-
-Use when reading a single string env var or config key.
-
-**Details**
-
-Shortcut for `Config.schema(Schema.String, name)`.
-
-**Example** (Reading a string config)
-
-```ts
-import { Config, ConfigProvider, Effect } from "effect"
-
-const host = Config.string("HOST")
-
-const provider = ConfigProvider.fromUnknown({ HOST: "localhost" })
-// Effect.runSync(host.parse(provider)) // "localhost"
-```
-
-**See**
-
-- `nonEmptyString` – rejects empty strings
-- `schema` – for more complex types
+Constructs a config for a string value.
 
 **Signature**
 
@@ -35,6 +11,6 @@ const provider = ConfigProvider.fromUnknown({ HOST: "localhost" })
 declare const string: (name?: string) => Config<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L905)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L406)
 
 Since v2.0.0

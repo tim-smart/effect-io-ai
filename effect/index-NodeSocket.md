@@ -1,16 +1,16 @@
-Package: `@effect/platform-node-shared`<br />
+Package: `@effect/platform-node`<br />
 Module: `index`<br />
 
 ## index.NodeSocket
 
-Re-exports all named exports from the "./NodeSocket.ts" module as `NodeSocket`.
+Re-exports all named exports from the "./NodeSocket.js" module as `NodeSocket`.
 
 **Signature**
 
 ```ts
-export * as NodeSocket from "./NodeSocket.ts"
+export * as NodeSocket from "./NodeSocket.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/index.ts#L45)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L74)
 
-Since v4.0.0
+Since v1.0.0

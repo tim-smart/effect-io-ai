@@ -3,29 +3,25 @@ Module: `Predicate`<br />
 
 ## Predicate.isPromise
 
-Checks whether a value is a `Promise`-like object with `then` and `catch`.
+A refinement that checks if a value is a `Promise`. It performs a duck-typing check
+for `.then` and `.catch` methods.
 
-**When to use**
-
-Use when you need a `Predicate` guard for promise instances across realms.
-
-**Details**
-
-Performs a structural check for `then` and `catch` functions.
-
-**Example** (Guarding promises)
+**Example**
 
 ```ts
-import { Predicate } from "effect"
+import * as assert from "node:assert"
+import { isPromise } from "effect/Predicate"
 
-const data: unknown = Promise.resolve(1)
+assert.strictEqual(isPromise(Promise.resolve(1)), true)
+assert.strictEqual(isPromise(new Promise(() => {})), true)
 
-console.log(Predicate.isPromise(data))
+assert.strictEqual(isPromise({ then() {} }), false) // Missing .catch
+assert.strictEqual(isPromise({}), false)
 ```
 
 **See**
 
-- `isPromiseLike`
+- isPromiseLike
 
 **Signature**
 
@@ -33,6 +29,6 @@ console.log(Predicate.isPromise(data))
 declare const isPromise: (input: unknown) => input is Promise<unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L1317)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L844)
 
 Since v2.0.0

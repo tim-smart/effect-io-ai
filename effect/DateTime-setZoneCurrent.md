@@ -3,15 +3,15 @@ Module: `DateTime`<br />
 
 ## DateTime.setZoneCurrent
 
-Sets the time zone of a `DateTime` to the current time zone, which is
+Set the time zone of a `DateTime` to the current time zone, which is
 determined by the `CurrentTimeZone` service.
 
-**Example** (Setting the current time zone)
+**Example**
 
 ```ts
 import { DateTime, Effect } from "effect"
 
-Effect.gen(function*() {
+Effect.gen(function* () {
   const now = yield* DateTime.now
 
   // set the time zone to "Europe/London"
@@ -25,6 +25,6 @@ Effect.gen(function*() {
 declare const setZoneCurrent: (self: DateTime) => Effect.Effect<Zoned, never, CurrentTimeZone>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L1913)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L1083)
 
 Since v3.6.0

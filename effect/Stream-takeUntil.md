@@ -3,42 +3,26 @@ Module: `Stream`<br />
 
 ## Stream.takeUntil
 
-Takes elements until the predicate matches.
+Takes all elements of the stream until the specified predicate evaluates to
+`true`.
 
-**Details**
-
-When `excludeLast` is `true`, the matching element is dropped.
-
-**Example** (Taking until a predicate matches)
+**Example**
 
 ```ts
-import { Console, Effect, Stream } from "effect"
+import { Effect, Stream } from "effect"
 
-const stream = Stream.range(1, 5)
+const stream = Stream.takeUntil(Stream.iterate(0, (n) => n + 1), (n) => n === 4)
 
-const program = Effect.gen(function*() {
-  const inclusive = yield* stream.pipe(
-    Stream.takeUntil((n) => n % 3 === 0),
-    Stream.runCollect
-  )
-  yield* Console.log(inclusive)
-  // Output: [ 1, 2, 3 ]
-
-  const exclusive = yield* stream.pipe(
-    Stream.takeUntil((n) => n % 3 === 0, { excludeLast: true }),
-    Stream.runCollect
-  )
-  yield* Console.log(exclusive)
-  // Output: [ 1, 2 ]
-})
+Effect.runPromise(Stream.runCollect(stream)).then(console.log)
+// { _id: 'Chunk', values: [ 0, 1, 2, 3, 4 ] }
 ```
 
 **Signature**
 
 ```ts
-declare const takeUntil: { <A>(predicate: (a: NoInfer<A>, n: number) => boolean, options?: { readonly excludeLast?: boolean | undefined; }): <E, R>(self: Stream<A, E, R>) => Stream<A, E, R>; <A, E, R>(self: Stream<A, E, R>, predicate: (a: A, n: number) => boolean, options?: { readonly excludeLast?: boolean | undefined; }): Stream<A, E, R>; }
+declare const takeUntil: { <A>(predicate: Predicate<NoInfer<A>>): <E, R>(self: Stream<A, E, R>) => Stream<A, E, R>; <A, E, R>(self: Stream<A, E, R>, predicate: Predicate<A>): Stream<A, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L6414)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L4847)
 
 Since v2.0.0

@@ -3,33 +3,24 @@ Module: `Predicate`<br />
 
 ## Predicate.isTruthy
 
-Checks whether a value is truthy.
+A predicate that checks if a value is "truthy" in JavaScript.
+Fails for `false`, `0`, `-0`, `0n`, `""`, `null`, `undefined`, and `NaN`.
 
-**When to use**
-
-Use when you want a predicate that mirrors JavaScript truthiness and filters
-out falsy values like `0`, `""`, and `false`.
-
-**Details**
-
-This uses `!!input` and treats `0`, `""`, `false`, `null`, and `undefined`
-as false.
-
-**Example** (Filtering truthy values)
+**Example**
 
 ```ts
-import { Predicate } from "effect"
+import * as assert from "node:assert"
+import { isTruthy } from "effect/Predicate"
 
-const values = [0, 1, "", "ok", false]
-const truthy = values.filter(Predicate.isTruthy)
+assert.strictEqual(isTruthy(1), true)
+assert.strictEqual(isTruthy("hello"), true)
+assert.strictEqual(isTruthy({}), true)
 
-console.log(truthy)
+assert.strictEqual(isTruthy(0), false)
+assert.strictEqual(isTruthy(""), false)
+assert.strictEqual(isTruthy(null), false)
+assert.strictEqual(isTruthy(undefined), false)
 ```
-
-**See**
-
-- `isNullish`
-- `isNotNullish`
 
 **Signature**
 
@@ -37,6 +28,6 @@ console.log(truthy)
 declare const isTruthy: (input: unknown) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L441)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L275)
 
 Since v2.0.0

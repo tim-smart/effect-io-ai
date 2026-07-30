@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.NodeHttpPlatform
 
-Re-exports all named exports from the "./NodeHttpPlatform.ts" module as `NodeHttpPlatform`.
+Re-exports all named exports from the "./NodeHttpPlatform.js" module as `NodeHttpPlatform`.
 
 **Signature**
 
 ```ts
-export * as NodeHttpPlatform from "./NodeHttpPlatform.ts"
+export * as NodeHttpPlatform from "./NodeHttpPlatform.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L50)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L34)
 
-Since v4.0.0
+Since v1.0.0

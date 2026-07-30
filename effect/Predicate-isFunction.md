@@ -3,32 +3,19 @@ Module: `Predicate`<br />
 
 ## Predicate.isFunction
 
-Checks whether a value is a `function`.
+A refinement that checks if a value is a `Function`.
 
-**When to use**
-
-Use when you need a `Predicate` guard to narrow an `unknown` value to a
-callable function.
-
-**Details**
-
-Uses `typeof input === "function"`.
-
-**Example** (Guarding functions)
+**Example**
 
 ```ts
-import { Predicate } from "effect"
+import * as assert from "node:assert"
+import { isFunction } from "effect/Predicate"
 
-const data: unknown = () => 1
+assert.strictEqual(isFunction(() => {}), true)
+assert.strictEqual(isFunction(isFunction), true)
 
-if (Predicate.isFunction(data)) {
-  console.log(data())
-}
+assert.strictEqual(isFunction("function"), false)
 ```
-
-**See**
-
-- `isObjectKeyword`
 
 **Signature**
 
@@ -36,6 +23,6 @@ if (Predicate.isFunction(data)) {
 declare const isFunction: (input: unknown) => input is Function
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L736)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L438)
 
 Since v2.0.0

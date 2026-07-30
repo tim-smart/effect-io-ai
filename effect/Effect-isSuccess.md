@@ -3,30 +3,16 @@ Module: `Effect`<br />
 
 ## Effect.isSuccess
 
-Returns whether an effect completes successfully.
+Checks if an effect has succeeded.
 
 **Details**
 
-Returns `false` for failures in the error channel, but defects still fail the
-effect.
+This function evaluates whether an effect has resulted in a success. It
+returns a boolean value wrapped in an effect, with `true` indicating the
+effect succeeded and `false` otherwise.
 
-**Example** (Checking whether an effect succeeds)
-
-```ts
-import { Console, Effect } from "effect"
-
-const program = Effect.gen(function*() {
-  const ok = yield* Effect.isSuccess(Effect.succeed("done"))
-  const failed = yield* Effect.isSuccess(Effect.fail("Uh oh"))
-  yield* Console.log(`ok: ${ok}`)
-  yield* Console.log(`failed: ${failed}`)
-})
-
-Effect.runPromise(program)
-// Output:
-// ok: true
-// failed: false
-```
+The resulting effect cannot fail (`never` in the error channel) but retains
+the context of the original effect.
 
 **Signature**
 
@@ -34,6 +20,6 @@ Effect.runPromise(program)
 declare const isSuccess: <A, E, R>(self: Effect<A, E, R>) => Effect<boolean, never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L5767)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L10534)
 
 Since v2.0.0

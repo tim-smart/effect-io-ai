@@ -3,42 +3,36 @@ Module: `HashSet`<br />
 
 ## HashSet.has
 
-Checks whether the HashSet contains the specified value.
+Checks if the specified value exists in the `HashSet`.
 
-**Example** (Checking HashSet membership)
+Time complexity: **`O(1)`** average
+
+**Example**
 
 ```ts
-import { Equal, Hash, HashSet } from "effect"
+// Syntax
+import { HashSet, pipe } from "effect"
 
-// Works with any type that implements Equal
+// with `data-last`, a.k.a. `pipeable` API
+pipe(HashSet.make(0, 1, 2), HashSet.has(3)) // false
 
-const set = HashSet.make("apple", "banana", "cherry")
+// or piped with the pipe function
+HashSet.make(0, 1, 2).pipe(HashSet.has(3)) // false
 
-console.log(HashSet.has(set, "apple")) // true
-console.log(HashSet.has(set, "grape")) // false
-
-class Person implements Equal.Equal {
-  constructor(readonly name: string) {}
-
-  [Equal.symbol](other: unknown) {
-    return other instanceof Person && this.name === other.name
-  }
-
-  [Hash.symbol](): number {
-    return Hash.string(this.name)
-  }
-}
-
-const people = HashSet.make(new Person("Alice"), new Person("Bob"))
-console.log(HashSet.has(people, new Person("Alice"))) // true
+// or with `data-first` API
+HashSet.has(HashSet.make(0, 1, 2), 3) // false
 ```
+
+**See**
+
+- Other `HashSet` elements are `module:HashSet.some` `module:HashSet.every` `module:HashSet.isSubset`
 
 **Signature**
 
 ```ts
-declare const has: { <V>(value: V): (self: HashSet<V>) => boolean; <V>(self: HashSet<V>, value: V): boolean; }
+declare const has: { <A>(value: A): (self: HashSet<A>) => boolean; <A>(self: HashSet<A>, value: A): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L265)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L588)
 
 Since v2.0.0

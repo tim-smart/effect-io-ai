@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.MutableList
 
-Re-exports all named exports from the "./MutableList.ts" module as `MutableList`.
+Re-exports all named exports from the "./MutableList.js" module as `MutableList`.
 
 **Signature**
 
 ```ts
-export * as MutableList from "./MutableList.ts"
+export * as MutableList from "./MutableList.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L342)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L943)
 
-Since v4.0.0
+Since v2.0.0

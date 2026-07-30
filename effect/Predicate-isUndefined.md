@@ -3,31 +3,19 @@ Module: `Predicate`<br />
 
 ## Predicate.isUndefined
 
-Checks whether a value is `undefined`.
+A refinement that checks if a value is `undefined`.
 
-**When to use**
-
-Use when you need a `Predicate` guard for values that are exactly
-`undefined`.
-
-**Details**
-
-Uses `input === undefined`.
-
-**Example** (Guarding undefined values)
+**Example**
 
 ```ts
-import { Predicate } from "effect"
+import * as assert from "node:assert"
+import { isUndefined } from "effect/Predicate"
 
-const data: unknown = undefined
+assert.strictEqual(isUndefined(undefined), true)
 
-console.log(Predicate.isUndefined(data))
+assert.strictEqual(isUndefined(null), false)
+assert.strictEqual(isUndefined("undefined"), false)
 ```
-
-**See**
-
-- `isNotUndefined`
-- `isNullish`
 
 **Signature**
 
@@ -35,6 +23,6 @@ console.log(Predicate.isUndefined(data))
 declare const isUndefined: (input: unknown) => input is undefined
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L767)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L457)
 
 Since v2.0.0

@@ -3,22 +3,18 @@ Module: `Stream`<br />
 
 ## Stream.zipWithPrevious
 
-Zips each element with its previous element, starting with `None`.
+Zips each element with the previous element. Initially accompanied by
+`None`.
 
-**Example** (Zipping elements with previous values)
+**Example**
 
 ```ts
-import { Console, Effect, Stream } from "effect"
+import { Chunk, Effect, Stream } from "effect"
 
 const stream = Stream.zipWithPrevious(Stream.make(1, 2, 3, 4))
 
-const program = Effect.gen(function*() {
-  const result = yield* Stream.runCollect(stream)
-  yield* Console.log(result)
-})
-
-Effect.runPromise(program)
-// Output: [
+Effect.runPromise(Stream.runCollect(stream)).then((chunk) => console.log(Chunk.toArray(chunk)))
+// [
 //   [ { _id: 'Option', _tag: 'None' }, 1 ],
 //   [ { _id: 'Option', _tag: 'Some', value: 1 }, 2 ],
 //   [ { _id: 'Option', _tag: 'Some', value: 2 }, 3 ],
@@ -32,6 +28,6 @@ Effect.runPromise(program)
 declare const zipWithPrevious: <A, E, R>(self: Stream<A, E, R>) => Stream<[Option.Option<A>, A], E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L3931)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L6143)
 
 Since v2.0.0

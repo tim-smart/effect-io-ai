@@ -3,16 +3,15 @@ Module: `Schema`<br />
 
 ## Schema.URL
 
-Type-level representation of `URL`.
+Defines a schema that attempts to convert a `string` to a `URL` object using
+the `new URL` constructor.
 
 **Signature**
 
 ```ts
-export interface URL extends instanceOf<globalThis.URL> {
-  readonly "Rebuild": URL
-}
+declare const URL: typeof URL$
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L11698)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L4960)
 
-Since v4.0.0
+Since v3.11.0

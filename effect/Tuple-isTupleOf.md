@@ -3,38 +3,27 @@ Module: `Tuple`<br />
 
 ## Tuple.isTupleOf
 
-Checks whether an array has exactly `N` elements, narrowing the type to a
-fixed-length tuple.
+Determine if an `Array` is a tuple with exactly `N` elements, narrowing down the type to `TupleOf`.
 
-**When to use**
+An `Array` is considered to be a `TupleOf` if its length is exactly `N`.
 
-Use to guard that an array has exactly the tuple length expected at
-runtime.
-
-**Details**
-
-This is a re-export of `Predicate.isTupleOf`. It narrows the type to
-`TupleOf<N, T>` in the truthy branch.
-
-**Gotchas**
-
-This only checks `.length`; it does not validate element types.
-
-**Example** (Checking exact length)
+**Example**
 
 ```ts
-import { Tuple } from "effect"
+import * as assert from "node:assert"
+import { isTupleOf } from "effect/Tuple"
 
-const arr: Array<number> = [1, 2, 3]
-if (Tuple.isTupleOf(arr, 3)) {
-  console.log(arr)
+assert.deepStrictEqual(isTupleOf([1, 2, 3], 3), true);
+assert.deepStrictEqual(isTupleOf([1, 2, 3], 2), false);
+assert.deepStrictEqual(isTupleOf([1, 2, 3], 4), false);
+
+const arr: number[] = [1, 2, 3];
+if (isTupleOf(arr, 3)) {
+  console.log(arr);
   // ^? [number, number, number]
 }
+
 ```
-
-**See**
-
-- `isTupleOfAtLeast` – check for a minimum length
 
 **Signature**
 
@@ -42,6 +31,6 @@ if (Tuple.isTupleOf(arr, 3)) {
 declare const isTupleOf: { <N extends number>(n: N): <T>(self: ReadonlyArray<T>) => self is TupleOf<N, T>; <T, N extends number>(self: ReadonlyArray<T>, n: N): self is TupleOf<N, T>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Tuple.ts#L617)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Tuple.ts#L279)
 
 Since v3.3.0

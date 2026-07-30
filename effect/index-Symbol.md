@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.Symbol
 
-Re-exports all named exports from the "./Symbol.ts" module as `Symbol`.
+Re-exports all named exports from the "./Symbol.js" module as `Symbol`.
 
 **Signature**
 
 ```ts
-export * as Symbol from "./Symbol.ts"
+export * as Symbol from "./Symbol.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L612)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1388)
 
 Since v2.0.0

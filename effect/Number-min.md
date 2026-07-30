@@ -5,22 +5,14 @@ Module: `Number`<br />
 
 Returns the minimum between two `number`s.
 
-**When to use**
-
-Use to select the smaller of two numbers.
-
-**Example** (Finding the minimum)
+**Example**
 
 ```ts
-import { Number } from "effect"
-import * as assert from "node:assert"
+import * as assert from "node:assert/strict"
+import { min } from "effect/Number"
 
-assert.deepStrictEqual(Number.min(2, 3), 2)
+assert.equal(min(2, 3), 2)
 ```
-
-**See**
-
-- `max` for selecting the larger value
 
 **Signature**
 
@@ -28,6 +20,6 @@ assert.deepStrictEqual(Number.min(2, 3), 2)
 declare const min: { (that: number): (self: number) => number; (self: number, that: number): number; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Number.ts#L505)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Number.ts#L915)
 
 Since v2.0.0

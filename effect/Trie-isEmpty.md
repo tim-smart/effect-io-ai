@@ -3,13 +3,13 @@ Module: `Trie`<br />
 
 ## Trie.isEmpty
 
-Returns `true` when the `Trie` contains no entries.
+Checks if the `Trie` contains any entries.
 
-**Example** (Checking whether a trie is empty)
+**Example**
 
 ```ts
-import { Trie } from "effect"
 import * as assert from "node:assert"
+import { Trie } from "effect"
 
 const trie = Trie.empty<number>()
 const trie1 = trie.pipe(Trie.insert("ma", 0))
@@ -24,6 +24,6 @@ assert.equal(Trie.isEmpty(trie1), false)
 declare const isEmpty: <V>(self: Trie<V>) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Trie.ts#L553)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Trie.ts#L479)
 
 Since v2.0.0

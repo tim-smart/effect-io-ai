@@ -5,11 +5,11 @@ Module: `Trie`<br />
 
 Removes all entries in the `Trie` which have the specified keys.
 
-**Example** (Removing multiple entries)
+**Example**
 
 ```ts
-import { Equal, Trie } from "effect"
 import * as assert from "node:assert"
+import { Trie, Equal } from "effect"
 
 const trie = Trie.empty<number>().pipe(
   Trie.insert("shells", 0),
@@ -18,10 +18,7 @@ const trie = Trie.empty<number>().pipe(
 )
 
 assert.equal(
-  Equal.equals(
-    trie.pipe(Trie.removeMany(["she", "sells"])),
-    Trie.empty<number>().pipe(Trie.insert("shells", 0))
-  ),
+  Equal.equals(trie.pipe(Trie.removeMany(["she", "sells"])), Trie.empty<number>().pipe(Trie.insert("shells", 0))),
   true
 )
 ```
@@ -32,6 +29,6 @@ assert.equal(
 declare const removeMany: { (keys: Iterable<string>): <V>(self: Trie<V>) => Trie<V>; <V>(self: Trie<V>, keys: Iterable<string>): Trie<V>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Trie.ts#L914)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Trie.ts#L802)
 
 Since v2.0.0

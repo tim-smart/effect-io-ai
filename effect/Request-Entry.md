@@ -3,32 +3,29 @@ Module: `Request`<br />
 
 ## Request.Entry
 
-A pending request handed to a `RequestResolver`.
-
-**Details**
-
-An entry contains the original request, the fiber context needed to run it,
-an `uninterruptible` flag used by batching and caching internals, and the
-`completeUnsafe` callback used by resolvers to supply the final `Exit`.
+A `Entry<A>` keeps track of a request of type `A` along with a
+`Ref` containing the result of the request, existentially hiding the result
+type. This is used internally by the library to support data sources that
+return different result types for different requests while guaranteeing that
+results will be of the type requested.
 
 **Signature**
 
 ```ts
-export interface Entry<out R> {
+export interface Entry<out R> extends Entry.Variance<R> {
   readonly request: R
-  readonly context: Context.Context<
-    [R] extends [Request<infer _A, infer _E, infer _R>] ? _R : never
+  readonly result: Deferred<
+    [R] extends [Request<infer _A, infer _E>] ? _A : never,
+    [R] extends [Request<infer _A, infer _E>] ? _E : never
   >
-  uninterruptible: boolean
-  completeUnsafe(
-    exit: Exit.Exit<
-      [R] extends [Request<infer _A, infer _E, infer _R>] ? _A : never,
-      [R] extends [Request<infer _A, infer _E, infer _R>] ? _E : never
-    >
-  ): void
+  readonly listeners: Listeners
+  readonly ownerId: FiberId
+  readonly state: {
+    completed: boolean
+  }
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Request.ts#L558)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Request.ts#L308)
 
 Since v2.0.0

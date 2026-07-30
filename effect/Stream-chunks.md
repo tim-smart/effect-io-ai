@@ -3,32 +3,15 @@ Module: `Stream`<br />
 
 ## Stream.chunks
 
-Exposes the underlying chunks as a stream of non-empty arrays.
-
-**Example** (Exposing stream chunks)
-
-```ts
-import { Console, Effect, Stream } from "effect"
-
-const program = Effect.gen(function*() {
-  const chunks = yield* Stream.make(1, 2, 3, 4).pipe(
-    Stream.rechunk(2),
-    Stream.chunks,
-    Stream.runCollect
-  )
-  yield* Console.log(chunks)
-})
-
-Effect.runPromise(program)
-// Output: [ [ 1, 2 ], [ 3, 4 ] ]
-```
+Exposes the underlying chunks of the stream as a stream of chunks of
+elements.
 
 **Signature**
 
 ```ts
-declare const chunks: <A, E, R>(self: Stream<A, E, R>) => Stream<Arr.NonEmptyReadonlyArray<A>, E, R>
+declare const chunks: <A, E, R>(self: Stream<A, E, R>) => Stream<Chunk.Chunk<A>, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L6999)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L958)
 
 Since v2.0.0

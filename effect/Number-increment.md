@@ -5,17 +5,13 @@ Module: `Number`<br />
 
 Returns the result of adding `1` to a given number.
 
-**When to use**
-
-Use to increment a numeric counter by one.
-
-**Example** (Incrementing a number)
+**Example**
 
 ```ts
-import { Number } from "effect"
-import * as assert from "node:assert"
+import * as assert from "node:assert/strict"
+import { increment } from "effect/Number"
 
-assert.deepStrictEqual(Number.increment(2), 3)
+assert.equal(increment(2), 3)
 ```
 
 **Signature**
@@ -24,6 +20,6 @@ assert.deepStrictEqual(Number.increment(2), 3)
 declare const increment: (n: number) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Number.ts#L233)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Number.ts#L710)
 
 Since v2.0.0

@@ -3,29 +3,37 @@ Module: `HashSet`<br />
 
 ## HashSet.empty
 
-Creates an empty HashSet.
+Creates an empty `HashSet`.
 
-**Example** (Creating an empty HashSet)
+Time complexity: **`O(1)`**
+
+**Example**
 
 ```ts
-import { HashSet } from "effect"
+import { HashSet, pipe } from "effect"
 
-const set = HashSet.empty<string>()
-
-console.log(HashSet.size(set)) // 0
-console.log(HashSet.isEmpty(set)) // true
-
-// Add some values
-const withValues = HashSet.add(HashSet.add(set, "hello"), "world")
-console.log(HashSet.size(withValues)) // 2
+console.log(
+  pipe(
+    // Provide a type argument to create a HashSet of a specific type
+    HashSet.empty<number>(),
+    HashSet.add(1),
+    HashSet.add(1), // Notice the duplicate
+    HashSet.add(2),
+    HashSet.toValues
+  )
+) // Output: [1, 2]
 ```
+
+**See**
+
+- Other `HashSet` constructors are `module:HashSet.make` `module:HashSet.fromIterable`
 
 **Signature**
 
 ```ts
-declare const empty: <V = never>() => HashSet<V>
+declare const empty: <A = never>() => HashSet<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L126)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L375)
 
 Since v2.0.0

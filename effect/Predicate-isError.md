@@ -3,29 +3,20 @@ Module: `Predicate`<br />
 
 ## Predicate.isError
 
-Checks whether a value is an `Error`.
+A refinement that checks if a value is an instance of `Error`.
 
-**When to use**
-
-Use when you need a `Predicate` guard for errors caught from unknown sources.
-
-**Details**
-
-Uses `instanceof Error`.
-
-**Example** (Guarding errors)
+**Example**
 
 ```ts
-import { Predicate } from "effect"
+import * as assert from "node:assert"
+import { isError } from "effect/Predicate"
 
-const data: unknown = new Error("boom")
+assert.strictEqual(isError(new Error("boom")), true)
+assert.strictEqual(isError(new TypeError("boom")), true)
 
-console.log(Predicate.isError(data))
+assert.strictEqual(isError({ message: "boom" }), false)
+assert.strictEqual(isError("boom"), false)
 ```
-
-**See**
-
-- `isUnknown`
 
 **Signature**
 
@@ -33,6 +24,6 @@ console.log(Predicate.isError(data))
 declare const isError: (input: unknown) => input is Error
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L1199)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L711)
 
 Since v2.0.0

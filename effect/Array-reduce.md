@@ -3,28 +3,16 @@ Module: `Array`<br />
 
 ## Array.reduce
 
-Folds an iterable from left to right into a single value.
+Reduces an array from the left.
 
-**When to use**
-
-Use to combine all elements into one accumulated value from left to right.
-
-**Details**
-
-The function receives `(accumulator, element, index)`.
-
-**Example** (Summing an array)
+**Example**
 
 ```ts
 import { Array } from "effect"
 
-console.log(Array.reduce([1, 2, 3], 0, (acc, n) => acc + n)) // 6
+const result = Array.reduce([1, 2, 3], 0, (acc, n) => acc + n)
+console.log(result) // 6
 ```
-
-**See**
-
-- `reduceRight` — fold from right to left
-- `scan` — fold keeping intermediate values
 
 **Signature**
 
@@ -32,6 +20,6 @@ console.log(Array.reduce([1, 2, 3], 0, (acc, n) => acc + n)) // 6
 declare const reduce: { <B, A>(b: B, f: (b: B, a: A, i: number) => B): (self: Iterable<A>) => B; <A, B>(self: Iterable<A>, b: B, f: (b: B, a: A, i: number) => B): B; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L3961)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2846)
 
 Since v2.0.0

@@ -3,31 +3,30 @@ Module: `Predicate`<br />
 
 ## Predicate.every
 
-Creates a predicate that returns `true` if all predicates in the collection return `true`.
+Takes an iterable of predicates and returns a new predicate. The new predicate
+returns `true` if all predicates in the collection return `true` for a given value.
 
-**When to use**
+This is like `Array.prototype.every` but for a collection of predicates.
 
-Use when you have a dynamic list of predicates to apply.
-
-**Details**
-
-Evaluation short-circuits on the first `false`. The collection is iterated
-each time the predicate is called.
-
-**Example** (Checking all predicates)
+**Example**
 
 ```ts
+import * as assert from "node:assert"
 import { Predicate } from "effect"
 
-const allChecks = Predicate.every([Predicate.isNumber, (n: number) => n > 0])
+const isPositive = (n: number) => n > 0
+const isEven = (n: number) => n % 2 === 0
 
-console.log(allChecks(2))
+const isPositiveAndEven = Predicate.every([isPositive, isEven])
+
+assert.strictEqual(isPositiveAndEven(4), true)
+assert.strictEqual(isPositiveAndEven(3), false)
+assert.strictEqual(isPositiveAndEven(-2), false)
 ```
 
 **See**
 
-- `some`
-- `and`
+- some
 
 **Signature**
 
@@ -35,6 +34,6 @@ console.log(allChecks(2))
 declare const every: <A>(collection: Iterable<Predicate<A>>) => Predicate<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L1825)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L1364)
 
 Since v2.0.0

@@ -3,35 +3,29 @@ Module: `Stream`<br />
 
 ## Stream.mapAccum
 
-Maps elements statefully, emitting zero or more outputs per input.
+Statefully maps over the elements of this stream to produce new elements.
 
-**Example** (Statefully mapping stream values)
+**Example**
 
 ```ts
-import { Console, Effect, Stream } from "effect"
+import { Effect, Stream } from "effect"
 
-const program = Effect.gen(function*() {
-  const totals = yield* Stream.make(0, 1, 2, 3, 4, 5, 6).pipe(
-    Stream.mapAccum(() => 0, (total, n) => {
-      const next = total + n
-      return [next, [next]] as const
-    }),
-    Stream.runCollect
-  )
+const runningTotal = (stream: Stream.Stream<number>): Stream.Stream<number> =>
+  stream.pipe(Stream.mapAccum(0, (s, a) => [s + a, s + a]))
 
-  yield* Console.log(totals)
-})
-
-Effect.runPromise(program)
-// Output: [ 0, 1, 3, 6, 10, 15, 21 ]
+// input:  0, 1, 2, 3, 4, 5, 6
+Effect.runPromise(Stream.runCollect(runningTotal(Stream.range(0, 6)))).then(
+  console.log
+)
+// { _id: "Chunk", values: [ 0, 1, 3, 6, 10, 15, 21 ] }
 ```
 
 **Signature**
 
 ```ts
-declare const mapAccum: { <S, A, B>(initial: LazyArg<S>, f: (s: S, a: A) => readonly [state: S, values: ReadonlyArray<B>], options?: { readonly onHalt?: ((state: S) => ReadonlyArray<B>) | undefined; }): <E, R>(self: Stream<A, E, R>) => Stream<B, E, R>; <A, E, R, S, B>(self: Stream<A, E, R>, initial: LazyArg<S>, f: (s: S, a: A) => readonly [state: S, values: ReadonlyArray<B>], options?: { readonly onHalt?: ((state: S) => ReadonlyArray<B>) | undefined; }): Stream<B, E, R>; }
+declare const mapAccum: { <S, A, A2>(s: S, f: (s: S, a: A) => readonly [S, A2]): <E, R>(self: Stream<A, E, R>) => Stream<A2, E, R>; <A, E, R, S, A2>(self: Stream<A, E, R>, s: S, f: (s: S, a: A) => readonly [S, A2]): Stream<A2, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L7425)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L2743)
 
 Since v2.0.0

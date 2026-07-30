@@ -5,15 +5,13 @@ Module: `Trie`<br />
 
 Returns an `IterableIterator` of the keys within the `Trie`.
 
-**Details**
-
 The keys are returned in alphabetical order, regardless of insertion order.
 
-**Example** (Reading keys in alphabetical order)
+**Example**
 
 ```ts
-import { Trie } from "effect"
 import * as assert from "node:assert"
+import { Trie } from "effect"
 
 const trie = Trie.empty<number>().pipe(
   Trie.insert("cab", 0),
@@ -31,6 +29,6 @@ assert.deepStrictEqual(result, ["abc", "bca", "cab"])
 declare const keys: <V>(self: Trie<V>) => IterableIterator<string>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Trie.ts#L208)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Trie.ts#L156)
 
 Since v2.0.0

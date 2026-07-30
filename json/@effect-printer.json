@@ -246,13 +246,13 @@
     },
     "project": "@effect/printer",
     "name": "char",
-    "description": "A document containing a single character.\n\n**Invariants**\n- Cannot be the newline (`\"\\n\"`) character",
+    "description": "A document containing a single character.\n\n**Invariants**\n- Cannot be the newline (`\"\\n\"`) character\n\nControl characters are preserved verbatim. Apply `sanitize` before rendering\na document containing untrusted text to a terminal.",
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const char: (char: string) => Doc<never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L437"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L440"
   },
   {
     "_tag": "Constant",
@@ -262,13 +262,13 @@
     },
     "project": "@effect/printer",
     "name": "text",
-    "description": "A document containing a string of text.\n\n**Invariants**\n- Text cannot be less than two characters long\n- Text cannot contain a newline (`\"\\n\"`) character",
+    "description": "A document containing a string of text.\n\n**Invariants**\n- Text cannot be less than two characters long\n- Text cannot contain a newline (`\"\\n\"`) character\n\nControl characters are preserved verbatim. Apply `sanitize` before rendering\na document containing untrusted text to a terminal.",
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const text: (text: string) => Doc<never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L449"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L455"
   },
   {
     "_tag": "Constant",
@@ -278,13 +278,13 @@
     },
     "project": "@effect/printer",
     "name": "string",
-    "description": "Constructs a document containing a string of text.\n\n**Note**: newline characters (`\\n`) contained in the provided string will be\ndisregarded (i.e. not rendered) in the output document.",
+    "description": "Constructs a document containing a string of text.\n\n**Note**: newline characters (`\\n`) contained in the provided string will be\ndisregarded (i.e. not rendered) in the output document.\n\nControl characters are preserved verbatim. Apply `sanitize` before rendering\na document containing untrusted text to a terminal.",
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const string: (str: string) => Doc<never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L460"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L469"
   },
   {
     "_tag": "Constant",
@@ -302,7 +302,7 @@
     "since": "1.0.0",
     "category": "primitives",
     "signature": "declare const empty: Doc<never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L500"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L509"
   },
   {
     "_tag": "Constant",
@@ -318,7 +318,7 @@
     "since": "1.0.0",
     "category": "primitives",
     "signature": "declare const fail: Doc<never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L511"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L520"
   },
   {
     "_tag": "Constant",
@@ -336,7 +336,7 @@
     "since": "1.0.0",
     "category": "primitives",
     "signature": "declare const line: Doc<never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L546"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L555"
   },
   {
     "_tag": "Constant",
@@ -354,7 +354,7 @@
     "since": "1.0.0",
     "category": "primitives",
     "signature": "declare const lineBreak: Doc<never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L580"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L589"
   },
   {
     "_tag": "Constant",
@@ -372,7 +372,7 @@
     "since": "1.0.0",
     "category": "primitives",
     "signature": "declare const softLine: Doc<never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L624"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L633"
   },
   {
     "_tag": "Constant",
@@ -390,7 +390,7 @@
     "since": "1.0.0",
     "category": "primitives",
     "signature": "declare const softLineBreak: Doc<never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L669"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L678"
   },
   {
     "_tag": "Constant",
@@ -408,7 +408,7 @@
     "since": "1.0.0",
     "category": "primitives",
     "signature": "declare const hardLine: Doc<never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L703"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L712"
   },
   {
     "_tag": "Constant",
@@ -424,7 +424,7 @@
     "since": "1.0.0",
     "category": "primitives",
     "signature": "declare const backslash: Doc<never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L711"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L720"
   },
   {
     "_tag": "Constant",
@@ -440,7 +440,7 @@
     "since": "1.0.0",
     "category": "primitives",
     "signature": "declare const colon: Doc<never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L719"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L728"
   },
   {
     "_tag": "Constant",
@@ -456,7 +456,7 @@
     "since": "1.0.0",
     "category": "primitives",
     "signature": "declare const comma: Doc<never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L727"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L736"
   },
   {
     "_tag": "Constant",
@@ -472,7 +472,7 @@
     "since": "1.0.0",
     "category": "primitives",
     "signature": "declare const dot: Doc<never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L735"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L744"
   },
   {
     "_tag": "Constant",
@@ -488,7 +488,7 @@
     "since": "1.0.0",
     "category": "primitives",
     "signature": "declare const dquote: Doc<never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L743"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L752"
   },
   {
     "_tag": "Constant",
@@ -504,7 +504,7 @@
     "since": "1.0.0",
     "category": "primitives",
     "signature": "declare const equalSign: Doc<never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L751"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L760"
   },
   {
     "_tag": "Constant",
@@ -520,7 +520,7 @@
     "since": "1.0.0",
     "category": "primitives",
     "signature": "declare const langle: Doc<never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L759"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L768"
   },
   {
     "_tag": "Constant",
@@ -536,7 +536,7 @@
     "since": "1.0.0",
     "category": "primitives",
     "signature": "declare const lbrace: Doc<never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L767"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L776"
   },
   {
     "_tag": "Constant",
@@ -552,7 +552,7 @@
     "since": "1.0.0",
     "category": "primitives",
     "signature": "declare const lbracket: Doc<never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L775"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L784"
   },
   {
     "_tag": "Constant",
@@ -568,7 +568,7 @@
     "since": "1.0.0",
     "category": "primitives",
     "signature": "declare const lparen: Doc<never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L783"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L792"
   },
   {
     "_tag": "Constant",
@@ -584,7 +584,7 @@
     "since": "1.0.0",
     "category": "primitives",
     "signature": "declare const rangle: Doc<never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L791"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L800"
   },
   {
     "_tag": "Constant",
@@ -600,7 +600,7 @@
     "since": "1.0.0",
     "category": "primitives",
     "signature": "declare const rbrace: Doc<never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L799"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L808"
   },
   {
     "_tag": "Constant",
@@ -616,7 +616,7 @@
     "since": "1.0.0",
     "category": "primitives",
     "signature": "declare const rbracket: Doc<never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L807"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L816"
   },
   {
     "_tag": "Constant",
@@ -632,7 +632,7 @@
     "since": "1.0.0",
     "category": "primitives",
     "signature": "declare const rparen: Doc<never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L815"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L824"
   },
   {
     "_tag": "Constant",
@@ -648,7 +648,7 @@
     "since": "1.0.0",
     "category": "primitives",
     "signature": "declare const semi: Doc<never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L823"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L832"
   },
   {
     "_tag": "Constant",
@@ -664,7 +664,7 @@
     "since": "1.0.0",
     "category": "primitives",
     "signature": "declare const slash: Doc<never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L831"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L840"
   },
   {
     "_tag": "Constant",
@@ -680,7 +680,7 @@
     "since": "1.0.0",
     "category": "primitives",
     "signature": "declare const squote: Doc<never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L839"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L848"
   },
   {
     "_tag": "Constant",
@@ -696,7 +696,7 @@
     "since": "1.0.0",
     "category": "primitives",
     "signature": "declare const space: Doc<never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L847"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L856"
   },
   {
     "_tag": "Constant",
@@ -712,7 +712,7 @@
     "since": "1.0.0",
     "category": "primitives",
     "signature": "declare const vbar: Doc<never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L855"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L864"
   },
   {
     "_tag": "Constant",
@@ -728,7 +728,7 @@
     "since": "1.0.0",
     "category": "concatenation",
     "signature": "declare const cat: { <B>(that: Doc<B>): <A>(self: Doc<A>) => Doc<B | A>; <A, B>(self: Doc<A>, that: Doc<B>): Doc<A | B>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L867"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L876"
   },
   {
     "_tag": "Constant",
@@ -746,7 +746,7 @@
     "since": "1.0.0",
     "category": "concatenation",
     "signature": "declare const cats: <A>(docs: Iterable<Doc<A>>) => Doc<A>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L912"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L921"
   },
   {
     "_tag": "Constant",
@@ -764,7 +764,7 @@
     "since": "1.0.0",
     "category": "concatenation",
     "signature": "declare const catWithLine: { <B>(that: Doc<B>): <A>(self: Doc<A>) => Doc<B | A>; <A, B>(self: Doc<A>, that: Doc<B>): Doc<A | B>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L942"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L951"
   },
   {
     "_tag": "Constant",
@@ -782,7 +782,7 @@
     "since": "1.0.0",
     "category": "concatenation",
     "signature": "declare const catWithLineBreak: { <B>(that: Doc<B>): <A>(self: Doc<A>) => Doc<B | A>; <A, B>(self: Doc<A>, that: Doc<B>): Doc<A | B>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L980"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L989"
   },
   {
     "_tag": "Constant",
@@ -800,7 +800,7 @@
     "since": "1.0.0",
     "category": "concatenation",
     "signature": "declare const catWithSoftLine: { <B>(that: Doc<B>): <A>(self: Doc<A>) => Doc<B | A>; <A, B>(self: Doc<A>, that: Doc<B>): Doc<A | B>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1021"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1030"
   },
   {
     "_tag": "Constant",
@@ -818,7 +818,7 @@
     "since": "1.0.0",
     "category": "concatenation",
     "signature": "declare const catWithSoftLineBreak: { <B>(that: Doc<B>): <A>(self: Doc<A>) => Doc<B | A>; <A, B>(self: Doc<A>, that: Doc<B>): Doc<A | B>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1062"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1071"
   },
   {
     "_tag": "Constant",
@@ -836,7 +836,7 @@
     "since": "1.0.0",
     "category": "concatenation",
     "signature": "declare const catWithSpace: { <B>(that: Doc<B>): <A>(self: Doc<A>) => Doc<B | A>; <A, B>(self: Doc<A>, that: Doc<B>): Doc<A | B>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1091"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1100"
   },
   {
     "_tag": "Constant",
@@ -854,7 +854,7 @@
     "since": "1.0.0",
     "category": "concatenation",
     "signature": "declare const concatWith: { <A>(f: (left: Doc<A>, right: Doc<A>) => Doc<A>): (docs: Iterable<Doc<A>>) => Doc<A>; <A>(docs: Iterable<Doc<A>>, f: (left: Doc<A>, right: Doc<A>) => Doc<A>): Doc<A>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1120"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1129"
   },
   {
     "_tag": "Constant",
@@ -872,7 +872,7 @@
     "since": "1.0.0",
     "category": "concatenation",
     "signature": "declare const vcat: <A>(docs: Iterable<Doc<A>>) => Doc<A>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1153"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1162"
   },
   {
     "_tag": "Constant",
@@ -890,7 +890,7 @@
     "since": "1.0.0",
     "category": "concatenation",
     "signature": "declare const hcat: <A>(docs: Iterable<Doc<A>>) => Doc<A>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1176"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1185"
   },
   {
     "_tag": "Constant",
@@ -906,7 +906,7 @@
     "since": "1.0.0",
     "category": "concatenation",
     "signature": "declare const fillCat: <A>(docs: Iterable<Doc<A>>) => Doc<A>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1191"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1200"
   },
   {
     "_tag": "Constant",
@@ -924,7 +924,7 @@
     "since": "1.0.0",
     "category": "separation",
     "signature": "declare const hsep: <A>(docs: Iterable<Doc<A>>) => Doc<A>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1232"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1241"
   },
   {
     "_tag": "Constant",
@@ -942,7 +942,7 @@
     "since": "1.0.0",
     "category": "separation",
     "signature": "declare const vsep: <A>(docs: Iterable<Doc<A>>) => Doc<A>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1285"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1294"
   },
   {
     "_tag": "Constant",
@@ -958,7 +958,7 @@
     "since": "1.0.0",
     "category": "separation",
     "signature": "declare const fillSep: <A>(docs: Iterable<Doc<A>>) => Doc<A>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1300"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1309"
   },
   {
     "_tag": "Constant",
@@ -976,7 +976,7 @@
     "since": "1.0.0",
     "category": "separation",
     "signature": "declare const seps: <A>(docs: Iterable<Doc<A>>) => Doc<A>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1342"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1351"
   },
   {
     "_tag": "Constant",
@@ -994,7 +994,7 @@
     "since": "1.0.0",
     "category": "alternative layouts",
     "signature": "declare const flatAlt: { <B>(that: Doc<B>): <A>(self: Doc<A>) => Doc<B | A>; <A, B>(self: Doc<A>, that: Doc<B>): Doc<A | B>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1421"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1430"
   },
   {
     "_tag": "Constant",
@@ -1009,7 +1009,7 @@
     "since": "1.0.0",
     "category": "alternative layouts",
     "signature": "declare const union: { <B>(that: Doc<B>): <A>(self: Doc<A>) => Doc<B | A>; <A, B>(self: Doc<A>, that: Doc<B>): Doc<A | B>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1430"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1439"
   },
   {
     "_tag": "Constant",
@@ -1025,7 +1025,7 @@
     "since": "1.0.0",
     "category": "alternative layouts",
     "signature": "declare const group: <A>(self: Doc<A>) => Doc<A>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1446"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1455"
   },
   {
     "_tag": "Constant",
@@ -1043,7 +1043,7 @@
     "since": "1.0.0",
     "category": "reactive layouts",
     "signature": "declare const column: <A>(react: (position: number) => Doc<A>) => Doc<A>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1492"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1501"
   },
   {
     "_tag": "Constant",
@@ -1061,7 +1061,7 @@
     "since": "1.0.0",
     "category": "reactive layouts",
     "signature": "declare const nesting: <A>(react: (level: number) => Doc<A>) => Doc<A>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1524"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1533"
   },
   {
     "_tag": "Constant",
@@ -1079,7 +1079,7 @@
     "since": "1.0.0",
     "category": "reactive layouts",
     "signature": "declare const width: { <A, B>(react: (width: number) => Doc<B>): (self: Doc<A>) => Doc<A | B>; <A, B>(self: Doc<A>, react: (width: number) => Doc<B>): Doc<A | B>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1567"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1576"
   },
   {
     "_tag": "Constant",
@@ -1097,7 +1097,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const pageWidth: <A>(react: (pageWidth: PageWidth) => Doc<A>) => Doc<A>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1616"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1625"
   },
   {
     "_tag": "Constant",
@@ -1115,7 +1115,7 @@
     "since": "1.0.0",
     "category": "alignment",
     "signature": "declare const nest: { (indent: number): <A>(self: Doc<A>) => Doc<A>; <A>(self: Doc<A>, indent: number): Doc<A>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1664"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1673"
   },
   {
     "_tag": "Constant",
@@ -1133,7 +1133,7 @@
     "since": "1.0.0",
     "category": "alignment",
     "signature": "declare const align: <A>(self: Doc<A>) => Doc<A>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1715"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1724"
   },
   {
     "_tag": "Constant",
@@ -1151,7 +1151,7 @@
     "since": "1.0.0",
     "category": "alignment",
     "signature": "declare const hang: { (indent: number): <A>(self: Doc<A>) => Doc<A>; <A>(self: Doc<A>, indent: number): Doc<A>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1754"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1763"
   },
   {
     "_tag": "Constant",
@@ -1169,7 +1169,7 @@
     "since": "1.0.0",
     "category": "alignment",
     "signature": "declare const indent: { (indent: number): <A>(self: Doc<A>) => Doc<A>; <A>(self: Doc<A>, indent: number): Doc<A>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1792"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1801"
   },
   {
     "_tag": "Constant",
@@ -1187,7 +1187,7 @@
     "since": "1.0.0",
     "category": "alignment",
     "signature": "declare const encloseSep: { <A, B, C>(left: Doc<A>, right: Doc<B>, sep: Doc<C>): <D>(docs: Iterable<Doc<D>>) => Doc<A | B | C | D>; <A, B, C, D>(docs: Iterable<Doc<D>>, left: Doc<A>, right: Doc<B>, sep: Doc<C>): Doc<A | B | C | D>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1849"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1858"
   },
   {
     "_tag": "Constant",
@@ -1205,7 +1205,7 @@
     "since": "1.0.0",
     "category": "alignment",
     "signature": "declare const list: <A>(docs: Iterable<Doc<A>>) => Doc<A>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1882"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1891"
   },
   {
     "_tag": "Constant",
@@ -1223,7 +1223,7 @@
     "since": "1.0.0",
     "category": "alignment",
     "signature": "declare const tupled: <A>(docs: Iterable<Doc<A>>) => Doc<A>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1908"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1917"
   },
   {
     "_tag": "Constant",
@@ -1241,7 +1241,7 @@
     "since": "1.0.0",
     "category": "filling",
     "signature": "declare const fill: { (w: number): <A>(self: Doc<A>) => Doc<A>; <A>(self: Doc<A>, w: number): Doc<A>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1960"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L1969"
   },
   {
     "_tag": "Constant",
@@ -1259,7 +1259,7 @@
     "since": "1.0.0",
     "category": "filling",
     "signature": "declare const fillBreak: { (w: number): <A>(self: Doc<A>) => Doc<A>; <A>(self: Doc<A>, w: number): Doc<A>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2012"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2021"
   },
   {
     "_tag": "Constant",
@@ -1275,7 +1275,7 @@
     "since": "1.0.0",
     "category": "flattening",
     "signature": "declare const flatten: <A>(self: Doc<A>) => Doc<A>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2027"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2036"
   },
   {
     "_tag": "Constant",
@@ -1291,7 +1291,7 @@
     "since": "1.0.0",
     "category": "flattening",
     "signature": "declare const changesUponFlattening: <A>(self: Doc<A>) => Flatten<Doc<A>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2046"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2055"
   },
   {
     "_tag": "Constant",
@@ -1307,7 +1307,7 @@
     "since": "1.0.0",
     "category": "annotations",
     "signature": "declare const annotate: { <A>(annotation: A): (self: Doc<A>) => Doc<A>; <A>(self: Doc<A>, annotation: A): Doc<A>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2062"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2071"
   },
   {
     "_tag": "Constant",
@@ -1323,7 +1323,7 @@
     "since": "1.0.0",
     "category": "annotations",
     "signature": "declare const alterAnnotations: { <A, B>(f: (a: A) => Iterable<B>): (self: Doc<A>) => Doc<B>; <A, B>(self: Doc<A>, f: (a: A) => Iterable<B>): Doc<B>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2088"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2097"
   },
   {
     "_tag": "Constant",
@@ -1339,7 +1339,7 @@
     "since": "1.0.0",
     "category": "annotations",
     "signature": "declare const reAnnotate: { <A, B>(f: (a: A) => B): (self: Doc<A>) => Doc<B>; <A, B>(self: Doc<A>, f: (a: A) => B): Doc<B>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2104"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2113"
   },
   {
     "_tag": "Constant",
@@ -1355,7 +1355,7 @@
     "since": "1.0.0",
     "category": "annotations",
     "signature": "declare const unAnnotate: <A>(self: Doc<A>) => Doc<never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2119"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2128"
   },
   {
     "_tag": "Constant",
@@ -1370,7 +1370,7 @@
     "since": "1.0.0",
     "category": "folding",
     "signature": "declare const match: { <A, R>(patterns: { readonly Fail: () => R; readonly Empty: () => R; readonly Char: (char: string) => R; readonly Text: (text: string) => R; readonly Line: () => R; readonly FlatAlt: (x: Doc<A>, y: Doc<A>) => R; readonly Cat: (x: Doc<A>, y: Doc<A>) => R; readonly Nest: (indent: number, doc: Doc<A>) => R; readonly Union: (x: Doc<A>, y: Doc<A>) => R; readonly Column: (react: (position: number) => Doc<A>) => R; readonly WithPageWidth: (react: (pageWidth: PageWidth) => Doc<A>) => R; readonly Nesting: (react: (level: number) => Doc<A>) => R; readonly Annotated: (annotation: A, doc: Doc<A>) => R; }): (self: Doc<A>) => R; <A, R>(self: Doc<A>, patterns: { readonly Fail: () => R; readonly Empty: () => R; readonly Char: (char: string) => R; readonly Text: (text: string) => R; readonly Line: () => R; readonly FlatAlt: (x: Doc<A>, y: Doc<A>) => R; readonly Cat: (x: Doc<A>, y: Doc<A>) => R; readonly Nest: (indent: number, doc: Doc<A>) => R; readonly Union: (x: Doc<A>, y: Doc<A>) => R; readonly Column: (react: (position: number) => Doc<A>) => R; readonly WithPageWidth: (react: (pageWidth: PageWidth) => Doc<A>) => R; readonly Nesting: (react: (level: number) => Doc<A>) => R; readonly Annotated: (annotation: A, doc: Doc<A>) => R; }): R; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2129"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2138"
   },
   {
     "_tag": "Constant",
@@ -1385,7 +1385,7 @@
     "since": "1.0.0",
     "category": "rendering",
     "signature": "declare const render: { (config: Doc.RenderConfig): <A>(self: Doc<A>) => string; <A>(self: Doc<A>, config: Doc.RenderConfig): string; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2175"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2184"
   },
   {
     "_tag": "Constant",
@@ -1400,7 +1400,7 @@
     "since": "1.0.0",
     "category": "rendering",
     "signature": "declare const renderStream: <A>(self: DocStream<A>) => string",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2184"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2193"
   },
   {
     "_tag": "Constant",
@@ -1415,7 +1415,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const map: { <A, B>(f: (a: A) => B): (self: Doc<A>) => Doc<B>; <A, B>(self: Doc<A>, f: (a: A) => B): Doc<B>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2196"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2205"
   },
   {
     "_tag": "Constant",
@@ -1430,7 +1430,7 @@
     "since": "1.0.0",
     "category": "instances",
     "signature": "declare const getSemigroup: <A>(_: void) => Semigroup<Doc<A>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2205"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2214"
   },
   {
     "_tag": "Constant",
@@ -1445,7 +1445,7 @@
     "since": "1.0.0",
     "category": "instances",
     "signature": "declare const getMonoid: <A>(_: void) => Monoid<Doc<A>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2211"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2220"
   },
   {
     "_tag": "Constant",
@@ -1460,7 +1460,7 @@
     "since": "1.0.0",
     "category": "instances",
     "signature": "declare const Covariant: covariant.Covariant<DocTypeLambda>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2217"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2226"
   },
   {
     "_tag": "Constant",
@@ -1475,7 +1475,25 @@
     "since": "1.0.0",
     "category": "instances",
     "signature": "declare const Invariant: invariant.Invariant<DocTypeLambda>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2223"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2232"
+  },
+  {
+    "_tag": "Constant",
+    "module": {
+      "name": "Doc.ts",
+      "path": "src/Doc.ts"
+    },
+    "project": "@effect/printer",
+    "name": "sanitize",
+    "description": "Removes control characters from the text leaves of a document while\npreserving its structure and annotations.\n\nHorizontal tabs (`U+0009`) and line feeds (`U+000A`) are preserved. Other C0\ncontrols, DEL (`U+007F`), and C1 controls (`U+0080` through `U+009F`) are\nremoved.\n\nUse this at the boundary where untrusted text enters a document that will be\nrendered to a terminal. Existing constructors and renderers remain suitable\nfor trusted text containing intentional terminal sequences, such as OSC 8\nhyperlinks.",
+    "deprecated": false,
+    "examples": [
+      "```ts\nimport * as assert from \"node:assert\"\nimport * as Doc from \"@effect/printer/Doc\"\n\nconst doc = Doc.sanitize(Doc.text(\"hello\\u001bworld\"))\n\nassert.strictEqual(\n  Doc.render(doc, { style: \"pretty\" }),\n  \"helloworld\"\n)\n```"
+    ],
+    "since": "1.0.0",
+    "category": "utilities",
+    "signature": "declare const sanitize: <A>(self: Doc<A>) => Doc<A>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2267"
   },
   {
     "_tag": "Constant",
@@ -1493,7 +1511,7 @@
     "since": "1.0.0",
     "category": "utilities",
     "signature": "declare const surround: { <A, B, C>(left: Doc<A>, right: Doc<B>): (self: Doc<C>) => Doc<A | B | C>; <A, B, C>(self: Doc<C>, left: Doc<A>, right: Doc<B>): Doc<A | B | C>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2253"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2293"
   },
   {
     "_tag": "Constant",
@@ -1509,7 +1527,7 @@
     "since": "1.0.0",
     "category": "utilities",
     "signature": "declare const singleQuoted: <A>(self: Doc<A>) => Doc<A>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2264"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2304"
   },
   {
     "_tag": "Constant",
@@ -1525,7 +1543,7 @@
     "since": "1.0.0",
     "category": "utilities",
     "signature": "declare const doubleQuoted: <A>(self: Doc<A>) => Doc<A>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2272"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2312"
   },
   {
     "_tag": "Constant",
@@ -1541,7 +1559,7 @@
     "since": "1.0.0",
     "category": "utilities",
     "signature": "declare const parenthesized: <A>(self: Doc<A>) => Doc<A>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2280"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2320"
   },
   {
     "_tag": "Constant",
@@ -1557,7 +1575,7 @@
     "since": "1.0.0",
     "category": "utilities",
     "signature": "declare const angleBracketed: <A>(self: Doc<A>) => Doc<A>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2288"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2328"
   },
   {
     "_tag": "Constant",
@@ -1573,7 +1591,7 @@
     "since": "1.0.0",
     "category": "utilities",
     "signature": "declare const squareBracketed: <A>(self: Doc<A>) => Doc<A>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2296"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2336"
   },
   {
     "_tag": "Constant",
@@ -1589,7 +1607,7 @@
     "since": "1.0.0",
     "category": "utilities",
     "signature": "declare const curlyBraced: <A>(self: Doc<A>) => Doc<A>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2304"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2344"
   },
   {
     "_tag": "Constant",
@@ -1607,7 +1625,7 @@
     "since": "1.0.0",
     "category": "utilities",
     "signature": "declare const spaces: (n: number) => Doc<never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2326"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2366"
   },
   {
     "_tag": "Constant",
@@ -1622,7 +1640,7 @@
     "since": "1.0.0",
     "category": "utilities",
     "signature": "declare const textSpaces: (n: number) => string",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2332"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2372"
   },
   {
     "_tag": "Constant",
@@ -1640,7 +1658,7 @@
     "since": "1.0.0",
     "category": "utilities",
     "signature": "declare const words: (s: string, char?: string) => ReadonlyArray<Doc<never>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2354"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2394"
   },
   {
     "_tag": "Constant",
@@ -1658,7 +1676,7 @@
     "since": "1.0.0",
     "category": "utilities",
     "signature": "declare const reflow: (s: string, char?: string) => Doc<never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2391"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2431"
   },
   {
     "_tag": "Constant",
@@ -1676,7 +1694,7 @@
     "since": "1.0.0",
     "category": "utilities",
     "signature": "declare const punctuate: { <A, B>(punctuator: Doc<A>): (docs: Iterable<Doc<B>>) => ReadonlyArray<Doc<A | B>>; <A, B>(docs: Iterable<Doc<B>>, punctuator: Doc<A>): ReadonlyArray<Doc<A | B>>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2433"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L2473"
   },
   {
     "_tag": "Interface",

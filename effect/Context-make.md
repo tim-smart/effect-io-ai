@@ -3,27 +3,27 @@ Module: `Context`<br />
 
 ## Context.make
 
-Creates a new `Context` with a single service associated to the key.
+Creates a new `Context` with a single service associated to the tag.
 
-**Example** (Creating a context with one service)
+**Example**
 
 ```ts
-import { Context } from "effect"
 import * as assert from "node:assert"
+import { Context } from "effect"
 
-const Port = Context.Service<{ PORT: number }>("Port")
+const Port = Context.GenericTag<{ PORT: number }>("Port")
 
-const context = Context.make(Port, { PORT: 8080 })
+const Services = Context.make(Port, { PORT: 8080 })
 
-assert.deepStrictEqual(Context.get(context, Port), { PORT: 8080 })
+assert.deepStrictEqual(Context.get(Services, Port), { PORT: 8080 })
 ```
 
 **Signature**
 
 ```ts
-declare const make: <I, S>(key: Key<I, S>, service: Types.NoInfer<S>) => Context<I>
+declare const make: <I, S>(tag: Tag<I, S>, service: Types.NoInfer<S>) => Context<I>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Context.ts#L643)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Context.ts#L290)
 
 Since v2.0.0

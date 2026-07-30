@@ -3,31 +3,23 @@ Module: `Predicate`<br />
 
 ## Predicate.not
 
-Negates a predicate.
+Returns a new predicate that is the logical negation of the given predicate.
 
-**When to use**
+**Note**: If the input is a `Refinement`, the resulting predicate will be a
+simple `Predicate`, as TypeScript cannot infer the negative type.
 
-Use when you want the inverse of an existing predicate.
-
-**Details**
-
-Returns a new predicate that flips the boolean result.
-
-**Example** (Negating a predicate)
+**Example**
 
 ```ts
-import { Predicate } from "effect"
+import * as assert from "node:assert"
+import { Predicate, Number } from "effect"
 
-const isNotString = Predicate.not(Predicate.isString)
+const isNonPositive = Predicate.not(Number.greaterThan(0))
 
-console.log(isNotString(1))
+assert.strictEqual(isNonPositive(-1), true)
+assert.strictEqual(isNonPositive(0), true)
+assert.strictEqual(isNonPositive(1), false)
 ```
-
-**See**
-
-- `and`
-- `or`
-- `xor`
 
 **Signature**
 
@@ -35,6 +27,6 @@ console.log(isNotString(1))
 declare const not: <A>(self: Predicate<A>) => Predicate<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L1545)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L1103)
 
 Since v2.0.0

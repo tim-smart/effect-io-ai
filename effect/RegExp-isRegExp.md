@@ -3,17 +3,13 @@ Module: `RegExp`<br />
 
 ## RegExp.isRegExp
 
-Checks whether a value is a `RegExp`.
+Tests if a value is a `RegExp`.
 
-**When to use**
-
-Use to validate unknown input before treating it as a regular expression.
-
-**Example** (Checking for regular expressions)
+**Example**
 
 ```ts
-import { RegExp } from "effect"
 import * as assert from "node:assert"
+import { RegExp } from "effect"
 
 assert.deepStrictEqual(RegExp.isRegExp(/a/), true)
 assert.deepStrictEqual(RegExp.isRegExp("a"), false)
@@ -25,6 +21,6 @@ assert.deepStrictEqual(RegExp.isRegExp("a"), false)
 declare const isRegExp: (input: unknown) => input is RegExp
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/RegExp.ts#L61)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/RegExp.ts#L23)
 
 Since v3.9.0

@@ -3,41 +3,22 @@ Module: `Types`<br />
 
 ## Types.ExtractTag
 
-Extracts a specific member of a tagged union by its `_tag` value.
+Extracts the type of the given tag.
 
-**When to use**
-
-Use to select tagged-union members whose `_tag` matches a specific value in
-type-level code.
-
-**Details**
-
-Returns `never` if no member matches the tag.
-
-**Example** (Extracting a variant)
+**Example**
 
 ```ts
 import type { Types } from "effect"
 
-type MyError =
-  | { readonly _tag: "NotFound"; readonly id: string }
-  | { readonly _tag: "Timeout"; readonly ms: number }
-
-type TimeoutError = Types.ExtractTag<MyError, "Timeout">
-// { readonly _tag: "Timeout"; readonly ms: number }
+type Res = Types.ExtractTag<{ _tag: "a", a: number } | { _tag: "b", b: number }, "b"> // { _tag: "b", b: number }
 ```
-
-**See**
-
-- `ExcludeTag`
-- `Tags`
 
 **Signature**
 
 ```ts
-type ExtractTag<E, K> = E extends { readonly _tag: infer T } ? K extends T ? E : never : never
+type ExtractTag<E, K> = Extract<E, { _tag: K }>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L187)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L102)
 
 Since v2.0.0

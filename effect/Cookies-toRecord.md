@@ -1,0 +1,16 @@
+Package: `@effect/platform`<br />
+Module: `Cookies`<br />
+
+## Cookies.toRecord
+
+To record
+
+**Signature**
+
+```ts
+declare const toRecord: (self: Cookies) => Record<string, string>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Cookies.ts#L682)
+
+Since v1.0.0

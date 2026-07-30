@@ -5,17 +5,13 @@ Module: `Number`<br />
 
 Decrements a number by `1`.
 
-**When to use**
-
-Use to decrement a numeric counter by one.
-
-**Example** (Decrementing a number)
+**Example**
 
 ```ts
-import { Number } from "effect"
-import * as assert from "node:assert"
+import * as assert from "node:assert/strict"
+import { decrement } from "effect/Number"
 
-assert.deepStrictEqual(Number.decrement(3), 2)
+assert.equal(decrement(3), 2)
 ```
 
 **Signature**
@@ -24,6 +20,6 @@ assert.deepStrictEqual(Number.decrement(3), 2)
 declare const decrement: (n: number) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Number.ts#L254)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Number.ts#L727)
 
 Since v2.0.0

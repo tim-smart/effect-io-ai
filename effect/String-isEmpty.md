@@ -3,16 +3,16 @@ Module: `String`<br />
 
 ## String.isEmpty
 
-Checks whether a `string` is empty.
+Test whether a `string` is empty.
 
-**Example** (Checking for empty strings)
+**Example**
 
 ```ts
-import { String } from "effect"
 import * as assert from "node:assert"
+import { String } from "effect"
 
-assert.deepStrictEqual(String.isEmpty(""), true)
-assert.deepStrictEqual(String.isEmpty("a"), false)
+assert.deepStrictEqual(String.isEmpty(''), true)
+assert.deepStrictEqual(String.isEmpty('a'), false)
 ```
 
 **Signature**
@@ -21,6 +21,6 @@ assert.deepStrictEqual(String.isEmpty("a"), false)
 declare const isEmpty: (self: string) => self is ""
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/String.ts#L402)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/String.ts#L228)
 
 Since v2.0.0

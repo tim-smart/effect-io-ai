@@ -3,25 +3,16 @@ Module: `Array`<br />
 
 ## Array.dedupeAdjacent
 
-Removes consecutive duplicate elements using `Equal.equivalence()`.
+Deduplicates adjacent elements that are identical.
 
-**When to use**
-
-Use when you need to collapse consecutive duplicates while preserving later
-non-consecutive repeats, and the default equality is sufficient.
-
-**Example** (Removing adjacent duplicates)
+**Example**
 
 ```ts
 import { Array } from "effect"
 
-console.log(Array.dedupeAdjacent([1, 1, 2, 2, 3, 3])) // [1, 2, 3]
+const result = Array.dedupeAdjacent([1, 1, 2, 2, 3, 3])
+console.log(result) // [1, 2, 3]
 ```
-
-**See**
-
-- `dedupeAdjacentWith` — use custom equality
-- `dedupe` — remove all duplicates
 
 **Signature**
 
@@ -29,6 +20,6 @@ console.log(Array.dedupeAdjacent([1, 1, 2, 2, 3, 3])) // [1, 2, 3]
 declare const dedupeAdjacent: <A>(self: Iterable<A>) => Array<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L4589)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L3251)
 
 Since v2.0.0

@@ -3,16 +3,7 @@ Module: `Chunk`<br />
 
 ## Chunk.head
 
-Returns the first element of this chunk safely if it exists.
-
-**Example** (Getting the first element)
-
-```ts
-import { Chunk } from "effect"
-
-console.log(Chunk.head(Chunk.empty())) // { _tag: "None" }
-console.log(Chunk.head(Chunk.make(1, 2, 3))) // { _tag: "Some", value: 1 }
-```
+Returns the first element of this chunk if it exists.
 
 **Signature**
 
@@ -20,6 +11,6 @@ console.log(Chunk.head(Chunk.make(1, 2, 3))) // { _tag: "Some", value: 1 }
 declare const head: <A>(self: Chunk<A>) => Option<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Chunk.ts#L1406)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Chunk.ts#L835)
 
 Since v2.0.0

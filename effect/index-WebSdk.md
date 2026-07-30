@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.WebSdk
 
-Re-exports all named exports from the "./WebSdk.ts" module as `WebSdk`.
+Re-exports all named exports from the "./WebSdk.js" module as `WebSdk`.
 
 **Signature**
 
 ```ts
-export * as WebSdk from "./WebSdk.ts"
+export * as WebSdk from "./WebSdk.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/index.ts#L35)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/opentelemetry/src/index.ts#L64)
 
-Since v4.0.0
+Since v1.0.0

@@ -3,34 +3,28 @@ Module: `Number`<br />
 
 ## Number.remainder
 
-Returns the remainder left over when one operand is divided by a second operand, always taking the sign of the dividend.
+Returns the remainder left over when one operand is divided by a second
+operand.
 
-**When to use**
+It always takes the sign of the dividend.
 
-Use to compute a numeric remainder while preserving decimal precision better
-than direct JavaScript `%` for decimal operands.
-
-**Example** (Calculating remainders)
+**Example**
 
 ```ts
-import { Number } from "effect"
-import * as assert from "node:assert"
+import * as assert from "node:assert/strict"
+import { remainder } from "effect/Number"
 
-assert.deepStrictEqual(Number.remainder(2, 2), 0)
-assert.deepStrictEqual(Number.remainder(3, 2), 1)
-assert.deepStrictEqual(Number.remainder(-4, 2), -0)
+assert.equal(remainder(2, 2), 0)
+assert.equal(remainder(3, 2), 1)
+assert.equal(remainder(-4, 2), -0)
 ```
-
-**See**
-
-- `divide` for quotient calculation with division-by-zero represented as `Option.none`
 
 **Signature**
 
 ```ts
-declare const remainder: { (divisor: number): (self: number) => number; (self: number, divisor: number): number; }
+declare const remainder: { (divisor: number): (dividend: number) => number; (dividend: number, divisor: number): number; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Number.ts#L646)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Number.ts#L978)
 
 Since v2.0.0

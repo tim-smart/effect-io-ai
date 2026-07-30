@@ -3,20 +3,16 @@ Module: `Boolean`<br />
 
 ## Boolean.isBoolean
 
-Checks whether a value is a `boolean`.
+Tests if a value is a `boolean`.
 
-**When to use**
-
-Use to validate unknown input and narrow it to `boolean`.
-
-**Example** (Checking for booleans)
+**Example**
 
 ```ts
-import { Boolean } from "effect"
 import * as assert from "node:assert"
+import { isBoolean } from "effect/Boolean"
 
-assert.deepStrictEqual(Boolean.isBoolean(true), true)
-assert.deepStrictEqual(Boolean.isBoolean("true"), false)
+assert.deepStrictEqual(isBoolean(true), true)
+assert.deepStrictEqual(isBoolean("true"), false)
 ```
 
 **Signature**
@@ -25,6 +21,6 @@ assert.deepStrictEqual(Boolean.isBoolean("true"), false)
 declare const isBoolean: (input: unknown) => input is boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Boolean.ts#L72)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Boolean.ts#L29)
 
 Since v2.0.0

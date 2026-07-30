@@ -5,25 +5,14 @@ Module: `BigDecimal`<br />
 
 Returns the minimum between two `BigDecimal`s.
 
-**When to use**
-
-Use to select the smaller of two `BigDecimal` values.
-
-**Example** (Selecting the smaller decimal)
+**Example**
 
 ```ts
-import { BigDecimal } from "effect"
 import * as assert from "node:assert"
+import { min, unsafeFromString } from "effect/BigDecimal"
 
-assert.deepStrictEqual(
-  BigDecimal.min(BigDecimal.fromStringUnsafe("2"), BigDecimal.fromStringUnsafe("3")),
-  BigDecimal.fromStringUnsafe("2")
-)
+assert.deepStrictEqual(min(unsafeFromString("2"), unsafeFromString("3")), unsafeFromString("2"))
 ```
-
-**See**
-
-- `max` for selecting the larger value
 
 **Signature**
 
@@ -31,6 +20,6 @@ assert.deepStrictEqual(
 declare const min: { (that: BigDecimal): (self: BigDecimal) => BigDecimal; (self: BigDecimal, that: BigDecimal): BigDecimal; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L957)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L633)
 
 Since v2.0.0

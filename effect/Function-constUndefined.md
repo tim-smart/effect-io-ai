@@ -3,19 +3,15 @@ Module: `Function`<br />
 
 ## Function.constUndefined
 
-Returns `undefined` when called.
+A thunk that returns always `undefined`.
 
-**When to use**
-
-Use when you need a thunk that returns `undefined` on every invocation.
-
-**Example** (Returning undefined from a thunk)
+**Example**
 
 ```ts
-import { Function } from "effect"
 import * as assert from "node:assert"
+import { constUndefined } from "effect/Function"
 
-assert.deepStrictEqual(Function.constUndefined(), undefined)
+assert.deepStrictEqual(constUndefined(), undefined)
 ```
 
 **Signature**
@@ -24,6 +20,6 @@ assert.deepStrictEqual(Function.constUndefined(), undefined)
 declare const constUndefined: LazyArg<undefined>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L408)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L352)
 
 Since v2.0.0

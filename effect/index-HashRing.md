@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.HashRing
 
-Re-exports all named exports from the "./HashRing.ts" module as `HashRing`.
+Re-exports all named exports from the "./HashRing.js" module as `HashRing`.
 
 **Signature**
 
 ```ts
-export * as HashRing from "./HashRing.ts"
+export * as HashRing from "./HashRing.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L247)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L383)
 
-Since v4.0.0
+Since v3.19.0

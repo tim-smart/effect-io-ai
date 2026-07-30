@@ -3,15 +3,15 @@ Module: `String`<br />
 
 ## String.length
 
-Returns the JavaScript string length, measured in UTF-16 code units.
+Calculate the number of characters in a `string`.
 
-**Example** (Getting string length)
+**Example**
 
 ```ts
-import { String } from "effect"
 import * as assert from "node:assert"
+import { String } from "effect"
 
-assert.deepStrictEqual(String.length("abc"), 3)
+assert.deepStrictEqual(String.length('abc'), 3)
 ```
 
 **Signature**
@@ -20,6 +20,6 @@ assert.deepStrictEqual(String.length("abc"), 3)
 declare const length: (self: string) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/String.ts#L437)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/String.ts#L250)
 
 Since v2.0.0

@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.BunStream
 
-Re-exports all named exports from the "./BunStream.ts" module as `BunStream`.
+Re-exports all named exports from the "./BunStream.js" module as `BunStream`.
 
 **Signature**
 
 ```ts
-export * as BunStream from "./BunStream.ts"
+export * as BunStream from "./BunStream.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L100)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/index.ts#L79)
 
-Since v4.0.0
+Since v1.0.0

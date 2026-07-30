@@ -3,15 +3,13 @@ Module: `Graph`<br />
 
 ## Graph.isBipartite
 
-Checks whether an undirected graph is bipartite.
-
-**Details**
+Checks if an undirected graph is bipartite.
 
 A bipartite graph is one whose vertices can be divided into two disjoint sets
 such that no two vertices within the same set are adjacent. Uses BFS coloring
 to determine bipartiteness.
 
-**Example** (Checking bipartite graphs)
+**Example**
 
 ```ts
 import { Graph } from "effect"
@@ -46,6 +44,6 @@ console.log(Graph.isBipartite(triangle)) // false
 declare const isBipartite: <N, E>(graph: Graph<N, E, "undirected"> | MutableGraph<N, E, "undirected">) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L3760)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L2084)
 
 Since v3.18.0

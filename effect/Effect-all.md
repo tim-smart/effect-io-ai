@@ -3,32 +3,56 @@ Module: `Effect`<br />
 
 ## Effect.all
 
-Combines an iterable or record of effects into one effect whose success shape
-follows the input.
-
-**When to use**
-
-Use to run a known collection of effects and collect results in the same
-tuple, iterable, or record shape.
+Combines multiple effects into one, returning results based on the input
+structure.
 
 **Details**
 
-Tuple and iterable inputs collect results in order. Record inputs collect
-results under the same keys. By default, the combined effect fails on the
-first failure; with concurrent execution, effects that have already started
-may be interrupted, while effects not yet started are skipped.
+Use this function when you need to run multiple effects and combine their
+results into a single output. It supports tuples, iterables, structs, and
+records, making it flexible for different input types.
 
-Options:
-
-Use `concurrency` to control sequential or concurrent execution. Use
-`mode: "result"` to run every effect and collect each success or failure as a
-`Result` in the same output shape. Use `discard: true` to ignore successful
-values and return `void`.
-
-**Example** (Collecting tuple results in order)
+For instance, if the input is a tuple:
 
 ```ts
-import { Console, Effect } from "effect"
+//         ┌─── a tuple of effects
+//         ▼
+Effect.all([effect1, effect2, ...])
+```
+
+the effects are executed sequentially, and the result is a new effect
+containing the results as a tuple. The results in the tuple match the order
+of the effects passed to `Effect.all`.
+
+**Concurrency**
+
+You can control the execution order (e.g., sequential vs. concurrent) using
+the `concurrency` option.
+
+**Short-Circuiting Behavior**
+
+This function stops execution on the first error it encounters, this is
+called "short-circuiting". If any effect in the collection fails, the
+remaining effects will not run, and the error will be propagated. To change
+this behavior, you can use the `mode` option, which allows all effects to run
+and collect results as `Either` or `Option`.
+
+**The `mode` option**
+
+The `{ mode: "either" }` option changes the behavior of `Effect.all` to
+ensure all effects run, even if some fail. Instead of stopping on the first
+failure, this mode collects both successes and failures, returning an array
+of `Either` instances where each result is either a `Right` (success) or a
+`Left` (failure).
+
+Similarly, the `{ mode: "validate" }` option uses `Option` to indicate
+success or failure. Each effect returns `None` for success and `Some` with
+the error for failure.
+
+**Example** (Combining Effects in Tuples)
+
+```ts
+import { Effect, Console } from "effect"
 
 const tupleOfEffects = [
   Effect.succeed(42).pipe(Effect.tap(Console.log)),
@@ -46,10 +70,10 @@ Effect.runPromise(resultsAsTuple).then(console.log)
 // [ 42, 'Hello' ]
 ```
 
-**Example** (Collecting iterable results in order)
+**Example** (Combining Effects in Iterables)
 
 ```ts
-import { Console, Effect } from "effect"
+import { Effect, Console } from "effect"
 
 const iterableOfEffects: Iterable<Effect.Effect<number>> = [1, 2, 3].map(
   (n) => Effect.succeed(n).pipe(Effect.tap(Console.log))
@@ -67,10 +91,10 @@ Effect.runPromise(resultsAsArray).then(console.log)
 // [ 1, 2, 3 ]
 ```
 
-**Example** (Collecting struct results by key)
+**Example** (Combining Effects in Structs)
 
 ```ts
-import { Console, Effect } from "effect"
+import { Effect, Console } from "effect"
 
 const structOfEffects = {
   a: Effect.succeed(42).pipe(Effect.tap(Console.log)),
@@ -88,10 +112,10 @@ Effect.runPromise(resultsAsStruct).then(console.log)
 // { a: 42, b: 'Hello' }
 ```
 
-**Example** (Collecting record results by key)
+**Example** (Combining Effects in Records)
 
 ```ts
-import { Console, Effect } from "effect"
+import { Effect, Console } from "effect"
 
 const recordOfEffects: Record<string, Effect.Effect<number>> = {
   key1: Effect.succeed(1).pipe(Effect.tap(Console.log)),
@@ -109,10 +133,10 @@ Effect.runPromise(resultsAsRecord).then(console.log)
 // { key1: 1, key2: 2 }
 ```
 
-**Example** (Stopping on the first failure)
+**Example** (Short-Circuiting Behavior)
 
 ```ts
-import { Console, Effect } from "effect"
+import { Effect, Console } from "effect"
 
 const program = Effect.all([
   Effect.succeed("Task1").pipe(Effect.tap(Console.log)),
@@ -131,16 +155,77 @@ Effect.runPromiseExit(program).then(console.log)
 // }
 ```
 
+**Example** (Collecting Results with `mode: "either"`)
+
+```ts
+import { Effect, Console } from "effect"
+
+const effects = [
+  Effect.succeed("Task1").pipe(Effect.tap(Console.log)),
+  Effect.fail("Task2: Oh no!").pipe(Effect.tap(Console.log)),
+  Effect.succeed("Task3").pipe(Effect.tap(Console.log))
+]
+
+const program = Effect.all(effects, { mode: "either" })
+
+Effect.runPromiseExit(program).then(console.log)
+// Output:
+// Task1
+// Task3
+// {
+//   _id: 'Exit',
+//   _tag: 'Success',
+//   value: [
+//     { _id: 'Either', _tag: 'Right', right: 'Task1' },
+//     { _id: 'Either', _tag: 'Left', left: 'Task2: Oh no!' },
+//     { _id: 'Either', _tag: 'Right', right: 'Task3' }
+//   ]
+// }
+```
+
+**Example** (Collecting Results with `mode: "validate"`)
+
+```ts
+import { Effect, Console } from "effect"
+
+const effects = [
+  Effect.succeed("Task1").pipe(Effect.tap(Console.log)),
+  Effect.fail("Task2: Oh no!").pipe(Effect.tap(Console.log)),
+  Effect.succeed("Task3").pipe(Effect.tap(Console.log))
+]
+
+const program = Effect.all(effects, { mode: "validate" })
+
+Effect.runPromiseExit(program).then((result) => console.log("%o", result))
+// Output:
+// Task1
+// Task3
+// {
+//   _id: 'Exit',
+//   _tag: 'Failure',
+//   cause: {
+//     _id: 'Cause',
+//     _tag: 'Fail',
+//     failure: [
+//       { _id: 'Option', _tag: 'None' },
+//       { _id: 'Option', _tag: 'Some', value: 'Task2: Oh no!' },
+//       { _id: 'Option', _tag: 'None' }
+//     ]
+//   }
+// }
+```
+
 **See**
 
 - `forEach` for iterating over elements and applying an effect.
+- `allWith` for a data-last version of this function.
 
 **Signature**
 
 ```ts
-declare const all: <const Arg extends Iterable<Effect<any, any, any>> | Record<string, Effect<any, any, any>>, O extends { readonly concurrency?: Concurrency | undefined; readonly discard?: boolean | undefined; readonly mode?: "default" | "result" | undefined; }>(arg: Arg, options?: O) => All.Return<Arg, O>
+declare const all: <const Arg extends Iterable<Effect<any, any, any>> | Record<string, Effect<any, any, any>>, O extends NoExcessProperties<{ readonly concurrency?: Concurrency | undefined; readonly batching?: boolean | "inherit" | undefined; readonly discard?: boolean | undefined; readonly mode?: "default" | "validate" | "either" | undefined; readonly concurrentFinalizers?: boolean | undefined; }, O>>(arg: Arg, options?: O) => All.Return<Arg, O>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L515)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L825)
 
 Since v2.0.0

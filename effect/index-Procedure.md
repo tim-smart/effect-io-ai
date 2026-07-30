@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.Procedure
 
-Re-exports all named exports from the "./Procedure.ts" module as `Procedure`.
+Re-exports all named exports from the "./Procedure.js" module as `Procedure`.
 
 **Signature**
 
 ```ts
-export * as Procedure from "./Procedure.ts"
+export * as Procedure from "./Procedure.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/mssql/src/index.ts#L32)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql-mssql/src/index.ts#L30)
 
-Since v4.0.0
+Since v1.0.0

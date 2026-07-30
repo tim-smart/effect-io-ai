@@ -3,14 +3,7 @@ Module: `Graph`<br />
 
 ## Graph.GraphError
 
-Error thrown by graph operations when the requested graph structure is
-invalid, such as referencing a missing node or using unsupported edge
-weights.
-
-**When to use**
-
-Use when handling failures thrown by graph operations that reject invalid
-graph structure or unsupported algorithm inputs.
+Error thrown when a graph operation fails.
 
 **Signature**
 
@@ -18,6 +11,6 @@ graph structure or unsupported algorithm inputs.
 declare class GraphError
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L434)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L225)
 
 Since v3.18.0

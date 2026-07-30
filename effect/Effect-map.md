@@ -5,11 +5,15 @@ Module: `Effect`<br />
 
 Transforms the value inside an effect by applying a function to it.
 
-**When to use**
+**Syntax**
 
-Use to transform an effect's success value with a function that returns a
-plain value, producing a new effect without changing the original effect's
-typed error or context requirements.
+```ts
+const mappedEffect = pipe(myEffect, Effect.map(transformation))
+// or
+const mappedEffect = Effect.map(myEffect, transformation)
+// or
+const mappedEffect = myEffect.pipe(Effect.map(transformation))
+```
 
 **Details**
 
@@ -20,23 +24,10 @@ It's important to note that effects are immutable, meaning that the original
 effect is not modified. Instead, a new effect is returned with the updated
 value.
 
-**Example** (Choosing map syntax variants)
+**Example** (Adding a Service Charge)
 
 ```ts
-import { Effect, pipe } from "effect"
-
-const myEffect = Effect.succeed(1)
-const transformation = (n: number) => n + 1
-
-const mappedWithPipe = pipe(myEffect, Effect.map(transformation))
-const mappedWithDataFirst = Effect.map(myEffect, transformation)
-const mappedWithMethod = myEffect.pipe(Effect.map(transformation))
-```
-
-**Example** (Adding a service charge)
-
-```ts
-import { Effect, pipe } from "effect"
+import { pipe, Effect } from "effect"
 
 const addServiceCharge = (amount: number) => amount + 1
 
@@ -63,6 +54,6 @@ Effect.runPromise(finalAmount).then(console.log)
 declare const map: { <A, B>(f: (a: A) => B): <E, R>(self: Effect<A, E, R>) => Effect<B, E, R>; <A, E, R, B>(self: Effect<A, E, R>, f: (a: A) => B): Effect<B, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L2409)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L5170)
 
 Since v2.0.0

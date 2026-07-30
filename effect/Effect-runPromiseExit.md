@@ -3,21 +3,31 @@ Module: `Effect`<br />
 
 ## Effect.runPromiseExit
 
-Runs an effect and returns a `Promise` that resolves to an `Exit`, which
-represents the outcome (success or failure) of the effect.
-
-**When to use**
-
-Use when you need to determine if an effect succeeded
-or failed, including any defects, and you want to work with a `Promise`.
+Runs an effect and returns a `Promise` that resolves to an `Exit`,
+representing the outcome.
 
 **Details**
 
-The `Exit` type represents the result of the effect. Successful effects are
-wrapped in `Success`, and failed effects are wrapped in `Failure` with a
-`Cause`.
+This function executes an effect and resolves to an `Exit` object. The `Exit`
+type provides detailed information about the result of the effect:
+- If the effect succeeds, the `Exit` will be of type `Success` and include
+  the value produced by the effect.
+- If the effect fails, the `Exit` will be of type `Failure` and contain a
+  `Cause` object, detailing the failure.
 
-**Example** (Observing promise results as Exit)
+Using this function allows you to examine both successful results and failure
+cases in a unified way, while still leveraging `Promise` for handling the
+asynchronous behavior of the effect.
+
+**When to Use**
+
+Use this function when you need to understand the outcome of an effect,
+whether it succeeded or failed, and want to work with this result using
+`Promise` syntax. This is particularly useful when integrating with systems
+that rely on promises but need more detailed error handling than a simple
+rejection.
+
+**Example** (Handling Results as Exit)
 
 ```ts
 import { Effect } from "effect"
@@ -45,16 +55,12 @@ Effect.runPromiseExit(Effect.fail("my error")).then(console.log)
 // }
 ```
 
-**See**
-
-- `runPromise` for a version that rejects on failure.
-
 **Signature**
 
 ```ts
-declare const runPromiseExit: <A, E>(effect: Effect<A, E>, options?: RunOptions | undefined) => Promise<Exit.Exit<A, E>>
+declare const runPromiseExit: <A, E>(effect: Effect<A, E, never>, options?: { readonly signal?: AbortSignal; } | undefined) => Promise<Exit.Exit<A, E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L9184)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12197)
 
 Since v2.0.0

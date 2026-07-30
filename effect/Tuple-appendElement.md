@@ -3,36 +3,14 @@ Module: `Tuple`<br />
 
 ## Tuple.appendElement
 
-Appends a single element to the end of a tuple.
-
-**When to use**
-
-Use when you need the appended value to remain part of the tuple's type-level
-shape and preserve literal element positions.
-
-**Details**
-
-The result type is `[...T, E]`, preserving all existing element types.
-
-**Example** (Appending an element)
-
-```ts
-import { pipe, Tuple } from "effect"
-
-const result = pipe(Tuple.make(1, 2), Tuple.appendElement("end"))
-console.log(result) // [1, 2, "end"]
-```
-
-**See**
-
-- `appendElements` – append multiple elements (another tuple)
+Appends an element to the end of a tuple.
 
 **Signature**
 
 ```ts
-declare const appendElement: { <const E>(element: E): <const T extends ReadonlyArray<unknown>>(self: T) => [...T, E]; <const T extends ReadonlyArray<unknown>, const E>(self: T, element: E): [...T, E]; }
+declare const appendElement: { <B>(that: B): <A extends ReadonlyArray<unknown>>(self: A) => [...A, B]; <A extends ReadonlyArray<unknown>, B>(self: A, that: B): [...A, B]; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Tuple.ts#L210)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Tuple.ts#L230)
 
 Since v2.0.0

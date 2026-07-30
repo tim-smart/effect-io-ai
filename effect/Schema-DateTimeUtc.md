@@ -3,16 +3,14 @@ Module: `Schema`<br />
 
 ## Schema.DateTimeUtc
 
-Type-level representation of `DateTimeUtc`.
+Defines a schema that attempts to convert a `string` to a `DateTime.Utc` instance using the `DateTime.unsafeMake` constructor.
 
 **Signature**
 
 ```ts
-export interface DateTimeUtc extends declare<DateTime.Utc> {
-  readonly "Rebuild": DateTimeUtc
-}
+declare class DateTimeUtc
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L13398)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6939)
 
 Since v3.10.0

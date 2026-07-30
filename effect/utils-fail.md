@@ -3,7 +3,7 @@ Module: `utils`<br />
 
 ## utils.fail
 
-Fails the current test with the provided error message.
+Throws an `AssertionError` with the provided error message.
 
 **Signature**
 
@@ -11,6 +11,6 @@ Fails the current test with the provided error message.
 declare const fail: (message: string) => void
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L31)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L22)
 
-Since v4.0.0
+Since v0.21.0

@@ -5,20 +5,16 @@ Module: `Boolean`<br />
 
 Combines two booleans using an implication: `(!self || that)`.
 
-**When to use**
-
-Use to model logical implication between a condition and a consequence.
-
-**Example** (Checking boolean implication)
+**Example**
 
 ```ts
-import { Boolean } from "effect"
 import * as assert from "node:assert"
+import { implies } from "effect/Boolean"
 
-assert.deepStrictEqual(Boolean.implies(true, true), true)
-assert.deepStrictEqual(Boolean.implies(true, false), false)
-assert.deepStrictEqual(Boolean.implies(false, true), true)
-assert.deepStrictEqual(Boolean.implies(false, false), true)
+assert.deepStrictEqual(implies(true, true), true)
+assert.deepStrictEqual(implies(true, false), false)
+assert.deepStrictEqual(implies(false, true), true)
+assert.deepStrictEqual(implies(false, false), true)
 ```
 
 **Signature**
@@ -27,6 +23,6 @@ assert.deepStrictEqual(Boolean.implies(false, false), true)
 declare const implies: { (that: boolean): (self: boolean) => boolean; (self: boolean, that: boolean): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Boolean.ts#L369)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Boolean.ts#L238)
 
 Since v2.0.0

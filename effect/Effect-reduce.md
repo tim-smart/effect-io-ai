@@ -3,48 +3,61 @@ Module: `Effect`<br />
 
 ## Effect.reduce
 
-Reduces elements from left to right with an effectful accumulator function.
-
-**When to use**
-
-Use when each accumulation step is effectful and must run sequentially in
-iteration order.
+Reduces an `Iterable<A>` using an effectual function `f`, working
+sequentially from left to right.
 
 **Details**
 
-The accumulator function receives the current accumulator, the current
-element, and its zero-based index. The `zero` function is evaluated each
-time the effect runs. An empty iterable succeeds with its result. If a step
-fails, remaining elements are not processed.
+This function takes an iterable and applies a function `f` to each element in
+the iterable. The function works sequentially, starting with an initial value
+`zero` and then combining it with each element in the collection. The
+provided function `f` is called for each element in the iterable, allowing
+you to accumulate a result based on the current value and the element being
+processed.
 
-**Example** (Summing values sequentially)
+**When to Use**
+
+The function is often used for operations like summing a collection of
+numbers or combining results from multiple tasks. It ensures that operations
+are performed one after the other, maintaining the order of the elements.
+
+**Example**
 
 ```ts
 import { Console, Effect } from "effect"
 
+const processOrder = (id: number) =>
+  Effect.succeed({ id, price: 100 * id })
+    .pipe(Effect.tap(() => Console.log(`Order ${id} processed`)), Effect.delay(500 - (id * 100)))
+
 const program = Effect.reduce(
-  [1, 2, 3],
-  () => 0,
-  (total, value, index) =>
-    Console.log(`Adding ${value} at index ${index}`).pipe(
-      Effect.as(total + value)
-    )
+  [1, 2, 3, 4],
+  0,
+  (acc, id, i) =>
+    processOrder(id)
+      .pipe(Effect.map((order) => acc + order.price))
 )
 
 Effect.runPromise(program).then(console.log)
 // Output:
-// Adding 1 at index 0
-// Adding 2 at index 1
-// Adding 3 at index 2
-// 6
+// Order 1 processed
+// Order 2 processed
+// Order 3 processed
+// Order 4 processed
+// 1000
 ```
+
+**See**
+
+- `reduceWhile` for a similar function that stops the process based on a predicate.
+- `reduceRight` for a similar function that works from right to left.
 
 **Signature**
 
 ```ts
-declare const reduce: { <Z, A, E, R>(zero: LazyArg<Z>, f: (z: Z, a: A, i: number) => Effect<Z, E, R>): (elements: Iterable<A>) => Effect<Z, E, R>; <A, Z, E, R>(elements: Iterable<A>, zero: LazyArg<Z>, f: (z: Z, a: A, i: number) => Effect<Z, E, R>): Effect<Z, E, R>; }
+declare const reduce: { <Z, A, E, R>(zero: Z, f: (z: Z, a: A, i: number) => Effect<Z, E, R>): (elements: Iterable<A>) => Effect<Z, E, R>; <A, Z, E, R>(elements: Iterable<A>, zero: Z, f: (z: Z, a: A, i: number) => Effect<Z, E, R>): Effect<Z, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L609)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L1873)
 
 Since v2.0.0

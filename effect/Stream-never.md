@@ -5,26 +5,12 @@ Module: `Stream`<br />
 
 The stream that never produces any value or fails with any error.
 
-**Example** (Creating a never-ending stream)
-
-```ts
-import { Effect, Stream } from "effect"
-
-const program = Stream.never.pipe(
-  Stream.take(0),
-  Stream.runCollect
-)
-
-Effect.runPromise(program).then(console.log)
-// []
-```
-
 **Signature**
 
 ```ts
 declare const never: Stream<never, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L1799)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L3149)
 
 Since v2.0.0

@@ -3,38 +3,21 @@ Module: `Schedule`<br />
 
 ## Schedule.forever
 
-Returns a new `Schedule` that will recur forever.
+Creates a schedule that recurs indefinitely, producing a count of
+repetitions.
 
 **Details**
 
-The output of the schedule is the current count of its repetitions thus far
-(i.e. `0, 1, 2, ...`).
-
-**Example** (Repeating forever)
-
-```ts
-import { Console, Effect, Schedule } from "effect"
-
-// A schedule that runs forever with no delay
-const infiniteSchedule = Schedule.forever
-
-const program = Effect.gen(function*() {
-  yield* Effect.repeat(
-    Effect.gen(function*() {
-      yield* Console.log("Running forever...")
-      return "continuous-task"
-    }),
-    infiniteSchedule.pipe(Schedule.upTo({ times: 5 })) // Limit for demo
-  )
-})
-```
+This schedule runs indefinitely, returning an increasing count of executions
+(`0, 1, 2, 3, ...`). Each step increments the count by one, allowing tracking
+of how many times it has executed.
 
 **Signature**
 
 ```ts
-declare const forever: Schedule<number, unknown, never, never>
+declare const forever: Schedule<number, unknown, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L2130)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L1064)
 
 Since v2.0.0

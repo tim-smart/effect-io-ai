@@ -3,26 +3,14 @@ Module: `Request`<br />
 
 ## Request.succeed
 
-Completes a request entry successfully with the supplied value.
-
-**When to use**
-
-Use when you need to finish a `Request.Entry` with a successful request
-value.
-
-**See**
-
-- `complete` for completing an entry with a prebuilt `Exit`
-- `completeEffect` for completing an entry from an effect result
-- `fail` for completing an entry with a typed failure
-- `failCause` for completing an entry with a failure `Cause`
+Complete a `Request` with the specified value.
 
 **Signature**
 
 ```ts
-declare const succeed: { <A extends Any>(value: Success<A>): (self: Entry<A>) => Effect.Effect<void>; <A extends Any>(self: Entry<A>, value: Success<A>): Effect.Effect<void>; }
+declare const succeed: { <A extends Request<any, any>>(value: Request.Success<A>): (self: A) => Effect.Effect<void>; <A extends Request<any, any>>(self: A, value: Request.Success<A>): Effect.Effect<void>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Request.ts#L537)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Request.ts#L240)
 
 Since v2.0.0

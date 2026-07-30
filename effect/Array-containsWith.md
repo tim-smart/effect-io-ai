@@ -3,25 +3,18 @@ Module: `Array`<br />
 
 ## Array.containsWith
 
-Returns a membership-test function using a custom equivalence.
+Returns a function that checks if a `ReadonlyArray` contains a given value using a provided `isEquivalent` function.
 
-**When to use**
-
-Use when checking membership with caller-provided equality instead of
-`Equal.equivalence()`.
-
-**Example** (Checking with custom equality)
+**Example**
 
 ```ts
 import { Array, pipe } from "effect"
 
-const containsNumber = Array.containsWith((a: number, b: number) => a === b)
-console.log(pipe([1, 2, 3, 4], containsNumber(3))) // true
+const isEquivalent = (a: number, b: number) => a === b
+const containsNumber = Array.containsWith(isEquivalent)
+const result = pipe([1, 2, 3, 4], containsNumber(3))
+console.log(result) // true
 ```
-
-**See**
-
-- `contains` for the `Equal.equivalence()` variant
 
 **Signature**
 
@@ -29,6 +22,6 @@ console.log(pipe([1, 2, 3, 4], containsNumber(3))) // true
 declare const containsWith: <A>(isEquivalent: (self: A, that: A) => boolean) => { (a: A): (self: Iterable<A>) => boolean; (self: Iterable<A>, a: A): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2540)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L1826)
 
 Since v2.0.0

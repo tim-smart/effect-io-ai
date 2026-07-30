@@ -3,41 +3,26 @@ Module: `Schedule`<br />
 
 ## Schedule.modifyDelay
 
-Returns a new `Schedule` that modifies the delay of the next recurrence
-of the schedule using the specified effectful function.
+Returns a new schedule that modifies the delay between executions using a
+custom function.
 
-**Example** (Modifying delays from schedule metadata)
+**Details**
 
-```ts
-import { Console, Duration, Effect, Schedule } from "effect"
+This function transforms an existing schedule by applying `f` to modify the
+delay before each execution. The function receives both the schedule's output
+(`out`) and the originally computed delay (`duration`), and returns a new
+adjusted delay.
 
-// Modify delays based on output - increase delay on high iteration counts
-const adaptiveDelay = Schedule.recurs(10).pipe(
-  Schedule.modifyDelay(({ output, duration }) => {
-    // Double the delay if we're seeing high iteration counts
-    return Effect.succeed(output > 5 ? Duration.times(duration, 2) : duration)
-  })
-)
+**See**
 
-const program = Effect.gen(function*() {
-  let counter = 0
-  yield* Effect.repeat(
-    Effect.gen(function*() {
-      counter++
-      yield* Console.log(`Attempt ${counter}`)
-      return counter
-    }),
-    adaptiveDelay.pipe(Schedule.upTo({ times: 8 }))
-  )
-})
-```
+- `modifyDelayEffect` If you need to use an effectful function.
 
 **Signature**
 
 ```ts
-declare const modifyDelay: { <Output, Input, Error2 = never, Env2 = never>(f: (metadata: Metadata<Output, Input>) => Effect<Duration.Input, Error2, Env2>): <Error, Env>(self: Schedule<Output, Input, Error, Env>) => Schedule<Output, Input, Error | Error2, Env | Env2>; <Output, Input, Error, Env, Error2 = never, Env2 = never>(self: Schedule<Output, Input, Error, Env>, f: (metadata: Metadata<Output, Input>) => Effect<Duration.Input, Error2, Env2>): Schedule<Output, Input, Error | Error2, Env | Env2>; }
+declare const modifyDelay: { <Out>(f: (out: Out, duration: Duration.Duration) => Duration.DurationInput): <In, R>(self: Schedule<Out, In, R>) => Schedule<Out, In, R>; <Out, In, R>(self: Schedule<Out, In, R>, f: (out: Out, duration: Duration.Duration) => Duration.DurationInput): Schedule<Out, In, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L1595)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L1356)
 
 Since v2.0.0

@@ -5,26 +5,12 @@ Module: `Match`<br />
 
 Matches the value `null`.
 
-**When to use**
-
-Use to handle only the `null` literal in a match branch.
-
-**Details**
-
-This refinement is backed by `Predicate.isNull`, which checks
-`input === null`.
-
-**See**
-
-- `defined` for matching non-nullish values
-- `is` for matching literal values
-
 **Signature**
 
 ```ts
 declare const null: Predicate.Refinement<unknown, null>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L1510)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L1022)
 
-Since v4.0.0
+Since v1.0.0

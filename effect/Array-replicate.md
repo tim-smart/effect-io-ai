@@ -3,19 +3,11 @@ Module: `Array`<br />
 
 ## Array.replicate
 
-Creates a `NonEmptyArray` containing a value repeated `n` times.
+Return a `NonEmptyArray` containing a value repeated the specified number of times.
 
-**When to use**
+**Note**. `n` is normalized to an integer >= 1.
 
-Use when you need a non-empty array containing repeated copies of one value.
-
-**Details**
-
-`n` is normalized to an integer greater than or equal to 1, so this function
-always returns at least one element. Supports both data-first and data-last
-usage.
-
-**Example** (Repeating a value)
+**Example**
 
 ```ts
 import { Array } from "effect"
@@ -24,16 +16,12 @@ const result = Array.replicate("a", 3)
 console.log(result) // ["a", "a", "a"]
 ```
 
-**See**
-
-- `makeBy` — vary values based on index
-
 **Signature**
 
 ```ts
 declare const replicate: { (n: number): <A>(a: A) => NonEmptyArray<A>; <A>(a: A, n: number): NonEmptyArray<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L273)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L143)
 
 Since v2.0.0

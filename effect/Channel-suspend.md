@@ -3,23 +3,14 @@ Module: `Channel`<br />
 
 ## Channel.suspend
 
-Creates a `Channel` that lazily evaluates to another channel.
-
-**Example** (Suspending channel creation)
-
-```ts
-import { Channel } from "effect"
-
-const channel = Channel.suspend(() => Channel.succeed(42))
-// The inner channel is not created until the suspended channel is run
-```
+Lazily constructs a channel from the given side effect.
 
 **Signature**
 
 ```ts
-declare const suspend: <OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>(evaluate: LazyArg<Channel<OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>>) => Channel<OutElem, OutErr, OutDone, InElem, InErr, InDone, Env>
+declare const suspend: <OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>(evaluate: LazyArg<Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>>) => Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Channel.ts#L534)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Channel.ts#L2023)
 
 Since v2.0.0

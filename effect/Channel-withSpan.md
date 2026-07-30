@@ -3,19 +3,14 @@ Module: `Channel`<br />
 
 ## Channel.withSpan
 
-Runs the channel inside a tracing span with the specified name and options.
-
-**Details**
-
-The created span is provided as the current parent span while the channel
-runs. The span is ended with the channel's exit value.
+Wraps the channel with a new span for tracing.
 
 **Signature**
 
 ```ts
-declare const withSpan: { (name: string, options?: SpanOptions): <OutElem, OutErr, OutDone, InElem, InErr, InDone, R>(self: Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, R>) => Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Exclude<R, ParentSpan>>; <OutElem, OutErr, OutDone, InElem, InErr, InDone, R>(self: Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, R>, name: string, options?: SpanOptions): Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Exclude<R, ParentSpan>>; }
+declare const withSpan: { (name: string, options?: Tracer.SpanOptions | undefined): <OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>(self: Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>) => Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Exclude<Env, Tracer.ParentSpan>>; <OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>(self: Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Env>, name: string, options?: Tracer.SpanOptions | undefined): Channel<OutElem, InElem, OutErr, InErr, OutDone, InDone, Exclude<Env, Tracer.ParentSpan>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Channel.ts#L7428)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Channel.ts#L2179)
 
 Since v2.0.0

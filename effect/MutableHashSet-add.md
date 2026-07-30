@@ -3,36 +3,33 @@ Module: `MutableHashSet`<br />
 
 ## MutableHashSet.add
 
-Adds a value to the MutableHashSet, mutating the set in place.
-If the value already exists, the set remains unchanged.
+**Checks** whether the `MutableHashSet` contains the given element, and
+**adds** it if not.
 
-**When to use**
+Time complexity: **`O(1)`** average
 
-Use to insert a value into a mutable set while keeping uniqueness.
-
-**Example** (Adding values)
+**Syntax**
 
 ```ts
-import { MutableHashSet } from "effect"
+import { MutableHashSet, pipe } from "effect"
 
-const set = MutableHashSet.empty<string>()
+// with data-last, a.k.a. pipeable API
+pipe(
+  MutableHashSet.empty(),
+  MutableHashSet.add(0),
+  MutableHashSet.add(0)
+)
 
-// Add new values
-MutableHashSet.add(set, "apple")
-MutableHashSet.add(set, "banana")
+// or piped with the pipe function
+MutableHashSet.empty().pipe(MutableHashSet.add(0))
 
-console.log(MutableHashSet.size(set)) // 2
-console.log(MutableHashSet.has(set, "apple")) // true
-
-// Add duplicate (no effect)
-MutableHashSet.add(set, "apple")
-console.log(MutableHashSet.size(set)) // 2
-
-// Pipe-able version
-const addFruit = MutableHashSet.add("cherry")
-addFruit(set)
-console.log(MutableHashSet.size(set)) // 3
+// or with data-first API
+MutableHashSet.add(MutableHashSet.empty(), 0)
 ```
+
+**See**
+
+- Other `MutableHashSet` elements are `module:MutableHashSet.remove` `module:MutableHashSet.size` `module:MutableHashSet.clear` `module:MutableHashSet.has`
 
 **Signature**
 
@@ -40,6 +37,6 @@ console.log(MutableHashSet.size(set)) // 3
 declare const add: { <V>(key: V): (self: MutableHashSet<V>) => MutableHashSet<V>; <V>(self: MutableHashSet<V>, key: V): MutableHashSet<V>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/MutableHashSet.ts#L262)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/MutableHashSet.ts#L402)
 
 Since v2.0.0

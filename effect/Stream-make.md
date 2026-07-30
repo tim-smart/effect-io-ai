@@ -3,29 +3,25 @@ Module: `Stream`<br />
 
 ## Stream.make
 
-Creates a stream from a sequence of values.
+Creates a stream from an sequence of values.
 
-**Example** (Creating a stream from a sequence of values)
+**Example**
 
 ```ts
-import { Console, Effect, Stream } from "effect"
+import { Effect, Stream } from "effect"
 
 const stream = Stream.make(1, 2, 3)
 
-const program = Effect.gen(function*() {
-  const values = yield* Stream.runCollect(stream)
-  yield* Console.log(values) // [ 1, 2, 3 ]
-})
-
-Effect.runPromise(program)
+Effect.runPromise(Stream.runCollect(stream)).then(console.log)
+// { _id: 'Chunk', values: [ 1, 2, 3 ] }
 ```
 
 **Signature**
 
 ```ts
-declare const make: <const As extends ReadonlyArray<any>>(...values: As) => Stream<As[number]>
+declare const make: <As extends Array<any>>(...as: As) => Stream<As[number]>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L850)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L2700)
 
 Since v2.0.0

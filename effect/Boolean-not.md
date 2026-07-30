@@ -5,18 +5,14 @@ Module: `Boolean`<br />
 
 Negates the given boolean: `!self`
 
-**When to use**
-
-Use to invert a boolean value.
-
-**Example** (Negating booleans)
+**Example**
 
 ```ts
-import { Boolean } from "effect"
 import * as assert from "node:assert"
+import { not } from "effect/Boolean"
 
-assert.deepStrictEqual(Boolean.not(true), false)
-assert.deepStrictEqual(Boolean.not(false), true)
+assert.deepStrictEqual(not(true), false)
+assert.deepStrictEqual(not(false), true)
 ```
 
 **Signature**
@@ -25,6 +21,6 @@ assert.deepStrictEqual(Boolean.not(false), true)
 declare const not: (self: boolean) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Boolean.ts#L179)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Boolean.ts#L87)
 
 Since v2.0.0

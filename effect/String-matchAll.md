@@ -3,26 +3,14 @@ Module: `String`<br />
 
 ## String.matchAll
 
-Returns an iterator over all regular expression matches in the string using
-native `String.prototype.matchAll` semantics.
-
-**Example** (Iterating regular expression matches)
-
-```ts
-import { pipe, String } from "effect"
-
-const matches = pipe("hello world", String.matchAll(/l/g))
-console.log(
-  Array.from(matches, (match) => `${match[0]}@${match.index}`).join(", ")
-) // "l@2, l@3, l@9"
-```
+It is the `pipe`-able version of the native `matchAll` method.
 
 **Signature**
 
 ```ts
-declare const matchAll: (regExp: RegExp) => (self: string) => IterableIterator<RegExpMatchArray>
+declare const matchAll: (regexp: RegExp) => (self: string) => IterableIterator<RegExpMatchArray>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/String.ts#L727)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/String.ts#L440)
 
 Since v2.0.0

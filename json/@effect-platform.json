@@ -118,7 +118,7 @@
     "since": "1.0.0",
     "category": "refinements",
     "signature": "declare const isCommand: (u: unknown) => u is Command",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Command.ts#L120"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Command.ts#L121"
   },
   {
     "_tag": "Constant",
@@ -128,13 +128,13 @@
     },
     "project": "@effect/platform",
     "name": "env",
-    "description": "Specify the environment variables that will be used when running this command.",
+    "description": "Specify the environment variables that will be used when running this command.\n\nBy default, the configured variables extend the parent process environment.\nSet `extendEnv` to `false` to use only the configured variables.",
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "combinators",
-    "signature": "declare const env: { (environment: Record<string, string | undefined>): (self: Command) => Command; (self: Command, environment: Record<string, string | undefined>): Command; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Command.ts#L128"
+    "signature": "declare const env: { (environment: Record<string, string | undefined>, options?: { readonly extendEnv?: boolean | undefined; }): (self: Command) => Command; (self: Command, environment: Record<string, string | undefined>, options?: { readonly extendEnv?: boolean | undefined; }): Command; }",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Command.ts#L132"
   },
   {
     "_tag": "Constant",
@@ -150,7 +150,7 @@
     "since": "1.0.0",
     "category": "execution",
     "signature": "declare const exitCode: (self: Command) => Effect<ExitCode, PlatformError, CommandExecutor>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Command.ts#L140"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Command.ts#L151"
   },
   {
     "_tag": "Constant",
@@ -166,7 +166,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const feed: { (input: string): (self: Command) => Command; (self: Command, input: string): Command; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Command.ts#L148"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Command.ts#L159"
   },
   {
     "_tag": "Constant",
@@ -182,7 +182,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const flatten: (self: Command) => NonEmptyReadonlyArray<StandardCommand>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Command.ts#L163"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Command.ts#L174"
   },
   {
     "_tag": "Constant",
@@ -198,7 +198,7 @@
     "since": "1.0.0",
     "category": "execution",
     "signature": "declare const lines: (command: Command, encoding?: string) => Effect<Array<string>, PlatformError, CommandExecutor>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Command.ts#L172"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Command.ts#L183"
   },
   {
     "_tag": "Constant",
@@ -214,7 +214,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const make: (command: string, ...args: Array<string>) => Command",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Command.ts#L182"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Command.ts#L193"
   },
   {
     "_tag": "Constant",
@@ -230,7 +230,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const pipeTo: { (into: Command): (self: Command) => Command; (self: Command, into: Command): Command; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Command.ts#L196"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Command.ts#L207"
   },
   {
     "_tag": "Constant",
@@ -246,7 +246,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const runInShell: { (shell: string | boolean): (self: Command) => Command; (self: Command, shell: string | boolean): Command; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Command.ts#L208"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Command.ts#L219"
   },
   {
     "_tag": "Constant",
@@ -262,7 +262,7 @@
     "since": "1.0.0",
     "category": "execution",
     "signature": "declare const start: (command: Command) => Effect<Process, PlatformError, CommandExecutor | Scope>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Command.ts#L219"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Command.ts#L230"
   },
   {
     "_tag": "Constant",
@@ -278,7 +278,7 @@
     "since": "1.0.0",
     "category": "execution",
     "signature": "declare const stream: (command: Command) => Stream<Uint8Array, PlatformError, CommandExecutor>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Command.ts#L227"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Command.ts#L238"
   },
   {
     "_tag": "Constant",
@@ -294,7 +294,7 @@
     "since": "1.0.0",
     "category": "execution",
     "signature": "declare const streamLines: (command: Command, encoding?: string) => Stream<string, PlatformError, CommandExecutor>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Command.ts#L236"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Command.ts#L247"
   },
   {
     "_tag": "Constant",
@@ -310,7 +310,7 @@
     "since": "1.0.0",
     "category": "execution",
     "signature": "declare const string: { (encoding?: string): (command: Command) => Effect<string, PlatformError, CommandExecutor>; (command: Command, encoding?: string): Effect<string, PlatformError, CommandExecutor>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Command.ts#L248"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Command.ts#L259"
   },
   {
     "_tag": "Constant",
@@ -326,7 +326,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const stderr: { (stderr: Command.Output): (self: Command) => Command; (self: Command, stderr: Command.Output): Command; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Command.ts#L259"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Command.ts#L270"
   },
   {
     "_tag": "Constant",
@@ -342,7 +342,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const stdin: { (stdin: Command.Input): (self: Command) => Command; (self: Command, stdin: Command.Input): Command; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Command.ts#L270"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Command.ts#L281"
   },
   {
     "_tag": "Constant",
@@ -358,7 +358,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const stdout: { (stdout: Command.Output): (self: Command) => Command; (self: Command, stdout: Command.Output): Command; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Command.ts#L281"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Command.ts#L292"
   },
   {
     "_tag": "Constant",
@@ -374,7 +374,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const workingDirectory: { (cwd: string): (self: Command) => Command; (self: Command, cwd: string): Command; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Command.ts#L295"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Command.ts#L306"
   },
   {
     "_tag": "Interface",
@@ -388,7 +388,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface StandardCommand extends Command.Proto {\n  readonly _tag: \"StandardCommand\"\n  readonly command: string\n  readonly args: ReadonlyArray<string>\n  readonly env: HashMap<string, string>\n  readonly cwd: Option<string>\n  readonly shell: boolean | string\n  readonly stdin: Command.Input\n  readonly stdout: Command.Output\n  readonly stderr: Command.Output\n  readonly gid: Option<number>\n  readonly uid: Option<number>\n}",
+    "signature": "export interface StandardCommand extends Command.Proto {\n  readonly _tag: \"StandardCommand\"\n  readonly command: string\n  readonly args: ReadonlyArray<string>\n  readonly env: HashMap<string, string>\n  readonly extendEnv: boolean\n  readonly cwd: Option<string>\n  readonly shell: boolean | string\n  readonly stdin: Command.Input\n  readonly stdout: Command.Output\n  readonly stderr: Command.Output\n  readonly gid: Option<number>\n  readonly uid: Option<number>\n}",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Command.ts#L89"
   },
   {
@@ -404,7 +404,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "export interface PipedCommand extends Command.Proto {\n  readonly _tag: \"PipedCommand\"\n  readonly left: Command\n  readonly right: Command\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Command.ts#L107"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Command.ts#L108"
   },
   {
     "_tag": "TypeAlias",
@@ -815,7 +815,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const setCookie: { (cookie: Cookie): (self: Cookies) => Cookies; (self: Cookies, cookie: Cookie): Cookies; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Cookies.ts#L379"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Cookies.ts#L383"
   },
   {
     "_tag": "Constant",
@@ -831,7 +831,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const setAllCookie: { (cookies: Iterable<Cookie>): (self: Cookies) => Cookies; (self: Cookies, cookies: Iterable<Cookie>): Cookies; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Cookies.ts#L401"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Cookies.ts#L405"
   },
   {
     "_tag": "Constant",
@@ -847,7 +847,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const merge: { (that: Cookies): (self: Cookies) => Cookies; (self: Cookies, that: Cookies): Cookies; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Cookies.ts#L421"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Cookies.ts#L425"
   },
   {
     "_tag": "Constant",
@@ -863,7 +863,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const remove: { (name: string): (self: Cookies) => Cookies; (self: Cookies, name: string): Cookies; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Cookies.ts#L439"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Cookies.ts#L443"
   },
   {
     "_tag": "Constant",
@@ -879,7 +879,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const get: { (name: string): (self: Cookies) => Option.Option<Cookie>; (self: Cookies, name: string): Option.Option<Cookie>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Cookies.ts#L453"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Cookies.ts#L457"
   },
   {
     "_tag": "Constant",
@@ -895,7 +895,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const getValue: { (name: string): (self: Cookies) => Option.Option<string>; (self: Cookies, name: string): Option.Option<string>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Cookies.ts#L467"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Cookies.ts#L471"
   },
   {
     "_tag": "Constant",
@@ -911,7 +911,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const set: { (name: string, value: string, options?: Cookie[\"options\"]): (self: Cookies) => Either.Either<Cookies, CookiesError>; (self: Cookies, name: string, value: string, options?: Cookie[\"options\"]): Either.Either<Cookies, CookiesError>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Cookies.ts#L482"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Cookies.ts#L486"
   },
   {
     "_tag": "Constant",
@@ -927,7 +927,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const unsafeSet: { (name: string, value: string, options?: Cookie[\"options\"]): (self: Cookies) => Cookies; (self: Cookies, name: string, value: string, options?: Cookie[\"options\"]): Cookies; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Cookies.ts#L509"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Cookies.ts#L513"
   },
   {
     "_tag": "Constant",
@@ -943,7 +943,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const setAll: { (cookies: Iterable<readonly [name: string, value: string, options?: Cookie[\"options\"]]>): (self: Cookies) => Either.Either<Cookies, CookiesError>; (self: Cookies, cookies: Iterable<readonly [name: string, value: string, options?: Cookie[\"options\"]]>): Either.Either<Cookies, CookiesError>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Cookies.ts#L537"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Cookies.ts#L541"
   },
   {
     "_tag": "Constant",
@@ -959,7 +959,7 @@
     "since": "1.0.0",
     "category": "combinators",
     "signature": "declare const unsafeSetAll: { (cookies: Iterable<readonly [name: string, value: string, options?: Cookie[\"options\"]]>): (self: Cookies) => Cookies; (self: Cookies, cookies: Iterable<readonly [name: string, value: string, options?: Cookie[\"options\"]]>): Cookies; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Cookies.ts#L569"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Cookies.ts#L573"
   },
   {
     "_tag": "Function",
@@ -975,7 +975,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const makeCookie: (name: string, value: string, options?: Cookie[\"options\"] | undefined) => Either.Either<Cookie, CookiesError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Cookies.ts#L326"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Cookies.ts#L330"
   },
   {
     "_tag": "Function",
@@ -991,7 +991,7 @@
     "since": "1.0.0",
     "category": "encoding",
     "signature": "declare const serializeCookie: (self: Cookie) => string",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Cookies.ts#L593"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Cookies.ts#L597"
   },
   {
     "_tag": "Function",
@@ -1007,7 +1007,7 @@
     "since": "1.0.0",
     "category": "decoding",
     "signature": "declare const parseHeader: (header: string) => Record<string, string>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Cookies.ts#L704"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Cookies.ts#L708"
   },
   {
     "_tag": "Function",
@@ -1101,7 +1101,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const unsafeMakeCookie: (name: string, value: string, options?: Cookie[\"options\"] | undefined) => Cookie",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Cookies.ts#L367"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Cookies.ts#L371"
   },
   {
     "_tag": "Function",
@@ -1117,7 +1117,7 @@
     "since": "1.0.0",
     "category": "encoding",
     "signature": "declare const toCookieHeader: (self: Cookies) => string",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Cookies.ts#L669"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Cookies.ts#L673"
   },
   {
     "_tag": "Function",
@@ -1133,7 +1133,7 @@
     "since": "1.0.0",
     "category": "encoding",
     "signature": "declare const toRecord: (self: Cookies) => Record<string, string>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Cookies.ts#L678"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Cookies.ts#L682"
   },
   {
     "_tag": "Function",
@@ -1149,7 +1149,7 @@
     "since": "1.0.0",
     "category": "encoding",
     "signature": "declare const toSetCookieHeaders: (self: Cookies) => Array<string>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Cookies.ts#L694"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Cookies.ts#L698"
   },
   {
     "_tag": "Interface",
@@ -4969,7 +4969,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerHttpLayerRouter: (options: { readonly api: HttpApi.HttpApi.Any; readonly path: `/${string}`; readonly scalar?: ScalarConfig; }) => Layer.Layer<never, never, HttpLayerRouter.HttpRouter>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiScalar.ts#L210"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiScalar.ts#L214"
   },
   {
     "_tag": "Constant",
@@ -4984,7 +4984,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerHttpLayerRouterCdn: (options: { readonly api: HttpApi.HttpApi.Any; readonly path: `/${string}`; readonly version?: string | undefined; readonly scalar?: ScalarConfig; }) => Layer.Layer<never, never, HttpLayerRouter.HttpRouter>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiScalar.ts#L240"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiScalar.ts#L244"
   },
   {
     "_tag": "Function",
@@ -4999,7 +4999,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layer: (options?: { readonly path?: `/${string}` | undefined; readonly scalar?: ScalarConfig; }) => Layer.Layer<never, never, Api>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiScalar.ts#L167"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiScalar.ts#L171"
   },
   {
     "_tag": "Function",
@@ -5014,7 +5014,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerCdn: (options?: { readonly path?: `/${string}` | undefined; readonly scalar?: ScalarConfig; readonly version?: string | undefined; }) => Layer.Layer<never, never, Api>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiScalar.ts#L188"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/HttpApiScalar.ts#L192"
   },
   {
     "_tag": "TypeAlias",
@@ -13317,12 +13317,13 @@
     },
     "project": "@effect/platform",
     "name": "layerFileSystem",
+    "description": "Provides a file-backed key-value store in the specified directory.\n\nKeys are percent-encoded as single file names. Empty keys, `.` and `..` are\nrejected. Keys are only guaranteed to be distinct on case-sensitive file\nsystems.\n\n`clear` removes the directory recursively, so it must not be shared with\nunrelated data.",
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerFileSystem: (directory: string) => Layer.Layer<KeyValueStore, PlatformError.PlatformError, FileSystem.FileSystem | Path.Path>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/KeyValueStore.ts#L151"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/KeyValueStore.ts#L160"
   },
   {
     "_tag": "Constant",
@@ -13337,7 +13338,7 @@
     "since": "1.0.0",
     "category": "type id",
     "signature": "declare const SchemaStoreTypeId: unique symbol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/KeyValueStore.ts#L160"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/KeyValueStore.ts#L169"
   },
   {
     "_tag": "Constant",
@@ -13352,7 +13353,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerSchema: <A, I, R>(schema: Schema.Schema<A, I, R>, tagIdentifier: string) => { readonly tag: Context.Tag<SchemaStore<A, R>, SchemaStore<A, R>>; readonly layer: Layer.Layer<SchemaStore<A, R>, never, KeyValueStore>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/KeyValueStore.ts#L227"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/KeyValueStore.ts#L236"
   },
   {
     "_tag": "Constant",
@@ -13368,7 +13369,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerStorage: (evaluate: LazyArg<Storage>) => Layer.Layer<KeyValueStore>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/KeyValueStore.ts#L243"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/KeyValueStore.ts#L252"
   },
   {
     "_tag": "Interface",
@@ -13398,7 +13399,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "export interface SchemaStore<A, R> {\n  readonly [SchemaStoreTypeId]: SchemaStoreTypeId\n  /**\n   * Returns the value of the specified key if it exists.\n   */\n  readonly get: (\n    key: string\n  ) => Effect.Effect<Option.Option<A>, PlatformError.PlatformError | ParseResult.ParseError, R>\n\n  /**\n   * Sets the value of the specified key.\n   */\n  readonly set: (\n    key: string,\n    value: A\n  ) => Effect.Effect<void, PlatformError.PlatformError | ParseResult.ParseError, R>\n\n  /**\n   * Removes the specified key.\n   */\n  readonly remove: (key: string) => Effect.Effect<void, PlatformError.PlatformError>\n\n  /**\n   * Removes all entries.\n   */\n  readonly clear: Effect.Effect<void, PlatformError.PlatformError>\n\n  /**\n   * Returns the number of entries.\n   */\n  readonly size: Effect.Effect<number, PlatformError.PlatformError>\n\n  /**\n   * Updates the value of the specified key if it exists.\n   */\n  readonly modify: (\n    key: string,\n    f: (value: A) => A\n  ) => Effect.Effect<Option.Option<A>, PlatformError.PlatformError | ParseResult.ParseError, R>\n\n  /**\n   * Returns true if the KeyValueStore contains the specified key.\n   */\n  readonly has: (key: string) => Effect.Effect<boolean, PlatformError.PlatformError>\n\n  /**\n   * Checks if the KeyValueStore contains any entries.\n   */\n  readonly isEmpty: Effect.Effect<boolean, PlatformError.PlatformError>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/KeyValueStore.ts#L172"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/KeyValueStore.ts#L181"
   },
   {
     "_tag": "TypeAlias",
@@ -13428,7 +13429,7 @@
     "since": "1.0.0",
     "category": "type id",
     "signature": "type SchemaStoreTypeId = typeof SchemaStoreTypeId",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/KeyValueStore.ts#L166"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/KeyValueStore.ts#L175"
   },
   {
     "_tag": "TypeAlias",

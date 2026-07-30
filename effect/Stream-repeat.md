@@ -3,32 +3,26 @@ Module: `Stream`<br />
 
 ## Stream.repeat
 
-Repeats the entire stream according to the provided schedule.
+Repeats the entire stream using the specified schedule. The stream will
+execute normally, and then repeat again according to the provided schedule.
 
-**Example** (Repeating a stream on a schedule)
+**Example**
 
 ```ts
-import { Console, Effect, Schedule, Stream } from "effect"
+import { Effect, Schedule, Stream } from "effect"
 
-const program = Effect.gen(function* () {
-  const result = yield* Stream.make(1).pipe(
-    Stream.repeat(Schedule.recurs(4)),
-    Stream.runCollect
-  )
+const stream = Stream.repeat(Stream.succeed(1), Schedule.forever)
 
-  yield* Console.log(result)
-})
-
-Effect.runPromise(program)
-// Output: [ 1, 1, 1, 1, 1 ]
+Effect.runPromise(Stream.runCollect(stream.pipe(Stream.take(5)))).then(console.log)
+// { _id: 'Chunk', values: [ 1, 1, 1, 1, 1 ] }
 ```
 
 **Signature**
 
 ```ts
-declare const repeat: { <B, E2, R2>(schedule: Schedule.Schedule<B, void, E2, R2> | (($: <SO, SE, SR>(_: Schedule.Schedule<SO, void, SE, SR>) => Schedule.Schedule<SO, void, SE, SR>) => Schedule.Schedule<B, void, E2, R2>)): <A, E, R>(self: Stream<A, E, R>) => Stream<A, E | E2, R2 | R>; <A, E, R, B, E2, R2>(self: Stream<A, E, R>, schedule: Schedule.Schedule<B, void, E2, R2> | (($: <SO, SE, SR>(_: Schedule.Schedule<SO, void, SE, SR>) => Schedule.Schedule<SO, void, SE, SR>) => Schedule.Schedule<B, void, E2, R2>)): Stream<A, E | E2, R | R2>; }
+declare const repeat: { <B, R2>(schedule: Schedule.Schedule<B, unknown, R2>): <A, E, R>(self: Stream<A, E, R>) => Stream<A, E, R2 | R>; <A, E, R, B, R2>(self: Stream<A, E, R>, schedule: Schedule.Schedule<B, unknown, R2>): Stream<A, E, R | R2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L2687)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L3882)
 
 Since v2.0.0

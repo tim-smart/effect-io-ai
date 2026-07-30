@@ -3,16 +3,14 @@ Module: `Schema`<br />
 
 ## Schema.Uint8ArrayFromBase64Url
 
-Type-level representation of `Uint8ArrayFromBase64Url`.
+Decodes a base64 (URL) encoded string into a `Uint8Array`.
 
 **Signature**
 
 ```ts
-export interface Uint8ArrayFromBase64Url extends decodeTo<Uint8Array, String> {
-  readonly "Rebuild": Uint8ArrayFromBase64Url
-}
+declare const Uint8ArrayFromBase64Url: Schema<Uint8Array<ArrayBufferLike>, string, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L13330)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6281)
 
 Since v3.10.0

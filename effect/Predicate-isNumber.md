@@ -3,33 +3,21 @@ Module: `Predicate`<br />
 
 ## Predicate.isNumber
 
-Checks whether a value is a `number`.
+A refinement that checks if a value is a `number`.
 
-**When to use**
-
-Use when you need a `Predicate` guard to narrow an `unknown` value to a
-number.
-
-**Details**
-
-Uses `typeof input === "number"` and does not exclude `NaN` or `Infinity`.
-
-**Example** (Guarding numbers)
+**Example**
 
 ```ts
-import { Predicate } from "effect"
+import * as assert from "node:assert"
+import { isNumber } from "effect/Predicate"
 
-const data: unknown = 42
+assert.strictEqual(isNumber(123), true)
+assert.strictEqual(isNumber(0), true)
+assert.strictEqual(isNumber(-1.5), true)
+assert.strictEqual(isNumber(NaN), true)
 
-if (Predicate.isNumber(data)) {
-  console.log(data + 1)
-}
+assert.strictEqual(isNumber("123"), false)
 ```
-
-**See**
-
-- `isBigInt`
-- `isString`
 
 **Signature**
 
@@ -37,6 +25,6 @@ if (Predicate.isNumber(data)) {
 declare const isNumber: (input: unknown) => input is number
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L572)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L355)
 
 Since v2.0.0

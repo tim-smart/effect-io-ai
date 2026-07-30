@@ -5,30 +5,15 @@ Module: `BigDecimal`<br />
 
 Normalizes a given `BigDecimal` by removing trailing zeros.
 
-**When to use**
-
-Use to canonicalize decimals that have equivalent values but different
-internal scales.
-
-**Example** (Normalizing trailing zeros)
+**Example**
 
 ```ts
-import { BigDecimal } from "effect"
 import * as assert from "node:assert"
+import { normalize, make, unsafeFromString } from "effect/BigDecimal"
 
-assert.deepStrictEqual(
-  BigDecimal.normalize(BigDecimal.fromStringUnsafe("123.00000")),
-  BigDecimal.normalize(BigDecimal.make(123n, 0))
-)
-assert.deepStrictEqual(
-  BigDecimal.normalize(BigDecimal.fromStringUnsafe("12300000")),
-  BigDecimal.normalize(BigDecimal.make(123n, -5))
-)
+assert.deepStrictEqual(normalize(unsafeFromString("123.00000")), normalize(make(123n, 0)))
+assert.deepStrictEqual(normalize(unsafeFromString("12300000")), normalize(make(123n, -5)))
 ```
-
-**See**
-
-- `format` for rendering normalized decimals as strings
 
 **Signature**
 
@@ -36,6 +21,6 @@ assert.deepStrictEqual(
 declare const normalize: (self: BigDecimal) => BigDecimal
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L195)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L146)
 
 Since v2.0.0

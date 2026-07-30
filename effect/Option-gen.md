@@ -3,21 +3,12 @@ Module: `Option`<br />
 
 ## Option.gen
 
-Provides generator-based syntax for `Option`, similar to `async`/`await` but for
-optional values. Yielding a `None` short-circuits the generator to `None`.
+Similar to `Effect.gen`, `Option.gen` provides a more readable,
+generator-based syntax for working with `Option` values, making code that
+involves `Option` easier to write and understand. This approach is similar to
+using `async/await` but tailored for `Option`.
 
-**When to use**
-
-Use when you need generator syntax for a sequence of `Option` steps that
-should short-circuit on `None`.
-
-**Details**
-
-- Each `yield*` unwraps a `Some` value or short-circuits to `None`
-- The return value is wrapped in `Some`
-- No `Effect` runtime is needed
-
-**Example** (Sequencing Option computations with generator syntax)
+**Example** (Using `Option.gen` to Create a Combined Value)
 
 ```ts
 import { Option } from "effect"
@@ -25,7 +16,7 @@ import { Option } from "effect"
 const maybeName: Option.Option<string> = Option.some("John")
 const maybeAge: Option.Option<number> = Option.some(25)
 
-const person = Option.gen(function*() {
+const person = Option.gen(function* () {
   const name = (yield* maybeName).toUpperCase()
   const age = yield* maybeAge
   return { name, age }
@@ -36,16 +27,12 @@ console.log(person)
 // { _id: 'Option', _tag: 'Some', value: { name: 'JOHN', age: 25 } }
 ```
 
-**See**
-
-- `Do` / `bind` for the do notation alternative
-
 **Signature**
 
 ```ts
-declare const gen: Gen.Gen<OptionTypeLambda>
+declare const gen: Gen.Gen<OptionTypeLambda, Gen.Adapter<OptionTypeLambda>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L2526)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L2141)
 
 Since v2.0.0

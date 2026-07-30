@@ -4937,13 +4937,43 @@
       "path": "src/Sse.ts"
     },
     "project": "@effect/experimental",
+    "name": "EventTooLarge",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "errors",
+    "signature": "declare class EventTooLarge",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Sse.ts#L20"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "Sse.ts",
+      "path": "src/Sse.ts"
+    },
+    "project": "@effect/experimental",
+    "name": "SseError",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "errors",
+    "signature": "declare class SseError",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Sse.ts#L38"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "Sse.ts",
+      "path": "src/Sse.ts"
+    },
+    "project": "@effect/experimental",
     "name": "Retry",
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "models",
     "signature": "declare class Retry",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Sse.ts#L305"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Sse.ts#L371"
   },
   {
     "_tag": "Constant",
@@ -4958,7 +4988,7 @@
     "since": "1.0.0",
     "category": "type ids",
     "signature": "declare const RetryTypeId: unique symbol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Sse.ts#L293"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Sse.ts#L359"
   },
   {
     "_tag": "Constant",
@@ -4973,7 +5003,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const encoder: Encoder",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Sse.ts#L331"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Sse.ts#L397"
   },
   {
     "_tag": "Function",
@@ -4983,13 +5013,13 @@
     },
     "project": "@effect/experimental",
     "name": "makeParser",
-    "description": "Create a SSE parser.\n\nAdapted from https://github.com/rexxars/eventsource-parser under MIT license.",
+    "description": "Create a SSE parser.\n\nAdapted from https://github.com/rexxars/eventsource-parser under MIT license.\n`feed` returns an `SseError` if the pending event exceeds `maxEventSize`.",
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const makeParser: (onParse: (event: AnyEvent) => void) => Parser",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Sse.ts#L93"
+    "signature": "declare const makeParser: (onParse: (event: AnyEvent) => void, options?: DecodeOptions) => Parser",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Sse.ts#L151"
   },
   {
     "_tag": "Function",
@@ -5003,8 +5033,23 @@
     "examples": [],
     "since": "1.0.0",
     "category": "constructors",
-    "signature": "declare const makeChannel: <IE, Done>(options?: { readonly bufferSize?: number; }) => Channel.Channel<Chunk.Chunk<Event>, Chunk.Chunk<string>, IE, IE, void, Done>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Sse.ts#L17"
+    "signature": "declare const makeChannel: <IE, Done>(options?: DecodeOptions & { readonly bufferSize?: number; }) => Channel.Channel<Chunk.Chunk<Event>, Chunk.Chunk<string>, IE, IE, void, Done>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Sse.ts#L65"
+  },
+  {
+    "_tag": "Interface",
+    "module": {
+      "name": "Sse.ts",
+      "path": "src/Sse.ts"
+    },
+    "project": "@effect/experimental",
+    "name": "DecodeOptions",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "models",
+    "signature": "export interface DecodeOptions {\n  /**\n   * Maximum number of string code units retained for a pending event. The default is 10 MiB.\n   */\n  readonly maxEventSize?: number | undefined\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Sse.ts#L52"
   },
   {
     "_tag": "Interface",
@@ -5018,8 +5063,8 @@
     "examples": [],
     "since": "1.0.0",
     "category": "models",
-    "signature": "export interface Parser {\n  feed(chunk: string): void\n  reset(): void\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Sse.ts#L255"
+    "signature": "export interface Parser {\n  feed(chunk: string): SseError | undefined\n  reset(): void\n}",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Sse.ts#L321"
   },
   {
     "_tag": "Interface",
@@ -5034,7 +5079,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "export interface Encoder {\n  write(event: AnyEvent): string\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Sse.ts#L264"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Sse.ts#L330"
   },
   {
     "_tag": "Interface",
@@ -5049,7 +5094,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "export interface Event {\n  readonly _tag: \"Event\"\n  readonly event: string\n  readonly id: string | undefined\n  readonly data: string\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Sse.ts#L272"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Sse.ts#L338"
   },
   {
     "_tag": "Interface",
@@ -5064,7 +5109,22 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "export interface EventEncoded {\n  readonly event: string\n  readonly id: string | undefined\n  readonly data: string\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Sse.ts#L283"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Sse.ts#L349"
+  },
+  {
+    "_tag": "TypeAlias",
+    "module": {
+      "name": "Sse.ts",
+      "path": "src/Sse.ts"
+    },
+    "project": "@effect/experimental",
+    "name": "SseErrorReason",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "errors",
+    "signature": "type SseErrorReason = EventTooLarge",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Sse.ts#L32"
   },
   {
     "_tag": "TypeAlias",
@@ -5079,7 +5139,7 @@
     "since": "1.0.0",
     "category": "type ids",
     "signature": "type RetryTypeId = typeof RetryTypeId",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Sse.ts#L299"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Sse.ts#L365"
   },
   {
     "_tag": "TypeAlias",
@@ -5094,7 +5154,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "type AnyEvent = Event | Retry",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Sse.ts#L325"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/experimental/src/Sse.ts#L391"
   },
   {
     "_tag": "Constant",

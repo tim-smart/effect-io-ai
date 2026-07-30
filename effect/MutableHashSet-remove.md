@@ -3,36 +3,47 @@ Module: `MutableHashSet`<br />
 
 ## MutableHashSet.remove
 
-Removes the specified value from the MutableHashSet, mutating the set in place.
-If the value doesn't exist, the set remains unchanged.
+Removes a value from the `MutableHashSet`.
 
-**When to use**
+Time complexity: **`O(1)`** average
 
-Use to delete a value from a mutable set if it is present.
-
-**Example** (Removing a value)
+**Syntax**
 
 ```ts
-import { MutableHashSet } from "effect"
+import { MutableHashSet, pipe } from "effect"
+import assert from "node:assert/strict"
 
-const set = MutableHashSet.make("apple", "banana", "cherry")
+assert.equal(
+  // with `data-last`, a.k.a. `pipeable` API
+  pipe(
+    MutableHashSet.make(0, 1, 2),
+    MutableHashSet.remove(0),
+    MutableHashSet.has(0)
+  ),
+  false
+)
 
-console.log(MutableHashSet.size(set)) // 3
+assert.equal(
+  // or piped with the pipe function
+  MutableHashSet.make(0, 1, 2).pipe(
+    MutableHashSet.remove(0),
+    MutableHashSet.has(0)
+  ),
+  false
+)
 
-// Remove existing value
-MutableHashSet.remove(set, "banana")
-console.log(MutableHashSet.size(set)) // 2
-console.log(MutableHashSet.has(set, "banana")) // false
-
-// Remove non-existent value (no effect)
-MutableHashSet.remove(set, "grape")
-console.log(MutableHashSet.size(set)) // 2
-
-// Pipe-able version
-const removeFruit = MutableHashSet.remove("apple")
-removeFruit(set)
-console.log(MutableHashSet.size(set)) // 1
+assert.equal(
+  // or with `data-first` API
+  MutableHashSet.remove(MutableHashSet.make(0, 1, 2), 0).pipe(
+    MutableHashSet.has(0)
+  ),
+  false
+)
 ```
+
+**See**
+
+- Other `MutableHashSet` elements are `module:MutableHashSet.add` `module:MutableHashSet.has` `module:MutableHashSet.size` `module:MutableHashSet.clear`
 
 **Signature**
 
@@ -40,6 +51,6 @@ console.log(MutableHashSet.size(set)) // 1
 declare const remove: { <V>(key: V): (self: MutableHashSet<V>) => MutableHashSet<V>; <V>(self: MutableHashSet<V>, key: V): MutableHashSet<V>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/MutableHashSet.ts#L350)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/MutableHashSet.ts#L584)
 
 Since v2.0.0

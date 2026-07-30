@@ -3,33 +3,37 @@ Module: `Option`<br />
 
 ## Option.let
 
-Adds a computed plain value to the do notation record.
+The "do simulation" in Effect allows you to write code in a more declarative style, similar to the "do notation" in other programming languages. It provides a way to define variables and perform operations on them using functions like `bind` and `let`.
 
-**When to use**
+Here's how the do simulation works:
 
-Use when you need to bind a derived non-`Option` value in an `Option` do
-notation pipeline.
+1. Start the do simulation using the `Do` value
+2. Within the do simulation scope, you can use the `bind` function to define variables and bind them to `Option` values
+3. You can accumulate multiple `bind` statements to define multiple variables within the scope
+4. Inside the do simulation scope, you can also use the `let` function to define variables and bind them to simple values
+5. Regular `Option` functions like `map` and `filter` can still be used within the do simulation. These functions will receive the accumulated variables as arguments within the scope
 
-**Example** (Adding a computed value)
+**Example**
 
 ```ts
-import { Option, pipe } from "effect"
 import * as assert from "node:assert"
+import { Option, pipe } from "effect"
 
 const result = pipe(
   Option.Do,
   Option.bind("x", () => Option.some(2)),
   Option.bind("y", () => Option.some(3)),
-  Option.let("sum", ({ x, y }) => x + y)
+  Option.let("sum", ({ x, y }) => x + y),
+  Option.filter(({ x, y }) => x * y > 5)
 )
 assert.deepStrictEqual(result, Option.some({ x: 2, y: 3, sum: 5 }))
 ```
 
 **See**
 
-- `Do` for starting the chain
-- `bind` to add `Option` values
-- `bindTo` to start by naming an existing `Option`
+- `Do`
+- `bind`
+- `bindTo`
 
 **Signature**
 
@@ -37,6 +41,6 @@ assert.deepStrictEqual(result, Option.some({ x: 2, y: 3, sum: 5 }))
 declare const let: { <N extends string, A extends object, B>(name: Exclude<N, keyof A>, f: (a: NoInfer<A>) => B): (self: Option<A>) => Option<{ [K in N | keyof A]: K extends keyof A ? A[K] : B; }>; <A extends object, N extends string, B>(self: Option<A>, name: Exclude<N, keyof A>, f: (a: NoInfer<A>) => B): Option<{ [K in N | keyof A]: K extends keyof A ? A[K] : B; }>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L2407)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L2028)
 
 Since v2.0.0

@@ -3,51 +3,51 @@ Module: `Effect`<br />
 
 ## Effect.andThen
 
-Runs this effect and then runs another effect, optionally using the first
-effect's success value to choose the next effect.
+Chains two actions, where the second action can depend on the result of the
+first.
 
-**When to use**
+**Syntax**
 
-Use when you need one effect to run after another and the second effect may
-depend on the first effect's success value.
+```ts
+const transformedEffect = pipe(myEffect, Effect.andThen(anotherEffect))
+// or
+const transformedEffect = Effect.andThen(myEffect, anotherEffect)
+// or
+const transformedEffect = myEffect.pipe(Effect.andThen(anotherEffect))
+```
+
+**When to Use**
+
+Use `andThen` when you need to run multiple actions in sequence, with the
+second action depending on the result of the first. This is useful for
+combining effects or handling computations that must happen in order.
 
 **Details**
 
-When the second argument is an `Effect`, the first success value is discarded
-and the returned effect produces the second effect's value. When the second
-argument is a function, it receives the first success value and must return
-the next `Effect`.
+The second action can be:
 
-Failures or requirements from either effect are preserved in the returned
-effect.
+- A constant value (similar to `as`)
+- A function returning a value (similar to `map`)
+- A `Promise`
+- A function returning a `Promise`
+- An `Effect`
+- A function returning an `Effect` (similar to `flatMap`)
 
-**Example** (Choosing andThen syntax variants)
+**Note:** `andThen` works well with both `Option` and `Either` types,
+treating them as effects.
 
-```ts
-import { Effect, pipe } from "effect"
-
-const myEffect = Effect.succeed(1)
-const anotherEffect = Effect.succeed("done")
-
-const transformedWithPipe = pipe(myEffect, Effect.andThen(anotherEffect))
-const transformedWithDataFirst = Effect.andThen(myEffect, anotherEffect)
-const transformedWithMethod = myEffect.pipe(Effect.andThen(anotherEffect))
-```
-
-**Example** (Sequencing a discount calculation after fetching a total)
+**Example** (Applying a Discount Based on Fetched Amount)
 
 ```ts
-import { Data, Effect, pipe } from "effect"
-
-class DiscountRateError extends Data.TaggedError("DiscountRateError")<{}> {}
+import { pipe, Effect } from "effect"
 
 // Function to apply a discount safely to a transaction amount
 const applyDiscount = (
   total: number,
   discountRate: number
-): Effect.Effect<number, DiscountRateError> =>
+): Effect.Effect<number, Error> =>
   discountRate === 0
-    ? Effect.fail(new DiscountRateError())
+    ? Effect.fail(new Error("Discount rate cannot be zero"))
     : Effect.succeed(total - (total * discountRate) / 100)
 
 // Simulated asynchronous task to fetch a transaction amount from database
@@ -66,7 +66,7 @@ Effect.runPromise(result1).then(console.log)
 // Using Effect.andThen
 const result2 = pipe(
   fetchTransactionAmount,
-  Effect.andThen((amount) => Effect.succeed(amount * 2)),
+  Effect.andThen((amount) => amount * 2),
   Effect.andThen((amount) => applyDiscount(amount, 5))
 )
 
@@ -77,9 +77,9 @@ Effect.runPromise(result2).then(console.log)
 **Signature**
 
 ```ts
-declare const andThen: { <A, B, E2, R2>(f: (a: A) => Effect<B, E2, R2>): <E, R>(self: Effect<A, E, R>) => Effect<B, E | E2, R | R2>; <B, E2, R2>(f: Effect<B, E2, R2>): <A, E, R>(self: Effect<A, E, R>) => Effect<B, E | E2, R | R2>; <A, E, R, B, E2, R2>(self: Effect<A, E, R>, f: (a: A) => Effect<B, E2, R2>): Effect<B, E | E2, R | R2>; <A, E, R, B, E2, R2>(self: Effect<A, E, R>, f: Effect<B, E2, R2>): Effect<B, E | E2, R | R2>; }
+declare const andThen: { <A, X>(f: (a: NoInfer<A>) => X): <E, R>(self: Effect<A, E, R>) => [X] extends [Effect<infer A1, infer E1, infer R1>] ? Effect<A1, E | E1, R | R1> : [X] extends [PromiseLike<infer A1>] ? Effect<A1, E | Cause.UnknownException, R> : Effect<X, E, R>; <X>(f: NotFunction<X>): <A, E, R>(self: Effect<A, E, R>) => [X] extends [Effect<infer A1, infer E1, infer R1>] ? Effect<A1, E | E1, R | R1> : [X] extends [PromiseLike<infer A1>] ? Effect<A1, E | Cause.UnknownException, R> : Effect<X, E, R>; <A, E, R, X>(self: Effect<A, E, R>, f: (a: NoInfer<A>) => X): [X] extends [Effect<infer A1, infer E1, infer R1>] ? Effect<A1, E | E1, R | R1> : [X] extends [PromiseLike<infer A1>] ? Effect<A1, E | Cause.UnknownException, R> : Effect<X, E, R>; <A, E, R, X>(self: Effect<A, E, R>, f: NotFunction<X>): [X] extends [Effect<infer A1, infer E1, infer R1>] ? Effect<A1, E | E1, R | R1> : [X] extends [PromiseLike<infer A1>] ? Effect<A1, E | Cause.UnknownException, R> : Effect<X, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L2119)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L8924)
 
 Since v2.0.0

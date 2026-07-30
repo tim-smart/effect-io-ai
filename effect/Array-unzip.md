@@ -3,19 +3,16 @@ Module: `Array`<br />
 
 ## Array.unzip
 
-Splits an array of pairs into two arrays. Inverse of `zip`.
+This function is the inverse of `zip`. Takes an `Iterable` of pairs and return two corresponding `Array`s.
 
-**Example** (Unzipping pairs)
+**Example**
 
 ```ts
 import { Array } from "effect"
 
-console.log(Array.unzip([[1, "a"], [2, "b"], [3, "c"]])) // [[1, 2, 3], ["a", "b", "c"]]
+const result = Array.unzip([[1, "a"], [2, "b"], [3, "c"]])
+console.log(result) // [[1, 2, 3], ['a', 'b', 'c']]
 ```
-
-**See**
-
-- `zip` — combine two arrays into pairs
 
 **Signature**
 
@@ -23,6 +20,6 @@ console.log(Array.unzip([[1, "a"], [2, "b"], [3, "c"]])) // [[1, 2, 3], ["a", "b
 declare const unzip: <S extends Iterable<readonly [any, any]>>(self: S) => S extends NonEmptyReadonlyArray<readonly [infer A, infer B]> ? [NonEmptyArray<A>, NonEmptyArray<B>] : S extends Iterable<readonly [infer A, infer B]> ? [Array<A>, Array<B>] : never
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2277)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L1625)
 
 Since v2.0.0

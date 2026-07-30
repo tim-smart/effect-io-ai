@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.MssqlMigrator
 
-Re-exports all named exports from the "./MssqlMigrator.ts" module as `MssqlMigrator`.
+Re-exports all named exports from the "./MssqlMigrator.js" module as `MssqlMigrator`.
 
 **Signature**
 
 ```ts
-export * as MssqlMigrator from "./MssqlMigrator.ts"
+export * as MssqlMigrator from "./MssqlMigrator.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql/mssql/src/index.ts#L22)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/sql-mssql/src/index.ts#L20)
 
-Since v4.0.0
+Since v1.0.0

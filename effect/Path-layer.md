@@ -1,30 +1,19 @@
-Package: `effect`<br />
+Package: `@effect/platform`<br />
 Module: `Path`<br />
 
 ## Path.layer
 
-Layer that provides the built-in POSIX `Path` implementation.
+An implementation of the Path interface that can be used in all environments
+(including browsers).
 
-**When to use**
-
-Use when you need an effect that requires the `Path` service to run with the
-built-in POSIX path implementation.
-
-**Details**
-
-The layer provides a static service whose separator is `/` and whose
-operations use POSIX path semantics.
-
-**See**
-
-- `Path` for accessing the `Path` service from an effect
+It uses the POSIX standard for paths.
 
 **Signature**
 
 ```ts
-declare const layer: Layer.Layer<Path, never, never>
+declare const layer: Layer<Path, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Path.ts#L870)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Path.ts#L77)
 
-Since v4.0.0
+Since v1.0.0

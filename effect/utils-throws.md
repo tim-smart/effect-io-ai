@@ -3,7 +3,7 @@ Module: `utils`<br />
 
 ## utils.throws
 
-Asserts that `thunk` throws, optionally checking the thrown value against an expected `Error` or validation function.
+Asserts that `thunk` throws an error.
 
 **Signature**
 
@@ -11,6 +11,6 @@ Asserts that `thunk` throws, optionally checking the thrown value against an exp
 declare const throws: (thunk: () => void, error?: Error | ((u: unknown) => undefined), ..._: Array<never>) => void
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L159)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L140)
 
-Since v4.0.0
+Since v0.21.0

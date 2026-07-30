@@ -3,21 +3,21 @@ Module: `FiberSet`<br />
 
 ## FiberSet.join
 
-Joins all fibers in the FiberSet. If any fiber in the set terminates with a failure,
+Join all fibers in the FiberSet. If any of the Fiber's in the set terminate with a failure,
 the returned Effect will terminate with the first failure that occurred.
 
-**Example** (Joining failing fibers)
+**Example**
 
 ```ts
-import { Effect, FiberSet } from "effect"
+import { Effect, FiberSet } from "effect";
 
-Effect.gen(function*() {
-  const set = yield* FiberSet.make()
-  yield* FiberSet.add(set, Effect.runFork(Effect.fail("error")))
+Effect.gen(function* (_) {
+  const set = yield* _(FiberSet.make());
+  yield* _(FiberSet.add(set, Effect.runFork(Effect.fail("error"))));
 
   // parent fiber will fail with "error"
-  yield* FiberSet.join(set)
-})
+  yield* _(FiberSet.join(set));
+});
 ```
 
 **Signature**
@@ -26,6 +26,6 @@ Effect.gen(function*() {
 declare const join: <A, E>(self: FiberSet<A, E>) => Effect.Effect<void, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/FiberSet.ts#L680)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/FiberSet.ts#L477)
 
 Since v2.0.0

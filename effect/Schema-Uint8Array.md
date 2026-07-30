@@ -3,16 +3,14 @@ Module: `Schema`<br />
 
 ## Schema.Uint8Array
 
-Type-level representation of `Uint8Array`.
+A schema that transforms an array of numbers into a `Uint8Array`.
 
 **Signature**
 
 ```ts
-export interface Uint8Array extends instanceOf<globalThis.Uint8Array<ArrayBufferLike>> {
-  readonly "Rebuild": Uint8Array
-}
+declare const Uint8Array: typeof Uint8Array$
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L13238)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6241)
 
-Since v4.0.0
+Since v3.10.0

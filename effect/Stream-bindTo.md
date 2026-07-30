@@ -3,20 +3,36 @@ Module: `Stream`<br />
 
 ## Stream.bindTo
 
-Maps each element into a record keyed by the provided name.
+The "do simulation" in Effect allows you to write code in a more declarative style, similar to the "do notation" in other programming languages. It provides a way to define variables and perform operations on them using functions like `bind` and `let`.
 
-**Example** (Binding values to a record key)
+Here's how the do simulation works:
+
+1. Start the do simulation using the `Do` value
+2. Within the do simulation scope, you can use the `bind` function to define variables and bind them to `Stream` values
+3. You can accumulate multiple `bind` statements to define multiple variables within the scope
+4. Inside the do simulation scope, you can also use the `let` function to define variables and bind them to simple values
+
+**Example**
 
 ```ts
-import { Console, Effect, Stream } from "effect"
+import * as assert from "node:assert"
+import { Chunk, Effect, pipe, Stream } from "effect"
 
-const stream = Stream.make(1, 2, 3).pipe(Stream.bindTo("value"))
-
-const program = Stream.runCollect(stream).pipe(Effect.flatMap(Console.log))
-
-Effect.runPromise(program)
-// [{ value: 1 }, { value: 2 }, { value: 3 }]
+const result = pipe(
+  Stream.Do,
+  Stream.bind("x", () => Stream.succeed(2)),
+  Stream.bind("y", () => Stream.succeed(3)),
+  Stream.let("sum", ({ x, y }) => x + y)
+)
+assert.deepStrictEqual(Effect.runSync(Stream.runCollect(result)), Chunk.of({ x: 2, y: 3, sum: 5 }))
 ```
+
+**See**
+
+- `Do`
+- `bind`
+- `bindEffect`
+- `let`
 
 **Signature**
 
@@ -24,6 +40,6 @@ Effect.runPromise(program)
 declare const bindTo: { <N extends string>(name: N): <A, E, R>(self: Stream<A, E, R>) => Stream<{ [K in N]: A; }, E, R>; <A, E, R, N extends string>(self: Stream<A, E, R>, name: N): Stream<{ [K in N]: A; }, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L10555)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L6355)
 
 Since v2.0.0

@@ -5,22 +5,14 @@ Module: `BigInt`<br />
 
 Returns the maximum between two `bigint`s.
 
-**When to use**
-
-Use to select the larger of two `bigint` values.
-
-**Example** (Finding the maximum bigint)
+**Example**
 
 ```ts
-import { BigInt } from "effect"
 import * as assert from "node:assert"
+import { max } from "effect/BigInt"
 
-assert.deepStrictEqual(BigInt.max(2n, 3n), 3n)
+assert.deepStrictEqual(max(2n, 3n), 3n)
 ```
-
-**See**
-
-- `min` for selecting the smaller value
 
 **Signature**
 
@@ -28,6 +20,6 @@ assert.deepStrictEqual(BigInt.max(2n, 3n), 3n)
 declare const max: { (that: bigint): (self: bigint) => bigint; (self: bigint, that: bigint): bigint; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L551)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L370)
 
 Since v2.0.0

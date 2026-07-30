@@ -5,20 +5,16 @@ Module: `Boolean`<br />
 
 Combines two booleans using XOR: `(!self && that) || (self && !that)`.
 
-**When to use**
-
-Use to accept when exactly one boolean operand is `true`.
-
-**Example** (Combining booleans with XOR)
+**Example**
 
 ```ts
-import { Boolean } from "effect"
 import * as assert from "node:assert"
+import { xor } from "effect/Boolean"
 
-assert.deepStrictEqual(Boolean.xor(true, true), false)
-assert.deepStrictEqual(Boolean.xor(true, false), true)
-assert.deepStrictEqual(Boolean.xor(false, true), true)
-assert.deepStrictEqual(Boolean.xor(false, false), false)
+assert.deepStrictEqual(xor(true, true), false)
+assert.deepStrictEqual(xor(true, false), true)
+assert.deepStrictEqual(xor(false, true), true)
+assert.deepStrictEqual(xor(false, false), false)
 ```
 
 **Signature**
@@ -27,6 +23,6 @@ assert.deepStrictEqual(Boolean.xor(false, false), false)
 declare const xor: { (that: boolean): (self: boolean) => boolean; (self: boolean, that: boolean): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Boolean.ts#L315)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Boolean.ts#L194)
 
 Since v2.0.0

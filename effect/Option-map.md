@@ -3,35 +3,36 @@ Module: `Option`<br />
 
 ## Option.map
 
-Transforms the value inside a `Some` using the provided function, leaving
-`None` unchanged.
-
-**When to use**
-
-Use to apply a pure transformation to an `Option`'s present value, especially
-when chaining transformations in a pipeline.
+Transforms the value inside a `Some` to a new value using the provided
+function, while leaving `None` unchanged.
 
 **Details**
 
-- `Some` → applies `f` and wraps the result in a new `Some`
-- `None` → returns `None` unchanged
+This function applies a mapping function `f` to the value inside an `Option`
+if it is a `Some`. If the `Option` is `None`, it remains unchanged. The
+result is a new `Option` with the transformed value (if it was a `Some`) or
+still `None`.
 
-**Example** (Mapping over an Option)
+This utility is particularly useful for chaining transformations in a
+functional way without needing to manually handle `None` cases.
+
+**Example**
 
 ```ts
 import { Option } from "effect"
 
-console.log(Option.map(Option.some(2), (n) => n * 2))
+// Mapping over a `Some`
+const someValue = Option.some(2)
+
+console.log(Option.map(someValue, (n) => n * 2))
 // Output: { _id: 'Option', _tag: 'Some', value: 4 }
 
-console.log(Option.map(Option.none(), (n: number) => n * 2))
+// Mapping over a `None`
+const noneValue = Option.none<number>()
+
+console.log(Option.map(noneValue, (n) => n * 2))
 // Output: { _id: 'Option', _tag: 'None' }
 ```
-
-**See**
-
-- `flatMap` when `f` returns an `Option`
-- `as` to replace the value with a constant
 
 **Signature**
 
@@ -39,6 +40,6 @@ console.log(Option.map(Option.none(), (n: number) => n * 2))
 declare const map: { <A, B>(f: (a: A) => B): (self: Option<A>) => Option<B>; <A, B>(self: Option<A>, f: (a: A) => B): Option<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L1160)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L923)
 
 Since v2.0.0

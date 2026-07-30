@@ -3,33 +3,17 @@ Module: `BigDecimal`<br />
 
 ## BigDecimal.round
 
-Computes a rounded `BigDecimal` at the given scale with the specified rounding mode.
+Rounds a `BigDecimal` at the given scale with the specified rounding mode.
 
-**When to use**
-
-Use to round a decimal at a requested scale with an explicit rounding mode.
-
-**Example** (Rounding decimals)
+**Example**
 
 ```ts
-import { BigDecimal } from "effect"
 import * as assert from "node:assert"
+import { round, unsafeFromString } from "effect/BigDecimal"
 
-assert.deepStrictEqual(
-  BigDecimal.round(BigDecimal.fromStringUnsafe("145"), { mode: "from-zero", scale: -1 }),
-  BigDecimal.fromStringUnsafe("150")
-)
-assert.deepStrictEqual(
-  BigDecimal.round(BigDecimal.fromStringUnsafe("-14.5")),
-  BigDecimal.fromStringUnsafe("-15")
-)
+assert.deepStrictEqual(round(unsafeFromString("145"), { mode: "from-zero", scale: -1 }), unsafeFromString("150"))
+assert.deepStrictEqual(round(unsafeFromString("-14.5")), unsafeFromString("-15"))
 ```
-
-**See**
-
-- `ceil` for fixed rounding toward positive infinity
-- `floor` for fixed rounding toward negative infinity
-- `truncate` for fixed rounding toward zero
 
 **Signature**
 
@@ -37,6 +21,6 @@ assert.deepStrictEqual(
 declare const round: { (options: { scale?: number; mode?: RoundingMode; }): (self: BigDecimal) => BigDecimal; (n: BigDecimal, options?: { scale?: number; mode?: RoundingMode; }): BigDecimal; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L1750)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L1278)
 
 Since v3.16.0

@@ -3,20 +3,7 @@ Module: `Array`<br />
 
 ## Array.of
 
-Wraps a single value in a `NonEmptyArray`.
-
-**Example** (Creating a single-element array)
-
-```ts
-import { Array } from "effect"
-
-console.log(Array.of(1)) // [1]
-```
-
-**See**
-
-- `make` — create from multiple values
-- `empty` — create an empty array
+Constructs a new `NonEmptyArray<A>` from the specified value.
 
 **Signature**
 
@@ -24,6 +11,6 @@ console.log(Array.of(1)) // [1]
 declare const of: <A>(a: A) => NonEmptyArray<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L3415)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2445)
 
 Since v2.0.0

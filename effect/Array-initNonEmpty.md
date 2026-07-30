@@ -3,24 +3,16 @@ Module: `Array`<br />
 
 ## Array.initNonEmpty
 
-Returns all elements except the last of a `NonEmptyReadonlyArray`.
+Get all but the last element of a non empty array, creating a new array.
 
-**When to use**
-
-Use to get all elements before the last when the array is known to be non-empty.
-
-**Example** (Getting init of a non-empty array)
+**Example**
 
 ```ts
 import { Array } from "effect"
 
-console.log(Array.initNonEmpty([1, 2, 3, 4])) // [1, 2, 3]
+const result = Array.initNonEmpty([1, 2, 3, 4])
+console.log(result) // [1, 2, 3]
 ```
-
-**See**
-
-- `init` — safe version for possibly-empty arrays
-- `tailNonEmpty` — all elements except the first
 
 **Signature**
 
@@ -28,6 +20,6 @@ console.log(Array.initNonEmpty([1, 2, 3, 4])) // [1, 2, 3]
 declare const initNonEmpty: <A>(self: NonEmptyReadonlyArray<A>) => Array<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L1270)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L778)
 
 Since v2.0.0

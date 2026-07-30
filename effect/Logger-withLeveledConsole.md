@@ -3,45 +3,31 @@ Module: `Logger`<br />
 
 ## Logger.withLeveledConsole
 
-Returns a new `Logger` that writes all output of the specified `Logger` to
-the console.
+Takes a `Logger<M, O>` and returns a logger that calls the respective `Console` method
+based on the log level.
 
-**Details**
-
-Will use the appropriate console method (i.e. `console.log`, `console.error`,
-etc.) based upon the current `LogLevel`.
-
-`Debug` uses `console.debug`, `Info` uses `console.info`, `Trace` uses
-`console.trace`, `Warn` uses `console.warn`, `Error` and `Fatal` use
-`console.error`, and all other levels use `console.log`.
-
-**Example** (Writing logs with level-based console methods)
+**Example**
 
 ```ts
-import { Effect, Logger } from "effect"
+import { Logger, Effect } from "effect"
 
-const formatter = Logger.make((options) =>
-  `[${options.logLevel}] ${options.message}`
+const loggerLayer = Logger.replace(
+  Logger.defaultLogger,
+  Logger.withLeveledConsole(Logger.stringLogger),
 )
 
-const leveledLogger = Logger.withLeveledConsole(formatter)
-
-const program = Effect.gen(function*() {
-  yield* Effect.logInfo("Info message") // -> console.info
-  yield* Effect.logWarning("Warning") // -> console.warn
-  yield* Effect.logError("Error occurred") // -> console.error
-  yield* Effect.logDebug("Debug info") // -> console.debug
-}).pipe(
-  Effect.provide(Logger.layer([leveledLogger]))
-)
+Effect.gen(function* () {
+  yield* Effect.logError("an error")
+  yield* Effect.logInfo("an info")
+}).pipe(Effect.provide(loggerLayer))
 ```
 
 **Signature**
 
 ```ts
-declare const withLeveledConsole: <Message, Output>(self: Logger<Message, Output>) => Logger<Message, void>
+declare const withLeveledConsole: <M, O>(self: Logger<M, O>) => Logger<M, void>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Logger.ts#L351)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Logger.ts#L265)
 
 Since v3.8.0

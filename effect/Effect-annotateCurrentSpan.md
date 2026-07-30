@@ -3,25 +3,19 @@ Module: `Effect`<br />
 
 ## Effect.annotateCurrentSpan
 
-Adds an annotation to the current span if available.
+Adds annotations to the currently active span for traceability.
 
-**Example** (Annotating the current span)
+**Details**
 
-```ts
-import { Effect } from "effect"
+This function adds key-value annotations to the currently active span in the
+effect's trace. These annotations help provide more context about the
+operation being executed at a specific point in time. Unlike
+`annotateSpans`, which applies to all spans in an effect, this function
+focuses solely on the active span.
 
-const program = Effect.gen(function*() {
-  yield* Effect.annotateCurrentSpan("userId", "123")
-  yield* Effect.annotateCurrentSpan({
-    operation: "user-lookup",
-    timestamp: Date.now()
-  })
-  yield* Effect.log("User lookup completed")
-  return "success"
-})
-
-const traced = Effect.withSpan(program, "user-operation")
-```
+You can either pass a single key-value pair or a record of key-value pairs to
+annotate the span. These annotations are useful for adding metadata to
+operations, especially in systems with detailed observability requirements.
 
 **Signature**
 
@@ -29,6 +23,6 @@ const traced = Effect.withSpan(program, "user-operation")
 declare const annotateCurrentSpan: { (key: string, value: unknown): Effect<void>; (values: Record<string, unknown>): Effect<void>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L8109)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12990)
 
 Since v2.0.0

@@ -3,37 +3,21 @@ Module: `Effect`<br />
 
 ## Effect.logWarning
 
-Logs one or more messages at the WARNING level.
+Logs messages at the WARNING log level.
 
-**Example** (Logging warnings)
+**Details**
 
-```ts
-import { Effect } from "effect"
-
-const program = Effect.gen(function*() {
-  yield* Effect.logWarning("API rate limit approaching")
-  yield* Effect.logWarning("Retries remaining:", 2, "Operation:", "fetchData")
-
-  // Useful for non-critical issues
-  const deprecated = true
-  if (deprecated) {
-    yield* Effect.logWarning("Using deprecated API endpoint")
-  }
-})
-
-Effect.runPromise(program)
-// Output:
-// timestamp=2023-... level=WARN message="API rate limit approaching"
-// timestamp=2023-... level=WARN message="Retries remaining: 2 Operation: fetchData"
-// timestamp=2023-... level=WARN message="Using deprecated API endpoint"
-```
+This function logs messages at the WARNING level, suitable for highlighting
+potential issues that are not errors but may require attention. These
+messages indicate that something unexpected occurred or might lead to errors
+in the future.
 
 **Signature**
 
 ```ts
-declare const logWarning: (...message: ReadonlyArray<any>) => Effect<void>
+declare const logWarning: (...message: ReadonlyArray<any>) => Effect<void, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13909)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L10966)
 
 Since v2.0.0

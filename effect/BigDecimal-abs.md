@@ -5,19 +5,15 @@ Module: `BigDecimal`<br />
 
 Determines the absolute value of a given `BigDecimal`.
 
-**When to use**
-
-Use to remove the sign from a `BigDecimal` while preserving its magnitude.
-
-**Example** (Calculating absolute values)
+**Example**
 
 ```ts
-import { BigDecimal } from "effect"
 import * as assert from "node:assert"
+import { abs, unsafeFromString } from "effect/BigDecimal"
 
-assert.deepStrictEqual(BigDecimal.abs(BigDecimal.fromStringUnsafe("-5")), BigDecimal.fromStringUnsafe("5"))
-assert.deepStrictEqual(BigDecimal.abs(BigDecimal.fromStringUnsafe("0")), BigDecimal.fromStringUnsafe("0"))
-assert.deepStrictEqual(BigDecimal.abs(BigDecimal.fromStringUnsafe("5")), BigDecimal.fromStringUnsafe("5"))
+assert.deepStrictEqual(abs(unsafeFromString("-5")), unsafeFromString("5"))
+assert.deepStrictEqual(abs(unsafeFromString("0")), unsafeFromString("0"))
+assert.deepStrictEqual(abs(unsafeFromString("5")), unsafeFromString("5"))
 ```
 
 **Signature**
@@ -26,6 +22,6 @@ assert.deepStrictEqual(BigDecimal.abs(BigDecimal.fromStringUnsafe("5")), BigDeci
 declare const abs: (n: BigDecimal) => BigDecimal
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L1035)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L691)
 
 Since v2.0.0

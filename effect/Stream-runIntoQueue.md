@@ -3,38 +3,15 @@ Module: `Stream`<br />
 
 ## Stream.runIntoQueue
 
-Runs the stream, offering each element to the provided queue and ending it
-with `Cause.Done` when the stream completes.
-
-**Example** (Running a stream into a queue)
-
-```ts
-import { Cause, Effect, Queue, Stream } from "effect"
-
-const program = Effect.gen(function*() {
-  const queue = yield* Queue.bounded<number, Cause.Done>(4)
-
-  yield* Effect.forkChild(
-    Stream.runIntoQueue(Stream.fromIterable([1, 2, 3]), queue)
-  )
-
-  const values = [
-    yield* Queue.take(queue),
-    yield* Queue.take(queue),
-    yield* Queue.take(queue)
-  ]
-  const done = yield* Effect.flip(Queue.take(queue))
-
-  return { values, done }
-})
-```
+Enqueues elements of this stream into a queue. Stream failure and ending
+will also be signalled.
 
 **Signature**
 
 ```ts
-declare const runIntoQueue: { <A, E>(queue: Queue.Queue<A, E | Cause.Done>): <R>(self: Stream<A, E, R>) => Effect.Effect<void, never, R>; <A, E, R>(self: Stream<A, E, R>, queue: Queue.Queue<A, E | Cause.Done>): Effect.Effect<void, never, R>; }
+declare const runIntoQueue: { <A, E>(queue: Queue.Enqueue<Take.Take<A, E>>): <R>(self: Stream<A, E, R>) => Effect.Effect<void, never, R>; <A, E, R>(self: Stream<A, E, R>, queue: Queue.Enqueue<Take.Take<A, E>>): Effect.Effect<void, never, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L11756)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L4429)
 
 Since v2.0.0

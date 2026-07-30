@@ -1,16 +1,16 @@
-Package: `@effect/platform-node-shared`<br />
+Package: `@effect/platform-node`<br />
 Module: `index`<br />
 
 ## index.NodeFileSystem
 
-Re-exports all named exports from the "./NodeFileSystem.ts" module as `NodeFileSystem`.
+Re-exports all named exports from the "./NodeFileSystem.js" module as `NodeFileSystem`.
 
 **Signature**
 
 ```ts
-export * as NodeFileSystem from "./NodeFileSystem.ts"
+export * as NodeFileSystem from "./NodeFileSystem.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/index.ts#L25)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L24)
 
-Since v4.0.0
+Since v1.0.0

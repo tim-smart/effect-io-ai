@@ -3,25 +3,16 @@ Module: `Array`<br />
 
 ## Array.headNonEmpty
 
-Returns the first element of a `NonEmptyReadonlyArray` directly (no `Option`
-wrapper).
+Get the first element of a non empty array.
 
-**When to use**
-
-Use to get the first element without `Option` wrapping when the array is known
-to be non-empty.
-
-**Example** (Getting the head of a non-empty array)
+**Example**
 
 ```ts
 import { Array } from "effect"
 
-console.log(Array.headNonEmpty([1, 2, 3, 4])) // 1
+const result = Array.headNonEmpty([1, 2, 3, 4])
+console.log(result) // 1
 ```
-
-**See**
-
-- `head` — safe version for possibly-empty arrays
 
 **Signature**
 
@@ -29,6 +20,6 @@ console.log(Array.headNonEmpty([1, 2, 3, 4])) // 1
 declare const headNonEmpty: <A>(self: NonEmptyReadonlyArray<A>) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L1111)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L696)
 
 Since v2.0.0

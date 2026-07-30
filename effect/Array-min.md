@@ -3,21 +3,16 @@ Module: `Array`<br />
 
 ## Array.min
 
-Returns the minimum element of a non-empty array according to the given
-`Order`.
+Finds the minimum element in an array based on a comparator.
 
-**Example** (Finding the minimum)
+**Example**
 
 ```ts
 import { Array, Order } from "effect"
 
-console.log(Array.min([3, 1, 2], Order.Number)) // 1
+const result = Array.min([3, 1, 2], Order.number)
+console.log(result) // 1
 ```
-
-**See**
-
-- `max` — find the maximum
-- `sort` — sort the entire array
 
 **Signature**
 
@@ -25,6 +20,6 @@ console.log(Array.min([3, 1, 2], Order.Number)) // 1
 declare const min: { <A>(O: Order.Order<A>): (self: NonEmptyReadonlyArray<A>) => A; <A>(self: NonEmptyReadonlyArray<A>, O: Order.Order<A>): A; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L4304)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L3070)
 
 Since v2.0.0

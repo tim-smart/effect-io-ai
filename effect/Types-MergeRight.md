@@ -3,33 +3,14 @@ Module: `Types`<br />
 
 ## Types.MergeRight
 
-Right-biased merge of two object types where keys from `Source` take
-precedence over `Target` on conflict.
+Merges two object where the keys of the right object take precedence in the case of a conflict.
 
-**When to use**
-
-Use when you want right-biased merging where the second argument wins.
-
-**Details**
-
-The result is automatically simplified via `Simplify`.
-
-**Example** (Right-biased merge)
+**Example**
 
 ```ts
 import type { Types } from "effect"
-
-type Result = Types.MergeRight<
-  { a: number; b: number },
-  { a: string; c: boolean }
->
-// { a: string; b: number; c: boolean }
+type MergeRight = Types.MergeRight<{ a: number, b: number; }, { a: string }> // { a: string; b: number; }
 ```
-
-**See**
-
-- `MergeLeft`
-- `Simplify`
 
 **Signature**
 
@@ -42,6 +23,6 @@ type MergeRight<Target, Source> = Simplify<
 >
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L405)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L201)
 
 Since v2.0.0

@@ -3,23 +3,17 @@ Module: `Stream`<br />
 
 ## Stream.takeRight
 
-Keeps the last `n` elements from this stream.
+Takes the last specified number of elements from this stream.
 
-**Example** (Taking elements from the right)
+**Example**
 
 ```ts
-import { Console, Effect, Stream } from "effect"
+import { Effect, Stream } from "effect"
 
-const program = Effect.gen(function*() {
-  const values = yield* Stream.range(1, 6).pipe(
-    Stream.takeRight(3),
-    Stream.runCollect
-  )
-  yield* Console.log(values)
-})
+const stream = Stream.takeRight(Stream.make(1, 2, 3, 4, 5, 6), 3)
 
-Effect.runPromise(program)
-// Output: [ 4, 5, 6 ]
+Effect.runPromise(Stream.runCollect(stream)).then(console.log)
+// { _id: 'Chunk', values: [ 4, 5, 6 ] }
 ```
 
 **Signature**
@@ -28,6 +22,6 @@ Effect.runPromise(program)
 declare const takeRight: { (n: number): <A, E, R>(self: Stream<A, E, R>) => Stream<A, E, R>; <A, E, R>(self: Stream<A, E, R>, n: number): Stream<A, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L6361)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L4825)
 
 Since v2.0.0

@@ -3,32 +3,20 @@ Module: `Predicate`<br />
 
 ## Predicate.isSet
 
-Checks whether a value is a `Set`.
+A refinement that checks if a value is a `Set`.
 
-**When to use**
-
-Use when you need a `Predicate` runtime guard for `Set` values.
-
-**Details**
-
-Uses `instanceof Set`.
-
-**Example** (Guarding a Set)
+**Example**
 
 ```ts
-import { Predicate } from "effect"
+import * as assert from "node:assert"
+import { isSet } from "effect/Predicate"
 
-const data: unknown = new Set([1, 2])
+assert.strictEqual(isSet(new Set([1, 2])), true)
+assert.strictEqual(isSet(new Set()), true)
 
-if (Predicate.isSet(data)) {
-  console.log(data.size)
-}
+assert.strictEqual(isSet({}), false)
+assert.strictEqual(isSet([1, 2]), false)
 ```
-
-**See**
-
-- `isMap`
-- `isIterable`
 
 **Signature**
 
@@ -36,6 +24,6 @@ if (Predicate.isSet(data)) {
 declare const isSet: (input: unknown) => input is Set<unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L473)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L295)
 
 Since v2.0.0

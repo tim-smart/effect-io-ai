@@ -3,26 +3,16 @@ Module: `Array`<br />
 
 ## Array.findFirstIndex
 
-Returns the index of the first element matching the predicate, wrapped in an
-`Option`.
+Return the first index for which a predicate holds.
 
-**When to use**
-
-Use to find the index of the first matching element from the start of an
-iterable.
-
-**Example** (Finding an index)
+**Example**
 
 ```ts
 import { Array } from "effect"
 
-console.log(Array.findFirstIndex([5, 3, 8, 9], (x) => x > 5)) // Option.some(2)
+const result = Array.findFirstIndex([5, 3, 8, 9], x => x > 5)
+console.log(result) // Option.some(2)
 ```
-
-**See**
-
-- `findLastIndex` — search from the end
-- `findFirst` — get the element itself
 
 **Signature**
 
@@ -30,6 +20,6 @@ console.log(Array.findFirstIndex([5, 3, 8, 9], (x) => x > 5)) // Option.some(2)
 declare const findFirstIndex: { <A>(predicate: (a: NoInfer<A>, i: number) => boolean): (self: Iterable<A>) => Option.Option<number>; <A>(self: Iterable<A>, predicate: (a: A, i: number) => boolean): Option.Option<number>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L1651)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L995)
 
 Since v2.0.0

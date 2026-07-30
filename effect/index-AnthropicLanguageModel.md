@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.AnthropicLanguageModel
 
-Re-exports all named exports from the "./AnthropicLanguageModel.ts" module as `AnthropicLanguageModel`.
+Re-exports all named exports from the "./AnthropicLanguageModel.js" module as `AnthropicLanguageModel`.
 
 **Signature**
 
 ```ts
-export * as AnthropicLanguageModel from "./AnthropicLanguageModel.ts"
+export * as AnthropicLanguageModel from "./AnthropicLanguageModel.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/index.ts#L25)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/anthropic/src/index.ts#L14)
 
-Since v4.0.0
+Since v1.0.0

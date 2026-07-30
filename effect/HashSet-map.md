@@ -3,31 +3,35 @@ Module: `HashSet`<br />
 
 ## HashSet.map
 
-Maps each value in the HashSet using the provided function.
+Maps over the values of the `HashSet` using the specified function.
 
-**Example** (Mapping HashSet values)
+The time complexity is of **`O(n)`**.
+
+**Example**
 
 ```ts
-import { HashSet } from "effect"
+// Syntax
+import { HashSet, pipe } from "effect"
 
-const numbers = HashSet.make(1, 2, 3)
-const doubled = HashSet.map(numbers, (n) => n * 2)
+// with `data-last`, a.k.a. `pipeable` API
+pipe(
+  HashSet.make(0, 1, 2), // HashSet.HashSet<number>
+  HashSet.map(String) // HashSet.HashSet<string>
+)
 
-console.log(Array.from(doubled).sort()) // [2, 4, 6]
-console.log(HashSet.size(doubled)) // 3
+// or piped with the pipe method
+HashSet.make(0, 1, 2).pipe(HashSet.map(String))
 
-// Mapping can reduce size if function produces duplicates
-const strings = HashSet.make("apple", "banana", "cherry")
-const lengths = HashSet.map(strings, (s) => s.length)
-console.log(Array.from(lengths).sort()) // [5, 6] (apple=5, banana=6, cherry=6)
+// or with `data-first` API
+HashSet.map(HashSet.make(0, 1, 2), String)
 ```
 
 **Signature**
 
 ```ts
-declare const map: { <V, U>(f: (value: V) => U): (self: HashSet<V>) => HashSet<U>; <V, U>(self: HashSet<V>, f: (value: V) => U): HashSet<U>; }
+declare const map: { <A, B>(f: (a: A) => B): (self: HashSet<A>) => HashSet<B>; <A, B>(self: HashSet<A>, f: (a: A) => B): HashSet<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L480)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L1786)
 
 Since v2.0.0

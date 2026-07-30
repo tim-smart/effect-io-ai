@@ -3,54 +3,23 @@ Module: `BigDecimal`<br />
 
 ## BigDecimal.divide
 
-Divides `BigDecimal`s safely.
+Provides a division operation on `BigDecimal`s.
 
-**When to use**
+If the dividend is not a multiple of the divisor the result will be a `BigDecimal` value
+which represents the integer division rounded down to the nearest integer.
 
-Use to divide `BigDecimal` values while representing division by zero as
-`Option.none`.
+If the divisor is `0`, the result will be `None`.
 
-**Details**
-
-If the dividend is not a multiple of the divisor, the result will be a `BigDecimal` value
-with up to the default division precision. If the divisor is `0`, the result
-will be `Option.none()`.
-
-**Example** (Dividing decimals safely)
+**Example**
 
 ```ts
+import * as assert from "node:assert"
 import { BigDecimal, Option } from "effect"
 
-console.log(
-  Option.getOrThrow(
-    BigDecimal.divide(
-      BigDecimal.fromStringUnsafe("6"),
-      BigDecimal.fromStringUnsafe("3")
-    )
-  )
-) // BigDecimal(2)
-console.log(
-  Option.getOrThrow(
-    BigDecimal.divide(
-      BigDecimal.fromStringUnsafe("6"),
-      BigDecimal.fromStringUnsafe("4")
-    )
-  )
-) // BigDecimal(1.5)
-console.log(
-  Option.isNone(
-    BigDecimal.divide(
-      BigDecimal.fromStringUnsafe("6"),
-      BigDecimal.fromStringUnsafe("0")
-    )
-  )
-) // true
+assert.deepStrictEqual(BigDecimal.divide(BigDecimal.unsafeFromString("6"), BigDecimal.unsafeFromString("3")), Option.some(BigDecimal.unsafeFromString("2")))
+assert.deepStrictEqual(BigDecimal.divide(BigDecimal.unsafeFromString("6"), BigDecimal.unsafeFromString("4")), Option.some(BigDecimal.unsafeFromString("1.5")))
+assert.deepStrictEqual(BigDecimal.divide(BigDecimal.unsafeFromString("6"), BigDecimal.unsafeFromString("0")), Option.none())
 ```
-
-**See**
-
-- `divideUnsafe` for division that throws when the divisor is zero
-- `remainder` for the decimal remainder operation
 
 **Signature**
 
@@ -58,6 +27,6 @@ console.log(
 declare const divide: { (that: BigDecimal): (self: BigDecimal) => Option.Option<BigDecimal>; (self: BigDecimal, that: BigDecimal): Option.Option<BigDecimal>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L588)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L387)
 
 Since v2.0.0

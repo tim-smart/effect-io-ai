@@ -5,19 +5,19 @@ Module: `Stream`<br />
 
 Terminates with the specified error.
 
-**Example** (Failing a stream)
+**Example**
 
 ```ts
-import { Console, Effect, Stream } from "effect"
+import { Effect, Stream } from "effect"
 
-const program = Effect.gen(function*() {
-  const stream = Stream.fail("Uh oh!")
-  const exit = yield* Effect.exit(Stream.runCollect(stream))
-  yield* Console.log(exit)
-  // Output: { _id: 'Exit', _tag: 'Failure', cause: { _id: 'Cause', _tag: 'Fail', failure: 'Uh oh!' } }
-})
+const stream = Stream.fail("Uh oh!")
 
-Effect.runPromise(program)
+Effect.runPromiseExit(Stream.runCollect(stream)).then(console.log)
+// {
+//   _id: 'Exit',
+//   _tag: 'Failure',
+//   cause: { _id: 'Cause', _tag: 'Fail', failure: 'Uh oh!' }
+// }
 ```
 
 **Signature**
@@ -26,6 +26,6 @@ Effect.runPromise(program)
 declare const fail: <E>(error: E) => Stream<never, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L926)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L1581)
 
 Since v2.0.0

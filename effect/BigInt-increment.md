@@ -3,19 +3,15 @@ Module: `BigInt`<br />
 
 ## BigInt.increment
 
-Returns the result of adding `1n` to a `bigint`.
+Returns the result of adding `1n` to a given number.
 
-**When to use**
-
-Use to increment a `bigint` counter by one.
-
-**Example** (Incrementing a bigint)
+**Example**
 
 ```ts
-import { BigInt } from "effect"
 import * as assert from "node:assert"
+import { increment } from "effect/BigInt"
 
-assert.deepStrictEqual(BigInt.increment(2n), 3n)
+assert.deepStrictEqual(increment(2n), 3n)
 ```
 
 **Signature**
@@ -24,6 +20,6 @@ assert.deepStrictEqual(BigInt.increment(2n), 3n)
 declare const increment: (n: bigint) => bigint
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L250)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L164)
 
 Since v2.0.0

@@ -3,41 +3,24 @@ Module: `Config`<br />
 
 ## Config.unwrap
 
-Constructs a `Config<T>` from a value matching `Wrap<T>`.
+Constructs a config from some configuration wrapped with the `Wrap<A>` utility type.
 
-**When to use**
+For example:
 
-Use when accepting config from callers who may pass either a single `Config` or a
-  record of individual `Config`s.
-
-**Details**
-
-If the input is already a `Config`, it is returned as-is. Otherwise, each
-key is recursively unwrapped and combined.
-
-**Example** (Unwrapping a record of configs)
-
-```ts
-import { Config } from "effect"
-
-interface Options {
-  key: string
-}
-
-const makeConfig = (config: Config.Wrap<Options>): Config.Config<Options> =>
-  Config.unwrap(config)
 ```
+import { Config, unwrap } from "./Config"
 
-**See**
+interface Options { key: string }
 
-- `Wrap` – the utility type accepted by this function
+const makeConfig = (config: Config.Wrap<Options>): Config<Options> => unwrap(config)
+```
 
 **Signature**
 
 ```ts
-declare const unwrap: <T>(wrapped: Wrap<T>) => Config<T>
+declare const unwrap: <A>(wrapped: Config.Wrap<A>) => Config<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L480)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L464)
 
 Since v2.0.0

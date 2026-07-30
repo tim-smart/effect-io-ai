@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.Pool
 
-Re-exports all named exports from the "./Pool.ts" module as `Pool`.
+Re-exports all named exports from the "./Pool.js" module as `Pool`.
 
 **Signature**
 
 ```ts
-export * as Pool from "./Pool.ts"
+export * as Pool from "./Pool.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L407)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1107)
 
 Since v2.0.0

@@ -3,91 +3,11 @@ Module: `Effect`<br />
 
 ## Effect.fnUntraced
 
-Creates an Effect-returning function without tracing.
+Same as `fn`, but allows you to create a function that is not traced, for when performance is critical.
 
-**When to use**
+**See**
 
-Use when you are defining a reusable Effect function whose implementation
-would otherwise be a normal function returning `gen`, especially when
-tracing spans or stack-frame capture are not needed.
-
-**Details**
-
-Compared to a plain function that returns `gen`, `Effect.fnUntraced`
-reuses the generator body instead of allocating a fresh generator closure
-around the arguments on every call. It does not record an Effect stack-frame
-boundary and does not create tracing spans. Use `fn` when you need
-those stack frames or spans. Additional arguments after the generator body
-act like `pipe` transforms: each transform receives the previous result and
-the original function arguments. Annotate the generator return type with
-`Effect.fn.Return<A, E, R>` when the produced `Effect` type needs to be
-stated explicitly.
-
-**Example** (Defining untraced effect functions)
-
-```ts
-import { Effect } from "effect"
-
-const f = Effect.fnUntraced(function*(
-  value: string
-) {
-  return yield* Effect.succeed(value.length)
-})
-
-//      ┌─── Effect.Effect<number>
-//      ▼
-const program = f("hello")
-```
-
-**Example** (Transforming the returned Effect)
-
-```ts
-import { Effect } from "effect"
-
-const f = Effect.fnUntraced(
-  function*(value: string) {
-    return yield* Effect.succeed(value.length)
-  },
-  (effect, value) =>
-    effect.pipe(Effect.map((length) => `${value}: ${length}`))
-)
-
-//      ┌─── Effect.Effect<string>
-//      ▼
-const program = f("hello")
-```
-
-**Example** (Annotating an untraced non-parametric function)
-
-```ts
-import { Effect } from "effect"
-
-const f = Effect.fnUntraced(function*(
-  value: string
-): Effect.fn.Return<number> {
-  return yield* Effect.succeed(value.length)
-})
-
-//      ┌─── Effect.Effect<number>
-//      ▼
-const program = f("hello")
-```
-
-**Example** (Annotating an untraced parametric function)
-
-```ts
-import { Effect } from "effect"
-
-const f = Effect.fnUntraced(function*<A>(
-  value: A
-): Effect.fn.Return<A> {
-  return yield* Effect.succeed(value)
-})
-
-//      ┌─── Effect.Effect<string>
-//      ▼
-const program = f("hello")
-```
+- `fn` for a version that includes tracing.
 
 **Signature**
 
@@ -95,6 +15,6 @@ const program = f("hello")
 declare const fnUntraced: fn.Untraced
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13636)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L14765)
 
 Since v3.12.0

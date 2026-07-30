@@ -3,24 +3,31 @@ Module: `Effect`<br />
 
 ## Effect.isFailure
 
-Determines whether an effect fails.
+Checks if an effect has failed.
 
 **Details**
 
-Defects are not converted; if the effect dies, the resulting effect dies too.
+This function evaluates whether an effect has resulted in a failure. It
+returns a boolean value wrapped in an effect, with `true` indicating the
+effect failed and `false` otherwise.
 
-**Example** (Checking whether an effect fails)
+The resulting effect cannot fail (`never` in the error channel) but retains
+the context of the original effect.
+
+**Example**
 
 ```ts
-import { Console, Effect } from "effect"
+import { Effect } from "effect"
 
-const program = Effect.gen(function*() {
-  const failed = yield* Effect.isFailure(Effect.fail("Uh oh!"))
-  yield* Console.log(failed)
-})
+const failure = Effect.fail("Uh oh!")
 
-Effect.runPromise(program)
+console.log(Effect.runSync(Effect.isFailure(failure)))
 // Output: true
+
+const defect = Effect.dieMessage("BOOM!")
+
+Effect.runSync(Effect.isFailure(defect))
+// throws: BOOM!
 ```
 
 **Signature**
@@ -29,6 +36,6 @@ Effect.runPromise(program)
 declare const isFailure: <A, E, R>(self: Effect<A, E, R>) => Effect<boolean, never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L5736)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L10517)
 
 Since v2.0.0

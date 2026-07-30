@@ -3,48 +3,34 @@ Module: `Stream`<br />
 
 ## Stream.fromIterableEffect
 
-Creates a stream from an effect producing an iterable of values.
+Creates a stream from an effect producing a value of type `Iterable<A>`.
 
-**When to use**
-
-Use when the iterable must be acquired from an Effect before the stream emits,
-and acquisition services or failures should be part of the stream.
-
-**Example** (Creating a stream from an iterable effect)
+**Example**
 
 ```ts
-import { Console, Context, Effect, Stream } from "effect"
+import { Context, Effect, Stream } from "effect"
 
-class UserRepo extends Context.Service<UserRepo, {
-  readonly list: Effect.Effect<ReadonlyArray<string>>
-}>()("UserRepo") {}
+class Database extends Context.Tag("Database")<
+  Database,
+  { readonly getUsers: Effect.Effect<Array<string>> }
+>() {}
 
-const listUsers = Effect.service(UserRepo).pipe(
-  Effect.andThen((repo) => repo.list)
-)
+const getUsers = Database.pipe(Effect.andThen((_) => _.getUsers))
 
-const stream = Stream.fromIterableEffect(listUsers)
+const stream = Stream.fromIterableEffect(getUsers)
 
-const program = Effect.gen(function*() {
-  const users = yield* stream.pipe(
-    Stream.provideService(UserRepo, {
-      list: Effect.succeed(["user1", "user2"])
-    }),
-    Stream.runCollect
-  )
-  yield* Console.log(users)
-})
-
-Effect.runPromise(program)
-// Output: [ "user1", "user2" ]
+Effect.runPromise(
+  Stream.runCollect(stream.pipe(Stream.provideService(Database, { getUsers: Effect.succeed(["user1", "user2"]) })))
+).then(console.log)
+// { _id: 'Chunk', values: [ 'user1', 'user2' ] }
 ```
 
 **Signature**
 
 ```ts
-declare const fromIterableEffect: <A, E, R>(iterable: Effect.Effect<Iterable<A>, E, R>) => Stream<A, E, R>
+declare const fromIterableEffect: <A, E, R>(effect: Effect.Effect<Iterable<A>, E, R>) => Stream<A, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L1152)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L2113)
 
 Since v2.0.0

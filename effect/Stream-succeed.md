@@ -5,18 +5,16 @@ Module: `Stream`<br />
 
 Creates a single-valued pure stream.
 
-**Example** (Creating a single-valued pure stream)
+**Example**
 
 ```ts
-import { Console, Effect, Stream } from "effect"
+import { Effect, Stream } from "effect"
 
-const program = Effect.gen(function*() {
-  const values = yield* Stream.succeed(3).pipe(Stream.runCollect)
-  yield* Console.log(values)
-})
+// A Stream with a single number
+const stream = Stream.succeed(3)
 
-Effect.runPromise(program)
-// [ 3 ]
+Effect.runPromise(Stream.runCollect(stream)).then(console.log)
+// { _id: 'Chunk', values: [ 3 ] }
 ```
 
 **Signature**
@@ -25,6 +23,6 @@ Effect.runPromise(program)
 declare const succeed: <A>(value: A) => Stream<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L827)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L4770)
 
 Since v2.0.0

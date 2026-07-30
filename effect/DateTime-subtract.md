@@ -3,15 +3,15 @@ Module: `DateTime`<br />
 
 ## DateTime.subtract
 
-Subtracts the given `amount` of `unit` from a `DateTime`.
+Subtract the given `amount` of `unit`'s from a `DateTime`.
 
-**Example** (Subtracting date and time parts)
+**Example**
 
 ```ts
 import { DateTime } from "effect"
 
 // subtract 5 minutes
-DateTime.makeUnsafe(0).pipe(
+DateTime.unsafeMake(0).pipe(
   DateTime.subtract({ minutes: 5 })
 )
 ```
@@ -22,6 +22,6 @@ DateTime.makeUnsafe(0).pipe(
 declare const subtract: { (parts: Partial<DateTime.PartsForMath>): <A extends DateTime>(self: A) => A; <A extends DateTime>(self: A, parts: Partial<DateTime.PartsForMath>): A; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L2365)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/DateTime.ts#L1416)
 
 Since v3.6.0

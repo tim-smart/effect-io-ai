@@ -3,33 +3,7 @@ Module: `Stream`<br />
 
 ## Stream.fromIteratorSucceed
 
-Creates a stream that consumes values from an iterator.
-
-**Details**
-
-The `maxChunkSize` parameter controls how many values are pulled per chunk.
-
-**Example** (Consuming values from an iterator)
-
-```ts
-import { Console, Effect, Stream } from "effect"
-
-function* numbers() {
-  yield 1
-  yield 2
-  yield 3
-}
-
-const stream = Stream.fromIteratorSucceed(numbers())
-
-const program = Effect.gen(function* () {
-  const values = yield* Stream.runCollect(stream)
-  yield* Console.log(values)
-})
-
-Effect.runPromise(program)
-// Output: [ 1, 2, 3 ]
-```
+Creates a stream from an iterator
 
 **Signature**
 
@@ -37,6 +11,6 @@ Effect.runPromise(program)
 declare const fromIteratorSucceed: <A>(iterator: IterableIterator<A>, maxChunkSize?: number) => Stream<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L1072)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L2122)
 
 Since v2.0.0

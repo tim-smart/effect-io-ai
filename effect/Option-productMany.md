@@ -3,38 +3,15 @@ Module: `Option`<br />
 
 ## Option.productMany
 
-Combines a primary `Option` with an iterable of `Option`s into a tuple if
-all are `Some`.
-
-**When to use**
-
-Use when you need several `Option` values of the same type to all be `Some`
-and return them as a non-empty tuple.
+Combines an `Option` with a collection of `Option`s into a single `Option`
+containing a tuple of their values if all are `Some`.
 
 **Details**
 
-- All `Some` → `Some([self.value, ...rest])`
-- Any `None` → `None`
-
-**Example** (Combining many Options)
-
-```ts
-import { Option } from "effect"
-
-const first = Option.some(1)
-const rest = [Option.some(2), Option.some(3)]
-
-console.log(Option.productMany(first, rest))
-// Output: { _id: 'Option', _tag: 'Some', value: [1, 2, 3] }
-
-console.log(Option.productMany(first, [Option.some(2), Option.none()]))
-// Output: { _id: 'Option', _tag: 'None' }
-```
-
-**See**
-
-- `product` for combining exactly two
-- `all` for tuples, structs, and iterables
+This function takes a primary `Option` and a collection of `Option`s and
+combines their values into a tuple `[A, ...Array<A>]` if all are `Some`. If
+the primary `Option` or any `Option` in the collection is `None`, the result
+is `None`.
 
 **Signature**
 
@@ -42,6 +19,6 @@ console.log(Option.productMany(first, [Option.some(2), Option.none()]))
 declare const productMany: <A>(self: Option<A>, collection: Iterable<Option<A>>) => Option<[A, ...Array<A>]>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L1673)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L1327)
 
 Since v2.0.0

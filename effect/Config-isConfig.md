@@ -3,21 +3,13 @@ Module: `Config`<br />
 
 ## Config.isConfig
 
-Returns `true` if `u` is a `Config` instance.
+This function returns `true` if the specified value is an `Config` value,
+`false` otherwise.
 
-**When to use**
-
-Use when you need to distinguish a `Config` from an unknown value before
-calling `.parse` or `unwrap`.
-
-**Example** (Checking Config values)
-
-```ts
-import { Config } from "effect"
-
-console.log(Config.isConfig(Config.string("HOST"))) // true
-console.log(Config.isConfig("not a config"))        // false
-```
+This function can be useful for checking the type of a value before
+attempting to operate on it as an `Config` value. For example, you could
+use `isConfig` to check the type of a value before using it as an
+argument to a function that expects an `Config` value.
 
 **Signature**
 
@@ -25,6 +17,6 @@ console.log(Config.isConfig("not a config"))        // false
 declare const isConfig: (u: unknown) => u is Config<unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L49)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L234)
 
 Since v2.0.0

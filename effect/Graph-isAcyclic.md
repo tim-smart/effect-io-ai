@@ -3,16 +3,13 @@ Module: `Graph`<br />
 
 ## Graph.isAcyclic
 
-Checks whether the graph is acyclic (contains no cycles).
-
-**Details**
+Checks if the graph is acyclic (contains no cycles).
 
 Uses depth-first search to detect back edges, which indicate cycles.
 For directed graphs, any back edge creates a cycle. For undirected graphs,
-a back edge that doesn't use the same edge used to enter the current node
-creates a cycle.
+a back edge that doesn't go to the immediate parent creates a cycle.
 
-**Example** (Checking cycles)
+**Example**
 
 ```ts
 import { Graph } from "effect"
@@ -43,6 +40,6 @@ console.log(Graph.isAcyclic(cyclic)) // false
 declare const isAcyclic: <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L3596)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L1935)
 
 Since v3.18.0

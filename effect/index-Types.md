@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.Types
 
-Re-exports all named exports from the "./Types.ts" module as `Types`.
+Re-exports all named exports from the "./Types.js" module as `Types`.
 
 **Signature**
 
 ```ts
-export * as Types from "./Types.ts"
+export * as Types from "./Types.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L702)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1541)
 
-Since v4.0.0
+Since v2.0.0

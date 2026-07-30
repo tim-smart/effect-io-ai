@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.Schema
 
-Re-exports all named exports from the "./Schema.ts" module as `Schema`.
+Re-exports all named exports from the "./Schema.js" module as `Schema`.
 
 **Signature**
 
 ```ts
-export * as Schema from "./Schema.ts"
+export * as Schema from "./Schema.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L522)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1283)
 
-Since v4.0.0
+Since v3.10.0

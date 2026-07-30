@@ -3,35 +3,14 @@ Module: `Encoding`<br />
 
 ## Encoding.decodeHexString
 
-Decodes a hexadecimal string into a UTF-8 string safely.
-
-**When to use**
-
-Use to decode hexadecimal text into UTF-8 text without throwing on invalid
-input.
-
-**Details**
-
-Returns `Result.succeed` with the decoded text when decoding succeeds, or
-`Result.fail` with an `EncodingError` when the input is not valid hex.
-
-**Example** (Decoding hex strings)
-
-```ts
-import { Encoding, Result } from "effect"
-
-const result = Encoding.decodeHexString("68656c6c6f")
-if (Result.isSuccess(result)) {
-  console.log(result.success) // "hello"
-}
-```
+Decodes a hex encoded `string` into a UTF-8 `string`.
 
 **Signature**
 
 ```ts
-declare const decodeHexString: (str: string) => Result.Result<string, EncodingError>
+declare const decodeHexString: (str: string) => Either.Either<string, DecodeException>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Encoding.ts#L509)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Encoding.ts#L89)
 
 Since v2.0.0

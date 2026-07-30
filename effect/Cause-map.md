@@ -3,40 +3,24 @@ Module: `Cause`<br />
 
 ## Cause.map
 
-Transforms the typed error values inside a `Cause` using the
-provided function. Only `Fail` reasons are affected; `Die` and `Interrupt`
-reasons pass through unchanged.
-
-**When to use**
-
-Use to transform expected typed failures while preserving defects and
-interruptions unchanged.
+Transforms the errors in a `Cause` using a user-provided function.
 
 **Details**
 
-If at least one `Fail` reason exists, this returns a new `Cause`
-containing the mapped failures. If the cause has no `Fail` reasons, the
-original cause is returned unchanged.
+This function applies `f` to each `Fail` error while leaving defects (`Die`)
+and interruptions untouched. It's useful for changing or simplifying error
+types in your effectful workflows.
 
-**Example** (Mapping errors to uppercase)
+**See**
 
-```ts
-import { Cause } from "effect"
-
-const cause = Cause.fail("error")
-const mapped = Cause.map(cause, (e) => e.toUpperCase())
-const reason = mapped.reasons[0]
-if (Cause.isFailReason(reason)) {
-  console.log(reason.error) // "ERROR"
-}
-```
+- `as` Replace errors with a single constant
 
 **Signature**
 
 ```ts
-declare const map: { <E, E2>(f: (error: Types.NoInfer<E>) => E2): (self: Cause<E>) => Cause<E2>; <E, E2>(self: Cause<E>, f: (error: Types.NoInfer<E>) => E2): Cause<E2>; }
+declare const map: { <E, E2>(f: (e: E) => E2): (self: Cause<E>) => Cause<E2>; <E, E2>(self: Cause<E>, f: (e: E) => E2): Cause<E2>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L676)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cause.ts#L1018)
 
 Since v2.0.0

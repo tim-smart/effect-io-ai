@@ -5,20 +5,16 @@ Module: `Boolean`<br />
 
 Combines two booleans using NOR: `!(self || that)`.
 
-**When to use**
-
-Use to accept only when both boolean operands are `false`.
-
-**Example** (Combining booleans with NOR)
+**Example**
 
 ```ts
-import { Boolean } from "effect"
 import * as assert from "node:assert"
+import { nor } from "effect/Boolean"
 
-assert.deepStrictEqual(Boolean.nor(true, true), false)
-assert.deepStrictEqual(Boolean.nor(true, false), false)
-assert.deepStrictEqual(Boolean.nor(false, true), false)
-assert.deepStrictEqual(Boolean.nor(false, false), true)
+assert.deepStrictEqual(nor(true, true), false)
+assert.deepStrictEqual(nor(true, false), false)
+assert.deepStrictEqual(nor(false, true), false)
+assert.deepStrictEqual(nor(false, false), true)
 ```
 
 **Signature**
@@ -27,6 +23,6 @@ assert.deepStrictEqual(Boolean.nor(false, false), true)
 declare const nor: { (that: boolean): (self: boolean) => boolean; (self: boolean, that: boolean): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Boolean.ts#L288)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Boolean.ts#L172)
 
 Since v2.0.0

@@ -3,27 +3,17 @@ Module: `Array`<br />
 
 ## Array.difference
 
-Computes elements in the first array that are not in the second, using
-`Equal.equivalence()`.
+Creates a `Array` of values not included in the other given `Iterable`.
+The order and references of result values are determined by the first `Iterable`.
 
-**When to use**
-
-Use when you need to keep values from the first array that are absent from
-the second and the default `Equal.equivalence()` comparison is appropriate.
-
-**Example** (Computing array differences)
+**Example**
 
 ```ts
 import { Array } from "effect"
 
-console.log(Array.difference([1, 2, 3], [2, 3, 4])) // [1]
+const difference = Array.difference([1, 2, 3], [2, 3, 4])
+console.log(difference) // [1]
 ```
-
-**See**
-
-- `differenceWith` — use custom equality
-- `union` — elements in either array
-- `intersection` — elements in both arrays
 
 **Signature**
 
@@ -31,6 +21,6 @@ console.log(Array.difference([1, 2, 3], [2, 3, 4])) // [1]
 declare const difference: { <A>(that: Iterable<A>): (self: Iterable<A>) => Array<A>; <A>(self: Iterable<A>, that: Iterable<A>): Array<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L3358)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2428)
 
 Since v2.0.0

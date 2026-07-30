@@ -3,19 +3,15 @@ Module: `Function`<br />
 
 ## Function.constNull
 
-Returns `null` when called.
+A thunk that returns always `null`.
 
-**When to use**
-
-Use when you need a thunk that returns `null` on every invocation.
-
-**Example** (Returning null from a thunk)
+**Example**
 
 ```ts
-import { Function } from "effect"
 import * as assert from "node:assert"
+import { constNull } from "effect/Function"
 
-assert.deepStrictEqual(Function.constNull(), null)
+assert.deepStrictEqual(constNull(), null)
 ```
 
 **Signature**
@@ -24,6 +20,6 @@ assert.deepStrictEqual(Function.constNull(), null)
 declare const constNull: LazyArg<null>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L387)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L337)
 
 Since v2.0.0

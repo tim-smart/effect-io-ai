@@ -3,13 +3,7 @@ Module: `Sink`<br />
 
 ## Sink.ignoreLeftover
 
-Drops leftovers produced by a sink.
-
-**Details**
-
-The sink result is preserved, but any leftover elements are discarded
-instead of being returned to downstream sink composition. This does not
-continue pulling additional elements from the upstream stream.
+Drains the remaining elements from the stream after the sink finishes
 
 **Signature**
 
@@ -17,6 +11,6 @@ continue pulling additional elements from the upstream stream.
 declare const ignoreLeftover: <A, In, L, E, R>(self: Sink<A, In, L, E, R>) => Sink<A, In, never, E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Sink.ts#L677)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Sink.ts#L1055)
 
 Since v2.0.0

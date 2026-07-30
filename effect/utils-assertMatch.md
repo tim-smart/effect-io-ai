@@ -3,14 +3,14 @@ Module: `utils`<br />
 
 ## utils.assertMatch
 
-Asserts that `actual` matches `regExp`.
+Asserts that `actual` matches `regexp`.
 
 **Signature**
 
 ```ts
-declare const assertMatch: (actual: string, regExp: RegExp, ..._: Array<never>) => void
+declare const assertMatch: (actual: string, regexp: RegExp, ..._: Array<never>) => void
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L147)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/vitest/src/utils.ts#L129)
 
-Since v4.0.0
+Since v0.21.0

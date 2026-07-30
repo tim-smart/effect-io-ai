@@ -3,32 +3,18 @@ Module: `Predicate`<br />
 
 ## Predicate.isSymbol
 
-Checks whether a value is a `symbol`.
+A refinement that checks if a value is a `symbol`.
 
-**When to use**
-
-Use when you need a `Predicate` guard to narrow an `unknown` value to a
-symbol.
-
-**Details**
-
-Uses `typeof input === "symbol"`.
-
-**Example** (Guarding symbols)
+**Example**
 
 ```ts
-import { Predicate } from "effect"
+import * as assert from "node:assert"
+import { isSymbol } from "effect/Predicate"
 
-const data: unknown = Symbol.for("id")
+assert.strictEqual(isSymbol(Symbol.for("a")), true)
 
-if (Predicate.isSymbol(data)) {
-  console.log(data.description)
-}
+assert.strictEqual(isSymbol("a"), false)
 ```
-
-**See**
-
-- `isPropertyKey`
 
 **Signature**
 
@@ -36,6 +22,6 @@ if (Predicate.isSymbol(data)) {
 declare const isSymbol: (input: unknown) => input is symbol
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L669)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L412)
 
 Since v2.0.0

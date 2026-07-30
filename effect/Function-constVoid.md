@@ -3,20 +3,15 @@ Module: `Function`<br />
 
 ## Function.constVoid
 
-Returns no meaningful value when called.
+A thunk that returns always `void`.
 
-**When to use**
-
-Use when you need a thunk that is called only for its effect and has no
-meaningful return value.
-
-**Example** (Returning void from a thunk)
+**Example**
 
 ```ts
-import { Function } from "effect"
 import * as assert from "node:assert"
+import { constVoid } from "effect/Function"
 
-assert.deepStrictEqual(Function.constVoid(), undefined)
+assert.deepStrictEqual(constVoid(), undefined)
 ```
 
 **Signature**
@@ -25,6 +20,6 @@ assert.deepStrictEqual(Function.constVoid(), undefined)
 declare const constVoid: LazyArg<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L430)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L367)
 
 Since v2.0.0

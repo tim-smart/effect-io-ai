@@ -3,19 +3,14 @@ Module: `Config`<br />
 
 ## Config.fail
 
-Creates a config that always fails with the given error.
-
-**When to use**
-
-Use when you need to re-raise a specific config error, such as inside
-`orElse`.
+Constructs a config that fails with the specified message.
 
 **Signature**
 
 ```ts
-declare const fail: (err: SourceError | Schema.SchemaError) => Config<never>
+declare const fail: (message: string) => Config<never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L847)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L170)
 
 Since v2.0.0

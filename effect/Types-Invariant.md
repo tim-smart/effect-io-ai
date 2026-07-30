@@ -3,35 +3,7 @@ Module: `Types`<br />
 
 ## Types.Invariant
 
-Function-type alias encoding invariant variance for a phantom type
-parameter.
-
-**When to use**
-
-Use as a phantom field type to make a type parameter invariant, neither
-covariant nor contravariant.
-
-**Details**
-
-A value of type `Invariant<A>` cannot be assigned to `Invariant<B>` unless
-`A` and `B` are the same type.
-
-**Example** (Defining an invariant phantom type)
-
-```ts
-import type { Types } from "effect"
-
-interface Container<T> {
-  readonly _phantom: Types.Invariant<T>
-  readonly value: T
-}
-```
-
-**See**
-
-- `Invariant.Type`
-- `Covariant`
-- `Contravariant`
+Invariant helper.
 
 **Signature**
 
@@ -39,6 +11,6 @@ interface Container<T> {
 type Invariant<A> = (_: A) => A
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L576)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L281)
 
 Since v2.0.0

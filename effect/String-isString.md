@@ -3,13 +3,13 @@ Module: `String`<br />
 
 ## String.isString
 
-Checks whether a value is a `string`.
+Tests if a value is a `string`.
 
-**Example** (Checking for strings)
+**Example**
 
 ```ts
-import { String } from "effect"
 import * as assert from "node:assert"
+import { String } from "effect"
 
 assert.deepStrictEqual(String.isString("a"), true)
 assert.deepStrictEqual(String.isString(1), false)
@@ -21,6 +21,6 @@ assert.deepStrictEqual(String.isString(1), false)
 declare const isString: Refinement<unknown, string>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/String.ts#L60)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/String.ts#L35)
 
 Since v2.0.0

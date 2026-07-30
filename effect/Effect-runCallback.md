@@ -3,48 +3,26 @@ Module: `Effect`<br />
 
 ## Effect.runCallback
 
-Runs an effect asynchronously, registering `onExit` as a fiber observer and
-returning an interruptor.
+Executes an effect asynchronously and handles the result using a callback.
 
 **Details**
 
-The interruptor calls `fiber.interruptUnsafe` with the optional interruptor
-id.
+This function runs an effect asynchronously and passes the result (`Exit`) to
+a specified callback. The callback is invoked with the outcome of the effect:
+- On success, the callback receives the successful result.
+- On failure, the callback receives the failure information.
 
-**Example** (Running with a callback)
+**When to Use**
 
-```ts
-import { Console, Effect, Exit } from "effect"
-
-const program = Effect.gen(function*() {
-  yield* Console.log("working")
-  return "done"
-})
-
-const interrupt = Effect.runCallback(program, {
-  onExit: (exit) => {
-    Effect.runSync(
-      Exit.match(exit, {
-        onFailure: () => Console.log("failed"),
-        onSuccess: (value) => Console.log(`success: ${value}`)
-      })
-    )
-  }
-})
-
-// Output:
-// working
-// success: done
-
-// interrupt() to cancel the fiber if needed
-```
+This function is effectful and should only be invoked at the edges of your
+program.
 
 **Signature**
 
 ```ts
-declare const runCallback: <A, E>(effect: Effect<A, E, never>, options?: (RunOptions & { readonly onExit: (exit: Exit.Exit<A, E>) => void; }) | undefined) => (interruptor?: number | undefined) => void
+declare const runCallback: <A, E>(effect: Effect<A, E>, options?: Runtime.RunCallbackOptions<A, E> | undefined) => Runtime.Cancel<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L9052)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12087)
 
 Since v2.0.0

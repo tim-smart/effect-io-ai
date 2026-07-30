@@ -3,16 +3,7 @@ Module: `Chunk`<br />
 
 ## Chunk.last
 
-Returns the last element of this chunk safely if it exists.
-
-**Example** (Getting the last element)
-
-```ts
-import { Chunk } from "effect"
-
-console.log(Chunk.last(Chunk.empty())) // { _tag: "None" }
-console.log(Chunk.last(Chunk.make(1, 2, 3))) // { _tag: "Some", value: 3 }
-```
+Returns the last element of this chunk if it exists.
 
 **Signature**
 
@@ -20,6 +11,6 @@ console.log(Chunk.last(Chunk.make(1, 2, 3))) // { _tag: "Some", value: 3 }
 declare const last: <A>(self: Chunk<A>) => Option<A>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Chunk.ts#L1478)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Chunk.ts#L861)
 
 Since v2.0.0

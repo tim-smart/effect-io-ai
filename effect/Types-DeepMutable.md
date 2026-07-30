@@ -3,33 +3,19 @@ Module: `Types`<br />
 
 ## Types.DeepMutable
 
-Recursively removes `readonly` from all properties, including nested
-objects, arrays, `Map`, and `Set`.
+Like `Types.Mutable`, but works recursively.
 
-**When to use**
-
-Use when you need a fully mutable version of a deeply readonly type.
-
-**Details**
-
-Recursion stops at primitives (`string`, `number`, `boolean`, `bigint`,
-`symbol`) and functions.
-
-**Example** (Converting deeply to mutable types)
+**Example**
 
 ```ts
 import type { Types } from "effect"
 
-type Deep = Types.DeepMutable<{
-  readonly a: string
-  readonly b: ReadonlyArray<{ readonly c: number }>
+type DeepMutableStruct = Types.DeepMutable<{
+  readonly a: string;
+  readonly b: readonly string[]
 }>
-// { a: string; b: Array<{ c: number }> }
+// { a: string; b: string[] }
 ```
-
-**See**
-
-- `Mutable`
 
 **Signature**
 
@@ -40,6 +26,6 @@ type DeepMutable<T> = T extends ReadonlyMap<infer K, infer V> ? Map<DeepMutable<
   : { -readonly [K in keyof T]: DeepMutable<T[K]> }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L510)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L262)
 
 Since v3.1.0

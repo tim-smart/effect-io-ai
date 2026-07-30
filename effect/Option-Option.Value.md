@@ -5,17 +5,16 @@ Module: `Option`<br />
 
 Extracts the type of the value contained in an `Option`.
 
-**When to use**
-
-Use to infer the inner value type from an existing `Option` type.
-
-**Example** (Extracting the value type)
+**Example** (Getting the Value Type of an Option)
 
 ```ts
-import type { Option } from "effect"
+import { Option } from "effect"
 
+// Declare an Option holding a string
 declare const myOption: Option.Option<string>
 
+// Extract the type of the value within the Option
+//
 //      ┌─── string
 //      ▼
 type MyType = Option.Option.Value<typeof myOption>
@@ -27,6 +26,6 @@ type MyType = Option.Option.Value<typeof myOption>
 type Value<T> = [T] extends [Option<infer _A>] ? _A : never
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L194)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L118)
 
 Since v2.0.0

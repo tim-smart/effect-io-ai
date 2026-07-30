@@ -5,21 +5,12 @@ Module: `RequestResolver`<br />
 
 Returns `true` if the specified value is a `RequestResolver`, `false` otherwise.
 
-**When to use**
-
-Use to narrow unknown values before passing them to APIs that require a
-`RequestResolver`.
-
-**See**
-
-- `RequestResolver` for the type narrowed by this guard
-
 **Signature**
 
 ```ts
-declare const isRequestResolver: (u: unknown) => u is RequestResolver<any>
+declare const isRequestResolver: (u: unknown) => u is RequestResolver<unknown, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/RequestResolver.ts#L151)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/RequestResolver.ts#L109)
 
 Since v2.0.0

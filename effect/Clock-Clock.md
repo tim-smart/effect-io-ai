@@ -6,74 +6,34 @@ Module: `Clock`<br />
 Represents a time-based clock which provides functionality related to time
 and scheduling.
 
-**When to use**
-
-Use to define or provide a clock service for current-time and sleep
-operations.
-
-**Example** (Reading current time)
-
-```ts
-import { Clock, Effect } from "effect"
-
-const clockOperations = Effect.gen(function*() {
-  const currentTime = yield* Clock.currentTimeMillis
-  const currentTimeNanos = yield* Clock.currentTimeNanos
-
-  console.log(`Current time (ms): ${currentTime}`)
-  console.log(`Current time (ns): ${currentTimeNanos}`)
-})
-```
-
 **Signature**
 
 ```ts
 export interface Clock {
+  readonly [ClockTypeId]: ClockTypeId
   /**
-   * Returns the current time in milliseconds unsafely.
-   *
-   * **When to use**
-   *
-   * Use to read millisecond time synchronously when you already have a `Clock`
-   * service and can accept non-effectful access.
+   * Unsafely returns the current time in milliseconds.
    */
-  currentTimeMillisUnsafe(): number
+  unsafeCurrentTimeMillis(): number
   /**
    * Returns the current time in milliseconds.
-   *
-   * **When to use**
-   *
-   * Use to read millisecond time through this `Clock` service in `Effect`.
    */
-  readonly currentTimeMillis: Effect<number>
+  readonly currentTimeMillis: Effect.Effect<number>
   /**
-   * Returns the current time in nanoseconds unsafely.
-   *
-   * **When to use**
-   *
-   * Use to read nanosecond time synchronously when you already have a `Clock`
-   * service and can accept non-effectful access.
+   * Unsafely returns the current time in nanoseconds.
    */
-  currentTimeNanosUnsafe(): bigint
+  unsafeCurrentTimeNanos(): bigint
   /**
    * Returns the current time in nanoseconds.
-   *
-   * **When to use**
-   *
-   * Use to read nanosecond time through this `Clock` service in `Effect`.
    */
-  readonly currentTimeNanos: Effect<bigint>
+  readonly currentTimeNanos: Effect.Effect<bigint>
   /**
    * Asynchronously sleeps for the specified duration.
-   *
-   * **When to use**
-   *
-   * Use to delay an `Effect` workflow by a duration through this `Clock` service.
    */
-  sleep(duration: Duration.Duration): Effect<void>
+  sleep(duration: Duration.Duration): Effect.Effect<void>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Clock.ts#L40)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Clock.ts#L29)
 
 Since v2.0.0

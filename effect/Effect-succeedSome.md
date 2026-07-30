@@ -5,23 +5,16 @@ Module: `Effect`<br />
 
 Returns an effect which succeeds with the value wrapped in a `Some`.
 
-**Example** (Succeeding with Option.some)
+**See**
 
-```ts
-import { Effect } from "effect"
-
-const program = Effect.succeedSome(42)
-
-Effect.runPromise(program).then(console.log)
-// Output: { _id: 'Option', _tag: 'Some', value: 42 }
-```
+- `succeedNone` for a similar function that returns `None` when the value is absent.
 
 **Signature**
 
 ```ts
-declare const succeedSome: <A>(value: A) => Effect<Option<A>>
+declare const succeedSome: <A>(value: A) => Effect<Option.Option<A>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L1064)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L3187)
 
 Since v2.0.0

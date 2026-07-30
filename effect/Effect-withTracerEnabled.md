@@ -3,14 +3,9 @@ Module: `Effect`<br />
 
 ## Effect.withTracerEnabled
 
-Enables or disables tracing for spans created by the given effect.
+Disable the tracer for the given Effect.
 
-**Details**
-
-When `enabled` is `false`, spans created inside the effect are not registered
-with the current tracer and do not propagate as normal trace parents.
-
-**Example** (Enabling or disabling tracing)
+**Example**
 
 ```ts
 import { Effect } from "effect"
@@ -28,6 +23,6 @@ Effect.succeed(42).pipe(
 declare const withTracerEnabled: { (enabled: boolean): <A, E, R>(effect: Effect<A, E, R>) => Effect<A, E, R>; <A, E, R>(effect: Effect<A, E, R>, enabled: boolean): Effect<A, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L8011)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12934)
 
 Since v2.0.0

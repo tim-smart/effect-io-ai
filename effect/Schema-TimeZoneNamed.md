@@ -3,16 +3,14 @@ Module: `Schema`<br />
 
 ## Schema.TimeZoneNamed
 
-Type-level representation of `TimeZoneNamed`.
+Defines a schema that attempts to convert a `string` to a `TimeZone.Named` instance using the `DateTime.zoneUnsafeMakeNamed` constructor.
 
 **Signature**
 
 ```ts
-export interface TimeZoneNamed extends declare<DateTime.TimeZone.Named> {
-  readonly "Rebuild": TimeZoneNamed
-}
+declare class TimeZoneNamed
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L13656)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L7011)
 
 Since v3.10.0

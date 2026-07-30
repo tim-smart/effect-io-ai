@@ -3,23 +3,38 @@ Module: `Stream`<br />
 
 ## Stream.zipWithPreviousAndNext
 
-Zips each element with its previous and next values.
+Zips each element with both the previous and next element.
 
-**Example** (Zipping elements with neighbors)
+**Example**
 
 ```ts
-import { Console, Effect, Option, Stream } from "effect"
+import { Chunk, Effect, Stream } from "effect"
 
-const program = Effect.gen(function*() {
-  const values = yield* Stream.make(1, 2, 3).pipe(
-    Stream.zipWithPreviousAndNext,
-    Stream.runCollect
-  )
-  yield* Console.log(values)
-})
+const stream = Stream.zipWithPreviousAndNext(Stream.make(1, 2, 3, 4))
 
-Effect.runPromise(program)
-// Output: [ [Option.none(), 1, Option.some(2)], [Option.some(1), 2, Option.some(3)], [Option.some(2), 3, Option.none()] ]
+Effect.runPromise(Stream.runCollect(stream)).then((chunk) => console.log(Chunk.toArray(chunk)))
+// [
+//   [
+//     { _id: 'Option', _tag: 'None' },
+//     1,
+//     { _id: 'Option', _tag: 'Some', value: 2 }
+//   ],
+//   [
+//     { _id: 'Option', _tag: 'Some', value: 1 },
+//     2,
+//     { _id: 'Option', _tag: 'Some', value: 3 }
+//   ],
+//   [
+//     { _id: 'Option', _tag: 'Some', value: 2 },
+//     3,
+//     { _id: 'Option', _tag: 'Some', value: 4 }
+//   ],
+//   [
+//     { _id: 'Option', _tag: 'Some', value: 3 },
+//     4,
+//     { _id: 'Option', _tag: 'None' }
+//   ]
+// ]
 ```
 
 **Signature**
@@ -28,6 +43,6 @@ Effect.runPromise(program)
 declare const zipWithPreviousAndNext: <A, E, R>(self: Stream<A, E, R>) => Stream<[Option.Option<A>, A, Option.Option<A>], E, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L3965)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L6183)
 
 Since v2.0.0

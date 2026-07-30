@@ -3,14 +3,19 @@ Module: `Match`<br />
 
 ## Match.Matcher
 
-Union type for matchers created by `Match.type` and `Match.value`.
+Pattern matching follows a structured process:
 
-**Details**
+- **Creating a matcher**: Define a `Matcher` that operates on either a
+  specific `Match.type` or `Match.value`.
 
-A `Matcher` carries the input type, accumulated filters, remaining cases,
-result type, and, for value matchers, the provided value being matched.
+- **Defining patterns**: Use combinators such as `Match.when`, `Match.not`,
+  and `Match.tag` to specify matching conditions.
 
-**Example** (Matching string and number values)
+- **Completing the match**: Apply a finalizer such as `Match.exhaustive`,
+  `Match.orElse`, or `Match.option` to determine how unmatched cases should
+  be handled.
+
+**Example**
 
 ```ts
 import { Match } from "effect"
@@ -40,6 +45,6 @@ type Matcher<Input, Filters, RemainingApplied, Result, Provided, Return> = | Typ
   | ValueMatcher<Input, Filters, RemainingApplied, Result, Provided, Return>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L57)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L87)
 
-Since v4.0.0
+Since v1.0.0

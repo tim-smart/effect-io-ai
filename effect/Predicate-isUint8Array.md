@@ -3,30 +3,19 @@ Module: `Predicate`<br />
 
 ## Predicate.isUint8Array
 
-Checks whether a value is a `Uint8Array`.
+A refinement that checks if a value is a `Uint8Array`.
 
-**When to use**
-
-Use when you need a `Predicate` runtime guard for binary data.
-
-**Details**
-
-Uses `instanceof Uint8Array`.
-
-**Example** (Guarding Uint8Array values)
+**Example**
 
 ```ts
-import { Predicate } from "effect"
+import * as assert from "node:assert"
+import { isUint8Array } from "effect/Predicate"
 
-const data: unknown = new Uint8Array([1, 2])
+assert.strictEqual(isUint8Array(new Uint8Array()), true)
 
-console.log(Predicate.isUint8Array(data))
+assert.strictEqual(isUint8Array(new Uint16Array()), false)
+assert.strictEqual(isUint8Array([1, 2, 3]), false)
 ```
-
-**See**
-
-- `isIterable`
-- `isSet`
 
 **Signature**
 
@@ -34,6 +23,6 @@ console.log(Predicate.isUint8Array(data))
 declare const isUint8Array: (input: unknown) => input is Uint8Array
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L1229)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L730)
 
 Since v2.0.0

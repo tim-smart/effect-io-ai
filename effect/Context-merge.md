@@ -3,38 +3,25 @@ Module: `Context`<br />
 
 ## Context.merge
 
-Merges two `Context`s into one.
+Merges two `Context`s, returning a new `Context` containing the services of both.
 
-**When to use**
-
-Use when you need to combine two contexts.
-
-**Details**
-
-When both contexts contain the same service key, the service from `that`
-overrides the service from `self`.
-
-**Example** (Merging two contexts)
+**Example**
 
 ```ts
-import { Context } from "effect"
 import * as assert from "node:assert"
+import { Context } from "effect"
 
-const Port = Context.Service<{ PORT: number }>("Port")
-const Timeout = Context.Service<{ TIMEOUT: number }>("Timeout")
+const Port = Context.GenericTag<{ PORT: number }>("Port")
+const Timeout = Context.GenericTag<{ TIMEOUT: number }>("Timeout")
 
 const firstContext = Context.make(Port, { PORT: 8080 })
 const secondContext = Context.make(Timeout, { TIMEOUT: 5000 })
 
-const context = Context.merge(firstContext, secondContext)
+const Services = Context.merge(firstContext, secondContext)
 
-assert.deepStrictEqual(Context.get(context, Port), { PORT: 8080 })
-assert.deepStrictEqual(Context.get(context, Timeout), { TIMEOUT: 5000 })
+assert.deepStrictEqual(Context.get(Services, Port), { PORT: 8080 })
+assert.deepStrictEqual(Context.get(Services, Timeout), { TIMEOUT: 5000 })
 ```
-
-**See**
-
-- `mergeAll` for merging more than two contexts at once
 
 **Signature**
 
@@ -42,6 +29,6 @@ assert.deepStrictEqual(Context.get(context, Timeout), { TIMEOUT: 5000 })
 declare const merge: { <R1>(that: Context<R1>): <Services>(self: Context<Services>) => Context<R1 | Services>; <Services, R1>(self: Context<Services>, that: Context<R1>): Context<Services | R1>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Context.ts#L1092)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Context.ts#L438)
 
 Since v2.0.0

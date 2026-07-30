@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.Data
 
-Re-exports all named exports from the "./Data.ts" module as `Data`.
+Re-exports all named exports from the "./Data.js" module as `Data`.
 
 **Signature**
 
 ```ts
-export * as Data from "./Data.ts"
+export * as Data from "./Data.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L127)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L199)
 
 Since v2.0.0

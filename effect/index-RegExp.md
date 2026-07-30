@@ -3,14 +3,14 @@ Module: `index`<br />
 
 ## index.RegExp
 
-Re-exports all named exports from the "./RegExp.ts" module as `RegExp`.
+Re-exports all named exports from the "./RegExp.js" module as `RegExp`.
 
 **Signature**
 
 ```ts
-export * as RegExp from "./RegExp.ts"
+export * as RegExp from "./RegExp.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L482)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L1208)
 
 Since v2.0.0

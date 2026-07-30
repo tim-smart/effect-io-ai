@@ -1,16 +1,16 @@
-Package: `@effect/platform-node-shared`<br />
+Package: `@effect/platform-node`<br />
 Module: `index`<br />
 
 ## index.NodeClusterSocket
 
-Re-exports all named exports from the "./NodeClusterSocket.ts" module as `NodeClusterSocket`.
+Re-exports all named exports from the "./NodeClusterSocket.js" module as `NodeClusterSocket`.
 
 **Signature**
 
 ```ts
-export * as NodeClusterSocket from "./NodeClusterSocket.ts"
+export * as NodeClusterSocket from "./NodeClusterSocket.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node-shared/src/index.ts#L15)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform-node/src/index.ts#L9)
 
-Since v4.0.0
+Since v1.0.0

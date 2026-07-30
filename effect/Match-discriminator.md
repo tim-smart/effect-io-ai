@@ -5,10 +5,6 @@ Module: `Match`<br />
 
 Matches values based on a specified discriminant field.
 
-**When to use**
-
-Use to match one or more exact values of a discriminator field.
-
 **Details**
 
 This function is used to define pattern matching on objects that follow a
@@ -17,28 +13,18 @@ This function is used to define pattern matching on objects that follow a
 multiple values of the discriminant and provides a function to handle the
 matched cases.
 
-**Example** (Matching on a discriminator field)
+**Example**
 
 ```ts
 import { Match, pipe } from "effect"
 
 const match = pipe(
-  Match.type<
-    { type: "A"; a: string } | { type: "B"; b: number } | {
-      type: "C"
-      c: boolean
-    }
-  >(),
+  Match.type<{ type: "A"; a: string } | { type: "B"; b: number } | { type: "C"; c: boolean }>(),
   Match.discriminator("type")("A", "B", (_) => `A or B: ${_.type}`),
   Match.discriminator("type")("C", (_) => `C(${_.c})`),
   Match.exhaustive
 )
 ```
-
-**See**
-
-- `discriminators` for defining several discriminator handlers at once
-- `discriminatorStartsWith` for matching string discriminator values by prefix
 
 **Signature**
 
@@ -46,6 +32,6 @@ const match = pipe(
 declare const discriminator: <D extends string>(field: D) => <R, P extends Types.Tags<D, R> & string, Ret, Fn extends (_: Extract<R, Record<D, P>>) => Ret>(...pattern: [first: P, ...values: Array<P>, f: Fn]) => <I, F, A, Pr>(self: Matcher<I, F, R, A, Pr, Ret>) => Matcher<I, Types.AddWithout<F, Extract<R, Record<D, P>>>, Types.ApplyFilters<I, Types.AddWithout<F, Extract<R, Record<D, P>>>>, A | ReturnType<Fn>, Pr, Ret>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L706)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L529)
 
-Since v4.0.0
+Since v1.0.0

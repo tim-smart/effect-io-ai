@@ -3,31 +3,16 @@ Module: `Types`<br />
 
 ## Types.Equals
 
-Determines if two types are exactly equal at the type level.
+Determines if two types are equal.
 
-**When to use**
-
-Use to assert type equality in conditional types or type-level tests.
-
-**Details**
-
-- Uses the `<T>() => T extends X ? 1 : 2` trick for exact equality,
-  distinguishing between `any`, `unknown`, `never`, and other types.
-- Resolves to `true` if `X` and `Y` are identical, `false` otherwise.
-
-**Example** (Checking type equality)
+**Example**
 
 ```ts
 import type { Types } from "effect"
 
-type Yes = Types.Equals<{ a: number }, { a: number }> // true
-type No = Types.Equals<{ a: number }, { a: string }> // false
-type AnyCheck = Types.Equals<any, string> // false
+type Res1 = Types.Equals<{ a: number }, { a: number }> // true
+type Res2 = Types.Equals<{ a: number }, { b: number }> // false
 ```
-
-**See**
-
-- `EqualsWith`
 
 **Signature**
 
@@ -38,6 +23,6 @@ type Equals<X, Y> = (<T>() => T extends X ? 1 : 2) extends <
   : false
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L282)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Types.ts#L144)
 
 Since v2.0.0

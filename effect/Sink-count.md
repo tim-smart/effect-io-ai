@@ -5,16 +5,12 @@ Module: `Sink`<br />
 
 A sink that counts the number of elements fed to it.
 
-**When to use**
-
-Use to consume input and return only the number of elements received.
-
 **Signature**
 
 ```ts
 declare const count: Sink<number, unknown, never, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Sink.ts#L1525)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Sink.ts#L329)
 
 Since v2.0.0

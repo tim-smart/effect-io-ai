@@ -3,87 +3,72 @@ Module: `Effect`<br />
 
 ## Effect.acquireUseRelease
 
-Runs resource acquisition, usage, and release as one bracketed effect.
+Many real-world operations involve working with resources that must be released when no longer needed, such as:
 
-**When to use**
+- Database connections
+- File handles
+- Network requests
 
-Use to bracket acquire, use, and release logic in one effect.
+This function ensures that a resource is:
 
-**Details**
+1. **Acquired** properly.
+2. **Used** for its intended purpose.
+3. **Released** even if an error occurs.
 
-`acquireUseRelease` does the following:
-
-  1. Ensures that the `Effect` value that acquires the resource will not be
-     interrupted. Note that acquisition may still fail due to internal
-     reasons (such as an uncaught exception).
-  2. Ensures that the `release` `Effect` value will not be interrupted,
-     and will be executed as long as the acquisition `Effect` value
-     successfully acquires the resource.
-
-During the time period between the acquisition and release of the resource,
-the `use` `Effect` value will be executed.
-
-If the `release` `Effect` value fails, then the entire `Effect` value will
-fail, even if the `use` `Effect` value succeeds. If this fail-fast behavior
-is not desired, errors produced by the `release` `Effect` value can be caught
-and ignored.
-
-**Example** (Acquiring resources with cleanup)
+**Example** (Automatically Managing Resource Lifetime)
 
 ```ts
-import { Console, Effect, Exit } from "effect"
+import { Effect, Console } from "effect"
 
-interface Database {
-  readonly connection: string
-  readonly query: (sql: string) => Effect.Effect<string>
+// Define an interface for a resource
+interface MyResource {
+  readonly contents: string
+  readonly close: () => Promise<void>
 }
 
-const program = Effect.acquireUseRelease(
-  // Acquire - connect to database
-  Effect.gen(function*() {
-    yield* Console.log("Connecting to database...")
-    return {
-      connection: "db://localhost:5432",
-      query: (sql: string) => Effect.succeed(`Result for: ${sql}`)
-    }
-  }),
-  // Use - perform database operations
-  (db) =>
-    Effect.gen(function*() {
-      yield* Console.log(`Connected to ${db.connection}`)
-      const result = yield* db.query("SELECT * FROM users")
-      yield* Console.log(`Query result: ${result}`)
-      return result
+// Simulate resource acquisition
+const getMyResource = (): Promise<MyResource> =>
+  Promise.resolve({
+    contents: "lorem ipsum",
+    close: () =>
+      new Promise((resolve) => {
+        console.log("Resource released")
+        resolve()
+      })
+  })
+
+// Define how the resource is acquired
+const acquire = Effect.tryPromise({
+  try: () =>
+    getMyResource().then((res) => {
+      console.log("Resource acquired")
+      return res
     }),
-  // Release - close database connection
-  (db, exit) =>
-    Effect.gen(function*() {
-      if (Exit.isSuccess(exit)) {
-        yield* Console.log(`Closing connection to ${db.connection} (success)`)
-      } else {
-        yield* Console.log(`Closing connection to ${db.connection} (failure)`)
-      }
-    })
-)
+  catch: () => new Error("getMyResourceError")
+})
+
+// Define how the resource is released
+const release = (res: MyResource) => Effect.promise(() => res.close())
+
+const use = (res: MyResource) => Console.log(`content is ${res.contents}`)
+
+//      ┌─── Effect<void, Error, never>
+//      ▼
+const program = Effect.acquireUseRelease(acquire, use, release)
 
 Effect.runPromise(program)
 // Output:
-// Connecting to database...
-// Connected to db://localhost:5432
-// Query result: Result for: SELECT * FROM users
-// Closing connection to db://localhost:5432 (success)
+// Resource acquired
+// content is lorem ipsum
+// Resource released
 ```
-
-**See**
-
-- `acquireRelease` for scoped resources whose use happens later
 
 **Signature**
 
 ```ts
-declare const acquireUseRelease: <Resource, E, R, A, E2, R2, E3, R3>(acquire: Effect<Resource, E, R>, use: (a: Resource) => Effect<A, E2, R2>, release: (a: Resource, exit: Exit.Exit<A, E2>) => Effect<void, E3, R3>) => Effect<A, E | E2 | E3, R | R2 | R3>
+declare const acquireUseRelease: { <A2, E2, R2, A, X, R3>(use: (a: A) => Effect<A2, E2, R2>, release: (a: A, exit: Exit.Exit<A2, E2>) => Effect<X, never, R3>): <E, R>(acquire: Effect<A, E, R>) => Effect<A2, E2 | E, R2 | R3 | R>; <A, E, R, A2, E2, R2, X, R3>(acquire: Effect<A, E, R>, use: (a: A) => Effect<A2, E2, R2>, release: (a: A, exit: Exit.Exit<A2, E2>) => Effect<X, never, R3>): Effect<A2, E | E2, R | R2 | R3>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L6750)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L5550)
 
 Since v2.0.0

@@ -3,18 +3,7 @@ Module: `HashMap`<br />
 
 ## HashMap.some
 
-Checks whether any entry in a hashmap meets a specific condition.
-
-**Example** (Checking for any matching entry)
-
-```ts
-import { HashMap } from "effect"
-
-const map = HashMap.make(["a", 1], ["b", 2], ["c", 3])
-
-console.log(HashMap.some(map, (value) => value > 2)) // true
-console.log(HashMap.some(map, (value) => value > 5)) // false
-```
+Checks if any entry in a hashmap meets a specific condition.
 
 **Signature**
 
@@ -22,6 +11,6 @@ console.log(HashMap.some(map, (value) => value > 5)) // false
 declare const some: { <K, A>(predicate: (a: NoInfer<A>, k: K) => boolean): (self: HashMap<K, A>) => boolean; <K, A>(self: HashMap<K, A>, predicate: (a: A, k: K) => boolean): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashMap.ts#L1211)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashMap.ts#L502)
 
 Since v3.13.0

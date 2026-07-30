@@ -3,34 +3,20 @@ Module: `Predicate`<br />
 
 ## Predicate.isString
 
-Checks whether a value is a `string`.
+A refinement that checks if a value is a `string`.
 
-**When to use**
-
-Use when you need a `Predicate` guard to narrow an `unknown` value to a
-string.
-
-**Details**
-
-Uses `typeof input === "string"`.
-
-**Example** (Guarding strings)
+**Example**
 
 ```ts
-import { Predicate } from "effect"
+import * as assert from "node:assert"
+import { isString } from "effect/Predicate"
 
-const data: unknown = "hi"
+assert.strictEqual(isString("hello"), true)
+assert.strictEqual(isString(""), true)
 
-if (Predicate.isString(data)) {
-  console.log(data.toUpperCase())
-}
+assert.strictEqual(isString(123), false)
+assert.strictEqual(isString(null), false)
 ```
-
-**See**
-
-- `isNumber`
-- `isBoolean`
-- `Refinement`
 
 **Signature**
 
@@ -38,6 +24,6 @@ if (Predicate.isString(data)) {
 declare const isString: (input: unknown) => input is string
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L539)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L334)
 
 Since v2.0.0

@@ -3,14 +3,14 @@ Module: `Schema`<br />
 
 ## Schema.Symbol
 
-Type-level representation of `Symbol`.
+Converts a string key into a globally shared symbol.
 
 **Signature**
 
 ```ts
-export interface Symbol extends Bottom<symbol, symbol, never, never, SchemaAST.Symbol, Symbol> {}
+declare const Symbol: typeof Symbol$
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L3148)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L5475)
 
-Since v4.0.0
+Since v3.10.0

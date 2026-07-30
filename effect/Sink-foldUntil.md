@@ -3,20 +3,17 @@ Module: `Sink`<br />
 
 ## Sink.foldUntil
 
-Folds input elements into state until the specified maximum number of
-elements has been consumed or the upstream stream ends.
+Creates a sink that folds elements of type `In` into a structure of type
+`S` until `max` elements have been folded.
 
-**Details**
-
-If the sink stops in the middle of a pulled array, the remaining elements
-from that array are returned as leftovers.
+Like `Sink.foldWeighted`, but with a constant cost function of `1`.
 
 **Signature**
 
 ```ts
-declare const foldUntil: <S, In, E = never, R = never>(s: LazyArg<S>, max: number, f: (s: S, input: In) => Effect.Effect<S, E, R>) => Sink<S, In, In, E, R>
+declare const foldUntil: <In, S>(s: S, max: number, f: (s: S, input: In) => S) => Sink<S, In, In>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Sink.ts#L798)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Sink.ts#L769)
 
 Since v2.0.0

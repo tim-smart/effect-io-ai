@@ -3,29 +3,8 @@ Module: `Config`<br />
 
 ## Config.map
 
-Transforms the parsed value of a config with a pure function.
-
-**When to use**
-
-Use when you need to transform a parsed config value with a function that
-cannot fail.
-
-**Example** (Uppercasing a string config)
-
-```ts
-import { Config, ConfigProvider, Effect } from "effect"
-
-const upper = Config.string("name").pipe(
-  Config.map((s) => s.toUpperCase())
-)
-
-const provider = ConfigProvider.fromUnknown({ name: "alice" })
-// Effect.runSync(upper.parse(provider)) // "ALICE"
-```
-
-**See**
-
-- `mapOrFail` – when the transformation can fail
+Returns a  config whose structure is the same as this one, but which produces
+a different value, constructed using the specified function.
 
 **Signature**
 
@@ -33,6 +12,6 @@ const provider = ConfigProvider.fromUnknown({ name: "alice" })
 declare const map: { <A, B>(f: (a: A) => B): (self: Config<A>) => Config<B>; <A, B>(self: Config<A>, f: (a: A) => B): Config<B>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L166)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Config.ts#L243)
 
 Since v2.0.0

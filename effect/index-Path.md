@@ -1,16 +1,16 @@
-Package: `effect`<br />
+Package: `@effect/platform`<br />
 Module: `index`<br />
 
 ## index.Path
 
-Re-exports all named exports from the "./Path.ts" module as `Path`.
+Re-exports all named exports from the "./Path.js" module as `Path`.
 
 **Signature**
 
 ```ts
-export * as Path from "./Path.ts"
+export * as Path from "./Path.js"
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/index.ts#L392)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/platform/src/index.ts#L235)
 
-Since v4.0.0
+Since v1.0.0

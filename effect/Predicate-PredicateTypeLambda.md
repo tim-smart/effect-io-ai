@@ -3,30 +3,8 @@ Module: `Predicate`<br />
 
 ## Predicate.PredicateTypeLambda
 
-Type-level lambda for higher-kinded usage of `Predicate`.
-
-**When to use**
-
-Use when you are defining APIs that abstract over predicates with HKTs and
-need a `TypeLambda` instance for predicate-based type classes.
-
-**Details**
-
-This is type-only, creates no runtime value, and does not affect emitted
-JavaScript.
-
-**Example** (Type-level usage)
-
-```ts
-import { Predicate } from "effect"
-
-type P = Predicate.Predicate<number>
-type TL = Predicate.PredicateTypeLambda
-```
-
-**See**
-
-- `Predicate`
+A `TypeLambda` for `Predicate`. This is used to support higher-kinded types
+and allows `Predicate` to be used in generic contexts within the `effect` ecosystem.
 
 **Signature**
 
@@ -36,6 +14,6 @@ export interface PredicateTypeLambda extends TypeLambda {
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L76)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L52)
 
 Since v2.0.0

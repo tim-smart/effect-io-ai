@@ -3,31 +3,16 @@ Module: `Array`<br />
 
 ## Array.unprepend
 
-Splits a non-empty array into its first element and the remaining elements.
+Return a tuple containing the first element, and a new `Array` of the remaining elements, if any.
 
-**When to use**
-
-Use when you have a `NonEmptyReadonlyArray` and need both its first element
-and the remaining elements as separate values.
-
-**Details**
-
-Returns a tuple `[head, tail]` and requires a `NonEmptyReadonlyArray`.
-
-**Example** (Destructuring head and tail)
+**Example**
 
 ```ts
-import { Array } from "effect"
+import { Array } from "effect";
 
 const result = Array.unprepend([1, 2, 3, 4])
 console.log(result) // [1, [2, 3, 4]]
 ```
-
-**See**
-
-- `unappend` for splitting a non-empty array into init and last
-- `headNonEmpty` for getting only the first element
-- `tailNonEmpty` for getting only the elements after the first
 
 **Signature**
 
@@ -35,6 +20,6 @@ console.log(result) // [1, [2, 3, 4]]
 declare const unprepend: <A>(self: NonEmptyReadonlyArray<A>) => [firstElement: A, remainingElements: Array<A>]
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L1027)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L650)
 
 Since v2.0.0

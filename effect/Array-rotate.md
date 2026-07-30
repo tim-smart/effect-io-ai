@@ -3,32 +3,17 @@ Module: `Array`<br />
 
 ## Array.rotate
 
-Transforms an array by rotating it `n` steps. Positive `n` rotates right; negative `n`
-rotates left.
+Rotate an `Iterable` by `n` steps.
+If the input is a non-empty array, the result is also a non-empty array.
 
-**When to use**
-
-Use when elements should wrap around the end of the array rather than being
-dropped.
-
-**Details**
-
-`n` is rounded to the nearest integer before rotating. The return type
-preserves `NonEmptyArray`. Empty arrays, or rotations normalized to `0`,
-return a copy.
-
-**Example** (Rotating elements)
+**Example**
 
 ```ts
 import { Array } from "effect"
 
-console.log(Array.rotate(["a", "b", "c", "d"], 2)) // ["c", "d", "a", "b"]
+const result = Array.rotate(['a', 'b', 'c', 'd', 'e'], 2)
+console.log(result) // [ 'd', 'e', 'a', 'b', 'c' ]
 ```
-
-**See**
-
-- `take` for taking a fixed number of elements from the start
-- `drop` for dropping a fixed number of elements from the start
 
 **Signature**
 
@@ -36,6 +21,6 @@ console.log(Array.rotate(["a", "b", "c", "d"], 2)) // ["c", "d", "a", "b"]
 declare const rotate: { (n: number): <S extends Iterable<any>>(self: S) => ReadonlyArray.With<S, ReadonlyArray.Infer<S>>; <A>(self: NonEmptyReadonlyArray<A>, n: number): NonEmptyArray<A>; <A>(self: Iterable<A>, n: number): Array<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L2496)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L1787)
 
 Since v2.0.0

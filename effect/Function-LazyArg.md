@@ -3,26 +3,25 @@ Module: `Function`<br />
 
 ## Function.LazyArg
 
-A zero-argument function that produces a value when invoked.
+A lazy argument.
 
-**When to use**
-
-Use to type a lazy value provider that should not run until called.
-
-**Example** (Creating a lazy argument)
+**Example**
 
 ```ts
-import { Function } from "effect"
+import * as assert from "node:assert"
+import { LazyArg, constant } from "effect/Function"
 
-const constNull: Function.LazyArg<null> = Function.constant(null)
+const constNull: LazyArg<null> = constant(null)
 ```
 
 **Signature**
 
 ```ts
-type LazyArg<A> = () => A
+export interface LazyArg<A> {
+  (): A
+}
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L204)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L202)
 
 Since v2.0.0

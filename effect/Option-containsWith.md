@@ -3,39 +3,37 @@ Module: `Option`<br />
 
 ## Option.containsWith
 
-Checks whether an `Option` contains a value equivalent to the given one, using a
-custom `Equivalence`.
-
-**When to use**
-
-Use when you need to test whether an `Option` contains a value using a
-custom equality check.
+Returns a function that checks if an `Option` contains a specified value,
+using a provided equivalence function.
 
 **Details**
 
-- `Some` where `isEquivalent(value, a)` is `true` → `true`
-- `Some` where not equivalent, or `None` → `false`
+This function allows you to check whether an `Option` contains a specific
+value. It uses an equivalence function `isEquivalent` to compare the value
+inside the `Option` to the provided value. If the `Option` is `Some` and the
+equivalence function returns `true`, the result is `true`. If the `Option` is
+`None` or the values are not equivalent, the result is `false`.
 
-**Example** (Checking with custom equivalence)
+**Example**
 
 ```ts
-import { Equivalence, Option } from "effect"
+import { Number, Option } from "effect"
 
-const check = Option.containsWith(Equivalence.strictEqual<number>())
+const contains = Option.containsWith(Number.Equivalence)
 
-console.log(Option.some(2).pipe(check(2)))
+console.log(Option.some(2).pipe(contains(2)))
 // Output: true
 
-console.log(Option.some(1).pipe(check(2)))
+console.log(Option.some(1).pipe(contains(2)))
 // Output: false
 
-console.log(Option.none().pipe(check(2)))
+console.log(Option.none().pipe(contains(2)))
 // Output: false
 ```
 
 **See**
 
-- `contains` for a version using default equality
+- `contains` for a version that uses the default `Equivalence`.
 
 **Signature**
 
@@ -43,6 +41,6 @@ console.log(Option.none().pipe(check(2)))
 declare const containsWith: <A>(isEquivalent: (self: A, that: A) => boolean) => { (a: A): (self: Option<A>) => boolean; (self: Option<A>, a: A): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L2231)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Option.ts#L1854)
 
 Since v2.0.0

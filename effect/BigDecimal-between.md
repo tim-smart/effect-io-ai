@@ -3,31 +3,23 @@ Module: `BigDecimal`<br />
 
 ## BigDecimal.between
 
-Checks whether a `BigDecimal` is between a `minimum` and `maximum` value (inclusive).
+Checks if a `BigDecimal` is between a `minimum` and `maximum` value (inclusive).
 
-**When to use**
-
-Use to test whether a `BigDecimal` falls inside an inclusive range.
-
-**Example** (Checking decimal ranges)
+**Example**
 
 ```ts
-import { BigDecimal } from "effect"
 import * as assert from "node:assert"
+import { BigDecimal } from "effect"
 
 const between = BigDecimal.between({
-  minimum: BigDecimal.fromStringUnsafe("1"),
-  maximum: BigDecimal.fromStringUnsafe("5")
-})
+  minimum: BigDecimal.unsafeFromString("1"),
+  maximum: BigDecimal.unsafeFromString("5") }
+)
 
-assert.deepStrictEqual(between(BigDecimal.fromStringUnsafe("3")), true)
-assert.deepStrictEqual(between(BigDecimal.fromStringUnsafe("0")), false)
-assert.deepStrictEqual(between(BigDecimal.fromStringUnsafe("6")), false)
+assert.deepStrictEqual(between(BigDecimal.unsafeFromString("3")), true)
+assert.deepStrictEqual(between(BigDecimal.unsafeFromString("0")), false)
+assert.deepStrictEqual(between(BigDecimal.unsafeFromString("6")), false)
 ```
-
-**See**
-
-- `clamp` for forcing a `BigDecimal` into an inclusive range
 
 **Signature**
 
@@ -35,6 +27,6 @@ assert.deepStrictEqual(between(BigDecimal.fromStringUnsafe("6")), false)
 declare const between: { (options: { minimum: BigDecimal; maximum: BigDecimal; }): (self: BigDecimal) => boolean; (self: BigDecimal, options: { minimum: BigDecimal; maximum: BigDecimal; }): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L868)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigDecimal.ts#L572)
 
 Since v2.0.0

@@ -3,40 +3,38 @@ Module: `MutableHashSet`<br />
 
 ## MutableHashSet.has
 
-Checks whether the MutableHashSet contains the specified value.
+Checks if the specified value exists in the `MutableHashSet`.
 
-**When to use**
+Time complexity: `O(1)` average
 
-Use to test whether a mutable set currently contains a value.
-
-**Details**
-
-Membership follows the same hashing and equality rules as the underlying
-`MutableHashMap`.
-
-**Example** (Checking for a value)
+**Syntax**
 
 ```ts
-import { MutableHashSet } from "effect"
+import { MutableHashSet, pipe } from "effect"
+import assert from "node:assert/strict"
 
-const set = MutableHashSet.make("apple", "banana", "cherry")
+assert.equal(
+  // with `data-last`, a.k.a. `pipeable` API
+  pipe(MutableHashSet.make(0, 1, 2), MutableHashSet.has(3)),
+  false
+)
 
-console.log(MutableHashSet.has(set, "apple")) // true
-console.log(MutableHashSet.has(set, "grape")) // false
+assert.equal(
+  // or piped with the pipe function
+  MutableHashSet.make(0, 1, 2).pipe(MutableHashSet.has(3)),
+  false
+)
 
-// Pipe-able version
-const hasApple = MutableHashSet.has("apple")
-console.log(hasApple(set)) // true
-
-// Check after adding
-MutableHashSet.add(set, "grape")
-console.log(MutableHashSet.has(set, "grape")) // true
+assert.equal(
+  // or with `data-first` API
+  MutableHashSet.has(MutableHashSet.make(0, 1, 2), 3),
+  false
+)
 ```
 
 **See**
 
-- `add` for adding a value to the set
-- `remove` for removing a value from the set
+- Other `MutableHashSet` elements are `module:MutableHashSet.add` `module:MutableHashSet.remove` `module:MutableHashSet.size` `module:MutableHashSet.clear`
 
 **Signature**
 
@@ -44,6 +42,6 @@ console.log(MutableHashSet.has(set, "grape")) // true
 declare const has: { <V>(key: V): (self: MutableHashSet<V>) => boolean; <V>(self: MutableHashSet<V>, key: V): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/MutableHashSet.ts#L307)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/MutableHashSet.ts#L501)
 
 Since v2.0.0

@@ -3,45 +3,24 @@ Module: `Exit`<br />
 
 ## Exit.Failure
 
-A failed Exit containing a Cause.
-
-**When to use**
-
-Use when working with the failed branch of an `Exit` after narrowing with
-`isFailure`. Access the cause via the `cause` property after
-narrowing.
-
-**Details**
-
-The `Cause<E>` may contain typed errors, defects, or interruptions.
-
-**Example** (Accessing the failure cause)
-
-```ts
-import { Exit } from "effect"
-
-const failure = Exit.fail("something went wrong")
-
-if (Exit.isFailure(failure)) {
-  console.log(failure._tag) // "Failure"
-  console.log(failure.cause) // Cause representing the error
-}
-```
-
-**See**
-
-- `isFailure` to narrow an Exit to Failure
-- `Success` for the success counterpart
+Represents a failed `Effect` workflow containing the `Cause` of the failure
+of type `E`.
 
 **Signature**
 
 ```ts
-export interface Failure<out A, out E> extends Exit.Proto<A, E> {
+export interface Failure<out A, out E> extends Effect.Effect<A, E>, Pipeable, Inspectable {
   readonly _tag: "Failure"
+  readonly _op: "Failure"
   readonly cause: Cause.Cause<E>
+  [Unify.typeSymbol]?: unknown
+  [Unify.unifySymbol]?: ExitUnify<this>
+  [Unify.ignoreSymbol]?: ExitUnifyIgnore
+  /** @internal */
+  readonly effect_instruction_i0: Cause.Cause<E>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Exit.ts#L156)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Exit.ts#L35)
 
 Since v2.0.0

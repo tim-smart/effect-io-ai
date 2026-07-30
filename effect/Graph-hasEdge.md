@@ -3,9 +3,9 @@ Module: `Graph`<br />
 
 ## Graph.hasEdge
 
-Checks whether an edge exists between two nodes in the graph.
+Checks if an edge exists between two nodes in the graph.
 
-**Example** (Checking edge existence)
+**Example**
 
 ```ts
 import { Graph } from "effect"
@@ -31,9 +31,9 @@ console.log(hasAC) // false
 **Signature**
 
 ```ts
-declare const hasEdge: { (source: NodeIndex, target: NodeIndex): <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>) => boolean; <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>, source: NodeIndex, target: NodeIndex): boolean; }
+declare const hasEdge: <N, E, T extends Kind = "directed">(graph: Graph<N, E, T> | MutableGraph<N, E, T>, source: NodeIndex, target: NodeIndex) => boolean
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L2597)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L1425)
 
 Since v3.18.0

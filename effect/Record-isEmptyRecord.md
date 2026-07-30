@@ -3,16 +3,16 @@ Module: `Record`<br />
 
 ## Record.isEmptyRecord
 
-Determines if a mutable record is empty.
+Determine if a record is empty.
 
-**Example** (Checking for an empty record)
+**Example**
 
 ```ts
-import { Record } from "effect"
 import * as assert from "node:assert"
+import { isEmptyRecord } from "effect/Record"
 
-assert.deepStrictEqual(Record.isEmptyRecord({}), true)
-assert.deepStrictEqual(Record.isEmptyRecord({ a: 3 }), false)
+assert.deepStrictEqual(isEmptyRecord({}), true);
+assert.deepStrictEqual(isEmptyRecord({ a: 3 }), false);
 ```
 
 **Signature**
@@ -21,6 +21,6 @@ assert.deepStrictEqual(Record.isEmptyRecord({ a: 3 }), false)
 declare const isEmptyRecord: <K extends string, A>(self: Record<K, A>) => self is Record<K, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Record.ts#L191)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Record.ts#L81)
 
 Since v2.0.0

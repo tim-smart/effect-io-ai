@@ -3,47 +3,7 @@ Module: `Cron`<br />
 
 ## Cron.equals
 
-Checks whether two `Cron` instances have equal timezone values, field
-restrictions, and day-matching modes.
-
-**When to use**
-
-Use to directly compare two cron schedules, including their timezones and
-day-matching modes.
-
-**Details**
-
-The comparison checks the optional timezone, the `and` day-matching mode,
-seconds, minutes, hours, days, months, and weekdays.
-
-**Example** (Checking schedule equality)
-
-```ts
-import { Cron } from "effect"
-
-const cron1 = Cron.make({
-  minutes: [0],
-  hours: [9],
-  days: [1, 15],
-  months: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
-  weekdays: [1, 2, 3, 4, 5]
-})
-
-const cron2 = Cron.make({
-  minutes: [0],
-  hours: [9],
-  days: [1, 15],
-  months: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
-  weekdays: [1, 2, 3, 4, 5]
-})
-
-console.log(Cron.equals(cron1, cron2)) // true
-console.log(Cron.equals(cron1)(cron2)) // true (curried form)
-```
-
-**See**
-
-- `Equivalence` for the reusable equivalence instance
+Checks if two `Cron`s are equal.
 
 **Signature**
 
@@ -51,6 +11,6 @@ console.log(Cron.equals(cron1)(cron2)) // true (curried form)
 declare const equals: { (that: Cron): (self: Cron) => boolean; (self: Cron, that: Cron): boolean; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cron.ts#L1093)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Cron.ts#L716)
 
 Since v2.0.0

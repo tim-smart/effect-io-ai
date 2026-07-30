@@ -1,4 +1,4 @@
-Package: `@effect/ai-openai-compat`<br />
+Package: `@effect/ai-openai`<br />
 Module: `OpenAiTelemetry`<br />
 
 ## OpenAiTelemetry.OpenAiTelemetryAttributes
@@ -6,11 +6,7 @@ Module: `OpenAiTelemetry`<br />
 The attributes used to describe telemetry in the context of Generative
 Artificial Intelligence (GenAI) Models requests and responses.
 
-**Details**
-
-These attributes follow the OpenTelemetry generative AI semantic
-conventions:
-https://opentelemetry.io/docs/specs/semconv/attributes-registry/gen-ai/
+{@see https://opentelemetry.io/docs/specs/semconv/attributes-registry/gen-ai/}
 
 **Signature**
 
@@ -22,6 +18,6 @@ type OpenAiTelemetryAttributes = Simplify<
 >
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai-compat/src/OpenAiTelemetry.ts#L28)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/ai/openai/src/OpenAiTelemetry.ts#L20)
 
-Since v4.0.0
+Since v1.0.0

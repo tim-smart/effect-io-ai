@@ -3,26 +3,18 @@ Module: `Function`<br />
 
 ## Function.tupled
 
-Creates a tupled version of this function: instead of `n` arguments, it accepts a single tuple argument.
+Creates a   version of this function: instead of `n` arguments, it accepts a single tuple argument.
 
-**When to use**
-
-Use to adapt a multi-argument function so it accepts one tuple argument.
-
-**Example** (Converting arguments to a tuple)
+**Example**
 
 ```ts
-import { Function } from "effect"
 import * as assert from "node:assert"
+import { tupled } from "effect/Function"
 
-const sumTupled = Function.tupled((x: number, y: number): number => x + y)
+const sumTupled = tupled((x: number, y: number): number => x + y)
 
 assert.deepStrictEqual(sumTupled([1, 2]), 3)
 ```
-
-**See**
-
-- `untupled` for adapting a tuple-argument function back to multiple arguments
 
 **Signature**
 
@@ -30,6 +22,6 @@ assert.deepStrictEqual(sumTupled([1, 2]), 3)
 declare const tupled: <A extends ReadonlyArray<unknown>, B>(f: (...a: A) => B) => (a: A) => B
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L545)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Function.ts#L439)
 
 Since v2.0.0

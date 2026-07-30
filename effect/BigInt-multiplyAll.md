@@ -3,25 +3,16 @@ Module: `BigInt`<br />
 
 ## BigInt.multiplyAll
 
-Takes an `Iterable` of `bigint`s and returns their product as a single `bigint`. Returns `1n` for an empty iterable.
+Takes an `Iterable` of `bigint`s and returns their multiplication as a single `number`.
 
-**When to use**
-
-Use to multiply all `bigint` values in an iterable.
-
-**Example** (Multiplying iterable bigints)
+**Example**
 
 ```ts
-import { BigInt } from "effect"
 import * as assert from "node:assert"
+import { multiplyAll } from "effect/BigInt"
 
-assert.deepStrictEqual(BigInt.multiplyAll([2n, 3n, 4n]), 24n)
+assert.deepStrictEqual(multiplyAll([2n, 3n, 4n]), 24n)
 ```
-
-**See**
-
-- `multiply` for multiplying two `bigint` values
-- `ReducerMultiply` for multiplying through APIs that consume a `Reducer`
 
 **Signature**
 
@@ -29,6 +20,6 @@ assert.deepStrictEqual(BigInt.multiplyAll([2n, 3n, 4n]), 24n)
 declare const multiplyAll: (collection: Iterable<bigint>) => bigint
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L799)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/BigInt.ts#L546)
 
 Since v2.0.0

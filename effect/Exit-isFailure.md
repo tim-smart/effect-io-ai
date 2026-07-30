@@ -3,29 +3,7 @@ Module: `Exit`<br />
 
 ## Exit.isFailure
 
-Checks whether an Exit is a Failure.
-
-**When to use**
-
-Use as a type guard to narrow `Exit<A, E>` to `Failure<A, E>` and access the
-`cause` property.
-
-**Example** (Narrowing to failure)
-
-```ts
-import { Exit } from "effect"
-
-const exit = Exit.fail("error")
-
-if (Exit.isFailure(exit)) {
-  console.log(exit.cause)
-}
-```
-
-**See**
-
-- `isSuccess` for the opposite check
-- `match` for exhaustive pattern matching
+Returns `true` if the specified `Exit` is a `Failure`, `false` otherwise.
 
 **Signature**
 
@@ -33,6 +11,6 @@ if (Exit.isFailure(exit)) {
 declare const isFailure: <A, E>(self: Exit<A, E>) => self is Failure<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Exit.ts#L431)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Exit.ts#L94)
 
 Since v2.0.0

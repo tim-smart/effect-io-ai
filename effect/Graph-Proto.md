@@ -3,22 +3,23 @@ Module: `Graph`<br />
 
 ## Graph.Proto
 
-Common public protocol for graph values.
-
-**Details**
-
-Contains only the runtime marker and shared protocols. Graph storage is kept
-internal; use module functions such as `nodes`, `edges`, `getNode`, and
-`getEdge` to inspect graph contents.
+Graph prototype interface.
 
 **Signature**
 
 ```ts
 export interface Proto<out N, out E> extends Iterable<readonly [NodeIndex, N]>, Equal.Equal, Pipeable, Inspectable {
-  readonly [TypeId]: Graph.Variance<N, E>
+  readonly [TypeId]: TypeId
+  readonly nodes: Map<NodeIndex, N>
+  readonly edges: Map<EdgeIndex, Edge<E>>
+  readonly adjacency: Map<NodeIndex, Array<EdgeIndex>>
+  readonly reverseAdjacency: Map<NodeIndex, Array<EdgeIndex>>
+  nextNodeIndex: NodeIndex
+  nextEdgeIndex: EdgeIndex
+  isAcyclic: Option.Option<boolean>
 }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L124)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Graph.ts#L75)
 
 Since v3.18.0

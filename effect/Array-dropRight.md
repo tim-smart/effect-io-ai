@@ -3,28 +3,18 @@ Module: `Array`<br />
 
 ## Array.dropRight
 
-Removes the last `n` elements, creating a new array.
+Drop a max number of elements from the end of an `Iterable`, creating a new `Array`.
 
-**When to use**
+**Note**. `n` is normalized to a non negative integer.
 
-Use to remove the last `n` elements from an iterable.
-
-**Details**
-
-`n` is clamped to `[0, length]`.
-
-**Example** (Dropping from the end)
+**Example**
 
 ```ts
 import { Array } from "effect"
 
-console.log(Array.dropRight([1, 2, 3, 4, 5], 2)) // [1, 2, 3]
+const result = Array.dropRight([1, 2, 3, 4, 5], 2)
+console.log(result) // [1, 2, 3]
 ```
-
-**See**
-
-- `drop` — remove from the start
-- `takeRight` — keep from the end
 
 **Signature**
 
@@ -32,6 +22,6 @@ console.log(Array.dropRight([1, 2, 3, 4, 5], 2)) // [1, 2, 3]
 declare const dropRight: { (n: number): <A>(self: Iterable<A>) => Array<A>; <A>(self: Iterable<A>, n: number): Array<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L1543)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L948)
 
 Since v2.0.0

@@ -3,34 +3,116 @@ Module: `Effect`<br />
 
 ## Effect.raceAll
 
-Runs multiple effects concurrently and returns the first successful result.
-
-**When to use**
-
-Use when early failures should be ignored until a success occurs
-or all effects fail.
+Races multiple effects and returns the first successful result.
 
 **Details**
 
-Early failures do not finish the race; `raceAll` keeps waiting until one
-effect succeeds or every effect has failed. When one effect succeeds, the
-remaining effects are interrupted. If every effect fails, the returned effect
-fails with a cause containing the collected failure reasons.
+This function runs multiple effects concurrently and returns the result of
+the first one to succeed. If one effect succeeds, the others will be
+interrupted.
 
-**Example** (Racing many effects)
+If none of the effects succeed, the function will fail with the last error
+encountered.
+
+**When to Use**
+
+This is useful when you want to race multiple effects, but only care about
+the first one to succeed. It is commonly used in cases like timeouts,
+retries, or when you want to optimize for the faster response without
+worrying about the other effects.
+
+**Example** (All Tasks Succeed)
 
 ```ts
-import { Duration, Effect } from "effect"
+import { Effect, Console } from "effect"
 
-// Multiple effects with different delays
-const effect1 = Effect.delay(Effect.succeed("Fast"), Duration.millis(100))
-const effect2 = Effect.delay(Effect.succeed("Slow"), Duration.millis(500))
-const effect3 = Effect.delay(Effect.succeed("Very Slow"), Duration.millis(1000))
+const task1 = Effect.succeed("task1").pipe(
+  Effect.delay("100 millis"),
+  Effect.tap(Console.log("task1 done")),
+  Effect.onInterrupt(() => Console.log("task1 interrupted"))
+)
+const task2 = Effect.succeed("task2").pipe(
+  Effect.delay("200 millis"),
+  Effect.tap(Console.log("task2 done")),
+  Effect.onInterrupt(() => Console.log("task2 interrupted"))
+)
 
-// Race all effects - the first to succeed wins
-const raced = Effect.raceAll([effect1, effect2, effect3])
+const task3 = Effect.succeed("task3").pipe(
+  Effect.delay("150 millis"),
+  Effect.tap(Console.log("task3 done")),
+  Effect.onInterrupt(() => Console.log("task3 interrupted"))
+)
 
-// Result: "Fast" (after ~100ms)
+const program = Effect.raceAll([task1, task2, task3])
+
+Effect.runFork(program)
+// Output:
+// task1 done
+// task2 interrupted
+// task3 interrupted
+```
+
+**Example** (One Task Fails, Two Tasks Succeed)
+
+```ts
+import { Effect, Console } from "effect"
+
+const task1 = Effect.fail("task1").pipe(
+  Effect.delay("100 millis"),
+  Effect.tap(Console.log("task1 done")),
+  Effect.onInterrupt(() => Console.log("task1 interrupted"))
+)
+const task2 = Effect.succeed("task2").pipe(
+  Effect.delay("200 millis"),
+  Effect.tap(Console.log("task2 done")),
+  Effect.onInterrupt(() => Console.log("task2 interrupted"))
+)
+
+const task3 = Effect.succeed("task3").pipe(
+  Effect.delay("150 millis"),
+  Effect.tap(Console.log("task3 done")),
+  Effect.onInterrupt(() => Console.log("task3 interrupted"))
+)
+
+const program = Effect.raceAll([task1, task2, task3])
+
+Effect.runFork(program)
+// Output:
+// task3 done
+// task2 interrupted
+```
+
+**Example** (All Tasks Fail)
+
+```ts
+import { Effect, Console } from "effect"
+
+const task1 = Effect.fail("task1").pipe(
+  Effect.delay("100 millis"),
+  Effect.tap(Console.log("task1 done")),
+  Effect.onInterrupt(() => Console.log("task1 interrupted"))
+)
+const task2 = Effect.fail("task2").pipe(
+  Effect.delay("200 millis"),
+  Effect.tap(Console.log("task2 done")),
+  Effect.onInterrupt(() => Console.log("task2 interrupted"))
+)
+
+const task3 = Effect.fail("task3").pipe(
+  Effect.delay("150 millis"),
+  Effect.tap(Console.log("task3 done")),
+  Effect.onInterrupt(() => Console.log("task3 interrupted"))
+)
+
+const program = Effect.raceAll([task1, task2, task3])
+
+Effect.runPromiseExit(program).then(console.log)
+// Output:
+// {
+//   _id: 'Exit',
+//   _tag: 'Failure',
+//   cause: { _id: 'Cause', _tag: 'Fail', failure: 'task2' }
+// }
 ```
 
 **See**
@@ -40,9 +122,9 @@ const raced = Effect.raceAll([effect1, effect2, effect3])
 **Signature**
 
 ```ts
-declare const raceAll: <Eff extends Effect<any, any, any>>(all: Iterable<Eff>, options?: { readonly onWinner?: (options: { readonly fiber: Fiber<any, any>; readonly index: number; readonly parentFiber: Fiber<any, any>; }) => void; }) => Effect<Success<Eff>, Error<Eff>, Services<Eff>>
+declare const raceAll: <Eff extends Effect<any, any, any>>(all: Iterable<Eff>) => Effect<Effect.Success<Eff>, Effect.Error<Eff>, Effect.Context<Eff>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L4801)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L9220)
 
 Since v2.0.0

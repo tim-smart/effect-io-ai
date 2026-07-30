@@ -3,61 +3,56 @@ Module: `Effect`<br />
 
 ## Effect.try
 
-Creates an `Effect` from a synchronous computation that may throw, mapping
-thrown values into the error channel.
+Creates an `Effect` that represents a synchronous computation that might
+fail.
 
-**When to use**
+**When to Use**
 
-Use when you need to perform synchronous operations that might throw, such
-as parsing JSON, and want thrown exceptions captured as Effect errors.
+In situations where you need to perform synchronous operations that might
+fail, such as parsing JSON, you can use the `try` constructor. This
+constructor is designed to handle operations that could throw exceptions by
+capturing those exceptions and transforming them into manageable errors.
 
-**Details**
+**Error Handling**
 
-The thunk is evaluated when the effect runs. If it returns normally, the
-returned value becomes the success value. If it throws, the thrown value is
-mapped into the error channel.
+There are two ways to handle errors with `try`:
 
-Passing the thunk directly maps failures to `Cause.UnknownError`.
-Passing `{ try, catch }` uses `catch` to map failures to an error of type
-`E`.
+1. If you don't provide a `catch` function, the error is caught and the
+   effect fails with an `UnknownException`.
+2. If you provide a `catch` function, the error is caught and the `catch`
+   function maps it to an error of type `E`.
 
-**Gotchas**
-
-If `catch` throws while mapping the error, that thrown value is treated as
-a defect. Return the error value you want in the error channel instead of
-throwing it.
-
-**Example** (Parsing JSON)
+**Example** (Safe JSON Parsing)
 
 ```ts
 import { Effect } from "effect"
 
-const parseJSON = (input: string) =>
+const parse = (input: string) =>
+  // This might throw an error if input is not valid JSON
   Effect.try(() => JSON.parse(input))
 
-// Success case
-Effect.runPromise(parseJSON("{\"name\": \"Alice\"}")).then(console.log)
-// Output: { name: "Alice" }
+//      ┌─── Effect<any, UnknownException, never>
+//      ▼
+const program = parse("")
 
-// Failure case maps the thrown value to UnknownError
-Effect.runPromiseExit(parseJSON("invalid json")).then(console.log)
 ```
 
-**Example** (Mapping exceptions to a tagged error)
+**Example** (Custom Error Handling)
 
 ```ts
-import { Data, Effect } from "effect"
+import { Effect } from "effect"
 
-class JsonParsingError extends Data.TaggedError("JsonParsingError")<{ readonly cause: unknown }> {}
-
-const parseJSON = (input: string) =>
+const parse = (input: string) =>
   Effect.try({
+    // JSON.parse may throw for bad input
     try: () => JSON.parse(input),
-    catch: (cause) => new JsonParsingError({ cause })
+    // remap the error
+    catch: (unknown) => new Error(`something went wrong ${unknown}`)
   })
 
-Effect.runPromiseExit(parseJSON("invalid json")).then(console.log)
-// Output: Exit.failure with custom Error message
+//      ┌─── Effect<any, Error, never>
+//      ▼
+const program = parse("")
 ```
 
 **See**
@@ -68,9 +63,9 @@ throw errors.
 **Signature**
 
 ```ts
-declare const try: <A, E = Cause.UnknownError>(options: { readonly try: LazyArg<A>; readonly catch: (error: unknown) => E; } | LazyArg<A>) => Effect<A, E>
+declare const try: { <A, E>(options: { readonly try: LazyArg<A>; readonly catch: (error: unknown) => E; }): Effect<A, E>; <A>(thunk: LazyArg<A>): Effect<A, Cause.UnknownException>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L1738)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L4567)
 
 Since v2.0.0

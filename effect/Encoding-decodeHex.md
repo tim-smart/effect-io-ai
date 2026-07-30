@@ -3,35 +3,14 @@ Module: `Encoding`<br />
 
 ## Encoding.decodeHex
 
-Decodes a hexadecimal string into bytes safely.
-
-**When to use**
-
-Use to decode hexadecimal text into bytes without throwing on invalid input.
-
-**Details**
-
-Returns `Result.succeed` with a `Uint8Array` when decoding succeeds, or
-`Result.fail` with an `EncodingError` when the input has an odd length or
-contains invalid hex characters.
-
-**Example** (Decoding hex bytes)
-
-```ts
-import { Encoding, Result } from "effect"
-
-const result = Encoding.decodeHex("48656c6c6f")
-if (Result.isSuccess(result)) {
-  console.log(Array.from(result.success)) // [72, 101, 108, 108, 111]
-}
-```
+Decodes a hex encoded `string` into a `Uint8Array`.
 
 **Signature**
 
 ```ts
-declare const decodeHex: (str: string) => Result.Result<Uint8Array, EncodingError>
+declare const decodeHex: (str: string) => Either.Either<Uint8Array, DecodeException>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Encoding.ts#L447)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Encoding.ts#L81)
 
 Since v2.0.0

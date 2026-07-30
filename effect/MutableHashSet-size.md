@@ -3,31 +3,27 @@ Module: `MutableHashSet`<br />
 
 ## MutableHashSet.size
 
-Returns the number of unique values in the MutableHashSet.
+Calculates the number of values in the `HashSet`.
 
-**When to use**
+Time complexity: **`O(1)`**
 
-Use to read how many unique values are currently stored in the set.
-
-**Example** (Checking set size)
+**Example**
 
 ```ts
 import { MutableHashSet } from "effect"
+import assert from "node:assert/strict"
 
-const set = MutableHashSet.empty<string>()
-console.log(MutableHashSet.size(set)) // 0
+assert.equal(MutableHashSet.size(MutableHashSet.empty()), 0)
 
-MutableHashSet.add(set, "apple")
-MutableHashSet.add(set, "banana")
-MutableHashSet.add(set, "apple") // Duplicate
-console.log(MutableHashSet.size(set)) // 2
-
-MutableHashSet.remove(set, "apple")
-console.log(MutableHashSet.size(set)) // 1
-
-MutableHashSet.clear(set)
-console.log(MutableHashSet.size(set)) // 0
+assert.equal(
+  MutableHashSet.size(MutableHashSet.make(1, 2, 2, 3, 4, 3)),
+  4
+)
 ```
+
+**See**
+
+- Other `MutableHashSet` elements are `module:MutableHashSet.add` `module:MutableHashSet.has` `module:MutableHashSet.remove` `module:MutableHashSet.clear`
 
 **Signature**
 
@@ -35,6 +31,6 @@ console.log(MutableHashSet.size(set)) // 0
 declare const size: <V>(self: MutableHashSet<V>) => number
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/MutableHashSet.ts#L388)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/MutableHashSet.ts#L672)
 
 Since v2.0.0

@@ -3,23 +3,21 @@ Module: `Effect`<br />
 
 ## Effect.isEffect
 
-Checks whether a value is an `Effect`.
+Checks if a given value is an `Effect` value.
 
-**Example** (Checking whether a value is an Effect)
+**When to Use**
 
-```ts
-import { Effect } from "effect"
-
-console.log(Effect.isEffect(Effect.succeed(1))) // true
-console.log(Effect.isEffect("hello")) // false
-```
+This function can be useful for checking the type of a value before
+attempting to operate on it as an `Effect` value. For example, you could use
+`Effect.isEffect` to check the type of a value before using it as an argument
+to a function that expects an `Effect` value.
 
 **Signature**
 
 ```ts
-declare const isEffect: (u: unknown) => u is Effect<any, any, any>
+declare const isEffect: (u: unknown) => u is Effect<unknown, unknown, unknown>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L230)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L282)
 
 Since v2.0.0

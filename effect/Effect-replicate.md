@@ -3,21 +3,38 @@ Module: `Effect`<br />
 
 ## Effect.replicate
 
-Returns an array of `n` identical effects.
-
-**When to use**
-
-Use when you need an array of identical effect values without running them
-yet.
+Replicates the given effect `n` times.
 
 **Details**
 
-This only creates the array of effects. It does not run or collect them.
+This function takes an effect and replicates it a specified number of times
+(`n`). The result is an array of `n` effects, each of which is identical to
+the original effect.
 
-**See**
+**Example**
 
-- `all` for running the returned effects and collecting results
-- `replicateEffect` for repeating an effect and collecting results in one step with concurrency and discard options
+```ts
+import { Console, Effect } from "effect"
+
+const task = Effect.succeed("Hello, World!").pipe(
+  Effect.tap(Console.log)
+)
+
+const program = Effect.gen(function*() {
+  // Replicate the task 3 times
+  const tasks = Effect.replicate(task, 3)
+  for (const t of tasks) {
+    // Run each task
+    yield* t
+  }
+})
+
+Effect.runFork(program)
+// Output:
+// Hello, World!
+// Hello, World!
+// Hello, World!
+```
 
 **Signature**
 
@@ -25,6 +42,6 @@ This only creates the array of effects. It does not run or collect them.
 declare const replicate: { (n: number): <A, E, R>(self: Effect<A, E, R>) => Array<Effect<A, E, R>>; <A, E, R>(self: Effect<A, E, R>, n: number): Array<Effect<A, E, R>>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L7778)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L2101)
 
 Since v2.0.0

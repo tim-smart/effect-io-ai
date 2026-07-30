@@ -5,10 +5,6 @@ Module: `Match`<br />
 
 Creates a matcher for a specific type.
 
-**When to use**
-
-Use to build a reusable matcher function for values of a known input type.
-
 **Details**
 
 This function defines a `Matcher` that operates on a given type, allowing you
@@ -51,6 +47,6 @@ console.log(match("hello"))
 declare const type: <I>() => Matcher<I, Types.Without<never>, I, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L281)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Match.ts#L195)
 
-Since v4.0.0
+Since v1.0.0

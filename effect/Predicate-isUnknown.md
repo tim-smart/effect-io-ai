@@ -3,30 +3,25 @@ Module: `Predicate`<br />
 
 ## Predicate.isUnknown
 
-Type guard that always returns `true`.
+A refinement that always returns `true`. The type is narrowed to `unknown`.
 
-**When to use**
-
-Use when you need a `Predicate` that always accepts, e.g. as a placeholder.
-
-**Example** (Matching every value)
+**Example**
 
 ```ts
-import { Predicate } from "effect"
+import * as assert from "node:assert"
+import { isUnknown } from "effect/Predicate"
 
-console.log(Predicate.isUnknown(123))
+assert.strictEqual(isUnknown(1), true)
+assert.strictEqual(isUnknown(null), true)
+assert.strictEqual(isUnknown({}), true)
 ```
-
-**See**
-
-- `isNever`
 
 **Signature**
 
 ```ts
-declare const isUnknown: (_: unknown) => _ is unknown
+declare const isUnknown: (input: unknown) => input is unknown
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L972)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Predicate.ts#L550)
 
 Since v2.0.0

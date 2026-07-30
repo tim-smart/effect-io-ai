@@ -3,19 +3,17 @@ Module: `Array`<br />
 
 ## Array.join
 
-Joins string elements with a separator.
+Joins the elements together with "sep" in the middle.
 
-**Example** (Joining strings)
+**Example**
 
 ```ts
 import { Array } from "effect"
 
-console.log(Array.join(["a", "b", "c"], "-")) // "a-b-c"
+const strings = ["a", "b", "c"]
+const joined = Array.join(strings, "-")
+console.log(joined) // "a-b-c"
 ```
-
-**See**
-
-- `intersperse` — insert separator elements without joining
 
 **Signature**
 
@@ -23,6 +21,6 @@ console.log(Array.join(["a", "b", "c"], "-")) // "a-b-c"
 declare const join: { (sep: string): (self: Iterable<string>) => string; (self: Iterable<string>, sep: string): string; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L4607)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Array.ts#L3269)
 
 Since v2.0.0

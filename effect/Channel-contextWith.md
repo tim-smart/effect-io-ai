@@ -3,14 +3,14 @@ Module: `Channel`<br />
 
 ## Channel.contextWith
 
-Creates a channel from the specified services.
+Accesses the context of the channel with the specified function.
 
 **Signature**
 
 ```ts
-declare const contextWith: <Env, OutElem, OutErr, OutDone, InElem, InErr, InDone, Env2>(f: (context: Context.Context<Env>) => Channel<OutElem, OutErr, OutDone, InElem, InErr, InDone, Env2>) => Channel<OutElem, OutErr, OutDone, InElem, InErr, InDone, Env | Env2>
+declare const contextWith: <Env, OutDone>(f: (env: Context.Context<Env>) => OutDone) => Channel<never, unknown, never, unknown, OutDone, unknown, Env>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Channel.ts#L7194)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Channel.ts#L775)
 
 Since v2.0.0

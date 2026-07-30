@@ -3,25 +3,31 @@ Module: `Effect`<br />
 
 ## Effect.runSyncExit
 
-Runs an effect synchronously and captures the outcome safely as an `Exit` type, which
-represents the outcome (success or failure) of the effect.
-
-**When to use**
-
-Use to find out whether an effect succeeded or failed,
-including any defects, without dealing with asynchronous operations.
+Runs an effect synchronously and returns the result as an `Exit` type.
 
 **Details**
 
-The `Exit` type represents the result of the effect. Successful effects are
-wrapped in `Success`, and failed effects are wrapped in `Failure` with a
-`Cause`.
+This function executes the provided effect synchronously and returns an `Exit`
+type that encapsulates the outcome of the effect:
+- If the effect succeeds, the result is wrapped in a `Success`.
+- If the effect fails, it returns a `Failure` containing a `Cause` that explains
+  the failure.
 
-If the effect contains asynchronous operations, `runSyncExit` will
-return an `Failure` with a `Die` cause, indicating that the effect cannot be
-resolved synchronously.
+If the effect involves asynchronous operations, this function will return a `Failure`
+with a `Die` cause, indicating that it cannot resolve the effect synchronously.
+This makes the function suitable for use only with effects that are synchronous
+in nature.
 
-**Example** (Observing synchronous results as Exit)
+**When to Use**
+
+Use this function when:
+- You want to handle both success and failure outcomes in a structured way using the `Exit` type.
+- You are working with effects that are purely synchronous and do not involve asynchronous operations.
+- You need to debug or inspect failures, including their causes, in a detailed manner.
+
+Avoid using this function for effects that involve asynchronous operations, as it will fail with a `Die` cause.
+
+**Example** (Handling Results as Exit)
 
 ```ts
 import { Effect } from "effect"
@@ -47,7 +53,7 @@ console.log(Effect.runSyncExit(Effect.fail("my error")))
 // }
 ```
 
-**Example** (Capturing async work as a Die cause)
+**Example** (Asynchronous Operation Resulting in Die)
 
 ```ts
 import { Effect } from "effect"
@@ -69,16 +75,12 @@ console.log(Effect.runSyncExit(Effect.promise(() => Promise.resolve(1))))
 // }
 ```
 
-**See**
-
-- `runSync` for a version that throws on failure.
-
 **Signature**
 
 ```ts
 declare const runSyncExit: <A, E>(effect: Effect<A, E>) => Exit.Exit<A, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L9405)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12357)
 
 Since v2.0.0

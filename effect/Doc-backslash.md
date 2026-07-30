@@ -1,0 +1,16 @@
+Package: `@effect/printer`<br />
+Module: `Doc`<br />
+
+## Doc.backslash
+
+A document containing a single `\` character.
+
+**Signature**
+
+```ts
+declare const backslash: Doc<never>
+```
+
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/printer/src/Doc.ts#L720)
+
+Since v1.0.0

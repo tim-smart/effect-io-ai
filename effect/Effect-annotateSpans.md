@@ -3,28 +3,18 @@ Module: `Effect`<br />
 
 ## Effect.annotateSpans
 
-Adds an annotation to each span in this effect.
+Adds annotations to each span in the effect for enhanced traceability.
 
-**Example** (Annotating all spans)
+**Details**
 
-```ts
-import { Effect } from "effect"
+This function lets you attach key-value annotations to all spans generated
+during the execution of an effect. Annotations provide additional context,
+such as metadata or labels, which can help you understand and debug
+asynchronous workflows more effectively.
 
-const program = Effect.gen(function*() {
-  yield* Effect.log("Doing some work...")
-  return "result"
-})
-
-// Add single annotation
-const annotated1 = Effect.annotateSpans(program, "user", "john")
-
-// Add multiple annotations
-const annotated2 = Effect.annotateSpans(program, {
-  operation: "data-processing",
-  version: "1.0.0",
-  environment: "production"
-})
-```
+You can either pass a single key-value pair or a record of key-value pairs to
+annotate the spans. These annotations can then be visualized in tracing tools
+that support span annotations.
 
 **Signature**
 
@@ -32,6 +22,6 @@ const annotated2 = Effect.annotateSpans(program, {
 declare const annotateSpans: { (key: string, value: unknown): <A, E, R>(effect: Effect<A, E, R>) => Effect<A, E, R>; (values: Record<string, unknown>): <A, E, R>(effect: Effect<A, E, R>) => Effect<A, E, R>; <A, E, R>(effect: Effect<A, E, R>, key: string, value: unknown): Effect<A, E, R>; <A, E, R>(effect: Effect<A, E, R>, values: Record<string, unknown>): Effect<A, E, R>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L8066)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12965)
 
 Since v2.0.0

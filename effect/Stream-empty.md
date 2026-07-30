@@ -3,20 +3,17 @@ Module: `Stream`<br />
 
 ## Stream.empty
 
-Creates an empty stream.
+The empty stream.
 
-**Example** (Creating an empty stream)
+**Example**
 
 ```ts
-import { Console, Effect, Stream } from "effect"
+import { Effect, Stream } from "effect"
 
-const program = Effect.gen(function*() {
-  const values = yield* Stream.empty.pipe(Stream.runCollect)
-  yield* Console.log(values)
-})
+const stream = Stream.empty
 
-Effect.runPromise(program)
-// []
+Effect.runPromise(Stream.runCollect(stream)).then(console.log)
+// { _id: 'Chunk', values: [] }
 ```
 
 **Signature**
@@ -25,6 +22,6 @@ Effect.runPromise(program)
 declare const empty: Stream<never, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L805)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Stream.ts#L1470)
 
 Since v2.0.0

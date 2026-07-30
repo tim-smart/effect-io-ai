@@ -5,26 +5,21 @@ Module: `Effect`<br />
 
 Creates an `Effect` that represents a recoverable error.
 
-**When to use**
+**When to Use**
 
-Use to explicitly signal a recoverable error in an `Effect`.
+Use this function to explicitly signal an error in an `Effect`. The error
+will keep propagating unless it is handled. You can handle the error with
+functions like `catchAll` or `catchTag`.
 
-**Details**
-
-The error keeps propagating unless it is handled. You can handle tagged
-errors with functions like `catchTag` or `catchTags`.
-
-**Example** (Creating a failed effect)
+**Example** (Creating a Failed Effect)
 
 ```ts
-import { Data, Effect } from "effect"
+import { Effect } from "effect"
 
-class OperationFailedError extends Data.TaggedError("OperationFailedError")<{}> {}
-
-//      ┌─── Effect<never, OperationFailedError, never>
+//      ┌─── Effect<never, Error, never>
 //      ▼
 const failure = Effect.fail(
-  new OperationFailedError()
+  new Error("Operation failed due to network error")
 )
 ```
 
@@ -38,6 +33,6 @@ const failure = Effect.fail(
 declare const fail: <E>(error: E) => Effect<never, E>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L1531)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L2575)
 
 Since v2.0.0

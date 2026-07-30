@@ -3,45 +3,14 @@ Module: `RequestResolver`<br />
 
 ## RequestResolver.fromEffect
 
-Constructs a request resolver from an effectual function.
-
-**Example** (Creating a resolver from an effectful function)
-
-```ts
-import { Effect, Request, RequestResolver } from "effect"
-
-interface GetUserFromAPIRequest extends Request.Request<string> {
-  readonly _tag: "GetUserFromAPIRequest"
-  readonly id: number
-}
-const GetUserFromAPIRequest = Request.tagged<GetUserFromAPIRequest>(
-  "GetUserFromAPIRequest"
-)
-
-// Create a resolver that uses effects (like HTTP calls)
-const UserAPIResolver = RequestResolver.fromEffect<GetUserFromAPIRequest>(
-  (entry) =>
-    Effect.gen(function*() {
-      // Simulate an API call
-      yield* Effect.sleep("100 millis")
-      // Just return the result without error handling for simplicity
-      return `User ${entry.request.id} from API`
-    })
-)
-
-// Usage
-const getUserEffect = Effect.request(
-  GetUserFromAPIRequest({ id: 123 }),
-  UserAPIResolver
-)
-```
+Constructs a data source from an effectual function.
 
 **Signature**
 
 ```ts
-declare const fromEffect: <A extends Request.Any>(f: (entry: Request.Entry<A>) => Effect.Effect<Request.Success<A>, Request.Error<A>>) => RequestResolver<A>
+declare const fromEffect: <R, A extends Request.Request<any, any>>(f: (a: A) => Effect.Effect<Request.Request.Success<A>, Request.Request.Error<A>, R>) => RequestResolver<A, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/RequestResolver.ts#L428)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/RequestResolver.ts#L282)
 
 Since v2.0.0

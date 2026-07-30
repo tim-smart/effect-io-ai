@@ -3,16 +3,14 @@ Module: `Schema`<br />
 
 ## Schema.Uint8ArrayFromBase64
 
-Type-level representation of `Uint8ArrayFromBase64`.
+Decodes a base64 (RFC4648) encoded string into a `Uint8Array`.
 
 **Signature**
 
 ```ts
-export interface Uint8ArrayFromBase64 extends decodeTo<Uint8Array, String> {
-  readonly "Rebuild": Uint8ArrayFromBase64
-}
+declare const Uint8ArrayFromBase64: Schema<Uint8Array<ArrayBufferLike>, string, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L13301)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schema.ts#L6269)
 
 Since v3.10.0

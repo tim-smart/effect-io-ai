@@ -3,31 +3,42 @@ Module: `Effect`<br />
 
 ## Effect.sleep
 
-Returns an effect that suspends the current fiber for the specified duration
-without blocking a JavaScript thread.
+Suspends the execution of an effect for a specified `Duration`.
 
-**Example** (Pausing without blocking)
+**Details**
+
+This function pauses the execution of an effect for a given duration. It is
+asynchronous, meaning that it does not block the fiber executing the effect.
+Instead, the fiber is suspended during the delay period and can resume once
+the specified time has passed.
+
+The duration can be specified using various formats supported by the
+`Duration` module, such as a string (`"2 seconds"`) or numeric value
+representing milliseconds.
+
+**Example**
 
 ```ts
-import { Console, Effect } from "effect"
+import { Effect } from "effect"
 
 const program = Effect.gen(function*() {
-  yield* Console.log("Start")
-  yield* Effect.sleep("2 seconds")
-  yield* Console.log("End")
+  console.log("Starting task...")
+  yield* Effect.sleep("3 seconds") // Waits for 3 seconds
+  console.log("Task completed!")
 })
 
 Effect.runFork(program)
-// Output: "Start" (immediately)
-// Output: "End" (after 2 seconds)
+// Output:
+// Starting task...
+// Task completed!
 ```
 
 **Signature**
 
 ```ts
-declare const sleep: (duration: Duration.Input) => Effect<void>
+declare const sleep: (duration: Duration.DurationInput) => Effect<void>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L4735)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L6903)
 
 Since v2.0.0

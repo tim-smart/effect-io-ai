@@ -3,23 +3,15 @@ Module: `Effect`<br />
 
 ## Effect.never
 
-Returns an effect that will never produce anything. The moral equivalent of
-`while(true) {}`, only without the wasted CPU cycles.
+An effect that that runs indefinitely and never produces any result. The
+moral equivalent of `while(true) {}`, only without the wasted CPU cycles.
 
-**Example** (Creating a never-ending effect)
+**When to Use**
 
-```ts
-import { Effect } from "effect"
-
-// This effect will never complete
-const program = Effect.never
-
-// This will run forever (or until interrupted)
-// Effect.runPromise(program) // Never resolves
-
-// Use with timeout for practical applications
-const timedProgram = Effect.timeout(program, "1 second")
-```
+It could be useful for long-running background tasks or to simulate waiting
+behavior without actually consuming resources. This effect is ideal for cases
+where you want to keep the program alive or in a certain state without
+performing any active work.
 
 **Signature**
 
@@ -27,6 +19,6 @@ const timedProgram = Effect.timeout(program, "1 second")
 declare const never: Effect<never, never, never>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L1283)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L3058)
 
 Since v2.0.0

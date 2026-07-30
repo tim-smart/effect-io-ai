@@ -3,31 +3,36 @@ Module: `HashSet`<br />
 
 ## HashSet.add
 
-Adds a value to the HashSet, returning a new HashSet.
+Adds a value to the `HashSet`.
 
-**Example** (Adding values to a HashSet)
+Time complexity: **`O(1)`** average
+
+**Example**
 
 ```ts
-import { HashSet } from "effect"
+// Syntax
+import { HashSet, pipe } from "effect"
 
-const set = HashSet.make("a", "b")
-const withC = HashSet.add(set, "c")
+// with data-last, a.k.a. pipeable API
+pipe(HashSet.empty(), HashSet.add(0), HashSet.add(0))
 
-console.log(HashSet.size(set)) // 2 (original unchanged)
-console.log(HashSet.size(withC)) // 3
-console.log(HashSet.has(withC, "c")) // true
+// or piped with the pipe function
+HashSet.empty().pipe(HashSet.add(0))
 
-// Adding existing value has no effect
-const same = HashSet.add(set, "a")
-console.log(HashSet.size(same)) // 2
+// or with data-first API
+HashSet.add(HashSet.empty(), 0)
 ```
+
+**See**
+
+- Other `HashSet` mutations are `module:HashSet.remove` `module:HashSet.toggle` `module:HashSet.beginMutation` `module:HashSet.endMutation` `module:HashSet.mutate`
 
 **Signature**
 
 ```ts
-declare const add: { <V>(value: V): (self: HashSet<V>) => HashSet<V>; <V>(self: HashSet<V>, value: V): HashSet<V>; }
+declare const add: { <A>(value: A): (self: HashSet<A>) => HashSet<A>; <A>(self: HashSet<A>, value: A): HashSet<A>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L223)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashSet.ts#L1261)
 
 Since v2.0.0

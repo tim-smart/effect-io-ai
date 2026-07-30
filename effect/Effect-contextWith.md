@@ -3,64 +3,24 @@ Module: `Effect`<br />
 
 ## Effect.contextWith
 
-Transforms the current context using the provided function.
-
-**When to use**
-
-Use to derive an effect from the complete `Context`.
+Accesses the context and applies a transformation function.
 
 **Details**
 
-This function allows you to access the complete context and perform
-computations based on all available services. This is useful when you need
-to conditionally execute logic based on what services are available.
-
-**Example** (Deriving values from the context)
-
-```ts
-import { Console, Context, Effect, Option } from "effect"
-
-const Logger = Context.Service<{
-  log: (msg: string) => void
-}>("Logger")
-const Cache = Context.Service<{
-  get: (key: string) => string | null
-}>("Cache")
-
-const program = Effect.contextWith((services) => {
-  const cacheOption = Context.getOption(services, Cache)
-  const hasCache = Option.isSome(cacheOption)
-
-  if (hasCache) {
-    return Effect.gen(function*() {
-      const cache = yield* Effect.service(Cache)
-      yield* Console.log("Using cached data")
-      return cache.get("user:123") || "default"
-    })
-  } else {
-    return Effect.gen(function*() {
-      yield* Console.log("No cache available, using fallback")
-      return "fallback data"
-    })
-  }
-})
-
-const withCache = Effect.provideService(program, Cache, {
-  get: () => "cached_value"
-})
-```
+This function retrieves the context of the effect and applies a pure
+transformation function to it. The result of the transformation is then
+returned within the effect.
 
 **See**
 
-- `context` for reading the complete context as a value
-- `service` for reading one service from the context
+- `contextWithEffect` for a version that allows effectful transformations.
 
 **Signature**
 
 ```ts
-declare const contextWith: <R, A, E, R2>(f: (context: Context.Context<R>) => Effect<A, E, R2>) => Effect<A, E, R | R2>
+declare const contextWith: <R, A>(f: (context: Context.Context<R>) => A) => Effect<A, never, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L5877)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L7417)
 
 Since v2.0.0

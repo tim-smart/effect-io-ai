@@ -3,37 +3,20 @@ Module: `Schedule`<br />
 
 ## Schedule.passthrough
 
-Returns a new `Schedule` that outputs the inputs of the specified schedule.
+Transforms a schedule to pass through its inputs as outputs.
 
-**Example** (Passing inputs through as outputs)
+**Details**
 
-```ts
-import { Console, Effect, Schedule } from "effect"
-
-// Create a schedule that outputs the inputs instead of original outputs
-const inputSchedule = Schedule.passthrough(
-  Schedule.exponential("100 millis").pipe(Schedule.upTo({ times: 3 }))
-)
-
-const program = Effect.gen(function*() {
-  let counter = 0
-  yield* Effect.repeat(
-    Effect.gen(function*() {
-      counter++
-      yield* Console.log(`Task ${counter} executed`)
-      return `result-${counter}`
-    }),
-    inputSchedule
-  )
-})
-```
+This function modifies an existing schedule so that it returns its input
+values instead of its original output values. The schedule's timing remains
+unchanged, but its outputs are replaced with whatever inputs it receives.
 
 **Signature**
 
 ```ts
-declare const passthrough: <Output, Input, Error, Env>(self: Schedule<Output, Input, Error, Env>) => Schedule<Input, Input, Error, Env>
+declare const passthrough: <Out, In, R>(self: Schedule<Out, In, R>) => Schedule<In, In, R>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L1683)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Schedule.ts#L1147)
 
 Since v2.0.0

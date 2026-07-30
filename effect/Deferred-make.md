@@ -5,29 +5,12 @@ Module: `Deferred`<br />
 
 Creates a new `Deferred`.
 
-**When to use**
-
-Use to allocate an empty `Deferred` inside an `Effect` workflow.
-
-**Example** (Creating a Deferred)
-
-```ts
-import { Deferred, Effect } from "effect"
-
-const program = Effect.gen(function*() {
-  const deferred = yield* Deferred.make<number>()
-  yield* Deferred.succeed(deferred, 42)
-  const value = yield* Deferred.await(deferred)
-  console.log(value) // 42
-})
-```
-
 **Signature**
 
 ```ts
-declare const make: <A, E = never>() => Effect<Deferred<A, E>>
+declare const make: <A, E = never>() => Effect.Effect<Deferred<A, E>>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Deferred.ts#L183)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Deferred.ts#L88)
 
 Since v2.0.0

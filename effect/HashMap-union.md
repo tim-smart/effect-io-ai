@@ -3,25 +3,7 @@ Module: `HashMap`<br />
 
 ## HashMap.union
 
-Combines two `HashMap`s into one.
-
-**Details**
-
-Entries from `that` are inserted into `self`; when both maps contain an
-equal key, the value from `that` replaces the value from `self`.
-
-**Example** (Combining HashMaps)
-
-```ts
-import { HashMap } from "effect"
-
-const map1 = HashMap.make(["a", 1], ["b", 2])
-const map2 = HashMap.make(["b", 20], ["c", 3])
-const union = HashMap.union(map1, map2)
-
-console.log(HashMap.size(union)) // 3
-console.log(HashMap.get(union, "b")) // Option.some(20) - map2 wins
-```
+Performs a union of this `HashMap` and that `HashMap`.
 
 **Signature**
 
@@ -29,6 +11,6 @@ console.log(HashMap.get(union, "b")) // Option.some(20) - map2 wins
 declare const union: { <K1, V1>(that: HashMap<K1, V1>): <K0, V0>(self: HashMap<K0, V0>) => HashMap<K1 | K0, V1 | V0>; <K0, V0, K1, V1>(self: HashMap<K0, V0>, that: HashMap<K1, V1>): HashMap<K0 | K1, V0 | V1>; }
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashMap.ts#L912)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/effect/src/HashMap.ts#L377)
 
 Since v2.0.0
