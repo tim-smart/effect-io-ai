@@ -8,9 +8,9 @@ Create a MessagePack serialization with custom msgpackr options.
 **Signature**
 
 ```ts
-declare const makeMsgPack: (options?: Msgpackr.Options | undefined) => RpcSerialization["Type"]
+declare const makeMsgPack: (options?: (Msgpackr.Options & StreamOptions) | undefined) => RpcSerialization["Type"]
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcSerialization.ts#L400)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcSerialization.ts#L461)
 
 Since v1.0.0

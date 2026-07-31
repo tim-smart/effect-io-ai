@@ -9,9 +9,9 @@ new lines.
 **Signature**
 
 ```ts
-declare const layerNdJsonRpc: (options?: { readonly contentType?: string | undefined; }) => Layer.Layer<RpcSerialization>
+declare const layerNdJsonRpc: (options?: { readonly contentType?: string | undefined; readonly maxBufferSize?: number | "unbounded" | undefined; }) => Layer.Layer<RpcSerialization>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcSerialization.ts#L481)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcSerialization.ts#L562)
 
 Since v1.0.0

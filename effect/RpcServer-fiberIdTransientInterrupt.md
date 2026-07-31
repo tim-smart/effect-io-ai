@@ -11,6 +11,6 @@ Fiber id used for transient interruptions.
 declare const fiberIdTransientInterrupt: FiberId.Runtime
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L1427)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L1428)
 
 Since v1.0.0

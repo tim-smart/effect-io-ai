@@ -14,6 +14,6 @@ It also responds to `Ping` requests.
 declare const layer: Layer.Layer<never, never, Sharding.Sharding | MessageStorage.MessageStorage | RpcServer.Protocol>
 ```
 
-[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RunnerServer.ts#L150)
+[Source](https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/RunnerServer.ts#L180)
 
 Since v1.0.0
