@@ -49006,7 +49006,7 @@
     "since": "1.0.0",
     "category": "fiber refs",
     "signature": "declare class MaxParts",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Multipart.ts#L695"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Multipart.ts#L697"
   },
   {
     "_tag": "Class",
@@ -49021,7 +49021,7 @@
     "since": "1.0.0",
     "category": "fiber refs",
     "signature": "declare class MaxFieldSize",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Multipart.ts#L716"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Multipart.ts#L718"
   },
   {
     "_tag": "Class",
@@ -49036,7 +49036,7 @@
     "since": "1.0.0",
     "category": "fiber refs",
     "signature": "declare class MaxFileSize",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Multipart.ts#L737"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Multipart.ts#L739"
   },
   {
     "_tag": "Class",
@@ -49051,7 +49051,7 @@
     "since": "1.0.0",
     "category": "fiber refs",
     "signature": "declare class FieldMimeTypes",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Multipart.ts#L762"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Multipart.ts#L764"
   },
   {
     "_tag": "Constant",
@@ -49141,7 +49141,7 @@
     "since": "1.0.0",
     "category": null,
     "signature": "declare const collectUint8Array: Channel.Channel<never, Chunk.Chunk<Uint8Array<ArrayBufferLike>>, unknown, unknown, Uint8Array<ArrayBufferLike>, unknown, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Multipart.ts#L484"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Multipart.ts#L486"
   },
   {
     "_tag": "Constant",
@@ -49156,7 +49156,7 @@
     "since": "1.0.0",
     "category": "fiber refs",
     "signature": "declare const withLimits: { (options: { readonly maxParts?: Option.Option<number> | undefined; readonly maxFieldSize?: FileSystem.SizeInput | undefined; readonly maxFileSize?: Option.Option<FileSystem.SizeInput> | undefined; readonly maxTotalSize?: Option.Option<FileSystem.SizeInput> | undefined; readonly fieldMimeTypes?: ReadonlyArray<string> | undefined; }): <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>; <A, E, R>(effect: Effect.Effect<A, E, R>, options: { readonly maxParts?: Option.Option<number> | undefined; readonly maxFieldSize?: FileSystem.SizeInput | undefined; readonly maxFileSize?: Option.Option<FileSystem.SizeInput> | undefined; readonly maxTotalSize?: Option.Option<FileSystem.SizeInput> | undefined; readonly fieldMimeTypes?: ReadonlyArray<string> | undefined; }): Effect.Effect<A, E, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Multipart.ts#L585"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Multipart.ts#L587"
   },
   {
     "_tag": "Constant",
@@ -49171,7 +49171,7 @@
     "since": "1.0.0",
     "category": "fiber refs",
     "signature": "declare const withLimitsStream: { (options: { readonly maxParts?: Option.Option<number> | undefined; readonly maxFieldSize?: FileSystem.SizeInput | undefined; readonly maxFileSize?: Option.Option<FileSystem.SizeInput> | undefined; readonly maxTotalSize?: Option.Option<FileSystem.SizeInput> | undefined; readonly fieldMimeTypes?: ReadonlyArray<string> | undefined; }): <A, E, R>(stream: Stream.Stream<A, E, R>) => Stream.Stream<A, E, R>; <A, E, R>(stream: Stream.Stream<A, E, R>, options: { readonly maxParts?: Option.Option<number> | undefined; readonly maxFieldSize?: FileSystem.SizeInput | undefined; readonly maxFileSize?: Option.Option<FileSystem.SizeInput> | undefined; readonly maxTotalSize?: Option.Option<FileSystem.SizeInput> | undefined; readonly fieldMimeTypes?: ReadonlyArray<string> | undefined; }): Stream.Stream<A, E, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Multipart.ts#L644"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Multipart.ts#L646"
   },
   {
     "_tag": "Constant",
@@ -49186,7 +49186,7 @@
     "since": "1.0.0",
     "category": "fiber refs",
     "signature": "declare const withMaxParts: { (count: Option.Option<number>): <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>; <A, E, R>(effect: Effect.Effect<A, E, R>, count: Option.Option<number>): Effect.Effect<A, E, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Multipart.ts#L703"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Multipart.ts#L705"
   },
   {
     "_tag": "Constant",
@@ -49201,7 +49201,7 @@
     "since": "1.0.0",
     "category": "fiber refs",
     "signature": "declare const withMaxFieldSize: { (size: FileSystem.SizeInput): <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>; <A, E, R>(effect: Effect.Effect<A, E, R>, size: FileSystem.SizeInput): Effect.Effect<A, E, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Multipart.ts#L724"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Multipart.ts#L726"
   },
   {
     "_tag": "Constant",
@@ -49216,7 +49216,7 @@
     "since": "1.0.0",
     "category": "fiber refs",
     "signature": "declare const withMaxFileSize: { (size: Option.Option<FileSystem.SizeInput>): <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>; <A, E, R>(effect: Effect.Effect<A, E, R>, size: Option.Option<FileSystem.SizeInput>): Effect.Effect<A, E, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Multipart.ts#L745"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Multipart.ts#L747"
   },
   {
     "_tag": "Constant",
@@ -49231,7 +49231,7 @@
     "since": "1.0.0",
     "category": "fiber refs",
     "signature": "declare const withFieldMimeTypes: { (mimeTypes: ReadonlyArray<string>): <A, E, R>(effect: Effect.Effect<A, E, R>) => Effect.Effect<A, E, R>; <A, E, R>(effect: Effect.Effect<A, E, R>, mimeTypes: ReadonlyArray<string>): Effect.Effect<A, E, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Multipart.ts#L770"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Multipart.ts#L772"
   },
   {
     "_tag": "Function",
@@ -49366,7 +49366,7 @@
     "since": "1.0.0",
     "category": "Conversions",
     "signature": "declare const toPersisted: (stream: Stream.Stream<Part, MultipartError>, writeFile?: (path: string, file: File) => Effect.Effect<void, MultipartError, FileSystem.FileSystem>) => Effect.Effect<Persisted, MultipartError, FileSystem.FileSystem | Path.Path | Scope.Scope>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Multipart.ts#L512"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Multipart.ts#L514"
   },
   {
     "_tag": "Interface",
@@ -49501,7 +49501,7 @@
     "since": "1.0.0",
     "category": "fiber refs",
     "signature": "type Options = {\n    readonly maxParts?: Option.Option<number> | undefined\n    readonly maxFieldSize?: FileSystem.SizeInput | undefined\n    readonly maxFileSize?: Option.Option<FileSystem.SizeInput> | undefined\n    readonly maxTotalSize?: Option.Option<FileSystem.SizeInput> | undefined\n    readonly fieldMimeTypes?: ReadonlyArray<string> | undefined\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Multipart.ts#L682"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform/src/Multipart.ts#L684"
   },
   {
     "_tag": "Class",
