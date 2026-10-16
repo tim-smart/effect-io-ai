@@ -232,6 +232,22 @@
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ClusterMetrics.ts#L42"
   },
   {
+    "_tag": "Constant",
+    "module": {
+      "name": "ClusterMetrics.ts",
+      "path": "src/ClusterMetrics.ts"
+    },
+    "project": "@effect/cluster",
+    "name": "shardReleaseDuration",
+    "description": "Time taken to release a shard after it is reassigned or its lock is lost,\nfrom entity teardown until the release completes. Includes retries and any\nwait for shard lock storage to recover.\n\nOnly successful releases are recorded. Shutdown handoff and forced releases\nare not.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "metrics",
+    "signature": "declare const shardReleaseDuration: Metric.Metric<MetricKeyType.Histogram, Duration, MetricState.Histogram>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ClusterMetrics.ts#L57"
+  },
+  {
     "_tag": "Class",
     "module": {
       "name": "ClusterSchema.ts",
@@ -268,13 +284,29 @@
       "path": "src/ClusterSchema.ts"
     },
     "project": "@effect/cluster",
+    "name": "InterruptOnTermination",
+    "description": "Interrupts the request as soon as entity termination starts, instead of\nwaiting for `entityTerminationTimeout`. Defaults to `false`.\n\nUse for long-lived requests that never finish on their own. Persisted\nrequests resume on the next owner without saving the interrupt as a reply.\nNon-persisted requests receive an interrupt exit. Server-side\n`Uninterruptible` takes precedence.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Annotations",
+    "signature": "declare class InterruptOnTermination",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ClusterSchema.ts#L53"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "ClusterSchema.ts",
+      "path": "src/ClusterSchema.ts"
+    },
+    "project": "@effect/cluster",
     "name": "ShardGroup",
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "Annotations",
     "signature": "declare class ShardGroup",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ClusterSchema.ts#L45"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ClusterSchema.ts#L63"
   },
   {
     "_tag": "Class",
@@ -289,7 +321,7 @@
     "since": "1.0.0",
     "category": "Annotations",
     "signature": "declare class ClientTracingEnabled",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ClusterSchema.ts#L53"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ClusterSchema.ts#L71"
   },
   {
     "_tag": "Constant",
@@ -3543,7 +3575,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "declare class Sharding",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Sharding.ts#L69"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Sharding.ts#L70"
   },
   {
     "_tag": "Constant",
@@ -3558,7 +3590,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layer: Layer.Layer<Sharding, never, Runners | MessageStorage.MessageStorage | RunnerStorage | ShardingConfig | RunnerHealth.RunnerHealth>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Sharding.ts#L1542"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Sharding.ts#L1698"
   },
   {
     "_tag": "Class",

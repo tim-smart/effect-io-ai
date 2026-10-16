@@ -192,7 +192,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const make: <R extends { [K in keyof R]: Bun.RouterTypes.RouteValue<Extract<K, string>>; } = {}>(options: ServeOptions<R>) => Effect.Effect<Server.HttpServer, never, Scope.Scope>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L35"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L43"
   },
   {
     "_tag": "Constant",
@@ -207,7 +207,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerServer: <R extends { [K in keyof R]: Bun.RouterTypes.RouteValue<Extract<K, string>>; } = {}>(options: ServeOptions<R>) => Layer.Layer<Server.HttpServer>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L43"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L51"
   },
   {
     "_tag": "Constant",
@@ -222,7 +222,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layer: <R extends { [K in keyof R]: Bun.RouterTypes.RouteValue<Extract<K, string>>; } = {}>(options: ServeOptions<R>) => Layer.Layer<Server.HttpServer | Platform.HttpPlatform | Etag.Generator | BunContext.BunContext>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L51"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L59"
   },
   {
     "_tag": "Constant",
@@ -238,7 +238,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerTest: Layer.Layer<Server.HttpServer | Platform.HttpPlatform | Etag.Generator | BunContext.BunContext | HttpClient.HttpClient, HttpServerError.ServeError, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L62"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L70"
   },
   {
     "_tag": "Constant",
@@ -253,7 +253,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerConfig: <R extends { [K in keyof R]: Bun.RouterTypes.RouteValue<Extract<K, string>>; } = {}>(options: Config.Config.Wrap<ServeOptions<R>>) => Layer.Layer<Server.HttpServer | Platform.HttpPlatform | Etag.Generator | BunContext.BunContext, ConfigError.ConfigError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L75"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L83"
   },
   {
     "_tag": "Constant",
@@ -269,7 +269,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerContext: Layer.Layer<Platform.HttpPlatform | Etag.Generator | BunContext.BunContext, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L92"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L100"
   },
   {
     "_tag": "TypeAlias",
@@ -283,7 +283,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Options",
-    "signature": "type ServeOptions<R> = & (\n    | Omit<Bun.ServeOptions, \"fetch\" | \"error\">\n    | Bun.TLSServeOptions\n    | Bun.UnixServeOptions\n    | Bun.UnixTLSServeOptions\n  )\n  & { readonly routes?: R }",
+    "signature": "type ServeOptions<R> = & (\n    | Omit<Bun.ServeOptions, \"fetch\" | \"error\">\n    | Bun.TLSServeOptions\n    | Bun.UnixServeOptions\n    | Bun.UnixTLSServeOptions\n  )\n  & {\n    readonly routes?: R\n    readonly websocket?:\n      | Omit<\n        Bun.WebSocketHandler<unknown>,\n        \"open\" | \"message\" | \"close\" | \"drain\" | \"ping\" | \"pong\" | \"data\" | \"binaryType\"\n      >\n      | undefined\n  }",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L22"
   },
   {

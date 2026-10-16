@@ -20916,6 +20916,22 @@
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ClusterMetrics.ts#L42"
   },
   {
+    "_tag": "Constant",
+    "module": {
+      "name": "ClusterMetrics.ts",
+      "path": "src/ClusterMetrics.ts"
+    },
+    "project": "@effect/cluster",
+    "name": "shardReleaseDuration",
+    "description": "Time taken to release a shard after it is reassigned or its lock is lost,\nfrom entity teardown until the release completes. Includes retries and any\nwait for shard lock storage to recover.\n\nOnly successful releases are recorded. Shutdown handoff and forced releases\nare not.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "metrics",
+    "signature": "declare const shardReleaseDuration: Metric.Metric<MetricKeyType.Histogram, Duration, MetricState.Histogram>",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ClusterMetrics.ts#L57"
+  },
+  {
     "_tag": "Class",
     "module": {
       "name": "ClusterSchema.ts",
@@ -20952,13 +20968,29 @@
       "path": "src/ClusterSchema.ts"
     },
     "project": "@effect/cluster",
+    "name": "InterruptOnTermination",
+    "description": "Interrupts the request as soon as entity termination starts, instead of\nwaiting for `entityTerminationTimeout`. Defaults to `false`.\n\nUse for long-lived requests that never finish on their own. Persisted\nrequests resume on the next owner without saving the interrupt as a reply.\nNon-persisted requests receive an interrupt exit. Server-side\n`Uninterruptible` takes precedence.",
+    "deprecated": false,
+    "examples": [],
+    "since": "1.0.0",
+    "category": "Annotations",
+    "signature": "declare class InterruptOnTermination",
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ClusterSchema.ts#L53"
+  },
+  {
+    "_tag": "Class",
+    "module": {
+      "name": "ClusterSchema.ts",
+      "path": "src/ClusterSchema.ts"
+    },
+    "project": "@effect/cluster",
     "name": "ShardGroup",
     "deprecated": false,
     "examples": [],
     "since": "1.0.0",
     "category": "Annotations",
     "signature": "declare class ShardGroup",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ClusterSchema.ts#L45"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ClusterSchema.ts#L63"
   },
   {
     "_tag": "Class",
@@ -20973,7 +21005,7 @@
     "since": "1.0.0",
     "category": "Annotations",
     "signature": "declare class ClientTracingEnabled",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ClusterSchema.ts#L53"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/ClusterSchema.ts#L71"
   },
   {
     "_tag": "Constant",
@@ -24227,7 +24259,7 @@
     "since": "1.0.0",
     "category": "models",
     "signature": "declare class Sharding",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Sharding.ts#L69"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Sharding.ts#L70"
   },
   {
     "_tag": "Constant",
@@ -24242,7 +24274,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layer: Layer.Layer<Sharding, never, Runners | MessageStorage.MessageStorage | RunnerStorage | ShardingConfig | RunnerHealth.RunnerHealth>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Sharding.ts#L1542"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/cluster/src/Sharding.ts#L1698"
   },
   {
     "_tag": "Class",
@@ -32639,7 +32671,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const make: <R extends { [K in keyof R]: Bun.RouterTypes.RouteValue<Extract<K, string>>; } = {}>(options: ServeOptions<R>) => Effect.Effect<Server.HttpServer, never, Scope.Scope>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L35"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L43"
   },
   {
     "_tag": "Constant",
@@ -32654,7 +32686,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerServer: <R extends { [K in keyof R]: Bun.RouterTypes.RouteValue<Extract<K, string>>; } = {}>(options: ServeOptions<R>) => Layer.Layer<Server.HttpServer>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L43"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L51"
   },
   {
     "_tag": "Constant",
@@ -32669,7 +32701,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layer: <R extends { [K in keyof R]: Bun.RouterTypes.RouteValue<Extract<K, string>>; } = {}>(options: ServeOptions<R>) => Layer.Layer<Server.HttpServer | Platform.HttpPlatform | Etag.Generator | BunContext.BunContext>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L51"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L59"
   },
   {
     "_tag": "Constant",
@@ -32685,7 +32717,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerTest: Layer.Layer<Server.HttpServer | Platform.HttpPlatform | Etag.Generator | BunContext.BunContext | HttpClient.HttpClient, HttpServerError.ServeError, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L62"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L70"
   },
   {
     "_tag": "Constant",
@@ -32700,7 +32732,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerConfig: <R extends { [K in keyof R]: Bun.RouterTypes.RouteValue<Extract<K, string>>; } = {}>(options: Config.Config.Wrap<ServeOptions<R>>) => Layer.Layer<Server.HttpServer | Platform.HttpPlatform | Etag.Generator | BunContext.BunContext, ConfigError.ConfigError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L75"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L83"
   },
   {
     "_tag": "Constant",
@@ -32716,7 +32748,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerContext: Layer.Layer<Platform.HttpPlatform | Etag.Generator | BunContext.BunContext, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L92"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L100"
   },
   {
     "_tag": "TypeAlias",
@@ -32730,7 +32762,7 @@
     "examples": [],
     "since": "1.0.0",
     "category": "Options",
-    "signature": "type ServeOptions<R> = & (\n    | Omit<Bun.ServeOptions, \"fetch\" | \"error\">\n    | Bun.TLSServeOptions\n    | Bun.UnixServeOptions\n    | Bun.UnixTLSServeOptions\n  )\n  & { readonly routes?: R }",
+    "signature": "type ServeOptions<R> = & (\n    | Omit<Bun.ServeOptions, \"fetch\" | \"error\">\n    | Bun.TLSServeOptions\n    | Bun.UnixServeOptions\n    | Bun.UnixTLSServeOptions\n  )\n  & {\n    readonly routes?: R\n    readonly websocket?:\n      | Omit<\n        Bun.WebSocketHandler<unknown>,\n        \"open\" | \"message\" | \"close\" | \"drain\" | \"ping\" | \"pong\" | \"data\" | \"binaryType\"\n      >\n      | undefined\n  }",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/platform-bun/src/BunHttpServer.ts#L22"
   },
   {
@@ -63450,7 +63482,7 @@
     "since": "1.0.0",
     "category": "protocol",
     "signature": "declare class Protocol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L793"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L798"
   },
   {
     "_tag": "Constant",
@@ -63495,7 +63527,7 @@
     "since": "1.0.0",
     "category": "protocol",
     "signature": "declare const makeProtocolSocketServer: Effect.Effect<{ readonly run: (f: (clientId: number, data: FromClientEncoded) => Effect.Effect<void>) => Effect.Effect<never>; readonly disconnects: Mailbox.ReadonlyMailbox<number>; readonly send: (clientId: number, response: FromServerEncoded, transferables?: ReadonlyArray<globalThis.Transferable>) => Effect.Effect<void>; readonly end: (clientId: number) => Effect.Effect<void>; readonly clientIds: Effect.Effect<ReadonlySet<number>>; readonly initialMessage: Effect.Effect<Option.Option<unknown>>; readonly supportsAck: boolean; readonly supportsTransferables: boolean; readonly supportsSpanPropagation: boolean; }, never, Scope.Scope | RpcSerialization.RpcSerialization | SocketServer.SocketServer>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L820"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L825"
   },
   {
     "_tag": "Constant",
@@ -63511,7 +63543,7 @@
     "since": "1.0.0",
     "category": "protocol",
     "signature": "declare const layerProtocolSocketServer: Layer.Layer<Protocol, never, RpcSerialization.RpcSerialization | SocketServer.SocketServer>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L836"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L841"
   },
   {
     "_tag": "Constant",
@@ -63526,7 +63558,7 @@
     "since": "1.0.0",
     "category": "protocol",
     "signature": "declare const makeProtocolWithHttpAppWebsocket: Effect.Effect<{ readonly protocol: Protocol[\"Type\"]; readonly httpApp: HttpApp.Default<never, Scope.Scope>; }, never, RpcSerialization.RpcSerialization>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L846"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L851"
   },
   {
     "_tag": "Constant",
@@ -63541,7 +63573,7 @@
     "since": "1.0.0",
     "category": "protocol",
     "signature": "declare const makeProtocolWebsocket: <I = HttpRouter.Default>(options: { readonly path: HttpRouter.PathInput; readonly routerTag?: Context.Tag<I, HttpRouter.HttpRouter.Service<any, any>>; }) => Effect.Effect<Protocol[\"Type\"], never, RpcSerialization.RpcSerialization | I>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L870"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L875"
   },
   {
     "_tag": "Constant",
@@ -63556,7 +63588,7 @@
     "since": "1.0.0",
     "category": "protocol",
     "signature": "declare const makeProtocolWebsocketRouter: (options: { readonly path: HttpRouter.PathInput; }) => Effect.Effect<Protocol[\"Type\"], never, RpcSerialization.RpcSerialization | HttpLayerRouter.HttpRouter>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L894"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L899"
   },
   {
     "_tag": "Constant",
@@ -63571,7 +63603,7 @@
     "since": "1.0.0",
     "category": "protocol",
     "signature": "declare const makeProtocolWithHttpApp: Effect.Effect<{ readonly protocol: Protocol[\"Type\"]; readonly httpApp: HttpApp.Default<never, Scope.Scope>; }, never, RpcSerialization.RpcSerialization>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L945"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L950"
   },
   {
     "_tag": "Constant",
@@ -63586,7 +63618,7 @@
     "since": "1.0.0",
     "category": "protocol",
     "signature": "declare const makeProtocolHttp: <I = HttpRouter.Default>(options: { readonly path: HttpRouter.PathInput; readonly routerTag?: HttpRouter.HttpRouter.TagClass<I, string, any, any>; }) => Effect.Effect<{ readonly run: (f: (clientId: number, data: FromClientEncoded) => Effect.Effect<void>) => Effect.Effect<never>; readonly disconnects: Mailbox.ReadonlyMailbox<number>; readonly send: (clientId: number, response: FromServerEncoded, transferables?: ReadonlyArray<globalThis.Transferable>) => Effect.Effect<void>; readonly end: (clientId: number) => Effect.Effect<void>; readonly clientIds: Effect.Effect<ReadonlySet<number>>; readonly initialMessage: Effect.Effect<Option.Option<unknown>>; readonly supportsAck: boolean; readonly supportsTransferables: boolean; readonly supportsSpanPropagation: boolean; }, never, RpcSerialization.RpcSerialization | I>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L1102"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L1107"
   },
   {
     "_tag": "Constant",
@@ -63601,7 +63633,7 @@
     "since": "1.0.0",
     "category": "protocol",
     "signature": "declare const makeProtocolHttpRouter: (options: { readonly path: HttpRouter.PathInput; }) => Effect.Effect<{ readonly run: (f: (clientId: number, data: FromClientEncoded) => Effect.Effect<void>) => Effect.Effect<never>; readonly disconnects: Mailbox.ReadonlyMailbox<number>; readonly send: (clientId: number, response: FromServerEncoded, transferables?: ReadonlyArray<globalThis.Transferable>) => Effect.Effect<void>; readonly end: (clientId: number) => Effect.Effect<void>; readonly clientIds: Effect.Effect<ReadonlySet<number>>; readonly initialMessage: Effect.Effect<Option.Option<unknown>>; readonly supportsAck: boolean; readonly supportsTransferables: boolean; readonly supportsSpanPropagation: boolean; }, never, RpcSerialization.RpcSerialization | HttpLayerRouter.HttpRouter>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L1117"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L1122"
   },
   {
     "_tag": "Constant",
@@ -63616,7 +63648,7 @@
     "since": "1.0.0",
     "category": "protocol",
     "signature": "declare const makeProtocolWorkerRunner: Effect.Effect<{ readonly run: (f: (clientId: number, data: FromClientEncoded) => Effect.Effect<void>) => Effect.Effect<never>; readonly disconnects: Mailbox.ReadonlyMailbox<number>; readonly send: (clientId: number, response: FromServerEncoded, transferables?: ReadonlyArray<globalThis.Transferable>) => Effect.Effect<void>; readonly end: (clientId: number) => Effect.Effect<void>; readonly clientIds: Effect.Effect<ReadonlySet<number>>; readonly initialMessage: Effect.Effect<Option.Option<unknown>>; readonly supportsAck: boolean; readonly supportsTransferables: boolean; readonly supportsSpanPropagation: boolean; }, WorkerError, Scope.Scope | WorkerRunner.PlatformRunner>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L1130"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L1135"
   },
   {
     "_tag": "Constant",
@@ -63631,7 +63663,7 @@
     "since": "1.0.0",
     "category": "protocol",
     "signature": "declare const layerProtocolWorkerRunner: Layer.Layer<Protocol, WorkerError, WorkerRunner.PlatformRunner>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L1187"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L1192"
   },
   {
     "_tag": "Constant",
@@ -63646,7 +63678,7 @@
     "since": "1.0.0",
     "category": "http app",
     "signature": "declare const toHttpApp: <Rpcs extends Rpc.Any>(group: RpcGroup.RpcGroup<Rpcs>, options?: { readonly disableTracing?: boolean | undefined; readonly spanPrefix?: string | undefined; readonly spanAttributes?: Record<string, unknown> | undefined; readonly disableFatalDefects?: boolean | undefined; } | undefined) => Effect.Effect<HttpApp.Default<never, Scope.Scope>, never, Scope.Scope | RpcSerialization.RpcSerialization | Rpc.ToHandler<Rpcs> | Rpc.Context<Rpcs> | Rpc.Middleware<Rpcs>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L1227"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L1232"
   },
   {
     "_tag": "Constant",
@@ -63661,7 +63693,7 @@
     "since": "1.0.0",
     "category": "http app",
     "signature": "declare const toHttpAppWebsocket: <Rpcs extends Rpc.Any>(group: RpcGroup.RpcGroup<Rpcs>, options?: { readonly disableTracing?: boolean | undefined; readonly spanPrefix?: string | undefined; readonly spanAttributes?: Record<string, unknown> | undefined; readonly disableFatalDefects?: boolean | undefined; } | undefined) => Effect.Effect<HttpApp.Default<never, Scope.Scope>, never, Scope.Scope | RpcSerialization.RpcSerialization | Rpc.ToHandler<Rpcs> | Rpc.Context<Rpcs> | Rpc.Middleware<Rpcs>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L1265"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L1270"
   },
   {
     "_tag": "Constant",
@@ -63677,7 +63709,7 @@
     "since": "1.0.0",
     "category": "protocol",
     "signature": "declare const makeProtocolStdio: <EIn, EOut, RIn, ROut>(options: { readonly stdin: Stream.Stream<Uint8Array, EIn, RIn>; readonly stdout: Sink.Sink<void, Uint8Array | string, unknown, EOut, ROut>; }) => Effect.Effect<{ readonly run: (f: (clientId: number, data: FromClientEncoded) => Effect.Effect<void>) => Effect.Effect<never>; readonly disconnects: Mailbox.ReadonlyMailbox<number>; readonly send: (clientId: number, response: FromServerEncoded, transferables?: ReadonlyArray<globalThis.Transferable>) => Effect.Effect<void>; readonly end: (clientId: number) => Effect.Effect<void>; readonly clientIds: Effect.Effect<ReadonlySet<number>>; readonly initialMessage: Effect.Effect<Option.Option<unknown>>; readonly supportsAck: boolean; readonly supportsTransferables: boolean; readonly supportsSpanPropagation: boolean; }, never, Scope.Scope | RpcSerialization.RpcSerialization | RIn | Exclude<ROut, Scope.Scope>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L1343"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L1348"
   },
   {
     "_tag": "Constant",
@@ -63693,7 +63725,7 @@
     "since": "1.0.0",
     "category": "Interruption",
     "signature": "declare const fiberIdClientInterrupt: FiberId.Runtime",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L1420"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L1425"
   },
   {
     "_tag": "Constant",
@@ -63709,7 +63741,7 @@
     "since": "1.0.0",
     "category": "Interruption",
     "signature": "declare const fiberIdTransientInterrupt: FiberId.Runtime",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L1428"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L1433"
   },
   {
     "_tag": "Function",
@@ -63724,7 +63756,7 @@
     "since": "1.0.0",
     "category": "server",
     "signature": "declare const layer: <Rpcs extends Rpc.Any>(group: RpcGroup.RpcGroup<Rpcs>, options?: { readonly disableTracing?: boolean | undefined; readonly spanPrefix?: string | undefined; readonly spanAttributes?: Record<string, unknown> | undefined; readonly concurrency?: number | \"unbounded\" | undefined; readonly disableFatalDefects?: boolean | undefined; }) => Layer.Layer<never, never, Protocol | Rpc.ToHandler<Rpcs> | Rpc.Context<Rpcs> | Rpc.Middleware<Rpcs>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L736"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L741"
   },
   {
     "_tag": "Function",
@@ -63740,7 +63772,7 @@
     "since": "1.0.0",
     "category": "protocol",
     "signature": "declare const layerHttpRouter: <Rpcs extends Rpc.Any>(options: { readonly group: RpcGroup.RpcGroup<Rpcs>; readonly path: HttpRouter.PathInput; readonly protocol?: \"http\" | \"websocket\" | undefined; readonly disableTracing?: boolean | undefined; readonly spanPrefix?: string | undefined; readonly spanAttributes?: Record<string, unknown> | undefined; readonly concurrency?: number | \"unbounded\" | undefined; readonly disableFatalDefects?: boolean | undefined; }) => Layer.Layer<never, never, RpcSerialization.RpcSerialization | HttpLayerRouter.HttpRouter | Rpc.ToHandler<Rpcs> | Rpc.Context<Rpcs> | Rpc.Middleware<Rpcs>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L763"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L768"
   },
   {
     "_tag": "Function",
@@ -63756,7 +63788,7 @@
     "since": "1.0.0",
     "category": "protocol",
     "signature": "declare const layerProtocolWebsocket: <I = HttpRouter.Default>(options: { readonly path: HttpRouter.PathInput; readonly routerTag?: HttpRouter.HttpRouter.TagClass<I, string, any, any>; }) => Layer.Layer<Protocol, never, RpcSerialization.RpcSerialization>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L917"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L922"
   },
   {
     "_tag": "Function",
@@ -63772,7 +63804,7 @@
     "since": "1.0.0",
     "category": "protocol",
     "signature": "declare const layerProtocolWebsocketRouter: (options: { readonly path: HttpLayerRouter.PathInput; }) => Layer.Layer<Protocol, never, RpcSerialization.RpcSerialization | HttpLayerRouter.HttpRouter>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L936"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L941"
   },
   {
     "_tag": "Function",
@@ -63788,7 +63820,7 @@
     "since": "1.0.0",
     "category": "protocol",
     "signature": "declare const layerProtocolHttp: <I = HttpRouter.Default>(options: { readonly path: HttpRouter.PathInput; readonly routerTag?: HttpRouter.HttpRouter.TagClass<I, string, any, any>; }) => Layer.Layer<Protocol, never, RpcSerialization.RpcSerialization>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L1199"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L1204"
   },
   {
     "_tag": "Function",
@@ -63804,7 +63836,7 @@
     "since": "1.0.0",
     "category": "protocol",
     "signature": "declare const layerProtocolHttpRouter: (options: { readonly path: HttpRouter.PathInput; }) => Layer.Layer<Protocol, never, RpcSerialization.RpcSerialization | HttpLayerRouter.HttpRouter>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L1218"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L1223"
   },
   {
     "_tag": "Function",
@@ -63820,7 +63852,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const toWebHandler: <Rpcs extends Rpc.Any, LE>(group: RpcGroup.RpcGroup<Rpcs>, options: { readonly layer: Layer.Layer<Rpc.ToHandler<Rpcs> | Rpc.Middleware<Rpcs> | RpcSerialization.RpcSerialization | HttpRouter.HttpRouter.DefaultServices, LE>; readonly disableTracing?: boolean | undefined; readonly spanPrefix?: string | undefined; readonly spanAttributes?: Record<string, unknown> | undefined; readonly disableFatalDefects?: boolean | undefined; readonly middleware?: (httpApp: HttpApp.Default) => HttpApp.Default<never, HttpRouter.HttpRouter.DefaultServices>; readonly memoMap?: Layer.MemoMap; }) => { readonly handler: (request: globalThis.Request, context?: Context.Context<never> | undefined) => Promise<Response>; readonly dispose: () => Promise<void>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L1305"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L1310"
   },
   {
     "_tag": "Function",
@@ -63836,7 +63868,7 @@
     "since": "1.0.0",
     "category": "protocol",
     "signature": "declare const layerProtocolStdio: <EIn, EOut, RIn, ROut>(options: { readonly stdin: Stream.Stream<Uint8Array, EIn, RIn>; readonly stdout: Sink.Sink<void, Uint8Array | string, unknown, EOut, ROut>; }) => Layer.Layer<Protocol, never, RpcSerialization.RpcSerialization | RIn | ROut>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L1408"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/rpc/src/RpcServer.ts#L1413"
   },
   {
     "_tag": "Interface",
@@ -65843,7 +65875,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "declare const fromPool: (options: PgClientFromPoolOptions) => Effect.Effect<PgClient, SqlError, Scope.Scope | Reactivity.Reactivity>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-pg/src/PgClient.ts#L495"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-pg/src/PgClient.ts#L494"
   },
   {
     "_tag": "Function",
@@ -65873,7 +65905,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerConfig: (config: Config.Config.Wrap<PgClientConfig>) => Layer.Layer<PgClient | Client.SqlClient, ConfigError.ConfigError | SqlError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-pg/src/PgClient.ts#L557"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-pg/src/PgClient.ts#L556"
   },
   {
     "_tag": "Function",
@@ -65888,7 +65920,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layer: (config: PgClientConfig) => Layer.Layer<PgClient | Client.SqlClient, SqlError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-pg/src/PgClient.ts#L575"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-pg/src/PgClient.ts#L574"
   },
   {
     "_tag": "Function",
@@ -65903,7 +65935,7 @@
     "since": "1.0.0",
     "category": "layers",
     "signature": "declare const layerFromPool: (options: PgClientFromPoolOptions) => Layer.Layer<PgClient | Client.SqlClient, SqlError>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-pg/src/PgClient.ts#L589"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-pg/src/PgClient.ts#L588"
   },
   {
     "_tag": "Function",
@@ -65918,7 +65950,7 @@
     "since": "1.0.0",
     "category": "constructor",
     "signature": "declare const makeCompiler: (transform?: (_: string) => string, transformJson?: boolean) => Statement.Compiler",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-pg/src/PgClient.ts#L603"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-pg/src/PgClient.ts#L602"
   },
   {
     "_tag": "Interface",
@@ -65963,7 +65995,7 @@
     "since": "1.0.0",
     "category": "constructors",
     "signature": "export interface PgClientFromPoolOptions {\n  readonly acquire: Effect.Effect<Pg.Pool, SqlError, Scope.Scope>\n\n  readonly applicationName?: string | undefined\n  readonly spanAttributes?: Record<string, unknown> | undefined\n\n  readonly transformResultNames?: ((str: string) => string) | undefined\n  readonly transformQueryNames?: ((str: string) => string) | undefined\n  readonly transformJson?: boolean | undefined\n  readonly types?: Pg.CustomTypesConfig | undefined\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-pg/src/PgClient.ts#L475"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-pg/src/PgClient.ts#L474"
   },
   {
     "_tag": "TypeAlias",
@@ -65993,7 +66025,7 @@
     "since": "1.0.0",
     "category": "custom types",
     "signature": "type PgCustom = PgJson",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-pg/src/PgClient.ts#L652"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/sql-pg/src/PgClient.ts#L651"
   },
   {
     "_tag": "Constant",
@@ -97048,7 +97080,7 @@
     "since": "2.0.0",
     "category": "Semaphore",
     "signature": "declare const unsafeMakeSemaphore: (permits: number) => Semaphore",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L11829"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L11834"
   },
   {
     "_tag": "Constant",
@@ -97064,7 +97096,7 @@
     "since": "2.0.0",
     "category": "Semaphore",
     "signature": "declare const makeSemaphore: (permits: number) => Effect<Semaphore>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L11852"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L11857"
   },
   {
     "_tag": "Constant",
@@ -97079,7 +97111,7 @@
     "since": "3.8.0",
     "category": "Latch",
     "signature": "declare const unsafeMakeLatch: (open?: boolean | undefined) => Latch",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L11969"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L11974"
   },
   {
     "_tag": "Constant",
@@ -97095,7 +97127,7 @@
     "since": "3.8.0",
     "category": "Latch",
     "signature": "declare const makeLatch: (open?: boolean | undefined) => Effect<Latch, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12008"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12013"
   },
   {
     "_tag": "Constant",
@@ -97111,7 +97143,7 @@
     "since": "2.0.0",
     "category": "Running Effects",
     "signature": "declare const runFork: <A, E>(effect: Effect<A, E>, options?: Runtime.RunForkOptions) => Fiber.RuntimeFiber<A, E>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12064"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12069"
   },
   {
     "_tag": "Constant",
@@ -97127,7 +97159,7 @@
     "since": "2.0.0",
     "category": "Running Effects",
     "signature": "declare const runCallback: <A, E>(effect: Effect<A, E>, options?: Runtime.RunCallbackOptions<A, E> | undefined) => Runtime.Cancel<A, E>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12087"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12092"
   },
   {
     "_tag": "Constant",
@@ -97143,7 +97175,7 @@
     "since": "2.0.0",
     "category": "Running Effects",
     "signature": "declare const runPromise: <A, E>(effect: Effect<A, E, never>, options?: { readonly signal?: AbortSignal | undefined; } | undefined) => Promise<A>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12136"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12141"
   },
   {
     "_tag": "Constant",
@@ -97159,7 +97191,7 @@
     "since": "2.0.0",
     "category": "Running Effects",
     "signature": "declare const runPromiseExit: <A, E>(effect: Effect<A, E, never>, options?: { readonly signal?: AbortSignal; } | undefined) => Promise<Exit.Exit<A, E>>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12197"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12202"
   },
   {
     "_tag": "Constant",
@@ -97175,7 +97207,7 @@
     "since": "2.0.0",
     "category": "Running Effects",
     "signature": "declare const runSync: <A, E>(effect: Effect<A, E>) => A",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12279"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12284"
   },
   {
     "_tag": "Constant",
@@ -97191,7 +97223,7 @@
     "since": "2.0.0",
     "category": "Running Effects",
     "signature": "declare const runSyncExit: <A, E>(effect: Effect<A, E>) => Exit.Exit<A, E>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12357"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12362"
   },
   {
     "_tag": "Constant",
@@ -97207,7 +97239,7 @@
     "since": "2.0.0",
     "category": "Error Accumulation",
     "signature": "declare const validate: { <B, E1, R1>(that: Effect<B, E1, R1>, options?: { readonly concurrent?: boolean | undefined; readonly batching?: boolean | \"inherit\" | undefined; readonly concurrentFinalizers?: boolean | undefined; } | undefined): <A, E, R>(self: Effect<A, E, R>) => Effect<[A, B], E1 | E, R1 | R>; <A, E, R, B, E1, R1>(self: Effect<A, E, R>, that: Effect<B, E1, R1>, options?: { readonly concurrent?: boolean | undefined; readonly batching?: boolean | \"inherit\" | undefined; readonly concurrentFinalizers?: boolean | undefined; } | undefined): Effect<[A, B], E | E1, R | R1>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12411"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12416"
   },
   {
     "_tag": "Constant",
@@ -97223,7 +97255,7 @@
     "since": "2.0.0",
     "category": "Error Accumulation",
     "signature": "declare const validateWith: { <B, E1, R1, A, C>(that: Effect<B, E1, R1>, f: (a: A, b: B) => C, options?: { readonly concurrent?: boolean | undefined; readonly batching?: boolean | \"inherit\" | undefined; readonly concurrentFinalizers?: boolean | undefined; } | undefined): <E, R>(self: Effect<A, E, R>) => Effect<C, E1 | E, R1 | R>; <A, E, R, B, E1, R1, C>(self: Effect<A, E, R>, that: Effect<B, E1, R1>, f: (a: A, b: B) => C, options?: { readonly concurrent?: boolean | undefined; readonly batching?: boolean | \"inherit\" | undefined; readonly concurrentFinalizers?: boolean | undefined; } | undefined): Effect<C, E | E1, R | R1>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12452"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12457"
   },
   {
     "_tag": "Constant",
@@ -97239,7 +97271,7 @@
     "since": "2.0.0",
     "category": "Zipping",
     "signature": "declare const zip: { <A2, E2, R2>(that: Effect<A2, E2, R2>, options?: { readonly concurrent?: boolean | undefined; readonly batching?: boolean | \"inherit\" | undefined; readonly concurrentFinalizers?: boolean | undefined; } | undefined): <A, E, R>(self: Effect<A, E, R>) => Effect<[A, A2], E2 | E, R2 | R>; <A, E, R, A2, E2, R2>(self: Effect<A, E, R>, that: Effect<A2, E2, R2>, options?: { readonly concurrent?: boolean | undefined; readonly batching?: boolean | \"inherit\" | undefined; readonly concurrentFinalizers?: boolean | undefined; } | undefined): Effect<[A, A2], E | E2, R | R2>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12551"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12556"
   },
   {
     "_tag": "Constant",
@@ -97255,7 +97287,7 @@
     "since": "2.0.0",
     "category": "Zipping",
     "signature": "declare const zipLeft: { <A2, E2, R2>(that: Effect<A2, E2, R2>, options?: { readonly concurrent?: boolean | undefined; readonly batching?: boolean | \"inherit\" | undefined; readonly concurrentFinalizers?: boolean | undefined; } | undefined): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E2 | E, R2 | R>; <A, E, R, A2, E2, R2>(self: Effect<A, E, R>, that: Effect<A2, E2, R2>, options?: { readonly concurrent?: boolean | undefined; readonly batching?: boolean | \"inherit\" | undefined; readonly concurrentFinalizers?: boolean | undefined; } | undefined): Effect<A, E | E2, R | R2>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12625"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12630"
   },
   {
     "_tag": "Constant",
@@ -97271,7 +97303,7 @@
     "since": "2.0.0",
     "category": "Zipping",
     "signature": "declare const zipRight: { <A2, E2, R2>(that: Effect<A2, E2, R2>, options?: { readonly concurrent?: boolean | undefined; readonly batching?: boolean | \"inherit\" | undefined; readonly concurrentFinalizers?: boolean | undefined; }): <A, E, R>(self: Effect<A, E, R>) => Effect<A2, E2 | E, R2 | R>; <A, E, R, A2, E2, R2>(self: Effect<A, E, R>, that: Effect<A2, E2, R2>, options?: { readonly concurrent?: boolean | undefined; readonly batching?: boolean | \"inherit\" | undefined; readonly concurrentFinalizers?: boolean | undefined; }): Effect<A2, E2 | E, R2 | R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12699"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12704"
   },
   {
     "_tag": "Constant",
@@ -97287,7 +97319,7 @@
     "since": "2.0.0",
     "category": "Zipping",
     "signature": "declare const zipWith: { <A2, E2, R2, A, B>(that: Effect<A2, E2, R2>, f: (a: A, b: A2) => B, options?: { readonly concurrent?: boolean | undefined; readonly batching?: boolean | \"inherit\" | undefined; readonly concurrentFinalizers?: boolean | undefined; }): <E, R>(self: Effect<A, E, R>) => Effect<B, E2 | E, R2 | R>; <A, E, R, A2, E2, R2, B>(self: Effect<A, E, R>, that: Effect<A2, E2, R2>, f: (a: A, b: A2) => B, options?: { readonly concurrent?: boolean | undefined; readonly batching?: boolean | \"inherit\" | undefined; readonly concurrentFinalizers?: boolean | undefined; }): Effect<B, E2 | E, R2 | R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12762"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12767"
   },
   {
     "_tag": "Constant",
@@ -97303,7 +97335,7 @@
     "since": "2.0.0",
     "category": null,
     "signature": "declare const ap: { <A, E2, R2>(that: Effect<A, E2, R2>): <B, R, E>(self: Effect<(a: A) => B, E, R>) => Effect<B, E | E2, R | R2>; <A, B, E, R, E2, R2>(self: Effect<(a: A) => B, E, R>, that: Effect<A, E2, R2>): Effect<B, E | E2, R | R2>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12797"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12802"
   },
   {
     "_tag": "Constant",
@@ -97318,7 +97350,7 @@
     "since": "2.0.0",
     "category": "Requests & Batching",
     "signature": "declare const blocked: <A, E>(blockedRequests: RequestBlock, _continue: Effect<A, E>) => Blocked<A, E>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12810"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12815"
   },
   {
     "_tag": "Constant",
@@ -97333,7 +97365,7 @@
     "since": "2.0.0",
     "category": "Requests & Batching",
     "signature": "declare const runRequestBlock: (blockedRequests: RequestBlock) => Effect<void>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12816"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12821"
   },
   {
     "_tag": "Constant",
@@ -97348,7 +97380,7 @@
     "since": "2.0.0",
     "category": "Requests & Batching",
     "signature": "declare const step: <A, E, R>(self: Effect<A, E, R>) => Effect<Exit.Exit<A, E> | Blocked<A, E>, never, R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12822"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12827"
   },
   {
     "_tag": "Constant",
@@ -97363,7 +97395,7 @@
     "since": "2.0.0",
     "category": "Requests & Batching",
     "signature": "declare const request: { <A extends Request.Request<any, any>, Ds extends RequestResolver<A> | Effect<RequestResolver<A>, any, any>>(dataSource: Ds): (self: A) => Effect<Request.Request.Success<A>, Request.Request.Error<A>, [Ds] extends [Effect<any, any, any>] ? Effect.Context<Ds> : never>; <Ds extends RequestResolver<A> | Effect<RequestResolver<A>, any, any>, A extends Request.Request<any, any>>(self: A, dataSource: Ds): Effect<Request.Request.Success<A>, Request.Request.Error<A>, [Ds] extends [Effect<any, any, any>] ? Effect.Context<Ds> : never>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12828"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12833"
   },
   {
     "_tag": "Constant",
@@ -97378,7 +97410,7 @@
     "since": "2.0.0",
     "category": "Requests & Batching",
     "signature": "declare const cacheRequestResult: <A extends Request.Request<any, any>>(request: A, result: Request.Request.Result<A>) => Effect<void>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12855"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12860"
   },
   {
     "_tag": "Constant",
@@ -97393,7 +97425,7 @@
     "since": "2.0.0",
     "category": "Requests & Batching",
     "signature": "declare const withRequestBatching: { (requestBatching: boolean): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, R>; <A, E, R>(self: Effect<A, E, R>, requestBatching: boolean): Effect<A, E, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12864"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12869"
   },
   {
     "_tag": "Constant",
@@ -97408,7 +97440,7 @@
     "since": "2.0.0",
     "category": "Requests & Batching",
     "signature": "declare const withRequestCaching: { (strategy: boolean): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, R>; <A, E, R>(self: Effect<A, E, R>, strategy: boolean): Effect<A, E, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12873"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12878"
   },
   {
     "_tag": "Constant",
@@ -97423,7 +97455,7 @@
     "since": "2.0.0",
     "category": "Requests & Batching",
     "signature": "declare const withRequestCache: { (cache: Request.Cache): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, R>; <A, E, R>(self: Effect<A, E, R>, cache: Request.Cache): Effect<A, E, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12882"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12887"
   },
   {
     "_tag": "Constant",
@@ -97438,7 +97470,7 @@
     "since": "2.0.0",
     "category": "Tracing",
     "signature": "declare const tracer: Effect<Tracer.Tracer, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12891"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12896"
   },
   {
     "_tag": "Constant",
@@ -97453,7 +97485,7 @@
     "since": "2.0.0",
     "category": "Tracing",
     "signature": "declare const tracerWith: <A, E, R>(f: (tracer: Tracer.Tracer) => Effect<A, E, R>) => Effect<A, E, R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12897"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12902"
   },
   {
     "_tag": "Constant",
@@ -97468,7 +97500,7 @@
     "since": "2.0.0",
     "category": "Tracing",
     "signature": "declare const withTracer: { (value: Tracer.Tracer): <A, E, R>(effect: Effect<A, E, R>) => Effect<A, E, R>; <A, E, R>(effect: Effect<A, E, R>, value: Tracer.Tracer): Effect<A, E, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12904"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12909"
   },
   {
     "_tag": "Constant",
@@ -97483,7 +97515,7 @@
     "since": "2.0.0",
     "category": "Tracing",
     "signature": "declare const withTracerScoped: (value: Tracer.Tracer) => Effect<void, never, Scope.Scope>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12913"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12918"
   },
   {
     "_tag": "Constant",
@@ -97499,7 +97531,7 @@
     "since": "2.0.0",
     "category": "Tracing",
     "signature": "declare const withTracerEnabled: { (enabled: boolean): <A, E, R>(effect: Effect<A, E, R>) => Effect<A, E, R>; <A, E, R>(effect: Effect<A, E, R>, enabled: boolean): Effect<A, E, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12934"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12939"
   },
   {
     "_tag": "Constant",
@@ -97514,7 +97546,7 @@
     "since": "2.0.0",
     "category": "Tracing",
     "signature": "declare const withTracerTiming: { (enabled: boolean): <A, E, R>(effect: Effect<A, E, R>) => Effect<A, E, R>; <A, E, R>(effect: Effect<A, E, R>, enabled: boolean): Effect<A, E, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12943"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12948"
   },
   {
     "_tag": "Constant",
@@ -97530,7 +97562,7 @@
     "since": "2.0.0",
     "category": "Tracing",
     "signature": "declare const annotateSpans: { (key: string, value: unknown): <A, E, R>(effect: Effect<A, E, R>) => Effect<A, E, R>; (values: Record<string, unknown>): <A, E, R>(effect: Effect<A, E, R>) => Effect<A, E, R>; <A, E, R>(effect: Effect<A, E, R>, key: string, value: unknown): Effect<A, E, R>; <A, E, R>(effect: Effect<A, E, R>, values: Record<string, unknown>): Effect<A, E, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12965"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12970"
   },
   {
     "_tag": "Constant",
@@ -97546,7 +97578,7 @@
     "since": "2.0.0",
     "category": "Tracing",
     "signature": "declare const annotateCurrentSpan: { (key: string, value: unknown): Effect<void>; (values: Record<string, unknown>): Effect<void>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12990"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12995"
   },
   {
     "_tag": "Constant",
@@ -97561,7 +97593,7 @@
     "since": "2.0.0",
     "category": "Tracing",
     "signature": "declare const currentSpan: Effect<Tracer.Span, Cause.NoSuchElementException, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L12999"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13004"
   },
   {
     "_tag": "Constant",
@@ -97576,7 +97608,7 @@
     "since": "3.20.0",
     "category": "Tracing",
     "signature": "declare const currentPropagatedSpan: Effect<Tracer.Span, Cause.NoSuchElementException, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13005"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13010"
   },
   {
     "_tag": "Constant",
@@ -97591,7 +97623,7 @@
     "since": "2.0.0",
     "category": "Tracing",
     "signature": "declare const currentParentSpan: Effect<Tracer.AnySpan, Cause.NoSuchElementException, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13011"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13016"
   },
   {
     "_tag": "Constant",
@@ -97606,7 +97638,7 @@
     "since": "2.0.0",
     "category": "Tracing",
     "signature": "declare const spanAnnotations: Effect<HashMap.HashMap<string, unknown>, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13017"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13022"
   },
   {
     "_tag": "Constant",
@@ -97621,7 +97653,7 @@
     "since": "2.0.0",
     "category": "Tracing",
     "signature": "declare const spanLinks: Effect<Chunk.Chunk<Tracer.SpanLink>, never, never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13023"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13028"
   },
   {
     "_tag": "Constant",
@@ -97637,7 +97669,7 @@
     "since": "2.0.0",
     "category": "Tracing",
     "signature": "declare const linkSpans: { (span: Tracer.AnySpan, attributes?: Record<string, unknown>): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, R>; <A, E, R>(self: Effect<A, E, R>, span: Tracer.AnySpan, attributes?: Record<string, unknown>): Effect<A, E, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13031"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13036"
   },
   {
     "_tag": "Constant",
@@ -97653,7 +97685,7 @@
     "since": "3.14.0",
     "category": "Tracing",
     "signature": "declare const linkSpanCurrent: { (span: Tracer.AnySpan, attributes?: Readonly<Record<string, unknown>> | undefined): Effect<void>; (links: ReadonlyArray<Tracer.SpanLink>): Effect<void>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13049"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13054"
   },
   {
     "_tag": "Constant",
@@ -97669,7 +97701,7 @@
     "since": "2.0.0",
     "category": "Tracing",
     "signature": "declare const makeSpan: (name: string, options?: Tracer.SpanOptions) => Effect<Tracer.Span>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13060"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13065"
   },
   {
     "_tag": "Constant",
@@ -97685,7 +97717,7 @@
     "since": "2.0.0",
     "category": "Tracing",
     "signature": "declare const makeSpanScoped: (name: string, options?: Tracer.SpanOptions | undefined) => Effect<Tracer.Span, never, Scope.Scope>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13075"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13080"
   },
   {
     "_tag": "Constant",
@@ -97701,7 +97733,7 @@
     "since": "2.0.0",
     "category": "Tracing",
     "signature": "declare const useSpan: { <A, E, R>(name: string, evaluate: (span: Tracer.Span) => Effect<A, E, R>): Effect<A, E, R>; <A, E, R>(name: string, options: Tracer.SpanOptions, evaluate: (span: Tracer.Span) => Effect<A, E, R>): Effect<A, E, R>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13090"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13095"
   },
   {
     "_tag": "Constant",
@@ -97717,7 +97749,7 @@
     "since": "2.0.0",
     "category": "Tracing",
     "signature": "declare const withSpan: { (name: string, options?: Tracer.SpanOptions | undefined): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, Exclude<R, Tracer.ParentSpan>>; <A, E, R>(self: Effect<A, E, R>, name: string, options?: Tracer.SpanOptions | undefined): Effect<A, E, Exclude<R, Tracer.ParentSpan>>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13105"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13110"
   },
   {
     "_tag": "Constant",
@@ -97733,7 +97765,7 @@
     "since": "3.2.0",
     "category": "Tracing",
     "signature": "declare const functionWithSpan: <Args extends Array<any>, Ret extends Effect<any, any, any>>(options: { readonly body: (...args: Args) => Ret; readonly options: FunctionWithSpanOptions | ((...args: Args) => FunctionWithSpanOptions); readonly captureStackTrace?: boolean | undefined; }) => (...args: Args) => Unify.Unify<Ret>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13153"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13158"
   },
   {
     "_tag": "Constant",
@@ -97749,7 +97781,7 @@
     "since": "2.0.0",
     "category": "Tracing",
     "signature": "declare const withSpanScoped: { (name: string, options?: Tracer.SpanOptions): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, Exclude<R, Tracer.ParentSpan> | Scope.Scope>; <A, E, R>(self: Effect<A, E, R>, name: string, options?: Tracer.SpanOptions): Effect<A, E, Exclude<R, Tracer.ParentSpan> | Scope.Scope>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13169"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13174"
   },
   {
     "_tag": "Constant",
@@ -97765,7 +97797,7 @@
     "since": "2.0.0",
     "category": "Tracing",
     "signature": "declare const withParentSpan: { (span: Tracer.AnySpan): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, Exclude<R, Tracer.ParentSpan>>; <A, E, R>(self: Effect<A, E, R>, span: Tracer.AnySpan): Effect<A, E, Exclude<R, Tracer.ParentSpan>>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13187"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13192"
   },
   {
     "_tag": "Constant",
@@ -97781,7 +97813,7 @@
     "since": "2.0.0",
     "category": "Optional Wrapping & Unwrapping",
     "signature": "declare const fromNullable: <A>(value: A) => Effect<NonNullable<A>, Cause.NoSuchElementException>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13248"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13253"
   },
   {
     "_tag": "Constant",
@@ -97797,7 +97829,7 @@
     "since": "2.0.0",
     "category": "Optional Wrapping & Unwrapping",
     "signature": "declare const optionFromOptional: <A, E, R>(self: Effect<A, E, R>) => Effect<Option.Option<A>, Exclude<E, Cause.NoSuchElementException>, R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13304"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13309"
   },
   {
     "_tag": "Constant",
@@ -97815,7 +97847,7 @@
     "since": "3.14.0",
     "category": "Optional Wrapping & Unwrapping",
     "signature": "declare const transposeMapOption: (<A, B, E = never, R = never>(f: (self: A) => Effect<B, E, R>) => (self: Option.Option<A>) => Effect<Option.Option<B>, E, R>) & (<A, B, E = never, R = never>(self: Option.Option<A>, f: (self: A) => Effect<B, E, R>) => Effect<Option.Option<B>, E, R>)",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13378"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13383"
   },
   {
     "_tag": "Constant",
@@ -97831,7 +97863,7 @@
     "since": "3.9.0",
     "category": "Context",
     "signature": "declare const Service: <Self = never>() => [Self] extends [never] ? MissingSelfGeneric : { <const Key extends string, const Make extends { readonly scoped: Effect<Service.AllowedType<Key, Make>, any, any> | ((...args: any) => Effect<Service.AllowedType<Key, Make>, any, any>); readonly dependencies?: ReadonlyArray<Layer.Layer.Any>; readonly accessors?: boolean; readonly ಠ_ಠ: never; } | { readonly effect: Effect<Service.AllowedType<Key, Make>, any, any> | ((...args: any) => Effect<Service.AllowedType<Key, Make>, any, any>); readonly dependencies?: ReadonlyArray<Layer.Layer.Any>; readonly accessors?: boolean; readonly ಠ_ಠ: never; } | { readonly sync: LazyArg<Service.AllowedType<Key, Make>>; readonly dependencies?: ReadonlyArray<Layer.Layer.Any>; readonly accessors?: boolean; readonly ಠ_ಠ: never; } | { readonly succeed: Service.AllowedType<Key, Make>; readonly dependencies?: ReadonlyArray<Layer.Layer.Any>; readonly accessors?: boolean; readonly ಠ_ಠ: never; }>(key: Key, make: Make): Service.Class<Self, Key, Make>; <const Key extends string, const Make extends NoExcessProperties<{ readonly scoped: Effect<Service.AllowedType<Key, Make>, any, any> | ((...args: any) => Effect<Service.AllowedType<Key, Make>, any, any>); readonly dependencies?: ReadonlyArray<Layer.Layer.Any>; readonly accessors?: boolean; }, Make>>(key: Key, make: Make): Service.Class<Self, Key, Make>; <const Key extends string, const Make extends NoExcessProperties<{ readonly effect: Effect<Service.AllowedType<Key, Make>, any, any> | ((...args: any) => Effect<Service.AllowedType<Key, Make>, any, any>); readonly dependencies?: ReadonlyArray<Layer.Layer.Any>; readonly accessors?: boolean; }, Make>>(key: Key, make: Make): Service.Class<Self, Key, Make>; <const Key extends string, const Make extends NoExcessProperties<{ readonly sync: LazyArg<Service.AllowedType<Key, Make>>; readonly dependencies?: ReadonlyArray<Layer.Layer.Any>; readonly accessors?: boolean; }, Make>>(key: Key, make: Make): Service.Class<Self, Key, Make>; <const Key extends string, const Make extends NoExcessProperties<{ readonly succeed: Service.AllowedType<Key, Make>; readonly dependencies?: ReadonlyArray<Layer.Layer.Any>; readonly accessors?: boolean; }, Make>>(key: Key, make: Make): Service.Class<Self, Key, Make>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13585"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13590"
   },
   {
     "_tag": "Constant",
@@ -97847,7 +97879,7 @@
     "since": "3.11.0",
     "category": "Tracing",
     "signature": "declare const fn: fn.Gen & fn.NonGen & ((name: string, options?: Tracer.SpanOptions) => fn.Gen & fn.NonGen)",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L14630"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L14635"
   },
   {
     "_tag": "Constant",
@@ -97863,7 +97895,7 @@
     "since": "3.12.0",
     "category": "Tracing",
     "signature": "declare const fnUntraced: fn.Untraced",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L14765"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L14770"
   },
   {
     "_tag": "Function",
@@ -97895,7 +97927,7 @@
     "since": "3.13.0",
     "category": "Optional Wrapping & Unwrapping",
     "signature": "declare const transposeOption: <A = never, E = never, R = never>(self: Option.Option<Effect<A, E, R>>) => Effect<Option.Option<A>, E, R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13338"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13343"
   },
   {
     "_tag": "Function",
@@ -97911,7 +97943,7 @@
     "since": "2.0.0",
     "category": "Context",
     "signature": "declare const Tag: <const Id extends string>(id: Id) => <Self, Type extends Tag.AllowedType>() => Context.TagClass<Self, Id, Type> & (Type extends Record<PropertyKey, any> ? Tag.Proxy<Self, Type> : {}) & { use: <X>(body: (_: Type) => X) => [X] extends [Effect<infer A, infer E, infer R>] ? Effect<A, E, R | Self> : [X] extends [PromiseLike<infer A>] ? Effect<A, Cause.UnknownException, Self> : Effect<X, never, Self>; }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13505"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13510"
   },
   {
     "_tag": "Function",
@@ -97929,7 +97961,7 @@
     "since": "3.17.0",
     "category": "Type constraints",
     "signature": "declare const ensureSuccessType: <A>() => <A2 extends A, E, R>(effect: Effect<A2, E, R>) => Effect<A2, E, R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L14784"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L14789"
   },
   {
     "_tag": "Function",
@@ -97947,7 +97979,7 @@
     "since": "3.17.0",
     "category": "Type constraints",
     "signature": "declare const ensureErrorType: <E>() => <A, E2 extends E, R>(effect: Effect<A, E2, R>) => Effect<A, E2, R>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L14799"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L14804"
   },
   {
     "_tag": "Function",
@@ -97965,7 +97997,7 @@
     "since": "3.17.0",
     "category": "Type constraints",
     "signature": "declare const ensureRequirementsType: <R>() => <A, E, R2 extends R>(effect: Effect<A, E, R2>) => Effect<A, E, R2>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L14814"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L14819"
   },
   {
     "_tag": "Interface",
@@ -98101,7 +98133,7 @@
     "examples": [],
     "since": "2.0.0",
     "category": "Semaphore",
-    "signature": "export interface Semaphore {\n  /**\n   * Adjusts the number of permits available in the semaphore.\n   */\n  resize(permits: number): Effect<void>\n\n  /**\n   * Runs an effect with the given number of permits and releases the permits\n   * when the effect completes.\n   *\n   * **Details**\n   *\n   * This function acquires the specified number of permits before executing\n   * the provided effect. Once the effect finishes, the permits are released.\n   * If insufficient permits are available, the function will wait until they\n   * are released by other tasks.\n   */\n  withPermits(permits: number): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, R>\n\n  /**\n   * Runs an effect only if the specified number of permits are immediately\n   * available.\n   *\n   * **Details**\n   *\n   * This function attempts to acquire the specified number of permits. If they\n   * are available, it runs the effect and releases the permits after the effect\n   * completes. If permits are not available, the effect does not execute, and\n   * the result is `Option.none`.\n   */\n  withPermitsIfAvailable(permits: number): <A, E, R>(self: Effect<A, E, R>) => Effect<Option.Option<A>, E, R>\n\n  /**\n   * Acquires the specified number of permits and returns the resulting\n   * available permits, suspending the task if they are not yet available.\n   * Concurrent pending `take` calls are processed in a first-in, first-out manner.\n   */\n  take(permits: number): Effect<number>\n\n  /**\n   * Releases the specified number of permits and returns the resulting\n   * available permits.\n   */\n  release(permits: number): Effect<number>\n\n  /**\n   * Releases all permits held by this semaphore and returns the resulting available permits.\n   */\n  releaseAll: Effect<number>\n}",
+    "signature": "export interface Semaphore {\n  /**\n   * Adjusts the number of permits available in the semaphore.\n   */\n  resize(permits: number): Effect<void>\n\n  /**\n   * Runs an effect with the given number of permits and releases the permits\n   * when the effect completes.\n   *\n   * **Details**\n   *\n   * This function acquires the specified number of permits before executing\n   * the provided effect. Once the effect finishes, the permits are released.\n   * If insufficient permits are available, the function will wait until they\n   * are released by other tasks.\n   */\n  withPermits(permits: number): <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, R>\n\n  /**\n   * Runs an effect only if the specified number of permits are immediately\n   * available.\n   *\n   * **Details**\n   *\n   * This function attempts to acquire the specified number of permits. If they\n   * are available, it runs the effect and releases the permits after the effect\n   * completes. If permits are not available, the effect does not execute, and\n   * the result is `Option.none`.\n   */\n  withPermitsIfAvailable(permits: number): <A, E, R>(self: Effect<A, E, R>) => Effect<Option.Option<A>, E, R>\n\n  /**\n   * Acquires the specified number of permits and returns the resulting\n   * available permits, suspending the task if they are not yet available.\n   * Concurrent pending `take` calls are processed in a first-in, first-out manner.\n   */\n  take(permits: number): Effect<number>\n\n  /**\n   * Releases the specified number of permits and returns the resulting\n   * available permits.\n   */\n  release(permits: number): Effect<number>\n\n  /**\n   * Releases all permits held by this semaphore and returns the resulting available permits.\n   *\n   * This does not stop effects already running with `withPermits` or\n   * `withPermitsIfAvailable`. Their permits become available immediately, but\n   * those effects still release their permits when they finish. The resulting\n   * available count can exceed the semaphore's capacity.\n   */\n  releaseAll: Effect<number>\n}",
     "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L11772"
   },
   {
@@ -98118,7 +98150,7 @@
     "since": "3.8.0",
     "category": "Latch",
     "signature": "export interface Latch extends Effect<void> {\n  /**\n   * Opens the latch, releasing all fibers waiting on it.\n   *\n   * **Details**\n   *\n   * Once the latch is opened, it remains open. Any fibers waiting on `await`\n   * will be released and can continue execution.\n   */\n  readonly open: Effect<void>\n\n  /**\n   * Opens the latch, releasing all fibers waiting on it.\n   *\n   * **Details**\n   *\n   * Once the latch is opened, it remains open. Any fibers waiting on `await`\n   * will be released and can continue execution.\n   */\n  readonly unsafeOpen: () => void\n\n  /**\n   * Releases all fibers waiting on the latch without opening it.\n   *\n   * **Details**\n   *\n   * This function lets waiting fibers proceed without permanently changing the\n   * state of the latch.\n   */\n  readonly release: Effect<void>\n\n  /**\n   * Waits for the latch to be opened.\n   *\n   * **Details**\n   *\n   * If the latch is already open, this effect completes immediately. Otherwise,\n   * it suspends the fiber until the latch is opened.\n   */\n  readonly await: Effect<void>\n\n  /**\n   * Closes the latch, blocking fibers from proceeding.\n   *\n   * **Details**\n   *\n   * This operation puts the latch into a closed state, requiring it to be\n   * reopened before waiting fibers can proceed.\n   */\n  readonly close: Effect<void>\n\n  /**\n   * Unsafely closes the latch, blocking fibers without effect guarantees.\n   *\n   * **Details**\n   *\n   * Use this operation cautiously, as it does not run within an effect context\n   * and bypasses runtime guarantees.\n   */\n  readonly unsafeClose: () => void\n\n  /**\n   * Runs the given effect only when the latch is open.\n   *\n   * **Details**\n   *\n   * This function ensures that the provided effect executes only if the latch\n   * is open. If the latch is closed, the fiber will wait until it opens.\n   */\n  readonly whenOpen: <A, E, R>(self: Effect<A, E, R>) => Effect<A, E, R>\n\n  readonly [Unify.typeSymbol]?: unknown\n  readonly [Unify.unifySymbol]?: LatchUnify<this>\n  readonly [Unify.ignoreSymbol]?: LatchUnifyIgnore\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L11873"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L11878"
   },
   {
     "_tag": "Interface",
@@ -98133,7 +98165,7 @@
     "since": "3.8.0",
     "category": "Models",
     "signature": "export interface LatchUnify<A extends { [Unify.typeSymbol]?: any }> extends EffectUnify<A> {\n  Latch?: () => Latch\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L11953"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L11958"
   },
   {
     "_tag": "Interface",
@@ -98148,7 +98180,7 @@
     "since": "3.8.0",
     "category": "Models",
     "signature": "export interface LatchUnifyIgnore extends EffectUnifyIgnore {\n  Effect?: true\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L11961"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L11966"
   },
   {
     "_tag": "Interface",
@@ -98164,7 +98196,7 @@
     "since": "3.2.0",
     "category": "Models",
     "signature": "export interface FunctionWithSpanOptions {\n  readonly name: string\n  readonly attributes?: Record<string, unknown> | undefined\n  readonly links?: ReadonlyArray<Tracer.SpanLink> | undefined\n  readonly parent?: Tracer.AnySpan | undefined\n  readonly root?: boolean | undefined\n  readonly context?: Context.Context<never> | undefined\n  readonly kind?: Tracer.SpanKind | undefined\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13123"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13128"
   },
   {
     "_tag": "TypeAlias",
@@ -98529,7 +98561,7 @@
     "since": "2.0.0",
     "category": "Models",
     "signature": "export interface ProhibitedType {\n    Service?: `property \"Service\" is forbidden`\n    Identifier?: `property \"Identifier\" is forbidden`\n    _op?: `property \"_op\" is forbidden`\n    of?: `property \"of\" is forbidden`\n    context?: `property \"context\" is forbidden`\n    key?: `property \"key\" is forbidden`\n    stack?: `property \"stack\" is forbidden`\n    name?: `property \"name\" is forbidden`\n    pipe?: `property \"pipe\" is forbidden`\n    use?: `property \"use\" is forbidden`\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13397"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13402"
   },
   {
     "_tag": "TypeAlias",
@@ -98544,7 +98576,7 @@
     "since": "2.0.0",
     "category": "Models",
     "signature": "type AllowedType = (Record<PropertyKey, any> & ProhibitedType) | string | number | symbol",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13414"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13419"
   },
   {
     "_tag": "TypeAlias",
@@ -98559,7 +98591,7 @@
     "since": "3.9.0",
     "category": "Models",
     "signature": "type Proxy<Self, Type> = {\n    [\n      k in keyof Type as Type[k] extends ((...args: infer Args extends ReadonlyArray<any>) => infer Ret) ?\n        ((...args: Readonly<Args>) => Ret) extends Type[k] ? k : never\n        : k\n    ]: Type[k] extends (...args: infer Args extends ReadonlyArray<any>) => Effect<infer A, infer E, infer R> ?\n      (...args: Readonly<Args>) => Effect<A, E, Self | R>\n      : Type[k] extends (...args: infer Args extends ReadonlyArray<any>) => Promise<infer A> ?\n        (...args: Readonly<Args>) => Effect<A, Cause.UnknownException, Self>\n      : Type[k] extends (...args: infer Args extends ReadonlyArray<any>) => infer A ?\n        (...args: Readonly<Args>) => Effect<A, never, Self>\n      : Type[k] extends Effect<infer A, infer E, infer R> ? Effect<A, E, Self | R>\n      : Effect<Type[k], never, Self>\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13420"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13425"
   },
   {
     "_tag": "Interface",
@@ -98574,7 +98606,7 @@
     "since": "3.9.0",
     "category": null,
     "signature": "export interface ProhibitedType {\n    Service?: `property \"Service\" is forbidden`\n    Identifier?: `property \"Identifier\" is forbidden`\n    Default?: `property \"Default\" is forbidden`\n    DefaultWithoutDependencies?: `property \"DefaultWithoutDependencies\" is forbidden`\n    _op_layer?: `property \"_op_layer\" is forbidden`\n    _op?: `property \"_op\" is forbidden`\n    of?: `property \"of\" is forbidden`\n    make?: `property \"make\" is forbidden`\n    context?: `property \"context\" is forbidden`\n    key?: `property \"key\" is forbidden`\n    stack?: `property \"stack\" is forbidden`\n    name?: `property \"name\" is forbidden`\n    pipe?: `property \"pipe\" is forbidden`\n    use?: `property \"use\" is forbidden`\n    _tag?: `property \"_tag\" is forbidden`\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13797"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13802"
   },
   {
     "_tag": "TypeAlias",
@@ -98589,7 +98621,7 @@
     "since": "3.9.0",
     "category": null,
     "signature": "type AllowedType<Key, Make> = MakeAccessors<Make> extends true ?\n      & Record<PropertyKey, any>\n      & {\n        readonly [K in Extract<keyof MakeService<Make>, keyof ProhibitedType>]: K extends \"_tag\" ? Key\n          : ProhibitedType[K]\n      }\n    : Record<PropertyKey, any> & { readonly _tag?: Key }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13818"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13823"
   },
   {
     "_tag": "TypeAlias",
@@ -98604,7 +98636,7 @@
     "since": "3.9.0",
     "category": null,
     "signature": "type Class<Self, Key, Make> = & {\n      new(_: MakeService<Make>): MakeService<Make> & {\n        readonly _tag: Key\n      }\n      readonly use: <X>(\n        body: (_: Self) => X\n      ) => [X] extends [Effect<infer A, infer E, infer R>] ? Effect<A, E, R | Self>\n        : [X] extends [PromiseLike<infer A>] ? Effect<A, Cause.UnknownException, Self>\n        : Effect<X, never, Self>\n      readonly make: (_: MakeService<Make>) => Self\n    }\n    & Context.Tag<Self, Self>\n    & { key: Key }\n    & (MakeAccessors<Make> extends true ? Tag.Proxy<Self, MakeService<Make>> : {})\n    & (MakeDeps<Make> extends never ? {\n        readonly Default: HasArguments<Make> extends true ?\n          (...args: MakeArguments<Make>) => Layer.Layer<Self, MakeError<Make>, MakeContext<Make>>\n          : Layer.Layer<Self, MakeError<Make>, MakeContext<Make>>\n      } :\n      {\n        readonly DefaultWithoutDependencies: HasArguments<Make> extends true\n          ? (...args: MakeArguments<Make>) => Layer.Layer<Self, MakeError<Make>, MakeContext<Make>>\n          : Layer.Layer<Self, MakeError<Make>, MakeContext<Make>>\n\n        readonly Default: HasArguments<Make> extends true ? (...args: MakeArguments<Make>) => Layer.Layer<\n            Self,\n            MakeError<Make> | MakeDepsE<Make>,\n            | Exclude<MakeContext<Make>, MakeDepsOut<Make>>\n            | MakeDepsIn<Make>\n          > :\n          Layer.Layer<\n            Self,\n            MakeError<Make> | MakeDepsE<Make>,\n            | Exclude<MakeContext<Make>, MakeDepsOut<Make>>\n            | MakeDepsIn<Make>\n          >\n      })",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13829"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13834"
   },
   {
     "_tag": "TypeAlias",
@@ -98619,7 +98651,7 @@
     "since": "3.9.0",
     "category": null,
     "signature": "type MakeService<Make> = Make extends { readonly effect: Effect<infer _A, infer _E, infer _R> } ? _A\n    : Make extends { readonly scoped: Effect<infer _A, infer _E, infer _R> } ? _A\n    : Make extends { readonly effect: (...args: infer _Args) => Effect<infer _A, infer _E, infer _R> } ? _A\n    : Make extends { readonly scoped: (...args: infer _Args) => Effect<infer _A, infer _E, infer _R> } ? _A\n    : Make extends { readonly sync: LazyArg<infer A> } ? A\n    : Make extends { readonly succeed: infer A } ? A\n    : never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13875"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13880"
   },
   {
     "_tag": "TypeAlias",
@@ -98634,7 +98666,7 @@
     "since": "3.9.0",
     "category": null,
     "signature": "type MakeError<Make> = Make extends { readonly effect: Effect<infer _A, infer _E, infer _R> } ? _E\n    : Make extends { readonly scoped: Effect<infer _A, infer _E, infer _R> } ? _E\n    : Make extends { readonly effect: (...args: infer _Args) => Effect<infer _A, infer _E, infer _R> } ? _E\n    : Make extends { readonly scoped: (...args: infer _Args) => Effect<infer _A, infer _E, infer _R> } ? _E\n    : never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13886"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13891"
   },
   {
     "_tag": "TypeAlias",
@@ -98649,7 +98681,7 @@
     "since": "3.9.0",
     "category": null,
     "signature": "type MakeContext<Make> = Make extends { readonly effect: Effect<infer _A, infer _E, infer _R> } ? _R\n    : Make extends { readonly scoped: Effect<infer _A, infer _E, infer _R> } ? Exclude<_R, Scope.Scope>\n    : Make extends { readonly effect: (...args: infer _Args) => Effect<infer _A, infer _E, infer _R> } ? _R\n    : Make extends { readonly scoped: (...args: infer _Args) => Effect<infer _A, infer _E, infer _R> } ?\n      Exclude<_R, Scope.Scope>\n    : never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13895"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13900"
   },
   {
     "_tag": "TypeAlias",
@@ -98664,7 +98696,7 @@
     "since": "3.9.0",
     "category": null,
     "signature": "type MakeDeps<Make> = Make extends { readonly dependencies: ReadonlyArray<Layer.Layer.Any> }\n    ? Make[\"dependencies\"][number]\n    : never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13905"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13910"
   },
   {
     "_tag": "TypeAlias",
@@ -98679,7 +98711,7 @@
     "since": "3.9.0",
     "category": null,
     "signature": "type MakeDepsOut<Make> = Contravariant.Type<MakeDeps<Make>[Layer.LayerTypeId][\"_ROut\"]>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13912"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13917"
   },
   {
     "_tag": "TypeAlias",
@@ -98694,7 +98726,7 @@
     "since": "3.9.0",
     "category": null,
     "signature": "type MakeDepsE<Make> = Covariant.Type<MakeDeps<Make>[Layer.LayerTypeId][\"_E\"]>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13917"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13922"
   },
   {
     "_tag": "TypeAlias",
@@ -98709,7 +98741,7 @@
     "since": "3.9.0",
     "category": null,
     "signature": "type MakeDepsIn<Make> = Covariant.Type<MakeDeps<Make>[Layer.LayerTypeId][\"_RIn\"]>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13922"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13927"
   },
   {
     "_tag": "TypeAlias",
@@ -98724,7 +98756,7 @@
     "since": "3.9.0",
     "category": null,
     "signature": "type MakeAccessors<Make> = Make extends { readonly accessors: true } ? true\n    : false",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13927"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13932"
   },
   {
     "_tag": "TypeAlias",
@@ -98739,7 +98771,7 @@
     "since": "3.16.0",
     "category": null,
     "signature": "type MakeArguments<Make> = Make extends\n    { readonly effect: (...args: infer Args) => Effect<infer _A, infer _E, infer _R> } ? Args\n    : Make extends { readonly scoped: (...args: infer Args) => Effect<infer _A, infer _E, infer _R> } ? Args\n    : never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13933"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13938"
   },
   {
     "_tag": "TypeAlias",
@@ -98754,7 +98786,7 @@
     "since": "3.16.0",
     "category": null,
     "signature": "type HasArguments<Make> = Make extends {\n    readonly scoped: (...args: ReadonlyArray<any>) => Effect<infer _A, infer _E, infer _R>\n  } ? true :\n    Make extends {\n      readonly effect: (...args: ReadonlyArray<any>) => Effect<infer _A, infer _E, infer _R>\n    } ? true :\n    false",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13941"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13946"
   },
   {
     "_tag": "TypeAlias",
@@ -98769,7 +98801,7 @@
     "since": "3.19.0",
     "category": "Models",
     "signature": "type Return<A, E, R> = Generator<YieldWrap<Effect<any, E, R>>, A, any>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13959"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13964"
   },
   {
     "_tag": "TypeAlias",
@@ -98784,7 +98816,7 @@
     "since": "3.11.0",
     "category": "Models",
     "signature": "type Gen = {\n    <Eff extends YieldWrap<Effect<any, any, any>>, AEff, Args extends Array<any>>(\n      body: (...args: Args) => Generator<Eff, AEff, never>\n    ): (...args: Args) => Effect<\n      AEff,\n      [Eff] extends [never] ? never : [Eff] extends [YieldWrap<Effect<infer _A, infer E, infer _R>>] ? E : never,\n      [Eff] extends [never] ? never : [Eff] extends [YieldWrap<Effect<infer _A, infer _E, infer R>>] ? R : never\n    >\n    <\n      Eff extends YieldWrap<Effect<any, any, any>>,\n      AEff,\n      Args extends Array<any>,\n      A extends Effect<any, any, any>\n    >(\n      body: (...args: Args) => Generator<Eff, AEff, never>,\n      a: (\n        _: Effect<\n          AEff,\n          [Eff] extends [never] ? never : [Eff] extends [YieldWrap<Effect<infer _A, infer E, infer _R>>] ? E : never,\n          [Eff] extends [never] ? never : [Eff] extends [YieldWrap<Effect<infer _A, infer _E, infer R>>] ? R : never\n        >,\n        ...args: NoInfer<Args>\n      ) => A\n    ): (...args: Args) => Effect.AsEffect<A>\n    <\n      Eff extends YieldWrap<Effect<any, any, any>>,\n      AEff,\n      Args extends Array<any>,\n      A,\n      B extends Effect<any, any, any>\n    >(\n      body: (...args: Args) => Generator<Eff, AEff, never>,\n      a: (\n        _: Effect<\n          AEff,\n          [Eff] extends [never] ? never : [Eff] extends [YieldWrap<Effect<infer _A, infer E, infer _R>>] ? E : never,\n          [Eff] extends [never] ? never : [Eff] extends [YieldWrap<Effect<infer _A, infer _E, infer R>>] ? R : never\n        >,\n        ...args: NoInfer<Args>\n      ) => A,\n      b: (_: A, ...args: NoInfer<Args>) => B\n    ): (...args: Args) => Effect.AsEffect<B>\n    <\n      Eff extends YieldWrap<Effect<any, any, any>>,\n      AEff,\n      Args extends Array<any>,\n      A,\n      B,\n      C extends Effect<any, any, any>\n    >(\n      body: (...args: Args) => Generator<Eff, AEff, never>,\n      a: (\n        _: Effect<\n          AEff,\n          [Eff] extends [never] ? never : [Eff] extends [YieldWrap<Effect<infer _A, infer E, infer _R>>] ? E : never,\n          [Eff] extends [never] ? never : [Eff] extends [YieldWrap<Effect<infer _A, infer _E, infer R>>] ? R : never\n        >,\n        ...args: NoInfer<Args>\n      ) => A,\n      b: (_: A, ...args: NoInfer<Args>) => B,\n      c: (_: B, ...args: NoInfer<Args>) => C\n    ): (...args: Args) => Effect.AsEffect<C>\n    <\n      Eff extends YieldWrap<Effect<any, any, any>>,\n      AEff,\n      Args extends Array<any>,\n      A,\n      B,\n      C,\n      D extends Effect<any, any, any>\n    >(\n      body: (...args: Args) => Generator<Eff, AEff, never>,\n      a: (\n        _: Effect<\n          AEff,\n          [Eff] extends [never] ? never : [Eff] extends [YieldWrap<Effect<infer _A, infer E, infer _R>>] ? E : never,\n          [Eff] extends [never] ? never : [Eff] extends [YieldWrap<Effect<infer _A, infer _E, infer R>>] ? R : never\n        >,\n        ...args: NoInfer<Args>\n      ) => A,\n      b: (_: A, ...args: NoInfer<Args>) => B,\n      c: (_: B, ...args: NoInfer<Args>) => C,\n      d: (_: C, ...args: NoInfer<Args>) => D\n    ): (...args: Args) => Effect.AsEffect<D>\n    <\n      Eff extends YieldWrap<Effect<any, any, any>>,\n      AEff,\n      Args extends Array<any>,\n      A,\n      B,\n      C,\n      D,\n      E extends Effect<any, any, any>\n    >(\n      body: (...args: Args) => Generator<Eff, AEff, never>,\n      a: (\n        _: Effect<\n          AEff,\n          [Eff] extends [never] ? never : [Eff] extends [YieldWrap<Effect<infer _A, infer E, infer _R>>] ? E : never,\n          [Eff] extends [never] ? never : [Eff] extends [YieldWrap<Effect<infer _A, infer _E, infer R>>] ? R : never\n        >,\n        ...args: NoInfer<Args>\n      ) => A,\n      b: (_: A, ...args: NoInfer<Args>) => B,\n      c: (_: B, ...args: NoInfer<Args>) => C,\n      d: (_: C, ...args: NoInfer<Args>) => D,\n      e: (_: D, ...args: NoInfer<Args>) => E\n    ): (...args: Args) => Effect.AsEffect<E>\n    <\n      Eff extends YieldWrap<Effect<any, any, any>>,\n      AEff,\n      Args extends Array<any>,\n      A,\n      B,\n      C,\n      D,\n      E,\n      F extends Effect<any, any, any>\n    >(\n      body: (...args: Args) => Generator<Eff, AEff, never>,\n      a: (\n        _: Effect<\n          AEff,\n          [Eff] extends [never] ? never : [Eff] extends [YieldWrap<Effect<infer _A, infer E, infer _R>>] ? E : never,\n          [Eff] extends [never] ? never : [Eff] extends [YieldWrap<Effect<infer _A, infer _E, infer R>>] ? R : never\n        >,\n        ...args: NoInfer<Args>\n      ) => A,\n      b: (_: A, ...args: NoInfer<Args>) => B,\n      c: (_: B, ...args: NoInfer<Args>) => C,\n      d: (_: C, ...args: NoInfer<Args>) => D,\n      e: (_: D, ...args: NoInfer<Args>) => E,\n      f: (_: E, ...args: NoInfer<Args>) => F\n    ): (...args: Args) => Effect.AsEffect<F>\n    <\n      Eff extends YieldWrap<Effect<any, any, any>>,\n      AEff,\n      Args extends Array<any>,\n      A,\n      B,\n      C,\n      D,\n      E,\n      F,\n      G extends Effect<any, any, any>\n    >(\n      body: (...args: Args) => Generator<Eff, AEff, never>,\n      a: (\n        _: Effect<\n          AEff,\n          [Eff] extends [never] ? never : [Eff] extends [YieldWrap<Effect<infer _A, infer E, infer _R>>] ? E : never,\n          [Eff] extends [never] ? never : [Eff] extends [YieldWrap<Effect<infer _A, infer _E, infer R>>] ? R : never\n        >,\n        ...args: NoInfer<Args>\n      ) => A,\n      b: (_: A, ...args: NoInfer<Args>) => B,\n      c: (_: B, ...args: NoInfer<Args>) => C,\n      d: (_: C, ...args: NoInfer<Args>) => D,\n      e: (_: D, ...args: NoInfer<Args>) => E,\n      f: (_: E, ...args: NoInfer<Args>) => F,\n      g: (_: F, ...args: NoInfer<Args>) => G\n    ): (...args: Args) => Effect.AsEffect<G>\n    <\n      Eff extends YieldWrap<Effect<any, any, any>>,\n      AEff,\n      Args extends Array<any>,\n      A,\n      B,\n      C,\n      D,\n      E,\n      F,\n      G,\n      H extends Effect<any, any, any>\n    >(\n      body: (...args: Args) => Generator<Eff, AEff, never>,\n      a: (\n        _: Effect<\n          AEff,\n          [Eff] extends [never] ? never : [Eff] extends [YieldWrap<Effect<infer _A, infer E, infer _R>>] ? E : never,\n          [Eff] extends [never] ? never : [Eff] extends [YieldWrap<Effect<infer _A, infer _E, infer R>>] ? R : never\n        >,\n        ...args: NoInfer<Args>\n      ) => A,\n      b: (_: A, ...args: NoInfer<Args>) => B,\n      c: (_: B, ...args: NoInfer<Args>) => C,\n      d: (_: C, ...args: NoInfer<Args>) => D,\n      e: (_: D, ...args: NoInfer<Args>) => E,\n      f: (_: E, ...args: NoInfer<Args>) => F,\n      g: (_: F, ...args: NoInfer<Args>) => G,\n      h: (_: G, ...args: NoInfer<Args>) => H\n    ): (...args: Args) => Effect.AsEffect<H>\n    <\n      Eff extends YieldWrap<Effect<any, any, any>>,\n      AEff,\n      Args extends Array<any>,\n      A,\n      B,\n      C,\n      D,\n      E,\n      F,\n      G,\n      H,\n      I extends Effect<any, any, any>\n    >(\n      body: (...args: Args) => Generator<Eff, AEff, never>,\n      a: (\n        _: Effect<\n          AEff,\n          [Eff] extends [never] ? never : [Eff] extends [YieldWrap<Effect<infer _A, infer E, infer _R>>] ? E : never,\n          [Eff] extends [never] ? never : [Eff] extends [YieldWrap<Effect<infer _A, infer _E, infer R>>] ? R : never\n        >,\n        ...args: NoInfer<Args>\n      ) => A,\n      b: (_: A, ...args: NoInfer<Args>) => B,\n      c: (_: B, ...args: NoInfer<Args>) => C,\n      d: (_: C, ...args: NoInfer<Args>) => D,\n      e: (_: D, ...args: NoInfer<Args>) => E,\n      f: (_: E, ...args: NoInfer<Args>) => F,\n      g: (_: F, ...args: NoInfer<Args>) => G,\n      h: (_: G, ...args: NoInfer<Args>) => H,\n      i: (_: H, ...args: NoInfer<Args>) => I\n    ): (...args: Args) => Effect.AsEffect<I>\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13964"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L13969"
   },
   {
     "_tag": "TypeAlias",
@@ -98799,7 +98831,7 @@
     "since": "3.11.0",
     "category": "Models",
     "signature": "type NonGen = {\n    <Eff extends Effect<any, any, any>, Args extends Array<any>>(\n      body: (...args: Args) => Eff\n    ): (...args: Args) => Effect.AsEffect<Eff>\n    <Eff extends Effect<any, any, any>, A, Args extends Array<any>>(\n      body: (...args: Args) => A,\n      a: (_: A, ...args: NoInfer<Args>) => Eff\n    ): (...args: Args) => Effect.AsEffect<Eff>\n    <Eff extends Effect<any, any, any>, A, B, Args extends Array<any>>(\n      body: (...args: Args) => A,\n      a: (_: A, ...args: NoInfer<Args>) => B,\n      b: (_: B, ...args: NoInfer<Args>) => Eff\n    ): (...args: Args) => Effect.AsEffect<Eff>\n    <Eff extends Effect<any, any, any>, A, B, C, Args extends Array<any>>(\n      body: (...args: Args) => A,\n      a: (_: A, ...args: NoInfer<Args>) => B,\n      b: (_: B, ...args: NoInfer<Args>) => C,\n      c: (_: C, ...args: NoInfer<Args>) => Eff\n    ): (...args: Args) => Effect.AsEffect<Eff>\n    <Eff extends Effect<any, any, any>, A, B, C, D, Args extends Array<any>>(\n      body: (...args: Args) => A,\n      a: (_: A, ...args: NoInfer<Args>) => B,\n      b: (_: B, ...args: NoInfer<Args>) => C,\n      c: (_: C, ...args: NoInfer<Args>) => D,\n      d: (_: D, ...args: NoInfer<Args>) => Eff\n    ): (...args: Args) => Effect.AsEffect<Eff>\n    <Eff extends Effect<any, any, any>, A, B, C, D, E, Args extends Array<any>>(\n      body: (...args: Args) => A,\n      a: (_: A, ...args: NoInfer<Args>) => B,\n      b: (_: B, ...args: NoInfer<Args>) => C,\n      c: (_: C, ...args: NoInfer<Args>) => D,\n      d: (_: D, ...args: NoInfer<Args>) => E,\n      e: (_: E, ...args: NoInfer<Args>) => Eff\n    ): (...args: Args) => Effect.AsEffect<Eff>\n    <Eff extends Effect<any, any, any>, A, B, C, D, E, F, Args extends Array<any>>(\n      body: (...args: Args) => A,\n      a: (_: A, ...args: NoInfer<Args>) => B,\n      b: (_: B, ...args: NoInfer<Args>) => C,\n      c: (_: C, ...args: NoInfer<Args>) => D,\n      d: (_: D, ...args: NoInfer<Args>) => E,\n      e: (_: E, ...args: NoInfer<Args>) => F,\n      f: (_: F, ...args: NoInfer<Args>) => Eff\n    ): (...args: Args) => Effect.AsEffect<Eff>\n    <Eff extends Effect<any, any, any>, A, B, C, D, E, F, G, Args extends Array<any>>(\n      body: (...args: Args) => A,\n      a: (_: A, ...args: NoInfer<Args>) => B,\n      b: (_: B, ...args: NoInfer<Args>) => C,\n      c: (_: C, ...args: NoInfer<Args>) => D,\n      d: (_: D, ...args: NoInfer<Args>) => E,\n      e: (_: E, ...args: NoInfer<Args>) => F,\n      f: (_: F, ...args: NoInfer<Args>) => G,\n      g: (_: G, ...args: NoInfer<Args>) => Eff\n    ): (...args: Args) => Effect.AsEffect<Eff>\n    <Eff extends Effect<any, any, any>, A, B, C, D, E, F, G, H, Args extends Array<any>>(\n      body: (...args: Args) => A,\n      a: (_: A, ...args: NoInfer<Args>) => B,\n      b: (_: B, ...args: NoInfer<Args>) => C,\n      c: (_: C, ...args: NoInfer<Args>) => D,\n      d: (_: D, ...args: NoInfer<Args>) => E,\n      e: (_: E, ...args: NoInfer<Args>) => F,\n      f: (_: F, ...args: NoInfer<Args>) => G,\n      g: (_: G, ...args: NoInfer<Args>) => H,\n      h: (_: H, ...args: NoInfer<Args>) => Eff\n    ): (...args: Args) => Effect.AsEffect<Eff>\n    <Eff extends Effect<any, any, any>, A, B, C, D, E, F, G, H, I, Args extends Array<any>>(\n      body: (...args: Args) => A,\n      a: (_: A, ...args: NoInfer<Args>) => B,\n      b: (_: B, ...args: NoInfer<Args>) => C,\n      c: (_: C, ...args: NoInfer<Args>) => D,\n      d: (_: D, ...args: NoInfer<Args>) => E,\n      e: (_: E, ...args: NoInfer<Args>) => F,\n      f: (_: F, ...args: NoInfer<Args>) => G,\n      g: (_: G, ...args: NoInfer<Args>) => H,\n      h: (_: H, ...args: NoInfer<Args>) => I,\n      i: (_: H, ...args: NoInfer<Args>) => Eff\n    ): (...args: Args) => Effect.AsEffect<Eff>\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L14194"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L14199"
   },
   {
     "_tag": "TypeAlias",
@@ -98814,7 +98846,7 @@
     "since": "3.11.0",
     "category": "Models",
     "signature": "type Untraced = {\n    <Eff extends YieldWrap<Effect<any, any, any>>, AEff, Args extends Array<any>>(\n      body: (...args: Args) => Generator<Eff, AEff, never>\n    ): (...args: Args) => Effect<\n      AEff,\n      [Eff] extends [never] ? never : [Eff] extends [YieldWrap<Effect<infer _A, infer E, infer _R>>] ? E : never,\n      [Eff] extends [never] ? never : [Eff] extends [YieldWrap<Effect<infer _A, infer _E, infer R>>] ? R : never\n    >\n    <Eff extends YieldWrap<Effect<any, any, any>>, AEff, Args extends Array<any>, A>(\n      body: (...args: Args) => Generator<Eff, AEff, never>,\n      a: (\n        _: Effect<\n          AEff,\n          [Eff] extends [never] ? never : [Eff] extends [YieldWrap<Effect<infer _A, infer E, infer _R>>] ? E : never,\n          [Eff] extends [never] ? never : [Eff] extends [YieldWrap<Effect<infer _A, infer _E, infer R>>] ? R : never\n        >,\n        ...args: NoInfer<Args>\n      ) => A\n    ): (...args: Args) => A\n    <Eff extends YieldWrap<Effect<any, any, any>>, AEff, Args extends Array<any>, A, B>(\n      body: (...args: Args) => Generator<Eff, AEff, never>,\n      a: (\n        _: Effect<\n          AEff,\n          [Eff] extends [never] ? never : [Eff] extends [YieldWrap<Effect<infer _A, infer E, infer _R>>] ? E : never,\n          [Eff] extends [never] ? never : [Eff] extends [YieldWrap<Effect<infer _A, infer _E, infer R>>] ? R : never\n        >,\n        ...args: NoInfer<Args>\n      ) => A,\n      b: (_: A, ...args: NoInfer<Args>) => B\n    ): (...args: Args) => B\n    <\n      Eff extends YieldWrap<Effect<any, any, any>>,\n      AEff,\n      Args extends Array<any>,\n      A,\n      B,\n      C\n    >(\n      body: (...args: Args) => Generator<Eff, AEff, never>,\n      a: (\n        _: Effect<\n          AEff,\n          [Eff] extends [never] ? never : [Eff] extends [YieldWrap<Effect<infer _A, infer E, infer _R>>] ? E : never,\n          [Eff] extends [never] ? never : [Eff] extends [YieldWrap<Effect<infer _A, infer _E, infer R>>] ? R : never\n        >,\n        ...args: NoInfer<Args>\n      ) => A,\n      b: (_: A, ...args: NoInfer<Args>) => B,\n      c: (_: B, ...args: NoInfer<Args>) => C\n    ): (...args: Args) => C\n    <\n      Eff extends YieldWrap<Effect<any, any, any>>,\n      AEff,\n      Args extends Array<any>,\n      A,\n      B,\n      C,\n      D\n    >(\n      body: (...args: Args) => Generator<Eff, AEff, never>,\n      a: (\n        _: Effect<\n          AEff,\n          [Eff] extends [never] ? never : [Eff] extends [YieldWrap<Effect<infer _A, infer E, infer _R>>] ? E : never,\n          [Eff] extends [never] ? never : [Eff] extends [YieldWrap<Effect<infer _A, infer _E, infer R>>] ? R : never\n        >,\n        ...args: NoInfer<Args>\n      ) => A,\n      b: (_: A, ...args: NoInfer<Args>) => B,\n      c: (_: B, ...args: NoInfer<Args>) => C,\n      d: (_: C, ...args: NoInfer<Args>) => D\n    ): (...args: Args) => D\n    <\n      Eff extends YieldWrap<Effect<any, any, any>>,\n      AEff,\n      Args extends Array<any>,\n      A,\n      B,\n      C,\n      D,\n      E\n    >(\n      body: (...args: Args) => Generator<Eff, AEff, never>,\n      a: (\n        _: Effect<\n          AEff,\n          [Eff] extends [never] ? never : [Eff] extends [YieldWrap<Effect<infer _A, infer E, infer _R>>] ? E : never,\n          [Eff] extends [never] ? never : [Eff] extends [YieldWrap<Effect<infer _A, infer _E, infer R>>] ? R : never\n        >,\n        ...args: NoInfer<Args>\n      ) => A,\n      b: (_: A, ...args: NoInfer<Args>) => B,\n      c: (_: B, ...args: NoInfer<Args>) => C,\n      d: (_: C, ...args: NoInfer<Args>) => D,\n      e: (_: D, ...args: NoInfer<Args>) => E\n    ): (...args: Args) => E\n    <\n      Eff extends YieldWrap<Effect<any, any, any>>,\n      AEff,\n      Args extends Array<any>,\n      A,\n      B,\n      C,\n      D,\n      E,\n      F\n    >(\n      body: (...args: Args) => Generator<Eff, AEff, never>,\n      a: (\n        _: Effect<\n          AEff,\n          [Eff] extends [never] ? never : [Eff] extends [YieldWrap<Effect<infer _A, infer E, infer _R>>] ? E : never,\n          [Eff] extends [never] ? never : [Eff] extends [YieldWrap<Effect<infer _A, infer _E, infer R>>] ? R : never\n        >,\n        ...args: NoInfer<Args>\n      ) => A,\n      b: (_: A, ...args: NoInfer<Args>) => B,\n      c: (_: B, ...args: NoInfer<Args>) => C,\n      d: (_: C, ...args: NoInfer<Args>) => D,\n      e: (_: D, ...args: NoInfer<Args>) => E,\n      f: (_: E, ...args: NoInfer<Args>) => F\n    ): (...args: Args) => F\n    <\n      Eff extends YieldWrap<Effect<any, any, any>>,\n      AEff,\n      Args extends Array<any>,\n      A,\n      B,\n      C,\n      D,\n      E,\n      F,\n      G\n    >(\n      body: (...args: Args) => Generator<Eff, AEff, never>,\n      a: (\n        _: Effect<\n          AEff,\n          [Eff] extends [never] ? never : [Eff] extends [YieldWrap<Effect<infer _A, infer E, infer _R>>] ? E : never,\n          [Eff] extends [never] ? never : [Eff] extends [YieldWrap<Effect<infer _A, infer _E, infer R>>] ? R : never\n        >,\n        ...args: NoInfer<Args>\n      ) => A,\n      b: (_: A, ...args: NoInfer<Args>) => B,\n      c: (_: B, ...args: NoInfer<Args>) => C,\n      d: (_: C, ...args: NoInfer<Args>) => D,\n      e: (_: D, ...args: NoInfer<Args>) => E,\n      f: (_: E, ...args: NoInfer<Args>) => F,\n      g: (_: F, ...args: NoInfer<Args>) => G\n    ): (...args: Args) => G\n    <\n      Eff extends YieldWrap<Effect<any, any, any>>,\n      AEff,\n      Args extends Array<any>,\n      A,\n      B,\n      C,\n      D,\n      E,\n      F,\n      G,\n      H\n    >(\n      body: (...args: Args) => Generator<Eff, AEff, never>,\n      a: (\n        _: Effect<\n          AEff,\n          [Eff] extends [never] ? never : [Eff] extends [YieldWrap<Effect<infer _A, infer E, infer _R>>] ? E : never,\n          [Eff] extends [never] ? never : [Eff] extends [YieldWrap<Effect<infer _A, infer _E, infer R>>] ? R : never\n        >,\n        ...args: NoInfer<Args>\n      ) => A,\n      b: (_: A, ...args: NoInfer<Args>) => B,\n      c: (_: B, ...args: NoInfer<Args>) => C,\n      d: (_: C, ...args: NoInfer<Args>) => D,\n      e: (_: D, ...args: NoInfer<Args>) => E,\n      f: (_: E, ...args: NoInfer<Args>) => F,\n      g: (_: F, ...args: NoInfer<Args>) => G,\n      h: (_: G, ...args: NoInfer<Args>) => H\n    ): (...args: Args) => H\n    <\n      Eff extends YieldWrap<Effect<any, any, any>>,\n      AEff,\n      Args extends Array<any>,\n      A,\n      B,\n      C,\n      D,\n      E,\n      F,\n      G,\n      H,\n      I\n    >(\n      body: (...args: Args) => Generator<Eff, AEff, never>,\n      a: (\n        _: Effect<\n          AEff,\n          [Eff] extends [never] ? never : [Eff] extends [YieldWrap<Effect<infer _A, infer E, infer _R>>] ? E : never,\n          [Eff] extends [never] ? never : [Eff] extends [YieldWrap<Effect<infer _A, infer _E, infer R>>] ? R : never\n        >,\n        ...args: NoInfer<Args>\n      ) => A,\n      b: (_: A, ...args: NoInfer<Args>) => B,\n      c: (_: B, ...args: NoInfer<Args>) => C,\n      d: (_: C, ...args: NoInfer<Args>) => D,\n      e: (_: D, ...args: NoInfer<Args>) => E,\n      f: (_: E, ...args: NoInfer<Args>) => F,\n      g: (_: F, ...args: NoInfer<Args>) => G,\n      h: (_: G, ...args: NoInfer<Args>) => H,\n      i: (_: H, ...args: NoInfer<Args>) => I\n    ): (...args: Args) => I\n  }",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L14276"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/Effect.ts#L14281"
   },
   {
     "_tag": "Class",
@@ -114641,7 +114673,7 @@
     "since": "3.14.0",
     "category": "Constructors",
     "signature": "declare const fromRecord: <const Layers extends Record<string, Layer.Layer<any, any, any>>, const Preload extends boolean = false>(layers: Layers, options?: { readonly idleTimeToLive?: Duration.DurationInput | undefined; readonly preload?: Preload | undefined; } | undefined) => Effect.Effect<LayerMap<keyof Layers, Layers[keyof Layers] extends Layer.Layer<infer _A, infer _E, infer _R> ? _A : never, Preload extends true ? never : Layers[keyof Layers] extends Layer.Layer<infer _A, infer _E, infer _R> ? _E : never>, Preload extends true ? never : Layers[keyof Layers] extends Layer.Layer<infer _A, infer _E, infer _R> ? _E : never, Scope.Scope | (Layers[keyof Layers] extends Layer.Layer<infer _A, infer _E, infer _R> ? _R : never)>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/LayerMap.ts#L200"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/LayerMap.ts#L209"
   },
   {
     "_tag": "Function",
@@ -114656,7 +114688,7 @@
     "since": "3.14.0",
     "category": "Service",
     "signature": "declare const Service: <Self>() => <const Id extends string, Options extends NoExcessProperties<{ readonly lookup: (key: any) => Layer.Layer<any, any, any>; readonly dependencies?: ReadonlyArray<Layer.Layer<any, any, any>>; readonly idleTimeToLive?: Duration.DurationInput | undefined; readonly preloadKeys?: Iterable<Options extends { readonly lookup: (key: infer K) => any; } ? K : never> | undefined; }, Options> | NoExcessProperties<{ readonly layers: Record<string, Layer.Layer<any, any, any>>; readonly dependencies?: ReadonlyArray<Layer.Layer<any, any, any>>; readonly idleTimeToLive?: Duration.DurationInput | undefined; readonly preload?: boolean; }, Options>>(id: Id, options: Options) => TagClass<Self, Id, Options extends { readonly lookup: (key: infer K) => any; } ? K : Options extends { readonly layers: infer Layers; } ? keyof Layers : never, Service.Success<Options>, Options extends { readonly preload: true; } ? never : Service.Error<Options>, Service.Context<Options>, Options extends { readonly preload: true; } ? Service.Error<Options> : Options extends { readonly preloadKey: Iterable<any>; } ? Service.Error<Options> : never, Options extends { readonly dependencies: ReadonlyArray<any>; } ? Options[\"dependencies\"][number] : never>",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/LayerMap.ts#L321"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/LayerMap.ts#L335"
   },
   {
     "_tag": "Interface",
@@ -114686,7 +114718,7 @@
     "since": "3.14.0",
     "category": "Service",
     "signature": "export interface TagClass<\n  in out Self,\n  in out Id extends string,\n  in out K,\n  in out I,\n  in out E,\n  in out R,\n  in out LE,\n  in out Deps extends Layer.Layer<any, any, any>\n> extends Context.TagClass<Self, Id, LayerMap<K, I, E>> {\n  /**\n   * A default layer for the `LayerMap` service.\n   */\n  readonly Default: Layer.Layer<\n    Self,\n    (Deps extends Layer.Layer<infer _A, infer _E, infer _R> ? _E : never) | LE,\n    | Exclude<R, (Deps extends Layer.Layer<infer _A, infer _E, infer _R> ? _A : never)>\n    | (Deps extends Layer.Layer<infer _A, infer _E, infer _R> ? _R : never)\n  >\n\n  /**\n   * A default layer for the `LayerMap` service without the dependencies provided.\n   */\n  readonly DefaultWithoutDependencies: Layer.Layer<Self, LE, R>\n\n  /**\n   * Retrieves a Layer for the resources associated with the key.\n   */\n  readonly get: (key: K) => Layer.Layer<I, E, Self>\n\n  /**\n   * Retrieves a Runtime for the resources associated with the key.\n   */\n  readonly runtime: (key: K) => Effect.Effect<Runtime.Runtime<I>, E, Scope.Scope | Self>\n\n  /**\n   * Invalidates the resource associated with the key.\n   */\n  readonly invalidate: (key: K) => Effect.Effect<void, never, Self>\n}",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/LayerMap.ts#L227"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/LayerMap.ts#L241"
   },
   {
     "_tag": "TypeAlias",
@@ -114716,7 +114748,7 @@
     "since": "3.14.0",
     "category": "Service",
     "signature": "type Key<Options> = Options extends { readonly lookup: (key: infer K) => any } ? K\n    : Options extends { readonly layers: infer Layers } ? keyof Layers\n    : never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/LayerMap.ts#L403"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/LayerMap.ts#L427"
   },
   {
     "_tag": "TypeAlias",
@@ -114731,7 +114763,7 @@
     "since": "3.14.0",
     "category": "Service",
     "signature": "type Layers<Options> = Options extends { readonly lookup: (key: infer _K) => infer Layers } ? Layers\n    : Options extends { readonly layers: infer Layers } ? Layers[keyof Layers]\n    : never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/LayerMap.ts#L412"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/LayerMap.ts#L436"
   },
   {
     "_tag": "TypeAlias",
@@ -114746,7 +114778,7 @@
     "since": "3.14.0",
     "category": "Service",
     "signature": "type Success<Options> = Layers<Options> extends Layer.Layer<infer _A, infer _E, infer _R> ? _A : never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/LayerMap.ts#L421"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/LayerMap.ts#L445"
   },
   {
     "_tag": "TypeAlias",
@@ -114761,7 +114793,7 @@
     "since": "3.14.0",
     "category": "Service",
     "signature": "type Error<Options> = Layers<Options> extends Layer.Layer<infer _A, infer _E, infer _R> ? _E : never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/LayerMap.ts#L428"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/LayerMap.ts#L452"
   },
   {
     "_tag": "TypeAlias",
@@ -114776,7 +114808,7 @@
     "since": "3.14.0",
     "category": "Service",
     "signature": "type Context<Options> = Layers<Options> extends Layer.Layer<infer _A, infer _E, infer _R> ? _R : never",
-    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/LayerMap.ts#L435"
+    "sourceUrl": "https://github.com/Effect-TS/effect/tree/main/packages/effect/src/LayerMap.ts#L459"
   },
   {
     "_tag": "Constant",
