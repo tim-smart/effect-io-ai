@@ -101885,7 +101885,7 @@
     "examples": [],
     "since": "4.0.0",
     "category": "layers",
-    "signature": "declare const layerHttp: Layer.Layer<Sharding.Sharding | Runners.Runners, never, RpcSerialization.RpcSerialization | HttpClient.HttpClient | MessageStorage | RunnerStorage | ShardingConfig.ShardingConfig | RunnerHealth | HttpServer.HttpServer>",
+    "signature": "declare const layerHttp: Layer.Layer<Sharding.Sharding | Runners.Runners, never, RpcSerialization.RpcSerialization | HttpClient.HttpClient | HttpServer.HttpServer | MessageStorage | RunnerStorage | ShardingConfig.ShardingConfig | RunnerHealth>",
     "sourceUrl": "https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpRunner.ts#L252"
   },
   {
@@ -101917,7 +101917,7 @@
     "examples": [],
     "since": "4.0.0",
     "category": "layers",
-    "signature": "declare const layerWebsocket: Layer.Layer<Sharding.Sharding | Runners.Runners, never, Socket.WebSocketConstructor | RpcSerialization.RpcSerialization | MessageStorage | RunnerStorage | ShardingConfig.ShardingConfig | RunnerHealth | HttpServer.HttpServer>",
+    "signature": "declare const layerWebsocket: Layer.Layer<Sharding.Sharding | Runners.Runners, never, Socket.WebSocketConstructor | RpcSerialization.RpcSerialization | HttpServer.HttpServer | MessageStorage | RunnerStorage | ShardingConfig.ShardingConfig | RunnerHealth>",
     "sourceUrl": "https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpRunner.ts#L305"
   },
   {
@@ -111117,7 +111117,7 @@
     "examples": [],
     "since": "4.0.0",
     "category": "error handling",
-    "signature": "declare const retryTransient: { <E, B = never, ES = never, R1 = never, const RetryOn extends \"errors-only\" | \"response-only\" | \"errors-and-responses\" = \"response-only\" | \"errors-only\" | \"errors-and-responses\", Input = RetryOn extends \"errors-only\" ? E : RetryOn extends \"response-only\" ? HttpClientResponse.HttpClientResponse : HttpClientResponse.HttpClientResponse | E>(options: { readonly retryOn?: RetryOn | undefined; readonly while?: Predicate.Predicate<NoInfer<E | ES>>; readonly schedule?: Schedule.Schedule<B, NoInfer<Input>, ES, R1>; readonly times?: number; }): <R>(self: HttpClient.With<E, R>) => HttpClient.With<E | ES, R1 | R>; <E, R, B = never, ES = never, R1 = never, const RetryOn extends \"errors-only\" | \"response-only\" | \"errors-and-responses\" = \"response-only\" | \"errors-only\" | \"errors-and-responses\", Input = RetryOn extends \"errors-only\" ? E : RetryOn extends \"response-only\" ? HttpClientResponse.HttpClientResponse : HttpClientResponse.HttpClientResponse | E>(self: HttpClient.With<E, R>, options: { readonly retryOn?: RetryOn | undefined; readonly while?: Predicate.Predicate<NoInfer<E | ES>>; readonly schedule?: Schedule.Schedule<B, NoInfer<Input>, ES, R1>; readonly times?: number; }): HttpClient.With<E | ES, R1 | R>; <B, E, ES = never, R1 = never>(options: Schedule.Schedule<B, NoInfer<HttpClientResponse.HttpClientResponse | E>, ES, R1>): <R>(self: HttpClient.With<E, R>) => HttpClient.With<E | ES, R1 | R>; <E, R, B, ES = never, R1 = never>(self: HttpClient.With<E, R>, options: Schedule.Schedule<B, NoInfer<HttpClientResponse.HttpClientResponse | E>, ES, R1>): HttpClient.With<E | ES, R1 | R>; }",
+    "signature": "declare const retryTransient: { <E, B = never, ES = never, R1 = never, const RetryOn extends \"errors-only\" | \"response-only\" | \"errors-and-responses\" = \"errors-only\" | \"response-only\" | \"errors-and-responses\", Input = RetryOn extends \"errors-only\" ? E : RetryOn extends \"response-only\" ? HttpClientResponse.HttpClientResponse : HttpClientResponse.HttpClientResponse | E>(options: { readonly retryOn?: RetryOn | undefined; readonly while?: Predicate.Predicate<NoInfer<E | ES>>; readonly schedule?: Schedule.Schedule<B, NoInfer<Input>, ES, R1>; readonly times?: number; }): <R>(self: HttpClient.With<E, R>) => HttpClient.With<E | ES, R1 | R>; <E, R, B = never, ES = never, R1 = never, const RetryOn extends \"errors-only\" | \"response-only\" | \"errors-and-responses\" = \"errors-only\" | \"response-only\" | \"errors-and-responses\", Input = RetryOn extends \"errors-only\" ? E : RetryOn extends \"response-only\" ? HttpClientResponse.HttpClientResponse : HttpClientResponse.HttpClientResponse | E>(self: HttpClient.With<E, R>, options: { readonly retryOn?: RetryOn | undefined; readonly while?: Predicate.Predicate<NoInfer<E | ES>>; readonly schedule?: Schedule.Schedule<B, NoInfer<Input>, ES, R1>; readonly times?: number; }): HttpClient.With<E | ES, R1 | R>; <B, E, ES = never, R1 = never>(options: Schedule.Schedule<B, NoInfer<HttpClientResponse.HttpClientResponse | E>, ES, R1>): <R>(self: HttpClient.With<E, R>) => HttpClient.With<E | ES, R1 | R>; <E, R, B, ES = never, R1 = never>(self: HttpClient.With<E, R>, options: Schedule.Schedule<B, NoInfer<HttpClientResponse.HttpClientResponse | E>, ES, R1>): HttpClient.With<E | ES, R1 | R>; }",
     "sourceUrl": "https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpClient.ts#L888"
   },
   {
@@ -113981,7 +113981,7 @@
     "examples": [],
     "since": "4.0.0",
     "category": "testing",
-    "signature": "declare const layerServices: Layer.Layer<Path.Path | FileSystem.FileSystem | Etag.Generator | HttpPlatform.HttpPlatform, never, never>",
+    "signature": "declare const layerServices: Layer.Layer<Path.Path | FileSystem.FileSystem | HttpPlatform.HttpPlatform | Etag.Generator, never, never>",
     "sourceUrl": "https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpServer.ts#L318"
   },
   {
@@ -120653,7 +120653,7 @@
     "examples": [],
     "since": "4.0.0",
     "category": "testing",
-    "signature": "declare const groups: <ApiId extends string, Groups extends HttpApiGroup.Constraint, const Identifiers extends ReadonlyArray<HttpApiGroup.Identifier<Groups>>, SelectedGroups extends HttpApiGroup.Constraint = Extract<Groups, { readonly identifier: Identifiers[number]; }>>(api: HttpApi.HttpApi<ApiId, Groups>, groupIdentifiers: Identifiers, options?: { readonly baseUrl?: string | URL | undefined; } | undefined) => Effect.Effect<Simplify<{ readonly [Group in Extract<Groups, { readonly topLevel: false; }> as HttpApiGroup.Identifier<Group>]: HttpApiClient.Client.GroupByEndpoint<Group, never, never>; } & HttpApiClient.Client.TopLevelMethods<Groups, never, never>>, never, Scope | Path | FileSystem | HttpApiGroup.ToService<ApiId, SelectedGroups> | HttpApiEndpoint.Middleware<HttpApiGroup.Endpoints<Groups>> | MiddlewareClient<HttpApiEndpoint.Middleware<HttpApiGroup.Endpoints<Groups>>> | Generator | HttpPlatform>",
+    "signature": "declare const groups: <ApiId extends string, Groups extends HttpApiGroup.Constraint, const Identifiers extends ReadonlyArray<HttpApiGroup.Identifier<Groups>>, SelectedGroups extends HttpApiGroup.Constraint = Extract<Groups, { readonly identifier: Identifiers[number]; }>>(api: HttpApi.HttpApi<ApiId, Groups>, groupIdentifiers: Identifiers, options?: { readonly baseUrl?: string | URL | undefined; } | undefined) => Effect.Effect<Simplify<{ readonly [Group in Extract<Groups, { readonly topLevel: false; }> as HttpApiGroup.Identifier<Group>]: HttpApiClient.Client.GroupByEndpoint<Group, never, never>; } & HttpApiClient.Client.TopLevelMethods<Groups, never, never>>, never, Scope | Path | FileSystem | HttpPlatform | Generator | HttpApiGroup.ToService<ApiId, SelectedGroups> | HttpApiEndpoint.Middleware<HttpApiGroup.Endpoints<Groups>> | MiddlewareClient<HttpApiEndpoint.Middleware<HttpApiGroup.Endpoints<Groups>>>>",
     "sourceUrl": "https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpApiTest.ts#L41"
   },
   {
