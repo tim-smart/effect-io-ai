@@ -85860,7 +85860,7 @@
     "examples": [],
     "since": "4.0.0",
     "category": "layers",
-    "signature": "declare const layerHttp: Layer.Layer<Sharding.Sharding | Runners.Runners, never, RpcSerialization.RpcSerialization | HttpClient.HttpClient | MessageStorage | RunnerStorage | ShardingConfig.ShardingConfig | RunnerHealth | HttpServer.HttpServer>",
+    "signature": "declare const layerHttp: Layer.Layer<Sharding.Sharding | Runners.Runners, never, RpcSerialization.RpcSerialization | HttpClient.HttpClient | HttpServer.HttpServer | MessageStorage | RunnerStorage | ShardingConfig.ShardingConfig | RunnerHealth>",
     "sourceUrl": "https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpRunner.ts#L252"
   },
   {
@@ -85892,7 +85892,7 @@
     "examples": [],
     "since": "4.0.0",
     "category": "layers",
-    "signature": "declare const layerWebsocket: Layer.Layer<Sharding.Sharding | Runners.Runners, never, Socket.WebSocketConstructor | RpcSerialization.RpcSerialization | MessageStorage | RunnerStorage | ShardingConfig.ShardingConfig | RunnerHealth | HttpServer.HttpServer>",
+    "signature": "declare const layerWebsocket: Layer.Layer<Sharding.Sharding | Runners.Runners, never, Socket.WebSocketConstructor | RpcSerialization.RpcSerialization | HttpServer.HttpServer | MessageStorage | RunnerStorage | ShardingConfig.ShardingConfig | RunnerHealth>",
     "sourceUrl": "https://github.com/Effect-TS/effect-smol/tree/main/packages/effect/src/HttpRunner.ts#L305"
   },
   {
